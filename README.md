@@ -12,8 +12,15 @@ Incluye cinco pasos: datos básicos, servicios, extras, resumen y calendario. Ca
 
 Para personalizar el calendario, pega el contenido completo de `ilatek-calendar-custom-code.html` en **Widget appearance → Insert custom code**, incluyendo las etiquetas `<style>` y `</style>`. No pegues CSS sin esas etiquetas en ese campo: se mostrará como texto.
 
+## Home Page
+
+`home-page/ghl-custom-code.html` es la landing de inicio para pegar tal cual en un elemento **Custom Code** de la página de inicio en GoHighLevel. Usa los tokens `{{custom_values.*}}` de GHL (ubicación, contacto, redes) e incluye JSON-LD y el widget de reseñas.
+
+Todos los botones y enlaces de cotización (nav, hero, servicio, CTA y footer) apuntan fijos a `https://ilatekpr.com/cotizacion`.
+
 ## Archivos
 
+- `home-page/ghl-custom-code.html`: landing de inicio para GHL Custom Code; botones de cotización hacia https://ilatekpr.com/cotizacion.
 - `ghl-custom-code.html`: versión editable con imagen local.
 - `ghl-custom-code-embedded.html`: versión autónoma lista para copiar en GHL.
 - `ilatek-calendar-custom-code.html`: estilos del calendario con las etiquetas HTML necesarias.
