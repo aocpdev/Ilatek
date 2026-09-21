@@ -1,0 +1,200 @@
+<!--
+  ILATEK · GHL Custom HTML · Seccion "Servicios de Limpieza en Puerto Rico"
+  Tres categorias: Limpieza Residencial · Limpieza Comercial · Limpieza Industrial.
+  Paleta y tipografia exactas del home (--ink #11164b · --blue #213d8e · --green #00b94f · Outfit/Manrope).
+  Custom values: backend (atributos data-*) + frontend (tokens en texto) + resolver runtime de respaldo.
+  Cada CTA apunta a su pagina de servicio dedicada ({{custom_values.website_url}}/limpieza-residencial|comercial|industrial).
+  Imagenes: reemplaza los 3 placeholders marcados con "PEGA AQUI TU IMAGEN".
+-->
+<section id="ilatek-categorias" aria-labelledby="ilatek-categorias-title"
+  data-location-label="{{custom_values.county_name_and_state}}"
+  data-website-url="{{custom_values.website_url}}"
+  data-business-email="{{custom_values.business__email}}"
+  data-business-phone="{{custom_values.business__phone}}">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap');
+
+    #ilatek-categorias{--ink:#11164b;--ink-deep:#0b103d;--blue:#213d8e;--blue-soft:#eef3ff;--green:#00b94f;--green-dark:#009640;--paper:#fff;--mist:#f4f7fc;--line:#dbe2f1;--muted:#5b6380;width:100vw;max-width:none;margin-inline:calc(50% - 50vw);overflow:hidden;background:var(--mist);color:var(--ink);font-family:Manrope,Arial,sans-serif;isolation:isolate;padding:118px 0}#ilatek-categorias *{box-sizing:border-box}#ilatek-categorias a{color:inherit;text-decoration:none}#ilatek-categorias [hidden]{display:none!important}
+    .ilcg-shell{width:min(100% - 40px,1210px);margin:auto}
+    .ilcg-head{max-width:760px;margin:0 auto 54px;text-align:center}.ilcg-eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--blue);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.ilcg-eyebrow:before{content:'';width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px rgba(0,185,79,.12)}.ilcg-head h2{margin:16px 0 0;font-family:Outfit,Manrope,sans-serif;font-size:clamp(42px,4.6vw,66px);font-weight:800;line-height:1.02;letter-spacing:-.06em}.ilcg-head>p{margin:18px auto 0;max-width:680px;color:var(--muted);font-size:16px;line-height:1.68}
+    /* Tarjetas de categoria · zoom suave: curva S estándar (material) simétrica al entrar/salir */
+    /* Carrusel 3D de categorias: la tarjeta FRONTAL siempre grande al centro; las otras 2 a los lados,
+      giradas y hundidas en perspectiva. Rotacion en bucle infinito (frontal->izquierda->derecha->frontal). */
+    .ilcg-stage{--side-x:270px;--lift:150px;--side-z:-320px;position:relative;perspective:1500px;overflow:hidden;min-height:680px;padding:10px 0 30px;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 9%,#000 91%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 9%,#000 91%,transparent 100%)}
+    .ilcg-stage .ilcg-card{position:absolute;top:6px;left:50%;width:400px;margin:0;transition:transform 1s cubic-bezier(.4,0,.2,1),filter 1s cubic-bezier(.4,0,.2,1),box-shadow 1s cubic-bezier(.4,0,.2,1);will-change:transform;transform:translateX(-50%) translateZ(0) scale(1)}
+    /* Esquinas SIEMPRE redondeadas: la img con filter/will-change se vuelve capa compuesta y puede escapar
+      del clip redondeado del CONTENEDOR en Chrome; el radio propio de la img siempre se respeta */
+    .ilcg-stage .ilcg-media{position:relative;background:var(--paper);border-radius:22px 22px 0 0}.ilcg-stage .ilcg-media img{border-radius:22px 22px 0 0}
+    .ilcg-card.is-front{transform:translateX(-50%) translateZ(var(--lift)) scale(1);z-index:3}
+    .ilcg-card.is-left{transform:translateX(calc(-50% - var(--side-x))) rotateY(35deg) translateZ(var(--side-z)) scale(.94);z-index:1;filter:brightness(.88) saturate(.92)}
+    .ilcg-card.is-right{transform:translateX(calc(-50% + var(--side-x))) rotateY(-35deg) translateZ(var(--side-z)) scale(.94);z-index:1;filter:brightness(.88) saturate(.92)}
+    .ilcg-card.is-left:hover,.ilcg-card.is-right:hover{filter:brightness(.96) saturate(1)}
+    .ilcg-card:not(.is-front){cursor:pointer}
+    .ilcg-card{position:relative;display:flex;flex-direction:column;border:1px solid var(--line);border-radius:22px;background:var(--paper);box-shadow:0 10px 28px rgba(17,22,75,.07);overflow:hidden;transition:transform .45s cubic-bezier(.4,0,.2,1),box-shadow .45s cubic-bezier(.4,0,.2,1),background .45s cubic-bezier(.4,0,.2,1)}
+    .ilcg-stage .ilcg-card.is-front:hover,.ilcg-stage .ilcg-card.is-front:focus-within{transform:translateX(-50%) translateZ(var(--lift)) translateY(-6px) scale(1);box-shadow:0 26px 56px rgba(17,22,75,.28),inset 0 1px 0 rgba(255,255,255,.5)}
+    .ilcg-media{height:190px;overflow:hidden;background:var(--blue-soft)}.ilcg-media img{display:block;width:100%;height:100%;object-fit:cover;transform:scale(1);transform-origin:center;backface-visibility:hidden;transition:transform .8s cubic-bezier(.4,0,.2,1),filter .8s cubic-bezier(.4,0,.2,1);will-change:transform}.ilcg-card:hover .ilcg-media img,.ilcg-card:focus-within .ilcg-media img{transform:scale(1.06);filter:brightness(1.04) saturate(1.08);backface-visibility:hidden}.ilcg-card.is-front:hover .ilcg-media img,.ilcg-card.is-front:focus-within .ilcg-media img{transform:scale(1.06);filter:brightness(1.04) saturate(1.08);backface-visibility:hidden}
+    .ilcg-badge{position:relative;z-index:1;display:grid;place-items:center;width:62px;height:62px;margin:-31px 0 0 28px;border-radius:18px;border:1px solid rgba(255,255,255,.6);background:linear-gradient(150deg,rgba(238,243,255,.78),rgba(238,243,255,.42));-webkit-backdrop-filter:blur(14px) saturate(160%);backdrop-filter:blur(14px) saturate(160%);box-shadow:0 8px 20px rgba(17,22,75,.14),inset 0 1px 0 rgba(255,255,255,.65);color:var(--blue);transition:background .45s cubic-bezier(.4,0,.2,1),color .45s cubic-bezier(.4,0,.2,1),box-shadow .45s cubic-bezier(.4,0,.2,1)}.ilcg-badge svg{display:block;width:29px;height:29px}.ilcg-card.is-front:hover .ilcg-badge{background:linear-gradient(150deg,rgba(0,185,79,.88),rgba(0,150,64,.66));color:#fff;box-shadow:0 12px 26px rgba(0,150,64,.32),inset 0 1px 0 rgba(255,255,255,.4)}
+    .ilcg-body{display:flex;flex-direction:column;flex:1;padding:20px 28px 30px}
+    .ilcg-kicker{color:var(--green-dark);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+    .ilcg-body h3{margin:9px 0 0;font-family:Outfit,Manrope,sans-serif;font-size:clamp(24px,2.2vw,29px);font-weight:800;line-height:1.15;letter-spacing:-.03em}
+    .ilcg-body>p{margin:12px 0 0;color:var(--muted);font-size:14.5px;line-height:1.7}
+    .ilcg-list{display:grid;gap:10px;margin:20px 0 26px;padding:0;list-style:none}.ilcg-list li{display:flex;align-items:flex-start;gap:10px;font-size:14px;font-weight:600;line-height:1.45}.ilcg-list i{flex:0 0 20px;display:grid;place-items:center;width:20px;height:20px;margin-top:1px;border-radius:50%;background:rgba(0,185,79,.13);color:var(--green-dark);font-size:11px;font-style:normal;font-weight:800}
+    .ilcg-btn{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:auto;min-height:50px;padding:12px 20px;border-radius:8px;background:var(--green);color:#fff!important;font:800 13.5px/1 Manrope,Arial,sans-serif;letter-spacing:.02em;box-shadow:0 12px 25px rgba(0,185,79,.22);transition:transform .22s ease,background .22s ease,box-shadow .22s ease}
+    .ilcg-btn:after{content:'→';font-size:16px;transition:transform .25s ease}
+    .ilcg-btn:hover,.ilcg-btn:focus-visible{background:var(--green-dark);transform:translateY(-2px);box-shadow:0 16px 30px rgba(0,185,79,.32)}.ilcg-btn:hover:after{transform:translateX(4px)}
+    .ilcg-btn:focus-visible,.ilcg-social a:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+    /* CTA general */
+    .ilcg-cta{margin-top:56px;padding:44px 40px;border-radius:22px;background:linear-gradient(135deg,#213d8e,#11164b);color:#fff;text-align:center;box-shadow:0 24px 48px rgba(17,22,75,.22)}
+    .ilcg-cta-title{margin:0;font-family:Outfit,Manrope,sans-serif;font-size:clamp(26px,2.6vw,36px);font-weight:800;letter-spacing:-.04em}
+    .ilcg-cta-title em{font-style:normal;color:var(--green)}
+    .ilcg-cta>p:not(.ilcg-cta-title){max-width:620px;margin:14px auto 0;color:rgba(255,255,255,.8);font-size:15px;line-height:1.65}
+    .ilcg-cta .ilcg-btn{display:inline-flex;margin-top:26px;min-width:min(320px,100%)}
+        /* Rotacion 3D siempre activa en todos los dispositivos (sin excepcion reduced-motion) */
+    @media(max-width:1020px){.ilcg-stage{--side-x:200px;--side-z:-260px;min-height:640px}.ilcg-stage .ilcg-card{width:360px}.ilcg-cta{padding:38px 28px}}
+    @media(max-width:560px){#ilatek-categorias{padding:78px 0}.ilcg-stage{--side-x:44vw;--side-z:-240px;min-height:600px}.ilcg-stage .ilcg-card{width:min(86vw,330px)}.ilcg-shell{width:min(100% - 30px,1210px)}.ilcg-head{margin-bottom:38px}.ilcg-head>p{font-size:15px}.ilcg-media{height:170px}.ilcg-body{padding:18px 22px 26px}.ilcg-badge{margin-left:22px}.ilcg-cta{margin-top:40px;padding:32px 20px;border-radius:18px}}
+  </style>
+
+  <div class="ilcg-shell">
+    <header class="ilcg-head">
+      <span class="ilcg-eyebrow">ILATEK · Soluciones de limpieza</span>
+      <h2 id="ilatek-categorias-title">Servicios de Limpieza en Puerto Rico</h2>
+      <p>Ilatek ofrece soluciones de limpieza para hogares, negocios e instalaciones industriales en {{custom_values.county_name_and_state}}. Elige la categoría que necesitas y solicita tu cotización: te respondemos con un precio claro y los próximos pasos.</p>
+    </header>
+
+    <div class="ilcg-stage" aria-label="Categorías de limpieza de Ilatek (la tarjeta frontal rota en bucle; haz clic en una lateral para traerla al frente)">
+
+      <!-- ============ TARJETA 1 · RESIDENCIAL ============ -->
+      <article class="ilcg-card">
+        <div class="ilcg-media">
+          <img src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab0c2d4ff484614db70610b.png"
+            width="660" height="380" loading="lazy" decoding="async"
+            alt="Limpieza residencial de Ilatek en Puerto Rico — servicio de limpieza de casas y apartamentos en {{custom_values.county_name_and_state}}"
+            title="Limpieza Residencial en Puerto Rico · Ilatek">
+        </div>
+        <i class="ilcg-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></i>
+        <div class="ilcg-body">
+          <span class="ilcg-kicker">Para tu hogar</span>
+          <h3>Limpieza Residencial en Puerto Rico</h3>
+          <p>Limpieza residencial para casas, apartamentos y propiedades en {{custom_values.county_name_and_state}}: Ilatek mantiene tus espacios cómodos, frescos y bien cuidados con un plan que se ajusta a tu hogar.</p>
+          <ul class="ilcg-list">
+            <li><i>✓</i> Limpieza regular de casas y apartamentos</li>
+            <li><i>✓</i> Limpieza profunda residencial</li>
+            <li><i>✓</i> Limpieza de mudanzas (move-in / move-out)</li>
+            <li><i>✓</i> Limpieza de alquileres a corto plazo</li>
+            <li><i>✓</i> Limpieza post-construcción residencial</li>
+          </ul>
+          <a class="ilcg-btn" href="{{custom_values.website_url}}/limpieza-residencial" aria-label="Solicitar Limpieza Residencial con Ilatek">Solicitar Limpieza Residencial</a>
+        </div>
+      </article>
+
+      <!-- ============ TARJETA 2 · COMERCIAL ============ -->
+      <article class="ilcg-card">
+        <div class="ilcg-media">
+          <img src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab0c2d44091fa65e6a436d3.png"
+            width="660" height="380" loading="lazy" decoding="async"
+            alt="Limpieza comercial de Ilatek en Puerto Rico — limpieza de oficinas, tiendas y negocios en {{custom_values.county_name_and_state}}"
+            title="Limpieza Comercial en Puerto Rico · Ilatek">
+        </div>
+        <i class="ilcg-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg></i>
+        <div class="ilcg-body">
+          <span class="ilcg-kicker">Para tu negocio</span>
+          <h3>Limpieza Comercial en Puerto Rico</h3>
+          <p>Limpieza comercial para oficinas, comercios y espacios de trabajo en {{custom_values.county_name_and_state}}: tu negocio limpio, organizado y presentable para clientes y equipo, con una frecuencia que se ajuste a tu operación.</p>
+          <ul class="ilcg-list">
+            <li><i>✓</i> Limpieza de oficinas y áreas de trabajo</li>
+            <li><i>✓</i> Limpieza recurrente de negocios</li>
+            <li><i>✓</i> Limpieza de tiendas y establecimientos</li>
+            <li><i>✓</i> Limpieza de áreas comunes y condominios</li>
+            <li><i>✓</i> Limpieza de pisos y cristales comerciales</li>
+          </ul>
+          <a class="ilcg-btn" href="{{custom_values.website_url}}/limpieza-comercial" aria-label="Solicitar Limpieza Comercial con Ilatek">Solicitar Limpieza Comercial</a>
+        </div>
+      </article>
+
+      <!-- ============ TARJETA 3 · INDUSTRIAL ============ -->
+      <article class="ilcg-card">
+        <div class="ilcg-media">
+          <img src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab0c2d4ff484614db70610c.png"
+            width="660" height="380" loading="lazy" decoding="async"
+            alt="Limpieza industrial de Ilatek en Puerto Rico — limpieza de almacenes e instalaciones en {{custom_values.county_name_and_state}}"
+            title="Limpieza Industrial en Puerto Rico · Ilatek">
+        </div>
+        <i class="ilcg-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M17 18h1"/><path d="M12 18h1"/><path d="M7 18h1"/></svg></i>
+        <div class="ilcg-body">
+          <span class="ilcg-kicker">Para tus instalaciones</span>
+          <h3>Limpieza Industrial en Puerto Rico</h3>
+          <p>Limpieza industrial para almacenes, plantas e instalaciones operacionales en {{custom_values.county_name_and_state}}: mantenemos las áreas de trabajo limpias y seguras según los requisitos de cada espacio, con coordinación previa.</p>
+          <ul class="ilcg-list">
+            <li><i>✓</i> Limpieza de almacenes e instalaciones</li>
+            <li><i>✓</i> Limpieza de pisos industriales</li>
+            <li><i>✓</i> Limpieza y desengrase de superficies</li>
+            <li><i>✓</i> Mantenimiento de áreas operacionales</li>
+            <li><i>✓</i> Servicios coordinados con tu equipo</li>
+          </ul>
+          <a class="ilcg-btn" href="{{custom_values.website_url}}/limpieza-industrial" aria-label="Solicitar Limpieza Industrial con Ilatek">Solicitar Limpieza Industrial</a>
+        </div>
+      </article>
+    </div>
+
+    <!-- ============ CTA GENERAL ============ -->
+    <div class="ilcg-cta">
+      <p class="ilcg-cta-title">¿Listo para tu espacio <em>impecable</em>?</p>
+      <p>Solicita tu cotización de limpieza en minutos: cuéntanos qué necesitas y te daremos un precio real, sin compromiso.</p>
+      <a class="ilcg-btn" href="{{custom_values.website_url}}/cotizacion" aria-label="Solicita tu Cotización de Limpieza con Ilatek">Solicita tu Cotización de Limpieza</a>
+    </div>
+  </div>
+
+  <script>
+  (function(){
+    var root=document.getElementById('ilatek-categorias'); if(!root||root.dataset.ilcgReady)return; root.dataset.ilcgReady='true';
+    function clean(v){v=String(v||'').replace(/\u00a0/g,' ').trim();return /^\s*\{\{[^}]+\}\}\s*$/.test(v)?'':v}
+    var county=clean(root.getAttribute('data-location-label'))||'Puerto Rico', website=clean(root.dataset.websiteUrl)||'#';
+    function token(name){return '{'+'{custom_values.'+name+'}'+'}'}
+    var values={};
+    values[token('county_name_and_state')]=county;
+    values[token('website_url')]=website;
+
+    /* Carrusel 3D: roles front/izq/der que avanzan en bucle infinito. La frontal siempre la grande.
+       Pausa al hover/focus y con pestana oculta; clic en una lateral la trae al frente. */
+    var stage3d=root.querySelector('.ilcg-stage');
+    if(stage3d){
+      var cards3d=[].slice.call(stage3d.querySelectorAll('.ilcg-card'));
+      var roles3d=['is-front','is-left','is-right'];
+      var order3d=[0,1,2]; /* orden[i]=posicion de la tarjeta i: 0=frontal, 1=izq, 2=der */
+      var apply3d=function(){cards3d.forEach(function(c,i){c.classList.remove('is-front','is-left','is-right');c.classList.add(roles3d[order3d[i]])})};
+      var size3d=function(){var h=0;cards3d.forEach(function(c){h=Math.max(h,c.offsetHeight)});if(!h)return;var lift=parseFloat(stage3d.style.getPropertyValue('--lift'))||150,sc=1500/(1500-lift),H=Math.ceil(h*sc+16);stage3d.style.height=H+'px';cards3d.forEach(function(c){c.style.top=Math.max(0,(H-c.offsetHeight)/2)+'px'})};
+      var lift3d=function(){var w=stage3d.offsetWidth;stage3d.style.setProperty('--lift',Math.max(120,Math.min(170,w*.115))+'px');size3d()};
+      window.addEventListener('resize',lift3d,{passive:true});lift3d();
+      apply3d();size3d();
+      window.addEventListener('resize',size3d,{passive:true});
+      if(document.fonts&&document.fonts.ready){document.fonts.ready.then(size3d)['catch'](function(){})}
+      window.addEventListener('load',size3d);
+      if(window.ResizeObserver){var ro3d=new ResizeObserver(size3d);cards3d.forEach(function(c){ro3d.observe(c)})}
+      var rot3d=null,hover3d=false;
+      var step3d=function(){order3d=order3d.map(function(p){return(p+1)%3});apply3d()};
+      var stop3d=function(){if(rot3d){clearInterval(rot3d);rot3d=null}};
+      var start3d=function(){if(!rot3d&&!hover3d)rot3d=setInterval(step3d,4200)};
+      stage3d.addEventListener('mouseenter',function(){hover3d=true;stop3d()});
+      stage3d.addEventListener('mouseleave',function(){hover3d=false;start3d()});
+      stage3d.addEventListener('focusin',function(){hover3d=true;stop3d()});
+      stage3d.addEventListener('focusout',function(){hover3d=false;start3d()});
+      document.addEventListener('visibilitychange',function(){document.hidden?stop3d():start3d()});
+      cards3d.forEach(function(c,i){c.addEventListener('click',function(){if(order3d[i]!==0){var n=0;while(order3d[i]!==0&&n<3){order3d=order3d.map(function(p){return(p+1)%3});n++}apply3d();stop3d();hover3d=true;setTimeout(function(){hover3d=false;start3d()},6500)}})});
+      cards3d.forEach(function(c,i){c.addEventListener('click',function(e){if(order3d[i]!==0){e.preventDefault();e.stopPropagation();var n=0;while(order3d[i]!==0&&n<3){order3d=order3d.map(function(p){return(p+1)%3});n++}apply3d();stop3d();hover3d=true;setTimeout(function(){hover3d=false;start3d()},6500)}},true)});
+      cards3d.forEach(function(c,i){c.addEventListener('keydown',function(e){if((e.key==='Enter'||e.key===' ')&&order3d[i]!==0){e.preventDefault();var n=0;while(order3d[i]!==0&&n<3){order3d=order3d.map(function(p){return(p+1)%3});n++}apply3d();stop3d();hover3d=true;setTimeout(function(){hover3d=false;start3d()},6500)}})});
+      start3d();
+    }
+    var walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT),nodes=[],node;
+    while(node=walker.nextNode()){if(node.parentElement&&node.parentElement.tagName!=='SCRIPT'&&node.parentElement.tagName!=='STYLE')nodes.push(node)}
+    nodes.forEach(function(n){Object.keys(values).forEach(function(k){n.nodeValue=n.nodeValue.split(k).join(values[k])})});
+    Array.prototype.forEach.call(root.querySelectorAll('*'),function(el){
+      Array.prototype.forEach.call(el.attributes||[],function(a){
+        var v=a.value;Object.keys(values).forEach(function(k){v=v.split(k).join(values[k])});
+        if(v!==a.value)el.setAttribute(a.name,v);
+      });
+    });
+    Array.prototype.forEach.call(root.querySelectorAll('a[href="mailto:"],a[href="tel:"]'),function(a){a.hidden=true});
+  })();
+  </script>
+</section>

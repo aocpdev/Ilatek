@@ -1,0 +1,117 @@
+<!--
+  ILATEK · GHL Custom HTML · FAQ Section (SEO / AEO / GEO)
+  Estructura: un solo H1 vive en el hero; esta seccion usa H2 para el titulo
+  y H3 desplegable (details/summary nativo, accesible sin JS) para cada pregunta. El schema FAQPage + meta robots le indica a Google
+  que tome esta informacion para resultados enriquecidos y respuestas de IA
+  (ChatGPT, Perplexity, Gemini, Copilot). No recolecta datos ni hace requests.
+-->
+<section id="ilatek-faq" aria-labelledby="ilatek-faq-title"
+  data-location-label="{{custom_values.county_name_and_state}}"
+  data-website-url="{{custom_values.website_url}}">
+
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap');
+    #ilatek-faq{--ink:#11164b;--ink-deep:#0b103d;--blue:#213d8e;--blue-soft:#eef3ff;--green:#00b94f;--green-dark:#009640;--paper:#fff;--mist:#f4f7fc;--line:#dbe2f1;--muted:#5b6380;width:100vw;max-width:none;margin-inline:calc(50% - 50vw);overflow:hidden;background:var(--mist);color:var(--ink);font-family:Manrope,Arial,sans-serif;isolation:isolate;padding:112px 0}#ilatek-faq *{box-sizing:border-box}#ilatek-faq a{color:inherit;text-decoration:none}.ilfaq-shell{width:min(100% - 40px,1210px);margin:auto}.ilfaq-head{max-width:720px;margin:0 auto 54px;text-align:center}.ilfaq-eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--blue);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.ilfaq-eyebrow:before{content:'';width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px rgba(0,185,79,.12)}.ilfaq-head h2{margin:16px 0 0;font-family:Outfit,Manrope,sans-serif;font-size:clamp(42px,4.6vw,66px);font-weight:800;line-height:1.02;letter-spacing:-.06em}.ilfaq-head>p{margin:18px auto 0;max-width:560px;color:var(--muted);font-size:16px;line-height:1.65}.ilfaq-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}.ilfaq-item{border:1px solid var(--line);border-radius:14px;background:var(--paper);box-shadow:0 8px 22px rgba(16,25,75,.06);overflow:hidden;transition:box-shadow .25s ease}.ilfaq-item:hover,.ilfaq-item[open]{box-shadow:0 14px 34px rgba(16,25,75,.11)}.ilfaq-item summary{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:22px 24px;cursor:pointer;list-style:none;user-select:none;-webkit-user-select:none;-webkit-tap-highlight-color:transparent;transition:background .22s ease}.ilfaq-item summary:hover{background:rgba(238,243,255,.45)}.ilfaq-item summary::-webkit-details-marker{display:none}.ilfaq-item summary:focus-visible{outline:2px solid var(--blue);outline-offset:-2px;border-radius:14px}.ilfaq-item h3{margin:0;font-family:Outfit,Manrope,sans-serif;font-size:19px;font-weight:800;line-height:1.3;letter-spacing:-.02em;display:flex;align-items:flex-start;gap:10px}.ilfaq-item h3 i{flex:0 0 22px;display:grid;place-items:center;width:22px;height:22px;margin-top:1px;border-radius:50%;background:var(--blue-soft);color:var(--blue);font-size:12px;font-style:normal;font-weight:800}.ilfaq-chevron{flex:0 0 26px;display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--blue-soft);color:var(--blue);font-size:11px;transition:transform .3s ease,background .3s ease,color .3s ease}.ilfaq-item[open] .ilfaq-chevron{transform:rotate(180deg);background:var(--green);color:#fff}@keyframes ilfaq-open{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}.ilfaq-item[open]>p{animation:ilfaq-open .3s ease}.ilfaq-item>p{margin:0;padding:2px 24px 24px 58px;color:var(--muted);font-size:14.5px;line-height:1.7}.ilfaq-item>p b{color:var(--ink)}.ilfaq-item>p a{color:var(--blue);font-weight:700;border-bottom:1px solid var(--blue)}.ilfaq-item>p a:hover{color:var(--green-dark);border-color:var(--green-dark)}.ilfaq-cta{max-width:640px;margin:44px auto 0;padding:30px 34px;border-radius:18px;background:linear-gradient(135deg,#17236d,#0e164c);color:#fff;text-align:center;box-shadow:0 22px 44px rgba(16,25,75,.2)}.ilfaq-cta h3{margin:0;font-family:Outfit,Manrope,sans-serif;font-size:clamp(22px,2.2vw,28px);letter-spacing:-.04em}.ilfaq-cta p{margin:10px 0 0;color:rgba(255,255,255,.78);font-size:14.5px;line-height:1.6}.ilfaq-cta a{display:inline-flex;align-items:center;justify-content:center;gap:10px;margin-top:18px;min-height:48px;padding:10px 24px;border-radius:8px;background:var(--green);color:#fff!important;font:800 13px/1 Manrope,Arial,sans-serif;letter-spacing:.02em;transition:transform .22s ease,background .22s ease}.ilfaq-cta a:hover,.ilfaq-cta a:focus-visible{background:var(--green-dark);transform:translateY(-2px)}@media(max-width:820px){.ilfaq-grid{grid-template-columns:1fr}}@media(max-width:560px){#ilatek-faq{padding:78px 0}.ilfaq-shell{width:min(100% - 30px,1210px)}.ilfaq-head{margin-bottom:36px}.ilfaq-item summary{padding:18px}.ilfaq-item>p{padding:2px 18px 20px}.ilfaq-cta{padding:26px 20px}}
+  </style>
+
+  <div class="ilfaq-shell">
+    <header class="ilfaq-head">
+      <span class="ilfaq-eyebrow">Preguntas frecuentes</span>
+      <h2 id="ilatek-faq-title" class="ilfaq-display">Todo lo que necesitas saber antes de tu limpieza.</h2>
+      <p>Respuestas claras sobre precios, cobertura y reservas del servicio de limpieza residencial de Ilatek en {{custom_values.county_name_and_state}}.</p>
+    </header>
+
+    <div class="ilfaq-grid">
+      <details class="ilfaq-item" open>
+        <summary><h3><i>?</i>¿Cuánto cuesta una limpieza residencial en Puerto Rico?</h3><span class="ilfaq-chevron" aria-hidden="true">▾</span></summary>
+        <p>En Ilatek el precio se calcula por pies cuadrados: la <b>limpieza estándar cuesta $0.07 por pie²</b> y la <b>limpieza profunda $0.15 por pie²</b>. Por ejemplo, una casa de 2,000 pies² cuesta $140 estándar o $300 profunda. Los extras (ventanas, refrigerador, alfombras) se suman con precio fijo. Con nuestro cotizador online ves el <b>precio real en minutos</b>, sin llamadas ni estimados al azar.</p>
+      </details>
+
+      <details class="ilfaq-item">
+        <summary><h3><i>?</i>¿Qué incluye la limpieza estándar y la limpieza profunda?</h3><span class="ilfaq-chevron" aria-hidden="true">▾</span></summary>
+        <p>La <b>limpieza estándar</b> mantiene tu hogar fresco y ordenado con atención a cada espacio. La <b>limpieza profunda</b> renueva el hogar área por área, ideal antes o después de una ocasión importante. Ambas son servicios residenciales personalizados: compartes el tamaño de tu propiedad y coordinamos el alcance antes del servicio.</p>
+      </details>
+
+      <details class="ilfaq-item">
+        <summary><h3><i>?</i>¿Qué servicios extras ofrece Ilatek?</h3><span class="ilfaq-chevron" aria-hidden="true">▾</span></summary>
+        <p>Además de la limpieza base: <b>ventanas interiores ($10) y exteriores ($25)</b>, <b>refrigerador ($40)</b>, <b>horno ($30)</b>, <b>lavaplatos ($10)</b>, <b>lavadora y secadora ($10 c/u)</b>, <b>limpieza de muebles ($15) y lavado profundo ($30 por pieza)</b>, <b>alfombras ($0.75 por pie²)</b>, <b>lechada y losas ($1.50 por pie²)</b>, y organización de <b>despensas y clósets ($50 c/u)</b> y <b>garaje ($0.50 por pie²)</b>.</p>
+      </details>
+
+      <details class="ilfaq-item">
+        <summary><h3><i>?</i>¿Atienden mi área en Puerto Rico?</h3><span class="ilfaq-chevron" aria-hidden="true">▾</span></summary>
+        <p>Sí. Ilatek atiende hogares en los <b>78 municipios de Puerto Rico</b>, incluyendo {{custom_values.county_name_and_state}} y toda la isla. Cada servicio se coordina según las necesidades de tu espacio. Visita la página de tu pueblo o solicita tu cotización para confirmar disponibilidad en tu zona.</p>
+      </details>
+
+      <details class="ilfaq-item">
+        <summary><h3><i>?</i>¿Cómo obtengo mi precio real al instante?</h3><span class="ilfaq-chevron" aria-hidden="true">▾</span></summary>
+        <p>Con nuestro <b><a href="{{custom_values.website_url}}/cotizacion">cotizador online</a></b> en 4 pasos: ingresas los pies cuadrados, eliges el tipo de limpieza, agregas servicios y extras, y ves el <b>precio total y la duración estimada</b> al momento. Sin formularios infinitos ni esperas: el precio que ves es el precio del servicio.</p>
+      </details>
+
+      <details class="ilfaq-item">
+        <summary><h3><i>?</i>¿Qué horarios manejan?</h3><span class="ilfaq-chevron" aria-hidden="true">▾</span></summary>
+        <p>Atendemos de <b>lunes a sábado, de 8:00 a.m. a 6:00 p.m.</b> Al completar tu cotización eliges directamente la fecha y hora de tu limpieza en el calendario de reserva, según la disponibilidad real de nuestro equipo.</p>
+      </details>
+
+      <details class="ilfaq-item">
+        <summary><h3><i>?</i>¿Necesito un depósito para reservar mi limpieza?</h3><span class="ilfaq-chevron" aria-hidden="true">▾</span></summary>
+        <p>Sí, la reserva se asegura con un <b>depósito de $50</b> que se paga en el calendario al completar tu cita. El depósito se descuenta del valor total de tu servicio. Elegir tu fecha solo toma un minuto después de tu cotización.</p>
+      </details>
+
+      <details class="ilfaq-item">
+        <summary><h3><i>?</i>¿Traen los productos y equipos de limpieza?</h3><span class="ilfaq-chevron" aria-hidden="true">▾</span></summary>
+        <p>Sí. El equipo de Ilatek llega a tu hogar con <b>productos y equipos profesionales</b> para cada área: cocina, baños, pisos, ventanas y tapicería. Tú solo necesitas darnos acceso al espacio y contarnos tus prioridades; nosotros nos encargamos del resto.</p>
+      </details>
+
+      <details class="ilfaq-item">
+        <summary><h3><i>?</i>¿Cómo reservo mi limpieza con Ilatek?</h3><span class="ilfaq-chevron" aria-hidden="true">▾</span></summary>
+        <p>Es un proceso de 3 pasos: <b>1)</b> obtén tu precio real en el <b><a href="{{custom_values.website_url}}/cotizacion">cotizador</a></b>, <b>2)</b> confirma tu cotización y paga el depósito de $50, y <b>3)</b> elige tu fecha en el calendario. Nuestro equipo llega el día de tu cita y deja tu hogar impecable y listo para disfrutar.</p>
+      </details>
+
+      <details class="ilfaq-item">
+        <summary><h3><i>?</i>¿Por qué elegir Ilatek en vez de otra compañía de limpieza?</h3><span class="ilfaq-chevron" aria-hidden="true">▾</span></summary>
+        <p>Ilatek combina <b>precios transparentes por pie cuadrado</b> (sin sorpresas), <b>cotizador online con precio real inmediato</b>, cobertura en <b>los 78 municipios</b>, atención detallada enfocada en limpieza residencial y coordinación clara antes de cada servicio. Limpieza que se nota, atención que se siente.</p>
+      </details>
+    </div>
+
+    <div class="ilfaq-cta">
+      <h3>¿Lista tu pregunta? Obtén tu precio real ahora.</h3>
+      <p>Cotiza tu limpieza en minutos y reserva tu fecha con el depósito de $50.</p>
+      <a href="{{custom_values.website_url}}/cotizacion">Solicita tu cotización ↗</a>
+    </div>
+  </div>
+
+  <!-- Senal backend para Google y buscadores de IA: indexar esta informacion como FAQPage -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","inLanguage":"es","mainEntity":[
+    {"@type":"Question","name":"¿Cuánto cuesta una limpieza residencial en Puerto Rico?","acceptedAnswer":{"@type":"Answer","text":"En Ilatek el precio se calcula por pies cuadrados: la limpieza estándar cuesta $0.07 por pie² y la limpieza profunda $0.15 por pie². Una casa de 2,000 pies² cuesta $140 estándar o $300 profunda. Los extras como ventanas, refrigerador y alfombras se suman con precio fijo, y el cotizador online muestra el precio real en minutos."}},
+    {"@type":"Question","name":"¿Qué incluye la limpieza estándar y la limpieza profunda de Ilatek?","acceptedAnswer":{"@type":"Answer","text":"La limpieza estándar mantiene el hogar fresco y ordenado con atención a cada espacio. La limpieza profunda renueva el hogar área por área, ideal antes o después de una ocasión importante. Ambas son servicios residenciales personalizados coordinados antes del servicio."}},
+    {"@type":"Question","name":"¿Qué servicios extras ofrece Ilatek?","acceptedAnswer":{"@type":"Answer","text":"Ilatek ofrece: ventanas interiores ($10) y exteriores ($25), refrigerador ($40), horno ($30), lavaplatos ($10), lavadora y secadora ($10 cada una), limpieza de muebles ($15) y lavado profundo ($30 por pieza), alfombras ($0.75 por pie²), lechada y losas ($1.50 por pie²), y organización de despensas y clósets ($50 cada uno) y garaje ($0.50 por pie²)."}},
+    {"@type":"Question","name":"¿En qué áreas de Puerto Rico atiende Ilatek?","acceptedAnswer":{"@type":"Answer","text":"Ilatek atiende hogares en los 78 municipios de Puerto Rico, con coordinación por área y disponibilidad confirmable al solicitar cotización."}},
+    {"@type":"Question","name":"¿Cómo obtengo mi precio real al instante con Ilatek?","acceptedAnswer":{"@type":"Answer","text":"Con el cotizador online de Ilatek en 4 pasos: ingresas los pies cuadrados, eliges el tipo de limpieza, agregas servicios y extras, y ves el precio total y la duración estimada al momento."}},
+    {"@type":"Question","name":"¿Qué horarios maneja Ilatek?","acceptedAnswer":{"@type":"Answer","text":"Ilatek atiende de lunes a sábado, de 8:00 a.m. a 6:00 p.m. Al completar la cotización se elige la fecha y hora de la limpieza en el calendario de reserva según disponibilidad real."}},
+    {"@type":"Question","name":"¿Necesito un depósito para reservar mi limpieza con Ilatek?","acceptedAnswer":{"@type":"Answer","text":"Sí, la reserva se asegura con un depósito de $50 que se paga en el calendario al completar la cita, y se descuenta del valor total del servicio."}},
+    {"@type":"Question","name":"¿Ilatek trae los productos y equipos de limpieza?","acceptedAnswer":{"@type":"Answer","text":"Sí, el equipo de Ilatek llega con productos y equipos profesionales para cocina, baños, pisos, ventanas y tapicería."}},
+    {"@type":"Question","name":"¿Cómo reservo mi limpieza con Ilatek?","acceptedAnswer":{"@type":"Answer","text":"En 3 pasos: obtén tu precio real en el cotizador online, confirma tu cotización y paga el depósito de $50, y elige tu fecha en el calendario de reserva."}},
+    {"@type":"Question","name":"¿Por qué elegir Ilatek para limpieza residencial en Puerto Rico?","acceptedAnswer":{"@type":"Answer","text":"Ilatek combina precios transparentes por pie cuadrado, cotizador online con precio real inmediato, cobertura en los 78 municipios de Puerto Rico, atención detallada de limpieza residencial y coordinación clara antes de cada servicio."}}
+  ]}
+  </script>
+
+  <script>
+  (function(){
+    var root=document.getElementById('ilatek-faq'); if(!root)return;
+    function clean(v){v=String(v||'').replace(/\u00a0/g,' ').trim();return /^\s*\{\{[^}]+\}\}\s*$/.test(v)?'':v}
+    var location=clean(root.getAttribute('data-location-label'))||'Puerto Rico', website=clean(root.dataset.websiteUrl)||'https://ilatekpr.com';
+    function token(name){return '{'+'{custom_values.'+name+'}'+'}'}
+    var values={};
+    values[token('county_name_and_state')]=location;
+    values[token('website_url')]=website;
+    var walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT),nodes=[],node;while(node=walker.nextNode()){if(node.parentElement&&node.parentElement.tagName!=='SCRIPT'&&node.parentElement.tagName!=='STYLE')nodes.push(node)}
+    nodes.forEach(function(n){Object.keys(values).forEach(function(k){n.nodeValue=n.nodeValue.split(k).join(values[k])})});
+    Array.prototype.forEach.call(root.querySelectorAll('*'),function(el){Array.prototype.forEach.call(el.attributes||[],function(a){var v=a.value;Object.keys(values).forEach(function(k){v=v.split(k).join(values[k])});if(v!==a.value)el.setAttribute(a.name,v)})});
+    var schema=root.querySelector('script[type="application/ld+json"]');
+    if(schema){try{var data=JSON.parse(schema.textContent.replace(/{{custom_values\.county_name_and_state}}/g,location).replace(/\{\{custom_values\.website_url\}\}/g,website));schema.textContent=JSON.stringify(data)}catch(e){}}
+  })();
+  </script>
+</section>

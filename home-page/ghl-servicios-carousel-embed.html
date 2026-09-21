@@ -1,0 +1,119 @@
+<!--
+  ILATEK · GHL Custom HTML · Seccion "Servicios" · Carrusel horizontal infinito
+  Lista basada en los 10 servicios mas solicitados para companias de limpieza en Puerto Rico.
+  Diseno: glassmorphism + gradiente azul->azul profundo + botones verde accent.
+  Como agregar tus imagenes: busca el bloque "PEGA AQUI TUS IMAGENES" en el script.
+  Cada imagen lleva alt y title SEO con custom values. No recolecta datos.
+-->
+<section id="ilatek-servicios-slider" aria-labelledby="ilatek-servicios-title"
+  data-location-label="{{custom_values.county_name_and_state}}"
+  data-website-url="{{custom_values.website_url}}">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap');
+    #ilatek-servicios-slider{--ink:#11164b;--blue:#213d8e;--green:#00b94f;--green-dark:#009640;width:100vw;max-width:none;margin-inline:calc(50% - 50vw);overflow:hidden;background:linear-gradient(165deg,#213d8e 0%,#11164b 55%,#0b103d 100%);color:#fff;font-family:Manrope,Arial,sans-serif;isolation:isolate;padding:118px 0 122px}#ilatek-servicios-slider *{box-sizing:border-box}#ilatek-servicios-slider a{color:inherit;text-decoration:none}.ils-head{width:min(100% - 40px,1210px);margin:0 auto 46px;text-align:center}.ils-eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--green);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.ils-eyebrow:before{content:'';width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px rgba(0,185,79,.18)}.ils-head h2{margin:16px 0 0;font-family:Outfit,Manrope,sans-serif;font-size:clamp(42px,4.6vw,66px);font-weight:800;line-height:1.02;letter-spacing:-.06em;text-wrap:balance}.ils-head h2 em{font-style:normal;color:var(--green)}.ils-head>p{margin:18px auto 0;max-width:640px;color:rgba(255,255,255,.78);font-size:16px;line-height:1.65}
+    /* Carrusel: contenedor de scroll horizontal TRANSPARENTE (el gradiente se ve a traves) */
+    .ils-carousel{position:relative;width:100%;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);background:transparent}    .ils-track{display:flex;gap:0;width:max-content;padding:8px 12px 20px;animation:ils-marquee 52s linear infinite;will-change:transform}
+    .ils-card:focus-visible{outline:3px solid #fff;outline-offset:3px}
+    .ilfaq-cta{max-width:640px;margin:44px auto 0;padding:30px 34px;border-radius:18px;background:linear-gradient(135deg,#11164b,#0b103d);color:#fff;text-align:center;box-shadow:0 22px 44px rgba(11,16,61,.4)}
+    .ilfaq-cta h3{margin:0;font-family:Outfit,Manrope,sans-serif;font-size:clamp(24px,2.6vw,34px);font-weight:800;letter-spacing:-.04em}
+    .ilfaq-cta p{margin:12px auto 0;max-width:520px;color:rgba(255,255,255,.78);font-size:15px;line-height:1.6}
+    .ilfaq-cta a{display:inline-flex;align-items:center;gap:8px;margin-top:22px;min-height:52px;padding:14px 30px;border-radius:8px;background:var(--green,#00b94f);color:#fff!important;font:800 14px/1 Manrope,Arial,sans-serif;letter-spacing:.02em;box-shadow:0 14px 30px rgba(0,185,79,.35);transition:background .22s ease,transform .22s ease,box-shadow .22s ease}
+    .ilfaq-cta a:hover,.ilfaq-cta a:focus-visible{background:var(--green-dark,#009640);transform:translateY(-2px);box-shadow:0 18px 36px rgba(0,185,79,.45)}.ils-carousel:hover .ils-track,.ils-carousel:focus-within .ils-track{animation-play-state:paused}@keyframes ils-marquee{to{transform:translateX(-50%)}}
+    /* Scroll horizontal TRANSPARENTE: el carrusel se desliza sin barra visible */
+    .ils-carousel{scrollbar-width:none;-ms-overflow-style:none}.ils-carousel::-webkit-scrollbar{display:none}.ils-carousel::-webkit-scrollbar-track{background:transparent}.ils-carousel::-webkit-scrollbar-thumb{background:transparent}
+    /* Tarjetas glassmorphism */
+    .ils-card{display:flex;flex-direction:column;width:330px;border:1px solid rgba(255,255,255,.22);border-radius:22px;background:linear-gradient(150deg,rgba(255,255,255,.17),rgba(255,255,255,.07) 45%,rgba(255,255,255,.04));-webkit-backdrop-filter:blur(22px) saturate(150%);backdrop-filter:blur(22px) saturate(150%);box-shadow:0 18px 44px rgba(11,16,61,.35),inset 0 1px 0 rgba(255,255,255,.25);color:#fff;overflow:hidden;transition:transform .45s cubic-bezier(.4,0,.2,1),box-shadow .45s cubic-bezier(.4,0,.2,1),background .45s cubic-bezier(.4,0,.2,1)}.ils-card:hover{transform:translateY(-6px);background:linear-gradient(150deg,rgba(255,255,255,.22),rgba(255,255,255,.1) 45%,rgba(255,255,255,.06));box-shadow:0 26px 56px rgba(11,16,61,.45),inset 0 1px 0 rgba(255,255,255,.3)}.ils-track .ils-card{margin-right:22px}.ils-media{position:relative;height:210px;overflow:hidden;background:rgba(255,255,255,.06)}.ils-media img{display:block;width:100%;height:100%;object-fit:cover;transform:scale(1);transform-origin:center;backface-visibility:hidden;transition:transform .8s cubic-bezier(.4,0,.2,1),filter .8s cubic-bezier(.4,0,.2,1);will-change:transform}.ils-card:hover .ils-media img,.ils-card:focus-within .ils-media img{transform:scale(1.06);filter:brightness(1.04) saturate(1.08)}.ils-media:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,16,61,0) 58%,rgba(11,16,61,.45))}
+    .ils-media span{position:absolute;z-index:1;left:14px;top:12px;padding:7px 13px;border-radius:99px;background:rgba(11,16,61,.42);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.28);color:#fff;font-size:10.5px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;text-shadow:0 1px 6px rgba(11,16,61,.5)}
+    .ils-body{display:flex;flex-direction:column;flex:1;padding:20px 22px 22px}.ils-body h3{margin:0;font-family:Outfit,Manrope,sans-serif;font-size:20px;font-weight:800;letter-spacing:-.03em;line-height:1.25}.ils-body p{flex:1;margin:9px 0 16px;color:rgba(255,255,255,.78);font-size:13.5px;line-height:1.62}
+    .ils-hint{margin:26px auto 0;width:min(100% - 40px,1210px);text-align:center;color:rgba(255,255,255,.55);font-size:12.5px}
+    /* Auto-slide infinito en TODOS los dispositivos: el marquee corre incluso con prefers-reduced-motion */
+    @media(max-width:560px){#ilatek-servicios-slider{padding:78px 0 84px}.ils-head{width:min(100% - 30px,1210px);margin-bottom:34px}.ils-track{gap:16px}.ils-card{width:282px}.ils-media{height:180px}.ils-hint{width:min(100% - 30px,1210px)}}
+  </style>
+
+  <header class="ils-head">
+    <span class="ils-eyebrow">Servicios</span>
+    <h2 id="ilatek-servicios-title">Los servicios que tu hogar necesita, <em>todos con precio claro</em>.</h2>
+    <p>Los 10 servicios de limpieza más solicitados en {{custom_values.county_name_and_state}}, disponibles en los 78 municipios de Puerto Rico. Cotiza el tuyo en minutos.</p>
+  </header>
+
+  <div class="ils-carousel" aria-label="Carrusel de servicios de limpieza de Ilatek">
+    <div class="ils-track" id="ils-track"><!-- slides generados por script --></div>
+  </div>
+  <p class="ils-hint">Desliza o pasa el cursor para explorar todos los servicios</p>
+
+  <div class="ilfaq-cta il-reveal">
+    <h3>¿Lista tu pregunta? Obtén tu precio real ahora.</h3>
+    <p>Cotiza tu limpieza en minutos y reserva tu fecha con el depósito de $50.</p>
+    <a href="{{custom_values.website_url}}/cotizacion">Solicita tu cotización ↗</a>
+  </div>
+
+  <script>
+  (function(){
+    var root=document.getElementById('ilatek-servicios-slider'); if(!root||root.dataset.ready)return; root.dataset.ready='true';
+
+    /* ============================================================
+       1. PEGA AQUI TUS IMAGENES (reemplaza la propiedad img de cada servicio)
+       ============================================================ */
+    /* Imagenes reales de cada servicio (CDN de GHL: filesafe) */
+    var IMG_REGULAR='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab171ac825a8484f2dc1a14.jpg';
+    var IMG_PROFUNDA='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab171ac30b0f957ccc64f69.jpg';
+    var IMG_MUDANZA='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab171aac3c92dff4d1c4928.jpg';
+    var IMG_AIRBNB='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab171a930b0f957ccc64f11.jpg';
+    var IMG_POSTCONSTRUCCION='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab171a7de8ed1c29fac079f.jpg';
+    var IMG_VENTANAS='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab171a75de46047f1177c09.jpg';
+    var IMG_PRESION='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab1756e966c1acf6d443f69.jpeg';
+    var IMG_ALFOMBRAS='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab171a75594d681a92aa4d7.jpg';
+    var IMG_ELECTRODOMESTICOS='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab171a7de8ed1c29fac07a0.jpg';
+    var IMG_ORGANIZACION='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab171a730b0f957ccc64ee1.jpg';
+    /* Los 10 servicios mas solicitados para companias de limpieza en Puerto Rico.
+       altSeo: texto ALT dedicado por servicio, con la palabra clave Puerto Rico para SEO. */
+    var SERVICES=[
+      {img:IMG_REGULAR,kicker:'Limpieza regular',title:'Tu hogar siempre fresco',desc:'El servicio más solicitado: limpieza recurrente semanal, quincenal o mensual a $0.07 por pie².',slug:'limpieza-estandar',altSeo:'Servicio de limpieza regular en Puerto Rico por Ilatek: limpieza recurrente semanal, quincenal o mensual del hogar a domicilio.'},
+      {img:IMG_PROFUNDA,kicker:'Limpieza profunda',title:'Renueva cada rincón',desc:'Limpieza a fondo área por área a $0.15 por pie²: ideal para una renovación completa del hogar.',slug:'limpieza-profunda',altSeo:'Limpieza profunda de casa en Puerto Rico por Ilatek: limpieza a fondo habitación por habitación y renovación completa del hogar.'},
+      {img:IMG_MUDANZA,kicker:'Mudanza',title:'Mudanza sin estrés',desc:'Move-in / move-out: entrega o recibe tu espacio impecable, listo para el siguiente capítulo.',slug:'limpieza-de-mudanza',altSeo:'Limpieza de mudanza move in move out en Puerto Rico por Ilatek: hogar o apartamento impecable antes o después de mudarte.'},
+      {img:IMG_AIRBNB,kicker:'Airbnb & rentals',title:'Reseñas de 5 estrellas',desc:'Turnover profesional para rentals a corto plazo: limpieza rápida y detallada entre huéspedes.',slug:'airbnb-turnover',altSeo:'Limpieza para Airbnb y co-host de rentals a corto plazo en Puerto Rico por Ilatek: turnover profesional entre huéspedes con reseñas de 5 estrellas.'},
+      {img:IMG_POSTCONSTRUCCION,kicker:'Post-construcción',title:'Del polvo al brillo',desc:'Eliminamos residuos de obra, polvo fino y escombros para estrenar tu espacio como nuevo.',slug:'post-construccion',altSeo:'Limpieza post construccion en Puerto Rico por Ilatek: eliminación de polvo de obra, residuos y escombros para estrenar tu espacio.'},
+      {img:IMG_VENTANAS,kicker:'Ventanas',title:'Más luz en tu hogar',desc:'Ventanas interiores ($10) y exteriores ($25): cristales impecables y una vista perfecta.',slug:'ventanas',altSeo:'Limpieza de ventanas y cristales en Puerto Rico por Ilatek: ventanas interiores y exteriores impecables con más luz para tu hogar.'},
+      {img:IMG_PRESION,kicker:'Lavado a presión',title:'Exteriores como nuevos',desc:'Fachadas, terrazas, verjas y aceras: el poder del agua a presión para eliminar años de suciedad.',slug:'lavado-a-presion',altSeo:'Lavado a presión en Puerto Rico por Ilatek: limpieza de fachadas, terrazas, verjas, aceras y exteriores con agua a alta presión.'},
+      {img:IMG_ALFOMBRAS,kicker:'Alfombras',title:'Frescor bajo tus pies',desc:'Lavado de alfombras a $0.75 por pie²: elimina manchas, olores y alérgenos acumulados.',slug:'alfombras',altSeo:'Lavado de alfombras y tapetes en Puerto Rico por Ilatek: eliminación de manchas, olores y alérgenos a $0.75 por pie cuadrado.'},
+      {img:IMG_ELECTRODOMESTICOS,kicker:'Electrodomésticos',title:'Cocina como nueva',desc:'Refrigerador ($40), horno ($30), lavaplatos ($10) y lavadora/secadora ($10), por dentro y por fuera.',slug:'electrodomesticos',altSeo:'Limpieza de electrodomesticos en Puerto Rico por Ilatek: refrigerador, horno, lavaplatos, lavadora y secadora limpios por dentro y por fuera.'},
+      {img:IMG_ORGANIZACION,kicker:'Organización',title:'Orden que permanece',desc:'Despensas y clósets ($50 c/u) y garaje ($0.50 por pie²): orden funcional que te devuelve tiempo.',slug:'organizacion',altSeo:'Organización del hogar en Puerto Rico por Ilatek: organización profesional de despensas, clósets y garaje en casa.'}
+    ];
+    /* ============================================================ */
+
+    var website=(root.getAttribute('data-website-url')||'').replace(/\u00a0/g,' ').trim();
+    if(/^\s*\{\{[^}]+\}\}\s*$/.test(website)||!website)website='https://ilatekpr.com';
+    var county=(root.getAttribute('data-location-label')||'').replace(/\u00a0/g,' ').trim();
+    if(/^\s*\{\{[^}]+\}\}\s*$/.test(county)||!county)county='Puerto Rico';
+    function token(name){return '{'+'{custom_values.'+name+'}'+'}'}
+
+    var track=document.getElementById('ils-track');
+    var html='';
+    for(var pass=0;pass<2;pass++){ // duplicamos la lista para el bucle infinito continuo
+      SERVICES.forEach(function(s){
+        var alt=(s.altSeo?s.altSeo+' ':'')+'Ilatek — limpieza residencial profesional en '+county+'.', title=s.kicker+' — Ilatek Puerto Rico';
+        /* Tarjeta completa clikeable: enlace al sitio con slug del servicio ({{website_url}}/nombre-del-servicio) */
+        var url=website.replace(/\/+$/,'')+'/'+s.slug;
+        html+='<a class="ils-card" href="'+url+'" aria-label="'+s.title+' — '+s.kicker+' de Ilatek">'
+          +'<div class="ils-media"><span>'+s.kicker+'</span><img src="'+s.img+'" alt="'+alt+'" title="'+title+'" loading="lazy" decoding="async"></div>'
+          +'<div class="ils-body"><h3>'+s.title+'</h3><p>'+s.desc+'</p></div>'
+          +'</a>';
+      });
+    }
+    track.innerHTML=html;
+
+    // Resuelve tokens de GHL restantes (respaldo por si el reemplazo nativo no ocurre)
+    var values={};values[token('county_name_and_state')]=county;values[token('website_url')]=website;
+    var walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT),nodes=[],node;
+    while(node=walker.nextNode()){if(node.parentElement&&node.parentElement.tagName!=='SCRIPT'&&node.parentElement.tagName!=='STYLE')nodes.push(node)}
+    nodes.forEach(function(n){Object.keys(values).forEach(function(k){n.nodeValue=n.nodeValue.split(k).join(values[k])})});
+    Array.prototype.forEach.call(root.querySelectorAll('*'),function(el){
+      Array.prototype.forEach.call(el.attributes||[],function(a){
+        var v=a.value;Object.keys(values).forEach(function(k){v=v.split(k).join(values[k])});
+        if(v!==a.value)el.setAttribute(a.name,v);
+      });
+    });
+  })();
+  </script>
+</section>

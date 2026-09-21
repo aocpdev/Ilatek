@@ -18,6 +18,16 @@ Para personalizar el calendario, pega el contenido completo de `ilatek-calendar-
 
 Todos los botones y enlaces de cotización (nav, hero, servicio, CTA y footer) apuntan fijos a `https://ilatekpr.com/cotizacion`.
 
+`home-page/ghl-home-completo.html` es la versión todo-en-uno de la home. Orden de secciones: hero (con botón "Conoce el servicio" que hace smooth scroll al carrusel), categorías en carrusel 3D infinito (la tarjeta frontal siempre grande al centro; las otras 2 giradas y hundidas en perspectiva; rota cada 4.2s en todos los dispositivos, se pausa al hover/focus, clic o Enter en una tarjeta lateral la trae al frente; zoom de imagen moderno igual al del carrusel de servicios; badges glassmorphism), proceso, carrusel de los 10 servicios más solicitados (auto-slide infinito en todos los dispositivos, se pausa con hover; cada tarjeta es un enlace completo a `{{website_url}}/nombre-del-servicio` usando el slug de cada servicio), conócenos, directorio de los 78 municipios (con padding simétrico arriba/abajo: 112px escritorio, 84px ≤900px, 64px ≤560px), servicio principal (Limpieza Profunda), beneficios, reseñas, cobertura, sección de Preguntas Frecuentes desplegable (acordeón nativo `details/summary`) con schema `FAQPage` para SEO/AI y CTA final. Es el archivo listo para copiar y pegar completo en el Custom Code de la home.
+
+Todas las menciones de ubicación usan el custom value `{{custom_values.county_name_and_state}}` (también en `alt`/`title` de imágenes y en las tarjetas del carrusel, que lo resuelven a nivel runtime); nunca se hardcodea un pueblo. Las imágenes del carrusel se cambian en el bloque `PEGA AQUI TUS IMAGENES` de su script.
+
+Las secciones también están como embeds independientes en `home-page/`: `ghl-cobertura-embed.html` (directorio de municipios) y `ghl-faq-embed.html` (FAQ), por si se pegan por separado en GHL.
+
+## Política de Privacidad
+
+`politica-de-privacidad/ILATEK-Politica-Privacidad.html` es la página completa y `politica-de-privacidad/ghl-politica-embed.html` es la versión lista para pegar en un elemento **Custom Code** de GHL. Usa los mismos tokens `{{custom_values.*}}` (sitio web, correo y teléfono de contacto) y acordeones nativos, igual que los Términos y Condiciones. Sustituye las fechas de entrada en vigor y de última actualización del encabezado cuando corresponda.
+
 ## Archivos
 
 - `home-page/ghl-custom-code.html`: landing de inicio para GHL Custom Code; botones de cotización hacia https://ilatekpr.com/cotizacion.
@@ -27,6 +37,10 @@ Todos los botones y enlaces de cotización (nav, hero, servicio, CTA y footer) a
 - `ilatek-calendar-ghl.css`: estilos CSS de referencia; requiere etiquetas `<style>` para el campo Insert custom code.
 - `assets/latina-cleaner.png`: imagen utilizada, sin tatuaje.
 - `assets/latina-cleaner-tattoo.png`: variante anterior de la imagen, actualmente no utilizada.
+- `terminos-y-condiciones/ILATEK-Terminos-Condiciones.html`: página completa de Términos y Condiciones.
+- `terminos-y-condiciones/ghl-terminos-embed.html`: versión de Términos para pegar en Custom Code en GHL.
+- `politica-de-privacidad/ILATEK-Politica-Privacidad.html`: página completa de Política de Privacidad (basada en la plantilla de Términos).
+- `politica-de-privacidad/ghl-politica-embed.html`: versión de Política de Privacidad para pegar en Custom Code en GHL.
 
 ## Calendario y depósito
 
