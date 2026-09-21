@@ -1,0 +1,132 @@
+<!--
+  ILATEK · GHL Custom HTML · Seccion "Conocenos" (tabs: Fundadores / ADN / Proposito)
+  Renderiza contenido de marca y enlaces a los Facebook de los fundadores.
+  No somete formularios, no recolecta datos ni hace requests de fondo.
+-->
+<section id="ilatek-conocenos" aria-labelledby="ilatek-conocenos-title"
+  data-location-label="{{custom_values.county_name_and_state}}"
+  data-website-url="{{custom_values.website_url}}"
+  data-business-email="{{custom_values.business__email}}"
+  data-business-phone="{{custom_values.business__phone}}"
+  data-facebook-url="{{custom_values.facebook_url}}"
+  data-instagram-url="{{custom_values.instagram_url}}">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap');
+    #ilatek-conocenos{--ink:#11164b;--ink-deep:#0b103d;--blue:#213d8e;--blue-soft:#eef3ff;--green:#00b94f;--green-dark:#009640;--paper:#fff;--mist:#f4f7fc;--line:#dbe2f1;--muted:#5b6380;width:100vw;max-width:none;margin-inline:calc(50% - 50vw);overflow:hidden;background:var(--paper);color:var(--ink);font-family:Manrope,Arial,sans-serif;isolation:isolate;padding:118px 0}#ilatek-conocenos *{box-sizing:border-box}#ilatek-conocenos [hidden]{display:none!important}#ilatek-conocenos a{color:inherit;text-decoration:none}.ilcn-shell{width:min(100% - 40px,1210px);margin:auto}.ilcn-head{max-width:720px;margin:0 auto 46px;text-align:center}.ilcn-eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--blue);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.ilcn-eyebrow:before{content:'';width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px rgba(0,185,79,.12)}.ilcn-head h2{margin:16px 0 0;font-family:Outfit,Manrope,sans-serif;font-size:clamp(42px,4.6vw,66px);font-weight:800;line-height:1.02;letter-spacing:-.06em}.ilcn-head>p{margin:18px auto 0;max-width:600px;color:var(--muted);font-size:16px;line-height:1.65}.ilcn-tabs{display:flex;gap:7px;width:max-content;max-width:100%;margin:0 auto 26px;padding:5px;border:1px solid var(--line);border-radius:12px;background:var(--mist);overflow-x:auto}.ilcn-tab{min-height:44px;padding:10px 18px;border:0;border-radius:8px;background:transparent;color:rgba(17,22,75,.62);font:700 13.5px/1 Manrope,Arial,sans-serif;cursor:pointer;white-space:nowrap;transition:background .25s,color .25s}.ilcn-tab:hover,.ilcn-tab:focus-visible{color:var(--ink)}.ilcn-tab[aria-selected=true]{background:var(--ink);color:#fff}.ilcn-panel[hidden]{display:none}.ilcn-panel{animation:ilcn-in .3s ease both}@keyframes ilcn-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+    /* Fundadores */
+    .ilcn-founders{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:30px}.ilcn-founder{position:relative;border:1px solid var(--line);border-radius:20px;background:var(--mist);overflow:hidden;transition:transform .25s ease,box-shadow .25s ease}.ilcn-founder:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(16,25,75,.14)}.ilcn-founder a{display:block;padding:20px;text-align:center}.ilcn-founder img{display:block;width:100%;max-width:260px;height:auto;aspect-ratio:1/1;object-fit:contain;margin:0 auto;background:var(--blue-soft);border-radius:16px}.ilcn-founder figcaption{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 2px 2px;background:transparent;border-top:0}.ilcn-founder b{display:block;font-family:Outfit,Manrope,sans-serif;font-size:20px;letter-spacing:-.03em}.ilcn-founder small{display:block;margin-top:3px;color:var(--muted);font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}.ilcn-founder i{flex:0 0 34px;display:grid;place-items:center;width:34px;height:34px;border-radius:9px;background:var(--blue-soft);color:var(--blue);font-size:16px;font-style:normal;transition:background .25s,color .25s}.ilcn-founder a:hover i{background:var(--green);color:#fff}.ilcn-message{padding:36px 40px;border-radius:20px;background:linear-gradient(135deg,#17236d,#0e164c);color:#fff;text-align:center;box-shadow:0 22px 44px rgba(16,25,75,.2)}.ilcn-message h3{margin:0;font-family:Outfit,Manrope,sans-serif;font-size:clamp(24px,2.4vw,32px);letter-spacing:-.04em}.ilcn-message h3 em{font-style:normal;color:var(--green)}.ilcn-message p{max-width:760px;margin:16px auto 0;color:rgba(255,255,255,.82);font-size:15.5px;line-height:1.75}.ilcn-message strong{color:#fff}
+    /* Paneles de texto largos */
+    .ilcn-article{max-width:860px;margin:0 auto;padding:40px 44px;border:1px solid var(--line);border-radius:20px;background:var(--paper);box-shadow:0 10px 26px rgba(16,25,75,.07)}.ilcn-article h3{margin:34px 0 12px;font-family:Outfit,Manrope,sans-serif;font-size:21px;letter-spacing:-.03em;color:var(--ink-deep)}.ilcn-article h3:first-child{margin-top:0}.ilcn-article p{margin:0 0 16px;color:var(--muted);font-size:15.5px;line-height:1.8}.ilcn-article p b,.ilcn-article p strong{color:var(--ink)}.ilcn-quote{margin:26px 0;padding:22px 26px;border-left:4px solid var(--green);border-radius:12px;background:var(--blue-soft);font-family:Outfit,Manrope,sans-serif;font-size:clamp(19px,2vw,24px);font-weight:700;line-height:1.4;letter-spacing:-.03em;color:var(--ink-deep)}.ilcn-quote em{font-style:normal;color:var(--green-dark)}
+    @media(max-width:820px){.ilcn-founders{grid-template-columns:1fr}.ilcn-article{padding:30px 24px}}@media(max-width:560px){#ilatek-conocenos{padding:78px 0}.ilcn-shell{width:min(100% - 30px,1210px)}.ilcn-head{margin-bottom:32px}.ilcn-tabs{justify-content:flex-start;margin-inline:0}.ilcn-tab{flex:1;padding-inline:12px}.ilcn-message{padding:28px 20px}}
+  </style>
+
+  <div class="ilcn-shell">
+    <header class="ilcn-head">
+      <span class="ilcn-eyebrow">Conócenos</span>
+      <h2 id="ilatek-conocenos-title">Más que una empresa: una razón para servir.</h2>
+      <p>Conoce quiénes somos, en qué creemos y el propósito que guía cada servicio de Ilatek en {{custom_values.county_name_and_state}}.</p>
+    </header>
+
+    <div class="ilcn-tabs" role="tablist" aria-label="Secciones de Conócenos">
+      <button class="ilcn-tab" type="button" role="tab" id="ilcn-tab-founders" aria-controls="ilcn-panel-founders" aria-selected="true">Conoce a los Fundadores</button>
+      <button class="ilcn-tab" type="button" role="tab" id="ilcn-tab-adn" aria-controls="ilcn-panel-adn" aria-selected="false" tabindex="-1">El ADN de Ilatek</button>
+      <button class="ilcn-tab" type="button" role="tab" id="ilcn-tab-proposito" aria-controls="ilcn-panel-proposito" aria-selected="false" tabindex="-1">Propósito</button>
+    </div>
+
+    <!-- TAB 1: Fundadores -->
+    <div class="ilcn-panel" id="ilcn-panel-founders" role="tabpanel" aria-labelledby="ilcn-tab-founders">
+      <div class="ilcn-founders">
+        <figure class="ilcn-founder">
+          <a href="https://www.facebook.com/luis.cardec" target="_blank" rel="noopener" aria-label="Facebook de Luis A. Cardec, fundador de Ilatek">
+            <img src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab0a9feff484614db6e6ce7.png" alt="Luis A. Cardec, fundador de Ilatek — empresa de limpieza en {{custom_values.county_name_and_state}}, Puerto Rico" title="Luis A. Cardec · Fundador de Ilatek" width="512" height="512" loading="lazy" decoding="async">
+            <figcaption><span><b>Luis A. Cardec</b><small>Fundador</small></span><i>↗</i></figcaption>
+          </a>
+        </figure>
+        <figure class="ilcn-founder">
+          <a href="https://www.facebook.com/aida.cintronfernandez.1" target="_blank" rel="noopener" aria-label="Facebook de Aida Cintron, cofundadora de Ilatek">
+            <img src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab0aa1430b0f957ccb1b27d.png" alt="Aida Cintron, cofundadora de Ilatek — limpieza residencial en {{custom_values.county_name_and_state}}, Puerto Rico" title="Aida Cintron · Cofundadora de Ilatek" width="512" height="512" loading="lazy" decoding="async">
+            <figcaption><span><b>Aida Cintron</b><small>Cofundadora</small></span><i>↗</i></figcaption>
+          </a>
+        </figure>
+      </div>
+      <div class="ilcn-message">
+        <h3>Cuando cuidamos un espacio, <em>cuidamos una vida</em>.</h3>
+        <p>Luis A. Cardec y Aida Cintron fundaron Ilatek con una convicción sencilla y poderosa: detrás de cada puerta hay una historia que merece ser protegida. Un hogar guarda familia y recuerdos; una propiedad representa años de esfuerzo; un negocio sostiene sueños. Por eso Ilatek no nació para "limpiar espacios", sino para <strong>devolver tranquilidad</strong>: servir a cada cliente con el mismo respeto y compromiso con el que cuidarían lo propio. Cada servicio es una promesa — dejar cada espacio mejor de como lo encontraron y a cada persona más tranquila después de confiar en ellos. Porque cuando servimos con propósito, no solo transformamos propiedades: <strong>transformamos vidas</strong>.</p>
+      </div>
+    </div>
+
+    <!-- TAB 2: El ADN de Ilatek -->
+    <div class="ilcn-panel" id="ilcn-panel-adn" role="tabpanel" aria-labelledby="ilcn-tab-adn" hidden>
+      <article class="ilcn-article">
+        <h3>El ADN de ILATEK Property Solutions</h3>
+        <p><strong>Nuestra creencia fundamental:</strong> cada espacio refleja una parte de la vida de quienes lo habitan. Un hogar protege una familia. Un negocio sostiene sueños. Una propiedad representa años de esfuerzo, recuerdos y esperanza.</p>
+        <p>Por eso, cuando una persona nos entrega las llaves de su hogar, de su negocio o de su propiedad, no solo nos está contratando para realizar un servicio. <strong>Nos está confiando una parte de su vida.</strong></p>
+        <p>Esa confianza es un privilegio y una responsabilidad que honramos en cada decisión, en cada detalle y en cada acción.</p>
+        <p>No somos simplemente una empresa de limpieza y mantenimiento. <strong>Somos custodios de la tranquilidad de nuestros clientes.</strong> Nuestro trabajo consiste en proteger aquello que les permite vivir con paz: sus espacios, su patrimonio y la confianza de saber que están siendo cuidados con excelencia, respeto y responsabilidad.</p>
+        <h3>Servir es un acto noble</h3>
+        <p>Creemos que servir es uno de los actos más nobles que puede realizar una persona. Servir es aliviar cargas. Es prevenir problemas antes de que ocurran. Es devolver tiempo a las familias. Es preservar el valor de una propiedad. Es tratar cada espacio con el mismo cuidado con el que trataríamos el nuestro.</p>
+        <p>Inspirados por la naturaleza, entendemos que ningún bosque prospera por la fuerza de un solo árbol: su equilibrio nace de la cooperación entre todos sus elementos. De la misma manera, creemos que una comunidad florece cuando las personas se sirven unas a otras con respeto, integridad y generosidad.</p>
+        <div class="ilcn-quote">Construimos confianza. Construimos comunidad. Construimos bienestar.</div>
+        <p>Por eso, en ILATEK buscamos construir mucho más que relaciones comerciales. Cada colaborador forma parte de un propósito que trasciende una tarea específica: su trabajo contribuye a que una familia descanse con tranquilidad, a que un adulto mayor viva con mayor seguridad, a que un negocio funcione mejor y a que una comunidad sea más fuerte.</p>
+        <p>Nuestro compromiso no termina cuando finaliza un servicio. Nuestro compromiso es <strong>dejar cada espacio mejor de como lo encontramos</strong> y procurar que cada persona se sienta más tranquila después de haber confiado en nosotros.</p>
+        <div class="ilcn-quote">Cuando servimos con propósito, no solo transformamos propiedades. <em>Transformamos vidas.</em></div>
+      </article>
+    </div>
+
+    <!-- TAB 3: Proposito -->
+    <div class="ilcn-panel" id="ilcn-panel-proposito" role="tabpanel" aria-labelledby="ilcn-tab-proposito" hidden>
+      <article class="ilcn-article">
+        <h3>Propósito de ILATEK Property Solutions</h3>
+        <p>En ILATEK Property Solutions existimos para <strong>cuidar y proteger los espacios donde las personas construyen su vida</strong>.</p>
+        <p>Creemos que un hogar, una propiedad o un negocio representan mucho más que una estructura física. Son lugares donde nacen familias, se construyen sueños, se preservan recuerdos, se levantan proyectos y se encuentra refugio en los momentos más importantes de la vida.</p>
+        <p>Por eso, nuestro trabajo nunca ha sido simplemente limpiar, mantener o reparar propiedades. Nuestra verdadera misión es <strong>devolver tranquilidad, generar confianza</strong> y brindar la paz de saber que aquello que más valoran está siendo cuidado con el mismo respeto y compromiso con el que nosotros cuidaríamos lo nuestro.</p>
+        <h3>Nuestros principios</h3>
+        <p>Servimos con <strong>excelencia</strong> porque entendemos que detrás de cada puerta existe una historia que merece ser protegida.</p>
+        <p>Actuamos con <strong>responsabilidad</strong> porque sabemos que la confianza de un cliente es un privilegio, no un derecho.</p>
+        <p>Trabajamos con <strong>empatía</strong> porque reconocemos que cada persona vive circunstancias distintas y merece ser tratada con dignidad, honestidad y respeto.</p>
+        <p>Al mismo tiempo, creemos que quienes forman parte de ILATEK no solo realizan un trabajo: contribuyen a mejorar la calidad de vida de otras personas. Cada servicio representa una oportunidad para generar bienestar, prevenir problemas, proteger el patrimonio de una familia y fortalecer la confianza de nuestra comunidad.</p>
+        <h3>Inspirados por la naturaleza</h3>
+        <p>Inspirados por la naturaleza, entendemos que un bosque prospera cuando cada elemento cumple su función para beneficio del conjunto. Esa misma filosofía guía nuestra empresa: cuando cada colaborador sirve con integridad, cada cliente recibe tranquilidad y toda la comunidad crece.</p>
+        <div class="ilcn-quote">Porque creemos que cuando cuidamos un espacio con respeto, también cuidamos la vida de quienes lo habitan.</div>
+        <p>Y cuando servimos con propósito, no solo transformamos propiedades. <strong>Transformamos vidas.</strong></p>
+      </article>
+    </div>
+  </div>
+
+  <script>
+  (function(){
+    var root=document.getElementById('ilatek-conocenos'); if(!root||root.dataset.ready)return; root.dataset.ready='true';
+    /* Respaldo de custom values en front-end (por si el reemplazo nativo de GHL no ocurre) */
+    function clean(v){v=String(v||'').replace(/\u00a0/g,' ').trim();return /^\s*\{\{[^}]+\}\}\s*$/.test(v)?'':v}
+    var county=clean(root.getAttribute('data-location-label'))||'Puerto Rico';
+    function token(name){return '{'+'{custom_values.'+name+'}'+'}'}
+    var cv={};cv[token('county_name_and_state')]=county;
+    var tw=document.createTreeWalker(root,NodeFilter.SHOW_TEXT),tn=[],tn2;
+    while(tn2=tw.nextNode()){if(tn2.parentElement&&tn2.parentElement.tagName!=='SCRIPT'&&tn2.parentElement.tagName!=='STYLE')tn.push(tn2)}
+    tn.forEach(function(n){Object.keys(cv).forEach(function(k){n.nodeValue=n.nodeValue.split(k).join(cv[k])})});
+    Array.prototype.forEach.call(root.querySelectorAll('*'),function(el){Array.prototype.forEach.call(el.attributes||[],function(a){var v=a.value;Object.keys(cv).forEach(function(k){v=v.split(k).join(cv[k])});if(v!==a.value)el.setAttribute(a.name,v)})});
+    var tabs=[].slice.call(root.querySelectorAll('.ilcn-tab'));
+    var panels={};['founders','adn','proposito'].forEach(function(k){panels[k]=root.querySelector('#ilcn-panel-'+k)});
+    function keyOf(tab){return tab.id.replace('ilcn-tab-','')}
+    function activate(tab){
+      tabs.forEach(function(t){
+        var on=t===tab;
+        t.setAttribute('aria-selected',String(on));
+        t.tabIndex=on?0:-1;
+        panels[keyOf(t)].hidden=!on;
+      });
+    }
+    tabs.forEach(function(t,i){
+      t.addEventListener('click',function(){activate(t)});
+      t.addEventListener('keydown',function(e){
+        var dir=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;
+        if(!dir)return;
+        e.preventDefault();
+        var next=tabs[(i+dir+tabs.length)%tabs.length];
+        next.focus();activate(next);
+      });
+    });
+  })();
+  </script>
+</section>

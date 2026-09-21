@@ -297,6 +297,29 @@
     const template=root.querySelector('#pcq-calendar-embed');
     const fragment=template.content.cloneNode(true);
     const frame=fragment.querySelector('iframe');
+    // Variante dual para el prefill: se envian ambas claves (con prefijo contact.*,
+    // formato de field keys de GHL que usa el workflow, y sin prefijo). El widget del
+    // calendario hace match con la que corresponda; la otra se ignora sin efecto.
+    try{
+      const q=totals();
+      const val=String(Math.round(q.total*100)/100);
+      const sizeVal=String(state.size);
+      const svc=state.type==='deep'?'Limpieza Profunda':'Limpieza Estándar';
+      const dur=q.hours?q.hours+' horas':'';
+      const params=new URLSearchParams();
+      params.set('contact.valor_oportunidad',val);
+      params.set('valor_oportunidad',val);
+      params.set('contact.deposito_requerido','50');
+      params.set('deposito_requerido','50');
+      params.set('contact.pies_cuadrados',sizeVal);
+      params.set('pies_cuadrados',sizeVal);
+      params.set('contact.tipo_de_servicio',svc);
+      params.set('tipo_de_servicio',svc);
+      params.set('contact.duracion_estimada',dur);
+      params.set('duracion_estimada',dur);
+      const base=frame.getAttribute('src');
+      frame.src=base+(base.indexOf('?')>-1?'&':'?')+params.toString();
+    }catch(e){}
     let loadingTimer;
     function delayed(){
       message.textContent='El calendario está tardando más de lo esperado. Puedes esperar o volver a intentarlo.';

@@ -1,0 +1,24 @@
+{
+  "name": "ilatek",
+  "version": "1.0.0",
+  "description": "Cotizador de limpieza residencial en español para integrar en GoHighLevel (GHL).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aocpdev/Ilatek.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/aocpdev/Ilatek/issues"
+  },
+  "homepage": "https://github.com/aocpdev/Ilatek#readme",
+  "dependencies": {
+    "@imgly/background-removal-node": "^1.4.5"
+  }
+}
