@@ -21,8 +21,8 @@
     /* Tarjetas de categoria · zoom suave: curva S estándar (material) simétrica al entrar/salir */
     /* Carrusel 3D de categorias: la tarjeta FRONTAL siempre grande al centro; las otras 2 a los lados,
       giradas y hundidas en perspectiva. Rotacion en bucle infinito (frontal->izquierda->derecha->frontal). */
-    .ilcg-stage{--side-x:270px;--lift:150px;--side-z:-320px;position:relative;perspective:1500px;overflow:hidden;min-height:680px;padding:10px 0 30px;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 9%,#000 91%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 9%,#000 91%,transparent 100%)}
-    .ilcg-stage .ilcg-card{position:absolute;top:6px;left:50%;width:400px;margin:0;transition:transform 1s cubic-bezier(.4,0,.2,1),filter 1s cubic-bezier(.4,0,.2,1),box-shadow 1s cubic-bezier(.4,0,.2,1);will-change:transform;transform:translateX(-50%) translateZ(0) scale(1)}
+    .ilcg-stage{--side-x:205px;--lift:130px;--side-z:-320px;position:relative;perspective:1500px;overflow:hidden;min-height:680px;padding:10px 0 30px;touch-action:pan-y;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 9%,#000 91%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 9%,#000 91%,transparent 100%)}
+    .ilcg-stage .ilcg-card{position:absolute;top:6px;left:50%;width:380px;margin:0;transition:transform 1s cubic-bezier(.4,0,.2,1),filter 1s cubic-bezier(.4,0,.2,1),box-shadow 1s cubic-bezier(.4,0,.2,1);will-change:transform;transform:translateX(-50%) translateZ(0) scale(1)}
     /* Esquinas SIEMPRE redondeadas: la img con filter/will-change se vuelve capa compuesta y puede escapar
       del clip redondeado del CONTENEDOR en Chrome; el radio propio de la img siempre se respeta */
     .ilcg-stage .ilcg-media{position:relative;background:var(--paper);border-radius:22px 22px 0 0}.ilcg-stage .ilcg-media img{border-radius:22px 22px 0 0}
@@ -33,14 +33,14 @@
     .ilcg-card:not(.is-front){cursor:pointer}
     .ilcg-card{position:relative;display:flex;flex-direction:column;border:1px solid var(--line);border-radius:22px;background:var(--paper);box-shadow:0 10px 28px rgba(17,22,75,.07);overflow:hidden;transition:transform .45s cubic-bezier(.4,0,.2,1),box-shadow .45s cubic-bezier(.4,0,.2,1),background .45s cubic-bezier(.4,0,.2,1)}
     .ilcg-stage .ilcg-card.is-front:hover,.ilcg-stage .ilcg-card.is-front:focus-within{transform:translateX(-50%) translateZ(var(--lift)) translateY(-6px) scale(1);box-shadow:0 26px 56px rgba(17,22,75,.28),inset 0 1px 0 rgba(255,255,255,.5)}
-    .ilcg-media{height:190px;overflow:hidden;background:var(--blue-soft)}.ilcg-media img{display:block;width:100%;height:100%;object-fit:cover;transform:scale(1);transform-origin:center;backface-visibility:hidden;transition:transform .8s cubic-bezier(.4,0,.2,1),filter .8s cubic-bezier(.4,0,.2,1);will-change:transform}.ilcg-card:hover .ilcg-media img,.ilcg-card:focus-within .ilcg-media img{transform:scale(1.06);filter:brightness(1.04) saturate(1.08);backface-visibility:hidden}.ilcg-card.is-front:hover .ilcg-media img,.ilcg-card.is-front:focus-within .ilcg-media img{transform:scale(1.06);filter:brightness(1.04) saturate(1.08);backface-visibility:hidden}
+    .ilcg-media{height:164px;overflow:hidden;background:var(--blue-soft)}.ilcg-media img{display:block;width:100%;height:100%;object-fit:cover;transform:scale(1);transform-origin:center;backface-visibility:hidden;transition:transform .8s cubic-bezier(.4,0,.2,1),filter .8s cubic-bezier(.4,0,.2,1);will-change:transform}.ilcg-card:hover .ilcg-media img,.ilcg-card:focus-within .ilcg-media img{transform:scale(1.06);filter:brightness(1.04) saturate(1.08);backface-visibility:hidden}.ilcg-card.is-front:hover .ilcg-media img,.ilcg-card.is-front:focus-within .ilcg-media img{transform:scale(1.06);filter:brightness(1.04) saturate(1.08);backface-visibility:hidden}
     .ilcg-badge{position:relative;z-index:1;display:grid;place-items:center;width:62px;height:62px;margin:-31px 0 0 28px;border-radius:18px;border:1px solid rgba(255,255,255,.6);background:linear-gradient(150deg,rgba(238,243,255,.78),rgba(238,243,255,.42));-webkit-backdrop-filter:blur(14px) saturate(160%);backdrop-filter:blur(14px) saturate(160%);box-shadow:0 8px 20px rgba(17,22,75,.14),inset 0 1px 0 rgba(255,255,255,.65);color:var(--blue);transition:background .45s cubic-bezier(.4,0,.2,1),color .45s cubic-bezier(.4,0,.2,1),box-shadow .45s cubic-bezier(.4,0,.2,1)}.ilcg-badge svg{display:block;width:29px;height:29px}.ilcg-card.is-front:hover .ilcg-badge{background:linear-gradient(150deg,rgba(0,185,79,.88),rgba(0,150,64,.66));color:#fff;box-shadow:0 12px 26px rgba(0,150,64,.32),inset 0 1px 0 rgba(255,255,255,.4)}
-    .ilcg-body{display:flex;flex-direction:column;flex:1;padding:20px 28px 30px}
+    .ilcg-body{display:flex;flex-direction:column;flex:1;padding:16px 24px 24px}
     .ilcg-kicker{color:var(--green-dark);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
-    .ilcg-body h3{margin:9px 0 0;font-family:Outfit,Manrope,sans-serif;font-size:clamp(24px,2.2vw,29px);font-weight:800;line-height:1.15;letter-spacing:-.03em}
-    .ilcg-body>p{margin:12px 0 0;color:var(--muted);font-size:14.5px;line-height:1.7}
-    .ilcg-list{display:grid;gap:10px;margin:20px 0 26px;padding:0;list-style:none}.ilcg-list li{display:flex;align-items:flex-start;gap:10px;font-size:14px;font-weight:600;line-height:1.45}.ilcg-list i{flex:0 0 20px;display:grid;place-items:center;width:20px;height:20px;margin-top:1px;border-radius:50%;background:rgba(0,185,79,.13);color:var(--green-dark);font-size:11px;font-style:normal;font-weight:800}
-    .ilcg-btn{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:auto;min-height:50px;padding:12px 20px;border-radius:8px;background:var(--green);color:#fff!important;font:800 13.5px/1 Manrope,Arial,sans-serif;letter-spacing:.02em;box-shadow:0 12px 25px rgba(0,185,79,.22);transition:transform .22s ease,background .22s ease,box-shadow .22s ease}
+    .ilcg-body h5{margin:8px 0 0;font-family:Outfit,Manrope,sans-serif;font-size:clamp(21px,1.9vw,25px);font-weight:800;line-height:1.15;letter-spacing:-.03em}
+    .ilcg-body>p{margin:10px 0 0;color:var(--muted);font-size:13.5px;line-height:1.6}
+    .ilcg-list{display:grid;gap:7px;margin:14px 0 18px;padding:0;list-style:none}.ilcg-list li{display:flex;align-items:flex-start;gap:9px;font-size:13px;font-weight:600;line-height:1.4}.ilcg-list i{flex:0 0 20px;display:grid;place-items:center;width:20px;height:20px;margin-top:1px;border-radius:50%;background:rgba(0,185,79,.13);color:var(--green-dark);font-size:11px;font-style:normal;font-weight:800}
+    .ilcg-btn{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:auto;min-height:46px;padding:10px 18px;border-radius:8px;background:var(--green);color:#fff!important;font:800 13.5px/1 Manrope,Arial,sans-serif;letter-spacing:.02em;box-shadow:0 12px 25px rgba(0,185,79,.22);transition:transform .22s ease,background .22s ease,box-shadow .22s ease}
     .ilcg-btn:after{content:'→';font-size:16px;transition:transform .25s ease}
     .ilcg-btn:hover,.ilcg-btn:focus-visible{background:var(--green-dark);transform:translateY(-2px);box-shadow:0 16px 30px rgba(0,185,79,.32)}.ilcg-btn:hover:after{transform:translateX(4px)}
     .ilcg-btn:focus-visible,.ilcg-social a:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
@@ -51,8 +51,8 @@
     .ilcg-cta>p:not(.ilcg-cta-title){max-width:620px;margin:14px auto 0;color:rgba(255,255,255,.8);font-size:15px;line-height:1.65}
     .ilcg-cta .ilcg-btn{display:inline-flex;margin-top:26px;min-width:min(320px,100%)}
         /* Rotacion 3D siempre activa en todos los dispositivos (sin excepcion reduced-motion) */
-    @media(max-width:1020px){.ilcg-stage{--side-x:200px;--side-z:-260px;min-height:640px}.ilcg-stage .ilcg-card{width:360px}.ilcg-cta{padding:38px 28px}}
-    @media(max-width:560px){#ilatek-categorias{padding:78px 0}.ilcg-stage{--side-x:44vw;--side-z:-240px;min-height:600px}.ilcg-stage .ilcg-card{width:min(86vw,330px)}.ilcg-shell{width:min(100% - 30px,1210px)}.ilcg-head{margin-bottom:38px}.ilcg-head>p{font-size:15px}.ilcg-media{height:170px}.ilcg-body{padding:18px 22px 26px}.ilcg-badge{margin-left:22px}.ilcg-cta{margin-top:40px;padding:32px 20px;border-radius:18px}}
+    @media(max-width:1020px){.ilcg-stage{--side-x:160px;--side-z:-260px;min-height:600px}.ilcg-stage .ilcg-card{width:350px}.ilcg-cta{padding:38px 28px}}
+    @media(max-width:560px){#ilatek-categorias{padding:70px 0}.ilcg-stage{--side-x:36vw;--side-z:-240px;min-height:520px}.ilcg-stage .ilcg-card{width:min(88vw,330px)}.ilcg-shell{width:min(100% - 30px,1210px)}.ilcg-head{margin-bottom:34px}.ilcg-head>p{font-size:15px}.ilcg-media{height:132px}.ilcg-body{padding:12px 18px 18px}.ilcg-body h5{font-size:19px}.ilcg-body>p{font-size:12.5px;line-height:1.55}.ilcg-list{gap:5px;margin:10px 0 14px}.ilcg-list li{font-size:12.5px;line-height:1.35}.ilcg-list i{width:18px;height:18px;flex-basis:18px}.ilcg-btn{min-height:42px;padding:9px 16px;font-size:12.5px}.ilcg-kicker{font-size:11px}.ilcg-badge{width:54px;height:54px;margin:-27px 0 0 18px}.ilcg-badge svg{width:25px;height:25px}.ilcg-cta{margin-top:36px;padding:30px 18px;border-radius:18px}}
   </style>
 
   <div class="ilcg-shell">
@@ -75,7 +75,7 @@
         <i class="ilcg-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></i>
         <div class="ilcg-body">
           <span class="ilcg-kicker">Para tu hogar</span>
-          <h3>Limpieza Residencial en Puerto Rico</h3>
+          <h5>Limpieza Residencial en Puerto Rico</h5>
           <p>Limpieza residencial para casas, apartamentos y propiedades en {{custom_values.county_name_and_state}}: Ilatek mantiene tus espacios cómodos, frescos y bien cuidados con un plan que se ajusta a tu hogar.</p>
           <ul class="ilcg-list">
             <li><i>✓</i> Limpieza regular de casas y apartamentos</li>
@@ -99,7 +99,7 @@
         <i class="ilcg-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg></i>
         <div class="ilcg-body">
           <span class="ilcg-kicker">Para tu negocio</span>
-          <h3>Limpieza Comercial en Puerto Rico</h3>
+          <h5>Limpieza Comercial en Puerto Rico</h5>
           <p>Limpieza comercial para oficinas, comercios y espacios de trabajo en {{custom_values.county_name_and_state}}: tu negocio limpio, organizado y presentable para clientes y equipo, con una frecuencia que se ajuste a tu operación.</p>
           <ul class="ilcg-list">
             <li><i>✓</i> Limpieza de oficinas y áreas de trabajo</li>
@@ -123,7 +123,7 @@
         <i class="ilcg-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M17 18h1"/><path d="M12 18h1"/><path d="M7 18h1"/></svg></i>
         <div class="ilcg-body">
           <span class="ilcg-kicker">Para tus instalaciones</span>
-          <h3>Limpieza Industrial en Puerto Rico</h3>
+          <h5>Limpieza Industrial en Puerto Rico</h5>
           <p>Limpieza industrial para almacenes, plantas e instalaciones operacionales en {{custom_values.county_name_and_state}}: mantenemos las áreas de trabajo limpias y seguras según los requisitos de cada espacio, con coordinación previa.</p>
           <ul class="ilcg-list">
             <li><i>✓</i> Limpieza de almacenes e instalaciones</li>
@@ -163,26 +163,34 @@
       var roles3d=['is-front','is-left','is-right'];
       var order3d=[0,1,2]; /* orden[i]=posicion de la tarjeta i: 0=frontal, 1=izq, 2=der */
       var apply3d=function(){cards3d.forEach(function(c,i){c.classList.remove('is-front','is-left','is-right');c.classList.add(roles3d[order3d[i]])})};
-      var size3d=function(){var h=0;cards3d.forEach(function(c){h=Math.max(h,c.offsetHeight)});if(!h)return;var lift=parseFloat(stage3d.style.getPropertyValue('--lift'))||150,sc=1500/(1500-lift),H=Math.ceil(h*sc+16);stage3d.style.height=H+'px';cards3d.forEach(function(c){c.style.top=Math.max(0,(H-c.offsetHeight)/2)+'px'})};
-      var lift3d=function(){var w=stage3d.offsetWidth;stage3d.style.setProperty('--lift',Math.max(120,Math.min(170,w*.115))+'px');size3d()};
+      var size3d=function(){var h=0;cards3d.forEach(function(c){h=Math.max(h,c.offsetHeight)});if(!h)return;var lift=parseFloat(stage3d.style.getPropertyValue('--lift'))||130,sc=1500/(1500-lift),H=Math.ceil(h*sc+24);stage3d.style.height=H+'px';cards3d.forEach(function(c){c.style.top=Math.max(0,(H-c.offsetHeight)/2)+'px'})};
+      var lift3d=function(){var w=stage3d.offsetWidth;stage3d.style.setProperty('--lift',Math.max(100,Math.min(128,w*.098))+'px');size3d()};
       window.addEventListener('resize',lift3d,{passive:true});lift3d();
       apply3d();size3d();
       window.addEventListener('resize',size3d,{passive:true});
       if(document.fonts&&document.fonts.ready){document.fonts.ready.then(size3d)['catch'](function(){})}
       window.addEventListener('load',size3d);
       if(window.ResizeObserver){var ro3d=new ResizeObserver(size3d);cards3d.forEach(function(c){ro3d.observe(c)})}
-      var rot3d=null,hover3d=false;
+      var rot3d=null,hover3d=false,inView3d=true;
       var step3d=function(){order3d=order3d.map(function(p){return(p+1)%3});apply3d()};
       var stop3d=function(){if(rot3d){clearInterval(rot3d);rot3d=null}};
-      var start3d=function(){if(!rot3d&&!hover3d)rot3d=setInterval(step3d,4200)};
-      stage3d.addEventListener('mouseenter',function(){hover3d=true;stop3d()});
-      stage3d.addEventListener('mouseleave',function(){hover3d=false;start3d()});
+      var start3d=function(){if(!rot3d&&!hover3d&&inView3d!==false)rot3d=setInterval(step3d,4200)};
+      var hoverCard3d=function(on){hover3d=on;on?stop3d():start3d()};
+      cards3d.forEach(function(c){c.addEventListener('mouseenter',function(){hoverCard3d(true)});c.addEventListener('mouseleave',function(){hoverCard3d(false)})});
       stage3d.addEventListener('focusin',function(){hover3d=true;stop3d()});
-      stage3d.addEventListener('focusout',function(){hover3d=false;start3d()});
+      stage3d.addEventListener('focusout',function(e){if(!stage3d.contains(e.relatedTarget)){hover3d=false;start3d()}});
       document.addEventListener('visibilitychange',function(){document.hidden?stop3d():start3d()});
-      cards3d.forEach(function(c,i){c.addEventListener('click',function(){if(order3d[i]!==0){var n=0;while(order3d[i]!==0&&n<3){order3d=order3d.map(function(p){return(p+1)%3});n++}apply3d();stop3d();hover3d=true;setTimeout(function(){hover3d=false;start3d()},6500)}})});
-      cards3d.forEach(function(c,i){c.addEventListener('click',function(e){if(order3d[i]!==0){e.preventDefault();e.stopPropagation();var n=0;while(order3d[i]!==0&&n<3){order3d=order3d.map(function(p){return(p+1)%3});n++}apply3d();stop3d();hover3d=true;setTimeout(function(){hover3d=false;start3d()},6500)}},true)});
-      cards3d.forEach(function(c,i){c.addEventListener('keydown',function(e){if((e.key==='Enter'||e.key===' ')&&order3d[i]!==0){e.preventDefault();var n=0;while(order3d[i]!==0&&n<3){order3d=order3d.map(function(p){return(p+1)%3});n++}apply3d();stop3d();hover3d=true;setTimeout(function(){hover3d=false;start3d()},6500)}})});
+      if('IntersectionObserver' in window){new IntersectionObserver(function(en3d){en3d.forEach(function(e3d){inView3d=e3d.isIntersecting;e3d.isIntersecting?start3d():stop3d()})},{threshold:.15}).observe(stage3d)}else{start3d()}
+      cards3d.forEach(function(c,i){c.addEventListener('click',function(){if(order3d[i]!==0){var n=0;while(order3d[i]!==0&&n<3){order3d=order3d.map(function(p){return(p+1)%3});n++}apply3d();stop3d();var hov=c.matches(':hover');if(!hov){hover3d=true;setTimeout(function(){hover3d=false;start3d()},6500)}}})});
+      cards3d.forEach(function(c,i){c.addEventListener('click',function(e){if(order3d[i]!==0){e.preventDefault();e.stopPropagation();var n=0;while(order3d[i]!==0&&n<3){order3d=order3d.map(function(p){return(p+1)%3});n++}apply3d();stop3d();var hov=c.matches(':hover');if(!hov){hover3d=true;setTimeout(function(){hover3d=false;start3d()},6500)}}},true)});
+      cards3d.forEach(function(c,i){c.addEventListener('keydown',function(e){if((e.key==='Enter'||e.key===' ')&&order3d[i]!==0){e.preventDefault();var n=0;while(order3d[i]!==0&&n<3){order3d=order3d.map(function(p){return(p+1)%3});n++}apply3d();stop3d();var hov=c.matches(':hover');if(!hov){hover3d=true;setTimeout(function(){hover3d=false;start3d()},6500)}}})});
+/* Swipe con el dedo: gesto horizontal gira el carrusel (izq=siguiente, der=anterior) */
+        (function(){
+          var sx=0,sy=0,tracking=false;
+          stage3d.addEventListener('pointerdown',function(e){sx=e.clientX;sy=e.clientY;tracking=true},{passive:true});
+          window.addEventListener('pointerup',function(e){if(!tracking)return;tracking=false;var dx=e.clientX-sx,dy=e.clientY-sy;if(Math.abs(dx)>48&&Math.abs(dx)>Math.abs(dy)*1.4){var steps=dx<0?1:2;while(steps--){order3d=order3d.map(function(p){return(p+1)%3})}apply3d();stop3d();hover3d=true;setTimeout(function(){hover3d=false;start3d()},6500)}},{passive:true});
+          window.addEventListener('pointercancel',function(){tracking=false},{passive:true});
+        })();
       start3d();
     }
     var walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT),nodes=[],node;
