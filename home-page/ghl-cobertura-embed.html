@@ -135,8 +135,8 @@
     values[token('website_url')]=website;
     values[token('business__email')]=clean(root.getAttribute('data-business-email'));
     values[token('business__phone')]=clean(root.getAttribute('data-business-phone'));
-    values[token('facebook_url')]=clean(root.getAttribute('data-facebook-url'))||'#';
-    values[token('instagram_url')]=clean(root.getAttribute('data-instagram-url'))||'#';
+    values[token('facebook_url')]=clean(root.getAttribute('data-facebook-url'))||'https://www.facebook.com/ilatek.pr/';
+    values[token('instagram_url')]=clean(root.getAttribute('data-instagram-url'))||'https://www.instagram.com/ilatek.pr/';
 
     /* Reemplazo único de tokens en textos y atributos */
     var walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT),nodes=[],node;

@@ -1,0 +1,56 @@
+/* ============================================================
+   ILATEK · Form "Contáctanos" · Centrado en pantalla
+   Pegar en: Form Builder → Advanced → Custom CSS
+   ------------------------------------------------------------
+   - Centra el form horizontal y verticalmente en el viewport.
+   - Usa margin:auto en el bloque del form (patrón seguro): si el
+     form es más alto que la pantalla, NO recorta la parte de
+     arriba — simplemente se puede scrollear.
+   - El fondo (foto) queda full-bleed detrás: el contenedor del
+     background ocupa todo el alto de la pantalla.
+   - No toca .row / .col-* internos: los campos Nombre/Apellido
+     conservan su layout de 2 columnas.
+   ============================================================ */
+
+/* --- Contenedor del fondo: toda la pantalla, centra su contenido --- */
+.custom-form-bg,
+body > div:first-child {
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --- El bloque del form: centrado real (vertical + horizontal) --- */
+.custom-form-bg form,
+.custom-form-bg .form-builder--form-container,
+body > div:first-child form,
+body > form {
+  width: 100%;
+  max-width: 720px;
+  margin: auto !important; /* centrado sin recorte si excede la altura */
+  box-sizing: border-box;
+  float: none !important;
+}
+
+/* Logo y título centrados dentro del bloque */
+.custom-form-bg img[src*="logo"],
+.custom-form-bg .form-builder--logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* --- Móvil: aprovechar todo el ancho disponible --- */
+@media (max-width: 560px) {
+  .custom-form-bg form,
+  .custom-form-bg .form-builder--form-container,
+  body > div:first-child form,
+  body > form {
+    max-width: 100%;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}

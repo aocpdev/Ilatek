@@ -29,6 +29,18 @@
         </div>
         <p class="pcq__error" role="alert"></p>
 
+        <fieldset class="pcq__fieldset pcq__contact">
+          <legend>Tus datos</legend>
+          <div class="pcq__contact-grid">
+            <div class="pcq__input-wrap"><input id="pcq-name" name="firstName" type="text" autocomplete="given-name" placeholder="Nombre" /></div>
+            <div class="pcq__input-wrap"><input id="pcq-lastname" name="lastName" type="text" autocomplete="family-name" placeholder="Apellido" /></div>
+          </div>
+          <div class="pcq__contact-grid">
+            <div class="pcq__input-wrap"><input id="pcq-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="Teléfono" /></div>
+            <div class="pcq__input-wrap"><input id="pcq-email" name="email" type="email" autocomplete="email" placeholder="Correo electrónico" /></div>
+          </div>
+        </fieldset>
+
         <fieldset class="pcq__fieldset">
           <legend>Tipo de limpieza</legend>
           <div class="pcq__choice-grid">
@@ -199,6 +211,12 @@
   .pcq__input-wrap input:focus,.pcq__measure-grid input:focus { border-color:var(--accent-2); box-shadow:0 0 0 3px rgba(33,61,142,.15); }
   .pcq__input-wrap span { position:absolute; right:17px; top:50%; transform:translateY(-50%); color:var(--muted); }
   .pcq__error { min-height:21px; margin:6px 0 9px; color:#b33b39; font-size:.88rem; }
+  .pcq__contact { margin-top:22px; }
+  .pcq__contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:12px; }
+  .pcq__contact input { width:100%; height:48px; padding:0 14px; color:var(--ink); border:1px solid var(--line); border-radius:8px; outline:none; font-size:1rem; transition:.2s; }
+  .pcq__contact input:focus { border-color:var(--accent-2); box-shadow:0 0 0 3px rgba(33,61,142,.15); }
+  .pcq__contact input.pcq__input-error { border-color:#b33b39; }
+  @media (max-width:560px){ .pcq__contact-grid { grid-template-columns:1fr; } }
   .pcq__fieldset { margin:0; padding:0; border:0; }
   .pcq__choice-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
   .pcq__choice { display:flex; min-height:150px; padding:22px 14px; flex-direction:column; align-items:center; justify-content:center; color:var(--ink); border:1px solid var(--line); border-radius:8px; cursor:pointer; transition:.2s; }
@@ -319,6 +337,11 @@
       params.set('tipo_de_servicio',svc);
       params.set('contact.duracion_estimada',dur);
       params.set('duracion_estimada',dur);
+      const nm=String(state.firstName||'').trim(), ln=String(state.lastName||'').trim(), ph=String(state.phone||'').trim(), em=String(state.email||'').trim();
+      params.set('first_name',nm); params.set('firstName',nm);
+      params.set('last_name',ln); params.set('lastName',ln);
+      params.set('phone',ph);
+      params.set('email',em);
       const base=frame.getAttribute('src');
       frame.src=base+(base.indexOf('?')>-1?'&':'?')+params.toString();
     }catch(e){}
@@ -356,8 +379,8 @@
     mount.appendChild(embedScript);
   }
 
-  const WEBHOOK_URL = 'https://services.leadconnectorhq.com/hooks/8OxUENFVM60EKzqsTcoD/webhook-trigger/PF8fMY1T0W3yTwoOVkfi';
-  const state = { step:0, size:0, type:'standard', interiorWindows:0, exteriorWindows:0, refrigerator:0, oven:0, dishwasher:0, washerDryer:0, regularFurniture:0, shampooFurniture:0, carpet:0, grout:0, pantry:0, closet:0, garage:0 };
+  const WEBHOOK_URL = 'https://services.leadconnectorhq.com/hooks/8OxUENFVM60EKzqsTcoD/webhook-trigger/59a8eede-f640-4746-88f2-2a912a128203';
+  const state = { step:0, size:0, firstName:'', lastName:'', phone:'', email:'', type:'standard', interiorWindows:0, exteriorWindows:0, refrigerator:0, oven:0, dishwasher:0, washerDryer:0, regularFurniture:0, shampooFurniture:0, carpet:0, grout:0, pantry:0, closet:0, garage:0 };
   const money = n => new Intl.NumberFormat('es-US',{style:'currency',currency:'USD',minimumFractionDigits:n%1?2:0}).format(n);
   const num = value => Math.max(0, Number(value) || 0);
   const totals = () => {
@@ -400,6 +423,11 @@
     if (quoteSent) return;
     const t = totals();
     const payload = {
+      firstName: String(state.firstName||'').trim(),
+      lastName: String(state.lastName||'').trim(),
+      full_name: (String(state.firstName||'').trim()+' '+String(state.lastName||'').trim()).trim(),
+      phone: String(state.phone||'').trim(),
+      email: String(state.email||'').trim(),
       valor_oportunidad: Math.round(t.total * 100) / 100,
       deposito_requerido: 50,
       pies_cuadrados: state.size,
@@ -423,14 +451,25 @@
     quoteSent = true;
   }
   root.querySelector('#pcq-size').addEventListener('input',e=>{state.size=num(e.target.value);root.querySelector('.pcq__error').textContent='';render();});
+  root.querySelectorAll('.pcq__contact input').forEach(inp=>inp.addEventListener('input',()=>{state[inp.name]=inp.value;inp.classList.remove('pcq__input-error');root.querySelector('.pcq__error').textContent='';render();}));
   root.querySelectorAll('input[name="cleaning_type"]').forEach(input=>input.addEventListener('change',e=>{state.type=e.target.value;root.querySelectorAll('.pcq__choice').forEach(el=>el.classList.toggle('is-selected',el.contains(e.target)));render();}));
   root.querySelectorAll('.pcq__qty').forEach(box=>{const input=box.querySelector('input'),key=box.dataset.field;const update=()=>{state[key]=Math.floor(num(input.value));input.value=state[key];render();};input.addEventListener('input',update);box.querySelectorAll('button').forEach(btn=>btn.addEventListener('click',()=>{input.value=Math.max(0,num(input.value)+Number(btn.dataset.delta));update();}));});
   root.querySelectorAll('.pcq__toggle-grid input').forEach(input=>input.addEventListener('change',()=>{state[input.dataset.field]=input.checked?1:0;render();}));
   root.querySelectorAll('.pcq__measure-grid input').forEach(input=>input.addEventListener('input',()=>{state[input.dataset.field]=num(input.value);render();}));
-  root.querySelector('.pcq__next').addEventListener('click',()=>{if(state.step===0&&!state.size){root.querySelector('.pcq__error').textContent='Ingresa el tamaño de la propiedad para continuar.';root.querySelector('#pcq-size').focus();return;}if(state.step===lastStep-1&&!quoteSent)sendQuote();state.step=Math.min(lastStep,state.step+1);render();root.querySelector('.pcq__card').scrollIntoView({behavior:'smooth',block:'start'});});
+  const errEl0=root.querySelector('.pcq__error');
+  function markErr(sel,msg){errEl0.textContent=msg;const el=root.querySelector(sel);if(el){el.classList.add('pcq__input-error');el.focus();}}
+  function invalidStep0(){
+    if(!state.size){markErr('#pcq-size','Ingresa el tamaño de la propiedad para continuar.');return true;}
+    if(!String(state.firstName||'').trim()){markErr('#pcq-name','Ingresa tu nombre para continuar.');return true;}
+    if(!String(state.lastName||'').trim()){markErr('#pcq-lastname','Ingresa tu apellido para continuar.');return true;}
+    if(String(state.phone||'').replace(/\D/g,'').length<10){markErr('#pcq-phone','Ingresa un teléfono válido (10 dígitos).');return true;}
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(String(state.email||'').trim())){markErr('#pcq-email','Ingresa un correo electrónico válido.');return true;}
+    return false;
+  }
+  root.querySelector('.pcq__next').addEventListener('click',()=>{if(state.step===0&&invalidStep0())return;if(state.step===lastStep-1&&!quoteSent)sendQuote();state.step=Math.min(lastStep,state.step+1);render();root.querySelector('.pcq__card').scrollIntoView({behavior:'smooth',block:'start'});});
   root.querySelector('.pcq__back').addEventListener('click',()=>{state.step=Math.max(0,state.step-1);render();});
-  root.querySelectorAll('.pcq__step').forEach(btn=>btn.addEventListener('click',()=>{const target=Number(btn.dataset.go);if(target>0&&!state.size){root.querySelector('.pcq__error').textContent='Ingresa el tamaño de la propiedad para continuar.';return;}state.step=target;render();}));
-  root.querySelector('.pcq__reset').addEventListener('click',()=>{root.querySelector('form').reset();Object.assign(state,{step:0,size:0,type:'standard',interiorWindows:0,exteriorWindows:0,refrigerator:0,oven:0,dishwasher:0,washerDryer:0,regularFurniture:0,shampooFurniture:0,carpet:0,grout:0,pantry:0,closet:0,garage:0});root.querySelectorAll('.pcq__qty input,.pcq__measure-grid input').forEach(i=>i.value=0);root.querySelector('#pcq-size').value='';quoteSent=false;root.querySelectorAll('.pcq__choice').forEach((el,i)=>el.classList.toggle('is-selected',i===0));render();});
+  root.querySelectorAll('.pcq__step').forEach(btn=>btn.addEventListener('click',()=>{const target=Number(btn.dataset.go);if(target>0&&invalidStep0())return;state.step=target;render();}));
+  root.querySelector('.pcq__reset').addEventListener('click',()=>{root.querySelector('form').reset();Object.assign(state,{step:0,size:0,firstName:'',lastName:'',phone:'',email:'',type:'standard',interiorWindows:0,exteriorWindows:0,refrigerator:0,oven:0,dishwasher:0,washerDryer:0,regularFurniture:0,shampooFurniture:0,carpet:0,grout:0,pantry:0,closet:0,garage:0});root.querySelectorAll('.pcq__qty input,.pcq__measure-grid input').forEach(i=>i.value=0);root.querySelector('#pcq-size').value='';quoteSent=false;root.querySelectorAll('.pcq__choice').forEach((el,i)=>el.classList.toggle('is-selected',i===0));render();});
   render();
 })();
 </script>

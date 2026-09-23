@@ -52,7 +52,7 @@
       </div>
     </section>
 
-    <section id="ilatek-servicio" class="il-service"><div class="il-shell"><header class="il-section-head il-reveal"><div><span class="il-eyebrow">Nuestro servicio</span><h2 class="il-display">Limpieza profunda para sentirte mejor en casa.</h2></div><p>Un servicio pensado para espacios que necesitan atención minuciosa. Trabajamos área por área para dejar tu hogar fresco, ordenado y renovado.</p></header><article class="il-service-card il-reveal"><div class="il-service-visual"><img src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aac6cd7254a2c54081fa165.png" alt="En ILATEK no solo limpiamos: utilizamos productos ecológicos, no tóxicos para la salud, la familia y tus mascotas" width="1145" height="1374" loading="lazy"></div><div class="il-service-detail"><span class="il-service-number">01 · SERVICIO PRINCIPAL</span><h3 class="il-display">Limpieza Profunda</h3><p>Ideal para renovar tu hogar antes o después de una ocasión importante, cuando necesitas una limpieza más completa o simplemente quieres comenzar de nuevo con un espacio bien cuidado.</p><ul class="il-checks"><li><i>✓</i> Atención a los detalles de cada espacio</li><li><i>✓</i> Enfoque residencial personalizado</li><li><i>✓</i> Coordinación clara antes del servicio</li></ul><a class="il-button" href="https://ilatekpr.com/cotizacion"><span>Solicita una cotización</span><span aria-hidden="true">↗</span></a></div></article></div></section>
+    <section id="ilatek-servicio" class="il-service"><div class="il-shell"><header class="il-section-head il-reveal"><div><span class="il-eyebrow">Nuestro servicio</span><h2 class="il-display">Limpieza profunda para sentirte mejor en casa.</h2></div><p>Un servicio pensado para espacios que necesitan atención minuciosa. Trabajamos área por área para dejar tu hogar fresco, ordenado y renovado.</p></header><article class="il-service-card il-reveal"><div class="il-service-visual"><img src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aac6cd7254a2c54081fa165.png" alt="En ILATEK no solo limpiamos: utilizamos productos ecológicos, no tóxicos para la salud, la familia y tus mascotas" title="Productos ecológicos de Ilatek - Limpieza Profunda" width="1145" height="1374" loading="lazy"></div><div class="il-service-detail"><span class="il-service-number">01 · SERVICIO PRINCIPAL</span><h3 class="il-display">Limpieza Profunda</h3><p>Ideal para renovar tu hogar antes o después de una ocasión importante, cuando necesitas una limpieza más completa o simplemente quieres comenzar de nuevo con un espacio bien cuidado.</p><ul class="il-checks"><li><i>✓</i> Atención a los detalles de cada espacio</li><li><i>✓</i> Enfoque residencial personalizado</li><li><i>✓</i> Coordinación clara antes del servicio</li></ul><a class="il-button" href="https://ilatekpr.com/cotizacion"><span>Solicita una cotización</span><span aria-hidden="true">↗</span></a></div></article></div></section>
 
     <section class="il-benefits"><div class="il-shell il-benefit-grid il-reveal"><article class="il-benefit"><i>✓</i><h3>Atención detallada</h3><p>Un proceso enfocado en las áreas que más importan para que tu hogar se sienta realmente renovado.</p></article><article class="il-benefit"><i>⌂</i><h3>Para tu hogar</h3><p>Servicio diseñado alrededor de las necesidades reales de espacios residenciales.</p></article><article class="il-benefit"><i>↗</i><h3>Proceso claro</h3><p>Desde tu solicitud hasta la coordinación del servicio, sabrás cuál es el próximo paso.</p></article></div></section>
 
@@ -71,7 +71,7 @@
   (function(){
     var root=document.getElementById('ilatek-pr'); if(!root)return;
     function clean(v){v=String(v||'').replace(/\u00a0/g,' ').trim();return /^\s*\{\{[^}]+\}\}\s*$/.test(v)?'':v}
-    var location=clean(root.getAttribute('data-location-label'))||'tu comunidad', website=clean(root.dataset.websiteUrl)||'#', email=clean(root.dataset.businessEmail), phone=clean(root.dataset.businessPhone);
+    var location=clean(root.getAttribute('data-location-label'))||'tu comunidad', website=clean(root.dataset.websiteUrl)||'https://ilatekpr.com', email=clean(root.dataset.businessEmail), phone=clean(root.dataset.businessPhone);
     /* Build placeholder strings at runtime: GHL otherwise replaces literal tokens in JavaScript with empty text. */
     function token(name){return '{'+'{custom_values.'+name+'}'+'}'}
     var values={};
@@ -79,8 +79,8 @@
     values[token('website_url')]=website;
     values[token('business__email')]=email;
     values[token('business__phone')]=phone;
-    values[token('facebook_url')]=clean(root.dataset.facebookUrl)||'#';
-    values[token('instagram_url')]=clean(root.dataset.instagramUrl)||'#';
+    values[token('facebook_url')]=clean(root.dataset.facebookUrl)||'https://www.facebook.com/ilatek.pr/';
+    values[token('instagram_url')]=clean(root.dataset.instagramUrl)||'https://www.instagram.com/ilatek.pr/';
     var walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT), nodes=[], node; while(node=walker.nextNode()){if(node.parentElement&&node.parentElement.tagName!=='SCRIPT'&&node.parentElement.tagName!=='STYLE')nodes.push(node)} nodes.forEach(function(n){Object.keys(values).forEach(function(k){n.nodeValue=n.nodeValue.split(k).join(values[k])})});
     Array.prototype.forEach.call(root.querySelectorAll('*'),function(el){Array.prototype.forEach.call(el.attributes||[],function(a){var v=a.value;Object.keys(values).forEach(function(k){v=v.split(k).join(values[k])});if(v!==a.value)el.setAttribute(a.name,v)})});
     Array.prototype.forEach.call(root.querySelectorAll('a[href="mailto:"],a[href="tel:"]'),function(a){a.hidden=true});
@@ -104,6 +104,24 @@
     });
     /* Autoplay robusto del video del hero: intenta en cuanto haya datos y reintenta al primer toque */
     try{var hv=root.querySelector('.il-hero-video');if(hv){hv.muted=true;var ilPlay=function(){var p=hv.play();if(p&&p['catch']){p['catch'](function(){})}};if(hv.readyState>=2){ilPlay()}else{hv.addEventListener('loadeddata',ilPlay,{once:true});hv.addEventListener('canplay',ilPlay,{once:true})}var ilKick=function(){if(hv.paused){ilPlay()}};document.addEventListener('touchstart',ilKick,{once:true,passive:true});document.addEventListener('click',ilKick,{once:true,passive:true})}}catch(e){}
+  })();
+  </script>
+  <script>
+  /* SEO: title en imagenes sin title (incluye elementos nativos de GHL: logo header/footer, iconos sociales) */
+  (function(){
+    var ilTitle=function(){
+      var imgs=document.images;
+      for(var i=0;i<imgs.length;i++){
+        var im=imgs[i];
+        if(!im.title&&!im.closest('a[aria-label]')&&!im.closest('[aria-hidden="true"]')){
+          var t=im.alt||'';
+          if(t.length>60)t=t.slice(0,57)+'...';
+          im.title=t||'Ilatek - Servicio de Limpieza en Puerto Rico';
+        }
+      }
+    };
+    if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',ilTitle)}else{ilTitle()}
+    window.addEventListener('load',ilTitle);
   })();
   </script>
 </section>

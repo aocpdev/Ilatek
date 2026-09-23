@@ -149,7 +149,7 @@
   (function(){
     var root=document.getElementById('ilatek-categorias'); if(!root||root.dataset.ilcgReady)return; root.dataset.ilcgReady='true';
     function clean(v){v=String(v||'').replace(/\u00a0/g,' ').trim();return /^\s*\{\{[^}]+\}\}\s*$/.test(v)?'':v}
-    var county=clean(root.getAttribute('data-location-label'))||'Puerto Rico', website=clean(root.dataset.websiteUrl)||'#';
+    var county=clean(root.getAttribute('data-location-label'))||'Puerto Rico', website=clean(root.dataset.websiteUrl)||'https://ilatekpr.com';
     function token(name){return '{'+'{custom_values.'+name+'}'+'}'}
     var values={};
     values[token('county_name_and_state')]=county;

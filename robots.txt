@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /dnf/
+
+Sitemap: https://ilatekpr.com/sitemap.xml

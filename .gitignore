@@ -5,3 +5,8 @@
 node_modules/
 .sites-runtime/
 *.log
+tools/ghl-mcp/node_modules/
+tools/ghl-mcp/package-lock.json
+.mcp.json
+.mcp.json.local
+node_modules/
