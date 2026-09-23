@@ -9,8 +9,11 @@
   data-location-label="{{custom_values.county_name_and_state}}"
   data-website-url="{{custom_values.website_url}}">
 
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap');
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&family=Outfit:wght@500..800&display=swap">
+<style>
+    
     #ilatek-servicios-slider{--ink:#11164b;--blue:#213d8e;--green:#00b94f;--green-dark:#009640;width:100vw;max-width:none;margin-inline:calc(50% - 50vw);overflow:hidden;background:linear-gradient(165deg,#213d8e 0%,#11164b 55%,#0b103d 100%);color:#fff;font-family:Manrope,Arial,sans-serif;isolation:isolate;padding:118px 0 122px}#ilatek-servicios-slider *{box-sizing:border-box}#ilatek-servicios-slider a{color:inherit;text-decoration:none}.ils-head{width:min(100% - 40px,1210px);margin:0 auto 46px;text-align:center}.ils-eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--green);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.ils-eyebrow:before{content:'';width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px rgba(0,185,79,.18)}.ils-head h2{margin:16px 0 0;font-family:Outfit,Manrope,sans-serif;font-size:clamp(42px,4.6vw,66px);font-weight:800;line-height:1.02;letter-spacing:-.06em;text-wrap:balance}.ils-head h2 em{font-style:normal;color:var(--green)}.ils-head>p{margin:18px auto 0;max-width:640px;color:rgba(255,255,255,.78);font-size:16px;line-height:1.65}
     /* Carrusel: contenedor de scroll horizontal TRANSPARENTE (el gradiente se ve a traves) */
     .ils-carousel{position:relative;width:100%;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);background:transparent}    .ils-track{display:flex;gap:0;width:max-content;padding:8px 12px 20px;will-change:transform;user-select:none;-webkit-user-select:none}
@@ -64,16 +67,16 @@
        1. PEGA AQUI TUS IMAGENES (reemplaza la propiedad img de cada servicio)
        ============================================================ */
     /* Imagenes reales de cada servicio (CDN de GHL: filesafe) */
-    var IMG_REGULAR='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab171ac825a8484f2dc1a14.jpg';
-    var IMG_PROFUNDA='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab171ac30b0f957ccc64f69.jpg';
-    var IMG_MUDANZA='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab171aac3c92dff4d1c4928.jpg';
-    var IMG_AIRBNB='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab171a930b0f957ccc64f11.jpg';
-    var IMG_POSTCONSTRUCCION='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab171a7de8ed1c29fac079f.jpg';
-    var IMG_VENTANAS='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab171a75de46047f1177c09.jpg';
-    var IMG_PRESION='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab1756e966c1acf6d443f69.jpeg';
-    var IMG_ALFOMBRAS='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab171a75594d681a92aa4d7.jpg';
-    var IMG_ELECTRODOMESTICOS='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab171a7de8ed1c29fac07a0.jpg';
-    var IMG_ORGANIZACION='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab171a730b0f957ccc64ee1.jpg';
+    var IMG_REGULAR = 'https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/svc-regular-800.webp';   /* raw: 6ab171ac825a8484f2dc1a14.jpg */
+    var IMG_PROFUNDA = 'https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/svc-profunda-800.webp';   /* raw: 6ab171ac30b0f957ccc64f69.jpg */
+    var IMG_MUDANZA = 'https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/svc-mudanza-800.webp';   /* raw: 6ab171aac3c92dff4d1c4928.jpg */
+    var IMG_AIRBNB = 'https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/svc-airbnb-800.webp';   /* raw: 6ab171a930b0f957ccc64f11.jpg */
+    var IMG_POSTCONSTRUCCION = 'https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/svc-postconstruccion-800.webp';   /* raw: 6ab171a7de8ed1c29fac079f.jpg */
+    var IMG_VENTANAS = 'https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/svc-ventanas-800.webp';   /* raw: 6ab171a75de46047f1177c09.jpg */
+    var IMG_PRESION = 'https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/svc-presion-800.webp';   /* raw: 6ab1756e966c1acf6d443f69.jpeg */
+    var IMG_ALFOMBRAS = 'https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/svc-alfombras-800.webp';   /* raw: 6ab171a75594d681a92aa4d7.jpg */
+    var IMG_ELECTRODOMESTICOS = 'https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/svc-electrodomesticos-800.webp';   /* raw: 6ab171a7de8ed1c29fac07a0.jpg */
+    var IMG_ORGANIZACION = 'https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/svc-organizacion-800.webp';   /* raw: 6ab171a730b0f957ccc64ee1.jpg */
     /* Los 10 servicios mas solicitados para companias de limpieza en Puerto Rico.
        altSeo: texto ALT dedicado por servicio, con la palabra clave Puerto Rico para SEO. */
     var SERVICES=[

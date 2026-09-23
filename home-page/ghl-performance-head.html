@@ -1,0 +1,154 @@
+<!-- ============================================================
+  ILATEK · PERFORMANCE HEAD CODE (site-wide) · v3
+  Pegar en: GHL → Settings → Tracking Code → HEADER
+  (aplica una sola vez a TODO el sitio: home + landings + servicios)
+
+  QUE ARREGLA (medido contra la pagina viva, PSI mobile 59 · LCP 11.7s):
+   1. Fuentes: 5 cadenas @import de Google Fonts (render-blocking) -> 1 solo
+      <link> canonico. (Los preconnect de fonts + images ya los emite GHL:
+      aqui NO se duplican, para no disparar el warning de "more than 4 preconnect".)
+   2. Video del hero duplicado: el builder de GHL inyecta su propio
+      <video class="bgVideo"> con el MISMO mp4 (23MB bajado 2 veces).
+      Se elimina con MutationObserver DURANTE el parseo, antes de la descarga.
+   3. Imagenes under-the-fold eager -> loading=lazy posicional (mide el fold
+      real de cada dispositivo con innerHeight, funciona igual en movil/desktop).
+   4. Fallback de imagenes: si el CDN de webp (jsDelivr) falla, cada imagen cae
+      automaticamente al asset original del CDN de GHL.
+   5. Preload del poster del hero en el home (es el elemento LCP).
+============================================================= -->
+
+<!-- 1. Fuentes: UN solo request canónico reemplaza las 5 cadenas @import.
+     Manrope 400..800 + Outfit 500..800 cubren todos los pesos del sitio.
+     Se deja render-blocking (sin el truco media="print"): el font-display:swap ya
+     viene en la URL y así se evita el salto de tipografía que sube el CLS. -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&family=Outfit:wght@500..800&display=swap">
+
+<!-- 2. Único origen nuevo que el sitio no tenía: el CDN de assets optimizados
+     (12 imágenes webp + el video del hero de 1.17MB). Los preconnect de fonts
+     y del proxy de imágenes ya los emite GHL: no se duplican. -->
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="dns-prefetch" href="https://assets.cdn.filesafe.space">
+
+<script>
+/* ILATEK perf v3 */
+(function () {
+  'use strict';
+
+  var CDN = 'https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/';
+
+  /* --- 0. Fallback de imágenes: nombre de archivo -> asset crudo del CDN de GHL.
+     Sólo se usa si el CDN de webp no responde (la página nunca queda sin imagen). */
+  var RAW = {
+    'svc-regular-800.webp': '6ab171ac825a8484f2dc1a14.jpg',
+    'svc-profunda-800.webp': '6ab171ac30b0f957ccc64f69.jpg',
+    'svc-mudanza-800.webp': '6ab171aac3c92dff4d1c4928.jpg',
+    'svc-airbnb-800.webp': '6ab171a930b0f957ccc64f11.jpg',
+    'svc-postconstruccion-800.webp': '6ab171a7de8ed1c29fac079f.jpg',
+    'svc-ventanas-800.webp': '6ab171a75de46047f1177c09.jpg',
+    'svc-presion-800.webp': '6ab1756e966c1acf6d443f69.jpeg',
+    'svc-alfombras-800.webp': '6ab171a75594d681a92aa4d7.jpg',
+    'svc-electrodomesticos-800.webp': '6ab171a7de8ed1c29fac07a0.jpg',
+    'svc-organizacion-800.webp': '6ab171a730b0f957ccc64ee1.jpg',
+    'conocenos-900.webp': '6ab0a4884091fa65e6a1ce3d.jpg',
+    'ilatek-logo-256.webp': '6aa1c05dd953a0128b5348c2.jpg',
+    'limpieza-residencial-800.webp': '6ab0c2d4ff484614db70610b.png',
+    'limpieza-comercial-800.webp': '6ab0c2d44091fa65e6a436d3.png',
+    'limpieza-industrial-800.webp': '6ab0c2d4ff484614db70610c.png',
+    'limpieza-profunda-1000.webp': '6aac6cd7254a2c54081fa165.png',
+    'luis-cardec-512.webp': '6ab0a9feff484614db6e6ce7.png',
+    'aida-cintron-512.webp': '6ab0aa1430b0f957ccb1b27d.png'
+  };
+  window.IL_RAW = RAW;
+  document.addEventListener('error', function (e) {
+    var el = e.target;
+    try {
+      if (!el || el.tagName !== 'IMG' || el.getAttribute('data-ilfb')) return;
+      var name = String(el.currentSrc || el.getAttribute('src') || '').split('?')[0].split('/').pop();
+      var raw = RAW[name];
+      if (!raw) return;
+      el.setAttribute('data-ilfb', '1');
+      el.src = CDN + raw;
+    } catch (err) {}
+  }, true);
+
+  /* --- 1. Preload del poster del hero (elemento LCP) sólo en el home. --- */
+  try {
+    var path = location.pathname;
+    if (path === '/' || path === '' || path === '/index.html') {
+      var pl = document.createElement('link');
+      pl.rel = 'preload'; pl.as = 'image'; pl.fetchPriority = 'high';
+      pl.href = 'https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/hero-poster-1280.webp';
+      (document.head || document.documentElement).appendChild(pl);
+    }
+  } catch (e) {}
+
+  /* --- 2. Dedup de <video> duplicados EN VIVO (el builder de GHL mete su
+     propio <video class="bgVideo"> con el mismo mp4). Se elimina durante el
+     parseo, no en DOMContentLoaded (cuando ya se descargó dos veces). --- */
+  var seen = {};
+  function srcOf(v) {
+    var src = v.getAttribute('src') || '';
+    if (!src) { var s = v.querySelector('source'); src = s ? (s.getAttribute('src') || '') : ''; }
+    return src.split('?')[0];
+  }
+  function killDup(v) {
+    var src = srcOf(v);
+    if (!src || src.indexOf('.mp4') < 0) return;
+    if (!seen[src]) { seen[src] = v; return; }
+    /* El parser inserta cada elemento por separado, asi que el MISMO video se
+       escanea mas de una vez (una como parte de su seccion y otra el mismo).
+       Sin este guard se auto-eliminaba el video del hero. */
+    if (seen[src] === v) return;
+    var keep = seen[src], cur = v;
+    var curIsHero = (cur.className || '').indexOf('il-hero-video') > -1;
+    var keepIsHero = (keep.className || '').indexOf('il-hero-video') > -1;
+    if (curIsHero && !keepIsHero) {
+      if (keep.parentNode) keep.parentNode.removeChild(keep);
+      seen[src] = cur;
+    } else {
+      if (cur.parentNode) cur.parentNode.removeChild(cur);
+    }
+  }
+  function scan(node) {
+    if (!node || node.nodeType !== 1) return;
+    if (node.tagName === 'VIDEO') { killDup(node); return; }
+    if (node.querySelectorAll) {
+      var vs = node.querySelectorAll('video');
+      for (var i = 0; i < vs.length; i++) killDup(vs[i]);
+    }
+  }
+  try {
+    scan(document);
+    var mo = new MutationObserver(function (muts) {
+      for (var i = 0; i < muts.length; i++) {
+        var added = muts[i].addedNodes;
+        for (var j = 0; j < added.length; j++) scan(added[j]);
+      }
+    });
+    mo.observe(document.documentElement, { childList: true, subtree: true });
+    var stopMo = function () { mo.disconnect(); scan(document); };
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', stopMo, { once: true });
+    else stopMo();
+  } catch (e) {}
+
+  /* --- 3. Lazy below-fold media que GHL emite eager. Posicional: usa el
+     innerHeight real de cada dispositivo (móvil, tablet, 4K). --- */
+  function ilLazy() {
+    try {
+      var fold = window.innerHeight * 1.5;
+      var els = document.querySelectorAll('img, iframe');
+      for (var i = 0; i < els.length; i++) {
+        var el = els[i];
+        if (el.hasAttribute('loading')) continue;
+        if (el.getAttribute('fetchpriority') === 'high') continue;
+        if (el.getBoundingClientRect().top > fold) {
+          el.setAttribute('loading', 'lazy');
+          el.setAttribute('decoding', 'async');
+        }
+      }
+    } catch (e) {}
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', ilLazy, { once: true });
+  else ilLazy();
+})();
+</script>
