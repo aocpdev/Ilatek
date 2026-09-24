@@ -1,0 +1,74 @@
+/* ============================================================================
+   ILATEK · Encaje al container + esquinas redondeadas
+   Bloque destino: #custom-code-pE6jywLVzS
+
+   QUÉ HACE
+   1. Obliga al bloque y a TODO su contenido a quedarse dentro del ancho del
+      container: anula el truco full-bleed (width:100vw + margin-inline:
+      calc(50% - 50vw)) y cualquier margen lateral negativo de los bloques
+      internos, sin tocar la tipografía ni las animaciones.
+   2. Redondea el bloque y recorta lo que sobresalga, para que las esquinas
+      queden limpias incluso con el carrusel 3D (las tarjetas laterales quedan
+      cortadas por el borde redondeado, que es el efecto buscado).
+
+   DÓNDE VA
+   GHL → la página → Settings → Custom CSS.
+   (También funciona pegado al final de un bloque Custom HTML dentro de <style>.)
+
+   AJUSTES
+   · Radio: cambia --ilc-radius (22px = el radio que usan las tarjetas del sitio).
+   · Sin recorte lateral: comenta la regla con [data-il-clip] si quieres que las
+     tarjetas laterales del carrusel se vean completas fuera del borde.
+   ========================================================================== */
+
+/* 1 · El bloque -------------------------------------------------------------- */
+#custom-code-pE6jywLVzS{
+  --ilc-radius:22px;
+  display:block;
+  width:100% !important;
+  max-width:100% !important;
+  margin-left:0 !important;
+  margin-right:0 !important;
+  margin-inline:0 !important;
+  box-sizing:border-box;
+  border-radius:var(--ilc-radius);
+  overflow:hidden;   /* recorta lo que sobresalga: nunca genera scroll lateral */
+  overflow:clip;     /* navegadores modernos: recorta igual sin crear scroll container */
+  isolation:isolate;
+}
+
+/* 2 · Bloques/secciones internos: mismo ancho del container (mata el 100vw) --- */
+#custom-code-pE6jywLVzS > *,
+#custom-code-pE6jywLVzS section{
+  width:100% !important;
+  max-width:100% !important;
+  margin-left:0 !important;
+  margin-right:0 !important;
+  margin-inline:0 !important;
+  box-sizing:border-box;
+}
+
+/* 3 · El bloque que pinta el fondo hereda el redondeo ------------------------ */
+#custom-code-pE6jywLVzS > section,
+#custom-code-pE6jywLVzS > div{
+  border-radius:var(--ilc-radius);
+  overflow:hidden;
+  overflow:clip;
+  background-clip:padding-box;
+}
+
+/* 4 · Medios y embeds siempre dentro del ancho ----------------------------- */
+#custom-code-pE6jywLVzS img,
+#custom-code-pE6jywLVzS video,
+#custom-code-pE6jywLVzS iframe,
+#custom-code-pE6jywLVzS canvas,
+#custom-code-pE6jywLVzS svg{
+  max-width:100%;
+}
+
+/* 5 · Redondeo interno opcional (descomenta si quieres que el contenido
+      también cierre en curva) ------------------------------------------------
+#custom-code-pE6jywLVzS > section > div:first-child{
+  border-radius:inherit;
+}
+*/
