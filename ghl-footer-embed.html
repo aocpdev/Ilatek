@@ -1,0 +1,239 @@
+<!--
+  ILATEK · GHL Custom Code · Footer global (embed independiente)
+  Pegar tal cual en un elemento <Custom Code> de GoHighLevel.
+  Reproduce el footer nativo publicado (fondo negro, columnas de navegación, fila de
+  servicios con tarjetas, tarjeta clara del Portal del Cliente y barra inferior).
+  Arreglos respecto al original:
+   · Los títulos "Menu Principal / Legal / Oportunidades" estaban en azul marino
+     #11164b sobre fondo negro (ilegibles); aquí se usan tonos claros.
+   · La columna "Servicios de Mantenimiento y Sellado de Techos" repetía los enlaces
+     de limpieza; ahora enlaza los servicios de techos reales.
+   · Los headings de columna usan h2 (no h1) para no romper la jerarquía de la página.
+-->
+<footer id="ilatek-footer" role="contentinfo" aria-label="Pie de página de Ilatek">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+
+  <style>
+    #ilatek-footer{
+      --ilf-bg:#000000;--ilf-bg-m:#000321;--ilf-navy:#11164b;--ilf-ink:#000321;
+      --ilf-blue:#000d4d;--ilf-green:#00b94f;--ilf-green-dk:#009640;
+      --ilf-line:#1c2452;--ilf-gray:#cbd5e0;--ilf-muted:#5b6380;--ilf-white:#fff;
+      background:var(--ilf-bg);color:var(--ilf-white);
+      font-family:Inter,Arial,sans-serif;padding:40px 0 10px;
+      -webkit-font-smoothing:antialiased;overflow-x:clip;
+    }
+    #ilatek-footer *{box-sizing:border-box}
+    #ilatek-footer p,#ilatek-footer h2,#ilatek-footer h3,#ilatek-footer ul{margin:0;padding:0}
+    #ilatek-footer ul{list-style:none}
+    #ilatek-footer a{text-decoration:none}
+    #ilatek-footer a:focus-visible{outline:2px solid var(--ilf-green);outline-offset:3px;border-radius:4px}
+    .ilf-inner{width:min(100% - 40px,1170px);margin:0 auto}
+
+    /* columnas de navegación */
+    .ilf-nav{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;max-width:760px;margin:0 auto 46px;text-align:center}
+    .ilf-kicker{font-size:14px;font-weight:700;letter-spacing:.02em;color:var(--ilf-white);margin-bottom:14px}
+    .ilf-list li{margin-bottom:9px}
+    .ilf-list a,.ilf-list span{font-size:12px;line-height:1.4;color:var(--ilf-gray)}
+    .ilf-list a:hover{color:var(--ilf-green)}
+    .ilf-list span{opacity:.72}
+
+    /* fila de servicios */
+    .ilf-services{
+      display:grid;grid-template-columns:30% 33.4% 30%;gap:20px;justify-content:center;
+      width:min(100% - 40px,1040px);margin:0 auto 40px;padding:15px 10px;
+      border:2px solid var(--ilf-line);border-radius:20px;
+    }
+    .ilf-svc{text-align:center}
+    .ilf-card{padding:40px 18px;background:rgba(0,0,0,.5);border:2px solid var(--ilf-blue);border-radius:25px}
+    .ilf-h{font-size:14px;font-weight:700;color:var(--ilf-white);margin-bottom:14px;line-height:1.35}
+    .ilf-svcimg{max-width:100%;height:auto;border-radius:20px;margin:0 auto 16px;display:block}
+    .ilf-links li{margin-bottom:10px;line-height:1.35}
+    .ilf-links a{font-size:12px;font-weight:700;color:var(--ilf-gray)}
+    .ilf-links a:hover{color:var(--ilf-green);text-decoration:underline}
+    .ilf-strong{font-size:12px;font-weight:700;color:var(--ilf-gray);margin-bottom:26px}
+    .ilf-prod .ilf-svcimg{margin-bottom:12px}
+
+    /* Portal del Cliente */
+    .ilf-portal-title{font-size:16px;font-weight:700;text-align:center;color:var(--ilf-white);margin-bottom:16px}
+    .ilf-portal-card{
+      display:grid;grid-template-columns:26.5% 48.2% 25.3%;gap:20px;align-items:center;
+      width:min(100% - 40px,1050px);margin:0 auto 40px;padding:10px 60px;
+      background:linear-gradient(0deg,var(--ilf-gray) 0%,var(--ilf-white) 100%);
+      border-radius:20px;color:var(--ilf-navy);
+    }
+    .ilf-portal-img{max-width:100%;height:auto;border-radius:20px;margin:0 auto;display:block}
+    .ilf-portal-img-mobile{display:none}
+    .ilf-portal-h{font-size:16px;font-weight:700;color:var(--ilf-navy);text-align:center;margin-bottom:10px}
+    .ilf-portal-copy p{font-size:12px;line-height:1.45;color:var(--ilf-muted);text-align:center;margin-bottom:18px}
+    .ilf-btn{
+      display:block;width:fit-content;margin:0 auto;padding:16px 60px;border-radius:10px;
+      background:var(--ilf-green);color:var(--ilf-white);font-weight:700;font-size:14px;
+      transition:background .2s ease;
+    }
+    .ilf-btn:hover{background:var(--ilf-green-dk)}
+    .ilf-dash{padding:40px 20px}
+    .ilf-dash ul li{position:relative;padding-left:22px;margin-bottom:2px;font-size:12px;line-height:2;color:#000}
+    .ilf-dash ul li::before{content:"\2713";position:absolute;left:0;color:var(--ilf-green);font-weight:700}
+
+    /* barra inferior */
+    .ilf-bottom{
+      display:grid;grid-template-columns:37.4% 25.1% 37.5%;align-items:center;gap:10px;
+      width:min(100% - 40px,1170px);margin:0 auto;padding:10px 5px;
+    }
+    .ilf-bottom-logo{text-align:center}
+    .ilf-bottom-logo img{width:100px;height:auto;border:3px solid var(--ilf-ink);border-radius:20px}
+    .ilf-social{display:flex;justify-content:center;gap:14px}
+    .ilf-social img{width:16px;height:20px;filter:brightness(0) invert(1);opacity:.85;transition:opacity .2s ease}
+    .ilf-social a:hover img{opacity:1}
+    .ilf-credit{grid-column:1 / -1;text-align:center;font-size:12px;letter-spacing:.02em;color:var(--ilf-muted);margin-top:14px}
+    .ilf-credit a{color:var(--ilf-white)}
+    .ilf-credit a:hover{color:var(--ilf-green)}
+
+    @media (max-width:900px){
+      .ilf-services{grid-template-columns:1fr 1fr;width:min(100% - 24px,720px)}
+      .ilf-svc:first-child{grid-column:1 / -1}
+      .ilf-portal-card{grid-template-columns:1fr;gap:26px;padding:26px 22px;width:min(100% - 24px,720px)}
+      .ilf-portal-img{max-width:280px}
+      .ilf-portal-img-mobile{display:block;max-width:min(100%,320px);height:auto;margin:0 auto}
+      .ilf-dash{padding:10px 0}
+    }
+    @media (max-width:600px){
+      #ilatek-footer{background:var(--ilf-bg-m);padding-left:10px;padding-right:10px}
+      .ilf-nav{grid-template-columns:1fr;gap:22px;text-align:center}
+      .ilf-services{grid-template-columns:1fr;gap:16px}
+      .ilf-svc:first-child{grid-column:auto}
+      .ilf-card{padding:28px 16px}
+      .ilf-bottom{grid-template-columns:1fr;gap:18px}
+      .ilf-credit{margin-top:6px}
+    }
+  </style>
+
+  <div class="ilf-inner">
+
+    <!-- Navegación -->
+    <div class="ilf-nav">
+      <nav aria-labelledby="ilf-menu-t">
+        <h2 id="ilf-menu-t" class="ilf-kicker">Menu Principal</h2>
+        <ul class="ilf-list">
+          <li><a href="https://ilatekpr.com/">Home</a></li>
+          <li><a href="https://ilatekpr.com/cotizacion">Agenda tu Limpieza</a></li>
+          <li><a href="https://ilatekpr.com/techos#ilt-agenda">Agenda tu Mantenimiento de Techos</a></li>
+        </ul>
+      </nav>
+      <nav aria-labelledby="ilf-legal-t">
+        <h2 id="ilf-legal-t" class="ilf-kicker">Legal</h2>
+        <ul class="ilf-list">
+          <li><a href="https://ilatekpr.com/politica-de-privacidad">Política de Privacidad</a></li>
+          <li><a href="https://ilatekpr.com/terminos-y-condiciones">Términos y Condiciones</a></li>
+          <li><span>Garantía y Devoluciones</span></li>
+          <li><span>Licenciados y Asegurados</span></li>
+        </ul>
+      </nav>
+      <nav aria-labelledby="ilf-opp-t">
+        <h2 id="ilf-opp-t" class="ilf-kicker">Oportunidades</h2>
+        <ul class="ilf-list">
+          <li><span>Empleos</span></li>
+          <li><span>Educación</span></li>
+          <li><span>Crea tu Propia Empresa</span></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Servicios -->
+    <div class="ilf-services">
+      <section class="ilf-svc" aria-labelledby="ilf-svc-clean-t">
+        <h2 id="ilf-svc-clean-t" class="ilf-h">Servicios de Limpieza</h2>
+        <img class="ilf-svcimg" src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab0c293bdaa5e26a9643f94.png" alt="Ilatek - Servicio de Limpieza en Puerto Rico" title="Ilatek - Servicio de Limpieza en Puerto Rico" loading="lazy">
+        <ul class="ilf-links">
+          <li><a href="https://ilatekpr.com/limpieza-residencial">Servicio de Limpieza Residencial en Puerto Rico</a></li>
+          <li><a href="https://ilatekpr.com/limpieza-comercial">Servicio de Limpieza Comercial en Puerto Rico</a></li>
+          <li><a href="https://ilatekpr.com/limpieza-industrial">Servicio de Limpieza Industrial en Puerto Rico</a></li>
+          <li><a href="https://ilatekpr.com/limpieza-estandar">Limpieza estandar en Puerto Rico</a></li>
+          <li><a href="https://ilatekpr.com/limpieza-profunda">Limpieza profunda en Puerto Rico</a></li>
+          <li><a href="https://ilatekpr.com/limpieza-de-mudanza">Limpieza de mudanza en Puerto Rico</a></li>
+          <li><a href="https://ilatekpr.com/airbnb-turnover">Limpieza de Airbnb &amp; turnover en Puerto Rico</a></li>
+          <li><a href="https://ilatekpr.com/organizacion">Organizacion de espacios en Puerto Rico</a></li>
+          <li><a href="https://ilatekpr.com/electrodomesticos">Limpieza de electrodomesticos en Puerto Rico</a></li>
+          <li><a href="https://ilatekpr.com/alfombras">Limpieza de alfombras en Puerto Rico</a></li>
+          <li><a href="https://ilatekpr.com/lavado-a-presion">Lavado a presión en Puerto Rico</a></li>
+          <li><a href="https://ilatekpr.com/ventanas">Limpieza de ventanas en Puerto Rico</a></li>
+          <li><a href="https://ilatekpr.com/post-construccion">Limpieza Post-Construcción en Puerto Rico</a></li>
+        </ul>
+      </section>
+
+      <section class="ilf-svc ilf-card" aria-labelledby="ilf-svc-techos-t">
+        <h2 id="ilf-svc-techos-t" class="ilf-h">Servicios de Mantenimiento y Sellado de Techos</h2>
+        <img class="ilf-svcimg" src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac04fe4f30b488137c005b1.jpeg" alt="Ilatek - Servicios de Techos en Puerto Rico" title="Ilatek - Servicios de Techos en Puerto Rico" loading="lazy">
+        <ul class="ilf-links">
+          <li><a href="https://ilatekpr.com/reparacion-de-techos">Reparación de Techos en Puerto Rico</a></li>
+          <li><a href="https://ilatekpr.com/sellado-de-techos">Sellado de Techos en Puerto Rico</a></li>
+          <li><a href="https://ilatekpr.com/impermeabilizacion-de-techos">Impermeabilización de Techos en Puerto Rico</a></li>
+          <li><a href="https://ilatekpr.com/mantenimiento-de-techos">Mantenimiento de Techos en Puerto Rico</a></li>
+          <li><a href="https://ilatekpr.com/inspeccion-y-mantenimiento-de-techos">Inspección y Mantenimiento de Techos</a></li>
+          <li><a href="https://ilatekpr.com/limpieza-de-techos-y-canaletas">Limpieza de Techos y Canaletas</a></li>
+          <li><a href="https://ilatekpr.com/canaletas-y-bajantes">Canaletas y Bajantes en Puerto Rico</a></li>
+          <li><a href="https://ilatekpr.com/tragaluces">Tragaluces en Puerto Rico</a></li>
+          <li><a href="https://ilatekpr.com/instalacion-y-reemplazo-de-techos">Instalación y Reemplazo de Techos</a></li>
+          <li><a href="https://ilatekpr.com/techos-de-concreto">Techos de Concreto en Puerto Rico</a></li>
+          <li><a href="https://ilatekpr.com/techos-de-zinc">Techos de Zinc en Puerto Rico</a></li>
+          <li><a href="https://ilatekpr.com/techos-de-teja">Techos de Teja en Puerto Rico</a></li>
+          <li><a href="https://ilatekpr.com/techos-por-segmento">Techos por Segmento en Puerto Rico</a></li>
+        </ul>
+      </section>
+
+      <section class="ilf-svc ilf-card ilf-prod" aria-label="Productos Ilatek">
+        <h2 class="ilf-h">Productos para mantenimiento de techos</h2>
+        <img class="ilf-svcimg" src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac134617d735ea2a1fdc078.jpg" alt="Kit de Sellado de Techos - Ilatek" title="Kit de Sellado de Techos - Ilatek" loading="lazy">
+        <p class="ilf-strong">Selladores de Techo</p>
+        <h2 class="ilf-h">Productos de limpieza</h2>
+        <img class="ilf-svcimg" src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac1a365195f9172ed559106.jpeg" alt="Productos de limpieza - Ilatek" title="Productos de limpieza - Ilatek" loading="lazy">
+      </section>
+    </div>
+
+    <!-- Portal del Cliente -->
+    <p class="ilf-portal-title">Ilatek Property Solution en Puerto Rico</p>
+    <div class="ilf-portal-card">
+      <img class="ilf-portal-img" src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aadf131bdaa5e26a92e2c6f.png" alt="Portal del Cliente - Ilatek" title="Portal del Cliente - Ilatek" loading="lazy">
+
+      <div class="ilf-portal-copy">
+        <h2 class="ilf-portal-h">Portal del Cliente</h2>
+        <p>Tu portal de cliente te permite tener todo lo relacionado con tus servicios de limpieza, sellado y mantenimiento de techos en un solo lugar. Dentro de tu portal también podrás acceder al historial de servicios realizados, consultar recomendaciones de mantenimiento, visualizar documentos relacionados con tus trabajos y mantener tus datos de contacto actualizados. Además, podrás recibir recordatorios para servicios futuros y dar seguimiento a las próximas visitas programadas, ayudándote a mantener tu propiedad protegida y en óptimas condiciones durante todo el año.</p>
+        <a class="ilf-btn" href="https://portal.ilatekpr.com" aria-label="Log In">Log In</a>
+      </div>
+
+      <div class="ilf-dash">
+        <h2 class="ilf-portal-h">Dashboard Encriptado</h2>
+        <ul>
+          <li>Solicitar servicios</li>
+          <li>Agendar Citas</li>
+          <li>Consultar progreso</li>
+          <li>Revisar cotizaciones</li>
+          <li>Realizar pagos</li>
+          <li>Recibir notificaciones</li>
+          <li>Chatear con un Agente</li>
+        </ul>
+      </div>
+
+      <img class="ilf-portal-img-mobile" src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aadfd7cbdaa5e26a92efd33.png" alt="Portal del Cliente Ilatek en móvil" loading="lazy">
+    </div>
+
+    <!-- Barra inferior -->
+    <div class="ilf-bottom">
+      <div class="ilf-bottom-logo">
+        <a href="https://ilatekpr.com/" aria-label="Ilatek, inicio">
+          <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab044d04091fa65e69921f6.png" alt="Ilatek Property Solution - Servicio de Limpieza Residencial, Comercial e Industrial en Puerto Rico" title="Ilatek Property Solution en Puerto Rico" loading="lazy">
+        </a>
+      </div>
+      <div class="ilf-social">
+        <a href="https://www.facebook.com/ilatek.pr/" aria-label="Facebook" target="_blank" rel="noopener nofollow"><img src="https://stcdn.leadconnectorhq.com/funnel/icons/dark/facebook-dark.svg" alt="Facebook" loading="lazy" decoding="async"></a>
+        <a href="https://www.instagram.com/ilatek.pr/" aria-label="Instagram" target="_blank" rel="noopener nofollow"><img src="https://stcdn.leadconnectorhq.com/funnel/icons/dark/instagram-dark.svg" alt="Instagram" loading="lazy" decoding="async"></a>
+        <a href="https://www.youtube.com/@Ilatekpr" aria-label="Youtube" target="_blank" rel="noopener noreferrer"><img src="https://stcdn.leadconnectorhq.com/funnel/icons/dark/youtube-dark.svg" alt="Youtube" loading="lazy" decoding="async"></a>
+      </div>
+      <p class="ilf-credit">© 2026. Made with ❤️ by <a href="https://devasks.com/" target="_blank" rel="noopener noreferrer">Devasks</a></p>
+    </div>
+
+  </div>
+</footer>
