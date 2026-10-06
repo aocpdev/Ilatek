@@ -32,9 +32,33 @@ Las secciones también están como embeds independientes en `home-page/`: `ghl-c
 
 `politica-de-privacidad/ILATEK-Politica-Privacidad.html` es la página completa y `politica-de-privacidad/ghl-politica-embed.html` es la versión lista para pegar en un elemento **Custom Code** de GHL. Usa los mismos tokens `{{custom_values.*}}` (sitio web, correo y teléfono de contacto) y acordeones nativos, igual que los Términos y Condiciones. Sustituye las fechas de entrada en vigor y de última actualización del encabezado cuando corresponda.
 
+## Reseñas
+
+El bloque de reseñas (`section#ilatek-reviews`) vive en las 50 páginas con `il-reviews-tabs` (16 en `home-page/`, 34 en `techos/`) y ahora tiene **3 pestañas**: `Reseñas de Google`, `Selfie Reviews` y `Reseñas de Techos` (widget ReputationHub `widgetId=6ac3eb680432b6ce3f30b035`, reviews de Mantenimiento de Techos).
+
+- El iframe de Techos se carga con `data-src` al activar su pestaña (igual que Selfie) y lleva `src="about:blank"`: sin un `src` válido, `review-widget.js` rompe con `new URL('')` y **no aplica alturas a ningún widget de la página** (bug confirmado en producción; con el fix, `lc.setHeight` se aplica a los tres).
+- El JS de las pestañas es genérico (itera `.il-reviews-tab` y usa `aria-controls`), así que aguanta 3 pestañas sin tocar el script.
+- `resenas/ghl-resenas-embed.html` es la página nueva `/resenas` (slug `resenas`) con las 3 pestañas, H1 propio y CTA; pégala en Custom Code de una página nueva en GHL, junto al nav y al footer. El enlace `Reseñas` del menú (`home-page/ghl-nav-embed.html` y `techos/ghl-techos-nav-embed.html`) apunta a `{{custom_values.website_url}}/resenas`.
+
+## Menú y /techos
+
+- El menú universal (`home-page/ghl-nav-embed.html`) da prioridad a **Mantenimiento de Techos**: es el primer enlace del nav; en el mega-panel las categorías de techos van antes que Limpieza ("Techos · Mantenimiento" primero, Limpieza al final) y el drawer móvil hereda ese orden; Techos va antes que Limpieza en Empleos, en el dropdown de "Agenda tu Servicio" y en los enlaces "Todos los Servicios" del pie del mega.
+- La página `/techos` consolida a `/home`: los enlaces internos (menús, footer, breadcrumbs del schema, logo) apuntan a `/home`; el canonical y og:url de su bloque SEO son `https://ilatekpr.com/home`; salió del sitemap (`sitemap.xml` y fragmento) y `llms-techos.txt` lo documenta. La redirección real se configura en GHL.
+
+## Home Multiservicios
+
+`home-page/ghl-home-multiservicios.html` es el home nuevo "Compañía de Multiservicios" (embed todo-en-uno para GHL). Estructura: Hero Multiservicios (CTAs Techos + Limpieza) · Mantenimiento de Techos con links a las 5 landings madre (Reparación, Sellado, Impermeabilización, Techos por Segmento, Inspección y Mantenimiento) · Airbnb & Turnover · Limpieza (9 servicios) · Reseñas 3 pestañas en orden Reseñas de Mantenimiento de Techos · Reseñas de Google (centro, activa por default) · Reseñas de Limpieza — widgets reasignados por nombre; solo en este home · CTA final con calendarios duales. Sin nav/footer: pegar junto al menú universal y el footer. Sin referencias a oxidación por decisión del cliente.
+
+**Toggle ES/EN (fase 2):** el menú universal (`ghl-nav-embed.html`) trae un botón cápsula es/en (`.iln-lang` dentro de `.iln-langwrap`) que aparece solo si la página tiene `[data-es]` fuera de `#ilatek-nav`/`#ilatek-footer` — los atributos del propio menú no cuentan, así el toggle no aparece muerto en las demás páginas. Traduce textos y atributos con cuatro modos de nodo: `data-en` (texto plano; `data-en-html` para innerHTML), `data-attr` (+`data-attr2`/`data-es2`/`data-en2` para un segundo atributo) y `data-en-key` (rich text EN desde `window.ILATEK_I18N`, con snapshot `_ilEsHtml` para restaurar el ES original). Cambia `<html lang>`, persiste en `localStorage` (clave `ilatek-lang`; el boot aplica el idioma guardado en cada carga) y emite el evento `ilatek:lang` que sincroniza footer, marquee (rebuild bilingüe de títulos, kickers, descripciones y precios EN) y auto-slide off en EN. En el home traduce hero, ambos carruseles 3D, proceso, marquee, Airbnb, cobertura (placeholder incluido), reseñas (pestañas), FAQ completa (qa1–qa10) y CTA final. El footer (`ghl-footer-embed.html`) escucha el mismo evento y lee localStorage al cargar. El county se resuelve dinámicamente leyendo `data-location-label` del contenido de la página.
+
+**Nota de mantenimiento:** en `ghl-home-multiservicios.html`, `website`, `county` y `function token` del carrusel de servicios viven a nivel del IIFE (no dentro de `buildCards`): `buildCards()` se re-ejecuta en cada cambio de idioma y el bloque de resolución de tokens usa esas variables después de la llamada inicial.
+
+Verificado en preview local (1280/390): ida y vuelta es↔en completa (nav, mega-panel, footer, H1 con `<em>` restaurado, facts, tarjetas 3D, marquee EN, Airbnb, cobertura, FAQ, CTA), persistencia tras recarga con `ilatek-lang=en`, auto-oculto del toggle en una página sin `[data-es]` propio, sin scroll horizontal a 390px y consola limpia; swipe y pausa al hover probados en los dos carruseles 3D (rotación 4.2s, reanudación al salir, giro por gesto ≥48px).
+
 ## Archivos
 
 - `home-page/ghl-custom-code.html`: landing de inicio para GHL Custom Code; botones de cotización hacia https://ilatekpr.com/cotizacion.
+- `resenas/ghl-resenas-embed.html`: página de reseñas `/resenas` (3 pestañas: Google, Selfie, Techos) para Custom Code en GHL.
 - `ghl-custom-code.html`: versión editable con imagen local.
 - `ghl-custom-code-embedded.html`: versión autónoma lista para copiar en GHL.
 - `ilatek-calendar-custom-code.html`: estilos del calendario con las etiquetas HTML necesarias.
