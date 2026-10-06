@@ -1,0 +1,1066 @@
+<!--
+  ═══════════════════════════════════════════════════════════════════
+  ILATEK · Home Multiservicios v2 · embed todo-en-uno para GHL
+  10 secciones en orden (plan aprobado):
+    1. Hero "Soluciones para tu propiedad en {{county}}" (sin precios)
+    2. Carrusel 3D de Techos (Reparación · Sellado · Impermeabilización)
+    3. Carrusel 3D de Limpieza (embed ghl-categorias-embed.html inline)
+    4. Proceso de cotización en 3 pasos (port del home de limpieza)
+    5. Marquee de 10 servicios (embed ghl-servicios-carousel-embed.html inline)
+    6. Airbnb & Turnover (highlight)
+    7. Cobertura: directorio de los 78 municipios (port icd)
+    8. Reseñas (3 pestañas: Techos · Google activa por default · Limpieza)
+    9. FAQ (10 preguntas techos + limpieza; JSON-LD FAQPage en pase siguiente)
+   10. CTA final dual: calendario Techos + calendario Limpieza
+  NOTAS:
+  · No trae nav ni footer: pega junto al menú universal (ghl-nav-embed.html)
+    y al footer (ghl-footer-embed.html). Si reemplaza /home en GHL, conserva
+    el head SEO existente (ghl-head-seo.html).
+  · PENDIENTE (pases siguientes): toggle ES/EN y JSON-LD @graph (WebSite,
+    LocalBusiness, OfferCatalog, FAQPage, BreadcrumbList).
+  · Regla de links: todo enlace interno usa {{custom_values.website_url}}/slug.
+    Excepciones intencionales: calendarios msgsndr, links de pueblo
+    (https://{pueblo}.ilatekpr.com), widgets ReputationHub y CDNs de imágenes.
+  · Tokens GHL: {{custom_values.website_url}}, {{custom_values.county_name_and_state}}.
+    El hero no muestra el token resuelto en local (artefacto conocido; GHL lo resuelve).
+  · overflow-x:clip en el root: las secciones full-bleed (marquee/cobertura/FAQ)
+    usan 100vw como en producción; el clip evita overflow por el scrollbar.
+  · Sin ninguna referencia a oxidación (decisión del cliente).
+  ═══════════════════════════════════════════════════════════════════
+-->
+<section id="ilatek-home-multiservicios">
+<script>window.ILATEK_I18N={"h1":{en:'Solutions for <em>your property</em> in {{custom_values.county_name_and_state}}'},"heroSub":{en:'Roof Sealing and Maintenance, Airbnb Cleaning, Solutions for your Residential, Commercial, Industrial property in {{custom_values.county_name_and_state}}'},"factInspect":{en:'<b>Free</b> roof inspection'},"factTowns":{en:'<b>78</b> municipalities'},"factWarranty":{en:'<b>Warranty</b> in writing'},"t3dTitle":{en:'Roof Services in {{custom_values.county_name_and_state}}'},"l3dTitle":{en:'Cleaning Services in {{custom_values.county_name_and_state}}'},"procTitle":{en:'Quote your roof or cleaning in <em style="font-style:normal;color:var(--ms-green-dark)">three steps</em>.'},"procSub":{en:'Our quote form gives you a <strong>real price in minutes</strong>, no calls or waiting. Three steps:'},"procP1":{en:'Tell us what your property needs: roof repair or sealing, waterproofing, or residential, commercial or industrial cleaning.'},"procP2":{en:'Choose your roof or cleaning service and add extras like windows, carpets or appliances. See your total price instantly.'},"procP3":{en:'Confirm your quote, secure your appointment with the $50 deposit and pick the day that suits you best on the calendar.'},"ilsTitle":{en:'The services your property needs, <em>all with clear pricing</em>.'},"ilsSub":{en:'The 10 most requested cleaning services in {{custom_values.county_name_and_state}}, available across Puerto Rico’s 78 municipalities. Get your quote in minutes.'},"ilsCtaT":{en:'Ready when you are. Get your real price now.'},"ilsCtaP":{en:'Quote your cleaning in minutes and book your date with the $50 deposit.'},"airTitle":{en:'Your property <em>spotless</em> for the next guest.'},"airP":{en:'Shifts coordinated with your booking calendar: full cleaning, amenity restocking and a checklist between check-out and check-in to keep your superhost reviews.'},"icdTitle":{en:'Roofs and cleaning, <em>island-wide coverage</em>.'},"icdP":{en:'Explore Ilatek’s <strong>roof and cleaning</strong> services across <strong>Puerto Rico’s 78 municipalities</strong> and visit your town’s page. We serve properties in <strong>{{custom_values.county_name_and_state}}</strong> and island-wide.'},"faqTitle":{en:'Everything you need to know before your service.'},"faqSub":{en:'Clear answers about <b>roofs</b>, <b>cleaning</b>, pricing, coverage and bookings with Ilatek in {{custom_values.county_name_and_state}}.'},"finTitle":{en:'Ready for your next service?'},"finSub":{en:'Book roofs or cleaning in minutes. Free roof inspections, clear quotes and an open calendar in {{custom_values.county_name_and_state}}.'},"finNote":{en:'78 municipalities across Puerto Rico · Secure payments on the calendar · Written warranty'},"qa1":{en:'Ilatek covers your roof’s whole life cycle: <b><a href="{{custom_values.website_url}}/reparacion-de-techos">roof repair</a></b> (leaks, seepage, cracks and ponding), <b><a href="{{custom_values.website_url}}/sellado-de-techos">roof sealing</a></b> with the right system for every surface, <b><a href="{{custom_values.website_url}}/impermeabilizacion-de-techos">waterproofing</a></b> and <b><a href="{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos">inspection &amp; preventive maintenance</a></b>. We also work by property type via <a href="{{custom_values.website_url}}/techos-por-segmento">roofs by segment</a> (residential, commercial, industrial).'},"qa2":{en:'Puerto Rico’s tropical climate — sun, salt, rain and hurricanes — calls for at least <b>one inspection per year</b> plus scheduled preventive maintenance. With the <b><a href="{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos">roof inspection &amp; maintenance</a></b> plan (from $58/month) we check seals, gutters and covers before a small issue becomes a leak.'},"qa3":{en:'Yes. The <b>roof inspection is free</b> in {{custom_values.county_name_and_state}} and island-wide. Book directly on the <b><a href="https://link.msgsndr.com/widget/booking/wM8KQhsYjEQAo0HbNGIh" target="_blank" rel="noopener">roof calendar</a></b> or request your <b><a href="{{custom_values.website_url}}/cotizacion-techos">roof quote</a></b> and we’ll guide you on exactly what your roof needs.'},"qa4":{en:'It depends on the surface and the damage: <b>100% silicone</b> for extreme elasticity, <b>asphalt membrane</b> to reinforce critical areas, <b>elastomeric coating</b> for reflectivity and <b>acrylic sealing</b> as a budget option. On <b><a href="{{custom_values.website_url}}/sellado-de-techos">roof sealing</a></b> we explain the options with clear pricing; the free inspection defines the right system.'},"qa5":{en:'At Ilatek pricing is by square foot: <b>standard cleaning costs $0.07 per sq ft</b> and <b>deep cleaning $0.15 per sq ft</b>. For example, a 2,000 sq ft home costs $140 standard or $300 deep. Extras (windows, fridge, carpets) add fixed prices. Our online quote shows the <b><a href="{{custom_values.website_url}}/cotizacion">real price in minutes</a></b>, no calls or random estimates.'},"qa6":{en:'The <b><a href="{{custom_values.website_url}}/limpieza-estandar">standard cleaning</a></b> keeps your home fresh and tidy with attention to every space; ideal on a recurring basis. The <b><a href="{{custom_values.website_url}}/limpieza-profunda">deep cleaning</a></b> renews the home area by area, ideal before or after an important occasion. Both are personalized services: share your property size and we coordinate scope before the service.'},"qa7":{en:'Yes. Ilatek serves properties across <b>Puerto Rico’s 78 municipalities</b>, including {{custom_values.county_name_and_state}} and island-wide — both <b>roofs</b> and <b>cleaning</b>. Each service is coordinated to your space’s needs. Visit your town’s page in the coverage directory or request a quote to confirm availability in your area.'},"qa8":{en:'With our <b><a href="{{custom_values.website_url}}/cotizacion">online quote tool</a></b> in 4 steps: enter the square footage, choose your cleaning type, add services and extras, and see the <b>total price and estimated duration</b> on the spot. For roofs, request your <b><a href="{{custom_values.website_url}}/cotizacion-techos">roof quote</a></b> with a free inspection.'},"qa9":{en:'We work <b>Monday to Saturday, 8:00 a.m. to 6:00 p.m.</b> After your quote you pick the date and time on the booking calendar, based on real team availability. Cleaning bookings are secured with a <b>$50 deposit</b> deducted from the service total. For roofs, book your free inspection on the <b><a href="https://link.msgsndr.com/widget/booking/wM8KQhsYjEQAo0HbNGIh" target="_blank" rel="noopener">roof calendar</a></b>.'},"qa10":{en:'Because one team handles your property top to bottom: <b><a href="{{custom_values.website_url}}/mantenimiento-de-techos">roof maintenance</a></b> (repair, sealing and waterproofing) and <b><a href="{{custom_values.website_url}}/limpieza-residencial">professional cleaning</a></b> residential, commercial and industrial. We combine transparent per-square-foot pricing, an online quote with an instant real price, coverage across the 78 municipalities and clear coordination before every service.'},};</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&family=Outfit:wght@500..800&display=swap">
+
+  <style>
+    #ilatek-home-multiservicios{--ms-ink:#11164b;--ms-deep:#0b103d;--ms-blue:#213d8e;--ms-green:#00b94f;--ms-green-dark:#009640;--ms-line:#dbe2f1;--ms-mist:#f4f7fc;--ms-white:#fff;--ms-muted:#5b6380;--ms-pad:clamp(78px,8vw,112px);font-family:Manrope,Arial,sans-serif;color:var(--ms-ink);-webkit-font-smoothing:antialiased;overflow-x:hidden;overflow-x:clip}
+    #ilatek-home-multiservicios *{box-sizing:border-box}
+    #ilatek-home-multiservicios h1,#ilatek-home-multiservicios h2,#ilatek-home-multiservicios h3,#ilatek-home-multiservicios h4,#ilatek-home-multiservicios p,#ilatek-home-multiservicios ul{margin:0;padding:0}
+    #ilatek-home-multiservicios ul{list-style:none}
+    #ilatek-home-multiservicios a{color:inherit;text-decoration:none}
+    .ms-wrap{width:min(100% - 40px,1180px);margin:auto}
+    /* ————— Utilidades compartidas (shell/eyebrow/display/reveal) ————— */
+    .il-shell{width:min(100% - 40px,1210px);margin:auto}
+    .il-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    .il-eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--ms-blue);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+    .il-eyebrow:before{content:'';width:8px;height:8px;border-radius:50%;background:var(--ms-green);box-shadow:0 0 0 5px rgba(0,185,79,.12)}
+    .il-display{font-family:Outfit,Manrope,Arial,sans-serif;letter-spacing:-.06em}
+    .il-reveal{transition:opacity .8s cubic-bezier(.22,1,.36,1),transform .8s cubic-bezier(.22,1,.36,1)}
+    .il-reveal{opacity:0;transform:translateY(26px)}
+    .il-reveal.is-visible{opacity:1;transform:none}
+    /* ————— 1 · Hero ————— */
+    .ms-hero{position:relative;overflow:hidden;padding:100px 0 88px;background:linear-gradient(180deg,var(--ms-mist),var(--ms-white) 82%);color:var(--ms-ink)}
+    .ms-hero .ms-wrap{position:relative}
+    .ms-section{padding:var(--ms-pad) 0}
+    .ms-eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--ms-blue);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+    .ms-eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--ms-green);box-shadow:0 0 0 5px rgba(0,185,79,.12)}
+    .ms-eyebrow.ms-ondark{color:#9fe8c0}
+    .ms-eyebrow.ms-ondark::before{box-shadow:0 0 0 5px rgba(0,185,79,.16)}
+    .ms-hero h1{margin:18px 0 0;font:800 clamp(40px,5vw,68px)/1.02 Outfit,Manrope,Arial,sans-serif;letter-spacing:-.05em}
+    .ms-hero h1 em{font-style:normal;color:var(--ms-green-dark)}
+    .ms-hero p.ms-sub{max-width:570px;margin:22px 0 0;color:var(--ms-muted);font-size:17.5px;line-height:1.7}
+    .ms-hero p.ms-sub strong{color:var(--ms-ink)}
+    .ms-ctarow{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px;margin-top:34px}
+    .ms-cta{display:inline-flex;align-items:center;gap:12px;padding:15px 15px 15px 26px;border-radius:10px;background:var(--ms-green);color:#fff!important;font:800 14.5px/1 Manrope,Arial,sans-serif;letter-spacing:.02em;box-shadow:0 14px 30px rgba(0,185,79,.24);transition:transform .22s ease,background .22s ease,box-shadow .22s ease}
+    .ms-cta:hover,.ms-cta:focus-visible{background:var(--ms-green-dark);transform:translateY(-2px);box-shadow:0 18px 36px rgba(0,185,79,.32)}
+    .ms-cta svg{display:grid;place-items:center;flex:none;width:24px;height:24px;border-radius:7px;background:rgba(255,255,255,.2);padding:4px;transition:transform .25s ease}
+    .ms-cta:hover svg,.ms-cta:focus-visible svg{transform:translateX(3px)}
+    .ms-textlink{display:inline-flex;align-items:center;gap:8px;font:800 14.5px/1 Manrope,Arial,sans-serif;color:var(--ms-blue);border-bottom:2px solid var(--ms-green);padding-bottom:3px;transition:color .22s ease}
+    .ms-textlink:hover,.ms-textlink:focus-visible{color:var(--ms-green-dark)}
+    .ms-textlink svg{width:14px;height:14px;flex:none;color:var(--ms-green-dark)}
+    .ms-cta.ms-ghost{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.3);color:#fff!important}
+    .ms-cta.ms-ghost:hover,.ms-cta.ms-ghost:focus-visible{background:rgba(255,255,255,.18)}
+    .ms-cta.ms-ghost svg{background:rgba(255,255,255,.18)}
+    .ms-facts{display:flex;flex-wrap:wrap;gap:20px 30px;margin-top:38px;padding-top:26px;border-top:1px solid var(--ms-line);font:700 12.5px/1.35 Manrope,Arial,sans-serif;letter-spacing:.04em;text-transform:uppercase;color:var(--ms-muted)}
+    .ms-facts span{display:block;max-width:180px}
+    .ms-facts b{display:block;margin-bottom:4px;font:800 22px/1.1 Outfit,Manrope,Arial,sans-serif;letter-spacing:-.03em;text-transform:none;color:var(--ms-ink)}
+    /* ————— 4 · Proceso ————— */
+    #ilatek-home-multiservicios .ilproc{padding:var(--ms-pad) 0;background:var(--ms-white)}
+    #ilatek-home-multiservicios .ilproc-head{max-width:670px;margin:auto;text-align:center}
+    #ilatek-home-multiservicios .ilproc-head p{margin:18px 0 0;color:var(--ms-muted);font-size:16px;line-height:1.65}
+    #ilatek-home-multiservicios .ilproc-head h2{margin:16px 0 0;font-size:clamp(34px,4.2vw,56px);font-weight:800;line-height:1.05;letter-spacing:-.035em}
+    #ilatek-home-multiservicios .ilproc-head h2 em{font-style:normal;color:var(--ms-green-dark)}
+    #ilatek-home-multiservicios .ilproc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:44px}
+    #ilatek-home-multiservicios .ilproc-step{padding:30px;border:1px solid var(--ms-line);border-radius:16px;background:var(--ms-mist);transition:transform .3s ease,box-shadow .3s ease}
+    #ilatek-home-multiservicios .ilproc-step:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(16,25,75,.12)}
+    #ilatek-home-multiservicios .ilproc-step span{display:block;color:var(--ms-green-dark);font-size:13px;font-weight:800;letter-spacing:.12em}
+    #ilatek-home-multiservicios .ilproc-step h4{margin:24px 0 11px;font:800 22px/1.2 Outfit,Manrope,Arial,sans-serif;letter-spacing:-.03em}
+    #ilatek-home-multiservicios .ilproc-step p{margin:0;color:#4a5273;font-size:14px;line-height:1.65}
+    #ilatek-home-multiservicios .ilproc .ms-ctarow{justify-content:center;margin-top:36px}
+    /* ————— 6 · Airbnb highlight ————— */
+    .ms-airbnb{position:relative;overflow:hidden;border-radius:26px;padding:clamp(34px,5vw,60px);background:linear-gradient(140deg,#0b103d 0%,#213d8e 130%);color:#fff;display:grid;grid-template-columns:1.4fr 1fr;gap:30px;align-items:center;box-shadow:0 24px 60px rgba(11,16,61,.28)}
+    .ms-airbnb::before{content:"";position:absolute;left:-90px;bottom:-120px;width:320px;height:320px;border-radius:50%;background:rgba(255,255,255,.08);filter:blur(60px)}
+    .ms-airbnb h2{font:800 clamp(24px,3.4vw,38px)/1.12 Outfit,Manrope,Arial,sans-serif;letter-spacing:-.025em;margin-bottom:14px}
+    .ms-airbnb h2 em{font-style:normal;color:var(--ms-green)}
+    .ms-airbnb p{color:rgba(255,255,255,.82);line-height:1.6;font-size:15.5px}
+    .ms-airbnb .ms-aircta{justify-self:end;text-align:right;display:grid;gap:14px;justify-items:end}
+    .ms-airbnb .ms-airmeta{display:flex;gap:10px 20px;flex-wrap:wrap;font-size:13px;color:rgba(255,255,255,.7);font-weight:600}
+    .ms-heroico{width:38px;height:38px;color:var(--ms-green)}
+    /* ————— 10 · CTA final ————— */
+    .ms-final{text-align:center;background:var(--ms-white)}
+    .ms-finalbox{max-width:920px;margin:auto;padding:clamp(40px,5.5vw,68px) clamp(28px,4.5vw,60px);border-radius:26px;background:linear-gradient(160deg,#11164b,#0b103d);color:#fff;box-shadow:0 30px 70px rgba(11,16,61,.28)}
+    .ms-final h2{font:800 clamp(26px,4vw,42px)/1.12 Outfit,Manrope,Arial,sans-serif;letter-spacing:-.028em;margin-bottom:14px}
+    .ms-final p{color:rgba(255,255,255,.78);max-width:560px;margin:0 auto 30px;line-height:1.6}
+    .ms-final .ms-ctarow{justify-content:center}
+    .ms-note{margin-top:22px;font-size:12.5px;color:rgba(255,255,255,.55)}
+    /* ————— Reveal on scroll ————— */
+    #ilatek-home-multiservicios .ms-reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s cubic-bezier(.3,.9,.3,1)}
+    #ilatek-home-multiservicios .ms-reveal.ms-in{opacity:1;transform:none}
+    @media(prefers-reduced-motion:reduce){#ilatek-home-multiservicios .ms-reveal,#ilatek-home-multiservicios .il-reveal{opacity:1;transform:none;transition:none}.il-reveal{transition:none!important;opacity:1;transform:none}}
+    /* ————— Responsive ————— */
+    @media(max-width:1020px){
+      #ilatek-home-multiservicios .ms-airbnb{grid-template-columns:1fr}
+      #ilatek-home-multiservicios .ms-aircta{justify-self:start;text-align:left;justify-items:start}
+      #ilatek-home-multiservicios .ilproc-grid{grid-template-columns:1fr;gap:14px}
+    }
+    @media(max-width:560px){
+      #ilatek-home-multiservicios .ms-ctarow{width:100%;flex-direction:column}
+      #ilatek-home-multiservicios .ms-cta{width:100%;justify-content:center}
+      .ms-finalbox{padding:36px 20px}
+      .ms-facts{gap:16px 22px}
+    }
+  </style>
+
+  <!-- ═══ 1. HERO · Soluciones para tu propiedad (sin precios) ═══ -->
+  <header class="ms-hero">
+    <div class="ms-wrap">
+      <span class="ms-eyebrow" data-es="Ilatek · Compañía de Multiservicios" data-en="Ilatek · Multiservice Company">Ilatek · Compañía de Multiservicios</span>
+      <h1 data-en-key="h1">Soluciones para <em>tu propiedad</em> en {{custom_values.county_name_and_state}}</h1>
+      <p class="ms-sub" data-en-key="heroSub">Sellado y Mantenimiento de Techos, <strong>Limpieza de Airbnb</strong>, Soluciones para tu propiedad <strong>Residencial, Comercial, Industrial</strong> en {{custom_values.county_name_and_state}}</p>
+      <div class="ms-ctarow">
+        <a class="ms-cta ms-green" href="{{custom_values.website_url}}/cotizacion-techos"><span class="iln-t" data-es="Mantenimiento de Techos" data-en="Roof Maintenance">Mantenimiento de Techos</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></a>
+        <a class="ms-textlink" href="{{custom_values.website_url}}/cotizacion"><span class="iln-t" data-es="Servicios de Limpieza" data-en="Cleaning Services">Servicios de Limpieza</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></a>
+      </div>
+      <p class="ms-facts"><span data-en-key="factInspect"><b>Inspección gratis</b> de techos</span><span data-en-key="factTowns"><b>78</b> municipios</span><span data-en-key="factWarranty"><b>Garantía</b> por escrito</span></p>
+    </div>
+  </header>
+
+  <!-- ═══ 2. CARRUSEL 3D · SERVICIOS DE TECHOS ═══
+    Adaptación del patrón ilcm: mismas clases y mecánica; contenedor con id propio.
+    Las reglas de clase .ilcm-* (stage, cards, botones) están definidas en la sección 3
+    y se aplican a ambas instancias. Script propio al final de esta sección. -->
+  <section id="ilatek-categorias-techos" aria-labelledby="ilatek-techos-carousel-title"
+    data-location-label="{{custom_values.county_name_and_state}}"
+    data-website-url="{{custom_values.website_url}}">
+
+    <style>
+      /* Contenedor propio (equivalente a #ilatek-categorias-mini) */
+      #ilatek-categorias-techos{--ink:#11164b;--ink-deep:#0b103d;--blue:#213d8e;--blue-soft:#eef3ff;--green:#00b94f;--green-dark:#009640;--paper:#fff;--mist:#f4f7fc;--line:#dbe2f1;--muted:#5b6380;--ilc-radius:22px;width:100%;max-width:100%;margin-left:0;margin-right:0;overflow:hidden;background:var(--mist);color:var(--ink);font-family:Manrope,Arial,sans-serif;isolation:isolate;border-radius:var(--ilc-radius);padding:clamp(78px,8vw,112px) 0 36px}#ilatek-categorias-techos *{box-sizing:border-box}#ilatek-categorias-techos a{color:inherit;text-decoration:none}#ilatek-categorias-techos [hidden]{display:none!important}
+    </style>
+
+    <div class="ilcm-shell">
+      <header class="ilcm-head">
+        <span class="ilcm-eyebrow" data-es="ILATEK · Mantenimiento de Techos" data-en="ILATEK · Roof Maintenance">ILATEK · Mantenimiento de Techos</span>
+        <h2 id="ilatek-techos-carousel-title" data-en-key="t3dTitle">Servicios de Techos en {{custom_values.county_name_and_state}}</h2>
+      </header>
+
+      <div class="ilcm-stage" aria-label="Servicios de techos de Ilatek (la tarjeta frontal rota en bucle; haz clic en una lateral para traerla al frente)">
+
+        <!-- TARJETA 1 · REPARACIÓN -->
+        <article class="ilcm-card">
+          <div class="ilcm-media">
+            <img src="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f30edabbe5a4a763bc.webp"
+              width="800" height="451" loading="lazy" decoding="async"
+              alt="Reparación de techos de Ilatek en Puerto Rico — reparación de goteras, filtraciones, grietas y empozamientos en {{custom_values.county_name_and_state}}"
+              title="Reparación de Techos en Puerto Rico · Ilatek">
+          </div>
+          <i class="ilcm-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M14 3l7 7-4.5 4.5a2 2 0 0 1-2.8 0L10 10.8a2 2 0 0 1 0-2.8z"/><path d="M9.5 14.5 3 21"/></svg></i>
+          <div class="ilcm-body">
+            <span class="ilcm-kicker" data-es="Repara y restaura" data-en="Repair &amp; restore">Repara y restaura</span>
+            <h5 class="iln-t" data-es="Reparación de Techos en Puerto Rico" data-en="Roof Repair in Puerto Rico">Reparación de Techos en Puerto Rico</h5>
+            <a class="ilcm-btn" href="{{custom_values.website_url}}/reparacion-de-techos" aria-label="Solicitar Reparación de Techos con Ilatek" data-attr="aria-label" data-es="Solicitar Reparación de Techos con Ilatek" data-en="Request Roof Repair with Ilatek">Solicitar Reparación de Techos</a>
+          </div>
+        </article>
+
+        <!-- TARJETA 2 · SELLADO -->
+        <article class="ilcm-card">
+          <div class="ilcm-media">
+            <img src="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac0427e0edabbe5a4a724d7.webp"
+              width="800" height="451" loading="lazy" decoding="async"
+              alt="Sellado de techos de Ilatek en Puerto Rico — silicona, membrana asfáltica, elastomérico y acrílico en {{custom_values.county_name_and_state}}"
+              title="Sellado de Techos en Puerto Rico · Ilatek">
+          </div>
+          <i class="ilcm-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></i>
+          <div class="ilcm-body">
+            <span class="ilcm-kicker" data-es="Sella y protege" data-en="Seal &amp; protect">Sella y protege</span>
+            <h5 class="iln-t" data-es="Sellado de Techos en Puerto Rico" data-en="Roof Sealing in Puerto Rico">Sellado de Techos en Puerto Rico</h5>
+            <a class="ilcm-btn" href="{{custom_values.website_url}}/sellado-de-techos" aria-label="Solicitar Sellado de Techos con Ilatek" data-attr="aria-label" data-es="Solicitar Sellado de Techos con Ilatek" data-en="Request Roof Sealing with Ilatek">Solicitar Sellado de Techos</a>
+          </div>
+        </article>
+
+        <!-- TARJETA 3 · IMPERMEABILIZACIÓN -->
+        <article class="ilcm-card">
+          <div class="ilcm-media">
+            <img src="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f5849322987426393b.webp"
+              width="800" height="451" loading="lazy" decoding="async"
+              alt="Impermeabilización de techos de Ilatek en Puerto Rico — protección contra el agua para todo tipo de superficie en {{custom_values.county_name_and_state}}"
+              title="Impermeabilización de Techos en Puerto Rico · Ilatek">
+          </div>
+          <i class="ilcm-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8c1.7 2 3 3.3 3 5a3 3 0 0 1-6 0c0-1.7 1.3-3 3-5z"/></svg></i>
+          <div class="ilcm-body">
+            <span class="ilcm-kicker" data-es="Bloquea el agua" data-en="Block the water">Bloquea el agua</span>
+            <h5 class="iln-t" data-es="Impermeabilización de Techos en Puerto Rico" data-en="Roof Waterproofing in Puerto Rico">Impermeabilización de Techos en Puerto Rico</h5>
+            <a class="ilcm-btn" href="{{custom_values.website_url}}/impermeabilizacion-de-techos" aria-label="Solicitar Impermeabilización de Techos con Ilatek" data-attr="aria-label" data-es="Solicitar Impermeabilización de Techos con Ilatek" data-en="Request Roof Waterproofing with Ilatek">Solicitar Impermeabilización</a>
+          </div>
+        </article>
+      </div>
+
+    </div>
+
+    <script>
+    (function(){
+      /* Auto-scope a SU sección (funciona aunque existan dos carruseles ilcm en la página) */
+      var _cs=document.currentScript;
+      var root=(_cs&&_cs.closest)?_cs.closest('section#ilatek-categorias-techos'):null;
+      if(!root)root=document.querySelector('section#ilatek-categorias-techos');
+      if(!root||root.dataset.ilcmReady)return; root.dataset.ilcmReady='true';
+      /* Titulo en UNA linea: baja la fuente hasta que quepa (recalcula en resize/fuentes) */
+      var _h2=root.querySelector('.ilcm-head h2');
+      if(_h2){
+        var fit2=function(){
+          _h2.style.fontSize='';
+          var fs=parseFloat(getComputedStyle(_h2).fontSize)||40,box=_h2.parentElement.clientWidth||360;
+          _h2.style.fontSize=fs+'px';
+          while(_h2.scrollWidth>box&&fs>15){fs-=1;_h2.style.fontSize=fs+'px'}
+        };
+        window.addEventListener('resize',fit2,{passive:true});
+        if(document.fonts){
+          if(document.fonts.ready)document.fonts.ready.then(function(){requestAnimationFrame(fit2);setTimeout(fit2,350)})['catch'](function(){});
+          if(document.fonts.addEventListener)document.fonts.addEventListener('loadingdone',fit2);
+        }
+        window.addEventListener('load',function(){requestAnimationFrame(fit2);setTimeout(fit2,350)});
+        fit2();
+      }
+      function clean(v){v=String(v||'').replace(/\u00a0/g,' ').trim();return /^\s*\{\{[^}]+\}\}\s*$/.test(v)?'':v}
+      var county=clean(root.getAttribute('data-location-label'))||'Puerto Rico', website=clean(root.dataset.websiteUrl)||'https://ilatekpr.com';
+      function token(name){return '{'+'{custom_values.'+name+'}'+'}'}
+      var values={};
+      values[token('county_name_and_state')]=county;
+      values[token('website_url')]=website;
+      /* Carrusel 3D: roles front/izq/der en bucle; pausa al hover/focus; clic lateral trae al frente; swipe */
+      var stage3d=root.querySelector('.ilcm-stage');
+      if(stage3d){
+        var cards3d=[].slice.call(stage3d.querySelectorAll('.ilcm-card'));
+        var roles3d=['is-front','is-left','is-right'];
+        var order3d=[0,1,2];
+        var apply3d=function(){cards3d.forEach(function(c,i){c.classList.remove('is-front','is-left','is-right');c.classList.add(roles3d[order3d[i]])})};
+        var size3d=function(){var h=0;cards3d.forEach(function(c){h=Math.max(h,c.offsetHeight)});if(!h)return;var lift=parseFloat(stage3d.style.getPropertyValue('--lift'))||130,sc=1500/(1500-lift),H=Math.ceil(h*sc+24);stage3d.style.height=H+'px';cards3d.forEach(function(c){c.style.top=Math.max(0,(H-c.offsetHeight)/2)+'px'})};
+        var lift3d=function(){var w=stage3d.offsetWidth;stage3d.style.setProperty('--lift',Math.max(100,Math.min(128,w*.098))+'px');size3d()};
+        window.addEventListener('resize',lift3d,{passive:true});lift3d();
+        apply3d();size3d();
+        window.addEventListener('resize',size3d,{passive:true});
+        if(document.fonts&&document.fonts.ready){document.fonts.ready.then(size3d)['catch'](function(){})}
+        window.addEventListener('load',size3d);
+        if(window.ResizeObserver){var ro3d=new ResizeObserver(size3d);cards3d.forEach(function(c){ro3d.observe(c)})}
+        var rot3d=null,hover3d=false,inView3d=true;
+        var step3d=function(){order3d=order3d.map(function(p){return(p+1)%3});apply3d()};
+        var stop3d=function(){if(rot3d){clearInterval(rot3d);rot3d=null}};
+        var start3d=function(){if(!rot3d&&!hover3d&&inView3d!==false)rot3d=setInterval(step3d,4200)};
+        var hoverCard3d=function(on){hover3d=on;on?stop3d():start3d()};
+        cards3d.forEach(function(c){c.addEventListener('mouseenter',function(){hoverCard3d(true)});c.addEventListener('mouseleave',function(){hoverCard3d(false)})});
+        stage3d.addEventListener('focusin',function(){hover3d=true;stop3d()});
+        stage3d.addEventListener('focusout',function(e){if(!stage3d.contains(e.relatedTarget)){hover3d=false;start3d()}});
+        document.addEventListener('visibilitychange',function(){document.hidden?stop3d():start3d()});
+        if('IntersectionObserver' in window){new IntersectionObserver(function(en3d){en3d.forEach(function(e3d){inView3d=e3d.isIntersecting;e3d.isIntersecting?start3d():stop3d()})},{threshold:.15}).observe(stage3d)}else{start3d()}
+        cards3d.forEach(function(c,i){c.addEventListener('click',function(e){if(order3d[i]!==0){e.preventDefault();e.stopPropagation();var n=0;while(order3d[i]!==0&&n<3){order3d=order3d.map(function(p){return(p+1)%3});n++}apply3d();stop3d();var hov=c.matches(':hover');if(!hov){hover3d=true;setTimeout(function(){hover3d=false;start3d()},6500)}}},true)});
+        cards3d.forEach(function(c,i){c.addEventListener('keydown',function(e){if((e.key==='Enter'||e.key===' ')&&order3d[i]!==0){e.preventDefault();var n=0;while(order3d[i]!==0&&n<3){order3d=order3d.map(function(p){return(p+1)%3});n++}apply3d();stop3d();var hov=c.matches(':hover');if(!hov){hover3d=true;setTimeout(function(){hover3d=false;start3d()},6500)}}})});
+        (function(){
+          var sx=0,sy=0,tracking=false;
+          stage3d.addEventListener('pointerdown',function(e){sx=e.clientX;sy=e.clientY;tracking=true},{passive:true});
+          window.addEventListener('pointerup',function(e){if(!tracking)return;tracking=false;var dx=e.clientX-sx,dy=e.clientY-sy;if(Math.abs(dx)>48&&Math.abs(dx)>Math.abs(dy)*1.4){var steps=dx<0?1:2;while(steps--){order3d=order3d.map(function(p){return(p+1)%3})}apply3d();stop3d();hover3d=true;setTimeout(function(){hover3d=false;start3d()},6500)}},{passive:true});
+          window.addEventListener('pointercancel',function(){tracking=false},{passive:true});
+        })();
+        start3d();
+      }
+      var walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT),nodes=[],node;
+      while(node=walker.nextNode()){if(node.parentElement&&node.parentElement.tagName!=='SCRIPT'&&node.parentElement.tagName!=='STYLE')nodes.push(node)}
+      nodes.forEach(function(n){Object.keys(values).forEach(function(k){n.nodeValue=n.nodeValue.split(k).join(values[k])})});
+      Array.prototype.forEach.call(root.querySelectorAll('*'),function(el){
+        Array.prototype.forEach.call(el.attributes||[],function(a){
+          var v=a.value;Object.keys(values).forEach(function(k){v=v.split(k).join(values[k])});
+          if(v!==a.value)el.setAttribute(a.name,v);
+        });
+      });
+    })();
+    </script>
+  </section>
+
+  <!-- ═══ 3. CARRUSEL 3D · SERVICIOS DE LIMPIEZA ═══
+    Contenido inline de home-page/ghl-categorias-embed.html (ids y mecánica intactos).
+    Define las reglas de clase .ilcm-* compartidas con el carrusel de Techos (sección 2).
+    Los <link> de fuentes van en el head del embed (cargados una vez al inicio). -->
+  <section id="ilatek-categorias-mini" aria-labelledby="ilatek-categorias-mini-title"
+    data-location-label="{{custom_values.county_name_and_state}}"
+    data-website-url="{{custom_values.website_url}}"
+    data-business-email="{{custom_values.business__email}}"
+    data-business-phone="{{custom_values.business__phone}}">
+
+  <style>
+    /* === ENCAJE AL CONTAINER + ESQUINAS REDONDAS (auto-contenido) ===============
+       El bloque se queda dentro del ancho del contenedor y cierra en esquinas
+       redondeadas; lo que sobresalga (tarjetas laterales del 3D) se recorta aqui
+       mismo, asi que no hace falta CSS extra en el panel de GHL.
+       Radio ajustable con --ilc-radius. */
+    #ilatek-categorias-mini{--ink:#11164b;--ink-deep:#0b103d;--blue:#213d8e;--blue-soft:#eef3ff;--green:#00b94f;--green-dark:#009640;--paper:#fff;--mist:#f4f7fc;--line:#dbe2f1;--muted:#5b6380;--ilc-radius:22px;width:100%;max-width:100%;margin-left:0;margin-right:0;overflow:hidden;background:var(--mist);color:var(--ink);font-family:Manrope,Arial,sans-serif;isolation:isolate;border-radius:var(--ilc-radius);padding:clamp(78px,8vw,112px) 0 36px}#ilatek-categorias-mini *{box-sizing:border-box}#ilatek-categorias-mini a{color:inherit;text-decoration:none}#ilatek-categorias-mini [hidden]{display:none!important}
+    .ilcm-shell{width:min(100% - 40px,1210px);margin:auto}
+    .ilcm-head{max-width:100%;margin:0 auto 16px;text-align:center}.ilcm-eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--blue);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.ilcm-eyebrow:before{content:'';width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px rgba(0,185,79,.12)}.ilcm-head h2{margin:12px 0 0;white-space:nowrap;font-family:Outfit,Manrope,sans-serif;font-size:clamp(28px,3.2vw,40px);font-weight:800;line-height:1.02;letter-spacing:-.06em}
+    /* Tarjetas de categoria · zoom suave: curva S estándar (material) simétrica al entrar/salir */
+    /* Carrusel 3D de categorias: la tarjeta FRONTAL siempre grande al centro; las otras 2 a los lados,
+      giradas y hundidas en perspectiva. Rotacion en bucle infinito (frontal->izquierda->derecha->frontal). */
+    .ilcm-stage{--side-x:min(17vw,220px);--lift:130px;--side-z:-240px;position:relative;perspective:1500px;overflow:hidden;height:420px;padding:10px 0 30px;touch-action:pan-y}
+    .ilcm-stage .ilcm-card{position:absolute;top:6px;left:50%;width:380px;margin:0;will-change:transform,opacity;transform:translateX(-50%) translateZ(0) scale(1);transition:transform .85s cubic-bezier(.34,1.3,.4,1),opacity .5s ease,filter .85s cubic-bezier(.34,1.3,.4,1),box-shadow .85s cubic-bezier(.34,1.3,.4,1)}
+
+    /* Esquinas SIEMPRE redondeadas: la img con filter/will-change se vuelve capa compuesta y puede escapar
+      del clip redondeado del CONTENEDOR en Chrome; el radio propio de la img siempre se respeta */
+    .ilcm-stage .ilcm-media{position:relative;background:var(--paper);border-radius:22px 22px 0 0}.ilcm-stage .ilcm-media img{border-radius:22px 22px 0 0}
+    .ilcm-card.is-front{transform:translateX(-50%) scale(1);z-index:3;box-shadow:0 30px 64px rgba(17,22,75,.22)}
+    .ilcm-card.is-left{transform:translateX(calc(-50% - var(--side-x))) rotateY(30deg) translateZ(var(--side-z)) scale(.82);z-index:1}
+    .ilcm-card.is-right{transform:translateX(calc(-50% + var(--side-x))) rotateY(-30deg) translateZ(var(--side-z)) scale(.82);z-index:1}
+    /* Hundimiento de laterales con capa heredada (no filter: filter vuelve la tarjeta capa compuesta
+       y pierde el clip redondeado, igual que en el carrusel ilt3 de techos) */
+    .ilcm-stage .ilcm-card:after{content:'';position:absolute;inset:0;z-index:4;border-radius:inherit;background:linear-gradient(180deg,rgba(11,16,61,.26),rgba(11,16,61,.14));opacity:0;transition:opacity .6s ease;pointer-events:none}
+    .ilcm-stage .ilcm-card.is-left:after,.ilcm-stage .ilcm-card.is-right:after{opacity:1}
+    .ilcm-stage .ilcm-card.is-left:hover:after,.ilcm-stage .ilcm-card.is-right:hover:after,.ilcm-stage .ilcm-card.is-left:focus-visible:after,.ilcm-stage .ilcm-card.is-right:focus-visible:after{opacity:0}
+    .ilcm-card:not(.is-front){cursor:pointer}
+    .ilcm-card{position:relative;display:flex;flex-direction:column;border:1px solid var(--line);border-radius:22px;background:var(--paper);box-shadow:0 10px 28px rgba(17,22,75,.07);overflow:hidden;transition:transform .45s cubic-bezier(.4,0,.2,1),box-shadow .45s cubic-bezier(.4,0,.2,1),background .45s cubic-bezier(.4,0,.2,1)}
+    .ilcm-stage .ilcm-card.is-front:hover,.ilcm-stage .ilcm-card.is-front:focus-within{transform:translateX(-50%) translateY(-6px) scale(1);box-shadow:0 26px 56px rgba(17,22,75,.28),inset 0 1px 0 rgba(255,255,255,.5)}
+
+    .ilcm-media{height:164px;overflow:hidden;background:var(--blue-soft)}.ilcm-media img{display:block;width:100%;height:100%;object-fit:cover;transform:scale(1);transform-origin:center;backface-visibility:hidden;transition:transform .8s cubic-bezier(.4,0,.2,1),filter .8s cubic-bezier(.4,0,.2,1);will-change:transform}.ilcm-card:hover .ilcm-media img,.ilcm-card:focus-within .ilcm-media img{transform:scale(1.06);filter:brightness(1.04) saturate(1.08);backface-visibility:hidden}.ilcm-card.is-front:hover .ilcm-media img,.ilcm-card.is-front:focus-within .ilcm-media img{transform:scale(1.06);filter:brightness(1.04) saturate(1.08);backface-visibility:hidden}
+    .ilcm-badge{position:relative;z-index:1;display:grid;place-items:center;width:62px;height:62px;margin:-31px 0 0 28px;border-radius:18px;border:1px solid rgba(255,255,255,.6);background:linear-gradient(150deg,rgba(238,243,255,.78),rgba(238,243,255,.42));-webkit-backdrop-filter:blur(14px) saturate(160%);backdrop-filter:blur(14px) saturate(160%);box-shadow:0 8px 20px rgba(17,22,75,.14),inset 0 1px 0 rgba(255,255,255,.65);color:var(--blue);transition:background .45s cubic-bezier(.4,0,.2,1),color .45s cubic-bezier(.4,0,.2,1),box-shadow .45s cubic-bezier(.4,0,.2,1)}.ilcm-badge svg{display:block;width:29px;height:29px}.ilcm-card.is-front:hover .ilcm-badge{background:linear-gradient(150deg,rgba(0,185,79,.88),rgba(0,150,64,.66));color:#fff;box-shadow:0 12px 26px rgba(0,150,64,.32),inset 0 1px 0 rgba(255,255,255,.4)}
+    .ilcm-body{display:flex;flex-direction:column;flex:1;padding:16px 24px 24px}
+    .ilcm-kicker{color:var(--green-dark);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+    .ilcm-body h5{margin:8px 0 0;font-family:Outfit,Manrope,sans-serif;font-size:clamp(21px,1.9vw,25px);font-weight:800;line-height:1.15;letter-spacing:-.03em}
+    .ilcm-btn{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:auto;min-height:46px;padding:10px 18px;border-radius:8px;background:var(--green);color:#fff!important;font:800 13.5px/1 Manrope,Arial,sans-serif;letter-spacing:.02em;box-shadow:0 12px 25px rgba(0,185,79,.22);transition:transform .22s ease,background .22s ease,box-shadow .22s ease}
+    .ilcm-btn:after{content:'→';font-size:16px;transition:transform .25s ease}
+    .ilcm-btn:hover,.ilcm-btn:focus-visible{background:var(--green-dark);transform:translateY(-2px);box-shadow:0 16px 30px rgba(0,185,79,.32)}.ilcm-btn:hover:after{transform:translateX(4px)}
+    .ilcm-btn:focus-visible,.ilcm-social a:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+        /* Rotacion 3D siempre activa en todos los dispositivos (sin excepcion reduced-motion) */
+    @media(max-width:1020px){.ilcm-stage{--side-x:160px;--side-z:-200px;height:400px}.ilcm-stage .ilcm-card{width:350px}}
+    @media(max-width:560px){#ilatek-categorias-mini{padding:78px 0 40px}#ilatek-categorias-techos{padding:78px 0 40px}.ilcm-stage{--side-x:36vw;--side-z:-200px;height:360px}.ilcm-stage .ilcm-card{width:min(86vw,320px)}.ilcm-shell{width:min(100% - 30px,1210px)}.ilcm-head{margin-bottom:12px}.ilcm-media{height:132px}.ilcm-body{padding:12px 18px 18px}.ilcm-body h5{font-size:19px}.ilcm-btn{min-height:42px;padding:9px 16px;font-size:12.5px}.ilcm-kicker{font-size:11px}.ilcm-badge{width:54px;height:54px;margin:-27px 0 0 18px}.ilcm-badge svg{width:25px;height:25px}.ilcm-stage{margin-inline:-22px;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 3%,#000 97%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 3%,#000 97%,transparent 100%)}}
+  </style>
+
+  <div class="ilcm-shell">
+    <header class="ilcm-head">
+      <span class="ilcm-eyebrow" data-es="ILATEK · Soluciones de limpieza" data-en="ILATEK · Cleaning Solutions">ILATEK · Soluciones de limpieza</span>
+      <h2 id="ilatek-categorias-mini-title" data-en-key="l3dTitle">Servicios de Limpieza en {{custom_values.county_name_and_state}}</h2>
+    </header>
+
+    <div class="ilcm-stage" aria-label="Categorías de limpieza de Ilatek (la tarjeta frontal rota en bucle; haz clic en una lateral para traerla al frente)">
+
+      <!-- ============ TARJETA 1 · RESIDENCIAL ============ -->
+      <article class="ilcm-card">
+        <div class="ilcm-media">
+          <img src="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/limpieza-residencial-800.webp" onerror="this.onerror=null;this.src='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab0c2d4ff484614db70610b.png'"
+            width="800" height="451" loading="lazy" decoding="async"
+            alt="Limpieza residencial de Ilatek en Puerto Rico — servicio de limpieza de casas y apartamentos en {{custom_values.county_name_and_state}}"
+            title="Limpieza Residencial en Puerto Rico · Ilatek">
+        </div>
+        <i class="ilcm-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></i>
+        <div class="ilcm-body">
+          <span class="ilcm-kicker" data-es="Para tu hogar" data-en="For your home">Para tu hogar</span>
+          <h5 class="iln-t" data-es="Limpieza Residencial en Puerto Rico" data-en="Residential Cleaning in Puerto Rico">Limpieza Residencial en Puerto Rico</h5>
+          <a class="ilcm-btn" href="{{custom_values.website_url}}/limpieza-residencial" aria-label="Solicitar Limpieza Residencial con Ilatek" data-attr="aria-label" data-es="Solicitar Limpieza Residencial con Ilatek" data-en="Request Residential Cleaning with Ilatek">Solicitar Limpieza Residencial</a>
+        </div>
+      </article>
+
+      <!-- ============ TARJETA 2 · COMERCIAL ============ -->
+      <article class="ilcm-card">
+        <div class="ilcm-media">
+          <img src="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/limpieza-comercial-800.webp" onerror="this.onerror=null;this.src='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab0c2d44091fa65e6a436d3.png'"
+            width="800" height="451" loading="lazy" decoding="async"
+            alt="Limpieza comercial de Ilatek en Puerto Rico — limpieza de oficinas, tiendas y negocios en {{custom_values.county_name_and_state}}"
+            title="Limpieza Comercial en Puerto Rico · Ilatek">
+        </div>
+        <i class="ilcm-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg></i>
+        <div class="ilcm-body">
+          <span class="ilcm-kicker" data-es="Para tu negocio" data-en="For your business">Para tu negocio</span>
+          <h5 class="iln-t" data-es="Limpieza Comercial en Puerto Rico" data-en="Commercial Cleaning in Puerto Rico">Limpieza Comercial en Puerto Rico</h5>
+          <a class="ilcm-btn" href="{{custom_values.website_url}}/limpieza-comercial" aria-label="Solicitar Limpieza Comercial con Ilatek" data-attr="aria-label" data-es="Solicitar Limpieza Comercial con Ilatek" data-en="Request Commercial Cleaning with Ilatek">Solicitar Limpieza Comercial</a>
+        </div>
+      </article>
+
+      <!-- ============ TARJETA 3 · INDUSTRIAL ============ -->
+      <article class="ilcm-card">
+        <div class="ilcm-media">
+          <img src="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/limpieza-industrial-800.webp" onerror="this.onerror=null;this.src='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab0c2d4ff484614db70610c.png'"
+            width="800" height="451" loading="lazy" decoding="async"
+            alt="Limpieza industrial de Ilatek en Puerto Rico — limpieza de almacenes e instalaciones en {{custom_values.county_name_and_state}}"
+            title="Limpieza Industrial en Puerto Rico · Ilatek">
+        </div>
+        <i class="ilcm-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M17 18h1"/><path d="M12 18h1"/><path d="M7 18h1"/></svg></i>
+        <div class="ilcm-body">
+          <span class="ilcm-kicker" data-es="Para tus instalaciones" data-en="For your facilities">Para tus instalaciones</span>
+          <h5 class="iln-t" data-es="Limpieza Industrial en Puerto Rico" data-en="Industrial Cleaning in Puerto Rico">Limpieza Industrial en Puerto Rico</h5>
+          <a class="ilcm-btn" href="{{custom_values.website_url}}/limpieza-industrial" aria-label="Solicitar Limpieza Industrial con Ilatek" data-attr="aria-label" data-es="Solicitar Limpieza Industrial con Ilatek" data-en="Request Industrial Cleaning with Ilatek">Solicitar Limpieza Industrial</a>
+        </div>
+      </article>
+    </div>
+
+  </div>
+
+  <script>
+  (function(){
+    /* Auto-scope: el script toma SU propia seccion (no getElementById) para que el carrusel
+       inicialice aunque la seccion este pegada mas de una vez en la pagina (id duplicado). */
+    var _cs=document.currentScript;
+    var root=(_cs&&_cs.closest)?_cs.closest('section#ilatek-categorias-mini'):null;
+    if(!root)root=document.querySelector('section#ilatek-categorias-mini');
+    if(!root||root.dataset.ilcmReady)return; root.dataset.ilcmReady='true';
+    if(!window.__ilcmHashFix){window.__ilcmHashFix=true;
+      if(location.hash==='#ilatek-categorias'&&!document.getElementById('ilatek-categorias')){
+        var go=function(){var t=document.getElementById('ilatek-categorias-mini');if(t)t.scrollIntoView({behavior:'smooth'})};
+        if(document.readyState==='complete')setTimeout(go,300);
+        else window.addEventListener('load',function(){setTimeout(go,300)});
+      }}
+    /* Titulo en UNA linea: parte del tamaño del clamp y baja la fuente hasta que quepa.
+       Recalcula en resize y con fuentes cargadas; sirve en cualquier ancho de container. */
+    var _h2=root.querySelector('.ilcm-head h2');
+    if(_h2){
+      var fit2=function(){
+        _h2.style.fontSize='';
+        var fs=parseFloat(getComputedStyle(_h2).fontSize)||40,box=_h2.parentElement.clientWidth||360;
+        _h2.style.fontSize=fs+'px';
+        while(_h2.scrollWidth>box&&fs>15){fs-=1;_h2.style.fontSize=fs+'px'}
+      };
+      window.addEventListener('resize',fit2,{passive:true});
+      if(document.fonts){
+        if(document.fonts.ready)document.fonts.ready.then(function(){requestAnimationFrame(fit2);setTimeout(fit2,350)})['catch'](function(){});
+        if(document.fonts.addEventListener)document.fonts.addEventListener('loadingdone',fit2);
+      }
+      window.addEventListener('load',function(){requestAnimationFrame(fit2);setTimeout(fit2,350)});
+      fit2();
+    }
+    function clean(v){v=String(v||'').replace(/\u00a0/g,' ').trim();return /^\s*\{\{[^}]+\}\}\s*$/.test(v)?'':v}
+    var county=clean(root.getAttribute('data-location-label'))||'Puerto Rico', website=clean(root.dataset.websiteUrl)||'https://ilatekpr.com';
+    function token(name){return '{'+'{custom_values.'+name+'}'+'}'}
+    var values={};
+    values[token('county_name_and_state')]=county;
+    values[token('website_url')]=website;
+
+    /* Carrusel 3D: roles front/izq/der que avanzan en bucle infinito. La frontal siempre la grande.
+       Pausa al hover/focus y con pestana oculta; clic en una lateral la trae al frente. */
+    var stage3d=root.querySelector('.ilcm-stage');
+    if(stage3d){
+      var cards3d=[].slice.call(stage3d.querySelectorAll('.ilcm-card'));
+      var roles3d=['is-front','is-left','is-right'];
+      var order3d=[0,1,2]; /* orden[i]=posicion de la tarjeta i: 0=frontal, 1=izq, 2=der */
+      var apply3d=function(){cards3d.forEach(function(c,i){c.classList.remove('is-front','is-left','is-right');c.classList.add(roles3d[order3d[i]])})};
+      var size3d=function(){var h=0;cards3d.forEach(function(c){h=Math.max(h,c.offsetHeight)});if(!h)return;var lift=parseFloat(stage3d.style.getPropertyValue('--lift'))||130,sc=1500/(1500-lift),H=Math.ceil(h*sc+24);stage3d.style.height=H+'px';cards3d.forEach(function(c){c.style.top=Math.max(0,(H-c.offsetHeight)/2)+'px'})};
+      var lift3d=function(){var w=stage3d.offsetWidth;stage3d.style.setProperty('--lift',Math.max(100,Math.min(128,w*.098))+'px');size3d()};
+      window.addEventListener('resize',lift3d,{passive:true});lift3d();
+      apply3d();size3d();
+      window.addEventListener('resize',size3d,{passive:true});
+      if(document.fonts&&document.fonts.ready){document.fonts.ready.then(size3d)['catch'](function(){})}
+      window.addEventListener('load',size3d);
+      if(window.ResizeObserver){var ro3d=new ResizeObserver(size3d);cards3d.forEach(function(c){ro3d.observe(c)})}
+      var rot3d=null,hover3d=false,inView3d=true;
+      var step3d=function(){order3d=order3d.map(function(p){return(p+1)%3});apply3d()};
+      var stop3d=function(){if(rot3d){clearInterval(rot3d);rot3d=null}};
+      var start3d=function(){if(!rot3d&&!hover3d&&inView3d!==false)rot3d=setInterval(step3d,4200)};
+      var hoverCard3d=function(on){hover3d=on;on?stop3d():start3d()};
+      cards3d.forEach(function(c){c.addEventListener('mouseenter',function(){hoverCard3d(true)});c.addEventListener('mouseleave',function(){hoverCard3d(false)})});
+      stage3d.addEventListener('focusin',function(){hover3d=true;stop3d()});
+      stage3d.addEventListener('focusout',function(e){if(!stage3d.contains(e.relatedTarget)){hover3d=false;start3d()}});
+      document.addEventListener('visibilitychange',function(){document.hidden?stop3d():start3d()});
+      if('IntersectionObserver' in window){new IntersectionObserver(function(en3d){en3d.forEach(function(e3d){inView3d=e3d.isIntersecting;e3d.isIntersecting?start3d():stop3d()})},{threshold:.15}).observe(stage3d)}else{start3d()}
+      cards3d.forEach(function(c,i){c.addEventListener('click',function(){if(order3d[i]!==0){var n=0;while(order3d[i]!==0&&n<3){order3d=order3d.map(function(p){return(p+1)%3});n++}apply3d();stop3d();var hov=c.matches(':hover');if(!hov){hover3d=true;setTimeout(function(){hover3d=false;start3d()},6500)}}})});
+      cards3d.forEach(function(c,i){c.addEventListener('click',function(e){if(order3d[i]!==0){e.preventDefault();e.stopPropagation();var n=0;while(order3d[i]!==0&&n<3){order3d=order3d.map(function(p){return(p+1)%3});n++}apply3d();stop3d();var hov=c.matches(':hover');if(!hov){hover3d=true;setTimeout(function(){hover3d=false;start3d()},6500)}}},true)});
+      cards3d.forEach(function(c,i){c.addEventListener('keydown',function(e){if((e.key==='Enter'||e.key===' ')&&order3d[i]!==0){e.preventDefault();var n=0;while(order3d[i]!==0&&n<3){order3d=order3d.map(function(p){return(p+1)%3});n++}apply3d();stop3d();var hov=c.matches(':hover');if(!hov){hover3d=true;setTimeout(function(){hover3d=false;start3d()},6500)}}})});
+/* Swipe con el dedo: gesto horizontal gira el carrusel (izq=siguiente, der=anterior) */
+        (function(){
+          var sx=0,sy=0,tracking=false;
+          stage3d.addEventListener('pointerdown',function(e){sx=e.clientX;sy=e.clientY;tracking=true},{passive:true});
+          window.addEventListener('pointerup',function(e){if(!tracking)return;tracking=false;var dx=e.clientX-sx,dy=e.clientY-sy;if(Math.abs(dx)>48&&Math.abs(dx)>Math.abs(dy)*1.4){var steps=dx<0?1:2;while(steps--){order3d=order3d.map(function(p){return(p+1)%3})}apply3d();stop3d();hover3d=true;setTimeout(function(){hover3d=false;start3d()},6500)}},{passive:true});
+          window.addEventListener('pointercancel',function(){tracking=false},{passive:true});
+        })();
+      start3d();
+    }
+    var walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT),nodes=[],node;
+    while(node=walker.nextNode()){if(node.parentElement&&node.parentElement.tagName!=='SCRIPT'&&node.parentElement.tagName!=='STYLE')nodes.push(node)}
+    nodes.forEach(function(n){Object.keys(values).forEach(function(k){n.nodeValue=n.nodeValue.split(k).join(values[k])})});
+    Array.prototype.forEach.call(root.querySelectorAll('*'),function(el){
+      Array.prototype.forEach.call(el.attributes||[],function(a){
+        var v=a.value;Object.keys(values).forEach(function(k){v=v.split(k).join(values[k])});
+        if(v!==a.value)el.setAttribute(a.name,v);
+      });
+    });
+    Array.prototype.forEach.call(root.querySelectorAll('a[href="mailto:"],a[href="tel:"]'),function(a){a.hidden=true});
+  })();
+  </script>
+</section>
+
+  <!-- ═══ 4. PROCESO · Cotiza en 3 pasos (port del home de limpieza, adaptado a multiservicios) ═══ -->
+  <section id="ilatek-proceso" class="ilproc" aria-labelledby="ilatek-proceso-title">
+    <div class="ms-wrap">
+      <header class="ilproc-head ms-reveal">
+        <span class="il-eyebrow" data-es="Así de sencillo" data-en="It’s that simple">Así de sencillo</span>
+        <h2 id="ilatek-proceso-title" class="il-display" data-en-key="procTitle">Cotiza tus techos o limpieza en <em>tres pasos</em>.</h2>
+        <p data-en-key="procSub">Nuestro formulario de cotización te da un <strong>precio real en minutos</strong>, sin llamadas ni esperas. Son tres pasos:</p>
+      </header>
+      <div class="ilproc-grid">
+        <article class="ilproc-step ms-reveal"><span>01</span><h4 class="iln-t" data-es="Cuéntanos tu espacio" data-en="Tell us about your property">Cuéntanos tu espacio</h4><p data-en-key="procP1">Dinos qué necesita tu propiedad: reparación o sellado de techo, impermeabilización o limpieza residencial, comercial o industrial.</p></article>
+        <article class="ilproc-step ms-reveal"><span>02</span><h4 class="iln-t" data-es="Elige servicios y extras" data-en="Pick services &amp; extras">Elige servicios y extras</h4><p data-en-key="procP2">Selecciona tu servicio de techos o limpieza y agrega extras como ventanas, alfombras o electrodomésticos. Verás tu precio total al instante.</p></article>
+        <article class="ilproc-step ms-reveal"><span>03</span><h4 class="iln-t" data-es="Reserva tu fecha" data-en="Book your date">Reserva tu fecha</h4><p data-en-key="procP3">Confirma tu cotización, asegura tu cita con el depósito de $50 y elige en el calendario el día que mejor te convenga.</p></article>
+      </div>
+      <div class="ms-ctarow ms-reveal">
+        <a class="ms-cta ms-green" href="{{custom_values.website_url}}/cotizacion"><span class="iln-t" data-es="Solicita tu cotización" data-en="Request your quote">Solicita tu cotización</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ 5. MARQUEE · 10 SERVICIOS ═══
+    Contenido inline de home-page/ghl-servicios-carousel-embed.html (ids y mecánica intactos,
+    H2 adaptado a "tu propiedad"). Precios permitidos aquí (nunca en el hero). -->
+  <section id="ilatek-servicios-slider" aria-labelledby="ilatek-servicios-title"
+    data-location-label="{{custom_values.county_name_and_state}}"
+    data-website-url="{{custom_values.website_url}}">
+
+  <style>
+    #ilatek-servicios-slider{--ink:#11164b;--blue:#213d8e;--green:#00b94f;--green-dark:#009640;width:100vw;max-width:none;margin-inline:calc(50% - 50vw);overflow:hidden;background:linear-gradient(165deg,#213d8e 0%,#11164b 55%,#0b103d 100%);color:#fff;font-family:Manrope,Arial,sans-serif;isolation:isolate;padding:118px 0 122px}#ilatek-servicios-slider *{box-sizing:border-box}#ilatek-servicios-slider a{color:inherit;text-decoration:none}.ils-head{width:min(100% - 40px,1210px);margin:0 auto 46px;text-align:center}.ils-eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--green);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.ils-eyebrow:before{content:'';width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px rgba(0,185,79,.18)}.ils-head h2{margin:16px 0 0;font-family:Outfit,Manrope,sans-serif;font-size:clamp(42px,4.6vw,66px);font-weight:800;line-height:1.02;letter-spacing:-.06em;text-wrap:balance}.ils-head h2 em{font-style:normal;color:var(--green)}.ils-head>p{margin:18px auto 0;max-width:640px;color:rgba(255,255,255,.78);font-size:16px;line-height:1.65}
+    /* Carrusel: contenedor de scroll horizontal TRANSPARENTE (el gradiente se ve a traves) */
+    .ils-carousel{position:relative;width:100%;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);background:transparent}    .ils-track{display:flex;gap:0;width:max-content;padding:8px 12px 20px;will-change:transform;user-select:none;-webkit-user-select:none}
+    .ils-track img{-webkit-user-drag:none;user-drag:none}
+    .ils-carousel:hover .ils-track,.ils-carousel:focus-within .ils-track{cursor:grab}
+    .ils-card:focus-visible{outline:3px solid #fff;outline-offset:3px}
+
+    .ilfaq-cta{max-width:640px;margin:44px auto 0;padding:30px 34px;border-radius:18px;background:linear-gradient(135deg,#11164b,#0b103d);color:#fff;text-align:center;box-shadow:0 22px 44px rgba(11,16,61,.4)}
+    .ilfaq-cta h5{margin:0;font-family:Outfit,Manrope,sans-serif;font-size:clamp(24px,2.6vw,34px);font-weight:800;letter-spacing:-.04em}
+    .ilfaq-cta p{margin:12px auto 0;max-width:520px;color:rgba(255,255,255,.78);font-size:15px;line-height:1.6}
+    .ilfaq-cta a{display:inline-flex;align-items:center;gap:8px;margin-top:22px;min-height:52px;padding:14px 30px;border-radius:8px;background:var(--green,#00b94f);color:#fff!important;font:800 14px/1 Manrope,Arial,sans-serif;letter-spacing:.02em;box-shadow:0 14px 30px rgba(0,185,79,.35);transition:background .22s ease,transform .22s ease,box-shadow .22s ease}
+    .ilfaq-cta a:hover,.ilfaq-cta a:focus-visible{background:var(--green-dark,#009640);transform:translateY(-2px);box-shadow:0 18px 36px rgba(0,185,79,.45)}.ils-carousel:hover .ils-track,.ils-carousel:focus-within .ils-track{animation-play-state:paused}@keyframes ils-marquee{to{transform:translateX(-50%)}}
+    /* Scroll horizontal TRANSPARENTE: el carrusel se desliza sin barra visible */
+    .ils-carousel{scrollbar-width:none;-ms-overflow-style:none}.ils-carousel::-webkit-scrollbar{display:none}.ils-carousel::-webkit-scrollbar-track{background:transparent}.ils-carousel::-webkit-scrollbar-thumb{background:transparent}
+    /* Tarjetas glassmorphism */
+    .ils-card{display:flex;flex-direction:column;width:330px;border:1px solid rgba(255,255,255,.22);border-radius:22px;background:linear-gradient(150deg,rgba(255,255,255,.17),rgba(255,255,255,.07) 45%,rgba(255,255,255,.04));-webkit-backdrop-filter:blur(22px) saturate(150%);backdrop-filter:blur(22px) saturate(150%);box-shadow:0 18px 44px rgba(11,16,61,.35),inset 0 1px 0 rgba(255,255,255,.25);color:#fff;overflow:hidden;transition:transform .45s cubic-bezier(.4,0,.2,1),box-shadow .45s cubic-bezier(.4,0,.2,1),background .45s cubic-bezier(.4,0,.2,1)}.ils-card:hover{transform:translateY(-6px);background:linear-gradient(150deg,rgba(255,255,255,.22),rgba(255,255,255,.1) 45%,rgba(255,255,255,.06));box-shadow:0 26px 56px rgba(11,16,61,.45),inset 0 1px 0 rgba(255,255,255,.3)}.ils-track .ils-card{margin-right:22px}.ils-media{position:relative;height:210px;overflow:hidden;background:rgba(255,255,255,.06)}.ils-media img{display:block;width:100%;height:100%;object-fit:cover;transform:scale(1);transform-origin:center;backface-visibility:hidden;transition:transform .8s cubic-bezier(.4,0,.2,1),filter .8s cubic-bezier(.4,0,.2,1);will-change:transform}.ils-card:hover .ils-media img,.ils-card:focus-within .ils-media img{transform:scale(1.06);filter:brightness(1.04) saturate(1.08)}.ils-media:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,16,61,0) 58%,rgba(11,16,61,.45))}
+    .ils-media span{position:absolute;z-index:1;left:14px;top:12px;padding:7px 13px;border-radius:99px;background:rgba(11,16,61,.42);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.28);color:#fff;font-size:10.5px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;text-shadow:0 1px 6px rgba(11,16,61,.5)}
+    .ils-body{display:flex;flex-direction:column;flex:1;padding:20px 22px 22px}.ils-body h5{margin:0;font-family:Outfit,Manrope,sans-serif;font-size:20px;font-weight:800;letter-spacing:-.03em;line-height:1.25}.ils-body p{flex:1;margin:9px 0 0;color:rgba(255,255,255,.78);font-size:13.5px;line-height:1.62}
+    .ils-foot{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px 12px;margin-top:16px;padding-top:14px;border-top:1px solid rgba(255,255,255,.16)}
+    .ils-price{display:inline-flex;align-items:center;gap:8px;color:#fff;font:800 14px/1 Manrope,Arial,sans-serif;text-shadow:0 0 14px rgba(0,255,153,.5),0 0 30px rgba(0,185,79,.32)}
+    .ils-price:before{content:'';width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 10px rgba(0,255,153,.9),0 0 22px rgba(0,185,79,.55)}
+    .ils-more{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:40px;padding:9px 16px;border-radius:8px;background:var(--green);color:#fff!important;font:800 12.5px/1 Manrope,Arial,sans-serif;letter-spacing:.02em;box-shadow:0 10px 22px rgba(0,185,79,.35);transition:background .25s ease,transform .25s ease,box-shadow .25s ease}
+    .ils-more:after{content:'→'}
+    .ils-card:hover .ils-more,.ils-card:focus-visible .ils-more{background:var(--green-dark);box-shadow:0 14px 28px rgba(0,185,79,.45)}
+    .ils-hint{margin:26px auto 0;width:min(100% - 40px,1210px);text-align:center;color:rgba(255,255,255,.55);font-size:12.5px}
+    /* Auto-slide infinito en TODOS los dispositivos: el marquee corre incluso con prefers-reduced-motion */
+    @media(max-width:560px){#ilatek-servicios-slider{padding:78px 0 84px}.ils-head{width:min(100% - 30px,1210px);margin-bottom:34px}.ils-track{gap:16px}.ils-card{width:282px}.ils-media{height:180px}.ils-hint{width:min(100% - 30px,1210px)}}
+  </style>
+
+  <header class="ils-head">
+    <span class="ils-eyebrow" data-es="Servicios" data-en="Services">Servicios</span>
+    <h2 id="ilatek-servicios-title" data-en-key="ilsTitle">Los servicios que tu propiedad necesita, <em>todos con precio claro</em>.</h2>
+    <p data-en-key="ilsSub">Los 10 servicios de limpieza más solicitados en {{custom_values.county_name_and_state}}, disponibles en los 78 municipios de Puerto Rico. Cotiza el tuyo en minutos.</p>
+  </header>
+
+  <div class="ils-carousel" aria-label="Carrusel de servicios de limpieza de Ilatek">
+    <div class="ils-track" id="ils-track"><!-- slides generados por script --></div>
+  </div>
+  <p class="ils-hint" data-es="Desliza o pasa el cursor para explorar todos los servicios" data-en="Swipe or hover to explore every service">Desliza o pasa el cursor para explorar todos los servicios</p>
+
+  <div class="ilfaq-cta il-reveal">
+    <h5 data-en-key="ilsCtaT">¿Lista tu pregunta? Obtén tu precio real ahora.</h5>
+    <p data-en-key="ilsCtaP">Cotiza tu limpieza en minutos y reserva tu fecha con el depósito de $50.</p>
+    <a href="{{custom_values.website_url}}/cotizacion"><span class="iln-t" data-es="Solicita tu cotización ↗" data-en="Request your quote ↗">Solicita tu cotización ↗</span></a>
+  </div>
+
+  <script>
+  (function(){
+    var root=document.getElementById('ilatek-servicios-slider'); if(!root)return;
+    var website=(root.getAttribute('data-website-url')||'').replace(/\u00a0/g,' ').trim();
+    if(/^\s*\{\{[^}]+\}\}\s*$/.test(website)||!website)website='https://ilatekpr.com';
+    var county=(root.getAttribute('data-location-label')||'').replace(/\u00a0/g,' ').trim();
+    if(/^\s*\{\{[^}]+\}\}\s*$/.test(county)||!county)county='Puerto Rico';
+    function token(name){return '{'+'{custom_values.'+name+'}'+'}'}
+    function buildCards(){
+      var trackEl=document.getElementById('ils-track'); if(!trackEl)return;
+
+    /* Imagenes reales de cada servicio (CDN de GHL: filesafe) */
+    var IMG_REGULAR = 'https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/svc-regular-800.webp';
+    var IMG_PROFUNDA = 'https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/svc-profunda-800.webp';
+    var IMG_MUDANZA = 'https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/svc-mudanza-800.webp';
+    var IMG_AIRBNB = 'https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/svc-airbnb-800.webp';
+    var IMG_POSTCONSTRUCCION = 'https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/svc-postconstruccion-800.webp';
+    var IMG_VENTANAS = 'https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/svc-ventanas-800.webp';
+    var IMG_PRESION = 'https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/svc-presion-800.webp';
+    var IMG_ALFOMBRAS = 'https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/svc-alfombras-800.webp';
+    var IMG_ELECTRODOMESTICOS = 'https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/svc-electrodomesticos-800.webp';
+    var IMG_ORGANIZACION = 'https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/svc-organizacion-800.webp';
+    /* Los 10 servicios mas solicitados para companias de limpieza en Puerto Rico.
+       altSeo: texto ALT dedicado por servicio, con la palabra clave Puerto Rico para SEO. */
+    var SERVICES=[
+      {img:IMG_REGULAR,kicker:'Limpieza regular',title:'Tu hogar siempre fresco',desc:'El servicio más solicitado: limpieza recurrente semanal, quincenal o mensual a $0.07 por pie².',slug:'limpieza-estandar',price:'Desde $0.07/pie²',altSeo:'Servicio de limpieza regular en Puerto Rico por Ilatek: limpieza recurrente semanal, quincenal o mensual del hogar a domicilio.',altEn:'Recurring weekly, biweekly or monthly home cleaning service in Puerto Rico by Ilatek.'},
+      {img:IMG_PROFUNDA,kicker:'Limpieza profunda',title:'Renueva cada rincón',desc:'Limpieza a fondo área por área a $0.15 por pie²: ideal para una renovación completa del hogar.',slug:'limpieza-profunda',price:'Desde $0.15/pie²',altSeo:'Limpieza profunda de casa en Puerto Rico por Ilatek: limpieza a fondo habitación por habitación y renovación completa del hogar.',altEn:'In-depth whole-home deep cleaning in Puerto Rico by Ilatek, room by room.'},
+      {img:IMG_MUDANZA,kicker:'Mudanza',title:'Mudanza sin estrés',desc:'Move-in / move-out: entrega o recibe tu espacio impecable, listo para el siguiente capítulo.',slug:'limpieza-de-mudanza',price:'Precio en minutos',altSeo:'Limpieza de mudanza move in move out en Puerto Rico por Ilatek: hogar o apartamento impecable antes o después de mudarte.',altEn:'Move-in/move-out cleaning in Puerto Rico by Ilatek: a spotless home before or after you move.'},
+      {img:IMG_AIRBNB,kicker:'Airbnb & rentals',title:'Reseñas de 5 estrellas',desc:'Turnover profesional para rentals a corto plazo: limpieza rápida y detallada entre huéspedes.',slug:'airbnb-turnover',price:'Precio en minutos',altSeo:'Limpieza para Airbnb y co-host de rentals a corto plazo en Puerto Rico por Ilatek: turnover profesional entre huéspedes con reseñas de 5 estrellas.',altEn:'Airbnb and short-term rental turnover cleaning in Puerto Rico by Ilatek with 5-star reviews.'},
+      {img:IMG_POSTCONSTRUCCION,kicker:'Post-construcción',title:'Del polvo al brillo',desc:'Eliminamos residuos de obra, polvo fino y escombros para estrenar tu espacio como nuevo.',slug:'post-construccion',price:'Precio en minutos',altSeo:'Limpieza post construccion en Puerto Rico por Ilatek: eliminación de polvo de obra, residuos y escombros para estrenar tu espacio.',altEn:'Post-construction cleaning in Puerto Rico by Ilatek: dust, debris and residue removal.'},
+      {img:IMG_VENTANAS,kicker:'Ventanas',title:'Más luz en tu hogar',desc:'Ventanas interiores ($10) y exteriores ($25): cristales impecables y una vista perfecta.',slug:'ventanas',price:'Desde $10',altSeo:'Limpieza de ventanas y cristales en Puerto Rico por Ilatek: ventanas interiores y exteriores impecables con más luz para tu hogar.',altEn:'Interior and exterior window cleaning in Puerto Rico by Ilatek for more light at home.'},
+      {img:IMG_PRESION,kicker:'Lavado a presión',title:'Exteriores como nuevos',desc:'Fachadas, terrazas, verjas y aceras: el poder del agua a presión para eliminar años de suciedad.',slug:'lavado-a-presion',price:'Precio en minutos',altSeo:'Lavado a presión en Puerto Rico por Ilatek: limpieza de fachadas, terrazas, verjas, aceras y exteriores con agua a alta presión.',altEn:'High-pressure washing of facades, terraces, fences and sidewalks in Puerto Rico by Ilatek.'},
+      {img:IMG_ALFOMBRAS,kicker:'Alfombras',title:'Frescor bajo tus pies',desc:'Lavado de alfombras a $0.75 por pie²: elimina manchas, olores y alérgenos acumulados.',slug:'alfombras',price:'Desde $0.75/pie²',altSeo:'Lavado de alfombras y tapetes en Puerto Rico por Ilatek: eliminación de manchas, olores y alérgenos a $0.75 por pie cuadrado.',altEn:'Carpet and rug washing in Puerto Rico by Ilatek: stains, odors and allergens removed.'},
+      {img:IMG_ELECTRODOMESTICOS,kicker:'Electrodomésticos',title:'Cocina como nueva',desc:'Refrigerador ($40), horno ($30), lavaplatos ($10) y lavadora/secadora ($10), por dentro y por fuera.',slug:'electrodomesticos',price:'Desde $10',altSeo:'Limpieza de electrodomesticos en Puerto Rico por Ilatek: refrigerador, horno, lavaplatos, lavadora y secadora limpios por dentro y por fuera.',altEn:'Appliance cleaning in Puerto Rico by Ilatek: fridge, oven, dishwasher, washer and dryer inside and out.'},
+      {img:IMG_ORGANIZACION,kicker:'Organización',title:'Orden que permanece',desc:'Despensas y clósets ($50 c/u) y garaje ($0.50 por pie²): orden funcional que te devuelve tiempo.',slug:'organizacion',price:'Desde $50',altSeo:'Organización del hogar en Puerto Rico por Ilatek: organización profesional de despensas, clósets y garaje en casa.',altEn:'Professional home organization of pantries, closets and garage in Puerto Rico by Ilatek.'}
+    ];
+    var EN_TITLES={'Tu hogar siempre fresco':'Your home always fresh','Renueva cada rincón':'Renew every corner','Mudanza sin estrés':'Stress-free moving','Reseñas de 5 estrellas':'5-star reviews','Del polvo al brillo':'From dust to shine','Más luz en tu hogar':'More light in your home','Exteriores como nuevos':'Exteriors like new','Frescor bajo tus pies':'Freshness under your feet','Cocina como nueva':'A kitchen like new','Orden que permanece':'Order that lasts'};
+
+    var EN_KICKERS={'Limpieza regular':'Regular cleaning','Limpieza profunda':'Deep cleaning','Mudanza':'Moving','Airbnb & rentals':'Airbnb & rentals','Post-construcción':'Post-construction','Ventanas':'Windows','Lavado a presión':'Pressure washing','Alfombras':'Carpets','Electrodomésticos':'Appliances','Organización':'Organization'};
+    var EN_DESC={'Tu hogar siempre fresco':'The most requested service: weekly, biweekly or monthly recurring cleaning at $0.07 per sq ft.','Renueva cada rincón':'Deep, room-by-room cleaning at $0.15 per sq ft: ideal for a full home refresh.','Mudanza sin estrés':'Move-in / move-out: hand over or receive your space spotless, ready for the next chapter.','Reseñas de 5 estrellas':'Professional turnover for short-term rentals: fast, detailed cleaning between guests.','Del polvo al brillo':'We remove construction residue, fine dust and debris so your space feels brand new.','Más luz en tu hogar':'Interior windows ($10) and exterior ($25): crystal-clear glass and a perfect view.','Exteriores como nuevos':'Facades, terraces, fences and sidewalks: pressurized water removes years of dirt.','Frescor bajo tus pies':'Carpet washing at $0.75 per sq ft: removes stains, odors and built-up allergens.','Cocina como nueva':'Refrigerator ($40), oven ($30), dishwasher ($10) and washer/dryer ($10), inside and out.','Orden que permanece':'Pantries and closets ($50 each) and garage ($0.50 per sq ft): functional order that gives you time back.'};
+    var EN_PRICE={'Desde $0.07/pie²':'From $0.07/sq ft','Desde $0.15/pie²':'From $0.15/sq ft','Precio en minutos':'Price in minutes','Desde $10':'From $10','Desde $0.75/pie²':'From $0.75/sq ft','Desde $50':'From $50'};
+
+    var track=document.getElementById('ils-track');
+    var html='';
+    for(var pass=0;pass<2;pass++){ // duplicamos la lista para el bucle infinito continuo
+      SERVICES.forEach(function(s){
+        var isEn=document.documentElement.getAttribute('lang')==='en';
+        var alt=isEn?((s.altEn?s.altEn+' ':'')+'Ilatek — professional residential cleaning in '+county+'.'):((s.altSeo?s.altSeo+' ':'')+'Ilatek — limpieza residencial profesional en '+county+'.');
+        var title=s.kicker+' — Ilatek Puerto Rico';
+        /* Tarjeta completa clikeable: enlace al sitio con slug del servicio ({{website_url}}/nombre-del-servicio) */
+        var url=website.replace(/\/+$/,'')+'/'+s.slug;
+        var tt=isEn?(EN_TITLES[s.title]||s.title):s.title;
+        var kk=isEn?(EN_KICKERS[s.kicker]||s.kicker):s.kicker;
+        var dd=isEn?(EN_DESC[s.title]||s.desc):s.desc;
+        var pp=isEn?(EN_PRICE[s.price]||s.price):s.price;
+        var url=website.replace(/\/+$/,'')+'/'+s.slug;
+        html+='<a class="ils-card" href="'+url+'" aria-label="'+tt+' — '+kk+(isEn?' by Ilatek':' de Ilatek')+'">'
+          +'<div class="ils-media"><span>'+kk+'</span><img src="'+s.img+'" alt="'+alt+'" title="'+kk+' — Ilatek Puerto Rico" loading="lazy" decoding="async"></div>'
+          +'<div class="ils-body"><h5>'+tt+'</h5><p>'+dd+'</p><div class="ils-foot"><span class="ils-price">'+pp+'</span><span class="ils-more">'+(isEn?'View more':'Ver más')+'</span></div></div>'
+          +'</a>';
+      });
+    }
+    trackEl.innerHTML=html;
+    }
+    buildCards();
+
+    // Resuelve tokens de GHL restantes (respaldo por si el reemplazo nativo no ocurre)
+    var KCOUNTY='{{custom_values.county_name_and_state}}';var KW_URL='{{custom_values.website_url}}';var values={};values[KCOUNTY]=county;values[KW_URL]=website;
+    var walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT),nodes=[],node;
+    while(node=walker.nextNode()){if(node.parentElement&&node.parentElement.tagName!=='SCRIPT'&&node.parentElement.tagName!=='STYLE')nodes.push(node)}
+    nodes.forEach(function(n){Object.keys(values).forEach(function(k){n.nodeValue=n.nodeValue.split(k).join(values[k])})});
+    Array.prototype.forEach.call(root.querySelectorAll('*'),function(el){
+      Array.prototype.forEach.call(el.attributes||[],function(a){
+        var v=a.value;Object.keys(values).forEach(function(k){v=v.split(k).join(values[k])});
+        if(v!==a.value)el.setAttribute(a.name,v);
+      });
+    });
+    if('IntersectionObserver' in window){new IntersectionObserver(function(enls){enls.forEach(function(els){root.classList.toggle('ils-off',!els.isIntersecting)})},{threshold:.05}).observe(root)}
+
+    /* Drag con el dedo/ratón sin bloquear el scroll vertical: loop por JS que continúa desde donde el usuario suelta */
+    (function(){
+      var trackEl=root.querySelector('.ils-track');if(!trackEl||trackEl.dataset.dragBound)return;trackEl.dataset.dragBound='true';
+      var half=0,inView=true,offset=0,vel=0,raf=0,last=0;
+      var SPEED=42,DRAG_DAMP=.25,FRICTION=.93,MINV=.02;
+      var px=function(e){return e.touches?e.touches[0].clientX:e.clientX};
+      var py=function(e){return e.touches?e.touches[0].clientY:e.clientY};
+      var setX=function(){trackEl.style.transform='translate3d('+offset+'px,0,0)'};
+      var measure=function(){half=trackEl.getBoundingClientRect().width/2;if(!half)half=1};
+      var normalize=function(){if(offset<=-half)offset+=half;if(offset>0)offset-=half;setX()};
+      var tick=function(ts){
+        if(last){var dt=Math.min((ts-last)/1000,.1);offset-=SPEED*dt;if(vel){offset+=vel*dt;vel*=Math.pow(FRICTION,dt*60);if(Math.abs(vel)<MINV)vel=0}}
+        last=ts;normalize();if(inView)raf=requestAnimationFrame(tick);
+      };
+      var pause=function(){if(raf){cancelAnimationFrame(raf);raf=0;last=0}};
+      var resume=function(){if(!raf&&inView){last=0;raf=requestAnimationFrame(tick)}};
+      measure();setX();window.addEventListener('resize',measure,{passive:true});window.addEventListener('load',measure);
+      if(window.ResizeObserver){new ResizeObserver(measure).observe(trackEl)}
+      if('IntersectionObserver' in window){new IntersectionObserver(function(enls){enls.forEach(function(els){inView=els.isIntersecting;inView?resume():pause()})},{threshold:.05}).observe(root)}else{resume()}
+      var pending=false,dragging=false,startX=0,startY=0,moved=0;
+      root.addEventListener('pointerenter',function(e){if(e.pointerType==='mouse')pause()},{passive:true});
+      root.addEventListener('pointerleave',function(e){if(e.pointerType==='mouse'&&!pending&&!dragging)resume()},{passive:true});
+      trackEl.addEventListener('pointerdown',function(e){if(e.pointerType==='mouse')e.preventDefault();pending=true;dragging=false;moved=0;startX=px(e);startY=py(e);vel=0},{passive:false});
+      window.addEventListener('pointermove',function(e){
+        if(!pending)return;
+        var dx=px(e)-startX,dy=py(e)-startY;
+        if(!dragging){
+          if(Math.abs(dx)>10&&Math.abs(dx)>Math.abs(dy)*1.2){dragging=true;pause()}
+          else{if(Math.abs(dy)>12){pending=false}return}
+        }
+        moved=Math.max(moved,Math.abs(dx));offset+=dx;startX=px(e);startY=py(e);vel=-dx*60*DRAG_DAMP;normalize();
+      },{passive:true});
+      window.addEventListener('pointerup',function(){if(!pending)return;pending=false;dragging=false;if(!raf&&inView){last=0;raf=requestAnimationFrame(tick)}},{passive:true});
+      window.addEventListener('pointercancel',function(){if(!pending)return;pending=false;dragging=false;if(!raf&&inView){last=0;raf=requestAnimationFrame(tick)}},{passive:true});
+      trackEl.addEventListener('click',function(e){if(moved>8){e.preventDefault();e.stopPropagation()}},true);
+      root.addEventListener('touchmove',function(e){if(dragging)e.preventDefault()},{passive:false});
+    })();
+
+    /* Re-entrada: rebuild bilingue cuando el idioma cambia (marquee) */
+    window.addEventListener('ilatek:lang',function(){buildCards()}); 
+  })();
+  </script>
+</section>
+
+  <!-- ═══ 6. AIRBNB & TURNOVER ═══ -->
+  <section id="ilatek-ms-airbnb" class="ms-section" aria-labelledby="ilatek-ms-airbnb-title">
+    <div class="ms-wrap">
+      <div class="ms-airbnb ms-reveal">
+        <div>
+          <span class="ms-eyebrow ms-ondark" data-es="Airbnb &amp; Turnover" data-en="Airbnb &amp; Turnover">Airbnb &amp; Turnover</span>
+          <h2 id="ilatek-ms-airbnb-title" data-en-key="airTitle">Tu propiedad <em>impecable</em> para el próximo huésped.</h2>
+          <p data-en-key="airP">Turnos coordinados con tu calendario de reservas: limpieza completa, reposición de amenities y checklist entre check-out y check-in, para mantener tus reseñas de superhost.</p>
+          <p class="ms-airmeta"><span class="iln-t" data-es="Limpieza entre huéspedes" data-en="Between-guest cleaning">Limpieza entre huéspedes</span><span class="iln-t" data-es="Coordinación con bookings" data-en="Booking coordination">Coordinación con bookings</span><span class="iln-t" data-es="Checklist verificado" data-en="Verified checklist">Checklist verificado</span></p>
+        </div>
+        <div class="ms-aircta">
+          <svg class="ms-heroico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="17" r="3"/><path d="m9.5 15.5 9-9"/><path d="m15 6 3 3"/><path d="m17.5 3.5 3 3"/></svg>
+          <a class="ms-cta ms-green" href="{{custom_values.website_url}}/airbnb-turnover"><span class="iln-t" data-es="Servicio de Airbnb &amp; Turnover" data-en="Airbnb &amp; Turnover Service">Servicio de Airbnb &amp; Turnover</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></a>
+          <p class="ms-airmeta" style="justify-content:flex-end" data-es="Reserva entre huéspedes" data-en="Book between stays">Reserva entre huéspedes</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ 7. COBERTURA · DIRECTORIO DE LOS 78 MUNICIPIOS ═══
+    Port de la sección icd del home de limpieza (ghl-home-completo-optimizado.html).
+    H2/párrafo adaptados a multiservicios. Links de pueblo = subdominios
+    https://{pueblo}.ilatekpr.com (patrón programmatic SEO existente; excepción intencional
+    a la regla de custom values). -->
+  <section id="ilatek-cobertura-dir" aria-label="Cobertura de Ilatek en Puerto Rico — techos y limpieza"
+    data-location-label="{{custom_values.county_name_and_state}}"
+    data-website-url="{{custom_values.website_url}}"
+    data-primary-location="Puerto Rico"
+    data-business-email="{{custom_values.business__email}}"
+    data-business-phone="{{custom_values.business__phone}}"
+    data-facebook-url="{{custom_values.facebook_url}}"
+    data-instagram-url="{{custom_values.instagram_url}}">
+
+  <style>
+    #ilatek-cobertura-dir{--ink:#11164b;--ink-deep:#0b103d;--blue:#213d8e;--green:#00b94f;--green-dark:#009640;--line:rgba(255,255,255,.13);--muted:rgba(255,255,255,.62);width:100vw;max-width:none;margin-inline:calc(50% - 50vw);overflow:hidden;background:var(--ink-deep);color:#fff;font-family:Manrope,Arial,sans-serif;isolation:isolate;padding-bottom:112px}
+    #ilatek-cobertura-dir *{box-sizing:border-box}
+    #ilatek-cobertura-dir a{color:inherit;text-decoration:none}
+    #ilatek-cobertura-dir [hidden]{display:none!important}
+    .icd-shell{width:min(100% - 40px,1210px);margin:auto}
+    .icd-head{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:end;padding:112px 0 0}
+    .icd-eyebrow{display:inline-flex;align-items:center;gap:8px;color:#9fe8c0;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    .icd-eyebrow:before{content:'';width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px rgba(0,185,79,.16)}
+    .icd-head h2{margin:16px 0 0;font-family:Outfit,Manrope,sans-serif;font-size:clamp(42px,4.8vw,68px);font-weight:800;line-height:1.02;letter-spacing:-.055em;text-wrap:balance}
+    .icd-head h2 em{color:var(--green);font-style:normal}
+    .icd-head p{max-width:560px;margin:0 0 6px;color:var(--muted);font-size:17px;line-height:1.68}
+    .icd-head p strong{color:#fff;font-weight:700}
+    .icd-directory{margin-top:54px;padding:26px;border:1px solid var(--line);border-radius:24px;background:rgba(255,255,255,.045);box-shadow:0 30px 80px rgba(0,0,0,.25)}
+    .icd-search{position:relative;margin:0 0 22px}
+    .icd-search-field{position:relative;display:flex;align-items:center}
+    .icd-search-icon{position:absolute;left:19px;width:20px;height:20px;color:rgba(255,255,255,.4);pointer-events:none}
+    .icd-search input{width:100%;height:58px;padding:0 56px 0 52px;border:1px solid var(--line);border-radius:13px;outline:0;background:rgba(10,14,52,.55);color:#fff;font:600 16px/1 Manrope,Arial,sans-serif;transition:border-color .2s,box-shadow .2s,background .2s}
+    .icd-search input::placeholder{color:rgba(255,255,255,.42);font-weight:500}
+    .icd-search input:focus{border-color:rgba(0,185,79,.65);box-shadow:0 0 0 4px rgba(0,185,79,.12)}
+    .icd-search-clear{position:absolute;right:8px;display:grid;place-items:center;width:42px;height:42px;border:0;border-radius:10px;background:transparent;color:rgba(255,255,255,.55);font:300 24px/1 Arial,sans-serif;cursor:pointer}
+    .icd-search-clear:hover,.icd-search-clear:focus-visible{background:rgba(255,255,255,.08);color:#fff}
+
+    .icd-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;min-height:262px;align-content:start}
+    .icd-grid a{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:54px;padding:15px 18px;border:1px solid rgba(255,255,255,.09);border-radius:11px;background:rgba(255,255,255,.035);color:rgba(255,255,255,.78);font-size:15px;font-weight:600;transition:border-color .2s,background .2s,color .2s,transform .2s}
+    .icd-grid a span{color:rgba(0,185,79,.75);font-size:13px;opacity:0;transform:translate(-4px,2px);transition:opacity .2s,transform .2s}
+    .icd-grid a:hover,.icd-grid a:focus-visible{border-color:rgba(0,185,79,.45);background:rgba(0,185,79,.09);color:#fff;transform:translateY(-1px)}
+    .icd-grid a:hover span,.icd-grid a:focus-visible span{opacity:1;transform:none}
+    .icd-empty{display:grid;place-items:center;min-height:262px;margin:0;color:var(--muted);font-size:15px;text-align:center}
+    .icd-pagination{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;margin-top:22px;padding-top:20px;border-top:1px solid rgba(255,255,255,.1)}
+    .icd-page{grid-column:2;color:rgba(255,255,255,.55);font-size:13px;font-weight:700}
+    .icd-nav{display:grid;place-items:center;width:46px;height:46px;padding:0;border:1px solid var(--line);border-radius:50%;background:transparent;color:rgba(255,255,255,.75);font-size:20px;cursor:pointer;transition:border-color .2s,background .2s,color .2s}
+    .icd-nav--next{grid-column:3;justify-self:end}
+    .icd-nav--prev{grid-column:1;justify-self:start}
+    .icd-nav:hover:not(:disabled),.icd-nav:focus-visible:not(:disabled){border-color:rgba(0,185,79,.6);background:rgba(0,185,79,.1);color:#fff}
+    .icd-nav:disabled{opacity:.25;cursor:not-allowed}
+    .icd-grid a[aria-current="page"]{border-color:rgba(0,185,79,.5);background:rgba(0,185,79,.1);color:#fff}
+    @media(max-width:900px){#ilatek-cobertura-dir{padding-bottom:84px}.icd-head{grid-template-columns:1fr;gap:22px;padding-top:84px}.icd-grid{grid-template-columns:repeat(2,minmax(0,1fr));min-height:330px}}
+    @media(max-width:560px){
+      .icd-shell{width:min(100% - 30px,1210px)}
+      #ilatek-cobertura-dir{padding-bottom:64px}
+      .icd-head{padding-top:64px}.icd-head h2{font-size:clamp(34px,9.5vw,46px)}
+      .icd-head p{font-size:15px}
+      .icd-directory{margin-top:34px;padding:15px;border-radius:17px}
+      .icd-search{margin-bottom:14px}
+      .icd-search input{height:54px;padding-left:48px;font-size:16px}
+      .icd-search-icon{left:16px;width:19px;height:19px}
+      .icd-grid{grid-template-columns:1fr;gap:9px;min-height:380px}
+      .icd-grid a{min-height:52px;padding:13px 15px;font-size:14px}
+      .icd-grid a span{opacity:1;transform:none}
+      .icd-empty{min-height:380px}
+      .icd-pagination{margin-top:14px;padding-top:14px}
+      .icd-nav{width:44px;height:44px}
+    }
+  </style>
+
+  <div class="icd-shell">
+    <header class="icd-head il-reveal">
+      <div>
+        <span class="icd-eyebrow">Cobertura local</span>
+        <h2 data-en-key="icdTitle">Techos y limpieza, <em>cobertura en toda la isla</em>.</h2>
+      </div>
+      <p data-en-key="icdP">Explora los servicios de <strong>techos y limpieza</strong> de <strong>Ilatek</strong> disponibles en los <strong>78 municipios de Puerto Rico</strong> y visita la página de tu pueblo. Atendemos propiedades en <strong>{{custom_values.county_name_and_state}}</strong> y toda la isla.</p>
+    </header>
+    <div class="icd-directory il-reveal">
+      <div class="icd-search">
+        <div class="icd-search-field">
+          <svg class="icd-search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m16.2 16.2 4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <input id="icd-town-search" type="search" inputmode="search" autocomplete="off" placeholder="Busca tu pueblo" aria-label="Buscar un municipio de Puerto Rico" aria-controls="icd-town-results" data-attr="placeholder" data-attr2="aria-label" data-es="Busca tu pueblo" data-en="Search your town" data-es2="Buscar un municipio de Puerto Rico" data-en2="Search a municipality of Puerto Rico">
+          <button class="icd-search-clear" type="button" aria-label="Limpiar búsqueda" hidden>×</button>
+        </div>
+      </div>
+      <nav class="icd-grid" id="icd-town-results" aria-label="Municipios de Puerto Rico con servicio de Ilatek"></nav>
+      <p class="icd-empty" role="status" hidden data-es="No encontramos ese pueblo. Verifica el nombre e intenta nuevamente." data-en="We can’t find that town. Check the spelling and try again.">No encontramos ese pueblo. Verifica el nombre e intenta nuevamente.</p>
+      <div class="icd-pagination">
+        <button class="icd-nav icd-nav--prev" type="button" aria-label="Página anterior" data-attr="aria-label" data-es="Página anterior" data-en="Previous page">←</button>
+        <span class="icd-page" aria-live="polite">Página 1 de 1</span>
+        <button class="icd-nav icd-nav--next" type="button" aria-label="Página siguiente" data-attr="aria-label" data-es="Página siguiente" data-en="Next page">→</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  (function(){
+    var root=document.getElementById('ilatek-cobertura-dir'); if(!root)return;
+
+    /* ---- Custom values a nivel runtime (GHL no resuelve tokens dentro de JS) ---- */
+    function clean(v){v=String(v||'').replace(/\u00a0/g,' ').trim();return /^\s*\{\{[^}]+\}\}\s*$/.test(v)?'':v}
+    function token(name){return '{'+'{custom_values.'+name+'}'+'}'}
+
+    /* Detección del pueblo por subdominio: en adjuntas.ilatekpr.com → "Adjuntas" */
+    var primaryLocation=clean(root.getAttribute('data-primary-location'))||'Puerto Rico';
+    var hostTown=(function(){
+      var host=String(window.location.hostname||'').toLowerCase(),base='ilatekpr.com';
+      if(!host||host===base||host==='www.'+base)return null;
+      if(host.indexOf('.'+base)===host.length-base.length-1){
+        var sub=host.slice(0,host.length-base.length-1).split('.').pop();
+        if(sub&&sub!=='www'){try{sub=decodeURIComponent(sub)}catch(e){}
+          return sub.split('-').filter(Boolean).map(function(w){return w.charAt(0).toUpperCase()+w.slice(1)}).join(' ');
+        }
+      }
+      return null;
+    })();
+
+    var locationLabel=hostTown?hostTown+', '+primaryLocation:(clean(root.getAttribute('data-location-label'))||primaryLocation);
+    var website=clean(root.getAttribute('data-website-url'))||'https://ilatekpr.com';
+    var values={};
+    values[token('county_name_and_state')]=locationLabel;
+    values[token('website_url')]=website;
+    values[token('business__email')]=clean(root.getAttribute('data-business-email'));
+    values[token('business__phone')]=clean(root.getAttribute('data-business-phone'));
+    values[token('facebook_url')]=clean(root.getAttribute('data-facebook-url'))||'https://www.facebook.com/ilatek.pr/';
+    values[token('instagram_url')]=clean(root.getAttribute('data-instagram-url'))||'https://www.instagram.com/ilatek.pr/';
+
+    /* Reemplazo único de tokens en textos y atributos */
+    var walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT),nodes=[],node;
+    while(node=walker.nextNode()){var p=node.parentElement;if(p&&p.tagName!=='SCRIPT'&&p.tagName!=='STYLE')nodes.push(node)}
+    nodes.forEach(function(n){Object.keys(values).forEach(function(k){n.nodeValue=n.nodeValue.split(k).join(values[k])})});
+    Array.prototype.forEach.call(root.querySelectorAll('*'),function(el){Array.prototype.forEach.call(el.attributes||[],function(a){var v=a.value;Object.keys(values).forEach(function(k){v=v.split(k).join(values[k])});if(v!==a.value)el.setAttribute(a.name,v)})});
+
+    /* ---- Directorio: 78 municipios de PR ---- */
+    var towns=['Adjuntas','Aguada','Aguadilla','Aguas Buenas','Aibonito','Añasco','Arecibo','Arroyo','Barceloneta','Barranquitas','Bayamón','Cabo Rojo','Caguas','Camuy','Canóvanas','Carolina','Cataño','Cayey','Ceiba','Ciales','Cidra','Coamo','Comerío','Corozal','Culebra','Dorado','Fajardo','Florida','Guánica','Guayama','Guayanilla','Guaynabo','Gurabo','Hatillo','Hormigueros','Humacao','Isabela','Jayuya','Juana Díaz','Juncos','Lajas','Lares','Las Marías','Las Piedras','Loíza','Luquillo','Manatí','Maricao','Maunabo','Mayagüez','Moca','Morovis','Naguabo','Naranjito','Orocovis','Patillas','Peñuelas','Ponce','Quebradillas','Rincón','Río Grande','Sabana Grande','Salinas','San Germán','San Juan','San Lorenzo','San Sebastián','Santa Isabel','Toa Alta','Toa Baja','Trujillo Alto','Utuado','Vega Alta','Vega Baja','Vieques','Villalba','Yabucoa','Yauco'];
+
+    function slug(name){
+      var map={'á':'a','é':'e','í':'i','ó':'o','ú':'u','ü':'u','ñ':'n'};
+      return name.toLowerCase().replace(/[áéíóúüñ]/g,function(c){return map[c]}).replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'');
+    }
+    var grid=root.querySelector('#icd-town-results'), input=root.querySelector('#icd-town-search'),
+        clear=root.querySelector('.icd-search-clear'), empty=root.querySelector('.icd-empty'),
+        prev=root.querySelector('.icd-nav--prev'), next=root.querySelector('.icd-nav--next'),
+        label=root.querySelector('.icd-page'), page=0, perPage=amount();
+
+    towns.forEach(function(name){
+      var a=document.createElement('a');
+      a.href='https://'+slug(name)+'.ilatekpr.com';
+      a.setAttribute('aria-label','Visita la página de Ilatek en '+name);
+      if(hostTown&&slug(name)===slug(hostTown))a.setAttribute('aria-current','page');
+      a.appendChild(document.createTextNode(name));
+      var span=document.createElement('span'); span.setAttribute('aria-hidden','true'); span.textContent='↗';
+      a.appendChild(span);
+      grid.appendChild(a);
+    });
+    var links=[].slice.call(grid.querySelectorAll('a'));
+
+    function norm(v){return String(v||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim()}
+    function amount(){return window.innerWidth<=560?6:window.innerWidth<=900?8:12}
+    function matches(){var q=norm(input.value);return links.filter(function(a){return !q||norm(a.textContent).indexOf(q)>-1})}
+    function paint(direction){
+      var found=matches(), pages=Math.max(1,Math.ceil(found.length/perPage));
+      page=Math.max(0,Math.min(page,pages-1));
+      var start=page*perPage, end=start+perPage;
+      links.forEach(function(a){a.hidden=found.indexOf(a)<start||found.indexOf(a)>=end});
+      grid.hidden=!found.length; empty.hidden=!!found.length;
+      prev.disabled=page===0||!found.length;
+      next.disabled=page>=pages-1||!found.length;
+      label.textContent=found.length?'Página '+(page+1)+' de '+pages:'0 resultados';
+      clear.hidden=!input.value;
+      if(direction&&grid.animate&&!window.matchMedia('(prefers-reduced-motion:reduce)').matches){
+        grid.animate([{opacity:.2,transform:'translateX('+(direction*18)+'px)'},{opacity:1,transform:'translateX(0)'}],{duration:260,easing:'cubic-bezier(.22,1,.36,1)'});
+      }
+    }
+    input.addEventListener('input',function(){page=0;paint(0)});
+    input.addEventListener('keydown',function(e){if(e.key==='ArrowDown'){var first=grid.querySelector('a:not([hidden])');if(first){e.preventDefault();first.focus()}}});
+    clear.addEventListener('click',function(){input.value='';page=0;input.focus();paint(0)});
+    prev.addEventListener('click',function(){if(page>0){page--;paint(-1)}});
+    next.addEventListener('click',function(){var pages=Math.ceil(matches().length/perPage);if(page<pages-1){page++;paint(1)}});
+    var rT; window.addEventListener('resize',function(){clearTimeout(rT);rT=setTimeout(function(){var n=amount();if(n!==perPage){perPage=n;page=0;paint(0)}},120)},{passive:true});
+    paint(0);
+  })();
+  </script>
+</section>
+
+  <!-- ═══ 8. RESEÑAS · 3 PESTAÑAS (Techos · Google activa por default · Limpieza) ═══ -->
+  <style>
+    .il-reviews{padding:112px 0;background:var(--paper)}.il-reviews-head{max-width:690px;margin:0 auto 48px;text-align:center}.il-reviews h2{margin:16px 0 0;font-size:clamp(42px,4.6vw,66px);font-weight:800;line-height:1.02}.il-reviews-head p{margin:18px auto 0;color:var(--muted);font-size:16px;line-height:1.65}.il-reviews-frame{min-height:320px;padding:16px;border:1px solid var(--line);border-radius:20px;background:var(--mist);box-shadow:0 20px 45px rgba(16,25,75,.08);overflow:hidden}.il-reviews-frame iframe{display:block;width:100%;min-height:285px;border:0;background:#fff;border-radius:12px}.il-reviews-tabs{display:flex;gap:7px;width:max-content;max-width:100%;margin:0 auto 18px;padding:5px;border:1px solid var(--line);border-radius:12px;background:var(--mist);overflow-x:auto;scrollbar-width:none}.il-reviews-tabs::-webkit-scrollbar{display:none}.il-reviews-tab{min-height:42px;padding:10px 18px;border:0;border-radius:8px;background:transparent;color:var(--muted);font:800 13px/1 Manrope,Arial,sans-serif;cursor:pointer;white-space:nowrap;transition:background .22s ease,color .22s ease}.il-reviews-tab:hover,.il-reviews-tab:focus-visible{color:var(--ink)}.il-reviews-tab[aria-selected=true]{background:var(--ink);color:#fff}.il-review-panel[hidden]{display:none!important}#ilatek-reviews{--paper:#fff;--ink:#11164b;--mist:#f4f7fc;--line:#dbe2f1;--muted:#5b6380;--blue:#213d8e;--green:#00b94f}@media(max-width:560px){.il-reviews-tabs{width:100%;gap:3px;flex-wrap:wrap;justify-content:center}.il-reviews-tab{flex:1;padding-inline:5px;font-size:11px;letter-spacing:-.1px}.il-reviews{padding:78px 0}.il-reviews-frame{padding:9px;border-radius:15px}.il-reviews-frame iframe{min-height:300px;border-radius:9px}}
+  </style>
+
+<section id="ilatek-reviews" class="il-reviews" aria-labelledby="ilatek-reviews-title"><div class="il-shell"><header class="il-reviews-head il-reveal"><span class="il-eyebrow" data-es="Opiniones de clientes" data-en="Customer reviews">Opiniones de clientes</span><h2 id="ilatek-reviews-title" class="il-display" data-es="La experiencia de nuestros clientes." data-en="Our customers’ experience.">La experiencia de nuestros clientes.</h2><p data-es="Reseñas reales de hogares, techos y propiedades de Airbnb que confiaron en Ilatek en {{custom_values.county_name_and_state}}." data-en="Real reviews from homes, roofs and Airbnb properties that trusted Ilatek in {{custom_values.county_name_and_state}}.">Reseñas reales de hogares, techos y propiedades de Airbnb que confiaron en Ilatek en {{custom_values.county_name_and_state}}.</p></header><div class="il-reviews-tabs" role="tablist" aria-label="Fuentes de reseñas" data-attr="aria-label" data-es="Fuentes de reseñas" data-en="Review sources"><button class="il-reviews-tab" id="il-tab-techos" type="button" role="tab" aria-selected="false" aria-controls="il-panel-techos" tabindex="-1" data-attr="aria-label" data-es="Reseñas de Mantenimiento de Techos" data-en="Roof Maintenance Reviews"><span class="iln-t" data-es="Reseñas de Mantenimiento de Techos" data-en="Roof Maintenance Reviews">Reseñas de Mantenimiento de Techos</span></button><button class="il-reviews-tab" id="il-tab-google" type="button" role="tab" aria-selected="true" aria-controls="il-panel-google" data-attr="aria-label" data-es="Reseñas de Google" data-en="Google Reviews"><span class="iln-t" data-es="Reseñas de Google" data-en="Google Reviews">Reseñas de Google</span></button><button class="il-reviews-tab" id="il-tab-limpieza" type="button" role="tab" aria-selected="false" aria-controls="il-panel-limpieza" tabindex="-1" data-attr="aria-label" data-es="Reseñas de Limpieza" data-en="Cleaning Reviews"><span class="iln-t" data-es="Reseñas de Limpieza" data-en="Cleaning Reviews">Reseñas de Limpieza</span></button></div><div class="il-reviews-frame il-reveal"><div class="il-review-panel" id="il-panel-techos" role="tabpanel" aria-labelledby="il-tab-techos" hidden><iframe class="lc_reviews_widget" data-src="https://reputationhub.site/reputation/widgets/review_widget/8OxUENFVM60EKzqsTcoD?widgetId=6ac3eb680432b6ce3f30b035" src="about:blank" title="Reseñas de Mantenimiento de Techos de Ilatek" data-attr="title" data-es="Reseñas de Mantenimiento de Techos de Ilatek" data-en="Ilatek Roof Maintenance Reviews" frameborder="0" scrolling="no" loading="lazy" style="min-width:100%;width:100%;"></iframe></div><div class="il-review-panel" id="il-panel-google" role="tabpanel" aria-labelledby="il-tab-google"><script type="text/javascript" src="https://reputationhub.site/reputation/assets/review-widget.js" defer></script><iframe class="lc_reviews_widget" src="https://reputationhub.site/reputation/widgets/review_widget/8OxUENFVM60EKzqsTcoD" title="Reseñas de Google de clientes de Ilatek" data-attr="title" data-es="Reseñas de Google de clientes de Ilatek" data-en="Ilatek Customers’ Google Reviews" frameborder="0" scrolling="no" loading="lazy" style="min-width:100%;width:100%;"></iframe></div><div class="il-review-panel" id="il-panel-limpieza" role="tabpanel" aria-labelledby="il-tab-limpieza" hidden><iframe class="lc_reviews_widget" src="about:blank" data-src="https://reputationhub.site/reputation/widgets/review_widget/8OxUENFVM60EKzqsTcoD?widgetId=6ab060ce32d0d3c755f9fd73" title="Reseñas de Limpieza de Ilatek" data-attr="title" data-es="Reseñas de Limpieza de Ilatek" data-en="Ilatek Cleaning Reviews" frameborder="0" scrolling="no" loading="lazy" style="min-width:100%;width:100%;"></iframe></div></div></div></section>
+
+<!-- Tabs de reviews: click/Enter cambia tab y carga lazy el iframe oculto -->
+  <script>
+  (function(){
+    var root=document.getElementById('ilatek-home-multiservicios'); if(!root||root.dataset.ilc2Tabs)return; root.dataset.ilc2Tabs='true';
+    var tabs=[].slice.call(root.querySelectorAll('.il-reviews-tab'));
+    if(!tabs.length)return;
+    tabs.forEach(function(tab){
+      var activate=function(){
+        tabs.forEach(function(t){
+          var sel=t===tab;
+          t.setAttribute('aria-selected',sel?'true':'false');
+          t.tabIndex=sel?0:-1;
+          var panel=root.querySelector('#'+t.getAttribute('aria-controls'));
+          if(panel){
+            panel.hidden=!sel;
+            if(sel){var f=panel.querySelector('iframe[data-src]');if(f){f.src=f.getAttribute('data-src');f.removeAttribute('data-src')}}
+          }
+        });
+      };
+      tab.addEventListener('click',activate);
+      tab.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();activate()}});
+    });
+  })();
+  </script>
+
+  <!-- ═══ 9. FAQ · 10 preguntas techos + limpieza (AEO) ═══
+    Port del bloque ilfaq (details/summary nativo accesible). El schema FAQPage
+    (JSON-LD) se agrega en un pase siguiente junto al resto del @graph. -->
+  <section id="ilatek-faq" aria-labelledby="ilatek-faq-title"
+    data-location-label="{{custom_values.county_name_and_state}}"
+    data-website-url="{{custom_values.website_url}}">
+
+  <style>
+    #ilatek-faq{--ink:#11164b;--ink-deep:#0b103d;--blue:#213d8e;--blue-soft:#eef3ff;--green:#00b94f;--green-dark:#009640;--paper:#fff;--mist:#f4f7fc;--line:#dbe2f1;--muted:#5b6380;width:100vw;max-width:none;margin-inline:calc(50% - 50vw);overflow:hidden;background:var(--mist);color:var(--ink);font-family:Manrope,Arial,sans-serif;isolation:isolate;padding:112px 0}#ilatek-faq *{box-sizing:border-box}#ilatek-faq a{color:inherit;text-decoration:none}.ilfaq-shell{width:min(100% - 40px,1210px);margin:auto}.ilfaq-head{max-width:720px;margin:0 auto 54px;text-align:center}.ilfaq-eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--blue);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.ilfaq-eyebrow:before{content:'';width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px rgba(0,185,79,.12)}.ilfaq-head h2{margin:16px 0 0;font-family:Outfit,Manrope,sans-serif;font-size:clamp(42px,4.6vw,66px);font-weight:800;line-height:1.02;letter-spacing:-.06em}.ilfaq-head>p{margin:18px auto 0;max-width:560px;color:var(--muted);font-size:16px;line-height:1.65}.ilfaq-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}.ilfaq-item{border:1px solid var(--line);border-radius:14px;background:var(--paper);box-shadow:0 8px 22px rgba(16,25,75,.06);overflow:hidden;transition:box-shadow .25s ease}.ilfaq-item:hover,.ilfaq-item[open]{box-shadow:0 14px 34px rgba(16,25,75,.11)}.ilfaq-item summary{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:22px 24px;cursor:pointer;list-style:none;user-select:none;-webkit-user-select:none;-webkit-tap-highlight-color:transparent;transition:background .22s ease}.ilfaq-item summary:hover{background:rgba(238,243,255,.45)}.ilfaq-item summary::-webkit-details-marker{display:none}.ilfaq-item summary:focus-visible{outline:2px solid var(--blue);outline-offset:-2px;border-radius:14px}.ilfaq-item h3{margin:0;font-family:Outfit,Manrope,sans-serif;font-size:17.5px;font-weight:800;line-height:1.35;letter-spacing:-.02em}.ilfaq-chevron{flex:0 0 26px;display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--blue-soft);color:var(--blue);font-size:11px;transition:transform .3s ease,background .3s ease,color .3s ease}.ilfaq-item[open] .ilfaq-chevron{transform:rotate(180deg);background:var(--green);color:#fff}@keyframes ilfaq-open{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}.ilfaq-item[open]>p{animation:ilfaq-open .3s ease}#ilatek-faq .ilfaq-item>p{padding:2px 24px 24px;color:var(--muted);font-size:14.5px;line-height:1.7}.ilfaq-item>p b{color:var(--ink)}.ilfaq-item>p a{color:var(--blue);font-weight:700;border-bottom:1px solid var(--blue)}.ilfaq-item>p a:hover{color:var(--green-dark);border-color:var(--green-dark)}.ilfaq-cta{max-width:640px;margin:44px auto 0;padding:30px 34px;border-radius:18px;background:linear-gradient(135deg,#11164b,#0b103d);color:#fff;text-align:center;box-shadow:0 22px 44px rgba(11,16,61,.4)}.ilfaq-cta h5{margin:0;font-family:Outfit,Manrope,sans-serif;font-size:clamp(22px,2.2vw,28px);letter-spacing:-.04em}.ilfaq-cta p{margin:10px 0 0;color:rgba(255,255,255,.78);font-size:14.5px;line-height:1.6}.ilfaq-cta a{display:inline-flex;align-items:center;justify-content:center;gap:10px;margin-top:18px;min-height:48px;padding:10px 24px;border-radius:8px;background:var(--green);color:#fff!important;font:800 13px/1 Manrope,Arial,sans-serif;letter-spacing:.02em;transition:transform .22s ease,background .22s ease}.ilfaq-cta a:hover,.ilfaq-cta a:focus-visible{background:var(--green-dark);transform:translateY(-2px)}@media(max-width:820px){.ilfaq-grid{grid-template-columns:1fr}}@media(max-width:560px){#ilatek-faq{padding:78px 0}.ilfaq-shell{width:min(100% - 30px,1210px)}.ilfaq-head{margin-bottom:36px}.ilfaq-item summary{padding:18px}#ilatek-faq .ilfaq-item>p{padding:2px 18px 20px}.ilfaq-cta{padding:26px 20px}}
+  </style>
+
+  <div class="ilfaq-shell">
+    <header class="ilfaq-head il-reveal">
+      <span class="ilfaq-eyebrow" data-es="Preguntas frecuentes" data-en="Frequently asked questions">Preguntas frecuentes</span>
+      <h2 id="ilatek-faq-title" class="ilfaq-display" data-en-key="faqTitle">Todo lo que necesitas saber antes de tu servicio.</h2>
+      <p data-en-key="faqSub">Respuestas claras sobre <b>techos</b>, <b>limpieza</b>, precios, cobertura y reservas de Ilatek en {{custom_values.county_name_and_state}}.</p>
+    </header>
+    <div class="ilfaq-grid il-reveal">
+
+      <details class="ilfaq-item" open>
+        <summary><h3><span class="iln-t" data-es="¿Qué servicios de techos ofrece Ilatek?" data-en="What roofing services does Ilatek offer?">¿Qué servicios de techos ofrece Ilatek?</span></h3><span class="ilfaq-chevron" aria-hidden="true">▾</span></summary>
+        <p data-en-key="qa1">Ilatek cubre todo el ciclo de vida de tu techo: <b><a href="{{custom_values.website_url}}/reparacion-de-techos">reparación de techos</a></b> (goteras, filtraciones, grietas y empozamientos), <b><a href="{{custom_values.website_url}}/sellado-de-techos">sellado de techos</a></b> con el sistema correcto para cada superficie, <b><a href="{{custom_values.website_url}}/impermeabilizacion-de-techos">impermeabilización</a></b> y <b><a href="{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos">inspección y mantenimiento preventivo</a></b>. También trabajamos por tipo de propiedad en <a href="{{custom_values.website_url}}/techos-por-segmento">techos por segmento</a> (residencial, comercial e industrial).</p>
+      </details>
+
+      <details class="ilfaq-item">
+        <summary><h3><span class="iln-t" data-es="¿Cada cuánto debo dar mantenimiento a mi techo en Puerto Rico?" data-en="How often should my roof be maintained in Puerto Rico?">¿Cada cuánto debo dar mantenimiento a mi techo en Puerto Rico?</span></h3><span class="ilfaq-chevron" aria-hidden="true">▾</span></summary>
+        <p data-en-key="qa2">Por el clima tropical de Puerto Rico —sol, sal, lluvia y huracanes— recomendamos una <b>inspección al menos una vez al año</b> y mantenimiento preventivo programado. Con el plan de <b><a href="{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos">inspección y mantenimiento de techos</a></b> (desde $58 al mes) revisamos sellos, canaletas y cubiertas antes de que un detalle menor se convierta en una filtración.</p>
+      </details>
+
+      <details class="ilfaq-item">
+        <summary><h3><span class="iln-t" data-es="¿La inspección de techos es gratis?" data-en="Is the roof inspection free?">¿La inspección de techos es gratis?</span></h3><span class="ilfaq-chevron" aria-hidden="true">▾</span></summary>
+        <p data-en-key="qa3">Sí. La <b>inspección de techos es gratis</b> en {{custom_values.county_name_and_state}} y toda la isla. Agenda directamente en el <b><a href="https://link.msgsndr.com/widget/booking/wM8KQhsYjEQAo0HbNGIh" target="_blank" rel="noopener">calendario de techos</a></b> o solicita tu <b><a href="{{custom_values.website_url}}/cotizacion-techos">cotización de techos</a></b> y te orientamos exactamente lo que tu techo necesita.</p>
+      </details>
+
+      <details class="ilfaq-item">
+        <summary><h3><span class="iln-t" data-es="¿Qué tipo de sellado debo usar en mi techo?" data-en="What type of sealing should I use on my roof?">¿Qué tipo de sellado debo usar en mi techo?</span></h3><span class="ilfaq-chevron" aria-hidden="true">▾</span></summary>
+        <p data-en-key="qa4">Depende de la superficie y el daño: <b>silicona 100%</b> para elasticidad extrema, <b>membrana asfáltica</b> para refuerzo en zonas críticas, <b>recubrimiento elastomérico</b> para reflectividad y <b>sellado acrílico</b> como opción económica. En <b><a href="{{custom_values.website_url}}/sellado-de-techos">sellado de techos</a></b> te explicamos las opciones con precio claro; la inspección gratuita define el sistema correcto.</p>
+      </details>
+
+      <details class="ilfaq-item">
+        <summary><h3><span class="iln-t" data-es="¿Cuánto cuesta una limpieza residencial en Puerto Rico?" data-en="How much does residential cleaning cost in Puerto Rico?">¿Cuánto cuesta una limpieza residencial en Puerto Rico?</span></h3><span class="ilfaq-chevron" aria-hidden="true">▾</span></summary>
+        <p data-en-key="qa5">En Ilatek el precio se calcula por pies cuadrados: la <b>limpieza estándar cuesta $0.07 por pie²</b> y la <b>limpieza profunda $0.15 por pie²</b>. Por ejemplo, una casa de 2,000 pies² cuesta $140 estándar o $300 profunda. Los extras (ventanas, refrigerador, alfombras) se suman con precio fijo. Con nuestro cotizador online ves el <b><a href="{{custom_values.website_url}}/cotizacion">precio real en minutos</a></b>, sin llamadas ni estimados al azar.</p>
+      </details>
+
+      <details class="ilfaq-item">
+        <summary><h3><span class="iln-t" data-es="¿Qué incluye la limpieza estándar y la limpieza profunda?" data-en="What do standard and deep cleaning include?">¿Qué incluye la limpieza estándar y la limpieza profunda?</span></h3><span class="ilfaq-chevron" aria-hidden="true">▾</span></summary>
+        <p data-en-key="qa6">La <b><a href="{{custom_values.website_url}}/limpieza-estandar">limpieza estándar</a></b> mantiene tu hogar fresco y ordenado con atención a cada espacio; es ideal de forma recurrente. La <b><a href="{{custom_values.website_url}}/limpieza-profunda">limpieza profunda</a></b> renueva el hogar área por área, ideal antes o después de una ocasión importante. Ambas son servicios personalizados: compartes el tamaño de tu propiedad y coordinamos el alcance antes del servicio.</p>
+      </details>
+
+      <details class="ilfaq-item">
+        <summary><h3><span class="iln-t" data-es="¿Atienden mi área en Puerto Rico?" data-en="Do you serve my area in Puerto Rico?">¿Atienden mi área en Puerto Rico?</span></h3><span class="ilfaq-chevron" aria-hidden="true">▾</span></summary>
+        <p data-en-key="qa7">Sí. Ilatek atiende propiedades en los <b>78 municipios de Puerto Rico</b>, incluyendo {{custom_values.county_name_and_state}} y toda la isla — tanto <b>techos</b> como <b>limpieza</b>. Cada servicio se coordina según las necesidades de tu espacio. Visita la página de tu pueblo en el directorio de cobertura o solicita tu cotización para confirmar disponibilidad en tu zona.</p>
+      </details>
+
+      <details class="ilfaq-item">
+        <summary><h3><span class="iln-t" data-es="¿Cómo obtengo mi precio real al instante?" data-en="How do I get my real price instantly?">¿Cómo obtengo mi precio real al instante?</span></h3><span class="ilfaq-chevron" aria-hidden="true">▾</span></summary>
+        <p data-en-key="qa8">Con nuestro <b><a href="{{custom_values.website_url}}/cotizacion">cotizador online</a></b> en 4 pasos: ingresas los pies cuadrados, eliges el tipo de limpieza, agregas servicios y extras, y ves el <b>precio total y la duración estimada</b> al momento. Para techos, solicita tu <b><a href="{{custom_values.website_url}}/cotizacion-techos">cotización de techos</a></b> con inspección gratuita.</p>
+      </details>
+
+      <details class="ilfaq-item">
+        <summary><h3><span class="iln-t" data-es="¿Qué horarios manejan y necesito depósito para reservar?" data-en="What are your hours and do I need a deposit to book?">¿Qué horarios manejan y necesito depósito para reservar?</span></h3><span class="ilfaq-chevron" aria-hidden="true">▾</span></summary>
+        <p data-en-key="qa9">Atendemos de <b>lunes a sábado, de 8:00 a.m. a 6:00 p.m.</b> Al completar tu cotización eliges directamente la fecha y hora en el calendario de reserva, según la disponibilidad real del equipo. La reserva de limpieza se asegura con un <b>depósito de $50</b> que se descuenta del valor total del servicio. Para techos, agenda tu inspección gratis en el <b><a href="https://link.msgsndr.com/widget/booking/wM8KQhsYjEQAo0HbNGIh" target="_blank" rel="noopener">calendario de techos</a></b>.</p>
+      </details>
+
+      <details class="ilfaq-item">
+        <summary><h3><span class="iln-t" data-es="¿Por qué elegir Ilatek como tu compañía multiservicios?" data-en="Why choose Ilatek as your multiservice company?">¿Por qué elegir Ilatek como tu compañía multiservicios?</span></h3><span class="ilfaq-chevron" aria-hidden="true">▾</span></summary>
+        <p data-en-key="qa10">Porque un solo equipo se encarga de tu propiedad de arriba abajo: <b><a href="{{custom_values.website_url}}/mantenimiento-de-techos">mantenimiento de techos</a></b> (reparación, sellado e impermeabilización) y <b><a href="{{custom_values.website_url}}/limpieza-residencial">limpieza profesional</a></b> residencial, comercial e industrial. Combinamos precios transparentes por pie cuadrado, cotizador online con precio real inmediato, cobertura en los 78 municipios y coordinación clara antes de cada servicio.</p>
+      </details>
+    </div>
+
+  </div>
+
+  <!-- Respaldo runtime: resuelve tokens GHL si el reemplazo nativo no ocurre -->
+  <script>
+  (function(){
+    var root=document.getElementById('ilatek-faq'); if(!root)return;
+    function clean(v){v=String(v||'').replace(/\u00a0/g,' ').trim();return /^\s*\{\{[^}]+\}\}\s*$/.test(v)?'':v}
+    var countyName=clean(root.getAttribute('data-location-label'))||'Puerto Rico', website=clean(root.dataset.websiteUrl)||'https://ilatekpr.com';
+    function token(name){return '{'+'{custom_values.'+name+'}'+'}'}
+    var values={};
+    values[token('county_name_and_state')]=countyName;
+    values[token('website_url')]=website;
+    var walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT),nodes=[],node;
+    while(node=walker.nextNode()){if(node.parentElement&&node.parentElement.tagName!=='SCRIPT'&&node.parentElement.tagName!=='STYLE')nodes.push(node)}
+    nodes.forEach(function(n){Object.keys(values).forEach(function(k){n.nodeValue=n.nodeValue.split(k).join(values[k])})});
+    Array.prototype.forEach.call(root.querySelectorAll('*'),function(el){
+      Array.prototype.forEach.call(el.attributes||[],function(a){
+        var v=a.value;Object.keys(values).forEach(function(k){v=v.split(k).join(values[k])});
+        if(v!==a.value)el.setAttribute(a.name,v);
+      });
+    });
+  })();
+  </script>
+</section>
+
+  <!-- ═══ 10. CTA FINAL · calendario Techos + calendario Limpieza ═══ -->
+  <section id="ilatek-ms-final" class="ms-section ms-final" aria-labelledby="ilatek-ms-final-title">
+    <div class="ms-wrap ms-reveal">
+      <div class="ms-finalbox">
+      <h2 id="ilatek-ms-final-title" data-en-key="finTitle">¿Listo para tu próximo servicio?</h2>
+      <p data-en-key="finSub">Agenda techos o limpieza en minutos. Inspección de techos sin costo, cotización clara y calendario abierto en {{custom_values.county_name_and_state}}.</p>
+      <div class="ms-ctarow">
+        <a class="ms-cta ms-green" href="https://link.msgsndr.com/widget/booking/wM8KQhsYjEQAo0HbNGIh" target="_blank" rel="noopener"><span class="iln-t" data-es="Agenda tu Mantenimiento de Techos" data-en="Book Your Roof Maintenance">Agenda tu Mantenimiento de Techos</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/><path d="m9 15 2 2 4-4"/></svg></a>
+        <a class="ms-cta ms-ghost" href="https://link.msgsndr.com/widget/booking/i5HZobZjuSZcDl43qgOG" target="_blank" rel="noopener"><span class="iln-t" data-es="Agenda tu Limpieza" data-en="Book Your Cleaning">Agenda tu Limpieza</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/><path d="m9 15 2 2 4-4"/></svg></a>
+      </div>
+      <p class="ms-note" data-en-key="finNote">78 municipios de Puerto Rico · Pagos seguros desde el calendario · Garantía por escrito</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee: auto-slide off en EN + titles bilingues de iframes de reseñas -->
+  <script>
+  (function(){
+    function fix(lang){
+      var track=document.getElementById('ils-track');
+      if(track){var c=track.querySelectorAll('.ils-card').length;track.style.animationPlayState=(lang==='en'||c>10)?'paused':''}
+      var t1=document.querySelector('#il-panel-techos iframe');if(t1)t1.title=lang==='en'?'Ilatek Roof Maintenance Reviews':'Reseñas de Mantenimiento de Techos de Ilatek';
+      var t2=document.querySelector('#il-panel-google iframe');if(t2)t2.title=lang==='en'?'Ilatek Customers’ Google Reviews':'Reseñas de Google de clientes de Ilatek';
+      var t3=document.querySelector('#il-panel-limpieza iframe');if(t3)t3.title=lang==='en'?'Ilatek Cleaning Reviews':'Reseñas de Limpieza de Ilatek';
+    }
+    fix(document.documentElement.getAttribute('lang')||'es');
+    window.addEventListener('ilatek:lang',function(e){fix(e.detail)});
+  })();
+  </script>
+
+  <!-- Reveal on scroll (respeta prefers-reduced-motion) -->
+  <script>
+  (function(){
+    var root=document.getElementById('ilatek-home-multiservicios'); if(!root)return;
+    var els=[].slice.call(root.querySelectorAll('.ms-reveal, .il-reveal')); if(!els.length)return;
+    var show=function(el){el.classList.add(el.classList.contains('ms-reveal')?'ms-in':'is-visible')};
+    if(!('IntersectionObserver' in window)){els.forEach(show);return}
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){if(en.isIntersecting){show(en.target);io.unobserve(en.target)}});
+    },{rootMargin:'0px 0px -8% 0px',threshold:0.05});
+    els.forEach(function(el){io.observe(el)});
+  })();
+  </script>
+</section>
