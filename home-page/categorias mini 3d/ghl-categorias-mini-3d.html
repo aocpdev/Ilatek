@@ -1,3 +1,4 @@
+<meta charset="utf-8">
 <!--
   ILATEK · GHL Custom HTML · Seccion "Servicios de Limpieza en Puerto Rico"
   Tres categorias: Limpieza Residencial · Limpieza Comercial · Limpieza Industrial.
@@ -41,7 +42,7 @@
     .ilcm-card:not(.is-front){cursor:pointer}
     .ilcm-card{position:relative;display:flex;flex-direction:column;border:1px solid var(--line);border-radius:22px;background:var(--paper);box-shadow:0 10px 28px rgba(17,22,75,.07);overflow:hidden;transition:transform .45s cubic-bezier(.4,0,.2,1),box-shadow .45s cubic-bezier(.4,0,.2,1),background .45s cubic-bezier(.4,0,.2,1)}
     .ilcm-stage .ilcm-card.is-front:hover,.ilcm-stage .ilcm-card.is-front:focus-within{transform:translateX(-50%) translateZ(var(--lift)) translateY(-6px) scale(1);box-shadow:0 26px 56px rgba(17,22,75,.28),inset 0 1px 0 rgba(255,255,255,.5)}
-    .ilcm-media{height:164px;overflow:hidden;background:var(--blue-soft)}.ilcm-media img{display:block;width:100%;height:100%;object-fit:cover;transform:scale(1);transform-origin:center;backface-visibility:hidden;transition:transform .8s cubic-bezier(.4,0,.2,1),filter .8s cubic-bezier(.4,0,.2,1);will-change:transform}.ilcm-card:hover .ilcm-media img,.ilcm-card:focus-within .ilcm-media img{transform:scale(1.06);filter:brightness(1.04) saturate(1.08);backface-visibility:hidden}.ilcm-card.is-front:hover .ilcm-media img,.ilcm-card.is-front:focus-within .ilcm-media img{transform:scale(1.06);filter:brightness(1.04) saturate(1.08);backface-visibility:hidden}
+    .ilcm-media{aspect-ratio:16/9;min-height:0;overflow:hidden;background:var(--blue-soft)}.ilcm-media img{display:block;width:100%;height:100%;object-fit:cover;transform:scale(1);transform-origin:center;backface-visibility:hidden;transition:transform .8s cubic-bezier(.4,0,.2,1),filter .8s cubic-bezier(.4,0,.2,1);will-change:transform}.ilcm-card:hover .ilcm-media img,.ilcm-card:focus-within .ilcm-media img{transform:scale(1.06);filter:brightness(1.04) saturate(1.08);backface-visibility:hidden}.ilcm-card.is-front:hover .ilcm-media img,.ilcm-card.is-front:focus-within .ilcm-media img{transform:scale(1.06);filter:brightness(1.04) saturate(1.08);backface-visibility:hidden}
     .ilcm-badge{position:relative;z-index:1;display:grid;place-items:center;width:62px;height:62px;margin:-31px 0 0 28px;border-radius:18px;border:1px solid rgba(255,255,255,.6);background:linear-gradient(150deg,rgba(238,243,255,.78),rgba(238,243,255,.42));-webkit-backdrop-filter:blur(14px) saturate(160%);backdrop-filter:blur(14px) saturate(160%);box-shadow:0 8px 20px rgba(17,22,75,.14),inset 0 1px 0 rgba(255,255,255,.65);color:var(--blue);transition:background .45s cubic-bezier(.4,0,.2,1),color .45s cubic-bezier(.4,0,.2,1),box-shadow .45s cubic-bezier(.4,0,.2,1)}.ilcm-badge svg{display:block;width:29px;height:29px}.ilcm-card.is-front:hover .ilcm-badge{background:linear-gradient(150deg,rgba(0,185,79,.88),rgba(0,150,64,.66));color:#fff;box-shadow:0 12px 26px rgba(0,150,64,.32),inset 0 1px 0 rgba(255,255,255,.4)}
     .ilcm-body{display:flex;flex-direction:column;flex:1;padding:16px 24px 24px}
     .ilcm-kicker{color:var(--green-dark);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
@@ -52,7 +53,7 @@
     .ilcm-btn:focus-visible,.ilcm-social a:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
         /* Rotacion 3D siempre activa en todos los dispositivos (sin excepcion reduced-motion) */
     @media(max-width:1020px){.ilcm-stage{--side-x:160px;--side-z:-260px;height:400px}.ilcm-stage .ilcm-card{width:350px}}
-    @media(max-width:560px){#ilatek-categorias-mini{padding:32px 0 28px}.ilcm-stage{--side-x:36vw;--side-z:-240px;height:360px}.ilcm-stage .ilcm-card{width:min(86vw,320px)}.ilcm-shell{width:min(100% - 30px,1210px)}.ilcm-head{margin-bottom:12px}.ilcm-media{height:132px}.ilcm-body{padding:12px 18px 18px}.ilcm-body h5{font-size:19px}.ilcm-btn{min-height:42px;padding:9px 16px;font-size:12.5px}.ilcm-kicker{font-size:11px}.ilcm-badge{width:54px;height:54px;margin:-27px 0 0 18px}.ilcm-badge svg{width:25px;height:25px}.ilcm-stage{margin-inline:-22px;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 3%,#000 97%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 3%,#000 97%,transparent 100%)}}
+    @media(max-width:560px){#ilatek-categorias-mini{padding:32px 0 28px}.ilcm-stage{--side-x:36vw;--side-z:-240px;height:360px}.ilcm-stage .ilcm-card{width:min(86vw,320px)}.ilcm-shell{width:min(100% - 30px,1210px)}.ilcm-head{margin-bottom:12px}.ilcm-media{min-height:0}.ilcm-body{padding:12px 18px 18px}.ilcm-body h5{font-size:19px}.ilcm-btn{min-height:42px;padding:9px 16px;font-size:12.5px}.ilcm-kicker{font-size:11px}.ilcm-badge{width:54px;height:54px;margin:-27px 0 0 18px}.ilcm-badge svg{width:25px;height:25px}.ilcm-stage{margin-inline:-22px;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 3%,#000 97%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 3%,#000 97%,transparent 100%)}}
   </style>
 
   <div class="ilcm-shell">
@@ -66,7 +67,7 @@
       <!-- ============ TARJETA 1 · RESIDENCIAL ============ -->
       <article class="ilcm-card">
         <div class="ilcm-media">
-          <img src="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/limpieza-residencial-800.webp" onerror="this.onerror=null;this.src='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab0c2d4ff484614db70610b.png'"
+          <img src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8582fcc7a5a2b73475d89.jpg" onerror="this.onerror=null;this.src='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8582fcc7a5a2b73475d89.jpg'"
             width="800" height="451" loading="lazy" decoding="async"
             alt="Limpieza residencial de Ilatek en Puerto Rico — servicio de limpieza de casas y apartamentos en {{custom_values.county_name_and_state}}"
             title="Limpieza Residencial en Puerto Rico · Ilatek">
@@ -82,7 +83,7 @@
       <!-- ============ TARJETA 2 · COMERCIAL ============ -->
       <article class="ilcm-card">
         <div class="ilcm-media">
-          <img src="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/limpieza-comercial-800.webp" onerror="this.onerror=null;this.src='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab0c2d44091fa65e6a436d3.png'"
+          <img src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8582a195f9172ed03aa2b.jpg" onerror="this.onerror=null;this.src='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8582a195f9172ed03aa2b.jpg'"
             width="800" height="451" loading="lazy" decoding="async"
             alt="Limpieza comercial de Ilatek en Puerto Rico — limpieza de oficinas, tiendas y negocios en {{custom_values.county_name_and_state}}"
             title="Limpieza Comercial en Puerto Rico · Ilatek">
@@ -98,7 +99,7 @@
       <!-- ============ TARJETA 3 · INDUSTRIAL ============ -->
       <article class="ilcm-card">
         <div class="ilcm-media">
-          <img src="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/limpieza-industrial-800.webp" onerror="this.onerror=null;this.src='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab0c2d4ff484614db70610c.png'"
+          <img src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8582ebbad531ac844941b.jpg" onerror="this.onerror=null;this.src='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8582ebbad531ac844941b.jpg'"
             width="800" height="451" loading="lazy" decoding="async"
             alt="Limpieza industrial de Ilatek en Puerto Rico — limpieza de almacenes e instalaciones en {{custom_values.county_name_and_state}}"
             title="Limpieza Industrial en Puerto Rico · Ilatek">

@@ -1,9 +1,10 @@
+<meta charset="utf-8">
 <!--
   ILATEK · GHL Custom Code · Menú universal (embed independiente)
   Estilo cápsula flotante sticky + mega-panel de servicios por categoría + drawer móvil.
   Todo el menú de servicios está agrupado por categoría, con un ícono por servicio
   (sprite SVG inline, sin dependencias externas).
-  CTA: "Agenda tu Servicio" -> {{custom_values.website_url}}/cotizacion
+  CTA: "Agenda tu Servicio" -> {{custom_values.website_url}}/cotizacion (limpieza) y {{custom_values.website_url}}/cotizacion-techos (techos)
   SIN animaciones atadas al scroll: la cápsula es sticky y permanece; solo hay
   transiciones al abrir/cerrar el mega-panel y el drawer.
   En páginas distintas de /home, cambiar los anchors #ilatek-* por URLs completas,
@@ -64,6 +65,13 @@
     .iln-lang:hover,.iln-lang:focus-visible{border-color:var(--iln-green)}
     .iln-lang span{padding:5px 9px;border-radius:999px;transition:background .2s ease,color .2s ease,box-shadow .2s ease}
     .iln-lang span[aria-pressed="true"]{background:var(--iln-ink);color:#fff;box-shadow:0 4px 10px rgba(11,16,61,.25)}
+    /* MODO GLOBAL: normaliza la capa de auto-traducción de Google (sin banner ni controles visibles) */
+    #ilatek-gt-host{display:none!important}
+    body{top:0!important}
+    .goog-te-banner-frame.skiptranslate{display:none!important}
+    .goog-te-gadget{font-size:0!important}
+    .goog-te-gadget .goog-te-combo{display:none!important}
+    #goog-gt-tt,#goog-gt-tt *{background:none!important;border:none!important;box-shadow:none!important}
     .iln-burger{display:none;place-items:center;width:44px;height:44px;margin-left:auto;border:0;border-radius:11px;background:transparent;cursor:pointer;color:var(--iln-ink);position:relative}
     .iln-burger svg{position:absolute;width:22px;height:22px;display:block;transition:opacity .22s ease,transform .26s ease}
     .iln-burger .iln-ic-x{opacity:0;transform:rotate(-90deg) scale(.6)}
@@ -174,20 +182,20 @@
         <button class="iln-trigger" id="iln-empleos-trig" type="button" aria-expanded="false" aria-controls="iln-empleos" aria-haspopup="true"><span class="iln-t" data-es="Empleos" data-en="Jobs">Empleos</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-chev"></use></svg></button>
         <div class="iln-drop" id="iln-empleos" aria-labelledby="iln-empleos-trig">
           <ul class="iln-list">
-            <li><a href="{{custom_values.website_url}}/reclutamiento-empleo-techos"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-roof"></use></svg><span>Mantenimiento de Techos</span></a></li>
-            <li><a href="{{custom_values.website_url}}/reclutamiento-empleo"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-spark"></use></svg><span>Limpieza</span></a></li>
+            <li><a href="{{custom_values.website_url}}/reclutamiento-empleo-techos"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-roof"></use></svg><span class="iln-t" data-es="Mantenimiento de Techos" data-en="Roof Maintenance">Mantenimiento de Techos</span></a></li>
+            <li><a href="{{custom_values.website_url}}/reclutamiento-empleo"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-spark"></use></svg><span class="iln-t" data-es="Limpieza" data-en="Cleaning">Limpieza</span></a></li>
           </ul>
         </div>
       </div>
-      <a href="{{custom_values.website_url}}/#ilatek-conocenos">Acerca de Nosotros</a>
+      <a href="{{custom_values.website_url}}/limpieza/#ilatek-conocenos" data-es="Acerca de Nosotros" data-en="About Us">Acerca de Nosotros</a>
       <a href="https://portal.ilatekpr.com" target="_blank" rel="noopener">Login</a>
     </nav>
     <div class="iln-ctawrap">
       <button class="iln-cta" id="iln-agenda-trig" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="iln-agenda"><span class="iln-t" data-es="Agenda tu Servicio" data-en="Book Your Service">Agenda tu Servicio</span><span aria-hidden="true"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" focusable="false"><use href="#iln-i-cal"></use></svg></span></button>
       <div class="iln-drop iln-agenda" id="iln-agenda" aria-labelledby="iln-agenda-trig">
         <ul class="iln-list">
-          <li><a href="https://link.msgsndr.com/widget/booking/wM8KQhsYjEQAo0HbNGIh" target="_blank" rel="noopener"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-roof"></use></svg><span><span class="iln-t" data-es="Mantenimiento de Techos" data-en="Roof Maintenance">Mantenimiento de Techos</span><small class="iln-t" data-es="Reserva tu fecha y hora" data-en="Book your date &amp; time">Reserva tu fecha y hora</small></span></a></li>
-          <li><a href="https://link.msgsndr.com/widget/booking/i5HZobZjuSZcDl43qgOG" target="_blank" rel="noopener"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-spark"></use></svg><span><span class="iln-t" data-es="Servicio de Limpieza" data-en="Cleaning Service">Servicio de Limpieza</span><small class="iln-t" data-es="Reserva tu fecha y hora" data-en="Book your date &amp; time">Reserva tu fecha y hora</small></span></a></li>
+          <li><a href="{{custom_values.website_url}}/cotizacion-techos"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-roof"></use></svg><span><span class="iln-t" data-es="Mantenimiento de Techos" data-en="Roof Maintenance">Mantenimiento de Techos</span><small class="iln-t" data-es="Reserva tu fecha y hora" data-en="Book your date &amp; time">Reserva tu fecha y hora</small></span></a></li>
+          <li><a href="{{custom_values.website_url}}/cotizacion"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-spark"></use></svg><span><span class="iln-t" data-es="Servicio de Limpieza" data-en="Cleaning Service">Servicio de Limpieza</span><small class="iln-t" data-es="Reserva tu fecha y hora" data-en="Book your date &amp; time">Reserva tu fecha y hora</small></span></a></li>
         </ul>
       </div>
     </div>
@@ -220,7 +228,6 @@
             <li style="--i:11"><a href="{{custom_values.website_url}}/reparacion-de-grietas-techos"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-crack"></use></svg><span class="iln-t" data-es="Reparación de Grietas" data-en="Crack Repair">Reparación de Grietas</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
             <li style="--i:12"><a href="{{custom_values.website_url}}/empozamiento-de-techos"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-puddle"></use></svg><span class="iln-t" data-es="Empozamiento de Agua" data-en="Water Ponding Fix">Empozamiento de Agua</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
             <li style="--i:13"><a href="{{custom_values.website_url}}/oxidacion-de-techos"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-rust"></use></svg><span class="iln-t" data-es="Oxidación y Varillas" data-en="Rust &amp; Rebar Treatment">Oxidación y Varillas</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
-            <li style="--i:14"><a href="{{custom_values.website_url}}/moho-y-humedad-techos"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-mold"></use></svg><span class="iln-t" data-es="Moho y Humedad" data-en="Mold &amp; Moisture">Moho y Humedad</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
             <li style="--i:15"><a href="{{custom_values.website_url}}/reparacion-post-huracan"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-hurricane"></use></svg><span class="iln-t" data-es="Reparación Post-Huracán" data-en="Post-Hurricane Repair">Reparación Post-Huracán</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
           </ul>
         </li>
@@ -271,7 +278,7 @@
       <div class="iln-mega-foot">
         <p class="iln-t" data-es="¿No sabes cuál necesitas? Te orientamos sin costo." data-en="Not sure what you need? We guide you at no cost.">¿No sabes cuál necesitas? Te orientamos sin costo.</p>
         <div class="iln-max">
-          <a class="iln-mega-all" href="{{custom_values.website_url}}/home"><span class="iln-t" data-es="Todos los Servicios de Mantenimiento de Techos" data-en="All Roof Maintenance Services">Todos los Servicios de Mantenimiento de Techos</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-arrow"></use></svg></a>
+          <a class="iln-mega-all" href="{{custom_values.website_url}}/servicios-techos"><span class="iln-t" data-es="Todos los Servicios de Mantenimiento de Techos" data-en="All Roof Maintenance Services">Todos los Servicios de Mantenimiento de Techos</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-arrow"></use></svg></a>
           <a class="iln-mega-all" href="{{custom_values.website_url}}/servicios"><span class="iln-t" data-es="Todos los Servicios de Limpieza" data-en="All Cleaning Services">Todos los Servicios de Limpieza</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-arrow"></use></svg></a>
           <a class="iln-mega-all" href="https://portal.ilatekpr.com" target="_blank" rel="noopener"><span class="iln-t" data-es="Portal del Cliente" data-en="Client Portal">Portal del Cliente</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-portal"></use></svg></a>
         </div>
@@ -288,21 +295,22 @@
           <a href="{{custom_values.website_url}}/reclutamiento-empleo"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-spark"></use></svg><span class="iln-t" data-es="Limpieza" data-en="Cleaning">Limpieza</span></a>
         </div>
       </div>
-      <a href="{{custom_values.website_url}}/#ilatek-conocenos"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-info"></use></svg><span class="iln-t" data-es="Acerca de Nosotros" data-en="About Us">Acerca de Nosotros</span></a>
+      <a href="{{custom_values.website_url}}/#ilatek-faq"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-info"></use></svg><span class="iln-t" data-es="Acerca de Nosotros" data-en="About Us">Acerca de Nosotros</span></a>
       <a href="https://portal.ilatekpr.com" target="_blank" rel="noopener"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-portal"></use></svg>Login</a>
       <div class="iln-acc-item">
         <button class="iln-acc-trigger" type="button" aria-expanded="false" aria-controls="iln-drawer-agenda"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-cal"></use></svg><span class="iln-t" data-es="Agenda tu Servicio" data-en="Book Your Service">Agenda tu Servicio</span><svg class="iln-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-chev"></use></svg></button>
         <div class="iln-acc-list" id="iln-drawer-agenda">
-          <a href="https://link.msgsndr.com/widget/booking/wM8KQhsYjEQAo0HbNGIh" target="_blank" rel="noopener"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-roof"></use></svg><span class="iln-t" data-es="Mantenimiento de Techos" data-en="Roof Maintenance">Mantenimiento de Techos</span></a>
-          <a href="https://link.msgsndr.com/widget/booking/i5HZobZjuSZcDl43qgOG" target="_blank" rel="noopener"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-spark"></use></svg>Servicio de Limpieza</a>
+          <a href="{{custom_values.website_url}}/cotizacion-techos"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-roof"></use></svg><span class="iln-t" data-es="Mantenimiento de Techos" data-en="Roof Maintenance">Mantenimiento de Techos</span></a>
+          <a href="{{custom_values.website_url}}/cotizacion"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-spark"></use></svg>Servicio de Limpieza</a>
         </div>
       </div>
     </div>
   </div>
 
   <!-- ═══ Motor i18n es/en ═══
-    · El toggle solo aparece si la página tiene contenido traducible ([data-es] fuera
-      del nav y del footer); en las otras páginas el botón queda oculto.
+    · HÍBRIDO: con traducción autorizada ([data-es] fuera del nav/footer) usa el modo
+      literal; si no la hay, activa auto-traducción global (Google Translate) para
+      que el es/en funcione en TODAS las páginas que lleven este menú.
     · Modos por nodo: data-attr (traduce ese atributo) · data-en-key (HTML rico
       desde window.ILATEK_I18N[key], con variantes es/en) · data-en (texto plano).
     · Cambia <html lang>, persiste en localStorage (ilatek-lang), resuelve tokens GHL
@@ -366,7 +374,7 @@
         if(spans[1])spans[1].setAttribute('aria-pressed',lang==='en'?'true':'false');
         btn.setAttribute('aria-label',lang==='es'?'Cambiar el idioma a English':'Switch language to Spanish');
       }
-      window.__ilatekLang=lang;
+      if(window.__ilatekSyncGt)window.__ilatekSyncGt(lang);window.__ilatekLang=lang;
       try{window.dispatchEvent(new CustomEvent('ilatek:lang',{detail:lang}))}catch(e){}
     }
     window.__ilatekSetLang=applyLang;
@@ -374,13 +382,22 @@
     function boot(){
       var translatable=false,nl=document.querySelectorAll('[data-es]'),ni;
       for(ni=0;ni<nl.length;ni++){if(!nl[ni].closest('#ilatek-nav')&&!nl[ni].closest('#ilatek-footer')){translatable=true;break}}
-      if(translatable){root.classList.add('iln-lang-on')}
-      else if(wrap){wrap.style.display='none'}
+      if(true){/* hibrido: es/en siempre disponible */root.classList.add('iln-lang-on')}
       var saved='es';try{saved=localStorage.getItem(LANG_KEY)||'es'}catch(e){}
       window.__ilatekLang=saved;
       applyLang(saved);
     }
     if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',boot)}else{boot()}
+    /* —— MODO GLOBAL (híbrido): auto-traducción del resto de la página ——————
+       Páginas sin [data-es] propio (landings): inyecta el elemento de Google
+       Translate una sola vez y conmuta el idioma con clicks sintéticos sobre
+       el combo (los iframes están bloqueados por same-origin). El estilo lo
+       normaliza #ilatek-gt-host (oculta banner, créditos y el combo original). */
+    var gtHost=null,gtTimer=null;
+    function gtNeeds(lang){var nl=document.querySelectorAll('[data-es]'),ni;for(ni=0;ni<nl.length;ni++){if(!nl[ni].closest('#ilatek-nav')&&!nl[ni].closest('#ilatek-footer'))return false}return true}
+    function gtInject(){if(gtHost||document.getElementById('ilatek-gt-host'))return;gtHost=document.createElement('div');gtHost.id='ilatek-gt-host';gtHost.innerHTML='<div id=\'google_translate_element\' style=\'display:none\'></div>';document.body.appendChild(gtHost);window.googleTranslateElementInit=function(){try{new google.translate.TranslateElement({pageLanguage:'es',includedLanguages:'en,es',autoDisplay:false},'google_translate_element')}catch(e){}};var sc=document.createElement('script');sc.src='https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';document.body.appendChild(sc)}
+    function __ilatekGtPick(lang){if(!gtNeeds(lang))return;gtInject();var tries=0,combo=null;function pick(){combo=document.querySelector('.goog-te-combo');if(!combo)return false;try{combo.value=(lang==='en')?'en':'es';combo.dispatchEvent(new Event('change'))}catch(e){if(combo.onchange)combo.onchange()}return true}if(pick())return;if(gtTimer)clearInterval(gtTimer);gtTimer=setInterval(function(){tries++;if(pick()||tries>120){if(gtTimer)clearInterval(gtTimer);gtTimer=null}},500)}
+    window.__ilatekGtPick=__ilatekGtPick;window.__ilatekSyncGt=__ilatekGtPick;
     if(!btn)return;
     btn.addEventListener('click',function(){
       var cur=document.documentElement.getAttribute('lang');
@@ -451,11 +468,11 @@
 /* ILATEK · Menú universal — mega-panel + drawer + contracción al logo al hacer scroll */
 (function(){
   var root=document.getElementById('ilatek-nav');if(!root||root.dataset.ilnReady)return;root.dataset.ilnReady='true';
-  try{if(root.parentNode&&root.parentNode!==document.body)document.body.appendChild(root);}catch(e){}
+  try{if(root.parentNode&&root.parentNode!==document.body)document.body.appendChild(root)}catch(e){}
   var mega=root.querySelector('.iln-mega'),burger=root.querySelector('.iln-burger'),drawer=root.querySelector('.iln-drawer');
   var trig=root.querySelector('.iln-trigger');
   var grid=mega?mega.querySelector('.iln-mega-grid'):null;
-  function catIcon(label){var l=(label||'').toLowerCase();if(l.indexOf('impermeab')>-1)return '#iln-i-water-shield';if(l.indexOf('reparac')>-1)return '#iln-i-hammer';if(l.indexOf('sellado')>-1)return '#iln-i-brush';if(l.indexOf('mantenimiento')>-1)return '#iln-i-gear';if(l.indexOf('limpieza')>-1)return '#iln-i-spark';return '#iln-i-layers';}
+  function catIcon(label){var l=(label||'').toLowerCase();if(l.indexOf('impermeab')>-1)return '#iln-i-water-shield';if(l.indexOf('reparac')>-1)return '#iln-i-hammer';if(l.indexOf('sellado')>-1)return '#iln-i-brush';if(l.indexOf('mantenimiento')>-1)return '#iln-i-gear';if(l.indexOf('limpieza')>-1)return '#iln-i-spark';return '#iln-i-layers'}
 
   /* Drawer móvil: generado desde el mega, con niveles de profundidad
      (sección > categoría > servicio) y sombras escalonadas por nivel */
@@ -500,7 +517,7 @@
       g.nodes.forEach(function(node){fillLinks(host,node)});
     });
     if(sections.techos){
-      var hub=document.createElement('a');hub.href=site+'/home';
+      var hub=document.createElement('a');hub.href=site+'/servicios-techos';
       hub.innerHTML='<svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-arrow"></use></svg>Todos los servicios de Techos';
       sections.techos.list.appendChild(hub);
     }

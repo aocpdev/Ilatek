@@ -1,3 +1,4 @@
+<meta charset="utf-8">
 <!--
   ILATEK · GHL Custom HTML · Cobertura Local · Directorio de 78 municipios de Puerto Rico
   Estilo: sección "Cobertura local" de Devasks, adaptada a la marca ILATEK (limpieza residencial).
@@ -133,6 +134,8 @@
 
     var locationLabel=hostTown?hostTown+', '+primaryLocation:(clean(root.getAttribute('data-location-label'))||primaryLocation);
     var website=clean(root.getAttribute('data-website-url'))||'https://ilatekpr.com';
+    /* Slug del servicio (lo estampa el build de techos). Sin él → raíz del subdominio. */
+    var serviceSlug=clean(root.getAttribute('data-service-slug'));
     var values={};
     values[token('county_name_and_state')]=locationLabel;
     values[token('website_url')]=website;
@@ -161,7 +164,7 @@
 
     towns.forEach(function(name){
       var a=document.createElement('a');
-      a.href='https://'+slug(name)+'.ilatekpr.com';
+      a.href='https://'+slug(name)+'.ilatekpr.com'+(serviceSlug?'/'+serviceSlug:'');
       a.setAttribute('aria-label','Visita la página de Ilatek en '+name);
       if(hostTown&&slug(name)===slug(hostTown))a.setAttribute('aria-current','page');
       a.appendChild(document.createTextNode(name));

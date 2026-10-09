@@ -28,6 +28,16 @@ Fundada por Luis A. Cardec y Aida Cintron. Misión: devolver tranquilidad cuidan
 - Cobertura: los 78 municipios de Puerto Rico.
 - El equipo llega con productos y equipos profesionales incluidos.
 
+## Techos (Ilatek Techos)
+
+- [Sección de techos](https://ilatekpr.com/techos): hub de reparación, sellado e impermeabilización de techos en Puerto Rico.
+- [Reparación de techos](https://ilatekpr.com/reparacion-de-techos): goteras, filtraciones, grietas y daños desde $250.
+- [Sellado de techos](https://ilatekpr.com/sellado-de-techos): proceso de 5 pasos desde $2.50 por pie² — silicona 100%, membrana asfáltica, elastomérico, poliuretano y acrílico.
+- [Impermeabilización de techos](https://ilatekpr.com/impermeabilizacion-de-techos): concreto, techos planos, zinc, asfalto, teja y madera desde $3.00 por pie².
+- [Techos por segmento](https://ilatekpr.com/techos-por-segmento): soluciones residenciales, comerciales e industriales.
+- [Inspección y mantenimiento](https://ilatekpr.com/inspeccion-y-mantenimiento-de-techos): inspección gratis, planes desde $58/mes, limpieza y canaletas.
+- Detalle completo de la división de techos: [Ilatek/techos/llms-techos.txt](https://ilatekpr.com/techos/llms-techos.txt).
+
 ## Páginas
 
 - [Inicio](https://ilatekpr.com/home): información completa del negocio, reseñas y preguntas frecuentes.

@@ -1,3 +1,4 @@
+<meta charset="utf-8">
 <!--
   ILATEK · GHL Custom Code · Footer global (embed independiente)
   Pegar tal cual en un elemento <Custom Code> de GoHighLevel.
@@ -106,11 +107,14 @@
       .ilf-services{grid-template-columns:1fr 1fr;width:min(100% - 24px,720px)}
       .ilf-svc:first-child{grid-column:1 / -1}
       .ilf-portal-card{grid-template-columns:1fr;gap:26px;padding:32px 26px;width:min(100% - 24px,720px)}
-      .ilf-portal-img{max-width:280px}
-      .ilf-portal-img-mobile{display:block;max-width:min(100%,320px);height:auto;padding:15px;margin:0 auto}
+      .ilf-card{padding:32px 20px}
+      .ilf-svcimg{padding:0 0 16px}
+      .ilf-portal-copy{padding:0}
+      .ilf-portal-img{max-width:100%;padding:0}
+      .ilf-portal-img-mobile{display:block;max-width:min(100%,320px);height:auto;padding:0;margin:0 auto}
       .ilf-dash{text-align:center;padding:10px 0}
       .ilf-dash ul{display:inline-block;text-align:left}
-      .ilf-top{grid-template-columns:1fr;padding:30px 26px;width:min(100% - 24px,760px)}
+      .ilf-top{grid-template-columns:1fr;row-gap:26px;padding:30px 26px;width:min(100% - 24px,760px)}
       .ilf-brand{max-width:340px}
     }
     @media (max-width:600px){
@@ -118,7 +122,7 @@
       .ilf-brand{max-width:100%}
       .ilf-services{grid-template-columns:1fr;gap:16px}
       .ilf-svc:first-child{grid-column:auto}
-      .ilf-card{padding:28px 0}
+      .ilf-card{padding:28px 20px}
       .ilf-bottom{grid-template-columns:1fr;gap:18px}
       .ilf-credit{margin-top:6px}
     }
@@ -166,7 +170,7 @@
     <div class="ilf-services">
       <section class="ilf-svc ilf-card" aria-labelledby="ilf-svc-clean-t">
         <h2 id="ilf-svc-clean-t" class="ilf-h"><svg class="ilf-ico" aria-hidden="true"><use href="#ilf-i-clean"></use></svg><span class="iln-t" data-es="Servicios de Limpieza" data-en="Cleaning Services">Servicios de Limpieza</span></h2>
-        <img class="ilf-svcimg" src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab0c293bdaa5e26a9643f94.png" alt="Ilatek - Servicio de Limpieza en Puerto Rico" title="Ilatek - Servicio de Limpieza en Puerto Rico" loading="lazy">
+        <img class="ilf-svcimg" src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8582fcc7a5a2b73475d89.jpg" alt="Ilatek - Servicio de Limpieza en Puerto Rico" title="Ilatek - Servicio de Limpieza en Puerto Rico" loading="lazy">
         <ul class="ilf-links">
           <li><a href="https://ilatekpr.com/limpieza-residencial"><span class="iln-t" data-es="Servicio de Limpieza Residencial en {{custom_values.county_name_and_state}}" data-en="Residential Cleaning Service in {{custom_values.county_name_and_state}}">Servicio de Limpieza Residencial en {{custom_values.county_name_and_state}}</a></li>
           <li><a href="https://ilatekpr.com/limpieza-comercial"><span class="iln-t" data-es="Servicio de Limpieza Comercial en {{custom_values.county_name_and_state}}" data-en="Commercial Cleaning Service in {{custom_values.county_name_and_state}}">Servicio de Limpieza Comercial en {{custom_values.county_name_and_state}}</a></li>
@@ -198,7 +202,6 @@
           <li><a href="https://ilatekpr.com/limpieza-de-techos-y-canaletas"><span class="iln-t" data-es="Limpieza de Techos y Canaletas en {{custom_values.county_name_and_state}}" data-en="Roof &amp; Gutter Cleaning in {{custom_values.county_name_and_state}}">Limpieza de Techos y Canaletas en {{custom_values.county_name_and_state}}</a></li>
           <li><a href="https://ilatekpr.com/mantenimiento-de-techos"><span class="iln-t" data-es="Mantenimiento Preventivo de Techos en {{custom_values.county_name_and_state}}" data-en="Preventive Roof Maintenance in {{custom_values.county_name_and_state}}">Mantenimiento Preventivo de Techos en {{custom_values.county_name_and_state}}</a></li>
           <li><a href="https://ilatekpr.com/membrana-asfaltica"><span class="iln-t" data-es="Membrana Asfáltica para Techos en {{custom_values.county_name_and_state}}" data-en="Asphalt Membrane for Roofs in {{custom_values.county_name_and_state}}">Membrana Asfáltica para Techos en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://ilatekpr.com/moho-y-humedad-techos"><span class="iln-t" data-es="Moho y Humedad por Filtración de Techo en {{custom_values.county_name_and_state}}" data-en="Mold &amp; Moisture from Roof Leaks in {{custom_values.county_name_and_state}}">Moho y Humedad por Filtración de Techo en {{custom_values.county_name_and_state}}</a></li>
           <li><a href="https://ilatekpr.com/oxidacion-de-techos"><span class="iln-t" data-es="Tratamiento de Oxidación y Varillas Expuestas en {{custom_values.county_name_and_state}}" data-en="Rust &amp; Exposed Rebar Treatment in {{custom_values.county_name_and_state}}">Tratamiento de Oxidación y Varillas Expuestas en {{custom_values.county_name_and_state}}</a></li>
           <li><a href="https://ilatekpr.com/recubrimiento-elastomerico"><span class="iln-t" data-es="Recubrimiento Elastomérico para Techos en {{custom_values.county_name_and_state}}" data-en="Elastomeric Coating for Roofs in {{custom_values.county_name_and_state}}">Recubrimiento Elastomérico para Techos en {{custom_values.county_name_and_state}}</a></li>
           <li><a href="https://ilatekpr.com/reparacion-de-filtraciones"><span class="iln-t" data-es="Reparación de Filtraciones de Agua en {{custom_values.county_name_and_state}}" data-en="Water Leak Repair in {{custom_values.county_name_and_state}}">Reparación de Filtraciones de Agua en {{custom_values.county_name_and_state}}</a></li>

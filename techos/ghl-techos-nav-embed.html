@@ -1,0 +1,468 @@
+<meta charset="utf-8">
+<!--
+  ILATEK · GHL Custom Code · Menú universal (embed independiente)
+  Estilo cápsula flotante sticky + mega-panel de servicios por categoría + drawer móvil.
+  Todo el menú de servicios está agrupado por categoría, con un ícono por servicio
+  (sprite SVG inline, sin dependencias externas).
+  CTA: "Agenda tu Servicio" -> {{custom_values.website_url}}/cotizacion
+  SIN animaciones atadas al scroll: la cápsula es sticky y permanece; solo hay
+  transiciones al abrir/cerrar el mega-panel y el drawer.
+  En páginas distintas de /home, cambiar los anchors #ilatek-* por URLs completas,
+  ej. {{custom_values.website_url}}/home#ilatek-cobertura
+-->
+<section id="ilatek-nav" aria-label="Navegación de Ilatek" data-website-url="{{custom_values.website_url}}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&family=Outfit:wght@500..800&display=swap">
+
+  <style>
+    #ilatek-nav{--iln-ink:#11164b;--iln-deep:#0b103d;--iln-blue:#213d8e;--iln-green:#00b94f;--iln-green-dark:#009640;--iln-line:#dbe2f1;--iln-mist:#f4f7fc;--iln-white:#fff;--iln-radius:18px;position:fixed;top:14px;left:0;right:0;z-index:9999;width:100%;background:none;color:var(--iln-ink);font-family:Manrope,Arial,sans-serif;pointer-events:none;isolation:isolate}
+    :where(#ilatek-nav) *{box-sizing:border-box}
+    :where(#ilatek-nav) :where(ul,p,h1,h2,h3,h4,li,figure){margin:0;padding:0}
+    :where(#ilatek-nav) a{color:inherit;text-decoration:none}
+    :where(#ilatek-nav) :focus-visible{outline:2px solid var(--iln-green);outline-offset:2px;border-radius:10px}
+    #ilatek-nav .iln-mega-grid::-webkit-scrollbar,#ilatek-nav .iln-drawer::-webkit-scrollbar{width:0;height:0;display:none}
+    #ilatek-nav button{font-family:inherit;-webkit-tap-highlight-color:transparent}
+    #ilatek-nav a,#ilatek-nav button{cursor:pointer}
+    /* ===================== Toggle de idioma es/en (siempre visible: motor hibrido) ===================== */
+    .iln-langwrap{display:none;flex:none}
+    #ilatek-nav.iln-lang-on .iln-langwrap{display:inline-flex}
+    .iln-lang{display:inline-flex;align-items:center;border:1px solid var(--iln-line);border-radius:999px;background:rgba(255,255,255,.85);padding:2px;gap:2px;cursor:pointer;font:700 11px/1 Manrope,Arial,sans-serif;color:var(--iln-ink)}
+    .iln-lang:hover,.iln-lang:focus-visible{border-color:var(--iln-green)}
+    .iln-lang span{padding:5px 9px;border-radius:999px;transition:background .2s ease,color .2s ease,box-shadow .2s ease}
+    .iln-lang span[aria-pressed="true"]{background:var(--iln-ink);color:#fff;box-shadow:0 4px 10px rgba(11,16,61,.25)}
+    /* MODO GLOBAL: normaliza la capa de auto-traduccion de Google (sin banner ni controles visibles) */
+    #ilatek-gt-host{display:none!important}
+    body{top:0!important}
+    .goog-te-banner-frame.skiptranslate{display:none!important}
+    .goog-te-gadget{font-size:0!important}
+    .goog-te-gadget .goog-te-combo{display:none!important}
+    #goog-gt-tt,#goog-gt-tt *{background:none!important;border:none!important;box-shadow:none!important}
+    #ilatek-nav [hidden]{display:none!important}
+    .iln-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    .iln-shell{position:relative;z-index:10002;pointer-events:auto;transform:translateZ(0);width:min(100% - 40px,1210px);margin:auto;display:flex;align-items:center;gap:22px;min-height:64px;padding:0 10px 0 18px;border-radius:var(--iln-radius);background:rgba(255,255,255,.82);-webkit-backdrop-filter:blur(14px) saturate(150%);backdrop-filter:blur(14px) saturate(150%);box-shadow:0 12px 34px rgba(11,16,61,.14),inset 0 0 0 1px rgba(255,255,255,.75)}
+    .iln-brand{display:flex;align-items:center;gap:12px;color:var(--iln-ink)}
+    .iln-brand img{display:block;width:52px;height:52px;padding:8px;border-radius:14px;border:1px solid rgba(255,255,255,.6);background:linear-gradient(150deg,rgba(238,243,255,.92),rgba(238,243,255,.55));object-fit:contain}
+    .iln-brand b{font-family:Outfit,Manrope,sans-serif;font-size:19px;font-weight:800;letter-spacing:-.03em;white-space:nowrap}
+    .iln-links{display:flex;align-items:center;justify-content:center;gap:2px;position:absolute;left:50%;transform:translateX(-50%)}
+    #ilatek-nav .iln-links a,#ilatek-nav .iln-trigger{display:inline-flex;align-items:center;padding:10px 14px;border-radius:14px;color:var(--iln-ink);font-size:14px;font-weight:700;white-space:nowrap;transition:background .22s ease,color .22s ease}
+    .iln-links a:hover,.iln-links a:focus-visible,.iln-trigger:hover,.iln-trigger:focus-visible{background:rgba(255,255,255,.95);color:var(--iln-green)}
+    .iln-trigger{display:inline-flex;align-items:center;gap:6px;background:none;border:0;cursor:pointer;font-family:inherit}
+    .iln-trigger svg{width:10px;height:10px;transition:transform .25s ease}
+    .iln-trigger[aria-expanded=true] svg{transform:rotate(180deg)}
+    .iln-cta{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:48px;margin-left:auto;padding:8px 8px 8px 22px;border-radius:14px;background:var(--iln-green);color:#fff!important;font:700 14px/1 Manrope,Arial,sans-serif;box-shadow:0 14px 30px rgba(0,185,79,.32);transition:transform .22s ease,background .22s ease}
+    .iln-cta span:last-child{display:grid;place-items:center;width:30px;height:30px;border-radius:10px;background:rgba(255,255,255,.22);color:#fff;transition:background .22s ease,color .22s ease}
+    .iln-cta:hover,.iln-cta:focus-visible{background:var(--iln-blue);transform:translateY(-2px);box-shadow:0 16px 34px rgba(33,61,142,.38)}
+    .iln-cta:hover span:last-child,.iln-cta:focus-visible span:last-child{background:#fff;color:var(--iln-blue)}
+    .iln-burger{display:none;place-items:center;width:44px;height:44px;margin-left:auto;border:0;border-radius:11px;background:transparent;cursor:pointer;color:var(--iln-ink);position:relative}
+    .iln-burger svg{position:absolute;width:22px;height:22px;display:block;transition:opacity .22s ease,transform .26s ease}
+    .iln-burger .iln-ic-x{opacity:0;transform:rotate(-90deg) scale(.6)}
+    #ilatek-nav.iln-open .iln-burger .iln-ic-burger{opacity:0;transform:rotate(90deg) scale(.6)}
+    #ilatek-nav.iln-open .iln-burger .iln-ic-x{opacity:1;transform:rotate(0) scale(1)}
+    .iln-veil{position:fixed;inset:0;z-index:10000;pointer-events:none;background:radial-gradient(120% 90% at 50% 0%,rgba(11,16,61,.44),rgba(3,6,33,.3));opacity:0;visibility:hidden;transition:opacity .26s ease,visibility .26s}
+    #ilatek-nav.iln-veil-on .iln-veil{opacity:1;visibility:visible;pointer-events:auto}
+    /* Mega-panel (desktop) */
+    .iln-mega{position:absolute;top:calc(100% + 10px);left:50%;width:min(1210px,calc(100vw - 32px));border-radius:24px;background:linear-gradient(165deg,#213d8e 0%,#11164b 55%,#0b103d 100%);border:1px solid rgba(255,255,255,.12);box-shadow:0 24px 70px rgba(11,16,61,.45);color:#fff;z-index:10001;visibility:hidden;opacity:0;pointer-events:none;transform:translateX(-50%) translateY(-8px) scale(.985);transition:opacity .26s ease,visibility .26s,transform .3s cubic-bezier(.34,1.3,.4,1)}
+    .iln-mega.iln-show{visibility:visible;opacity:1;pointer-events:auto;transform:translateX(-50%) translateY(0) scale(1)}
+    .iln-mega-grid{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);column-gap:26px;padding:22px 24px 18px;max-height:min(72vh,720px);overflow-y:auto;overscroll-behavior:contain;scrollbar-width:none;-ms-overflow-style:none}
+    .iln-cat{font:800 11px/1 Manrope,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#8fb6cf;padding:14px 2px 8px;border-top:1px solid rgba(255,255,255,.1)}
+    .iln-col>.iln-cat:first-child{border-top:0;padding-top:2px}
+    .iln-list{list-style:none}
+    .iln-list li{opacity:0;transform:translateY(6px);transition:opacity .26s ease,transform .3s cubic-bezier(.34,1.3,.4,1)}
+    .iln-mega.iln-show .iln-list li{opacity:1;transform:none;transition-delay:calc(var(--i,0)*16ms)}
+    .iln-list a{display:flex;align-items:center;gap:10px;min-height:38px;padding:8px 2px;border-bottom:1px solid rgba(255,255,255,.07);color:rgba(255,255,255,.92);font-size:13.5px;font-weight:600;transition:color .2s ease,border-color .2s ease}
+    .iln-list a:hover,.iln-list a:focus-visible{color:var(--iln-green);border-bottom-color:rgba(0,185,79,.4)}
+    .iln-sico{width:17px;height:17px;flex:none;color:var(--iln-green);transition:color .2s ease}
+    .iln-list a:hover .iln-sico,.iln-list a:focus-visible .iln-sico{color:#7dffb9}
+    .iln-fle{flex:none;margin-left:auto;font-size:14px;line-height:1;color:rgba(255,255,255,.4);transition:transform .2s ease,color .2s ease}
+    .iln-list a:hover .iln-fle,.iln-list a:focus-visible .iln-fle{color:var(--iln-green);transform:translate(2px,-2px)}
+    .iln-mega-foot{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 24px;border-top:1px solid rgba(255,255,255,.1);background:rgba(11,16,61,.45);border-radius:0 0 24px 24px}
+    .iln-mega-foot p{margin:0;color:rgba(255,255,255,.66);font-size:12.5px}
+    .iln-max{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:8px 20px}
+    .iln-mega-all{display:inline-flex;align-items:center;gap:8px;color:var(--iln-green);font-weight:800;font-size:13px;transition:color .22s ease}
+    .iln-mega-all svg{width:13px;height:13px}
+    .iln-mega-all:hover,.iln-mega-all:focus-visible{color:#fff}
+    .iln-mega :focus-visible{outline:2px solid var(--iln-green);outline-offset:-2px;border-radius:6px}
+    /* Drawer móvil */
+    .iln-drawer{display:none}
+    @media(max-width:1180px){#ilatek-nav .iln-links{position:static;transform:none;margin:0 auto}}
+    @media(max-width:900px){
+      .iln-links,#ilatek-nav .iln-cta{display:none}
+      .iln-burger{display:grid}
+      .iln-shell{gap:14px}
+      .iln-drawer{display:block;position:absolute;z-index:10001;top:calc(100% + 8px);left:16px;right:16px;border-radius:20px;background:linear-gradient(165deg,#213d8e 0%,#11164b 55%,#0b103d 100%);border:1px solid rgba(255,255,255,.12);box-shadow:0 24px 70px rgba(11,16,61,.45);color:#fff;overflow-y:auto;overflow-x:hidden;max-height:calc(100vh - 130px);scrollbar-width:none;-ms-overflow-style:none;visibility:hidden;opacity:0;pointer-events:none;transform:translateY(-10px);transition:opacity .26s ease,visibility .26s,transform .3s cubic-bezier(.34,1.3,.4,1)}
+      #ilatek-nav.iln-open .iln-drawer{visibility:visible;opacity:1;pointer-events:auto;transform:none}
+      .iln-acc-trigger{width:100%;display:flex;align-items:center;justify-content:space-between;gap:10px;background:none;border:0;cursor:pointer;color:rgba(255,255,255,.92);font-family:inherit;font-size:15px;font-weight:700;text-align:left;min-height:48px;padding:12px 18px;border-bottom:1px solid rgba(255,255,255,.08)}
+      .iln-acc-trigger svg{width:12px;height:12px;flex:none;transition:transform .25s ease}
+      .iln-acc-trigger[aria-expanded=true] svg{transform:rotate(180deg)}
+      .iln-acc-list{max-height:0;overflow:hidden;transition:max-height .3s ease}
+      .iln-acc-item.iln-acc-open .iln-acc-list{max-height:1600px}
+      .iln-acc-list a{display:flex;align-items:center;gap:10px;min-height:44px;padding:11px 18px 11px 30px;color:rgba(255,255,255,.88);font-size:14px;font-weight:600;border-bottom:1px solid rgba(255,255,255,.06)}
+      .iln-acc-list a:hover,.iln-acc-list a:focus-visible{color:var(--iln-green)}
+      .iln-acc-list .iln-sico{width:16px;height:16px}
+      .iln-drawer>a{display:flex;align-items:center;justify-content:space-between;min-height:48px;padding:12px 18px;color:rgba(255,255,255,.92);font-size:15px;font-weight:700;border-bottom:1px solid rgba(255,255,255,.08)}
+      .iln-drawer>a:hover,.iln-drawer>a:focus-visible{color:var(--iln-green)}
+      #ilatek-nav .iln-drawer .iln-drawer-cta{display:flex;align-items:center;justify-content:center;gap:10px;margin:14px 16px 16px;padding:14px 18px;border:0;border-radius:14px;background:var(--iln-green);color:#fff!important;text-align:center;font-weight:800;font-size:14px}
+      #ilatek-nav .iln-drawer-cta svg{width:16px;height:16px;flex:none}
+      #ilatek-nav .iln-drawer .iln-drawer-cta:hover,#ilatek-nav .iln-drawer .iln-drawer-cta:focus-visible{background:var(--iln-blue)}
+      .iln-drawer :focus-visible{outline:2px solid #7dffb9;outline-offset:-2px;border-radius:6px}
+    }
+    /* Contracción al logo al hacer scroll hacia abajo (solo desktop) */
+    @media(min-width:901px){
+      .iln-shell{transition:width .32s cubic-bezier(.4,0,.2,1),padding .32s cubic-bezier(.4,0,.2,1),border-radius .32s ease,gap .32s ease,box-shadow .32s ease}
+      #ilatek-nav .iln-brand{transition:gap .32s ease}
+      #ilatek-nav .iln-brand b{transition:opacity .18s ease,visibility .18s}
+      #ilatek-nav .iln-links{transition:opacity .18s ease,visibility .18s}
+      #ilatek-nav .iln-cta{transition:transform .22s ease,background .22s ease,opacity .18s ease,visibility .18s}
+      #ilatek-nav.iln-compact .iln-shell{width:64px;gap:0;padding:0;justify-content:center;border-radius:16px;box-shadow:0 14px 32px rgba(11,16,61,.24),inset 0 0 0 1px rgba(255,255,255,.75)}
+      #ilatek-nav.iln-compact .iln-brand{gap:0}
+      #ilatek-nav.iln-compact .iln-brand b{opacity:0;visibility:hidden;position:absolute;pointer-events:none}
+      #ilatek-nav.iln-compact .iln-links{opacity:0;visibility:hidden;pointer-events:none}
+      #ilatek-nav.iln-compact .iln-cta{position:absolute;right:12px;margin:0;opacity:0;visibility:hidden;pointer-events:none}
+      #ilatek-nav.iln-compact .iln-langwrap{display:none}
+    }
+    @media(prefers-reduced-motion:reduce){
+      #ilatek-nav .iln-shell,#ilatek-nav .iln-mega,#ilatek-nav .iln-mega .iln-list li,#ilatek-nav .iln-drawer,#ilatek-nav .iln-veil,#ilatek-nav .iln-burger svg,#ilatek-nav .iln-acc-list,#ilatek-nav .iln-trigger svg,#ilatek-nav .iln-brand b,#ilatek-nav .iln-links,#ilatek-nav .iln-cta{transition:none}
+    }
+  </style>
+
+  <div class="iln-veil" aria-hidden="true"></div>
+
+  <div class="iln-shell">
+    <a class="iln-brand" href="{{custom_values.website_url}}/home" aria-label="Ilatek, inicio">
+      <img src="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/ilatek-logo-256.webp" onerror="this.onerror=null;this.src='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab044d04091fa65e69921f6.png'" alt="Logo de Ilatek - Limpieza y Techos en Puerto Rico" title="Ilatek - Limpieza y Techos en Puerto Rico" width="52" height="52" loading="eager" decoding="async">
+      <b>Ilatek</b>
+    </a>
+
+    <nav class="iln-links" id="iln-links" aria-label="Navegación principal">
+      <button class="iln-trigger" type="button" aria-expanded="false" aria-controls="iln-mega" aria-haspopup="true">Servicios <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-chev"></use></svg></button>
+      <a href="{{custom_values.website_url}}/resenas">Reseñas</a>
+      <a href="{{custom_values.website_url}}/reclutamiento-empleo-techos">Empleos</a>
+      <a href="https://portal.ilatekpr.com" target="_blank" rel="noopener">Login</a>
+    </nav>
+    <a class="iln-cta" href="{{custom_values.website_url}}/cotizacion-techos"><span>Agenda tu Servicio</span><span aria-hidden="true"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" focusable="false"><use href="#iln-i-cal"></use></svg></span></a>
+
+    <div class="iln-langwrap"><button class="iln-lang" id="iln-lang" type="button" aria-label="Cambiar el idioma a English"><span aria-pressed="true">es</span><span aria-pressed="false">en</span></button></div>
+
+    <button class="iln-burger" type="button" aria-expanded="false" aria-controls="iln-drawer" aria-label="Abrir o cerrar el menú"><svg class="iln-ic-burger" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-menu"></use></svg><span class="iln-ic-x" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><use href="#iln-i-close"></use></svg></span></button>
+
+    <!-- MEGA -->
+    <div class="iln-mega" id="iln-mega">
+      <!-- columnas de servicios por categoría -->
+      <ul class="iln-mega-grid">
+        <li class="iln-col">
+          <p class="iln-cat">Limpieza</p>
+          <ul class="iln-list">
+            <li style="--i:0"><a href="{{custom_values.website_url}}/limpieza-residencial"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-home"></use></svg><span>Limpieza Residencial</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:1"><a href="{{custom_values.website_url}}/limpieza-comercial"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-bld"></use></svg><span>Limpieza Comercial</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:2"><a href="{{custom_values.website_url}}/limpieza-industrial"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-ind"></use></svg><span>Limpieza Industrial</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:3"><a href="{{custom_values.website_url}}/limpieza-estandar"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-spark"></use></svg><span>Limpieza Estándar</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:4"><a href="{{custom_values.website_url}}/limpieza-profunda"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-spray"></use></svg><span>Limpieza Profunda</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:5"><a href="{{custom_values.website_url}}/limpieza-de-mudanza"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-box"></use></svg><span>Limpieza de Mudanza</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:6"><a href="{{custom_values.website_url}}/airbnb-turnover"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-key"></use></svg><span>Airbnb &amp; Turnover</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:7"><a href="{{custom_values.website_url}}/organizacion"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-shelf"></use></svg><span>Organización</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:8"><a href="{{custom_values.website_url}}/electrodomesticos"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-fridge"></use></svg><span>Electrodomésticos</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:9"><a href="{{custom_values.website_url}}/alfombras"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-rug"></use></svg><span>Alfombras</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:10"><a href="{{custom_values.website_url}}/lavado-a-presion"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-jet"></use></svg><span>Lavado a Presión</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:11"><a href="{{custom_values.website_url}}/ventanas"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-window"></use></svg><span>Ventanas</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:12"><a href="{{custom_values.website_url}}/post-construccion"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-helmet"></use></svg><span>Post-Construcción</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+          </ul>
+        </li>
+        <li class="iln-col">
+          <p class="iln-cat">Techos · Reparación</p>
+          <ul class="iln-list">
+            <li style="--i:13"><a href="{{custom_values.website_url}}/reparacion-de-techos"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-roof"></use></svg><span>Reparación de Techos</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:14"><a href="{{custom_values.website_url}}/reparacion-de-goteras"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-drop"></use></svg><span>Reparación de Goteras</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:15"><a href="{{custom_values.website_url}}/reparacion-de-filtraciones"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-shield"></use></svg><span>Reparación de Filtraciones</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:16"><a href="{{custom_values.website_url}}/reparacion-de-grietas-techos"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-crack"></use></svg><span>Reparación de Grietas</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:17"><a href="{{custom_values.website_url}}/empozamiento-de-techos"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-puddle"></use></svg><span>Empozamiento de Agua</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:18"><a href="{{custom_values.website_url}}/oxidacion-de-techos"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-rust"></use></svg><span>Oxidación y Varillas</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:20"><a href="{{custom_values.website_url}}/reparacion-post-huracan"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-hurricane"></use></svg><span>Reparación Post-Huracán</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+          </ul>
+          <p class="iln-cat">Techos · Sellado</p>
+          <ul class="iln-list">
+            <li style="--i:21"><a href="{{custom_values.website_url}}/sellado-de-techos"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-brush"></use></svg><span>Sellado de Techos</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:22"><a href="{{custom_values.website_url}}/sellado-de-silicona"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-tube"></use></svg><span>Sellado con Silicona</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:23"><a href="{{custom_values.website_url}}/membrana-asfaltica"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-roll"></use></svg><span>Membrana Asfáltica</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:24"><a href="{{custom_values.website_url}}/recubrimiento-elastomerico"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-roller"></use></svg><span>Recubrimiento Elastomérico</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:25"><a href="{{custom_values.website_url}}/sellado-de-poliuretano"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-flask"></use></svg><span>Sellado de Poliuretano</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:26"><a href="{{custom_values.website_url}}/sellado-acrilico"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-paint"></use></svg><span>Sellado Acrílico</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:27"><a href="{{custom_values.website_url}}/sellado-de-techos-residencial"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-home-check"></use></svg><span>Sellado Residencial</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:28"><a href="{{custom_values.website_url}}/sellado-de-techos-comercial"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-bld-check"></use></svg><span>Sellado Comercial</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:29"><a href="{{custom_values.website_url}}/sellado-de-techos-industrial"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-ind-check"></use></svg><span>Sellado Industrial</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+          </ul>
+        </li>
+        <li class="iln-col">
+          <p class="iln-cat">Techos · Impermeabilización y tipos</p>
+          <ul class="iln-list">
+            <li style="--i:30"><a href="{{custom_values.website_url}}/impermeabilizacion-de-techos"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-water-shield"></use></svg><span>Impermeabilización</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:31"><a href="{{custom_values.website_url}}/techos-de-concreto"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-slab"></use></svg><span>Techos de Concreto</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:32"><a href="{{custom_values.website_url}}/techos-planos"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-flat"></use></svg><span>Techos Planos</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:33"><a href="{{custom_values.website_url}}/techos-de-zinc"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-zinc"></use></svg><span>Techos de Zinc</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:34"><a href="{{custom_values.website_url}}/techos-de-asfalto"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-shingle"></use></svg><span>Techos de Asfalto</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:35"><a href="{{custom_values.website_url}}/techos-de-teja"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-tile"></use></svg><span>Techos de Teja</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:36"><a href="{{custom_values.website_url}}/techos-de-madera"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-wood"></use></svg><span>Techos de Madera</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:37"><a href="{{custom_values.website_url}}/techos-por-segmento"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-layers"></use></svg><span>Techos por Segmento</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+          </ul>
+          <p class="iln-cat">Techos · Mantenimiento</p>
+          <ul class="iln-list">
+            <li style="--i:38"><a href="{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-clipboard"></use></svg><span>Inspección y Mantenimiento</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:39"><a href="{{custom_values.website_url}}/inspeccion-de-techos"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-search"></use></svg><span>Inspección de Techos</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:40"><a href="{{custom_values.website_url}}/mantenimiento-de-techos"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-gear"></use></svg><span>Mantenimiento Preventivo</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:41"><a href="{{custom_values.website_url}}/limpieza-de-techos-y-canaletas"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-gutter"></use></svg><span>Limpieza de Techos y Canaletas</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:42"><a href="{{custom_values.website_url}}/canaletas-y-bajantes"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-pipe"></use></svg><span>Canaletas y Bajantes</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:43"><a href="{{custom_values.website_url}}/lavado-a-presion-techos"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-jet"></use></svg><span>Lavado a Presión de Techos</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:44"><a href="{{custom_values.website_url}}/tragaluces"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-skylight"></use></svg><span>Tragaluces y Skylights</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:45"><a href="{{custom_values.website_url}}/instalacion-y-reemplazo-de-techos"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-hammer"></use></svg><span>Instalación y Reemplazo</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="iln-mega-foot">
+        <p>¿No sabes cuál necesitas? Te orientamos sin costo.</p>
+        <div class="iln-max">
+          <a class="iln-mega-all" href="{{custom_values.website_url}}/servicios">Todos los Servicios de Limpieza <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-arrow"></use></svg></a>
+          <a class="iln-mega-all" href="{{custom_values.website_url}}/servicios-techos">Todos los Servicios de Mantenimiento de Techos <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-arrow"></use></svg></a>
+          <a class="iln-mega-all" href="https://portal.ilatekpr.com" target="_blank" rel="noopener">Portal del Cliente <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-portal"></use></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- DRAWER -->
+    <div class="iln-drawer" id="iln-drawer">
+      <a href="{{custom_values.website_url}}/resenas">Reseñas</a>
+      <a href="{{custom_values.website_url}}/reclutamiento-empleo-techos">Empleos</a>
+      <a href="https://portal.ilatekpr.com" target="_blank" rel="noopener">Login</a>
+      <a class="iln-drawer-cta" href="{{custom_values.website_url}}/cotizacion-techos"><span>Agenda tu Servicio</span><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#iln-i-cal"></use></svg></a>
+    </div>
+  </div>
+
+  <!-- SPRITE -->
+  <svg width="0" height="0" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false"><defs>
+      <symbol id="iln-i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></symbol>
+      <symbol id="iln-i-bld" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/></symbol>
+      <symbol id="iln-i-ind" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M17 18h1"/><path d="M12 18h1"/><path d="M7 18h1"/></symbol>
+      <symbol id="iln-i-spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 1.9 4.6L18.5 9.5l-4.6 1.9L12 16l-1.9-4.6L5.5 9.5l4.6-1.9z"/><path d="m18 15 .9 2.1L21 18l-2.1.9L18 21l-.9-2.1L15 18l2.1-.9z"/></symbol>
+      <symbol id="iln-i-spray" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11h4v9a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z"/><path d="M11 11V8"/><path d="M9 8h4"/><path d="M13 6h2l1.5-2"/><path d="M17 7h.01"/><path d="M19 5h.01"/><path d="M19 9h.01"/></symbol>
+      <symbol id="iln-i-box" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7 12 3 4 7v10l8 4 8-4z"/><path d="M4 7l8 4 8-4"/><path d="M12 11v10"/></symbol>
+      <symbol id="iln-i-key" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="17" r="3"/><path d="m9.5 15.5 9-9"/><path d="m15 6 3 3"/><path d="m17.5 3.5 3 3"/></symbol>
+      <symbol id="iln-i-shelf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3v18"/><path d="M4 9h16"/><path d="M4 15h16"/><path d="M8 6h6"/><path d="M8 12h6"/><path d="M8 18h4"/></symbol>
+      <symbol id="iln-i-fridge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M6 10h12"/><path d="M9 6h1"/><path d="M9 14h1"/></symbol>
+      <symbol id="iln-i-rug" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="1"/><path d="M7 6v12"/><path d="M17 6v12"/><path d="M3 10h4"/><path d="M3 14h4"/><path d="M17 10h4"/><path d="M17 14h4"/></symbol>
+      <symbol id="iln-i-jet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c3.4 4.3 5.5 7 5.5 10a5.5 5.5 0 0 1-11 0C6.5 10 8.6 7.3 12 3z"/><path d="M3 7 5 9"/><path d="M5 5 7 7"/></symbol>
+      <symbol id="iln-i-window" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 3v18"/><path d="M3 12h18"/></symbol>
+      <symbol id="iln-i-helmet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18h20"/><path d="M6 18v-4a6 6 0 0 1 12 0v4"/><path d="M12 8V4"/></symbol>
+      <symbol id="iln-i-roof" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></symbol>
+      <symbol id="iln-i-drop" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c3.5 4.5 6 7.5 6 10.5a6 6 0 0 1-12 0C6 10.5 8.5 7.5 12 3z"/></symbol>
+      <symbol id="iln-i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+      <symbol id="iln-i-crack" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 8 11l4 2-3 9"/><path d="M4 12h4"/><path d="M16 8h4"/></symbol>
+      <symbol id="iln-i-puddle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 15c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/><path d="M2 19c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/></symbol>
+      <symbol id="iln-i-rust" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9.5 9.5 5 5"/><path d="m14.5 9.5-5 5"/></symbol>
+      <symbol id="iln-i-mold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c3.5 4.5 6 7.5 6 10.5a6 6 0 0 1-12 0C6 10.5 8.5 7.5 12 3z"/><path d="M10 14h.01"/><path d="M13.5 11h.01"/></symbol>
+      <symbol id="iln-i-hurricane" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-8-8"/><path d="M12 8a4 4 0 1 0 4 4"/><path d="M16 12a2 2 0 1 1-2-2"/></symbol>
+      <symbol id="iln-i-brush" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3l7 7-4.5 4.5a2 2 0 0 1-2.8 0L10 10.8a2 2 0 0 1 0-2.8z"/><path d="M14 3l-6 6"/><path d="M9.5 14.5 3 21"/></symbol>
+      <symbol id="iln-i-tube" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="8" width="10" height="13" rx="1"/><path d="M9 8V5h6v3"/><path d="M12 3v2"/><path d="M10 13h4"/></symbol>
+      <symbol id="iln-i-roll" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="14" height="8" rx="2"/><path d="M17 10h3a3 3 0 0 1 0 6h-3"/><path d="M8 8v8"/></symbol>
+      <symbol id="iln-i-roller" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="14" height="6" rx="2"/><path d="M18 7h1a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-6"/><path d="M11 13v3"/><rect x="9" y="16" width="4" height="5" rx="1"/></symbol>
+      <symbol id="iln-i-flask" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"/><path d="M10 3v6L5.2 18a2 2 0 0 0 1.8 3h10a2 2 0 0 0 1.8-3L14 9V3"/><path d="M7.5 14h9"/></symbol>
+      <symbol id="iln-i-paint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 0 0 0 18c1.7 0 2-1 2-2s-.7-2 1-2h1a5 5 0 0 0 5-5c0-5-4-9-9-9z"/><path d="M8 10h.01"/><path d="M12 7.5h.01"/><path d="M15.5 10h.01"/></symbol>
+      <symbol id="iln-i-home-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="m9 12 2 2 4-4"/></symbol>
+      <symbol id="iln-i-bld-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="m9 11 1.5 1.5L14 9"/></symbol>
+      <symbol id="iln-i-ind-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="m14 11 1.5 1.5L19 9"/></symbol>
+      <symbol id="iln-i-water-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8c1.7 2 3 3.3 3 5a3 3 0 0 1-6 0c0-1.7 1.3-3 3-5z"/></symbol>
+      <symbol id="iln-i-slab" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="7" rx="1"/><path d="M3 15h18"/><path d="M7 11v4"/><path d="M12 11v4"/><path d="M17 11v4"/></symbol>
+      <symbol id="iln-i-flat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10h18"/><path d="M5 10v10"/><path d="M19 10v10"/><path d="M3 20h18"/><path d="M9 14h6"/></symbol>
+      <symbol id="iln-i-zinc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7c1.5-1 3-1 4.5 0s3 1 4.5 0 3-1 4.5 0 3 1 4.5 0"/><path d="M3 12c1.5-1 3-1 4.5 0s3 1 4.5 0 3-1 4.5 0 3 1 4.5 0"/><path d="M3 17c1.5-1 3-1 4.5 0s3 1 4.5 0 3-1 4.5 0 3 1 4.5 0"/></symbol>
+      <symbol id="iln-i-shingle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h16"/><path d="M4 12h16"/><path d="M4 16h16"/><path d="M7 8v4"/><path d="M12 12v4"/><path d="M17 8v4"/></symbol>
+      <symbol id="iln-i-tile" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8c3-3 6-3 9 0s6 3 9 0"/><path d="M3 12c3-3 6-3 9 0s6 3 9 0"/><path d="M3 16c3-3 6-3 9 0s6 3 9 0"/></symbol>
+      <symbol id="iln-i-wood" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="1"/><path d="M7 6v12"/><path d="M11 6v12"/><path d="M15 6v12"/></symbol>
+      <symbol id="iln-i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 3 8l9 5 9-5z"/><path d="m3 12 9 5 9-5"/><path d="m3 16 9 5 9-5"/></symbol>
+      <symbol id="iln-i-clipboard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="18" rx="2"/><path d="M9 4V3h6v1"/><path d="m9 13 2 2 4-4"/></symbol>
+      <symbol id="iln-i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></symbol>
+      <symbol id="iln-i-gear" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3"/><path d="M12 19v3"/><path d="M2 12h3"/><path d="M19 12h3"/><path d="m4.9 4.9 2.1 2.1"/><path d="m17 17 2.1 2.1"/><path d="m19.1 4.9-2.1 2.1"/><path d="m7 17-2.1 2.1"/></symbol>
+      <symbol id="iln-i-gutter" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h18l-2 5H5z"/><path d="M9 13v8"/><path d="M15 13v8"/></symbol>
+      <symbol id="iln-i-pipe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h6v5a5 5 0 0 0 5 5h3"/><path d="m16 11 4 3-4 3"/></symbol>
+      <symbol id="iln-i-skylight" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8l8-5 8 5"/><rect x="8" y="9" width="8" height="6" rx="1"/><path d="M9 20h6"/></symbol>
+      <symbol id="iln-i-hammer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m15 12-8.5 8.5a2.1 2.1 0 0 1-3-3L12 9"/><path d="M17.6 6.4 15 9l-3-3 2.6-2.6a2 2 0 0 1 2.8 0l1.2 1.2a2 2 0 0 1 0 2.8z"/></symbol>
+      <symbol id="iln-i-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></symbol>
+      <symbol id="iln-i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+      <symbol id="iln-i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M3 12h18"/><path d="M3 18h18"/></symbol>
+      <symbol id="iln-i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></symbol>
+      <symbol id="iln-i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/><path d="m9 15 2 2 4-4"/></symbol>
+      <symbol id="iln-i-portal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+    </defs></svg>
+</section>
+  <!-- ===================== Motor i18n es/en =====================
+    · HIBRIDO: con traduccion autorizada ([data-es] fuera del nav/footer) usa el modo
+      literal; si no la hay, activa auto-traduccion global (Google Translate) para
+      que el es/en funcione en TODAS las paginas que lleven este menu.
+    · Cambia <html lang>, persiste en localStorage (ilatek-lang) y emite 'ilatek:lang'.
+    · Expone window.__ilatekSetLang('es'|'en') y window.__ilatekLang. -->
+  <script>
+  (function(){
+    var root=document.getElementById('ilatek-nav'); if(!root||root.dataset.ilnLang)return; root.dataset.ilnLang='true';
+    var LANG_KEY='ilatek-lang';
+    function token(name){return '{'+'{custom_values.'+name+'}'+'}'}
+    function clean(v){v=String(v||'').replace(/\u00a0/g,' ').trim();return /^\s*\{\{[^}]+\}\}\s*$/.test(v)?'':v}
+    var website=clean(root.getAttribute('data-website-url'))||'https://ilatekpr.com';
+    var county='Puerto Rico';
+    function resolve(text){
+      var cel=document.querySelector('[data-location-label]');
+      if(cel){var cv=clean(cel.getAttribute('data-location-label'));if(cv)county=cv}
+      return String(text||'').split(token('county_name_and_state')).join(county).split(token('website_url')).join(website)
+    }
+    var btn=root.querySelector('.iln-lang');
+    var wrap=btn?btn.parentElement:null;
+    function applyLang(lang){
+      document.documentElement.setAttribute('lang',lang);
+      try{localStorage.setItem(LANG_KEY,lang)}catch(e){}
+      var nodes=document.querySelectorAll('[data-en]');
+      for(var i=0;i<nodes.length;i++){
+        var el=nodes[i],attr=el.getAttribute('data-attr'),en=el.getAttribute('data-en'),es=el.getAttribute('data-es');
+        if(!attr&&!el.hasAttribute('data-en-key')){
+          var val=resolve(lang==='en'?en:(es||(el.firstChild&&el.firstChild.nodeValue)||''));
+          if(lang==='en'&&el.hasAttribute('data-en-html')){el.innerHTML=resolve(el.getAttribute('data-en-html'))}
+          else{el.textContent=val}
+        }
+        if(el.hasAttribute('data-en-key')){
+          var d=window.ILATEK_I18N,k=el.getAttribute('data-en-key');
+          var rich=(d&&d[k]&&d[k][lang])?d[k][lang]:null;
+          if(lang==='en'&&rich){if(!el._ilEsHtml){el._ilEsHtml=el.innerHTML}el.innerHTML=resolve(rich)}
+          else if(lang==='es'){if(el._ilEsHtml){el.innerHTML=el._ilEsHtml}else{var rv=(d&&d[k]&&d[k].es)?d[k].es:null;if(rv){el.innerHTML=resolve(rv)}}}
+        }
+        if(attr){var av=resolve(lang==='en'?en:(es||el.getAttribute(attr)||''));el.setAttribute(attr,av);if(el.children.length===0&&el.tagName!=='INPUT'){el.textContent=av}}
+        var a2=el.getAttribute('data-attr2');
+        if(a2){var v2=resolve(lang==='en'?(el.getAttribute('data-en2')||''):(el.getAttribute('data-es2')||el.getAttribute(a2)||''));el.setAttribute(a2,v2)}
+      }
+      if(btn){
+        var spans=btn.querySelectorAll('span');
+        if(spans[0])spans[0].setAttribute('aria-pressed',lang==='es'?'true':'false');
+        if(spans[1])spans[1].setAttribute('aria-pressed',lang==='en'?'true':'false');
+        btn.setAttribute('aria-label',lang==='es'?'Cambiar el idioma a English':'Switch language to Spanish');
+      }
+      if(window.__ilatekSyncGt)window.__ilatekSyncGt(lang);window.__ilatekLang=lang;
+      try{window.dispatchEvent(new CustomEvent('ilatek:lang',{detail:lang}))}catch(e){}
+    }
+    window.__ilatekSetLang=applyLang;
+    function boot(){
+      var translatable=false,nl=document.querySelectorAll('[data-es]'),ni;
+      for(ni=0;ni<nl.length;ni++){if(!nl[ni].closest('#ilatek-nav')&&!nl[ni].closest('#ilatek-footer')){translatable=true;break}}
+      if(true){/* hibrido: es/en siempre disponible */root.classList.add('iln-lang-on')}
+      var saved='es';try{saved=localStorage.getItem(LANG_KEY)||'es'}catch(e){}
+      window.__ilatekLang=saved;
+      applyLang(saved);
+    }
+    if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',boot)}else{boot()}
+    /* —— MODO GLOBAL (hibrido): auto-traduccion del resto de la pagina ——————— */
+    var gtHost=null,gtTimer=null;
+    function gtNeeds(lang){var nl=document.querySelectorAll('[data-es]'),ni;for(ni=0;ni<nl.length;ni++){if(!nl[ni].closest('#ilatek-nav')&&!nl[ni].closest('#ilatek-footer'))return false}return true}
+    function gtInject(){if(gtHost||document.getElementById('ilatek-gt-host'))return;gtHost=document.createElement('div');gtHost.id='ilatek-gt-host';gtHost.innerHTML='<div id=\'google_translate_element\' style=\'display:none\'></div>';document.body.appendChild(gtHost);window.googleTranslateElementInit=function(){try{new google.translate.TranslateElement({pageLanguage:'es',includedLanguages:'en,es',autoDisplay:false},'google_translate_element')}catch(e){}};var sc=document.createElement('script');sc.src='https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';document.body.appendChild(sc)}
+    function __ilatekGtPick(lang){if(!gtNeeds(lang))return;gtInject();var tries=0,combo=null;function pick(){combo=document.querySelector('.goog-te-combo');if(!combo)return false;try{combo.value=(lang==='en')?'en':'es';combo.dispatchEvent(new Event('change'))}catch(e){if(combo.onchange)combo.onchange()}return true}if(pick())return;if(gtTimer)clearInterval(gtTimer);gtTimer=setInterval(function(){tries++;if(pick()||tries>120){if(gtTimer)clearInterval(gtTimer);gtTimer=null}},500)}
+    window.__ilatekGtPick=__ilatekGtPick;window.__ilatekSyncGt=__ilatekGtPick;
+    if(!btn)return;
+    btn.addEventListener('click',function(){
+      var cur=document.documentElement.getAttribute('lang');
+      applyLang(cur==='en'?'es':'en');
+    });
+  })();
+  </script>
+
+  <script>
+/* ILATEK · Menú universal — mega-panel + drawer + contracción al logo al hacer scroll */
+(function(){
+  var root=document.getElementById('ilatek-nav');if(!root||root.dataset.ilnReady)return;root.dataset.ilnReady='true';
+  try{if(root.parentNode&&root.parentNode!==document.body)document.body.appendChild(root)}catch(e){}
+  var mega=root.querySelector('.iln-mega'),burger=root.querySelector('.iln-burger'),drawer=root.querySelector('.iln-drawer');
+  var trig=root.querySelector('.iln-trigger');
+  var grid=mega?mega.querySelector('.iln-mega-grid'):null;
+
+  /* Drawer móvil: se genera desde el mega para no duplicar los 46 servicios */
+  if(drawer&&grid){
+    var frag=document.createDocumentFragment();
+    [].forEach.call(grid.children,function(col){
+      var host=null;
+      [].forEach.call(col.children,function(node){
+        if(node.classList&&node.classList.contains('iln-cat')){
+          var item=document.createElement('div');item.className='iln-acc-item';
+          var b=document.createElement('button');b.type='button';b.className='iln-acc-trigger';b.setAttribute('aria-expanded','false');
+          var sp=document.createElement('span');sp.textContent=(node.textContent||'').replace(/^\s+|\s+$/g,'');
+          var ic=document.createElementNS('http://www.w3.org/2000/svg','svg');
+          ic.setAttribute('viewBox','0 0 24 24');ic.setAttribute('fill','none');ic.setAttribute('stroke','currentColor');ic.setAttribute('stroke-width','2.4');ic.setAttribute('stroke-linecap','round');ic.setAttribute('stroke-linejoin','round');ic.setAttribute('aria-hidden','true');
+          var us=document.createElementNS('http://www.w3.org/2000/svg','use');us.setAttribute('href','#iln-i-chev');ic.appendChild(us);
+          b.appendChild(sp);b.appendChild(ic);
+          host=document.createElement('div');host.className='iln-acc-list';
+          item.appendChild(b);item.appendChild(host);frag.appendChild(item);
+        }else if(host&&node.classList&&node.classList.contains('iln-list')){
+          [].forEach.call(node.querySelectorAll('a'),function(a){
+            var c=a.cloneNode(true);var fl=c.querySelector('.iln-fle');if(fl)fl.parentNode.removeChild(fl);host.appendChild(c);
+          });
+        }
+      });
+    });
+    drawer.insertBefore(frag,drawer.firstChild);
+  }
+
+  function firstFocus(el){var f=el.querySelectorAll('a[href],button:not([disabled])');return f.length?f[0]:null}
+  var opener=null;
+  function megaOpen(){return !!(mega&&mega.classList.contains('iln-show'))}
+  function openMega(t){if(!mega||megaOpen())return;opener=t||trig;mega.classList.add('iln-show');root.classList.add('iln-veil-on');if(trig)trig.setAttribute('aria-expanded','true');var f=firstFocus(grid||mega);if(f)f.focus({preventScroll:true})}
+  function closeMega(restore){if(!mega||!megaOpen())return;mega.classList.remove('iln-show');root.classList.remove('iln-veil-on');if(trig)trig.setAttribute('aria-expanded','false');if(restore!==false&&opener&&opener.focus)opener.focus({preventScroll:true});opener=null}
+  if(trig){trig.addEventListener('click',function(e){e.preventDefault();megaOpen()?closeMega():openMega(trig)});trig.addEventListener('keydown',function(e){if(e.key==='ArrowDown'){e.preventDefault();openMega(trig)}})}
+
+  var dOpener=null;
+  function drawerOpen(){return !!(drawer&&drawer.classList.contains('iln-show'))}
+  function openDrawer(){if(!drawer||drawerOpen())return;dOpener=document.activeElement;drawer.classList.add('iln-show');root.classList.add('iln-open','iln-veil-on');if(burger)burger.setAttribute('aria-expanded','true')}
+  function closeDrawer(restore){if(!drawer||!drawerOpen())return;drawer.classList.remove('iln-show');root.classList.remove('iln-open','iln-veil-on');if(burger)burger.setAttribute('aria-expanded','false');closeAcc(null,false);if(restore!==false&&dOpener&&dOpener.focus)dOpener.focus({preventScroll:true});dOpener=null}
+  if(burger)burger.addEventListener('click',function(){drawerOpen()?closeDrawer():openDrawer()});
+
+  function accs(){return [].slice.call(root.querySelectorAll('.iln-acc-item'))}
+  function closeAcc(except,restore){accs().forEach(function(it){if(it===except)return;it.classList.remove('iln-acc-open');var b=it.querySelector('.iln-acc-trigger');if(b)b.setAttribute('aria-expanded','false')});if(restore){var t=root.querySelector('.iln-acc-trigger');if(t)t.focus({preventScroll:true})}}
+  [].forEach.call(root.querySelectorAll('.iln-acc-trigger'),function(b){
+    b.addEventListener('click',function(){var it=b.parentNode;var open=!it.classList.contains('iln-acc-open');closeAcc(it,false);it.classList.toggle('iln-acc-open',open);b.setAttribute('aria-expanded',String(open))});
+  });
+
+  document.addEventListener('keydown',function(e){if(e.key!=='Escape')return;if(megaOpen()){e.preventDefault();closeMega(true);return}var any=accs().filter(function(it){return it.classList.contains('iln-acc-open')})[0];if(any){e.preventDefault();closeAcc(null,true);return}if(drawerOpen()){e.preventDefault();closeDrawer(true)}});
+  document.addEventListener('click',function(e){
+    var t=e.target;var onVeil=t&&t.classList&&t.classList.contains('iln-veil');
+    if(megaOpen()&&!mega.contains(t)&&!(t.closest&&t.closest('.iln-trigger')))closeMega(false);
+    if(drawerOpen()&&!drawer.contains(t)&&!(burger&&burger.contains(t)))closeDrawer(false);
+    if(onVeil&&!megaOpen()&&!drawerOpen())root.classList.remove('iln-veil-on');
+  });
+  root.addEventListener('click',function(e){var a=e.target&&e.target.closest?e.target.closest('a[href]'):null;if(!a)return;if(a.classList.contains('iln-brand'))return;closeMega(false);closeDrawer(false)});
+
+  /* Contraer al logo al bajar / reabrir al subir (solo desktop, sin animaciones atadas al scroll) */
+  var DESKTOP=window.matchMedia('(min-width:901px)');
+  var compact=false,acc=0,lastY=0,ticking=false;
+  function setCompact(on){
+    on=!!on;
+    if(on&&(megaOpen()||drawerOpen()))return;
+    if(on===compact)return;
+    compact=on;
+    root.classList.toggle('iln-compact',on);
+  }
+  function yNow(){return window.pageYOffset||document.documentElement.scrollTop||0}
+  function step(){
+    ticking=false;
+    if(!DESKTOP.matches){compact=false;root.classList.remove('iln-compact');acc=0;lastY=yNow();return}
+    var y=yNow(),dy=y-lastY;lastY=y;
+    if(y<=48){acc=0;setCompact(false);return}
+    if((dy>0&&acc<0)||(dy<0&&acc>0))acc=0;
+    acc+=dy;
+    if(acc>60)setCompact(true);
+    else if(acc<-16)setCompact(false);
+  }
+  lastY=yNow();
+  window.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(step)}},{passive:true});
+  window.addEventListener('resize',function(){if(!DESKTOP.matches){compact=false;root.classList.remove('iln-compact')}},{passive:true});
+  root.addEventListener('focusin',function(){if(compact)setCompact(false)});
+
+  /* Respaldo local de tokens de GHL */
+  var website=(root.getAttribute('data-website-url')||'').replace(/\u00a0/g,' ').trim();
+  if(/^\s*\{\{[^}]+\}\}\s*$/.test(website)||!website)website='https://ilatekpr.com';
+  var values={'{{custom_values.website_url}}':website};
+  var walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT),nodes=[],node;
+  while(node=walker.nextNode()){if(node.parentElement&&node.parentElement.tagName!=='SCRIPT'&&node.parentElement.tagName!=='STYLE')nodes.push(node)}
+  nodes.forEach(function(n){Object.keys(values).forEach(function(k){n.nodeValue=n.nodeValue.split(k).join(values[k])})});
+  Array.prototype.forEach.call(root.querySelectorAll('*'),function(el){Array.prototype.forEach.call(el.attributes||[],function(a){var v=a.value;Object.keys(values).forEach(function(k){v=v.split(k).join(values[k])});if(v!==a.value)el.setAttribute(a.name,v)})});
+})();
+</script>

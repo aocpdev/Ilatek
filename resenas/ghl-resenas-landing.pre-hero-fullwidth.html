@@ -1,0 +1,516 @@
+<meta charset="utf-8">
+<!--
+  ILATEK · GHL Custom Code · LANDING DE CONFIANZA /resenas
+  URL: https://ilatekpr.com/resenas · slug: resenas
+  DÓNDE PEGAR: página /resenas en GHL → elemento Custom Code del body (este archivo completo).
+
+  En la MISMA página pega además:
+   · Menú:   Ilatek/home-page/ghl-nav-embed.html
+             (fuera de /home cambia los anchors #ilatek-* por URLs completas,
+              ej. {{custom_values.website_url}}/home#ilatek-cobertura)
+   · Footer: Ilatek/ghl-footer-embed.html
+  head SEO (Tracking Code → HEADER):
+   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+   <link rel="canonical" href="https://ilatekpr.com/resenas">
+
+  Landing de CONFIANZA: hero, badges, stats, triple widget de reseñas
+  (Google / Limpieza / Techos vía ReputationHub), fundadores, FAQ de confianza
+  (schema FAQPage) y CTA con calendario. No reemplaza al embed standalone
+  resenas/ghl-resenas-embed.html, que sigue usándose en las landings.
+-->
+<section id="ilatek-resenas-lp" aria-label="Reseñas y confianza de Ilatek {{custom_values.county_name_and_state}}"
+  data-location-label="{{custom_values.county_name_and_state}}"
+  data-website-url="{{custom_values.website_url}}"
+  data-business-email="{{custom_values.business__email}}"
+  data-business-phone="{{custom_values.business__phone}}"
+  data-facebook-url="{{custom_values.facebook_url}}"
+  data-instagram-url="{{custom_values.instagram_url}}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&family=Outfit:wght@500..800&display=swap">
+
+  <style>
+#ilatek-resenas-lp{--ink:#11164b;--ink-deep:#0b103d;--blue:#213d8e;--blue-soft:#eef3ff;--green:#00b94f;--green-dark:#009640;--paper:#fff;--mist:#f4f7fc;--line:#dbe2f1;--muted:#5b6380;width:100vw;max-width:none;margin-inline:calc(50% - 50vw);overflow:hidden;background:var(--paper);color:var(--ink);font-family:Manrope,Arial,sans-serif;isolation:isolate}
+#ilatek-resenas-lp *{box-sizing:border-box}
+#ilatek-resenas-lp a{color:inherit;text-decoration:none}
+#ilatek-resenas-lp [hidden]{display:none!important}
+#ilatek-resenas-lp .ilr-shell{width:min(100% - 40px,1210px);margin:auto}
+#ilatek-resenas-lp .ilr-display{font-family:Outfit,Manrope,sans-serif;font-weight:800;letter-spacing:-.06em}
+#ilatek-resenas-lp .ilr-eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--blue);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+#ilatek-resenas-lp .ilr-eyebrow:before{content:'';width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px rgba(0,185,79,.12)}
+#ilatek-resenas-lp .ilr-reveal{transition:opacity .8s cubic-bezier(.22,1,.36,1),transform .8s cubic-bezier(.22,1,.36,1)}
+html.ilr-anim #ilatek-resenas-lp .ilr-reveal{opacity:0;transform:translateY(26px)}
+html.ilr-anim #ilatek-resenas-lp .ilr-reveal.is-visible{opacity:1;transform:none}
+html{scroll-behavior:smooth}
+#ilatek-resenas-lp .ilr-button{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:10px;background:var(--green);color:#fff!important;font:800 14.5px/1 Manrope,Arial,sans-serif;letter-spacing:.02em;box-shadow:0 14px 30px rgba(0,185,79,.24);transition:transform .22s ease,background .22s ease,box-shadow .22s ease}
+#ilatek-resenas-lp .ilr-button span:last-child{display:grid;place-items:center;width:24px;height:24px;border-radius:7px;background:rgba(255,255,255,.2);font-size:13px;transition:transform .25s ease}
+#ilatek-resenas-lp .ilr-button:hover,#ilatek-resenas-lp .ilr-button:focus-visible{background:var(--green-dark);transform:translateY(-2px);box-shadow:0 18px 36px rgba(0,185,79,.32)}
+#ilatek-resenas-lp .ilr-button:hover span:last-child{transform:translateX(3px)}
+#ilatek-resenas-lp .ilr-text-link{font-weight:800;color:var(--blue);border-bottom:2px solid var(--green)}
+#ilatek-resenas-lp .ilr-hero .ilr-text-link{color:#fff;text-shadow:0 2px 14px rgba(11,16,61,.6)}
+
+/* ── 1. HERO (copy centrado; imagen mediana debajo; scrim solo mitad inferior) ── */
+#ilatek-resenas-lp .ilr-hero{position:relative;overflow:hidden;isolation:isolate;display:grid;align-items:center;justify-items:center;min-height:100vh;min-height:100svh;background:var(--ink-deep);color:#fff;padding:0}
+#ilatek-resenas-lp .ilr-hero-img{position:absolute;left:50%;top:0;transform:translateX(-50%);z-index:0;width:auto;height:62%;max-width:none;object-fit:cover;object-position:50% 30%;transition:transform 1.6s cubic-bezier(.22,1,.36,1)}
+#ilatek-resenas-lp .ilr-hero:hover .ilr-hero-img{transform:translateX(-50%) scale(1.035)}
+#ilatek-resenas-lp .ilr-hero-scrim{position:absolute;left:0;right:0;top:50%;bottom:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,rgba(11,16,61,0) 0%,rgba(11,16,61,.72) 30%,rgba(11,16,61,.94) 70%,var(--ink-deep) 100%)}
+#ilatek-resenas-lp .ilr-hero .ilr-eyebrow--light{text-shadow:0 2px 18px rgba(6,9,40,.75)}
+#ilatek-resenas-lp .ilr-hero h1{text-shadow:0 3px 26px rgba(6,9,40,.8),0 1px 8px rgba(6,9,40,.55)}
+#ilatek-resenas-lp .ilr-hero-sub{text-shadow:0 2px 14px rgba(6,9,40,.8)}
+#ilatek-resenas-lp .ilr-hero .ilr-text-link{text-shadow:0 2px 14px rgba(6,9,40,.8)}
+#ilatek-resenas-lp .ilr-hero-grid{position:relative;z-index:2;width:min(100% - 40px,900px);margin:auto;padding:clamp(96px,12vw,150px) 0 clamp(72px,9vw,120px);display:grid;grid-template-columns:1fr;gap:44px;justify-items:center;text-align:center}
+#ilatek-resenas-lp .ilr-hero h1{margin:18px 0 0;font-size:clamp(40px,4.6vw,64px);line-height:1.04}
+#ilatek-resenas-lp .ilr-hero h1 em{font-style:normal;color:var(--green)}
+#ilatek-resenas-lp .ilr-hero-sub{margin:20px auto 0;max-width:640px;color:rgba(255,255,255,.9);font-size:17px;line-height:1.7}
+#ilatek-resenas-lp .ilr-hero-sub b{color:#fff}
+#ilatek-resenas-lp .ilr-hero-actions{display:flex;align-items:center;justify-content:center;gap:22px;margin-top:30px;flex-wrap:wrap}
+#ilatek-resenas-lp .ilr-hero-facts{display:flex;gap:34px;margin:14px 0 0;padding-top:24px;border-top:1px solid rgba(255,255,255,.24);flex-wrap:wrap;justify-content:center}
+#ilatek-resenas-lp .ilr-hero-facts b{display:block;font-family:Outfit,Manrope,sans-serif;font-size:24px;font-weight:800;letter-spacing:-.03em}
+#ilatek-resenas-lp .ilr-hero-facts b i{color:var(--green);font-style:normal}
+#ilatek-resenas-lp .ilr-hero-facts span{display:block;margin-top:4px;color:rgba(255,255,255,.72);font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+
+/* ── 2. BADGES ── */
+#ilatek-resenas-lp .ilr-badges{padding:74px 0;background:var(--paper)}
+#ilatek-resenas-lp .ilr-badges-head{max-width:690px;margin:0 auto 46px;text-align:center}
+#ilatek-resenas-lp .ilr-badges-head h2{margin:16px 0 0;font-size:clamp(30px,3.4vw,46px);line-height:1.06}
+#ilatek-resenas-lp .ilr-badge-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+#ilatek-resenas-lp .ilr-badge{display:flex;gap:16px;align-items:flex-start;padding:26px 24px;border:1px solid var(--line);border-radius:18px;background:#fff;transition:transform .45s cubic-bezier(.4,0,.2,1),box-shadow .45s cubic-bezier(.4,0,.2,1)}
+#ilatek-resenas-lp .ilr-badge:hover{transform:translateY(-6px);box-shadow:0 24px 48px rgba(17,22,75,.12)}
+#ilatek-resenas-lp .ilr-badge i{flex:0 0 46px;display:grid;place-items:center;width:46px;height:46px;border-radius:14px;background:var(--blue-soft);color:var(--blue)}
+#ilatek-resenas-lp .ilr-badge i svg{width:23px;height:23px}
+#ilatek-resenas-lp .ilr-badge h3{margin:0 0 6px;font-family:Outfit,Manrope,sans-serif;font-size:16.5px;font-weight:800;letter-spacing:-.02em}
+#ilatek-resenas-lp .ilr-badge p{margin:0;color:var(--muted);font-size:13.5px;line-height:1.6}
+
+/* ── 3. STATS ── */
+#ilatek-resenas-lp .ilr-stats{padding:34px 0;background:var(--ink-deep)}
+#ilatek-resenas-lp .ilr-stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;text-align:center}
+#ilatek-resenas-lp .ilr-stats-row b{display:block;font-family:Outfit,Manrope,sans-serif;font-size:clamp(26px,3vw,38px);font-weight:800;letter-spacing:-.03em;color:#fff}
+#ilatek-resenas-lp .ilr-stats-row b i{color:var(--green);font-style:normal}
+#ilatek-resenas-lp .ilr-stats-row span{display:block;margin-top:5px;color:rgba(255,255,255,.65);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+
+/* ── 4. REVIEWS (triple widget) ── */
+#ilatek-resenas-lp .il-reviews{padding:112px 0;background:var(--paper)}
+#ilatek-resenas-lp .il-reviews-head{max-width:690px;margin:0 auto 48px;text-align:center}
+#ilatek-resenas-lp .il-reviews-head h2{margin:16px 0 0;font-size:clamp(42px,4.6vw,66px);font-weight:800;line-height:1.02}
+#ilatek-resenas-lp .il-reviews-head p{margin:18px auto 0;color:var(--muted);font-size:16px;line-height:1.65}
+#ilatek-resenas-lp .il-reviews-frame{min-height:320px;padding:16px;border:1px solid var(--line);border-radius:20px;background:var(--mist);box-shadow:0 20px 45px rgba(16,25,75,.08);overflow:hidden}
+#ilatek-resenas-lp .il-reviews-frame iframe{display:block;width:100%;min-height:285px;border:0;background:#fff;border-radius:12px}
+#ilatek-resenas-lp .il-reviews-tabs{display:flex;gap:7px;width:max-content;max-width:100%;margin:0 auto 18px;padding:5px;border:1px solid var(--line);border-radius:12px;background:var(--mist);overflow-x:auto;scrollbar-width:none}
+#ilatek-resenas-lp .il-reviews-tabs::-webkit-scrollbar{display:none}
+#ilatek-resenas-lp .il-reviews-tab{min-height:42px;padding:10px 18px;border:0;border-radius:8px;background:transparent;color:var(--muted);font:800 13px/1 Manrope,Arial,sans-serif;cursor:pointer;white-space:nowrap;transition:background .22s ease,color .22s ease}
+#ilatek-resenas-lp .il-reviews-tab:hover,#ilatek-resenas-lp .il-reviews-tab:focus-visible{color:var(--ink)}
+#ilatek-resenas-lp .il-reviews-tab[aria-selected=true]{background:var(--ink);color:#fff}
+#ilatek-resenas-lp .il-reviews-eyebrow{margin:0 auto 10px;text-align:center;color:var(--muted);font:800 12px/1 Manrope,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase}
+#ilatek-resenas-lp .il-reviews-tab .il-sico{width:15px;height:15px;margin-right:6px;flex:none;color:currentColor}
+#ilatek-resenas-lp .il-review-panel[hidden]{display:none!important}
+
+/* ── 5. FUNDADORES / CONÓCENOS ── */
+#ilatek-resenas-lp .ilr-team{padding:112px 0;background:var(--mist)}
+#ilatek-resenas-lp .ilr-team-head{max-width:690px;margin:0 auto 48px;text-align:center}
+#ilatek-resenas-lp .ilr-team-head h2{margin:16px 0 0;font-size:clamp(34px,4vw,54px);line-height:1.05}
+#ilatek-resenas-lp .ilr-team-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:880px;margin:0 auto}
+#ilatek-resenas-lp .ilr-person{display:flex;gap:22px;align-items:center;padding:28px;border:1px solid var(--line);border-radius:20px;background:#fff;transition:transform .45s cubic-bezier(.4,0,.2,1),box-shadow .45s cubic-bezier(.4,0,.2,1)}
+#ilatek-resenas-lp .ilr-person:hover{transform:translateY(-5px);box-shadow:0 22px 44px rgba(17,22,75,.12)}
+#ilatek-resenas-lp .ilr-person img{width:118px;height:118px;border-radius:50%;object-fit:cover;flex:none;box-shadow:0 10px 24px rgba(17,22,75,.16)}
+#ilatek-resenas-lp .ilr-person h3{margin:0 0 5px;font-family:Outfit,Manrope,sans-serif;font-size:19px;font-weight:800;letter-spacing:-.02em}
+#ilatek-resenas-lp .ilr-person>p{margin:0 0 8px;color:var(--blue);font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+#ilatek-resenas-lp .ilr-person small{display:block;color:var(--muted);font-size:13.5px;line-height:1.6}
+
+/* ── 6. FAQ ── */
+#ilatek-resenas-lp .ilr-faq{padding:112px 0;background:var(--paper)}
+#ilatek-resenas-lp .ilr-faq-head{max-width:690px;margin:0 auto 48px;text-align:center}
+#ilatek-resenas-lp .ilr-faq-head h2{margin:16px 0 0;font-size:clamp(36px,4vw,54px);line-height:1.05}
+#ilatek-resenas-lp .ilr-faq-list{max-width:880px;margin:0 auto;display:grid;gap:12px}
+#ilatek-resenas-lp details.ilr-faq-item{border:1px solid var(--line);border-radius:14px;background:var(--mist);overflow:hidden}
+#ilatek-resenas-lp details.ilr-faq-item summary{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 22px;cursor:pointer;list-style:none;font-family:Outfit,Manrope,sans-serif;font-weight:700}
+#ilatek-resenas-lp details.ilr-faq-item summary::-webkit-details-marker{display:none}
+#ilatek-resenas-lp details.ilr-faq-item summary h3{margin:0;font-size:17px;font-weight:700;letter-spacing:-.01em}
+#ilatek-resenas-lp details.ilr-faq-item summary .ilr-chevron{flex:0 0 28px;display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--blue-soft);color:var(--blue);font-size:12px;transition:transform .35s cubic-bezier(.4,0,.2,1)}
+#ilatek-resenas-lp details.ilr-faq-item[open] summary .ilr-chevron{transform:rotate(180deg)}
+#ilatek-resenas-lp details.ilr-faq-item[open]{background:#fff}
+#ilatek-resenas-lp details.ilr-faq-item>p{margin:0;padding:2px 22px 20px;color:var(--muted);font-size:14.5px;line-height:1.7}
+#ilatek-resenas-lp details.ilr-faq-item>p b{color:var(--ink)}
+
+/* ── 7. CTA ── */
+#ilatek-resenas-lp .ilr-cta{padding:0 0 112px}
+#ilatek-resenas-lp .ilr-cta-box{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:40px 56px;align-items:center;padding:66px 56px;border-radius:24px;background:var(--green);color:#fff;overflow:hidden}
+#ilatek-resenas-lp .ilr-cta-box:before,#ilatek-resenas-lp .ilr-cta-box:after{content:'';position:absolute;border:1px solid rgba(255,255,255,.28);border-radius:50%;pointer-events:none}
+#ilatek-resenas-lp .ilr-cta-box:before{top:-190px;left:-90px;width:380px;height:380px}
+#ilatek-resenas-lp .ilr-cta-box:after{right:-170px;bottom:-210px;width:460px;height:460px}
+#ilatek-resenas-lp .ilr-cta-copy{position:relative;z-index:1}
+#ilatek-resenas-lp .ilr-cta-eyebrow{display:inline-block;margin-bottom:18px;padding:8px 15px;border-radius:999px;background:rgba(255,255,255,.16);color:#fff;font:800 11.5px/1 Manrope,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase}
+#ilatek-resenas-lp .ilr-cta h2{max-width:560px;margin:0;font-size:clamp(34px,3.8vw,52px);line-height:1.05}
+#ilatek-resenas-lp .ilr-cta-copy p{max-width:520px;margin:19px 0 30px;color:rgba(255,255,255,.92);font-size:16.5px;line-height:1.62}
+#ilatek-resenas-lp .ilr-cta-actions{display:flex;flex-wrap:wrap;align-items:center;gap:14px 18px}
+#ilatek-resenas-lp .ilr-cta-actions small{color:rgba(255,255,255,.88);font-size:13px;font-weight:700}
+#ilatek-resenas-lp .ilr-cta .ilr-button{background:#fff;color:var(--ink)!important;box-shadow:none}
+#ilatek-resenas-lp .ilr-cta .ilr-button span:last-child{background:var(--ink);color:#fff}
+#ilatek-resenas-lp .ilr-cta .ilr-button:hover,#ilatek-resenas-lp .ilr-cta .ilr-button:focus-visible{background:var(--ink);color:#fff!important}
+#ilatek-resenas-lp .ilr-cta .ilr-button:hover span:last-child,#ilatek-resenas-lp .ilr-cta .ilr-button:focus-visible span:last-child{background:#fff;color:var(--ink)}
+#ilatek-resenas-lp .ilr-cta-facts{position:relative;z-index:1;display:grid;gap:14px;margin:0;padding:0;list-style:none}
+#ilatek-resenas-lp .ilr-cta-facts li{display:flex;gap:14px;align-items:flex-start;padding:18px 20px;border-radius:16px;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.24)}
+#ilatek-resenas-lp .ilr-cta-facts i{flex:0 0 38px;display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:#fff;color:var(--green-dark)}
+#ilatek-resenas-lp .ilr-cta-facts i svg{width:20px;height:20px}
+#ilatek-resenas-lp .ilr-cta-facts b{display:block;font-family:Outfit,Manrope,sans-serif;font-size:15.5px;font-weight:800;letter-spacing:-.02em}
+#ilatek-resenas-lp .ilr-cta-facts span{display:block;margin-top:3px;color:rgba(255,255,255,.86);font-size:13.5px;line-height:1.5}
+
+/* ── 8. AGENDA: CTA con las 2 opciones del menú (Techos / Limpieza) ── */
+#ilatek-resenas-lp .ilr-cal{padding:0 0 112px;scroll-margin-top:96px}
+#ilatek-resenas-lp .ilr-cal-head{max-width:690px;margin:0 auto 44px;text-align:center}
+#ilatek-resenas-lp .ilr-cal-head h2{margin:16px 0 0;font-size:clamp(34px,3.8vw,52px);line-height:1.06}
+#ilatek-resenas-lp .ilr-cal-head p{margin:16px 0 0;color:var(--muted);font-size:16px;line-height:1.65}
+#ilatek-resenas-lp .ilr-book{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:960px;margin:0 auto}
+#ilatek-resenas-lp .ilr-book-card{display:flex;gap:20px;align-items:center;padding:32px 30px;border:1px solid var(--line);border-radius:22px;background:#fff;box-shadow:0 18px 44px rgba(17,22,75,.1);transition:transform .3s cubic-bezier(.4,0,.2,1),box-shadow .3s cubic-bezier(.4,0,.2,1),border-color .3s ease}
+#ilatek-resenas-lp .ilr-book-card:hover,#ilatek-resenas-lp .ilr-book-card:focus-visible{transform:translateY(-6px);border-color:rgba(0,185,79,.5);box-shadow:0 26px 56px rgba(17,22,75,.16)}
+#ilatek-resenas-lp .ilr-book-ico{flex:0 0 58px;display:grid;place-items:center;width:58px;height:58px;border-radius:17px;background:var(--blue-soft);color:var(--blue)}
+#ilatek-resenas-lp .ilr-book-card[data-line="techos"] .ilr-book-ico{background:rgba(0,185,79,.14);color:var(--green-dark)}
+#ilatek-resenas-lp .ilr-book-ico svg{width:29px;height:29px}
+#ilatek-resenas-lp .ilr-book-card h3{margin:0 0 5px;font-family:Outfit,Manrope,sans-serif;font-size:19px;font-weight:800;letter-spacing:-.02em}
+#ilatek-resenas-lp .ilr-book-card small{display:block;color:var(--muted);font-size:13.5px;line-height:1.55}
+#ilatek-resenas-lp .ilr-book-go{flex:0 0 44px;display:grid;place-items:center;width:44px;height:44px;border-radius:13px;background:var(--green);color:#fff;font-size:18px;transition:background .25s ease,transform .25s ease}
+#ilatek-resenas-lp .ilr-book-card:hover .ilr-book-go{background:var(--green-dark);transform:translateX(3px)}
+#ilatek-resenas-lp .ilr-book-note{max-width:960px;margin:22px auto 0;text-align:center;color:var(--muted);font-size:13.5px}
+#ilatek-resenas-lp .ilr-book-note b{color:var(--ink)}
+@media(max-width:760px){#ilatek-resenas-lp .ilr-book{grid-template-columns:1fr}}
+
+@media(max-width:900px){
+#ilatek-resenas-lp .ilr-hero{min-height:88vh;min-height:88svh}
+#ilatek-resenas-lp .ilr-hero-img{height:48%}
+#ilatek-resenas-lp .ilr-hero-grid{grid-template-columns:1fr;gap:36px;padding:clamp(64px,9vw,100px) 0}
+#ilatek-resenas-lp .ilr-badge-grid{grid-template-columns:1fr 1fr}
+#ilatek-resenas-lp .ilr-stats-row{grid-template-columns:1fr 1fr;gap:26px}
+#ilatek-resenas-lp .ilr-team-grid{grid-template-columns:1fr}
+#ilatek-resenas-lp .ilr-cta-box{grid-template-columns:1fr;gap:34px;padding:56px 44px}
+}
+@media(max-width:600px){
+#ilatek-resenas-lp .ilr-shell{width:min(100% - 30px,1210px)}
+#ilatek-resenas-lp .ilr-hero h1{font-size:clamp(38px,10.5vw,52px)}
+#ilatek-resenas-lp .ilr-hero-img{height:42%}
+#ilatek-resenas-lp .ilr-hero-actions{align-items:center;flex-direction:column;gap:16px}
+#ilatek-resenas-lp .ilr-hero-facts{gap:20px}
+#ilatek-resenas-lp .ilr-badges,#ilatek-resenas-lp .il-reviews,#ilatek-resenas-lp .ilr-team,#ilatek-resenas-lp .ilr-faq{padding:78px 0}
+#ilatek-resenas-lp .ilr-badge-grid{grid-template-columns:1fr}
+#ilatek-resenas-lp .ilr-stats-row{grid-template-columns:1fr 1fr;gap:20px}
+#ilatek-resenas-lp .ilr-person{flex-direction:column;text-align:center;align-items:center}
+#ilatek-resenas-lp .ilr-cta-box{padding:46px 22px;border-radius:17px;gap:28px}
+#ilatek-resenas-lp .ilr-cta-actions{gap:12px 14px}
+#ilatek-resenas-lp .ilr-cta-actions .ilr-button{width:100%;justify-content:center}
+#ilatek-resenas-lp .ilr-cta-facts li{padding:15px 16px;border-radius:14px}
+#ilatek-resenas-lp .ilr-cal{padding:0 0 78px}
+#ilatek-resenas-lp .ilr-book-card{padding:24px 20px}
+#ilatek-resenas-lp .ilr-book-ico{flex-basis:50px;width:50px;height:50px;border-radius:14px}
+#ilatek-resenas-lp .ilr-book-ico svg{width:25px;height:25px}
+#ilatek-resenas-lp .il-reviews-tabs{width:100%;gap:3px;flex-wrap:nowrap}
+#ilatek-resenas-lp .il-reviews-tab{flex:1 1 0;min-width:0;padding-inline:5px;font-size:11px;letter-spacing:-.1px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#ilatek-resenas-lp .il-reviews-tab .il-sico{display:none}
+#ilatek-resenas-lp .il-reviews-frame{padding:9px;border-radius:15px}
+#ilatek-resenas-lp .il-reviews-frame iframe{min-height:300px;border-radius:9px}
+}
+@media(prefers-reduced-motion:reduce){
+#ilatek-resenas-lp .ilr-reveal{transition:none!important}
+html.ilr-anim #ilatek-resenas-lp .ilr-reveal{opacity:1;transform:none}
+#ilatek-resenas-lp .ilr-badge,#ilatek-resenas-lp .ilr-person{transition:none!important}
+}
+html,body{overflow-x:clip}
+  </style>
+
+  <main>
+    <script>(function(){document.documentElement.classList.add('ilr-anim');setTimeout(function(){if(!window.__ilrReady)document.documentElement.classList.remove('ilr-anim')},2500)})();</script>
+
+    <!-- 1. HERO: imagen a ancho completo (100% del viewport), copy encima con scrim -->
+    <header class="ilr-hero">
+      <img class="ilr-hero-img" src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac72f698c077584b4edd068.jpg" loading="eager" decoding="async" fetchpriority="high" alt="Equipo de Ilatek Property Solution en Puerto Rico — profesionales de limpieza y techos frente a las camionetas de la empresa" title="Equipo de Ilatek · Reseñas y confianza">
+      <span class="ilr-hero-scrim" aria-hidden="true"></span>
+      <div class="ilr-shell ilr-hero-grid">
+        <div class="ilr-hero-copy ilr-reveal">
+          <span class="ilr-eyebrow ilr-eyebrow--light">Reseñas y confianza</span>
+          <h1 class="ilr-display">La confianza en Ilatek <em>se demuestra</em>, no se promete.</h1>
+          <p class="ilr-hero-sub">Somos una empresa local de Puerto Rico con equipos propios, precios por escrito y garantía de mano de obra. Aquí puedes leer las reseñas reales de clientes de limpieza y de techos, conocer a quiénes les confías tu casa y resolver cada duda antes de reservar — <b>sin sorpresas</b>.</p>
+          <div class="ilr-hero-actions">
+            <a class="ilr-button" href="#ilr-agenda"><span>Agenda tu servicio</span><span aria-hidden="true">↗</span></a>
+            <a class="ilr-text-link" href="#ilatek-reviews">Leer las reseñas ↓</a>
+          </div>
+        </div>
+        <div class="ilr-hero-facts ilr-reveal">
+          <div><b><i>3</i> fuentes reales</b><span>Google · Limpieza · Techos</span></div>
+          <div><b><i>78</i> municipios</b><span>Cobertura en PR</span></div>
+          <div><b><i>$50</i> depósito</b><span>Descontable del total</span></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 2. BADGES DE CONFIANZA -->
+    <section class="ilr-badges" aria-labelledby="ilr-badges-title">
+      <div class="ilr-shell">
+        <header class="ilr-badges-head ilr-reveal">
+          <span class="ilr-eyebrow">Por qué confiar</span>
+          <h2 id="ilr-badges-title" class="ilr-display">Seis razones que convierten una promesa en confianza.</h2>
+        </header>
+        <div class="ilr-badge-grid">
+          <article class="ilr-badge ilr-reveal">
+            <i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16.2 16.2 4 4"/><path d="m8.5 11 2 2 4-4.5"/></svg></i>
+            <div><h3>Inspección gratis</h3><p>Diagnosticamos tu techo o tu espacio sin costo y sin compromiso de contratar.</p></div>
+          </article>
+          <article class="ilr-badge ilr-reveal">
+            <i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M3 7h18v12H3z"/><path d="M3 11h18"/><circle cx="16" cy="13" r="1"/></svg></i>
+            <div><h3>Precio por escrito</h3><p>El número que te damos es el número que pagas: cotización clara antes de empezar.</p></div>
+          </article>
+          <article class="ilr-badge ilr-reveal">
+            <i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M12 3 5 6v6c0 4.5 3 7.5 7 9 4-1.5 7-4.5 7-9V6l-7-3z"/><path d="m9 12 2 2 4-4"/></svg></i>
+            <div><h3>Garantía de mano de obra</h3><p>Por escrito en cada trabajo. Si algo no queda bien, regresamos a corregirlo.</p></div>
+          </article>
+          <article class="ilr-badge ilr-reveal">
+            <i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M20 7 9.5 17.5 4 12"/><path d="M20 13.5 12.5 21 7 15.5"/></svg></i>
+            <div><h3>Materiales certificados</h3><p>Selladores y productos profesionales, correctos para cada superficie.</p></div>
+          </article>
+          <article class="ilr-badge ilr-reveal">
+            <i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 20c.6-3.4 2.8-5.2 5.5-5.2s4.9 1.8 5.5 5.2"/><circle cx="17" cy="9" r="2.6"/><path d="M15.5 14.4c2.9.2 4.6 1.9 5.1 4.6"/></svg></i>
+            <div><h3>Equipo propio y verificado</h3><p>Técnicos uniformados de Ilatek — no subcontratamos extraños en tu casa.</p></div>
+          </article>
+          <article class="ilr-badge ilr-reveal">
+            <i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></i>
+            <div><h3>Depósito de $50 descontable</h3><p>Reservas tu fecha con $50 que se descuentan del total del servicio.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. STATS -->
+    <section class="ilr-stats" aria-label="Cifras de Ilatek">
+      <div class="ilr-shell ilr-stats-row ilr-reveal">
+        <div><b><i>78</i></b><span>Municipios atendidos</span></div>
+        <div><b><i>3</i></b><span>Fuentes de reseñas</span></div>
+        <div><b><i>2</i></b><span>Líneas: Limpieza y Techos</span></div>
+        <div><b><i>1</i> equipo</b><span>De principio a fin</span></div>
+      </div>
+    </section>
+
+    <!-- 4. TRIPLE WIDGET DE RESEÑAS -->
+    <section id="ilatek-reviews" class="il-reviews" aria-labelledby="ilatek-reviews-title">
+      <div class="ilr-shell">
+        <header class="il-reviews-head ilr-reveal">
+          <span class="ilr-eyebrow">Reseñas verificadas</span>
+          <h2 id="ilatek-reviews-title" class="ilr-display">Lo que dicen quienes ya confiaron.</h2>
+          <p>Tres fuentes, una sola experiencia: reseñas de Google, de nuestros clientes de limpieza y de nuestros clientes de Mantenimiento de Techos en Puerto Rico. Cambia de pestaña para leer cada una.</p>
+        </header>
+        <p class="il-reviews-eyebrow">Reseñas</p>
+        <div class="il-reviews-tabs" role="tablist" aria-label="Fuentes de reseñas">
+          <button class="il-reviews-tab" id="il-tab-google" type="button" role="tab" aria-selected="true" aria-controls="il-panel-google"><img class="il-sico" src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac6fe59195f9172eddf11b8.jpg" alt="" aria-hidden="true" focusable="false" loading="lazy" style="border-radius:50%;object-fit:cover">Reseñas de Google</button>
+          <button class="il-reviews-tab" id="il-tab-limpieza" type="button" role="tab" aria-selected="false" aria-controls="il-panel-limpieza" tabindex="-1"><svg class="il-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 1.9 4.6L18.5 9.5l-4.6 1.9L12 16l-1.9-4.6L5.5 9.5l4.6-1.9z"/><path d="m18 15 .9 2.1L21 18l-2.1.9L18 21l-.9-2.1L15 18l2.1-.9z"/></svg>Limpieza</button>
+          <button class="il-reviews-tab" id="il-tab-techos" type="button" role="tab" aria-selected="false" aria-controls="il-panel-techos" tabindex="-1"><svg class="il-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>Reseñas de Techos</button>
+        </div>
+        <div class="il-reviews-frame ilr-reveal">
+          <div class="il-review-panel" id="il-panel-google" role="tabpanel" aria-labelledby="il-tab-google"><script type="text/javascript" src="https://reputationhub.site/reputation/assets/review-widget.js" defer></script><iframe class="lc_reviews_widget" src="https://reputationhub.site/reputation/widgets/review_widget/8OxUENFVM60EKzqsTcoD" title="Reseñas de Google de clientes de Ilatek" frameborder="0" scrolling="no" loading="lazy" style="min-width:100%;width:100%;"></iframe></div>
+          <div class="il-review-panel" id="il-panel-limpieza" role="tabpanel" aria-labelledby="il-tab-limpieza" hidden><iframe class="lc_reviews_widget" src="about:blank" data-src="https://reputationhub.site/reputation/widgets/review_widget/8OxUENFVM60EKzqsTcoD?widgetId=6ab060ce32d0d3c755f9fd73" title="Reseñas de Limpieza de Ilatek" frameborder="0" scrolling="no" loading="lazy" style="min-width:100%;width:100%;"></iframe></div>
+          <div class="il-review-panel" id="il-panel-techos" role="tabpanel" aria-labelledby="il-tab-techos" hidden><iframe class="lc_reviews_widget" data-src="https://reputationhub.site/reputation/widgets/review_widget/8OxUENFVM60EKzqsTcoD?widgetId=6ac3eb680432b6ce3f30b035" src="about:blank" title="Reseñas de Mantenimiento de Techos de Ilatek" frameborder="0" scrolling="no" loading="lazy" style="min-width:100%;width:100%;"></iframe></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. FUNDADORES -->
+    <section class="ilr-team" aria-labelledby="ilr-team-title">
+      <div class="ilr-shell">
+        <header class="ilr-team-head ilr-reveal">
+          <span class="ilr-eyebrow">Conócenos</span>
+          <h2 id="ilr-team-title" class="ilr-display">Rostros detrás de cada servicio.</h2>
+          <p style="margin:18px auto 0;color:var(--muted);font-size:16px;line-height:1.65">Ilatek es una empresa puertorriqueña fundada por personas que viven las mismas comunidades que atendemos. Cuando llamas, hablas con nosotros — no con un call center.</p>
+        </header>
+        <div class="ilr-team-grid">
+          <article class="ilr-person ilr-reveal">
+            <img src="https://aocpdev.github.io/Ilatek/assets/luis-cardec-512.webp" onerror="this.onerror=null;this.src='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab0a9feff484614db6e6ce7.png'" width="512" height="512" loading="lazy" decoding="async" alt="Luis A. Cardec, fundador de Ilatek en {{custom_values.county_name_and_state}}, Puerto Rico" title="Luis A. Cardec · Fundador de Ilatek">
+            <div>
+              <h3>Luis A. Cardec</h3>
+              <p>Fundador</p>
+              <small>"Cada casa que atendemos lleva nuestro nombre. Por eso el estándar no se negocia: si no queda como te lo prometimos, volvemos."</small>
+            </div>
+          </article>
+          <article class="ilr-person ilr-reveal">
+            <img src="https://aocpdev.github.io/Ilatek/assets/aida-cintron-512.webp" onerror="this.onerror=null;this.src='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab0aa1430b0f957ccb1b27d.png'" width="512" height="512" loading="lazy" decoding="async" alt="Aida Cintron, fundadora de Ilatek — limpieza residencial y comercial en {{custom_values.county_name_and_state}}, Puerto Rico" title="Aida Cintron · Fundadora de Ilatek">
+            <div>
+              <h3>Aida Cintrón</h3>
+              <p>Fundadora</p>
+              <small>"La confianza empieza antes de que lleguemos: precio claro por escrito, respuestas rápidas y un equipo que respetu tu hogar como si fuera el nuestro."</small>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. FAQ DE CONFIANZA -->
+    <section class="ilr-faq" aria-labelledby="ilr-faq-title">
+      <div class="ilr-shell">
+        <header class="ilr-faq-head ilr-reveal">
+          <span class="ilr-eyebrow">Preguntas frecuentes</span>
+          <h2 id="ilr-faq-title" class="ilr-display">Todo lo que necesitas saber para confiar.</h2>
+        </header>
+        <div class="ilr-faq-list">
+          <details class="ilr-faq-item"><summary><h3>¿Ilatek es una empresa local de Puerto Rico?</h3><span class="ilr-chevron" aria-hidden="true">▾</span></summary><p><b>Sí.</b> Somos una empresa puertorriqueña con operaciones en los 78 municipios. No somos una franquicia ni una plataforma que subcontrata: tenemos equipos propios, camionetas de la empresa y supervisión directa en cada trabajo.</p></details>
+          <details class="ilr-faq-item"><summary><h3>¿Las reseñas de esta página son reales?</h3><span class="ilr-chevron" aria-hidden="true">▾</span></summary><p><b>Sí.</b> Publicamos tres fuentes verificadas: reseñas de Google y dos widgets independientes con las reseñas de nuestros servicios de Limpieza y de Mantenimiento de Techos. Ninguna se edita ni se filtra — cambia de pestaña y léelas directamente.</p></details>
+          <details class="ilr-faq-item"><summary><h3>¿Están asegurados?</h3><span class="ilr-chevron" aria-hidden="true">▾</span></summary><p><b>Sí.</b> Ilatek opera con cobertura de responsabilidad civil y todos nuestros técnicos trabajan con el equipo de protección requerido para cada servicio — en techos, arnés y anclajes; en limpieza, productos seguros para familias y mascotas.</p></details>
+          <details class="ilr-faq-item"><summary><h3>¿Qué pasa si no quedo satisfecho con el servicio?</h3><span class="ilr-chevron" aria-hidden="true">▾</span></summary><p>Nos avisas y <b>regresamos a corregirlo</b>: la garantía de mano de obra está por escrito en cada trabajo de techos, y en limpieza coordinamos un reproceso de las áreas señaladas. Prefiero perder una hora que un cliente.</p></details>
+          <details class="ilr-faq-item"><summary><h3>¿Por qué piden un depósito de $50?</h3><span class="ilr-chevron" aria-hidden="true">▾</span></summary><p>El depósito <b>reserva tu fecha y bloquea el equipo</b> para tu zona. No es un cargo extra: <b>se descuenta del total</b> del servicio el día del trabajo. Si por nuestra causa no podemos asistir, se te reembolsa completo.</p></details>
+          <details class="ilr-faq-item"><summary><h3>¿Quién entra a mi casa?</h3><span class="ilr-chevron" aria-hidden="true">▾</span></summary><p>Siempre <b>personal de Ilatek, uniformado e identificado</b>. Te confirmamos por mensaje los nombres del equipo que llegará y el horario. No cedemos tus llaves ni tu información a terceros.</p></details>
+          <details class="ilr-faq-item"><summary><h3>¿Cuánto tardan en responderme?</h3><span class="ilr-chevron" aria-hidden="true">▾</span></summary><p>En horario laboral, <b>en minutos</b>: el cotizador de la web te da un precio real al instante, y por WhatsApp o llamada confirmamos detalles y agendamos. Para emergencias de goteras priorizamos la visita.</p></details>
+          <details class="ilr-faq-item"><summary><h3>¿Por qué confiar en Ilatek para mi casa o negocio?</h3><span class="ilr-chevron" aria-hidden="true">▾</span></summary><p>Porque combinamos <b>reseñas verificables de tres fuentes, garantía por escrito, precio claro y equipos propios</b> con el trato de una empresa local de {{custom_values.county_name_and_state}}. La confianza no la decimos nosotros — la respaldan quienes ya nos contrataron.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CTA -->
+    <section class="ilr-cta" aria-labelledby="ilr-cta-title">
+      <div class="ilr-shell">
+        <div class="ilr-cta-box ilr-reveal">
+          <div class="ilr-cta-copy">
+            <span class="ilr-cta-eyebrow">Cotización gratis</span>
+            <h2 id="ilr-cta-title" class="ilr-display">Convierte la confianza en tu próximo servicio.</h2>
+            <p>Solicita tu cotización gratis en {{custom_values.county_name_and_state}}: precio claro por escrito, inspección sin costo cuando aplica y el respaldo de reseñas que ya leíste arriba.</p>
+            <div class="ilr-cta-actions">
+              <a class="ilr-button" href="#ilr-agenda"><span>Agenda tu servicio</span><span aria-hidden="true">↗</span></a>
+              <small>Respuesta en minutos · Sin compromiso</small>
+            </div>
+          </div>
+          <ul class="ilr-cta-facts">
+            <li><i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M3 7h18v12H3z"/><path d="M3 11h18"/><circle cx="16" cy="13" r="1"/></svg></i><div><b>Precio claro por escrito</b><span>sin sorpresas el día del servicio.</span></div></li>
+            <li><i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></i><div><b>Garantía de mano de obra</b><span>respaldada por escrito en cada trabajo.</span></div></li>
+            <li><i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></i><div><b>Reserva con $50</b><span>descontable del total de tu servicio.</span></div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. AGENDA: CTA con las 2 opciones del menú (dropdown "Agenda tu Servicio") -->
+    <section class="ilr-cal" id="ilr-agenda" aria-labelledby="ilr-cal-title">
+      <div class="ilr-shell">
+        <header class="ilr-cal-head ilr-reveal">
+          <span class="ilr-eyebrow">Agenda tu servicio</span>
+          <h2 id="ilr-cal-title" class="ilr-display">¿Techos o limpieza? Agenda en minutos.</h2>
+          <p>Elige tu línea de servicio y reserva tu fecha y hora. Atendemos {{custom_values.county_name_and_state}} y los 78 municipios de Puerto Rico.</p>
+        </header>
+        <div class="ilr-book ilr-reveal">
+          <a class="ilr-book-card" data-line="techos" href="{{custom_values.website_url}}/cotizacion-techos">
+            <i class="ilr-book-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></i>
+            <span style="flex:1;min-width:0"><h3 data-es="Mantenimiento de Techos" data-en="Roof Maintenance">Mantenimiento de Techos</h3><small data-es="Reserva tu fecha y hora" data-en="Book your date &amp; time">Reserva tu fecha y hora</small></span>
+            <span class="ilr-book-go" aria-hidden="true">→</span>
+          </a>
+          <a class="ilr-book-card" data-line="limpieza" href="{{custom_values.website_url}}/cotizacion">
+            <i class="ilr-book-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m12 3 1.9 4.6L18.5 9.5l-4.6 1.9L12 16l-1.9-4.6L5.5 9.5l4.6-1.9z"/><path d="m18 15 .9 2.1L21 18l-2.1.9L18 21l-.9-2.1L15 18l2.1-.9z"/></svg></i>
+            <span style="flex:1;min-width:0"><h3 data-es="Servicio de Limpieza" data-en="Cleaning Service">Servicio de Limpieza</h3><small data-es="Reserva tu fecha y hora" data-en="Book your date &amp; time">Reserva tu fecha y hora</small></span>
+            <span class="ilr-book-go" aria-hidden="true">→</span>
+          </a>
+        </div>
+        <p class="ilr-book-note ilr-reveal">Reservas con el <b>depósito de $50 descontable</b> · Respuesta en minutos · Sin compromiso</p>
+      </div>
+      <script>(function(){var t=document.getElementById('ilr-agenda');if(!t)return;var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion:reduce)').matches;document.addEventListener('click',function(e){var el=e.target;while(el&&el!==document){if(el.tagName==='A'&&el.getAttribute('href')==='#ilr-agenda'){e.preventDefault();t.scrollIntoView({behavior:rm?'auto':'smooth',block:'start'});return}el=el.parentNode}},false)})();</script>
+    </section>
+  </main>
+
+  <!-- Resolver custom values (fallbacks reales, nunca '#') -->
+  <script>
+  (function(){
+    var root=document.getElementById('ilatek-resenas-lp'); if(!root||root.dataset.ilrReady)return; root.dataset.ilrReady='true';
+    function clean(v){v=String(v||'').replace(/\u00a0/g,' ').trim();return /^\s*\{\{[^}]+\}\}\s*$/.test(v)?'':v}
+    function token(name){return '{'+'{custom_values.'+name+'}'+'}'}
+    var county=clean(root.getAttribute('data-location-label'))||'Puerto Rico', website=clean(root.getAttribute('data-website-url'))||'https://ilatekpr.com';
+    var values={};
+    values[token('county_name_and_state')]=county;
+    values[token('website_url')]=website;
+    values[token('business__email')]=clean(root.getAttribute('data-business-email'));
+    values[token('business__phone')]=clean(root.getAttribute('data-business-phone'));
+    values[token('facebook_url')]=clean(root.getAttribute('data-facebook-url'))||'https://www.facebook.com/ilatek.pr/';
+    values[token('instagram_url')]=clean(root.getAttribute('data-instagram-url'))||'https://www.instagram.com/ilatek.pr/';
+    var walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT),nodes=[],node;
+    while(node=walker.nextNode()){if(node.parentElement&&node.parentElement.tagName!=='SCRIPT'&&node.parentElement.tagName!=='STYLE')nodes.push(node)}
+    nodes.forEach(function(n){Object.keys(values).forEach(function(k){n.nodeValue=n.nodeValue.split(k).join(values[k])})});
+    Array.prototype.forEach.call([root].concat([].slice.call(root.querySelectorAll('*'))),function(el){
+      Array.prototype.forEach.call(el.attributes||[],function(a){
+        var v=a.value;Object.keys(values).forEach(function(k){v=v.split(k).join(values[k])});
+        if(v!==a.value)el.setAttribute(a.name,v);
+      });
+    });
+    var els=[].slice.call(root.querySelectorAll('.ilr-reveal'));
+    if('IntersectionObserver' in window){
+      var io=new IntersectionObserver(function(entries){entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('is-visible');io.unobserve(en.target)}})},{threshold:.12});
+      els.forEach(function(el){io.observe(el)});
+    }else{els.forEach(function(el){el.classList.add('is-visible')})}
+    window.addEventListener('load',function(){els.forEach(function(el){if(el.getBoundingClientRect().top<window.innerHeight)el.classList.add('is-visible')})});
+    window.__ilrReady=true;
+  })();
+  </script>
+
+  <!-- Tabs del triple widget (mismo comportamiento verbatim de las landings) -->
+  <script>
+  (function(){
+    var root=document.getElementById('ilatek-resenas-lp'); if(!root||root.dataset.ilrTabs)return; root.dataset.ilrTabs='true';
+    var tabs=[].slice.call(root.querySelectorAll('.il-reviews-tab'));
+    if(!tabs.length)return;
+    tabs.forEach(function(tab){
+      var activate=function(){
+        tabs.forEach(function(t){
+          var sel=t===tab;
+          t.setAttribute('aria-selected',sel?'true':'false');
+          t.tabIndex=sel?0:-1;
+          var panel=root.querySelector('#'+t.getAttribute('aria-controls'));
+          if(panel){
+            panel.hidden=!sel;
+            if(sel){var f=panel.querySelector('iframe[data-src]');if(f){f.src=f.getAttribute('data-src');f.removeAttribute('data-src')}}
+          }
+        });
+      };
+      tab.addEventListener('click',activate);
+      tab.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();activate()}});
+    });
+  })();
+  </script>
+
+  <!-- Schema FAQPage de confianza -->
+  <script type="application/ld+json">
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "@id": "{{custom_values.website_url}}/resenas#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "¿Ilatek es una empresa local de Puerto Rico?",
+     "acceptedAnswer": {"@type": "Answer","text": "Sí. Ilatek es una empresa puertorriqueña con operaciones en los 78 municipios, equipos propios, camionetas de la empresa y supervisión directa en cada trabajo. No es una franquicia ni una plataforma que subcontrata."}
+    },
+    {
+     "@type": "Question",
+     "name": "¿Las reseñas de la página son reales?",
+     "acceptedAnswer": {"@type": "Answer","text": "Sí. Se publican tres fuentes verificadas: reseñas de Google y dos widgets independientes con las reseñas de los servicios de Limpieza y de Mantenimiento de Techos. Ninguna se edita ni se filtra."}
+    },
+    {
+     "@type": "Question",
+     "name": "¿Ilatek está asegurado?",
+     "acceptedAnswer": {"@type": "Answer","text": "Sí. Ilatek opera con cobertura de responsabilidad civil y los técnicos usan el equipo de protección requerido: arnés y anclajes en techos y productos seguros para familias y mascotas en limpieza."}
+    },
+    {
+     "@type": "Question",
+     "name": "¿Qué pasa si no quedo satisfecho con el servicio?",
+     "acceptedAnswer": {"@type": "Answer","text": "Ilatek regresa a corregirlo. La garantía de mano de obra está por escrito en cada trabajo de techos y en limpieza se coordina un reproceso de las áreas señaladas."}
+    },
+    {
+     "@type": "Question",
+     "name": "¿Por qué piden un depósito de $50?",
+     "acceptedAnswer": {"@type": "Answer","text": "El depósito de $50 reserva la fecha y bloquea el equipo para la zona, y se descuenta del total del servicio. Si por causa de Ilatek no se puede asistir, se reembolsa completo."}
+    },
+    {
+     "@type": "Question",
+     "name": "¿Quién entra a mi casa?",
+     "acceptedAnswer": {"@type": "Answer","text": "Siempre personal de Ilatek, uniformado e identificado. Se confirman por mensaje los nombres del equipo y el horario. No se ceden llaves ni información a terceros."}
+    },
+    {
+     "@type": "Question",
+     "name": "¿Cuánto tardan en responderme?",
+     "acceptedAnswer": {"@type": "Answer","text": "En horario laboral, en minutos: el cotizador de la web da un precio real al instante y por WhatsApp o llamada se confirman detalles y agenda. Las emergencias de goteras tienen visita prioritaria."}
+    },
+    {
+     "@type": "Question",
+     "name": "¿Por qué confiar en Ilatek para mi casa o negocio?",
+     "acceptedAnswer": {"@type": "Answer","text": "Porque combina reseñas verificables de tres fuentes, garantía por escrito, precio claro y equipos propios con el trato de una empresa local de Puerto Rico."}
+    }
+   ]
+  }
+  </script>
+</section>

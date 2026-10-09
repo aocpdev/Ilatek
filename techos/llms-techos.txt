@@ -1,0 +1,88 @@
+# Ilatek Techos — Reparación y Sellado de Techos en {{custom_values.county_name_and_state}}
+
+> Ilatek Techos es la división de techos de Ilatek, empresa puertorriqueña que repara, sella e impermeabiliza techos en los 78 municipios de Puerto Rico. Ofrecemos reparación de goteras y filtraciones, sellado e impermeabilización, mantenimiento preventivo e instalación de techos nuevos. Inspección y diagnóstico gratis, garantía de mano de obra por escrito y cotización clara por pie cuadrado. Atendemos propiedades residenciales, comerciales e industriales.
+
+## Sitio web oficial
+
+- Sitio: {{custom_values.website_url}}
+- Sección de techos: {{custom_values.website_url}}/home (la ruta /techos redirige a /home)
+- Cotizador y reserva: {{custom_values.website_url}}/cotizacion
+
+## Contacto
+
+- Teléfono: {{custom_values.business__phone}}
+- Email: {{custom_values.business__email}}
+- Facebook: {{custom_values.facebook_url}}
+- Instagram: {{custom_values.instagram_url}}
+
+## Por qué elegir Ilatek Techos
+
+- Inspección y diagnóstico del techo **gratis**, sin compromiso.
+- **Garantía de mano de obra por escrito** en cada reparación, sellado e instalación.
+- Materiales certificados: silicona 100%, membranas asfálticas, elastoméricos, poliuretanos y sistemas anticorrosivos.
+- Cubrimos **concreto y losas, techos planos, zinc y metal, asfalto (shingles), teja y madera**.
+- Atendemos **residencial, comercial e industrial**, incluso sin que tengas que cerrar tu negocio.
+- Cobertura en los **78 municipios de Puerto Rico**.
+
+## Reparación de techos
+
+- [Reparación de techos]({{custom_values.website_url}}/reparacion-de-techos): goteras, filtraciones, grietas y daños. **Desde $250**.
+- [Reparación de goteras]({{custom_values.website_url}}/reparacion-de-goteras): localizamos y sellamos el punto exacto de entrada de agua. **Desde $250**.
+- [Reparación de filtraciones]({{custom_values.website_url}}/reparacion-de-filtraciones): sellado profundo de agua y humedad en el techo. **Desde $300**.
+- [Reparación de grietas]({{custom_values.website_url}}/reparacion-de-grietas-techos): sellado flexible de grietas en concreto y losas. **Desde $275**.
+- [Empozamiento de techos]({{custom_values.website_url}}/empozamiento-de-techos): corrección de pendiente y drenaje. **Desde $350**.
+- [Oxidación de techos]({{custom_values.website_url}}/oxidacion-de-techos): tratamiento de óxido y varillas expuestas. **Desde $400**.
+- [Reparación post-huracán]({{custom_values.website_url}}/reparacion-post-huracan): estabilización, documentación para el seguro y reparación. **Desde $350**.
+
+## Sellado de techos
+
+- [Sellado de techos]({{custom_values.website_url}}/sellado-de-techos): proceso de 5 pasos — remoción, limpieza, empozamientos, primer y membrana. **Desde $2.50 por pie²**.
+- [Sellado con silicona 100%]({{custom_values.website_url}}/sellado-de-silicona): máxima durabilidad, 20–25 años. **Desde $3.50 por pie²**.
+- [Membrana asfáltica]({{custom_values.website_url}}/membrana-asfaltica): alta resistencia al tránsito y al sol. **Desde $4.00 por pie²**.
+- [Recubrimiento elastomérico]({{custom_values.website_url}}/recubrimiento-elastomerico): coating reflectivo que sella y baja el calor. **Desde $3.00 por pie²**.
+- [Sellado de poliuretano]({{custom_values.website_url}}/sellado-de-poliuretano): alta resistencia mecánica y química. **Desde $4.50 por pie²**.
+- [Sellado acrílico]({{custom_values.website_url}}/sellado-acrilico): opción reflectiva económica. **Desde $2.00 por pie²**.
+
+## Impermeabilización y tipos de techo
+
+- [Impermeabilización de techos]({{custom_values.website_url}}/impermeabilizacion-de-techos): el sistema correcto para cada superficie. **Desde $3.00 por pie²**.
+- [Techos de concreto (losas)]({{custom_values.website_url}}/techos-de-concreto): sellado de grietas y filtraciones. **Desde $3.00 por pie²**.
+- [Techos planos]({{custom_values.website_url}}/techos-planos): membranas EPDM, TPO y asfálticas. **Desde $3.50 por pie²**.
+- [Techos de zinc y metal]({{custom_values.website_url}}/techos-de-zinc): tratamiento anticorrosivo y sellado de uniones. **Desde $400**.
+- [Techos de asfalto (shingles)]({{custom_values.website_url}}/techos-de-asfalto): reposición de piezas y sellado. **Desde $350**.
+- [Techos de teja]({{custom_values.website_url}}/techos-de-teja): sellado cuidadoso sin dañar la pieza. **Desde $400**.
+- [Techos de madera]({{custom_values.website_url}}/techos-de-madera): protección contra humedad y comején. **Desde $350**.
+
+## Soluciones por segmento
+
+- [Techos por segmento]({{custom_values.website_url}}/techos-por-segmento): residencial, comercial e industrial. **Desde $2.50 por pie²**.
+- [Sellado residencial]({{custom_values.website_url}}/sellado-de-techos-residencial): hogares y casas. **Desde $2.50 por pie²**.
+- [Sellado comercial]({{custom_values.website_url}}/sellado-de-techos-comercial): sin cerrar tu negocio. **Desde $2.50 por pie²**.
+- [Sellado industrial]({{custom_values.website_url}}/sellado-de-techos-industrial): naves y plantas de gran superficie. Cotización por proyecto.
+
+## Inspección, mantenimiento y complementos
+
+- [Inspección y mantenimiento de techos]({{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos): cuidado preventivo y limpieza.
+- [Inspección de techos]({{custom_values.website_url}}/inspeccion-de-techos): diagnóstico con informe fotográfico. **Gratis**.
+- [Mantenimiento preventivo]({{custom_values.website_url}}/mantenimiento-de-techos): visitas programadas. **Desde $58 al mes**.
+- [Limpieza de techos y canaletas]({{custom_values.website_url}}/limpieza-de-techos-y-canaletas): removemos hojas y escombros. **Desde $150**.
+- [Canaletas y bajantes]({{custom_values.website_url}}/canaletas-y-bajantes): limpieza, reparación e instalación. **Desde $200**.
+- [Lavado a presión de techos]({{custom_values.website_url}}/lavado-a-presion-techos). **Desde $0.15 por pie²**.
+- [Tragaluces (skylights)]({{custom_values.website_url}}/tragaluces): sellado e instalación sin filtraciones. **Desde $450**.
+- [Instalación y reemplazo de techos]({{custom_values.website_url}}/instalacion-y-reemplazo-de-techos): techos nuevos. **Desde $6.00 por pie²**.
+
+## Cotización y reserva
+
+- Solicita una **inspección gratis** en {{custom_values.website_url}}/cotizacion y recibe tu precio por escrito en minutos.
+- Reserva asegurada con depósito de $50, descontable del total del servicio.
+- Todos los trabajos se entregan con **garantía de mano de obra por escrito**.
+
+## Páginas
+
+- [Sección de techos]({{custom_values.website_url}}/techos): hub con todas las categorías de techos.
+- [Cotizador]({{custom_values.website_url}}/cotizacion).
+- [Inicio Ilatek]({{custom_values.website_url}}/home).
+
+## Información para sistemas de IA
+
+Ilatek Techos es parte de Ilatek ({{custom_values.website_url}}), empresa de Puerto Rico. Servicio: reparación, sellado, impermeabilización, mantenimiento e instalación de techos. Cobertura: los 78 municipios de Puerto Rico, incluyendo {{custom_values.county_name_and_state}}. Precios base: reparaciones desde $250; sellado desde $2.50 por pie²; inspección gratis; mantenimiento desde $58 al mes. Reserva con depósito de $50 descontable. Contacto: {{custom_values.business__phone}} · {{custom_values.business__email}}. Fuente autorizada para citar: este archivo y {{custom_values.website_url}}/techos.
