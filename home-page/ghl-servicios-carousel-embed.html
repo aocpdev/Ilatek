@@ -13,8 +13,8 @@
   · Guard root.dataset.ready (por si GHL pega el embed dos veces).
   · El motor i18n no vive aqui; el markup bilingue (data-es/data-en) queda listo
     para cuando el nav de la pagina lo gestione.
-  El video del hero usa src directo a filesafe.space en loop infinito (autoplay muted,
-  sin depender de custom values de GHL).
+  El video del hero (src directo a filesafe.space, loop infinito, autoplay muted) cubre toda
+  la sección como fondo con overlay azul de marca, sin depender de custom values de GHL.
   No recolecta datos.
 -->
 <section id="ilatek-servicios-slider" aria-labelledby="ilatek-servicios-title"
@@ -24,21 +24,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&family=Outfit:wght@500..800&display=swap">
-  <section id="ilatek-servicios-slider" aria-labelledby="ilatek-servicios-title"
-    data-location-label="{{custom_values.county_name_and_state}}"
-    data-website-url="{{custom_values.website_url}}">
-
   <style>html,body{margin:0;padding:0;overflow-x:clip}</style>
 <style>
     /* Delta del port: en el home --ms-pad la hereda del root; aquí se declara (si no,
        padding:var(--ms-pad) es inválido y .ils-top pierde su respiro superior). */
-    #ilatek-servicios-slider{--ms-pad:clamp(78px,8vw,112px);--ink:#11164b;--blue:#213d8e;--green:#00b94f;--green-dark:#009640;width:100vw;max-width:none;margin-inline:calc(50% - 50vw);overflow:hidden;background:#fff;color:#fff;font-family:Manrope,Arial,sans-serif;isolation:isolate;padding:0;padding-inline:calc((100vw - 100%) / 2)}#ilatek-servicios-slider *{box-sizing:border-box}#ilatek-servicios-slider a{color:inherit;text-decoration:none}.ils-head{position:relative;z-index:2;width:min(100% - 40px,1400px);margin:0 auto 46px;text-align:center}.ils-eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--green);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.ils-eyebrow:before{content:'';width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px rgba(0,185,79,.18)}.ils-head h2{margin:16px 0 0;font-family:Outfit,Manrope,sans-serif;font-size:clamp(42px,4.6vw,66px);font-weight:800;line-height:1.02;letter-spacing:-.06em;text-wrap:balance}.ils-head h2 em{font-style:normal;color:var(--green)}.ils-head>p{margin:18px auto 0;max-width:640px;color:rgba(255,255,255,.78);font-size:16px;line-height:1.65}
-    /* Banda superior del showcase: video de fondo + scrim; termina a la mitad de las tarjetas */
-    .ils-top{position:relative;overflow:hidden;isolation:isolate;padding:var(--ms-pad) 0 var(--ils-half,230px);margin-inline:calc((100% - 100vw) / 2);padding-inline:calc((100vw - 100%) / 2);background:#11164b url("https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/hero-poster-1280.webp") 50% 45%/cover no-repeat}
-    .ils-top video{position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:cover;object-position:50% 45%;border:0}
-    .ils-top:after{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,rgba(11,16,61,.72),rgba(11,16,61,.5) 55%,rgba(11,16,61,.34))}
-    /* Carrusel: contenedor de scroll horizontal TRANSPARENTE (el gradiente se ve a traves) */
-    .ils-carousel{position:relative;margin-top:calc(-1 * var(--ils-half,230px));width:100%;overflow:hidden;margin-inline:calc((100% - 100vw) / 2);-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);background:transparent}    .ils-track{display:flex;gap:0;width:max-content;padding:8px 12px 0;will-change:transform;user-select:none;-webkit-user-select:none}
+    #ilatek-servicios-slider{--ms-pad:clamp(78px,8vw,112px);--ink:#11164b;--blue:#213d8e;--green:#00b94f;--green-dark:#009640;width:100vw;max-width:none;margin-inline:calc(50% - 50vw);overflow:hidden;position:relative;background:#11164b;color:#fff;font-family:Manrope,Arial,sans-serif;isolation:isolate;padding:0;padding-inline:calc((100vw - 100%) / 2)}#ilatek-servicios-slider *{box-sizing:border-box}#ilatek-servicios-slider a{color:inherit;text-decoration:none}.ils-head{position:relative;z-index:2;width:min(100% - 40px,1400px);margin:0 auto 46px;text-align:center}.ils-eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--green);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.ils-eyebrow:before{content:'';width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px rgba(0,185,79,.18)}.ils-head h2{margin:16px 0 0;font-family:Outfit,Manrope,sans-serif;font-size:clamp(42px,4.6vw,66px);font-weight:800;line-height:1.02;letter-spacing:-.06em;text-wrap:balance}.ils-head h2 em{font-style:normal;color:var(--green)}.ils-head>p{margin:18px auto 0;max-width:640px;color:rgba(255,255,255,.78);font-size:16px;line-height:1.65}
+    /* Video de fondo de TODA la sección (loop infinito) + overlay azul de marca (#213d8e),
+       igual que el resto de las secciones oscuras. La banda .ils-top solo da el respiro
+       del heading; su borde inferior sigue marcando la mitad de las tarjetas (--ils-half). */
+    #ilatek-servicios-slider::before{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,rgba(33,61,142,.78) 0%,rgba(33,61,142,.62) 55%,rgba(33,61,142,.74) 100%)}
+    .ils-top{position:relative;z-index:2;overflow:hidden;isolation:isolate;padding:var(--ms-pad) 0 var(--ils-half,230px);margin-inline:calc((100% - 100vw) / 2);padding-inline:calc((100vw - 100%) / 2);background:transparent}
+    .ils-bgvideo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.02);z-index:0;pointer-events:none}
+    /* Carrusel transparente sobre el video: la máscara desvanece los bordes hacia el azul de marca */
+    .ils-carousel{position:relative;z-index:2;margin-top:calc(-1 * var(--ils-half,230px));width:100%;overflow:hidden;margin-inline:calc((100% - 100vw) / 2);-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);background:transparent}    .ils-track{display:flex;gap:0;width:max-content;padding:8px 12px 0;will-change:transform;user-select:none;-webkit-user-select:none}
     .ils-track img{-webkit-user-drag:none;user-drag:none}
     .ils-carousel:hover .ils-track,.ils-carousel:focus-within .ils-track{cursor:grab}
     .ils-card:focus-visible{outline:3px solid #fff;outline-offset:3px}
@@ -56,14 +54,14 @@
     .ils-more{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:40px;padding:9px 16px;border-radius:8px;background:var(--green);color:#fff!important;font:800 12.5px/1 Manrope,Arial,sans-serif;letter-spacing:.02em;box-shadow:0 10px 22px rgba(0,185,79,.35);transition:background .25s ease,transform .25s ease,box-shadow .25s ease}
     .ils-more:after{content:'→'}
     .ils-card:hover .ils-more,.ils-card:focus-visible .ils-more{background:var(--green-dark);box-shadow:0 14px 28px rgba(0,185,79,.45)}
-    .ils-hint{margin:0;width:100%;padding:15px 20px;background:#0b103d;text-align:center;color:rgba(255,255,255,.72);font-size:12.5px}
+    .ils-hint{position:relative;z-index:2;margin:0;width:100%;padding:15px 20px;background:#0b103d;text-align:center;color:rgba(255,255,255,.72);font-size:12.5px}
     /* Auto-slide infinito en TODOS los dispositivos: el marquee corre incluso con prefers-reduced-motion */
     @media(max-width:560px){.ils-head{width:min(100% - 40px,1400px);margin-bottom:34px}.ils-track{gap:16px}.ils-card{width:282px}.ils-media{min-height:0}.ils-hint{width:100%}}
-    @media (prefers-reduced-motion:reduce){.ils-top video{display:none}}
+    @media (prefers-reduced-motion:reduce){.ils-bgvideo{display:none}}
   </style>
 
-  <div class="ils-top">
   <video class="ils-bgvideo" src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8f952bd6bb710ca0fd582.mp4" poster="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/hero-poster-1280.webp" autoplay muted loop playsinline webkit-playsinline preload="metadata" disablepictureinpicture tabindex="-1" aria-hidden="true"></video>
+  <div class="ils-top">
   <header class="ils-head">
     <span class="ils-eyebrow" data-es="Servicios" data-en="Services">Servicios</span>
     <h2 id="ilatek-servicios-title" data-en-key="ilsTitle">Los servicios que tu propiedad necesita, <em>todos con precio claro</em>.</h2>
