@@ -60,7 +60,7 @@
     @media (prefers-reduced-motion:reduce){.ils-bgvideo{display:none}}
   </style>
 
-  <video class="ils-bgvideo" src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8f952bd6bb710ca0fd582.mp4" poster="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/hero-poster-1280.webp" autoplay muted loop playsinline webkit-playsinline preload="metadata" disablepictureinpicture tabindex="-1" aria-hidden="true"></video>
+  <video class="ils-bgvideo" src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8f952bd6bb710ca0fd582.mp4" poster="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/hero-poster-1280.webp" autoplay muted loop playsinline webkit-playsinline preload="auto" disablepictureinpicture tabindex="-1" aria-hidden="true"></video>
   <div class="ils-top">
   <header class="ils-head">
     <span class="ils-eyebrow" data-es="Servicios" data-en="Services">Servicios</span>
@@ -77,6 +77,22 @@
   <script>
   (function(){
     var root=document.getElementById('ilatek-servicios-slider'); if(!root)return;
+    /* Video de fondo: loop infinito sin cortes. preload=auto (arriba) deja el
+       clip entero en buffer para que el reinicio sea seamless; este guard
+       relanza la reproduccion si el navegador la interrumpe (autopause,
+       tab en background, fin de reproduccion sin loop). */
+    var ilBg=root.querySelector('.ils-bgvideo');
+    if(ilBg){
+      var ilReduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+      var ilKick=function(){
+        if(ilReduce||!ilBg.paused)return;
+        if(ilBg.ended){try{ilBg.currentTime=0;}catch(e){}}
+        var p=ilBg.play(); if(p&&p.catch)p.catch(function(){});
+      };
+      ilBg.addEventListener('loadeddata',ilKick);
+      ilBg.addEventListener('ended',function(){try{ilBg.currentTime=0;}catch(e){} ilKick();});
+      setInterval(ilKick,4000);
+    }
     var website=(root.getAttribute('data-website-url')||'').replace(/\u00a0/g,' ').trim();
     if(/^\s*\{\{[^}]+\}\}\s*$/.test(website)||!website)website='https://ilatekpr.com';
     var county=(root.getAttribute('data-location-label')||'').replace(/\u00a0/g,' ').trim();
