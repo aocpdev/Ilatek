@@ -31,7 +31,6 @@
 - [Reparación de filtraciones]({{custom_values.website_url}}/reparacion-de-filtraciones): sellado profundo de agua y humedad en el techo. **Desde $300**.
 - [Reparación de grietas]({{custom_values.website_url}}/reparacion-de-grietas-techos): sellado flexible de grietas en concreto y losas. **Desde $275**.
 - [Empozamiento de techos]({{custom_values.website_url}}/empozamiento-de-techos): corrección de pendiente y drenaje. **Desde $350**.
-- [Oxidación de techos]({{custom_values.website_url}}/oxidacion-de-techos): tratamiento de óxido y varillas expuestas. **Desde $400**.
 - [Reparación post-huracán]({{custom_values.website_url}}/reparacion-post-huracan): estabilización, documentación para el seguro y reparación. **Desde $350**.
 
 ## Sellado de techos

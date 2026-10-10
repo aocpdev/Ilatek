@@ -65,16 +65,6 @@ export const META = {
     whyQ: '¿Por qué elegir Ilatek Techos para el empozamiento de tu techo?',
     whyA: 'Atacamos la causa —pendiente y drenaje— en vez de solo secar el charco; el agua estancada pesa sobre la estructura y se filtra con el tiempo, y nosotros la sacamos del techo desde $350 con garantía escrita.',
   },
-  'oxidacion-de-techos': {
-    benTitle: 'Frenar el óxido hoy te ahorra un techo nuevo.',
-    procTitle: 'Cómo tratamos el óxido de tu techo de zinc.',
-    procLead: 'El óxido activo no se pinta encima: se limpia, se neutraliza y se cubre con recubrimiento anticorrosivo.',
-    price: { amount: '400', text: 'desde $400', unitText: 'por tratamiento anticorrosivo' },
-    serviceName: 'Tratamiento de Oxidación y Varillas Expuestas en Techos',
-    serviceDesc: 'Tratamiento de óxido y varillas expuestas en techos de zinc y concreto en Puerto Rico: limpieza, primario anticorrosivo y recubrimiento desde $400.',
-    whyQ: '¿Por qué elegir Ilatek Techos para el óxido de tu techo?',
-    whyA: 'Removemos el óxido activo y aplicamos primario anticorrosivo en vez de pintar encima; frenamos la corrosión del zinc y protegemos las varillas expuestas de la losa desde $400, con garantía escrita.',
-  },
   'reparacion-post-huracan': {
     benTitle: 'Después del huracán, cerrar el techo es lo urgente.',
     procTitle: 'Cómo atendemos un techo dañado por huracán.',

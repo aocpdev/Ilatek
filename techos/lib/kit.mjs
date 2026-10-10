@@ -42,7 +42,6 @@ export const TECHOS_IMG = {
   'reparacion-de-filtraciones': { hero: CDN + '6ac046fc8493229874263a03.jpg', incl: CDN + '6ac046fb84932298742639df.jpg' },
   'reparacion-de-grietas-techos': { hero: CDN + '6ac046fb0edabbe5a4a7647c.jpg', incl: CDN + '6ac046fb85f560d1666999ff.jpg' },
   'empozamiento-de-techos': { hero: CDN + '6ac046fb3b8e61adf5632061.jpg', incl: CDN + '6ac046fb7bca8cd20c402253.jpg' },
-  'oxidacion-de-techos': { hero: CDN + '6ac046fa2c503e697d5ff288.jpg', incl: CDN + '6ac046fa2c503e697d5ff288.jpg' },
   'reparacion-post-huracan': { hero: CDN + '6ac046f83b8e61adf5632035.jpg', incl: CDN + '6ac046f57bca8cd20c4021df.jpg' },
   'sellado-de-techos': { hero: CDN + '6ac046f8849322987426396f.jpg', incl: CDN + '6ac0427e0edabbe5a4a724d7.jpg' },
   'sellado-de-silicona': { hero: CDN + '6ac046f585f560d1666999aa.jpg', incl: CDN + '6ac046f585f560d1666999aa.jpg' },
@@ -53,7 +52,7 @@ export const TECHOS_IMG = {
   'impermeabilizacion-de-techos': { hero: CDN + '6ac046f5849322987426393b.jpg', incl: CDN + '6ac046f802569bee7cbccc2c.jpg' },
   'techos-de-concreto': { hero: CDN + '6ac046f27bca8cd20c4021bf.jpg', incl: CDN + '6ac046f32c503e697d5ff1fa.jpg' },
   'techos-planos': { hero: CDN + '6ac046f32c503e697d5ff20a.jpg', incl: CDN + '6ac046ee150d6ea53dbd5051.jpg' },
-  'techos-de-zinc': { hero: CDN + '6ac046f202569bee7cbccbe0.jpg', incl: CDN + '6ac046f00edabbe5a4a763a0.jpg' },
+  'techos-de-zinc': { hero: CDN + '6ac046f202569bee7cbccbe0.jpg', incl: CDN + '6ac046f00edabbe5a4a763a0.jpg', heroWebp: WEBP + 'techos/techos-de-metal-y-zinc.webp' },
   'techos-de-asfalto': { hero: CDN + '6ac046f82c503e697d5ff24e.jpg', incl: CDN + '6ac046f57bca8cd20c4021df.jpg' },
   'techos-de-teja': { hero: CDN + '6ac046f084932298742638d7.jpg', incl: CDN + '6ac046f084932298742638d7.jpg' },
   'techos-de-madera': { hero: CDN + '6ac046f0f30b488137bfa494.jpg', incl: CDN + '6ac046ee3b8e61adf5631fc5.jpg' },
@@ -96,8 +95,10 @@ export function mk(p) {
 
   // Imagen real de GHL si el slug tiene una asignada; si no, se conserva la de kit.
   const ov = TECHOS_IMG[p.slug];
-  const hero = ov && ov.hero ? { ...p.hero, webp: optimized(ov.hero), raw: ov.hero } : p.hero;
-  const incl = ov && ov.incl ? { ...p.incl, webp: optimized(ov.incl), raw: ov.incl } : p.incl;
+  // heroWebp/inclWebp = portada o foto propia (no viene del CDN de GHL): se usa
+  // tal cual. La foto de GHL sigue siendo `raw`, el respaldo del <img>.
+  const hero = ov && ov.hero ? { ...p.hero, webp: ov.heroWebp || optimized(ov.hero), raw: ov.hero } : p.hero;
+  const incl = ov && ov.incl ? { ...p.incl, webp: ov.inclWebp || optimized(ov.incl), raw: ov.incl } : p.incl;
 
   const faq = (p.faq || [])
     .filter((f) => !WHY_GENERIC.test(f.q))

@@ -203,7 +203,7 @@ export const impermeabilizacion = [
     metaTitle: 'Reparación de Techos de Zinc y Metal | Ilatek Techos',
     metaDescription:
       'Reparación y sellado de techos de zinc y metal en Puerto Rico desde $400. Tratamiento de óxido, sellado de traslapes y protección anticorrosiva con garantía escrita.',
-    hero: pic('presion', { alt: 'Reparación de techo de zinc en Puerto Rico — {{custom_values.county_name_and_state}}', title: 'Techos de zinc · Ilatek Techos', badge: 'Óxido tratado · Sellado' }),
+    hero: pic('presion', { alt: 'Techos de metal y zinc en Puerto Rico — instalación, sellado y protección en {{custom_values.county_name_and_state}}', title: 'Techos de metal y zinc · Ilatek Techos', badge: 'Metal y zinc · Sellado' }),
     incl: pic('postconstruccion', { alt: 'Sellado y tratamiento anticorrosivo de techo de zinc por Ilatek Techos en Puerto Rico', title: 'Techos de zinc · Ilatek Techos', caption: 'Traslapes · Tornillos · Anticorrosivo' }),
     heroSub:
       'Los techos de zinc son comunes en anexos, garajes y quioscos, pero el óxido y el viento los castigan. Ilatek repara y sella techos de zinc en {{custom_values.county_name_and_state}} <b>desde $400</b>, con tratamiento anticorrosivo y garantía escrita.',

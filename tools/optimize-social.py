@@ -22,7 +22,9 @@ ROOT = Path(__file__).resolve().parents[1]
 SOCIAL_SRC = Path.home() / "Downloads" / "Ilatek Images - Updated"
 # La portada del hub de techos vive en la carpeta de servicios (no en la social).
 EXTRA_SRC = Path.home() / "Downloads" / "Ilatek - Services Images" / "Techos"
-SOURCES = (SOCIAL_SRC, EXTRA_SRC)
+# La tarjeta social del home es el cover con QR que el cliente entregó aparte.
+QR_SRC = Path.home() / "Downloads"
+SOURCES = (SOCIAL_SRC, EXTRA_SRC, QR_SRC)
 OUT = ROOT / "assets" / "optimized" / "social"
 
 MAX_W = 1200
@@ -59,7 +61,6 @@ TECHOS = {
     # más cercana del mismo tema (filtración → agua estancada; techos de X → el
     # sistema que se aplica a ese material).
     "empozamiento-de-techos": "Reparación de Filtraciones - Ilatek.jpg",
-    "oxidacion-de-techos": "Reparación de Techos - Ilatek.jpg",
     "reparacion-post-huracan": "Reparación de Techos - Ilatek.jpg",
     "techos-de-zinc": "Reparación de Techos - Ilatek.jpg",
     "techos-de-asfalto": "Membrana Asfáltica - Ilatek.jpg",
@@ -70,9 +71,10 @@ TECHOS = {
 
 # ── Limpieza: 14 landings (hub /servicios + 13) ─────────────────────────────
 LIMPIEZA = {
-    # Home y hub de servicios comparten la portada de marca (no hay foto social
-    # con el título exacto de esas dos páginas genéricas).
-    "home": "Ilatek Property Solution.jpg",
+    # Home: el cover con QR que entregó el cliente ("Ilatek QR Cover.png").
+    # Hub de servicios: la portada de marca (no hay foto social con el título
+    # exacto de esa página genérica).
+    "home": "Ilatek QR Cover.png",
     "servicios": "Ilatek Property Solution.jpg",
     "airbnb-turnover": "Airbnb & Turnover - Ilatek.jpg",
     "alfombras": "Alfombras - Ilatek.jpg",

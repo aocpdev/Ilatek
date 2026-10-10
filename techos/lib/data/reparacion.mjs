@@ -60,7 +60,6 @@ export const reparacion = [
         { slug: 'reparacion-de-filtraciones', name: 'Reparación de Filtraciones', desc: 'Agua que penetra y daña el interior: sellado profundo de filtraciones y humedad en techos.' },
         { slug: 'reparacion-de-grietas-techos', name: 'Reparación de Grietas', desc: 'Grietas en losas y techos de concreto: sellado estructural que evita que el agua entre.' },
         { slug: 'empozamiento-de-techos', name: 'Corrección de Empozamientos', desc: 'Agua estancada que se filtra con el tiempo: corregimos la pendiente y el drenaje del techo.' },
-        { slug: 'oxidacion-de-techos', name: 'Oxidación y Varillas Expuestas', desc: 'Óxido en techos de zinc y varillas oxidadas: tratamiento, refuerzo y protección anticorrosiva.' },
         { slug: 'reparacion-post-huracan', name: 'Reparación Post-Huracán', desc: 'Techos dañados por viento y lluvia: estabilización, reparación y documentación para tu seguro.' },
       ],
       cta: { slug: 'cotizacion', label: 'Solicita tu cotización gratis' },
@@ -313,64 +312,6 @@ export const reparacion = [
     ],
   }),
 
-  mk({
-    slug: 'oxidacion-de-techos',
-    eyebrow: 'Oxidación y varillas',
-    noun: 'tratamiento de oxidación de techos',
-    h1before: 'Oxidación y Varillas Expuestas en Techos de',
-    h1em: 'Puerto Rico',
-    h1after: 'l: tratamiento y protección.',
-    metaTitle: 'Oxidación y Varillas Expuestas en Techos | Ilatek Techos',
-    metaDescription:
-      'Tratamiento de oxidación y varillas expuestas en techos de zinc y concreto en Puerto Rico desde $400. Refuerzo y protección anticorrosiva con garantía escrita.',
-    hero: pic('presion', { alt: 'Tratamiento de oxidación y varillas expuestas en techo en Puerto Rico — protección anticorrosiva en {{custom_values.county_name_and_state}}', title: 'Oxidación de techos en Puerto Rico · Ilatek Techos', badge: 'Protección anticorrosiva' }),
-    incl: pic('postconstruccion', { alt: 'Tratamiento de óxido y varillas oxidadas de techo de Ilatek Techos en Puerto Rico', title: 'Oxidación y varillas de techo · Ilatek Techos', caption: 'Óxido tratado · Refuerzo aplicado' }),
-    heroSub:
-      'El óxido no es solo estético: debilita el metal y las varillas hasta que el techo falla. Ilatek trata la oxidación y protege techos de zinc y concreto de {{custom_values.county_name_and_state}} <b>desde $400</b>, con garantía escrita.',
-    facts: [
-      { b: '$400', s: 'por tratamiento', label: 'Protección incluida' },
-      { b: '78', s: 'municipios', label: 'Cobertura en PR' },
-      { b: '$0', s: 'inspección', label: 'Evaluación gratis' },
-    ],
-    benefits: [
-      { icon: 'shield', h: 'Frena la corrosión', p: 'Removemos el óxido activo y aplicamos recubrimiento anticorrosivo que sella el metal y detiene el deterioro.' },
-      { icon: 'bolt', h: 'Refuerza varillas expuestas', p: 'Cuando el concreto se desprende y deja varillas al aire, las tratamos, las protegemos y restauramos el recubrimiento.' },
-      { icon: 'tag', h: 'Alarga la vida del techo', p: 'Tratar el óxido a tiempo conserva el techo de zinc años más, evitando una sustitución costosa.' },
-    ],
-    incluye: {
-      title: 'Cómo paramos la oxidación de tu techo.',
-      answer:
-        '<b>El óxido activo no se pinta encima: se remueve.</b> Ilatek limpia la superficie, elimina el óxido, y aplica primario y recubrimiento anticorrosivo adecuados al metal o al concreto expuesto.',
-      checks: [
-        'Lijado de la zona oxidada',
-        'Tratamiento y neutralización del óxido',
-        'Primario de adherencia anticorrosivo',
-        'Recubrimiento protector del metal',
-        'Sellado de canales y traslapes',
-        'Garantía por escrito del tratamiento',
-      ],
-      cta: 'Trata tu oxidación',
-    },
-    extra: {
-      eyebrow: 'Señales',
-      title: 'Cuándo la oxidación ya es un problema.',
-      items: [
-        { tag: 'Zinc', h: 'Manchas y perforaciones', p: 'El óxido ya perforó la lámina de zinc: por esos hoyos entra el agua directamente.' },
-        { tag: 'Concreto', h: 'Varillas al aire', p: 'El concreto se desprende y deja ver el acero oxidado: hay que tratarlo y restaurar el recubrimiento.' },
-        { tag: 'Uniones', h: 'Óxido en tornillos', p: 'Tornillos y ganchos oxidados dejan de sostener bien y crean puntos de filtración.' },
-      ],
-    },
-    faq: [
-      { q: '¿Cuánto cuesta tratar la oxidación de un techo?', a: 'El tratamiento de oxidación y varillas expuestas de Ilatek <b>comienza desde $400</b>. El precio depende del área oxidada, el tipo de techo y el sistema anticorrosivo necesario. Cotiza para tu número exacto.' },
-      { q: '¿Por qué se oxida un techo de zinc en Puerto Rico?', a: 'Por el <b>aire salino de la costa, la humedad constante y la lluvia</b>, que atacan el metal. Sin protección anticorrosiva periódica, el zinc se perfora y comienza a filtrar.' },
-      { q: '¿Las varillas oxidadas del techo son peligrosas?', a: 'Sí. El óxido hace que el acero <b>se expanda y reviente el concreto</b>, debilitando la losa. Tratarlas a tiempo frena el daño estructural y evita una reparación mayor.' },
-      { q: '¿Se puede reparar un techo de zinc oxidado o hay que cambiarlo?', a: '<b>Depende de la extensión.</b> Si el óxido es superficial o puntual, se trata y se protege. Si ya perforó grandes áreas, evaluamos si conviene sustituir las láminas. Te lo decimos claro en la inspección.' },
-      { q: '¿Qué productos usan para el óxido?', a: 'Aplicamos <b>primario anticorrosivo y recubrimientos protectores</b> específicos para metal o concreto, sobre superficie previamente limpia y lijada para que adhieran bien.' },
-      { q: '¿Cuánto dura la protección contra el óxido?', a: 'Un recubrimiento bien aplicado protege el metal <b>varios años</b>; por el clima de Puerto Rico se recomienda revisión periódica para retocar antes de que el óxido vuelva.' },
-      { q: '¿El tratamiento de óxido incluye garantía?', a: '<b>Sí.</b> Cada tratamiento se entrega con garantía de mano de obra por escrito; si la zona tratada presenta fallas en el periodo cubierto, regresamos.' },
-      { q: '¿Por qué elegir Ilatek Techos?', a: 'Tratamos el óxido de raíz con recubrimientos correctos, <b>desde $400</b>, con inspección gratis, garantía escrita y cobertura en los 78 municipios de Puerto Rico.' },
-    ],
-  }),
 
 
   mk({

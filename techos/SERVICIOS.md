@@ -28,7 +28,6 @@
 | Reparación de Filtraciones de Agua en Techos | https://ilatekpr.com/reparacion-de-filtraciones |
 | Reparación de Grietas en Techos de Concreto | https://ilatekpr.com/reparacion-de-grietas-techos |
 | Empozamiento de Agua en Techos | https://ilatekpr.com/empozamiento-de-techos |
-| Oxidación y Varillas Expuestas en Techos | https://ilatekpr.com/oxidacion-de-techos |
 | Reparación de Techos Post-Huracán | https://ilatekpr.com/reparacion-post-huracan |
 
 ## Madre · Sellado de techos (0.8)

@@ -32,7 +32,7 @@
     /* Video de fondo de TODA la sección (loop infinito) + overlay azul de marca (#213d8e),
        igual que el resto de las secciones oscuras. La banda .ils-top solo da el respiro
        del heading; su borde inferior sigue marcando la mitad de las tarjetas (--ils-half). */
-    #ilatek-servicios-slider::before{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,rgba(33,61,142,.66) 0%,rgba(33,61,142,.52) 55%,rgba(33,61,142,.64) 100%)}
+    #ilatek-servicios-slider::before{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,rgba(33,61,142,.80) 0%,rgba(33,61,142,.68) 55%,rgba(33,61,142,.78) 100%)}
     .ils-top{position:relative;z-index:2;overflow:hidden;isolation:isolate;padding:var(--ms-pad) 0 var(--ils-half,230px);margin-inline:calc((100% - 100vw) / 2);padding-inline:calc((100vw - 100%) / 2);background:transparent}
     .ils-bgvideo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.02);z-index:0;pointer-events:none}
     /* Carrusel transparente sobre el video: la máscara desvanece los bordes hacia el azul de marca */
