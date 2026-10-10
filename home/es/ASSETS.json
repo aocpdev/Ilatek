@@ -372,6 +372,30 @@
       "status": "local-copy",
       "bytes": 941,
       "sha256": "4bebe72147bfd89f46554899dc5228e3436d48bac1ce52da439c14ff7f62d7ba"
+    },
+    {
+      "role": "carousel-shot",
+      "publicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/hub/segmento.webp",
+      "file": "assets/media/hub-segmento.webp",
+      "status": "local-copy",
+      "bytes": 147654,
+      "sha256": "4696570aa4c763fc66d78d96c0e33b23fa9801bb559f9a41896e5a01427005eb"
+    },
+    {
+      "role": "carousel-shot",
+      "publicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f0150d6ea53dbd50a0.webp",
+      "file": "assets/media/shot-6ac046f0150d6ea53dbd50a0.webp",
+      "status": "local-copy",
+      "bytes": 261584,
+      "sha256": "64e93099c92e1469316920198a4cbb3dadd78d553abb17741b9b98e6a7fd5823"
+    },
+    {
+      "role": "carousel-shot",
+      "publicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046ee150d6ea53dbd5051.webp",
+      "file": "assets/media/shot-6ac046ee150d6ea53dbd5051.webp",
+      "status": "local-copy",
+      "bytes": 154116,
+      "sha256": "eab26cbda3125c60a926b1426f789fad439c2f4f184d72cc4866557825110362"
     }
   ]
 }
