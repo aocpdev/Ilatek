@@ -1568,238 +1568,238 @@ html,body{overflow-x:clip}</style>
 <!-- Schema GEO/AEO opcional APAGADO: rellena lib/data/business.mjs y corre build-techos.mjs para activar PostalAddress + GeoCoordinates + AggregateRating. No se publican valores inventados. -->
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@graph": [
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "RoofingContractor",
+   "@id": "https://{{custom_values.website_url}}/techos-de-concreto/#service",
+   "name": "Reparación de Techos de Concreto (Losas) en {{custom_values.county_name_and_state}} | Ilatek Techos",
+   "description": "Reparación e impermeabilización de techos de concreto y losas en {{custom_values.county_name_and_state}} desde $3.00 por pie². Sellado de grietas y filtraciones con garantía escrita.",
+   "url": "https://{{custom_values.website_url}}/techos-de-concreto",
+   "telephone": "{{custom_values.business__phone}}",
+   "email": "{{custom_values.business__email}}",
+   "image": [
     {
-      "@type": "RoofingContractor",
-      "@id": "https://{{custom_values.website_url}}/techos-de-concreto/#service",
-      "name": "Reparación de Techos de Concreto (Losas) | Ilatek Techos",
-      "description": "Reparación e impermeabilización de techos de concreto y losas en Puerto Rico desde $3.00 por pie². Sellado de grietas y filtraciones con garantía escrita.",
-      "url": "https://{{custom_values.website_url}}/techos-de-concreto",
-      "telephone": "{{custom_values.business__phone}}",
-      "email": "{{custom_values.business__email}}",
-      "image": [
-        {
-          "@type": "ImageObject",
-          "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f27bca8cd20c4021bf.webp",
-          "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f27bca8cd20c4021bf.jpg",
-          "width": 1200,
-          "height": 1320,
-          "caption": "Techos de concreto · Ilatek Techos"
-        },
-        {
-          "@type": "ImageObject",
-          "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f32c503e697d5ff1fa.webp",
-          "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f32c503e697d5ff1fa.jpg",
-          "width": 1200,
-          "height": 900,
-          "caption": "Impermeabilización de losas · Ilatek Techos"
-        }
-      ],
-      "logo": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aa1c05dd953a0128b5348c2.jpg",
-      "priceRange": "$$",
-      "currenciesAccepted": "USD",
-      "paymentAccepted": "Cash, Credit Card, Debit Card",
-      "areaServed": [
-        {
-          "@type": "AdministrativeArea",
-          "name": "{{custom_values.county_name_and_state}}"
-        },
-        {
-          "@type": "Country",
-          "name": "Puerto Rico"
-        }
-      ],
-      "availableLanguage": [
-        "es"
-      ],
-      "sameAs": [
-        "{{custom_values.facebook_url}}",
-        "{{custom_values.instagram_url}}"
-      ],
-      "makesOffer": [
-        {
-          "@type": "Offer",
-          "@id": "https://{{custom_values.website_url}}/techos-de-concreto/#offer",
-          "name": "Reparación e Impermeabilización de Techos de Concreto (Losas)",
-          "description": "desde $3.00 por pie²",
-          "price": "3.00",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock",
-          "url": "https://{{custom_values.website_url}}/cotizacion",
-          "itemOffered": {
-            "@id": "https://{{custom_values.website_url}}/techos-de-concreto/#service-offer"
-          },
-          "priceSpecification": {
-            "@type": "PriceSpecification",
-            "price": "3.00",
-            "priceCurrency": "USD",
-            "valueAddedTaxIncluded": false
-          }
-        }
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Servicios de techos de Ilatek",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@id": "https://{{custom_values.website_url}}/techos-de-concreto/#service-offer"
-            }
-          }
-        ]
-      },
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday"
-          ],
-          "opens": "08:00",
-          "closes": "18:00"
-        }
-      ]
+     "@type": "ImageObject",
+     "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f27bca8cd20c4021bf.webp",
+     "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f27bca8cd20c4021bf.jpg",
+     "width": 1200,
+     "height": 1320,
+     "caption": "Techos de concreto · Ilatek Techos"
     },
     {
-      "@type": "WebSite",
-      "@id": "https://{{custom_values.website_url}}/#website",
-      "url": "https://{{custom_values.website_url}}/",
-      "name": "Ilatek Techos",
-      "inLanguage": "es",
-      "publisher": {
-        "@id": "https://{{custom_values.website_url}}/techos-de-concreto/#service"
-      }
-    },
-    {
-      "@type": "WebPage",
-      "@id": "https://{{custom_values.website_url}}/techos-de-concreto/#webpage",
-      "url": "https://{{custom_values.website_url}}/techos-de-concreto",
-      "name": "Reparación de Techos de Concreto (Losas) en {{custom_values.county_name_and_state}} | Ilatek Techos",
-      "description": "Reparación e impermeabilización de techos de concreto y losas en {{custom_values.county_name_and_state}} desde $3.00 por pie². Sellado de grietas y filtraciones con garantía escrita.",
-      "inLanguage": "es",
-      "isPartOf": {
-        "@id": "https://{{custom_values.website_url}}/#website"
-      },
-      "about": {
-        "@id": "https://{{custom_values.website_url}}/techos-de-concreto/#service-offer"
-      },
-      "mainEntity": {
-        "@id": "https://{{custom_values.website_url}}/techos-de-concreto/#service-offer"
-      },
-      "breadcrumb": {
-        "@id": "https://{{custom_values.website_url}}/techos-de-concreto/#breadcrumb"
-      },
-      "datePublished": "2026-10-04",
-      "dateModified": "2026-10-04",
-      "speakable": {
-        "@type": "SpeakableSpecification",
-        "cssSelector": [
-          "h1",
-          ".ilt-faq summary h3"
-        ]
-      }
-    },
-    {
-      "@type": "Service",
-      "@id": "https://{{custom_values.website_url}}/techos-de-concreto/#service-offer",
-      "name": "Reparación e Impermeabilización de Techos de Concreto (Losas)",
-      "description": "Reparación e impermeabilización de techos de concreto y losas en Puerto Rico: sellado de grietas y filtraciones desde $3.00 por pie², con garantía escrita.",
-      "serviceType": "Reparación e Impermeabilización de Techos de Concreto (Losas)",
-      "url": "https://{{custom_values.website_url}}/techos-de-concreto",
-      "image": [
-        {
-          "@type": "ImageObject",
-          "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f27bca8cd20c4021bf.webp",
-          "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f27bca8cd20c4021bf.jpg",
-          "width": 1200,
-          "height": 1320,
-          "caption": "Techos de concreto · Ilatek Techos"
-        },
-        {
-          "@type": "ImageObject",
-          "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f32c503e697d5ff1fa.webp",
-          "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f32c503e697d5ff1fa.jpg",
-          "width": 1200,
-          "height": 900,
-          "caption": "Impermeabilización de losas · Ilatek Techos"
-        }
-      ],
-      "provider": {
-        "@id": "https://{{custom_values.website_url}}/techos-de-concreto/#service"
-      },
-      "areaServed": [
-        {
-          "@type": "AdministrativeArea",
-          "name": "{{custom_values.county_name_and_state}}"
-        },
-        {
-          "@type": "Country",
-          "name": "Puerto Rico"
-        }
-      ],
-      "mainEntityOfPage": {
-        "@id": "https://{{custom_values.website_url}}/techos-de-concreto/#webpage"
-      },
-      "isPartOf": {
-        "@id": "https://{{custom_values.website_url}}/#website"
-      },
-      "offers": {
-        "@type": "Offer",
-        "@id": "https://{{custom_values.website_url}}/techos-de-concreto/#offer",
-        "name": "Reparación e Impermeabilización de Techos de Concreto (Losas)",
-        "description": "desde $3.00 por pie²",
-        "price": "3.00",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock",
-        "url": "https://{{custom_values.website_url}}/cotizacion",
-        "itemOffered": {
-          "@id": "https://{{custom_values.website_url}}/techos-de-concreto/#service-offer"
-        },
-        "priceSpecification": {
-          "@type": "PriceSpecification",
-          "price": "3.00",
-          "priceCurrency": "USD",
-          "valueAddedTaxIncluded": false
-        }
-      }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://{{custom_values.website_url}}/techos-de-concreto/#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Inicio",
-          "item": "https://{{custom_values.website_url}}/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Techos",
-          "item": "https://{{custom_values.website_url}}/home"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Impermeabilización",
-          "item": "https://{{custom_values.website_url}}/impermeabilizacion-de-techos"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Techos de concreto",
-          "item": "https://{{custom_values.website_url}}/techos-de-concreto"
-        }
-      ]
+     "@type": "ImageObject",
+     "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f32c503e697d5ff1fa.webp",
+     "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f32c503e697d5ff1fa.jpg",
+     "width": 1200,
+     "height": 900,
+     "caption": "Impermeabilización de losas · Ilatek Techos"
     }
-  ]
+   ],
+   "logo": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aa1c05dd953a0128b5348c2.jpg",
+   "priceRange": "$$",
+   "currenciesAccepted": "USD",
+   "paymentAccepted": "Cash, Credit Card, Debit Card",
+   "areaServed": [
+    {
+     "@type": "AdministrativeArea",
+     "name": "{{custom_values.county_name_and_state}}"
+    },
+    {
+     "@type": "Country",
+     "name": "Puerto Rico"
+    }
+   ],
+   "availableLanguage": [
+    "es"
+   ],
+   "sameAs": [
+    "{{custom_values.facebook_url}}",
+    "{{custom_values.instagram_url}}"
+   ],
+   "makesOffer": [
+    {
+     "@type": "Offer",
+     "@id": "https://{{custom_values.website_url}}/techos-de-concreto/#offer",
+     "name": "Reparación e Impermeabilización de Techos de Concreto (Losas)",
+     "description": "desde $3.00 por pie²",
+     "price": "3.00",
+     "priceCurrency": "USD",
+     "availability": "https://schema.org/InStock",
+     "url": "https://{{custom_values.website_url}}/cotizacion",
+     "itemOffered": {
+      "@id": "https://{{custom_values.website_url}}/techos-de-concreto/#service-offer"
+     },
+     "priceSpecification": {
+      "@type": "PriceSpecification",
+      "price": "3.00",
+      "priceCurrency": "USD",
+      "valueAddedTaxIncluded": false
+     }
+    }
+   ],
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Servicios de techos de Ilatek",
+    "itemListElement": [
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@id": "https://{{custom_values.website_url}}/techos-de-concreto/#service-offer"
+      }
+     }
+    ]
+   },
+   "openingHoursSpecification": [
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+     ],
+     "opens": "08:00",
+     "closes": "18:00"
+    }
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://{{custom_values.website_url}}/#website",
+   "url": "https://{{custom_values.website_url}}/",
+   "name": "Ilatek Techos",
+   "inLanguage": "es",
+   "publisher": {
+    "@id": "https://{{custom_values.website_url}}/techos-de-concreto/#service"
+   }
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://{{custom_values.website_url}}/techos-de-concreto/#webpage",
+   "url": "https://{{custom_values.website_url}}/techos-de-concreto",
+   "name": "Reparación de Techos de Concreto (Losas) en {{custom_values.county_name_and_state}} | Ilatek Techos",
+   "description": "Reparación e impermeabilización de techos de concreto y losas en {{custom_values.county_name_and_state}} desde $3.00 por pie². Sellado de grietas y filtraciones con garantía escrita.",
+   "inLanguage": "es",
+   "isPartOf": {
+    "@id": "https://{{custom_values.website_url}}/#website"
+   },
+   "about": {
+    "@id": "https://{{custom_values.website_url}}/techos-de-concreto/#service-offer"
+   },
+   "mainEntity": {
+    "@id": "https://{{custom_values.website_url}}/techos-de-concreto/#service-offer"
+   },
+   "breadcrumb": {
+    "@id": "https://{{custom_values.website_url}}/techos-de-concreto/#breadcrumb"
+   },
+   "datePublished": "2026-10-04",
+   "dateModified": "2026-10-04",
+   "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [
+     "h1",
+     ".ilt-faq summary h3"
+    ]
+   }
+  },
+  {
+   "@type": "Service",
+   "@id": "https://{{custom_values.website_url}}/techos-de-concreto/#service-offer",
+   "name": "Reparación e Impermeabilización de Techos de Concreto (Losas)",
+   "description": "Reparación e impermeabilización de techos de concreto y losas en Puerto Rico: sellado de grietas y filtraciones desde $3.00 por pie², con garantía escrita.",
+   "serviceType": "Reparación e Impermeabilización de Techos de Concreto (Losas)",
+   "url": "https://{{custom_values.website_url}}/techos-de-concreto",
+   "image": [
+    {
+     "@type": "ImageObject",
+     "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f27bca8cd20c4021bf.webp",
+     "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f27bca8cd20c4021bf.jpg",
+     "width": 1200,
+     "height": 1320,
+     "caption": "Techos de concreto · Ilatek Techos"
+    },
+    {
+     "@type": "ImageObject",
+     "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f32c503e697d5ff1fa.webp",
+     "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f32c503e697d5ff1fa.jpg",
+     "width": 1200,
+     "height": 900,
+     "caption": "Impermeabilización de losas · Ilatek Techos"
+    }
+   ],
+   "provider": {
+    "@id": "https://{{custom_values.website_url}}/techos-de-concreto/#service"
+   },
+   "areaServed": [
+    {
+     "@type": "AdministrativeArea",
+     "name": "{{custom_values.county_name_and_state}}"
+    },
+    {
+     "@type": "Country",
+     "name": "Puerto Rico"
+    }
+   ],
+   "mainEntityOfPage": {
+    "@id": "https://{{custom_values.website_url}}/techos-de-concreto/#webpage"
+   },
+   "isPartOf": {
+    "@id": "https://{{custom_values.website_url}}/#website"
+   },
+   "offers": {
+    "@type": "Offer",
+    "@id": "https://{{custom_values.website_url}}/techos-de-concreto/#offer",
+    "name": "Reparación e Impermeabilización de Techos de Concreto (Losas)",
+    "description": "desde $3.00 por pie²",
+    "price": "3.00",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://{{custom_values.website_url}}/cotizacion",
+    "itemOffered": {
+     "@id": "https://{{custom_values.website_url}}/techos-de-concreto/#service-offer"
+    },
+    "priceSpecification": {
+     "@type": "PriceSpecification",
+     "price": "3.00",
+     "priceCurrency": "USD",
+     "valueAddedTaxIncluded": false
+    }
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://{{custom_values.website_url}}/techos-de-concreto/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Inicio",
+     "item": "https://{{custom_values.website_url}}/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Techos",
+     "item": "https://{{custom_values.website_url}}/home"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Impermeabilización",
+     "item": "https://{{custom_values.website_url}}/impermeabilizacion-de-techos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Techos de concreto",
+     "item": "https://{{custom_values.website_url}}/techos-de-concreto"
+    }
+   ]
+  }
+ ]
 }
 </script>
 <script type="application/ld+json">
@@ -2055,7 +2055,7 @@ html,body{overflow-x:clip}</style>
         <ul class="ilf-list">
           <li><a href="https://{{custom_values.website_url}}/politica-de-privacidad" data-ilatek-path="/politica-de-privacidad"><span class="iln-t" data-es="Política de Privacidad" data-en="Privacy Policy">Política de Privacidad</span></a></li>
           <li><a href="https://{{custom_values.website_url}}/terminos-y-condiciones" data-ilatek-path="/terminos-y-condiciones"><span class="iln-t" data-es="Términos y Condiciones" data-en="Terms &amp; Conditions">Términos y Condiciones</span></a></li>
-          <li><span class="iln-t" data-es="Garantía y Devoluciones" data-en="Warranty &amp; Returns">Garantía y Devoluciones</span></li>
+          <li><a href="https://{{custom_values.website_url}}/garantia" data-ilatek-path="/garantia"><span class="iln-t" data-es="Garantía de Servicio" data-en="Service Warranty">Garantía de Servicio</span></a></li>
           <li><span class="iln-t" data-es="Licenciados y Asegurados" data-en="Licensed &amp; Insured">Licenciados y Asegurados</span></li>
         </ul>
       </nav>

@@ -1744,426 +1744,426 @@ html,body{overflow-x:clip}</style>
 <!-- Schema GEO/AEO opcional APAGADO: rellena lib/data/business.mjs y corre build-techos.mjs para activar PostalAddress + GeoCoordinates + AggregateRating. No se publican valores inventados. -->
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@graph": [
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "RoofingContractor",
+   "@id": "https://{{custom_values.website_url}}/home/#service",
+   "name": "Reparación y Sellado de Techos en {{custom_values.county_name_and_state}} | Ilatek Techos",
+   "description": "Reparación y sellado de techos en {{custom_values.county_name_and_state}}: goteras, filtraciones, impermeabilización y mantenimiento. Precios desde $2.50 por pie², inspección gratis y 78 municipios.",
+   "url": "https://{{custom_values.website_url}}/home",
+   "telephone": "{{custom_values.business__phone}}",
+   "email": "{{custom_values.business__email}}",
+   "image": [
     {
-      "@type": "RoofingContractor",
-      "@id": "https://{{custom_values.website_url}}/home/#service",
-      "name": "Reparación y Sellado de Techos en Puerto Rico | Ilatek Techos",
-      "description": "Reparación y sellado de techos en Puerto Rico: goteras, filtraciones, impermeabilización y mantenimiento. Precios desde $2.50 por pie², inspección gratis y 78 municipios.",
-      "url": "https://{{custom_values.website_url}}/home",
-      "telephone": "{{custom_values.business__phone}}",
-      "email": "{{custom_values.business__email}}",
-      "image": [
-        {
-          "@type": "ImageObject",
-          "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046fe8493229874263a27.webp",
-          "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046fe8493229874263a27.jpg",
-          "width": 1200,
-          "height": 1320,
-          "caption": "Reparación y Sellado de Techos en Puerto Rico · Ilatek Techos"
-        },
-        {
-          "@type": "ImageObject",
-          "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046fef30b488137bfa568.webp",
-          "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046fef30b488137bfa568.jpg",
-          "width": 1200,
-          "height": 900,
-          "caption": "Ilatek Techos · Puerto Rico"
-        }
-      ],
-      "logo": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aa1c05dd953a0128b5348c2.jpg",
-      "priceRange": "$$",
-      "currenciesAccepted": "USD",
-      "paymentAccepted": "Cash, Credit Card, Debit Card",
-      "areaServed": [
-        {
-          "@type": "AdministrativeArea",
-          "name": "{{custom_values.county_name_and_state}}"
-        },
-        {
-          "@type": "Country",
-          "name": "Puerto Rico"
-        }
-      ],
-      "availableLanguage": [
-        "es"
-      ],
-      "sameAs": [
-        "{{custom_values.facebook_url}}",
-        "{{custom_values.instagram_url}}"
-      ],
-      "makesOffer": [
-        {
-          "@type": "Offer",
-          "@id": "https://{{custom_values.website_url}}/home/#offer",
-          "name": "Reparación y Sellado de Techos en Puerto Rico",
-          "description": "desde $2.50 por pie²",
-          "price": "2.50",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock",
-          "url": "https://{{custom_values.website_url}}/cotizacion",
-          "itemOffered": {
-            "@id": "https://{{custom_values.website_url}}/home/#service-offer"
-          },
-          "priceSpecification": {
-            "@type": "PriceSpecification",
-            "price": "2.50",
-            "priceCurrency": "USD",
-            "valueAddedTaxIncluded": false
-          }
-        }
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Servicios de techos de Ilatek",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@id": "https://{{custom_values.website_url}}/home/#service-offer"
-            }
-          }
-        ]
-      },
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday"
-          ],
-          "opens": "08:00",
-          "closes": "18:00"
-        }
-      ]
+     "@type": "ImageObject",
+     "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046fe8493229874263a27.webp",
+     "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046fe8493229874263a27.jpg",
+     "width": 1200,
+     "height": 1320,
+     "caption": "Reparación y Sellado de Techos en Puerto Rico · Ilatek Techos"
     },
     {
-      "@type": "WebSite",
-      "@id": "https://{{custom_values.website_url}}/#website",
-      "url": "https://{{custom_values.website_url}}/",
-      "name": "Ilatek Techos",
-      "inLanguage": "es",
-      "publisher": {
-        "@id": "https://{{custom_values.website_url}}/home/#service"
-      }
-    },
-    {
-      "@type": "WebPage",
-      "@id": "https://{{custom_values.website_url}}/home/#webpage",
-      "url": "https://{{custom_values.website_url}}/home",
-      "name": "Reparación y Sellado de Techos en {{custom_values.county_name_and_state}} | Ilatek Techos",
-      "description": "Reparación y sellado de techos en {{custom_values.county_name_and_state}}: goteras, filtraciones, impermeabilización y mantenimiento. Precios desde $2.50 por pie², inspección gratis y 78 municipios.",
-      "inLanguage": "es",
-      "isPartOf": {
-        "@id": "https://{{custom_values.website_url}}/#website"
-      },
-      "about": {
-        "@id": "https://{{custom_values.website_url}}/home/#service-offer"
-      },
-      "mainEntity": {
-        "@id": "https://{{custom_values.website_url}}/home/#service-offer"
-      },
-      "breadcrumb": {
-        "@id": "https://{{custom_values.website_url}}/home/#breadcrumb"
-      },
-      "datePublished": "2026-10-04",
-      "dateModified": "2026-10-04",
-      "speakable": {
-        "@type": "SpeakableSpecification",
-        "cssSelector": [
-          "h1",
-          ".ilt-faq summary h3"
-        ]
-      }
-    },
-    {
-      "@type": "Service",
-      "@id": "https://{{custom_values.website_url}}/home/#service-offer",
-      "name": "Reparación y Sellado de Techos en Puerto Rico",
-      "description": "División de techos de Ilatek: reparación de goteras y filtraciones, sellado e impermeabilización, mantenimiento e instalación de techos en los 78 municipios de Puerto Rico.",
-      "serviceType": "Reparación y Sellado de Techos en Puerto Rico",
-      "url": "https://{{custom_values.website_url}}/home",
-      "image": [
-        {
-          "@type": "ImageObject",
-          "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046fe8493229874263a27.webp",
-          "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046fe8493229874263a27.jpg",
-          "width": 1200,
-          "height": 1320,
-          "caption": "Reparación y Sellado de Techos en Puerto Rico · Ilatek Techos"
-        },
-        {
-          "@type": "ImageObject",
-          "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046fef30b488137bfa568.webp",
-          "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046fef30b488137bfa568.jpg",
-          "width": 1200,
-          "height": 900,
-          "caption": "Ilatek Techos · Puerto Rico"
-        }
-      ],
-      "provider": {
-        "@id": "https://{{custom_values.website_url}}/home/#service"
-      },
-      "areaServed": [
-        {
-          "@type": "AdministrativeArea",
-          "name": "{{custom_values.county_name_and_state}}"
-        },
-        {
-          "@type": "Country",
-          "name": "Puerto Rico"
-        }
-      ],
-      "mainEntityOfPage": {
-        "@id": "https://{{custom_values.website_url}}/home/#webpage"
-      },
-      "isPartOf": {
-        "@id": "https://{{custom_values.website_url}}/#website"
-      },
-      "offers": {
-        "@type": "Offer",
-        "@id": "https://{{custom_values.website_url}}/home/#offer",
-        "name": "Reparación y Sellado de Techos en Puerto Rico",
-        "description": "desde $2.50 por pie²",
-        "price": "2.50",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock",
-        "url": "https://{{custom_values.website_url}}/cotizacion",
-        "itemOffered": {
-          "@id": "https://{{custom_values.website_url}}/home/#service-offer"
-        },
-        "priceSpecification": {
-          "@type": "PriceSpecification",
-          "price": "2.50",
-          "priceCurrency": "USD",
-          "valueAddedTaxIncluded": false
-        }
-      }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://{{custom_values.website_url}}/home/#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Inicio",
-          "item": "https://{{custom_values.website_url}}/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Techos",
-          "item": "https://{{custom_values.website_url}}/home"
-        }
-      ]
-    },
-    {
-      "@type": "ItemList",
-      "@id": "https://{{custom_values.website_url}}/home/#servicios",
-      "name": "Todos los servicios de techos en {{custom_values.county_name_and_state}}.",
-      "numberOfItems": 32,
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Techos",
-          "url": "https://{{custom_values.website_url}}/home"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Reparación de techos",
-          "url": "https://{{custom_values.website_url}}/reparacion-de-techos"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Reparación de goteras",
-          "url": "https://{{custom_values.website_url}}/reparacion-de-goteras"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Reparación de filtraciones",
-          "url": "https://{{custom_values.website_url}}/reparacion-de-filtraciones"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Reparación de grietas",
-          "url": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos"
-        },
-        {
-          "@type": "ListItem",
-          "position": 6,
-          "name": "Empozamientos de agua",
-          "url": "https://{{custom_values.website_url}}/empozamiento-de-techos"
-        },
-        {
-          "@type": "ListItem",
-          "position": 7,
-          "name": "Reparación post-huracán",
-          "url": "https://{{custom_values.website_url}}/reparacion-post-huracan"
-        },
-        {
-          "@type": "ListItem",
-          "position": 8,
-          "name": "Sellado de techos",
-          "url": "https://{{custom_values.website_url}}/sellado-de-techos"
-        },
-        {
-          "@type": "ListItem",
-          "position": 9,
-          "name": "Sellado con silicona 100%",
-          "url": "https://{{custom_values.website_url}}/sellado-de-silicona"
-        },
-        {
-          "@type": "ListItem",
-          "position": 10,
-          "name": "Membrana asfáltica",
-          "url": "https://{{custom_values.website_url}}/membrana-asfaltica"
-        },
-        {
-          "@type": "ListItem",
-          "position": 11,
-          "name": "Recubrimiento elastomérico",
-          "url": "https://{{custom_values.website_url}}/recubrimiento-elastomerico"
-        },
-        {
-          "@type": "ListItem",
-          "position": 12,
-          "name": "Sellado de poliuretano",
-          "url": "https://{{custom_values.website_url}}/sellado-de-poliuretano"
-        },
-        {
-          "@type": "ListItem",
-          "position": 13,
-          "name": "Sellado acrílico",
-          "url": "https://{{custom_values.website_url}}/sellado-acrilico"
-        },
-        {
-          "@type": "ListItem",
-          "position": 14,
-          "name": "Impermeabilización",
-          "url": "https://{{custom_values.website_url}}/impermeabilizacion-de-techos"
-        },
-        {
-          "@type": "ListItem",
-          "position": 15,
-          "name": "Techos de concreto",
-          "url": "https://{{custom_values.website_url}}/techos-de-concreto"
-        },
-        {
-          "@type": "ListItem",
-          "position": 16,
-          "name": "Techos planos",
-          "url": "https://{{custom_values.website_url}}/techos-planos"
-        },
-        {
-          "@type": "ListItem",
-          "position": 17,
-          "name": "Techos de zinc",
-          "url": "https://{{custom_values.website_url}}/techos-de-zinc"
-        },
-        {
-          "@type": "ListItem",
-          "position": 18,
-          "name": "Techos de asfalto",
-          "url": "https://{{custom_values.website_url}}/techos-de-asfalto"
-        },
-        {
-          "@type": "ListItem",
-          "position": 19,
-          "name": "Techos de teja",
-          "url": "https://{{custom_values.website_url}}/techos-de-teja"
-        },
-        {
-          "@type": "ListItem",
-          "position": 20,
-          "name": "Techos de madera",
-          "url": "https://{{custom_values.website_url}}/techos-de-madera"
-        },
-        {
-          "@type": "ListItem",
-          "position": 21,
-          "name": "Por segmento",
-          "url": "https://{{custom_values.website_url}}/techos-por-segmento"
-        },
-        {
-          "@type": "ListItem",
-          "position": 22,
-          "name": "Sellado residencial",
-          "url": "https://{{custom_values.website_url}}/sellado-de-techos-residencial"
-        },
-        {
-          "@type": "ListItem",
-          "position": 23,
-          "name": "Sellado comercial",
-          "url": "https://{{custom_values.website_url}}/sellado-de-techos-comercial"
-        },
-        {
-          "@type": "ListItem",
-          "position": 24,
-          "name": "Sellado industrial",
-          "url": "https://{{custom_values.website_url}}/sellado-de-techos-industrial"
-        },
-        {
-          "@type": "ListItem",
-          "position": 25,
-          "name": "Inspección y mantenimiento",
-          "url": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos"
-        },
-        {
-          "@type": "ListItem",
-          "position": 26,
-          "name": "Inspección de techos",
-          "url": "https://{{custom_values.website_url}}/inspeccion-de-techos"
-        },
-        {
-          "@type": "ListItem",
-          "position": 27,
-          "name": "Mantenimiento preventivo",
-          "url": "https://{{custom_values.website_url}}/mantenimiento-de-techos"
-        },
-        {
-          "@type": "ListItem",
-          "position": 28,
-          "name": "Limpieza de techos",
-          "url": "https://{{custom_values.website_url}}/limpieza-de-techos-y-canaletas"
-        },
-        {
-          "@type": "ListItem",
-          "position": 29,
-          "name": "Canaletas y bajantes",
-          "url": "https://{{custom_values.website_url}}/canaletas-y-bajantes"
-        },
-        {
-          "@type": "ListItem",
-          "position": 30,
-          "name": "Lavado a presión",
-          "url": "https://{{custom_values.website_url}}/lavado-a-presion-techos"
-        },
-        {
-          "@type": "ListItem",
-          "position": 31,
-          "name": "Tragaluces",
-          "url": "https://{{custom_values.website_url}}/tragaluces"
-        },
-        {
-          "@type": "ListItem",
-          "position": 32,
-          "name": "Instalación y reemplazo",
-          "url": "https://{{custom_values.website_url}}/instalacion-y-reemplazo-de-techos"
-        }
-      ]
+     "@type": "ImageObject",
+     "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046fef30b488137bfa568.webp",
+     "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046fef30b488137bfa568.jpg",
+     "width": 1200,
+     "height": 900,
+     "caption": "Ilatek Techos · Puerto Rico"
     }
-  ]
+   ],
+   "logo": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aa1c05dd953a0128b5348c2.jpg",
+   "priceRange": "$$",
+   "currenciesAccepted": "USD",
+   "paymentAccepted": "Cash, Credit Card, Debit Card",
+   "areaServed": [
+    {
+     "@type": "AdministrativeArea",
+     "name": "{{custom_values.county_name_and_state}}"
+    },
+    {
+     "@type": "Country",
+     "name": "Puerto Rico"
+    }
+   ],
+   "availableLanguage": [
+    "es"
+   ],
+   "sameAs": [
+    "{{custom_values.facebook_url}}",
+    "{{custom_values.instagram_url}}"
+   ],
+   "makesOffer": [
+    {
+     "@type": "Offer",
+     "@id": "https://{{custom_values.website_url}}/home/#offer",
+     "name": "Reparación y Sellado de Techos en Puerto Rico",
+     "description": "desde $2.50 por pie²",
+     "price": "2.50",
+     "priceCurrency": "USD",
+     "availability": "https://schema.org/InStock",
+     "url": "https://{{custom_values.website_url}}/cotizacion",
+     "itemOffered": {
+      "@id": "https://{{custom_values.website_url}}/home/#service-offer"
+     },
+     "priceSpecification": {
+      "@type": "PriceSpecification",
+      "price": "2.50",
+      "priceCurrency": "USD",
+      "valueAddedTaxIncluded": false
+     }
+    }
+   ],
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Servicios de techos de Ilatek",
+    "itemListElement": [
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@id": "https://{{custom_values.website_url}}/home/#service-offer"
+      }
+     }
+    ]
+   },
+   "openingHoursSpecification": [
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+     ],
+     "opens": "08:00",
+     "closes": "18:00"
+    }
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://{{custom_values.website_url}}/#website",
+   "url": "https://{{custom_values.website_url}}/",
+   "name": "Ilatek Techos",
+   "inLanguage": "es",
+   "publisher": {
+    "@id": "https://{{custom_values.website_url}}/home/#service"
+   }
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://{{custom_values.website_url}}/home/#webpage",
+   "url": "https://{{custom_values.website_url}}/home",
+   "name": "Reparación y Sellado de Techos en {{custom_values.county_name_and_state}} | Ilatek Techos",
+   "description": "Reparación y sellado de techos en {{custom_values.county_name_and_state}}: goteras, filtraciones, impermeabilización y mantenimiento. Precios desde $2.50 por pie², inspección gratis y 78 municipios.",
+   "inLanguage": "es",
+   "isPartOf": {
+    "@id": "https://{{custom_values.website_url}}/#website"
+   },
+   "about": {
+    "@id": "https://{{custom_values.website_url}}/home/#service-offer"
+   },
+   "mainEntity": {
+    "@id": "https://{{custom_values.website_url}}/home/#service-offer"
+   },
+   "breadcrumb": {
+    "@id": "https://{{custom_values.website_url}}/home/#breadcrumb"
+   },
+   "datePublished": "2026-10-04",
+   "dateModified": "2026-10-04",
+   "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [
+     "h1",
+     ".ilt-faq summary h3"
+    ]
+   }
+  },
+  {
+   "@type": "Service",
+   "@id": "https://{{custom_values.website_url}}/home/#service-offer",
+   "name": "Reparación y Sellado de Techos en Puerto Rico",
+   "description": "División de techos de Ilatek: reparación de goteras y filtraciones, sellado e impermeabilización, mantenimiento e instalación de techos en los 78 municipios de Puerto Rico.",
+   "serviceType": "Reparación y Sellado de Techos en Puerto Rico",
+   "url": "https://{{custom_values.website_url}}/home",
+   "image": [
+    {
+     "@type": "ImageObject",
+     "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046fe8493229874263a27.webp",
+     "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046fe8493229874263a27.jpg",
+     "width": 1200,
+     "height": 1320,
+     "caption": "Reparación y Sellado de Techos en Puerto Rico · Ilatek Techos"
+    },
+    {
+     "@type": "ImageObject",
+     "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046fef30b488137bfa568.webp",
+     "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046fef30b488137bfa568.jpg",
+     "width": 1200,
+     "height": 900,
+     "caption": "Ilatek Techos · Puerto Rico"
+    }
+   ],
+   "provider": {
+    "@id": "https://{{custom_values.website_url}}/home/#service"
+   },
+   "areaServed": [
+    {
+     "@type": "AdministrativeArea",
+     "name": "{{custom_values.county_name_and_state}}"
+    },
+    {
+     "@type": "Country",
+     "name": "Puerto Rico"
+    }
+   ],
+   "mainEntityOfPage": {
+    "@id": "https://{{custom_values.website_url}}/home/#webpage"
+   },
+   "isPartOf": {
+    "@id": "https://{{custom_values.website_url}}/#website"
+   },
+   "offers": {
+    "@type": "Offer",
+    "@id": "https://{{custom_values.website_url}}/home/#offer",
+    "name": "Reparación y Sellado de Techos en Puerto Rico",
+    "description": "desde $2.50 por pie²",
+    "price": "2.50",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://{{custom_values.website_url}}/cotizacion",
+    "itemOffered": {
+     "@id": "https://{{custom_values.website_url}}/home/#service-offer"
+    },
+    "priceSpecification": {
+     "@type": "PriceSpecification",
+     "price": "2.50",
+     "priceCurrency": "USD",
+     "valueAddedTaxIncluded": false
+    }
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://{{custom_values.website_url}}/home/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Inicio",
+     "item": "https://{{custom_values.website_url}}/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Techos",
+     "item": "https://{{custom_values.website_url}}/home"
+    }
+   ]
+  },
+  {
+   "@type": "ItemList",
+   "@id": "https://{{custom_values.website_url}}/home/#servicios",
+   "name": "Todos los servicios de techos en {{custom_values.county_name_and_state}}.",
+   "numberOfItems": 32,
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Techos",
+     "url": "https://{{custom_values.website_url}}/home"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Reparación de techos",
+     "url": "https://{{custom_values.website_url}}/reparacion-de-techos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Reparación de goteras",
+     "url": "https://{{custom_values.website_url}}/reparacion-de-goteras"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Reparación de filtraciones",
+     "url": "https://{{custom_values.website_url}}/reparacion-de-filtraciones"
+    },
+    {
+     "@type": "ListItem",
+     "position": 5,
+     "name": "Reparación de grietas",
+     "url": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 6,
+     "name": "Empozamientos de agua",
+     "url": "https://{{custom_values.website_url}}/empozamiento-de-techos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 7,
+     "name": "Reparación post-huracán",
+     "url": "https://{{custom_values.website_url}}/reparacion-post-huracan"
+    },
+    {
+     "@type": "ListItem",
+     "position": 8,
+     "name": "Sellado de techos",
+     "url": "https://{{custom_values.website_url}}/sellado-de-techos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 9,
+     "name": "Sellado con silicona 100%",
+     "url": "https://{{custom_values.website_url}}/sellado-de-silicona"
+    },
+    {
+     "@type": "ListItem",
+     "position": 10,
+     "name": "Membrana asfáltica",
+     "url": "https://{{custom_values.website_url}}/membrana-asfaltica"
+    },
+    {
+     "@type": "ListItem",
+     "position": 11,
+     "name": "Recubrimiento elastomérico",
+     "url": "https://{{custom_values.website_url}}/recubrimiento-elastomerico"
+    },
+    {
+     "@type": "ListItem",
+     "position": 12,
+     "name": "Sellado de poliuretano",
+     "url": "https://{{custom_values.website_url}}/sellado-de-poliuretano"
+    },
+    {
+     "@type": "ListItem",
+     "position": 13,
+     "name": "Sellado acrílico",
+     "url": "https://{{custom_values.website_url}}/sellado-acrilico"
+    },
+    {
+     "@type": "ListItem",
+     "position": 14,
+     "name": "Impermeabilización",
+     "url": "https://{{custom_values.website_url}}/impermeabilizacion-de-techos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 15,
+     "name": "Techos de concreto",
+     "url": "https://{{custom_values.website_url}}/techos-de-concreto"
+    },
+    {
+     "@type": "ListItem",
+     "position": 16,
+     "name": "Techos planos",
+     "url": "https://{{custom_values.website_url}}/techos-planos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 17,
+     "name": "Techos de zinc",
+     "url": "https://{{custom_values.website_url}}/techos-de-zinc"
+    },
+    {
+     "@type": "ListItem",
+     "position": 18,
+     "name": "Techos de asfalto",
+     "url": "https://{{custom_values.website_url}}/techos-de-asfalto"
+    },
+    {
+     "@type": "ListItem",
+     "position": 19,
+     "name": "Techos de teja",
+     "url": "https://{{custom_values.website_url}}/techos-de-teja"
+    },
+    {
+     "@type": "ListItem",
+     "position": 20,
+     "name": "Techos de madera",
+     "url": "https://{{custom_values.website_url}}/techos-de-madera"
+    },
+    {
+     "@type": "ListItem",
+     "position": 21,
+     "name": "Por segmento",
+     "url": "https://{{custom_values.website_url}}/techos-por-segmento"
+    },
+    {
+     "@type": "ListItem",
+     "position": 22,
+     "name": "Sellado residencial",
+     "url": "https://{{custom_values.website_url}}/sellado-de-techos-residencial"
+    },
+    {
+     "@type": "ListItem",
+     "position": 23,
+     "name": "Sellado comercial",
+     "url": "https://{{custom_values.website_url}}/sellado-de-techos-comercial"
+    },
+    {
+     "@type": "ListItem",
+     "position": 24,
+     "name": "Sellado industrial",
+     "url": "https://{{custom_values.website_url}}/sellado-de-techos-industrial"
+    },
+    {
+     "@type": "ListItem",
+     "position": 25,
+     "name": "Inspección y mantenimiento",
+     "url": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 26,
+     "name": "Inspección de techos",
+     "url": "https://{{custom_values.website_url}}/inspeccion-de-techos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 27,
+     "name": "Mantenimiento preventivo",
+     "url": "https://{{custom_values.website_url}}/mantenimiento-de-techos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 28,
+     "name": "Limpieza de techos",
+     "url": "https://{{custom_values.website_url}}/limpieza-de-techos-y-canaletas"
+    },
+    {
+     "@type": "ListItem",
+     "position": 29,
+     "name": "Canaletas y bajantes",
+     "url": "https://{{custom_values.website_url}}/canaletas-y-bajantes"
+    },
+    {
+     "@type": "ListItem",
+     "position": 30,
+     "name": "Lavado a presión",
+     "url": "https://{{custom_values.website_url}}/lavado-a-presion-techos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 31,
+     "name": "Tragaluces",
+     "url": "https://{{custom_values.website_url}}/tragaluces"
+    },
+    {
+     "@type": "ListItem",
+     "position": 32,
+     "name": "Instalación y reemplazo",
+     "url": "https://{{custom_values.website_url}}/instalacion-y-reemplazo-de-techos"
+    }
+   ]
+  }
+ ]
 }
 </script>
 <script type="application/ld+json">
@@ -2419,7 +2419,7 @@ html,body{overflow-x:clip}</style>
         <ul class="ilf-list">
           <li><a href="https://{{custom_values.website_url}}/politica-de-privacidad" data-ilatek-path="/politica-de-privacidad"><span class="iln-t" data-es="Política de Privacidad" data-en="Privacy Policy">Política de Privacidad</span></a></li>
           <li><a href="https://{{custom_values.website_url}}/terminos-y-condiciones" data-ilatek-path="/terminos-y-condiciones"><span class="iln-t" data-es="Términos y Condiciones" data-en="Terms &amp; Conditions">Términos y Condiciones</span></a></li>
-          <li><span class="iln-t" data-es="Garantía y Devoluciones" data-en="Warranty &amp; Returns">Garantía y Devoluciones</span></li>
+          <li><a href="https://{{custom_values.website_url}}/garantia" data-ilatek-path="/garantia"><span class="iln-t" data-es="Garantía de Servicio" data-en="Service Warranty">Garantía de Servicio</span></a></li>
           <li><span class="iln-t" data-es="Licenciados y Asegurados" data-en="Licensed &amp; Insured">Licenciados y Asegurados</span></li>
         </ul>
       </nav>

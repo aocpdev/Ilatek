@@ -3,3 +3,6 @@
 *.html text eol=lf
 *.mjs text eol=lf
 *.js text eol=lf
+# SVGs de media: verificados por hash contra ASSETS.json; core.autocrlf=true los
+# tocaba al checkout y cambiaba los hashes. LF canónico también para ellos.
+*.svg text eol=lf

@@ -1568,238 +1568,238 @@ html,body{overflow-x:clip}</style>
 <!-- Schema GEO/AEO opcional APAGADO: rellena lib/data/business.mjs y corre build-techos.mjs para activar PostalAddress + GeoCoordinates + AggregateRating. No se publican valores inventados. -->
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@graph": [
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "RoofingContractor",
+   "@id": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos/#service",
+   "name": "Reparación de Grietas en Techos de Concreto en {{custom_values.county_name_and_state}} | Ilatek Techos",
+   "description": "Reparación de grietas en techos de concreto y losas en {{custom_values.county_name_and_state}} desde $275. Sellado estructural que detiene la entrada de agua con garantía por escrito.",
+   "url": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos",
+   "telephone": "{{custom_values.business__phone}}",
+   "email": "{{custom_values.business__email}}",
+   "image": [
     {
-      "@type": "RoofingContractor",
-      "@id": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos/#service",
-      "name": "Reparación de Grietas en Techos de Concreto | Ilatek Techos",
-      "description": "Reparación de grietas en techos de concreto y losas en Puerto Rico desde $275. Sellado estructural que detiene la entrada de agua con garantía por escrito.",
-      "url": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos",
-      "telephone": "{{custom_values.business__phone}}",
-      "email": "{{custom_values.business__email}}",
-      "image": [
-        {
-          "@type": "ImageObject",
-          "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046fb0edabbe5a4a7647c.webp",
-          "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046fb0edabbe5a4a7647c.jpg",
-          "width": 1200,
-          "height": 1320,
-          "caption": "Reparación de Grietas en Techos · Ilatek Techos"
-        },
-        {
-          "@type": "ImageObject",
-          "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046fb85f560d1666999ff.webp",
-          "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046fb85f560d1666999ff.jpg",
-          "width": 1200,
-          "height": 900,
-          "caption": "Reparación de grietas en techos · Ilatek Techos"
-        }
-      ],
-      "logo": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aa1c05dd953a0128b5348c2.jpg",
-      "priceRange": "$$",
-      "currenciesAccepted": "USD",
-      "paymentAccepted": "Cash, Credit Card, Debit Card",
-      "areaServed": [
-        {
-          "@type": "AdministrativeArea",
-          "name": "{{custom_values.county_name_and_state}}"
-        },
-        {
-          "@type": "Country",
-          "name": "Puerto Rico"
-        }
-      ],
-      "availableLanguage": [
-        "es"
-      ],
-      "sameAs": [
-        "{{custom_values.facebook_url}}",
-        "{{custom_values.instagram_url}}"
-      ],
-      "makesOffer": [
-        {
-          "@type": "Offer",
-          "@id": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos/#offer",
-          "name": "Reparación de Grietas en Techos de Concreto",
-          "description": "desde $275",
-          "price": "275",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock",
-          "url": "https://{{custom_values.website_url}}/cotizacion",
-          "itemOffered": {
-            "@id": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos/#service-offer"
-          },
-          "priceSpecification": {
-            "@type": "PriceSpecification",
-            "price": "275",
-            "priceCurrency": "USD",
-            "valueAddedTaxIncluded": false
-          }
-        }
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Servicios de techos de Ilatek",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@id": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos/#service-offer"
-            }
-          }
-        ]
-      },
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday"
-          ],
-          "opens": "08:00",
-          "closes": "18:00"
-        }
-      ]
+     "@type": "ImageObject",
+     "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046fb0edabbe5a4a7647c.webp",
+     "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046fb0edabbe5a4a7647c.jpg",
+     "width": 1200,
+     "height": 1320,
+     "caption": "Reparación de Grietas en Techos · Ilatek Techos"
     },
     {
-      "@type": "WebSite",
-      "@id": "https://{{custom_values.website_url}}/#website",
-      "url": "https://{{custom_values.website_url}}/",
-      "name": "Ilatek Techos",
-      "inLanguage": "es",
-      "publisher": {
-        "@id": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos/#service"
-      }
-    },
-    {
-      "@type": "WebPage",
-      "@id": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos/#webpage",
-      "url": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos",
-      "name": "Reparación de Grietas en Techos de Concreto en {{custom_values.county_name_and_state}} | Ilatek Techos",
-      "description": "Reparación de grietas en techos de concreto y losas en {{custom_values.county_name_and_state}} desde $275. Sellado estructural que detiene la entrada de agua con garantía por escrito.",
-      "inLanguage": "es",
-      "isPartOf": {
-        "@id": "https://{{custom_values.website_url}}/#website"
-      },
-      "about": {
-        "@id": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos/#service-offer"
-      },
-      "mainEntity": {
-        "@id": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos/#service-offer"
-      },
-      "breadcrumb": {
-        "@id": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos/#breadcrumb"
-      },
-      "datePublished": "2026-10-04",
-      "dateModified": "2026-10-04",
-      "speakable": {
-        "@type": "SpeakableSpecification",
-        "cssSelector": [
-          "h1",
-          ".ilt-faq summary h3"
-        ]
-      }
-    },
-    {
-      "@type": "Service",
-      "@id": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos/#service-offer",
-      "name": "Reparación de Grietas en Techos de Concreto",
-      "description": "Sellado de grietas en techos de concreto y losas en Puerto Rico: sellador flexible y membrana impermeabilizante desde $275, con garantía escrita.",
-      "serviceType": "Reparación de Grietas en Techos de Concreto",
-      "url": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos",
-      "image": [
-        {
-          "@type": "ImageObject",
-          "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046fb0edabbe5a4a7647c.webp",
-          "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046fb0edabbe5a4a7647c.jpg",
-          "width": 1200,
-          "height": 1320,
-          "caption": "Reparación de Grietas en Techos · Ilatek Techos"
-        },
-        {
-          "@type": "ImageObject",
-          "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046fb85f560d1666999ff.webp",
-          "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046fb85f560d1666999ff.jpg",
-          "width": 1200,
-          "height": 900,
-          "caption": "Reparación de grietas en techos · Ilatek Techos"
-        }
-      ],
-      "provider": {
-        "@id": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos/#service"
-      },
-      "areaServed": [
-        {
-          "@type": "AdministrativeArea",
-          "name": "{{custom_values.county_name_and_state}}"
-        },
-        {
-          "@type": "Country",
-          "name": "Puerto Rico"
-        }
-      ],
-      "mainEntityOfPage": {
-        "@id": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos/#webpage"
-      },
-      "isPartOf": {
-        "@id": "https://{{custom_values.website_url}}/#website"
-      },
-      "offers": {
-        "@type": "Offer",
-        "@id": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos/#offer",
-        "name": "Reparación de Grietas en Techos de Concreto",
-        "description": "desde $275",
-        "price": "275",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock",
-        "url": "https://{{custom_values.website_url}}/cotizacion",
-        "itemOffered": {
-          "@id": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos/#service-offer"
-        },
-        "priceSpecification": {
-          "@type": "PriceSpecification",
-          "price": "275",
-          "priceCurrency": "USD",
-          "valueAddedTaxIncluded": false
-        }
-      }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos/#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Inicio",
-          "item": "https://{{custom_values.website_url}}/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Techos",
-          "item": "https://{{custom_values.website_url}}/home"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Reparación de techos",
-          "item": "https://{{custom_values.website_url}}/reparacion-de-techos"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Reparación de grietas",
-          "item": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos"
-        }
-      ]
+     "@type": "ImageObject",
+     "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046fb85f560d1666999ff.webp",
+     "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046fb85f560d1666999ff.jpg",
+     "width": 1200,
+     "height": 900,
+     "caption": "Reparación de grietas en techos · Ilatek Techos"
     }
-  ]
+   ],
+   "logo": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aa1c05dd953a0128b5348c2.jpg",
+   "priceRange": "$$",
+   "currenciesAccepted": "USD",
+   "paymentAccepted": "Cash, Credit Card, Debit Card",
+   "areaServed": [
+    {
+     "@type": "AdministrativeArea",
+     "name": "{{custom_values.county_name_and_state}}"
+    },
+    {
+     "@type": "Country",
+     "name": "Puerto Rico"
+    }
+   ],
+   "availableLanguage": [
+    "es"
+   ],
+   "sameAs": [
+    "{{custom_values.facebook_url}}",
+    "{{custom_values.instagram_url}}"
+   ],
+   "makesOffer": [
+    {
+     "@type": "Offer",
+     "@id": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos/#offer",
+     "name": "Reparación de Grietas en Techos de Concreto",
+     "description": "desde $275",
+     "price": "275",
+     "priceCurrency": "USD",
+     "availability": "https://schema.org/InStock",
+     "url": "https://{{custom_values.website_url}}/cotizacion",
+     "itemOffered": {
+      "@id": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos/#service-offer"
+     },
+     "priceSpecification": {
+      "@type": "PriceSpecification",
+      "price": "275",
+      "priceCurrency": "USD",
+      "valueAddedTaxIncluded": false
+     }
+    }
+   ],
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Servicios de techos de Ilatek",
+    "itemListElement": [
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@id": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos/#service-offer"
+      }
+     }
+    ]
+   },
+   "openingHoursSpecification": [
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+     ],
+     "opens": "08:00",
+     "closes": "18:00"
+    }
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://{{custom_values.website_url}}/#website",
+   "url": "https://{{custom_values.website_url}}/",
+   "name": "Ilatek Techos",
+   "inLanguage": "es",
+   "publisher": {
+    "@id": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos/#service"
+   }
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos/#webpage",
+   "url": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos",
+   "name": "Reparación de Grietas en Techos de Concreto en {{custom_values.county_name_and_state}} | Ilatek Techos",
+   "description": "Reparación de grietas en techos de concreto y losas en {{custom_values.county_name_and_state}} desde $275. Sellado estructural que detiene la entrada de agua con garantía por escrito.",
+   "inLanguage": "es",
+   "isPartOf": {
+    "@id": "https://{{custom_values.website_url}}/#website"
+   },
+   "about": {
+    "@id": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos/#service-offer"
+   },
+   "mainEntity": {
+    "@id": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos/#service-offer"
+   },
+   "breadcrumb": {
+    "@id": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos/#breadcrumb"
+   },
+   "datePublished": "2026-10-04",
+   "dateModified": "2026-10-04",
+   "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [
+     "h1",
+     ".ilt-faq summary h3"
+    ]
+   }
+  },
+  {
+   "@type": "Service",
+   "@id": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos/#service-offer",
+   "name": "Reparación de Grietas en Techos de Concreto",
+   "description": "Sellado de grietas en techos de concreto y losas en Puerto Rico: sellador flexible y membrana impermeabilizante desde $275, con garantía escrita.",
+   "serviceType": "Reparación de Grietas en Techos de Concreto",
+   "url": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos",
+   "image": [
+    {
+     "@type": "ImageObject",
+     "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046fb0edabbe5a4a7647c.webp",
+     "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046fb0edabbe5a4a7647c.jpg",
+     "width": 1200,
+     "height": 1320,
+     "caption": "Reparación de Grietas en Techos · Ilatek Techos"
+    },
+    {
+     "@type": "ImageObject",
+     "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046fb85f560d1666999ff.webp",
+     "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046fb85f560d1666999ff.jpg",
+     "width": 1200,
+     "height": 900,
+     "caption": "Reparación de grietas en techos · Ilatek Techos"
+    }
+   ],
+   "provider": {
+    "@id": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos/#service"
+   },
+   "areaServed": [
+    {
+     "@type": "AdministrativeArea",
+     "name": "{{custom_values.county_name_and_state}}"
+    },
+    {
+     "@type": "Country",
+     "name": "Puerto Rico"
+    }
+   ],
+   "mainEntityOfPage": {
+    "@id": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos/#webpage"
+   },
+   "isPartOf": {
+    "@id": "https://{{custom_values.website_url}}/#website"
+   },
+   "offers": {
+    "@type": "Offer",
+    "@id": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos/#offer",
+    "name": "Reparación de Grietas en Techos de Concreto",
+    "description": "desde $275",
+    "price": "275",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://{{custom_values.website_url}}/cotizacion",
+    "itemOffered": {
+     "@id": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos/#service-offer"
+    },
+    "priceSpecification": {
+     "@type": "PriceSpecification",
+     "price": "275",
+     "priceCurrency": "USD",
+     "valueAddedTaxIncluded": false
+    }
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Inicio",
+     "item": "https://{{custom_values.website_url}}/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Techos",
+     "item": "https://{{custom_values.website_url}}/home"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Reparación de techos",
+     "item": "https://{{custom_values.website_url}}/reparacion-de-techos"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Reparación de grietas",
+     "item": "https://{{custom_values.website_url}}/reparacion-de-grietas-techos"
+    }
+   ]
+  }
+ ]
 }
 </script>
 <script type="application/ld+json">
@@ -2055,7 +2055,7 @@ html,body{overflow-x:clip}</style>
         <ul class="ilf-list">
           <li><a href="https://{{custom_values.website_url}}/politica-de-privacidad" data-ilatek-path="/politica-de-privacidad"><span class="iln-t" data-es="Política de Privacidad" data-en="Privacy Policy">Política de Privacidad</span></a></li>
           <li><a href="https://{{custom_values.website_url}}/terminos-y-condiciones" data-ilatek-path="/terminos-y-condiciones"><span class="iln-t" data-es="Términos y Condiciones" data-en="Terms &amp; Conditions">Términos y Condiciones</span></a></li>
-          <li><span class="iln-t" data-es="Garantía y Devoluciones" data-en="Warranty &amp; Returns">Garantía y Devoluciones</span></li>
+          <li><a href="https://{{custom_values.website_url}}/garantia" data-ilatek-path="/garantia"><span class="iln-t" data-es="Garantía de Servicio" data-en="Service Warranty">Garantía de Servicio</span></a></li>
           <li><span class="iln-t" data-es="Licenciados y Asegurados" data-en="Licensed &amp; Insured">Licenciados y Asegurados</span></li>
         </ul>
       </nav>

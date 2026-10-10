@@ -1579,232 +1579,232 @@ html,body{overflow-x:clip}</style>
 <!-- Schema GEO/AEO opcional APAGADO: rellena lib/data/business.mjs y corre build-techos.mjs para activar PostalAddress + GeoCoordinates + AggregateRating. No se publican valores inventados. -->
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@graph": [
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "RoofingContractor",
+   "@id": "https://{{custom_values.website_url}}/sellado-de-techos/#service",
+   "name": "Sellado de Techos en {{custom_values.county_name_and_state}} | Ilatek Techos",
+   "description": "Sellado de techos en {{custom_values.county_name_and_state}} desde $2.50 por pie²: silicona 100%, membrana asfáltica, elastomérico, poliuretano y acrílico. Inspección gratis y garantía escrita.",
+   "url": "https://{{custom_values.website_url}}/sellado-de-techos",
+   "telephone": "{{custom_values.business__phone}}",
+   "email": "{{custom_values.business__email}}",
+   "image": [
     {
-      "@type": "RoofingContractor",
-      "@id": "https://{{custom_values.website_url}}/sellado-de-techos/#service",
-      "name": "Sellado de Techos en Puerto Rico | Ilatek Techos",
-      "description": "Sellado de techos en Puerto Rico desde $2.50 por pie²: silicona 100%, membrana asfáltica, elastomérico, poliuretano y acrílico. Inspección gratis y garantía escrita.",
-      "url": "https://{{custom_values.website_url}}/sellado-de-techos",
-      "telephone": "{{custom_values.business__phone}}",
-      "email": "{{custom_values.business__email}}",
-      "image": [
-        {
-          "@type": "ImageObject",
-          "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f8849322987426396f.webp",
-          "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f8849322987426396f.jpg",
-          "width": 1200,
-          "height": 1320,
-          "caption": "Sellado de Techos en Puerto Rico · Ilatek Techos"
-        },
-        {
-          "@type": "ImageObject",
-          "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac0427e0edabbe5a4a724d7.webp",
-          "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac0427e0edabbe5a4a724d7.jpg",
-          "width": 1200,
-          "height": 900,
-          "caption": "Sellado de techos en Puerto Rico · Ilatek Techos"
-        }
-      ],
-      "logo": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aa1c05dd953a0128b5348c2.jpg",
-      "priceRange": "$$",
-      "currenciesAccepted": "USD",
-      "paymentAccepted": "Cash, Credit Card, Debit Card",
-      "areaServed": [
-        {
-          "@type": "AdministrativeArea",
-          "name": "{{custom_values.county_name_and_state}}"
-        },
-        {
-          "@type": "Country",
-          "name": "Puerto Rico"
-        }
-      ],
-      "availableLanguage": [
-        "es"
-      ],
-      "sameAs": [
-        "{{custom_values.facebook_url}}",
-        "{{custom_values.instagram_url}}"
-      ],
-      "makesOffer": [
-        {
-          "@type": "Offer",
-          "@id": "https://{{custom_values.website_url}}/sellado-de-techos/#offer",
-          "name": "Sellado de Techos en Puerto Rico",
-          "description": "desde $2.50 por pie²",
-          "price": "2.50",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock",
-          "url": "https://{{custom_values.website_url}}/cotizacion",
-          "itemOffered": {
-            "@id": "https://{{custom_values.website_url}}/sellado-de-techos/#service-offer"
-          },
-          "priceSpecification": {
-            "@type": "PriceSpecification",
-            "price": "2.50",
-            "priceCurrency": "USD",
-            "valueAddedTaxIncluded": false
-          }
-        }
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Servicios de techos de Ilatek",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@id": "https://{{custom_values.website_url}}/sellado-de-techos/#service-offer"
-            }
-          }
-        ]
-      },
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday"
-          ],
-          "opens": "08:00",
-          "closes": "18:00"
-        }
-      ]
+     "@type": "ImageObject",
+     "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f8849322987426396f.webp",
+     "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f8849322987426396f.jpg",
+     "width": 1200,
+     "height": 1320,
+     "caption": "Sellado de Techos en Puerto Rico · Ilatek Techos"
     },
     {
-      "@type": "WebSite",
-      "@id": "https://{{custom_values.website_url}}/#website",
-      "url": "https://{{custom_values.website_url}}/",
-      "name": "Ilatek Techos",
-      "inLanguage": "es",
-      "publisher": {
-        "@id": "https://{{custom_values.website_url}}/sellado-de-techos/#service"
-      }
-    },
-    {
-      "@type": "WebPage",
-      "@id": "https://{{custom_values.website_url}}/sellado-de-techos/#webpage",
-      "url": "https://{{custom_values.website_url}}/sellado-de-techos",
-      "name": "Sellado de Techos en {{custom_values.county_name_and_state}} | Ilatek Techos",
-      "description": "Sellado de techos en {{custom_values.county_name_and_state}} desde $2.50 por pie²: silicona 100%, membrana asfáltica, elastomérico, poliuretano y acrílico. Inspección gratis y garantía escrita.",
-      "inLanguage": "es",
-      "isPartOf": {
-        "@id": "https://{{custom_values.website_url}}/#website"
-      },
-      "about": {
-        "@id": "https://{{custom_values.website_url}}/sellado-de-techos/#service-offer"
-      },
-      "mainEntity": {
-        "@id": "https://{{custom_values.website_url}}/sellado-de-techos/#service-offer"
-      },
-      "breadcrumb": {
-        "@id": "https://{{custom_values.website_url}}/sellado-de-techos/#breadcrumb"
-      },
-      "datePublished": "2026-10-04",
-      "dateModified": "2026-10-04",
-      "speakable": {
-        "@type": "SpeakableSpecification",
-        "cssSelector": [
-          "h1",
-          ".ilt-faq summary h3"
-        ]
-      }
-    },
-    {
-      "@type": "Service",
-      "@id": "https://{{custom_values.website_url}}/sellado-de-techos/#service-offer",
-      "name": "Sellado de Techos en Puerto Rico",
-      "description": "Sellado de techos residenciales, comerciales e industriales en Puerto Rico: silicona 100%, membrana asfáltica, elastomérico, poliuretano y acrílico desde $2.50 por pie².",
-      "serviceType": "Sellado de Techos en Puerto Rico",
-      "url": "https://{{custom_values.website_url}}/sellado-de-techos",
-      "image": [
-        {
-          "@type": "ImageObject",
-          "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f8849322987426396f.webp",
-          "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f8849322987426396f.jpg",
-          "width": 1200,
-          "height": 1320,
-          "caption": "Sellado de Techos en Puerto Rico · Ilatek Techos"
-        },
-        {
-          "@type": "ImageObject",
-          "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac0427e0edabbe5a4a724d7.webp",
-          "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac0427e0edabbe5a4a724d7.jpg",
-          "width": 1200,
-          "height": 900,
-          "caption": "Sellado de techos en Puerto Rico · Ilatek Techos"
-        }
-      ],
-      "provider": {
-        "@id": "https://{{custom_values.website_url}}/sellado-de-techos/#service"
-      },
-      "areaServed": [
-        {
-          "@type": "AdministrativeArea",
-          "name": "{{custom_values.county_name_and_state}}"
-        },
-        {
-          "@type": "Country",
-          "name": "Puerto Rico"
-        }
-      ],
-      "mainEntityOfPage": {
-        "@id": "https://{{custom_values.website_url}}/sellado-de-techos/#webpage"
-      },
-      "isPartOf": {
-        "@id": "https://{{custom_values.website_url}}/#website"
-      },
-      "offers": {
-        "@type": "Offer",
-        "@id": "https://{{custom_values.website_url}}/sellado-de-techos/#offer",
-        "name": "Sellado de Techos en Puerto Rico",
-        "description": "desde $2.50 por pie²",
-        "price": "2.50",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock",
-        "url": "https://{{custom_values.website_url}}/cotizacion",
-        "itemOffered": {
-          "@id": "https://{{custom_values.website_url}}/sellado-de-techos/#service-offer"
-        },
-        "priceSpecification": {
-          "@type": "PriceSpecification",
-          "price": "2.50",
-          "priceCurrency": "USD",
-          "valueAddedTaxIncluded": false
-        }
-      }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://{{custom_values.website_url}}/sellado-de-techos/#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Inicio",
-          "item": "https://{{custom_values.website_url}}/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Techos",
-          "item": "https://{{custom_values.website_url}}/home"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Sellado de techos",
-          "item": "https://{{custom_values.website_url}}/sellado-de-techos"
-        }
-      ]
+     "@type": "ImageObject",
+     "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac0427e0edabbe5a4a724d7.webp",
+     "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac0427e0edabbe5a4a724d7.jpg",
+     "width": 1200,
+     "height": 900,
+     "caption": "Sellado de techos en Puerto Rico · Ilatek Techos"
     }
-  ]
+   ],
+   "logo": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aa1c05dd953a0128b5348c2.jpg",
+   "priceRange": "$$",
+   "currenciesAccepted": "USD",
+   "paymentAccepted": "Cash, Credit Card, Debit Card",
+   "areaServed": [
+    {
+     "@type": "AdministrativeArea",
+     "name": "{{custom_values.county_name_and_state}}"
+    },
+    {
+     "@type": "Country",
+     "name": "Puerto Rico"
+    }
+   ],
+   "availableLanguage": [
+    "es"
+   ],
+   "sameAs": [
+    "{{custom_values.facebook_url}}",
+    "{{custom_values.instagram_url}}"
+   ],
+   "makesOffer": [
+    {
+     "@type": "Offer",
+     "@id": "https://{{custom_values.website_url}}/sellado-de-techos/#offer",
+     "name": "Sellado de Techos en Puerto Rico",
+     "description": "desde $2.50 por pie²",
+     "price": "2.50",
+     "priceCurrency": "USD",
+     "availability": "https://schema.org/InStock",
+     "url": "https://{{custom_values.website_url}}/cotizacion",
+     "itemOffered": {
+      "@id": "https://{{custom_values.website_url}}/sellado-de-techos/#service-offer"
+     },
+     "priceSpecification": {
+      "@type": "PriceSpecification",
+      "price": "2.50",
+      "priceCurrency": "USD",
+      "valueAddedTaxIncluded": false
+     }
+    }
+   ],
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Servicios de techos de Ilatek",
+    "itemListElement": [
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@id": "https://{{custom_values.website_url}}/sellado-de-techos/#service-offer"
+      }
+     }
+    ]
+   },
+   "openingHoursSpecification": [
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+     ],
+     "opens": "08:00",
+     "closes": "18:00"
+    }
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://{{custom_values.website_url}}/#website",
+   "url": "https://{{custom_values.website_url}}/",
+   "name": "Ilatek Techos",
+   "inLanguage": "es",
+   "publisher": {
+    "@id": "https://{{custom_values.website_url}}/sellado-de-techos/#service"
+   }
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://{{custom_values.website_url}}/sellado-de-techos/#webpage",
+   "url": "https://{{custom_values.website_url}}/sellado-de-techos",
+   "name": "Sellado de Techos en {{custom_values.county_name_and_state}} | Ilatek Techos",
+   "description": "Sellado de techos en {{custom_values.county_name_and_state}} desde $2.50 por pie²: silicona 100%, membrana asfáltica, elastomérico, poliuretano y acrílico. Inspección gratis y garantía escrita.",
+   "inLanguage": "es",
+   "isPartOf": {
+    "@id": "https://{{custom_values.website_url}}/#website"
+   },
+   "about": {
+    "@id": "https://{{custom_values.website_url}}/sellado-de-techos/#service-offer"
+   },
+   "mainEntity": {
+    "@id": "https://{{custom_values.website_url}}/sellado-de-techos/#service-offer"
+   },
+   "breadcrumb": {
+    "@id": "https://{{custom_values.website_url}}/sellado-de-techos/#breadcrumb"
+   },
+   "datePublished": "2026-10-04",
+   "dateModified": "2026-10-04",
+   "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [
+     "h1",
+     ".ilt-faq summary h3"
+    ]
+   }
+  },
+  {
+   "@type": "Service",
+   "@id": "https://{{custom_values.website_url}}/sellado-de-techos/#service-offer",
+   "name": "Sellado de Techos en Puerto Rico",
+   "description": "Sellado de techos residenciales, comerciales e industriales en Puerto Rico: silicona 100%, membrana asfáltica, elastomérico, poliuretano y acrílico desde $2.50 por pie².",
+   "serviceType": "Sellado de Techos en Puerto Rico",
+   "url": "https://{{custom_values.website_url}}/sellado-de-techos",
+   "image": [
+    {
+     "@type": "ImageObject",
+     "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f8849322987426396f.webp",
+     "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f8849322987426396f.jpg",
+     "width": 1200,
+     "height": 1320,
+     "caption": "Sellado de Techos en Puerto Rico · Ilatek Techos"
+    },
+    {
+     "@type": "ImageObject",
+     "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac0427e0edabbe5a4a724d7.webp",
+     "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac0427e0edabbe5a4a724d7.jpg",
+     "width": 1200,
+     "height": 900,
+     "caption": "Sellado de techos en Puerto Rico · Ilatek Techos"
+    }
+   ],
+   "provider": {
+    "@id": "https://{{custom_values.website_url}}/sellado-de-techos/#service"
+   },
+   "areaServed": [
+    {
+     "@type": "AdministrativeArea",
+     "name": "{{custom_values.county_name_and_state}}"
+    },
+    {
+     "@type": "Country",
+     "name": "Puerto Rico"
+    }
+   ],
+   "mainEntityOfPage": {
+    "@id": "https://{{custom_values.website_url}}/sellado-de-techos/#webpage"
+   },
+   "isPartOf": {
+    "@id": "https://{{custom_values.website_url}}/#website"
+   },
+   "offers": {
+    "@type": "Offer",
+    "@id": "https://{{custom_values.website_url}}/sellado-de-techos/#offer",
+    "name": "Sellado de Techos en Puerto Rico",
+    "description": "desde $2.50 por pie²",
+    "price": "2.50",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://{{custom_values.website_url}}/cotizacion",
+    "itemOffered": {
+     "@id": "https://{{custom_values.website_url}}/sellado-de-techos/#service-offer"
+    },
+    "priceSpecification": {
+     "@type": "PriceSpecification",
+     "price": "2.50",
+     "priceCurrency": "USD",
+     "valueAddedTaxIncluded": false
+    }
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://{{custom_values.website_url}}/sellado-de-techos/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Inicio",
+     "item": "https://{{custom_values.website_url}}/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Techos",
+     "item": "https://{{custom_values.website_url}}/home"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Sellado de techos",
+     "item": "https://{{custom_values.website_url}}/sellado-de-techos"
+    }
+   ]
+  }
+ ]
 }
 </script>
 <script type="application/ld+json">
@@ -2060,7 +2060,7 @@ html,body{overflow-x:clip}</style>
         <ul class="ilf-list">
           <li><a href="https://{{custom_values.website_url}}/politica-de-privacidad" data-ilatek-path="/politica-de-privacidad"><span class="iln-t" data-es="Política de Privacidad" data-en="Privacy Policy">Política de Privacidad</span></a></li>
           <li><a href="https://{{custom_values.website_url}}/terminos-y-condiciones" data-ilatek-path="/terminos-y-condiciones"><span class="iln-t" data-es="Términos y Condiciones" data-en="Terms &amp; Conditions">Términos y Condiciones</span></a></li>
-          <li><span class="iln-t" data-es="Garantía y Devoluciones" data-en="Warranty &amp; Returns">Garantía y Devoluciones</span></li>
+          <li><a href="https://{{custom_values.website_url}}/garantia" data-ilatek-path="/garantia"><span class="iln-t" data-es="Garantía de Servicio" data-en="Service Warranty">Garantía de Servicio</span></a></li>
           <li><span class="iln-t" data-es="Licenciados y Asegurados" data-en="Licensed &amp; Insured">Licenciados y Asegurados</span></li>
         </ul>
       </nav>
