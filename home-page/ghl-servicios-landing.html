@@ -18,11 +18,11 @@
 <meta property="og:title" content="Servicios de Limpieza en Puerto Rico | Ilatek">
 <meta property="og:description" content="Servicios de limpieza residencial, comercial e industrial de Ilatek en Puerto Rico: limpieza estándar y profunda, mudanzas, Airbnb, post-construcción, ventanas, lavado a presión, alfombras, electrodomésticos y organización. Precio transparente por pie cuadrado y cobertura en los 78 municipios.">
 <meta property="og:url" content="https://ilatekpr.com/servicios">
-<meta property="og:image" content="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac72670bbad531ac8247733.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/servicios.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Servicios de Limpieza en Puerto Rico | Ilatek">
 <meta name="twitter:description" content="Servicios de limpieza residencial, comercial e industrial de Ilatek en Puerto Rico: limpieza estándar y profunda, mudanzas, Airbnb, post-construcción, ventanas, lavado a presión, alfombras, electrodomésticos y organización. Precio transparente por pie cuadrado y cobertura en los 78 municipios.">
-<meta name="twitter:image" content="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac72670bbad531ac8247733.jpg">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/servicios.jpg">
 <meta name="geo.region" content="US-PR">
 <meta name="geo.placename" content="Puerto Rico">
 <!-- ▲▲ fin /servicios ▲▲ -->
@@ -65,6 +65,18 @@
     .ilsx-stage3d .ilsx-media{border-radius:20px 20px 0 0}.ilsx-stage3d .ilsx-media img{border-radius:20px 20px 0 0;backface-visibility:hidden;-webkit-backface-visibility:hidden}.ilsx-stage3d .ilsx-card.is-front:hover .ilsx-media img{transform:scale(1.06)}.ilsx-media span{position:absolute;top:14px;left:14px;z-index:2;padding:7px 13px;border-radius:999px;background:rgba(13,18,70,.78);color:#fff;font:800 11px/1 Manrope,Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}.ilsx-body{display:flex;flex-direction:column;gap:9px;flex:1;padding:24px 24px 26px}.ilsx-body h4{margin:0;font-family:Outfit,Manrope,sans-serif;font-size:22px;font-weight:800;letter-spacing:-.03em}.ilsx-body h4 a:after{content:'';position:absolute;inset:0}.ilsx-body p{margin:0;color:var(--muted);font-size:14px;line-height:1.62}.ilsx-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto;padding-top:12px;border-top:1px dashed var(--line)}.ilsx-price{color:var(--green-dark);font-weight:800;font-size:13.5px}.ilsx-more{color:var(--blue);font-weight:800;font-size:13px}.ilsx-stage3d .ilsx-card.is-front:hover .ilsx-more{color:var(--green-dark)}
     @media(prefers-reduced-motion:reduce){.ilsx-stage3d .ilsx-card{transition:none!important}}
     @media(max-width:560px){.ilsx-stage3d .ilsx-card{width:min(340px,74vw)}}
+
+    /* Fondo de video de la seccion del catalogo (mismo patron del carrusel del home):
+       video en loop infinito detras de las 10 tarjetas + overlay azul de marca (#213d8e)
+       para que el encabezado siga legible. Respeta prefers-reduced-motion. */
+    .ilsx-catalog.ilsx-catalog-video{position:relative;overflow:hidden;background:#11164b url("https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/hero-poster-1280.webp") 50% 45%/cover no-repeat;color:#fff;isolation:isolate}
+    .ilsx-catalog-video:before{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,rgba(33,61,142,.66) 0%,rgba(33,61,142,.52) 55%,rgba(33,61,142,.64) 100%)}
+    .ilsx-catalog-video>.ilsx-shell{position:relative;z-index:2}
+    .ilsx-bgvideo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.02);z-index:0;pointer-events:none}
+    .ilsx-catalog-video .ilsx-display{color:#fff;text-shadow:0 2px 24px rgba(11,16,61,.5),0 1px 4px rgba(11,16,61,.35)}
+    .ilsx-catalog-video .ilsx-head p{color:rgba(255,255,255,.82);text-shadow:0 2px 18px rgba(11,16,61,.55)}
+    .ilsx-catalog-video .ilsx-eyebrow{text-shadow:0 1px 10px rgba(11,16,61,.55)}
+    @media (prefers-reduced-motion:reduce){.ilsx-bgvideo{display:none}}
 
     /* Categorias */
     .ilsx-cats{padding:112px 0;background:var(--mist)}.ilsx-cats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:52px}.ilsx-cat{position:relative;display:grid;align-content:end;aspect-ratio:16/9;min-height:0;border-radius:20px;overflow:hidden;transition:transform .45s cubic-bezier(.4,0,.2,1),box-shadow .45s cubic-bezier(.4,0,.2,1)}.ilsx-cat:hover{transform:translateY(-6px);box-shadow:0 26px 50px rgba(16,25,75,.18)}.ilsx-cat img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.4,0,.2,1)}.ilsx-cat:hover img{transform:scale(1.06)}.ilsx-cat:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,18,70,0) 30%,rgba(13,18,70,.86) 78%)}.ilsx-cat-body{position:relative;z-index:1;padding:28px}.ilsx-cat-body h4{margin:0;font-family:Outfit,Manrope,sans-serif;font-size:26px;font-weight:800;color:#fff;letter-spacing:-.03em}.ilsx-cat-body p{margin:8px 0 0;color:rgba(255,255,255,.82);font-size:14px;line-height:1.6}.ilsx-cat-body a{display:inline-flex;align-items:center;gap:8px;margin-top:16px;padding:11px 18px;border-radius:8px;background:var(--green);color:#fff!important;font:800 12.5px/1 Manrope,Arial,sans-serif;transition:background .22s ease,transform .22s ease}.ilsx-cat-body a:hover{background:var(--green-dark);transform:translateY(-2px)}
@@ -125,7 +137,8 @@
     </div>
 
     <!-- 2. CATALOGO: 12 servicios -->
-    <section class="ilsx-catalog" id="ilatek-servicios-catalogo" aria-labelledby="ilatek-servicios-catalogo-title">
+    <section class="ilsx-catalog ilsx-catalog-video" id="ilatek-servicios-catalogo" aria-labelledby="ilatek-servicios-catalogo-title">
+      <video class="ilsx-bgvideo" src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8f952bd6bb710ca0fd582.mp4" poster="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/hero-poster-1280.webp" autoplay muted loop playsinline webkit-playsinline preload="auto" disablepictureinpicture tabindex="-1" aria-hidden="true"></video>
       <div class="ilsx-shell">
         <div class="ilsx-head ilsx-reveal">
           <div><span class="ilsx-eyebrow">Catálogo completo</span><h2 id="ilatek-servicios-catalogo-title" class="ilsx-display">Un solo equipo para cada rincón de tu propiedad.</h2></div>
@@ -573,6 +586,21 @@
     /* Catalogo 3D: rotacion en anillo de los 10 servicios (mismo efecto que el carrusel 3D del home).
        Autoplay por pasos con pausa al hover/focus/pestana oculta/fuera de vista; drag con el dedo gira el anillo;
        clic o Enter en una tarjeta lateral la trae al frente (su enlace solo activa cuando es frontal). */
+    /* Fondo de video del catalogo: loop infinito sin cortes; si el navegador lo pausa
+       (pestana oculta, ahorro de bateria), se relanza. Bajo reduced-motion el video
+       esta oculto por CSS, asi que no se fuerza la reproduccion. */
+    var catBg=root.querySelector('.ilsx-bgvideo');
+    if(catBg){
+      var catReduced=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var catKick=function(){
+        if(catReduced||!catBg.paused)return;
+        if(catBg.ended){try{catBg.currentTime=0;}catch(e){}}
+        var pr=catBg.play();if(pr&&pr.catch)pr.catch(function(){});
+      };
+      catBg.addEventListener('loadeddata',catKick);
+      catBg.addEventListener('ended',function(){try{catBg.currentTime=0;}catch(e){}catKick();});
+      setInterval(catKick,4000);
+    }
     var stage3d=root.querySelector('#ilsx-stage3d');
     if(stage3d){
       var cards3d=[].slice.call(stage3d.querySelectorAll('.ilsx-card')),N3d=cards3d.length;
