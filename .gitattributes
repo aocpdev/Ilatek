@@ -1,0 +1,5 @@
+# El contrato de internal-links reinyecta su bloque con \n: los .html del sitio
+# deben quedarse en LF si no, verify-internal-links (idempotencia) falla.
+*.html text eol=lf
+*.mjs text eol=lf
+*.js text eol=lf

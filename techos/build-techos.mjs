@@ -31,8 +31,15 @@ pages.forEach((p) => {
   if (htmlErrs.length) fail(p.slug, htmlErrs);
   const file = pageFile(p.slug);
   // GHL sirve los embeds sin header Content-Type con charset: sin esta declaración el
-  // navegador adivina latin-1 y los acentos se pintan como "ReparaciÃ³n".
-  const withCharset = '<meta charset="utf-8">\n' + html;
+  // navegador adivina latin-1 y los acentos se pintan como "ReparaciÃ³n". El contrato
+  // de internal-links reinyecta su bloque AL FRENTE del embed; el charset va justo
+  // detrás de él (sigue dentro de los primeros 1024 bytes, la detección del
+  // navegador no cambia) y el verifier de idempotencia se queda estable.
+  const withCharset = html.replace(/<meta charset="utf-8">\n?/, '')
+    // El bloque de internal-links se reinyecta AL FRENTE por el contrato de
+    // enlaces (formatPage): el charset va justo detrás de él, dentro de los
+    // primeros 1024 bytes, para que la detección del navegador no cambie.
+    .replace('<!-- ILATEK:INTERNAL-LINKS:END -->\n', '<!-- ILATEK:INTERNAL-LINKS:END -->\n<meta charset="utf-8">\n');
   fs.writeFileSync(projectPath(file), withCharset, 'utf8');
   written.push({ slug: p.slug, role: p.role, bytes: Buffer.byteLength(html), file });
 });
