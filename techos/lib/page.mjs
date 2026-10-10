@@ -5,6 +5,7 @@ import { shots } from './kit.mjs';
 import { coberturaSection, reviewsParts, imgAltTitlePatch } from './parts.mjs';
 import { bizSchema, faqSchema } from './schema.mjs';
 import { formatPage } from '../../tools/internal-link-contract.mjs';
+import { composeShell } from '../../tools/page-shell.mjs';
 
 const ICONS = {
   shield: '<path d="M12 3 5 6v6c0 4.5 3 7.5 7 9 4-1.5 7-4.5 7-9V6l-7-3z"/><path d="m9 12 2 2 4-4"/>',
@@ -96,7 +97,7 @@ export function buildPage(page) {
   parts.push(imgAltTitlePatch());
   parts.push('</section>');
   parts.push('');
-  return formatPage(parts.join('\n'), '/'+page.slug);
+  return composeShell(formatPage(parts.join('\n'), '/'+page.slug), '/'+page.slug);
 }
 
 function heroSection(page) {

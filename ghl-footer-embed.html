@@ -1,4 +1,83 @@
 <!-- ILATEK:INTERNAL-LINKS:START -->
+<style>
+/* A single, unframed logo. Keep its 52px slot inside the existing 64px bar.
+   The uniform white bar integrates the original white-backed asset without redrawing it. */
+#ilatek-nav .iln-shell{background:#fff}
+#ilatek-nav .iln-brand{flex:0 0 52px;width:52px;height:52px;gap:0;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none}
+#ilatek-nav .iln-brand img{width:52px;height:52px;max-width:none;padding:0;border:0;border-radius:0;background:none;box-shadow:none;object-fit:contain}
+#ilatek-nav .iln-brand:focus-visible{outline:2px solid #009640;outline-offset:3px}
+/* Scroll-only glass button: same small footprint, with an edge on white surfaces. */
+#ilatek-nav.iln-compact>div.iln-shell{
+  width:64px;min-height:64px;height:64px;padding:0;gap:0;border-radius:20px;
+  border:1px solid rgba(17,22,75,.18);
+  background:linear-gradient(145deg,rgba(255,255,255,.88),rgba(244,247,252,.68));
+  -webkit-backdrop-filter:blur(14px) saturate(130%);backdrop-filter:blur(14px) saturate(130%);
+  box-shadow:0 4px 14px rgba(11,16,61,.10),inset 0 1px 0 rgba(255,255,255,.85);
+}
+#ilatek-nav.iln-compact>div.iln-shell:hover,#ilatek-nav.iln-compact>div.iln-shell:focus-within{
+  border-color:rgba(33,61,142,.68);box-shadow:0 5px 16px rgba(11,16,61,.13),inset 0 1px 0 rgba(255,255,255,.9);
+}
+#ilatek-nav.iln-compact .iln-shell .iln-brand{flex:1;width:100%;height:62px;justify-content:center;border-radius:19px;cursor:pointer}
+#ilatek-nav.iln-compact .iln-brand img{border-radius:13px}
+#ilatek-nav.iln-compact .iln-brand:focus-visible{outline:2px solid var(--iln-blue);outline-offset:3px}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
+  #ilatek-nav.iln-compact>div.iln-shell{background:rgba(255,255,255,.96)}
+}
+#ilatek-nav .iln-login{display:none}
+@media(min-width:1101px){
+  #ilatek-nav{--iln-item-gap:clamp(16px,1.6vw,24px)}
+  #ilatek-nav:not(.iln-compact) .iln-shell{gap:var(--iln-item-gap)}
+  #ilatek-nav .iln-shell .iln-links{position:static;left:auto;transform:none;margin:0 0 0 auto;gap:var(--iln-item-gap)}
+  #ilatek-nav .iln-shell .iln-links>a,#ilatek-nav .iln-links .iln-trigger{padding:10px 0;min-height:44px}
+  #ilatek-nav .iln-shell .iln-langwrap{margin:0;flex:none}
+  #ilatek-nav .iln-shell .iln-lang{min-height:44px;padding:10px 0;gap:8px;border:0;background:transparent;border-radius:8px;font-size:14px}
+  #ilatek-nav .iln-shell .iln-lang span{padding:0;border-radius:0;background:none;box-shadow:none;color:var(--iln-ink);opacity:.65}
+  #ilatek-nav .iln-shell .iln-lang span[aria-pressed="true"]{opacity:1;text-decoration:underline;text-decoration-color:var(--iln-green);text-underline-offset:6px;text-decoration-thickness:2px}
+  #ilatek-nav .iln-shell .iln-login{display:inline-flex;align-items:center;flex:none;min-height:44px;padding:10px 0;font-size:14px;font-weight:700;white-space:nowrap}
+  #ilatek-nav .iln-login:hover{color:var(--iln-blue)}
+  #ilatek-nav .iln-shell .iln-ctawrap,#ilatek-nav .iln-shell>.iln-cta{margin-left:0;flex:none}
+  #ilatek-nav.iln-compact .iln-links,#ilatek-nav.iln-compact .iln-shell .iln-login{display:none}
+}
+/* Both menu glyphs occupy the same grid cell. The close SVG lives inside a span;
+   positioning that SVG absolutely used to offset it outside the button center. */
+#ilatek-nav .iln-burger{flex:0 0 44px;min-width:44px;min-height:44px;padding:0;line-height:1;appearance:none}
+#ilatek-nav .iln-burger svg{position:static;display:block;width:22px;height:22px;grid-area:1 / 1;pointer-events:none}
+#ilatek-nav .iln-burger>.iln-ic-x{display:grid;place-items:center;grid-area:1 / 1;width:22px;height:22px;pointer-events:none;transition:opacity .22s ease,transform .26s ease}
+@media(max-width:1100px){
+  #ilatek-nav .iln-shell{gap:8px}
+  #ilatek-nav .iln-langwrap{margin-left:auto;align-items:center}
+  #ilatek-nav .iln-burger{margin-left:0}
+  #ilatek-nav:not(.iln-lang-on) .iln-burger{margin-left:auto}
+  /* Minimal visual pills, with a full 44px-high touch target. */
+  #ilatek-nav .iln-lang{min-height:44px;min-width:64px;justify-content:center;padding:0;gap:2px;border:0;background:transparent;font-size:12px}
+  #ilatek-nav .iln-lang span{padding:6px 8px;box-shadow:none}
+}
+@media(prefers-reduced-motion:reduce){#ilatek-nav .iln-burger>.iln-ic-x{transition:none}}
+/* Fixed navigation occupies no document flow. Reserve its real height once,
+   then leave 32 / 48 / 64px of breathing room above service-hero content. */
+body:has(#ilatek-nav) :is(.il-hero,.ilr-hero,.ilc2-hero,.ilsx-hero,.ilt-hero){
+  padding-top:calc(var(--ilatek-menu-bottom,78px) + 64px) !important;
+}
+/* The cinematic Home keeps its centered composition and a safe top inset. */
+body:has(#ilatek-nav) .mshero-inner{
+  padding-top:max(clamp(96px,11vw,160px),calc(var(--ilatek-menu-bottom,78px) + 64px)) !important;
+}
+@media(max-width:1100px){
+  body:has(#ilatek-nav) :is(.il-hero,.ilr-hero,.ilc2-hero,.ilsx-hero,.ilt-hero){padding-top:calc(var(--ilatek-menu-bottom,78px) + 48px) !important}
+  body:has(#ilatek-nav) .mshero-inner{padding-top:max(96px,calc(var(--ilatek-menu-bottom,78px) + 48px)) !important}
+}
+@media(max-width:560px){
+  body:has(#ilatek-nav) :is(.il-hero,.ilr-hero,.ilc2-hero,.ilsx-hero,.ilt-hero){padding-top:calc(var(--ilatek-menu-bottom,78px) + 32px) !important}
+  body:has(#ilatek-nav) .mshero-inner{padding-top:max(96px,calc(var(--ilatek-menu-bottom,78px) + 32px)) !important}
+}
+/* Inline vectors survive font loading, language changes and generic GHL SVG rules. */
+#ilatek-cobertura-dir .icd-nav{min-width:44px;min-height:44px;flex-shrink:0;line-height:1}
+#ilatek-cobertura-dir .icd-nav svg{display:block !important;width:22px !important;height:22px !important;max-width:none;fill:none !important;stroke:currentColor !important;pointer-events:none}
+#ilatek-cobertura-dir .icd-nav:focus-visible{outline:2px solid #00b94f;outline-offset:4px}
+#ilatek-cobertura-dir [hidden]{display:none !important}
+@media(prefers-reduced-motion:reduce){html:has(#ilatek-nav){scroll-behavior:auto !important}}
+
+</style>
 <script>
 /* ILATEK: one shared URL contract; inlined into standalone GHL embeds. */
 (function (w) {
@@ -84,6 +163,91 @@
     target.scrollIntoView({ behavior: w.matchMedia && w.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
   });
 })(window);
+
+/* Delta System image/metadata binder. Templates survive existing page resolvers. */
+(function(w){
+  'use strict';
+  if(w.ILATEK_GEO)return;
+  var token='{'+'{custom_values.county_name_and_state}'+'}',doc=w.document;
+  function clean(v){v=String(v||'').replace(/\u00a0/g,' ').trim();return /\{\{|\}\}/.test(v)?'':v}
+  function county(){
+    var declared=doc.querySelectorAll('.dv-ghl-values,#dv-ghl-values'),nodes=declared.length?declared:doc.querySelectorAll('p'),values=[];
+    for(var i=0;i<nodes.length;i++){
+      var parts=nodes[i].textContent.split('|||DV|||');
+      if(parts.length!==6)continue;
+      nodes[i].style.display='none';nodes[i].setAttribute('aria-hidden','true');
+      var value=clean(parts[0]);if(value&&values.indexOf(value)<0)values.push(value);
+    }
+    if(values.length===1)return values[0];
+    // Conflicting bridges are not selected arbitrarily; use the known generic fallback.
+    if(values.length>1)return 'Puerto Rico';
+    var roots=doc.querySelectorAll('[data-location-label]');
+    for(var j=0;j<roots.length;j++){var v=clean(roots[j].getAttribute('data-location-label'));if(v)return v}
+    return 'Puerto Rico';
+  }
+  function enc(s){return encodeURIComponent(s).replace(/'/g,'%27')}
+  function esc(s){return String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+  function image(src,alt,title){
+    // No resolved locality is interpolated into innerHTML. Resolution uses setAttribute below.
+    return '<img src="'+esc(src)+'" alt="'+esc(alt)+'" title="'+esc(title)+'" data-ilatek-local-alt="'+enc(alt)+'" data-ilatek-local-title="'+enc(title)+'" loading="lazy" decoding="async">';
+  }
+  w.ILATEK_GEO={county:county,image:image};
+  var queued=false,titleTemplates=new WeakMap();
+  function refresh(){
+    queued=false;
+    var location=county(),lang=doc.documentElement.lang==='en'?'en':'es';
+    var els=doc.querySelectorAll('[data-ilatek-local-alt],[data-ilatek-local-title],[data-ilatek-local-content]');
+    for(var i=0;i<els.length;i++){
+      var el=els[i];
+      ['alt','title','content'].forEach(function(name){
+        var encoded=el.getAttribute('data-ilatek-local-'+name+'-'+lang)||el.getAttribute('data-ilatek-local-'+name);
+        if(!encoded)return;
+        var template;try{template=decodeURIComponent(encoded)}catch(e){return}
+        var value=template.split(token).join(location);
+        if(el.getAttribute(name)!==value)el.setAttribute(name,value);
+      });
+    }
+    var titles=doc.querySelectorAll('title');
+    for(var t=0;t<titles.length;t++){
+      var node=titles[t];if(node.closest('svg'))continue;
+      if(!titleTemplates.has(node)&&node.textContent.indexOf(token)>=0)titleTemplates.set(node,node.textContent);
+      if(titleTemplates.has(node)){var text=titleTemplates.get(node).split(token).join(location);if(node.textContent!==text)node.textContent=text}
+    }
+  }
+  function schedule(){if(!queued){queued=true;w.requestAnimationFrame(refresh)}}
+  if(doc.readyState==='loading')doc.addEventListener('DOMContentLoaded',refresh,{once:true});else schedule();
+  w.addEventListener('ilatek:lang',schedule);
+  if(w.MutationObserver)new w.MutationObserver(schedule).observe(doc.documentElement,{childList:true,subtree:true,characterData:true,
+    attributes:true,attributeFilter:['alt','title','content','lang','data-location-label']});
+})(window);
+
+/* Measure only the fixed bar, not its expanded drawer. No scroll-driven spacing. */
+(function(w,d){
+  if(w.ILATEK_LAYOUT)return;
+  w.ILATEK_LAYOUT=true;
+  var bar,frame,observer;
+  function measure(){
+    frame=0;
+    if(!bar||!bar.isConnected)return;
+    var bottom=Math.ceil(bar.getBoundingClientRect().bottom);
+    if(bottom>0&&bottom<300)d.documentElement.style.setProperty('--ilatek-menu-bottom',bottom+'px');
+  }
+  function queue(){if(!frame)frame=w.requestAnimationFrame(measure)}
+  function start(){
+    bar=d.querySelector('#ilatek-nav .iln-shell');
+    if(!bar)return;
+    if(observer)observer.disconnect();
+    measure();
+    if(w.ResizeObserver)new ResizeObserver(queue).observe(bar);
+    w.addEventListener('resize',queue,{passive:true});
+    if(d.fonts&&d.fonts.ready)d.fonts.ready.then(queue);
+  }
+  function boot(){
+    if(d.querySelector('#ilatek-nav .iln-shell'))start();
+    else{observer=new MutationObserver(start);observer.observe(d.documentElement,{childList:true,subtree:true})}
+  }
+  if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',boot,{once:true});else boot();
+})(window,document);
 
 </script>
 <!-- ILATEK:INTERNAL-LINKS:END -->
@@ -220,7 +384,7 @@
   <!-- Franja superior: imagen de GHL + navegación en el mismo contenedor -->
   <div class="ilf-top">
     <div class="ilf-brand">
-      <img src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac02015f30b488137bce134.jpg" alt="Ilatek Property Solution en Puerto Rico" title="Ilatek Property Solution en Puerto Rico" loading="lazy">
+      <img src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac02015f30b488137bce134.jpg" alt="Ilatek Property Solution en {{custom_values.county_name_and_state}}" title="Ilatek Property Solution en {{custom_values.county_name_and_state}}" loading="lazy" data-ilatek-local-alt="Ilatek%20Property%20Solution%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D" data-ilatek-local-title="Ilatek%20Property%20Solution%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D">
     </div>
 
     <!-- Navegación -->
@@ -259,75 +423,75 @@
     <div class="ilf-services">
       <section class="ilf-svc ilf-card" aria-labelledby="ilf-svc-clean-t">
         <h2 id="ilf-svc-clean-t" class="ilf-h"><svg class="ilf-ico" aria-hidden="true"><use href="#ilf-i-clean"></use></svg><span class="iln-t" data-es="Servicios de Limpieza" data-en="Cleaning Services">Servicios de Limpieza</span></h2>
-        <img class="ilf-svcimg" src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8582fcc7a5a2b73475d89.jpg" alt="Ilatek - Servicio de Limpieza en Puerto Rico" title="Ilatek - Servicio de Limpieza en Puerto Rico" loading="lazy">
+        <img class="ilf-svcimg" src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8582fcc7a5a2b73475d89.jpg" alt="Ilatek - Servicio de Limpieza en {{custom_values.county_name_and_state}}" title="Ilatek - Servicio de Limpieza en {{custom_values.county_name_and_state}}" loading="lazy" data-ilatek-local-alt="Ilatek%20-%20Servicio%20de%20Limpieza%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D" data-ilatek-local-title="Ilatek%20-%20Servicio%20de%20Limpieza%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D">
         <ul class="ilf-links">
-          <li><a href="https://{{custom_values.website_url}}/limpieza-residencial" data-ilatek-path="/limpieza-residencial"><span class="iln-t" data-es="Servicio de Limpieza Residencial en {{custom_values.county_name_and_state}}" data-en="Residential Cleaning Service in {{custom_values.county_name_and_state}}">Servicio de Limpieza Residencial en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/limpieza-comercial" data-ilatek-path="/limpieza-comercial"><span class="iln-t" data-es="Servicio de Limpieza Comercial en {{custom_values.county_name_and_state}}" data-en="Commercial Cleaning Service in {{custom_values.county_name_and_state}}">Servicio de Limpieza Comercial en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/limpieza-industrial" data-ilatek-path="/limpieza-industrial"><span class="iln-t" data-es="Servicio de Limpieza Industrial en {{custom_values.county_name_and_state}}" data-en="Industrial Cleaning Service in {{custom_values.county_name_and_state}}">Servicio de Limpieza Industrial en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/limpieza-estandar" data-ilatek-path="/limpieza-estandar"><span class="iln-t" data-es="Limpieza Estándar en {{custom_values.county_name_and_state}}" data-en="Standard Cleaning in {{custom_values.county_name_and_state}}">Limpieza Estándar en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/limpieza-profunda" data-ilatek-path="/limpieza-profunda"><span class="iln-t" data-es="Limpieza Profunda en {{custom_values.county_name_and_state}}" data-en="Deep Cleaning in {{custom_values.county_name_and_state}}">Limpieza Profunda en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/limpieza-de-mudanza" data-ilatek-path="/limpieza-de-mudanza"><span class="iln-t" data-es="Limpieza de Mudanza en {{custom_values.county_name_and_state}}" data-en="Move-In/Out Cleaning in {{custom_values.county_name_and_state}}">Limpieza de Mudanza en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/airbnb-turnover" data-ilatek-path="/airbnb-turnover"><span class="iln-t" data-es="Limpieza de Airbnb &amp; Turnover en {{custom_values.county_name_and_state}}" data-en="Airbnb &amp; Turnover Cleaning in {{custom_values.county_name_and_state}}">Limpieza de Airbnb &amp; Turnover en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/organizacion" data-ilatek-path="/organizacion"><span class="iln-t" data-es="Organización de Espacios en {{custom_values.county_name_and_state}}" data-en="Space Organization in {{custom_values.county_name_and_state}}">Organización de Espacios en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/electrodomesticos" data-ilatek-path="/electrodomesticos"><span class="iln-t" data-es="Limpieza de Electrodomésticos en {{custom_values.county_name_and_state}}" data-en="Appliance Cleaning in {{custom_values.county_name_and_state}}">Limpieza de Electrodomésticos en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/alfombras" data-ilatek-path="/alfombras"><span class="iln-t" data-es="Limpieza de Alfombras en {{custom_values.county_name_and_state}}" data-en="Carpet Cleaning in {{custom_values.county_name_and_state}}">Limpieza de Alfombras en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/lavado-a-presion" data-ilatek-path="/lavado-a-presion"><span class="iln-t" data-es="Lavado a Presión en {{custom_values.county_name_and_state}}" data-en="Pressure Washing in {{custom_values.county_name_and_state}}">Lavado a Presión en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/ventanas" data-ilatek-path="/ventanas"><span class="iln-t" data-es="Limpieza de Ventanas en {{custom_values.county_name_and_state}}" data-en="Window Cleaning in {{custom_values.county_name_and_state}}">Limpieza de Ventanas en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/post-construccion" data-ilatek-path="/post-construccion"><span class="iln-t" data-es="Limpieza Post-Construcción en {{custom_values.county_name_and_state}}" data-en="Post-Construction Cleaning in {{custom_values.county_name_and_state}}">Limpieza Post-Construcción en {{custom_values.county_name_and_state}}</a></li>
+          <li><a href="https://{{custom_values.website_url}}/limpieza-residencial" data-ilatek-path="/limpieza-residencial"><span class="iln-t" data-es="Servicio de Limpieza Residencial en {{custom_values.county_name_and_state}}" data-en="Residential Cleaning Service in {{custom_values.county_name_and_state}}">Servicio de Limpieza Residencial en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/limpieza-comercial" data-ilatek-path="/limpieza-comercial"><span class="iln-t" data-es="Servicio de Limpieza Comercial en {{custom_values.county_name_and_state}}" data-en="Commercial Cleaning Service in {{custom_values.county_name_and_state}}">Servicio de Limpieza Comercial en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/limpieza-industrial" data-ilatek-path="/limpieza-industrial"><span class="iln-t" data-es="Servicio de Limpieza Industrial en {{custom_values.county_name_and_state}}" data-en="Industrial Cleaning Service in {{custom_values.county_name_and_state}}">Servicio de Limpieza Industrial en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/limpieza-estandar" data-ilatek-path="/limpieza-estandar"><span class="iln-t" data-es="Limpieza Estándar en {{custom_values.county_name_and_state}}" data-en="Standard Cleaning in {{custom_values.county_name_and_state}}">Limpieza Estándar en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/limpieza-profunda" data-ilatek-path="/limpieza-profunda"><span class="iln-t" data-es="Limpieza Profunda en {{custom_values.county_name_and_state}}" data-en="Deep Cleaning in {{custom_values.county_name_and_state}}">Limpieza Profunda en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/limpieza-de-mudanza" data-ilatek-path="/limpieza-de-mudanza"><span class="iln-t" data-es="Limpieza de Mudanza en {{custom_values.county_name_and_state}}" data-en="Move-In/Out Cleaning in {{custom_values.county_name_and_state}}">Limpieza de Mudanza en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/airbnb-turnover" data-ilatek-path="/airbnb-turnover"><span class="iln-t" data-es="Limpieza de Airbnb &amp; Turnover en {{custom_values.county_name_and_state}}" data-en="Airbnb &amp; Turnover Cleaning in {{custom_values.county_name_and_state}}">Limpieza de Airbnb &amp; Turnover en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/organizacion" data-ilatek-path="/organizacion"><span class="iln-t" data-es="Organización de Espacios en {{custom_values.county_name_and_state}}" data-en="Space Organization in {{custom_values.county_name_and_state}}">Organización de Espacios en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/electrodomesticos" data-ilatek-path="/electrodomesticos"><span class="iln-t" data-es="Limpieza de Electrodomésticos en {{custom_values.county_name_and_state}}" data-en="Appliance Cleaning in {{custom_values.county_name_and_state}}">Limpieza de Electrodomésticos en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/alfombras" data-ilatek-path="/alfombras"><span class="iln-t" data-es="Limpieza de Alfombras en {{custom_values.county_name_and_state}}" data-en="Carpet Cleaning in {{custom_values.county_name_and_state}}">Limpieza de Alfombras en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/lavado-a-presion" data-ilatek-path="/lavado-a-presion"><span class="iln-t" data-es="Lavado a Presión en {{custom_values.county_name_and_state}}" data-en="Pressure Washing in {{custom_values.county_name_and_state}}">Lavado a Presión en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/ventanas" data-ilatek-path="/ventanas"><span class="iln-t" data-es="Limpieza de Ventanas en {{custom_values.county_name_and_state}}" data-en="Window Cleaning in {{custom_values.county_name_and_state}}">Limpieza de Ventanas en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/post-construccion" data-ilatek-path="/post-construccion"><span class="iln-t" data-es="Limpieza Post-Construcción en {{custom_values.county_name_and_state}}" data-en="Post-Construction Cleaning in {{custom_values.county_name_and_state}}">Limpieza Post-Construcción en {{custom_values.county_name_and_state}}</span></a></li>
         </ul>
       </section>
 
       <section class="ilf-svc ilf-card" aria-labelledby="ilf-svc-techos-t">
         <h2 id="ilf-svc-techos-t" class="ilf-h"><svg class="ilf-ico" aria-hidden="true"><use href="#ilf-i-roof"></use></svg><span class="iln-t" data-es="Servicios de Mantenimiento y Sellado de Techos" data-en="Roof Maintenance &amp; Sealing Services">Servicios de Mantenimiento y Sellado de Techos</span></h2>
-        <img class="ilf-svcimg" src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac04fe4f30b488137c005b1.jpeg" alt="Ilatek - Servicios de Techos en Puerto Rico" title="Ilatek - Servicios de Techos en Puerto Rico" loading="lazy">
+        <img class="ilf-svcimg" src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac04fe4f30b488137c005b1.jpeg" alt="Ilatek - Servicios de Techos en {{custom_values.county_name_and_state}}" title="Ilatek - Servicios de Techos en {{custom_values.county_name_and_state}}" loading="lazy" data-ilatek-local-alt="Ilatek%20-%20Servicios%20de%20Techos%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D" data-ilatek-local-title="Ilatek%20-%20Servicios%20de%20Techos%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D">
         <ul class="ilf-links">
-          <li><a href="https://{{custom_values.website_url}}/canaletas-y-bajantes" data-ilatek-path="/canaletas-y-bajantes"><span class="iln-t" data-es="Canales, Canaletas y Bajantes para Techos en {{custom_values.county_name_and_state}}" data-en="Gutters &amp; Downspouts for Roofs in {{custom_values.county_name_and_state}}">Canales, Canaletas y Bajantes para Techos en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/empozamiento-de-techos" data-ilatek-path="/empozamiento-de-techos"><span class="iln-t" data-es="Corrección de Empozamientos de Agua en {{custom_values.county_name_and_state}}" data-en="Water Ponding Correction in {{custom_values.county_name_and_state}}">Corrección de Empozamientos de Agua en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/impermeabilizacion-de-techos" data-ilatek-path="/impermeabilizacion-de-techos"><span class="iln-t" data-es="Impermeabilización de Techos en {{custom_values.county_name_and_state}}" data-en="Roof Waterproofing in {{custom_values.county_name_and_state}}">Impermeabilización de Techos en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/inspeccion-de-techos" data-ilatek-path="/inspeccion-de-techos"><span class="iln-t" data-es="Inspección de Techos en {{custom_values.county_name_and_state}}" data-en="Roof Inspection in {{custom_values.county_name_and_state}}">Inspección de Techos en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos" data-ilatek-path="/inspeccion-y-mantenimiento-de-techos"><span class="iln-t" data-es="Inspección y Mantenimiento de Techos en {{custom_values.county_name_and_state}}" data-en="Roof Inspection &amp; Maintenance in {{custom_values.county_name_and_state}}">Inspección y Mantenimiento de Techos en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/instalacion-y-reemplazo-de-techos" data-ilatek-path="/instalacion-y-reemplazo-de-techos"><span class="iln-t" data-es="Instalación y Reemplazo de Techos en {{custom_values.county_name_and_state}}" data-en="Roof Installation &amp; Replacement in {{custom_values.county_name_and_state}}">Instalación y Reemplazo de Techos en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/lavado-a-presion-techos" data-ilatek-path="/lavado-a-presion-techos"><span class="iln-t" data-es="Lavado a Presión de Techos en {{custom_values.county_name_and_state}}" data-en="Roof Pressure Washing in {{custom_values.county_name_and_state}}">Lavado a Presión de Techos en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/limpieza-de-techos-y-canaletas" data-ilatek-path="/limpieza-de-techos-y-canaletas"><span class="iln-t" data-es="Limpieza de Techos y Canaletas en {{custom_values.county_name_and_state}}" data-en="Roof &amp; Gutter Cleaning in {{custom_values.county_name_and_state}}">Limpieza de Techos y Canaletas en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/mantenimiento-de-techos" data-ilatek-path="/mantenimiento-de-techos"><span class="iln-t" data-es="Mantenimiento Preventivo de Techos en {{custom_values.county_name_and_state}}" data-en="Preventive Roof Maintenance in {{custom_values.county_name_and_state}}">Mantenimiento Preventivo de Techos en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/membrana-asfaltica" data-ilatek-path="/membrana-asfaltica"><span class="iln-t" data-es="Membrana Asfáltica para Techos en {{custom_values.county_name_and_state}}" data-en="Asphalt Membrane for Roofs in {{custom_values.county_name_and_state}}">Membrana Asfáltica para Techos en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/recubrimiento-elastomerico" data-ilatek-path="/recubrimiento-elastomerico"><span class="iln-t" data-es="Recubrimiento Elastomérico para Techos en {{custom_values.county_name_and_state}}" data-en="Elastomeric Coating for Roofs in {{custom_values.county_name_and_state}}">Recubrimiento Elastomérico para Techos en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/reparacion-de-filtraciones" data-ilatek-path="/reparacion-de-filtraciones"><span class="iln-t" data-es="Reparación de Filtraciones de Agua en {{custom_values.county_name_and_state}}" data-en="Water Leak Repair in {{custom_values.county_name_and_state}}">Reparación de Filtraciones de Agua en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/reparacion-de-goteras" data-ilatek-path="/reparacion-de-goteras"><span class="iln-t" data-es="Reparación de Goteras en {{custom_values.county_name_and_state}}" data-en="Leak Repair in {{custom_values.county_name_and_state}}">Reparación de Goteras en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/reparacion-de-grietas-techos" data-ilatek-path="/reparacion-de-grietas-techos"><span class="iln-t" data-es="Reparación de Grietas de Techo en {{custom_values.county_name_and_state}}" data-en="Roof Crack Repair in {{custom_values.county_name_and_state}}">Reparación de Grietas de Techo en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/reparacion-de-techos" data-ilatek-path="/reparacion-de-techos"><span class="iln-t" data-es="Reparación de Techos en {{custom_values.county_name_and_state}}" data-en="Roof Repair in {{custom_values.county_name_and_state}}">Reparación de Techos en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/reparacion-post-huracan" data-ilatek-path="/reparacion-post-huracan"><span class="iln-t" data-es="Reparación de Techos Post-Huracán en {{custom_values.county_name_and_state}}" data-en="Post-Hurricane Roof Repair in {{custom_values.county_name_and_state}}">Reparación de Techos Post-Huracán en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/sellado-acrilico" data-ilatek-path="/sellado-acrilico"><span class="iln-t" data-es="Sellado Acrílico para Techos en {{custom_values.county_name_and_state}}" data-en="Acrylic Roof Sealing in {{custom_values.county_name_and_state}}">Sellado Acrílico para Techos en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/sellado-de-poliuretano" data-ilatek-path="/sellado-de-poliuretano"><span class="iln-t" data-es="Sellado de Poliuretano para Techos en {{custom_values.county_name_and_state}}" data-en="Polyurethane Roof Sealing in {{custom_values.county_name_and_state}}">Sellado de Poliuretano para Techos en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/sellado-de-silicona" data-ilatek-path="/sellado-de-silicona"><span class="iln-t" data-es="Sellado de Techos con Silicona 100% en {{custom_values.county_name_and_state}}" data-en="100% Silicone Roof Sealing in {{custom_values.county_name_and_state}}">Sellado de Techos con Silicona 100% en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/sellado-de-techos" data-ilatek-path="/sellado-de-techos"><span class="iln-t" data-es="Sellado de Techos en {{custom_values.county_name_and_state}}" data-en="Roof Sealing in {{custom_values.county_name_and_state}}">Sellado de Techos en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/sellado-de-techos-comercial" data-ilatek-path="/sellado-de-techos-comercial"><span class="iln-t" data-es="Sellado de Techos Comercial en {{custom_values.county_name_and_state}}" data-en="Commercial Roof Sealing in {{custom_values.county_name_and_state}}">Sellado de Techos Comercial en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/sellado-de-techos-industrial" data-ilatek-path="/sellado-de-techos-industrial"><span class="iln-t" data-es="Sellado de Techos Industrial en {{custom_values.county_name_and_state}}" data-en="Industrial Roof Sealing in {{custom_values.county_name_and_state}}">Sellado de Techos Industrial en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/sellado-de-techos-residencial" data-ilatek-path="/sellado-de-techos-residencial"><span class="iln-t" data-es="Sellado de Techos Residencial en {{custom_values.county_name_and_state}}" data-en="Residential Roof Sealing in {{custom_values.county_name_and_state}}">Sellado de Techos Residencial en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/techos-de-asfalto" data-ilatek-path="/techos-de-asfalto"><span class="iln-t" data-es="Reparación de Techos de Asfalto (Shingles) en {{custom_values.county_name_and_state}}" data-en="Asphalt Shingle Roof Repair in {{custom_values.county_name_and_state}}">Reparación de Techos de Asfalto (Shingles) en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/techos-de-concreto" data-ilatek-path="/techos-de-concreto"><span class="iln-t" data-es="Reparación e Impermeabilización de Techos de Concreto en {{custom_values.county_name_and_state}}" data-en="Concrete Roof Repair &amp; Waterproofing in {{custom_values.county_name_and_state}}">Reparación e Impermeabilización de Techos de Concreto en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/techos-de-madera" data-ilatek-path="/techos-de-madera"><span class="iln-t" data-es="Sellado y Protección de Techos de Madera en {{custom_values.county_name_and_state}}" data-en="Wood Roof Sealing &amp; Protection in {{custom_values.county_name_and_state}}">Sellado y Protección de Techos de Madera en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/techos-de-teja" data-ilatek-path="/techos-de-teja"><span class="iln-t" data-es="Reparación y Sellado de Techos de Teja en {{custom_values.county_name_and_state}}" data-en="Tile Roof Repair &amp; Sealing in {{custom_values.county_name_and_state}}">Reparación y Sellado de Techos de Teja en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/techos-de-zinc" data-ilatek-path="/techos-de-zinc"><span class="iln-t" data-es="Reparación y Sellado de Techos de Zinc y Metal en {{custom_values.county_name_and_state}}" data-en="Zinc &amp; Metal Roof Repair &amp; Sealing in {{custom_values.county_name_and_state}}">Reparación y Sellado de Techos de Zinc y Metal en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/techos-planos" data-ilatek-path="/techos-planos"><span class="iln-t" data-es="Impermeabilización de Techos Planos y Membranas en {{custom_values.county_name_and_state}}" data-en="Flat Roof Waterproofing &amp; Membranes in {{custom_values.county_name_and_state}}">Impermeabilización de Techos Planos y Membranas en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/techos-por-segmento" data-ilatek-path="/techos-por-segmento"><span class="iln-t" data-es="Sellado de Techos Residencial, Comercial e Industrial en {{custom_values.county_name_and_state}}" data-en="Residential, Commercial &amp; Industrial Roof Sealing in {{custom_values.county_name_and_state}}">Sellado de Techos Residencial, Comercial e Industrial en {{custom_values.county_name_and_state}}</a></li>
-          <li><a href="https://{{custom_values.website_url}}/tragaluces" data-ilatek-path="/tragaluces"><span class="iln-t" data-es="Tragaluces y Skylights para Techos en {{custom_values.county_name_and_state}}" data-en="Roof Skylights in {{custom_values.county_name_and_state}}">Tragaluces y Skylights para Techos en {{custom_values.county_name_and_state}}</a></li>
+          <li><a href="https://{{custom_values.website_url}}/canaletas-y-bajantes" data-ilatek-path="/canaletas-y-bajantes"><span class="iln-t" data-es="Canales, Canaletas y Bajantes para Techos en {{custom_values.county_name_and_state}}" data-en="Gutters &amp; Downspouts for Roofs in {{custom_values.county_name_and_state}}">Canales, Canaletas y Bajantes para Techos en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/empozamiento-de-techos" data-ilatek-path="/empozamiento-de-techos"><span class="iln-t" data-es="Corrección de Empozamientos de Agua en {{custom_values.county_name_and_state}}" data-en="Water Ponding Correction in {{custom_values.county_name_and_state}}">Corrección de Empozamientos de Agua en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/impermeabilizacion-de-techos" data-ilatek-path="/impermeabilizacion-de-techos"><span class="iln-t" data-es="Impermeabilización de Techos en {{custom_values.county_name_and_state}}" data-en="Roof Waterproofing in {{custom_values.county_name_and_state}}">Impermeabilización de Techos en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/inspeccion-de-techos" data-ilatek-path="/inspeccion-de-techos"><span class="iln-t" data-es="Inspección de Techos en {{custom_values.county_name_and_state}}" data-en="Roof Inspection in {{custom_values.county_name_and_state}}">Inspección de Techos en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos" data-ilatek-path="/inspeccion-y-mantenimiento-de-techos"><span class="iln-t" data-es="Inspección y Mantenimiento de Techos en {{custom_values.county_name_and_state}}" data-en="Roof Inspection &amp; Maintenance in {{custom_values.county_name_and_state}}">Inspección y Mantenimiento de Techos en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/instalacion-y-reemplazo-de-techos" data-ilatek-path="/instalacion-y-reemplazo-de-techos"><span class="iln-t" data-es="Instalación y Reemplazo de Techos en {{custom_values.county_name_and_state}}" data-en="Roof Installation &amp; Replacement in {{custom_values.county_name_and_state}}">Instalación y Reemplazo de Techos en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/lavado-a-presion-techos" data-ilatek-path="/lavado-a-presion-techos"><span class="iln-t" data-es="Lavado a Presión de Techos en {{custom_values.county_name_and_state}}" data-en="Roof Pressure Washing in {{custom_values.county_name_and_state}}">Lavado a Presión de Techos en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/limpieza-de-techos-y-canaletas" data-ilatek-path="/limpieza-de-techos-y-canaletas"><span class="iln-t" data-es="Limpieza de Techos y Canaletas en {{custom_values.county_name_and_state}}" data-en="Roof &amp; Gutter Cleaning in {{custom_values.county_name_and_state}}">Limpieza de Techos y Canaletas en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/mantenimiento-de-techos" data-ilatek-path="/mantenimiento-de-techos"><span class="iln-t" data-es="Mantenimiento Preventivo de Techos en {{custom_values.county_name_and_state}}" data-en="Preventive Roof Maintenance in {{custom_values.county_name_and_state}}">Mantenimiento Preventivo de Techos en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/membrana-asfaltica" data-ilatek-path="/membrana-asfaltica"><span class="iln-t" data-es="Membrana Asfáltica para Techos en {{custom_values.county_name_and_state}}" data-en="Asphalt Membrane for Roofs in {{custom_values.county_name_and_state}}">Membrana Asfáltica para Techos en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/recubrimiento-elastomerico" data-ilatek-path="/recubrimiento-elastomerico"><span class="iln-t" data-es="Recubrimiento Elastomérico para Techos en {{custom_values.county_name_and_state}}" data-en="Elastomeric Coating for Roofs in {{custom_values.county_name_and_state}}">Recubrimiento Elastomérico para Techos en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/reparacion-de-filtraciones" data-ilatek-path="/reparacion-de-filtraciones"><span class="iln-t" data-es="Reparación de Filtraciones de Agua en {{custom_values.county_name_and_state}}" data-en="Water Leak Repair in {{custom_values.county_name_and_state}}">Reparación de Filtraciones de Agua en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/reparacion-de-goteras" data-ilatek-path="/reparacion-de-goteras"><span class="iln-t" data-es="Reparación de Goteras en {{custom_values.county_name_and_state}}" data-en="Leak Repair in {{custom_values.county_name_and_state}}">Reparación de Goteras en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/reparacion-de-grietas-techos" data-ilatek-path="/reparacion-de-grietas-techos"><span class="iln-t" data-es="Reparación de Grietas de Techo en {{custom_values.county_name_and_state}}" data-en="Roof Crack Repair in {{custom_values.county_name_and_state}}">Reparación de Grietas de Techo en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/reparacion-de-techos" data-ilatek-path="/reparacion-de-techos"><span class="iln-t" data-es="Reparación de Techos en {{custom_values.county_name_and_state}}" data-en="Roof Repair in {{custom_values.county_name_and_state}}">Reparación de Techos en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/reparacion-post-huracan" data-ilatek-path="/reparacion-post-huracan"><span class="iln-t" data-es="Reparación de Techos Post-Huracán en {{custom_values.county_name_and_state}}" data-en="Post-Hurricane Roof Repair in {{custom_values.county_name_and_state}}">Reparación de Techos Post-Huracán en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/sellado-acrilico" data-ilatek-path="/sellado-acrilico"><span class="iln-t" data-es="Sellado Acrílico para Techos en {{custom_values.county_name_and_state}}" data-en="Acrylic Roof Sealing in {{custom_values.county_name_and_state}}">Sellado Acrílico para Techos en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/sellado-de-poliuretano" data-ilatek-path="/sellado-de-poliuretano"><span class="iln-t" data-es="Sellado de Poliuretano para Techos en {{custom_values.county_name_and_state}}" data-en="Polyurethane Roof Sealing in {{custom_values.county_name_and_state}}">Sellado de Poliuretano para Techos en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/sellado-de-silicona" data-ilatek-path="/sellado-de-silicona"><span class="iln-t" data-es="Sellado de Techos con Silicona 100% en {{custom_values.county_name_and_state}}" data-en="100% Silicone Roof Sealing in {{custom_values.county_name_and_state}}">Sellado de Techos con Silicona 100% en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/sellado-de-techos" data-ilatek-path="/sellado-de-techos"><span class="iln-t" data-es="Sellado de Techos en {{custom_values.county_name_and_state}}" data-en="Roof Sealing in {{custom_values.county_name_and_state}}">Sellado de Techos en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/sellado-de-techos-comercial" data-ilatek-path="/sellado-de-techos-comercial"><span class="iln-t" data-es="Sellado de Techos Comercial en {{custom_values.county_name_and_state}}" data-en="Commercial Roof Sealing in {{custom_values.county_name_and_state}}">Sellado de Techos Comercial en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/sellado-de-techos-industrial" data-ilatek-path="/sellado-de-techos-industrial"><span class="iln-t" data-es="Sellado de Techos Industrial en {{custom_values.county_name_and_state}}" data-en="Industrial Roof Sealing in {{custom_values.county_name_and_state}}">Sellado de Techos Industrial en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/sellado-de-techos-residencial" data-ilatek-path="/sellado-de-techos-residencial"><span class="iln-t" data-es="Sellado de Techos Residencial en {{custom_values.county_name_and_state}}" data-en="Residential Roof Sealing in {{custom_values.county_name_and_state}}">Sellado de Techos Residencial en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/techos-de-asfalto" data-ilatek-path="/techos-de-asfalto"><span class="iln-t" data-es="Reparación de Techos de Asfalto (Shingles) en {{custom_values.county_name_and_state}}" data-en="Asphalt Shingle Roof Repair in {{custom_values.county_name_and_state}}">Reparación de Techos de Asfalto (Shingles) en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/techos-de-concreto" data-ilatek-path="/techos-de-concreto"><span class="iln-t" data-es="Reparación e Impermeabilización de Techos de Concreto en {{custom_values.county_name_and_state}}" data-en="Concrete Roof Repair &amp; Waterproofing in {{custom_values.county_name_and_state}}">Reparación e Impermeabilización de Techos de Concreto en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/techos-de-madera" data-ilatek-path="/techos-de-madera"><span class="iln-t" data-es="Sellado y Protección de Techos de Madera en {{custom_values.county_name_and_state}}" data-en="Wood Roof Sealing &amp; Protection in {{custom_values.county_name_and_state}}">Sellado y Protección de Techos de Madera en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/techos-de-teja" data-ilatek-path="/techos-de-teja"><span class="iln-t" data-es="Reparación y Sellado de Techos de Teja en {{custom_values.county_name_and_state}}" data-en="Tile Roof Repair &amp; Sealing in {{custom_values.county_name_and_state}}">Reparación y Sellado de Techos de Teja en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/techos-de-zinc" data-ilatek-path="/techos-de-zinc"><span class="iln-t" data-es="Reparación y Sellado de Techos de Zinc y Metal en {{custom_values.county_name_and_state}}" data-en="Zinc &amp; Metal Roof Repair &amp; Sealing in {{custom_values.county_name_and_state}}">Reparación y Sellado de Techos de Zinc y Metal en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/techos-planos" data-ilatek-path="/techos-planos"><span class="iln-t" data-es="Impermeabilización de Techos Planos y Membranas en {{custom_values.county_name_and_state}}" data-en="Flat Roof Waterproofing &amp; Membranes in {{custom_values.county_name_and_state}}">Impermeabilización de Techos Planos y Membranas en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/techos-por-segmento" data-ilatek-path="/techos-por-segmento"><span class="iln-t" data-es="Sellado de Techos Residencial, Comercial e Industrial en {{custom_values.county_name_and_state}}" data-en="Residential, Commercial &amp; Industrial Roof Sealing in {{custom_values.county_name_and_state}}">Sellado de Techos Residencial, Comercial e Industrial en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/tragaluces" data-ilatek-path="/tragaluces"><span class="iln-t" data-es="Tragaluces y Skylights para Techos en {{custom_values.county_name_and_state}}" data-en="Roof Skylights in {{custom_values.county_name_and_state}}">Tragaluces y Skylights para Techos en {{custom_values.county_name_and_state}}</span></a></li>
         </ul>
       </section>
 
       <section class="ilf-svc ilf-card ilf-prod" aria-label="Productos Ilatek">
         <h2 class="ilf-h"><svg class="ilf-ico" aria-hidden="true"><use href="#ilf-i-product"></use></svg><span class="iln-t" data-es="Productos para mantenimiento de techos" data-en="Roof Maintenance Products">Productos para mantenimiento de techos</span></h2>
-        <img class="ilf-svcimg" src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac134617d735ea2a1fdc078.jpg" alt="Kit de Sellado de Techos - Ilatek" title="Kit de Sellado de Techos - Ilatek" loading="lazy">
+        <img class="ilf-svcimg" src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac134617d735ea2a1fdc078.jpg" alt="Kit de Sellado de Techos - Ilatek — servicio en {{custom_values.county_name_and_state}}" title="Kit de Sellado de Techos - Ilatek — servicio en {{custom_values.county_name_and_state}}" loading="lazy" data-ilatek-local-alt="Kit%20de%20Sellado%20de%20Techos%20-%20Ilatek%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D" data-ilatek-local-title="Kit%20de%20Sellado%20de%20Techos%20-%20Ilatek%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D">
         <p class="ilf-strong">Selladores de Techo</p>
         <h2 class="ilf-h"><svg class="ilf-ico" aria-hidden="true"><use href="#ilf-i-product"></use></svg><span class="iln-t" data-es="Productos de limpieza" data-en="Cleaning Products">Productos de limpieza</span></h2>
-        <img class="ilf-svcimg" src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac1a365195f9172ed559106.jpeg" alt="Productos de limpieza - Ilatek" title="Productos de limpieza - Ilatek" loading="lazy">
+        <img class="ilf-svcimg" src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac1a365195f9172ed559106.jpeg" alt="Productos de limpieza - Ilatek — servicio en {{custom_values.county_name_and_state}}" title="Productos de limpieza - Ilatek — servicio en {{custom_values.county_name_and_state}}" loading="lazy" data-ilatek-local-alt="Productos%20de%20limpieza%20-%20Ilatek%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D" data-ilatek-local-title="Productos%20de%20limpieza%20-%20Ilatek%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D">
       </section>
     </div>
 
     <!-- Portal del Cliente -->
     <p class="ilf-portal-title"><svg class="ilf-ico" aria-hidden="true"><use href="#ilf-i-brand"></use></svg><span class="iln-t" data-es="Ilatek Property Solution en Puerto Rico" data-en="Ilatek Property Solution in Puerto Rico">Ilatek Property Solution en Puerto Rico</span></p>
     <div class="ilf-portal-card">
-      <img class="ilf-portal-img" src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aadf131bdaa5e26a92e2c6f.png" alt="Portal del Cliente - Ilatek" title="Portal del Cliente - Ilatek" loading="lazy">
+      <img class="ilf-portal-img" src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aadf131bdaa5e26a92e2c6f.png" alt="Portal del Cliente - Ilatek — servicio en {{custom_values.county_name_and_state}}" title="Portal del Cliente - Ilatek — servicio en {{custom_values.county_name_and_state}}" loading="lazy" data-ilatek-local-alt="Portal%20del%20Cliente%20-%20Ilatek%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D" data-ilatek-local-title="Portal%20del%20Cliente%20-%20Ilatek%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D">
 
       <div class="ilf-portal-copy">
         <h2 class="ilf-portal-h"><svg class="ilf-ico" aria-hidden="true"><use href="#ilf-i-portal"></use></svg><span class="iln-t" data-es="Portal del Cliente" data-en="Client Portal">Portal del Cliente</span></h2>
@@ -348,20 +512,20 @@
         </ul>
       </div>
 
-      <img class="ilf-portal-img-mobile" src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aadfd7cbdaa5e26a92efd33.png" alt="Portal del Cliente Ilatek en móvil" loading="lazy">
+      <img class="ilf-portal-img-mobile" src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aadfd7cbdaa5e26a92efd33.png" alt="Portal del Cliente Ilatek en móvil — servicio en {{custom_values.county_name_and_state}}" loading="lazy" data-ilatek-local-alt="Portal%20del%20Cliente%20Ilatek%20en%20m%C3%B3vil%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D" title="Portal del Cliente Ilatek en móvil — servicio en {{custom_values.county_name_and_state}}" data-ilatek-local-title="Portal%20del%20Cliente%20Ilatek%20en%20m%C3%B3vil%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D">
     </div>
 
     <!-- Barra inferior -->
     <div class="ilf-bottom">
       <div class="ilf-bottom-logo">
         <a href="https://{{custom_values.website_url}}/" data-ilatek-path="/" aria-label="Ilatek, inicio">
-          <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab044d04091fa65e69921f6.png" alt="Ilatek Property Solution - Servicio de Limpieza Residencial, Comercial e Industrial en Puerto Rico" title="Ilatek Property Solution en Puerto Rico" loading="lazy">
+          <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab044d04091fa65e69921f6.png" alt="Ilatek Property Solution - Servicio de Limpieza Residencial, Comercial e Industrial en {{custom_values.county_name_and_state}}" title="Ilatek Property Solution en {{custom_values.county_name_and_state}}" loading="lazy" data-ilatek-local-alt="Ilatek%20Property%20Solution%20-%20Servicio%20de%20Limpieza%20Residencial%2C%20Comercial%20e%20Industrial%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D" data-ilatek-local-title="Ilatek%20Property%20Solution%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D">
         </a>
       </div>
       <div class="ilf-social">
-        <a href="https://www.facebook.com/ilatek.pr/" aria-label="Facebook" target="_blank" rel="noopener nofollow"><img src="https://stcdn.leadconnectorhq.com/funnel/icons/dark/facebook-dark.svg" alt="Facebook" loading="lazy" decoding="async"></a>
-        <a href="https://www.instagram.com/ilatek.pr/" aria-label="Instagram" target="_blank" rel="noopener nofollow"><img src="https://stcdn.leadconnectorhq.com/funnel/icons/dark/instagram-dark.svg" alt="Instagram" loading="lazy" decoding="async"></a>
-        <a href="https://www.youtube.com/@Ilatekpr" aria-label="Youtube" target="_blank" rel="noopener noreferrer"><img src="https://stcdn.leadconnectorhq.com/funnel/icons/dark/youtube-dark.svg" alt="Youtube" loading="lazy" decoding="async"></a>
+        <a href="https://www.facebook.com/ilatek.pr/" aria-label="Facebook" target="_blank" rel="noopener nofollow"><img src="https://stcdn.leadconnectorhq.com/funnel/icons/dark/facebook-dark.svg" alt="Facebook — servicio en {{custom_values.county_name_and_state}}" loading="lazy" decoding="async" data-ilatek-local-alt="Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D" title="Facebook — servicio en {{custom_values.county_name_and_state}}" data-ilatek-local-title="Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D"></a>
+        <a href="https://www.instagram.com/ilatek.pr/" aria-label="Instagram" target="_blank" rel="noopener nofollow"><img src="https://stcdn.leadconnectorhq.com/funnel/icons/dark/instagram-dark.svg" alt="Instagram — servicio en {{custom_values.county_name_and_state}}" loading="lazy" decoding="async" data-ilatek-local-alt="Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D" title="Instagram — servicio en {{custom_values.county_name_and_state}}" data-ilatek-local-title="Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D"></a>
+        <a href="https://www.youtube.com/@Ilatekpr" aria-label="Youtube" target="_blank" rel="noopener noreferrer"><img src="https://stcdn.leadconnectorhq.com/funnel/icons/dark/youtube-dark.svg" alt="Youtube — servicio en {{custom_values.county_name_and_state}}" loading="lazy" decoding="async" data-ilatek-local-alt="Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D" title="Youtube — servicio en {{custom_values.county_name_and_state}}" data-ilatek-local-title="Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D"></a>
       </div>
       <p class="ilf-credit">© 2026. <span class="iln-t" data-es="Made with ❤️ by" data-en="Made with ❤️ by">Made with ❤️ by</span> <a href="https://devasks.com/" target="_blank" rel="noopener noreferrer">Devasks</a></p>
     </div>
@@ -382,11 +546,18 @@
     }
     var website=clean((root.getAttribute('data-website-url')||''))||'https://ilatekpr.com';
     var county='Puerto Rico';
-    function sync(apply){
-      var tw=document.querySelector('[data-website-url]'); if(tw){var v=clean(tw.getAttribute('data-website-url')); if(v)website=v}
-      if(apply)applyLang(document.documentElement.getAttribute('lang')==='en'?'en':'es');
+    function readCounty(){
+      var candidates=[],nodes=document.querySelectorAll('.dv-ghl-values,#dv-ghl-values');
+      for(var i=0;i<nodes.length;i++){
+        var parts=nodes[i].textContent.split('|||DV|||');
+        if(parts.length===6){var value=clean(parts[0]);if(value&&candidates.indexOf(value)<0)candidates.push(value)}
+      }
+      if(candidates.length===1)return candidates[0];
+      var content=document.querySelector('[data-location-label]');
+      return clean(content&&content.getAttribute('data-location-label'))||'Puerto Rico';
     }
     function applyLang(lang){
+      county=readCounty();
       var nodes=root.querySelectorAll('[data-en]');
       for(var i=0;i<nodes.length;i++){
         var el=nodes[i],attr=el.getAttribute('data-attr'),en=el.getAttribute('data-en'),es=el.getAttribute('data-es');
@@ -398,8 +569,14 @@
     }
     window.__ilatekFooterLang=applyLang;
     var saved='es';try{saved=localStorage.getItem(LANG_KEY)||'es'}catch(e){}
-    if(saved==='en')applyLang('en');
+    applyLang(saved==='en'?'en':'es');
     window.addEventListener('ilatek:lang',function(e){applyLang(e.detail)});
+    // Late native GHL values: only update when the location actually changes.
+    var pending=false;
+    if(window.MutationObserver)new MutationObserver(function(){
+      if(pending)return;pending=true;
+      requestAnimationFrame(function(){pending=false;if(readCounty()!==county)applyLang(document.documentElement.lang==='en'?'en':'es')});
+    }).observe(document.documentElement,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:['data-location-label']});
   })();
   </script>
 

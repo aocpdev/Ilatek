@@ -1,10 +1,12 @@
 {
   "source": "techos/ghl-techos-head-seo.html",
   "language": "es",
-  "status": "extraido-del-html-existente",
-  "metaTagTitle": "Reparación de Techos de Asfalto (Shingles) | Ilatek Techos",
-  "metaTagDescription": "Reparación de techos de asfalto y shingles en Puerto Rico desde $350. Sustitución de tejas dañadas y sellado de filtraciones con garantía escrita. Inspección gratis.",
+  "status": "plantilla-local-delta-system",
+  "metaTagTitle": "Reparación de Techos de Asfalto (Shingles) en {{custom_values.county_name_and_state}} | Ilatek Techos",
+  "metaTagDescription": "Reparación de techos de asfalto y shingles en {{custom_values.county_name_and_state}} desde $350. Sustitución de tejas dañadas y sellado de filtraciones con garantía escrita. Inspección gratis.",
   "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f82c503e697d5ff24e.jpg",
+  "locationCustomValue": "{{custom_values.county_name_and_state}}",
+  "metaTagImageAlt": "Reparación de Techos de Asfalto (Shingles) en {{custom_values.county_name_and_state}} | Ilatek Techos",
   "canonical": "https://{{custom_values.website_url}}/techos-de-asfalto",
   "socialImageFile": "assets/respaldo/6ac046f82c503e697d5ff24e.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."

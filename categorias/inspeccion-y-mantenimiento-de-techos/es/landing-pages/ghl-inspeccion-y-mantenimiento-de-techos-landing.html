@@ -1,4 +1,83 @@
 <!-- ILATEK:INTERNAL-LINKS:START -->
+<style>
+/* A single, unframed logo. Keep its 52px slot inside the existing 64px bar.
+   The uniform white bar integrates the original white-backed asset without redrawing it. */
+#ilatek-nav .iln-shell{background:#fff}
+#ilatek-nav .iln-brand{flex:0 0 52px;width:52px;height:52px;gap:0;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none}
+#ilatek-nav .iln-brand img{width:52px;height:52px;max-width:none;padding:0;border:0;border-radius:0;background:none;box-shadow:none;object-fit:contain}
+#ilatek-nav .iln-brand:focus-visible{outline:2px solid #009640;outline-offset:3px}
+/* Scroll-only glass button: same small footprint, with an edge on white surfaces. */
+#ilatek-nav.iln-compact>div.iln-shell{
+  width:64px;min-height:64px;height:64px;padding:0;gap:0;border-radius:20px;
+  border:1px solid rgba(17,22,75,.18);
+  background:linear-gradient(145deg,rgba(255,255,255,.88),rgba(244,247,252,.68));
+  -webkit-backdrop-filter:blur(14px) saturate(130%);backdrop-filter:blur(14px) saturate(130%);
+  box-shadow:0 4px 14px rgba(11,16,61,.10),inset 0 1px 0 rgba(255,255,255,.85);
+}
+#ilatek-nav.iln-compact>div.iln-shell:hover,#ilatek-nav.iln-compact>div.iln-shell:focus-within{
+  border-color:rgba(33,61,142,.68);box-shadow:0 5px 16px rgba(11,16,61,.13),inset 0 1px 0 rgba(255,255,255,.9);
+}
+#ilatek-nav.iln-compact .iln-shell .iln-brand{flex:1;width:100%;height:62px;justify-content:center;border-radius:19px;cursor:pointer}
+#ilatek-nav.iln-compact .iln-brand img{border-radius:13px}
+#ilatek-nav.iln-compact .iln-brand:focus-visible{outline:2px solid var(--iln-blue);outline-offset:3px}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
+  #ilatek-nav.iln-compact>div.iln-shell{background:rgba(255,255,255,.96)}
+}
+#ilatek-nav .iln-login{display:none}
+@media(min-width:1101px){
+  #ilatek-nav{--iln-item-gap:clamp(16px,1.6vw,24px)}
+  #ilatek-nav:not(.iln-compact) .iln-shell{gap:var(--iln-item-gap)}
+  #ilatek-nav .iln-shell .iln-links{position:static;left:auto;transform:none;margin:0 0 0 auto;gap:var(--iln-item-gap)}
+  #ilatek-nav .iln-shell .iln-links>a,#ilatek-nav .iln-links .iln-trigger{padding:10px 0;min-height:44px}
+  #ilatek-nav .iln-shell .iln-langwrap{margin:0;flex:none}
+  #ilatek-nav .iln-shell .iln-lang{min-height:44px;padding:10px 0;gap:8px;border:0;background:transparent;border-radius:8px;font-size:14px}
+  #ilatek-nav .iln-shell .iln-lang span{padding:0;border-radius:0;background:none;box-shadow:none;color:var(--iln-ink);opacity:.65}
+  #ilatek-nav .iln-shell .iln-lang span[aria-pressed="true"]{opacity:1;text-decoration:underline;text-decoration-color:var(--iln-green);text-underline-offset:6px;text-decoration-thickness:2px}
+  #ilatek-nav .iln-shell .iln-login{display:inline-flex;align-items:center;flex:none;min-height:44px;padding:10px 0;font-size:14px;font-weight:700;white-space:nowrap}
+  #ilatek-nav .iln-login:hover{color:var(--iln-blue)}
+  #ilatek-nav .iln-shell .iln-ctawrap,#ilatek-nav .iln-shell>.iln-cta{margin-left:0;flex:none}
+  #ilatek-nav.iln-compact .iln-links,#ilatek-nav.iln-compact .iln-shell .iln-login{display:none}
+}
+/* Both menu glyphs occupy the same grid cell. The close SVG lives inside a span;
+   positioning that SVG absolutely used to offset it outside the button center. */
+#ilatek-nav .iln-burger{flex:0 0 44px;min-width:44px;min-height:44px;padding:0;line-height:1;appearance:none}
+#ilatek-nav .iln-burger svg{position:static;display:block;width:22px;height:22px;grid-area:1 / 1;pointer-events:none}
+#ilatek-nav .iln-burger>.iln-ic-x{display:grid;place-items:center;grid-area:1 / 1;width:22px;height:22px;pointer-events:none;transition:opacity .22s ease,transform .26s ease}
+@media(max-width:1100px){
+  #ilatek-nav .iln-shell{gap:8px}
+  #ilatek-nav .iln-langwrap{margin-left:auto;align-items:center}
+  #ilatek-nav .iln-burger{margin-left:0}
+  #ilatek-nav:not(.iln-lang-on) .iln-burger{margin-left:auto}
+  /* Minimal visual pills, with a full 44px-high touch target. */
+  #ilatek-nav .iln-lang{min-height:44px;min-width:64px;justify-content:center;padding:0;gap:2px;border:0;background:transparent;font-size:12px}
+  #ilatek-nav .iln-lang span{padding:6px 8px;box-shadow:none}
+}
+@media(prefers-reduced-motion:reduce){#ilatek-nav .iln-burger>.iln-ic-x{transition:none}}
+/* Fixed navigation occupies no document flow. Reserve its real height once,
+   then leave 32 / 48 / 64px of breathing room above service-hero content. */
+body:has(#ilatek-nav) :is(.il-hero,.ilr-hero,.ilc2-hero,.ilsx-hero,.ilt-hero){
+  padding-top:calc(var(--ilatek-menu-bottom,78px) + 64px) !important;
+}
+/* The cinematic Home keeps its centered composition and a safe top inset. */
+body:has(#ilatek-nav) .mshero-inner{
+  padding-top:max(clamp(96px,11vw,160px),calc(var(--ilatek-menu-bottom,78px) + 64px)) !important;
+}
+@media(max-width:1100px){
+  body:has(#ilatek-nav) :is(.il-hero,.ilr-hero,.ilc2-hero,.ilsx-hero,.ilt-hero){padding-top:calc(var(--ilatek-menu-bottom,78px) + 48px) !important}
+  body:has(#ilatek-nav) .mshero-inner{padding-top:max(96px,calc(var(--ilatek-menu-bottom,78px) + 48px)) !important}
+}
+@media(max-width:560px){
+  body:has(#ilatek-nav) :is(.il-hero,.ilr-hero,.ilc2-hero,.ilsx-hero,.ilt-hero){padding-top:calc(var(--ilatek-menu-bottom,78px) + 32px) !important}
+  body:has(#ilatek-nav) .mshero-inner{padding-top:max(96px,calc(var(--ilatek-menu-bottom,78px) + 32px)) !important}
+}
+/* Inline vectors survive font loading, language changes and generic GHL SVG rules. */
+#ilatek-cobertura-dir .icd-nav{min-width:44px;min-height:44px;flex-shrink:0;line-height:1}
+#ilatek-cobertura-dir .icd-nav svg{display:block !important;width:22px !important;height:22px !important;max-width:none;fill:none !important;stroke:currentColor !important;pointer-events:none}
+#ilatek-cobertura-dir .icd-nav:focus-visible{outline:2px solid #00b94f;outline-offset:4px}
+#ilatek-cobertura-dir [hidden]{display:none !important}
+@media(prefers-reduced-motion:reduce){html:has(#ilatek-nav){scroll-behavior:auto !important}}
+
+</style>
 <script>
 /* ILATEK: one shared URL contract; inlined into standalone GHL embeds. */
 (function (w) {
@@ -85,6 +164,91 @@
   });
 })(window);
 
+/* Delta System image/metadata binder. Templates survive existing page resolvers. */
+(function(w){
+  'use strict';
+  if(w.ILATEK_GEO)return;
+  var token='{'+'{custom_values.county_name_and_state}'+'}',doc=w.document;
+  function clean(v){v=String(v||'').replace(/\u00a0/g,' ').trim();return /\{\{|\}\}/.test(v)?'':v}
+  function county(){
+    var declared=doc.querySelectorAll('.dv-ghl-values,#dv-ghl-values'),nodes=declared.length?declared:doc.querySelectorAll('p'),values=[];
+    for(var i=0;i<nodes.length;i++){
+      var parts=nodes[i].textContent.split('|||DV|||');
+      if(parts.length!==6)continue;
+      nodes[i].style.display='none';nodes[i].setAttribute('aria-hidden','true');
+      var value=clean(parts[0]);if(value&&values.indexOf(value)<0)values.push(value);
+    }
+    if(values.length===1)return values[0];
+    // Conflicting bridges are not selected arbitrarily; use the known generic fallback.
+    if(values.length>1)return 'Puerto Rico';
+    var roots=doc.querySelectorAll('[data-location-label]');
+    for(var j=0;j<roots.length;j++){var v=clean(roots[j].getAttribute('data-location-label'));if(v)return v}
+    return 'Puerto Rico';
+  }
+  function enc(s){return encodeURIComponent(s).replace(/'/g,'%27')}
+  function esc(s){return String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+  function image(src,alt,title){
+    // No resolved locality is interpolated into innerHTML. Resolution uses setAttribute below.
+    return '<img src="'+esc(src)+'" alt="'+esc(alt)+'" title="'+esc(title)+'" data-ilatek-local-alt="'+enc(alt)+'" data-ilatek-local-title="'+enc(title)+'" loading="lazy" decoding="async">';
+  }
+  w.ILATEK_GEO={county:county,image:image};
+  var queued=false,titleTemplates=new WeakMap();
+  function refresh(){
+    queued=false;
+    var location=county(),lang=doc.documentElement.lang==='en'?'en':'es';
+    var els=doc.querySelectorAll('[data-ilatek-local-alt],[data-ilatek-local-title],[data-ilatek-local-content]');
+    for(var i=0;i<els.length;i++){
+      var el=els[i];
+      ['alt','title','content'].forEach(function(name){
+        var encoded=el.getAttribute('data-ilatek-local-'+name+'-'+lang)||el.getAttribute('data-ilatek-local-'+name);
+        if(!encoded)return;
+        var template;try{template=decodeURIComponent(encoded)}catch(e){return}
+        var value=template.split(token).join(location);
+        if(el.getAttribute(name)!==value)el.setAttribute(name,value);
+      });
+    }
+    var titles=doc.querySelectorAll('title');
+    for(var t=0;t<titles.length;t++){
+      var node=titles[t];if(node.closest('svg'))continue;
+      if(!titleTemplates.has(node)&&node.textContent.indexOf(token)>=0)titleTemplates.set(node,node.textContent);
+      if(titleTemplates.has(node)){var text=titleTemplates.get(node).split(token).join(location);if(node.textContent!==text)node.textContent=text}
+    }
+  }
+  function schedule(){if(!queued){queued=true;w.requestAnimationFrame(refresh)}}
+  if(doc.readyState==='loading')doc.addEventListener('DOMContentLoaded',refresh,{once:true});else schedule();
+  w.addEventListener('ilatek:lang',schedule);
+  if(w.MutationObserver)new w.MutationObserver(schedule).observe(doc.documentElement,{childList:true,subtree:true,characterData:true,
+    attributes:true,attributeFilter:['alt','title','content','lang','data-location-label']});
+})(window);
+
+/* Measure only the fixed bar, not its expanded drawer. No scroll-driven spacing. */
+(function(w,d){
+  if(w.ILATEK_LAYOUT)return;
+  w.ILATEK_LAYOUT=true;
+  var bar,frame,observer;
+  function measure(){
+    frame=0;
+    if(!bar||!bar.isConnected)return;
+    var bottom=Math.ceil(bar.getBoundingClientRect().bottom);
+    if(bottom>0&&bottom<300)d.documentElement.style.setProperty('--ilatek-menu-bottom',bottom+'px');
+  }
+  function queue(){if(!frame)frame=w.requestAnimationFrame(measure)}
+  function start(){
+    bar=d.querySelector('#ilatek-nav .iln-shell');
+    if(!bar)return;
+    if(observer)observer.disconnect();
+    measure();
+    if(w.ResizeObserver)new ResizeObserver(queue).observe(bar);
+    w.addEventListener('resize',queue,{passive:true});
+    if(d.fonts&&d.fonts.ready)d.fonts.ready.then(queue);
+  }
+  function boot(){
+    if(d.querySelector('#ilatek-nav .iln-shell'))start();
+    else{observer=new MutationObserver(start);observer.observe(d.documentElement,{childList:true,subtree:true})}
+  }
+  if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',boot,{once:true});else boot();
+})(window,document);
+
 </script>
 <!-- ILATEK:INTERNAL-LINKS:END -->
 <meta charset="utf-8">
@@ -95,6 +259,638 @@
   Cobertura y Reviews: bloques VERBATIM del home (78 municipios + tabs Google/Selfie).
   Canonical self-referencing /inspeccion-y-mantenimiento-de-techos: ver Ilatek/techos/ghl-techos-head-seo.html (se pega en GHL Tracking Code HEADER).
 -->
+<!-- ILATEK:SHELL:HEADER:START -->
+<!--
+  ILATEK · GHL Custom Code · Menú universal (embed independiente)
+  Estilo cápsula flotante sticky + mega-panel de servicios por categoría + drawer móvil.
+  Todo el menú de servicios está agrupado por categoría, con un ícono por servicio
+  (sprite SVG inline, sin dependencias externas).
+  CTA: "Agenda tu Servicio" -> https://{{custom_values.website_url}}/cotizacion (limpieza) y https://{{custom_values.website_url}}/cotizacion-techos (techos)
+  SIN animaciones atadas al scroll: la cápsula es sticky y permanece; solo hay
+  transiciones al abrir/cerrar el mega-panel y el drawer.
+  En páginas distintas de /home, cambiar los anchors #ilatek-* por URLs completas,
+  ej. https://{{custom_values.website_url}}/home#ilatek-cobertura
+-->
+<section id="ilatek-nav" aria-label="Navegación de Ilatek" data-website-url="{{custom_values.website_url}}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&family=Outfit:wght@500..800&display=swap">
+
+  <style>
+    #ilatek-nav{--iln-ink:#11164b;--iln-deep:#0b103d;--iln-blue:#213d8e;--iln-green:#00b94f;--iln-green-dark:#009640;--iln-line:#dbe2f1;--iln-mist:#f4f7fc;--iln-white:#fff;--iln-radius:18px;position:fixed;top:14px;left:0;right:0;z-index:9999;width:100%;background:none;color:var(--iln-ink);font-family:Manrope,Arial,sans-serif;pointer-events:none;isolation:isolate}
+    :where(#ilatek-nav) *{box-sizing:border-box}
+    :where(#ilatek-nav) :where(ul,p,h1,h2,h3,h4,li,figure){margin:0;padding:0}
+    :where(#ilatek-nav) a{color:inherit;text-decoration:none}
+    :where(#ilatek-nav) :focus-visible{outline:2px solid var(--iln-green);outline-offset:2px;border-radius:10px}
+    #ilatek-nav .iln-mega-grid::-webkit-scrollbar,#ilatek-nav .iln-drawer::-webkit-scrollbar{width:0;height:0;display:none}
+    #ilatek-nav button{font-family:inherit;-webkit-tap-highlight-color:transparent}
+    #ilatek-nav a,#ilatek-nav button{cursor:pointer}
+    #ilatek-nav [hidden]{display:none!important}
+    .iln-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    .iln-shell{position:relative;z-index:10002;pointer-events:auto;transform:translateZ(0);width:min(100% - 40px,1210px);margin:auto;display:flex;align-items:center;gap:22px;min-height:64px;padding:0 10px 0 18px;border-radius:var(--iln-radius);background:rgba(255,255,255,.82);-webkit-backdrop-filter:blur(14px) saturate(150%);backdrop-filter:blur(14px) saturate(150%);box-shadow:0 12px 34px rgba(11,16,61,.14),inset 0 0 0 1px rgba(255,255,255,.75)}
+    .iln-brand{display:flex;align-items:center;gap:12px;color:var(--iln-ink)}
+    .iln-brand img{display:block;width:52px;height:52px;padding:8px;border-radius:14px;border:1px solid rgba(255,255,255,.6);background:linear-gradient(150deg,rgba(238,243,255,.92),rgba(238,243,255,.55));object-fit:contain}
+    .iln-brand b{font-family:Outfit,Manrope,sans-serif;font-size:19px;font-weight:800;letter-spacing:-.03em;white-space:nowrap}
+    .iln-links{display:flex;align-items:center;justify-content:center;gap:2px;position:absolute;left:50%;transform:translateX(-50%)}
+    #ilatek-nav .iln-links a,#ilatek-nav .iln-trigger{display:inline-flex;align-items:center;padding:10px 14px;border-radius:14px;color:var(--iln-ink);font-size:14px;font-weight:700;white-space:nowrap;transition:background .22s ease,color .22s ease}
+    .iln-links a:hover,.iln-links a:focus-visible,.iln-trigger:hover,.iln-trigger:focus-visible{background:rgba(255,255,255,.95);color:var(--iln-green)}
+    .iln-trigger{display:inline-flex;align-items:center;gap:6px;background:none;border:0;cursor:pointer;font-family:inherit}
+    .iln-trigger svg{width:10px;height:10px;transition:transform .25s ease}
+    .iln-trigger[aria-expanded=true] svg{transform:rotate(180deg)}
+    /* Dropdown compacto (Empleos) */
+    .iln-dropwrap{position:relative;display:inline-flex}
+    .iln-drop{position:absolute;top:calc(100% + 10px);left:50%;min-width:238px;padding:10px;border-radius:16px;background:linear-gradient(165deg,#213d8e 0%,#11164b 55%,#0b103d 100%);border:1px solid rgba(255,255,255,.12);box-shadow:0 24px 70px rgba(11,16,61,.45);color:#fff;z-index:10001;visibility:hidden;opacity:0;pointer-events:none;transform:translateX(-50%) translateY(-8px) scale(.985);transition:opacity .26s ease,visibility .26s,transform .3s cubic-bezier(.34,1.3,.4,1)}
+    .iln-drop.iln-show{visibility:visible;opacity:1;pointer-events:auto;transform:translateX(-50%) translateY(0) scale(1)}
+    #ilatek-nav .iln-drop .iln-list li{opacity:1;transform:none}
+    #ilatek-nav .iln-drop .iln-list a{display:flex;align-items:center;gap:10px;min-height:42px;padding:10px 12px;border-bottom:0;border-radius:10px;color:rgba(255,255,255,.92);font-size:13.5px;font-weight:600;white-space:nowrap;transition:color .2s ease,background .2s ease}
+    #ilatek-nav .iln-drop .iln-list a:hover,#ilatek-nav .iln-drop .iln-list a:focus-visible{color:var(--iln-green);background:rgba(255,255,255,.08)}
+    /* CTA "Agenda tu Servicio" con dropdown de calendarios */
+    .iln-ctawrap{position:relative;display:inline-flex;margin-left:auto}
+    .iln-ctawrap .iln-cta{margin-left:0}
+    .iln-agenda{left:auto;right:0;min-width:266px;transform:translateY(-8px) scale(.985)}
+    .iln-agenda.iln-show{transform:translateY(0) scale(1)}
+    #ilatek-nav .iln-agenda .iln-list a{min-height:54px;white-space:normal;align-items:center}
+    #ilatek-nav .iln-agenda .iln-list a span{display:block;line-height:1.25}
+    #ilatek-nav .iln-agenda .iln-list a small{display:block;margin-top:3px;color:rgba(255,255,255,.6);font-size:11.5px;font-weight:600}
+    #ilatek-nav .iln-agenda .iln-list a:hover small,#ilatek-nav .iln-agenda .iln-list a:focus-visible small{color:rgba(255,255,255,.82)}
+    #ilatek-nav .iln-drop :focus-visible{outline:2px solid var(--iln-green);outline-offset:-2px;border-radius:10px}
+    .iln-cta{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:48px;margin-left:auto;padding:8px 8px 8px 22px;border-radius:14px;background:var(--iln-green);color:#fff!important;font:700 14px/1 Manrope,Arial,sans-serif;box-shadow:0 14px 30px rgba(0,185,79,.32);transition:transform .22s ease,background .22s ease}
+    .iln-cta span:last-child{display:grid;place-items:center;width:30px;height:30px;border-radius:10px;background:rgba(255,255,255,.22);color:#fff;transition:background .22s ease,color .22s ease}
+    .iln-cta:hover,.iln-cta:focus-visible{background:var(--iln-blue);transform:translateY(-2px);box-shadow:0 16px 34px rgba(33,61,142,.38)}
+    .iln-cta:hover span:last-child,.iln-cta:focus-visible span:last-child{background:#fff;color:var(--iln-blue)}
+    /* ————— Toggle de idioma es/en (auto-oculto sin [data-es] en la página) ————— */
+    .iln-langwrap{display:none;flex:none}
+    #ilatek-nav.iln-lang-on .iln-langwrap{display:inline-flex}
+    .iln-lang{display:inline-flex;align-items:center;border:1px solid var(--iln-line);border-radius:999px;background:rgba(255,255,255,.85);padding:2px;gap:2px;cursor:pointer;font:700 11px/1 Manrope,Arial,sans-serif;color:var(--iln-ink)}
+    .iln-lang:hover,.iln-lang:focus-visible{border-color:var(--iln-green)}
+    .iln-lang span{padding:5px 9px;border-radius:999px;transition:background .2s ease,color .2s ease,box-shadow .2s ease}
+    .iln-lang span[aria-pressed="true"]{background:var(--iln-ink);color:#fff;box-shadow:0 4px 10px rgba(11,16,61,.25)}
+    /* MODO GLOBAL: normaliza la capa de auto-traducción de Google (sin banner ni controles visibles) */
+    #ilatek-gt-host{display:none!important}
+    body{top:0!important}
+    .goog-te-banner-frame.skiptranslate{display:none!important}
+    .goog-te-gadget{font-size:0!important}
+    .goog-te-gadget .goog-te-combo{display:none!important}
+    #goog-gt-tt,#goog-gt-tt *{background:none!important;border:none!important;box-shadow:none!important}
+    .iln-burger{display:none;place-items:center;width:44px;height:44px;margin-left:auto;border:0;border-radius:11px;background:transparent;cursor:pointer;color:var(--iln-ink);position:relative}
+    .iln-burger svg{position:absolute;width:22px;height:22px;display:block;transition:opacity .22s ease,transform .26s ease}
+    .iln-burger .iln-ic-x{opacity:0;transform:rotate(-90deg) scale(.6)}
+    #ilatek-nav.iln-open .iln-burger .iln-ic-burger{opacity:0;transform:rotate(90deg) scale(.6)}
+    #ilatek-nav.iln-open .iln-burger .iln-ic-x{opacity:1;transform:rotate(0) scale(1)}
+    .iln-veil{position:fixed;inset:0;z-index:10000;pointer-events:none;background:radial-gradient(120% 90% at 50% 0%,rgba(11,16,61,.44),rgba(3,6,33,.3));opacity:0;visibility:hidden;transition:opacity .26s ease,visibility .26s}
+    #ilatek-nav.iln-veil-on .iln-veil{opacity:1;visibility:visible;pointer-events:auto}
+    /* Mega-panel (desktop) */
+    .iln-mega{position:absolute;top:calc(100% + 10px);left:50%;width:min(1210px,calc(100vw - 32px));border-radius:24px;background:linear-gradient(165deg,#213d8e 0%,#11164b 55%,#0b103d 100%);border:1px solid rgba(255,255,255,.12);box-shadow:0 24px 70px rgba(11,16,61,.45);color:#fff;z-index:10001;visibility:hidden;opacity:0;pointer-events:none;transform:translateX(-50%) translateY(-8px) scale(.985);transition:opacity .26s ease,visibility .26s,transform .3s cubic-bezier(.34,1.3,.4,1)}
+    .iln-mega.iln-show{visibility:visible;opacity:1;pointer-events:auto;transform:translateX(-50%) translateY(0) scale(1)}
+    .iln-mega-grid{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);column-gap:26px;padding:22px 24px 18px;max-height:min(72vh,720px);overflow-y:auto;overscroll-behavior:contain;scrollbar-width:none;-ms-overflow-style:none}
+    .iln-cat{font:800 11px/1 Manrope,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#8fb6cf;padding:14px 2px 8px;border-top:1px solid rgba(255,255,255,.1)}
+    .iln-col>.iln-cat:first-child{border-top:0;padding-top:2px}
+    .iln-list{list-style:none}
+    .iln-list li{opacity:0;transform:translateY(6px);transition:opacity .26s ease,transform .3s cubic-bezier(.34,1.3,.4,1)}
+    .iln-mega.iln-show .iln-list li{opacity:1;transform:none;transition-delay:calc(var(--i,0)*16ms)}
+    .iln-list a{display:flex;align-items:center;gap:10px;min-height:38px;padding:8px 2px;border-bottom:1px solid rgba(255,255,255,.07);color:rgba(255,255,255,.92);font-size:13.5px;font-weight:600;transition:color .2s ease,border-color .2s ease}
+    .iln-list a:hover,.iln-list a:focus-visible{color:var(--iln-green);border-bottom-color:rgba(0,185,79,.4)}
+    .iln-sico{width:17px;height:17px;flex:none;color:var(--iln-green);transition:color .2s ease}
+    .iln-list a:hover .iln-sico,.iln-list a:focus-visible .iln-sico{color:#7dffb9}
+    .iln-fle{flex:none;margin-left:auto;font-size:14px;line-height:1;color:rgba(255,255,255,.4);transition:transform .2s ease,color .2s ease}
+    .iln-list a:hover .iln-fle,.iln-list a:focus-visible .iln-fle{color:var(--iln-green);transform:translate(2px,-2px)}
+    .iln-mega-foot{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 24px;border-top:1px solid rgba(255,255,255,.1);background:rgba(11,16,61,.45);border-radius:0 0 24px 24px}
+    .iln-mega-foot p{margin:0;color:rgba(255,255,255,.66);font-size:12.5px}
+    .iln-max{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:8px 20px}
+    .iln-mega-all{display:inline-flex;align-items:center;gap:8px;color:var(--iln-green);font-weight:800;font-size:13px;transition:color .22s ease}
+    .iln-mega-all svg{width:13px;height:13px}
+    .iln-mega-all:hover,.iln-mega-all:focus-visible{color:#fff}
+    .iln-mega :focus-visible{outline:2px solid var(--iln-green);outline-offset:-2px;border-radius:6px}
+    /* Drawer móvil */
+    .iln-drawer{display:none}
+    @media(max-width:1250px){#ilatek-nav .iln-links{position:static;transform:none;margin:0 auto}#ilatek-nav .iln-links a,#ilatek-nav .iln-trigger{padding:10px 8px}}
+    @media(max-width:1100px){
+      .iln-links,#ilatek-nav .iln-cta,#ilatek-nav .iln-ctawrap{display:none}
+      .iln-burger{display:grid}
+      .iln-shell{gap:14px}
+      .iln-drawer{display:block;position:absolute;z-index:10001;top:calc(100% + 8px);left:16px;right:16px;border-radius:20px;background:linear-gradient(165deg,#213d8e 0%,#11164b 55%,#0b103d 100%);border:1px solid rgba(255,255,255,.12);box-shadow:0 24px 70px rgba(11,16,61,.45);color:#fff;overflow-y:auto;overflow-x:hidden;max-height:calc(100vh - 130px);scrollbar-width:none;-ms-overflow-style:none;visibility:hidden;opacity:0;pointer-events:none;transform:translateY(-10px);transition:opacity .26s ease,visibility .26s,transform .3s cubic-bezier(.34,1.3,.4,1)}
+      #ilatek-nav.iln-open .iln-drawer{visibility:visible;opacity:1;pointer-events:auto;transform:none}
+      .iln-acc-trigger{width:100%;display:flex;align-items:center;justify-content:flex-start;gap:10px;background:none;border:0;cursor:pointer;color:rgba(255,255,255,.92);font-family:inherit;font-size:15px;font-weight:700;text-align:left;min-height:48px;padding:12px 18px;border-bottom:1px solid rgba(255,255,255,.08)}
+      .iln-acc-trigger .iln-sico{width:16px;height:16px;flex:none}
+      .iln-acc-trigger .iln-chev{width:12px;height:12px;flex:none;margin-left:auto;transition:transform .25s ease}
+      .iln-acc-trigger[aria-expanded=true] .iln-chev{transform:rotate(180deg)}
+      .iln-acc-list{max-height:0;overflow:hidden;transition:max-height .3s ease}
+      .iln-acc-item.iln-acc-open>.iln-acc-list{max-height:1600px}
+      .iln-acc-list a{display:flex;align-items:center;gap:10px;min-height:44px;padding:11px 18px 11px 30px;color:rgba(255,255,255,.88);font-size:14px;font-weight:600;border-bottom:1px solid rgba(255,255,255,.06)}
+      .iln-acc-list a:hover,.iln-acc-list a:focus-visible{color:var(--iln-green)}
+      .iln-acc-list .iln-sico{width:16px;height:16px}
+      .iln-drawer>a{display:flex;align-items:center;gap:10px;min-height:48px;padding:12px 18px;color:rgba(255,255,255,.92);font-size:15px;font-weight:700;border-bottom:1px solid rgba(255,255,255,.08)}
+      .iln-drawer>a .iln-sico{width:16px;height:16px;flex:none}
+      .iln-drawer>a:hover,.iln-drawer>a:focus-visible{color:var(--iln-green)}
+      #ilatek-nav .iln-drawer .iln-drawer-cta{display:flex;align-items:center;justify-content:center;gap:10px;margin:14px 16px 16px;padding:14px 18px;border:0;border-radius:14px;background:var(--iln-green);color:#fff!important;text-align:center;font-weight:800;font-size:14px}
+      #ilatek-nav .iln-drawer-cta svg{width:16px;height:16px;flex:none}
+      #ilatek-nav .iln-drawer .iln-drawer-cta:hover,#ilatek-nav .iln-drawer .iln-drawer-cta:focus-visible{background:var(--iln-blue)}
+      .iln-drawer :focus-visible{outline:2px solid #7dffb9;outline-offset:-2px;border-radius:6px}
+      /* Profundidad del drawer: cada nivel anidado aclara sutilmente el fondo */
+      .iln-drawer>a{background:rgba(255,255,255,.015)}
+      .iln-acc-item{background:rgba(255,255,255,.02)}
+      .iln-acc-item .iln-acc-item{background:rgba(255,255,255,.03);box-shadow:inset 2px 0 0 rgba(255,255,255,.06)}
+      .iln-acc-item .iln-acc-item .iln-acc-item{background:rgba(255,255,255,.04)}
+      .iln-acc-list a{background:rgba(255,255,255,.018)}
+      .iln-acc-list a:hover,.iln-acc-list a:focus-visible{background:rgba(255,255,255,.09)}
+      .iln-acc-item.iln-acc-open>.iln-acc-trigger{background:rgba(255,255,255,.06);color:#fff}
+      .iln-acc-item .iln-acc-item>.iln-acc-trigger{padding-left:30px}
+      .iln-acc-item .iln-acc-item .iln-acc-item>.iln-acc-trigger{padding-left:42px}
+      .iln-acc-item .iln-acc-item .iln-acc-list a{padding-left:54px}
+      /* Contracción al logo (mobile, igual que en desktop) */
+      #ilatek-nav .iln-shell{transition:width .32s cubic-bezier(.4,0,.2,1),padding .32s cubic-bezier(.4,0,.2,1),gap .32s ease,border-radius .32s ease,box-shadow .32s ease}
+      #ilatek-nav .iln-brand{transition:gap .32s ease}
+      #ilatek-nav .iln-brand b{transition:opacity .18s ease,visibility .18s}
+      #ilatek-nav.iln-compact .iln-shell{width:64px;gap:0;padding:0;justify-content:center;border-radius:16px;box-shadow:0 14px 32px rgba(11,16,61,.24),inset 0 0 0 1px rgba(255,255,255,.75)}
+      #ilatek-nav.iln-compact .iln-brand{gap:0}
+      #ilatek-nav.iln-compact .iln-brand b{opacity:0;visibility:hidden;position:absolute;pointer-events:none}
+      #ilatek-nav.iln-compact .iln-burger{display:none}
+      #ilatek-nav.iln-compact .iln-langwrap{display:none}
+    }
+    /* Contracción al logo al hacer scroll hacia abajo (solo desktop) */
+    @media(min-width:1101px){
+      .iln-shell{transition:width .32s cubic-bezier(.4,0,.2,1),padding .32s cubic-bezier(.4,0,.2,1),border-radius .32s ease,gap .32s ease,box-shadow .32s ease}
+      #ilatek-nav .iln-brand{transition:gap .32s ease}
+      #ilatek-nav .iln-brand b{transition:opacity .18s ease,visibility .18s}
+      #ilatek-nav .iln-links{transition:opacity .18s ease,visibility .18s}
+      #ilatek-nav .iln-cta{transition:transform .22s ease,background .22s ease,opacity .18s ease,visibility .18s}
+      #ilatek-nav.iln-compact .iln-shell{width:64px;gap:0;padding:0;justify-content:center;border-radius:16px;box-shadow:0 14px 32px rgba(11,16,61,.24),inset 0 0 0 1px rgba(255,255,255,.75)}
+      #ilatek-nav.iln-compact .iln-brand{gap:0}
+      #ilatek-nav.iln-compact .iln-brand b{opacity:0;visibility:hidden;position:absolute;pointer-events:none}
+      #ilatek-nav.iln-compact .iln-links{opacity:0;visibility:hidden;pointer-events:none}
+      #ilatek-nav.iln-compact .iln-cta{position:absolute;right:12px;margin:0;opacity:0;visibility:hidden;pointer-events:none}
+      #ilatek-nav.iln-compact .iln-ctawrap{position:absolute;right:12px;margin:0;opacity:0;visibility:hidden;pointer-events:none}
+      #ilatek-nav.iln-compact .iln-langwrap{display:none}
+    }
+    @media(prefers-reduced-motion:reduce){
+      #ilatek-nav .iln-shell,#ilatek-nav .iln-mega,#ilatek-nav .iln-mega .iln-list li,#ilatek-nav .iln-drawer,#ilatek-nav .iln-veil,#ilatek-nav .iln-burger svg,#ilatek-nav .iln-acc-list,#ilatek-nav .iln-chev,#ilatek-nav .iln-drop,#ilatek-nav .iln-drop .iln-list a,#ilatek-nav .iln-trigger svg,#ilatek-nav .iln-brand b,#ilatek-nav .iln-links,#ilatek-nav .iln-cta{transition:none}
+    }
+  </style>
+
+  <div class="iln-veil" aria-hidden="true"></div>
+
+  <div class="iln-shell">
+    <a class="iln-brand" href="https://{{custom_values.website_url}}/" data-ilatek-path="/" aria-label="Ilatek, inicio">
+      <img src="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/ilatek-logo-256.webp" onerror="this.onerror=null;this.src='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab044d04091fa65e69921f6.png'" alt="Logo de Ilatek - Limpieza y Techos en {{custom_values.county_name_and_state}}" title="Ilatek - Limpieza y Techos en {{custom_values.county_name_and_state}}" width="52" height="52" loading="eager" decoding="async" data-ilatek-local-alt="Logo%20de%20Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D" data-ilatek-local-title="Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D">
+    </a>
+
+    <nav class="iln-links" id="iln-links" aria-label="Navegación principal">
+      <button class="iln-trigger" type="button" aria-expanded="false" aria-controls="iln-mega" aria-haspopup="true"><span class="iln-t" data-es="Servicios" data-en="Services">Servicios</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-chev"></use></svg></button>
+      <a href="https://{{custom_values.website_url}}/resenas" data-ilatek-path="/resenas"><span class="iln-t" data-es="Reseñas" data-en="Reviews">Reseñas</span></a>
+      <div class="iln-dropwrap">
+        <button class="iln-trigger" id="iln-empleos-trig" type="button" aria-expanded="false" aria-controls="iln-empleos" aria-haspopup="true"><span class="iln-t" data-es="Empleos" data-en="Jobs">Empleos</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-chev"></use></svg></button>
+        <div class="iln-drop" id="iln-empleos" aria-labelledby="iln-empleos-trig">
+          <ul class="iln-list">
+            <li><a href="https://{{custom_values.website_url}}/reclutamiento-empleo-techos" data-ilatek-path="/reclutamiento-empleo-techos"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-roof"></use></svg><span class="iln-t" data-es="Mantenimiento de Techos" data-en="Roof Maintenance">Mantenimiento de Techos</span></a></li>
+            <li><a href="https://{{custom_values.website_url}}/reclutamiento-empleo" data-ilatek-path="/reclutamiento-empleo"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-spark"></use></svg><span class="iln-t" data-es="Limpieza" data-en="Cleaning">Limpieza</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <a href="https://{{custom_values.website_url}}/limpieza/#ilatek-conocenos" data-ilatek-path="/limpieza/#ilatek-conocenos" data-es="Acerca de Nosotros" data-en="About Us">Acerca de Nosotros</a>
+
+    </nav>
+    <div class="iln-langwrap"><button class="iln-lang" id="iln-lang" type="button" aria-label="Cambiar el idioma a English"><span aria-pressed="true">es</span><span aria-pressed="false">en</span></button></div>
+    <a class="iln-login" href="https://portal.ilatekpr.com" target="_blank" rel="noopener">Login</a>
+    <div class="iln-ctawrap">
+      <button class="iln-cta" id="iln-agenda-trig" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="iln-agenda"><span class="iln-t" data-es="Agenda tu Servicio" data-en="Book Your Service">Agenda tu Servicio</span><span aria-hidden="true"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" focusable="false"><use href="#iln-i-cal"></use></svg></span></button>
+      <div class="iln-drop iln-agenda" id="iln-agenda" aria-labelledby="iln-agenda-trig">
+        <ul class="iln-list">
+          <li><a href="https://{{custom_values.website_url}}/cotizacion-techos" data-ilatek-path="/cotizacion-techos"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-roof"></use></svg><span><span class="iln-t" data-es="Mantenimiento de Techos" data-en="Roof Maintenance">Mantenimiento de Techos</span><small class="iln-t" data-es="Reserva tu fecha y hora" data-en="Book your date &amp; time">Reserva tu fecha y hora</small></span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/cotizacion" data-ilatek-path="/cotizacion"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-spark"></use></svg><span><span class="iln-t" data-es="Servicio de Limpieza" data-en="Cleaning Service">Servicio de Limpieza</span><small class="iln-t" data-es="Reserva tu fecha y hora" data-en="Book your date &amp; time">Reserva tu fecha y hora</small></span></a></li>
+        </ul>
+      </div>
+    </div>
+
+
+
+    <button class="iln-burger" type="button" aria-expanded="false" aria-controls="iln-drawer" aria-label="Abrir o cerrar el menú"><svg class="iln-ic-burger" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-menu"></use></svg><span class="iln-ic-x" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><use href="#iln-i-close"></use></svg></span></button>
+
+    <!-- MEGA -->
+    <div class="iln-mega" id="iln-mega">
+      <!-- columnas de servicios por categoría -->
+      <ul class="iln-mega-grid">
+        <li class="iln-col">
+          <p class="iln-cat iln-t" data-es="Techos · Mantenimiento" data-en="Roofs · Maintenance">Techos · Mantenimiento</p>
+          <ul class="iln-list">
+            <li style="--i:0"><a href="https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos" data-ilatek-path="/inspeccion-y-mantenimiento-de-techos"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-clipboard"></use></svg><span class="iln-t" data-es="Inspección y Mantenimiento" data-en="Inspection &amp; Maintenance">Inspección y Mantenimiento</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:1"><a href="https://{{custom_values.website_url}}/inspeccion-de-techos" data-ilatek-path="/inspeccion-de-techos"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-search"></use></svg><span class="iln-t" data-es="Inspección de Techos" data-en="Roof Inspection">Inspección de Techos</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:2"><a href="https://{{custom_values.website_url}}/mantenimiento-de-techos" data-ilatek-path="/mantenimiento-de-techos"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-gear"></use></svg><span class="iln-t" data-es="Mantenimiento Preventivo" data-en="Preventive Maintenance">Mantenimiento Preventivo</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:3"><a href="https://{{custom_values.website_url}}/limpieza-de-techos-y-canaletas" data-ilatek-path="/limpieza-de-techos-y-canaletas"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-gutter"></use></svg><span class="iln-t" data-es="Limpieza de Techos y Canaletas" data-en="Roof &amp; Gutter Cleaning">Limpieza de Techos y Canaletas</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:4"><a href="https://{{custom_values.website_url}}/canaletas-y-bajantes" data-ilatek-path="/canaletas-y-bajantes"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-pipe"></use></svg><span class="iln-t" data-es="Canaletas y Bajantes" data-en="Gutters &amp; Downspouts">Canaletas y Bajantes</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:5"><a href="https://{{custom_values.website_url}}/lavado-a-presion-techos" data-ilatek-path="/lavado-a-presion-techos"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-jet"></use></svg><span class="iln-t" data-es="Lavado a Presión de Techos" data-en="Roof Pressure Washing">Lavado a Presión de Techos</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:6"><a href="https://{{custom_values.website_url}}/tragaluces" data-ilatek-path="/tragaluces"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-skylight"></use></svg><span class="iln-t" data-es="Tragaluces y Skylights" data-en="Skylights">Tragaluces y Skylights</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:7"><a href="https://{{custom_values.website_url}}/instalacion-y-reemplazo-de-techos" data-ilatek-path="/instalacion-y-reemplazo-de-techos"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-hammer"></use></svg><span class="iln-t" data-es="Instalación y Reemplazo" data-en="Installation &amp; Replacement">Instalación y Reemplazo</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+          </ul>
+          <p class="iln-cat iln-t" data-es="Techos · Reparación" data-en="Roofs · Repair">Techos · Reparación</p>
+          <ul class="iln-list">
+            <li style="--i:8"><a href="https://{{custom_values.website_url}}/reparacion-de-techos" data-ilatek-path="/reparacion-de-techos"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-roof"></use></svg><span class="iln-t" data-es="Reparación de Techos" data-en="Roof Repair">Reparación de Techos</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:9"><a href="https://{{custom_values.website_url}}/reparacion-de-goteras" data-ilatek-path="/reparacion-de-goteras"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-drop"></use></svg><span class="iln-t" data-es="Reparación de Goteras" data-en="Leak Repair">Reparación de Goteras</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:10"><a href="https://{{custom_values.website_url}}/reparacion-de-filtraciones" data-ilatek-path="/reparacion-de-filtraciones"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-shield"></use></svg><span class="iln-t" data-es="Reparación de Filtraciones" data-en="Seepage Repair">Reparación de Filtraciones</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:11"><a href="https://{{custom_values.website_url}}/reparacion-de-grietas-techos" data-ilatek-path="/reparacion-de-grietas-techos"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-crack"></use></svg><span class="iln-t" data-es="Reparación de Grietas" data-en="Crack Repair">Reparación de Grietas</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:12"><a href="https://{{custom_values.website_url}}/empozamiento-de-techos" data-ilatek-path="/empozamiento-de-techos"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-puddle"></use></svg><span class="iln-t" data-es="Empozamiento de Agua" data-en="Water Ponding Fix">Empozamiento de Agua</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:15"><a href="https://{{custom_values.website_url}}/reparacion-post-huracan" data-ilatek-path="/reparacion-post-huracan"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-hurricane"></use></svg><span class="iln-t" data-es="Reparación Post-Huracán" data-en="Post-Hurricane Repair">Reparación Post-Huracán</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+          </ul>
+        </li>
+        <li class="iln-col">
+          <p class="iln-cat iln-t" data-es="Techos · Sellado" data-en="Roofs · Sealing">Techos · Sellado</p>
+          <ul class="iln-list">
+            <li style="--i:16"><a href="https://{{custom_values.website_url}}/sellado-de-techos" data-ilatek-path="/sellado-de-techos"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-brush"></use></svg><span class="iln-t" data-es="Sellado de Techos" data-en="Roof Sealing">Sellado de Techos</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:17"><a href="https://{{custom_values.website_url}}/sellado-de-silicona" data-ilatek-path="/sellado-de-silicona"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-tube"></use></svg><span class="iln-t" data-es="Sellado con Silicona" data-en="Silicone Sealing">Sellado con Silicona</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:18"><a href="https://{{custom_values.website_url}}/membrana-asfaltica" data-ilatek-path="/membrana-asfaltica"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-roll"></use></svg><span class="iln-t" data-es="Membrana Asfáltica" data-en="Asphalt Membrane">Membrana Asfáltica</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:19"><a href="https://{{custom_values.website_url}}/recubrimiento-elastomerico" data-ilatek-path="/recubrimiento-elastomerico"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-roller"></use></svg><span class="iln-t" data-es="Recubrimiento Elastomérico" data-en="Elastomeric Coating">Recubrimiento Elastomérico</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:20"><a href="https://{{custom_values.website_url}}/sellado-de-poliuretano" data-ilatek-path="/sellado-de-poliuretano"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-flask"></use></svg><span class="iln-t" data-es="Sellado de Poliuretano" data-en="Polyurethane Sealing">Sellado de Poliuretano</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:21"><a href="https://{{custom_values.website_url}}/sellado-acrilico" data-ilatek-path="/sellado-acrilico"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-paint"></use></svg><span class="iln-t" data-es="Sellado Acrílico" data-en="Acrylic Sealing">Sellado Acrílico</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:22"><a href="https://{{custom_values.website_url}}/sellado-de-techos-residencial" data-ilatek-path="/sellado-de-techos-residencial"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-home-check"></use></svg><span class="iln-t" data-es="Sellado Residencial" data-en="Residential Sealing">Sellado Residencial</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:23"><a href="https://{{custom_values.website_url}}/sellado-de-techos-comercial" data-ilatek-path="/sellado-de-techos-comercial"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-bld-check"></use></svg><span class="iln-t" data-es="Sellado Comercial" data-en="Commercial Sealing">Sellado Comercial</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:24"><a href="https://{{custom_values.website_url}}/sellado-de-techos-industrial" data-ilatek-path="/sellado-de-techos-industrial"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-ind-check"></use></svg><span class="iln-t" data-es="Sellado Industrial" data-en="Industrial Sealing">Sellado Industrial</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+          </ul>
+          <p class="iln-cat iln-t" data-es="Techos · Impermeabilización y tipos" data-en="Roofs · Waterproofing &amp; types">Techos · Impermeabilización y tipos</p>
+          <ul class="iln-list">
+            <li style="--i:25"><a href="https://{{custom_values.website_url}}/impermeabilizacion-de-techos" data-ilatek-path="/impermeabilizacion-de-techos"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-water-shield"></use></svg><span class="iln-t" data-es="Impermeabilización" data-en="Waterproofing">Impermeabilización</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:26"><a href="https://{{custom_values.website_url}}/techos-de-concreto" data-ilatek-path="/techos-de-concreto"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-slab"></use></svg><span class="iln-t" data-es="Techos de Concreto" data-en="Concrete Roofs">Techos de Concreto</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:27"><a href="https://{{custom_values.website_url}}/techos-planos" data-ilatek-path="/techos-planos"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-flat"></use></svg><span class="iln-t" data-es="Techos Planos" data-en="Flat Roofs">Techos Planos</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:28"><a href="https://{{custom_values.website_url}}/techos-de-zinc" data-ilatek-path="/techos-de-zinc"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-zinc"></use></svg><span class="iln-t" data-es="Techos de Zinc" data-en="Zinc &amp; Metal Roofs">Techos de Zinc</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:29"><a href="https://{{custom_values.website_url}}/techos-de-asfalto" data-ilatek-path="/techos-de-asfalto"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-shingle"></use></svg><span class="iln-t" data-es="Techos de Asfalto" data-en="Asphalt Shingle Roofs">Techos de Asfalto</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:30"><a href="https://{{custom_values.website_url}}/techos-de-teja" data-ilatek-path="/techos-de-teja"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-tile"></use></svg><span class="iln-t" data-es="Techos de Teja" data-en="Tile Roofs">Techos de Teja</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:31"><a href="https://{{custom_values.website_url}}/techos-de-madera" data-ilatek-path="/techos-de-madera"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-wood"></use></svg><span class="iln-t" data-es="Techos de Madera" data-en="Wood Roofs">Techos de Madera</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:32"><a href="https://{{custom_values.website_url}}/techos-por-segmento" data-ilatek-path="/techos-por-segmento"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-layers"></use></svg><span class="iln-t" data-es="Techos por Segmento" data-en="Roofs by Segment">Techos por Segmento</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+          </ul>
+        </li>
+        <li class="iln-col">
+          <p class="iln-cat iln-t" data-es="Limpieza" data-en="Cleaning">Limpieza</p>
+          <ul class="iln-list">
+            <li style="--i:33"><a href="https://{{custom_values.website_url}}/limpieza-residencial" data-ilatek-path="/limpieza-residencial"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-home"></use></svg><span class="iln-t" data-es="Limpieza Residencial" data-en="Residential Cleaning">Limpieza Residencial</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:34"><a href="https://{{custom_values.website_url}}/limpieza-comercial" data-ilatek-path="/limpieza-comercial"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-bld"></use></svg><span class="iln-t" data-es="Limpieza Comercial" data-en="Commercial Cleaning">Limpieza Comercial</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:35"><a href="https://{{custom_values.website_url}}/limpieza-industrial" data-ilatek-path="/limpieza-industrial"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-ind"></use></svg><span class="iln-t" data-es="Limpieza Industrial" data-en="Industrial Cleaning">Limpieza Industrial</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:36"><a href="https://{{custom_values.website_url}}/limpieza-estandar" data-ilatek-path="/limpieza-estandar"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-spark"></use></svg><span class="iln-t" data-es="Limpieza Estándar" data-en="Standard Cleaning">Limpieza Estándar</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:37"><a href="https://{{custom_values.website_url}}/limpieza-profunda" data-ilatek-path="/limpieza-profunda"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-spray"></use></svg><span class="iln-t" data-es="Limpieza Profunda" data-en="Deep Cleaning">Limpieza Profunda</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:38"><a href="https://{{custom_values.website_url}}/limpieza-de-mudanza" data-ilatek-path="/limpieza-de-mudanza"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-box"></use></svg><span class="iln-t" data-es="Limpieza de Mudanza" data-en="Move-In/Out Cleaning">Limpieza de Mudanza</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:39"><a href="https://{{custom_values.website_url}}/airbnb-turnover" data-ilatek-path="/airbnb-turnover"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-key"></use></svg><span class="iln-t" data-es="Airbnb &amp; Turnover" data-en="Airbnb &amp; Turnover">Airbnb &amp; Turnover</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:40"><a href="https://{{custom_values.website_url}}/organizacion" data-ilatek-path="/organizacion"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-shelf"></use></svg><span class="iln-t" data-es="Organización" data-en="Home Organization">Organización</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:41"><a href="https://{{custom_values.website_url}}/electrodomesticos" data-ilatek-path="/electrodomesticos"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-fridge"></use></svg><span class="iln-t" data-es="Electrodomésticos" data-en="Appliances">Electrodomésticos</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:42"><a href="https://{{custom_values.website_url}}/alfombras" data-ilatek-path="/alfombras"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-rug"></use></svg><span class="iln-t" data-es="Alfombras" data-en="Carpets &amp; Rugs">Alfombras</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:43"><a href="https://{{custom_values.website_url}}/lavado-a-presion" data-ilatek-path="/lavado-a-presion"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-jet"></use></svg><span class="iln-t" data-es="Lavado a Presión" data-en="Pressure Washing">Lavado a Presión</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:44"><a href="https://{{custom_values.website_url}}/ventanas" data-ilatek-path="/ventanas"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-window"></use></svg><span class="iln-t" data-es="Ventanas" data-en="Windows">Ventanas</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+            <li style="--i:45"><a href="https://{{custom_values.website_url}}/post-construccion" data-ilatek-path="/post-construccion"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-helmet"></use></svg><span class="iln-t" data-es="Post-Construcción" data-en="Post-Construction">Post-Construcción</span><span class="iln-fle" aria-hidden="true">&#8599;</span></a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="iln-mega-foot">
+        <p class="iln-t" data-es="¿No sabes cuál necesitas? Te orientamos sin costo." data-en="Not sure what you need? We guide you at no cost.">¿No sabes cuál necesitas? Te orientamos sin costo.</p>
+        <div class="iln-max">
+          <a class="iln-mega-all" href="https://{{custom_values.website_url}}/servicios-techos" data-ilatek-path="/servicios-techos"><span class="iln-t" data-es="Todos los Servicios de Mantenimiento de Techos" data-en="All Roof Maintenance Services">Todos los Servicios de Mantenimiento de Techos</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-arrow"></use></svg></a>
+          <a class="iln-mega-all" href="https://{{custom_values.website_url}}/servicios" data-ilatek-path="/servicios"><span class="iln-t" data-es="Todos los Servicios de Limpieza" data-en="All Cleaning Services">Todos los Servicios de Limpieza</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-arrow"></use></svg></a>
+          <a class="iln-mega-all" href="https://portal.ilatekpr.com" target="_blank" rel="noopener"><span class="iln-t" data-es="Portal del Cliente" data-en="Client Portal">Portal del Cliente</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-portal"></use></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- DRAWER -->
+    <div class="iln-drawer" id="iln-drawer">
+      <a href="https://{{custom_values.website_url}}/resenas" data-ilatek-path="/resenas"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-star"></use></svg><span class="iln-t" data-es="Reseñas" data-en="Reviews">Reseñas</span></a>
+      <div class="iln-acc-item">
+        <button class="iln-acc-trigger" type="button" aria-expanded="false"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-briefcase"></use></svg><span class="iln-t" data-es="Empleos" data-en="Jobs">Empleos</span><svg class="iln-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-chev"></use></svg></button>
+        <div class="iln-acc-list">
+          <a href="https://{{custom_values.website_url}}/reclutamiento-empleo-techos" data-ilatek-path="/reclutamiento-empleo-techos"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-roof"></use></svg><span class="iln-t" data-es="Mantenimiento de Techos" data-en="Roof Maintenance">Mantenimiento de Techos</span></a>
+          <a href="https://{{custom_values.website_url}}/reclutamiento-empleo" data-ilatek-path="/reclutamiento-empleo"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-spark"></use></svg><span class="iln-t" data-es="Limpieza" data-en="Cleaning">Limpieza</span></a>
+        </div>
+      </div>
+      <a href="https://{{custom_values.website_url}}/#ilatek-faq" data-ilatek-path="/#ilatek-faq"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-info"></use></svg><span class="iln-t" data-es="Acerca de Nosotros" data-en="About Us">Acerca de Nosotros</span></a>
+      <a href="https://portal.ilatekpr.com" target="_blank" rel="noopener"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-portal"></use></svg>Login</a>
+      <div class="iln-acc-item">
+        <button class="iln-acc-trigger" type="button" aria-expanded="false" aria-controls="iln-drawer-agenda"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-cal"></use></svg><span class="iln-t" data-es="Agenda tu Servicio" data-en="Book Your Service">Agenda tu Servicio</span><svg class="iln-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-chev"></use></svg></button>
+        <div class="iln-acc-list" id="iln-drawer-agenda">
+          <a href="https://{{custom_values.website_url}}/cotizacion-techos" data-ilatek-path="/cotizacion-techos"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-roof"></use></svg><span class="iln-t" data-es="Mantenimiento de Techos" data-en="Roof Maintenance">Mantenimiento de Techos</span></a>
+          <a href="https://{{custom_values.website_url}}/cotizacion" data-ilatek-path="/cotizacion"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-spark"></use></svg>Servicio de Limpieza</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ Motor i18n es/en ═══
+    · HÍBRIDO: con traducción autorizada ([data-es] fuera del nav/footer) usa el modo
+      literal; si no la hay, activa auto-traducción global (Google Translate) para
+      que el es/en funcione en TODAS las páginas que lleven este menú.
+    · Modos por nodo: data-attr (traduce ese atributo) · data-en-key (HTML rico
+      desde window.ILATEK_I18N[key], con variantes es/en) · data-en (texto plano).
+    · Cambia <html lang>, persiste en localStorage (ilatek-lang), resuelve tokens GHL
+      en las variantes (respaldo; GHL ya los resuelve en el HTML) y emite el evento
+      'ilatek:lang' para que otros embeds (footer) se sincronicen.
+    · La detección y la aplicación inicial corren en DOMContentLoaded porque el nav
+      se parsea antes que el contenido de la página.
+    · Expone window.__ilatekSetLang('es'|'en') y window.__ilatekLang. -->
+  <script>
+  (function(){
+    var root=document.getElementById('ilatek-nav'); if(!root||root.dataset.ilnLang)return; root.dataset.ilnLang='true';
+    var LANG_KEY='ilatek-lang';
+    function token(name){return '{'+'{custom_values.'+name+'}'+'}'}
+    function clean(v){v=String(v||'').replace(/ /g,' ').trim();return /^\s*\{\{[^}]+\}\}\s*$/.test(v)?'':v}
+    var website=clean(root.getAttribute('data-website-url'))||'https://ilatekpr.com';
+    var county='Puerto Rico';
+    function resolve(text){
+      var cel=document.querySelector('[data-location-label]');
+      if(cel){var cv=clean(cel.getAttribute('data-location-label'));if(cv)county=cv}
+      return window.ILATEK_LINKS.replace(String(text||'').split(token('county_name_and_state')).join(county),token('website_url'),website)
+    }
+    var btn=root.querySelector('.iln-lang');
+    var wrap=btn?btn.parentElement:null;
+    function dictVal(el,lang){
+      var k=el.getAttribute('data-en-key'),d=window.ILATEK_I18N;
+      return (d&&d[k]&&d[k][lang])?d[k][lang]:null;
+    }
+    function applyLang(lang){
+      document.documentElement.setAttribute('lang',lang);
+      try{localStorage.setItem(LANG_KEY,lang)}catch(e){}
+      var nodes=document.querySelectorAll('[data-en]');
+      for(var i=0;i<nodes.length;i++){
+        var el=nodes[i],attr=el.getAttribute('data-attr'),en=el.getAttribute('data-en'),es=el.getAttribute('data-es');
+        if(!attr&&!el.hasAttribute('data-en-key')){
+          var val=resolve(lang==='en'?en:(es||(el.firstChild&&el.firstChild.nodeValue)||''));
+          if(lang==='en'&&el.hasAttribute('data-en-html')){el.innerHTML=resolve(el.getAttribute('data-en-html'))}
+          else{el.textContent=val}
+        }
+        if(el.hasAttribute('data-en-key')){
+          var rich=dictVal(el,lang);
+          if(lang==='en'&&rich){if(!el._ilEsHtml){el._ilEsHtml=el.innerHTML}el.innerHTML=resolve(rich)}
+          else if(lang==='es'){if(el._ilEsHtml){el.innerHTML=el._ilEsHtml}else{var rv=dictVal(el,'es');if(rv){el.innerHTML=resolve(rv)}}}
+        }
+        if(attr){var av=resolve(lang==='en'?en:(es||el.getAttribute(attr)||''));el.setAttribute(attr,av);}
+        var a2=el.getAttribute('data-attr2');
+        if(a2){var v2=resolve(lang==='en'?(el.getAttribute('data-en2')||''):(el.getAttribute('data-es2')||el.getAttribute(a2)||''));el.setAttribute(a2,v2)}
+      var keyed=document.querySelectorAll('[data-en-key]');
+      for(var ki=0;ki<keyed.length;ki++){
+        var kel=keyed[ki];
+        if(lang==='en'){
+          var kd=dictVal(kel,'en');
+          if(!kd)continue;
+          if(!kel._ilEsHtml)kel._ilEsHtml=kel.innerHTML;
+          kel.innerHTML=resolve(kd);
+        }else if(kel._ilEsHtml){kel.innerHTML=kel._ilEsHtml}
+      }
+      }
+      if(btn){
+        var spans=btn.querySelectorAll('span');
+        if(spans[0])spans[0].setAttribute('aria-pressed',lang==='es'?'true':'false');
+        if(spans[1])spans[1].setAttribute('aria-pressed',lang==='en'?'true':'false');
+        btn.setAttribute('aria-label',lang==='es'?'Cambiar el idioma a English':'Switch language to Spanish');
+      }
+      if(window.__ilatekSyncGt)window.__ilatekSyncGt(lang);window.__ilatekLang=lang;
+      try{window.dispatchEvent(new CustomEvent('ilatek:lang',{detail:lang}))}catch(e){}
+    }
+    window.__ilatekSetLang=applyLang;
+    /* Auto-ocultar + estado inicial (tras DOMContentLoaded: el home se parsea despues del nav) */
+    function boot(){
+      var translatable=false,nl=document.querySelectorAll('[data-es]'),ni;
+      for(ni=0;ni<nl.length;ni++){if(!nl[ni].closest('#ilatek-nav')&&!nl[ni].closest('#ilatek-footer')){translatable=true;break}}
+      if(true){/* hibrido: es/en siempre disponible */root.classList.add('iln-lang-on')}
+      var saved='es';try{saved=localStorage.getItem(LANG_KEY)||'es'}catch(e){}
+      window.__ilatekLang=saved;
+      applyLang(saved);
+    }
+    if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',boot)}else{boot()}
+    /* —— MODO GLOBAL (híbrido): auto-traducción del resto de la página ——————
+       Páginas sin [data-es] propio (landings): inyecta el elemento de Google
+       Translate una sola vez y conmuta el idioma con clicks sintéticos sobre
+       el combo (los iframes están bloqueados por same-origin). El estilo lo
+       normaliza #ilatek-gt-host (oculta banner, créditos y el combo original). */
+    var gtHost=null,gtTimer=null;
+    function gtNeeds(lang){var nl=document.querySelectorAll('[data-es]'),ni;for(ni=0;ni<nl.length;ni++){if(!nl[ni].closest('#ilatek-nav')&&!nl[ni].closest('#ilatek-footer'))return false}return true}
+    function gtInject(){if(gtHost||document.getElementById('ilatek-gt-host'))return;gtHost=document.createElement('div');gtHost.id='ilatek-gt-host';gtHost.innerHTML='<div id=\'google_translate_element\' style=\'display:none\'></div>';document.body.appendChild(gtHost);window.googleTranslateElementInit=function(){try{new google.translate.TranslateElement({pageLanguage:'es',includedLanguages:'en,es',autoDisplay:false},'google_translate_element')}catch(e){}};var sc=document.createElement('script');sc.src='https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';document.body.appendChild(sc)}
+    function __ilatekGtPick(lang){if(!gtNeeds(lang))return;gtInject();var tries=0,combo=null;function pick(){combo=document.querySelector('.goog-te-combo');if(!combo)return false;try{combo.value=(lang==='en')?'en':'es';combo.dispatchEvent(new Event('change'))}catch(e){if(combo.onchange)combo.onchange()}return true}if(pick())return;if(gtTimer)clearInterval(gtTimer);gtTimer=setInterval(function(){tries++;if(pick()||tries>120){if(gtTimer)clearInterval(gtTimer);gtTimer=null}},500)}
+    window.__ilatekGtPick=__ilatekGtPick;window.__ilatekSyncGt=__ilatekGtPick;
+    if(!btn)return;
+    btn.addEventListener('click',function(){
+      var cur=document.documentElement.getAttribute('lang');
+      applyLang(cur==='en'?'es':'en');
+    });
+  })();
+  </script>
+
+  <!-- SPRITE -->
+  <svg width="0" height="0" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false"><defs>
+      <symbol id="iln-i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></symbol>
+      <symbol id="iln-i-bld" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/></symbol>
+      <symbol id="iln-i-ind" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M17 18h1"/><path d="M12 18h1"/><path d="M7 18h1"/></symbol>
+      <symbol id="iln-i-spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 1.9 4.6L18.5 9.5l-4.6 1.9L12 16l-1.9-4.6L5.5 9.5l4.6-1.9z"/><path d="m18 15 .9 2.1L21 18l-2.1.9L18 21l-.9-2.1L15 18l2.1-.9z"/></symbol>
+      <symbol id="iln-i-spray" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11h4v9a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z"/><path d="M11 11V8"/><path d="M9 8h4"/><path d="M13 6h2l1.5-2"/><path d="M17 7h.01"/><path d="M19 5h.01"/><path d="M19 9h.01"/></symbol>
+      <symbol id="iln-i-box" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7 12 3 4 7v10l8 4 8-4z"/><path d="M4 7l8 4 8-4"/><path d="M12 11v10"/></symbol>
+      <symbol id="iln-i-key" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="17" r="3"/><path d="m9.5 15.5 9-9"/><path d="m15 6 3 3"/><path d="m17.5 3.5 3 3"/></symbol>
+      <symbol id="iln-i-shelf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3v18"/><path d="M4 9h16"/><path d="M4 15h16"/><path d="M8 6h6"/><path d="M8 12h6"/><path d="M8 18h4"/></symbol>
+      <symbol id="iln-i-fridge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M6 10h12"/><path d="M9 6h1"/><path d="M9 14h1"/></symbol>
+      <symbol id="iln-i-rug" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="1"/><path d="M7 6v12"/><path d="M17 6v12"/><path d="M3 10h4"/><path d="M3 14h4"/><path d="M17 10h4"/><path d="M17 14h4"/></symbol>
+      <symbol id="iln-i-jet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c3.4 4.3 5.5 7 5.5 10a5.5 5.5 0 0 1-11 0C6.5 10 8.6 7.3 12 3z"/><path d="M3 7 5 9"/><path d="M5 5 7 7"/></symbol>
+      <symbol id="iln-i-window" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 3v18"/><path d="M3 12h18"/></symbol>
+      <symbol id="iln-i-helmet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18h20"/><path d="M6 18v-4a6 6 0 0 1 12 0v4"/><path d="M12 8V4"/></symbol>
+      <symbol id="iln-i-roof" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></symbol>
+      <symbol id="iln-i-drop" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c3.5 4.5 6 7.5 6 10.5a6 6 0 0 1-12 0C6 10.5 8.5 7.5 12 3z"/></symbol>
+      <symbol id="iln-i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+      <symbol id="iln-i-crack" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 8 11l4 2-3 9"/><path d="M4 12h4"/><path d="M16 8h4"/></symbol>
+      <symbol id="iln-i-puddle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 15c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/><path d="M2 19c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/></symbol>
+      <symbol id="iln-i-rust" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9.5 9.5 5 5"/><path d="m14.5 9.5-5 5"/></symbol>
+      <symbol id="iln-i-mold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c3.5 4.5 6 7.5 6 10.5a6 6 0 0 1-12 0C6 10.5 8.5 7.5 12 3z"/><path d="M10 14h.01"/><path d="M13.5 11h.01"/></symbol>
+      <symbol id="iln-i-hurricane" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-8-8"/><path d="M12 8a4 4 0 1 0 4 4"/><path d="M16 12a2 2 0 1 1-2-2"/></symbol>
+      <symbol id="iln-i-brush" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3l7 7-4.5 4.5a2 2 0 0 1-2.8 0L10 10.8a2 2 0 0 1 0-2.8z"/><path d="M14 3l-6 6"/><path d="M9.5 14.5 3 21"/></symbol>
+      <symbol id="iln-i-tube" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="8" width="10" height="13" rx="1"/><path d="M9 8V5h6v3"/><path d="M12 3v2"/><path d="M10 13h4"/></symbol>
+      <symbol id="iln-i-roll" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="14" height="8" rx="2"/><path d="M17 10h3a3 3 0 0 1 0 6h-3"/><path d="M8 8v8"/></symbol>
+      <symbol id="iln-i-roller" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="14" height="6" rx="2"/><path d="M18 7h1a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-6"/><path d="M11 13v3"/><rect x="9" y="16" width="4" height="5" rx="1"/></symbol>
+      <symbol id="iln-i-flask" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"/><path d="M10 3v6L5.2 18a2 2 0 0 0 1.8 3h10a2 2 0 0 0 1.8-3L14 9V3"/><path d="M7.5 14h9"/></symbol>
+      <symbol id="iln-i-paint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 0 0 0 18c1.7 0 2-1 2-2s-.7-2 1-2h1a5 5 0 0 0 5-5c0-5-4-9-9-9z"/><path d="M8 10h.01"/><path d="M12 7.5h.01"/><path d="M15.5 10h.01"/></symbol>
+      <symbol id="iln-i-home-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="m9 12 2 2 4-4"/></symbol>
+      <symbol id="iln-i-bld-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="m9 11 1.5 1.5L14 9"/></symbol>
+      <symbol id="iln-i-ind-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="m14 11 1.5 1.5L19 9"/></symbol>
+      <symbol id="iln-i-water-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8c1.7 2 3 3.3 3 5a3 3 0 0 1-6 0c0-1.7 1.3-3 3-5z"/></symbol>
+      <symbol id="iln-i-slab" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="7" rx="1"/><path d="M3 15h18"/><path d="M7 11v4"/><path d="M12 11v4"/><path d="M17 11v4"/></symbol>
+      <symbol id="iln-i-flat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10h18"/><path d="M5 10v10"/><path d="M19 10v10"/><path d="M3 20h18"/><path d="M9 14h6"/></symbol>
+      <symbol id="iln-i-zinc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7c1.5-1 3-1 4.5 0s3 1 4.5 0 3-1 4.5 0 3 1 4.5 0"/><path d="M3 12c1.5-1 3-1 4.5 0s3 1 4.5 0 3-1 4.5 0 3 1 4.5 0"/><path d="M3 17c1.5-1 3-1 4.5 0s3 1 4.5 0 3-1 4.5 0 3 1 4.5 0"/></symbol>
+      <symbol id="iln-i-shingle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h16"/><path d="M4 12h16"/><path d="M4 16h16"/><path d="M7 8v4"/><path d="M12 12v4"/><path d="M17 8v4"/></symbol>
+      <symbol id="iln-i-tile" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8c3-3 6-3 9 0s6 3 9 0"/><path d="M3 12c3-3 6-3 9 0s6 3 9 0"/><path d="M3 16c3-3 6-3 9 0s6 3 9 0"/></symbol>
+      <symbol id="iln-i-wood" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="1"/><path d="M7 6v12"/><path d="M11 6v12"/><path d="M15 6v12"/></symbol>
+      <symbol id="iln-i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 3 8l9 5 9-5z"/><path d="m3 12 9 5 9-5"/><path d="m3 16 9 5 9-5"/></symbol>
+      <symbol id="iln-i-clipboard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="18" rx="2"/><path d="M9 4V3h6v1"/><path d="m9 13 2 2 4-4"/></symbol>
+      <symbol id="iln-i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></symbol>
+      <symbol id="iln-i-gear" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3"/><path d="M12 19v3"/><path d="M2 12h3"/><path d="M19 12h3"/><path d="m4.9 4.9 2.1 2.1"/><path d="m17 17 2.1 2.1"/><path d="m19.1 4.9-2.1 2.1"/><path d="m7 17-2.1 2.1"/></symbol>
+      <symbol id="iln-i-gutter" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h18l-2 5H5z"/><path d="M9 13v8"/><path d="M15 13v8"/></symbol>
+      <symbol id="iln-i-pipe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h6v5a5 5 0 0 0 5 5h3"/><path d="m16 11 4 3-4 3"/></symbol>
+      <symbol id="iln-i-skylight" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8l8-5 8 5"/><rect x="8" y="9" width="8" height="6" rx="1"/><path d="M9 20h6"/></symbol>
+      <symbol id="iln-i-hammer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m15 12-8.5 8.5a2.1 2.1 0 0 1-3-3L12 9"/><path d="M17.6 6.4 15 9l-3-3 2.6-2.6a2 2 0 0 1 2.8 0l1.2 1.2a2 2 0 0 1 0 2.8z"/></symbol>
+      <symbol id="iln-i-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></symbol>
+      <symbol id="iln-i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+      <symbol id="iln-i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M3 12h18"/><path d="M3 18h18"/></symbol>
+      <symbol id="iln-i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></symbol>
+      <symbol id="iln-i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/><path d="m9 15 2 2 4-4"/></symbol>
+      <symbol id="iln-i-portal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+      <symbol id="iln-i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8 6.2 20.9l1.1-6.5L2.6 9.8l6.5-.9z"/></symbol>
+      <symbol id="iln-i-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M3 12h18"/></symbol>
+      <symbol id="iln-i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 8h.01"/></symbol>
+    </defs></svg>
+</section>
+<script>
+/* ILATEK · Menú universal — mega-panel + drawer + contracción al logo al hacer scroll */
+(function(){
+  var root=document.getElementById('ilatek-nav');if(!root||root.dataset.ilnReady)return;root.dataset.ilnReady='true';
+  try{if(root.parentNode&&root.parentNode!==document.body)document.body.appendChild(root)}catch(e){}
+  var mega=root.querySelector('.iln-mega'),burger=root.querySelector('.iln-burger'),drawer=root.querySelector('.iln-drawer');
+  var trig=root.querySelector('.iln-trigger');
+  var grid=mega?mega.querySelector('.iln-mega-grid'):null;
+  function catIcon(label){var l=(label||'').toLowerCase();if(l.indexOf('impermeab')>-1)return '#iln-i-water-shield';if(l.indexOf('reparac')>-1)return '#iln-i-hammer';if(l.indexOf('sellado')>-1)return '#iln-i-brush';if(l.indexOf('mantenimiento')>-1)return '#iln-i-gear';if(l.indexOf('limpieza')>-1)return '#iln-i-spark';return '#iln-i-layers'}
+
+  /* Drawer móvil: generado desde el mega, con niveles de profundidad
+     (sección > categoría > servicio) y sombras escalonadas por nivel */
+  if(drawer&&grid){
+    var site=(root.getAttribute('data-website-url')||'').replace(/ /g,' ').trim();
+    if(/^\s*\{\{[^}]+\}\}\s*$/.test(site)||!site)site='https://ilatekpr.com';
+    function mkAcc(label,icon){
+      var item=document.createElement('div');item.className='iln-acc-item';
+      var b=document.createElement('button');b.type='button';b.className='iln-acc-trigger';b.setAttribute('aria-expanded','false');
+      var ico=document.createElementNS('http://www.w3.org/2000/svg','svg');ico.setAttribute('class','iln-sico');ico.setAttribute('viewBox','0 0 24 24');ico.setAttribute('fill','none');ico.setAttribute('stroke','currentColor');ico.setAttribute('stroke-width','1.7');ico.setAttribute('stroke-linecap','round');ico.setAttribute('stroke-linejoin','round');ico.setAttribute('aria-hidden','true');
+      var iu=document.createElementNS('http://www.w3.org/2000/svg','use');iu.setAttribute('href',icon);ico.appendChild(iu);
+      var sp=document.createElement('span');sp.textContent=label;
+      var ic=document.createElementNS('http://www.w3.org/2000/svg','svg');ic.setAttribute('class','iln-chev');ic.setAttribute('viewBox','0 0 24 24');ic.setAttribute('fill','none');ic.setAttribute('stroke','currentColor');ic.setAttribute('stroke-width','2.4');ic.setAttribute('stroke-linecap','round');ic.setAttribute('stroke-linejoin','round');ic.setAttribute('aria-hidden','true');
+      var us=document.createElementNS('http://www.w3.org/2000/svg','use');us.setAttribute('href','#iln-i-chev');ic.appendChild(us);
+      b.appendChild(ico);b.appendChild(sp);b.appendChild(ic);
+      var list=document.createElement('div');list.className='iln-acc-list';
+      item.appendChild(b);item.appendChild(list);
+      return {item:item,list:list};
+    }
+    function fillLinks(list,node){
+      [].forEach.call(node.querySelectorAll('a'),function(a){
+        var c=a.cloneNode(true);var fl=c.querySelector('.iln-fle');if(fl)fl.parentNode.removeChild(fl);list.appendChild(c);
+      });
+    }
+    var groups=[],cur=null;
+    [].forEach.call(grid.children,function(col){
+      [].forEach.call(col.children,function(node){
+        if(node.classList&&node.classList.contains('iln-cat')){cur={label:(node.textContent||'').replace(/^\s+|\s+$/g,''),nodes:[]};groups.push(cur)}
+        else if(cur&&node.classList&&node.classList.contains('iln-list'))cur.nodes.push(node);
+      });
+    });
+    var frag=document.createDocumentFragment(),sections={};
+    groups.forEach(function(g){
+      var tech=/^techos/i.test(g.label);
+      var key=tech?'techos':'limpieza';
+      if(!sections[key]){sections[key]=mkAcc(tech?'Mantenimiento de Techos':'Limpieza',catIcon(tech?'mantenimiento':'limpieza'));frag.appendChild(sections[key].item)}
+      var sec=sections[key],host=sec.list;
+      if(tech&&g.label.indexOf('\u00b7')>-1){
+        var sub=mkAcc(g.label.replace(/^techos\s*\u00b7\s*/i,''),catIcon(g.label));
+        sec.list.appendChild(sub.item);host=sub.list;
+      }
+      g.nodes.forEach(function(node){fillLinks(host,node)});
+    });
+    if(sections.techos){
+      var hub=document.createElement('a');hub.href=window.ILATEK_LINKS.join(site,'/servicios-techos');hub.setAttribute('data-ilatek-path','/servicios-techos');
+      hub.innerHTML='<svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-arrow"></use></svg>Todos los servicios de Techos';
+      sections.techos.list.appendChild(hub);
+    }
+    drawer.insertBefore(frag,drawer.firstChild);
+  }
+
+  function firstFocus(el){var f=el.querySelectorAll('a[href],button:not([disabled])');return f.length?f[0]:null}
+  var opener=null;
+  function megaOpen(){return !!(mega&&mega.classList.contains('iln-show'))}
+  function openMega(t){if(!mega||megaOpen())return;closeEmp(false);closeAg(false);opener=t||trig;mega.classList.add('iln-show');root.classList.add('iln-veil-on');if(trig)trig.setAttribute('aria-expanded','true');var f=firstFocus(grid||mega);if(f)f.focus({preventScroll:true})}
+  function closeMega(restore){if(!mega||!megaOpen())return;mega.classList.remove('iln-show');root.classList.remove('iln-veil-on');if(trig)trig.setAttribute('aria-expanded','false');if(restore!==false&&opener&&opener.focus)opener.focus({preventScroll:true});opener=null}
+  if(trig){trig.addEventListener('click',function(e){e.preventDefault();megaOpen()?closeMega():openMega(trig)});trig.addEventListener('keydown',function(e){if(e.key==='ArrowDown'){e.preventDefault();openMega(trig)}})}
+
+  var emp=root.querySelector('#iln-empleos'),empTrig=root.querySelector('#iln-empleos-trig');
+  function empOpen(){return !!(emp&&emp.classList.contains('iln-show'))}
+  function openEmp(){if(!emp||empOpen())return;closeMega(false);emp.classList.add('iln-show');if(empTrig)empTrig.setAttribute('aria-expanded','true');var f=emp.querySelector('a[href]');if(f)f.focus({preventScroll:true})}
+  function closeEmp(restore){if(!emp||!empOpen())return;emp.classList.remove('iln-show');if(empTrig)empTrig.setAttribute('aria-expanded','false');if(restore&&empTrig)empTrig.focus({preventScroll:true})}
+  if(empTrig){empTrig.addEventListener('click',function(e){e.preventDefault();empOpen()?closeEmp(false):openEmp()});empTrig.addEventListener('keydown',function(e){if(e.key==='ArrowDown'){e.preventDefault();openEmp()}})}
+
+  /* CTA "Agenda tu Servicio": elige calendario (Limpieza o Techos) */
+  var ag=root.querySelector('#iln-agenda'),agTrig=root.querySelector('#iln-agenda-trig');
+  function agOpen(){return !!(ag&&ag.classList.contains('iln-show'))}
+  function openAg(){if(!ag||agOpen())return;closeMega(false);closeEmp(false);ag.classList.add('iln-show');if(agTrig)agTrig.setAttribute('aria-expanded','true');var f=ag.querySelector('a[href]');if(f)f.focus({preventScroll:true})}
+  function closeAg(restore){if(!ag||!agOpen())return;ag.classList.remove('iln-show');if(agTrig)agTrig.setAttribute('aria-expanded','false');if(restore&&agTrig)agTrig.focus({preventScroll:true})}
+  if(agTrig){agTrig.addEventListener('click',function(e){e.preventDefault();agOpen()?closeAg(false):openAg()});agTrig.addEventListener('keydown',function(e){if(e.key==='ArrowDown'){e.preventDefault();openAg()}})}
+
+  var dOpener=null;
+  function drawerOpen(){return !!(drawer&&drawer.classList.contains('iln-show'))}
+  function openDrawer(){if(!drawer||drawerOpen())return;closeAg(false);dOpener=document.activeElement;drawer.classList.add('iln-show');root.classList.add('iln-open','iln-veil-on');if(burger)burger.setAttribute('aria-expanded','true')}
+  function closeDrawer(restore){if(!drawer||!drawerOpen())return;drawer.classList.remove('iln-show');root.classList.remove('iln-open','iln-veil-on');if(burger)burger.setAttribute('aria-expanded','false');closeAllAcc();if(restore!==false&&dOpener&&dOpener.focus)dOpener.focus({preventScroll:true});dOpener=null}
+  if(burger)burger.addEventListener('click',function(){drawerOpen()?closeDrawer():openDrawer()});
+
+  function accs(){return [].slice.call(root.querySelectorAll('.iln-acc-item'))}
+  function closeAccEl(it){if(!it)return;it.classList.remove('iln-acc-open');var b=it.querySelector('.iln-acc-trigger');if(b)b.setAttribute('aria-expanded','false');accs().forEach(function(d){if(d!==it&&it.contains(d))closeAccEl(d)})}
+  function closeAllAcc(){accs().forEach(closeAccEl)}
+  function closeSibs(it){var p=it.parentNode;if(!p)return;[].forEach.call(p.children,function(ch){if(ch!==it&&ch.classList&&ch.classList.contains('iln-acc-item'))closeAccEl(ch)})}
+  [].forEach.call(root.querySelectorAll('.iln-acc-trigger'),function(b){
+    b.addEventListener('click',function(){var it=b.parentNode;var open=!it.classList.contains('iln-acc-open');if(open)closeSibs(it);it.classList.toggle('iln-acc-open',open);b.setAttribute('aria-expanded',String(open))});
+  });
+
+  document.addEventListener('keydown',function(e){if(e.key!=='Escape')return;if(megaOpen()){e.preventDefault();closeMega(true);return}if(empOpen()){e.preventDefault();closeEmp(true);return}if(agOpen()){e.preventDefault();closeAg(true);return}var any=accs().filter(function(it){return it.classList.contains('iln-acc-open')})[0];if(any){e.preventDefault();closeAllAcc();var at=root.querySelector('.iln-acc-trigger');if(at)at.focus({preventScroll:true});return}if(drawerOpen()){e.preventDefault();closeDrawer(true)}});
+  document.addEventListener('click',function(e){
+    var t=e.target;var onVeil=t&&t.classList&&t.classList.contains('iln-veil');
+    if(megaOpen()&&!mega.contains(t)&&!(t.closest&&t.closest('.iln-trigger')))closeMega(false);
+    if(empOpen()&&emp&&!emp.contains(t)&&!(empTrig&&empTrig.contains(t)))closeEmp(false);
+    if(agOpen()&&ag&&!ag.contains(t)&&!(agTrig&&agTrig.contains(t)))closeAg(false);
+    if(drawerOpen()&&!drawer.contains(t)&&!(burger&&burger.contains(t)))closeDrawer(false);
+    if(onVeil&&!megaOpen()&&!drawerOpen())root.classList.remove('iln-veil-on');
+  });
+  root.addEventListener('click',function(e){var a=e.target&&e.target.closest?e.target.closest('a[href]'):null;if(!a)return;if(a.classList.contains('iln-brand'))return;closeMega(false);closeDrawer(false);closeAg(false)});
+
+  /* Contraer al logo al bajar / reabrir al subir (desktop y mobile) */
+  var compact=false,acc=0,lastY=0,ticking=false;
+  var compactBrand=root.querySelector('.iln-brand');
+  var brandHomeLabel=compactBrand&&compactBrand.getAttribute('aria-label');
+  function syncCompactBrand(){
+    if(!compactBrand)return;
+    if(compact){
+      compactBrand.setAttribute('role','button');
+      compactBrand.setAttribute('aria-label',window.__ilatekLang==='en'?'Open navigation menu':'Abrir menú de navegación');
+      compactBrand.setAttribute('aria-expanded','false');
+      compactBrand.setAttribute('aria-controls',window.matchMedia('(max-width:1100px)').matches?'iln-drawer':'iln-links');
+    }else{
+      compactBrand.removeAttribute('role');compactBrand.removeAttribute('aria-expanded');compactBrand.removeAttribute('aria-controls');
+      if(brandHomeLabel)compactBrand.setAttribute('aria-label',brandHomeLabel);
+    }
+  }
+  function setCompact(on){
+    on=!!on;
+    if(on&&(megaOpen()||drawerOpen()))return;
+    if(on&&empOpen())closeEmp(false);
+    if(on===compact)return;
+    compact=on;
+    root.classList.toggle('iln-compact',on);syncCompactBrand();
+  }
+  function yNow(){return window.pageYOffset||document.documentElement.scrollTop||0}
+  function step(){
+    ticking=false;
+    var y=yNow(),dy=y-lastY;lastY=y;
+    if(y<=48){acc=0;setCompact(false);return}
+    if((dy>0&&acc<0)||(dy<0&&acc>0))acc=0;
+    acc+=dy;
+    if(acc>60)setCompact(true);
+    else if(acc<-16)setCompact(false);
+  }
+  lastY=yNow();
+  window.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(step)}},{passive:true});
+  root.addEventListener('focusin',function(e){if(compact&&!(compactBrand&&compactBrand.contains(e.target)))setCompact(false)});
+  function activateCompactBrand(e){
+    if(!compact)return;
+    e.preventDefault();e.stopPropagation();setCompact(false);
+    if(window.matchMedia('(max-width:1100px)').matches){openDrawer();if(burger)burger.focus({preventScroll:true})}
+    else openMega(trig);
+  }
+  if(compactBrand){
+    compactBrand.addEventListener('click',activateCompactBrand);
+    compactBrand.addEventListener('keydown',function(e){if(compact&&(e.key===' '||e.key==='Enter'))activateCompactBrand(e)});
+  }
+  window.addEventListener('ilatek:lang',syncCompactBrand);
+  window.addEventListener('resize',syncCompactBrand,{passive:true});
+
+  /* Respaldo local de tokens de GHL */
+  var website=(root.getAttribute('data-website-url')||'').replace(/\u00a0/g,' ').trim();
+  if(/^\s*\{\{[^}]+\}\}\s*$/.test(website)||!website)website='https://ilatekpr.com';
+  var values={'{{custom_values.website_url}}':website};
+  var walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT),nodes=[],node;
+  while(node=walker.nextNode()){if(node.parentElement&&node.parentElement.tagName!=='SCRIPT'&&node.parentElement.tagName!=='STYLE')nodes.push(node)}
+  nodes.forEach(function(n){Object.keys(values).forEach(function(k){n.nodeValue=window.ILATEK_LINKS.replace(n.nodeValue,k,values[k])})});
+  Array.prototype.forEach.call(root.querySelectorAll('*'),function(el){Array.prototype.forEach.call(el.attributes||[],function(a){var v=a.value;Object.keys(values).forEach(function(k){v=window.ILATEK_LINKS.replace(v,k,values[k])});if(v!==a.value)el.setAttribute(a.name,v)})});
+})();
+</script>
+<!-- ILATEK:SHELL:HEADER:END -->
 <section id="ilatek-techos-inspeccion-y-mantenimiento-de-techos" aria-label="Ilatek Inspección y mantenimiento {{custom_values.county_name_and_state}}"
   data-location-label="{{custom_values.county_name_and_state}}"
   data-business-email="{{custom_values.business__email}}"
@@ -377,7 +1173,7 @@ html,body{overflow-x:clip}</style>
           </div>
         </div>
         <figure class="ilt-hero-card ilt-reveal">
-          <img src="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046ec3b8e61adf5631fa2.webp" onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/hero-poster-1280.webp'" width="1200" height="1320" loading="eager" decoding="async" fetchpriority="high" alt="Inspección y mantenimiento de techos de Ilatek Techos en Puerto Rico — {{custom_values.county_name_and_state}}" title="Inspección y mantenimiento de techos · Ilatek Techos">
+          <img src="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046ec3b8e61adf5631fa2.webp" onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/hero-poster-1280.webp'" width="1200" height="1320" loading="eager" decoding="async" fetchpriority="high" alt="Inspección y mantenimiento de techos de Ilatek Techos — {{custom_values.county_name_and_state}}" title="Inspección y mantenimiento de techos · Ilatek Techos — servicio en {{custom_values.county_name_and_state}}" data-ilatek-local-alt="Inspecci%C3%B3n%20y%20mantenimiento%20de%20techos%20de%20Ilatek%20Techos%20%E2%80%94%20%7B%7Bcustom_values.county_name_and_state%7D%7D" data-ilatek-local-title="Inspecci%C3%B3n%20y%20mantenimiento%20de%20techos%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D">
           <span class="ilt-hero-badge"><i></i>Inspección gratis</span>
         </figure>
       </div>
@@ -425,7 +1221,7 @@ html,body{overflow-x:clip}</style>
           </div>
         </div>
         <figure class="ilt-media ilt-reveal">
-          <img src="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f585f560d166699993.webp" onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/hero-poster-1280.webp'" width="1200" height="900" loading="lazy" decoding="async" alt="Mantenimiento preventivo de techos por Ilatek Techos en Puerto Rico — limpieza y revisión" title="Mantenimiento de techos · Ilatek Techos">
+          <img src="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f585f560d166699993.webp" onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/hero-poster-1280.webp'" width="1200" height="900" loading="lazy" decoding="async" alt="Mantenimiento preventivo de techos por Ilatek Techos en {{custom_values.county_name_and_state}} — limpieza y revisión" title="Mantenimiento de techos · Ilatek Techos — servicio en {{custom_values.county_name_and_state}}" data-ilatek-local-alt="Mantenimiento%20preventivo%20de%20techos%20por%20Ilatek%20Techos%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D%20%E2%80%94%20limpieza%20y%20revisi%C3%B3n" data-ilatek-local-title="Mantenimiento%20de%20techos%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D">
           <figcaption>Inspección · Limpieza del techo · Prevención</figcaption>
         </figure>
       </div>
@@ -595,9 +1391,9 @@ html,body{overflow-x:clip}</style>
       <nav class="icd-grid" id="icd-town-results" aria-label="Municipios de Puerto Rico con servicio de inspección y mantenimiento de techos"></nav>
       <p class="icd-empty" role="status" hidden>No encontramos ese pueblo. Verifica el nombre e intenta nuevamente.</p>
       <div class="icd-pagination">
-        <button class="icd-nav icd-nav--prev" type="button" aria-label="Página anterior">←</button>
+        <button class="icd-nav icd-nav--prev" type="button" aria-label="Página anterior" data-attr="aria-label" data-es="Página anterior" data-en="Previous page"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 12H5m7-7-7 7 7 7"></path></svg></button>
         <span class="icd-page" aria-live="polite">Página 1 de 1</span>
-        <button class="icd-nav icd-nav--next" type="button" aria-label="Página siguiente">→</button>
+        <button class="icd-nav icd-nav--next" type="button" aria-label="Página siguiente" data-attr="aria-label" data-es="Página siguiente" data-en="Next page"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14m-7-7 7 7-7 7"></path></svg></button>
       </div>
     </div>
   </div>
@@ -793,232 +1589,232 @@ html,body{overflow-x:clip}</style>
 <!-- Schema GEO/AEO opcional APAGADO: rellena lib/data/business.mjs y corre build-techos.mjs para activar PostalAddress + GeoCoordinates + AggregateRating. No se publican valores inventados. -->
 <script type="application/ld+json">
 {
- "@context": "https://schema.org",
- "@graph": [
-  {
-   "@type": "RoofingContractor",
-   "@id": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos/#service",
-   "name": "Inspección y Mantenimiento de Techos | Ilatek Techos",
-   "description": "Inspección de techos gratis y mantenimiento preventivo en Puerto Rico desde $58 al mes. Limpieza de techos, canaletas, lavado a presión y más. 78 municipios.",
-   "url": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos",
-   "telephone": "{{custom_values.business__phone}}",
-   "email": "{{custom_values.business__email}}",
-   "image": [
+  "@context": "https://schema.org",
+  "@graph": [
     {
-     "@type": "ImageObject",
-     "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046ec3b8e61adf5631fa2.webp",
-     "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046ec3b8e61adf5631fa2.jpg",
-     "width": 1200,
-     "height": 1320,
-     "caption": "Inspección y mantenimiento de techos · Ilatek Techos"
+      "@type": "RoofingContractor",
+      "@id": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos/#service",
+      "name": "Inspección y Mantenimiento de Techos | Ilatek Techos",
+      "description": "Inspección de techos gratis y mantenimiento preventivo en Puerto Rico desde $58 al mes. Limpieza de techos, canaletas, lavado a presión y más. 78 municipios.",
+      "url": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos",
+      "telephone": "{{custom_values.business__phone}}",
+      "email": "{{custom_values.business__email}}",
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046ec3b8e61adf5631fa2.webp",
+          "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046ec3b8e61adf5631fa2.jpg",
+          "width": 1200,
+          "height": 1320,
+          "caption": "Inspección y mantenimiento de techos · Ilatek Techos"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f585f560d166699993.webp",
+          "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f585f560d166699993.jpg",
+          "width": 1200,
+          "height": 900,
+          "caption": "Mantenimiento de techos · Ilatek Techos"
+        }
+      ],
+      "logo": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aa1c05dd953a0128b5348c2.jpg",
+      "priceRange": "$$",
+      "currenciesAccepted": "USD",
+      "paymentAccepted": "Cash, Credit Card, Debit Card",
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "{{custom_values.county_name_and_state}}"
+        },
+        {
+          "@type": "Country",
+          "name": "Puerto Rico"
+        }
+      ],
+      "availableLanguage": [
+        "es"
+      ],
+      "sameAs": [
+        "{{custom_values.facebook_url}}",
+        "{{custom_values.instagram_url}}"
+      ],
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "@id": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos/#offer",
+          "name": "Inspección y Mantenimiento de Techos",
+          "description": "desde $58 al mes",
+          "price": "58",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://{{custom_values.website_url}}/cotizacion",
+          "itemOffered": {
+            "@id": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos/#service-offer"
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "price": "58",
+            "priceCurrency": "USD",
+            "valueAddedTaxIncluded": false
+          }
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios de techos de Ilatek",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos/#service-offer"
+            }
+          }
+        ]
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "18:00"
+        }
+      ]
     },
     {
-     "@type": "ImageObject",
-     "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f585f560d166699993.webp",
-     "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f585f560d166699993.jpg",
-     "width": 1200,
-     "height": 900,
-     "caption": "Mantenimiento de techos · Ilatek Techos"
-    }
-   ],
-   "logo": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aa1c05dd953a0128b5348c2.jpg",
-   "priceRange": "$$",
-   "currenciesAccepted": "USD",
-   "paymentAccepted": "Cash, Credit Card, Debit Card",
-   "areaServed": [
-    {
-     "@type": "AdministrativeArea",
-     "name": "{{custom_values.county_name_and_state}}"
-    },
-    {
-     "@type": "Country",
-     "name": "Puerto Rico"
-    }
-   ],
-   "availableLanguage": [
-    "es"
-   ],
-   "sameAs": [
-    "{{custom_values.facebook_url}}",
-    "{{custom_values.instagram_url}}"
-   ],
-   "makesOffer": [
-    {
-     "@type": "Offer",
-     "@id": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos/#offer",
-     "name": "Inspección y Mantenimiento de Techos",
-     "description": "desde $58 al mes",
-     "price": "58",
-     "priceCurrency": "USD",
-     "availability": "https://schema.org/InStock",
-     "url": "https://{{custom_values.website_url}}/cotizacion",
-     "itemOffered": {
-      "@id": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos/#service-offer"
-     },
-     "priceSpecification": {
-      "@type": "PriceSpecification",
-      "price": "58",
-      "priceCurrency": "USD",
-      "valueAddedTaxIncluded": false
-     }
-    }
-   ],
-   "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Servicios de techos de Ilatek",
-    "itemListElement": [
-     {
-      "@type": "Offer",
-      "itemOffered": {
-       "@id": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos/#service-offer"
+      "@type": "WebSite",
+      "@id": "https://{{custom_values.website_url}}/#website",
+      "url": "https://{{custom_values.website_url}}/",
+      "name": "Ilatek Techos",
+      "inLanguage": "es",
+      "publisher": {
+        "@id": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos/#service"
       }
-     }
-    ]
-   },
-   "openingHoursSpecification": [
-    {
-     "@type": "OpeningHoursSpecification",
-     "dayOfWeek": [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday"
-     ],
-     "opens": "08:00",
-     "closes": "18:00"
-    }
-   ]
-  },
-  {
-   "@type": "WebSite",
-   "@id": "https://{{custom_values.website_url}}/#website",
-   "url": "https://{{custom_values.website_url}}/",
-   "name": "Ilatek Techos",
-   "inLanguage": "es",
-   "publisher": {
-    "@id": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos/#service"
-   }
-  },
-  {
-   "@type": "WebPage",
-   "@id": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos/#webpage",
-   "url": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos",
-   "name": "Inspección y Mantenimiento de Techos | Ilatek Techos",
-   "description": "Inspección de techos gratis y mantenimiento preventivo en Puerto Rico desde $58 al mes. Limpieza de techos, canaletas, lavado a presión y más. 78 municipios.",
-   "inLanguage": "es",
-   "isPartOf": {
-    "@id": "https://{{custom_values.website_url}}/#website"
-   },
-   "about": {
-    "@id": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos/#service-offer"
-   },
-   "mainEntity": {
-    "@id": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos/#service-offer"
-   },
-   "breadcrumb": {
-    "@id": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos/#breadcrumb"
-   },
-   "datePublished": "2026-10-04",
-   "dateModified": "2026-10-04",
-   "speakable": {
-    "@type": "SpeakableSpecification",
-    "cssSelector": [
-     "h1",
-     ".ilt-faq summary h3"
-    ]
-   }
-  },
-  {
-   "@type": "Service",
-   "@id": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos/#service-offer",
-   "name": "Inspección y Mantenimiento de Techos",
-   "description": "Inspección gratis y mantenimiento preventivo de techos en Puerto Rico desde $58 al mes: limpieza, canaletas, lavado y sellado preventivo.",
-   "serviceType": "Inspección y Mantenimiento de Techos",
-   "url": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos",
-   "image": [
-    {
-     "@type": "ImageObject",
-     "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046ec3b8e61adf5631fa2.webp",
-     "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046ec3b8e61adf5631fa2.jpg",
-     "width": 1200,
-     "height": 1320,
-     "caption": "Inspección y mantenimiento de techos · Ilatek Techos"
     },
     {
-     "@type": "ImageObject",
-     "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f585f560d166699993.webp",
-     "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f585f560d166699993.jpg",
-     "width": 1200,
-     "height": 900,
-     "caption": "Mantenimiento de techos · Ilatek Techos"
-    }
-   ],
-   "provider": {
-    "@id": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos/#service"
-   },
-   "areaServed": [
-    {
-     "@type": "AdministrativeArea",
-     "name": "{{custom_values.county_name_and_state}}"
+      "@type": "WebPage",
+      "@id": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos/#webpage",
+      "url": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos",
+      "name": "Inspección y Mantenimiento de Techos en {{custom_values.county_name_and_state}} | Ilatek Techos",
+      "description": "Inspección de techos gratis y mantenimiento preventivo en {{custom_values.county_name_and_state}} desde $58 al mes. Limpieza de techos, canaletas, lavado a presión y más. 78 municipios.",
+      "inLanguage": "es",
+      "isPartOf": {
+        "@id": "https://{{custom_values.website_url}}/#website"
+      },
+      "about": {
+        "@id": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos/#service-offer"
+      },
+      "mainEntity": {
+        "@id": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos/#service-offer"
+      },
+      "breadcrumb": {
+        "@id": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos/#breadcrumb"
+      },
+      "datePublished": "2026-10-04",
+      "dateModified": "2026-10-04",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          ".ilt-faq summary h3"
+        ]
+      }
     },
     {
-     "@type": "Country",
-     "name": "Puerto Rico"
-    }
-   ],
-   "mainEntityOfPage": {
-    "@id": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos/#webpage"
-   },
-   "isPartOf": {
-    "@id": "https://{{custom_values.website_url}}/#website"
-   },
-   "offers": {
-    "@type": "Offer",
-    "@id": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos/#offer",
-    "name": "Inspección y Mantenimiento de Techos",
-    "description": "desde $58 al mes",
-    "price": "58",
-    "priceCurrency": "USD",
-    "availability": "https://schema.org/InStock",
-    "url": "https://{{custom_values.website_url}}/cotizacion",
-    "itemOffered": {
-     "@id": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos/#service-offer"
+      "@type": "Service",
+      "@id": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos/#service-offer",
+      "name": "Inspección y Mantenimiento de Techos",
+      "description": "Inspección gratis y mantenimiento preventivo de techos en Puerto Rico desde $58 al mes: limpieza, canaletas, lavado y sellado preventivo.",
+      "serviceType": "Inspección y Mantenimiento de Techos",
+      "url": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos",
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046ec3b8e61adf5631fa2.webp",
+          "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046ec3b8e61adf5631fa2.jpg",
+          "width": 1200,
+          "height": 1320,
+          "caption": "Inspección y mantenimiento de techos · Ilatek Techos"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f585f560d166699993.webp",
+          "contentUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f585f560d166699993.jpg",
+          "width": 1200,
+          "height": 900,
+          "caption": "Mantenimiento de techos · Ilatek Techos"
+        }
+      ],
+      "provider": {
+        "@id": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos/#service"
+      },
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "{{custom_values.county_name_and_state}}"
+        },
+        {
+          "@type": "Country",
+          "name": "Puerto Rico"
+        }
+      ],
+      "mainEntityOfPage": {
+        "@id": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos/#webpage"
+      },
+      "isPartOf": {
+        "@id": "https://{{custom_values.website_url}}/#website"
+      },
+      "offers": {
+        "@type": "Offer",
+        "@id": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos/#offer",
+        "name": "Inspección y Mantenimiento de Techos",
+        "description": "desde $58 al mes",
+        "price": "58",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://{{custom_values.website_url}}/cotizacion",
+        "itemOffered": {
+          "@id": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos/#service-offer"
+        },
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "price": "58",
+          "priceCurrency": "USD",
+          "valueAddedTaxIncluded": false
+        }
+      }
     },
-    "priceSpecification": {
-     "@type": "PriceSpecification",
-     "price": "58",
-     "priceCurrency": "USD",
-     "valueAddedTaxIncluded": false
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://{{custom_values.website_url}}/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Techos",
+          "item": "https://{{custom_values.website_url}}/home"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Inspección y mantenimiento",
+          "item": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos"
+        }
+      ]
     }
-   }
-  },
-  {
-   "@type": "BreadcrumbList",
-   "@id": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos/#breadcrumb",
-   "itemListElement": [
-    {
-     "@type": "ListItem",
-     "position": 1,
-     "name": "Inicio",
-     "item": "https://{{custom_values.website_url}}/"
-    },
-    {
-     "@type": "ListItem",
-     "position": 2,
-     "name": "Techos",
-     "item": "https://{{custom_values.website_url}}/home"
-    },
-    {
-     "@type": "ListItem",
-     "position": 3,
-     "name": "Inspección y mantenimiento",
-     "item": "https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos"
-    }
-   ]
-  }
- ]
+  ]
 }
 </script>
 <script type="application/ld+json">
@@ -1123,3 +1919,348 @@ html,body{overflow-x:clip}</style>
 (function(){var d=document;function near(el){var n=el.closest('figure,article,section,div');var h=n&&n.querySelector('h1,h2,h3');return h?h.textContent.replace(/\s+/g,' ').trim():''}function fix(){var imgs=d.images;for(var i=0;i<imgs.length;i++){var im=imgs[i];if(im.closest('[aria-hidden="true"]')||im.closest('a[aria-label]'))continue;var alt=(im.getAttribute('alt')||'').trim(),title=(im.getAttribute('title')||'').trim();if(!alt){var s=title||near(im)||'Inspeccion, reparacion y sellado de techos en Puerto Rico - Ilatek Techos';alt=s.length>125?s.slice(0,122)+'...':s;im.setAttribute('alt',alt)}if(!title){var t=alt.length>60?alt.slice(0,57)+'...':alt;im.setAttribute('title',t)}}}if(d.readyState==='loading'){d.addEventListener('DOMContentLoaded',fix)}else{fix()}window.addEventListener('load',fix)})();
 </script>
 </section>
+<!-- ILATEK:SHELL:FOOTER:START -->
+<!--
+  ILATEK · GHL Custom Code · Footer global (embed independiente)
+  Pegar tal cual en un elemento <Custom Code> de GoHighLevel.
+  Reproduce el footer nativo publicado (fondo negro, columnas de navegación, fila de
+  servicios con tarjetas, tarjeta clara del Portal del Cliente y barra inferior).
+  Arreglos respecto al original:
+   · Los títulos "Menu Principal / Legal / Oportunidades" estaban en azul marino
+     #11164b sobre fondo negro (ilegibles); aquí se usan tonos claros.
+   · La columna "Servicios de Mantenimiento y Sellado de Techos" repetía los enlaces
+     de limpieza; ahora enlaza los servicios de techos reales.
+   · Los headings de columna usan h2 (no h1) para no romper la jerarquía de la página.
+   · Franja superior con la imagen de GHL como primer elemento y los tres bloques de
+     navegación reunidos en un mismo contenedor (en fila en escritorio, apilados en móvil).
+-->
+<footer id="ilatek-footer" role="contentinfo" aria-label="Pie de página de Ilatek">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+
+  <style>
+    #ilatek-footer{
+      --ilf-bg:#000000;--ilf-bg-m:#000321;--ilf-navy:#11164b;--ilf-ink:#000321;
+      --ilf-blue:#000d4d;--ilf-green:#00b94f;--ilf-green-dk:#009640;
+      --ilf-line:#1c2452;--ilf-gray:#cbd5e0;--ilf-muted:#5b6380;--ilf-white:#fff;
+      background:var(--ilf-bg);color:var(--ilf-white);
+      font-family:Inter,Arial,sans-serif;padding:40px 0 10px;
+      -webkit-font-smoothing:antialiased;overflow-x:clip;
+    }
+    #ilatek-footer *{box-sizing:border-box}
+    #ilatek-footer p,#ilatek-footer h2,#ilatek-footer h3,#ilatek-footer ul{margin:0;padding:0}
+    #ilatek-footer ul{list-style:none}
+    #ilatek-footer a{text-decoration:none}
+    #ilatek-footer a:focus-visible{outline:2px solid var(--ilf-green);outline-offset:3px;border-radius:4px}
+    .ilf-inner{width:100%}
+    /* franja superior: imagen de GHL como primer elemento del footer */
+    .ilf-top{width:90%;margin:20px auto;padding:40px;display:grid;grid-template-columns:31% 19.2% 18.1% 13.1%;column-gap:20px;align-items:center;background:linear-gradient(0deg,var(--ilf-white) 0%,var(--ilf-gray) 100%);border-radius:20px}
+    .ilf-brand{border-radius:20px;overflow:hidden;background:var(--ilf-white)}
+    .ilf-brand img{display:block;width:100%;height:auto}
+    /* iconos de los títulos */
+    .ilf-ico{width:15px;height:15px;display:inline-block;vertical-align:-2px;margin-right:6px;flex:none;color:var(--ilf-green)}
+    .ilf-kicker .ilf-ico{color:var(--ilf-green)}
+
+    /* columnas de navegación */
+    .ilf-nav{display:contents}
+    #ilatek-footer .ilf-kicker{font-size:14px;font-weight:700;letter-spacing:.02em;color:var(--ilf-navy);padding:0;margin:0 0 20px}
+    .ilf-list li{margin-bottom:9px}
+    .ilf-list a,.ilf-list span{font-size:12px;line-height:1.4;color:var(--ilf-muted)}
+    .ilf-list a:hover{color:var(--ilf-green)}
+    .ilf-list span{opacity:.72}
+
+    /* fila de servicios */
+    .ilf-services{
+      display:grid;grid-template-columns:31.6% 33.4% 30%;column-gap:20px;justify-content:center;align-items:center;
+      width:90%;margin:0 auto 40px;padding:0;
+      /* contenedor sin borde: cada columna lleva su propio borde redondeado */
+    }
+    .ilf-svc{text-align:center}
+    .ilf-card{padding:40px 0;background:rgba(0,0,0,.5);border:2px solid var(--ilf-blue);border-radius:25px}
+    #ilatek-footer .ilf-h{font-size:14px;font-weight:700;color:var(--ilf-white);padding:0;margin:0 0 20px;line-height:1.35}
+    .ilf-svcimg{max-width:100%;height:auto;border-radius:20px;padding:15px;margin:0 auto 16px;display:block}
+    .ilf-links li{margin-bottom:10px;line-height:1.35}
+    .ilf-links a{font-size:12px;font-weight:700;color:var(--ilf-gray)}
+    .ilf-links a:hover{color:var(--ilf-green);text-decoration:underline}
+    #ilatek-footer .ilf-strong{font-size:12px;font-weight:700;color:var(--ilf-gray);padding:0;margin:0 0 20px}
+    .ilf-prod .ilf-svcimg{margin-bottom:12px}
+
+    /* Portal del Cliente */
+    #ilatek-footer .ilf-portal-title{font-size:16px;font-weight:700;text-align:center;color:var(--ilf-white);padding:0;width:90%;margin:0 auto 20px}
+    .ilf-portal-card{
+      display:grid;grid-template-columns:26.5% 48.2% 25.3%;gap:20px;align-items:center;
+      width:90%;margin:0 auto 40px;padding:10px 100px;
+      background:linear-gradient(0deg,var(--ilf-gray) 0%,var(--ilf-white) 100%);
+      border-radius:20px;color:var(--ilf-navy);
+    }
+    .ilf-portal-img{max-width:100%;height:auto;border-radius:20px;padding:15px;margin:0 auto;display:block}
+    .ilf-portal-img-mobile{display:none}
+    #ilatek-footer .ilf-portal-h{font-size:16px;font-weight:700;color:var(--ilf-navy);text-align:center;padding:0;margin:0 0 20px}
+    .ilf-portal-copy{padding:40px 20px}
+    #ilatek-footer .ilf-portal-copy p{font-size:12px;line-height:1.45;color:var(--ilf-muted);text-align:center;padding:0;margin:0 0 20px}
+    .ilf-btn{
+      display:block;width:fit-content;margin:0 auto;padding:16px 60px;border-radius:10px;
+      background:var(--ilf-green);color:var(--ilf-white);font-weight:700;font-size:14px;
+      transition:background .2s ease;
+    }
+    .ilf-btn:hover{background:var(--ilf-green-dk)}
+    .ilf-dash{padding:40px 20px}
+    .ilf-dash ul li{position:relative;padding-left:22px;margin-bottom:2px;font-size:12px;line-height:2;color:#000}
+    .ilf-dash ul li::before{content:"\2713";position:absolute;left:0;color:var(--ilf-green);font-weight:700}
+
+    /* barra inferior */
+    .ilf-bottom{
+      display:grid;grid-template-columns:37.4% 25.1% 37.5%;align-items:center;gap:10px;
+      width:100%;margin:0 auto;padding:10px 5px;
+    }
+    .ilf-bottom-logo{text-align:center}
+    .ilf-bottom-logo img{width:100px;height:auto;border:3px solid var(--ilf-ink);border-radius:20px}
+    .ilf-social{display:flex;justify-content:center;gap:14px}
+    .ilf-social img{width:16px;height:20px;filter:brightness(0) invert(1);opacity:.85;transition:opacity .2s ease}
+    .ilf-social a:hover img{opacity:1}
+    .ilf-credit{text-align:center;font-size:12px;letter-spacing:.02em;color:var(--ilf-muted)}
+    .ilf-credit a{color:var(--ilf-white)}
+    .ilf-credit a:hover{color:var(--ilf-green)}
+
+    @media (max-width:900px){
+      .ilf-services{grid-template-columns:1fr 1fr;width:min(100% - 24px,720px)}
+      .ilf-svc:first-child{grid-column:1 / -1}
+      .ilf-portal-card{grid-template-columns:1fr;gap:26px;padding:32px 26px;width:min(100% - 24px,720px)}
+      .ilf-card{padding:32px 20px}
+      .ilf-svcimg{padding:0 0 16px}
+      .ilf-portal-copy{padding:0}
+      .ilf-portal-img{max-width:100%;padding:0}
+      .ilf-portal-img-mobile{display:block;max-width:min(100%,320px);height:auto;padding:0;margin:0 auto}
+      .ilf-dash{text-align:center;padding:10px 0}
+      .ilf-dash ul{display:inline-block;text-align:left}
+      .ilf-top{grid-template-columns:1fr;row-gap:26px;padding:30px 26px;width:min(100% - 24px,760px)}
+      .ilf-brand{max-width:340px}
+    }
+    @media (max-width:600px){
+      #ilatek-footer{background:var(--ilf-bg-m);padding-left:10px;padding-right:10px}
+      .ilf-brand{max-width:100%}
+      .ilf-services{grid-template-columns:1fr;gap:16px}
+      .ilf-svc:first-child{grid-column:auto}
+      .ilf-card{padding:28px 20px}
+      .ilf-bottom{grid-template-columns:1fr;gap:18px}
+      .ilf-credit{margin-top:6px}
+    }
+  </style>
+
+  <!-- Franja superior: imagen de GHL + navegación en el mismo contenedor -->
+  <div class="ilf-top">
+    <div class="ilf-brand">
+      <img src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac02015f30b488137bce134.jpg" alt="Ilatek Property Solution en {{custom_values.county_name_and_state}}" title="Ilatek Property Solution en {{custom_values.county_name_and_state}}" loading="lazy" data-ilatek-local-alt="Ilatek%20Property%20Solution%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D" data-ilatek-local-title="Ilatek%20Property%20Solution%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D">
+    </div>
+
+    <!-- Navegación -->
+    <div class="ilf-nav">
+      <nav aria-labelledby="ilf-menu-t">
+        <h2 id="ilf-menu-t" class="ilf-kicker"><svg class="ilf-ico" aria-hidden="true"><use href="#ilf-i-menu"></use></svg><span class="iln-t" data-es="Menu Principal" data-en="Main Menu">Menu Principal</span></h2>
+        <ul class="ilf-list">
+          <li><a href="https://{{custom_values.website_url}}/" data-ilatek-path="/"><span class="iln-t" data-es="Home" data-en="Home">Home</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/cotizacion" data-ilatek-path="/cotizacion"><span class="iln-t" data-es="Agenda tu Limpieza" data-en="Book Your Cleaning">Agenda tu Limpieza</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/home" data-ilatek-path="/home"><span class="iln-t" data-es="Agenda tu Mantenimiento de Techos" data-en="Book Your Roof Maintenance">Agenda tu Mantenimiento de Techos</span></a></li>
+        </ul>
+      </nav>
+      <nav aria-labelledby="ilf-legal-t">
+        <h2 id="ilf-legal-t" class="ilf-kicker"><svg class="ilf-ico" aria-hidden="true"><use href="#ilf-i-legal"></use></svg><span class="iln-t" data-es="Legal" data-en="Legal">Legal</span></h2>
+        <ul class="ilf-list">
+          <li><a href="https://{{custom_values.website_url}}/politica-de-privacidad" data-ilatek-path="/politica-de-privacidad"><span class="iln-t" data-es="Política de Privacidad" data-en="Privacy Policy">Política de Privacidad</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/terminos-y-condiciones" data-ilatek-path="/terminos-y-condiciones"><span class="iln-t" data-es="Términos y Condiciones" data-en="Terms &amp; Conditions">Términos y Condiciones</span></a></li>
+          <li><span class="iln-t" data-es="Garantía y Devoluciones" data-en="Warranty &amp; Returns">Garantía y Devoluciones</span></li>
+          <li><span class="iln-t" data-es="Licenciados y Asegurados" data-en="Licensed &amp; Insured">Licenciados y Asegurados</span></li>
+        </ul>
+      </nav>
+      <nav aria-labelledby="ilf-opp-t">
+        <h2 id="ilf-opp-t" class="ilf-kicker"><svg class="ilf-ico" aria-hidden="true"><use href="#ilf-i-opp"></use></svg><span class="iln-t" data-es="Oportunidades" data-en="Opportunities">Oportunidades</span></h2>
+        <ul class="ilf-list">
+          <li><span class="iln-t" data-es="Empleos" data-en="Jobs">Empleos</span></li>
+          <li><span class="iln-t" data-es="Educación" data-en="Education">Educación</span></li>
+          <li><span class="iln-t" data-es="Crea tu Propia Empresa" data-en="Start Your Own Business">Crea tu Propia Empresa</span></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="ilf-inner">
+
+    <!-- Servicios -->
+    <div class="ilf-services">
+      <section class="ilf-svc ilf-card" aria-labelledby="ilf-svc-clean-t">
+        <h2 id="ilf-svc-clean-t" class="ilf-h"><svg class="ilf-ico" aria-hidden="true"><use href="#ilf-i-clean"></use></svg><span class="iln-t" data-es="Servicios de Limpieza" data-en="Cleaning Services">Servicios de Limpieza</span></h2>
+        <img class="ilf-svcimg" src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8582fcc7a5a2b73475d89.jpg" alt="Ilatek - Servicio de Limpieza en {{custom_values.county_name_and_state}}" title="Ilatek - Servicio de Limpieza en {{custom_values.county_name_and_state}}" loading="lazy" data-ilatek-local-alt="Ilatek%20-%20Servicio%20de%20Limpieza%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D" data-ilatek-local-title="Ilatek%20-%20Servicio%20de%20Limpieza%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D">
+        <ul class="ilf-links">
+          <li><a href="https://{{custom_values.website_url}}/limpieza-residencial" data-ilatek-path="/limpieza-residencial"><span class="iln-t" data-es="Servicio de Limpieza Residencial en {{custom_values.county_name_and_state}}" data-en="Residential Cleaning Service in {{custom_values.county_name_and_state}}">Servicio de Limpieza Residencial en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/limpieza-comercial" data-ilatek-path="/limpieza-comercial"><span class="iln-t" data-es="Servicio de Limpieza Comercial en {{custom_values.county_name_and_state}}" data-en="Commercial Cleaning Service in {{custom_values.county_name_and_state}}">Servicio de Limpieza Comercial en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/limpieza-industrial" data-ilatek-path="/limpieza-industrial"><span class="iln-t" data-es="Servicio de Limpieza Industrial en {{custom_values.county_name_and_state}}" data-en="Industrial Cleaning Service in {{custom_values.county_name_and_state}}">Servicio de Limpieza Industrial en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/limpieza-estandar" data-ilatek-path="/limpieza-estandar"><span class="iln-t" data-es="Limpieza Estándar en {{custom_values.county_name_and_state}}" data-en="Standard Cleaning in {{custom_values.county_name_and_state}}">Limpieza Estándar en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/limpieza-profunda" data-ilatek-path="/limpieza-profunda"><span class="iln-t" data-es="Limpieza Profunda en {{custom_values.county_name_and_state}}" data-en="Deep Cleaning in {{custom_values.county_name_and_state}}">Limpieza Profunda en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/limpieza-de-mudanza" data-ilatek-path="/limpieza-de-mudanza"><span class="iln-t" data-es="Limpieza de Mudanza en {{custom_values.county_name_and_state}}" data-en="Move-In/Out Cleaning in {{custom_values.county_name_and_state}}">Limpieza de Mudanza en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/airbnb-turnover" data-ilatek-path="/airbnb-turnover"><span class="iln-t" data-es="Limpieza de Airbnb &amp; Turnover en {{custom_values.county_name_and_state}}" data-en="Airbnb &amp; Turnover Cleaning in {{custom_values.county_name_and_state}}">Limpieza de Airbnb &amp; Turnover en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/organizacion" data-ilatek-path="/organizacion"><span class="iln-t" data-es="Organización de Espacios en {{custom_values.county_name_and_state}}" data-en="Space Organization in {{custom_values.county_name_and_state}}">Organización de Espacios en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/electrodomesticos" data-ilatek-path="/electrodomesticos"><span class="iln-t" data-es="Limpieza de Electrodomésticos en {{custom_values.county_name_and_state}}" data-en="Appliance Cleaning in {{custom_values.county_name_and_state}}">Limpieza de Electrodomésticos en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/alfombras" data-ilatek-path="/alfombras"><span class="iln-t" data-es="Limpieza de Alfombras en {{custom_values.county_name_and_state}}" data-en="Carpet Cleaning in {{custom_values.county_name_and_state}}">Limpieza de Alfombras en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/lavado-a-presion" data-ilatek-path="/lavado-a-presion"><span class="iln-t" data-es="Lavado a Presión en {{custom_values.county_name_and_state}}" data-en="Pressure Washing in {{custom_values.county_name_and_state}}">Lavado a Presión en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/ventanas" data-ilatek-path="/ventanas"><span class="iln-t" data-es="Limpieza de Ventanas en {{custom_values.county_name_and_state}}" data-en="Window Cleaning in {{custom_values.county_name_and_state}}">Limpieza de Ventanas en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/post-construccion" data-ilatek-path="/post-construccion"><span class="iln-t" data-es="Limpieza Post-Construcción en {{custom_values.county_name_and_state}}" data-en="Post-Construction Cleaning in {{custom_values.county_name_and_state}}">Limpieza Post-Construcción en {{custom_values.county_name_and_state}}</span></a></li>
+        </ul>
+      </section>
+
+      <section class="ilf-svc ilf-card" aria-labelledby="ilf-svc-techos-t">
+        <h2 id="ilf-svc-techos-t" class="ilf-h"><svg class="ilf-ico" aria-hidden="true"><use href="#ilf-i-roof"></use></svg><span class="iln-t" data-es="Servicios de Mantenimiento y Sellado de Techos" data-en="Roof Maintenance &amp; Sealing Services">Servicios de Mantenimiento y Sellado de Techos</span></h2>
+        <img class="ilf-svcimg" src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac04fe4f30b488137c005b1.jpeg" alt="Ilatek - Servicios de Techos en {{custom_values.county_name_and_state}}" title="Ilatek - Servicios de Techos en {{custom_values.county_name_and_state}}" loading="lazy" data-ilatek-local-alt="Ilatek%20-%20Servicios%20de%20Techos%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D" data-ilatek-local-title="Ilatek%20-%20Servicios%20de%20Techos%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D">
+        <ul class="ilf-links">
+          <li><a href="https://{{custom_values.website_url}}/canaletas-y-bajantes" data-ilatek-path="/canaletas-y-bajantes"><span class="iln-t" data-es="Canales, Canaletas y Bajantes para Techos en {{custom_values.county_name_and_state}}" data-en="Gutters &amp; Downspouts for Roofs in {{custom_values.county_name_and_state}}">Canales, Canaletas y Bajantes para Techos en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/empozamiento-de-techos" data-ilatek-path="/empozamiento-de-techos"><span class="iln-t" data-es="Corrección de Empozamientos de Agua en {{custom_values.county_name_and_state}}" data-en="Water Ponding Correction in {{custom_values.county_name_and_state}}">Corrección de Empozamientos de Agua en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/impermeabilizacion-de-techos" data-ilatek-path="/impermeabilizacion-de-techos"><span class="iln-t" data-es="Impermeabilización de Techos en {{custom_values.county_name_and_state}}" data-en="Roof Waterproofing in {{custom_values.county_name_and_state}}">Impermeabilización de Techos en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/inspeccion-de-techos" data-ilatek-path="/inspeccion-de-techos"><span class="iln-t" data-es="Inspección de Techos en {{custom_values.county_name_and_state}}" data-en="Roof Inspection in {{custom_values.county_name_and_state}}">Inspección de Techos en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos" data-ilatek-path="/inspeccion-y-mantenimiento-de-techos"><span class="iln-t" data-es="Inspección y Mantenimiento de Techos en {{custom_values.county_name_and_state}}" data-en="Roof Inspection &amp; Maintenance in {{custom_values.county_name_and_state}}">Inspección y Mantenimiento de Techos en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/instalacion-y-reemplazo-de-techos" data-ilatek-path="/instalacion-y-reemplazo-de-techos"><span class="iln-t" data-es="Instalación y Reemplazo de Techos en {{custom_values.county_name_and_state}}" data-en="Roof Installation &amp; Replacement in {{custom_values.county_name_and_state}}">Instalación y Reemplazo de Techos en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/lavado-a-presion-techos" data-ilatek-path="/lavado-a-presion-techos"><span class="iln-t" data-es="Lavado a Presión de Techos en {{custom_values.county_name_and_state}}" data-en="Roof Pressure Washing in {{custom_values.county_name_and_state}}">Lavado a Presión de Techos en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/limpieza-de-techos-y-canaletas" data-ilatek-path="/limpieza-de-techos-y-canaletas"><span class="iln-t" data-es="Limpieza de Techos y Canaletas en {{custom_values.county_name_and_state}}" data-en="Roof &amp; Gutter Cleaning in {{custom_values.county_name_and_state}}">Limpieza de Techos y Canaletas en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/mantenimiento-de-techos" data-ilatek-path="/mantenimiento-de-techos"><span class="iln-t" data-es="Mantenimiento Preventivo de Techos en {{custom_values.county_name_and_state}}" data-en="Preventive Roof Maintenance in {{custom_values.county_name_and_state}}">Mantenimiento Preventivo de Techos en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/membrana-asfaltica" data-ilatek-path="/membrana-asfaltica"><span class="iln-t" data-es="Membrana Asfáltica para Techos en {{custom_values.county_name_and_state}}" data-en="Asphalt Membrane for Roofs in {{custom_values.county_name_and_state}}">Membrana Asfáltica para Techos en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/recubrimiento-elastomerico" data-ilatek-path="/recubrimiento-elastomerico"><span class="iln-t" data-es="Recubrimiento Elastomérico para Techos en {{custom_values.county_name_and_state}}" data-en="Elastomeric Coating for Roofs in {{custom_values.county_name_and_state}}">Recubrimiento Elastomérico para Techos en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/reparacion-de-filtraciones" data-ilatek-path="/reparacion-de-filtraciones"><span class="iln-t" data-es="Reparación de Filtraciones de Agua en {{custom_values.county_name_and_state}}" data-en="Water Leak Repair in {{custom_values.county_name_and_state}}">Reparación de Filtraciones de Agua en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/reparacion-de-goteras" data-ilatek-path="/reparacion-de-goteras"><span class="iln-t" data-es="Reparación de Goteras en {{custom_values.county_name_and_state}}" data-en="Leak Repair in {{custom_values.county_name_and_state}}">Reparación de Goteras en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/reparacion-de-grietas-techos" data-ilatek-path="/reparacion-de-grietas-techos"><span class="iln-t" data-es="Reparación de Grietas de Techo en {{custom_values.county_name_and_state}}" data-en="Roof Crack Repair in {{custom_values.county_name_and_state}}">Reparación de Grietas de Techo en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/reparacion-de-techos" data-ilatek-path="/reparacion-de-techos"><span class="iln-t" data-es="Reparación de Techos en {{custom_values.county_name_and_state}}" data-en="Roof Repair in {{custom_values.county_name_and_state}}">Reparación de Techos en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/reparacion-post-huracan" data-ilatek-path="/reparacion-post-huracan"><span class="iln-t" data-es="Reparación de Techos Post-Huracán en {{custom_values.county_name_and_state}}" data-en="Post-Hurricane Roof Repair in {{custom_values.county_name_and_state}}">Reparación de Techos Post-Huracán en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/sellado-acrilico" data-ilatek-path="/sellado-acrilico"><span class="iln-t" data-es="Sellado Acrílico para Techos en {{custom_values.county_name_and_state}}" data-en="Acrylic Roof Sealing in {{custom_values.county_name_and_state}}">Sellado Acrílico para Techos en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/sellado-de-poliuretano" data-ilatek-path="/sellado-de-poliuretano"><span class="iln-t" data-es="Sellado de Poliuretano para Techos en {{custom_values.county_name_and_state}}" data-en="Polyurethane Roof Sealing in {{custom_values.county_name_and_state}}">Sellado de Poliuretano para Techos en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/sellado-de-silicona" data-ilatek-path="/sellado-de-silicona"><span class="iln-t" data-es="Sellado de Techos con Silicona 100% en {{custom_values.county_name_and_state}}" data-en="100% Silicone Roof Sealing in {{custom_values.county_name_and_state}}">Sellado de Techos con Silicona 100% en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/sellado-de-techos" data-ilatek-path="/sellado-de-techos"><span class="iln-t" data-es="Sellado de Techos en {{custom_values.county_name_and_state}}" data-en="Roof Sealing in {{custom_values.county_name_and_state}}">Sellado de Techos en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/sellado-de-techos-comercial" data-ilatek-path="/sellado-de-techos-comercial"><span class="iln-t" data-es="Sellado de Techos Comercial en {{custom_values.county_name_and_state}}" data-en="Commercial Roof Sealing in {{custom_values.county_name_and_state}}">Sellado de Techos Comercial en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/sellado-de-techos-industrial" data-ilatek-path="/sellado-de-techos-industrial"><span class="iln-t" data-es="Sellado de Techos Industrial en {{custom_values.county_name_and_state}}" data-en="Industrial Roof Sealing in {{custom_values.county_name_and_state}}">Sellado de Techos Industrial en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/sellado-de-techos-residencial" data-ilatek-path="/sellado-de-techos-residencial"><span class="iln-t" data-es="Sellado de Techos Residencial en {{custom_values.county_name_and_state}}" data-en="Residential Roof Sealing in {{custom_values.county_name_and_state}}">Sellado de Techos Residencial en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/techos-de-asfalto" data-ilatek-path="/techos-de-asfalto"><span class="iln-t" data-es="Reparación de Techos de Asfalto (Shingles) en {{custom_values.county_name_and_state}}" data-en="Asphalt Shingle Roof Repair in {{custom_values.county_name_and_state}}">Reparación de Techos de Asfalto (Shingles) en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/techos-de-concreto" data-ilatek-path="/techos-de-concreto"><span class="iln-t" data-es="Reparación e Impermeabilización de Techos de Concreto en {{custom_values.county_name_and_state}}" data-en="Concrete Roof Repair &amp; Waterproofing in {{custom_values.county_name_and_state}}">Reparación e Impermeabilización de Techos de Concreto en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/techos-de-madera" data-ilatek-path="/techos-de-madera"><span class="iln-t" data-es="Sellado y Protección de Techos de Madera en {{custom_values.county_name_and_state}}" data-en="Wood Roof Sealing &amp; Protection in {{custom_values.county_name_and_state}}">Sellado y Protección de Techos de Madera en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/techos-de-teja" data-ilatek-path="/techos-de-teja"><span class="iln-t" data-es="Reparación y Sellado de Techos de Teja en {{custom_values.county_name_and_state}}" data-en="Tile Roof Repair &amp; Sealing in {{custom_values.county_name_and_state}}">Reparación y Sellado de Techos de Teja en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/techos-de-zinc" data-ilatek-path="/techos-de-zinc"><span class="iln-t" data-es="Reparación y Sellado de Techos de Zinc y Metal en {{custom_values.county_name_and_state}}" data-en="Zinc &amp; Metal Roof Repair &amp; Sealing in {{custom_values.county_name_and_state}}">Reparación y Sellado de Techos de Zinc y Metal en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/techos-planos" data-ilatek-path="/techos-planos"><span class="iln-t" data-es="Impermeabilización de Techos Planos y Membranas en {{custom_values.county_name_and_state}}" data-en="Flat Roof Waterproofing &amp; Membranes in {{custom_values.county_name_and_state}}">Impermeabilización de Techos Planos y Membranas en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/techos-por-segmento" data-ilatek-path="/techos-por-segmento"><span class="iln-t" data-es="Sellado de Techos Residencial, Comercial e Industrial en {{custom_values.county_name_and_state}}" data-en="Residential, Commercial &amp; Industrial Roof Sealing in {{custom_values.county_name_and_state}}">Sellado de Techos Residencial, Comercial e Industrial en {{custom_values.county_name_and_state}}</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/tragaluces" data-ilatek-path="/tragaluces"><span class="iln-t" data-es="Tragaluces y Skylights para Techos en {{custom_values.county_name_and_state}}" data-en="Roof Skylights in {{custom_values.county_name_and_state}}">Tragaluces y Skylights para Techos en {{custom_values.county_name_and_state}}</span></a></li>
+        </ul>
+      </section>
+
+      <section class="ilf-svc ilf-card ilf-prod" aria-label="Productos Ilatek">
+        <h2 class="ilf-h"><svg class="ilf-ico" aria-hidden="true"><use href="#ilf-i-product"></use></svg><span class="iln-t" data-es="Productos para mantenimiento de techos" data-en="Roof Maintenance Products">Productos para mantenimiento de techos</span></h2>
+        <img class="ilf-svcimg" src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac134617d735ea2a1fdc078.jpg" alt="Kit de Sellado de Techos - Ilatek — servicio en {{custom_values.county_name_and_state}}" title="Kit de Sellado de Techos - Ilatek — servicio en {{custom_values.county_name_and_state}}" loading="lazy" data-ilatek-local-alt="Kit%20de%20Sellado%20de%20Techos%20-%20Ilatek%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D" data-ilatek-local-title="Kit%20de%20Sellado%20de%20Techos%20-%20Ilatek%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D">
+        <p class="ilf-strong">Selladores de Techo</p>
+        <h2 class="ilf-h"><svg class="ilf-ico" aria-hidden="true"><use href="#ilf-i-product"></use></svg><span class="iln-t" data-es="Productos de limpieza" data-en="Cleaning Products">Productos de limpieza</span></h2>
+        <img class="ilf-svcimg" src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac1a365195f9172ed559106.jpeg" alt="Productos de limpieza - Ilatek — servicio en {{custom_values.county_name_and_state}}" title="Productos de limpieza - Ilatek — servicio en {{custom_values.county_name_and_state}}" loading="lazy" data-ilatek-local-alt="Productos%20de%20limpieza%20-%20Ilatek%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D" data-ilatek-local-title="Productos%20de%20limpieza%20-%20Ilatek%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D">
+      </section>
+    </div>
+
+    <!-- Portal del Cliente -->
+    <p class="ilf-portal-title"><svg class="ilf-ico" aria-hidden="true"><use href="#ilf-i-brand"></use></svg><span class="iln-t" data-es="Ilatek Property Solution en Puerto Rico" data-en="Ilatek Property Solution in Puerto Rico">Ilatek Property Solution en Puerto Rico</span></p>
+    <div class="ilf-portal-card">
+      <img class="ilf-portal-img" src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aadf131bdaa5e26a92e2c6f.png" alt="Portal del Cliente - Ilatek — servicio en {{custom_values.county_name_and_state}}" title="Portal del Cliente - Ilatek — servicio en {{custom_values.county_name_and_state}}" loading="lazy" data-ilatek-local-alt="Portal%20del%20Cliente%20-%20Ilatek%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D" data-ilatek-local-title="Portal%20del%20Cliente%20-%20Ilatek%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D">
+
+      <div class="ilf-portal-copy">
+        <h2 class="ilf-portal-h"><svg class="ilf-ico" aria-hidden="true"><use href="#ilf-i-portal"></use></svg><span class="iln-t" data-es="Portal del Cliente" data-en="Client Portal">Portal del Cliente</span></h2>
+        <p class="iln-t" data-en-html="Your client portal keeps everything about your cleaning, sealing and roof maintenance services in one place. Inside your portal you can also access your service history, review maintenance recommendations, view documents related to your jobs and keep your contact details up to date. You will also receive reminders for future services and can follow up on upcoming scheduled visits, helping you keep your property protected and in top condition all year long.">Tu portal de cliente te permite tener todo lo relacionado con tus servicios de limpieza, sellado y mantenimiento de techos en un solo lugar. Dentro de tu portal también podrás acceder al historial de servicios realizados, consultar recomendaciones de mantenimiento, visualizar documentos relacionados con tus trabajos y mantener tus datos de contacto actualizados. Además, podrás recibir recordatorios para servicios futuros y dar seguimiento a las próximas visitas programadas, ayudándote a mantener tu propiedad protegida y en óptimas condiciones durante todo el año.</p>
+        <a class="ilf-btn" href="https://portal.ilatekpr.com" aria-label="Log In" data-attr="aria-label" data-es="Log In" data-en="Log In">Log In</a>
+      </div>
+
+      <div class="ilf-dash">
+        <h2 class="ilf-portal-h"><svg class="ilf-ico" aria-hidden="true"><use href="#ilf-i-dash"></use></svg><span class="iln-t" data-es="Dashboard Encriptado" data-en="Encrypted Dashboard">Dashboard Encriptado</span></h2>
+        <ul>
+          <li><span class="iln-t" data-es="Solicitar servicios" data-en="Request services">Solicitar servicios</span></li>
+          <li><span class="iln-t" data-es="Agendar Citas" data-en="Book appointments">Agendar Citas</span></li>
+          <li><span class="iln-t" data-es="Consultar progreso" data-en="Check progress">Consultar progreso</span></li>
+          <li><span class="iln-t" data-es="Revisar cotizaciones" data-en="Review quotes">Revisar cotizaciones</span></li>
+          <li><span class="iln-t" data-es="Realizar pagos" data-en="Make payments">Realizar pagos</span></li>
+          <li><span class="iln-t" data-es="Recibir notificaciones" data-en="Receive notifications">Recibir notificaciones</span></li>
+          <li><span class="iln-t" data-es="Chatear con un Agente" data-en="Chat with an Agent">Chatear con un Agente</span></li>
+        </ul>
+      </div>
+
+      <img class="ilf-portal-img-mobile" src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aadfd7cbdaa5e26a92efd33.png" alt="Portal del Cliente Ilatek en móvil — servicio en {{custom_values.county_name_and_state}}" loading="lazy" data-ilatek-local-alt="Portal%20del%20Cliente%20Ilatek%20en%20m%C3%B3vil%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D" title="Portal del Cliente Ilatek en móvil — servicio en {{custom_values.county_name_and_state}}" data-ilatek-local-title="Portal%20del%20Cliente%20Ilatek%20en%20m%C3%B3vil%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D">
+    </div>
+
+    <!-- Barra inferior -->
+    <div class="ilf-bottom">
+      <div class="ilf-bottom-logo">
+        <a href="https://{{custom_values.website_url}}/" data-ilatek-path="/" aria-label="Ilatek, inicio">
+          <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab044d04091fa65e69921f6.png" alt="Ilatek Property Solution - Servicio de Limpieza Residencial, Comercial e Industrial en {{custom_values.county_name_and_state}}" title="Ilatek Property Solution en {{custom_values.county_name_and_state}}" loading="lazy" data-ilatek-local-alt="Ilatek%20Property%20Solution%20-%20Servicio%20de%20Limpieza%20Residencial%2C%20Comercial%20e%20Industrial%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D" data-ilatek-local-title="Ilatek%20Property%20Solution%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D">
+        </a>
+      </div>
+      <div class="ilf-social">
+        <a href="https://www.facebook.com/ilatek.pr/" aria-label="Facebook" target="_blank" rel="noopener nofollow"><img src="https://stcdn.leadconnectorhq.com/funnel/icons/dark/facebook-dark.svg" alt="Facebook — servicio en {{custom_values.county_name_and_state}}" loading="lazy" decoding="async" data-ilatek-local-alt="Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D" title="Facebook — servicio en {{custom_values.county_name_and_state}}" data-ilatek-local-title="Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D"></a>
+        <a href="https://www.instagram.com/ilatek.pr/" aria-label="Instagram" target="_blank" rel="noopener nofollow"><img src="https://stcdn.leadconnectorhq.com/funnel/icons/dark/instagram-dark.svg" alt="Instagram — servicio en {{custom_values.county_name_and_state}}" loading="lazy" decoding="async" data-ilatek-local-alt="Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D" title="Instagram — servicio en {{custom_values.county_name_and_state}}" data-ilatek-local-title="Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D"></a>
+        <a href="https://www.youtube.com/@Ilatekpr" aria-label="Youtube" target="_blank" rel="noopener noreferrer"><img src="https://stcdn.leadconnectorhq.com/funnel/icons/dark/youtube-dark.svg" alt="Youtube — servicio en {{custom_values.county_name_and_state}}" loading="lazy" decoding="async" data-ilatek-local-alt="Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D" title="Youtube — servicio en {{custom_values.county_name_and_state}}" data-ilatek-local-title="Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D"></a>
+      </div>
+      <p class="ilf-credit">© 2026. <span class="iln-t" data-es="Made with ❤️ by" data-en="Made with ❤️ by">Made with ❤️ by</span> <a href="https://devasks.com/" target="_blank" rel="noopener noreferrer">Devasks</a></p>
+    </div>
+
+  </div>
+  <!-- Motor i18n (misma interfaz que el nav): solo actua si la pagina declara [data-es]
+       fuera de nav/footer; resuelve tokens GHL en data-es/data-en y aplica variantes. -->
+  <script>
+  (function(){
+    var root=document.getElementById('ilatek-footer'); if(!root||root.dataset.ilfLang)return; root.dataset.ilfLang='true';
+    var LANG_KEY='ilatek-lang';
+    function token(name){return '{'+'{custom_values.'+name+'}'+'}'}
+    function clean(v){v=String(v||'').replace(/ /g,' ').trim();return /^\s*\{\{[^}]+\}\}\s*$/.test(v)?'':v}
+    function resolve(text){
+      var out=String(text||'').split(token('county_name_and_state')).join(county);
+      out=window.ILATEK_LINKS.replace(out,token('website_url'),website);
+      return out;
+    }
+    var website=clean((root.getAttribute('data-website-url')||''))||'https://ilatekpr.com';
+    var county='Puerto Rico';
+    function readCounty(){
+      var candidates=[],nodes=document.querySelectorAll('.dv-ghl-values,#dv-ghl-values');
+      for(var i=0;i<nodes.length;i++){
+        var parts=nodes[i].textContent.split('|||DV|||');
+        if(parts.length===6){var value=clean(parts[0]);if(value&&candidates.indexOf(value)<0)candidates.push(value)}
+      }
+      if(candidates.length===1)return candidates[0];
+      var content=document.querySelector('[data-location-label]');
+      return clean(content&&content.getAttribute('data-location-label'))||'Puerto Rico';
+    }
+    function applyLang(lang){
+      county=readCounty();
+      var nodes=root.querySelectorAll('[data-en]');
+      for(var i=0;i<nodes.length;i++){
+        var el=nodes[i],attr=el.getAttribute('data-attr'),en=el.getAttribute('data-en'),es=el.getAttribute('data-es');
+        var val=resolve(lang==='en'?en:(es||(el.firstChild&&el.firstChild.nodeValue)||''));
+        if(attr){el.setAttribute(attr,val)}
+        else if(lang==='en'&&el.hasAttribute('data-en-html')){el.innerHTML=resolve(el.getAttribute('data-en-html'))}
+        else{el.textContent=val}
+      }
+    }
+    window.__ilatekFooterLang=applyLang;
+    var saved='es';try{saved=localStorage.getItem(LANG_KEY)||'es'}catch(e){}
+    applyLang(saved==='en'?'en':'es');
+    window.addEventListener('ilatek:lang',function(e){applyLang(e.detail)});
+    // Late native GHL values: only update when the location actually changes.
+    var pending=false;
+    if(window.MutationObserver)new MutationObserver(function(){
+      if(pending)return;pending=true;
+      requestAnimationFrame(function(){pending=false;if(readCounty()!==county)applyLang(document.documentElement.lang==='en'?'en':'es')});
+    }).observe(document.documentElement,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:['data-location-label']});
+  })();
+  </script>
+
+  <!-- Sprite de iconos de los títulos -->
+  <svg width="0" height="0" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="ilf-i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"></path></symbol>
+      <symbol id="ilf-i-legal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="M9 12l2 2 4-4"></path></symbol>
+      <symbol id="ilf-i-opp" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"></rect><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></symbol>
+      <symbol id="ilf-i-clean" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"></path><circle cx="12" cy="12" r="3.5"></circle></symbol>
+      <symbol id="ilf-i-roof" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"></path><path d="M5 10v10h14V10"></path><path d="M10 20v-6h4v6"></path></symbol>
+      <symbol id="ilf-i-product" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8v8l9 5 9-5z"></path><path d="M3 8l9 5 9-5"></path><path d="M12 13v8"></path></symbol>
+      <symbol id="ilf-i-portal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></symbol>
+      <symbol id="ilf-i-dash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"></rect><path d="M8 11V7a4 4 0 0 1 8 0v4"></path></symbol>
+      <symbol id="ilf-i-brand" viewBox="0 0 24 24" fill="currentColor"><rect x="4" y="4" width="16" height="16" rx="4"></rect></symbol>
+    </defs>
+  </svg>
+</footer>
+<!-- ILATEK:SHELL:FOOTER:END -->

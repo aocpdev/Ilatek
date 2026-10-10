@@ -8,6 +8,7 @@ import { sellado } from './data/sellado.mjs';
 import { impermeabilizacion } from './data/impermeabilizacion.mjs';
 import { segmentos } from './data/segmentos.mjs';
 import { mantenimiento } from './data/mantenimiento.mjs';
+import { localizeText } from '../../tools/location-contract.mjs';
 
 export const CLUSTERS = [reparacion, sellado, impermeabilizacion, segmentos, mantenimiento];
 
@@ -34,6 +35,8 @@ export function buildTree() {
 
   return [hub, ...CLUSTERS.flat()].map((page) => ({
     ...page,
+    metaTitle: localizeText(page.metaTitle),
+    metaDescription: localizeText(page.metaDescription),
     breadcrumb: breadcrumbs[page.slug],
     ...(page.slug === hub.slug ? { directory } : {}),
   }));

@@ -2,6 +2,8 @@
 
 Home principal: **[ghl-home-multiservicios.html](home/es/landing-pages/ghl-home-multiservicios.html)**.
 
+Delta System: las fichas SEO y los textos descriptivos de imágenes usan `{{custom_values.county_name_and_state}}`. Ver [localización SEO e instalación por pueblo](documentacion/LOCALIZACION-SEO.md).
+
 La organización sigue el patrón de entrega GHL de Aires Inverters y la estructura local verificada de Guz Plumbing: página → idioma → landing-pages, assets y ficha SEO. Se conserva el contenido existente de ILATEK y sus URLs de producción.
 
 ## Accesos principales
@@ -40,7 +42,7 @@ Las carpetas `en/` documentan el selector o la ausencia de una landing independi
 ## Copiar a GHL
 
 1. Abrir la ficha de la página en el mapa y copiar su HTML de `es/landing-pages/`.
-2. Pegar en Custom Code de GHL. El Home multiservicios ya incluye menú; no duplicarlo. El footer existente sigue en [ghl-footer-embed.html](ghl-footer-embed.html).
+2. Pegar el archivo completo en un único Custom Code de GHL: incluye menú, contenido y footer. No agregar un header/footer global adicional. Fuentes: [menú](componentes/ghl-nav-embed.html) y [footer](ghl-footer-embed.html). Ver [composición y mantenimiento](documentacion/HEADER-FOOTER.md).
 3. Configurar los tres campos descritos en `SEO-GHL.md` de esa página. Revisar los avisos de imágenes antiguas, si los hay, y evitar duplicados de meta tags.
 4. Las carpetas locales no se suben automáticamente a GHL. Los embeds mantienen URLs públicas absolutas; los assets locales son respaldos verificables.
 

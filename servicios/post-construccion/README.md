@@ -1,6 +1,6 @@
-# Limpieza Post-Construcción en Puerto Rico | Ilatek
+# Limpieza Post-Construcción en {{custom_values.county_name_and_state}} | Ilatek
 
-Página existente organizada sin cambios de diseño, texto ni URLs de producción.
+Landing completa con menú universal y footer integrados; conserva el contenido existente.
 
 - [Embed para copiar en GHL](es/landing-pages/ghl-post-construccion-landing.html)
 - [Meta Title, Meta Description y Meta Image](es/SEO-GHL.md)

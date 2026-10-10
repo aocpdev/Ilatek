@@ -1,10 +1,12 @@
 {
   "source": "techos/ghl-techos-head-seo.html",
   "language": "es",
-  "status": "extraido-del-html-existente",
-  "metaTagTitle": "Sellado de Poliuretano para Techos | Ilatek Techos",
-  "metaTagDescription": "Sellado de poliuretano para techos en Puerto Rico desde $4.50 por pie². Alta resistencia mecánica y química para superficies exigentes. Inspección gratis.",
+  "status": "plantilla-local-delta-system",
+  "metaTagTitle": "Sellado de Poliuretano para Techos en {{custom_values.county_name_and_state}} | Ilatek Techos",
+  "metaTagDescription": "Sellado de poliuretano para techos en {{custom_values.county_name_and_state}} desde $4.50 por pie². Alta resistencia mecánica y química para superficies exigentes. Inspección gratis.",
   "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f28493229874263903.jpg",
+  "locationCustomValue": "{{custom_values.county_name_and_state}}",
+  "metaTagImageAlt": "Sellado de Poliuretano para Techos en {{custom_values.county_name_and_state}} | Ilatek Techos",
   "canonical": "https://{{custom_values.website_url}}/sellado-de-poliuretano",
   "socialImageFile": "assets/respaldo/6ac046f28493229874263903.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."

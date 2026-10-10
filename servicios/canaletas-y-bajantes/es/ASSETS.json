@@ -11,7 +11,8 @@
     "https://reputationhub.site/reputation/widgets/review_widget/8OxUENFVM60EKzqsTcoD?widgetId=6ab060ce32d0d3c755f9fd73",
     "https://reputationhub.site/reputation/widgets/review_widget/8OxUENFVM60EKzqsTcoD?widgetId=6ac3eb680432b6ce3f30b035",
     "https://link.msgsndr.com/widget/booking/wM8KQhsYjEQAo0HbNGIh",
-    "https://link.msgsndr.com/js/form_embed.js"
+    "https://link.msgsndr.com/js/form_embed.js",
+    "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
   ],
   "socialImage": {
     "role": "social-image",
@@ -24,6 +25,22 @@
     "sha256": "5d8e590c099d8627ea017eec2223addaed12eb484a88063db055b3e224862ea8"
   },
   "assets": [
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/ilatek-logo-256.webp",
+      "file": "assets/media/ilatek-logo-256.webp",
+      "status": "local-copy",
+      "bytes": 3508,
+      "sha256": "f0467871f9db38df440d6f306ec3f65858712df979a1834e0cdc08ba9f7494ab"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab044d04091fa65e69921f6.png",
+      "file": "assets/media/6ab044d04091fa65e69921f6.png",
+      "status": "local-copy",
+      "bytes": 285753,
+      "sha256": "07483408d81cc25288d6f1d2a2b589bacb9d8e0f82031fbfc948df6ea2cdea89"
+    },
     {
       "role": "media-or-fallback",
       "publicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046ecf30b488137bfa427.webp",
@@ -57,6 +74,94 @@
       "status": "local-copy",
       "bytes": 47405,
       "sha256": "ef08a502c10ce3e19c444e9e24de0589310f57605eca4970d571b84960f15d5f"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac02015f30b488137bce134.jpg",
+      "file": "assets/media/6ac02015f30b488137bce134.jpg",
+      "status": "local-copy",
+      "bytes": 166212,
+      "sha256": "cfee1b492891ee8814aca6384847ce912e310493b1da20947f902a6609985734"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8582fcc7a5a2b73475d89.jpg",
+      "file": "assets/media/6ac8582fcc7a5a2b73475d89.jpg",
+      "status": "local-copy",
+      "bytes": 737629,
+      "sha256": "a90c371ab1e475b03d546f871fffd053ed05725f346fbb9008faf2169379d0d2"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac04fe4f30b488137c005b1.jpeg",
+      "file": "assets/media/6ac04fe4f30b488137c005b1.jpeg",
+      "status": "local-copy",
+      "bytes": 92708,
+      "sha256": "56115e32c2c343300c578f35e1708335c5187d5d928e19f704726543a274cfe0"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac134617d735ea2a1fdc078.jpg",
+      "file": "assets/media/6ac134617d735ea2a1fdc078.jpg",
+      "status": "local-copy",
+      "bytes": 493670,
+      "sha256": "7ff26b3525882dbf92d9d4b7335d3a8316073d25a44cc96b54dc247dcfec5f1a"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac1a365195f9172ed559106.jpeg",
+      "file": "assets/media/6ac1a365195f9172ed559106.jpeg",
+      "status": "local-copy",
+      "bytes": 71060,
+      "sha256": "1833a08bbd8c486aceb062abb36a7af5289c3f1fccf60a607c74c745d8dd0eed"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aadf131bdaa5e26a92e2c6f.png",
+      "file": "assets/media/6aadf131bdaa5e26a92e2c6f.png",
+      "status": "local-copy",
+      "bytes": 133190,
+      "sha256": "4370968a74dc2d8c5ed2f0875b51f9d080c0ed5ecbb9c565f0c1f689060b4486"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aadfd7cbdaa5e26a92efd33.png",
+      "file": "assets/media/6aadfd7cbdaa5e26a92efd33.png",
+      "status": "local-copy",
+      "bytes": 50650,
+      "sha256": "5b4f5531518d1494536ffa626435f3fda8b48e5d07644441e68d71f6425c6e5c"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab044d04091fa65e69921f6.png",
+      "file": "assets/media/6ab044d04091fa65e69921f6.png",
+      "status": "local-copy",
+      "bytes": 285753,
+      "sha256": "07483408d81cc25288d6f1d2a2b589bacb9d8e0f82031fbfc948df6ea2cdea89"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://stcdn.leadconnectorhq.com/funnel/icons/dark/facebook-dark.svg",
+      "file": "assets/media/facebook-dark.svg",
+      "status": "local-copy",
+      "bytes": 644,
+      "sha256": "d67203dca5e696a2d9bcaf83844988165915d3c1370fd36f2f134c36ddd1b863"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://stcdn.leadconnectorhq.com/funnel/icons/dark/instagram-dark.svg",
+      "file": "assets/media/instagram-dark.svg",
+      "status": "local-copy",
+      "bytes": 3168,
+      "sha256": "8ef7e9a8436742bfe57825bee517fe582ec04973df68bd8779ffdc11f85e9465"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://stcdn.leadconnectorhq.com/funnel/icons/dark/youtube-dark.svg",
+      "file": "assets/media/youtube-dark.svg",
+      "status": "local-copy",
+      "bytes": 941,
+      "sha256": "4bebe72147bfd89f46554899dc5228e3436d48bac1ce52da439c14ff7f62d7ba"
     }
   ]
 }

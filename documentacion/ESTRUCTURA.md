@@ -1,5 +1,7 @@
 # Estructura de entrega — ILATEK
 
+Actualización: las landings de entrega ahora incluyen header y footer. La integración sigue el proceso de componentes compartidos adaptado a esta estructura; ver [header y footer](HEADER-FOOTER.md). Las notas de reorganización originales que siguen describen esa etapa previa.
+
 ## Criterios
 
 - `home/`: únicamente el Home multiservicios identificado por el usuario y confirmado en la documentación del proyecto.

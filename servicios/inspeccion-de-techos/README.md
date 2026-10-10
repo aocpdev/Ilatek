@@ -1,6 +1,6 @@
-# Inspección de Techos Gratis en Puerto Rico | Ilatek Techos
+# Inspección de Techos Gratis en {{custom_values.county_name_and_state}} | Ilatek Techos
 
-Página existente organizada sin cambios de diseño, texto ni URLs de producción.
+Landing completa con menú universal y footer integrados; conserva el contenido existente.
 
 - [Embed para copiar en GHL](es/landing-pages/ghl-inspeccion-de-techos-landing.html)
 - [Meta Title, Meta Description y Meta Image](es/SEO-GHL.md)

@@ -1,10 +1,12 @@
 {
   "source": "servicios/electrodomesticos/es/landing-pages/ghl-electrodomesticos-landing.html",
   "language": "es",
-  "status": "extraido-del-html-existente",
-  "metaTagTitle": "Limpieza de Electrodomésticos en Puerto Rico | Ilatek",
-  "metaTagDescription": "Limpieza de electrodomésticos en Puerto Rico: nevera, horno, lavadora y más por dentro y por fuera. Cotizador online con precio real y cobertura en los 78 municipios.",
+  "status": "plantilla-local-delta-system",
+  "metaTagTitle": "Limpieza de Electrodomésticos en {{custom_values.county_name_and_state}} | Ilatek",
+  "metaTagDescription": "Limpieza de electrodomésticos en {{custom_values.county_name_and_state}}: nevera, horno, lavadora y más por dentro y por fuera. Cotizador online con precio real y cobertura en los 78 municipios.",
   "metaTagImage": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/electrodomesticos.jpg",
+  "locationCustomValue": "{{custom_values.county_name_and_state}}",
+  "metaTagImageAlt": "Limpieza de Electrodomésticos en {{custom_values.county_name_and_state}} | Ilatek",
   "canonical": "https://{{custom_values.website_url}}/electrodomesticos",
   "socialImageFile": "assets/meta-image.jpg",
   "publication": "No modificada en GHL; verificar el HEAD publicado."

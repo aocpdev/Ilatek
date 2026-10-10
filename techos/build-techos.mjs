@@ -9,6 +9,7 @@ import { buildTree } from './lib/model.mjs';
 import { validateModel, auditHtml } from './lib/audit.mjs';
 import { UPDATED } from './lib/data/build.mjs';
 import { pageFile, projectPath } from '../tools/site-paths.mjs';
+import { localizeHtml } from '../tools/location-contract.mjs';
 
 const OUT = path.dirname(fileURLToPath(import.meta.url));
 const ILATEK = path.resolve(OUT, '..');
@@ -85,7 +86,7 @@ const headSeo = [
     ].join('\n');
   }),
 ].join('\n');
-fs.writeFileSync(path.join(OUT, 'ghl-techos-head-seo.html'), headSeo, 'utf8');
+fs.writeFileSync(path.join(OUT, 'ghl-techos-head-seo.html'), localizeHtml(headSeo), 'utf8');
 
 // ─────────────────────────── Sitemap: fragmento + bloque en sitemap.xml ───────────────────────────
 const urlEntries = pages.filter(function (p) { return p.role !== 'hub'; }).map(

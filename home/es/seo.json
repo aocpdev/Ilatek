@@ -1,10 +1,12 @@
 {
   "source": "home/es/landing-pages/ghl-home-multiservicios.html",
   "language": "es",
-  "status": "extraido-del-html-existente",
-  "metaTagTitle": "Limpieza y Mantenimiento de Propiedades en Puerto Rico | Ilatek",
-  "metaTagDescription": "Limpieza residencial, comercial e industrial + mantenimiento de techos en Puerto Rico. Precios transparentes por pie², cotizador online y cobertura en los 78 municipios.",
+  "status": "plantilla-local-delta-system",
+  "metaTagTitle": "Limpieza y Mantenimiento de Propiedades en {{custom_values.county_name_and_state}} | Ilatek",
+  "metaTagDescription": "Limpieza residencial, comercial e industrial + mantenimiento de techos en {{custom_values.county_name_and_state}}. Precios transparentes por pie², cotizador online y cobertura en los 78 municipios.",
   "metaTagImage": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/home.jpg",
+  "locationCustomValue": "{{custom_values.county_name_and_state}}",
+  "metaTagImageAlt": "Limpieza y Mantenimiento de Propiedades en {{custom_values.county_name_and_state}} | Ilatek",
   "canonical": "https://{{custom_values.website_url}}/home",
   "socialImageFile": "assets/meta-image.jpg",
   "publication": "No modificada en GHL; verificar el HEAD publicado."

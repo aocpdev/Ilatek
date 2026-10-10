@@ -1,10 +1,12 @@
 {
   "source": "techos/ghl-techos-head-seo.html",
   "language": "es",
-  "status": "extraido-del-html-existente",
-  "metaTagTitle": "Recubrimiento Elastomérico para Techos | Ilatek Techos",
-  "metaTagDescription": "Recubrimiento elastomérico para techos en Puerto Rico desde $3.00 por pie². Coating elástico blanco que refleja el calor y sella microfisuras. Inspección gratis.",
+  "status": "plantilla-local-delta-system",
+  "metaTagTitle": "Recubrimiento Elastomérico para Techos en {{custom_values.county_name_and_state}} | Ilatek Techos",
+  "metaTagDescription": "Recubrimiento elastomérico para techos en {{custom_values.county_name_and_state}} desde $3.00 por pie². Coating elástico blanco que refleja el calor y sella microfisuras. Inspección gratis.",
   "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f302569bee7cbccbf4.jpg",
+  "locationCustomValue": "{{custom_values.county_name_and_state}}",
+  "metaTagImageAlt": "Recubrimiento Elastomérico para Techos en {{custom_values.county_name_and_state}} | Ilatek Techos",
   "canonical": "https://{{custom_values.website_url}}/recubrimiento-elastomerico",
   "socialImageFile": "assets/respaldo/6ac046f302569bee7cbccbf4.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."

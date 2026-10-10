@@ -1,4 +1,83 @@
 <!-- ILATEK:INTERNAL-LINKS:START -->
+<style>
+/* A single, unframed logo. Keep its 52px slot inside the existing 64px bar.
+   The uniform white bar integrates the original white-backed asset without redrawing it. */
+#ilatek-nav .iln-shell{background:#fff}
+#ilatek-nav .iln-brand{flex:0 0 52px;width:52px;height:52px;gap:0;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none}
+#ilatek-nav .iln-brand img{width:52px;height:52px;max-width:none;padding:0;border:0;border-radius:0;background:none;box-shadow:none;object-fit:contain}
+#ilatek-nav .iln-brand:focus-visible{outline:2px solid #009640;outline-offset:3px}
+/* Scroll-only glass button: same small footprint, with an edge on white surfaces. */
+#ilatek-nav.iln-compact>div.iln-shell{
+  width:64px;min-height:64px;height:64px;padding:0;gap:0;border-radius:20px;
+  border:1px solid rgba(17,22,75,.18);
+  background:linear-gradient(145deg,rgba(255,255,255,.88),rgba(244,247,252,.68));
+  -webkit-backdrop-filter:blur(14px) saturate(130%);backdrop-filter:blur(14px) saturate(130%);
+  box-shadow:0 4px 14px rgba(11,16,61,.10),inset 0 1px 0 rgba(255,255,255,.85);
+}
+#ilatek-nav.iln-compact>div.iln-shell:hover,#ilatek-nav.iln-compact>div.iln-shell:focus-within{
+  border-color:rgba(33,61,142,.68);box-shadow:0 5px 16px rgba(11,16,61,.13),inset 0 1px 0 rgba(255,255,255,.9);
+}
+#ilatek-nav.iln-compact .iln-shell .iln-brand{flex:1;width:100%;height:62px;justify-content:center;border-radius:19px;cursor:pointer}
+#ilatek-nav.iln-compact .iln-brand img{border-radius:13px}
+#ilatek-nav.iln-compact .iln-brand:focus-visible{outline:2px solid var(--iln-blue);outline-offset:3px}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
+  #ilatek-nav.iln-compact>div.iln-shell{background:rgba(255,255,255,.96)}
+}
+#ilatek-nav .iln-login{display:none}
+@media(min-width:1101px){
+  #ilatek-nav{--iln-item-gap:clamp(16px,1.6vw,24px)}
+  #ilatek-nav:not(.iln-compact) .iln-shell{gap:var(--iln-item-gap)}
+  #ilatek-nav .iln-shell .iln-links{position:static;left:auto;transform:none;margin:0 0 0 auto;gap:var(--iln-item-gap)}
+  #ilatek-nav .iln-shell .iln-links>a,#ilatek-nav .iln-links .iln-trigger{padding:10px 0;min-height:44px}
+  #ilatek-nav .iln-shell .iln-langwrap{margin:0;flex:none}
+  #ilatek-nav .iln-shell .iln-lang{min-height:44px;padding:10px 0;gap:8px;border:0;background:transparent;border-radius:8px;font-size:14px}
+  #ilatek-nav .iln-shell .iln-lang span{padding:0;border-radius:0;background:none;box-shadow:none;color:var(--iln-ink);opacity:.65}
+  #ilatek-nav .iln-shell .iln-lang span[aria-pressed="true"]{opacity:1;text-decoration:underline;text-decoration-color:var(--iln-green);text-underline-offset:6px;text-decoration-thickness:2px}
+  #ilatek-nav .iln-shell .iln-login{display:inline-flex;align-items:center;flex:none;min-height:44px;padding:10px 0;font-size:14px;font-weight:700;white-space:nowrap}
+  #ilatek-nav .iln-login:hover{color:var(--iln-blue)}
+  #ilatek-nav .iln-shell .iln-ctawrap,#ilatek-nav .iln-shell>.iln-cta{margin-left:0;flex:none}
+  #ilatek-nav.iln-compact .iln-links,#ilatek-nav.iln-compact .iln-shell .iln-login{display:none}
+}
+/* Both menu glyphs occupy the same grid cell. The close SVG lives inside a span;
+   positioning that SVG absolutely used to offset it outside the button center. */
+#ilatek-nav .iln-burger{flex:0 0 44px;min-width:44px;min-height:44px;padding:0;line-height:1;appearance:none}
+#ilatek-nav .iln-burger svg{position:static;display:block;width:22px;height:22px;grid-area:1 / 1;pointer-events:none}
+#ilatek-nav .iln-burger>.iln-ic-x{display:grid;place-items:center;grid-area:1 / 1;width:22px;height:22px;pointer-events:none;transition:opacity .22s ease,transform .26s ease}
+@media(max-width:1100px){
+  #ilatek-nav .iln-shell{gap:8px}
+  #ilatek-nav .iln-langwrap{margin-left:auto;align-items:center}
+  #ilatek-nav .iln-burger{margin-left:0}
+  #ilatek-nav:not(.iln-lang-on) .iln-burger{margin-left:auto}
+  /* Minimal visual pills, with a full 44px-high touch target. */
+  #ilatek-nav .iln-lang{min-height:44px;min-width:64px;justify-content:center;padding:0;gap:2px;border:0;background:transparent;font-size:12px}
+  #ilatek-nav .iln-lang span{padding:6px 8px;box-shadow:none}
+}
+@media(prefers-reduced-motion:reduce){#ilatek-nav .iln-burger>.iln-ic-x{transition:none}}
+/* Fixed navigation occupies no document flow. Reserve its real height once,
+   then leave 32 / 48 / 64px of breathing room above service-hero content. */
+body:has(#ilatek-nav) :is(.il-hero,.ilr-hero,.ilc2-hero,.ilsx-hero,.ilt-hero){
+  padding-top:calc(var(--ilatek-menu-bottom,78px) + 64px) !important;
+}
+/* The cinematic Home keeps its centered composition and a safe top inset. */
+body:has(#ilatek-nav) .mshero-inner{
+  padding-top:max(clamp(96px,11vw,160px),calc(var(--ilatek-menu-bottom,78px) + 64px)) !important;
+}
+@media(max-width:1100px){
+  body:has(#ilatek-nav) :is(.il-hero,.ilr-hero,.ilc2-hero,.ilsx-hero,.ilt-hero){padding-top:calc(var(--ilatek-menu-bottom,78px) + 48px) !important}
+  body:has(#ilatek-nav) .mshero-inner{padding-top:max(96px,calc(var(--ilatek-menu-bottom,78px) + 48px)) !important}
+}
+@media(max-width:560px){
+  body:has(#ilatek-nav) :is(.il-hero,.ilr-hero,.ilc2-hero,.ilsx-hero,.ilt-hero){padding-top:calc(var(--ilatek-menu-bottom,78px) + 32px) !important}
+  body:has(#ilatek-nav) .mshero-inner{padding-top:max(96px,calc(var(--ilatek-menu-bottom,78px) + 32px)) !important}
+}
+/* Inline vectors survive font loading, language changes and generic GHL SVG rules. */
+#ilatek-cobertura-dir .icd-nav{min-width:44px;min-height:44px;flex-shrink:0;line-height:1}
+#ilatek-cobertura-dir .icd-nav svg{display:block !important;width:22px !important;height:22px !important;max-width:none;fill:none !important;stroke:currentColor !important;pointer-events:none}
+#ilatek-cobertura-dir .icd-nav:focus-visible{outline:2px solid #00b94f;outline-offset:4px}
+#ilatek-cobertura-dir [hidden]{display:none !important}
+@media(prefers-reduced-motion:reduce){html:has(#ilatek-nav){scroll-behavior:auto !important}}
+
+</style>
 <script>
 /* ILATEK: one shared URL contract; inlined into standalone GHL embeds. */
 (function (w) {
@@ -84,6 +163,91 @@
     target.scrollIntoView({ behavior: w.matchMedia && w.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
   });
 })(window);
+
+/* Delta System image/metadata binder. Templates survive existing page resolvers. */
+(function(w){
+  'use strict';
+  if(w.ILATEK_GEO)return;
+  var token='{'+'{custom_values.county_name_and_state}'+'}',doc=w.document;
+  function clean(v){v=String(v||'').replace(/\u00a0/g,' ').trim();return /\{\{|\}\}/.test(v)?'':v}
+  function county(){
+    var declared=doc.querySelectorAll('.dv-ghl-values,#dv-ghl-values'),nodes=declared.length?declared:doc.querySelectorAll('p'),values=[];
+    for(var i=0;i<nodes.length;i++){
+      var parts=nodes[i].textContent.split('|||DV|||');
+      if(parts.length!==6)continue;
+      nodes[i].style.display='none';nodes[i].setAttribute('aria-hidden','true');
+      var value=clean(parts[0]);if(value&&values.indexOf(value)<0)values.push(value);
+    }
+    if(values.length===1)return values[0];
+    // Conflicting bridges are not selected arbitrarily; use the known generic fallback.
+    if(values.length>1)return 'Puerto Rico';
+    var roots=doc.querySelectorAll('[data-location-label]');
+    for(var j=0;j<roots.length;j++){var v=clean(roots[j].getAttribute('data-location-label'));if(v)return v}
+    return 'Puerto Rico';
+  }
+  function enc(s){return encodeURIComponent(s).replace(/'/g,'%27')}
+  function esc(s){return String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+  function image(src,alt,title){
+    // No resolved locality is interpolated into innerHTML. Resolution uses setAttribute below.
+    return '<img src="'+esc(src)+'" alt="'+esc(alt)+'" title="'+esc(title)+'" data-ilatek-local-alt="'+enc(alt)+'" data-ilatek-local-title="'+enc(title)+'" loading="lazy" decoding="async">';
+  }
+  w.ILATEK_GEO={county:county,image:image};
+  var queued=false,titleTemplates=new WeakMap();
+  function refresh(){
+    queued=false;
+    var location=county(),lang=doc.documentElement.lang==='en'?'en':'es';
+    var els=doc.querySelectorAll('[data-ilatek-local-alt],[data-ilatek-local-title],[data-ilatek-local-content]');
+    for(var i=0;i<els.length;i++){
+      var el=els[i];
+      ['alt','title','content'].forEach(function(name){
+        var encoded=el.getAttribute('data-ilatek-local-'+name+'-'+lang)||el.getAttribute('data-ilatek-local-'+name);
+        if(!encoded)return;
+        var template;try{template=decodeURIComponent(encoded)}catch(e){return}
+        var value=template.split(token).join(location);
+        if(el.getAttribute(name)!==value)el.setAttribute(name,value);
+      });
+    }
+    var titles=doc.querySelectorAll('title');
+    for(var t=0;t<titles.length;t++){
+      var node=titles[t];if(node.closest('svg'))continue;
+      if(!titleTemplates.has(node)&&node.textContent.indexOf(token)>=0)titleTemplates.set(node,node.textContent);
+      if(titleTemplates.has(node)){var text=titleTemplates.get(node).split(token).join(location);if(node.textContent!==text)node.textContent=text}
+    }
+  }
+  function schedule(){if(!queued){queued=true;w.requestAnimationFrame(refresh)}}
+  if(doc.readyState==='loading')doc.addEventListener('DOMContentLoaded',refresh,{once:true});else schedule();
+  w.addEventListener('ilatek:lang',schedule);
+  if(w.MutationObserver)new w.MutationObserver(schedule).observe(doc.documentElement,{childList:true,subtree:true,characterData:true,
+    attributes:true,attributeFilter:['alt','title','content','lang','data-location-label']});
+})(window);
+
+/* Measure only the fixed bar, not its expanded drawer. No scroll-driven spacing. */
+(function(w,d){
+  if(w.ILATEK_LAYOUT)return;
+  w.ILATEK_LAYOUT=true;
+  var bar,frame,observer;
+  function measure(){
+    frame=0;
+    if(!bar||!bar.isConnected)return;
+    var bottom=Math.ceil(bar.getBoundingClientRect().bottom);
+    if(bottom>0&&bottom<300)d.documentElement.style.setProperty('--ilatek-menu-bottom',bottom+'px');
+  }
+  function queue(){if(!frame)frame=w.requestAnimationFrame(measure)}
+  function start(){
+    bar=d.querySelector('#ilatek-nav .iln-shell');
+    if(!bar)return;
+    if(observer)observer.disconnect();
+    measure();
+    if(w.ResizeObserver)new ResizeObserver(queue).observe(bar);
+    w.addEventListener('resize',queue,{passive:true});
+    if(d.fonts&&d.fonts.ready)d.fonts.ready.then(queue);
+  }
+  function boot(){
+    if(d.querySelector('#ilatek-nav .iln-shell'))start();
+    else{observer=new MutationObserver(start);observer.observe(d.documentElement,{childList:true,subtree:true})}
+  }
+  if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',boot,{once:true});else boot();
+})(window,document);
 
 </script>
 <!-- ILATEK:INTERNAL-LINKS:END -->
@@ -220,19 +384,20 @@
 
   <div class="iln-shell">
     <a class="iln-brand" href="https://{{custom_values.website_url}}/home" data-ilatek-path="/home" aria-label="Ilatek, inicio">
-      <img src="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/ilatek-logo-256.webp" onerror="this.onerror=null;this.src='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab044d04091fa65e69921f6.png'" alt="Logo de Ilatek - Limpieza y Techos en Puerto Rico" title="Ilatek - Limpieza y Techos en Puerto Rico" width="52" height="52" loading="eager" decoding="async">
-      <b>Ilatek</b>
+      <img src="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/ilatek-logo-256.webp" onerror="this.onerror=null;this.src='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab044d04091fa65e69921f6.png'" alt="Logo de Ilatek - Limpieza y Techos en {{custom_values.county_name_and_state}}" title="Ilatek - Limpieza y Techos en {{custom_values.county_name_and_state}}" width="52" height="52" loading="eager" decoding="async" data-ilatek-local-alt="Logo%20de%20Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D" data-ilatek-local-title="Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D">
     </a>
 
     <nav class="iln-links" id="iln-links" aria-label="Navegación principal">
       <button class="iln-trigger" type="button" aria-expanded="false" aria-controls="iln-mega" aria-haspopup="true">Servicios <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-chev"></use></svg></button>
       <a href="https://{{custom_values.website_url}}/resenas" data-ilatek-path="/resenas">Reseñas</a>
       <a href="https://{{custom_values.website_url}}/reclutamiento-empleo-techos" data-ilatek-path="/reclutamiento-empleo-techos">Empleos</a>
-      <a href="https://portal.ilatekpr.com" target="_blank" rel="noopener">Login</a>
+
     </nav>
+    <div class="iln-langwrap"><button class="iln-lang" id="iln-lang" type="button" aria-label="Cambiar el idioma a English"><span aria-pressed="true">es</span><span aria-pressed="false">en</span></button></div>
+    <a class="iln-login" href="https://portal.ilatekpr.com" target="_blank" rel="noopener">Login</a>
     <a class="iln-cta" href="https://{{custom_values.website_url}}/cotizacion-techos" data-ilatek-path="/cotizacion-techos"><span>Agenda tu Servicio</span><span aria-hidden="true"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" focusable="false"><use href="#iln-i-cal"></use></svg></span></a>
 
-    <div class="iln-langwrap"><button class="iln-lang" id="iln-lang" type="button" aria-label="Cambiar el idioma a English"><span aria-pressed="true">es</span><span aria-pressed="false">en</span></button></div>
+
 
     <button class="iln-burger" type="button" aria-expanded="false" aria-controls="iln-drawer" aria-label="Abrir o cerrar el menú"><svg class="iln-ic-burger" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-menu"></use></svg><span class="iln-ic-x" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><use href="#iln-i-close"></use></svg></span></button>
 
@@ -418,7 +583,7 @@
           if(lang==='en'&&rich){if(!el._ilEsHtml){el._ilEsHtml=el.innerHTML}el.innerHTML=resolve(rich)}
           else if(lang==='es'){if(el._ilEsHtml){el.innerHTML=el._ilEsHtml}else{var rv=(d&&d[k]&&d[k].es)?d[k].es:null;if(rv){el.innerHTML=resolve(rv)}}}
         }
-        if(attr){var av=resolve(lang==='en'?en:(es||el.getAttribute(attr)||''));el.setAttribute(attr,av);if(el.children.length===0&&el.tagName!=='INPUT'){el.textContent=av}}
+        if(attr){var av=resolve(lang==='en'?en:(es||el.getAttribute(attr)||''));el.setAttribute(attr,av);}
         var a2=el.getAttribute('data-attr2');
         if(a2){var v2=resolve(lang==='en'?(el.getAttribute('data-en2')||''):(el.getAttribute('data-es2')||el.getAttribute(a2)||''));el.setAttribute(a2,v2)}
       }
@@ -521,12 +686,26 @@
   /* Contraer al logo al bajar / reabrir al subir (solo desktop, sin animaciones atadas al scroll) */
   var DESKTOP=window.matchMedia('(min-width:901px)');
   var compact=false,acc=0,lastY=0,ticking=false;
+  var compactBrand=root.querySelector('.iln-brand');
+  var brandHomeLabel=compactBrand&&compactBrand.getAttribute('aria-label');
+  function syncCompactBrand(){
+    if(!compactBrand)return;
+    if(compact){
+      compactBrand.setAttribute('role','button');
+      compactBrand.setAttribute('aria-label',window.__ilatekLang==='en'?'Open navigation menu':'Abrir menú de navegación');
+      compactBrand.setAttribute('aria-expanded','false');
+      compactBrand.setAttribute('aria-controls',window.matchMedia('(max-width:1100px)').matches?'iln-drawer':'iln-links');
+    }else{
+      compactBrand.removeAttribute('role');compactBrand.removeAttribute('aria-expanded');compactBrand.removeAttribute('aria-controls');
+      if(brandHomeLabel)compactBrand.setAttribute('aria-label',brandHomeLabel);
+    }
+  }
   function setCompact(on){
     on=!!on;
     if(on&&(megaOpen()||drawerOpen()))return;
     if(on===compact)return;
     compact=on;
-    root.classList.toggle('iln-compact',on);
+    root.classList.toggle('iln-compact',on);syncCompactBrand();
   }
   function yNow(){return window.pageYOffset||document.documentElement.scrollTop||0}
   function step(){
@@ -542,7 +721,19 @@
   lastY=yNow();
   window.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(step)}},{passive:true});
   window.addEventListener('resize',function(){if(!DESKTOP.matches){compact=false;root.classList.remove('iln-compact')}},{passive:true});
-  root.addEventListener('focusin',function(){if(compact)setCompact(false)});
+  root.addEventListener('focusin',function(e){if(compact&&!(compactBrand&&compactBrand.contains(e.target)))setCompact(false)});
+  function activateCompactBrand(e){
+    if(!compact)return;
+    e.preventDefault();e.stopPropagation();setCompact(false);
+    if(window.matchMedia('(max-width:1100px)').matches){openDrawer();if(burger)burger.focus({preventScroll:true})}
+    else openMega(trig);
+  }
+  if(compactBrand){
+    compactBrand.addEventListener('click',activateCompactBrand);
+    compactBrand.addEventListener('keydown',function(e){if(compact&&(e.key===' '||e.key==='Enter'))activateCompactBrand(e)});
+  }
+  window.addEventListener('ilatek:lang',syncCompactBrand);
+  window.addEventListener('resize',syncCompactBrand,{passive:true});
 
   /* Respaldo local de tokens de GHL */
   var website=(root.getAttribute('data-website-url')||'').replace(/\u00a0/g,' ').trim();

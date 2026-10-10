@@ -1,6 +1,6 @@
 # Home Page — ILATEK
 
-Home principal confirmado: **ghl-home-multiservicios.html**. Incluye su menú; el footer se mantiene como componente separado.
+Home principal confirmado: **ghl-home-multiservicios.html**. Incluye menú y footer; copiar el archivo completo sin duplicar estos componentes en GHL.
 
 - [Embed para copiar en GHL](es/landing-pages/ghl-home-multiservicios.html)
 - [Meta Title, Meta Description y Meta Image](es/SEO-GHL.md)

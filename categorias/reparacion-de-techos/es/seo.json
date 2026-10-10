@@ -1,10 +1,12 @@
 {
   "source": "techos/ghl-techos-head-seo.html",
   "language": "es",
-  "status": "extraido-del-html-existente",
-  "metaTagTitle": "Reparación de Techos en Puerto Rico | Ilatek Techos",
-  "metaTagDescription": "Reparación de techos en Puerto Rico desde $250: goteras, filtraciones y grietas en techos de concreto, zinc y asfalto. Inspección gratis, garantía por escrito y 78 municipios.",
+  "status": "plantilla-local-delta-system",
+  "metaTagTitle": "Reparación de Techos en {{custom_values.county_name_and_state}} | Ilatek Techos",
+  "metaTagDescription": "Reparación de techos en {{custom_values.county_name_and_state}} desde $250: goteras, filtraciones y grietas en techos de concreto, zinc y asfalto. Inspección gratis, garantía por escrito y 78 municipios.",
   "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f30edabbe5a4a763bc.jpg",
+  "locationCustomValue": "{{custom_values.county_name_and_state}}",
+  "metaTagImageAlt": "Reparación de Techos en {{custom_values.county_name_and_state}} | Ilatek Techos",
   "canonical": "https://{{custom_values.website_url}}/reparacion-de-techos",
   "socialImageFile": "assets/respaldo/6ac046f30edabbe5a4a763bc.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."

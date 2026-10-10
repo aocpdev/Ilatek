@@ -1,10 +1,12 @@
 {
   "source": "techos/ghl-techos-head-seo.html",
   "language": "es",
-  "status": "extraido-del-html-existente",
-  "metaTagTitle": "Reparación de Techos de Teja | Ilatek Techos",
-  "metaTagDescription": "Reparación y sellado de techos de teja en Puerto Rico desde $400. Sellado de traslapes y remates sin dañar la pieza, con garantía escrita. Inspección gratis.",
+  "status": "plantilla-local-delta-system",
+  "metaTagTitle": "Reparación de Techos de Teja en {{custom_values.county_name_and_state}} | Ilatek Techos",
+  "metaTagDescription": "Reparación y sellado de techos de teja en {{custom_values.county_name_and_state}} desde $400. Sellado de traslapes y remates sin dañar la pieza, con garantía escrita. Inspección gratis.",
   "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f084932298742638d7.jpg",
+  "locationCustomValue": "{{custom_values.county_name_and_state}}",
+  "metaTagImageAlt": "Reparación de Techos de Teja en {{custom_values.county_name_and_state}} | Ilatek Techos",
   "canonical": "https://{{custom_values.website_url}}/techos-de-teja",
   "socialImageFile": "assets/respaldo/6ac046f084932298742638d7.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."

@@ -1,10 +1,12 @@
 {
   "source": "servicios/airbnb-turnover/es/landing-pages/ghl-airbnb-turnover-landing.html",
   "language": "es",
-  "status": "extraido-del-html-existente",
-  "metaTagTitle": "Limpieza Airbnb y Rentals en Puerto Rico | Ilatek",
-  "metaTagDescription": "Turnovers de Airbnb y alquileres a corto plazo en Puerto Rico: limpieza entre huéspedes, reposición de amenities y preparación para check-in. Cobertura en los 78 municipios.",
+  "status": "plantilla-local-delta-system",
+  "metaTagTitle": "Limpieza Airbnb y Rentals en {{custom_values.county_name_and_state}} | Ilatek",
+  "metaTagDescription": "Turnovers de Airbnb y alquileres a corto plazo en {{custom_values.county_name_and_state}}: limpieza entre huéspedes, reposición de amenities y preparación para check-in. Cobertura en los 78 municipios.",
   "metaTagImage": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/airbnb-turnover.jpg",
+  "locationCustomValue": "{{custom_values.county_name_and_state}}",
+  "metaTagImageAlt": "Limpieza Airbnb y Rentals en {{custom_values.county_name_and_state}} | Ilatek",
   "canonical": "https://{{custom_values.website_url}}/airbnb-turnover",
   "socialImageFile": "assets/meta-image.jpg",
   "publication": "No modificada en GHL; verificar el HEAD publicado."

@@ -1,10 +1,12 @@
 {
   "source": "techos/ghl-techos-head-seo.html",
   "language": "es",
-  "status": "extraido-del-html-existente",
-  "metaTagTitle": "Limpieza de Techos y Canaletas | Ilatek Techos",
-  "metaTagDescription": "Limpieza de techos y canaletas en Puerto Rico desde $150. Removemos hojas, arena y escombros que obstruyen el drenaje. Inspección gratis y garantía escrita.",
+  "status": "plantilla-local-delta-system",
+  "metaTagTitle": "Limpieza de Techos y Canaletas en {{custom_values.county_name_and_state}} | Ilatek Techos",
+  "metaTagDescription": "Limpieza de techos y canaletas en {{custom_values.county_name_and_state}} desde $150. Removemos hojas, arena y escombros que obstruyen el drenaje. Inspección gratis y garantía escrita.",
   "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046ee150d6ea53dbd5044.jpg",
+  "locationCustomValue": "{{custom_values.county_name_and_state}}",
+  "metaTagImageAlt": "Limpieza de Techos y Canaletas en {{custom_values.county_name_and_state}} | Ilatek Techos",
   "canonical": "https://{{custom_values.website_url}}/limpieza-de-techos-y-canaletas",
   "socialImageFile": "assets/respaldo/6ac046ee150d6ea53dbd5044.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."

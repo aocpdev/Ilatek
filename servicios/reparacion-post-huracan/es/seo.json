@@ -1,10 +1,12 @@
 {
   "source": "techos/ghl-techos-head-seo.html",
   "language": "es",
-  "status": "extraido-del-html-existente",
-  "metaTagTitle": "Reparación de Techos Post-Huracán | Ilatek Techos",
-  "metaTagDescription": "Reparación de techos post-huracán en Puerto Rico desde $350: estabilización, tarping, reparación y documentación para el seguro. Atención prioritaria.",
+  "status": "plantilla-local-delta-system",
+  "metaTagTitle": "Reparación de Techos Post-Huracán en {{custom_values.county_name_and_state}} | Ilatek Techos",
+  "metaTagDescription": "Reparación de techos post-huracán en {{custom_values.county_name_and_state}} desde $350: estabilización, tarping, reparación y documentación para el seguro. Atención prioritaria.",
   "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f83b8e61adf5632035.jpg",
+  "locationCustomValue": "{{custom_values.county_name_and_state}}",
+  "metaTagImageAlt": "Reparación de Techos Post-Huracán en {{custom_values.county_name_and_state}} | Ilatek Techos",
   "canonical": "https://{{custom_values.website_url}}/reparacion-post-huracan",
   "socialImageFile": "assets/respaldo/6ac046f83b8e61adf5632035.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."

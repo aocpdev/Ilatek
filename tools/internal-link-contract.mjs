@@ -1,10 +1,13 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { ROOT, structure } from './site-paths.mjs';
+import { localizeHtml } from './location-contract.mjs';
+import { responsiveHtml } from './responsive-contract.mjs';
 export const TOKEN = '{{custom_values.website_url}}';
 export const PREFIX = 'https://' + TOKEN;
-const runtime = fs.readFileSync(path.join(ROOT,'src/compartido/internal-links.js'),'utf8');
-const block = '<!-- ILATEK:INTERNAL-LINKS:START -->\n<script>\n'+runtime+'\n</script>\n<!-- ILATEK:INTERNAL-LINKS:END -->\n';
+const runtime = ['internal-links.js','location-values.js','responsive-layout.js'].map(file=>fs.readFileSync(path.join(ROOT,'src/compartido',file),'utf8')).join('\n');
+const css=fs.readFileSync(path.join(ROOT,'src/compartido/responsive-layout.css'),'utf8');
+const block = '<!-- ILATEK:INTERNAL-LINKS:START -->\n<style>\n'+css+'\n</style>\n<script>\n'+runtime+'\n</script>\n<!-- ILATEK:INTERNAL-LINKS:END -->\n';
 const blockRE = /<!-- ILATEK:INTERNAL-LINKS:START -->[\s\S]*?<!-- ILATEK:INTERNAL-LINKS:END -->\s*/g;
 export function publicPath(file) {
   const p = structure.pages.find(p=>p.file===file);
@@ -51,7 +54,7 @@ function scriptFix(code) {
   return out;
 }
 export function formatPage(source, pagePath='/home', {headOnly=false}={}) {
-  let text=normalizeTemplates(source.replace(blockRE,''));
+  let text=responsiveHtml(localizeHtml(normalizeTemplates(source.replace(blockRE,''))));
   text=text.replace(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi,(all,attrs,code)=>{
     if(/application\/ld\+json/.test(attrs)) {
       code=code.replace(/"\{\{custom_values\.website_url\}\}"/g,JSON.stringify(PREFIX+'/'));
@@ -63,7 +66,7 @@ export function formatPage(source, pagePath='/home', {headOnly=false}={}) {
   // Only literal HTML attributes. Hardcoded fallback constants and external media stay intact.
   text=text.replace(/<a\b[^>]*>/gi,tag=>anchor(tag,pagePath));
   text=text.replace(/<(?:link|meta)\b[^>]*>/gi,tag=>tag.replace(/((?:href|content)=["'])https?:\/\/(?:www\.)?ilatekpr\.com(?=[/"'])/gi,'$1'+PREFIX));
-  if(headOnly || (!/data-ilatek-path=/.test(text) && !text.includes('window.ILATEK_LINKS'))) return text;
+  if(headOnly || (!/data-ilatek-path=|data-ilatek-local-/.test(text) && !text.includes('window.ILATEK_LINKS'))) return text;
   // Full legal documents keep their DOCTYPE first; fragments get an inline, self-contained helper.
   return /<head\b[^>]*>/i.test(text) ? text.replace(/<head\b[^>]*>/i,m=>m+'\n'+block) : block+text;
 }

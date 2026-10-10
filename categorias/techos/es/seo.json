@@ -1,10 +1,12 @@
 {
   "source": "techos/ghl-techos-head-seo.html",
   "language": "es",
-  "status": "extraido-del-html-existente",
-  "metaTagTitle": "Reparación y Sellado de Techos en Puerto Rico | Ilatek Techos",
-  "metaTagDescription": "Reparación y sellado de techos en Puerto Rico: goteras, filtraciones, impermeabilización y mantenimiento. Precios desde $2.50 por pie², inspección gratis y 78 municipios.",
+  "status": "plantilla-local-delta-system",
+  "metaTagTitle": "Reparación y Sellado de Techos en {{custom_values.county_name_and_state}} | Ilatek Techos",
+  "metaTagDescription": "Reparación y sellado de techos en {{custom_values.county_name_and_state}}: goteras, filtraciones, impermeabilización y mantenimiento. Precios desde $2.50 por pie², inspección gratis y 78 municipios.",
   "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046fe8493229874263a27.jpg",
+  "locationCustomValue": "{{custom_values.county_name_and_state}}",
+  "metaTagImageAlt": "Reparación y Sellado de Techos en {{custom_values.county_name_and_state}} | Ilatek Techos",
   "canonical": "https://{{custom_values.website_url}}/home",
   "socialImageFile": "assets/respaldo/6ac046fe8493229874263a27.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."

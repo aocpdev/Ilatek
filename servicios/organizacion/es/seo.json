@@ -1,10 +1,12 @@
 {
   "source": "servicios/organizacion/es/landing-pages/ghl-organizacion-landing.html",
   "language": "es",
-  "status": "extraido-del-html-existente",
-  "metaTagTitle": "Organización del Hogar en Puerto Rico | Ilatek",
-  "metaTagDescription": "Organización del hogar en Puerto Rico: closets, cocina, almacenaje y orden por zonas. Cotizador online con precio real y cobertura en los 78 municipios.",
+  "status": "plantilla-local-delta-system",
+  "metaTagTitle": "Organización del Hogar en {{custom_values.county_name_and_state}} | Ilatek",
+  "metaTagDescription": "Organización del hogar en {{custom_values.county_name_and_state}}: closets, cocina, almacenaje y orden por zonas. Cotizador online con precio real y cobertura en los 78 municipios.",
   "metaTagImage": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/organizacion.jpg",
+  "locationCustomValue": "{{custom_values.county_name_and_state}}",
+  "metaTagImageAlt": "Organización del Hogar en {{custom_values.county_name_and_state}} | Ilatek",
   "canonical": "https://{{custom_values.website_url}}/organizacion",
   "socialImageFile": "assets/meta-image.jpg",
   "publication": "No modificada en GHL; verificar el HEAD publicado."

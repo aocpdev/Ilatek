@@ -1,6 +1,6 @@
-# Reparación de Techos en Puerto Rico | Ilatek Techos
+# Reparación de Techos en {{custom_values.county_name_and_state}} | Ilatek Techos
 
-Página existente organizada sin cambios de diseño, texto ni URLs de producción.
+Landing completa con menú universal y footer integrados; conserva el contenido existente.
 
 - [Embed para copiar en GHL](es/landing-pages/ghl-reparacion-de-techos-landing.html)
 - [Meta Title, Meta Description y Meta Image](es/SEO-GHL.md)

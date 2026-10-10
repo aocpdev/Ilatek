@@ -1,10 +1,12 @@
 {
   "source": "techos/ghl-techos-head-seo.html",
   "language": "es",
-  "status": "extraido-del-html-existente",
-  "metaTagTitle": "Reparación de Goteras en Puerto Rico | Ilatek Techos",
-  "metaTagDescription": "Reparación de goteras en techos de concreto, zinc y asfalto en Puerto Rico desde $250. Localizamos y sellamos el punto exacto. Inspección gratis y garantía escrita.",
+  "status": "plantilla-local-delta-system",
+  "metaTagTitle": "Reparación de Goteras en {{custom_values.county_name_and_state}} | Ilatek Techos",
+  "metaTagDescription": "Reparación de goteras en techos de concreto, zinc y asfalto en {{custom_values.county_name_and_state}} desde $250. Localizamos y sellamos el punto exacto. Inspección gratis y garantía escrita.",
   "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046fc150d6ea53dbd517a.jpg",
+  "locationCustomValue": "{{custom_values.county_name_and_state}}",
+  "metaTagImageAlt": "Reparación de Goteras en {{custom_values.county_name_and_state}} | Ilatek Techos",
   "canonical": "https://{{custom_values.website_url}}/reparacion-de-goteras",
   "socialImageFile": "assets/respaldo/6ac046fc150d6ea53dbd517a.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."

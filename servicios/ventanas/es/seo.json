@@ -1,10 +1,12 @@
 {
   "source": "servicios/ventanas/es/landing-pages/ghl-ventanas-landing.html",
   "language": "es",
-  "status": "extraido-del-html-existente",
-  "metaTagTitle": "Limpieza de Ventanas en Puerto Rico | Ilatek",
-  "metaTagDescription": "Limpieza de ventanas en Puerto Rico: interiores $10 y exteriores $25 por ventana, marcos y cristales sin marcas. Cotizador online y cobertura en los 78 municipios.",
+  "status": "plantilla-local-delta-system",
+  "metaTagTitle": "Limpieza de Ventanas en {{custom_values.county_name_and_state}} | Ilatek",
+  "metaTagDescription": "Limpieza de ventanas en {{custom_values.county_name_and_state}}: interiores $10 y exteriores $25 por ventana, marcos y cristales sin marcas. Cotizador online y cobertura en los 78 municipios.",
   "metaTagImage": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/ventanas.jpg",
+  "locationCustomValue": "{{custom_values.county_name_and_state}}",
+  "metaTagImageAlt": "Limpieza de Ventanas en {{custom_values.county_name_and_state}} | Ilatek",
   "canonical": "https://{{custom_values.website_url}}/ventanas",
   "socialImageFile": "assets/meta-image.jpg",
   "publication": "No modificada en GHL; verificar el HEAD publicado."

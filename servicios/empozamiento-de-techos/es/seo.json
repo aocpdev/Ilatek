@@ -1,10 +1,12 @@
 {
   "source": "techos/ghl-techos-head-seo.html",
   "language": "es",
-  "status": "extraido-del-html-existente",
-  "metaTagTitle": "Empozamiento de Agua en Techos | Ilatek Techos",
-  "metaTagDescription": "Corrección de empozamientos de agua en techos planos y losas en Puerto Rico desde $350. Corregimos pendiente y drenaje para evitar filtraciones. Inspección gratis.",
+  "status": "plantilla-local-delta-system",
+  "metaTagTitle": "Empozamiento de Agua en Techos en {{custom_values.county_name_and_state}} | Ilatek Techos",
+  "metaTagDescription": "Corrección de empozamientos de agua en techos planos y losas en {{custom_values.county_name_and_state}} desde $350. Corregimos pendiente y drenaje para evitar filtraciones. Inspección gratis.",
   "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046fb3b8e61adf5632061.jpg",
+  "locationCustomValue": "{{custom_values.county_name_and_state}}",
+  "metaTagImageAlt": "Empozamiento de Agua en Techos en {{custom_values.county_name_and_state}} | Ilatek Techos",
   "canonical": "https://{{custom_values.website_url}}/empozamiento-de-techos",
   "socialImageFile": "assets/respaldo/6ac046fb3b8e61adf5632061.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."

@@ -1,10 +1,12 @@
 {
   "source": "techos/ghl-techos-head-seo.html",
   "language": "es",
-  "status": "extraido-del-html-existente",
-  "metaTagTitle": "Sellado de Techos en Puerto Rico | Ilatek Techos",
-  "metaTagDescription": "Sellado de techos en Puerto Rico desde $2.50 por pie²: silicona 100%, membrana asfáltica, elastomérico, poliuretano y acrílico. Inspección gratis y garantía escrita.",
+  "status": "plantilla-local-delta-system",
+  "metaTagTitle": "Sellado de Techos en {{custom_values.county_name_and_state}} | Ilatek Techos",
+  "metaTagDescription": "Sellado de techos en {{custom_values.county_name_and_state}} desde $2.50 por pie²: silicona 100%, membrana asfáltica, elastomérico, poliuretano y acrílico. Inspección gratis y garantía escrita.",
   "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f8849322987426396f.jpg",
+  "locationCustomValue": "{{custom_values.county_name_and_state}}",
+  "metaTagImageAlt": "Sellado de Techos en {{custom_values.county_name_and_state}} | Ilatek Techos",
   "canonical": "https://{{custom_values.website_url}}/sellado-de-techos",
   "socialImageFile": "assets/respaldo/6ac046f8849322987426396f.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."

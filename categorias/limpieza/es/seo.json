@@ -1,10 +1,12 @@
 {
   "source": "categorias/limpieza/es/landing-pages/ghl-servicios-landing.html",
   "language": "es",
-  "status": "extraido-del-html-existente",
-  "metaTagTitle": "Servicios de Limpieza en Puerto Rico | Ilatek",
-  "metaTagDescription": "Servicios de limpieza residencial, comercial e industrial de Ilatek en Puerto Rico: limpieza estándar y profunda, mudanzas, Airbnb, post-construcción, ventanas, lavado a presión, alfombras, electrodomésticos y organización. Precio transparente por pie cuadrado y cobertura en los 78 municipios.",
+  "status": "plantilla-local-delta-system",
+  "metaTagTitle": "Servicios de Limpieza en {{custom_values.county_name_and_state}} | Ilatek",
+  "metaTagDescription": "Servicios de limpieza residencial, comercial e industrial de Ilatek en {{custom_values.county_name_and_state}}: limpieza estándar y profunda, mudanzas, Airbnb, post-construcción, ventanas, lavado a presión, alfombras, electrodomésticos y organización. Precio transparente por pie cuadrado y cobertura en los 78 municipios.",
   "metaTagImage": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/servicios.jpg",
+  "locationCustomValue": "{{custom_values.county_name_and_state}}",
+  "metaTagImageAlt": "Servicios de Limpieza en {{custom_values.county_name_and_state}} | Ilatek",
   "canonical": "https://{{custom_values.website_url}}/servicios",
   "socialImageFile": "assets/meta-image.jpg",
   "publication": "No modificada en GHL; verificar el HEAD publicado."

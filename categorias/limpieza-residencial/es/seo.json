@@ -1,10 +1,12 @@
 {
   "source": "categorias/limpieza-residencial/es/landing-pages/ghl-limpieza-residencial-landing.html",
   "language": "es",
-  "status": "extraido-del-html-existente",
-  "metaTagTitle": "Limpieza Residencial en Puerto Rico | Ilatek",
-  "metaTagDescription": "Limpieza residencial de Ilatek en Puerto Rico: limpieza regular ($0.07/pie²) y profunda ($0.15/pie²) para casas y apartamentos en los 78 municipios. Cotización instantánea y depósito de $50 que se descuenta.",
+  "status": "plantilla-local-delta-system",
+  "metaTagTitle": "Limpieza Residencial en {{custom_values.county_name_and_state}} | Ilatek",
+  "metaTagDescription": "Limpieza residencial de Ilatek en {{custom_values.county_name_and_state}}: limpieza regular ($0.07/pie²) y profunda ($0.15/pie²) para casas y apartamentos en los 78 municipios. Cotización instantánea y depósito de $50 que se descuenta.",
   "metaTagImage": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/limpieza-residencial.jpg",
+  "locationCustomValue": "{{custom_values.county_name_and_state}}",
+  "metaTagImageAlt": "Limpieza Residencial en {{custom_values.county_name_and_state}} | Ilatek",
   "canonical": "https://{{custom_values.website_url}}/limpieza-residencial",
   "socialImageFile": "assets/meta-image.jpg",
   "publication": "No modificada en GHL; verificar el HEAD publicado."

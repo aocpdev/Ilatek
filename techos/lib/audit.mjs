@@ -43,6 +43,9 @@ export function copyUnits(html) {
 }
 
 export function cleanGuard(html) {
+  // The global navigation/footer intentionally link both business lines.
+  // Keep the strict roofing-only copy rule for the actual landing content.
+  html=html.replace(/<!-- ILATEK:SHELL:(HEADER|FOOTER):START -->[\s\S]*?<!-- ILATEK:SHELL:\1:END -->/g,'');
   const errs = [];
   FORBIDDEN.forEach((re) => {
     const m = html.match(re);

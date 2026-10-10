@@ -1,10 +1,12 @@
 {
   "source": "techos/ghl-techos-head-seo.html",
   "language": "es",
-  "status": "extraido-del-html-existente",
-  "metaTagTitle": "Canaletas y Bajantes para Techos | Ilatek Techos",
-  "metaTagDescription": "Limpieza, reparación e instalación de canaletas y bajantes en Puerto Rico desde $200. Drenaje que funciona para proteger tu techo. Inspección gratis.",
+  "status": "plantilla-local-delta-system",
+  "metaTagTitle": "Canaletas y Bajantes para Techos en {{custom_values.county_name_and_state}} | Ilatek Techos",
+  "metaTagDescription": "Limpieza, reparación e instalación de canaletas y bajantes en {{custom_values.county_name_and_state}} desde $200. Drenaje que funciona para proteger tu techo. Inspección gratis.",
   "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046ecf30b488137bfa427.jpg",
+  "locationCustomValue": "{{custom_values.county_name_and_state}}",
+  "metaTagImageAlt": "Canaletas y Bajantes para Techos en {{custom_values.county_name_and_state}} | Ilatek Techos",
   "canonical": "https://{{custom_values.website_url}}/canaletas-y-bajantes",
   "socialImageFile": "assets/respaldo/6ac046ecf30b488137bfa427.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."

@@ -1,6 +1,6 @@
-# Reparación y Sellado de Techos en Puerto Rico | Ilatek Techos
+# Reparación y Sellado de Techos en {{custom_values.county_name_and_state}} | Ilatek Techos
 
-Página existente organizada sin cambios de diseño, texto ni URLs de producción.
+Landing completa con menú universal y footer integrados; conserva el contenido existente.
 
 > Esta página de techos es un legado: su canonical existente apunta a /home. No sustituye el Home multiservicios ni debe publicarse como un segundo Home.
 

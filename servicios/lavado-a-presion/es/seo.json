@@ -1,10 +1,12 @@
 {
   "source": "servicios/lavado-a-presion/es/landing-pages/ghl-lavado-a-presion-landing.html",
   "language": "es",
-  "status": "extraido-del-html-existente",
-  "metaTagTitle": "Lavado a Presión en Puerto Rico | Ilatek",
-  "metaTagDescription": "Lavado a presión en Puerto Rico: terrazas, verjas, paredes exteriores y pisos. Equipo profesional y cobertura en los 78 municipios. Cotiza online en minutos.",
+  "status": "plantilla-local-delta-system",
+  "metaTagTitle": "Lavado a Presión en {{custom_values.county_name_and_state}} | Ilatek",
+  "metaTagDescription": "Lavado a presión en {{custom_values.county_name_and_state}}: terrazas, verjas, paredes exteriores y pisos. Equipo profesional y cobertura en los 78 municipios. Cotiza online en minutos.",
   "metaTagImage": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/lavado-a-presion.jpg",
+  "locationCustomValue": "{{custom_values.county_name_and_state}}",
+  "metaTagImageAlt": "Lavado a Presión en {{custom_values.county_name_and_state}} | Ilatek",
   "canonical": "https://{{custom_values.website_url}}/lavado-a-presion",
   "socialImageFile": "assets/meta-image.jpg",
   "publication": "No modificada en GHL; verificar el HEAD publicado."

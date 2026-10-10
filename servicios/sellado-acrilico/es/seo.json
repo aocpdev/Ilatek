@@ -1,10 +1,12 @@
 {
   "source": "techos/ghl-techos-head-seo.html",
   "language": "es",
-  "status": "extraido-del-html-existente",
-  "metaTagTitle": "Sellado Acrílico para Techos | Ilatek Techos",
-  "metaTagDescription": "Sellado acrílico para techos en Puerto Rico desde $2.00 por pie². Opción económica y reflectiva para mantenimiento periódico. Inspección gratis y garantía escrita.",
+  "status": "plantilla-local-delta-system",
+  "metaTagTitle": "Sellado Acrílico para Techos en {{custom_values.county_name_and_state}} | Ilatek Techos",
+  "metaTagDescription": "Sellado acrílico para techos en {{custom_values.county_name_and_state}} desde $2.00 por pie². Opción económica y reflectiva para mantenimiento periódico. Inspección gratis y garantía escrita.",
   "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f52c503e697d5ff222.jpg",
+  "locationCustomValue": "{{custom_values.county_name_and_state}}",
+  "metaTagImageAlt": "Sellado Acrílico para Techos en {{custom_values.county_name_and_state}} | Ilatek Techos",
   "canonical": "https://{{custom_values.website_url}}/sellado-acrilico",
   "socialImageFile": "assets/respaldo/6ac046f52c503e697d5ff222.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."

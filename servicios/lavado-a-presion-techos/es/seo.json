@@ -1,10 +1,12 @@
 {
   "source": "techos/ghl-techos-head-seo.html",
   "language": "es",
-  "status": "extraido-del-html-existente",
-  "metaTagTitle": "Lavado a Presión de Techos | Ilatek Techos",
-  "metaTagDescription": "Lavado a presión de techos en Puerto Rico desde $0.15 por pie². Limpieza profunda que prepara y alarga la vida del techo. Inspección gratis y garantía escrita.",
+  "status": "plantilla-local-delta-system",
+  "metaTagTitle": "Lavado a Presión de Techos en {{custom_values.county_name_and_state}} | Ilatek Techos",
+  "metaTagDescription": "Lavado a presión de techos en {{custom_values.county_name_and_state}} desde $0.15 por pie². Limpieza profunda que prepara y alarga la vida del techo. Inspección gratis y garantía escrita.",
   "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046ecc478ac55358ec4c6.jpg",
+  "locationCustomValue": "{{custom_values.county_name_and_state}}",
+  "metaTagImageAlt": "Lavado a Presión de Techos en {{custom_values.county_name_and_state}} | Ilatek Techos",
   "canonical": "https://{{custom_values.website_url}}/lavado-a-presion-techos",
   "socialImageFile": "assets/respaldo/6ac046ecc478ac55358ec4c6.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."

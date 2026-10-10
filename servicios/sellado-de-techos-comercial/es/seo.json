@@ -1,10 +1,12 @@
 {
   "source": "techos/ghl-techos-head-seo.html",
   "language": "es",
-  "status": "extraido-del-html-existente",
-  "metaTagTitle": "Sellado de Techos Comercial en Puerto Rico | Ilatek Techos",
-  "metaTagDescription": "Sellado de techos comercial en Puerto Rico desde $2.50 por pie². Trabajo planificado para operar sin cerrar. Inspección gratis y garantía escrita. 78 municipios.",
+  "status": "plantilla-local-delta-system",
+  "metaTagTitle": "Sellado de Techos Comercial en {{custom_values.county_name_and_state}} | Ilatek Techos",
+  "metaTagDescription": "Sellado de techos comercial en {{custom_values.county_name_and_state}} desde $2.50 por pie². Trabajo planificado para operar sin cerrar. Inspección gratis y garantía escrita. 78 municipios.",
   "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046ee85f560d1666998eb.jpg",
+  "locationCustomValue": "{{custom_values.county_name_and_state}}",
+  "metaTagImageAlt": "Sellado de Techos Comercial en {{custom_values.county_name_and_state}} | Ilatek Techos",
   "canonical": "https://{{custom_values.website_url}}/sellado-de-techos-comercial",
   "socialImageFile": "assets/respaldo/6ac046ee85f560d1666998eb.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."

@@ -4,8 +4,10 @@
   "description": "Cotizador de limpieza residencial en español para integrar en GoHighLevel (GHL).",
   "main": "index.js",
   "scripts": {
-    "test": "node tools/verify-structure.mjs && node techos/verify-techos.mjs && node tools/verify-internal-links.mjs",
+    "test": "node tools/verify-structure.mjs && node techos/verify-techos.mjs && node tools/verify-internal-links.mjs && node tools/verify-page-shell.mjs && node tools/verify-location.mjs && node tools/verify-responsive.mjs",
+    "sync:layout": "node tools/apply-page-shell.mjs && node tools/apply-internal-links.mjs && node tools/package-pages.mjs",
     "test:links": "node tools/verify-internal-links.mjs",
+    "test:responsive": "node tools/test-responsive-browser.mjs",
     "test:migration": "node tools/verify-structure.mjs --migration",
     "test:faq": "node src/faq/faq-parity.mjs",
     "package:pages": "node tools/package-pages.mjs"
