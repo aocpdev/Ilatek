@@ -29,7 +29,10 @@ pages.forEach((p) => {
   const htmlErrs = auditHtml(p, html);
   if (htmlErrs.length) fail(p.slug, htmlErrs);
   const file = `ghl-${p.slug}-landing.html`;
-  fs.writeFileSync(path.join(OUT, file), html, 'utf8');
+  // GHL sirve los embeds sin header Content-Type con charset: sin esta declaración el
+  // navegador adivina latin-1 y los acentos se pintan como "ReparaciÃ³n".
+  const withCharset = '<meta charset="utf-8">\n' + html;
+  fs.writeFileSync(path.join(OUT, file), withCharset, 'utf8');
   written.push({ slug: p.slug, role: p.role, bytes: Buffer.byteLength(html), file });
 });
 

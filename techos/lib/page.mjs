@@ -235,7 +235,7 @@ function directorySection(page) {
       // Una tarjeta que no es madre (la destacada) toma las hermanas de su categoria
       // desde el mismo arbol, para no repetir aqui la jerarquia del sitio.
       const kidsOf = kidsBySlug[cfg.slug] || (cfg.parent ? (kidsBySlug[cfg.parent] || []).filter((k) => k.slug !== cfg.slug) : []);
-      const imgs = shots(cfg.slug, cfg.img);
+      const imgs = shots(cfg.slug, cfg.img, { hubWebp: cfg.hubWebp });
       const kids = kidsOf
         .map((c) => `<a href="{{custom_values.website_url}}/${c.slug}">${c.name}</a>`)
         .join('');

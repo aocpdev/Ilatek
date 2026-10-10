@@ -73,8 +73,14 @@ export const TECHOS_IMG = {
 // Fotos relacionadas con un slug: la portada propia de la tarjeta mas las dos fotos
 // de su landing (hero e incluye), sin repetir. Alimenta el fundido interno de las
 // tarjetas del hub, y vive aqui porque este archivo es el dueno del mapa de imagenes.
-export function shots(slug, primary) {
+export function shots(slug, primary, opts = {}) {
   const t = TECHOS_IMG[slug] || {};
+  if (opts.hubWebp) {
+    // La portada del hub es una imagen propia (no del CDN de GHL): va primera
+    // y con su respaldo en el propio CDN de GHL si existiera.
+    const rest = [primary, t.hero, t.incl].filter(Boolean).filter((u) => u !== t.hero).slice(0, 2);
+    return [{ webp: opts.hubWebp, raw: primary || t.hero }, ...rest.map((raw) => ({ webp: optimized(raw), raw }))];
+  }
   const all = [primary, t.hero, t.incl].filter(Boolean);
   return all.filter((u, i) => all.indexOf(u) === i).map((raw) => ({ webp: optimized(raw), raw }));
 }

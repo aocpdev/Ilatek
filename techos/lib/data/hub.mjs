@@ -73,7 +73,7 @@ export const hub = mk({
         icon: 'clock',
         name: 'Mantenimiento y tratamiento',
         desc: 'El servicio que más piden en Puerto Rico: inspección, limpieza y tratamiento preventivo para que tu techo dure y no vuelva a gotear.',
-        img: CDN + '6ac046fa2c503e697d5ff288.jpg',
+        img: CDN + '6ac046fa2c503e697d5ff288.jpg', hubWebp: 'https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/hub/mantenimiento.webp',
         feat: ['Inspección gratis', 'Moho y oxidación', 'Plan desde $58/mes', 'Informe con fotos'],
         featured: true,
       },
@@ -83,7 +83,7 @@ export const hub = mk({
         icon: 'drop',
         name: 'Reparación de Techos',
         desc: 'Goteras, filtraciones, grietas, empozamientos, oxidación y reparación post-huracán con garantía escrita.',
-        img: CDN + '6ac046f57bca8cd20c4021df.jpg',
+        img: CDN + '6ac046f57bca8cd20c4021df.jpg', hubWebp: 'https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/hub/reparacion.webp',
         feat: ['Goteras desde $250', 'Grietas y empozamientos', 'Post-huracán', 'Garantía escrita'],
       },
       {
@@ -92,7 +92,7 @@ export const hub = mk({
         icon: 'shield',
         name: 'Sellado de Techos',
         desc: 'Silicona 100%, membrana asfáltica, elastomérico, poliuretano y acrílico: el sistema correcto para cada superficie.',
-        img: CDN + '6ac046f585f560d1666999aa.jpg',
+        img: CDN + '6ac046f585f560d1666999aa.jpg', hubWebp: 'https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/hub/sellado.webp',
         feat: ['Silicona y poliuretano', 'Membrana y elastomérico', 'Desde $2.50 por pie²', 'Garantía escrita'],
       },
       {
@@ -101,7 +101,7 @@ export const hub = mk({
         icon: 'drop',
         name: 'Impermeabilización y Tipos de Techo',
         desc: 'Concreto, techos planos, zinc, asfalto, teja y madera, cada uno impermeabilizado con el sistema que le corresponde.',
-        img: CDN + '6ac046f802569bee7cbccc2c.jpg',
+        img: CDN + '6ac046f802569bee7cbccc2c.jpg', hubWebp: 'https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/hub/impermeabilizacion.webp',
         feat: ['Concreto, zinc y teja', 'Techos planos', 'Sistema por tipo', 'Garantía escrita'],
       },
       {
@@ -110,7 +110,7 @@ export const hub = mk({
         icon: 'home',
         name: 'Techos por Segmento',
         desc: 'Soluciones para propiedades residenciales, comerciales e industriales, con logística adaptada a cada espacio.',
-        img: CDN + '6ac046f8f30b488137bfa4ee.jpg',
+        img: CDN + '6ac046f8f30b488137bfa4ee.jpg', hubWebp: 'https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/hub/segmento.webp',
         feat: ['Residencial y comercial', 'Industrial', 'Sin cerrar tu operación', 'Garantía escrita'],
       },
       {
@@ -119,7 +119,7 @@ export const hub = mk({
         icon: 'clock',
         name: 'Inspección y Mantenimiento',
         desc: 'Inspección gratis, planes desde $58/mes, despeje de techos, canaletas y lavado a presión programado.',
-        img: CDN + '6ac046f82c503e697d5ff24e.jpg',
+        img: CDN + '6ac046f82c503e697d5ff24e.jpg', hubWebp: 'https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/hub/inspeccion.webp',
         feat: ['Inspección gratis', 'Limpieza y canaletas', 'Instalación y reemplazo', 'Informe con fotos'],
       },
     ],
