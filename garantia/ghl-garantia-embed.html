@@ -892,18 +892,59 @@ body:has(#ilatek-nav) .mshero-inner{
 <div data-ilatek-header-space aria-hidden="true" style="height:92px;flex:none"></div>
 <!-- ILATEK:SHELL:HEADER:END -->
 <section id="ilatek-garantia" aria-label="Garantías de Servicio de ILATEK">
-<div class="wrapper">
+
+  <style>
+    #ilatek-garantia{
+      --navy:#0F224A;--navy-light:#1F3A6E;--gray:#757575;--gray-light:#EFEFEF;--green:#3D8B4D;--green-light:#E7F3E9;--ink:#2A2D36;--gold:#C9A24B;
+      max-width:640px;margin:0 auto;background-color:#ffffff;
+      font-family:'Segoe UI',Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.55;
+    }
+    #ilatek-garantia *{box-sizing:border-box;margin:0;padding:0}
+    #ilatek-garantia [hidden]{display:none!important}
+
+    #ilatek-garantia .intro{padding:22px 24px 6px}
+    #ilatek-garantia .intro p{font-size:14px;color:#55586A}
+
+    /* ACORDEONES */
+    #ilatek-garantia .content{padding:6px 20px 10px}
+    #ilatek-garantia details{border-bottom:1px solid #E5E7EB}
+    #ilatek-garantia summary{list-style:none;cursor:pointer;padding:14px 6px;font-size:14px;font-weight:700;color:var(--navy);display:flex;justify-content:space-between;align-items:center}
+    #ilatek-garantia summary::-webkit-details-marker{display:none}
+    #ilatek-garantia summary::after{content:'+';font-size:20px;color:var(--gray);font-weight:400;margin-left:10px}
+    #ilatek-garantia details[open] summary::after{content:'\2013'}
+    #ilatek-garantia details[open] summary{color:var(--green)}
+    #ilatek-garantia .section-body{padding:0 6px 16px;font-size:13.5px;color:#3A3D4A}
+    #ilatek-garantia .section-body ul{margin:6px 0;padding-left:20px}
+    #ilatek-garantia .section-body p{margin:8px 0}
+
+    #ilatek-garantia table{width:100%;border-collapse:collapse;margin:10px 0 6px;font-size:12.5px}
+    #ilatek-garantia th,#ilatek-garantia td{border:1px solid #E5E7EB;padding:7px 8px;text-align:left}
+    #ilatek-garantia th{background-color:var(--navy);color:#ffffff;font-weight:600}
+    #ilatek-garantia tr:nth-child(even){background-color:var(--gray-light)}
+
+    #ilatek-garantia .callout{background-color:var(--green-light);border-left:4px solid var(--green);padding:10px 14px;margin:12px 0;font-size:13px;border-radius:0 6px 6px 0}
+    #ilatek-garantia .callout strong{color:#2F5B3B}
+
+    #ilatek-garantia .callout-gold{background-color:#FBF6EA;border-left:4px solid var(--gold);padding:10px 14px;margin:12px 0;font-size:13px;border-radius:0 6px 6px 0}
+    #ilatek-garantia .callout-gold strong{color:#8A6A1E}
+
+    /* Enlaces dentro del cuerpo */
+    #ilatek-garantia a{color:var(--navy-light);text-decoration:underline}
+    #ilatek-garantia a:hover,#ilatek-garantia a:focus-visible{color:var(--green)}
+  
+    /* Separadores de grupo: Limpieza / Techos */
+    #ilatek-garantia .group-title{margin:18px 4px 0;padding:10px 12px;font-size:15px;font-weight:800;color:#ffffff;background:var(--navy);border-radius:6px}
+    #ilatek-garantia .group-title small{display:block;font-size:11.5px;font-weight:600;color:#c8d4ea;margin-top:2px}
+</style>
 
   <div class="intro">
     <p>Estimado(a) cliente,</p>
-    <p>En ILATEK Property Solutions LLC el trabajo termina cuando usted queda satisfecho(a). Esta página reúne nuestras garantías: la <strong>Garantía del Servicio de Limpieza</strong> y la <strong>Política de Garantías de Servicios de Techos</strong>. Puede tocar cada sección para expandirla.</p>
-    <p><strong>Fecha de entrada en vigor:</strong> 6 de octubre de 2026. <strong>Última actualización:</strong> 6 de octubre de 2026</p>
+    <p>En ILATEK Property Solutions LLC el trabajo termina cuando usted queda satisfecho(a). Esta pagina reune nuestras garantias: la <strong>Garantia del Servicio de Limpieza</strong> y la <strong>Politica de Garantias de Servicios de Techos</strong>. Puede tocar cada seccion para expandirla.</p>
+    <p><strong>Fecha de entrada en vigor:</strong> 6 de octubre de 2026. <strong>Ultima actualizacion:</strong> 6 de octubre de 2026</p>
   </div>
-
   <div class="content">
 
-    <h2 class="group-title">Garantía del Servicio de Limpieza<small>Aplica a los servicios de limpieza contratados con ILATEK</small></h2>
-
+<h2 class="group-title">Garantía del Servicio de Limpieza<small>Aplica a los servicios de limpieza contratados con ILATEK</small></h2>
     <details>
       <summary>(1) Compromiso de Calidad</summary>
       <div class="section-body">
@@ -922,9 +963,9 @@ body:has(#ilatek-nav) .mshero-inner{
     </details>
 
     <details>
-      <summary>(3) Prioridad de Agenda para Clientes Recurrentes</summary>
+      <summary>(3) Prioridad de Agenda Recurrentes</summary>
       <div class="section-body">
-        <p>Nuestros clientes recurrentes tendrán prioridad al momento de coordinar y reservar sus próximas fechas de servicio, sujeto a disponibilidad operacional. Esto permite mantener mayor continuidad y consistencia en el mantenimiento de la propiedad.</p>
+        <p>Nuestros clientes recurrentes tendran prioridad al momento de coordinar y reservar sus proximas fechas de servicio, sujeto a disponibilidad operacional. Esto permite mantener la continuidad y la consistencia del mantenimiento de su propiedad.</p>
       </div>
     </details>
 
@@ -934,18 +975,18 @@ body:has(#ilatek-nav) .mshero-inner{
         <p>La garantía aplica exclusivamente a áreas y tareas incluidas en el servicio originalmente contratado. No incluye:</p>
         <ul>
           <li>Suciedad, daños o situaciones ocurridas después de finalizar el servicio.</li>
-          <li>Trabajos adicionales no contemplados en la cotización.</li>
+          <li>Trabajos adicionales no incluidos en la cotización.</li>
           <li>Condiciones preexistentes de la propiedad.</li>
         </ul>
       </div>
     </details>
 
-    <h2 class="group-title">Política de Garantías — Servicios de Techos<small>Aplica a los proyectos de impermeabilización y sellado de techos de ILATEK</small></h2>
 
+<h2 class="group-title">Política de Garantías — Servicios de Techos<small>Aplica a los proyectos de impermeabilización y sellado de techos de ILATEK</small></h2>
     <details>
       <summary>(5) Garantía del Producto</summary>
       <div class="section-body">
-        <p>La garantía correspondiente al producto o sistema de impermeabilización utilizado será la establecida por el fabricante para el producto instalado. Cuando aplique una garantía de diez (10) años, esta estará sujeta a los términos, condiciones, mantenimiento y exclusiones establecidos por el fabricante.</p>
+        <p>La garantía del producto o sistema de impermeabilización utilizado es la establecida por el fabricante para el producto instalado. Cuando aplique una garantía de diez (10) años, estará sujeta a los términos, condiciones, mantenimiento y exclusiones establecidos por el fabricante.</p>
       </div>
     </details>
 
@@ -957,59 +998,75 @@ body:has(#ilatek-nav) .mshero-inner{
     </details>
 
     <details>
-      <summary>(7) Inspección antes de Determinar Garantía</summary>
+      <summary>(7) Resumen de Coberturas</summary>
+      <div class="section-body">
+        <table>
+          <tr><th>Servicio / Alcance</th><th>Cobertura</th></tr>
+          <tr><td>Impermeabilización (Poliuretano / Silicona 100%)</td><td>Garantía del fabricante (hasta 10 años)</td></tr>
+          <tr><td>Mano de obra ILATEK</td><td>1 año</td></tr>
+          <tr><td>Sistemas Elastoméricos</td><td>6 Meses</td></tr>
+          <tr><td>Pintura Estructural Exterior</td><td>6 Meses</td></tr>
+          <tr><td>Limpieza Industrial y Comercial</td><td>90 Días</td></tr>
+          <tr><td>Mantenimiento Preventivo</td><td>90 Días</td></tr>
+          <tr><td>Paisajismo y Poda</td><td>30 Días</td></tr>
+        </table>
+      </div>
+    </details>
+
+    <details>
+      <summary>(8) Inspección antes de Determinar Garantía</summary>
       <div class="section-body">
         <p>Toda reclamación estará sujeta a una inspección por parte de ILATEK. La existencia de una filtración o daño posterior al trabajo no implica automáticamente que exista una falla del sistema instalado o de la mano de obra. ILATEK evaluará el origen antes de determinar si corresponde una reparación bajo garantía.</p>
         <div class="callout-gold">
-          <strong>Importante:</strong> Una filtración o daño reportado durante el periodo de garantía no constituye por sí solo evidencia de una falla atribuible a ILATEK. Toda reclamación requiere evaluación del origen y de las condiciones del área antes de determinar la cobertura aplicable.
+          <strong>Importante:</strong> una filtración o daño reportado durante el periodo de garantía no constituye por sí solo evidencia de una falla atribuible a ILATEK. Toda reclamación requiere evaluación del origen y de las condiciones del área antes de determinar la cobertura aplicable.
         </div>
       </div>
     </details>
 
     <details>
-      <summary>(8) Vicios Ocultos</summary>
+      <summary>(9) Vicios Ocultos</summary>
       <div class="section-body">
         <p>La garantía no cubrirá condiciones preexistentes u ocultas que no hayan sido razonablemente detectables durante el diagnóstico inicial, incluyendo humedad atrapada, deterioro interno, daños estructurales u otras condiciones subyacentes.</p>
       </div>
     </details>
 
     <details>
-      <summary>(9) Intervención de Terceros</summary>
+      <summary>(10) Intervención de Terceros</summary>
       <div class="section-body">
         <p>La garantía podrá quedar sin efecto en el área afectada cuando otra persona o contratista altere, perfore, remueva, repare o modifique el sistema instalado por ILATEK sin autorización previa.</p>
       </div>
     </details>
 
     <details>
-      <summary>(10) Daños Externos</summary>
+      <summary>(11) Daños Externos</summary>
       <div class="section-body">
         <p>No estarán cubiertos por la garantía daños ocasionados por equipos instalados posteriormente, perforaciones, trabajos de plomería o electricidad, placas solares, unidades de aire acondicionado, antenas, tuberías u otras intervenciones ajenas al trabajo contratado.</p>
       </div>
     </details>
 
     <details>
-      <summary>(11) Eventos Extraordinarios</summary>
+      <summary>(12) Eventos Extraordinarios</summary>
       <div class="section-body">
         <p>La garantía no cubrirá daños provocados por eventos de fuerza mayor o aquellos eventos climatológicos expresamente excluidos en el acuerdo particular. Cuando el acuerdo correspondiente así lo establezca, se excluyen daños causados por huracanes categoría 3 o superior.</p>
       </div>
     </details>
 
     <details>
-      <summary>(12) Mantenimiento Preventivo</summary>
+      <summary>(13) Mantenimiento Preventivo</summary>
       <div class="section-body">
         <p>El cliente deberá cumplir con los mantenimientos preventivos requeridos o recomendados para el sistema instalado. Cuando el proyecto incluya una visita de mantenimiento preventivo, esta quedará identificada expresamente en la cotización o acuerdo.</p>
       </div>
     </details>
 
     <details>
-      <summary>(13) Alcance de la Garantía</summary>
+      <summary>(14) Alcance de la Garantía</summary>
       <div class="section-body">
-        <p>La garantía de ILATEK aplica exclusivamente a las áreas y trabajos incluidos en el alcance contratado. Áreas de la propiedad que no hayan sido tratadas, reparadas o intervenidas por ILATEK no estarán cubiertas.</p>
+        <p>La garantía de ILATEK aplica exclusivamente a las áreas y trabajos incluidos en el alcance contratado. Áreas de la propiedad que no hayan sido tratadas, reparadas o intervenidas por ILATEK no estarán cubiertas. La garantía no aplica si existe balance de pago pendiente.</p>
       </div>
     </details>
 
     <details>
-      <summary>(14) Reclamación de Garantía</summary>
+      <summary>(15) Reclamación de Garantía</summary>
       <div class="section-body">
         <p>El cliente deberá notificar a ILATEK cuando identifique una posible situación cubierta por garantía y permitir acceso razonable para inspeccionar el área. Luego de la evaluación, ILATEK determinará si la situación corresponde a mano de obra, producto, una condición externa o un trabajo adicional no cubierto.</p>
         <p>Esta política complementa la cotización y/o acuerdo de servicios correspondiente. Las garantías específicas de cada proyecto serán las expresamente indicadas en dichos documentos.</p>
@@ -1017,7 +1074,7 @@ body:has(#ilatek-nav) .mshero-inner{
     </details>
 
     <details>
-      <summary>(15) Contacto y Relación con otros Documentos</summary>
+      <summary>(16) Contacto y Relación con otros Documentos</summary>
       <div class="section-body">
         <p><strong>Responsable:</strong> ILATEK Property Solutions LLC<br>
         <strong>Correo electrónico:</strong> <a href="mailto:{{custom_values.business__email}}">{{custom_values.business__email}}</a><br>
@@ -1030,6 +1087,7 @@ body:has(#ilatek-nav) .mshero-inner{
     </details>
 
   </div>
+
 </section>
 <!-- ILATEK:SHELL:FOOTER:START -->
 <!--
