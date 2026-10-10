@@ -44,21 +44,15 @@ export function coberturaSection(cfg) {
   out = swap(out, 'aria-label="Cobertura de limpieza de Ilatek en Puerto Rico"', `aria-label="Cobertura de ${cfg.label} de Ilatek Techos en Puerto Rico"`, 'aria-label de cobertura');
   out = swap(out, 'aria-label="Municipios de Puerto Rico con servicio de Ilatek"', `aria-label="Municipios de Puerto Rico con servicio de ${cfg.label}"`, 'aria-label de municipios');
 
-  const headerFrom = `    <header class="icd-head">
-      <div>
-        <span class="icd-eyebrow">Cobertura local</span>
-        <h2>Limpieza impecable, <em>Cobertura en Toda la Isla</em>.</h2>
-      </div>
-      <p>Explora los servicios de limpieza de <strong>Ilatek</strong> disponibles en los <strong>78 municipios de Puerto Rico</strong> y visita la página de tu pueblo. Atendemos hogares en <strong>{{custom_values.county_name_and_state}}</strong> y toda la isla.</p>
-    </header>`;
-  const headerTo = `    <header class="icd-head">
-      <div>
-        <span class="icd-eyebrow">${cfg.eyebrow}</span>
-        <h2>${cfg.titleHtml}</h2>
-      </div>
-      <p>${cfg.text}</p>
-    </header>`;
-  out = swap(out, headerFrom, headerTo, 'encabezado de cobertura');
+  // El componente viaja con CRLF (Windows): el swap es tolerante a fin de línea
+  // para no romper el build si alguien lo guarda con LF.
+  const headerFrom = src.match(/\r?\n    <header class="icd-head">[\s\S]*?<\/header>/);
+  if (!headerFrom) throw new Error('No se encontró el encabezado de cobertura en el bloque compartido');
+  const headerTo = headerFrom[0]
+    .replace(/<span class="icd-eyebrow">[\s\S]*?<\/span>/, `<span class="icd-eyebrow">${cfg.eyebrow}</span>`)
+    .replace(/<h2>[\s\S]*?<\/h2>/, () => `<h2>${cfg.titleHtml}</h2>`)
+    .replace(/<p>[\s\S]*?<\/p>/, () => `<p>${cfg.text}</p>`);
+  out = swap(out, headerFrom[0], headerTo, 'encabezado de cobertura');
 
   return out;
 }
