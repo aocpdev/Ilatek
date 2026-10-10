@@ -1,0 +1,11 @@
+{
+  "source": "servicios/limpieza-estandar/es/landing-pages/ghl-limpieza-estandar-landing.html",
+  "language": "es",
+  "status": "extraido-del-html-existente",
+  "metaTagTitle": "Limpieza Estándar en Puerto Rico | Ilatek",
+  "metaTagDescription": "Limpieza estándar en Puerto Rico desde $0.07 por pie²: mantenimiento regular del hogar, cocina, baños y dormitorios. Cotizador online con precio real y depósito de $50 que se descuenta.",
+  "metaTagImage": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/limpieza-estandar.jpg",
+  "canonical": "https://{{custom_values.website_url}}/limpieza-estandar",
+  "socialImageFile": "assets/meta-image.jpg",
+  "publication": "No modificada en GHL; verificar el HEAD publicado."
+}

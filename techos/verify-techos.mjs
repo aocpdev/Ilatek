@@ -12,6 +12,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildTree } from './lib/model.mjs';
 import { cleanGuard, readSchema, stripTags, imgAltErrors } from './lib/audit.mjs';
+import { pageFile } from '../tools/site-paths.mjs';
 
 const OUT = path.dirname(fileURLToPath(import.meta.url));
 const ILATEK = path.resolve(OUT, '..');
@@ -31,7 +32,7 @@ let cleanOk = 0;
 let altOk = 0;
 
 for (const p of pages) {
-  const file = `techos/ghl-${p.slug}-landing.html`;
+  const file = pageFile(p.slug);
   if (!fs.existsSync(path.join(ILATEK, file))) { fail(p.slug, 'archivo faltante'); continue; }
   const html = read(file);
 
@@ -77,7 +78,8 @@ for (const p of pages) {
 }
 
 // ─────────────────────────── 2. Canonical (head-seo) ───────────────────────────
-const headSeo = read('techos/ghl-techos-head-seo.html');
+// Verify public slugs after resolving the deployment's domain-only Custom Value.
+const headSeo = read('techos/ghl-techos-head-seo.html').replaceAll('https://{{custom_values.website_url}}','https://ilatekpr.com');
 const canonicals = [...headSeo.matchAll(/<link rel="canonical" href="https:\/\/ilatekpr\.com\/([a-z0-9-]*)">/g)].map((m) => m[1]);
 const canonicalSet = new Set(canonicals);
 const canonErrs = [];

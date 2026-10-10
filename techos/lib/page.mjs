@@ -4,6 +4,7 @@ import { pageCss } from './css.mjs';
 import { shots } from './kit.mjs';
 import { coberturaSection, reviewsParts, imgAltTitlePatch } from './parts.mjs';
 import { bizSchema, faqSchema } from './schema.mjs';
+import { formatPage } from '../../tools/internal-link-contract.mjs';
 
 const ICONS = {
   shield: '<path d="M12 3 5 6v6c0 4.5 3 7.5 7 9 4-1.5 7-4.5 7-9V6l-7-3z"/><path d="m9 12 2 2 4-4"/>',
@@ -95,7 +96,7 @@ export function buildPage(page) {
   parts.push(imgAltTitlePatch());
   parts.push('</section>');
   parts.push('');
-  return parts.join('\n');
+  return formatPage(parts.join('\n'), '/'+page.slug);
 }
 
 function heroSection(page) {
@@ -176,7 +177,7 @@ function extraSection(page) {
   if (page.extra.kids) {
     const kids = page.extra.kids
       .map(
-        (k) => `          <a class="ilt-kid ilt-reveal" href="{{custom_values.website_url}}/${k.slug}">
+        (k) => `          <a class="ilt-kid ilt-reveal" href="https://{{custom_values.website_url}}/${k.slug}">
             <h3>${k.name}</h3>
             <p>${k.desc}</p>
             <span>${k.cta || 'Ver servicio'}</span>
@@ -186,7 +187,7 @@ function extraSection(page) {
     // El CTA de cotización baja al calendario; los demás conservan su slug.
     const ctaHref = page.extra.cta && page.extra.cta.slug === 'cotizacion'
       ? AGENDA_ANCHOR
-      : `{{custom_values.website_url}}/${page.extra.cta ? page.extra.cta.slug : ''}`;
+      : `https://{{custom_values.website_url}}/${page.extra.cta ? page.extra.cta.slug : ''}`;
     const cta = page.extra.cta
       ? `\n        <div class="ilt-xcta ilt-reveal"><a class="ilt-button" href="${ctaHref}"><span>${page.extra.cta.label}</span><span aria-hidden="true">↗</span></a></div>`
       : '';
@@ -237,7 +238,7 @@ function directorySection(page) {
       const kidsOf = kidsBySlug[cfg.slug] || (cfg.parent ? (kidsBySlug[cfg.parent] || []).filter((k) => k.slug !== cfg.slug) : []);
       const imgs = shots(cfg.slug, cfg.img, { hubWebp: cfg.hubWebp });
       const kids = kidsOf
-        .map((c) => `<a href="{{custom_values.website_url}}/${c.slug}">${c.name}</a>`)
+        .map((c) => `<a href="https://{{custom_values.website_url}}/${c.slug}">${c.name}</a>`)
         .join('');
       const feat = (cfg.feat || [])
         .map((f) => `<li><i>✓</i><span>${f}</span></li>`)
@@ -248,7 +249,7 @@ function directorySection(page) {
         <div class="ilt3-body">
           <div class="ilt3-head">
             <span class="ilt3-kicker">${cfg.kicker || 'Servicio'}</span>
-            <h3 class="ilt3-title"><a href="{{custom_values.website_url}}/${cfg.slug}">${cfg.name}</a></h3>
+            <h3 class="ilt3-title"><a href="https://{{custom_values.website_url}}/${cfg.slug}">${cfg.name}</a></h3>
             <p class="ilt3-desc">${cfg.desc || ''}</p>
           </div>
           <div class="ilt3-cols">
@@ -257,7 +258,7 @@ function directorySection(page) {
               ${subs}
             </div>
           </div>
-          <a class="ilt3-btn" href="{{custom_values.website_url}}/${cfg.slug}"><span>${cfg.featured ? 'Ver servicio' : 'Ver categoría'}</span><span aria-hidden="true">↗</span></a>
+          <a class="ilt3-btn" href="https://{{custom_values.website_url}}/${cfg.slug}"><span>${cfg.featured ? 'Ver servicio' : 'Ver categoría'}</span><span aria-hidden="true">↗</span></a>
         </div>
       </article>`;
     })
@@ -401,7 +402,7 @@ function calendarSection() {
           <div class="ilt-cal-embed">
             <iframe src="https://link.msgsndr.com/widget/booking/wM8KQhsYjEQAo0HbNGIh" allow="payment" scrolling="no" title="Agenda tu inspección de techos — Ilatek Techos" id="wM8KQhsYjEQAo0HbNGIh_1791075788803"></iframe>
           </div>
-          <p class="ilt-cal-fallback">¿No carga el calendario? <a href="{{custom_values.website_url}}/cotizacion">Solicita tu cotización aquí</a>.</p>
+          <p class="ilt-cal-fallback">¿No carga el calendario? <a href="https://{{custom_values.website_url}}/cotizacion">Solicita tu cotización aquí</a>.</p>
         </div>
       </div>
       <script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>

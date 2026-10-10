@@ -8,6 +8,7 @@ import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { projectPath } from '../tools/site-paths.mjs';
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
 const PORT = Number(process.argv[2]) || 4321;
@@ -26,8 +27,10 @@ http
   .createServer((req, res) => {
     let rel = decodeURIComponent(req.url.split('?')[0]);
     if (rel === '/') rel = '/index.html';
-    const file = path.join(ROOT, rel);
-    if (!file.startsWith(ROOT) || !fs.existsSync(file) || fs.statSync(file).isDirectory()) {
+    // Preserve legacy QA URLs while the actual HTML lives in category/service packs.
+    const legacyLanding = /^\/ghl-[a-z0-9-]+-landing\.html$/.test(rel);
+    const file = legacyLanding ? projectPath(`techos${rel}`) : path.resolve(ROOT, '.'+rel);
+    if ((!legacyLanding && !file.startsWith(ROOT+path.sep)) || !fs.existsSync(file) || fs.statSync(file).isDirectory()) {
       res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
       return res.end('404');
     }

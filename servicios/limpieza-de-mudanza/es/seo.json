@@ -1,0 +1,11 @@
+{
+  "source": "servicios/limpieza-de-mudanza/es/landing-pages/ghl-limpieza-de-mudanza-landing.html",
+  "language": "es",
+  "status": "extraido-del-html-existente",
+  "metaTagTitle": "Limpieza de Mudanza en Puerto Rico | Ilatek",
+  "metaTagDescription": "Limpieza de mudanza move-in / move-out en Puerto Rico: deja el espacio listo para entregar o habitar. Cotizador online con precio real y cobertura en los 78 municipios.",
+  "metaTagImage": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/limpieza-de-mudanza.jpg",
+  "canonical": "https://{{custom_values.website_url}}/limpieza-de-mudanza",
+  "socialImageFile": "assets/meta-image.jpg",
+  "publication": "No modificada en GHL; verificar el HEAD publicado."
+}

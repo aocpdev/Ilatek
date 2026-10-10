@@ -1,0 +1,11 @@
+{
+  "source": "servicios/limpieza-profunda/es/landing-pages/ghl-limpieza-profunda-landing.html",
+  "language": "es",
+  "status": "extraido-del-html-existente",
+  "metaTagTitle": "Limpieza Profunda en Puerto Rico | Ilatek",
+  "metaTagDescription": "Limpieza profunda en Puerto Rico desde $0.15 por pie²: renovación área por área, desengrase de cocina, detalles de baños y bases. Cotizador online y depósito de $50 que se descuenta.",
+  "metaTagImage": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/limpieza-profunda.jpg",
+  "canonical": "https://{{custom_values.website_url}}/limpieza-profunda",
+  "socialImageFile": "assets/meta-image.jpg",
+  "publication": "No modificada en GHL; verificar el HEAD publicado."
+}

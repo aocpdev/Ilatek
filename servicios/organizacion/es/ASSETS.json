@@ -1,0 +1,49 @@
+{
+  "page": "organizacion",
+  "source": "servicios/organizacion/es/landing-pages/ghl-organizacion-landing.html",
+  "policy": "Copias locales de medios referenciados en HTML, CSS y JS, incluidos fallbacks. URLs de producción conservadas. No incluye contenido remoto interno de widgets, fuentes o calendarios.",
+  "externalDependencies": [
+    "https://{{custom_values.website_url}}/organizacion",
+    "https://fonts.googleapis.com",
+    "https://fonts.gstatic.com",
+    "https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&family=Outfit:wght@500..800&display=swap",
+    "https://reputationhub.site/reputation/assets/review-widget.js",
+    "https://reputationhub.site/reputation/widgets/review_widget/8OxUENFVM60EKzqsTcoD",
+    "https://reputationhub.site/reputation/widgets/review_widget/8OxUENFVM60EKzqsTcoD?widgetId=6ab060ce32d0d3c755f9fd73",
+    "https://reputationhub.site/reputation/widgets/review_widget/8OxUENFVM60EKzqsTcoD?widgetId=6ac3eb680432b6ce3f30b035"
+  ],
+  "socialImage": {
+    "role": "social-image",
+    "publicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/organizacion.jpg",
+    "file": "assets/meta-image.jpg",
+    "status": "local-copy",
+    "bytes": 158138,
+    "sha256": "72769ad2653c692a7dff97a9694594d0849bb9c0c1997f26d975ef4cf4a42c32"
+  },
+  "assets": [
+    {
+      "role": "social-image",
+      "publicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/organizacion.jpg",
+      "file": "assets/meta-image.jpg",
+      "status": "local-copy",
+      "bytes": 158138,
+      "sha256": "72769ad2653c692a7dff97a9694594d0849bb9c0c1997f26d975ef4cf4a42c32"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8582f195f9172ed03ab19.jpg",
+      "file": "assets/media/6ac8582f195f9172ed03ab19.jpg",
+      "status": "local-copy",
+      "bytes": 718792,
+      "sha256": "6f131003e87c4c06d22e66afa65d64719abba3c55df8ca8abccc3ce14b8c394f"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aa1c05dd953a0128b5348c2.jpg",
+      "file": "assets/media/6aa1c05dd953a0128b5348c2.jpg",
+      "status": "local-copy",
+      "bytes": 47405,
+      "sha256": "ef08a502c10ce3e19c444e9e24de0589310f57605eca4970d571b84960f15d5f"
+    }
+  ]
+}

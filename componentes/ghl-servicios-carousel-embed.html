@@ -1,0 +1,317 @@
+<!-- ILATEK:INTERNAL-LINKS:START -->
+<script>
+/* ILATEK: one shared URL contract; inlined into standalone GHL embeds. */
+(function (w) {
+  'use strict';
+  if (w.ILATEK_LINKS) return;
+  var TOKEN = '{' + '{custom_values.website_url}' + '}';
+  var FALLBACK = 'https://ilatekpr.com';
+  function normalize(value) {
+    var raw = String(value || '').trim();
+    if (!raw || raw.startsWith('/') || /[{}\s<>"'\\]/.test(raw)) return '';
+    if (/^[a-z][a-z\d+.-]*:/i.test(raw) && !/^https?:\/\//i.test(raw)) return '';
+    try {
+      var u = new URL(/^https?:\/\//i.test(raw) ? raw : 'https://' + raw);
+      if (u.username || u.password || u.search || u.hash || !u.hostname.includes('.')) return '';
+      return 'https://' + u.host + u.pathname.replace(/\/+$/, '');
+    } catch (e) { return ''; }
+  }
+  function bridge() {
+    if (!w.document) return '';
+    var nodes = w.document.querySelectorAll('.dv-ghl-values, #dv-ghl-values');
+    var values = [];
+    for (var i = 0; i < nodes.length; i++) {
+      var parts = nodes[i].textContent.split('|||DV|||');
+      if (parts.length !== 6) continue;
+      var value = normalize(parts[3]);
+      if (value && values.indexOf(value) < 0) values.push(value);
+    }
+    return values.length === 1 ? values[0] : '';
+  }
+  function base(value) { return bridge() || normalize(value) || FALLBACK; }
+  function join(value, pathname) {
+    var root = base(value), suffix = String(pathname || '/');
+    if (!suffix.startsWith('/') || suffix.startsWith('//')) return root + '/';
+    // Support an existing base-path once without changing the service path.
+    var prefix = new URL(root).pathname.replace(/\/$/, '');
+    if (prefix && (suffix === prefix || suffix.startsWith(prefix + '/'))) return new URL(root).origin + suffix;
+    return root + suffix;
+  }
+  function replace(text, key, value) {
+    var out = String(text || '');
+    if (key !== TOKEN) return out.split(key).join(value);
+    var root = base(value);
+    return out.split('https://' + TOKEN).join(root).split('http://' + TOKEN).join(root).split(TOKEN).join(root);
+  }
+  w.ILATEK_LINKS = { normalize: normalize, base: base, join: join, replace: replace };
+  if (!w.document) return;
+  var doc = w.document, queued = false;
+  function refresh() {
+    queued = false;
+    var nodes = doc.querySelectorAll('a[data-ilatek-path]');
+    for (var i = 0; i < nodes.length; i++) {
+      var a = nodes[i], root = a.closest('[data-website-url]');
+      var value = root && root.getAttribute('data-website-url');
+      if (!normalize(value)) {
+        var declared = doc.querySelector('[data-website-url]');
+        value = declared && declared.getAttribute('data-website-url');
+      }
+      // GHL may resolve the href even when the surrounding data attribute is absent.
+      if (!normalize(value)) {
+        try { value = new URL(a.getAttribute('href')).origin; } catch (e) {}
+      }
+      var url = join(value, a.getAttribute('data-ilatek-path'));
+      if (a.getAttribute('href') !== url) a.setAttribute('href', url);
+    }
+  }
+  function schedule() {
+    if (!queued) { queued = true; (w.requestAnimationFrame || w.setTimeout)(refresh); }
+  }
+  if (doc.readyState === 'loading') doc.addEventListener('DOMContentLoaded', refresh, { once: true });
+  else schedule();
+  // One observer shared across menu/footer/page, including late GHL bridge values.
+  if (w.MutationObserver) new w.MutationObserver(schedule).observe(doc.documentElement, {
+    childList: true, subtree: true, characterData: true,
+    attributes: true, attributeFilter: ['data-website-url', 'data-ilatek-path']
+  });
+  doc.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[data-ilatek-anchor]');
+    if (!a || e.button !== 0 || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey || a.target === '_blank') return;
+    var id = a.getAttribute('data-ilatek-anchor');
+    var target = id && doc.getElementById(id);
+    if (!target) return;
+    e.preventDefault();
+    target.scrollIntoView({ behavior: w.matchMedia && w.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+  });
+})(window);
+
+</script>
+<!-- ILATEK:INTERNAL-LINKS:END -->
+<meta charset="utf-8">
+<!--
+  ILATEK · GHL Custom HTML · Seccion "Servicios" · Showcase con banda de video
+  Port literal del bloque 6 del home multiservicios (ghl-home-multiservicios.html).
+  En el home la seccion vive a sangre dentro del root (el clip horizontal del root la
+  recorta); aqui, standalone, usa las reglas de ancho/margen que ya trae el bloque.
+  Deltas respecto al home:
+  · Se declara --ms-pad en el embed (en el home la hereda del root).
+  · html,body a 0 y con overflow-x:clip (convención de las landings del repo):
+    standalone la sección de 100vw desbordaba por la barra de scroll y sin el clip
+    del root del home no había nada que la recortara. En la página GHL el body ya
+    trae margin:0, así que esta regla no cambia nada allí.
+  · Guard root.dataset.ready (por si GHL pega el embed dos veces).
+  · El motor i18n no vive aqui; el markup bilingue (data-es/data-en) queda listo
+    para cuando el nav de la pagina lo gestione.
+  El video del hero (src directo a filesafe.space, loop infinito, autoplay muted) cubre toda
+  la sección como fondo con overlay azul de marca, sin depender de custom values de GHL.
+  No recolecta datos.
+-->
+<section id="ilatek-servicios-slider" aria-labelledby="ilatek-servicios-title"
+  data-location-label="{{custom_values.county_name_and_state}}"
+  data-website-url="{{custom_values.website_url}}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&family=Outfit:wght@500..800&display=swap">
+  <style>html,body{margin:0;padding:0;overflow-x:clip}</style>
+<style>
+    /* Delta del port: en el home --ms-pad la hereda del root; aquí se declara (si no,
+       padding:var(--ms-pad) es inválido y .ils-top pierde su respiro superior). */
+    #ilatek-servicios-slider{--ms-pad:clamp(78px,8vw,112px);--ink:#11164b;--blue:#213d8e;--green:#00b94f;--green-dark:#009640;width:100vw;max-width:none;margin-inline:calc(50% - 50vw);overflow:hidden;position:relative;background:#11164b url("https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/hero-poster-1280.webp") 50% 45%/cover no-repeat;color:#fff;font-family:Manrope,Arial,sans-serif;isolation:isolate;padding:0;padding-inline:calc((100vw - 100%) / 2)}#ilatek-servicios-slider *{box-sizing:border-box}#ilatek-servicios-slider a{color:inherit;text-decoration:none}.ils-head{position:relative;z-index:2;width:min(100% - 40px,1400px);margin:0 auto 46px;text-align:center}.ils-eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--green);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;text-shadow:0 1px 10px rgba(11,16,61,.55)}.ils-eyebrow:before{content:'';width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px rgba(0,185,79,.18)}.ils-head h2{margin:16px 0 0;text-shadow:0 2px 24px rgba(11,16,61,.5),0 1px 4px rgba(11,16,61,.35);font-family:Outfit,Manrope,sans-serif;font-size:clamp(42px,4.6vw,66px);font-weight:800;line-height:1.02;letter-spacing:-.06em;text-wrap:balance}.ils-head h2 em{font-style:normal;color:var(--green)}.ils-head>p{margin:18px auto 0;text-shadow:0 2px 18px rgba(11,16,61,.55);max-width:640px;color:rgba(255,255,255,.78);font-size:16px;line-height:1.65}
+    /* Video de fondo de TODA la sección (loop infinito) + overlay azul de marca (#213d8e),
+       igual que el resto de las secciones oscuras. La banda .ils-top solo da el respiro
+       del heading; su borde inferior sigue marcando la mitad de las tarjetas (--ils-half). */
+    #ilatek-servicios-slider::before{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,rgba(33,61,142,.80) 0%,rgba(33,61,142,.68) 55%,rgba(33,61,142,.78) 100%)}
+    .ils-top{position:relative;z-index:2;overflow:hidden;isolation:isolate;padding:var(--ms-pad) 0 var(--ils-half,230px);margin-inline:calc((100% - 100vw) / 2);padding-inline:calc((100vw - 100%) / 2);background:transparent}
+    .ils-bgvideo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.02);z-index:0;pointer-events:none}
+    /* Carrusel transparente sobre el video: la máscara desvanece los bordes hacia el azul de marca */
+    .ils-carousel{position:relative;z-index:2;margin-top:calc(-1 * var(--ils-half,230px));width:100%;overflow:hidden;margin-inline:calc((100% - 100vw) / 2);-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);background:transparent}    .ils-track{display:flex;gap:0;width:max-content;padding:8px 12px 0;will-change:transform;user-select:none;-webkit-user-select:none}
+    .ils-track img{-webkit-user-drag:none;user-drag:none}
+    .ils-carousel:hover .ils-track,.ils-carousel:focus-within .ils-track{cursor:grab}
+    .ils-card:focus-visible{outline:3px solid #fff;outline-offset:3px}
+
+    .ils-carousel:hover .ils-track,.ils-carousel:focus-within .ils-track{animation-play-state:paused}@keyframes ils-marquee{to{transform:translateX(-50%)}}
+    /* Scroll horizontal TRANSPARENTE: el carrusel se desliza sin barra visible */
+    .ils-carousel{scrollbar-width:none;-ms-overflow-style:none}.ils-carousel::-webkit-scrollbar{display:none}.ils-carousel::-webkit-scrollbar-track{background:transparent}.ils-carousel::-webkit-scrollbar-thumb{background:transparent}
+    /* Tarjetas glassmorphism */
+    .ils-card{display:flex;flex-direction:column;width:330px;border:1px solid rgba(255,255,255,.16);border-radius:22px;background:linear-gradient(155deg,#213d8e,#11164b 70%,#0d1240);box-shadow:0 20px 46px rgba(11,16,61,.32),inset 0 1px 0 rgba(255,255,255,.16);color:#fff;overflow:hidden;transition:transform .45s cubic-bezier(.4,0,.2,1),box-shadow .45s cubic-bezier(.4,0,.2,1),background .45s cubic-bezier(.4,0,.2,1)}.ils-card:hover{transform:translateY(-6px);background:linear-gradient(155deg,#2a4aa4,#151b58 70%,#0f1550);box-shadow:0 28px 58px rgba(11,16,61,.42),inset 0 1px 0 rgba(255,255,255,.22)}.ils-track .ils-card{margin-right:22px}.ils-media{position:relative;aspect-ratio:16/9;min-height:0;overflow:hidden;background:rgba(255,255,255,.06)}.ils-media img{display:block;width:100%;height:100%;object-fit:cover;transform:scale(1);transform-origin:center;backface-visibility:hidden;transition:transform .8s cubic-bezier(.4,0,.2,1),filter .8s cubic-bezier(.4,0,.2,1);will-change:transform}.ils-card:hover .ils-media img,.ils-card:focus-within .ils-media img{transform:scale(1.06);filter:brightness(1.04) saturate(1.08)}.ils-media:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,16,61,0) 58%,rgba(11,16,61,.45))}
+    .ils-media span{position:absolute;z-index:1;left:14px;top:12px;padding:7px 13px;border-radius:99px;background:rgba(11,16,61,.42);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.28);color:#fff;font-size:10.5px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;text-shadow:0 1px 6px rgba(11,16,61,.5)}
+    .ils-body{display:flex;flex-direction:column;flex:1;padding:20px 22px 22px}.ils-body h5{margin:0;font-family:Outfit,Manrope,sans-serif;font-size:20px;font-weight:800;letter-spacing:-.03em;line-height:1.25}.ils-body p{flex:1;margin:9px 0 0;color:rgba(255,255,255,.78);font-size:13.5px;line-height:1.62}
+    .ils-foot{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px 12px;margin-top:16px;padding-top:14px;border-top:1px solid rgba(255,255,255,.16)}
+    .ils-price{display:inline-flex;align-items:center;gap:8px;color:#fff;font:800 14px/1 Manrope,Arial,sans-serif;text-shadow:0 0 14px rgba(0,255,153,.5),0 0 30px rgba(0,185,79,.32)}
+    .ils-price:before{content:'';width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 10px rgba(0,255,153,.9),0 0 22px rgba(0,185,79,.55)}
+    .ils-more{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:40px;padding:9px 16px;border-radius:8px;background:var(--green);color:#fff!important;font:800 12.5px/1 Manrope,Arial,sans-serif;letter-spacing:.02em;box-shadow:0 10px 22px rgba(0,185,79,.35);transition:background .25s ease,transform .25s ease,box-shadow .25s ease}
+    .ils-more:after{content:'→'}
+    .ils-card:hover .ils-more,.ils-card:focus-visible .ils-more{background:var(--green-dark);box-shadow:0 14px 28px rgba(0,185,79,.45)}
+    .ils-hint{position:relative;z-index:2;margin:0;width:100%;padding:15px 20px;background:#0b103d;text-align:center;color:rgba(255,255,255,.72);font-size:12.5px}
+    /* Auto-slide infinito en TODOS los dispositivos: el marquee corre incluso con prefers-reduced-motion */
+    @media(max-width:560px){.ils-head{width:min(100% - 40px,1400px);margin-bottom:34px}.ils-track{gap:16px}.ils-card{width:282px}.ils-media{min-height:0}.ils-hint{width:100%}}
+    @media (prefers-reduced-motion:reduce){.ils-bgvideo{display:none}}
+  </style>
+
+  <video class="ils-bgvideo" src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8f952bd6bb710ca0fd582.mp4" poster="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/hero-poster-1280.webp" autoplay muted loop playsinline webkit-playsinline preload="auto" disablepictureinpicture tabindex="-1" aria-hidden="true"></video>
+  <div class="ils-top">
+  <header class="ils-head">
+    <span class="ils-eyebrow" data-es="Servicios" data-en="Services">Servicios</span>
+    <h2 id="ilatek-servicios-title" data-en-key="ilsTitle">Los servicios que tu propiedad necesita, <em>todos con precio claro</em>.</h2>
+    <p data-en-key="ilsSub">Los 10 servicios de limpieza más solicitados en {{custom_values.county_name_and_state}}, disponibles en los 78 municipios de Puerto Rico. Cotiza el tuyo en minutos.</p>
+  </header>
+  </div>
+
+  <div class="ils-carousel" aria-label="Carrusel de servicios de limpieza de Ilatek">
+    <div class="ils-track" id="ils-track"><!-- slides generados por script --></div>
+  </div>
+  <p class="ils-hint" data-es="Desliza o pasa el cursor para explorar todos los servicios" data-en="Swipe or hover to explore every service">Desliza o pasa el cursor para explorar todos los servicios</p>
+
+  <script>
+  (function(){
+    var root=document.getElementById('ilatek-servicios-slider'); if(!root)return;
+    /* Video de fondo: loop infinito sin cortes. preload=auto (arriba) deja el
+       clip entero en buffer para que el reinicio sea seamless; este guard
+       relanza la reproduccion si el navegador la interrumpe (autopause,
+       tab en background, fin de reproduccion sin loop). */
+    var ilBg=root.querySelector('.ils-bgvideo');
+    if(ilBg){
+      var ilReduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+      var ilKick=function(){
+        if(ilReduce||!ilBg.paused)return;
+        if(ilBg.ended){try{ilBg.currentTime=0;}catch(e){}}
+        var p=ilBg.play(); if(p&&p.catch)p.catch(function(){});
+      };
+      ilBg.addEventListener('loadeddata',ilKick);
+      ilBg.addEventListener('ended',function(){try{ilBg.currentTime=0;}catch(e){} ilKick();});
+      setInterval(ilKick,4000);
+    }
+    var website=(root.getAttribute('data-website-url')||'').replace(/\u00a0/g,' ').trim();
+    if(/^\s*\{\{[^}]+\}\}\s*$/.test(website)||!website)website='https://ilatekpr.com';
+    var county=(root.getAttribute('data-location-label')||'').replace(/\u00a0/g,' ').trim();
+    if(/^\s*\{\{[^}]+\}\}\s*$/.test(county)||!county)county='Puerto Rico';
+    function token(name){return '{'+'{custom_values.'+name+'}'+'}'}
+    function buildCards(){
+      var trackEl=document.getElementById('ils-track'); if(!trackEl)return;
+
+    /* Imagenes reales de cada servicio (CDN de GHL: filesafe) */
+    var IMG_REGULAR = 'https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8582c89da6e6f9bc73a2a.jpg';
+    var IMG_PROFUNDA = 'https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8582ec478ac55355c45ae.jpg';
+    var IMG_MUDANZA = 'https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8582ccc7a5a2b73475cdd.jpg';
+    var IMG_AIRBNB = 'https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8582b89da6e6f9bc739d2.jpg';
+    var IMG_POSTCONSTRUCCION = 'https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8582ecc7a5a2b73475d41.jpg';
+    var IMG_VENTANAS = 'https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8582c89da6e6f9bc73a1f.jpg';
+    var IMG_PRESION = 'https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac979a3c478ac553579cf86.jpg';
+    var IMG_ALFOMBRAS = 'https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8582acc7a5a2b73475c6d.jpg';
+    var IMG_ELECTRODOMESTICOS = 'https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8582c195f9172ed03aaa3.jpg';
+    var IMG_ORGANIZACION = 'https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8582f195f9172ed03ab19.jpg';
+    /* Los 10 servicios mas solicitados para companias de limpieza en Puerto Rico.
+       altSeo: texto ALT dedicado por servicio, con la palabra clave Puerto Rico para SEO. */
+    var SERVICES=[
+      {img:IMG_REGULAR,kicker:'Limpieza regular',title:'Tu hogar siempre fresco',desc:'El servicio más solicitado: limpieza recurrente semanal, quincenal o mensual a $0.07 por pie².',slug:'limpieza-estandar',price:'Desde $0.07/pie²',altSeo:'Servicio de limpieza regular en Puerto Rico por Ilatek: limpieza recurrente semanal, quincenal o mensual del hogar a domicilio.',altEn:'Recurring weekly, biweekly or monthly home cleaning service in Puerto Rico by Ilatek.'},
+      {img:IMG_PROFUNDA,kicker:'Limpieza profunda',title:'Renueva cada rincón',desc:'Limpieza a fondo área por área a $0.15 por pie²: ideal para una renovación completa del hogar.',slug:'limpieza-profunda',price:'Desde $0.15/pie²',altSeo:'Limpieza profunda de casa en Puerto Rico por Ilatek: limpieza a fondo habitación por habitación y renovación completa del hogar.',altEn:'In-depth whole-home deep cleaning in Puerto Rico by Ilatek, room by room.'},
+      {img:IMG_MUDANZA,kicker:'Mudanza',title:'Mudanza sin estrés',desc:'Move-in / move-out: entrega o recibe tu espacio impecable, listo para el siguiente capítulo.',slug:'limpieza-de-mudanza',price:'Precio en minutos',altSeo:'Limpieza de mudanza move in move out en Puerto Rico por Ilatek: hogar o apartamento impecable antes o después de mudarte.',altEn:'Move-in/move-out cleaning in Puerto Rico by Ilatek: a spotless home before or after you move.'},
+      {img:IMG_AIRBNB,kicker:'Airbnb & rentals',title:'Reseñas de 5 estrellas',desc:'Turnover profesional para rentals a corto plazo: limpieza rápida y detallada entre huéspedes.',slug:'airbnb-turnover',price:'Precio en minutos',altSeo:'Limpieza para Airbnb y co-host de rentals a corto plazo en Puerto Rico por Ilatek: turnover profesional entre huéspedes con reseñas de 5 estrellas.',altEn:'Airbnb and short-term rental turnover cleaning in Puerto Rico by Ilatek with 5-star reviews.'},
+      {img:IMG_POSTCONSTRUCCION,kicker:'Post-construcción',title:'Del polvo al brillo',desc:'Eliminamos residuos de obra, polvo fino y escombros para estrenar tu espacio como nuevo.',slug:'post-construccion',price:'Precio en minutos',altSeo:'Limpieza post construccion en Puerto Rico por Ilatek: eliminación de polvo de obra, residuos y escombros para estrenar tu espacio.',altEn:'Post-construction cleaning in Puerto Rico by Ilatek: dust, debris and residue removal.'},
+      {img:IMG_VENTANAS,kicker:'Ventanas',title:'Más luz en tu hogar',desc:'Ventanas interiores ($10) y exteriores ($25): cristales impecables y una vista perfecta.',slug:'ventanas',price:'Desde $10',altSeo:'Limpieza de ventanas y cristales en Puerto Rico por Ilatek: ventanas interiores y exteriores impecables con más luz para tu hogar.',altEn:'Interior and exterior window cleaning in Puerto Rico by Ilatek for more light at home.'},
+      {img:IMG_PRESION,kicker:'Lavado a presión',title:'Exteriores como nuevos',desc:'Fachadas, terrazas, verjas y aceras: el poder del agua a presión para eliminar años de suciedad.',slug:'lavado-a-presion',price:'Precio en minutos',altSeo:'Lavado a presión en Puerto Rico por Ilatek: limpieza de fachadas, terrazas, verjas, aceras y exteriores con agua a alta presión.',altEn:'High-pressure washing of facades, terraces, fences and sidewalks in Puerto Rico by Ilatek.'},
+      {img:IMG_ALFOMBRAS,kicker:'Alfombras',title:'Frescor bajo tus pies',desc:'Lavado de alfombras a $0.75 por pie²: elimina manchas, olores y alérgenos acumulados.',slug:'alfombras',price:'Desde $0.75/pie²',altSeo:'Lavado de alfombras y tapetes en Puerto Rico por Ilatek: eliminación de manchas, olores y alérgenos a $0.75 por pie cuadrado.',altEn:'Carpet and rug washing in Puerto Rico by Ilatek: stains, odors and allergens removed.'},
+      {img:IMG_ELECTRODOMESTICOS,kicker:'Electrodomésticos',title:'Cocina como nueva',desc:'Refrigerador ($40), horno ($30), lavaplatos ($10) y lavadora/secadora ($10), por dentro y por fuera.',slug:'electrodomesticos',price:'Desde $10',altSeo:'Limpieza de electrodomesticos en Puerto Rico por Ilatek: refrigerador, horno, lavaplatos, lavadora y secadora limpios por dentro y por fuera.',altEn:'Appliance cleaning in Puerto Rico by Ilatek: fridge, oven, dishwasher, washer and dryer inside and out.'},
+      {img:IMG_ORGANIZACION,kicker:'Organización',title:'Orden que permanece',desc:'Despensas y clósets ($50 c/u) y garaje ($0.50 por pie²): orden funcional que te devuelve tiempo.',slug:'organizacion',price:'Desde $50',altSeo:'Organización del hogar en Puerto Rico por Ilatek: organización profesional de despensas, clósets y garaje en casa.',altEn:'Professional home organization of pantries, closets and garage in Puerto Rico by Ilatek.'}
+    ];
+    var EN_TITLES={'Tu hogar siempre fresco':'Your home always fresh','Renueva cada rincón':'Renew every corner','Mudanza sin estrés':'Stress-free moving','Reseñas de 5 estrellas':'5-star reviews','Del polvo al brillo':'From dust to shine','Más luz en tu hogar':'More light in your home','Exteriores como nuevos':'Exteriors like new','Frescor bajo tus pies':'Freshness under your feet','Cocina como nueva':'A kitchen like new','Orden que permanece':'Order that lasts'};
+
+    var EN_KICKERS={'Limpieza regular':'Regular cleaning','Limpieza profunda':'Deep cleaning','Mudanza':'Moving','Airbnb & rentals':'Airbnb & rentals','Post-construcción':'Post-construction','Ventanas':'Windows','Lavado a presión':'Pressure washing','Alfombras':'Carpets','Electrodomésticos':'Appliances','Organización':'Organization'};
+    var EN_DESC={'Tu hogar siempre fresco':'The most requested service: weekly, biweekly or monthly recurring cleaning at $0.07 per sq ft.','Renueva cada rincón':'Deep, room-by-room cleaning at $0.15 per sq ft: ideal for a full home refresh.','Mudanza sin estrés':'Move-in / move-out: hand over or receive your space spotless, ready for the next chapter.','Reseñas de 5 estrellas':'Professional turnover for short-term rentals: fast, detailed cleaning between guests.','Del polvo al brillo':'We remove construction residue, fine dust and debris so your space feels brand new.','Más luz en tu hogar':'Interior windows ($10) and exterior ($25): crystal-clear glass and a perfect view.','Exteriores como nuevos':'Facades, terraces, fences and sidewalks: pressurized water removes years of dirt.','Frescor bajo tus pies':'Carpet washing at $0.75 per sq ft: removes stains, odors and built-up allergens.','Cocina como nueva':'Refrigerator ($40), oven ($30), dishwasher ($10) and washer/dryer ($10), inside and out.','Orden que permanece':'Pantries and closets ($50 each) and garage ($0.50 per sq ft): functional order that gives you time back.'};
+    var EN_PRICE={'Desde $0.07/pie²':'From $0.07/sq ft','Desde $0.15/pie²':'From $0.15/sq ft','Precio en minutos':'Price in minutes','Desde $10':'From $10','Desde $0.75/pie²':'From $0.75/sq ft','Desde $50':'From $50'};
+
+    var track=document.getElementById('ils-track');
+    var html='';
+    for(var pass=0;pass<2;pass++){ // duplicamos la lista para el bucle infinito continuo
+      SERVICES.forEach(function(s){
+        var isEn=document.documentElement.getAttribute('lang')==='en';
+        var alt=isEn?((s.altEn?s.altEn+' ':'')+'Ilatek — professional residential cleaning in '+county+'.'):((s.altSeo?s.altSeo+' ':'')+'Ilatek — limpieza residencial profesional en '+county+'.');
+        var title=s.kicker+' — Ilatek Puerto Rico';
+        /* Tarjeta completa clikeable: enlace al sitio con slug del servicio ({{website_url}}/nombre-del-servicio) */
+        var url=window.ILATEK_LINKS.join(website,'/'+s.slug);
+        var tt=isEn?(EN_TITLES[s.title]||s.title):s.title;
+        var kk=isEn?(EN_KICKERS[s.kicker]||s.kicker):s.kicker;
+        var dd=isEn?(EN_DESC[s.title]||s.desc):s.desc;
+        var pp=isEn?(EN_PRICE[s.price]||s.price):s.price;
+        var url=window.ILATEK_LINKS.join(website,'/'+s.slug);
+        html+='<a class="ils-card" href="'+url+'" data-ilatek-path="/'+s.slug+'" aria-label="'+tt+' — '+kk+(isEn?' by Ilatek':' de Ilatek')+'">'
+          +'<div class="ils-media"><span>'+kk+'</span><img src="'+s.img+'" alt="'+alt+'" title="'+kk+' — Ilatek Puerto Rico" loading="lazy" decoding="async"></div>'
+          +'<div class="ils-body"><h5>'+tt+'</h5><p>'+dd+'</p><div class="ils-foot"><span class="ils-price">'+pp+'</span><span class="ils-more">'+(isEn?'View more':'Ver más')+'</span></div></div>'
+          +'</a>';
+      });
+    }
+    trackEl.innerHTML=html;
+    }
+    buildCards();
+
+    /* Showcase: la banda .ils-top (video) debe terminar justo a la mitad vertical de las tarjetas.
+       --ils-half = distancia del borde inferior de la banda al centro de la tarjeta. */
+    function syncSplit(){
+      var car=root.querySelector('.ils-carousel'),card=root.querySelector('.ils-card');
+      if(!car||!card)return;
+      var cb=car.getBoundingClientRect(),kb=card.getBoundingClientRect();
+      var mid=(kb.top-cb.top)+kb.height/2;
+      if(mid>0)root.style.setProperty('--ils-half',Math.round(mid*100)/100+'px');
+    }
+    syncSplit();
+    window.addEventListener('resize',syncSplit,{passive:true});
+    window.addEventListener('load',syncSplit);
+    if(window.ResizeObserver){new ResizeObserver(syncSplit).observe(root)}
+
+    // Resuelve tokens de GHL restantes (respaldo por si el reemplazo nativo no ocurre)
+    var KCOUNTY='{{custom_values.county_name_and_state}}';var KW_URL='{{custom_values.website_url}}';var values={};values[KCOUNTY]=county;values[KW_URL]=website;
+    var walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT),nodes=[],node;
+    while(node=walker.nextNode()){if(node.parentElement&&node.parentElement.tagName!=='SCRIPT'&&node.parentElement.tagName!=='STYLE')nodes.push(node)}
+    nodes.forEach(function(n){Object.keys(values).forEach(function(k){n.nodeValue=window.ILATEK_LINKS.replace(n.nodeValue,k,values[k])})});
+    Array.prototype.forEach.call(root.querySelectorAll('*'),function(el){
+      Array.prototype.forEach.call(el.attributes||[],function(a){
+        var v=a.value;Object.keys(values).forEach(function(k){v=window.ILATEK_LINKS.replace(v,k,values[k])});
+        if(v!==a.value)el.setAttribute(a.name,v);
+      });
+    });
+    if('IntersectionObserver' in window){new IntersectionObserver(function(enls){enls.forEach(function(els){root.classList.toggle('ils-off',!els.isIntersecting)})},{threshold:.05}).observe(root)}
+
+    /* Drag con el dedo/ratón sin bloquear el scroll vertical: loop por JS que continúa desde donde el usuario suelta */
+    (function(){
+      var trackEl=root.querySelector('.ils-track');if(!trackEl||trackEl.dataset.dragBound)return;trackEl.dataset.dragBound='true';
+      var half=0,inView=true,offset=0,vel=0,raf=0,last=0;
+      var SPEED=42,DRAG_DAMP=.25,FRICTION=.93,MINV=.02;
+      var px=function(e){return e.touches?e.touches[0].clientX:e.clientX};
+      var py=function(e){return e.touches?e.touches[0].clientY:e.clientY};
+      var setX=function(){trackEl.style.transform='translate3d('+offset+'px,0,0)'};
+      var measure=function(){half=trackEl.getBoundingClientRect().width/2;if(!half)half=1};
+      var normalize=function(){if(offset<=-half)offset+=half;if(offset>0)offset-=half;setX()};
+      var tick=function(ts){
+        if(last){var dt=Math.min((ts-last)/1000,.1);offset-=SPEED*dt;if(vel){offset+=vel*dt;vel*=Math.pow(FRICTION,dt*60);if(Math.abs(vel)<MINV)vel=0}}
+        last=ts;normalize();if(inView)raf=requestAnimationFrame(tick);
+      };
+      var pause=function(){if(raf){cancelAnimationFrame(raf);raf=0;last=0}};
+      var resume=function(){if(!raf&&inView){last=0;raf=requestAnimationFrame(tick)}};
+      measure();setX();window.addEventListener('resize',measure,{passive:true});window.addEventListener('load',measure);
+      if(window.ResizeObserver){new ResizeObserver(measure).observe(trackEl)}
+      if('IntersectionObserver' in window){new IntersectionObserver(function(enls){enls.forEach(function(els){inView=els.isIntersecting;inView?resume():pause()})},{threshold:.05}).observe(root)}else{resume()}
+      var pending=false,dragging=false,startX=0,startY=0,moved=0;
+      root.addEventListener('pointerenter',function(e){if(e.pointerType==='mouse')pause()},{passive:true});
+      root.addEventListener('pointerleave',function(e){if(e.pointerType==='mouse'&&!pending&&!dragging)resume()},{passive:true});
+      trackEl.addEventListener('pointerdown',function(e){if(e.pointerType==='mouse')e.preventDefault();pending=true;dragging=false;moved=0;startX=px(e);startY=py(e);vel=0},{passive:false});
+      window.addEventListener('pointermove',function(e){
+        if(!pending)return;
+        var dx=px(e)-startX,dy=py(e)-startY;
+        if(!dragging){
+          if(Math.abs(dx)>10&&Math.abs(dx)>Math.abs(dy)*1.2){dragging=true;pause()}
+          else{if(Math.abs(dy)>12){pending=false}return}
+        }
+        moved=Math.max(moved,Math.abs(dx));offset+=dx;startX=px(e);startY=py(e);vel=-dx*60*DRAG_DAMP;normalize();
+      },{passive:true});
+      window.addEventListener('pointerup',function(){if(!pending)return;pending=false;dragging=false;if(!raf&&inView){last=0;raf=requestAnimationFrame(tick)}},{passive:true});
+      window.addEventListener('pointercancel',function(){if(!pending)return;pending=false;dragging=false;if(!raf&&inView){last=0;raf=requestAnimationFrame(tick)}},{passive:true});
+      trackEl.addEventListener('click',function(e){if(moved>8){e.preventDefault();e.stopPropagation()}},true);
+      root.addEventListener('touchmove',function(e){if(dragging)e.preventDefault()},{passive:false});
+    })();
+
+    /* Re-entrada: rebuild bilingue cuando el idioma cambia (marquee) */
+    window.addEventListener('ilatek:lang',function(){buildCards();syncSplit()}); 
+  })();
+  </script>
+</section>

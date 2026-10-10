@@ -13,6 +13,7 @@ from __future__ import annotations
 import re
 import sys
 from pathlib import Path
+from site_paths import page_files
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/"
@@ -20,21 +21,21 @@ BASE = "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/
 # Archivo de landing -> slug de su imagen social (debe existir <slug>.jpg en
 # assets/optimized/social, generado por tools/optimize-social.py).
 LANDINGS = {
-    "home-page/ghl-home-multiservicios.html": "home",
-    "home-page/ghl-servicios-landing.html": "servicios",
-    "home-page/ghl-airbnb-turnover-landing.html": "airbnb-turnover",
-    "home-page/ghl-alfombras-landing.html": "alfombras",
-    "home-page/ghl-electrodomesticos-landing.html": "electrodomesticos",
-    "home-page/ghl-lavado-a-presion-landing.html": "lavado-a-presion",
-    "home-page/ghl-limpieza-comercial-landing.html": "limpieza-comercial",
-    "home-page/ghl-limpieza-de-mudanza-landing.html": "limpieza-de-mudanza",
-    "home-page/ghl-limpieza-estandar-landing.html": "limpieza-estandar",
-    "home-page/ghl-limpieza-industrial-landing.html": "limpieza-industrial",
-    "home-page/ghl-limpieza-profunda-landing.html": "limpieza-profunda",
-    "home-page/ghl-limpieza-residencial-landing.html": "limpieza-residencial",
-    "home-page/ghl-organizacion-landing.html": "organizacion",
-    "home-page/ghl-post-construccion-landing.html": "post-construccion",
-    "home-page/ghl-ventanas-landing.html": "ventanas",
+    "home/es/landing-pages/ghl-home-multiservicios.html": "home",
+    "categorias/limpieza/es/landing-pages/ghl-servicios-landing.html": "servicios",
+    "servicios/airbnb-turnover/es/landing-pages/ghl-airbnb-turnover-landing.html": "airbnb-turnover",
+    "servicios/alfombras/es/landing-pages/ghl-alfombras-landing.html": "alfombras",
+    "servicios/electrodomesticos/es/landing-pages/ghl-electrodomesticos-landing.html": "electrodomesticos",
+    "servicios/lavado-a-presion/es/landing-pages/ghl-lavado-a-presion-landing.html": "lavado-a-presion",
+    "categorias/limpieza-comercial/es/landing-pages/ghl-limpieza-comercial-landing.html": "limpieza-comercial",
+    "servicios/limpieza-de-mudanza/es/landing-pages/ghl-limpieza-de-mudanza-landing.html": "limpieza-de-mudanza",
+    "servicios/limpieza-estandar/es/landing-pages/ghl-limpieza-estandar-landing.html": "limpieza-estandar",
+    "categorias/limpieza-industrial/es/landing-pages/ghl-limpieza-industrial-landing.html": "limpieza-industrial",
+    "servicios/limpieza-profunda/es/landing-pages/ghl-limpieza-profunda-landing.html": "limpieza-profunda",
+    "categorias/limpieza-residencial/es/landing-pages/ghl-limpieza-residencial-landing.html": "limpieza-residencial",
+    "servicios/organizacion/es/landing-pages/ghl-organizacion-landing.html": "organizacion",
+    "servicios/post-construccion/es/landing-pages/ghl-post-construccion-landing.html": "post-construccion",
+    "servicios/ventanas/es/landing-pages/ghl-ventanas-landing.html": "ventanas",
 }
 
 # ghl-head-seo.html trae un bloque por página, delimitado por comentarios.
@@ -117,7 +118,7 @@ def main() -> int:
     # Landings de techos: el nombre del archivo es ghl-<slug>-landing.html, así que
     # el slug de la imagen social se deriva del nombre (no hay lista que mantener).
     techos_ok = 0
-    for path in sorted((ROOT / "techos").glob("ghl-*-landing.html")):
+    for path in page_files("techos"):
         slug = path.name[len("ghl-") : -len("-landing.html")]
         if not available(slug):
             problems.append(f"falta assets/optimized/social/{slug}.jpg (para {path.name})")
@@ -130,7 +131,7 @@ def main() -> int:
         total += n
     print(f"  techos/ghl-*-landing.html{'':<27} {techos_ok} landings")
 
-    for rel in ("home-page/ghl-head-seo.html", "techos/ghl-techos-head-seo.html"):
+    for rel in ("documentacion/seo/limpieza-head-original.html", "techos/ghl-techos-head-seo.html"):
         seo = ROOT / rel
         count, misses = rewrite_head_seo(seo)
         total += count * 2

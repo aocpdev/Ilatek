@@ -25,6 +25,7 @@ import re
 import sys
 import unicodedata
 from pathlib import Path
+from site_paths import page_files, page_group
 
 ROOT = Path(__file__).resolve().parents[1]
 HOME = Path.home() / "Downloads"
@@ -82,7 +83,7 @@ def slug_of(path: Path) -> str:
 def canonical_map() -> dict[str, str]:
     """slug -> URL canónica, leída de los dos archivos de head SEO."""
     out: dict[str, str] = {}
-    for rel in ("home-page/ghl-head-seo.html", "techos/ghl-techos-head-seo.html"):
+    for rel in ("documentacion/seo/limpieza-head-original.html", "techos/ghl-techos-head-seo.html"):
         text = (ROOT / rel).read_text(encoding="utf-8")
         for m in re.finditer(
             r"<!-- ▼▼ /(?P<slug>[a-z0-9\-]+) ▼▼ -->(?P<body>.*?)<!-- ▲▲ fin /(?P=slug) ▲▲ -->",
@@ -99,9 +100,7 @@ def canonical_map() -> dict[str, str]:
 
 
 def pages() -> list[dict[str, object]]:
-    files = sorted((ROOT / "home-page").glob("ghl-*-landing.html")) + [
-        ROOT / "home-page" / "ghl-home-multiservicios.html",
-    ] + sorted((ROOT / "techos").glob("ghl-*-landing.html"))
+    files = page_files()
     seen: set[Path] = set()
     out = []
     for f in files:
@@ -109,7 +108,7 @@ def pages() -> list[dict[str, object]]:
             continue
         seen.add(f)
         slug = slug_of(f)
-        group = "techos" if "techos" in f.parts else "limpieza"
+        group = "techos" if page_group(f) == "techos" else "limpieza"
         out.append({"file": f, "rel": f.relative_to(ROOT).as_posix(), "slug": slug, "group": group})
     # los hubs al final, para que la tabla se lea por grupos
     out.sort(key=lambda r: (str(r["slug"]) in HUB_SLUGS, str(r["rel"])))

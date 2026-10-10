@@ -1,0 +1,11 @@
+{
+  "source": "servicios/alfombras/es/landing-pages/ghl-alfombras-landing.html",
+  "language": "es",
+  "status": "extraido-del-html-existente",
+  "metaTagTitle": "Limpieza de Alfombras en Puerto Rico | Ilatek",
+  "metaTagDescription": "Limpieza de alfombras en Puerto Rico desde $0.75 por pie²: extracción de suciedad profunda, manchas y olores. Cotizador online y cobertura en los 78 municipios.",
+  "metaTagImage": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/alfombras.jpg",
+  "canonical": "https://{{custom_values.website_url}}/alfombras",
+  "socialImageFile": "assets/meta-image.jpg",
+  "publication": "No modificada en GHL; verificar el HEAD publicado."
+}

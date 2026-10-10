@@ -1,0 +1,11 @@
+{
+  "source": "categorias/limpieza-industrial/es/landing-pages/ghl-limpieza-industrial-landing.html",
+  "language": "es",
+  "status": "extraido-del-html-existente",
+  "metaTagTitle": "Limpieza Industrial en Puerto Rico | Ilatek",
+  "metaTagDescription": "Limpieza industrial de Ilatek en Puerto Rico: almacenes, naves y plantas con equipos industriales, desengrase, pisos de alto tráfico, trabajo sin detener la producción y cobertura en los 78 municipios.",
+  "metaTagImage": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/limpieza-industrial.jpg",
+  "canonical": "https://{{custom_values.website_url}}/limpieza-industrial",
+  "socialImageFile": "assets/meta-image.jpg",
+  "publication": "No modificada en GHL; verificar el HEAD publicado."
+}

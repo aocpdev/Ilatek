@@ -1,0 +1,80 @@
+{
+  "page": "techos-por-segmento",
+  "source": "categorias/techos-por-segmento/es/landing-pages/ghl-techos-por-segmento-landing.html",
+  "policy": "Copias locales de medios referenciados en HTML, CSS y JS, incluidos fallbacks. URLs de producción conservadas. No incluye contenido remoto interno de widgets, fuentes o calendarios.",
+  "externalDependencies": [
+    "https://fonts.googleapis.com",
+    "https://fonts.gstatic.com",
+    "https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&family=Outfit:wght@500..800&display=swap",
+    "https://reputationhub.site/reputation/assets/review-widget.js",
+    "https://reputationhub.site/reputation/widgets/review_widget/8OxUENFVM60EKzqsTcoD",
+    "https://reputationhub.site/reputation/widgets/review_widget/8OxUENFVM60EKzqsTcoD?widgetId=6ab060ce32d0d3c755f9fd73",
+    "https://reputationhub.site/reputation/widgets/review_widget/8OxUENFVM60EKzqsTcoD?widgetId=6ac3eb680432b6ce3f30b035",
+    "https://link.msgsndr.com/widget/booking/wM8KQhsYjEQAo0HbNGIh",
+    "https://link.msgsndr.com/js/form_embed.js"
+  ],
+  "socialImage": {
+    "role": "social-image",
+    "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f0150d6ea53dbd50a0.jpg",
+    "file": "assets/respaldo/6ac046f0150d6ea53dbd50a0.webp",
+    "status": "local-optimized-backup",
+    "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f0150d6ea53dbd50a0.webp",
+    "note": "Original CDN no disponible; se conserva la variante WebP del mismo ID existente en el repositorio. No se modificó el embed.",
+    "bytes": 261584,
+    "sha256": "64e93099c92e1469316920198a4cbb3dadd78d553abb17741b9b98e6a7fd5823"
+  },
+  "assets": [
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f0150d6ea53dbd50a0.webp",
+      "file": "assets/media/6ac046f0150d6ea53dbd50a0.webp",
+      "status": "local-copy",
+      "bytes": 261584,
+      "sha256": "64e93099c92e1469316920198a4cbb3dadd78d553abb17741b9b98e6a7fd5823"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/hero-poster-1280.webp",
+      "file": "assets/media/hero-poster-1280.webp",
+      "status": "local-copy",
+      "bytes": 67570,
+      "sha256": "bc35c95678e7342d208c83524b556531f7567de91fc4fd2e2da074aec951cf39"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046ee150d6ea53dbd5051.webp",
+      "file": "assets/media/6ac046ee150d6ea53dbd5051.webp",
+      "status": "local-copy",
+      "bytes": 154116,
+      "sha256": "eab26cbda3125c60a926b1426f789fad439c2f4f184d72cc4866557825110362"
+    },
+    {
+      "role": "social-image",
+      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f0150d6ea53dbd50a0.jpg",
+      "file": "assets/respaldo/6ac046f0150d6ea53dbd50a0.webp",
+      "status": "local-optimized-backup",
+      "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f0150d6ea53dbd50a0.webp",
+      "note": "Original CDN no disponible; se conserva la variante WebP del mismo ID existente en el repositorio. No se modificó el embed.",
+      "bytes": 261584,
+      "sha256": "64e93099c92e1469316920198a4cbb3dadd78d553abb17741b9b98e6a7fd5823"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046ee150d6ea53dbd5051.jpg",
+      "file": "assets/respaldo/6ac046ee150d6ea53dbd5051.webp",
+      "status": "local-optimized-backup",
+      "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046ee150d6ea53dbd5051.webp",
+      "note": "Original CDN no disponible; se conserva la variante WebP del mismo ID existente en el repositorio. No se modificó el embed.",
+      "bytes": 154116,
+      "sha256": "eab26cbda3125c60a926b1426f789fad439c2f4f184d72cc4866557825110362"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aa1c05dd953a0128b5348c2.jpg",
+      "file": "assets/media/6aa1c05dd953a0128b5348c2.jpg",
+      "status": "local-copy",
+      "bytes": 47405,
+      "sha256": "ef08a502c10ce3e19c444e9e24de0589310f57605eca4970d571b84960f15d5f"
+    }
+  ]
+}

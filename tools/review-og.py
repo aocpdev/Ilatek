@@ -18,6 +18,7 @@ import html
 import re
 import sys
 from pathlib import Path
+from site_paths import page_files, page_group
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "tools" / "review-og.html"
@@ -60,9 +61,7 @@ def page_title(text: str) -> str:
 
 def rows() -> list[dict[str, str]]:
     out: list[dict[str, str]] = []
-    files = sorted((ROOT / "home-page").glob("*.html")) + sorted(
-        (ROOT / "techos").glob("ghl-*-landing.html")
-    )
+    files = page_files()
     for path in files:
         # Los head SEO llevan un bloque og:image por página: no son landings.
         if "head-seo" in path.name:
@@ -83,7 +82,7 @@ def rows() -> list[dict[str, str]]:
                 "tw": tw,
                 "local": (IMG_DIR / f"{slug}.jpg").is_file(),
                 "match": og == tw,
-                "group": "Techos" if rel.startswith("techos/") else "Limpieza / Home",
+                "group": "Techos" if page_group(path) == "techos" else "Limpieza / Home",
             }
         )
     return out
@@ -91,7 +90,7 @@ def rows() -> list[dict[str, str]]:
 
 def seo_block_rows() -> list[dict[str, str]]:
     out: list[dict[str, str]] = []
-    for rel in ("home-page/ghl-head-seo.html", "techos/ghl-techos-head-seo.html"):
+    for rel in ("documentacion/seo/limpieza-head-original.html", "techos/ghl-techos-head-seo.html"):
         text = (ROOT / rel).read_text(encoding="utf-8")
         for m in BLOCK_RE.finditer(text):
             slug = m.group("slug")
@@ -336,7 +335,7 @@ def main() -> int:
   <div class="box">
     <video src="{html.escape(canon_url)}" poster="{html.escape(canon_poster)}" autoplay muted loop playsinline></video>
     <p><b>Video pedido:</b> <code>{CANON_VIDEO}</code><br><a class="cdn" href="{html.escape(canon_url)}" target="_blank">abrir el .mp4 ↗</a></p>
-    <p><b>Se replica desde:</b> <code>home-page/ghl-servicios-carousel-embed.html</code> con <code>tools/apply-slider-video.py</code>.</p>
+    <p><b>Se replica desde:</b> <code>componentes/ghl-servicios-carousel-embed.html</code> con <code>tools/apply-slider-video.py</code>.</p>
     <p><a class="cdn" id="jump" href="#">recentrar en la sección ↺</a> · <a class="cdn" id="force" href="#">forzar el video (ignorar reduce-motion) ▶</a></p>
     <p id="rm" class="rm"></p>
     <p id="probe" class="rm"></p>
@@ -351,7 +350,7 @@ def main() -> int:
 <tr class="{'ok-row' if not logo['old'] else 'bad'}"><td>Copias del JPG antiguo que quedan</td><td>{logo['old']}</td></tr>
 <tr class="{'ok-row' if not logo['bad'] else 'bad'}"><td>SVG mal formados</td><td>{len(logo['bad'])}</td></tr>
 </tbody></table>
-<iframe id="rv" src="../home-page/ghl-alfombras-landing.html" title="Pestañas de reseñas con el logo de Google" style="margin-top:14px"></iframe>
+<iframe id="rv" src="../servicios/alfombras/es/landing-pages/ghl-alfombras-landing.html" title="Pestañas de reseñas con el logo de Google" style="margin-top:14px"></iframe>
 
 <div class="note">El live de <b>ilatekpr.com</b> no cambia con estos archivos: el código pegado en GHL es estático y hay que re-pegar los bloques actualizados.</div>
 

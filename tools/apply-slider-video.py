@@ -9,7 +9,7 @@ MISMO en todas:
 
 Este script es el dueno unico del tratamiento visual: lee las piezas canonicas
 (video, overlay, reglas CSS y guard de reproduccion) del archivo de referencia
--- `home-page/ghl-servicios-carousel-embed.html`, que es la version embebible y
+-- `componentes/ghl-servicios-carousel-embed.html`, que es la version embebible y
 la mas pequena -- y las replica en cualquier archivo del repo que contenga la
 seccion sin el video. Es idempotente: los archivos que ya lo tienen se saltan.
 
@@ -24,7 +24,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-REFERENCE = ROOT / "home-page" / "ghl-servicios-carousel-embed.html"
+REFERENCE = ROOT / "componentes" / "ghl-servicios-carousel-embed.html"
 SECTION_ID = "ilatek-servicios-slider"
 # La landing /servicios tiene la MISMA seccion de 10 servicios con otro id y
 # otras clases (anillo 3D). Se auditan ambas para que no quede una copia sin

@@ -8,7 +8,7 @@
 import { BUSINESS, hasGeo, hasRating } from './data/business.mjs';
 import { UPDATED } from './data/build.mjs';
 
-const URL_TOKEN = '{{custom_values.website_url}}';
+const URL_TOKEN = 'https://{{custom_values.website_url}}';
 
 function j(obj) {
   return JSON.stringify(obj, null, 1);

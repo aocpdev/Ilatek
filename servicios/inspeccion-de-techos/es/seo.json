@@ -1,0 +1,11 @@
+{
+  "source": "techos/ghl-techos-head-seo.html",
+  "language": "es",
+  "status": "extraido-del-html-existente",
+  "metaTagTitle": "Inspección de Techos Gratis en Puerto Rico | Ilatek Techos",
+  "metaTagDescription": "Inspección de techos gratis en Puerto Rico. Diagnóstico completo con informe fotográfico, sin compromiso. Detectamos filtraciones y daños a tiempo. 78 municipios.",
+  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046ec0edabbe5a4a76342.jpg",
+  "canonical": "https://{{custom_values.website_url}}/inspeccion-de-techos",
+  "socialImageFile": "assets/respaldo/6ac046ec0edabbe5a4a76342.webp",
+  "publication": "No modificada en GHL; verificar el HEAD publicado."
+}

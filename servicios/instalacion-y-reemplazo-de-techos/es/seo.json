@@ -1,0 +1,11 @@
+{
+  "source": "techos/ghl-techos-head-seo.html",
+  "language": "es",
+  "status": "extraido-del-html-existente",
+  "metaTagTitle": "Instalación y Reemplazo de Techos | Ilatek Techos",
+  "metaTagDescription": "Instalación y reemplazo de techos en Puerto Rico desde $6.00 por pie². Techos nuevos de zinc, concreto y membrana con garantía escrita. Inspección gratis.",
+  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f00edabbe5a4a763a0.jpg",
+  "canonical": "https://{{custom_values.website_url}}/instalacion-y-reemplazo-de-techos",
+  "socialImageFile": "assets/respaldo/6ac046f00edabbe5a4a763a0.webp",
+  "publication": "No modificada en GHL; verificar el HEAD publicado."
+}

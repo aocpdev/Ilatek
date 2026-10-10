@@ -24,7 +24,7 @@ function swap(src, from, to, label) {
 // Cobertura: section + su script del generador de 78 municipios, con encabezado
 // y descripción del servicio de la landing.
 export function coberturaSection(cfg) {
-  const src = read('home-page/ghl-cobertura-embed.html');
+  const src = read('componentes/ghl-cobertura-embed.html');
   const i = src.indexOf('<section id="ilatek-cobertura-dir"');
   if (i < 0) throw new Error('No se encontró la sección de cobertura');
   let out = src.slice(i).trim();
@@ -66,7 +66,7 @@ export function coberturaSection(cfg) {
 // Reviews: markup + su CSS + el script de tabs. Se reescribe el id del root y
 // el copy genérico ("cuidado de sus hogares") por el del servicio de techos.
 export function reviewsParts(rootId, cfg) {
-  const src = read('home-page/ghl-alfombras-landing.html');
+  const src = read('servicios/alfombras/es/landing-pages/ghl-alfombras-landing.html');
 
   const styleMatch = src.match(/<style>\s*\/\* Utilidades compartidas[\s\S]*?<\/style>/);
   if (!styleMatch) throw new Error('No se encontró el CSS de reviews');

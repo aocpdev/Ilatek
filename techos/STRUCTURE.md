@@ -1,5 +1,12 @@
 # Ilatek Techos — estructura
 
+> Reorganización 2026-10-10: los 32 HTML actuales se entregan en
+> `categorias/<slug>/es/landing-pages/` y `servicios/<slug>/es/landing-pages/`.
+> El generador y verificador resuelven esas rutas usando `docs/estructura.json`.
+> Los recuentos históricos de 34 páginas del texto inferior son anteriores;
+> el modelo actual es la fuente de verdad. Después de regenerar, ejecutar
+> `node tools/package-pages.mjs` para refrescar las fichas SEO y assets.
+
 Sección de techos de Ilatek (34 landings = hub + 5 madres + 28 hijas), publicada
 como Custom Code en GHL. Este documento es el mapa de dueños: cada concern tiene
 un solo módulo que lo posee. Las siguientes pasadas se construyen encima de esto.

@@ -8,6 +8,7 @@ import { buildPage } from './lib/page.mjs';
 import { buildTree } from './lib/model.mjs';
 import { validateModel, auditHtml } from './lib/audit.mjs';
 import { UPDATED } from './lib/data/build.mjs';
+import { pageFile, projectPath } from '../tools/site-paths.mjs';
 
 const OUT = path.dirname(fileURLToPath(import.meta.url));
 const ILATEK = path.resolve(OUT, '..');
@@ -28,11 +29,11 @@ pages.forEach((p) => {
   const html = buildPage(p);
   const htmlErrs = auditHtml(p, html);
   if (htmlErrs.length) fail(p.slug, htmlErrs);
-  const file = `ghl-${p.slug}-landing.html`;
+  const file = pageFile(p.slug);
   // GHL sirve los embeds sin header Content-Type con charset: sin esta declaración el
   // navegador adivina latin-1 y los acentos se pintan como "ReparaciÃ³n".
   const withCharset = '<meta charset="utf-8">\n' + html;
-  fs.writeFileSync(path.join(OUT, file), withCharset, 'utf8');
+  fs.writeFileSync(projectPath(file), withCharset, 'utf8');
   written.push({ slug: p.slug, role: p.role, bytes: Buffer.byteLength(html), file });
 });
 
@@ -50,7 +51,7 @@ const headSeo = [
   '<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">',
   '',
   ...pages.map((p) => {
-    const url = p.slug === 'techos' ? 'https://ilatekpr.com/home' : 'https://ilatekpr.com/' + p.slug;
+    const url = 'https://{{custom_values.website_url}}/' + (p.slug === 'techos' ? 'home' : p.slug);
     const t = esc(p.metaTitle);
     const d = esc(p.metaDescription);
     const im = esc(p.hero.raw);
@@ -99,7 +100,7 @@ if (S < 0 || E < 0 || E < S) {
 }
 
 // ─────────────────────────── reporte ───────────────────────────
-console.log(`\nIlatek Techos · ${written.length} páginas generadas en Ilatek/techos/`);
+console.log(`\nIlatek Techos · ${written.length} páginas generadas en categorias/ y servicios/ (ver docs/estructura.json)`);
 written.forEach((w) => console.log(`  ${String(w.role).padEnd(6)} /${w.slug.padEnd(38)} ${String(w.bytes).padStart(7)} B`));
 const roles = written.reduce((a, w) => ((a[w.role] = (a[w.role] || 0) + 1), a), {});
 console.log(`\nRoles: ${Object.entries(roles).map(([k, v]) => `${k}=${v}`).join(' · ')}`);

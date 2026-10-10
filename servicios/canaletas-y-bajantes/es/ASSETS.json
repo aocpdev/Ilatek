@@ -1,0 +1,62 @@
+{
+  "page": "canaletas-y-bajantes",
+  "source": "servicios/canaletas-y-bajantes/es/landing-pages/ghl-canaletas-y-bajantes-landing.html",
+  "policy": "Copias locales de medios referenciados en HTML, CSS y JS, incluidos fallbacks. URLs de producción conservadas. No incluye contenido remoto interno de widgets, fuentes o calendarios.",
+  "externalDependencies": [
+    "https://fonts.googleapis.com",
+    "https://fonts.gstatic.com",
+    "https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&family=Outfit:wght@500..800&display=swap",
+    "https://reputationhub.site/reputation/assets/review-widget.js",
+    "https://reputationhub.site/reputation/widgets/review_widget/8OxUENFVM60EKzqsTcoD",
+    "https://reputationhub.site/reputation/widgets/review_widget/8OxUENFVM60EKzqsTcoD?widgetId=6ab060ce32d0d3c755f9fd73",
+    "https://reputationhub.site/reputation/widgets/review_widget/8OxUENFVM60EKzqsTcoD?widgetId=6ac3eb680432b6ce3f30b035",
+    "https://link.msgsndr.com/widget/booking/wM8KQhsYjEQAo0HbNGIh",
+    "https://link.msgsndr.com/js/form_embed.js"
+  ],
+  "socialImage": {
+    "role": "social-image",
+    "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046ecf30b488137bfa427.jpg",
+    "file": "assets/respaldo/6ac046ecf30b488137bfa427.webp",
+    "status": "local-optimized-backup",
+    "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046ecf30b488137bfa427.webp",
+    "note": "Original CDN no disponible; se conserva la variante WebP del mismo ID existente en el repositorio. No se modificó el embed.",
+    "bytes": 186498,
+    "sha256": "5d8e590c099d8627ea017eec2223addaed12eb484a88063db055b3e224862ea8"
+  },
+  "assets": [
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046ecf30b488137bfa427.webp",
+      "file": "assets/media/6ac046ecf30b488137bfa427.webp",
+      "status": "local-copy",
+      "bytes": 186498,
+      "sha256": "5d8e590c099d8627ea017eec2223addaed12eb484a88063db055b3e224862ea8"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/hero-poster-1280.webp",
+      "file": "assets/media/hero-poster-1280.webp",
+      "status": "local-copy",
+      "bytes": 67570,
+      "sha256": "bc35c95678e7342d208c83524b556531f7567de91fc4fd2e2da074aec951cf39"
+    },
+    {
+      "role": "social-image",
+      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046ecf30b488137bfa427.jpg",
+      "file": "assets/respaldo/6ac046ecf30b488137bfa427.webp",
+      "status": "local-optimized-backup",
+      "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046ecf30b488137bfa427.webp",
+      "note": "Original CDN no disponible; se conserva la variante WebP del mismo ID existente en el repositorio. No se modificó el embed.",
+      "bytes": 186498,
+      "sha256": "5d8e590c099d8627ea017eec2223addaed12eb484a88063db055b3e224862ea8"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aa1c05dd953a0128b5348c2.jpg",
+      "file": "assets/media/6aa1c05dd953a0128b5348c2.jpg",
+      "status": "local-copy",
+      "bytes": 47405,
+      "sha256": "ef08a502c10ce3e19c444e9e24de0589310f57605eca4970d571b84960f15d5f"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "source": "techos/ghl-techos-head-seo.html",
+  "language": "es",
+  "status": "extraido-del-html-existente",
+  "metaTagTitle": "Mantenimiento Preventivo de Techos | Ilatek Techos",
+  "metaTagDescription": "Mantenimiento preventivo de techos en Puerto Rico desde $58 al mes. Visitas programadas de inspección, limpieza y sellado preventivo. Garantía escrita. 78 municipios.",
+  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f98493229874263987.jpg",
+  "canonical": "https://{{custom_values.website_url}}/mantenimiento-de-techos",
+  "socialImageFile": "assets/respaldo/6ac046f98493229874263987.webp",
+  "publication": "No modificada en GHL; verificar el HEAD publicado."
+}

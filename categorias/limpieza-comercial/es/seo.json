@@ -1,0 +1,11 @@
+{
+  "source": "categorias/limpieza-comercial/es/landing-pages/ghl-limpieza-comercial-landing.html",
+  "language": "es",
+  "status": "extraido-del-html-existente",
+  "metaTagTitle": "Limpieza Comercial en Puerto Rico | Ilatek",
+  "metaTagDescription": "Limpieza comercial de Ilatek en Puerto Rico: oficinas, tiendas y áreas comunes con checklists por espacio, frecuencias flexibles y cobertura en los 78 municipios. Cotiza tu espacio en minutos.",
+  "metaTagImage": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/limpieza-comercial.jpg",
+  "canonical": "https://{{custom_values.website_url}}/limpieza-comercial",
+  "socialImageFile": "assets/meta-image.jpg",
+  "publication": "No modificada en GHL; verificar el HEAD publicado."
+}
