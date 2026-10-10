@@ -1162,7 +1162,7 @@ body:has(#ilatek-nav) .mshero-inner{
    · Franja superior con la imagen de GHL como primer elemento y los tres bloques de
      navegación reunidos en un mismo contenedor (en fila en escritorio, apilados en móvil).
 -->
-<footer id="ilatek-footer" role="contentinfo" aria-label="Pie de página de Ilatek">
+<footer id="ilatek-footer" class="ilf-bleed" role="contentinfo" aria-label="Pie de página de Ilatek">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1178,6 +1178,44 @@ body:has(#ilatek-nav) .mshero-inner{
       -webkit-font-smoothing:antialiased;overflow-x:clip;
     }
     #ilatek-footer *{box-sizing:border-box}
+    /* ILATEK · Footer full-width + responsive (overlay global) */
+    #ilatek-footer,
+    #ilatek-footer *{min-width:0}
+    #ilatek-footer{width:100%;max-width:none;padding-left:0;padding-right:0}
+    #ilatek-footer .ilf-inner{width:100%;max-width:none}
+    #ilatek-footer .ilf-top,
+    #ilatek-footer .ilf-services,
+    #ilatek-footer .ilf-portal-card,
+    #ilatek-footer .ilf-portal-title,
+    #ilatek-footer .ilf-bottom{width:100%;max-width:none;margin-left:0;margin-right:0}
+    #ilatek-footer .ilf-top{padding:24px clamp(14px,3vw,40px)}
+    #ilatek-footer .ilf-portal-card{padding:24px clamp(14px,3vw,40px)}
+    #ilatek-footer .ilf-bottom{padding:10px clamp(14px,2vw,20px)}
+    @supports (width:100vw){
+      #ilatek-footer.ilf-bleed{width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw)}
+    }
+    #ilatek-footer img{max-width:100%;height:auto}
+    @media (max-width:600px){
+      #ilatek-footer{padding:26px 0 8px}
+      #ilatek-footer .ilf-top{display:grid;grid-template-columns:1fr;row-gap:20px;padding:20px 16px;border-radius:16px}
+      #ilatek-footer .ilf-brand{max-width:100%;margin:0 auto}
+      #ilatek-footer .ilf-nav{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:18px 12px;text-align:left;padding:0 4px}
+      #ilatek-footer .ilf-services{display:grid;grid-template-columns:1fr;gap:14px;padding:0 16px}
+      #ilatek-footer .ilf-card{padding:24px 16px;border-radius:18px}
+      #ilatek-footer .ilf-svcimg{width:100%;padding:0 0 14px}
+      #ilatek-footer .ilf-links a{font-size:13px;padding:5px 0;display:inline-block}
+      #ilatek-footer .ilf-portal-title{padding:0 16px;text-align:center}
+      #ilatek-footer .ilf-portal-card{display:grid;grid-template-columns:1fr;gap:18px;padding:20px 16px;border-radius:16px}
+      #ilatek-footer .ilf-portal-copy{padding:0}
+      #ilatek-footer .ilf-btn{padding:14px 34px;width:auto;max-width:100%}
+      #ilatek-footer .ilf-dash{text-align:center;padding:0}
+      #ilatek-footer .ilf-bottom{display:grid;grid-template-columns:1fr;gap:14px;text-align:center}
+      #ilatek-footer .ilf-bottom-logo img{width:88px;height:auto}
+      #ilatek-footer .ilf-credit{margin-top:0;line-height:1.5;overflow-wrap:break-word}
+    }
+    #ilatek-footer .ilf-credit,
+    #ilatek-footer .ilf-portal-copy p{overflow-wrap:break-word}
+
     #ilatek-footer p,#ilatek-footer h2,#ilatek-footer h3,#ilatek-footer ul{margin:0;padding:0}
     #ilatek-footer ul{list-style:none}
     #ilatek-footer a{text-decoration:none}
