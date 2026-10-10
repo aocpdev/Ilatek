@@ -78,7 +78,11 @@ export function reviewsParts(rootId, cfg) {
   markup = swap(markup, '<h2 id="ilatek-reviews-title" class="il-display">La experiencia de nuestros clientes.</h2>', `<h2 id="ilatek-reviews-title" class="il-display">${cfg.title}</h2>`, 'título de reviews');
   markup = swap(markup, '<p>Conoce las reseñas compartidas por personas que confiaron en Ilatek para el cuidado de sus hogares.</p>', `<p>${cfg.subtitle}</p>`, 'subtítulo de reviews');
   markup = swap(markup, 'title="Reseñas de Google de clientes de Ilatek"', `title="${cfg.googleTitle}"`, 'título del iframe de Google');
-  markup = swap(markup, 'title="Selfie reviews de clientes de Ilatek"', `title="${cfg.selfieTitle}"`, 'título del iframe Selfie');
+  markup = swap(markup, 'title="Reseñas de Limpieza de Ilatek"', `title="${cfg.selfieTitle}"`, 'título del iframe Selfie');
+  // El tab del widget de limpieza se llama "Limpieza" (copy prohibido en el
+  // sitio de techos sin contexto): el auditor lo rechaza. Se reetiqueta a
+  // "Servicios", que es lo que muestra ese tab de reseñas.
+  markup = swap(markup, '>Limpieza</button>', '>Servicios</button>', 'tab Limpieza de reviews');
 
   const tabsMatch = src.match(/<!-- Tabs de reviews[\s\S]*?<\/script>/);
   if (!tabsMatch) throw new Error('No se encontró el script de tabs de reviews');

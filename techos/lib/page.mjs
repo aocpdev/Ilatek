@@ -25,6 +25,9 @@ function svg(name) {
 // calendario embebido en vez de salir a /cotizacion (una sola ruta de conversión).
 const AGENDA_ANCHOR = '#ilt-agenda';
 
+// El respaldo onerror cae en el poster del sitio (jsDelivr, siempre vivo): las
+// fotos del CDN de GHL devuelven 404 para varias tarjetas y el fallback anterior
+// repetia ese 404, dejando tarjetas sin fondo.
 // Pila de fotos de una tarjeta del carrusel: la primera visible y el resto listas
 // para el fundido interno. Solo la primera lleva alt real; las demás son la misma
 // foto en otro momento del fundido, así que van decorativas y marcadas aria-hidden
@@ -35,13 +38,13 @@ function shotStack(cfg, list) {
     .map((shot, i) => {
       const on = i === 0;
       return '<img class="ilt3-shot' + (on ? ' is-on' : '') + '"' + (on ? '' : ' aria-hidden="true"') +
-        ' src="' + shot.webp + '" onerror="this.onerror=null;this.src=\'' + shot.raw + '\'" width="1376" height="768" loading="lazy" decoding="async" alt="' + (on ? alt : '') + '" title="' + cfg.name + ' · Ilatek Techos">';
+        ' src="' + shot.webp + '" onerror="this.onerror=null;this.src=\'https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/hero-poster-1280.webp\'" width="1376" height="768" loading="lazy" decoding="async" alt="' + (on ? alt : '') + '" title="' + cfg.name + ' · Ilatek Techos">';
     })
     .join('');
 }
 
 function img(f, opts) {
-  return `<img src="${f.webp}" onerror="this.onerror=null;this.src='${f.raw}'" width="${opts.w}" height="${opts.h}" loading="${opts.loading}" decoding="async"${opts.priority ? ' fetchpriority="high"' : ''} alt="${f.alt}" title="${f.title}">`;
+  return `<img src="${f.webp}" onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/hero-poster-1280.webp'" width="${opts.w}" height="${opts.h}" loading="${opts.loading}" decoding="async"${opts.priority ? ' fetchpriority="high"' : ''} alt="${f.alt}" title="${f.title}">`;
 }
 
 export function buildPage(page) {
