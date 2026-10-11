@@ -91,7 +91,7 @@ export const reparacion = [
     heroSub:
       'Una gotera que gotea hoy dañará tu cielo raso, tu pintura y tu instalación eléctrica mañana. Ilatek localiza el punto real de la filtración y lo sella en {{custom_values.county_name_and_state}} <b>desde $250</b>, con inspección gratis y garantía escrita.',
     facts: [
-      { b: '$250', s: 'por gotera', label: 'Reparación puntual' },
+      { b: '$0', s: 'cotización', label: 'Gratis, se agenda con $50 reembolsables' },
       { b: '1', s: 'día típico', label: 'Trabajo completado' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
     ],
@@ -130,7 +130,7 @@ export const reparacion = [
       { q: '¿La gotera en techo de zinc se repara igual que en concreto?', a: 'No: <b>cada material usa distinto sellador y preparación</b>. En zinc tratamos corrosión y sellamos uniones metálicas; en concreto rellenamos grietas y aplicamos impermeabilizante. Usamos el producto correcto para cada techo.' },
       { q: '¿Cuánto tarda en repararse una gotera?', a: 'Una gotera puntual se repara normalmente en <b>un solo día</b>. Casos con varias entradas o daño estructural pueden requerir 2 a 3 visitas, lo cual te informamos antes de empezar.' },
       { q: '¿Reparar la gotera detiene el moho?', a: 'Detener la filtración es el primer paso: <b>sin agua no hay moho nuevo</b>. Si ya hay hongos en el interior, recomendamos tratar la zona después de sellar el techo para eliminar la humedad acumulada.' },
-      { q: '¿Cuánto cuesta una inspección por goteras?', a: '<b>Nada.</b> La inspección para localizar tu gotera es gratis. Subimos al techo, identificamos la causa y te damos el precio por escrito sin compromiso.' },
+      { q: '¿Cuánto cuesta una inspección por goteras?', a: '<b>Nada.</b> La cotización para localizar tu gotera es $0 y se agenda con $50 reembolsables. Subimos al techo, identificamos la causa y te damos el precio por escrito sin compromiso.' },
       { q: '¿Por qué elegir Ilatek para reparar goteras?', a: 'Encontramos la causa real, no tapamos a ciegas: <b>precio desde $250</b>, inspección gratis, garantía de mano de obra, visita prioritaria para goteras activas y cobertura en los 78 municipios de Puerto Rico.' },
     ],
   }),

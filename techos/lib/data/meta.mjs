@@ -31,7 +31,7 @@ export const META = {
     procLead: 'La gotera cae lejos de su origen: rastreamos el agua por la pendiente del techo y la cerramos donde entra.',
     price: { amount: '250', text: 'desde $250', unitText: 'por reparación de gotera' },
     serviceName: 'Reparación de Goteras en Puerto Rico',
-    serviceDesc: 'Reparación de goteras en techos de concreto, zinc y asfalto en Puerto Rico: localizamos y sellamos el punto exacto de entrada del agua desde $250.',
+    serviceDesc: 'Reparación de goteras en techos de concreto, zinc y asfalto en Puerto Rico: localizamos y sellamos el punto exacto de entrada del agua desde $250, con cotización $0 agendada con $50 reembolsables.',
     whyQ: '¿Por qué elegir Ilatek Techos para reparar goteras?',
     whyA: 'Rastreamos el punto real de entrada del agua en vez de sellar donde gotea, protegemos tu cielo raso y tu instalación eléctrica, y damos visita prioritaria a goteras activas con garantía escrita desde $250.',
   },

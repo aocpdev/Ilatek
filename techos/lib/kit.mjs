@@ -16,7 +16,7 @@ const OPT = WEBP + 'techos/';
 // del remoto) se sirven por el transform de imágenes de GHL, siempre disponible
 // aunque el CDN filesafe exija headers de navegador.
 const LCTR = 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/';
-const SERVE_LCTR = new Set(['6ac85838c478ac55355c46f2.jpg', '6ac85838195f9172ed03ac13.jpg', '6ac8583a195f9172ed03ac5f.jpg', '6ac8583abbad531ac84495e2.jpg', '6ac85834cc7a5a2b73475e12.jpg', '6ac8583bcc7a5a2b73475f28.jpg', '6acbe8c9bd6bb710ca4fc13e.png', '6acbe8c9195f9172ed52d037.png', '6acbee8cc478ac5535ac053c.png', '6acbee8c195f9172ed536a77.png', '6acbef68c478ac5535ac18f0.png', '6acbf29abbad531ac8950f9b.png', '6acbf2dd195f9172ed53ce9a.png', '6acbf1fabd6bb710ca50a783.png', '6ac85834bbad531ac8449522.jpg', '6ac85834cc7a5a2b73475e01.jpg', '6ac72670c478ac55353c265b.jpg', '6acbf7e5bbad531ac89598d2.png', '6acbf9494770fb500bf7712f.png', '6acbf7e5bd6bb710ca513950.png', '6ac85839195f9172ed03ac3f.jpg', '6ac85838cc7a5a2b73475e82.jpg', '6ac72673d5f4a8af439f5d0e.jpg', '6acb112abd6bb710ca3fd406.png', '6ac85839c478ac55355c4729.jpg', '6ac72674c478ac55353c2708.jpg']);
+const SERVE_LCTR = new Set(['6ac85838c478ac55355c46f2.jpg', '6ac85838195f9172ed03ac13.jpg', '6ac8583a195f9172ed03ac5f.jpg', '6ac8583abbad531ac84495e2.jpg', '6ac85834cc7a5a2b73475e12.jpg', '6ac8583bcc7a5a2b73475f28.jpg', '6acbe8c9bd6bb710ca4fc13e.png', '6acbe8c9195f9172ed52d037.png', '6acbee8cc478ac5535ac053c.png', '6acbee8c195f9172ed536a77.png', '6acbef68c478ac5535ac18f0.png', '6acbf29abbad531ac8950f9b.png', '6acbf2dd195f9172ed53ce9a.png', '6acbf1fabd6bb710ca50a783.png', '6ac85834bbad531ac8449522.jpg', '6ac85834cc7a5a2b73475e01.jpg', '6ac72670c478ac55353c265b.jpg', '6acbf7e5bbad531ac89598d2.png', '6acbf9494770fb500bf7712f.png', '6acbf7e5bd6bb710ca513950.png', '6ac85839195f9172ed03ac3f.jpg', '6ac85838cc7a5a2b73475e82.jpg', '6ac72673d5f4a8af439f5d0e.jpg', '6acb112abd6bb710ca3fd406.png', '6ac85839c478ac55355c4729.jpg', '6ac72674c478ac55353c2708.jpg', '6ac8583bbbad531ac844963f.jpg', '6ac8583b195f9172ed03ac8b.jpg', '6ac72673195f9172ede3883e.jpg']);
 export function optimized(url) {
   const name = url.replace(CDN, '');
   if (SERVE_LCTR.has(name)) return LCTR + name;
@@ -52,11 +52,12 @@ export const TECHOS_IMG_SOCIAL = {
   'techos-por-segmento': CDN + '6acbf7e5bd6bb710ca513950.png',
   tragaluces: CDN + '6ac72673d5f4a8af439f5d0e.jpg',
   'lavado-a-presion-techos': CDN + '6ac72674c478ac55353c2708.jpg',
+  'reparacion-de-goteras': CDN + '6ac72673195f9172ede3883e.jpg',
 };
 export const TECHOS_IMG = {
   techos: { hero: CDN + '6ac046fe8493229874263a27.jpg', incl: CDN + '6ac046fef30b488137bfa568.jpg' },
   'reparacion-de-techos': { hero: CDN + '6ac046f30edabbe5a4a763bc.jpg', incl: CDN + '6ac046fd02569bee7cbccca0.jpg' },
-  'reparacion-de-goteras': { hero: CDN + '6ac046fc150d6ea53dbd517a.jpg', incl: CDN + '6ac046fc02569bee7cbccc91.jpg' },
+  'reparacion-de-goteras': { hero: CDN + '6ac8583bbbad531ac844963f.jpg', incl: CDN + '6ac8583b195f9172ed03ac8b.jpg', heroDims: { width: 1200, height: 675 }, inclDims: { width: 1200, height: 675 } },
   'reparacion-de-filtraciones': { hero: CDN + '6ac046fc8493229874263a03.jpg', incl: CDN + '6ac046fb84932298742639df.jpg' },
   'reparacion-de-grietas-techos': { hero: CDN + '6ac046fb0edabbe5a4a7647c.jpg', incl: CDN + '6ac046fb85f560d1666999ff.jpg' },
   'empozamiento-de-techos': { hero: CDN + '6ac046fb3b8e61adf5632061.jpg', incl: CDN + '6ac046fb7bca8cd20c402253.jpg' },
