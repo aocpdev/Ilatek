@@ -209,9 +209,9 @@ export const reparacion = [
     heroSub:
       'Una grieta en la losa es una puerta abierta al agua y al óxido de las varillas. Ilatek sella grietas en techos de concreto de {{custom_values.county_name_and_state}} <b>desde $275</b>, con sellador flexible y garantía escrita.',
     facts: [
-      { b: '$275', s: 'por grieta', label: 'Sellado puntual' },
+      { b: '$0', s: 'cotización', label: 'Gratis, se agenda con $50 reembolsables' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
-      { b: '$0', s: 'inspección', label: 'Evaluación gratis' },
+      { b: '1', s: 'día típico', label: 'Sellado completado' },
     ],
     benefits: [
       { icon: 'shield', h: 'Sella y refuerza', p: 'Rellenamos la grieta con sellador flexible que acompaña el movimiento del concreto, en lugar de uno rígido que se vuelve a partir.' },
@@ -249,6 +249,7 @@ export const reparacion = [
       { q: '¿Se puede sellar la grieta si está mojada?', a: 'No de forma definitiva: <b>el sellador necesita superficie seca para adherir</b>. Si hay lluvia activa, estabilizamos y volvemos cuando la superficie esté seca para el sellado permanente.' },
       { q: '¿Cómo sabré si la grieta necesitaba reparación estructural?', a: '<b>En la inspección lo determinamos.</b> Si la grieta expone varillas oxidadas o atraviesa toda la losa, te lo decimos de frente y cotizamos el refuerzo necesario, sin venderte de más.' },
       { q: '¿Cuánto tarda sellar las grietas de un techo?', a: 'Un techo residencial típico se completa <b>el mismo día</b>, incluyendo lavado a presión, relleno y membrana. Techos grandes o con muchas grietas pueden extenderse a dos días; te lo confirmamos en la cotización.' },
+      { q: '¿Cuánto cuesta la inspección de grietas?', a: '<b>Nada.</b> La cotización para evaluar tus grietas es $0 y se agenda con $50 reembolsables. Revisamos el techo, medimos las grietas y te damos el precio por escrito sin compromiso.' },
       { q: '¿Por qué elegir Ilatek Techos para tus grietas?', a: 'Sellador flexible correcto, diagnóstico honesto y <b>precio desde $275</b> con inspección gratis y garantía por escrito, cubriendo {{custom_values.county_name_and_state}} y los 78 municipios de Puerto Rico.' },
     ],
   }),

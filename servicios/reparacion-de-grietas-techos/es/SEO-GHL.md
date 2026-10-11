@@ -16,13 +16,13 @@ Reparación de grietas en techos de concreto y losas en {{custom_values.county_n
 
 ## Meta Tag Image
 
-[Imagen social — URL pública](https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046fb0edabbe5a4a7647c.jpg)
+[Imagen social — URL pública](https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac72673bbad531ac82477a4.jpg)
 
 ```text
-https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046fb0edabbe5a4a7647c.jpg
+https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac72673bbad531ac82477a4.jpg
 ```
 
-Copia local: [assets/respaldo/6ac046fb0edabbe5a4a7647c.webp](assets/respaldo/6ac046fb0edabbe5a4a7647c.webp). No usar una ruta local en GHL.
+Copia local: [assets/meta-image.jpg](assets/meta-image.jpg). No usar una ruta local en GHL.
 
 ## Canonical existente
 
@@ -55,9 +55,3 @@ Antes de publicar cada snapshot, comprobar el HTML servido por GHL: Title, Descr
 ## Dominio y enlaces internos
 
 Configurar `website_url` como dominio sin protocolo ni barra final, por ejemplo `ilatekpr.com`. Los enlaces y canonical usan `https://{{custom_values.website_url}}/ruta`. Validar que GHL entregue estos valores resueltos en el HEAD público; no confiar en JavaScript para los metadatos sociales.
-
-## Aviso sobre la imagen social original
-
-La URL original del CDN no está disponible. La copia local es la variante WebP del mismo ID, no el JPG original.
-
-Alternativa existente en el repositorio: [imagen WebP](https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046fb0edabbe5a4a7647c.webp). Antes de instalar el SEO, comprobar esta URL pública y usarla como Social Image si continúa disponible. El embed y el HEAD de referencia no se modificaron automáticamente.

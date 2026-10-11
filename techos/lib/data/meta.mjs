@@ -51,7 +51,7 @@ export const META = {
     procLead: 'Rellenamos con sellador flexible que acompaña el movimiento del concreto, para que la grieta no vuelva a abrirse.',
     price: { amount: '275', text: 'desde $275', unitText: 'por sellado de grieta' },
     serviceName: 'Reparación de Grietas en Techos de Concreto',
-    serviceDesc: 'Sellado de grietas en techos de concreto y losas en Puerto Rico: sellador flexible y membrana impermeabilizante desde $275, con garantía escrita.',
+    serviceDesc: 'Sellado de grietas en techos de concreto y losas en Puerto Rico: sellador flexible y membrana impermeabilizante desde $275, con cotización $0 agendada con $50 reembolsables y garantía escrita.',
     whyQ: '¿Por qué elegir Ilatek Techos para las grietas de tu techo?',
     whyA: 'Usamos sellador flexible, no cemento rígido que se parte otra vez; al cerrar la grieta el agua no alcanza las varillas y evitamos el óxido estructural — desde $275 con inspección gratis y garantía escrita.',
   },

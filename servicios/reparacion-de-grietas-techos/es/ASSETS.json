@@ -16,13 +16,11 @@
   ],
   "socialImage": {
     "role": "social-image",
-    "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046fb0edabbe5a4a7647c.jpg",
-    "file": "assets/respaldo/6ac046fb0edabbe5a4a7647c.webp",
-    "status": "local-optimized-backup",
-    "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046fb0edabbe5a4a7647c.webp",
-    "note": "Original CDN no disponible; se conserva la variante WebP del mismo ID existente en el repositorio. No se modificó el embed.",
-    "bytes": 155370,
-    "sha256": "96900420f90d50b14f942f690dd5aa235db07370d5fd6041f078cf1f99510395"
+    "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac72673bbad531ac82477a4.jpg",
+    "file": "assets/meta-image.jpg",
+    "status": "local-copy",
+    "bytes": 755814,
+    "sha256": "39b6ff03ef1b5cbb24ab23ce897bdc2f80e78715b6ce636606aef5020b6d726a"
   },
   "assets": [
     {
@@ -43,11 +41,11 @@
     },
     {
       "role": "media-or-fallback",
-      "publicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046fb0edabbe5a4a7647c.webp",
-      "file": "assets/media/6ac046fb0edabbe5a4a7647c.webp",
+      "publicUrl": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8583bbbad531ac844964a.jpg",
+      "file": "assets/media/6ac8583bbbad531ac844964a.jpg",
       "status": "local-copy",
-      "bytes": 155370,
-      "sha256": "96900420f90d50b14f942f690dd5aa235db07370d5fd6041f078cf1f99510395"
+      "bytes": 850872,
+      "sha256": "6fabd54f32c625126bbc0ea2d39df0555e24af1a6042972f921f52b86f4401f2"
     },
     {
       "role": "media-or-fallback",
@@ -59,31 +57,27 @@
     },
     {
       "role": "media-or-fallback",
-      "publicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046fb85f560d1666999ff.webp",
-      "file": "assets/media/6ac046fb85f560d1666999ff.webp",
+      "publicUrl": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8583bcc7a5a2b73475f28.jpg",
+      "file": "assets/media/6ac8583bcc7a5a2b73475f28.jpg",
       "status": "local-copy",
-      "bytes": 125810,
-      "sha256": "923c6cca1ff1ba597ac6de3ab1842ebb9badf2d63112573b197b6502cf0b1ca5"
-    },
-    {
-      "role": "social-image",
-      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046fb0edabbe5a4a7647c.jpg",
-      "file": "assets/respaldo/6ac046fb0edabbe5a4a7647c.webp",
-      "status": "local-optimized-backup",
-      "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046fb0edabbe5a4a7647c.webp",
-      "note": "Original CDN no disponible; se conserva la variante WebP del mismo ID existente en el repositorio. No se modificó el embed.",
-      "bytes": 155370,
-      "sha256": "96900420f90d50b14f942f690dd5aa235db07370d5fd6041f078cf1f99510395"
+      "bytes": 727377,
+      "sha256": "f5833a0fb9f784cdb96e1e559c2c4d9706f3255a24187d206375ee9232b20599"
     },
     {
       "role": "media-or-fallback",
-      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046fb85f560d1666999ff.jpg",
-      "file": "assets/respaldo/6ac046fb85f560d1666999ff.webp",
-      "status": "local-optimized-backup",
-      "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046fb85f560d1666999ff.webp",
-      "note": "Original CDN no disponible; se conserva la variante WebP del mismo ID existente en el repositorio. No se modificó el embed.",
-      "bytes": 125810,
-      "sha256": "923c6cca1ff1ba597ac6de3ab1842ebb9badf2d63112573b197b6502cf0b1ca5"
+      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8583bbbad531ac844964a.jpg",
+      "file": "assets/media/6ac8583bbbad531ac844964a.jpg",
+      "status": "local-copy",
+      "bytes": 850872,
+      "sha256": "6fabd54f32c625126bbc0ea2d39df0555e24af1a6042972f921f52b86f4401f2"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8583bcc7a5a2b73475f28.jpg",
+      "file": "assets/media/6ac8583bcc7a5a2b73475f28.jpg",
+      "status": "local-copy",
+      "bytes": 727377,
+      "sha256": "f5833a0fb9f784cdb96e1e559c2c4d9706f3255a24187d206375ee9232b20599"
     },
     {
       "role": "media-or-fallback",
@@ -180,6 +174,14 @@
       "status": "local-copy",
       "bytes": 941,
       "sha256": "4bebe72147bfd89f46554899dc5228e3436d48bac1ce52da439c14ff7f62d7ba"
+    },
+    {
+      "role": "social-image",
+      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac72673bbad531ac82477a4.jpg",
+      "file": "assets/meta-image.jpg",
+      "status": "local-copy",
+      "bytes": 755814,
+      "sha256": "39b6ff03ef1b5cbb24ab23ce897bdc2f80e78715b6ce636606aef5020b6d726a"
     }
   ]
 }
