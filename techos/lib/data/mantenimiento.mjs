@@ -318,18 +318,18 @@ export const mantenimiento = [
     noun: 'lavado a presión de techos',
     h1before: 'Lavado a Presión de Techos en',
     h1em: 'Puerto Rico',
-    h1after: ' desde $0.15 por pie².',
+    h1after: ' desde $250.',
     metaTitle: 'Lavado a Presión de Techos | Ilatek Techos',
     metaDescription:
-      'Lavado a presión de techos en Puerto Rico desde $0.15 por pie². Limpieza profunda que prepara y alarga la vida del techo. Inspección gratis y garantía escrita.',
-    hero: pic('presion', { alt: 'Lavado a presión de techos en Puerto Rico — {{custom_values.county_name_and_state}}', title: 'Lavado a presión de techos · Ilatek Techos', badge: 'Desde $0.15/pie²' }),
+      'Lavado a presión de techos en Puerto Rico desde $250. Limpieza profunda que prepara y alarga la vida del techo. Cotización $0 agendada con $50 reembolsables y garantía escrita.',
+    hero: pic('presion', { alt: 'Lavado a presión de techos en Puerto Rico — {{custom_values.county_name_and_state}}', title: 'Lavado a presión de techos · Ilatek Techos', badge: 'Limpieza profunda' }),
     incl: pic('postconstruccion', { alt: 'Lavado a presión de techo por Ilatek Techos en Puerto Rico — limpieza profunda', title: 'Lavado a presión · Ilatek Techos', caption: 'Superficie limpia · Lista para sellar' }),
     heroSub:
-      'La suciedad y el moho pegado se comen el sellado de tu techo y aceleran su deterioro. Ilatek lava a presión en {{custom_values.county_name_and_state}} <b>desde $0.15 por pie²</b>: deja la superficie limpia y lista, con inspección gratis y garantía escrita.',
+      'La suciedad y el moho pegado se comen el sellado de tu techo y aceleran su deterioro. Ilatek lava a presión en {{custom_values.county_name_and_state}} <b>desde $250</b>: deja la superficie limpia y lista, con cotización $0 y garantía escrita.',
     facts: [
-      { b: '$0.15', s: 'por pie²', label: 'Precio base' },
+      { b: '$250', s: 'por lavado', label: 'Precio de entrada' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
-      { b: '$0', s: 'inspección', label: 'Evaluación gratis' },
+      { b: '$0', s: 'cotización', label: 'Gratis, se agenda con $50 reembolsables' },
     ],
     benefits: [
       { icon: 'drop', h: 'Limpieza profunda del techo', p: 'Removemos suciedad, hongos y residuos pegados que el barrido no quita, devolviendo el color a la superficie.' },
@@ -360,14 +360,14 @@ export const mantenimiento = [
       ],
     },
     faq: [
-      { q: '¿Cuánto cuesta lavar un techo a presión?', a: 'El lavado a presión de techos de Ilatek <b>comienza desde $0.15 por pie²</b>. El precio depende del área y del grado de suciedad. Cotiza para tu número exacto.' },
+      { q: '¿Cuánto cuesta lavar un techo a presión?', a: 'El lavado a presión de techos de Ilatek <b>comienza desde $250</b>. El precio depende del área y del grado de suciedad. La cotización es $0 y se agenda con $50 reembolsables.' },
       { q: '¿El lavado a presión puede dañar mi techo?', a: 'No si se hace con <b>presión y boquilla adecuadas a cada superficie</b>. Ajustamos la presión según el material para limpiar sin dañar el techo.' },
       { q: '¿Cada cuánto se debe lavar un techo?', a: 'Normalmente <b>una vez al año</b>, o dos si hay mucho moho, árboles cerca o brisa salina. Se puede integrar al plan de mantenimiento.' },
       { q: '¿El lavado a presión sella las filtraciones?', a: 'No por sí solo: el lavado <b>limpia y prepara</b>. Si hay filtraciones, el lavado se combina con reparación y sellado.' },
       { q: '¿Lavan techos de cualquier material?', a: 'Sí: <b>concreto, zinc, asfalto y membranas</b>, ajustando la presión y el método a cada superficie para no dañarla.' },
       { q: '¿El lavado incluye limpiar los desagües?', a: 'Después de lavar, <b>verificamos y despejamos los desagües</b> para que la suciedad removida no obstruya el drenaje del techo.' },
       { q: '¿Cuánto tarda el lavado?', a: 'Un techo residencial típico se lava en <b>unas horas</b>; los techos grandes pueden tomar el día completo, según el área y la suciedad.' },
-      { q: '¿Por qué elegir Ilatek Techos?', a: 'Lavamos con presión correcta para cada superficie, <b>desde $0.15 por pie²</b>, con inspección gratis y cobertura en los 78 municipios de Puerto Rico.' },
+      { q: '¿Por qué elegir Ilatek Techos?', a: 'Lavamos con presión correcta para cada superficie, <b>desde $250</b>, con cotización $0 y cobertura en los 78 municipios de Puerto Rico.' },
     ],
   }),
 

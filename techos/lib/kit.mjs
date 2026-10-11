@@ -16,7 +16,7 @@ const OPT = WEBP + 'techos/';
 // del remoto) se sirven por el transform de imágenes de GHL, siempre disponible
 // aunque el CDN filesafe exija headers de navegador.
 const LCTR = 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/';
-const SERVE_LCTR = new Set(['6ac85838c478ac55355c46f2.jpg', '6ac85838195f9172ed03ac13.jpg', '6ac8583a195f9172ed03ac5f.jpg', '6ac8583abbad531ac84495e2.jpg', '6ac85834cc7a5a2b73475e12.jpg', '6ac8583bcc7a5a2b73475f28.jpg', '6acbe8c9bd6bb710ca4fc13e.png', '6acbe8c9195f9172ed52d037.png', '6acbee8cc478ac5535ac053c.png', '6acbee8c195f9172ed536a77.png', '6acbef68c478ac5535ac18f0.png', '6acbf29abbad531ac8950f9b.png', '6acbf2dd195f9172ed53ce9a.png', '6acbf1fabd6bb710ca50a783.png', '6ac85834bbad531ac8449522.jpg', '6ac85834cc7a5a2b73475e01.jpg', '6ac72670c478ac55353c265b.jpg', '6acbf7e5bbad531ac89598d2.png', '6acbf9494770fb500bf7712f.png', '6acbf7e5bd6bb710ca513950.png', '6ac85839195f9172ed03ac3f.jpg', '6ac85838cc7a5a2b73475e82.jpg', '6ac72673d5f4a8af439f5d0e.jpg']);
+const SERVE_LCTR = new Set(['6ac85838c478ac55355c46f2.jpg', '6ac85838195f9172ed03ac13.jpg', '6ac8583a195f9172ed03ac5f.jpg', '6ac8583abbad531ac84495e2.jpg', '6ac85834cc7a5a2b73475e12.jpg', '6ac8583bcc7a5a2b73475f28.jpg', '6acbe8c9bd6bb710ca4fc13e.png', '6acbe8c9195f9172ed52d037.png', '6acbee8cc478ac5535ac053c.png', '6acbee8c195f9172ed536a77.png', '6acbef68c478ac5535ac18f0.png', '6acbf29abbad531ac8950f9b.png', '6acbf2dd195f9172ed53ce9a.png', '6acbf1fabd6bb710ca50a783.png', '6ac85834bbad531ac8449522.jpg', '6ac85834cc7a5a2b73475e01.jpg', '6ac72670c478ac55353c265b.jpg', '6acbf7e5bbad531ac89598d2.png', '6acbf9494770fb500bf7712f.png', '6acbf7e5bd6bb710ca513950.png', '6ac85839195f9172ed03ac3f.jpg', '6ac85838cc7a5a2b73475e82.jpg', '6ac72673d5f4a8af439f5d0e.jpg', '6acb112abd6bb710ca3fd406.png', '6ac85839c478ac55355c4729.jpg', '6ac72674c478ac55353c2708.jpg']);
 export function optimized(url) {
   const name = url.replace(CDN, '');
   if (SERVE_LCTR.has(name)) return LCTR + name;
@@ -51,6 +51,7 @@ export const TECHOS_IMG_SOCIAL = {
   'techos-planos': CDN + '6ac72670c478ac55353c265b.jpg',
   'techos-por-segmento': CDN + '6acbf7e5bd6bb710ca513950.png',
   tragaluces: CDN + '6ac72673d5f4a8af439f5d0e.jpg',
+  'lavado-a-presion-techos': CDN + '6ac72674c478ac55353c2708.jpg',
 };
 export const TECHOS_IMG = {
   techos: { hero: CDN + '6ac046fe8493229874263a27.jpg', incl: CDN + '6ac046fef30b488137bfa568.jpg' },
@@ -82,7 +83,7 @@ export const TECHOS_IMG = {
   'mantenimiento-de-techos': { hero: CDN + '6ac046f98493229874263987.jpg', incl: CDN + '6ac046f8f30b488137bfa4ee.jpg' },
   'limpieza-de-techos-y-canaletas': { hero: CDN + '6ac046ee150d6ea53dbd5044.jpg', incl: CDN + '6ac046ee150d6ea53dbd5044.jpg' },
   'canaletas-y-bajantes': { hero: CDN + '6ac8583a195f9172ed03ac5f.jpg', incl: CDN + '6ac8583abbad531ac84495e2.jpg', heroDims: { width: 1200, height: 675 }, inclDims: { width: 1200, height: 675 } },
-  'lavado-a-presion-techos': { hero: CDN + '6ac046ecc478ac55358ec4c6.jpg', incl: CDN + '6ac046ecc478ac55358ec4c6.jpg' },
+  'lavado-a-presion-techos': { hero: CDN + '6acb112abd6bb710ca3fd406.png', incl: CDN + '6ac85839c478ac55355c4729.jpg', heroDims: { width: 1200, height: 675 }, inclDims: { width: 1200, height: 675 } },
   tragaluces: { hero: CDN + '6ac85839195f9172ed03ac3f.jpg', incl: CDN + '6ac85838cc7a5a2b73475e82.jpg', heroDims: { width: 1200, height: 675 }, inclDims: { width: 1200, height: 675 } },
   'instalacion-y-reemplazo-de-techos': { hero: CDN + '6ac046f00edabbe5a4a763a0.jpg', incl: CDN + '6ac046ee849322987426388b.jpg' },
 };
