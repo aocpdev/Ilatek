@@ -378,18 +378,18 @@ export const impermeabilizacion = [
     noun: 'sellado de techos de madera',
     h1before: 'Sellado y Protección de Techos de Madera en',
     h1em: 'Puerto Rico',
-    h1after: '.',
-    metaTitle: 'Sellado y Protección de Techos de Madera | Ilatek Techos',
+    h1after: ' desde $250.',
+    metaTitle: 'Sellado y Protección de Techos de Madera desde $250 | Ilatek Techos',
     metaDescription:
-      'Sellado y protección de techos de madera en Puerto Rico desde $350. Tratamiento contra humedad, comején y filtración con garantía escrita. Inspección gratis.',
+      'Sellado y protección de techos de madera en Puerto Rico desde $250. Tratamiento contra humedad, comején y filtración, cotización gratis y garantía escrita.',
     hero: pic('residencial', { alt: 'Sellado y protección de techo de madera en Puerto Rico — {{custom_values.county_name_and_state}}', title: 'Techos de madera · Ilatek Techos', badge: 'Contra humedad y comején' }),
     incl: pic('postconstruccion', { alt: 'Protección de techo de madera por Ilatek Techos en Puerto Rico — tratamiento antihumedad', title: 'Techos de madera · Ilatek Techos', caption: 'Humedad tratada · Madera protegida' }),
     heroSub:
-      'La madera del techo sufre con la humedad, el sol y el comején. Ilatek la sella y protege en {{custom_values.county_name_and_state}} <b>desde $350</b>, cortando la filtración y prolongando la vida de la estructura, con garantía escrita.',
+      'La madera del techo sufre con la humedad, el sol y el comején. Ilatek la sella y protege en {{custom_values.county_name_and_state}} <b>desde $250</b>, cortando la filtración y prolongando la vida de la estructura, con cotización gratis y garantía escrita.',
     facts: [
-      { b: '$350', s: 'por trabajo', label: 'Sellado incluido' },
+      { b: '$250', s: 'por sellado', label: 'Precio de entrada' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
-      { b: '$0', s: 'inspección', label: 'Evaluación gratis' },
+      { b: '$50', s: 'cotización', label: 'Gratis, se agenda con $50 reembolsables' },
     ],
     benefits: [
       { icon: 'drop', h: 'Corta la humedad', p: 'Sellamos las entradas de agua que mantienen la madera húmeda, la causa del deterioro y del comején.' },
@@ -420,14 +420,15 @@ export const impermeabilizacion = [
       ],
     },
     faq: [
-      { q: '¿Cuánto cuesta sellar un techo de madera?', a: 'El sellado y protección de techos de madera de Ilatek <b>comienza desde $350</b>. El precio depende del área, el estado de la madera y el tratamiento necesario. Cotiza para tu número exacto.' },
+      { q: '¿Cuánto cuesta sellar un techo de madera?', a: 'El sellado y protección de techos de madera de Ilatek <b>comienza desde $250</b>. El precio depende del área, el estado de la madera y el tratamiento necesario. La cotización es gratis y se agenda con $50 reembolsables.' },
       { q: '¿Por qué se daña la madera del techo?', a: 'Por <b>humedad constante, sol intenso y comején</b>. El agua que se filtra mantiene la madera húmeda y la vuelve vulnerable a hongos, pudrición y plagas.' },
       { q: '¿Se puede salvar un techo de madera con humedad?', a: '<b>Si el daño no es avanzado, sí</b>: sellamos la filtración, tratamos la humedad y aplicamos protector. Si hay pudrición estructural, te informamos qué partes hay que sustituir.' },
       { q: '¿Qué protector usan para la madera?', a: 'Aplicamos <b>protectores repelentes de agua</b> específicos para madera, que reducen la absorción de humedad y frenan el envejecimiento del material.' },
       { q: '¿El tratamiento contra comején está incluido?', a: 'El sellado previene la humedad que atrae al comején, pero <b>el tratamiento de plagas es un servicio aparte</b>. En la inspección te indicamos si hace falta.' },
       { q: '¿Cuánto tarda el trabajo?', a: 'Un techo de madera residencial se sella y protege en <b>uno a dos días</b>, dependiendo del área y del tratamiento necesario.' },
+      { q: '¿La cotización de mi techo de madera tiene costo?', a: 'La cotización es <b>gratis</b> y se agenda con $50 reembolsables: si aceptas el trabajo, ese monto se acredita al total. Así confirmamos tu fecha sin costo real.' },
       { q: '¿La protección del techo de madera tiene garantía?', a: '<b>Sí.</b> Entregamos garantía de mano de obra por escrito sobre el sellado y la protección aplicada.' },
-      { q: '¿Por qué elegir Ilatek Techos?', a: 'Cortamos la humedad y protegemos la madera con productos correctos, <b>desde $350</b>, con inspección gratis, garantía escrita y cobertura en los 78 municipios de Puerto Rico.' },
+      { q: '¿Por qué elegir Ilatek Techos?', a: 'Cortamos la humedad y protegemos la madera con productos correctos, <b>desde $250</b>, con cotización gratis, garantía escrita y cobertura en los 78 municipios de Puerto Rico.' },
     ],
   }),
 ];

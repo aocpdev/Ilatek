@@ -1,28 +1,28 @@
-# SEO — Sellado y Protección de Techos de Madera en {{custom_values.county_name_and_state}} | Ilatek Techos
+# SEO — Sellado y Protección de Techos de Madera desde $250 en {{custom_values.county_name_and_state}} | Ilatek Techos
 
 Plantilla local Delta System para {{custom_values.county_name_and_state}}. Título, descripción y textos de imágenes sincronizados con los entregables.
 
 ## Meta Tag Title
 
 ```text
-Sellado y Protección de Techos de Madera en {{custom_values.county_name_and_state}} | Ilatek Techos
+Sellado y Protección de Techos de Madera desde $250 en {{custom_values.county_name_and_state}} | Ilatek Techos
 ```
 
 ## Meta Tag Description
 
 ```text
-Sellado y protección de techos de madera en {{custom_values.county_name_and_state}} desde $350. Tratamiento contra humedad, comején y filtración con garantía escrita. Inspección gratis.
+Sellado y protección de techos de madera en {{custom_values.county_name_and_state}} desde $250. Tratamiento contra humedad, comején y filtración, cotización gratis y garantía escrita.
 ```
 
 ## Meta Tag Image
 
-[Imagen social — URL pública](https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f0f30b488137bfa494.jpg)
+[Imagen social — URL pública](https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acbe8c9bd6bb710ca4fc13e.png)
 
 ```text
-https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f0f30b488137bfa494.jpg
+https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acbe8c9bd6bb710ca4fc13e.png
 ```
 
-Copia local: [assets/respaldo/6ac046f0f30b488137bfa494.webp](assets/respaldo/6ac046f0f30b488137bfa494.webp). No usar una ruta local en GHL.
+Copia local: [assets/respaldo/6acbe8c9bd6bb710ca4fc13e.webp](assets/respaldo/6acbe8c9bd6bb710ca4fc13e.webp). No usar una ruta local en GHL.
 
 ## Canonical existente
 
@@ -45,7 +45,7 @@ Custom Value obligatorio: `{{custom_values.county_name_and_state}}`. Usar la eti
 ### Meta Tag Image Alt
 
 ```text
-Sellado y Protección de Techos de Madera en {{custom_values.county_name_and_state}} | Ilatek Techos
+Sellado y Protección de Techos de Madera desde $250 en {{custom_values.county_name_and_state}} | Ilatek Techos
 ```
 
 El HEAD incluye `og:image:alt` y `twitter:image:alt`. Los atributos `alt` y `title` descriptivos de las imágenes usan la misma localidad, conservando lo que representa cada imagen. Las imágenes decorativas mantienen `alt=""` por accesibilidad. Las URLs de medios no son texto SEO y se conservan.
@@ -60,4 +60,4 @@ Configurar `website_url` como dominio sin protocolo ni barra final, por ejemplo 
 
 La URL original del CDN no está disponible. La copia local es la variante WebP del mismo ID, no el JPG original.
 
-Alternativa existente en el repositorio: [imagen WebP](https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f0f30b488137bfa494.webp). Antes de instalar el SEO, comprobar esta URL pública y usarla como Social Image si continúa disponible. El embed y el HEAD de referencia no se modificaron automáticamente.
+Alternativa existente en el repositorio: [imagen WebP](https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6acbe8c9bd6bb710ca4fc13e.webp). Antes de instalar el SEO, comprobar esta URL pública y usarla como Social Image si continúa disponible. El embed y el HEAD de referencia no se modificaron automáticamente.
