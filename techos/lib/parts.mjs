@@ -64,7 +64,16 @@ export function reviewsParts(rootId, cfg) {
 
   const styleMatch = src.match(/<style>\s*\/\* Utilidades compartidas[\s\S]*?<\/style>/);
   if (!styleMatch) throw new Error('No se encontró el CSS de reviews');
-  const style = styleMatch[0];
+  let style = styleMatch[0];
+  // La plantilla fuente (alfombras) define el icono de Google en otro bloque
+  // <style> que este extractor no captura; si falta, se agrega aquí para que
+  // TODA landing generada por build-techos lo lleve (17px en círculo blanco).
+  if (!style.includes('.il-glogo{width:17px')) {
+    style = style.replace(
+      '</style>',
+      '.il-reviews-tab .il-glogo{width:17px;height:17px;flex:none;margin-right:6px;display:inline-flex;align-items:center;justify-content:center;background:#fff;border-radius:50%;padding:2.5px;box-shadow:0 1px 3px rgba(11,16,61,.22)}.il-reviews-tab .il-glogo svg{width:100%;height:100%;display:block}\n</style>'
+    );
+  }
 
   const sectionMatch = src.match(/<section id="ilatek-reviews"[\s\S]*?<\/section>/);
   if (!sectionMatch) throw new Error('No se encontró el markup de reviews');

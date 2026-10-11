@@ -327,12 +327,15 @@ function coberturaCfg(page) {
   };
 }
 
+// Copy del widget de reseñas: mismo texto global de /resenas para que el
+// widget sea textualmente idéntico en todo el sitio (pedido del cliente).
+// El tab del medio sigue retiquetado a "Servicios" en parts.mjs.
 function reviewsCfg(page) {
   return {
-    title: 'Clientes que protegieron su techo con Ilatek.',
-    subtitle: `Reseñas de personas que confiaron en Ilatek Techos para ${page.noun} en Puerto Rico.`,
-    googleTitle: 'Reseñas de Google de clientes de Ilatek Techos',
-    selfieTitle: 'Selfie reviews de clientes de Ilatek Techos',
+    title: 'Reseñas de clientes de Ilatek.',
+    subtitle: 'Reseñas de personas que confiaron en Ilatek para limpieza, mantenimiento y sellado de techos en Puerto Rico. Cambia de pestaña para ver cada fuente.',
+    googleTitle: 'Reseñas de Google de clientes de Ilatek',
+    selfieTitle: 'Reseñas de Limpieza de Ilatek',
   };
 }
 
