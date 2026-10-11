@@ -131,7 +131,7 @@ export const META = {
     procLead: 'El acrílico rinde sobre superficie sana y limpia: sellamos grietas, aplicamos primer y cubrimos con capas reflectivas.',
     price: { amount: '2.00', text: 'desde $2.00 por pie²', unitText: 'por pie² de sellado acrílico' },
     serviceName: 'Sellado Acrílico para Techos en Puerto Rico',
-    serviceDesc: 'Sellado acrílico para techos en Puerto Rico: opción económica y reflectiva para mantenimiento periódico desde $2.00 por pie², con garantía escrita.',
+    serviceDesc: 'Sellado acrílico para techos en Puerto Rico: opción económica y reflectiva para mantenimiento periódico desde $2.00 por pie², con cotización $0 agendada con $50 reembolsables y garantía escrita.',
     whyQ: '¿Por qué elegir Ilatek Techos para el sellado acrílico?',
     whyA: 'Es la opción más económica con preparación correcta: lava a presión, sella grietas y cubre con capas reflectivas que bajan el calor del techo, disponible para recoatar cada ciclo de mantenimiento desde $2.00 por pie².',
   },

@@ -16,13 +16,13 @@
   ],
   "socialImage": {
     "role": "social-image",
-    "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f52c503e697d5ff222.jpg",
-    "file": "assets/respaldo/6ac046f52c503e697d5ff222.webp",
+    "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac72671d5f4a8af439f5cce.jpg",
+    "file": "assets/respaldo/6ac72671d5f4a8af439f5cce.webp",
     "status": "local-optimized-backup",
-    "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f52c503e697d5ff222.webp",
+    "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac72671d5f4a8af439f5cce.webp",
     "note": "Original CDN no disponible; se conserva la variante WebP del mismo ID existente en el repositorio. No se modificó el embed.",
-    "bytes": 100268,
-    "sha256": "8751ea9067f5762bc9acc72d2577235fb659d2715f185a0d44614d20755adcf3"
+    "bytes": 91248,
+    "sha256": "1f2a7aafcd4a7a2bd486eea828590ba2cdbb7aed9beec0d16693c045ae30c97f"
   },
   "assets": [
     {
@@ -43,11 +43,11 @@
     },
     {
       "role": "media-or-fallback",
-      "publicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f52c503e697d5ff222.webp",
-      "file": "assets/media/6ac046f52c503e697d5ff222.webp",
+      "publicUrl": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8583c195f9172ed03acbf.jpg",
+      "file": "assets/media/6ac8583c195f9172ed03acbf.jpg",
       "status": "local-copy",
-      "bytes": 100268,
-      "sha256": "8751ea9067f5762bc9acc72d2577235fb659d2715f185a0d44614d20755adcf3"
+      "bytes": 871225,
+      "sha256": "3bd3640917c266b57ac70b2288ff3f8e56c7001c4c13b9a1de59d5fe27bb84d0"
     },
     {
       "role": "media-or-fallback",
@@ -58,14 +58,28 @@
       "sha256": "bc35c95678e7342d208c83524b556531f7567de91fc4fd2e2da074aec951cf39"
     },
     {
-      "role": "social-image",
-      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f52c503e697d5ff222.jpg",
-      "file": "assets/respaldo/6ac046f52c503e697d5ff222.webp",
-      "status": "local-optimized-backup",
-      "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f52c503e697d5ff222.webp",
-      "note": "Original CDN no disponible; se conserva la variante WebP del mismo ID existente en el repositorio. No se modificó el embed.",
-      "bytes": 100268,
-      "sha256": "8751ea9067f5762bc9acc72d2577235fb659d2715f185a0d44614d20755adcf3"
+      "role": "media-or-fallback",
+      "publicUrl": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8583ccc7a5a2b73475f64.jpg",
+      "file": "assets/media/6ac8583ccc7a5a2b73475f64.jpg",
+      "status": "local-copy",
+      "bytes": 881105,
+      "sha256": "c3ecb413cfb0a2be41c5d0f0ae43ce165a0b04febab26244ca9fa8571c14bd0a"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8583c195f9172ed03acbf.jpg",
+      "file": "assets/media/6ac8583c195f9172ed03acbf.jpg",
+      "status": "local-copy",
+      "bytes": 871225,
+      "sha256": "3bd3640917c266b57ac70b2288ff3f8e56c7001c4c13b9a1de59d5fe27bb84d0"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8583ccc7a5a2b73475f64.jpg",
+      "file": "assets/media/6ac8583ccc7a5a2b73475f64.jpg",
+      "status": "local-copy",
+      "bytes": 881105,
+      "sha256": "c3ecb413cfb0a2be41c5d0f0ae43ce165a0b04febab26244ca9fa8571c14bd0a"
     },
     {
       "role": "media-or-fallback",
@@ -162,6 +176,16 @@
       "status": "local-copy",
       "bytes": 941,
       "sha256": "4bebe72147bfd89f46554899dc5228e3436d48bac1ce52da439c14ff7f62d7ba"
+    },
+    {
+      "role": "social-image",
+      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac72671d5f4a8af439f5cce.jpg",
+      "file": "assets/respaldo/6ac72671d5f4a8af439f5cce.webp",
+      "status": "local-optimized-backup",
+      "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac72671d5f4a8af439f5cce.webp",
+      "note": "Original CDN no disponible; se conserva la variante WebP del mismo ID existente en el repositorio. No se modificó el embed.",
+      "bytes": 91248,
+      "sha256": "1f2a7aafcd4a7a2bd486eea828590ba2cdbb7aed9beec0d16693c045ae30c97f"
     }
   ]
 }

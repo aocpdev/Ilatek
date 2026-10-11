@@ -327,7 +327,7 @@ export const sellado = [
     facts: [
       { b: '$2.00', s: 'por pie²', label: 'Opción económica' },
       { b: '7–10', s: 'años', label: 'Durabilidad' },
-      { b: '78', s: 'municipios', label: 'Cobertura en PR' },
+      { b: '$0', s: 'cotización', label: 'Gratis, se agenda con $50 reembolsables' },
     ],
     benefits: [
       { icon: 'tag', h: 'El más económico', p: 'Buen sellado a menor precio por pie²: ideal cuando buscas mantener el techo protegido con presupuesto ajustado.' },
@@ -365,6 +365,7 @@ export const sellado = [
       { q: '¿Se puede aplicar acrílico sobre otro sellador?', a: '<b>Depende del estado del sellador anterior.</b> Si está firme y limpio, se prepara y se recubre; si está suelto o vencido, hay que removerlo primero. Lo evaluamos en la inspección.' },
       { q: '¿Cuánto tarda la aplicación?', a: 'Un techo residencial se cubre en <b>1 a 2 días</b>, incluyendo lavado a presión, sellado de grietas y capas. El secado depende del clima.' },
       { q: '¿El sellado acrílico tiene garantía?', a: '<b>Sí.</b> Entregamos garantía de mano de obra por escrito sobre el sistema aplicado, con materiales certificados.' },
+      { q: '¿Cuánto cuesta la inspección para el sellado acrílico?', a: '<b>Nada.</b> La cotización es $0 y se agenda con $50 reembolsables. Evaluamos el estado del techo y del coating previo, y te damos el precio por escrito sin compromiso.' },
       { q: '¿Por qué elegir Ilatek Techos?', a: 'La opción más económica con preparación correcta, <b>desde $2.00 por pie²</b>, inspección gratis, garantía escrita y cobertura en los 78 municipios de Puerto Rico.' },
     ],
   }),
