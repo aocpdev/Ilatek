@@ -11,7 +11,7 @@ Impermeabilización de Techos Planos (EPDM, TPO) en {{custom_values.county_name_
 ## Meta Tag Description
 
 ```text
-Impermeabilización de techos planos en {{custom_values.county_name_and_state}} desde $3.50 por pie². Membranas EPDM, TPO y asfálticas selladas, cotización $0 agendada con $50 reembolsables y garantía escrita.
+Impermeabilización de techos planos en {{custom_values.county_name_and_state}} desde $250. Membranas EPDM, TPO y asfálticas selladas, cotización $0 agendada con $50 reembolsables y garantía escrita.
 ```
 
 ## Meta Tag Image

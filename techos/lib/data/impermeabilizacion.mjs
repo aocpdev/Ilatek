@@ -145,13 +145,13 @@ export const impermeabilizacion = [
     h1after: ' (EPDM, TPO y asfáltica).',
     metaTitle: 'Impermeabilización de Techos Planos (EPDM, TPO) | Ilatek Techos',
     metaDescription:
-      'Impermeabilización de techos planos en Puerto Rico desde $3.50 por pie². Membranas EPDM, TPO y asfálticas selladas, cotización $0 agendada con $50 reembolsables y garantía escrita.',
+      'Impermeabilización de techos planos en Puerto Rico desde $250. Membranas EPDM, TPO y asfálticas selladas, cotización $0 agendada con $50 reembolsables y garantía escrita.',
     hero: pic('comercial', { alt: 'Impermeabilización de techo plano en Puerto Rico — {{custom_values.county_name_and_state}}', title: 'Techos planos · Ilatek Techos', badge: 'EPDM · TPO · Asfáltica' }),
     incl: pic('industrial', { alt: 'Membrana impermeabilizante en techo plano por Ilatek Techos en Puerto Rico', title: 'Techos planos y membranas · Ilatek Techos', caption: 'Membrana continua · Drenaje correcto' }),
     heroSub:
-      'Los techos planos acumulan agua y exigen una membrana que cubra toda la superficie sin fallas. Ilatek impermeabiliza techos planos en {{custom_values.county_name_and_state}} <b>desde $3.50 por pie²</b>, corrigiendo drenaje, con cotización $0 y garantía escrita.',
+      'Los techos planos acumulan agua y exigen una membrana que cubra toda la superficie sin fallas. Ilatek impermeabiliza techos planos en {{custom_values.county_name_and_state}} <b>desde $250</b>, corrigiendo drenaje, con cotización $0 y garantía escrita.',
     facts: [
-      { b: '$3.50', s: 'por pie²', label: 'Sistema completo' },
+      { b: '$250', s: 'por trabajo', label: 'Precio de entrada' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
       { b: '$0', s: 'cotización', label: 'Gratis, se agenda con $50 reembolsables' },
     ],
@@ -184,7 +184,7 @@ export const impermeabilizacion = [
       ],
     },
     faq: [
-      { q: '¿Cuánto cuesta impermeabilizar un techo plano?', a: 'La impermeabilización de techos planos de Ilatek <b>comienza desde $3.50 por pie²</b>. El precio depende del área, el tipo de membrana y el estado del drenaje. La cotización es $0 y se agenda con $50 reembolsables.' },
+      { q: '¿Cuánto cuesta impermeabilizar un techo plano?', a: 'La impermeabilización de techos planos de Ilatek <b>comienza desde $250</b>. El precio depende del área, el tipo de membrana y el estado del drenaje. La cotización es $0 y se agenda con $50 reembolsables.' },
       { q: '¿Por qué se filtra un techo plano?', a: 'Por <b>membranas vencidas, juntas mal selladas, desagües tapados y empozamientos</b>. Al no tener pendiente pronunciada, el agua se queda más tiempo y encuentra cualquier falla.' },
       { q: '¿Qué membrana es mejor, EPDM o TPO?', a: '<b>Depende del uso.</b> El TPO blanco refleja el calor y se suelda por calor; el EPDM es más elástico y tolera el movimiento. Elegimos según tránsito, exposición y presupuesto.' },
       { q: '¿Cuánto dura una membrana en techo plano?', a: 'Con buena instalación, <b>de 10 a 20 años</b> según el tipo. Las inspecciones periódicas permiten reparar puntos antes de que falle toda la superficie.' },
@@ -192,7 +192,7 @@ export const impermeabilizacion = [
       { q: '¿Cuánto tarda el trabajo?', a: 'Un techo plano residencial toma <b>2 a 4 días</b>; superficies comerciales grandes requieren más tiempo. Te damos el estimado en la cotización.' },
       { q: '¿La cotización de mi techo plano tiene costo?', a: 'La cotización es <b>$0</b> y se agenda con $50 reembolsables: si aceptas el trabajo, ese monto se acredita al total. Así confirmamos tu fecha sin costo real.' },
       { q: '¿La impermeabilización del techo plano tiene garantía?', a: '<b>Sí.</b> Entregamos garantía de mano de obra por escrito sobre el sistema aplicado, con membranas certificadas.' },
-      { q: '¿Por qué elegir Ilatek Techos?', a: 'Corregimos drenaje y colocamos la membrana correcta, <b>desde $3.50 por pie²</b>, con cotización $0, garantía escrita y cobertura en los 78 municipios de Puerto Rico.' },
+      { q: '¿Por qué elegir Ilatek Techos?', a: 'Corregimos drenaje y colocamos la membrana correcta, <b>desde $250</b>, con cotización $0, garantía escrita y cobertura en los 78 municipios de Puerto Rico.' },
     ],
   }),
 
