@@ -16,13 +16,13 @@ Sellado y protección de techos de madera en {{custom_values.county_name_and_sta
 
 ## Meta Tag Image
 
-[Imagen social — URL pública](https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acbe8c9bd6bb710ca4fc13e.png)
+[Imagen social — URL pública](https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acbe702bbad531ac893ece2.png)
 
 ```text
-https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acbe8c9bd6bb710ca4fc13e.png
+https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acbe702bbad531ac893ece2.png
 ```
 
-Copia local: [assets/respaldo/6acbe8c9bd6bb710ca4fc13e.webp](assets/respaldo/6acbe8c9bd6bb710ca4fc13e.webp). No usar una ruta local en GHL.
+Copia local: [assets/respaldo/6acbe702bbad531ac893ece2.webp](assets/respaldo/6acbe702bbad531ac893ece2.webp). No usar una ruta local en GHL.
 
 ## Canonical existente
 
@@ -60,4 +60,4 @@ Configurar `website_url` como dominio sin protocolo ni barra final, por ejemplo 
 
 La URL original del CDN no está disponible. La copia local es la variante WebP del mismo ID, no el JPG original.
 
-Alternativa existente en el repositorio: [imagen WebP](https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6acbe8c9bd6bb710ca4fc13e.webp). Antes de instalar el SEO, comprobar esta URL pública y usarla como Social Image si continúa disponible. El embed y el HEAD de referencia no se modificaron automáticamente.
+Alternativa existente en el repositorio: [imagen WebP](https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6acbe702bbad531ac893ece2.webp). Antes de instalar el SEO, comprobar esta URL pública y usarla como Social Image si continúa disponible. El embed y el HEAD de referencia no se modificaron automáticamente.

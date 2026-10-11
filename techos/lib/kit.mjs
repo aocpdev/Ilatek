@@ -42,6 +42,11 @@ export const ASSETS = {
 // silicona, membrana, poliuretano, acrílico, teja, limpieza, canaletas, lavado,
 // tragaluces). Ver el informe para las páginas que la librería no cubre del todo.
 export const CDN = 'https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/';
+// Imagen social dedicada por slug (og:image / twitter:image). Por defecto el
+// HEAD usa el raw del hero; si el slug tiene `social` en TECHOS_IMG se usa esa foto.
+export const TECHOS_IMG_SOCIAL = {
+  'techos-de-madera': CDN + '6acbe702bbad531ac893ece2.png',
+};
 export const TECHOS_IMG = {
   techos: { hero: CDN + '6ac046fe8493229874263a27.jpg', incl: CDN + '6ac046fef30b488137bfa568.jpg' },
   'reparacion-de-techos': { hero: CDN + '6ac046f30edabbe5a4a763bc.jpg', incl: CDN + '6ac046fd02569bee7cbccca0.jpg' },
@@ -112,6 +117,7 @@ export function mk(p) {
   // tal cual. La foto de GHL sigue siendo `raw`, el respaldo del <img>.
   const hero = ov && ov.hero ? { ...p.hero, webp: ov.heroWebp || optimized(ov.hero), raw: ov.hero, dims: ov.heroDims } : p.hero;
   const incl = ov && ov.incl ? { ...p.incl, webp: ov.inclWebp || optimized(ov.incl), raw: ov.incl, dims: ov.inclDims } : p.incl;
+  const socialRaw = (typeof TECHOS_IMG_SOCIAL !== 'undefined' && TECHOS_IMG_SOCIAL[p.slug]) || null;
 
   const faq = (p.faq || [])
     .filter((f) => !WHY_GENERIC.test(f.q))
@@ -122,6 +128,7 @@ export function mk(p) {
     ...p,
     hero,
     incl,
+    ...(socialRaw ? { socialRaw } : {}),
     noun,
     faq,
     benTitle: meta.benTitle,

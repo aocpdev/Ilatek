@@ -62,7 +62,7 @@ const headSeo = [
     const url = 'https://{{custom_values.website_url}}/' + (p.slug === 'techos' ? 'home' : p.slug);
     const t = esc(p.metaTitle);
     const d = esc(p.metaDescription);
-    const im = esc(p.hero.raw);
+    const im = esc(p.socialRaw || p.hero.raw);
     return [
       '<!-- ▼▼ /' + p.slug + ' ▼▼ -->',
       '<title>' + t + '</title>',
