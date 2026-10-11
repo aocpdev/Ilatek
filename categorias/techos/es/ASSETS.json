@@ -187,11 +187,11 @@
     },
     {
       "role": "media-or-fallback",
-      "publicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f585f560d166699993.webp",
-      "file": "assets/media/6ac046f585f560d166699993.webp",
+      "publicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac85838c478ac55355c46f2.webp",
+      "file": "assets/media/6ac85838c478ac55355c46f2.webp",
       "status": "local-copy",
-      "bytes": 182992,
-      "sha256": "09056d9367406c36ba9f01daaa8c0c7c786b99c7866f580a664357157e75158d"
+      "bytes": 122664,
+      "sha256": "ebe331eabd2163ad60ac829b516799f18d27cb5d1129eb8353b23d9557e777d4"
     },
     {
       "role": "social-image",

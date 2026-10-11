@@ -16,13 +16,11 @@
   ],
   "socialImage": {
     "role": "social-image",
-    "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046ec3b8e61adf5631fa2.jpg",
-    "file": "assets/respaldo/6ac046ec3b8e61adf5631fa2.webp",
-    "status": "local-optimized-backup",
-    "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046ec3b8e61adf5631fa2.webp",
-    "note": "Original CDN no disponible; se conserva la variante WebP del mismo ID existente en el repositorio. No se modificó el embed.",
-    "bytes": 158894,
-    "sha256": "a53dce73d688be7ea56f2a2c7a15e55212214ede37af296b4138fdd3c7c832fd"
+    "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac85838195f9172ed03ac13.jpg",
+    "file": "assets/meta-image.jpg",
+    "status": "local-copy",
+    "bytes": 783811,
+    "sha256": "518f3fad2ff544ad4d74a70de39040d9f5fb3ca17a404de26fbc7696bc3f0bd6"
   },
   "assets": [
     {
@@ -43,11 +41,11 @@
     },
     {
       "role": "media-or-fallback",
-      "publicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046ec3b8e61adf5631fa2.webp",
-      "file": "assets/media/6ac046ec3b8e61adf5631fa2.webp",
+      "publicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac85838195f9172ed03ac13.webp",
+      "file": "assets/media/6ac85838195f9172ed03ac13.webp",
       "status": "local-copy",
-      "bytes": 158894,
-      "sha256": "a53dce73d688be7ea56f2a2c7a15e55212214ede37af296b4138fdd3c7c832fd"
+      "bytes": 113852,
+      "sha256": "61d0ca20e421d1e9a61a427c50f8b55b281589e758194ac70f597785fa5e05d1"
     },
     {
       "role": "media-or-fallback",
@@ -59,31 +57,27 @@
     },
     {
       "role": "media-or-fallback",
-      "publicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f585f560d166699993.webp",
-      "file": "assets/media/6ac046f585f560d166699993.webp",
+      "publicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac85838c478ac55355c46f2.webp",
+      "file": "assets/media/6ac85838c478ac55355c46f2.webp",
       "status": "local-copy",
-      "bytes": 182992,
-      "sha256": "09056d9367406c36ba9f01daaa8c0c7c786b99c7866f580a664357157e75158d"
+      "bytes": 122664,
+      "sha256": "ebe331eabd2163ad60ac829b516799f18d27cb5d1129eb8353b23d9557e777d4"
     },
     {
       "role": "social-image",
-      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046ec3b8e61adf5631fa2.jpg",
-      "file": "assets/respaldo/6ac046ec3b8e61adf5631fa2.webp",
-      "status": "local-optimized-backup",
-      "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046ec3b8e61adf5631fa2.webp",
-      "note": "Original CDN no disponible; se conserva la variante WebP del mismo ID existente en el repositorio. No se modificó el embed.",
-      "bytes": 158894,
-      "sha256": "a53dce73d688be7ea56f2a2c7a15e55212214ede37af296b4138fdd3c7c832fd"
+      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac85838195f9172ed03ac13.jpg",
+      "file": "assets/meta-image.jpg",
+      "status": "local-copy",
+      "bytes": 783811,
+      "sha256": "518f3fad2ff544ad4d74a70de39040d9f5fb3ca17a404de26fbc7696bc3f0bd6"
     },
     {
       "role": "media-or-fallback",
-      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f585f560d166699993.jpg",
-      "file": "assets/respaldo/6ac046f585f560d166699993.webp",
-      "status": "local-optimized-backup",
-      "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f585f560d166699993.webp",
-      "note": "Original CDN no disponible; se conserva la variante WebP del mismo ID existente en el repositorio. No se modificó el embed.",
-      "bytes": 182992,
-      "sha256": "09056d9367406c36ba9f01daaa8c0c7c786b99c7866f580a664357157e75158d"
+      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac85838c478ac55355c46f2.jpg",
+      "file": "assets/media/6ac85838c478ac55355c46f2.jpg",
+      "status": "local-copy",
+      "bytes": 235532,
+      "sha256": "1d6c9b6f7738ab23e07bce7a25318bf7ec7cb7ef6fdf74abe85819afff726e1c"
     },
     {
       "role": "media-or-fallback",
