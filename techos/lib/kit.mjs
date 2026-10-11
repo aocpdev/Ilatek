@@ -16,7 +16,7 @@ const OPT = WEBP + 'techos/';
 // del remoto) se sirven por el transform de imágenes de GHL, siempre disponible
 // aunque el CDN filesafe exija headers de navegador.
 const LCTR = 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/';
-const SERVE_LCTR = new Set(['6ac85838c478ac55355c46f2.jpg', '6ac85838195f9172ed03ac13.jpg', '6ac8583a195f9172ed03ac5f.jpg', '6ac8583abbad531ac84495e2.jpg', '6ac85834cc7a5a2b73475e12.jpg', '6ac8583bcc7a5a2b73475f28.jpg', '6acbe8c9bd6bb710ca4fc13e.png', '6acbe8c9195f9172ed52d037.png', '6acbee8cc478ac5535ac053c.png', '6acbee8c195f9172ed536a77.png', '6acbef68c478ac5535ac18f0.png', '6acbf29abbad531ac8950f9b.png', '6acbf2dd195f9172ed53ce9a.png', '6acbf1fabd6bb710ca50a783.png', '6ac85834bbad531ac8449522.jpg', '6ac85834cc7a5a2b73475e01.jpg', '6ac72670c478ac55353c265b.jpg']);
+const SERVE_LCTR = new Set(['6ac85838c478ac55355c46f2.jpg', '6ac85838195f9172ed03ac13.jpg', '6ac8583a195f9172ed03ac5f.jpg', '6ac8583abbad531ac84495e2.jpg', '6ac85834cc7a5a2b73475e12.jpg', '6ac8583bcc7a5a2b73475f28.jpg', '6acbe8c9bd6bb710ca4fc13e.png', '6acbe8c9195f9172ed52d037.png', '6acbee8cc478ac5535ac053c.png', '6acbee8c195f9172ed536a77.png', '6acbef68c478ac5535ac18f0.png', '6acbf29abbad531ac8950f9b.png', '6acbf2dd195f9172ed53ce9a.png', '6acbf1fabd6bb710ca50a783.png', '6ac85834bbad531ac8449522.jpg', '6ac85834cc7a5a2b73475e01.jpg', '6ac72670c478ac55353c265b.jpg', '6acbf7e5bbad531ac89598d2.png', '6acbf9494770fb500bf7712f.png', '6acbf7e5bd6bb710ca513950.png']);
 export function optimized(url) {
   const name = url.replace(CDN, '');
   if (SERVE_LCTR.has(name)) return LCTR + name;
@@ -49,6 +49,7 @@ export const TECHOS_IMG_SOCIAL = {
   'techos-de-teja': CDN + '6acbef68c478ac5535ac18f0.png',
   'techos-de-zinc': CDN + '6acbf1fabd6bb710ca50a783.png',
   'techos-planos': CDN + '6ac72670c478ac55353c265b.jpg',
+  'techos-por-segmento': CDN + '6acbf7e5bd6bb710ca513950.png',
 };
 export const TECHOS_IMG = {
   techos: { hero: CDN + '6ac046fe8493229874263a27.jpg', incl: CDN + '6ac046fef30b488137bfa568.jpg' },
@@ -67,11 +68,11 @@ export const TECHOS_IMG = {
   'impermeabilizacion-de-techos': { hero: CDN + '6ac046f5849322987426393b.jpg', incl: CDN + '6ac046f802569bee7cbccc2c.jpg' },
   'techos-de-concreto': { hero: CDN + '6ac85834cc7a5a2b73475e12.jpg', incl: CDN + '6ac8583bcc7a5a2b73475f28.jpg', heroDims: { width: 1200, height: 675 }, inclDims: { width: 1200, height: 675 } },
   'techos-planos': { hero: CDN + '6ac85834bbad531ac8449522.jpg', incl: CDN + '6ac85834cc7a5a2b73475e01.jpg', heroDims: { width: 1200, height: 675 }, inclDims: { width: 1200, height: 675 } },
+  'techos-por-segmento': { hero: CDN + '6acbf7e5bbad531ac89598d2.png', incl: CDN + '6acbf9494770fb500bf7712f.png', heroDims: { width: 1200, height: 675 }, inclDims: { width: 1200, height: 675 } },
   'techos-de-zinc': { hero: CDN + '6acbf29abbad531ac8950f9b.png', incl: CDN + '6acbf2dd195f9172ed53ce9a.png', heroDims: { width: 1200, height: 675 }, inclDims: { width: 1200, height: 675 } },
   'techos-de-asfalto': { hero: CDN + '6ac046f82c503e697d5ff24e.jpg', incl: CDN + '6ac046f57bca8cd20c4021df.jpg' },
   'techos-de-teja': { hero: CDN + '6acbee8cc478ac5535ac053c.png', incl: CDN + '6acbee8c195f9172ed536a77.png', heroDims: { width: 1200, height: 675 }, inclDims: { width: 1200, height: 675 } },
   'techos-de-madera': { hero: CDN + '6acbe8c9bd6bb710ca4fc13e.png', incl: CDN + '6acbe8c9195f9172ed52d037.png', heroDims: { width: 1200, height: 675 }, inclDims: { width: 1200, height: 675 } },
-  'techos-por-segmento': { hero: CDN + '6ac046f0150d6ea53dbd50a0.jpg', incl: CDN + '6ac046ee150d6ea53dbd5051.jpg' },
   'sellado-de-techos-residencial': { hero: CDN + '6ac046f07bca8cd20c4021a3.jpg', incl: CDN + '6ac0427e0edabbe5a4a724d7.jpg' },
   'sellado-de-techos-comercial': { hero: CDN + '6ac046ee85f560d1666998eb.jpg', incl: CDN + '6ac046f00edabbe5a4a763a0.jpg' },
   'sellado-de-techos-industrial': { hero: CDN + '6ac046ee0edabbe5a4a76380.jpg', incl: CDN + '6ac046ee849322987426388b.jpg' },

@@ -11,18 +11,18 @@ Sellado de Techos Residencial, Comercial e Industrial en {{custom_values.county_
 ## Meta Tag Description
 
 ```text
-Sellado y reparación de techos residencial, comercial e industrial en {{custom_values.county_name_and_state}} desde $2.50 por pie². Sistemas por segmento con garantía escrita e inspección gratis.
+Sellado y reparación de techos residencial, comercial e industrial en {{custom_values.county_name_and_state}} desde $250. Sistemas por segmento, cotización $0 agendada con $50 reembolsables y garantía escrita.
 ```
 
 ## Meta Tag Image
 
-[Imagen social — URL pública](https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f0150d6ea53dbd50a0.jpg)
+[Imagen social — URL pública](https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acbf7e5bd6bb710ca513950.png)
 
 ```text
-https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f0150d6ea53dbd50a0.jpg
+https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acbf7e5bd6bb710ca513950.png
 ```
 
-Copia local: [assets/respaldo/6ac046f0150d6ea53dbd50a0.webp](assets/respaldo/6ac046f0150d6ea53dbd50a0.webp). No usar una ruta local en GHL.
+Copia local: [assets/respaldo/6acbf7e5bd6bb710ca513950.webp](assets/respaldo/6acbf7e5bd6bb710ca513950.webp). No usar una ruta local en GHL.
 
 ## Canonical existente
 
@@ -60,4 +60,4 @@ Configurar `website_url` como dominio sin protocolo ni barra final, por ejemplo 
 
 La URL original del CDN no está disponible. La copia local es la variante WebP del mismo ID, no el JPG original.
 
-Alternativa existente en el repositorio: [imagen WebP](https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f0150d6ea53dbd50a0.webp). Antes de instalar el SEO, comprobar esta URL pública y usarla como Social Image si continúa disponible. El embed y el HEAD de referencia no se modificaron automáticamente.
+Alternativa existente en el repositorio: [imagen WebP](https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6acbf7e5bd6bb710ca513950.webp). Antes de instalar el SEO, comprobar esta URL pública y usarla como Social Image si continúa disponible. El embed y el HEAD de referencia no se modificaron automáticamente.

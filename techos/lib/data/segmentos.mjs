@@ -12,7 +12,7 @@ export const segmentos = [
     h1after: '.',
     metaTitle: 'Sellado de Techos Residencial, Comercial e Industrial | Ilatek Techos',
     metaDescription:
-      'Sellado y reparación de techos residencial, comercial e industrial en Puerto Rico desde $2.50 por pie². Sistemas por segmento con garantía escrita e inspección gratis.',
+      'Sellado y reparación de techos residencial, comercial e industrial en Puerto Rico desde $250. Sistemas por segmento, cotización $0 agendada con $50 reembolsables y garantía escrita.',
     hero: pic('industrial', {
       alt: 'Sellado de techos residencial, comercial e industrial de Ilatek Techos en Puerto Rico',
       title: 'Techos por segmento · Ilatek Techos',
@@ -24,11 +24,11 @@ export const segmentos = [
       caption: 'Sistema según el uso del techo',
     }),
     heroSub:
-      'No es lo mismo el techo de una casa que el de un edificio comercial: el tránsito, el tamaño y el horario cambian el sistema. Ilatek sella los tres segmentos en {{custom_values.county_name_and_state}} <b>desde $2.50 por pie²</b>, con garantía escrita.',
+      'No es lo mismo el techo de una casa que el de un edificio comercial: el tránsito, el tamaño y el horario cambian el sistema. Ilatek sella los tres segmentos en {{custom_values.county_name_and_state}} <b>desde $250</b>, con cotización $0 y garantía escrita.',
     facts: [
-      { b: '$2.50', s: 'por pie²', label: 'Precio base' },
+      { b: '$250', s: 'por sellado', label: 'Precio de entrada' },
       { b: '3', s: 'segmentos', label: 'Cubiertos' },
-      { b: '78', s: 'municipios', label: 'Cobertura en PR' },
+      { b: '$0', s: 'cotización', label: 'Gratis, se agenda con $50 reembolsables' },
     ],
     benefits: [
       { icon: 'home', h: 'Residencial sin complicarte', p: 'Coordinamos la visita, protegemos tu espacio y trabajamos sin interrumpir la rutina de tu familia.' },
@@ -61,7 +61,7 @@ export const segmentos = [
       cta: { slug: 'cotizacion', label: 'Solicita tu cotización gratis' },
     },
     faq: [
-      { q: '¿Cuánto cuesta sellar un techo residencial, comercial o industrial?', a: 'El sellado de techos de Ilatek <b>comienza desde $2.50 por pie²</b> en todos los segmentos. El precio varía según el sistema, el área y el tipo de superficie. Para proyectos grandes cotizamos por pie² con descuento de escala.' },
+      { q: '¿Cuánto cuesta sellar un techo residencial, comercial o industrial?', a: 'El sellado de techos de Ilatek <b>comienza desde $250</b> en todos los segmentos. El precio varía según el sistema, el área y el tipo de superficie. Para proyectos grandes cotizamos por pie² con descuento de escala. La cotización es $0 y se agenda con $50 reembolsables.' },
       { q: '¿Qué diferencia hay entre sellado residencial, comercial e industrial?', a: 'Cambia el <b>sistema y la logística</b>: el residencial prioriza el trato y el cuidado del espacio; el comercial, la continuidad del negocio; el industrial, la escala y la resistencia de los materiales.' },
       { q: '¿Trabajan en edificios comerciales sin cerrar el negocio?', a: '<b>Sí.</b> Planificamos por fases y horarios para que tu negocio siga operando mientras sellamos el techo, minimizando interrupciones.' },
       { q: '¿Sellan techos industriales de gran superficie?', a: 'Sí: manejamos <b>naves, plantas y galpones</b> de gran tamaño con membranas y sistemas de alta resistencia, y documentamos el trabajo para tu expediente.' },
