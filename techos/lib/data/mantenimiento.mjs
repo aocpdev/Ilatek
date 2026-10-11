@@ -380,15 +380,15 @@ export const mantenimiento = [
     h1after: ': sellado e instalación.',
     metaTitle: 'Tragaluces y Skylights para Techos | Ilatek Techos',
     metaDescription:
-      'Sellado e instalación de tragaluces y skylights en Puerto Rico desde $450. Ilumina tu espacio sin filtraciones ni humedad. Inspección gratis y garantía escrita.',
+      'Sellado e instalación de tragaluces y skylights en Puerto Rico desde $250. Ilumina tu espacio sin filtraciones ni humedad. Cotización $0 agendada con $50 reembolsables y garantía escrita.',
     hero: pic('residencial', { alt: 'Tragaluz y skylight en techo de Puerto Rico — {{custom_values.county_name_and_state}}', title: 'Tragaluces y skylights · Ilatek Techos', badge: 'Luz sin filtraciones' }),
     incl: pic('postconstruccion', { alt: 'Instalación y sellado de tragaluz por Ilatek Techos en Puerto Rico — skylight sin humedad', title: 'Tragaluces · Ilatek Techos', caption: 'Sellado perimetral · Sin humedad' }),
     heroSub:
-      'Los tragaluces dan luz natural, pero son un punto clásico de filtraciones si no están bien sellados. Ilatek instala y sella tragaluces en {{custom_values.county_name_and_state}} <b>desde $450</b>, con inspección gratis y garantía escrita.',
+      'Los tragaluces dan luz natural, pero son un punto clásico de filtraciones si no están bien sellados. Ilatek instala y sella tragaluces en {{custom_values.county_name_and_state}} <b>desde $250</b>, con cotización $0 y garantía escrita.',
     facts: [
-      { b: '$450', s: 'por trabajo', label: 'Sellado incluido' },
+      { b: '$250', s: 'por trabajo', label: 'Sellado incluido' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
-      { b: '$0', s: 'inspección', label: 'Evaluación gratis' },
+      { b: '$0', s: 'cotización', label: 'Gratis, se agenda con $50 reembolsables' },
     ],
     benefits: [
       { icon: 'drop', h: 'Sellado perimetral', p: 'La filtración de un tragaluz casi siempre viene del sello perimetral: lo reforzamos para cerrar el paso del agua.' },
@@ -419,14 +419,14 @@ export const mantenimiento = [
       ],
     },
     faq: [
-      { q: '¿Cuánto cuesta instalar o sellar un tragaluz?', a: 'El trabajo de tragaluces de Ilatek <b>comienza desde $450</b>, dependiendo de si es sellado de uno existente o instalación nueva. El precio varía según el tamaño y el tipo de techo. Cotiza para tu número exacto.' },
+      { q: '¿Cuánto cuesta instalar o sellar un tragaluz?', a: 'El trabajo de tragaluces de Ilatek <b>comienza desde $250</b>, dependiendo de si es sellado de uno existente o instalación nueva. El precio varía según el tamaño y el tipo de techo. La cotización es $0 y se agenda con $50 reembolsables.' },
       { q: '¿Por qué filtra agua un tragaluz?', a: 'Casi siempre por el <b>sellado perimetral vencido o un flashing mal integrado</b>. El agua se cuela por el borde, no por el vidrio, y aparece como mancha o goteo en el techo interior.' },
       { q: '¿Se puede reparar un tragaluz que filtra?', a: '<b>Sí.</b> En la mayoría de los casos reforzamos el sellado perimetral y corregimos el remate; si el tragaluz está mal instalado, se corrige el encuentro con el techo.' },
       { q: '¿Instalan tragaluces nuevos?', a: '<b>Sí.</b> Instalamos tragaluces con el sistema impermeable correcto desde el inicio, para que entreguen luz natural sin filtraciones.' },
       { q: '¿El tragaluz afecta el sellado general del techo?', a: 'Es un punto crítico: <b>cualquier penetración en el techo es un lugar propenso a filtrar</b>, por eso su sellado debe ser especialmente cuidadoso.' },
       { q: '¿Cuánto tarda el trabajo?', a: 'El sellado de un tragaluz existente suele tomar <b>un día</b>; una instalación nueva depende del tamaño y del tipo de techo, generalmente uno a dos días.' },
       { q: '¿El trabajo del tragaluz tiene garantía?', a: '<b>Sí.</b> Entregamos garantía de mano de obra por escrito sobre el sellado o la instalación realizada.' },
-      { q: '¿Por qué elegir Ilatek Techos?', a: 'Sellamos e instalamos tragaluces sin filtraciones, <b>desde $450</b>, con inspección gratis, garantía escrita y cobertura en los 78 municipios de Puerto Rico.' },
+      { q: '¿Por qué elegir Ilatek Techos?', a: 'Sellamos e instalamos tragaluces sin filtraciones, <b>desde $250</b>, con cotización $0, garantía escrita y cobertura en los 78 municipios de Puerto Rico.' },
     ],
   }),
 
