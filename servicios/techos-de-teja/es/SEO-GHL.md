@@ -1,28 +1,28 @@
-# SEO — Reparación de Techos de Teja en {{custom_values.county_name_and_state}} | Ilatek Techos
+# SEO — Reparación de Techos de Teja desde $250 en {{custom_values.county_name_and_state}} | Ilatek Techos
 
 Plantilla local Delta System para {{custom_values.county_name_and_state}}. Título, descripción y textos de imágenes sincronizados con los entregables.
 
 ## Meta Tag Title
 
 ```text
-Reparación de Techos de Teja en {{custom_values.county_name_and_state}} | Ilatek Techos
+Reparación de Techos de Teja desde $250 en {{custom_values.county_name_and_state}} | Ilatek Techos
 ```
 
 ## Meta Tag Description
 
 ```text
-Reparación y sellado de techos de teja en {{custom_values.county_name_and_state}} desde $400. Sellado de traslapes y remates sin dañar la pieza, con garantía escrita. Inspección gratis.
+Reparación y sellado de techos de teja en {{custom_values.county_name_and_state}} desde $250. Sellado de traslapes y remates sin dañar la pieza, cotización gratis y garantía escrita.
 ```
 
 ## Meta Tag Image
 
-[Imagen social — URL pública](https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f084932298742638d7.jpg)
+[Imagen social — URL pública](https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acbef68c478ac5535ac18f0.png)
 
 ```text
-https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f084932298742638d7.jpg
+https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acbef68c478ac5535ac18f0.png
 ```
 
-Copia local: [assets/respaldo/6ac046f084932298742638d7.webp](assets/respaldo/6ac046f084932298742638d7.webp). No usar una ruta local en GHL.
+Copia local: [assets/respaldo/6acbef68c478ac5535ac18f0.webp](assets/respaldo/6acbef68c478ac5535ac18f0.webp). No usar una ruta local en GHL.
 
 ## Canonical existente
 
@@ -45,7 +45,7 @@ Custom Value obligatorio: `{{custom_values.county_name_and_state}}`. Usar la eti
 ### Meta Tag Image Alt
 
 ```text
-Reparación de Techos de Teja en {{custom_values.county_name_and_state}} | Ilatek Techos
+Reparación de Techos de Teja desde $250 en {{custom_values.county_name_and_state}} | Ilatek Techos
 ```
 
 El HEAD incluye `og:image:alt` y `twitter:image:alt`. Los atributos `alt` y `title` descriptivos de las imágenes usan la misma localidad, conservando lo que representa cada imagen. Las imágenes decorativas mantienen `alt=""` por accesibilidad. Las URLs de medios no son texto SEO y se conservan.
@@ -60,4 +60,4 @@ Configurar `website_url` como dominio sin protocolo ni barra final, por ejemplo 
 
 La URL original del CDN no está disponible. La copia local es la variante WebP del mismo ID, no el JPG original.
 
-Alternativa existente en el repositorio: [imagen WebP](https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f084932298742638d7.webp). Antes de instalar el SEO, comprobar esta URL pública y usarla como Social Image si continúa disponible. El embed y el HEAD de referencia no se modificaron automáticamente.
+Alternativa existente en el repositorio: [imagen WebP](https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6acbef68c478ac5535ac18f0.webp). Antes de instalar el SEO, comprobar esta URL pública y usarla como Social Image si continúa disponible. El embed y el HEAD de referencia no se modificaron automáticamente.

@@ -319,18 +319,18 @@ export const impermeabilizacion = [
     noun: 'reparación de techos de teja',
     h1before: 'Reparación y Sellado de Techos de Teja en',
     h1em: 'Puerto Rico',
-    h1after: '.',
-    metaTitle: 'Reparación de Techos de Teja | Ilatek Techos',
+    h1after: ' desde $250.',
+    metaTitle: 'Reparación de Techos de Teja desde $250 | Ilatek Techos',
     metaDescription:
-      'Reparación y sellado de techos de teja en Puerto Rico desde $400. Sellado de traslapes y remates sin dañar la pieza, con garantía escrita. Inspección gratis.',
+      'Reparación y sellado de techos de teja en Puerto Rico desde $250. Sellado de traslapes y remates sin dañar la pieza, cotización gratis y garantía escrita.',
     hero: pic('residencial', { alt: 'Reparación de techo de teja en Puerto Rico — {{custom_values.county_name_and_state}}', title: 'Techos de teja · Ilatek Techos', badge: 'Trato cuidadoso de la teja' }),
     incl: pic('postconstruccion', { alt: 'Sellado de techo de teja por Ilatek Techos en Puerto Rico — traslapes y remates', title: 'Techos de teja · Ilatek Techos', caption: 'Traslapes sellados · Remates firmes' }),
     heroSub:
-      'Las tejas son hermosas pero delicadas: una pieza suelta o un traslape abierto deja pasar el agua. Ilatek repara y sella techos de teja en {{custom_values.county_name_and_state}} <b>desde $400</b>, con cuidado de la pieza y garantía escrita.',
+      'Las tejas son hermosas pero delicadas: una pieza suelta o un traslape abierto deja pasar el agua. Ilatek repara y sella techos de teja en {{custom_values.county_name_and_state}} <b>desde $250</b>, con cuidado de la pieza, cotización gratis y garantía escrita.',
     facts: [
-      { b: '$400', s: 'por trabajo', label: 'Sellado incluido' },
+      { b: '$250', s: 'por reparación', label: 'Precio de entrada' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
-      { b: '$0', s: 'inspección', label: 'Evaluación gratis' },
+      { b: '$50', s: 'cotización', label: 'Gratis, se agenda con $50 reembolsables' },
     ],
     benefits: [
       { icon: 'shield', h: 'Sin dañar la teja', p: 'Trabajamos con cuidado para sellar y reparar sin romper piezas que son costosas de reponer.' },
@@ -361,14 +361,15 @@ export const impermeabilizacion = [
       ],
     },
     faq: [
-      { q: '¿Cuánto cuesta reparar un techo de teja?', a: 'La reparación y sellado de techos de teja de Ilatek <b>comienza desde $400</b>. El precio depende del número de piezas a reponer y del área a sellar. Cotiza para tu número exacto.' },
+      { q: '¿Cuánto cuesta reparar un techo de teja?', a: 'La reparación y sellado de techos de teja de Ilatek <b>comienza desde $250</b>. El precio depende del número de piezas a reponer y del área a sellar. La cotización es gratis y se agenda con $50 reembolsables.' },
       { q: '¿Por qué se filtra un techo de teja?', a: 'Por <b>piezas quebradas o movidas, traslapes abiertos y remates sueltos</b>. La teja es la cubierta, pero la impermeabilidad real está en la capa inferior; si la teja falla, el agua pasa.' },
       { q: '¿Se puede sellar una teja sin quitarla?', a: '<b>En muchos casos sí</b>: sellamos traslapes y fijaciones sin desmontar la pieza. Si está quebrada, se repone con cuidado para no dañar las vecinas.' },
       { q: '¿Con qué sellan los techos de teja?', a: 'Usamos <b>selladores compatibles con teja</b> y de alta adherencia, evitando productos que manchen o dañen la pieza. El objetivo es sellar sin alterar la estética.' },
       { q: '¿Cuánto dura la reparación de un techo de teja?', a: 'Una reparación puntual se completa en <b>uno o dos días</b>; el sellado de toda la superficie puede tomar más según el área y el acceso al techo.' },
       { q: '¿Se pueden reponer tejas quebradas?', a: '<b>Sí.</b> Reponemos las piezas dañadas cuando están disponibles, o sellamos de forma impermeable si la pieza no se consigue, cuidando siempre la apariencia.' },
+      { q: '¿La cotización de mi techo de teja tiene costo?', a: 'La cotización es <b>gratis</b> y se agenda con $50 reembolsables: si aceptas el trabajo, ese monto se acredita al total. Así confirmamos tu fecha sin costo real.' },
       { q: '¿La reparación de la teja tiene garantía?', a: '<b>Sí.</b> Entregamos garantía de mano de obra por escrito sobre la reparación y el sellado realizado.' },
-      { q: '¿Por qué elegir Ilatek Techos?', a: 'Trabajamos la teja con cuidado, sellamos sin dañarla y conservamos su estética, <b>desde $400</b>, con inspección gratis y garantía escrita en los 78 municipios de Puerto Rico.' },
+      { q: '¿Por qué elegir Ilatek Techos?', a: 'Trabajamos la teja con cuidado, sellamos sin dañarla y conservamos su estética, <b>desde $250</b>, con cotización gratis y garantía escrita en los 78 municipios de Puerto Rico.' },
     ],
   }),
 

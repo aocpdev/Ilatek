@@ -2,12 +2,12 @@
   "source": "techos/ghl-techos-head-seo.html",
   "language": "es",
   "status": "plantilla-local-delta-system",
-  "metaTagTitle": "Reparación de Techos de Teja en {{custom_values.county_name_and_state}} | Ilatek Techos",
-  "metaTagDescription": "Reparación y sellado de techos de teja en {{custom_values.county_name_and_state}} desde $400. Sellado de traslapes y remates sin dañar la pieza, con garantía escrita. Inspección gratis.",
-  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f084932298742638d7.jpg",
+  "metaTagTitle": "Reparación de Techos de Teja desde $250 en {{custom_values.county_name_and_state}} | Ilatek Techos",
+  "metaTagDescription": "Reparación y sellado de techos de teja en {{custom_values.county_name_and_state}} desde $250. Sellado de traslapes y remates sin dañar la pieza, cotización gratis y garantía escrita.",
+  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acbef68c478ac5535ac18f0.png",
   "locationCustomValue": "{{custom_values.county_name_and_state}}",
-  "metaTagImageAlt": "Reparación de Techos de Teja en {{custom_values.county_name_and_state}} | Ilatek Techos",
+  "metaTagImageAlt": "Reparación de Techos de Teja desde $250 en {{custom_values.county_name_and_state}} | Ilatek Techos",
   "canonical": "https://{{custom_values.website_url}}/techos-de-teja",
-  "socialImageFile": "assets/respaldo/6ac046f084932298742638d7.webp",
+  "socialImageFile": "assets/respaldo/6acbef68c478ac5535ac18f0.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."
 }
