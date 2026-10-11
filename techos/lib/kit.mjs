@@ -60,7 +60,7 @@ export const TECHOS_IMG = {
   'sellado-de-techos-residencial': { hero: CDN + '6ac046f07bca8cd20c4021a3.jpg', incl: CDN + '6ac0427e0edabbe5a4a724d7.jpg' },
   'sellado-de-techos-comercial': { hero: CDN + '6ac046ee85f560d1666998eb.jpg', incl: CDN + '6ac046f00edabbe5a4a763a0.jpg' },
   'sellado-de-techos-industrial': { hero: CDN + '6ac046ee0edabbe5a4a76380.jpg', incl: CDN + '6ac046ee849322987426388b.jpg' },
-  'inspeccion-y-mantenimiento-de-techos': { hero: CDN + '6ac046ec3b8e61adf5631fa2.jpg', incl: CDN + '6ac046f585f560d166699993.jpg' },
+  'inspeccion-y-mantenimiento-de-techos': { hero: CDN + '6ac85838195f9172ed03ac13.jpg', incl: CDN + '6ac85838c478ac55355c46f2.jpg' },
   'inspeccion-de-techos': { hero: CDN + '6ac046ec0edabbe5a4a76342.jpg', incl: CDN + '6ac046ecf30b488137bfa41c.jpg' },
   'mantenimiento-de-techos': { hero: CDN + '6ac046f98493229874263987.jpg', incl: CDN + '6ac046f8f30b488137bfa4ee.jpg' },
   'limpieza-de-techos-y-canaletas': { hero: CDN + '6ac046ee150d6ea53dbd5044.jpg', incl: CDN + '6ac046ee150d6ea53dbd5044.jpg' },
