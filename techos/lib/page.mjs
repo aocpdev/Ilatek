@@ -120,7 +120,7 @@ ${facts}
           </div>
         </div>
         <figure class="ilt-hero-card ilt-reveal">
-          ${img(page.hero, { w: 1200, h: 1320, loading: 'eager', priority: true })}
+          ${img(page.hero, { w: 1778, h: 1000, loading: 'eager', priority: true })}
           <span class="ilt-hero-badge"><i></i>${page.hero.badge}</span>
         </figure>
       </div>
@@ -165,7 +165,7 @@ ${checks}
           </div>
         </div>
         <figure class="ilt-media ilt-reveal">
-          ${img(page.incl, { w: 1200, h: 900, loading: 'lazy' })}
+          ${img(page.incl, { w: 1778, h: 1000, loading: 'lazy' })}
           <figcaption>${page.incl.caption}</figcaption>
         </figure>
       </div>
