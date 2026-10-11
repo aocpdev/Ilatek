@@ -1607,7 +1607,7 @@ body:has(#ilatek-nav) .mshero-inner{
   /* Tabs de reseñas (mismo bloque que /resenas y las demas landings) */
   (function(){
     var root=document.getElementById('ilatek-servicios');
-    var wrap=root&&root.querySelector('#ilatek-reviews'); if(!wrap||wrap.dataset.ilsrTabs)return; wrap.dataset.ilsrTabs='true';
+    var wrap=root&&root.querySelector('#ilatek-reviews'); if(!wrap||wrap.dataset.ilrTabs)return; wrap.dataset.ilrTabs='true';
     var tabs=[].slice.call(wrap.querySelectorAll('.il-reviews-tab'));
     if(!tabs.length)return;
     tabs.forEach(function(tab){
