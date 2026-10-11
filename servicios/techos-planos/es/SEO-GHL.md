@@ -11,18 +11,18 @@ Impermeabilización de Techos Planos (EPDM, TPO) en {{custom_values.county_name_
 ## Meta Tag Description
 
 ```text
-Impermeabilización de techos planos en {{custom_values.county_name_and_state}} desde $3.50 por pie². Membranas EPDM, TPO y asfálticas selladas con garantía escrita. Inspección gratis.
+Impermeabilización de techos planos en {{custom_values.county_name_and_state}} desde $3.50 por pie². Membranas EPDM, TPO y asfálticas selladas, cotización $0 agendada con $50 reembolsables y garantía escrita.
 ```
 
 ## Meta Tag Image
 
-[Imagen social — URL pública](https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f32c503e697d5ff20a.jpg)
+[Imagen social — URL pública](https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac72670c478ac55353c265b.jpg)
 
 ```text
-https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f32c503e697d5ff20a.jpg
+https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac72670c478ac55353c265b.jpg
 ```
 
-Copia local: [assets/respaldo/6ac046f32c503e697d5ff20a.webp](assets/respaldo/6ac046f32c503e697d5ff20a.webp). No usar una ruta local en GHL.
+Copia local: [assets/respaldo/6ac72670c478ac55353c265b.webp](assets/respaldo/6ac72670c478ac55353c265b.webp). No usar una ruta local en GHL.
 
 ## Canonical existente
 
@@ -60,4 +60,4 @@ Configurar `website_url` como dominio sin protocolo ni barra final, por ejemplo 
 
 La URL original del CDN no está disponible. La copia local es la variante WebP del mismo ID, no el JPG original.
 
-Alternativa existente en el repositorio: [imagen WebP](https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f32c503e697d5ff20a.webp). Antes de instalar el SEO, comprobar esta URL pública y usarla como Social Image si continúa disponible. El embed y el HEAD de referencia no se modificaron automáticamente.
+Alternativa existente en el repositorio: [imagen WebP](https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac72670c478ac55353c265b.webp). Antes de instalar el SEO, comprobar esta URL pública y usarla como Social Image si continúa disponible. El embed y el HEAD de referencia no se modificaron automáticamente.

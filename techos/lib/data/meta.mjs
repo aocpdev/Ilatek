@@ -161,9 +161,9 @@ export const META = {
     procLead: 'Corregimos pendiente y desagües, aplicamos primer y colocamos la membrana sellando cada junta de la superficie.',
     price: { amount: '3.50', text: 'desde $3.50 por pie²', unitText: 'por pie² de membrana en techo plano' },
     serviceName: 'Impermeabilización de Techos Planos y Membranas',
-    serviceDesc: 'Impermeabilización de techos planos en Puerto Rico con membranas EPDM, TPO y asfálticas desde $3.50 por pie², corrigiendo drenaje y garantía escrita.',
+    serviceDesc: 'Impermeabilización de techos planos en Puerto Rico con membranas EPDM, TPO y asfálticas desde $3.50 por pie², corrigiendo drenaje, con cotización gratis y garantía escrita.',
     whyQ: '¿Por qué elegir Ilatek Techos para tu techo plano?',
-    whyA: 'En un techo plano el agua no corre sola y cada junta es un riesgo: colocamos la membrana correcta —EPDM, TPO o asfáltica— sobre drenaje corregido, desde $3.50 por pie² con garantía escrita.',
+    whyA: 'En un techo plano el agua no corre sola y cada junta es un riesgo: colocamos la membrana correcta —EPDM, TPO o asfáltica— sobre drenaje corregido, desde $3.50 por pie² con cotización gratis y garantía escrita.',
   },
   'techos-de-zinc': {
     benTitle: 'El zinc dura años si le frenas el óxido a tiempo.',
