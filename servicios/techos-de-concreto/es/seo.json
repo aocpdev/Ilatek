@@ -2,12 +2,12 @@
   "source": "techos/ghl-techos-head-seo.html",
   "language": "es",
   "status": "plantilla-local-delta-system",
-  "metaTagTitle": "Reparación de Techos de Concreto (Losas) en {{custom_values.county_name_and_state}} | Ilatek Techos",
-  "metaTagDescription": "Reparación e impermeabilización de techos de concreto y losas en {{custom_values.county_name_and_state}} desde $3.00 por pie². Sellado de grietas y filtraciones con garantía escrita.",
-  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f27bca8cd20c4021bf.jpg",
+  "metaTagTitle": "Reparación de Techos de Concreto (Losas) desde $250 en {{custom_values.county_name_and_state}} | Ilatek Techos",
+  "metaTagDescription": "Reparación de techos de concreto y losas en {{custom_values.county_name_and_state}} desde $250. Sellado de grietas y filtraciones, cotización gratis y garantía escrita.",
+  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac85834cc7a5a2b73475e12.jpg",
   "locationCustomValue": "{{custom_values.county_name_and_state}}",
-  "metaTagImageAlt": "Reparación de Techos de Concreto (Losas) en {{custom_values.county_name_and_state}} | Ilatek Techos",
+  "metaTagImageAlt": "Reparación de Techos de Concreto (Losas) desde $250 en {{custom_values.county_name_and_state}} | Ilatek Techos",
   "canonical": "https://{{custom_values.website_url}}/techos-de-concreto",
-  "socialImageFile": "assets/respaldo/6ac046f27bca8cd20c4021bf.webp",
+  "socialImageFile": "assets/respaldo/6ac85834cc7a5a2b73475e12.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."
 }

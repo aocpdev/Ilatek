@@ -16,7 +16,7 @@ const OPT = WEBP + 'techos/';
 // del remoto) se sirven por el transform de imágenes de GHL, siempre disponible
 // aunque el CDN filesafe exija headers de navegador.
 const LCTR = 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/';
-const SERVE_LCTR = new Set(['6ac85838c478ac55355c46f2.jpg', '6ac85838195f9172ed03ac13.jpg', '6ac8583a195f9172ed03ac5f.jpg', '6ac8583abbad531ac84495e2.jpg']);
+const SERVE_LCTR = new Set(['6ac85838c478ac55355c46f2.jpg', '6ac85838195f9172ed03ac13.jpg', '6ac8583a195f9172ed03ac5f.jpg', '6ac8583abbad531ac84495e2.jpg', '6ac85834cc7a5a2b73475e12.jpg', '6ac8583bcc7a5a2b73475f28.jpg']);
 export function optimized(url) {
   const name = url.replace(CDN, '');
   if (SERVE_LCTR.has(name)) return LCTR + name;
@@ -57,7 +57,7 @@ export const TECHOS_IMG = {
   'sellado-de-poliuretano': { hero: CDN + '6ac046f28493229874263903.jpg', incl: CDN + '6ac046f28493229874263903.jpg' },
   'sellado-acrilico': { hero: CDN + '6ac046f52c503e697d5ff222.jpg', incl: CDN + '6ac046f52c503e697d5ff222.jpg' },
   'impermeabilizacion-de-techos': { hero: CDN + '6ac046f5849322987426393b.jpg', incl: CDN + '6ac046f802569bee7cbccc2c.jpg' },
-  'techos-de-concreto': { hero: CDN + '6ac046f27bca8cd20c4021bf.jpg', incl: CDN + '6ac046f32c503e697d5ff1fa.jpg' },
+  'techos-de-concreto': { hero: CDN + '6ac85834cc7a5a2b73475e12.jpg', incl: CDN + '6ac8583bcc7a5a2b73475f28.jpg', heroDims: { width: 1200, height: 675 }, inclDims: { width: 1200, height: 675 } },
   'techos-planos': { hero: CDN + '6ac046f32c503e697d5ff20a.jpg', incl: CDN + '6ac046ee150d6ea53dbd5051.jpg' },
   'techos-de-zinc': { hero: CDN + '6ac046f202569bee7cbccbe0.jpg', incl: CDN + '6ac046f00edabbe5a4a763a0.jpg', heroWebp: WEBP + 'techos/techos-de-metal-y-zinc.webp' },
   'techos-de-asfalto': { hero: CDN + '6ac046f82c503e697d5ff24e.jpg', incl: CDN + '6ac046f57bca8cd20c4021df.jpg' },
