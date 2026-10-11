@@ -201,18 +201,18 @@ export const impermeabilizacion = [
     noun: 'reparación de techos de zinc',
     h1before: 'Reparación y Sellado de Techos de Zinc y Metal en',
     h1em: 'Puerto Rico',
-    h1after: '.',
-    metaTitle: 'Reparación de Techos de Zinc y Metal | Ilatek Techos',
+    h1after: ' desde $250.',
+    metaTitle: 'Reparación de Techos de Zinc y Metal desde $250 | Ilatek Techos',
     metaDescription:
-      'Reparación y sellado de techos de zinc y metal en Puerto Rico desde $400. Tratamiento de óxido, sellado de traslapes y protección anticorrosiva con garantía escrita.',
+      'Reparación y sellado de techos de zinc y metal en Puerto Rico desde $250. Tratamiento de óxido, sellado de traslapes y protección anticorrosiva, cotización gratis y garantía escrita.',
     hero: pic('presion', { alt: 'Techos de metal y zinc en Puerto Rico — instalación, sellado y protección en {{custom_values.county_name_and_state}}', title: 'Techos de metal y zinc · Ilatek Techos', badge: 'Metal y zinc · Sellado' }),
     incl: pic('postconstruccion', { alt: 'Sellado y tratamiento anticorrosivo de techo de zinc por Ilatek Techos en Puerto Rico', title: 'Techos de zinc · Ilatek Techos', caption: 'Traslapes · Tornillos · Anticorrosivo' }),
     heroSub:
-      'Los techos de zinc son comunes en anexos, garajes y quioscos, pero el óxido y el viento los castigan. Ilatek repara y sella techos de zinc en {{custom_values.county_name_and_state}} <b>desde $400</b>, con tratamiento anticorrosivo y garantía escrita.',
+      'Los techos de zinc son comunes en anexos, garajes y quioscos, pero el óxido y el viento los castigan. Ilatek repara y sella techos de zinc en {{custom_values.county_name_and_state}} <b>desde $250</b>, con tratamiento anticorrosivo, cotización gratis y garantía escrita.',
     facts: [
-      { b: '$400', s: 'por trabajo', label: 'Tratamiento incluido' },
+      { b: '$250', s: 'por reparación', label: 'Tratamiento incluido' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
-      { b: '$0', s: 'inspección', label: 'Evaluación gratis' },
+      { b: '$50', s: 'cotización', label: 'Gratis, se agenda con $50 reembolsables' },
     ],
     benefits: [
       { icon: 'shield', h: 'Frena el óxido', p: 'Tratamos la corrosión activa y aplicamos recubrimiento que protege el metal por más tiempo.' },
@@ -243,14 +243,15 @@ export const impermeabilizacion = [
       ],
     },
     faq: [
-      { q: '¿Cuánto cuesta reparar un techo de zinc?', a: 'La reparación y sellado de techos de zinc de Ilatek <b>comienza desde $400</b>, incluyendo tratamiento anticorrosivo y sellado de uniones. El precio depende del área y del estado del metal.' },
+      { q: '¿Cuánto cuesta reparar un techo de zinc?', a: 'La reparación y sellado de techos de zinc de Ilatek <b>comienza desde $250</b>, incluyendo tratamiento anticorrosivo y sellado de uniones. La cotización es gratis y se agenda con $50 reembolsables.' },
       { q: '¿Por qué se oxida tan rápido el zinc en Puerto Rico?', a: 'Por el <b>aire salino de la costa, la humedad y la lluvia constante</b>. Sin recubrimiento protector, el zinc se perfora en pocos años y comienza a gotear.' },
       { q: '¿Se puede reparar un techo de zinc oxidado?', a: '<b>Si el óxido es superficial o puntual, sí</b>: se trata y se protege. Si ya perforó grandes áreas, evaluamos sustituir las láminas dañadas. Te lo decimos claro.' },
       { q: '¿Qué sellador se usa en techos de zinc?', a: 'Usamos <b>selladores y recubrimientos específicos para metal</b>, con tratamiento anticorrosivo previo, porque un sellador para concreto no adhiere bien al zinc.' },
       { q: '¿Cómo sellan las uniones entre láminas?', a: 'Aplicamos <b>sellador flexible en los traslapes</b> y reponemos tornillos y arandelas de sellado para que el agua no pase por las uniones ni por las fijaciones.' },
       { q: '¿Cuánto tarda el trabajo?', a: 'Un techo de zinc de anexo o garaje se completa normalmente en <b>uno a dos días</b>, según el área y el grado de oxidación.' },
+      { q: '¿La cotización de mi techo de zinc tiene costo?', a: 'La cotización es <b>gratis</b> y se agenda con $50 reembolsables: si aceptas el trabajo, ese monto se acredita al total. Así confirmamos tu fecha sin costo real.' },
       { q: '¿La reparación del techo de zinc tiene garantía?', a: '<b>Sí.</b> Entregamos garantía de mano de obra por escrito sobre el tratamiento y sellado aplicado.' },
-      { q: '¿Por qué elegir Ilatek Techos?', a: 'Tratamos el óxido de raíz, sellamos uniones y protegemos el metal, <b>desde $400</b>, con inspección gratis, garantía escrita y cobertura en los 78 municipios de Puerto Rico.' },
+      { q: '¿Por qué elegir Ilatek Techos?', a: 'Tratamos el óxido de raíz, sellamos uniones y protegemos el metal, <b>desde $250</b>, con cotización gratis, garantía escrita y cobertura en los 78 municipios de Puerto Rico.' },
     ],
   }),
 
