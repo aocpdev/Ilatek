@@ -187,11 +187,11 @@
     },
     {
       "role": "media-or-fallback",
-      "publicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac85838c478ac55355c46f2.webp",
-      "file": "assets/media/6ac85838c478ac55355c46f2.webp",
+      "publicUrl": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac85838c478ac55355c46f2.jpg",
+      "file": "assets/media/6ac85838c478ac55355c46f2.jpg",
       "status": "local-copy",
-      "bytes": 122664,
-      "sha256": "ebe331eabd2163ad60ac829b516799f18d27cb5d1129eb8353b23d9557e777d4"
+      "bytes": 235532,
+      "sha256": "1d6c9b6f7738ab23e07bce7a25318bf7ec7cb7ef6fdf74abe85819afff726e1c"
     },
     {
       "role": "social-image",

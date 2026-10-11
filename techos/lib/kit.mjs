@@ -12,8 +12,15 @@ const OPT = WEBP + 'techos/';
 
 // URL optimizada (WebP 1200 px) para una foto del CDN de GHL. El JPEG original
 // sigue siendo el respaldo del <img>, así que un archivo que falte no rompe nada.
+// Excepción: fotos cuya variante WebP aún no está en GitHub (la repo va adelante
+// del remoto) se sirven por el transform de imágenes de GHL, siempre disponible
+// aunque el CDN filesafe exija headers de navegador.
+const LCTR = 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/';
+const SERVE_LCTR = new Set(['6ac85838c478ac55355c46f2.jpg', '6ac85838195f9172ed03ac13.jpg']);
 export function optimized(url) {
-  return OPT + url.replace(CDN, '').replace(/\.[a-z]+$/i, '') + '.webp';
+  const name = url.replace(CDN, '');
+  if (SERVE_LCTR.has(name)) return LCTR + name;
+  return OPT + name.replace(/\.[a-z]+$/i, '') + '.webp';
 }
 
 export const ASSETS = {
