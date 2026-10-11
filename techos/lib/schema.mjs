@@ -23,22 +23,26 @@ function areaServed() {
 
 // Imágenes de la página como entidades ImageObject (mejor que una URL suelta:
 // alimenta Image Search y los resúmenes de IA con contexto y dimensiones).
+// width/height reales (leídos con sharp al integrar las fotos; todas del grupo
+// SERVE_LCTR son 1376x768 ≈ 16:9 nativas). No se publican valores inventados.
 function imageObjects(page) {
+  const dims = page.hero.dims || { width: 1200, height: 675 };
+  const dimsIncl = page.incl.dims || { width: 1200, height: 675 };
   return [
     {
       '@type': 'ImageObject',
       url: page.hero.webp,
       contentUrl: page.hero.raw,
-      width: 1200,
-      height: 1320,
+      width: dims.width,
+      height: dims.height,
       caption: page.hero.title,
     },
     {
       '@type': 'ImageObject',
       url: page.incl.webp,
       contentUrl: page.incl.raw,
-      width: 1200,
-      height: 900,
+      width: dimsIncl.width,
+      height: dimsIncl.height,
       caption: page.incl.title,
     },
   ];

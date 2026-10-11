@@ -16,7 +16,7 @@ const OPT = WEBP + 'techos/';
 // del remoto) se sirven por el transform de imágenes de GHL, siempre disponible
 // aunque el CDN filesafe exija headers de navegador.
 const LCTR = 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/';
-const SERVE_LCTR = new Set(['6ac85838c478ac55355c46f2.jpg', '6ac85838195f9172ed03ac13.jpg']);
+const SERVE_LCTR = new Set(['6ac85838c478ac55355c46f2.jpg', '6ac85838195f9172ed03ac13.jpg', '6ac8583a195f9172ed03ac5f.jpg', '6ac8583abbad531ac84495e2.jpg']);
 export function optimized(url) {
   const name = url.replace(CDN, '');
   if (SERVE_LCTR.has(name)) return LCTR + name;
@@ -67,11 +67,11 @@ export const TECHOS_IMG = {
   'sellado-de-techos-residencial': { hero: CDN + '6ac046f07bca8cd20c4021a3.jpg', incl: CDN + '6ac0427e0edabbe5a4a724d7.jpg' },
   'sellado-de-techos-comercial': { hero: CDN + '6ac046ee85f560d1666998eb.jpg', incl: CDN + '6ac046f00edabbe5a4a763a0.jpg' },
   'sellado-de-techos-industrial': { hero: CDN + '6ac046ee0edabbe5a4a76380.jpg', incl: CDN + '6ac046ee849322987426388b.jpg' },
-  'inspeccion-y-mantenimiento-de-techos': { hero: CDN + '6ac85838195f9172ed03ac13.jpg', incl: CDN + '6ac85838c478ac55355c46f2.jpg' },
+  'inspeccion-y-mantenimiento-de-techos': { hero: CDN + '6ac85838195f9172ed03ac13.jpg', incl: CDN + '6ac85838c478ac55355c46f2.jpg', heroDims: { width: 1200, height: 675 }, inclDims: { width: 1200, height: 675 } },
   'inspeccion-de-techos': { hero: CDN + '6ac046ec0edabbe5a4a76342.jpg', incl: CDN + '6ac046ecf30b488137bfa41c.jpg' },
   'mantenimiento-de-techos': { hero: CDN + '6ac046f98493229874263987.jpg', incl: CDN + '6ac046f8f30b488137bfa4ee.jpg' },
   'limpieza-de-techos-y-canaletas': { hero: CDN + '6ac046ee150d6ea53dbd5044.jpg', incl: CDN + '6ac046ee150d6ea53dbd5044.jpg' },
-  'canaletas-y-bajantes': { hero: CDN + '6ac046ecf30b488137bfa427.jpg', incl: CDN + '6ac046ecf30b488137bfa427.jpg' },
+  'canaletas-y-bajantes': { hero: CDN + '6ac8583a195f9172ed03ac5f.jpg', incl: CDN + '6ac8583abbad531ac84495e2.jpg', heroDims: { width: 1200, height: 675 }, inclDims: { width: 1200, height: 675 } },
   'lavado-a-presion-techos': { hero: CDN + '6ac046ecc478ac55358ec4c6.jpg', incl: CDN + '6ac046ecc478ac55358ec4c6.jpg' },
   tragaluces: { hero: CDN + '6ac046ec3b8e61adf5631fa8.jpg', incl: CDN + '6ac046ec3b8e61adf5631fa8.jpg' },
   'instalacion-y-reemplazo-de-techos': { hero: CDN + '6ac046f00edabbe5a4a763a0.jpg', incl: CDN + '6ac046ee849322987426388b.jpg' },
@@ -110,8 +110,8 @@ export function mk(p) {
   const ov = TECHOS_IMG[p.slug];
   // heroWebp/inclWebp = portada o foto propia (no viene del CDN de GHL): se usa
   // tal cual. La foto de GHL sigue siendo `raw`, el respaldo del <img>.
-  const hero = ov && ov.hero ? { ...p.hero, webp: ov.heroWebp || optimized(ov.hero), raw: ov.hero } : p.hero;
-  const incl = ov && ov.incl ? { ...p.incl, webp: ov.inclWebp || optimized(ov.incl), raw: ov.incl } : p.incl;
+  const hero = ov && ov.hero ? { ...p.hero, webp: ov.heroWebp || optimized(ov.hero), raw: ov.hero, dims: ov.heroDims } : p.hero;
+  const incl = ov && ov.incl ? { ...p.incl, webp: ov.inclWebp || optimized(ov.incl), raw: ov.incl, dims: ov.inclDims } : p.incl;
 
   const faq = (p.faq || [])
     .filter((f) => !WHY_GENERIC.test(f.q))
