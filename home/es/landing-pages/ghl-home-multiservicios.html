@@ -493,7 +493,7 @@ body:has(#ilatek-nav) .mshero-inner{
           </ul>
         </div>
       </div>
-      <a href="https://{{custom_values.website_url}}/#ilatek-faq" data-ilatek-path="/limpieza/#ilatek-conocenos" data-es="Acerca de Nosotros" data-en="About Us">Acerca de Nosotros</a>
+      <a href="https://{{custom_values.website_url}}/limpieza/#ilatek-conocenos" data-ilatek-path="/limpieza/#ilatek-conocenos" data-es="Acerca de Nosotros" data-en="About Us">Acerca de Nosotros</a>
 
     </nav>
     <div class="iln-langwrap"><button class="iln-lang" id="iln-lang" type="button" aria-label="Cambiar el idioma a English"><span aria-pressed="true">es</span><span aria-pressed="false">en</span></button></div>
@@ -975,8 +975,11 @@ body:has(#ilatek-nav) .mshero-inner{
        al scroll; prefers-reduced-motion lo desactiva todo). object-position 50% 42%
        mantiene los rostros del equipo en pantalla en todos los anchos. */
     .mshero{position:relative;overflow:hidden;isolation:isolate;display:grid;align-items:center;min-height:100vh;min-height:100svh;background:#11164b;color:#fff}
-    .mshero-img{position:absolute;inset:0;z-index:0;width:100%;height:100%;object-fit:cover;object-position:50% 42%;transform:scale(1.001);transition:transform 1.6s cubic-bezier(.22,1,.36,1)}
-    .mshero:hover .mshero-img{transform:scale(1.045)}
+    .mshero-img{position:absolute;inset:0;z-index:0;width:100%;height:100%;object-fit:cover;object-position:50% 42%;transform:scale(1.001)}
+    /* Video del hero: cubre la foto y se reproduce en loop infinito (muted+playsinline
+       para autoplay). La foto queda debajo como respaldo mientras carga el video. */
+    .mshero-video{position:absolute;inset:0;z-index:1;width:100%;height:100%;object-fit:cover;object-position:50% 42%;pointer-events:none}
+    @media(prefers-reduced-motion:reduce){.mshero-video{display:none}}
     .mshero-scrim{position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,rgba(11,16,61,.42) 0%,rgba(11,16,61,.46) 48%,rgba(11,16,61,.88) 100%)}
     .mshero-inner{position:relative;z-index:2;width:min(100% - 40px,1180px);margin:auto;padding:clamp(96px,11vw,160px) 0;text-align:center;display:grid;justify-items:center}
     .mshero-kicker{max-width:980px;color:rgba(255,255,255,.92);font:700 13px/1.7 Manrope,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;text-shadow:0 2px 14px rgba(11,16,61,.6)}
@@ -995,7 +998,7 @@ body:has(#ilatek-nav) .mshero-inner{
     .mshero-kicker{animation:msheroUp .7s .08s cubic-bezier(.22,1,.36,1) both}
     .mshero h1{animation:msheroUp .8s .2s cubic-bezier(.22,1,.36,1) both}
     .mshero-ctas{animation:msheroUp .8s .34s cubic-bezier(.22,1,.36,1) both}
-    @media(prefers-reduced-motion:reduce){.mshero-img{transition:none}.mshero:hover .mshero-img{transform:none}.mshero-kicker,.mshero h1,.mshero-ctas{animation:none}.mshero-btn,.mshero-btn svg{transition:none}}
+    @media(prefers-reduced-motion:reduce){.mshero-img{transition:none}.mshero:hover .mshero-img{transform:none}.mshero-video{display:none}.mshero-kicker,.mshero h1,.mshero-ctas{animation:none}.mshero-btn,.mshero-btn svg{transition:none}}
     @media(max-width:560px){
       .mshero-img{object-position:50% 38%}
       .mshero-ctas{width:100%;flex-direction:column}
@@ -1089,6 +1092,7 @@ body:has(#ilatek-nav) .mshero-inner{
   <header class="mshero"
     data-website-url="{{custom_values.website_url}}">
     <img class="mshero-img" src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac72f698c077584b4edd068.jpg" alt="Equipo de Ilatek Property Solution: técnicos de techos y profesionales de limpieza frente a las camionetas de Ilatek — servicio en {{custom_values.county_name_and_state}}" title="Ilatek Property Solution — servicio en {{custom_values.county_name_and_state}}" fetchpriority="high" decoding="async" data-ilatek-local-alt="Equipo%20de%20Ilatek%20Property%20Solution%3A%20t%C3%A9cnicos%20de%20techos%20y%20profesionales%20de%20limpieza%20frente%20a%20las%20camionetas%20de%20Ilatek%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D" data-ilatek-local-title="Ilatek%20Property%20Solution%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D">
+    <video class="mshero-video" src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acc233dbd6bb710ca5560db.mp4" poster="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac72f698c077584b4edd068.jpg" autoplay muted loop playsinline webkit-playsinline preload="auto" disablepictureinpicture tabindex="-1" aria-hidden="true" data-ilatek-local-title="Ilatek%20Property%20Solution%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D"></video>
     <div class="mshero-scrim" aria-hidden="true"></div>
     <div class="mshero-inner">
       <span class="mshero-kicker" data-es="Compañía Multiservicios · Protegiendo tu Propiedad y Cuidando tu Tranquilidad" data-en="Multiservice Company · Protecting your Property and Caring for your Peace of Mind">Compañía Multiservicios · Protegiendo tu Propiedad y Cuidando tu Tranquilidad</span>
@@ -1307,7 +1311,7 @@ body:has(#ilatek-nav) .mshero-inner{
           </div>
         </article>
         <article class="ilt3-card" data-slug="techos-por-segmento">
-          <div class="ilt3-media" data-shots="3"><img class="ilt3-shot is-on" src="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/hub/segmento.webp" onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/hub/segmento.webp'" width="1376" height="768" loading="lazy" decoding="async" alt="Techos por Segmento de Ilatek Techos en {{custom_values.county_name_and_state}}" title="Techos por Segmento · Ilatek Techos — servicio en {{custom_values.county_name_and_state}}" data-ilatek-local-alt="Techos%20por%20Segmento%20de%20Ilatek%20Techos%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D" data-ilatek-local-title="Techos%20por%20Segmento%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D"><img class="ilt3-shot" aria-hidden="true" alt="" src="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f0150d6ea53dbd50a0.webp" onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f0150d6ea53dbd50a0.webp'" width="1376" height="768" loading="lazy" decoding="async" alt="" title="Techos por Segmento · Ilatek Techos — servicio en {{custom_values.county_name_and_state}}" data-ilatek-local-title="Techos%20por%20Segmento%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D"><img class="ilt3-shot" aria-hidden="true" alt="" src="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046ee150d6ea53dbd5051.webp" onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046ee150d6ea53dbd5051.webp'" width="1376" height="768" loading="lazy" decoding="async" alt="" title="Techos por Segmento · Ilatek Techos — servicio en {{custom_values.county_name_and_state}}" data-ilatek-local-title="Techos%20por%20Segmento%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D"><i class="ilt3-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="m3 11 9-7 9 7"/><path d="M5 10v10h14V10"/></svg></i></div>
+          <div class="ilt3-media" data-shots="3"><img class="ilt3-shot is-on" src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acbf7e5bbad531ac89598d2.png" onerror="this.onerror=null;this.src='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acbf7e5bbad531ac89598d2.png'" width="1376" height="768" loading="lazy" decoding="async" alt="Techos por Segmento de Ilatek Techos en {{custom_values.county_name_and_state}}" title="Techos por Segmento · Ilatek Techos — servicio en {{custom_values.county_name_and_state}}" data-ilatek-local-alt="Techos%20por%20Segmento%20de%20Ilatek%20Techos%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D" data-ilatek-local-title="Techos%20por%20Segmento%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D"><img class="ilt3-shot" aria-hidden="true" alt="" src="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f0150d6ea53dbd50a0.webp" onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f0150d6ea53dbd50a0.webp'" width="1376" height="768" loading="lazy" decoding="async" alt="" title="Techos por Segmento · Ilatek Techos — servicio en {{custom_values.county_name_and_state}}" data-ilatek-local-title="Techos%20por%20Segmento%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D"><img class="ilt3-shot" aria-hidden="true" alt="" src="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046ee150d6ea53dbd5051.webp" onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046ee150d6ea53dbd5051.webp'" width="1376" height="768" loading="lazy" decoding="async" alt="" title="Techos por Segmento · Ilatek Techos — servicio en {{custom_values.county_name_and_state}}" data-ilatek-local-title="Techos%20por%20Segmento%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D"><i class="ilt3-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="m3 11 9-7 9 7"/><path d="M5 10v10h14V10"/></svg></i></div>
           <div class="ilt3-body">
             <div class="ilt3-head">
               <span class="ilt3-kicker">Por segmento</span>
@@ -1723,7 +1727,7 @@ body:has(#ilatek-nav) .mshero-inner{
     @media (prefers-reduced-motion:reduce){.ils-bgvideo{display:none}}
   </style>
 
-  <video class="ils-bgvideo" src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8f952bd6bb710ca0fd582.mp4" poster="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/hero-poster-1280.webp" autoplay muted loop playsinline webkit-playsinline preload="auto" disablepictureinpicture tabindex="-1" aria-hidden="true" title="Video: equipo de Ilatek limpiando propiedades en {{custom_values.county_name_and_state}}"></video>
+  <video class="ils-bgvideo" src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acc233dbd6bb710ca5560db.mp4" poster="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acc233dbd6bb710ca5560db.mp4" autoplay muted loop playsinline webkit-playsinline preload="auto" disablepictureinpicture tabindex="-1" aria-hidden="true" title="Video: equipo de Ilatek limpiando propiedades en {{custom_values.county_name_and_state}}"></video>
   <div class="ils-top">
   <header class="ils-head">
     <span class="ils-eyebrow" data-es="Servicios" data-en="Services">Servicios</span>
