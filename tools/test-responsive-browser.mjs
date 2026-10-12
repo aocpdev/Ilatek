@@ -7,6 +7,15 @@ import {ROOT,structure} from './site-paths.mjs';
 import {shellFiles} from './page-shell.mjs';
 const {chromium}=createRequire(import.meta.url)(process.env.ILATEK_PLAYWRIGHT||'playwright');
 const browser=await chromium.launch({headless:true,...(process.env.ILATEK_CHROMIUM?{executablePath:process.env.ILATEK_CHROMIUM}:{})});
+// Real Outfit/Manrope metrics make the one-line headline check measurable. Point
+// ILATEK_TEST_FONTS at a cache of the Google Fonts CSS plus its woff2 files
+// (gf.css and map.txt, url<TAB>file); without it the layer still has to pass the
+// font-independent checks and the one-line claim is reported as skipped.
+const FONTS=process.env.ILATEK_TEST_FONTS;
+const fontCss=FONTS&&fs.existsSync(FONTS+'/gf.css')?fs.readFileSync(FONTS+'/gf.css','utf8'):null;
+const fontMap=new Map(FONTS&&fs.existsSync(FONTS+'/map.txt')?fs.readFileSync(FONTS+'/map.txt','utf8').trim().split('\n').map(l=>l.split('\t')).map(([u,f])=>[u,FONTS+'/'+f]):[]);
+const skipped=[];
+const problems=[];
 const media=new Map();
 for(const p of structure.pages){
  const manifest=path.resolve(ROOT,p.file,'../../ASSETS.json');
@@ -25,6 +34,8 @@ try{for(const file of [...shellFiles,...archived].filter(f=>!process.env.ILATEK_
   const errors=[];page.on('pageerror',e=>errors.push(e.message));
   await page.route('**/*',async r=>{
    const url=r.request().url();let local=media.get(url);
+   if(fontCss&&url.startsWith('https://fonts.googleapis.com/'))return r.fulfill({contentType:'text/css',body:fontCss});
+   if(fontCss&&url.startsWith('https://fonts.gstatic.com/')){const font=fontMap.get(url);if(font&&fs.existsSync(font))return r.fulfill({contentType:'font/woff2',body:fs.readFileSync(font)});return r.abort();}
    if(!local&&url.startsWith('https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/')){
     const candidate=path.join(ROOT,'assets',url.split('/assets/')[1]);if(fs.existsSync(candidate))local=candidate;
    }
@@ -44,6 +55,43 @@ try{for(const file of [...shellFiles,...archived].filter(f=>!process.env.ILATEK_
    return {gap:content?content.top-bar.bottom:null,navBottom:bar.bottom,overflow:document.documentElement.scrollWidth>innerWidth+1};
   },heroSelector)}
   const initial=await metrics();
+  // Escala fluida de titulares: la capa compartida sólo puede reducir el número
+  // de líneas, nunca bajar de 24px por debajo de 1101px y nunca tocar el diseño
+  // a partir de 1101px. La garantía de una línea en el titular de marca depende
+  // de la fuente real: sin Outfit cargado se reporta como omitida, no como
+  // aprobada.
+  await page.evaluate(()=>document.fonts&&document.fonts.ready);
+  // Se revisan TODOS los titulares que la capa puede tocar (héroes y el título
+  // de reseñas), no solo el primero: cualquier familia nueva queda cubierta.
+  const headlines=await page.evaluate(marker=>{
+   const brand=document.querySelector('.mshero h1');
+   const nodes=[...document.querySelectorAll('.mshero h1,[class*="-hero"] h1,#ilatek-reviews-title')].filter((el,i,a)=>a.indexOf(el)===i);
+   const layer=[...document.querySelectorAll('style')].find(s=>s.textContent.includes(marker));
+   if(!nodes.length)return null;
+   const read=()=>nodes.map(el=>{const cs=getComputedStyle(el),range=document.createRange();range.selectNodeContents(el);
+    return {size:+parseFloat(cs.fontSize).toFixed(2),lines:new Set([...range.getClientRects()].filter(x=>x.width>1&&x.height>1).map(x=>Math.round(x.top))).size};});
+   const on=read();if(layer)layer.disabled=true;const off=read();if(layer)layer.disabled=false;
+   // document.fonts.check() miente cuando la fuente no carga: el estado real del
+   // FontFace es lo único que distingue Outfit del respaldo Arial.
+   return {layer:!!layer,outfit:[...document.fonts].some(f=>/Outfit/.test(f.family)&&f.status==='loaded'),
+    rows:nodes.map((el,i)=>({brand:el===brand,text:el.textContent.replace(/\s+/g,' ').trim().slice(0,40),on:on[i],off:off[i]}))};
+  },'Escala tipográfica fluida');
+  if(headlines){
+   if(!headlines.layer)problems.push(file+'@'+width+': shared block without the fluid type layer');
+   for(const row of headlines.rows){
+    if(row.on.lines>row.off.lines)problems.push(file+'@'+width+': headline gained lines ('+row.off.lines+'→'+row.on.lines+'): '+row.text);
+    if(width<=1100&&row.on.size<24)problems.push(file+'@'+width+': headline under the 24px floor ('+row.on.size+'): '+row.text);
+    if(width>1100&&row.on.size!==row.off.size)problems.push(file+'@'+width+': desktop headline changed ('+row.off.size+'→'+row.on.size+'): '+row.text);
+    if(row.brand){
+     if(headlines.outfit&&row.on.lines!==1)problems.push(file+'@'+width+': brand headline wrapped into '+row.on.lines+' lines: '+row.text);
+     else if(!headlines.outfit)skipped.push(file+'@'+width);
+    }
+   }
+  }
+  // Se informan de inmediato: si otra comprobación aborta la suite más adelante,
+  // un problema de titulares ya detectado no puede quedar sin reportar.
+  if(problems.length){console.error('TITULARES: '+problems.join(' | '));assert.deepEqual(problems,[],'headline regressions');}
+  problems.length=0;
   const brand=await page.locator('#ilatek-nav .iln-brand').evaluate(a=>{
    const img=a.querySelector('img'),s=getComputedStyle(img);
    return {text:a.textContent.trim(),label:a.getAttribute('aria-label'),height:a.getBoundingClientRect().height,
@@ -189,4 +237,6 @@ try{for(const file of [...shellFiles,...archived].filter(f=>!process.env.ILATEK_
  }
  console.log('PASS '+file);
 }}finally{await browser.close();}
-console.log(JSON.stringify({files:new Set(results.map(r=>r.file)).size,cases:results.length,minHeroGap:Math.min(...results.filter(r=>r.gap!==null).map(r=>r.gap)),overflow:0,errors:0}));
+assert.deepEqual(problems,[],'headline regressions ('+problems.length+'):\n'+problems.join('\n'));
+if(skipped.length)console.log('OMITIDO: garantía de una línea sin la fuente real en '+skipped.length+' caso(s): '+skipped.slice(0,6).join(', ')+(skipped.length>6?' …':''));
+console.log(JSON.stringify({files:new Set(results.map(r=>r.file)).size,cases:results.length,minHeroGap:Math.min(...results.filter(r=>r.gap!==null).map(r=>r.gap)),overflow:0,errors:0,oneLineSkipped:skipped.length}));

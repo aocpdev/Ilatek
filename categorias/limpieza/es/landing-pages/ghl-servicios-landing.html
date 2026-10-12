@@ -77,6 +77,59 @@ body:has(#ilatek-nav) .mshero-inner{
 #ilatek-cobertura-dir [hidden]{display:none !important}
 @media(prefers-reduced-motion:reduce){html:has(#ilatek-nav){scroll-behavior:auto !important}}
 
+/* ILATEK · Escala tipográfica fluida para titulares.
+   SOLO presentación: no cambia texto, contenido, descripciones, jerarquía ni
+   distribución. Se inyecta con el resto del bloque compartido (links/runtime).
+
+   Reglas:
+   1) Titular de marca (Home) = UNA SOLA LÍNEA en cualquier ancho. El tamaño se
+      deriva del ancho disponible, no de un valor fijo, así que encoge en el
+      teléfono en vez de partirse en dos líneas.
+   2) Titulares de oración (héroes de categoría/servicio y la landing de reseñas)
+      = tamaño proporcional al ancho del dispositivo con piso legible de 24px.
+      Nunca producen más líneas que el diseño actual, solo menos.
+   3) Desde 1101px no se altera ningún tamaño: manda el diseño aprobado. Cada
+      curva termina exactamente en el valor que la página ya usa a 1100px, de
+      modo que no hay salto al cruzar el punto de quiebre.
+
+   Divisor 11.2 = medida real del titular más largo en una línea
+   ("Ilatek Property Solution", Outfit 800, letter-spacing -0.045em: 10.86em a
+   280px) más 3% de margen. Al cargar sin la fuente web el respaldo Arial mide
+   12.7em, así que durante esos milisegundos el titular corto puede partirse en
+   dos líneas, pero nunca desborda el ancho de pantalla. */
+
+/* 1 · Titular de marca: una línea garantizada de 280px a 1920px.
+   min( <diseño actual>, <ancho disponible / medida del texto> ) — nunca agranda. */
+.mshero h1{
+  font-size:min(clamp(40px,6.2vw,82px),calc((100vw - 40px)/11.2)) !important;
+}
+
+/* 2 · Titulares de oración: misma curva que ya usa cada familia, con el piso
+   bajado a 24px. Al conservar el coeficiente vw y el tope (el valor de la
+   página a 1100px) el resultado nunca es mayor que el diseño aprobado: solo
+   encoge en los anchos donde antes el piso fijo ganaba. La transición a
+   ≥1101px es continua porque cada tope es el valor exacto de 1100px. */
+@media (max-width:1100px){
+  .ilt-hero h1,.ilc2-hero h1{
+    font-size:clamp(24px,5vw,55px) !important;
+  }
+  /* Las páginas de categoría usan .ilr-hero con 5vw. La landing de reseñas ya es
+     fluida por su cuenta (3.5vw sobre un piso de 32px, 8vw en el teléfono), así
+     que se excluye: forzarla a 5vw le añadía una línea entre 700px y 1100px. */
+  .ilr-hero h1:not(#ilatek-resenas-lp *){
+    font-size:clamp(24px,5vw,55px) !important;
+  }
+  .il-hero h1{
+    font-size:clamp(24px,5.6vw,61.6px) !important;
+  }
+  .ilsx-hero h1{
+    font-size:clamp(24px,5.4vw,59.4px) !important;
+  }
+  .il-reviews-head h1,#ilatek-reviews-title{
+    font-size:clamp(24px,4.6vw,50.6px) !important;
+  }
+}
+
 </style>
 <script>
 /* ILATEK: one shared URL contract; inlined into standalone GHL embeds. */
@@ -469,7 +522,7 @@ body:has(#ilatek-nav) .mshero-inner{
           </ul>
         </div>
       </div>
-      <a href="https://{{custom_values.website_url}}/#ilatek-faq" data-ilatek-path="/limpieza/#ilatek-conocenos" data-es="Acerca de Nosotros" data-en="About Us">Acerca de Nosotros</a>
+      <a href="https://{{custom_values.website_url}}/#ilatek-conocenos" data-ilatek-path="/#ilatek-conocenos" data-ilatek-anchor="ilatek-conocenos" data-es="Acerca de Nosotros" data-en="About Us">Acerca de Nosotros</a>
 
     </nav>
     <div class="iln-langwrap"><button class="iln-lang" id="iln-lang" type="button" aria-label="Cambiar el idioma a English"><span aria-pressed="true">es</span><span aria-pressed="false">en</span></button></div>
@@ -578,7 +631,7 @@ body:has(#ilatek-nav) .mshero-inner{
           <a href="https://{{custom_values.website_url}}/reclutamiento-empleo" data-ilatek-path="/reclutamiento-empleo"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-spark"></use></svg><span class="iln-t" data-es="Limpieza" data-en="Cleaning">Limpieza</span></a>
         </div>
       </div>
-      <a href="https://{{custom_values.website_url}}/#ilatek-faq" data-ilatek-path="/#ilatek-faq"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-info"></use></svg><span class="iln-t" data-es="Acerca de Nosotros" data-en="About Us">Acerca de Nosotros</span></a>
+      <a href="https://{{custom_values.website_url}}/#ilatek-conocenos" data-ilatek-path="/#ilatek-conocenos" data-ilatek-anchor="ilatek-conocenos"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-info"></use></svg><span class="iln-t" data-es="Acerca de Nosotros" data-en="About Us">Acerca de Nosotros</span></a>
       <a href="https://portal.ilatekpr.com" target="_blank" rel="noopener"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-portal"></use></svg>Login</a>
       <div class="iln-acc-item">
         <button class="iln-acc-trigger" type="button" aria-expanded="false" aria-controls="iln-drawer-agenda"><svg class="iln-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-cal"></use></svg><span class="iln-t" data-es="Agenda tu Servicio" data-en="Book Your Service">Agenda tu Servicio</span><svg class="iln-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="#iln-i-chev"></use></svg></button>
@@ -1998,7 +2051,7 @@ body:has(#ilatek-nav) .mshero-inner{
     <div class="ilf-services">
       <section class="ilf-svc ilf-card" aria-labelledby="ilf-svc-clean-t">
         <h2 id="ilf-svc-clean-t" class="ilf-h"><svg class="ilf-ico" aria-hidden="true"><use href="#ilf-i-clean"></use></svg><span class="iln-t" data-es="Servicios de Limpieza" data-en="Cleaning Services">Servicios de Limpieza</span></h2>
-        <img class="ilf-svcimg" src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acaa576195f9172ed3a852a.jpg" alt="Ilatek - Servicio de Limpieza en {{custom_values.county_name_and_state}}" title="Ilatek - Servicio de Limpieza en {{custom_values.county_name_and_state}}" loading="lazy" data-ilatek-local-alt="Ilatek%20-%20Servicio%20de%20Limpieza%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D" data-ilatek-local-title="Ilatek%20-%20Servicio%20de%20Limpieza%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D">
+        <img class="ilf-svcimg" src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8582fcc7a5a2b73475d89.jpg" alt="Ilatek - Servicio de Limpieza en {{custom_values.county_name_and_state}}" title="Ilatek - Servicio de Limpieza en {{custom_values.county_name_and_state}}" loading="lazy" data-ilatek-local-alt="Ilatek%20-%20Servicio%20de%20Limpieza%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D" data-ilatek-local-title="Ilatek%20-%20Servicio%20de%20Limpieza%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D">
         <ul class="ilf-links">
           <li><a href="https://{{custom_values.website_url}}/limpieza-residencial" data-ilatek-path="/limpieza-residencial"><span class="iln-t" data-es="Servicio de Limpieza Residencial en {{custom_values.county_name_and_state}}" data-en="Residential Cleaning Service in {{custom_values.county_name_and_state}}">Servicio de Limpieza Residencial en {{custom_values.county_name_and_state}}</span></a></li>
           <li><a href="https://{{custom_values.website_url}}/limpieza-comercial" data-ilatek-path="/limpieza-comercial"><span class="iln-t" data-es="Servicio de Limpieza Comercial en {{custom_values.county_name_and_state}}" data-en="Commercial Cleaning Service in {{custom_values.county_name_and_state}}">Servicio de Limpieza Comercial en {{custom_values.county_name_and_state}}</span></a></li>

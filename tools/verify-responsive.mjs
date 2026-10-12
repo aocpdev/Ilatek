@@ -31,4 +31,20 @@ for(const file of deliveryFiles()){
  }
 }
 assert.equal(responsiveHtml('<button class="icd-nav icd-nav--next" aria-label="Página siguiente">→</button>').includes('data-en="Next page"'),true);
-console.log(JSON.stringify({responsiveHeroPages:heroes,arrowControls:controls,attributeTranslations:'safe',idempotence:'passed'}));
+// La escala fluida viaja dentro del bloque compartido: cada página que recibe el
+// runtime debe llevarla, y la capa sólo puede escalar (nada de tamaños fijos),
+// para que el titular de marca nunca se parta en el teléfono.
+const fluid=fs.readFileSync(ROOT+'/src/compartido/fluid-type.css','utf8');
+assert.ok(fs.readFileSync(ROOT+'/tools/internal-link-contract.mjs','utf8').includes("'fluid-type.css'"),'fluid-type.css is not wired into the shared block');
+assert.ok(/\.mshero h1\{[\s\S]*?calc\(\(100vw - 40px\)\/11\.2\)/.test(fluid),'brand headline one-line rule missing');
+for(const family of ['.ilt-hero h1','.ilc2-hero h1','.ilr-hero h1','.il-hero h1','.ilsx-hero h1','.il-reviews-head h1','#ilatek-reviews-title'])
+ assert.ok(fluid.includes(family),'missing fluid rule for '+family);
+assert.ok(!/font-size:\s*[\d.]/.test(fluid),'the fluid layer must scale, not set fixed sizes');
+assert.equal((fluid.match(/font-size/g)||[]).length,(fluid.match(/!important/g)||[]).length,'every fluid rule must win the cascade');
+let layered=0;
+for(const file of deliveryFiles()){
+ const html=fs.readFileSync(ROOT+'/'+file,'utf8');
+ if(!html.includes('ILATEK:INTERNAL-LINKS:START'))continue;
+ assert.ok(html.includes('Escala tipográfica fluida'),file+': shared block without the fluid layer');layered++;
+}
+console.log(JSON.stringify({responsiveHeroPages:heroes,arrowControls:controls,attributeTranslations:'safe',idempotence:'passed',fluidTypeLayers:layered}));

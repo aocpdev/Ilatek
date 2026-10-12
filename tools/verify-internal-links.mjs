@@ -38,5 +38,19 @@ for(const file of files){
   assert.equal(formatPage(html,publicPath(file),{headOnly:/HEAD-TEMPLATE|head-seo|head-original|performance-head/.test(file)}),html,`Not idempotent: ${file}`);
 }
 for(const page of buildTree()) audit(buildPage(page),'generated/'+page.slug);
+// El menú "Acerca de Nosotros" apunta a la sección Conócenos del Home: el destino
+// tiene que existir y ninguna copia puede conservar la ruta antigua (/limpieza),
+// que no corresponde a ninguna página del sitio.
+const homeFile='home/es/landing-pages/ghl-home-multiservicios.html';
+assert.equal((fs.readFileSync(ROOT+'/'+homeFile,'utf8').match(/id="ilatek-conocenos"/g)||[]).length,1,`${homeFile}: exactly one #ilatek-conocenos section`);
+let aboutMenuPages=0;
+for(const file of files){
+  const html=fs.readFileSync(ROOT+'/'+file,'utf8');
+  assert.ok(!html.includes('/limpieza/#ilatek-conocenos'),`${file}: "Acerca de Nosotros" still targets a page that does not exist`);
+  if(!html.includes('Acerca de Nosotros')) continue;
+  assert.equal((html.match(/data-ilatek-path="\/#ilatek-conocenos"/g)||[]).length,2,`${file}: both About links must target /#ilatek-conocenos`);
+  aboutMenuPages++;
+}
+assert.ok(aboutMenuPages>=50,`About menu present on too few pages: ${aboutMenuPages}`);
 console.log(JSON.stringify({files:files.length,pages:structure.pages.length,anchorsAndGeneratedAnchors:anchorCount,
-  parsedScriptBlocks:blocks,generatedRoofPages:buildTree().length,urlNormalization:'passed',idempotence:'passed'},null,2));
+  parsedScriptBlocks:blocks,generatedRoofPages:buildTree().length,aboutMenuPages,urlNormalization:'passed',idempotence:'passed'},null,2));

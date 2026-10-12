@@ -6,7 +6,8 @@ import { responsiveHtml } from './responsive-contract.mjs';
 export const TOKEN = '{{custom_values.website_url}}';
 export const PREFIX = 'https://' + TOKEN;
 const runtime = ['internal-links.js','location-values.js','responsive-layout.js'].map(file=>fs.readFileSync(path.join(ROOT,'src/compartido',file),'utf8')).join('\n');
-const css=fs.readFileSync(path.join(ROOT,'src/compartido/responsive-layout.css'),'utf8');
+// Shared CSS in cascade order: layout/navigation fixes, then the fluid headline scale.
+const css=['responsive-layout.css','fluid-type.css'].map(f=>fs.readFileSync(path.join(ROOT,'src/compartido',f),'utf8')).join('\n');
 const block = '<!-- ILATEK:INTERNAL-LINKS:START -->\n<style>\n'+css+'\n</style>\n<script>\n'+runtime+'\n</script>\n<!-- ILATEK:INTERNAL-LINKS:END -->\n';
 const blockRE = /<!-- ILATEK:INTERNAL-LINKS:START -->[\s\S]*?<!-- ILATEK:INTERNAL-LINKS:END -->\s*/g;
 export function publicPath(file) {
