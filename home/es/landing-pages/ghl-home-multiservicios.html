@@ -631,7 +631,7 @@ body:has(#ilatek-nav) .mshero-inner{
     var root=document.getElementById('ilatek-nav'); if(!root||root.dataset.ilnLang)return; root.dataset.ilnLang='true';
     var LANG_KEY='ilatek-lang';
     function token(name){return '{'+'{custom_values.'+name+'}'+'}'}
-    function clean(v){v=String(v||'').replace(/ /g,' ').trim();return /^\s*\{\{[^}]+\}\}\s*$/.test(v)?'':v}
+    function clean(v){v=String(v||'').replace(/ /g,' ').trim();return /^\s*\{\{[^}]+\}\}\s*$/.test(v)?'':v}
     var website=clean(root.getAttribute('data-website-url'))||'https://ilatekpr.com';
     var county='Puerto Rico';
     function resolve(text){
@@ -784,7 +784,7 @@ body:has(#ilatek-nav) .mshero-inner{
   /* Drawer móvil: generado desde el mega, con niveles de profundidad
      (sección > categoría > servicio) y sombras escalonadas por nivel */
   if(drawer&&grid){
-    var site=(root.getAttribute('data-website-url')||'').replace(/ /g,' ').trim();
+    var site=(root.getAttribute('data-website-url')||'').replace(/ /g,' ').trim();
     if(/^\s*\{\{[^}]+\}\}\s*$/.test(site)||!site)site='https://ilatekpr.com';
     function mkAcc(label,icon){
       var item=document.createElement('div');item.className='iln-acc-item';
@@ -979,7 +979,6 @@ body:has(#ilatek-nav) .mshero-inner{
     /* Video del hero: cubre la foto y se reproduce en loop infinito (muted+playsinline
        para autoplay). La foto queda debajo como respaldo mientras carga el video. */
     .mshero-video{position:absolute;inset:0;z-index:1;width:100%;height:100%;object-fit:cover;object-position:50% 42%;pointer-events:none}
-    @media(prefers-reduced-motion:reduce){.mshero-video{display:none}}
     .mshero-scrim{position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,rgba(11,16,61,.42) 0%,rgba(11,16,61,.46) 48%,rgba(11,16,61,.88) 100%)}
     .mshero-inner{position:relative;z-index:2;width:min(100% - 40px,1180px);margin:auto;padding:clamp(96px,11vw,160px) 0;text-align:center;display:grid;justify-items:center}
     .mshero-kicker{max-width:980px;color:rgba(255,255,255,.92);font:700 13px/1.7 Manrope,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;text-shadow:0 2px 14px rgba(11,16,61,.6)}
@@ -998,7 +997,7 @@ body:has(#ilatek-nav) .mshero-inner{
     .mshero-kicker{animation:msheroUp .7s .08s cubic-bezier(.22,1,.36,1) both}
     .mshero h1{animation:msheroUp .8s .2s cubic-bezier(.22,1,.36,1) both}
     .mshero-ctas{animation:msheroUp .8s .34s cubic-bezier(.22,1,.36,1) both}
-    @media(prefers-reduced-motion:reduce){.mshero-img{transition:none}.mshero:hover .mshero-img{transform:none}.mshero-video{display:none}.mshero-kicker,.mshero h1,.mshero-ctas{animation:none}.mshero-btn,.mshero-btn svg{transition:none}}
+    @media(prefers-reduced-motion:reduce){.mshero-img{transition:none}.mshero:hover .mshero-img{transform:none}.mshero-kicker,.mshero h1,.mshero-ctas{animation:none}.mshero-btn,.mshero-btn svg{transition:none}}
     @media(max-width:560px){
       .mshero-img{object-position:50% 38%}
       .mshero-ctas{width:100%;flex-direction:column}
@@ -1722,12 +1721,11 @@ body:has(#ilatek-nav) .mshero-inner{
     .ils-more:after{content:'→'}
     .ils-card:hover .ils-more,.ils-card:focus-visible .ils-more{background:var(--green-dark);box-shadow:0 14px 28px rgba(0,185,79,.45)}
     .ils-hint{position:relative;z-index:2;margin:0;width:100%;padding:15px 20px;background:#0b103d;text-align:center;color:rgba(255,255,255,.72);font-size:12.5px}
-    /* Auto-slide infinito en TODOS los dispositivos: el marquee corre incluso con prefers-reduced-motion */
+    /* Video de fondo SIEMPRE visible (tambien con reduced motion; la animacion del marquee corre en todos los casos) */
     @media(max-width:560px){.ils-head{width:min(100% - 40px,1400px);margin-bottom:34px}.ils-track{gap:16px}.ils-card{width:282px}.ils-media{aspect-ratio:16/9;min-height:0}.ils-hint{width:100%}}
-    @media (prefers-reduced-motion:reduce){.ils-bgvideo{display:none}}
   </style>
 
-  <video class="ils-bgvideo" src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/775d8cdb-8c8c-47ad-8516-47b1abc9315a.mp4" poster="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/775d8cdb-8c8c-47ad-8516-47b1abc9315a.mp4" autoplay muted loop playsinline webkit-playsinline preload="auto" disablepictureinpicture tabindex="-1" aria-hidden="true" title="Video: equipo de Ilatek limpiando propiedades en {{custom_values.county_name_and_state}}"></video>
+  <video class="ils-bgvideo" src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8f952bd6bb710ca0fd582.mp4" poster="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/hero-poster-1280.webp" autoplay muted loop playsinline webkit-playsinline preload="auto" disablepictureinpicture tabindex="-1" aria-hidden="true" title="Video: equipo de Ilatek limpiando propiedades en {{custom_values.county_name_and_state}}"></video>
   <div class="ils-top">
   <header class="ils-head">
     <span class="ils-eyebrow" data-es="Servicios" data-en="Services">Servicios</span>
@@ -1750,9 +1748,8 @@ body:has(#ilatek-nav) .mshero-inner{
        tab en background, fin de reproduccion sin loop). */
     var ilBg=root.querySelector('.ils-bgvideo');
     if(ilBg){
-      var ilReduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion:reduce)').matches;
       var ilKick=function(){
-        if(ilReduce||!ilBg.paused)return;
+        if(!ilBg.paused)return;
         if(ilBg.ended){try{ilBg.currentTime=0;}catch(e){}}
         var p=ilBg.play(); if(p&&p.catch)p.catch(function(){});
       };
@@ -2616,7 +2613,7 @@ body:has(#ilatek-nav) .mshero-inner{
     var root=document.getElementById('ilatek-footer'); if(!root||root.dataset.ilfLang)return; root.dataset.ilfLang='true';
     var LANG_KEY='ilatek-lang';
     function token(name){return '{'+'{custom_values.'+name+'}'+'}'}
-    function clean(v){v=String(v||'').replace(/ /g,' ').trim();return /^\s*\{\{[^}]+\}\}\s*$/.test(v)?'':v}
+    function clean(v){v=String(v||'').replace(/ /g,' ').trim();return /^\s*\{\{[^}]+\}\}\s*$/.test(v)?'':v}
     function resolve(text){
       var out=String(text||'').split(token('county_name_and_state')).join(county);
       out=window.ILATEK_LINKS.replace(out,token('website_url'),website);
