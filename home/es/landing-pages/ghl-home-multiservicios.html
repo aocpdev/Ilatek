@@ -1178,6 +1178,234 @@ body:has(#ilatek-nav) .mshero-inner{
   })();
   </script>
 
+  <!-- ═══ 1b. VIDEO · Compañía multiservicios (16:9, centrado) ═══
+    · H2 con marca + categoría + location; subtítulo con sellado de techos y limpieza.
+    · Player 16:9 a 820px máx. (más pequeño que el hero), autoplay silenciado.
+    · El iframe se crea al acercarse al viewport; el póster es el botón de play. -->
+  <section id="ilatek-video-home" aria-labelledby="ilatek-video-home-title"
+    data-location-label="{{custom_values.county_name_and_state}}">
+
+    <style>
+      #ilatek-video-home{
+        position:relative;
+        padding:clamp(56px,6vw,84px) 0 clamp(56px,6vw,88px);
+        background:#fff;
+        color:var(--ms-ink);
+        text-align:center;
+        border-top:1px solid rgba(17,22,75,.06);
+        isolation:isolate;
+      }
+      #ilatek-video-home *{box-sizing:border-box}
+      #ilatek-video-home .msv-wrap{width:min(100% - 40px,1400px);margin:auto}
+
+      #ilatek-video-home .msv-title{
+        margin:0 auto;
+        max-width:960px;
+        font:800 clamp(27px,3.4vw,44px)/1.07 Outfit,Manrope,Arial,sans-serif;
+        letter-spacing:-.05em;
+        color:var(--ms-ink);
+      }
+      #ilatek-video-home .msv-sub{
+        margin:14px auto 0;
+        max-width:760px;
+        font:500 clamp(15px,1.5vw,18px)/1.6 Manrope,Arial,sans-serif;
+        color:var(--ms-muted);
+      }
+
+      /* Marco 16:9 centrado, un poco más pequeño que el contenedor */
+      #ilatek-video-home .msv-frame{
+        position:relative;
+        width:min(100%,820px);
+        aspect-ratio:16 / 9;
+        margin:clamp(26px,3vw,38px) auto 0;
+        border-radius:var(--ms-r-lg);
+        overflow:hidden;
+        background:#000;
+        box-shadow:
+          0 2px 4px rgba(17,22,75,.06),
+          0 18px 40px rgba(17,22,75,.14),
+          0 40px 80px rgba(33,61,142,.12);
+      }
+
+      #ilatek-video-home .msv-mount,
+      #ilatek-video-home .msv-frame iframe{
+        position:absolute;inset:0;
+        width:100% !important;height:100% !important;
+        border:0;
+      }
+
+      /* Póster: cubre la carga y hace de botón de play si el autoplay se bloquea */
+      #ilatek-video-home .msv-poster{
+        position:absolute;inset:0;z-index:2;
+        display:block;width:100%;height:100%;
+        padding:0;border:0;
+        background:#0b103d center / cover no-repeat
+          url('https://i.ytimg.com/vi/4TQ_43idl_0/maxresdefault.jpg');
+        cursor:pointer;
+        transition:opacity .35s ease;
+      }
+      #ilatek-video-home .msv-poster::after{
+        content:'';position:absolute;inset:0;margin:auto;
+        width:74px;height:74px;border-radius:50%;
+        background-color:rgba(255,255,255,.94);
+        background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M8 5v14l11-7z' fill='%23213d8e'/%3E%3C/svg%3E");
+        background-size:31px 31px;
+        background-position:56% 50%;
+        background-repeat:no-repeat;
+        box-shadow:0 12px 34px rgba(0,0,0,.36);
+        transition:transform .2s ease;
+      }
+      #ilatek-video-home .msv-poster:hover::after{transform:scale(1.06)}
+      #ilatek-video-home .msv-poster.is-hidden{opacity:0;pointer-events:none}
+
+      #ilatek-video-home .msv-sound{
+        position:absolute;z-index:3;top:14px;left:14px;
+        display:inline-flex;align-items:center;gap:8px;
+        padding:9px 14px;border:0;border-radius:999px;
+        background:rgba(11,16,61,.82);color:#fff;
+        font:700 13px/1 Manrope,Arial,sans-serif;
+        cursor:pointer;
+        -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+        opacity:0;visibility:hidden;transform:translateY(-6px);
+        transition:opacity .25s ease,transform .25s ease,visibility .25s;
+      }
+      #ilatek-video-home .msv-sound::before{
+        content:'';width:7px;height:7px;border-radius:50%;background:var(--ms-green);
+      }
+      #ilatek-video-home .msv-sound.is-visible{opacity:1;visibility:visible;transform:none}
+
+      #ilatek-video-home .msv-error{
+        margin:14px auto 0;max-width:640px;
+        font:500 14px/1.6 Manrope,Arial,sans-serif;color:var(--ms-muted);
+      }
+      #ilatek-video-home .msv-error a{color:var(--ms-blue);font-weight:700}
+
+      @media(max-width:560px){
+        #ilatek-video-home{padding:44px 0 52px}
+        #ilatek-video-home .msv-frame{border-radius:16px}
+        #ilatek-video-home .msv-poster::after{width:58px;height:58px;background-size:25px 25px}
+        #ilatek-video-home .msv-sound{top:10px;left:10px;padding:8px 12px;font-size:12px}
+      }
+      @media(prefers-reduced-motion:reduce){
+        #ilatek-video-home .msv-poster,
+        #ilatek-video-home .msv-sound{transition:none}
+      }
+    </style>
+
+    <div class="msv-wrap">
+      <h2 id="ilatek-video-home-title" class="msv-title"
+        data-es="Ilatek Property Solution, compañía multiservicios en {{custom_values.county_name_and_state}}"
+        data-en="Ilatek Property Solution, multiservice company in {{custom_values.county_name_and_state}}">Ilatek Property Solution, compañía multiservicios en {{custom_values.county_name_and_state}}</h2>
+
+      <p class="msv-sub"
+        data-es="Sellado de techos y servicios de limpieza en {{custom_values.county_name_and_state}}."
+        data-en="Roof sealing and cleaning services in {{custom_values.county_name_and_state}}.">Sellado de techos y servicios de limpieza en {{custom_values.county_name_and_state}}.</p>
+
+      <div class="msv-frame">
+        <div class="msv-mount" id="msv-yt"></div>
+        <button class="msv-poster" type="button" aria-label="Reproducir el video de Ilatek Property Solution"></button>
+        <button class="msv-sound" type="button" data-es="Activar sonido" data-en="Turn on sound">Activar sonido</button>
+      </div>
+
+      <p class="msv-error" hidden>
+        El video no está disponible en este momento.
+        <a href="https://youtu.be/4TQ_43idl_0" target="_blank" rel="noopener">Verlo en YouTube</a>.
+      </p>
+    </div>
+
+    <script>
+    (function(){
+      var root=document.getElementById('ilatek-video-home');
+      if(!root||root.dataset.msvReady)return;
+      root.dataset.msvReady='1';
+
+      var VIDEO_ID='4TQ_43idl_0';
+      var frame=root.querySelector('.msv-frame');
+      var mount=root.querySelector('.msv-mount');
+      var poster=root.querySelector('.msv-poster');
+      var sound=root.querySelector('.msv-sound');
+      var player=null,booting=false;
+
+      function boot(){
+        if(booting||player)return;
+        booting=true;
+
+        var create=function(){
+          player=new YT.Player(mount,{
+            videoId:VIDEO_ID,
+            host:'https://www.youtube-nocookie.com',
+            playerVars:{
+              autoplay:1,mute:1,playsinline:1,rel:0,
+              modestbranding:1,iv_load_policy:3,controls:1,
+              origin:window.location.origin
+            },
+            events:{
+              onReady:function(e){e.target.mute();e.target.playVideo();},
+              onStateChange:function(e){
+                var S=YT.PlayerState;
+                if(e.data===S.PLAYING){
+                  poster.classList.add('is-hidden');
+                  var muted=true;
+                  try{muted=player.isMuted();}catch(e){}
+                  sound.classList.toggle('is-visible',muted);
+                }else if(e.data===S.PAUSED||e.data===S.ENDED){
+                  sound.classList.remove('is-visible');
+                }
+              },
+              onError:function(){
+                poster.classList.add('is-hidden');
+                root.querySelector('.msv-error').hidden=false;
+              }
+            }
+          });
+        };
+
+        if(window.YT&&window.YT.Player){create();return;}
+
+        var prev=window.onYouTubeIframeAPIReady;
+        window.onYouTubeIframeAPIReady=function(){
+          if(typeof prev==='function')prev();
+          create();
+        };
+
+        if(!document.querySelector('script[data-msv-yt]')){
+          var s=document.createElement('script');
+          s.src='https://www.youtube.com/iframe_api';
+          s.async=true;
+          s.setAttribute('data-msv-yt','');
+          document.head.appendChild(s);
+        }
+      }
+
+      poster.addEventListener('click',function(){
+        if(!player){boot();return;}
+        try{
+          if(player.getPlayerState()===0)player.seekTo(0);
+          player.unMute();
+          player.setVolume(100);
+          player.playVideo();
+        }catch(e){}
+        sound.classList.remove('is-visible');
+      });
+
+      sound.addEventListener('click',function(){
+        try{player.unMute();player.setVolume(100);}catch(e){}
+        sound.classList.remove('is-visible');
+      });
+
+      if('IntersectionObserver' in window){
+        var io=new IntersectionObserver(function(entries){
+          for(var i=0;i<entries.length;i++){
+            if(entries[i].isIntersecting){io.disconnect();boot();return;}
+          }
+        },{rootMargin:'300px 0px'});
+        io.observe(frame);
+      }else{
+        boot();
+      }
+    })();
+    </script>
+  </section>
   <!-- ═══ 2. CARRUSEL 3D · SERVICIOS DE TECHOS · hub de 6 categorías ═══
     Embed del section "ilt-extra ilt3-sec" de techos/ghl-techos-landing.html (marcado,
     CSS y JS tal cual). Únicos ajustes para convivir aquí: el scope del CSS pasa a
