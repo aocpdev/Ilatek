@@ -1,0 +1,47 @@
+{
+  "municipality": "Florida",
+  "municipalitySlug": "florida",
+  "dateVerified": "2026-10-21",
+  "communities": [
+    {
+      "name": "Altos de Florida",
+      "slug": "altos-de-florida",
+      "alternates": ["Urb. Altos de Florida"],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Listado de un lote residencial de 1,000 m² por $85,000; la zona aparece desarrollada con viviendas y calles pavimentadas. No indica control de acceso ni posicionamiento de lujo.",
+      "sources": ["https://properties.listingspuertorico.com/listing/34fi8?u=103038&locale=es_PR"],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Hacienda de Florida",
+      "slug": "hacienda-de-florida",
+      "alternates": ["Hacienda De Florida"],
+      "priority": "HIGH",
+      "type": "Comunidad residencial (tipo legal no confirmado)",
+      "evidence": "Zillow: vivienda de 3 habitaciones y 2 baños con terraza y piscina; el anuncio dice 'Access control'. El código postal del anuncio (00950) no coincide con Florida, así que la ubicación debe verificarse antes de usarla.",
+      "sources": ["https://www.zillow.com/homedetails/Hacienda-De-Florida-Calle-1-Lote-14-14-Florida-PR-00950/2103142612_zpid/"],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Alturas de Florida",
+      "slug": "alturas-de-florida",
+      "alternates": ["Urb. Alturas de Florida"],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Publicación informativa para residentes de la 'urb. Alturas de Florida'. No se confirmaron precios, amenidades, control de acceso ni posicionamiento de lujo.",
+      "sources": ["https://www.facebook.com/100064367992562/posts/florida-puerto-rico-informamos-a-los-residentes-de-la-urb-alturas-de-florida-fog/5510140632374328/"],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Jardines de Florida",
+      "slug": "jardines-de-florida",
+      "alternates": ["Urb. Jardines de Florida"],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Nombrada en la misma publicación informativa de residentes. Una página de Findit tiene el nombre en el título, pero su contenido de listado no corresponde, así que no se verificó una propiedad.",
+      "sources": ["https://www.facebook.com/100064367992562/posts/florida-puerto-rico-informamos-a-los-residentes-de-la-urb-alturas-de-florida-fog/5510140632374328/", "https://www.finditpr.com/en/property/Urb-Jardines-De-Florida-B-6-Calle-3-Jardines-De-Florida-urbanizacion-Florida-PR-0095/18585"],
+      "confidence": "MEDIUM"
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+<!-- Componente: mapa de regiones y municipios · Ilatek (home)
+     MapLibre GL se carga bajo demanda cuando el bloque entra en pantalla.
+     MapLibre es la misma API que Mapbox GL pero sin token: los mosaicos
+     vienen de OpenFreeMap. El token publico de Mapbox que usaba este
+     componente esta revocado (401 en todos los origenes), asi que el mapa
+     no puede depender de credenciales.
+     Si el SDK o los mosaicos fallan, queda visible la lista por regiones (fallback HTML). -->
+<section class="ilk-zonas" id="zonas-servicio" aria-labelledby="ilk-zonas-titulo">
+  <style>
+    .ilk-zonas{width:min(100% - 40px,1400px);margin:0 auto;padding:78px 0;font-family:Manrope,Arial,sans-serif;color:#11164b}
+    .ilk-zonas h2{font-family:Outfit,Manrope,sans-serif;font-size:clamp(42px,4.6vw,66px);font-weight:800;line-height:1.02;letter-spacing:-.06em;margin:0;text-align:center}
+    .ilk-zonas p.lead{text-align:center;margin:18px auto 36px;max-width:640px;color:#5b6380;font-size:16px;line-height:1.65}
+    .ilk-zonas__mapa{position:relative;height:420px;border-radius:16px;overflow:hidden;background:#f4f7fc;border:1px solid #dbe2f1;box-shadow:0 20px 45px rgba(16,25,75,.08)}
+    .ilk-zonas__mapa-estado{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#5b6380;font-size:.95rem;padding:20px;text-align:center}
+    .ilk-zonas__mapa.ilk-ok .ilk-zonas__mapa-estado{display:none}
+    .ilk-zonas__regiones{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:28px}
+    .ilk-zonas__region{background:#fff;border:1px solid #dbe2f1;border-radius:22px;padding:22px 24px;box-shadow:0 8px 22px rgba(16,25,75,.06)}
+    .ilk-zonas__region h3{font-family:Outfit,Manrope,sans-serif;margin:0 0 12px;font-size:19px;font-weight:800;letter-spacing:-.02em;color:#11164b}
+    .ilk-zonas__region ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+    .ilk-zonas__region li a{display:inline-block;padding:6px 12px;border-radius:999px;background:#eef3ff;color:#213d8e;text-decoration:none;font:700 13px/1.2 Manrope,Arial,sans-serif}
+    .ilk-zonas__region li a:hover,.ilk-zonas__region li a:focus-visible{background:#00b94f;color:#fff}
+    .ilk-zonas__region:target{outline:3px solid #00b94f}
+    .ilk-zonas__marcador{width:18px;height:18px;border-radius:50%;background:#00b94f;border:3px solid #fff;box-shadow:0 0 0 5px rgba(0,185,79,.18),0 2px 6px rgba(0,0,0,.3);cursor:pointer}
+    .ilk-zonas__popup strong{display:block;margin-bottom:4px}
+    .ilk-zonas__popup a{color:#213d8e;font-weight:700}
+  </style>
+
+  <h2 id="ilk-zonas-titulo">Zonas de servicio en Puerto Rico</h2>
+  <p class="lead">Sellado de techos y limpieza en las seis regiones de la isla. Selecciona tu zona para ver municipios y comunidades atendidas.</p>
+
+  <div class="ilk-zonas__mapa" id="ilk-mapa">
+    <div class="ilk-zonas__mapa-estado" id="ilk-mapa-estado">Cargando mapa…</div>
+  </div>
+
+  <!-- Fallback y navegación accesible: siempre visible -->
+  <div class="ilk-zonas__regiones" id="ilk-regiones">
+
+    <article class="ilk-zonas__region" id="metro">
+      <h3>Área Metropolitana</h3>
+      <ul>
+        <li><a href="#san-juan">San Juan</a></li><li><a href="#bayamon">Bayamón</a></li><li><a href="#carolina">Carolina</a></li><li><a href="#guaynabo">Guaynabo</a></li><li><a href="#catano">Cataño</a></li><li><a href="#trujillo-alto">Trujillo Alto</a></li><li><a href="#toa-baja">Toa Baja</a></li><li><a href="#toa-alta">Toa Alta</a></li><li><a href="#loiza">Loíza</a></li><li><a href="#caguas">Caguas</a></li><li><a href="#gurabo">Gurabo</a></li><li><a href="#cidra">Cidra</a></li><li><a href="#aguas-buenas">Aguas Buenas</a></li>
+      </ul>
+    </article>
+
+    <article class="ilk-zonas__region" id="norte">
+      <h3>Norte</h3>
+      <ul>
+        <li><a href="#arecibo">Arecibo</a></li><li><a href="#barceloneta">Barceloneta</a></li><li><a href="#manati">Manatí</a></li><li><a href="#vega-baja">Vega Baja</a></li><li><a href="#vega-alta">Vega Alta</a></li><li><a href="#dorado">Dorado</a></li><li><a href="#hatillo">Hatillo</a></li><li><a href="#camuy">Camuy</a></li><li><a href="#quebradillas">Quebradillas</a></li><li><a href="#isabela">Isabela</a></li><li><a href="#utuado">Utuado</a></li><li><a href="#florida">Florida</a></li>
+      </ul>
+    </article>
+
+    <article class="ilk-zonas__region" id="este">
+      <h3>Este</h3>
+      <ul>
+        <li><a href="#rio-grande">Río Grande</a></li><li><a href="#luquillo">Luquillo</a></li><li><a href="#fajardo">Fajardo</a></li><li><a href="#ceiba">Ceiba</a></li><li><a href="#naguabo">Naguabo</a></li><li><a href="#humacao">Humacao</a></li><li><a href="#juncos">Juncos</a></li><li><a href="#san-lorenzo">San Lorenzo</a></li><li><a href="#las-piedras">Las Piedras</a></li><li><a href="#canovanas">Canóvanas</a></li><li><a href="#culebra">Culebra</a></li><li><a href="#vieques">Vieques</a></li><li><a href="#yabucoa">Yabucoa</a></li><li><a href="#maunabo">Maunabo</a></li>
+      </ul>
+    </article>
+
+    <article class="ilk-zonas__region" id="sur">
+      <h3>Sur</h3>
+      <ul>
+        <li><a href="#guayama">Guayama</a></li><li><a href="#arroyo">Arroyo</a></li><li><a href="#patillas">Patillas</a></li><li><a href="#salinas">Salinas</a></li><li><a href="#coamo">Coamo</a></li><li><a href="#santa-isabel">Santa Isabel</a></li><li><a href="#juana-diaz">Juana Díaz</a></li><li><a href="#ponce">Ponce</a></li><li><a href="#penuelas">Peñuelas</a></li><li><a href="#guayanilla">Guayanilla</a></li><li><a href="#yauco">Yauco</a></li><li><a href="#guanica">Guánica</a></li>
+      </ul>
+    </article>
+
+    <article class="ilk-zonas__region" id="oeste">
+      <h3>Oeste (Porta del Sol)</h3>
+      <ul>
+        <li><a href="#cabo-rojo">Cabo Rojo</a></li><li><a href="#lajas">Lajas</a></li><li><a href="#san-german">San Germán</a></li><li><a href="#hormigueros">Hormigueros</a></li><li><a href="#sabana-grande">Sabana Grande</a></li><li><a href="#mayaguez">Mayagüez</a></li><li><a href="#aguada">Aguada</a></li><li><a href="#aguadilla">Aguadilla</a></li><li><a href="#moca">Moca</a></li><li><a href="#aniasco">Añasco</a></li><li><a href="#rincon">Rincón</a></li><li><a href="#las-marias">Las Marías</a></li><li><a href="#maricao">Maricao</a></li><li><a href="#san-sebastian">San Sebastián</a></li>
+      </ul>
+    </article>
+
+    <article class="ilk-zonas__region" id="central">
+      <h3>Región Central (Cordillera)</h3>
+      <ul>
+        <li><a href="#orocovis">Orocovis</a></li><li><a href="#morovis">Morovis</a></li><li><a href="#ciales">Ciales</a></li><li><a href="#corozal">Corozal</a></li><li><a href="#naranjito">Naranjito</a></li><li><a href="#comerio">Comerío</a></li><li><a href="#barranquitas">Barranquitas</a></li><li><a href="#aibonito">Aibonito</a></li><li><a href="#cayey">Cayey</a></li><li><a href="#villalba">Villalba</a></li><li><a href="#jayuya">Jayuya</a></li><li><a href="#adjuntas">Adjuntas</a></li><li><a href="#lares">Lares</a></li>
+      </ul>
+    </article>
+
+  </div>
+
+  <script>
+  (function () {
+    // Sin token: MapLibre GL + mosaicos de OpenFreeMap (misma API que Mapbox GL).
+    var MAPLIBRE_JS = 'https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js';
+    var MAPLIBRE_CSS = 'https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css';
+    var ESTILO = 'https://tiles.openfreemap.org/styles/positron';
+    var contenedor = document.getElementById('ilk-mapa');
+    var estado = document.getElementById('ilk-mapa-estado');
+
+    // Centroides aproximados por región (orientativos, no son límites oficiales).
+    var REGIONES = [
+      { id: 'metro', nombre: 'Área Metropolitana', coords: [-66.12, 18.40] },
+      { id: 'norte', nombre: 'Norte', coords: [-66.62, 18.42] },
+      { id: 'este', nombre: 'Este', coords: [-65.80, 18.22] },
+      { id: 'sur', nombre: 'Sur', coords: [-66.55, 17.98] },
+      { id: 'oeste', nombre: 'Oeste (Porta del Sol)', coords: [-67.10, 18.20] },
+      { id: 'central', nombre: 'Región Central', coords: [-66.50, 18.17] }
+    ];
+
+    function mostrarFallback(motivo) {
+      contenedor.innerHTML = '<div class="ilk-zonas__mapa-estado">Mapa no disponible. Elige tu zona en la lista de abajo.</div>';
+      if (motivo) { console.warn('[ilatek-mapa]', motivo); }
+    }
+
+    function cargarScript(src, onload, onerror) {
+      var s = document.createElement('script');
+      s.src = src; s.async = true; s.crossOrigin = 'anonymous';
+      s.integrity = 'sha384-SYKAG6cglRMN0RVvhNeBY0r3FYKNOJtznwA0v7B5Vp9tr31xAHsZC0DqkQ/pZDmj';
+      s.onload = onload; s.onerror = onerror;
+      document.head.appendChild(s);
+    }
+    function cargarCss(href) {
+      var l = document.createElement('link');
+      l.rel = 'stylesheet'; l.href = href; l.crossOrigin = 'anonymous';
+      l.integrity = 'sha384-MinO0mNliZ3vwppuPOUnGa+iq619pfMhLVUXfC4LHwSCvF9H+6P/KO4Q7qBOYV5V';
+      document.head.appendChild(l);
+    }
+
+    /* Contenido del popup con nodos del DOM: ningun texto entra como HTML. */
+    function popupRegion(r) {
+      var frag = document.createDocumentFragment();
+      var h = document.createElement('strong');
+      h.textContent = r.nombre;
+      frag.appendChild(h);
+      var a = document.createElement('a');
+      a.href = '#' + r.id;
+      a.textContent = 'Ver municipios';
+      frag.appendChild(a);
+      return frag;
+    }
+
+    function iniciar() {
+      if (!window.maplibregl) { return mostrarFallback('maplibregl no cargó'); }
+      try {
+        contenedor.innerHTML = ''; // el motor exige un contenedor vacío
+        var mapa = new maplibregl.Map({
+          container: contenedor,
+          style: ESTILO,
+          center: [-66.45, 18.22],
+          zoom: 7.6,
+          attributionControl: { compact: true }
+        });
+        mapa.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
+        mapa.scrollZoom.disable();
+
+        mapa.on('load', function () {
+          contenedor.classList.add('ilk-ok');
+        });
+        mapa.on('error', function (e) {
+          mostrarFallback(e && e.error ? e.error.message : 'error de mapa');
+        });
+
+        REGIONES.forEach(function (r) {
+          var el = document.createElement('button');
+          el.type = 'button';
+          el.className = 'ilk-zonas__marcador';
+          el.addEventListener('click', function () {
+            var destino = document.getElementById(r.id);
+            if (destino) { destino.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+          });
+          new maplibregl.Marker({ element: el })
+            .setLngLat(r.coords)
+            .setPopup(new maplibregl.Popup({ offset: 14, className: 'ilk-zonas__popup' })
+              .setDOMContent(popupRegion(r)))
+            .addTo(mapa);
+          /* MapLibre pisa el aria-label al hacer addTo(): se fija despues. */
+          el.setAttribute('aria-label', 'Ver ' + r.nombre);
+          el.title = 'Ver ' + r.nombre;
+        });
+      } catch (err) {
+        mostrarFallback(err && err.message);
+      }
+    }
+
+    // Carga diferida: solo cuando el bloque se acerca al viewport.
+    var cargado = false;
+    function cargar() {
+      if (cargado) { return; }
+      cargado = true;
+      cargarCss(MAPLIBRE_CSS);
+      cargarScript(MAPLIBRE_JS, iniciar, function () {
+        mostrarFallback('no se pudo cargar maplibre-gl.js');
+      });
+    }
+
+    if ('IntersectionObserver' in window) {
+      var obs = new IntersectionObserver(function (entradas) {
+        if (entradas.some(function (e) { return e.isIntersecting; })) {
+          obs.disconnect(); cargar();
+        }
+      }, { rootMargin: '200px' });
+      obs.observe(contenedor);
+    } else {
+      cargar();
+    }
+  })();
+  </script>
+</section>

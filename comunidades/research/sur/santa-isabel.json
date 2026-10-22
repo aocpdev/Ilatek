@@ -1,0 +1,123 @@
+{
+  "municipality": "Santa Isabel",
+  "municipalitySlug": "santa-isabel",
+  "dateVerified": "2026-10-21",
+  "note": "Los nombres residenciales y la clasificación se apoyan principalmente en anuncios inmobiliarios publicados; no equivalen a un registro oficial ni confirman que las ofertas sigan activas.",
+  "communities": [
+    {
+      "name": "Hacienda Isabel",
+      "slug": "hacienda-isabel",
+      "alternates": [
+        "Hacienda Isabel I",
+        "Hacienda Isabel II"
+      ],
+      "priority": "HIGH",
+      "type": "Urbanización",
+      "evidence": "Un anuncio describe acceso controlado, gimnasio, cancha, gazebo y área recreativa en Hacienda Isabel; otro clasifica viviendas allí en Santa Isabel.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4875785",
+        "https://www.clasificadosonline.com/clasificados/BienesRaices/SantaIsabel/default.asp"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Brisas del Prado",
+      "slug": "brisas-del-prado",
+      "alternates": [
+        "Urb. Brisas del Prado"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "El listado inmobiliario de Santa Isabel muestra propiedades en Brisas del Prado y las clasifica como urbanización del municipio.",
+      "sources": [
+        "https://www.clasificadosonline.com/clasificados/BienesRaices/SantaIsabel/default.asp"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Villa Serena",
+      "slug": "villa-serena",
+      "alternates": [
+        "Urb. Villa Serena"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline identifica Villa Serena como urbanización de Santa Isabel y presenta una residencia anunciada en esa ubicación.",
+      "sources": [
+        "https://www.clasificadosonline.com/clasificados/BienesRaices/SantaIsabel/default.asp"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Prados del Soñador",
+      "slug": "prados-del-sonador",
+      "alternates": [
+        "Urb. Prados del Soñador"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "El inventario inmobiliario consultado incluye una propiedad en Prados del Soñador y la identifica como urbanización de Santa Isabel.",
+      "sources": [
+        "https://www.clasificadosonline.com/clasificados/BienesRaices/SantaIsabel/default.asp"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Portal de la Reina",
+      "slug": "portal-de-la-reina",
+      "alternates": [
+        "Urb. Portal de la Reina"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline registra una residencia anunciada en Portal de la Reina y especifica Santa Isabel como municipio.",
+      "sources": [
+        "https://www.clasificadosonline.com/clasificados/BienesRaices/SantaIsabel/default.asp"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "San Miguel",
+      "slug": "san-miguel",
+      "alternates": [
+        "Urb. San Miguel"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "El directorio inmobiliario consultado clasifica propiedades anunciadas en San Miguel como urbanización de Santa Isabel.",
+      "sources": [
+        "https://www.clasificadosonline.com/clasificados/BienesRaices/SantaIsabel/default.asp"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Villa Mar",
+      "slug": "villa-mar",
+      "alternates": [
+        "Urb. Villa Mar"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline identifica Villa Mar como urbanización y presenta una casa anunciada en Santa Isabel, cerca de la marina y la playa.",
+      "sources": [
+        "https://www.clasificadosonline.com/clasificados/BienesRaices/SantaIsabel/default.asp"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Playita Cortada",
+      "slug": "playita-cortada",
+      "alternates": [
+        "Comunidad Playita Cortada",
+        "Playa Cortada"
+      ],
+      "priority": "MEDIUM",
+      "type": "Comunidad / sector",
+      "evidence": "El listado inmobiliario de Santa Isabel menciona expresamente la Comunidad Playita Cortada en un anuncio residencial asociado al área.",
+      "sources": [
+        "https://www.clasificadosonline.com/clasificados/BienesRaices/SantaIsabel/default.asp"
+      ],
+      "confidence": "MEDIUM"
+    }
+  ]
+}

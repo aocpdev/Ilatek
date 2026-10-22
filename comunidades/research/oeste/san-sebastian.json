@@ -1,0 +1,67 @@
+{
+  "municipality": "San Sebastián",
+  "municipalitySlug": "san-sebastian",
+  "dateVerified": "2026-10-21",
+  "note": "Se verificaron tres residenciales públicos en el registro de AVP y anuncios históricos de Villa Rita; no se infirió control de acceso.",
+  "communities": [
+    {
+      "name": "San Sebastián Court",
+      "slug": "san-sebastian-court",
+      "alternates": [
+        "Residencial San Sebastián Court"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "La AVP lista San Sebastián Court en la calle MJ Cabrero número 82 con 60 unidades; una noticia documentó la apertura del residencial.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales",
+        "https://www.primerahora.com/noticias/puerto-rico/notas/pepinianos-estrenan-residencial/"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Andrés Méndez Liceaga",
+      "slug": "andres-mendez-liceaga",
+      "alternates": [
+        "Residencial Andrés Mendez Liceaga"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "El registro de la AVP identifica Andrés Mendez Liceaga en la avenida Emerito Estrada Rivera, frente al Coliseo Luis M. Marín, con 150 unidades.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Hacienda San Andrés",
+      "slug": "hacienda-san-andres",
+      "alternates": [
+        "Residencial Hacienda San Andrés"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "La AVP lista Hacienda San Andrés frente al Coliseo Luis M. Marín, con entrada por el residencial Andrés M. Liceaga y 150 unidades.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Villa Rita",
+      "slug": "villa-rita",
+      "alternates": [
+        "Urbanización Villa Rita",
+        "Extensión Villa Rita"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline conserva anuncios de venta en Urbanización Villa Rita, San Sebastián, y registra viviendas de la extensión de Villa Rita.",
+      "sources": [
+        "https://www.clasificadosonline.com/m/REListingCOBarrioM.asp?ID=7617",
+        "https://www.clasificadosonline.com/UDRealEstateDetailImprimir.asp?ID=4906738"
+      ],
+      "confidence": "HIGH"
+    }
+  ]
+}

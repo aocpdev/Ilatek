@@ -1,0 +1,48 @@
+{
+  "municipality": "Hormigueros",
+  "municipalitySlug": "hormigueros",
+  "dateVerified": "2026-10-21",
+  "note": "Cobertura limitada a comunidades respaldadas por páginas leídas; no se asigna prioridad alta o de lujo sin evidencia verificable de acceso controlado o exclusividad.",
+  "communities": [
+    {
+      "name": "Colinas del Oeste",
+      "slug": "colinas-del-oeste",
+      "alternates": [],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Zillow mantiene una página de mercado titulada Colinas del Oeste, Hormigueros, y muestra 30 viviendas asociadas con esa comunidad.",
+      "sources": [
+        "https://www.zillow.com/colinas-del-oeste-hormigueros-pr/"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Valle Hermoso",
+      "slug": "valle-hermoso",
+      "alternates": [
+        "Urb. Valle Hermoso"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Una ficha de Zillow identifica una propiedad en Urb. Valle Hermoso, Hormigueros, con localización y código postal 00660.",
+      "sources": [
+        "https://www.zillow.com/homes/Valle-Hermoso-Hormigueros,-PR_rb/"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Gabriel Soler Cátala",
+      "slug": "gabriel-soler-catala",
+      "alternates": [
+        "Residencial Gabriel Soler Cátala"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "El inventario oficial de AVP incluye Gabriel Soler Cátala en Hormigueros, en la avenida Luis Muñoz Rivera, con 64 unidades.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    }
+  ]
+}

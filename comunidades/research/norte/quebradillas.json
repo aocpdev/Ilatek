@@ -1,0 +1,12 @@
+{
+  "municipality": "Quebradillas",
+  "municipalitySlug": "quebradillas",
+  "region": "norte",
+  "dateVerified": "2026-10-21",
+  "status": "investigado",
+  "communities": [
+    {"name": "Santa Marina", "slug": "santa-marina", "alternates": ["Urb. Santa Marina"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Anuncio identifica expresamente la Urb. Santa Marina en Quebradillas.", "sources": ["https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4902453"], "confidence": "HIGH"},
+    {"name": "Sombras de la Ceiba", "slug": "sombras-de-la-ceiba", "alternates": ["Urb. Sombra de la Ceiba"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Casa identificada en esa urb.; anuncio vendido.", "sources": ["https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4882627"], "confidence": "HIGH"},
+    {"name": "La Ceiba", "slug": "la-ceiba-quebradillas", "alternates": ["Urb. Las Ceibas"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Anuncio 'Casa Urb. Las Ceibas' con ubicación Urb. La Ceiba (barrio San José).", "sources": ["https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4900218", "https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4840274"], "confidence": "MEDIUM"}
+  ]
+}

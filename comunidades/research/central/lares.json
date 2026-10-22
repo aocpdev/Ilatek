@@ -1,0 +1,102 @@
+{
+  "municipality": "Lares",
+  "municipalitySlug": "lares",
+  "dateVerified": "2026-10-21",
+  "note": "El inventario oficial de AVP consultado registra Colinas del Expreso, con 20 unidades, como residencial público en Lares. Primera Hora informó en 2007 sobre el proyecto Las Vistas, pero el inventario oficial actual consultado no lo incluye; no lo traté como residencial público vigente. No hallé evidencia real suficiente para Villa Los Molinos, Hacienda La Fuente ni Los Toritos.",
+  "communities": [
+    {
+      "name": "Colinas del Expreso",
+      "slug": "colinas-del-expreso",
+      "alternates": [
+        "Residencial Colinas del Expreso"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "AVP identifica el residencial público en la Carr. 129, km 21.9, barrio Callejones, con 20 unidades; prensa de 2007 describe su configuración.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales",
+        "https://www.primerahora.com/noticias/puerto-rico/notas/nuevas-viviendas-en-lares/"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Palmas del Sol",
+      "slug": "palmas-del-sol",
+      "alternates": [
+        "Urbanización Palmas del Sol",
+        "Urb. Palmas del Sol"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline registra varios anuncios de casas en la urbanización; uno detalla tres habitaciones, dos baños y 1,050 pies cuadrados, con precio anunciado de $167,000.",
+      "sources": [
+        "https://www.clasificadosonline.com/m/REListingCOBarrioM.asp?ID=9197",
+        "https://www.clasificadosonline.com/m/DetailRealEstate.asp?ID=4893702&Sec=1",
+        "https://www.zillow.com/homedetails/Calle-I-Urb-Palmas-Del-Sol-I-13-13-S-Lares-PR-00669/462780153_zpid/"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Montebello",
+      "slug": "montebello",
+      "alternates": [
+        "Urbanización Montebello",
+        "Urb. Montebello"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline registra una vivienda de dos habitaciones y un baño en Urbanización Montebello, Lares; la venta reportada fue de $92,000 y el anuncio expiró.",
+      "sources": [
+        "https://www.clasificadosonline.com/m/DetailRealEstate.asp?ID=4891969&Sec=1",
+        "https://www.clasificadosonline.com/UDREListingCOBarrio.asp?ID=8472&Version=1"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Villa Seral",
+      "slug": "villa-seral",
+      "alternates": [
+        "Urbanización Villa Seral",
+        "Urb. Villa Seral"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "El historial de ClasificadosOnline muestra dos anuncios para Urbanización Villa Seral: casas de tres y cuatro habitaciones, con precios anunciados de $79,900 y $157,000.",
+      "sources": [
+        "https://www.clasificadosonline.com/m/REListingCOBarrioM.asp?ID=6685"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Altamira",
+      "slug": "altamira",
+      "alternates": [
+        "Urbanización Altamira",
+        "Urb. Altamira"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline registra varias casas en Urbanización Altamira, Lares, incluidos anuncios de viviendas de tres habitaciones y uno de tres habitaciones con dos baños.",
+      "sources": [
+        "https://www.clasificadosonline.com/m/REListingCOBarrioM.asp?ID=11425"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Buenos Aires",
+      "slug": "buenos-aires",
+      "alternates": [
+        "Sector Buenos Aires",
+        "Barrio Buenos Aires"
+      ],
+      "priority": "MEDIUM",
+      "type": "Comunidad / sector",
+      "evidence": "Un clasificado documenta en Sector Buenos Aires una casa de tres habitaciones, dos baños, marquesina doble y aproximadamente una cuerda de terreno, anunciada a $150,000.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4865699",
+        "https://www.clasificadosonline.com/clasificados/BienesRaices/Lares/default.asp"
+      ],
+      "confidence": "MEDIUM"
+    }
+  ]
+}

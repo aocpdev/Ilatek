@@ -1,0 +1,448 @@
+[
+ {
+  "slug": "hacienda-buena",
+  "name": "Hacienda Buena",
+  "municipality": "Aguas Buenas",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "residences-at-rio",
+  "name": "Residences at Rio",
+  "municipality": "Bayamón",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "riviera",
+  "name": "Riviera",
+  "municipality": "Bayamón",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "riviera-parkview",
+  "name": "Riviera Parkview",
+  "municipality": "Bayamón",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "golf-y-playa",
+  "name": "Golf y Playa",
+  "municipality": "Cabo Rojo",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "condesa-del-mar",
+  "name": "Condesa del Mar",
+  "municipality": "Carolina",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "esmeralda",
+  "name": "Esmeralda",
+  "municipality": "Carolina",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "marbella-del-caribe-este",
+  "name": "Marbella del Caribe Este",
+  "municipality": "Carolina",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "sevilla",
+  "name": "Sevilla",
+  "municipality": "Carolina",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "villamar",
+  "name": "Villamar",
+  "municipality": "Carolina",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "vistamar",
+  "name": "Vistamar",
+  "municipality": "Carolina",
+  "candidatosOSM": [
+   {
+    "lat": 18.0811549,
+    "lon": -65.8146985,
+    "type": "hamlet"
+   },
+   {
+    "lat": 17.976725,
+    "lon": -66.1022003,
+    "type": "neighbourhood"
+   },
+   {
+    "lat": 18.4743036,
+    "lon": -66.7222949,
+    "type": "neighbourhood"
+   },
+   {
+    "lat": 18.0780569,
+    "lon": -66.3791545,
+    "type": "neighbourhood"
+   }
+  ],
+  "motivo": "fuera del municipio"
+ },
+ {
+  "slug": "vistamar-marina",
+  "name": "Vistamar Marina",
+  "municipality": "Carolina",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "waldorf-tower",
+  "name": "Waldorf Tower",
+  "municipality": "Carolina",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "the-village-at-the-hill",
+  "name": "The Village at the Hill",
+  "municipality": "Ceiba",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "costa-bonita-beach-resort",
+  "name": "Costa Bonita Beach Resort",
+  "municipality": "Culebra",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "dorado-beach-east",
+  "name": "Dorado Beach East",
+  "municipality": "Dorado",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "east-beach",
+  "name": "East Beach",
+  "municipality": "Dorado",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "la-cala",
+  "name": "La Cala",
+  "municipality": "Dorado",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "livingston-estates",
+  "name": "Livingston Estates",
+  "municipality": "Dorado",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "plantation-village",
+  "name": "Plantation Village",
+  "municipality": "Dorado",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "the-enclave",
+  "name": "The Enclave",
+  "municipality": "Dorado",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "the-isles",
+  "name": "The Isles",
+  "municipality": "Dorado",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "the-legacy",
+  "name": "The Legacy",
+  "municipality": "Dorado",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "west-beach",
+  "name": "West Beach",
+  "municipality": "Dorado",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "west-point",
+  "name": "West Point",
+  "municipality": "Dorado",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "pena-mar-ocean-club",
+  "name": "Peña Mar Ocean Club",
+  "municipality": "Fajardo",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "the-ocean-club-at-seven-seas",
+  "name": "The Ocean Club at Seven Seas",
+  "municipality": "Fajardo",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "estancias-de-torrimar",
+  "name": "Estancias de Torrimar",
+  "municipality": "Guaynabo",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "garden-hills-north",
+  "name": "Garden Hills North",
+  "municipality": "Guaynabo",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "la-cima",
+  "name": "La Cima",
+  "municipality": "Guaynabo",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "la-lomita",
+  "name": "La Lomita",
+  "municipality": "Guaynabo",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "las-casonas",
+  "name": "Las Casonas",
+  "municipality": "Guaynabo",
+  "candidatosOSM": [
+   {
+    "lat": 18.3701428,
+    "lon": -67.1963464,
+    "type": "hamlet"
+   }
+  ],
+  "motivo": "fuera del municipio"
+ },
+ {
+  "slug": "san-patricio",
+  "name": "San Patricio",
+  "municipality": "Guaynabo",
+  "candidatosOSM": [
+   {
+    "lat": 18.1358314,
+    "lon": -66.6460387,
+    "type": "suburb"
+   }
+  ],
+  "motivo": "fuera del municipio"
+ },
+ {
+  "slug": "sereno",
+  "name": "Sereno",
+  "municipality": "Guaynabo",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "sun-valley",
+  "name": "Sun Valley",
+  "municipality": "Guaynabo",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "tintillo-hill-estates",
+  "name": "Tintillo Hill Estates",
+  "municipality": "Guaynabo",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "villa-caparra",
+  "name": "Villa Caparra",
+  "municipality": "Guaynabo",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "river-view",
+  "name": "River View",
+  "municipality": "Gurabo",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "isla-san-marcos",
+  "name": "Isla San Marcos",
+  "municipality": "Humacao",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "isla-san-miguel",
+  "name": "Isla San Miguel",
+  "municipality": "Humacao",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "colinas-de-luquillo",
+  "name": "Colinas de Luquillo",
+  "municipality": "Luquillo",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "paisajes-del-lago",
+  "name": "Paisajes del Lago",
+  "municipality": "Luquillo",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "paisajes-del-rio",
+  "name": "Paisajes del Río",
+  "municipality": "Luquillo",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "lomas-de-manatuabon",
+  "name": "Lomas de Manatuabon",
+  "municipality": "Manatí",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "mansiones-de-playa-hucares",
+  "name": "Mansiones de Playa Húcares",
+  "municipality": "Naguabo",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "costa-caribe-golf-villas",
+  "name": "Costa Caribe Golf Villas",
+  "municipality": "Ponce",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "punta-del-mar-beach-village",
+  "name": "Punta del Mar Beach Village",
+  "municipality": "Rincón",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "amane-estates",
+  "name": "AMANÉ Estates",
+  "municipality": "Río Grande",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "bahia-beach",
+  "name": "Bahía Beach",
+  "municipality": "Río Grande",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "marea-residences",
+  "name": "MAREA Residences",
+  "municipality": "Río Grande",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "rio-mar",
+  "name": "Río Mar",
+  "municipality": "Río Grande",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "rancho-la-julia",
+  "name": "Rancho La Julia",
+  "municipality": "Salinas",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "montehiedra",
+  "name": "Montehiedra",
+  "municipality": "San Juan",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "senderos-de-montehiedra",
+  "name": "Senderos de Montehiedra",
+  "municipality": "San Juan",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "ciudad-jardin-iii",
+  "name": "Ciudad Jardín III",
+  "municipality": "Toa Alta",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "mansiones-de-ciudad-jardin",
+  "name": "Mansiones de Ciudad Jardín",
+  "municipality": "Toa Alta",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "corrientes-encantada",
+  "name": "Corrientes, Encantada",
+  "municipality": "Trujillo Alto",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "lomas-de-vista-verde",
+  "name": "Lomas de Vista Verde",
+  "municipality": "Utuado",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ },
+ {
+  "slug": "villas-de-la-playa",
+  "name": "Villas de la Playa",
+  "municipality": "Vega Baja",
+  "candidatosOSM": [],
+  "motivo": "sin lugar OSM con ese nombre"
+ }
+]

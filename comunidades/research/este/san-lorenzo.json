@@ -1,0 +1,79 @@
+{
+  "municipality": "San Lorenzo",
+  "municipalitySlug": "san-lorenzo",
+  "dateVerified": "2026-10-21",
+  "note": "Ninguna comunidad tuvo segunda fuente independiente; todas quedan UNVERIFIED hasta una segunda pasada.",
+  "communities": [
+    {
+      "name": "Bosque Llano",
+      "slug": "bosque-llano",
+      "alternates": [
+        "Urb. Bosque Llano"
+      ],
+      "priority": "HIGH",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline documenta una casa de tres habitaciones en Bosque Llano, San Lorenzo, y especifica que la urbanización tiene control de acceso.",
+      "sources": [
+        "https://www.clasificadosonline.com/SOLD/SOLDDetail.asp?ID=3768835"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Ciudad Masso",
+      "slug": "ciudad-masso",
+      "alternates": [
+        "Urb. Ciudad Masso",
+        "Urbanización Ciudad Masso"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline identifica Ciudad Masso como urbanización de San Lorenzo y documenta anuncios de casas de tres o cuatro habitaciones.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4903406"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Jardines de San Lorenzo",
+      "slug": "jardines-de-san-lorenzo",
+      "alternates": [
+        "Jardines de San Lorenzo, Bo. Quemado"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Un anuncio de ClasificadosOnline ubica una residencia en Jardines de San Lorenzo, con tres habitaciones, un baño, terraza y acceso semiprivado.",
+      "sources": [
+        "https://www.clasificadosonline.com/m/DetailRealEstate.asp?ID=4888012&Sec=1"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Portal del Sol",
+      "slug": "portal-del-sol",
+      "alternates": [
+        "Urb. Portal del Sol"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline identifica una propiedad residencial en Portal del Sol, San Lorenzo, y clasifica el lugar como urbanización.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4839136"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Savannah Real",
+      "slug": "savannah-real",
+      "alternates": [
+        "Urb. Savannah Real"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline identifica una propiedad remodelada en la urbanización Savannah Real, San Lorenzo, confirmando su uso residencial y ubicación.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4853705"
+      ],
+      "confidence": "MEDIUM"
+    }
+  ]
+}

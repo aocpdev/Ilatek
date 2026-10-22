@@ -1,0 +1,64 @@
+{
+  "municipality": "Sabana Grande",
+  "municipalitySlug": "sabana-grande",
+  "dateVerified": "2026-10-21",
+  "note": "La evidencia consultada confirma tres urbanizaciones mediante fichas de Zillow y un residencial público en el directorio oficial de AVP; no se infiere exclusividad.",
+  "communities": [
+    {
+      "name": "Colinas de Villa Rosa",
+      "slug": "colinas-de-villa-rosa",
+      "alternates": [
+        "Urb. Colinas de Villa Rosa"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Una ficha de Zillow identifica la urbanización Colinas de Villa Rosa en Sabana Grande y publica una residencia de tres habitaciones.",
+      "sources": [
+        "https://www.zillow.com/homedetails/Urb-Colinas-De-Villa-Rosa-Calle-D-B-29-Sabana-Grande-PR-00637/458405041_zpid/"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "El Hucar",
+      "slug": "el-hucar",
+      "alternates": [
+        "Urb. El Hucar"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Zillow registra una propiedad ubicada en F Urb El Hucar, Sabana Grande; la ficha indica que actualmente no está anunciada.",
+      "sources": [
+        "https://www.zillow.com/homedetails/F-Urb-El-Hucar-Sabana-Grande-Sabana-Grande-PR-00637/457163408_zpid/"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Mansiones de Sabana Grande",
+      "slug": "mansiones-de-sabana-grande",
+      "alternates": [
+        "Urb. Mansiones de Sabana Grande"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Zillow identifica una vivienda unifamiliar en Urb. Mansiones de Sabana Grande, con tres dormitorios y un baño en el registro disponible.",
+      "sources": [
+        "https://www.zillow.com/homedetails/D8-Urb-Mansiones-De-Sabana-Grande-CALLE-Sabana-Grande-PR-00637/2082411209_zpid/"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "José Castillo Mercado",
+      "slug": "jose-castillo-mercado",
+      "alternates": [
+        "Residencial José Castillo Mercado"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "La AVP incluye José Castillo Mercado en Sabana Grande, con dirección en la calle Félix Tío y 148 unidades.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    }
+  ]
+}

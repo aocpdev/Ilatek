@@ -1,0 +1,14 @@
+{
+  "municipality": "Isabela",
+  "municipalitySlug": "isabela",
+  "region": "norte",
+  "dateVerified": "2026-10-21",
+  "status": "investigado",
+  "communities": [
+    {"name": "Praderas de Isabela", "slug": "praderas-de-isabela", "alternates": ["Urb. Praderas de Isabela"], "priority": "HIGH", "type": "Urbanización con acceso controlado", "evidence": "Construcción nueva con acceso controlado y servicios esenciales (ClasificadosOnline).", "sources": ["https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4846665"], "confidence": "HIGH"},
+    {"name": "Llanos de Isabela", "slug": "llanos-de-isabela", "alternates": ["Urb. Llanos Isabela"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Solar identificado en esa urb. y propiedades registradas bajo ese nombre.", "sources": ["https://www.clasificadosonline.com/UDRealEstateDetail.asp?id=4897313"], "confidence": "HIGH"},
+    {"name": "Medina", "slug": "medina-isabela", "alternates": ["Urb. Medina"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Anuncio 'Urbanización Medina – Isabela' con vivienda identificada (expirado).", "sources": ["https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4900258"], "confidence": "HIGH"},
+    {"name": "Vistas de Isabela", "slug": "vistas-de-isabela", "alternates": ["Urb. Vistas de Isabela"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Vivienda 3H/2B identificada (expirado).", "sources": ["https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4879929"], "confidence": "HIGH"},
+    {"name": "Mirador del Cielo", "slug": "mirador-del-cielo", "alternates": ["Urb. Mirador del Cielo"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Propiedad 4H/2B identificada (expirado).", "sources": ["https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4830187&Version=1"], "confidence": "HIGH"}
+  ]
+}

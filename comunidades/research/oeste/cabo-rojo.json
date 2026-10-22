@@ -1,0 +1,96 @@
+{
+  "municipality": "Cabo Rojo",
+  "municipalitySlug": "cabo-rojo",
+  "dateVerified": "2026-10-21",
+  "note": "La evidencia procede de anuncios inmobiliarios y del inventario oficial de AVP; los anuncios pueden expirar y no se comprobó la disponibilidad actual de todas las propiedades.",
+  "communities": [
+    {
+      "name": "Paraíso de Boquerón",
+      "slug": "paraiso-de-boqueron",
+      "alternates": [
+        "Urb. Paraíso de Boquerón",
+        "Urbanización Paraíso de Boquerón"
+      ],
+      "priority": "HIGH",
+      "type": "Urbanización",
+      "evidence": "Un anuncio ofrece solares en la segunda fase y describe acceso controlado, restricciones de construcción y ubicación cercana a Boquerón y Playa Buyé.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRED.asp?ID=4878728&Version=1"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Villa Taína",
+      "slug": "villa-taina",
+      "alternates": [
+        "Condominio Villa Taína",
+        "Villa Taina"
+      ],
+      "priority": "HIGH",
+      "type": "Condominio",
+      "evidence": "Un anuncio de apartamento en el condominio describe acceso controlado, seguridad, piscinas, canchas y opción de rampa para botes mediante membresía.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRED.asp?ID=4900470&Version=1"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Golf y Playa",
+      "slug": "golf-y-playa",
+      "alternates": [
+        "Condominio Golf y Playa",
+        "Hacienda Golf & Playa"
+      ],
+      "priority": "LUXURY",
+      "type": "Condominio",
+      "evidence": "Un anuncio describe un complejo con marina, campo de golf, deportes, piscinas, restaurante y barra, además de seguridad 24/7 y acceso controlado.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRED.asp?ID=4850149&Version=1"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Combate del Mar",
+      "slug": "combate-del-mar",
+      "alternates": [
+        "Condominio Combate del Mar",
+        "Condominio Combate"
+      ],
+      "priority": "HIGH",
+      "type": "Condominio",
+      "evidence": "Un anuncio del condominio menciona piscina, gimnasio, cancha de tenis y teleentrada; ubica la propiedad cerca de Playa Combate.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRED.asp?ID=4826024&Version=1"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Santa Rita de Casia",
+      "slug": "santa-rita-de-casia",
+      "alternates": [
+        "Residencial Santa Rita de Casia"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "El inventario oficial de AVP identifica Santa Rita de Casia en Cabo Rojo, indica su dirección en la avenida Santos Ortiz y registra 156 unidades.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Veredas del Mar",
+      "slug": "veredas-del-mar",
+      "alternates": [
+        "Residencial Veredas del Mar"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "El inventario oficial de AVP registra Veredas del Mar en Cabo Rojo, con dirección en la carretera 102, kilómetro 15.6, barrio Miradero, y 24 unidades.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    }
+  ]
+}

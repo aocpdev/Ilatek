@@ -1,0 +1,81 @@
+{
+  "municipality": "San Germán",
+  "municipalitySlug": "san-german",
+  "dateVerified": "2026-10-21",
+  "note": "AVP verifica dos residenciales públicos. La noticia sobre Brisas de Maresúa es de 2019 y documenta un proyecto anunciado, no confirma su estado actual.",
+  "communities": [
+    {
+      "name": "Paseos del Valle",
+      "slug": "paseos-del-valle",
+      "alternates": [
+        "Urb. Paseos del Valle",
+        "Paseo del Valle"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "La página del proyecto describe una comunidad residencial establecida en San Germán, con 99 viviendas vendidas y una nueva etapa proyectada de 101.",
+      "sources": [
+        "https://prrefund.com/paseos-del-valle-2/"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Brisas de Maresúa",
+      "slug": "brisas-de-maresua",
+      "alternates": [
+        "Urbanización Brisas de Maresúa"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Una noticia de 2019 informó que la urbanización proyectada tendría 261 residencias en el barrio Maresúa y sería vivienda de interés social.",
+      "sources": [
+        "https://www.primerahora.com/noticias/puerto-rico/notas/san-german-a-prueba-de-huracan/"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Colinas del Río",
+      "slug": "colinas-del-rio",
+      "alternates": [
+        "Urbanización Colinas del Río",
+        "Urb. Colinas del Río"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Trulia muestra una dirección identificada como Urbanización Colinas del Río en San Germán; la página indica que la propiedad está fuera del mercado.",
+      "sources": [
+        "https://www.trulia.com/home/km-2-3-int-urbanizacion-colinas-del-rio-carr-329-san-german-pr-00683-2055076430"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "El Recreo",
+      "slug": "el-recreo",
+      "alternates": [
+        "Residencial El Recreo"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "El inventario oficial de AVP registra El Recreo en San Germán, en la calle Luna Interior, con 300 unidades.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Manuel F. Rossy",
+      "slug": "manuel-f-rossy",
+      "alternates": [
+        "Residencial Manuel F. Rossy",
+        "Manuel F. Rossy"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "El inventario oficial de AVP registra Manuel F. Rossy en el barrio El Retiro de San Germán y consigna 101 unidades.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    }
+  ]
+}

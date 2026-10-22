@@ -1,0 +1,80 @@
+{
+  "municipality": "Lajas",
+  "municipalitySlug": "lajas",
+  "dateVerified": "2026-10-21",
+  "note": "Se hallaron anuncios inmobiliarios y una entrada oficial de AVP; algunas publicaciones son de venta y no permiten inferir disponibilidad o estatus de ocupación actual.",
+  "communities": [
+    {
+      "name": "Estancias del Parra",
+      "slug": "estancias-del-parra",
+      "alternates": [
+        "Urbanización Estancias del Parra"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Un anuncio identifica una vivienda de tres habitaciones y dos baños en la urbanización y describe servicios y comercios cercanos al casco urbano.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRED.asp?ID=4903487&Version=1"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "El Valle de Lajas",
+      "slug": "el-valle-de-lajas",
+      "alternates": [
+        "Urbanización El Valle",
+        "Urb. El Valle Lajas"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Un anuncio inmobiliario identifica una casa de tres habitaciones y dos baños en Urb. El Valle de Lajas, con precio publicado de $219,000.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRED.asp?ID=4905027&Version=1"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Extensión El Valle",
+      "slug": "extension-el-valle",
+      "alternates": [
+        "Urbanización Extensión El Valle"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline identifica un solar en Extensión El Valle, Lajas; el anuncio acredita la ubicación aunque figura como expirado.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRED.asp?ID=4899400&Version=1"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Colinas de la Parguera",
+      "slug": "colinas-de-la-parguera",
+      "alternates": [
+        "Urb. Colinas de Parguera",
+        "Urbanización Colinas de la Parguera"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Un anuncio inmobiliario ubica una residencia en la urbanización, municipio de Lajas, y describe piscina, espacio para botes y cercanía a marina y playas.",
+      "sources": [
+        "https://bellaverderealty.com/listings/245703081/1urb-colinasdeparguera44lajaspr00667/"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Las Américas",
+      "slug": "las-americas",
+      "alternates": [
+        "Residencial Las Américas"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "El inventario oficial de AVP registra el residencial Las Américas en Lajas, en la avenida Degetau, con 80 unidades.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    }
+  ]
+}

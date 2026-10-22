@@ -1,0 +1,142 @@
+{
+  "municipality": "Villalba",
+  "municipalitySlug": "villalba",
+  "dateVerified": "2026-10-21",
+  "note": "AVP confirma tres residenciales públicos. No encontré evidencia visitada que confirme Parque de los Frailes ni Villa de Reyes en Villalba; no incluyo esos nombres.",
+  "communities": [
+    {
+      "name": "Residencial Efraín Suárez",
+      "slug": "residencial-efrain-suarez",
+      "alternates": [
+        "Efraín Suárez",
+        "Efraín Suárez Negrón"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "La AVP identifica Efraín Suárez como complejo público de Villalba; el Departamento de la Vivienda menciona mejoras junto a otros dos residenciales locales.",
+      "sources": [
+        "https://www.avp.pr.gov/noticias/administrador-de-vivienda-publica-inaugura-nuevo-centro-educativo-tecnologico-en-villalba",
+        "https://www.vivienda.pr.gov/en/comunicados-de-prensa/subsecretario-de-la-vivienda-visita-villalba-y-se-reune-con-alcalde"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Residencial Enudio Negrón",
+      "slug": "residencial-enudio-negron",
+      "alternates": [
+        "Enudio Negrón"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "El Departamento de la Vivienda menciona Enudio Negrón entre los complejos públicos de Villalba para los que se discutía un proceso de mejoras.",
+      "sources": [
+        "https://www.vivienda.pr.gov/en/comunicados-de-prensa/subsecretario-de-la-vivienda-visita-villalba-y-se-reune-con-alcalde",
+        "https://www.avp.pr.gov/centro-educativo-tecnologico"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Residencial Máximo Miranda Jiménez",
+      "slug": "residencial-maximo-miranda-jimenez",
+      "alternates": [
+        "Máximo Miranda",
+        "Máximo Miranda Jiménez"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "El Departamento de la Vivienda identifica Máximo Miranda Jiménez entre los residenciales públicos de Villalba incluidos en conversaciones sobre mejoras.",
+      "sources": [
+        "https://www.vivienda.pr.gov/en/comunicados-de-prensa/subsecretario-de-la-vivienda-visita-villalba-y-se-reune-con-alcalde",
+        "https://www.avp.pr.gov/centro-educativo-tecnologico"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Alturas de Villalba",
+      "slug": "alturas-de-villalba",
+      "alternates": [
+        "Urbanización Alturas de Villalba",
+        "Extensión Alturas de Villalba"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "La AAA incluye Alturas de Villalba y su extensión entre las urbanizaciones y sectores afectados por interrupciones del sistema de agua municipal.",
+      "sources": [
+        "https://www.acueductos.pr.gov/comunicados/comienza-el-restablecimiento-del-sistema-de-agua-en-villalba-2"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Alturas del Alba",
+      "slug": "alturas-del-alba",
+      "alternates": [
+        "Urbanización Alturas del Alba"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "La AAA identifica la urbanización Alturas del Alba entre los sectores de Villalba impactados durante trabajos y recuperación del servicio de agua.",
+      "sources": [
+        "https://www.acueductos.pr.gov/comunicados/comienza-el-restablecimiento-del-sistema-de-agua-en-villalba-2"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Vista Alegre",
+      "slug": "vista-alegre",
+      "alternates": [
+        "Urbanización Vista Alegre",
+        "Estancias de Vista Alegre"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "La AAA enumera la urbanización Vista Alegre en Villalba; Zillow registra además una vivienda unifamiliar de cinco habitaciones en Estancias de Vista Alegre.",
+      "sources": [
+        "https://www.acueductos.pr.gov/comunicados/comienza-el-restablecimiento-del-sistema-de-agua-en-villalba-2",
+        "https://www.zillow.com/homedetails/12872-Est-De-Vista-Alegre-Villalba-PR-00766/2112169708_zpid/"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Estancias de Mayoral",
+      "slug": "estancias-de-mayoral",
+      "alternates": [
+        "Urbanización Estancias de Mayoral"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "La AAA menciona la urbanización Estancias de Mayoral entre las comunidades villalbeñas afectadas por interrupciones del servicio de agua potable.",
+      "sources": [
+        "https://www.acueductos.pr.gov/comunicados/comienza-el-restablecimiento-del-sistema-de-agua-en-villalba-2"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Las Alondras",
+      "slug": "las-alondras",
+      "alternates": [
+        "Urbanización Las Alondras"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "La AAA identifica la urbanización Las Alondras entre las áreas de Villalba incluidas en su comunicado sobre la recuperación del servicio de agua.",
+      "sources": [
+        "https://www.acueductos.pr.gov/comunicados/comienza-el-restablecimiento-del-sistema-de-agua-en-villalba-2"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Borinquen",
+      "slug": "borinquen",
+      "alternates": [
+        "Sector Borinquen"
+      ],
+      "priority": "MEDIUM",
+      "type": "Comunidad / sector",
+      "evidence": "La AAA incluye Borinquen entre los sectores de Villalba que experimentaron impacto durante la interrupción temporal del sistema de agua municipal.",
+      "sources": [
+        "https://www.acueductos.pr.gov/comunicados/comienza-el-restablecimiento-del-sistema-de-agua-en-villalba-2"
+      ],
+      "confidence": "HIGH"
+    }
+  ]
+}

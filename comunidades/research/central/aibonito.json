@@ -1,0 +1,53 @@
+{
+  "municipality": "Aibonito",
+  "municipalitySlug": "aibonito",
+  "dateVerified": "2026-10-21",
+  "note": "La AVP consultada no muestra una sección o listado identificable de residenciales de Aibonito. Sí confirmé proyectos residenciales y urbanizaciones mediante páginas de vivienda subsidiada y anuncios inmobiliarios; algunos anuncios visitados ya expiraron.",
+  "communities": [
+    {
+      "name": "Casa Aibonito Elderly",
+      "slug": "casa-aibonito-elderly",
+      "alternates": [
+        "Casa Aibonito"
+      ],
+      "priority": "MEDIUM",
+      "type": "Comunidad / sector",
+      "evidence": "Housing Promoters describe este proyecto subsidiado por HUD para personas mayores: 99 unidades, acceso controlado y dirección junto al Hospital Menonita.",
+      "sources": [
+        "https://housingpromotersinc.com/proyectos-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Urb. Jatibonito",
+      "slug": "urb-jatibonito",
+      "alternates": [
+        "Urbanización Jatibonito"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline identifica la urbanización en Aibonito y documenta anuncios de solares y viviendas allí; uno describe una casa de cuatro dormitorios.",
+      "sources": [
+        "https://www.clasificadosonline.com/xREAibonitod.asp?id=4802799",
+        "https://www.clasificadosonline.com/xREAibonitod.asp?id=4843510&Version=1",
+        "https://www.clasificadosonline.com/xREAibonitod.asp?id=4882115&Version=1"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Panoramas de Aibonito",
+      "slug": "panoramas-de-aibonito",
+      "alternates": [
+        "Urb. Panorama",
+        "Urbanización Panoramas de Aibonito"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Un anuncio de ClasificadosOnline ubica una residencia de cuatro dormitorios en Urb. Panoramas, barrio Llanos, y la describe con solar de 5,454 m2.",
+      "sources": [
+        "https://www.clasificadosonline.com/m/xREAdjuntasDM.asp?ID=4889963"
+      ],
+      "confidence": "MEDIUM"
+    }
+  ]
+}

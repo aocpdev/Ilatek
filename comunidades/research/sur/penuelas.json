@@ -1,0 +1,51 @@
+{
+  "municipality": "Peñuelas",
+  "municipalitySlug": "penuelas",
+  "dateVerified": "2026-10-21",
+  "note": "Se verificaron tres comunidades con fuentes consultadas directamente. No pude corroborar más nombres con fuentes visitadas; no añadí resultados de búsqueda cuya ficha no pude leer.",
+  "communities": [
+    {
+      "name": "Alturas de Peñuelas",
+      "slug": "alturas-de-penuelas",
+      "alternates": [
+        "Alturas de Penuelas"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Trulia mantiene una página de viviendas unifamiliares para Alturas de Peñuelas y muestra propiedades anunciadas en el área y sus alrededores.",
+      "sources": [
+        "https://www.trulia.com/PR/Penuelas,Alturas_de_Penuelas/SINGLE-FAMILY_HOME_type/"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Comunidad Caracoles",
+      "slug": "comunidad-caracoles",
+      "alternates": [
+        "Caracoles"
+      ],
+      "priority": "MEDIUM",
+      "type": "Comunidad / sector",
+      "evidence": "Zillow identifica Comunidad Caracoles en Peñuelas y publica una propiedad en la zona; no hay evidencia de acceso controlado o nivel premium.",
+      "sources": [
+        "https://www.zillow.com/comunidad-caracoles-penuelas-pr/"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Los Flamboyanes",
+      "slug": "los-flamboyanes",
+      "alternates": [
+        "Residencial Los Flamboyanes"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "AVP incluye Los Flamboyanes en su directorio y documenta allí un centro educativo tecnológico y servicios comunitarios para residentes.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales",
+        "https://www.avp.pr.gov/noticias/inaugurado-nuevo-centro-educativo-tecnologico-en-penuelas"
+      ],
+      "confidence": "HIGH"
+    }
+  ]
+}

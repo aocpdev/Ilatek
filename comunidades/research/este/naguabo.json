@@ -1,0 +1,12 @@
+{
+  "municipality": "Naguabo",
+  "municipalitySlug": "naguabo",
+  "dateVerified": "2026-10-21",
+  "note": "No se obtuvo lista municipal exhaustiva; el PDF del plan municipal no fue legible y algunas inmobiliarias bloquearon acceso.",
+  "communities": [
+    {"name": "Mansiones de Playa Húcares", "slug": "mansiones-de-playa-hucares", "alternates": ["Mansiones Playa Húcares", "Mansiones de Playa Hucares"], "priority": "LUXURY", "type": "Comunidad cerrada costera; viviendas unifamiliares", "evidence": "Acceso controlado, seguridad 24/7, acceso privado a la playa y piscina; casas anunciadas en $479,000 y $422,000.", "sources": ["https://www.premiereplusrealty.com/real-estate/c-marina-26-d-mansiones-playa-hucares-naguabo-pr-00718/pr9123729/202500095", "https://www.trulia.com/home/c7-mansiones-de-playa-hucares-naguabo-pr-00718-465500608"], "confidence": "HIGH"},
+    {"name": "Promise Land", "slug": "promise-land", "alternates": ["Promised Land", "Urb. Promise Land"], "priority": "HIGH", "type": "Urbanización cerrada con amenidades recreativas", "evidence": "Gimnasio, senderos, canchas de tenis y baloncesto; venta de $295,000 en 2026. Premium sin afirmar lujo generalizado.", "sources": ["https://www.zillow.com/homedetails/457-Monte-De-Los-Olivos-Naguabo-PR-00718/461748011_zpid/", "https://www.trulia.com/home/c7-mansiones-de-playa-hucares-naguabo-pr-00718-465500608"], "confidence": "MEDIUM"},
+    {"name": "Vista Verde", "slug": "vista-verde", "alternates": ["Urbanización Vista Verde", "Urb. Vista Verde"], "priority": "MEDIUM", "type": "Urbanización residencial", "evidence": "Casas de tres habitaciones y dos baños entre $102,000 y $185,000 en anuncios.", "sources": ["https://www.prestigerealtypr.com/property/vista-verde-naguabo-puerto-rico", "https://www.clasificadosonline.com/m/xREAdjuntasDM.asp?ID=4891780"], "confidence": "MEDIUM"},
+    {"name": "Brisas del Valle", "slug": "brisas-del-valle", "alternates": ["Urb. Brisas del Valle"], "priority": "MEDIUM", "type": "Comunidad residencial establecida; viviendas unifamiliares", "evidence": "Casa de tres habitaciones vendida por $138,000; evidencia de vivienda estándar.", "sources": ["https://www.zillow.com/homedetails/G3-Brisas-Del-Valley-Naguabo-PR-00718/461827355_zpid/", "https://www.premiereplusrealty.com/real-estate/g3-brisas-del-valle-naguabo-pr-00718/pr9120777/195038384"], "confidence": "MEDIUM"}
+  ]
+}

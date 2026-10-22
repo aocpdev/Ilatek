@@ -1,0 +1,19 @@
+{
+  "municipality": "Aguas Buenas",
+  "municipalitySlug": "aguas-buenas",
+  "region": "metro",
+  "dateVerified": "2026-10-21",
+  "status": "investigado",
+  "communities": [
+    {"name": "Hacienda Buena", "slug": "hacienda-buena", "alternates": ["Urb. Hacienda Buena"], "priority": "LUXURY", "type": "Urbanización", "evidence": "Casa 3H/3B anuncio descrito como residencia de lujo en urb. exclusiva, terreno 1,045 m².", "sources": ["https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4869912&Version=1"], "confidence": "HIGH"},
+    {"name": "Brisas de Palma Sola", "slug": "brisas-de-palma-sola", "alternates": ["Urb. Brisas de Palma Sola"], "priority": "HIGH", "type": "Urbanización", "evidence": "Residencia en Calle 3 D 8 identificada en Zillow; acceso controlado, seguridad, gazebo, cancha.", "sources": ["https://www.zillow.com/homedetails/Calle-3-D-8-Brisas-De-Palma-Sola-Aguas-Buenas-PR-00703/2103711259_zpid/"], "confidence": "HIGH"},
+    {"name": "Estancias de la Sierra", "slug": "estancias-de-la-sierra", "alternates": ["Estancias La Sierra II"], "priority": "HIGH", "type": "Urbanización", "evidence": "Acceso controlado, cancha de baloncesto y área recreativa (terreno, ClasificadosOnline); propiedad en Estancias La Sierra II (Trulia).", "sources": ["https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4840666", "https://www.trulia.com/home/62-estancias-la-sierra-ii-aguas-buenas-pr-00703-465773632"], "confidence": "HIGH"},
+    {"name": "Hacienda Portal al Campo", "slug": "hacienda-portal-al-campo", "alternates": ["Hacienda Portal al Campo II"], "priority": "HIGH", "type": "Urbanización", "evidence": "Solar con servicios y acceso controlado; HOA y centro de actividades (anuncio).", "sources": ["https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4868429"], "confidence": "HIGH"},
+    {"name": "San Antonio", "slug": "san-antonio-aguas-buenas", "alternates": ["Urb. San Antonio"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Vivienda clasificada en Urb. San Antonio (3H/2.5B, anuncio expirado).", "sources": ["https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4863337"], "confidence": "HIGH"},
+    {"name": "Vistas de Jagüeyes", "slug": "vistas-de-jagueyes", "alternates": ["Residencial Vistas de Jagueyes"], "priority": "MEDIUM", "type": "Comunidad residencial", "evidence": "Página Zillow con el nombre en Aguas Buenas; una propiedad anunciada.", "sources": ["https://www.zillow.com/residencial-vistas-de-jagueyes-aguas-buenas-pr/"], "confidence": "MEDIUM"},
+    {"name": "Las Corujas", "slug": "las-corujas", "alternates": ["Sector Las Corujas, Sumidero"], "priority": "MEDIUM", "type": "Sector residencial", "evidence": "Casa identificada como Las Corujas, Sumidero (3H/2.5B).", "sources": ["https://www.clasificadosonline.com/xreaguasbuenas.asp"], "confidence": "HIGH"},
+    {"name": "La Rampla", "slug": "la-rampla", "alternates": ["Sector La Rampla, Sumidero"], "priority": "MEDIUM", "type": "Sector residencial", "evidence": "Propiedad multifamiliar identificada en el sector (6+ habitaciones).", "sources": ["https://www.clasificadosonline.com/xreaguasbuenas.asp"], "confidence": "MEDIUM"},
+    {"name": "Cagüitas", "slug": "caguitas", "alternates": ["Barrio Cagüitas"], "priority": "MEDIUM", "type": "Barrio con residencias", "evidence": "Propiedad multifamiliar de cuatro unidades listada.", "sources": ["https://www.clasificadosonline.com/xreaguasbuenas.asp"], "confidence": "MEDIUM"},
+    {"name": "Jagüeyes", "slug": "jagueyes", "alternates": ["Barrio Jagüeyes"], "priority": "MEDIUM", "type": "Barrio con residencias", "evidence": "Barrio del municipio (Wikipedia); multifamiliar listado en ClasificadosOnline.", "sources": ["https://en.wikipedia.org/wiki/Aguas_Buenas,_Puerto_Rico", "https://www.clasificadosonline.com/xreaguasbuenas.asp"], "confidence": "HIGH"}
+  ]
+}

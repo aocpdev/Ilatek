@@ -1,0 +1,10 @@
+{
+  "municipality": "Las Piedras",
+  "municipalitySlug": "las-piedras",
+  "dateVerified": "2026-10-21",
+  "note": "Otras comunidades en anuncios o registros de ventas no corroboradas con dos fuentes. Paseo de los Artesanos y Estancias de los Artesanos sin resolver si son entidades distintas.",
+  "communities": [
+    {"name": "Palma Royale", "slug": "palma-royale", "alternates": ["Urb. Palma Royale"], "priority": "HIGH", "type": "Urbanización residencial cerrada", "evidence": "Control de acceso con seguridad 24 horas y facilidades comunitarias; venta registrada. Nivel medio-alto, no lujo.", "sources": ["https://www.exprealty.com/las-piedras-pr-real-estate/palma-royale/79-rebelini", "https://www.clasificadosonline.com/SOLD/SoldListing.asp?Category=%25&RESPueblos=Las+Piedras&HighPrice=175000&LowPrice=0&offset=23"], "confidence": "HIGH"},
+    {"name": "Campo Real", "slug": "campo-real", "alternates": ["Urb. Campo Real", "Urbanización Campo Real"], "priority": "MEDIUM", "type": "Urbanización residencial con acceso controlado", "evidence": "Residencia con control de acceso y facilidades recreativas; ventas históricas sin evidencia de nivel alto.", "sources": ["https://bestpropertiesrealty.com/atorres/property/campo-real-las-piedras-las-piedras", "https://www.clasificadosonline.com/m/REListingCOBarrioM.asp?ID=7466"], "confidence": "HIGH"}
+  ]
+}

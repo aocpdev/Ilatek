@@ -1,0 +1,80 @@
+{
+  "municipality": "Juana Díaz",
+  "municipalitySlug": "juana-diaz",
+  "dateVerified": "2026-10-21",
+  "note": "La evidencia disponible combina páginas inmobiliarias y fuentes generales; no permite certificar límites, vigencia de anuncios ni un listado municipal completo de comunidades.",
+  "communities": [
+    {
+      "name": "Quintas de Altamira",
+      "slug": "quintas-de-altamira",
+      "alternates": [
+        "Urb. Quintas de Altamira"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "La página inmobiliaria de Juana Díaz y los resultados de propiedades identifican direcciones anunciadas en Quintas de Altamira.",
+      "sources": [
+        "https://www.zillow.com/juana-diaz-pr/",
+        "https://www.clasificadosonline.com/UDREListing.asp?RESPueblos=Juana%20D%EDaz"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Mansiones de Camino Real",
+      "slug": "mansiones-de-camino-real",
+      "alternates": [
+        "Urb. Mansiones de Camino Real"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Los anuncios inmobiliarios consultados identifican Mansiones de Camino Real como urbanización con propiedades residenciales en Juana Díaz.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDREListing.asp?RESPueblos=Juana%20D%EDaz",
+        "https://www.zillow.com/juana-diaz-pr/"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Comunidad Cristina",
+      "slug": "comunidad-cristina",
+      "alternates": [
+        "Comunidad Cristina, Juana Díaz"
+      ],
+      "priority": "MEDIUM",
+      "type": "Comunidad / sector",
+      "evidence": "Zillow mantiene una página de propiedades identificada como Comunidad Cristina, Juana Díaz, con anuncios inmobiliarios asociados al área.",
+      "sources": [
+        "https://www.zillow.com/comunidad-cristina-juana-diaz-pr/"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Leonardo Santiago",
+      "slug": "leonardo-santiago",
+      "alternates": [
+        "Residencial Leonardo Santiago"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "La página oficial de la Administración de Vivienda Pública incluye Leonardo Santiago en Juana Díaz y señala su dirección en Urb. Esperanza.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Collores",
+      "slug": "collores",
+      "alternates": [
+        "Barrio Collores"
+      ],
+      "priority": "MEDIUM",
+      "type": "Comunidad / sector",
+      "evidence": "La página municipal enciclopédica consultada incluye Collores entre los barrios de Juana Díaz; se mantiene como barrio distinto, no como urbanización.",
+      "sources": [
+        "https://es.wikipedia.org/wiki/Juana_D%C3%ADaz"
+      ],
+      "confidence": "MEDIUM"
+    }
+  ]
+}

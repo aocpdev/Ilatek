@@ -1,0 +1,78 @@
+{
+  "municipality": "Naranjito",
+  "municipalitySlug": "naranjito",
+  "dateVerified": "2026-10-21",
+  "note": "AVP lista Candelario Torres con 80 unidades, no un complejo llamado exactamente Residencial Naranjito. No se encontró una fuente visitable que confirme Bo. Centro de Naranjito con ese nombre; se incluye barrio-pueblo como referencia comprobada. Las propiedades de Achiote y Lomas son anuncios individuales, no prueba de volumen comunitario.",
+  "communities": [
+    {
+      "name": "Candelario Torres",
+      "slug": "candelario-torres",
+      "alternates": [
+        "Residencial Candelario Torres"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "AVP registra Candelario Torres en Naranjito, junto a la carretera 164 y el sector Los Dominguitos, con 80 unidades administradas por Inn-Capital.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Jardines de Naranjito",
+      "slug": "jardines-de-naranjito",
+      "alternates": [
+        "Urb. Jardines de Naranjito"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline identifica Jardines de Naranjito como urbanización y documenta un anuncio de vivienda familiar de tres habitaciones y un baño; el anuncio expiró.",
+      "sources": [
+        "https://www.clasificadosonline.com/xRENaranjitod.asp?id=4890146&Version=1"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Barrio-pueblo de Naranjito",
+      "slug": "barrio-pueblo-de-naranjito",
+      "alternates": [
+        "Naranjito barrio-pueblo"
+      ],
+      "priority": "MEDIUM",
+      "type": "Comunidad / sector",
+      "evidence": "La lista consultada de barrios y sectores identifica Naranjito barrio-pueblo y enumera sus sectores, entre ellos Barriada La Marina y Barriada San Antonio.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Naranjito,_Puerto_Rico"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Lomas",
+      "slug": "lomas",
+      "alternates": [
+        "Bo. Lomas de Naranjito"
+      ],
+      "priority": "MEDIUM",
+      "type": "Comunidad / sector",
+      "evidence": "Un anuncio de ClasificadosOnline ubica en Bo. Lomas de Naranjito una casa de cuatro habitaciones, 3.5 baños y 4,000 metros cuadrados de terreno, a $439,000.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4905904"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Achiote",
+      "slug": "achiote",
+      "alternates": [
+        "Bo. Achiote"
+      ],
+      "priority": "MEDIUM",
+      "type": "Comunidad / sector",
+      "evidence": "Un anuncio inmobiliario sitúa en Bo. Achiote una vivienda sin terminar de cuatro habitaciones, 2.5 baños y terreno de 3,734 metros cuadrados, anunciada a $190,000.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4851237"
+      ],
+      "confidence": "HIGH"
+    }
+  ]
+}
