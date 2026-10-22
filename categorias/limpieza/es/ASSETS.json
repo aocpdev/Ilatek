@@ -269,6 +269,46 @@
       "status": "local-copy",
       "bytes": 941,
       "sha256": "4bebe72147bfd89f46554899dc5228e3436d48bac1ce52da439c14ff7f62d7ba"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acaa576195f9172ed3a852a.jpg",
+      "file": "assets/media/6acaa576195f9172ed3a852a.jpg",
+      "status": "local-copy",
+      "bytes": 1817441,
+      "sha256": "a6897ab4c89891fd3e7c4585b0bc1e75b9c7b086b13d4509942f337699fa5867"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_512/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab0a9feff484614db6e6ce7.png",
+      "file": "assets/media/6ab0a9feff484614db6e6ce7.png",
+      "status": "local-copy",
+      "bytes": 1227238,
+      "sha256": "9a809dcf130ac71b60968a70c3f7ced1cfe67bafc8476ed73dda81978401b859"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab0a9feff484614db6e6ce7.png",
+      "file": "assets/media/6ab0a9feff484614db6e6ce7.png",
+      "status": "local-copy",
+      "bytes": 1227238,
+      "sha256": "9a809dcf130ac71b60968a70c3f7ced1cfe67bafc8476ed73dda81978401b859"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_512/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab0aa1430b0f957ccb1b27d.png",
+      "file": "assets/media/6ab0aa1430b0f957ccb1b27d.png",
+      "status": "local-copy",
+      "bytes": 2147127,
+      "sha256": "544c5ba9936b3ef9ac3de7187a433af0eab1976e25d533662b76d319cb084e8d"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab0aa1430b0f957ccb1b27d.png",
+      "file": "assets/media/6ab0aa1430b0f957ccb1b27d.png",
+      "status": "local-copy",
+      "bytes": 2147127,
+      "sha256": "544c5ba9936b3ef9ac3de7187a433af0eab1976e25d533662b76d319cb084e8d"
     }
   ]
 }

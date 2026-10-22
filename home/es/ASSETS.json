@@ -366,6 +366,40 @@
       "status": "local-copy",
       "bytes": 941,
       "sha256": "4bebe72147bfd89f46554899dc5228e3436d48bac1ce52da439c14ff7f62d7ba"
+    },
+    {
+      "role": "social-image",
+      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/bfa88816-50eb-45da-8e03-ea3b9e3beffd.jpg",
+      "file": "assets/media/bfa88816-50eb-45da-8e03-ea3b9e3beffd.jpg",
+      "status": "local-copy",
+      "bytes": 138662,
+      "sha256": "ed5587279a0fa8710acb98696cc224c81a9b1fb934721283c0ed8f5ba3aee8c1"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/775d8cdb-8c8c-47ad-8516-47b1abc9315a.mp4",
+      "file": "assets/media/775d8cdb-8c8c-47ad-8516-47b1abc9315a.mp4",
+      "status": "local-copy",
+      "bytes": 1081996,
+      "sha256": "8fbc49af8f1fb733ee36ac8ceab124ae8c97057753407ddd8f24e7c29560d3e5"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://i.ytimg.com/vi/yFt7eY_thIs/maxresdefault.jpg",
+      "file": "assets/media/youtube-yFt7eY_thIs-maxresdefault.jpg",
+      "status": "local-copy",
+      "bytes": 233148,
+      "sha256": "bc1af0a3f5fcc1b04bd3821d00f404e8345821ef65cd8a4cc1b1d654debdbc5f"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acbf7e5bbad531ac89598d2.png",
+      "file": "assets/media/6acbf7e5bbad531ac89598d2.webp",
+      "status": "local-optimized-backup",
+      "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6acbf7e5bbad531ac89598d2.webp",
+      "note": "Copia local: variante WebP optimizada del mismo archivo, ya versionada en el repositorio; no se duplica el PNG de 8,1 MB. No se modificó el embed.",
+      "bytes": 124754,
+      "sha256": "b4b3180fb990fce9bd71dd7a9935cb22e79911dc3672418379d003ad5181a6ac"
     }
   ]
 }
