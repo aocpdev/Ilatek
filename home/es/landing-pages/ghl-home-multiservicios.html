@@ -3189,7 +3189,7 @@ body:has(#ilatek-nav) .mshero-inner{
     var root=document.getElementById('ilatek-footer'); if(!root||root.dataset.ilfLang)return; root.dataset.ilfLang='true';
     var LANG_KEY='ilatek-lang';
     function token(name){return '{'+'{custom_values.'+name+'}'+'}'}
-    function clean(v){v=String(v||'').replace(/ /g,' ').trim();return /^\s*\{\{[^}]+\}\}\s*$/.test(v)?'':v}
+    function clean(v){v=String(v||'').replace(/ /g,' ').trim();return /^\s*\{\{[^}]+\}\}\s*$/.test(v)?'':v}
     function resolve(text){
       var out=String(text||'').split(token('county_name_and_state')).join(county);
       out=window.ILATEK_LINKS.replace(out,token('website_url'),website);
