@@ -1,0 +1,35 @@
+{
+  "municipality": "Las Marías",
+  "municipalitySlug": "las-marias",
+  "dateVerified": "2026-10-21",
+  "note": "Cobertura limitada: se verificaron una urbanización pública y un barrio con anuncio residencial; no se atribuyen otros sectores sin páginas legibles.",
+  "communities": [
+    {
+      "name": "Jardines de Las Marías",
+      "slug": "jardines-de-las-marias",
+      "alternates": [],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "La AVP registra Jardines de Las Marías en la carretera 120, barrio Maravillas Sur, con 55 unidades y administración de Blanco Enterprises.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Buena Vista",
+      "slug": "buena-vista",
+      "alternates": [
+        "Buenavista",
+        "Barrio Buena Vista"
+      ],
+      "priority": "MEDIUM",
+      "type": "Comunidad / sector",
+      "evidence": "Un anuncio inmobiliario identifica una residencia en el barrio Buenavista: dos habitaciones y seis cuerdas de terreno en la carretera 124.",
+      "sources": [
+        "https://www.exprealty.com/las-marias-pr-real-estate/124-bo-buena-vista"
+      ],
+      "confidence": "HIGH"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "municipality": "Canóvanas",
+  "municipalitySlug": "canovanas",
+  "dateVerified": "2026-10-21",
+  "note": "No se pudo establecer lista municipal exhaustiva. Realtor.com bloqueó acceso; un anuncio de River Valley estaba expirado. River Valley Park y River Valley Town Park no se combinan con River Valley.",
+  "communities": [
+    {
+      "name": "Forest Plantation",
+      "slug": "forest-plantation",
+      "alternates": [
+        "Urb. Forest Plantation"
+      ],
+      "priority": "HIGH",
+      "type": "Urbanización residencial cerrada",
+      "evidence": "Varias casas anunciadas, incluida una a $597,000; seguridad 24 horas y asociación de residentes. Nivel alto, no lujo probado.",
+      "sources": [
+        "https://www.clasificadosonline.com/m/REListingCOBarrioM.asp?ID=7475",
+        "https://www.compass.com/homedetails/153-C-Aguacate-Canovanas-CAN-VANAS-00729/N2930_pid/",
+        "https://www.bidicua.com/en/markets/canovanas/forest-plantation"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "River Valley",
+      "slug": "river-valley",
+      "alternates": [
+        "Urbanización River Valley"
+      ],
+      "priority": "UNVERIFIED",
+      "type": "Urbanización residencial",
+      "evidence": "Anuncio con acceso controlado y propiedad de $359,000; nombre y ubicación confirmados, nivel no determinado.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4887111&Version=1",
+        "https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Can%C3%B3vanas,_Puerto_Rico"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Ciudad Jardín",
+      "slug": "ciudad-jardin",
+      "alternates": [
+        "Urb. Ciudad Jardín",
+        "Urbanización Ciudad Jardín"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Zillow identifica una vivienda unifamiliar en Ciudad Jardín, Canóvanas, con cuatro habitaciones, tres baños y 2,007 pies cuadrados.",
+      "sources": [
+        "https://www.zillow.com/homedetails/B-1-Ciudad-Jardin-Canovanas-PR-00729/2095891601_zpid/"
+      ],
+      "confidence": "HIGH"
+    }
+  ]
+}

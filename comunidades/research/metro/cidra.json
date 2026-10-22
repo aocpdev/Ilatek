@@ -1,0 +1,143 @@
+{
+  "municipality": "Cidra",
+  "municipalitySlug": "cidra",
+  "region": "metro",
+  "dateVerified": "2026-10-21",
+  "status": "investigado",
+  "communities": [
+    {
+      "name": "Treasure Valley",
+      "slug": "treasure-valley",
+      "alternates": [
+        "Urb. Treasure Valley"
+      ],
+      "priority": "HIGH",
+      "type": "Urbanización",
+      "evidence": "Página Zillow de propiedades; vivienda identificada en Urb. Treasure Valley (3H/2B, ClasificadosOnline).",
+      "sources": [
+        "https://www.zillow.com/treasure-valley-cidra-pr/",
+        "https://www.clasificadosonline.com/xRECidrad.asp?id=4827208&Version=1"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Jardines de Villa del Carmen",
+      "slug": "jardines-de-villa-del-carmen",
+      "alternates": [],
+      "priority": "HIGH",
+      "type": "Sector / comunidad",
+      "evidence": "Sector de Toíta (lista de sectores); página Zillow específica con viviendas en venta.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Cidra,_Puerto_Rico",
+        "https://www.zillow.com/jardines-de-villa-del-carmen-cidra-pr/"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Jardines de Cidra",
+      "slug": "jardines-de-cidra",
+      "alternates": [
+        "Residencial Jardines de Cidra"
+      ],
+      "priority": "MEDIUM",
+      "type": "Comunidad residencial",
+      "evidence": "Incluido en barrio-pueblo (lista de sectores); página Zillow de propiedades y terrenos.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Cidra,_Puerto_Rico",
+        "https://www.zillow.com/residencial-jardines-de-cidra-cidra-pr/land/"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Bosque Real",
+      "slug": "bosque-real",
+      "alternates": [],
+      "priority": "MEDIUM",
+      "type": "Sector / comunidad",
+      "evidence": "Incluido en barrio Arenas (lista de sectores); vivienda unifamiliar identificada en Zillow (A19 Bosque Real).",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Cidra,_Puerto_Rico",
+        "https://www.zillow.com/homedetails/A19-Bosque-Real-Cidra-PR-00739/2072211866_zpid/"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Estancias del Bosque",
+      "slug": "estancias-del-bosque",
+      "alternates": [
+        "Urb. Estancias del Bosque"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Registrada en Certenejas (lista de sectores).",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Cidra,_Puerto_Rico"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Hacienda La Paloma",
+      "slug": "hacienda-la-paloma",
+      "alternates": [
+        "Urb. Hacienda La Paloma"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Registrada en Certenejas (lista de sectores).",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Cidra,_Puerto_Rico"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Villas del Bosque",
+      "slug": "villas-del-bosque",
+      "alternates": [
+        "Urb. Villas del Bosque"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Registrada en Certenejas (lista de sectores).",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Cidra,_Puerto_Rico"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Sabanaera",
+      "slug": "sabanaera",
+      "alternates": [],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline documenta una residencia en Sabanera de Cidra: tres habitaciones, dos baños y medio, terraza y patio de 1,200 metros cuadrados.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4811857"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Alturas de Cidra",
+      "slug": "alturas-de-cidra",
+      "alternates": [],
+      "priority": "UNVERIFIED",
+      "type": "Sector / comunidad",
+      "evidence": "Registrada bajo Rabanal; sin corroboración inmobiliaria.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Cidra,_Puerto_Rico"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "name": "Jardines de Rabanal",
+      "slug": "jardines-de-rabanal",
+      "alternates": [],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline identifica un solar en Jardines de Rabanal, Cidra, y describe la zona como tranquila, en calle sin salida y cercana a la naturaleza.",
+      "sources": [
+        "https://www.clasificadosonline.com/m/xREAdjuntasDM.asp?ID=4843524"
+      ],
+      "confidence": "HIGH"
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "municipality": "Yabucoa",
+  "municipalitySlug": "yabucoa",
+  "dateVerified": "2026-10-21",
+  "note": "No se verificaron propiedades de lujo, golf, marina ni premium en Yabucoa. Varios nombres provienen solo de directorios de alias. El PDF de la Junta de Planificación no fue legible. No se incluyó Alts de Terralinda.",
+  "communities": [
+    {
+      "name": "Valles de Yabucoa",
+      "slug": "valles-de-yabucoa",
+      "alternates": [
+        "Valles De Yabucoa",
+        "Urbanización Valles de Yabucoa"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización residencial con control de acceso",
+      "evidence": "Control de acceso y vivienda de 3 habitaciones; venta anunciada de $120,000 en 2022. Sin posicionamiento premium.",
+      "sources": [
+        "https://www.prestigerealtypr.com/property/valles-de-yabucoa-yabucoa",
+        "https://www.trulia.com/home/valles-de-yabucoa-uvillo-325-yabucoa-pr-00767-2065546331",
+        "https://www.zipwise.com/zip-code/00767"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Urbanización Jaime C. Rodríguez",
+      "slug": "urbanizacion-jaime-c-rodriguez",
+      "alternates": [
+        "Urb. Jaime C. Rodriguez",
+        "Urb Jaime C Rodriguez"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización residencial",
+      "evidence": "Vivienda de 4 habitaciones por $59,000 y venta de $135,000 en 2026; vivienda corriente.",
+      "sources": [
+        "https://www.zipwise.com/zip-code/00767",
+        "https://www.prestigerealtypr.com/property/urb-jaime-c-rodriguez-yabucoa",
+        "https://www.zillow.com/homedetails/Jaime-C-Rodriguez-Yabucoa-PR-00767/457228752_zpid/"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Extensión Villas de Buenaventura",
+      "slug": "extension-villas-de-buenaventura",
+      "alternates": [
+        "Ext Villas de Buenaventura"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline cataloga una propiedad residencial como Extensión Villas de Buenaventura, Yabucoa, y la identifica en la categoría de urbanización.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4873547"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Jardines de Yabucoa",
+      "slug": "jardines-de-yabucoa",
+      "alternates": [
+        "Jard de Yabucoa"
+      ],
+      "priority": "UNVERIFIED",
+      "type": "Área residencial; tipo de comunidad no confirmado",
+      "evidence": "Nombre abreviado en dos directorios; no verificado como urbanización.",
+      "sources": [
+        "https://www.zipwise.com/zip-code/00767",
+        "https://stats.justia.com/puerto-rico/yabucoa/"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "name": "Reparto Horizonte",
+      "slug": "reparto-horizonte",
+      "alternates": [
+        "Repto Horizonte"
+      ],
+      "priority": "UNVERIFIED",
+      "type": "Reparto residencial; características no confirmadas",
+      "evidence": "Alias de Yabucoa en dos directorios; sin evidencia específica.",
+      "sources": [
+        "https://www.zipwise.com/zip-code/00767",
+        "https://stats.justia.com/puerto-rico/yabucoa/"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "name": "Sector Piedra Azul",
+      "slug": "sector-piedra-azul",
+      "alternates": [
+        "Sect Piedra Azul"
+      ],
+      "priority": "UNVERIFIED",
+      "type": "Sector residencial; características no confirmadas",
+      "evidence": "Solo en directorio postal; sin segunda fuente.",
+      "sources": [
+        "https://www.zipwise.com/zip-code/00767"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "name": "Urbanización Calvario",
+      "slug": "urbanizacion-calvario",
+      "alternates": [
+        "Urb Calvario",
+        "Urb. Calvario"
+      ],
+      "priority": "UNVERIFIED",
+      "type": "Urbanización residencial; características no confirmadas",
+      "evidence": "Enumerada como alias en dos directorios; sin corroboración de propiedades ni precios.",
+      "sources": [
+        "https://www.zipwise.com/zip-code/00767",
+        "https://stats.justia.com/puerto-rico/yabucoa/"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "name": "Urbanización Los Ángeles",
+      "slug": "urbanizacion-los-angeles",
+      "alternates": [
+        "Urb Los Angeles",
+        "Urb. Los Ángeles"
+      ],
+      "priority": "UNVERIFIED",
+      "type": "Urbanización residencial; características no confirmadas",
+      "evidence": "En dos directorios y una página de ventas recientes; condiciones no verificadas.",
+      "sources": [
+        "https://www.zipwise.com/zip-code/00767",
+        "https://stats.justia.com/puerto-rico/yabucoa/",
+        "https://www.zillow.com/los-angeles-yabucoa-pr/sold/"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "name": "Urbanización Méndez",
+      "slug": "urbanizacion-mendez",
+      "alternates": [
+        "Urb Mendez",
+        "Urb. Méndez"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline muestra en su listado de Yabucoa una residencia en Urbanización Méndez con siete habitaciones, dos baños y precio anunciado de $225,000.",
+      "sources": [
+        "https://www.clasificadosonline.com/clasificados/BienesRaices/Yabucoa/default.asp?Version=1&offset=5"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Urbanización Santa Elena",
+      "slug": "urbanizacion-santa-elena",
+      "alternates": [
+        "Urb Santa Elena",
+        "Urb. Santa Elena"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Un anuncio de ClasificadosOnline ubica en Santa Elena, Yabucoa, una casa de tres habitaciones, un baño, balcón y terraza por $129,900.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4904447"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Urbanización Santa María",
+      "slug": "urbanizacion-santa-maria",
+      "alternates": [
+        "Urb Santa Maria",
+        "Urb. Santa María"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline registra una casa en Santa María, Yabucoa, con tres habitaciones y un baño, anunciada por $125,000.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4904508"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Villa El Recreo",
+      "slug": "villa-el-recreo",
+      "alternates": [
+        "Villa El Recreo"
+      ],
+      "priority": "UNVERIFIED",
+      "type": "Área residencial; tipo de comunidad no confirmado",
+      "evidence": "En dos directorios de áreas de Yabucoa; sin verificación de configuración.",
+      "sources": [
+        "https://www.zipwise.com/zip-code/00767",
+        "https://stats.justia.com/puerto-rico/yabucoa/"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "name": "Villa Hilda",
+      "slug": "villa-hilda",
+      "alternates": [
+        "Villa Hilda"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline documenta una casa de cuatro habitaciones y dos baños en Villa Hilda, Yabucoa, con precio anunciado de $154,995.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4814897&Version=1"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Villas de Buenaventura",
+      "slug": "villas-de-buenaventura",
+      "alternates": [
+        "Villas de Buenaventura"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline registra una casa en Villas de Buenaventura, Yabucoa, con tres habitaciones y un baño, anunciada por $169,000.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4902700"
+      ],
+      "confidence": "HIGH"
+    }
+  ]
+}

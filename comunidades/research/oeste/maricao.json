@@ -1,0 +1,36 @@
+{
+  "municipality": "Maricao",
+  "municipalitySlug": "maricao",
+  "dateVerified": "2026-10-21",
+  "note": "La evidencia municipal consultada verifica dos residenciales públicos; no se confirmó con páginas legibles otra urbanización o comunidad residencial específica.",
+  "communities": [
+    {
+      "name": "Colinas de Maricao",
+      "slug": "colinas-de-maricao",
+      "alternates": [
+        "Residencial Colinas de Maricao"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "La AVP identifica Colinas de Maricao en la carretera 120, barrio Pueblo Nuevo, con 24 unidades y administración de Blanco Enterprises.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Juan Ferrer",
+      "slug": "juan-ferrer",
+      "alternates": [
+        "Residencial Juan Ferrer"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "La AVP registra Juan Ferrer en la carretera 105, kilómetro 21, frente a la Escuela Raúl Ibarra, con 30 unidades.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "municipality": "Vega Baja",
+  "municipalitySlug": "vega-baja",
+  "region": "norte",
+  "dateVerified": "2026-10-21",
+  "status": "investigado",
+  "communities": [
+    {"name": "Villas de la Playa", "slug": "villas-de-la-playa", "alternates": ["Urb. Villa De La Playa"], "priority": "LUXURY", "type": "Urbanización", "evidence": "Anuncios en ClasificadosOnline con precios $459,000 y $545,000; prioridad por señal publicada.", "sources": ["https://www.clasificadosonline.com/m/REListingCOBarrioM.asp?ID=31945"], "confidence": "HIGH"},
+    {"name": "Vega Serena", "slug": "vega-serena", "alternates": ["Urb. Vega Serena"], "priority": "HIGH", "type": "Urbanización", "evidence": "Anuncios con propiedad de acceso controlado y varias viviendas identificadas (ClasificadosOnline).", "sources": ["https://www.clasificadosonline.com/clasificados/BienesRaices/casas/VegaBaja/default.asp?Version=1", "https://www.clasificadosonline.com/m/REListingCOBarrioM.asp?ID=4246"], "confidence": "HIGH"},
+    {"name": "Atlantic View Court", "slug": "atlantic-view-court", "alternates": ["Cond. Atlantic View Court"], "priority": "HIGH", "type": "Condominio", "evidence": "Identificado como condominio con propiedad anunciada (ClasificadosOnline).", "sources": ["https://www.clasificadosonline.com/clasificados/BienesRaices/casas/VegaBaja/default.asp?Version=1"], "confidence": "HIGH"},
+    {"name": "San Demetrio", "slug": "san-demetrio", "alternates": ["Urb. San Demetrio"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Anuncios categorizados en esa ubicación.", "sources": ["https://www.clasificadosonline.com/clasificados/BienesRaices/casas/VegaBaja/default.asp?Version=1"], "confidence": "HIGH"},
+    {"name": "Brisas Tortuguero", "slug": "brisas-tortuguero", "alternates": ["Urb. Brisas Tortuguero"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Vivienda identificada en esa ubicación.", "sources": ["https://www.clasificadosonline.com/clasificados/BienesRaices/casas/VegaBaja/default.asp?Version=1"], "confidence": "MEDIUM"},
+    {"name": "Estancias de Tortuguero", "slug": "estancias-de-tortuguero", "alternates": ["Urb. Estancias de Tortuguero"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Propiedad categorizada en esa ubicación.", "sources": ["https://www.clasificadosonline.com/clasificados/BienesRaices/casas/VegaBaja/default.asp?Version=1"], "confidence": "HIGH"},
+    {"name": "Jardines de Vega Baja", "slug": "jardines-de-vega-baja", "alternates": ["Urb. Jardines de Vega Baja"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Vivienda identificada y anuncio publicado.", "sources": ["https://www.clasificadosonline.com/clasificados/BienesRaices/casas/VegaBaja/default.asp?Version=1"], "confidence": "HIGH"},
+    {"name": "Velomas", "slug": "velomas", "alternates": ["Urb. Velomas"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Anuncios residenciales categorizados (ClasificadosOnline).", "sources": ["https://www.clasificadosonline.com/clasificados/BienesRaices/casas/VegaBaja/default.asp?Version=1"], "confidence": "HIGH"},
+    {"name": "Almirante Sur (Miranda)", "slug": "almirante-sur-miranda", "alternates": ["Comunidad Almirante Sur Miranda Nueva"], "priority": "MEDIUM", "type": "Comunidad / sector", "evidence": "Anuncio descrito como comunidad nueva en Sector Miranda.", "sources": ["https://www.clasificadosonline.com/clasificados/BienesRaices/casas/VegaBaja/default.asp?Version=1"], "confidence": "MEDIUM"},
+    {"name": "Ciudad Real", "slug": "ciudad-real-vega-baja", "alternates": ["Urb. Ciudad Real"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Anuncio de vivienda categorizado ahí.", "sources": ["https://www.clasificadosonline.com/clasificados/BienesRaices/casas/VegaBaja/default.asp?Version=1"], "confidence": "HIGH"}
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "municipality": "Patillas",
+  "municipalitySlug": "patillas",
+  "dateVerified": "2026-10-21",
+  "note": "Solo se pudieron verificar tres comunidades con páginas efectivamente consultadas: dos residenciales públicos en AVP y Solymar. No se completó el mínimo solicitado de cinco; otras comunidades o sectores no se incluyen porque no se pudieron corroborar en páginas leídas.",
+  "communities": [
+    {
+      "name": "Villa Real",
+      "slug": "villa-real",
+      "alternates": [],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "AVP identifica Villa Real como residencial público de Patillas, cerca del parque atlético Angelita Lind, con 70 unidades.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Villas del Caribe",
+      "slug": "villas-del-caribe",
+      "alternates": [
+        "Villas del Caribe @",
+        "Residencial Villas del Caribe"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "El catálogo de AVP registra Villas del Caribe en Patillas, en la calle Alberto Ricey, con 70 unidades de vivienda pública.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Solymar",
+      "slug": "solymar",
+      "alternates": [
+        "Urb. Solymar",
+        "Urb. Solimar"
+      ],
+      "priority": "HIGH",
+      "type": "Urbanización",
+      "evidence": "Anuncios describen Solymar con control de acceso, piscina, cancha, gazebo y área infantil; Zillow sitúa la urbanización cerca del balneario de Patillas.",
+      "sources": [
+        "https://www.zillow.com/homedetails/Urbanizacion-Solymar-L-6-Patillas-PR-00723/2101053520_zpid/",
+        "https://www.clasificadosonline.com/xREPatillasd.asp?id=4868760&Version=1"
+      ],
+      "confidence": "HIGH"
+    }
+  ]
+}

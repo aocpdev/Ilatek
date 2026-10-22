@@ -1,0 +1,79 @@
+{
+  "municipality": "Guayanilla",
+  "municipalitySlug": "guayanilla",
+  "dateVerified": "2026-10-21",
+  "note": "Bahía en el directorio de AVP se registra como residencial público; no la confundí con Bahía Guayanilla II, cuya evidencia consultada no pude verificar en una página leída.",
+  "communities": [
+    {
+      "name": "Padre Nazario",
+      "slug": "padre-nazario",
+      "alternates": [
+        "Residencial Padre Nazario"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "El directorio oficial de AVP identifica Padre Nazario, su ubicación en la entrada de Guayanilla, 120 unidades y su agente administrador.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Bahía",
+      "slug": "bahia",
+      "alternates": [
+        "Residencial Bahía"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "AVP registra Bahía en el barrio Magas Abajo de Guayanilla, con 50 unidades; el listado no la denomina Bahía Guayanilla II.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Urbanización La Concepción",
+      "slug": "urbanizacion-la-concepcion",
+      "alternates": [
+        "La Concepción"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Findit presenta una ficha titulada Urbanización La Concepción, pero la dirección extraída indica Bo. Magas Arriba; la delimitación queda incierta.",
+      "sources": [
+        "https://www.finditpr.com/en/property/Urbanizacion-La-Concepcion-Guayanilla-PR-00656/11251"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Santa Elena",
+      "slug": "santa-elena",
+      "alternates": [
+        "Urbanización Santa Elena",
+        "Extensión Santa Elena"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline agrupa en Guayanilla anuncios de casas identificados como Urbanización Santa Elena y Extensión Santa Elena, con publicaciones fechadas.",
+      "sources": [
+        "https://www.clasificadosonline.com/m/REListingCOBarrioM.asp?ID=8793"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Urbanización Stella",
+      "slug": "urbanizacion-stella",
+      "alternates": [
+        "Urb. Stella"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Zillow identifica una propiedad en Urb. Stella, Guayanilla, y registra una venta fechada el 13 de marzo de 2026.",
+      "sources": [
+        "https://www.zillow.com/homedetails/Urb-Stella-Calle-Lirio-A-1-Guayanilla-PR-00656/458405029_zpid/"
+      ],
+      "confidence": "HIGH"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "municipality": "Barranquitas",
+  "municipalitySlug": "barranquitas",
+  "dateVerified": "2026-10-21",
+  "note": "La AVP confirma dos residenciales públicos y sus unidades. No confirmé con páginas visitadas urbanizaciones privadas con volumen de viviendas o evidencia suficiente para prioridad HIGH o LUXURY.",
+  "communities": [
+    {
+      "name": "Reparto San Antonio",
+      "slug": "reparto-san-antonio",
+      "alternates": [
+        "Residencial Reparto San Antonio"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "La AVP registra Reparto San Antonio en el sector La Haciendita, barrio Helechal, y consigna 60 unidades de vivienda pública.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Villa Universitaria",
+      "slug": "villa-universitaria",
+      "alternates": [
+        "Residencial Villa Universidad",
+        "Villa Universidad"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "El listado oficial de AVP incluye Villa Universitaria en Barranquitas con 100 unidades; Zillow también muestra una página de ventas recientes del sector.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales",
+        "https://www.zillow.com/residencial-villa-universidad-barranquitas-pr/sold/"
+      ],
+      "confidence": "HIGH"
+    }
+  ]
+}

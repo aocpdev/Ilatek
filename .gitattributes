@@ -6,3 +6,8 @@
 # SVGs de media: verificados por hash contra ASSETS.json; core.autocrlf=true los
 # tocaba al checkout y cambiaba los hashes. LF canónico también para ellos.
 *.svg text eol=lf
+.gitattributes text eol=lf
+# El CSS compartido se inyecta literalmente dentro del bloque de cada página:
+# si autocrlf lo reescribe al checkout, la copia inyectada deja de coincidir y
+# verify-internal-links (idempotencia) falla en un clon limpio.
+*.css text eol=lf

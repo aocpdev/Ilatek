@@ -1,0 +1,15 @@
+{
+  "municipality": "Trujillo Alto",
+  "municipalitySlug": "trujillo-alto",
+  "region": "metro",
+  "dateVerified": "2026-10-21",
+  "status": "investigado",
+  "communities": [
+    {"name": "Encantada", "slug": "encantada", "alternates": ["Urb. Encantada"], "priority": "HIGH", "type": "Comunidad residencial", "evidence": "Comunidad residencial establecida según anuncio; residencia 4H con piscina privada (ClasificadosOnline).", "sources": ["https://www.clasificadosonline.com/UDRED.asp?ID=4907865&Version=1"], "confidence": "HIGH"},
+    {"name": "Corrientes, Encantada", "slug": "corrientes-encantada", "alternates": ["Urb. Corrientes, Encantada"], "priority": "LUXURY", "type": "Sección residencial", "evidence": "Anuncio en Urb. Corrientes, Encantada: 4H, piscina privada, venta $685,000.", "sources": ["https://www.clasificadosonline.com/UDRED.asp?ID=4907865&Version=1"], "confidence": "HIGH"},
+    {"name": "Ciudad Universitaria", "slug": "ciudad-universitaria", "alternates": ["Urb. Ciudad Universitaria"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Urbanización con control de acceso según anuncio.", "sources": ["https://www.clasificadosonline.com/m/DetailRealEstate.asp?ID=4896652&Sec=1"], "confidence": "HIGH"},
+    {"name": "Parque del Monte", "slug": "parque-del-monte", "alternates": [], "priority": "MEDIUM", "type": "Comunidad residencial", "evidence": "Página Zillow con inventario de viviendas en Parque del Monte.", "sources": ["https://www.zillow.com/parque-del-monte-trujillo-alto-pr/"], "confidence": "MEDIUM"},
+    {"name": "Residencial Interamericana", "slug": "residencial-interamericana", "alternates": [], "priority": "MEDIUM", "type": "Comunidad residencial", "evidence": "Ubicación inmobiliaria identificada por Zillow con inventario de viviendas.", "sources": ["https://www.zillow.com/residencial-interamericana-trujillo-alto-pr/"], "confidence": "MEDIUM"},
+    {"name": "El Conquistador", "slug": "el-conquistador", "alternates": ["El Conquistador, Carraízo"], "priority": "MEDIUM", "type": "Comunidad cerrada", "evidence": "Comunidad vigilada en barrio Carraízo según ficha Bidicua; registro en Calle 13.", "sources": ["https://www.bidicua.com/es/markets/trujillo-alto/el-conquistador"], "confidence": "MEDIUM"}
+  ]
+}

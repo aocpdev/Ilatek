@@ -1,0 +1,213 @@
+URLs únicas a verificar: 377
+
+  [400] MUERTA         https://www.facebook.com/100064367992562/posts/florida-puerto-rico-informamos-a-los-residentes-de-la-urb-alturas-de-florida-fog/5510140632374328/
+        <- Florida/Alturas de Florida, Florida/Jardines de Florida
+  [400] MUERTA         https://www.facebook.com/AVPPuertoRico/posts/en-el-residencial-bella-vista-en-salinasyo-%EF%B8%8F-mi-comunidad-2025j%C3%B3venes-y-ni%C3%B1os-hi/1121612006822946/
+        <- Salinas/Bella Vista
+  [403] BLOQUEO        https://www.zillow.com/homedetails/Calle-3-D-8-Brisas-De-Palma-Sola-Aguas-Buenas-PR-00703/2103711259_zpid/
+        <- Aguas Buenas/Brisas de Palma Sola
+  [403] BLOQUEO        https://www.trulia.com/home/62-estancias-la-sierra-ii-aguas-buenas-pr-00703-465773632
+        <- Aguas Buenas/Estancias de la Sierra
+  [403] BLOQUEO        https://www.zillow.com/residencial-vistas-de-jagueyes-aguas-buenas-pr/
+        <- Aguas Buenas/Vistas de Jagüeyes
+  [403] BLOQUEO        https://www.trulia.com/PR/Bayamon/
+        <- Bayamón/Riviera, Bayamón/Riviera Parkview, Bayamón/Residences at Rio, Bayamón/Quintas del Río, Bayamón/Estancias de Río Hondo, Bayamón/Sierra Taína, Bayamón/Santa Juanita, Bayamón/Magnolia Gardens, Bayamón/Bayamón Gardens, Bayamón/Flamingo Hills, Bayamón/Royal Gardens, Bayamón/Jardines de Caparra, Bayamón/Extensión Villa Rica, Bayamón/River Park, Bayamón/Las Torres Norte, Bayamón/Las Torres Sur
+  [403] BLOQUEO        https://www.zillow.com/bayamon-pr/
+        <- Bayamón/Mirabella Village and Club, Bayamón/River Park
+  [403] BLOQUEO        https://www.trulia.com/home/20-calle-guilarte-urb-la-reserva-en-caguas-pr-00727-2057279662
+        <- Caguas/Los Prados - La Reserva
+  [403] BLOQUEO        https://www.zillow.com/residencial-castellon-caguas-pr/
+        <- Caguas/Residencial Castellón
+  [403] BLOQUEO        https://www.zillow.com/valle-arriba-heights-carolina-pr/
+        <- Carolina/Valle Arriba Heights, Carolina/Villa Fontana
+  [403] BLOQUEO        https://www.zillow.com/marina-bahia-catano-pr/
+        <- Cataño/Marina Bahía
+  [403] BLOQUEO        https://www.zillow.com/dos-rios-catano-pr/
+        <- Cataño/Dos Ríos
+  [403] BLOQUEO        https://www.zillow.com/enramada-catano-pr/
+        <- Cataño/Enramada
+  [403] BLOQUEO        https://www.zillow.com/treasure-valley-cidra-pr/
+        <- Cidra/Treasure Valley
+  [403] BLOQUEO        https://www.zillow.com/jardines-de-villa-del-carmen-cidra-pr/
+        <- Cidra/Jardines de Villa del Carmen
+  [403] BLOQUEO        https://www.zillow.com/residencial-jardines-de-cidra-cidra-pr/land/
+        <- Cidra/Jardines de Cidra
+  [403] BLOQUEO        https://www.zillow.com/homedetails/A19-Bosque-Real-Cidra-PR-00739/2072211866_zpid/
+        <- Cidra/Bosque Real
+  [403] BLOQUEO        https://www.zillow.com/condado-san-juan-pr/
+        <- San Juan/Condado
+  [403] BLOQUEO        https://www.zillow.com/ocean-park-san-juan-pr/luxury-homes/
+        <- San Juan/Ocean Park
+  [403] BLOQUEO        https://www.zillow.com/miramar-san-juan-pr/
+        <- San Juan/Miramar
+  [403] BLOQUEO        https://www.zillow.com/university-gardens-san-juan-pr/
+        <- San Juan/University Gardens
+  [403] BLOQUEO        https://www.bhhsfloridaproperties.com/property/24-PR9121393-Ave-Palacio-De-Versalles-Palacios-F-401-Toa-Alta-PR-00953
+        <- Toa Alta/Palacios de Versalles
+  [403] BLOQUEO        https://www.trulia.com/home/0-avenue-palacios-de-versalles-c302-toa-alta-pr-00953-2060324788
+        <- Toa Alta/Palacios de Versalles
+  [403] BLOQUEO        https://www.trulia.com/home/cond-vistas-de-montecasino-3604-toa-alta-pr-00953-2077771497
+        <- Toa Alta/Vistas de Montecasino
+  [403] BLOQUEO        https://www.zillow.com/homedetails/Urbanizacion-Levittown-Lakes-Toa-Baja-PR-00949/466072626_zpid/
+        <- Toa Baja/Levittown, Toa Baja/Levittown Lakes
+  [403] BLOQUEO        https://www.trulia.com/PR/Toa_Baja,Candelaria/
+        <- Toa Baja/Candelaria Arenas, Toa Baja/Mansión del Sol
+  [403] BLOQUEO        https://www.zillow.com/parque-del-monte-trujillo-alto-pr/
+        <- Trujillo Alto/Parque del Monte
+  [403] BLOQUEO        https://www.zillow.com/residencial-interamericana-trujillo-alto-pr/
+        <- Trujillo Alto/Residencial Interamericana
+  [403] BLOQUEO        https://www.trulia.com/PR/Barceloneta/
+        <- Barceloneta/La Marina Barceloneta
+  [403] BLOQUEO        https://www.zillow.com/dorado-del-mar-dorado-pr/
+        <- Dorado/Dorado del Mar
+  [403] BLOQUEO        https://www.zillow.com/homedetails/Hacienda-De-Florida-Calle-1-Lote-14-14-Florida-PR-00950/2103142612_zpid/
+        <- Florida/Hacienda de Florida
+  [403] BLOQUEO        https://www.trulia.com/home/d-19-urbanizacion-cabrera-utuado-pr-00641-465025495
+        <- Utuado/Urbanización Cabrera
+  [403] BLOQUEO        https://www.zillow.com/homedetails/0-Utuado-Urb-Jesus-Maria-Lago-Utuado-PR-00641/2078482983_zpid/
+        <- Utuado/Jesús María Lago
+  [403] BLOQUEO        https://www.zillow.com/homedetails/Urb-Jesus-Maria-Lago-B-15-Utuado-PR-00641/457598554_zpid/
+        <- Utuado/Jesús María Lago
+  [403] BLOQUEO        https://www.zillow.com/homedetails/300-Urb-Lomas-De-Vista-Verde-Utuado-PR-00641/2128936880_zpid/
+        <- Utuado/Lomas de Vista Verde
+  [403] BLOQUEO        https://www.zillow.com/homedetails/Jardines-De-Bubao-D-5-A-Utuado-PR-00641/465220582_zpid/
+        <- Utuado/Jardines de Bubao
+  [403] BLOQUEO        https://www.trulia.com/home/123-comunidad-rural-el-guano-parcela-32-utuado-pr-00641-349469607
+        <- Utuado/Comunidad Rural El Guano
+  [403] BLOQUEO        https://www.zillow.com/homedetails/Grand-Palm-I-Vega-Alta-PR-00692/2061817352_zpid/
+        <- Vega Alta/Grand Palm I
+  [403] BLOQUEO        https://www.zillow.com/homedetails/Palma-Corozo-Urb-Vega-Dorada-20-Vega-Alta-PR-00692/450381144_zpid/
+        <- Vega Alta/Vega Dorada
+  [403] BLOQUEO        https://www.zillow.com/homedetails/Alturas-De-Cerro-Gordo-3-Y-4-Vega-Alta-PR-00692/2103057493_zpid/
+        <- Vega Alta/Alturas de Cerro Gordo III y IV
+  [403] BLOQUEO        https://www.zillow.com/comunidad-la-ponderosa-vega-alta-pr/
+        <- Vega Alta/Comunidad La Ponderosa
+  [403] BLOQUEO        https://www.trulia.com/PR/Vega_Alta,Comunidad_La_Ponderosa/
+        <- Vega Alta/Comunidad La Ponderosa
+  [403] BLOQUEO        https://www.zillow.com/homedetails/B-1-Ciudad-Jardin-Canovanas-PR-00729/2095891601_zpid/
+        <- Canóvanas/Ciudad Jardín
+  [403] BLOQUEO        https://www.zillow.com/homedetails/The-Village-At-The-Hill-Mango-Bch-119-Ceiba-PR-00735/350312507_zpid/
+        <- Ceiba/The Village at the Hill
+  [403] BLOQUEO        https://www.zillow.com/homedetails/Urb-Paseo-De-La-Costa-Ceiba-PR-00735/462990786_zpid/
+        <- Ceiba/Paseo de la Costa
+  [403] BLOQUEO        https://www.zillow.com/homedetails/Cond-Costa-Brava-BUILDING-18-202-Ceiba-PR-00735/2078478366_zpid/
+        <- Ceiba/Costa Brava
+  [403] BLOQUEO        https://www.zillow.com/aguas-claras-ceiba-pr/
+        <- Ceiba/Costa Esmeralda
+  [403] BLOQUEO        https://www.zillow.com/homedetails/PW-401-The-Ocean-Club-At-Seven-Seas-Pkwy-401-Fajardo-PR-00738/447492036_zpid/
+        <- Fajardo/The Ocean Club at Seven Seas
+  [403] BLOQUEO        https://www.trulia.com/PR/Fajardo/
+        <- Fajardo/The Ocean Club at Seven Seas, Fajardo/Dos Marinas II, Fajardo/Villa Marina
+  [403] BLOQUEO        https://www.trulia.com/home/cond-pena-mar-801-fajardo-pr-00738-465129444
+        <- Fajardo/Peña Mar Ocean Club
+  [403] BLOQUEO        https://www.trulia.com/home/puertas-del-sol-d2-fajardo-pr-00738-2068427596
+        <- Fajardo/Puertas del Sol
+  [403] BLOQUEO        https://www.zillow.com/monte-brisas-fajardo-pr/
+        <- Fajardo/Monte Brisas
+  [403] BLOQUEO        https://www.zillow.com/santa-isidra-fajardo-pr/
+        <- Fajardo/Santa Isidra
+  [403] BLOQUEO        https://www.zillow.com/valle-puerto-real-fajardo-pr/
+        <- Fajardo/Valle Puerto Real
+  [403] BLOQUEO        https://www.zillow.com/villa-marina-fajardo-pr/condos/
+        <- Fajardo/Villa Marina
+  [403] BLOQUEO        https://www.trulia.com/home/501-829007-urb-palacio-del-sol-oval-y477-humacao-pr-00791-2055472668
+        <- Humacao/Palacios del Sol
+  [403] BLOQUEO        https://www.zillow.com/homedetails/Camino-Del-Parque-Street-Estancias-De-Juncos-URB-119-Juncos-PR-00777/462016888_zpid/
+        <- Juncos/Estancias de Juncos
+  [403] BLOQUEO        https://www.trulia.com/home/68-urb-mansiones-de-juncos-caoba-st-juncos-pr-00777-454830795
+        <- Juncos/Mansiones de Juncos
+  [403] BLOQUEO        https://www.zillow.com/homedetails/Urb-El-Encanto-B29-Calle-Azucena-Juncos-PR-00777/457655228_zpid/
+        <- Juncos/El Encanto
+  [403] BLOQUEO        https://www.zillow.com/homedetails/Carr-9929-Alturas-De-Lirios-22-Juncos-PR-00777/465488073_zpid/
+        <- Juncos/Alturas de Lirios
+  [403] BLOQUEO        https://www.zillow.com/homedetails/N13e-Urb-Reparto-Valenciano-Calle-B-Juncos-PR-00777/2068698374_zpid/
+        <- Juncos/Reparto Valenciano
+  [403] BLOQUEO        https://www.trulia.com/home/6-urb-virginia-valley-g-14-juncos-pr-00777-454707505
+        <- Juncos/Virginia Valley
+  [403] BLOQUEO        https://www.zillow.com/homedetails/0-Urb-Colinas-De-Luquillo-Luquillo-PR-00773/462316645_zpid/
+        <- Luquillo/Colinas de Luquillo
+  [403] BLOQUEO        https://www.trulia.com/home/98-hacienda-margarita-luquillo-pr-00773-464824741
+        <- Luquillo/Hacienda Margarita
+  [403] BLOQUEO        https://www.trulia.com/home/1-camino-las-aves-luquillo-pr-00773-464430364
+        <- Luquillo/Las Aves
+  [403] BLOQUEO        https://www.zillow.com/homedetails/1-Camino-Las-Aves-Luquillo-PR-00773/464430364_zpid/
+        <- Luquillo/Las Aves
+  [403] BLOQUEO        https://www.zillow.com/homedetails/B-Paisajes-Del-Lago-Luquillo-PR-00773/460653142_zpid/
+        <- Luquillo/Paisajes del Lago
+  [403] BLOQUEO        https://www.trulia.com/home/a-9-costa-azul-luquillo-pr-00773-2064410168
+        <- Luquillo/Costa Azul
+  [403] BLOQUEO        https://www.zillow.com/luquillo-mar-luquillo-pr/
+        <- Luquillo/Luquillo Mar
+  [403] BLOQUEO        https://www.zillow.com/sandy-hills-luquillo-pr/condos/
+        <- Luquillo/Sandy Hills
+  [403] BLOQUEO        https://www.zillow.com/homedetails/Cond-Villas-Del-Faro-5015-Punta-Tuna-St-406-Maunabo-PR-00707/462675174_zpid/
+        <- Maunabo/Villas del Faro
+  [403] BLOQUEO        https://www.zillow.com/homedetails/F-4-Villas-De-Maunabo-Maunabo-PR-00707/456317428_zpid/
+        <- Maunabo/Villas de Maunabo
+  [403] BLOQUEO        https://www.zillow.com/homedetails/F-5-Villas-De-Maunabo-Maunabo-PR-00707/456803171_zpid/
+        <- Maunabo/Villas de Maunabo
+  [403] BLOQUEO        https://www.zillow.com/homedetails/234-236-Emajagua-Commons-Mariani-Maunabo-Maunabo-PR-00707/465464658_zpid/
+        <- Maunabo/Comunidad Mariani
+  [403] BLOQUEO        https://www.trulia.com/home/461-commons-mariani-bo-emajagua-maunabo-pr-00707-463790844
+        <- Maunabo/Comunidad Mariani
+  [403] BLOQUEO        https://www.trulia.com/home/c7-mansiones-de-playa-hucares-naguabo-pr-00718-465500608
+        <- Naguabo/Mansiones de Playa Húcares, Naguabo/Promise Land
+  [403] BLOQUEO        https://www.zillow.com/homedetails/457-Monte-De-Los-Olivos-Naguabo-PR-00718/461748011_zpid/
+        <- Naguabo/Promise Land
+  [403] BLOQUEO        https://www.zillow.com/homedetails/G3-Brisas-Del-Valley-Naguabo-PR-00718/461827355_zpid/
+        <- Naguabo/Brisas del Valle
+  [403] BLOQUEO        https://www.trulia.com/home/valles-de-yabucoa-uvillo-325-yabucoa-pr-00767-2065546331
+        <- Yabucoa/Valles de Yabucoa
+  [403] BLOQUEO        https://www.zillow.com/homedetails/Jaime-C-Rodriguez-Yabucoa-PR-00767/457228752_zpid/
+        <- Yabucoa/Urbanización Jaime C. Rodríguez
+  [403] BLOQUEO        https://www.zillow.com/los-angeles-yabucoa-pr/sold/
+        <- Yabucoa/Urbanización Los Ángeles
+  [403] BLOQUEO        https://www.zillow.com/homedetails/9-Urb-Valleys-L-12-Arroyo-PR-00714/2057192661_zpid/
+        <- Arroyo/Valles de Arroyo
+  [403] BLOQUEO        https://www.zillow.com/jardines-de-lafayette-arroyo-pr/
+        <- Arroyo/Jardines de Lafayette
+  [403] BLOQUEO        https://www.zillow.com/el-eden-coamo-pr/
+        <- Coamo/Las Fuentes de Coamo
+  [403] BLOQUEO        https://www.zillow.com/homedetails/Urb-Stella-Calle-Lirio-A-1-Guayanilla-PR-00656/458405029_zpid/
+        <- Guayanilla/Urbanización Stella
+  [403] BLOQUEO        https://www.zillow.com/juana-diaz-pr/
+        <- Juana Díaz/Quintas de Altamira, Juana Díaz/Mansiones de Camino Real
+  [403] BLOQUEO        https://www.zillow.com/comunidad-cristina-juana-diaz-pr/
+        <- Juana Díaz/Comunidad Cristina
+  [403] BLOQUEO        https://www.zillow.com/homedetails/Urbanizacion-Solymar-L-6-Patillas-PR-00723/2101053520_zpid/
+        <- Patillas/Solymar
+  [403] BLOQUEO        https://www.trulia.com/PR/Penuelas,Alturas_de_Penuelas/SINGLE-FAMILY_HOME_type/
+        <- Peñuelas/Alturas de Peñuelas
+  [403] BLOQUEO        https://www.zillow.com/comunidad-caracoles-penuelas-pr/
+        <- Peñuelas/Comunidad Caracoles
+  [403] BLOQUEO        https://www.zillow.com/colinas-del-oeste-hormigueros-pr/
+        <- Hormigueros/Colinas del Oeste
+  [403] BLOQUEO        https://www.zillow.com/homes/Valle-Hermoso-Hormigueros,-PR_rb/
+        <- Hormigueros/Valle Hermoso
+  [403] BLOQUEO        https://www.zillow.com/homedetails/Urb-Colinas-De-Villa-Rosa-Calle-D-B-29-Sabana-Grande-PR-00637/458405041_zpid/
+        <- Sabana Grande/Colinas de Villa Rosa
+  [403] BLOQUEO        https://www.zillow.com/homedetails/F-Urb-El-Hucar-Sabana-Grande-Sabana-Grande-PR-00637/457163408_zpid/
+        <- Sabana Grande/El Hucar
+  [403] BLOQUEO        https://www.zillow.com/homedetails/D8-Urb-Mansiones-De-Sabana-Grande-CALLE-Sabana-Grande-PR-00637/2082411209_zpid/
+        <- Sabana Grande/Mansiones de Sabana Grande
+  [403] BLOQUEO        https://www.trulia.com/home/km-2-3-int-urbanizacion-colinas-del-rio-carr-329-san-german-pr-00683-2055076430
+        <- San Germán/Colinas del Río
+  [403] BLOQUEO        https://www.zillow.com/residencial-villa-universidad-barranquitas-pr/sold/
+        <- Barranquitas/Villa Universitaria
+  [403] BLOQUEO        https://www.zillow.com/homedetails/B5-Calle-Preciosa-Cayey-PR-00736/442001985_zpid/
+        <- Cayey/Mansiones Monte Verde
+  [403] BLOQUEO        https://www.zillow.com/homedetails/Jardines-De-Cayey-G-7-Cayey-PR-00736/2103740462_zpid/
+        <- Cayey/Jardines de Cayey
+  [403] BLOQUEO        https://www.zillow.com/homedetails/Calle-I-Urb-Palmas-Del-Sol-I-13-13-S-Lares-PR-00669/462780153_zpid/
+        <- Lares/Palmas del Sol
+  [403] BLOQUEO        https://www.zillow.com/homedetails/12872-Est-De-Vista-Alegre-Villalba-PR-00766/2112169708_zpid/
+        <- Villalba/Vista Alegre
+  [429] BLOQUEO        https://www.realtor.com/realestateandhomes-search/Villa-Del-Rey-1_PR/type-single-family-home
+        <- Caguas/Villa del Rey 1ra Sección
+  [429] BLOQUEO        https://www.realtor.com/realestateandhomes-detail/214-Los-Flamboyanes_Gurabo_PR_00778_M35125-06435
+        <- Gurabo/Los Flamboyanes de Gurabo
+  [429] BLOQUEO        https://www.realtor.com/realestateandhomes-detail/A-5-Calle-Alamo-Grand-Palm-Ii_Vega-Alta_PR_00692_M96577-41302
+        <- Vega Alta/Grand Palm II
+
+Resumen: 273 OK · 102 bloqueo anti-bot · 2 sin acceso (377 total)
+Revisar manualmente las URLs 'MUERTA'/'ERROR' antes de publicar landings.

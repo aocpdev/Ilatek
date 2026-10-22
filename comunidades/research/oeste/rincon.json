@@ -1,0 +1,67 @@
+{
+  "municipality": "Rincón",
+  "municipalitySlug": "rincon",
+  "dateVerified": "2026-10-21",
+  "note": "Selección basada en anuncios y páginas oficiales leídos; no es un inventario exhaustivo. No se identificaron en las páginas consultadas más residenciales públicos locales verificables.",
+  "communities": [
+    {
+      "name": "Punta del Mar Beach Village",
+      "slug": "punta-del-mar-beach-village",
+      "alternates": [
+        "Punta del Mar",
+        "Punta Del Mar"
+      ],
+      "priority": "LUXURY",
+      "type": "Urbanización",
+      "evidence": "Anuncio de $1,350,000 identifica la comunidad frente al mar, con acceso controlado, piscina estilo resort, canchas deportivas, gimnasio y vistas oceánicas.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRED.asp?ID=4869398&Version=1",
+        "https://www.clasificadosonline.com/UDRED.asp?ID=4904730&Version=1"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Costa Córcega",
+      "slug": "costa-corcega",
+      "alternates": [
+        "Condominio Costa Córcega",
+        "Costa Corcega"
+      ],
+      "priority": "HIGH",
+      "type": "Condominio",
+      "evidence": "Anuncio de apartamento frente al mar documenta acceso controlado, estacionamiento asignado, piscina y acceso directo a la playa en Rincón.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRED.asp?ID=4888592&Version=1"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Victoria del Mar",
+      "slug": "victoria-del-mar",
+      "alternates": [
+        "Condominio Victoria del Mar"
+      ],
+      "priority": "HIGH",
+      "type": "Condominio",
+      "evidence": "Anuncio identifica un condominio frente al mar con acceso controlado, estacionamiento asignado y apartamentos que permiten alquileres a corto plazo.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4890108"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Santa Rosa Elderly",
+      "slug": "santa-rosa-elderly",
+      "alternates": [
+        "Santa Rosa"
+      ],
+      "priority": "MEDIUM",
+      "type": "Comunidad / sector",
+      "evidence": "El Departamento de la Vivienda registra Santa Rosa Elderly en Rincón y especifica su ubicación en la carretera 413, barrio Ensenada.",
+      "sources": [
+        "https://www.vivienda.pr.gov/egidas"
+      ],
+      "confidence": "HIGH"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "municipality": "Aguada",
+  "municipalitySlug": "aguada",
+  "dateVerified": "2026-10-21",
+  "note": "Selección limitada a comunidades con anuncios consultables; no se pudo confirmar en páginas leídas un inventario municipal completo de residenciales públicos.",
+  "communities": [
+    {
+      "name": "Table Rock",
+      "slug": "table-rock",
+      "alternates": [
+        "Urbanización Table Rock"
+      ],
+      "priority": "HIGH",
+      "type": "Urbanización",
+      "evidence": "Un anuncio inmobiliario en Aguada describe una villa con acceso directo a la playa, piscina comunitaria y acceso controlado dentro de Table Rock.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRED.asp?ID=4895381&Version=1"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Colinas del Lago",
+      "slug": "colinas-del-lago",
+      "alternates": [
+        "Urbanización Colinas del Lago"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Un anuncio ubica la urbanización en Asomante y describe una comunidad residencial de menos de cien viviendas, de baja densidad y próxima a Aguada.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRedM.asp?Sec=1&ID=4901184"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Reparto González",
+      "slug": "reparto-gonzalez",
+      "alternates": [
+        "Urbanización Reparto González"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Un anuncio de venta identifica expresamente la Urbanización Reparto González, Aguada, e indica una propiedad residencial ubicada en la Calle Reparto González.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRED.asp?ID=4899604&Version=1"
+      ],
+      "confidence": "HIGH"
+    }
+  ]
+}

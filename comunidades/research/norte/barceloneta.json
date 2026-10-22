@@ -1,0 +1,15 @@
+{
+  "municipality": "Barceloneta",
+  "municipalitySlug": "barceloneta",
+  "region": "norte",
+  "dateVerified": "2026-10-21",
+  "status": "investigado",
+  "communities": [
+    {"name": "Villa Georgetti", "slug": "villa-georgetti", "alternates": ["Urb. Villa Georgetti"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Propiedad identificada en ClasificadosOnline: casa 4H/2B.", "sources": ["https://www.clasificadosonline.com/clasificados/BienesRaices/Barceloneta/default.asp"], "confidence": "HIGH"},
+    {"name": "Casa Esmeralda", "slug": "casa-esmeralda", "alternates": [], "priority": "MEDIUM", "type": "Urbanización / proyecto nuevo", "evidence": "Proyecto nuevo en Imbery: casas 3H/2B a $295,000 (ClasificadosOnline).", "sources": ["https://www.clasificadosonline.com/clasificados/BienesRaices/Barceloneta/default.asp"], "confidence": "HIGH"},
+    {"name": "Las Praderas", "slug": "las-praderas-barceloneta", "alternates": ["Urb. Las Praderas"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Propiedad identificada en ClasificadosOnline: casa 3H/2B.", "sources": ["https://www.clasificadosonline.com/clasificados/BienesRaices/Barceloneta/default.asp"], "confidence": "HIGH"},
+    {"name": "Isla de Roque Estate", "slug": "isla-de-roque-estate", "alternates": [], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Identificada como urbanización en Barceloneta; casa 3H/2B (ClasificadosOnline).", "sources": ["https://www.clasificadosonline.com/clasificados/BienesRaices/Barceloneta/default.asp"], "confidence": "HIGH"},
+    {"name": "Brisas de Llanadas", "slug": "brisas-de-llanadas", "alternates": ["Urb. Brisas de Llanadas"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Propiedad identificada en ClasificadosOnline: casa 3H/2B.", "sources": ["https://www.clasificadosonline.com/clasificados/BienesRaices/Barceloneta/default.asp"], "confidence": "HIGH"},
+    {"name": "La Marina Barceloneta", "slug": "la-marina-barceloneta", "alternates": ["Condominio La Marina Avenue", "Condo. Marina III"], "priority": "MEDIUM", "type": "Condominio", "evidence": "Apartamento en Condo. La Marina Barceloneta (ClasificadosOnline); unidad 3H/2B en Trulia.", "sources": ["https://www.clasificadosonline.com/clasificados/BienesRaices/Barceloneta/default.asp", "https://www.trulia.com/PR/Barceloneta/"], "confidence": "HIGH"}
+  ]
+}

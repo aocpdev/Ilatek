@@ -1,0 +1,66 @@
+{
+  "municipality": "Vieques",
+  "municipalitySlug": "vieques",
+  "dateVerified": "2026-10-21",
+  "note": "AVP confirma dos residenciales públicos; anuncios inmobiliarios verifican Villa Borinquén y Bravos de Boston, sin extrapolar barrios a urbanizaciones.",
+  "communities": [
+    {
+      "name": "Jardines de Vieques",
+      "slug": "jardines-de-vieques",
+      "alternates": [
+        "Residencial Jardines de Vieques"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "La AVP registra Jardines de Vieques cerca del Hospital Municipal, con 50 unidades y administración de Professional Management Company.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "César “Coca” González",
+      "slug": "cesar-coca-gonzalez",
+      "alternates": [
+        "Residencial César “Coca” González",
+        "Cesar 'Coca' González"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "La AVP registra este residencial en la carretera 997, sector Las Marías, barrio Florida, con 83 unidades en Vieques.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Villa Borinquén",
+      "slug": "villa-borinquen",
+      "alternates": [
+        "Villa Borinquen",
+        "Comunidad Villa Borinquén"
+      ],
+      "priority": "MEDIUM",
+      "type": "Comunidad / sector",
+      "evidence": "Un anuncio activo sitúa una residencia en la comunidad Villa Borinquén, barrio Santa María, e informa cuatro habitaciones y 2.365 pies cuadrados.",
+      "sources": [
+        "https://www.smithandassociates.com/listing/16-villa-borinquen-556-vieques-pr-00765-pr9124003/"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Bravos de Boston",
+      "slug": "bravos-de-boston",
+      "alternates": [
+        "Bo. Santa María"
+      ],
+      "priority": "LUXURY",
+      "type": "Comunidad / sector",
+      "evidence": "Un anuncio activo en Bravos de Boston ofrece una vivienda de tres habitaciones por 1.200.000 dólares y describe su proximidad al mar y al ferry.",
+      "sources": [
+        "https://www.smithandassociates.com/listing/310-bravos-de-boston-vieques-pr-00765-pr9112580/"
+      ],
+      "confidence": "HIGH"
+    }
+  ]
+}

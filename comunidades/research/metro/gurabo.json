@@ -1,0 +1,17 @@
+{
+  "municipality": "Gurabo",
+  "municipalitySlug": "gurabo",
+  "region": "metro",
+  "dateVerified": "2026-10-21",
+  "status": "investigado",
+  "communities": [
+    {"name": "River View", "slug": "river-view", "alternates": ["River View, Ciudad Jardín Gurabo"], "priority": "LUXURY", "type": "Desarrollo residencial", "evidence": "Comunidad de la colección de Ciudad Jardín Gurabo; viviendas desde $340,000 con piscina y cancha (sitio del desarrollador).", "sources": ["https://riverhomespr.com/en/river-view.php", "https://riverhomespr.com/"], "confidence": "HIGH"},
+    {"name": "Ciudad Jardín", "slug": "ciudad-jardin-gurabo", "alternates": ["Ciudad Jardín Gurabo Resort & Country Club"], "priority": "MEDIUM", "type": "Comunidad planificada", "evidence": "Desarrollos River Homes parte de Ciudad Jardín (VRM); urb. registrada en lista de sectores.", "sources": ["https://riverhomespr.com/", "https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Gurabo,_Puerto_Rico"], "confidence": "HIGH"},
+    {"name": "Sabanera del Río", "slug": "sabanera-del-rio", "alternates": ["Sabanera del Rio"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Registrada en lista de sectores; vivienda identificada en barrio Navarro.", "sources": ["https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Gurabo,_Puerto_Rico", "https://www.kwpuertorico.com/property/65933/camino-de-las-orquideas-sabanera-del-rio-dev_-gurabo-pr-00778"], "confidence": "MEDIUM"},
+    {"name": "Los Flamboyanes de Gurabo", "slug": "los-flamboyanes-gurabo", "alternates": ["Urb. Los Flamboyanes"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Registrada en lista de sectores; vivienda identificada en Realtor (214 Los Flamboyanes).", "sources": ["https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Gurabo,_Puerto_Rico", "https://www.realtor.com/realestateandhomes-detail/214-Los-Flamboyanes_Gurabo_PR_00778_M35125-06435"], "confidence": "MEDIUM"},
+    {"name": "Gran Vista I", "slug": "gran-vista-i", "alternates": ["Gran Vista"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Registrada en lista de sectores; residencia descrita en la comunidad.", "sources": ["https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Gurabo,_Puerto_Rico", "https://properties.listingspuertorico.com/listing/35eva?u=695438"], "confidence": "MEDIUM"},
+    {"name": "Vistalago", "slug": "vistalago", "alternates": ["Vista Lago"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Registrada en lista de sectores.", "sources": ["https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Gurabo,_Puerto_Rico"], "confidence": "MEDIUM"},
+    {"name": "Senderos de Gurabo", "slug": "senderos-de-gurabo", "alternates": [], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Registrada en lista de sectores.", "sources": ["https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Gurabo,_Puerto_Rico"], "confidence": "MEDIUM"},
+    {"name": "Ventanas de Gurabo", "slug": "ventanas-de-gurabo", "alternates": ["Cond. Ventanas de Gurabo"], "priority": "MEDIUM", "type": "Condominio", "evidence": "Registrado en barrio Navarro (lista de sectores).", "sources": ["https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Gurabo,_Puerto_Rico"], "confidence": "MEDIUM"}
+  ]
+}

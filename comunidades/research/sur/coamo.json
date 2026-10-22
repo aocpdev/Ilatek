@@ -1,0 +1,106 @@
+{
+  "municipality": "Coamo",
+  "municipalitySlug": "coamo",
+  "dateVerified": "2026-10-21",
+  "note": "Se verificaron tres residenciales públicos en el inventario de AVP, además de urbanizaciones y un condominio con evidencia inmobiliaria directa. No se encontró evidencia suficiente para asignar prioridad de lujo o premium.",
+  "communities": [
+    {
+      "name": "Coamo Housing",
+      "slug": "coamo-housing",
+      "alternates": [],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "El inventario oficial de AVP registra Coamo Housing en el barrio Las Flores, carretera 153, kilómetro 13.8, con 88 unidades.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Jardines del Edén",
+      "slug": "jardines-del-eden",
+      "alternates": [],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "AVP identifica Jardines del Edén como residencial público de Coamo, en la avenida Muñoz Marín, con 150 unidades.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Las Palmas",
+      "slug": "las-palmas",
+      "alternates": [
+        "Residencial Las Palmas"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "El listado oficial de AVP sitúa el residencial Las Palmas en la calle José I. Quitón de Coamo y registra 120 unidades.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Urbanización El Edén",
+      "slug": "urbanizacion-el-eden",
+      "alternates": [
+        "Urb. El Edén",
+        "El Eden"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline identifica una casa en Urbanización El Edén, Coamo, y describe cuatro habitaciones, piscina y vistas panorámicas.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4860703"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Reparto del Carmen",
+      "slug": "reparto-del-carmen",
+      "alternates": [
+        "Urbanización Reparto del Carmen"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Un anuncio de ClasificadosOnline identifica Reparto del Carmen en Coamo y describe una residencia multifamiliar de dos unidades.",
+      "sources": [
+        "https://www.clasificadosonline.com/xRECoamoD.asp?Version=1&ID=4860904"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Villa Madrid",
+      "slug": "villa-madrid",
+      "alternates": [
+        "Urbanización Villa Madrid",
+        "Urb. Villa Madrid"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Un anuncio inmobiliario identifica Villa Madrid como urbanización de Coamo; una propiedad allí también aparece en el portal de una agencia local.",
+      "sources": [
+        "https://www.clasificadosonline.com/xRECoamod.asp?id=4872555&Version=1",
+        "https://nidorealestatepr.com/property/your-next-home-awaits-in-urb-villa-madrid-coamo-pr/"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Las Fuentes de Coamo",
+      "slug": "las-fuentes-de-coamo",
+      "alternates": [
+        "Condominio Las Fuentes",
+        "Condominio Las Fuentes de Coamo"
+      ],
+      "priority": "MEDIUM",
+      "type": "Condominio",
+      "evidence": "Zillow presenta un apartamento en Condominio Las Fuentes, Coamo, y lo clasifica como condominio en venta con dos estacionamientos asignados.",
+      "sources": [
+        "https://www.zillow.com/el-eden-coamo-pr/"
+      ],
+      "confidence": "HIGH"
+    }
+  ]
+}

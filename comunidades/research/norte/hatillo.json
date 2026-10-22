@@ -1,0 +1,11 @@
+{
+  "municipality": "Hatillo",
+  "municipalitySlug": "hatillo",
+  "region": "norte",
+  "dateVerified": "2026-10-21",
+  "status": "investigado",
+  "communities": [
+    {"name": "Corales de Hatillo", "slug": "corales-de-hatillo", "alternates": ["Urb. Corales"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Propiedades identificadas en esa urb. con casas 3H/2B (ClasificadosOnline).", "sources": ["https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4905862", "https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4908211"], "confidence": "HIGH"},
+    {"name": "Hatillo del Mar", "slug": "hatillo-del-mar", "alternates": ["Urb. Hatillo del Mar"], "priority": "MEDIUM", "type": "Urbanización costera", "evidence": "Residencias clasificadas ahí; zona descrita como comunidad costera (ClasificadosOnline).", "sources": ["https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4891256", "https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4890804"], "confidence": "HIGH"}
+  ]
+}

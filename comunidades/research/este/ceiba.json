@@ -1,0 +1,132 @@
+{
+  "municipality": "Ceiba",
+  "municipalitySlug": "ceiba",
+  "dateVerified": "2026-10-21",
+  "note": "Palmarina y Palmas del Mar excluidas: las fuentes no establecen que pertenezcan a Ceiba. No se encontró comunidad de golf verificada.",
+  "communities": [
+    {
+      "name": "The Village at the Hill",
+      "slug": "the-village-at-the-hill",
+      "alternates": [
+        "The Village at The Hill",
+        "Urbanización The Village at the Hill"
+      ],
+      "priority": "LUXURY",
+      "type": "Comunidad residencial cerrada",
+      "evidence": "Control de acceso, piscina, gimnasio y canchas; casas con vistas a la marina y venta de $675,000.",
+      "sources": [
+        "https://www.zillow.com/homedetails/The-Village-At-The-Hill-Mango-Bch-119-Ceiba-PR-00735/350312507_zpid/",
+        "https://tlrealty.com/ceiba/"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Paseo de la Costa",
+      "slug": "paseo-de-la-costa",
+      "alternates": [
+        "Urbanización Paseo de la Costa",
+        "Urb. Paseo de la Costa"
+      ],
+      "priority": "HIGH",
+      "type": "Urbanización privada de acceso controlado",
+      "evidence": "Limitada a 24 residencias, con piscina, canchas, mini golf y gimnasio; vivienda ofrecida por $350,000.",
+      "sources": [
+        "https://www.zillow.com/homedetails/Urb-Paseo-De-La-Costa-Ceiba-PR-00735/462990786_zpid/",
+        "https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4894543"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Castillos del Mar",
+      "slug": "castillos-del-mar",
+      "alternates": [
+        "Condominio Castillos del Mar"
+      ],
+      "priority": "HIGH",
+      "type": "Condominio residencial costero",
+      "evidence": "Tres piscinas, gimnasio, canchas, casa club y seguridad con acceso controlado; premium sin evidencia de lujo.",
+      "sources": [
+        "https://www.exprealty.com/ceiba-pr-real-estate/cb-2-3-castillos-del-mar",
+        "https://tlrealty.com/ceiba/"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Costa Brava",
+      "slug": "costa-brava",
+      "alternates": [
+        "Condominio Costa Brava",
+        "Costa Brava Condominium"
+      ],
+      "priority": "MEDIUM",
+      "type": "Condominio residencial",
+      "evidence": "Unidades de tres habitaciones entre $210,000 y $235,000; sin amenidades exclusivas consistentes. Se refiere al condominio, no a una urbanización homónima.",
+      "sources": [
+        "https://tlrealty.com/ceiba/",
+        "https://www.zillow.com/homedetails/Cond-Costa-Brava-BUILDING-18-202-Ceiba-PR-00735/2078478366_zpid/"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Costa Esmeralda",
+      "slug": "costa-esmeralda",
+      "alternates": [
+        "Condominio Costa Esmeralda",
+        "Costa Esmeralda Condominium"
+      ],
+      "priority": "MEDIUM",
+      "type": "Condominio residencial",
+      "evidence": "Apartamentos en Ceiba, uno con vista al océano; nivel premium no establecido de forma sólida.",
+      "sources": [
+        "https://tlrealty.com/ceiba/",
+        "https://www.zillow.com/aguas-claras-ceiba-pr/"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Brisas de Ceiba",
+      "slug": "brisas-de-ceiba",
+      "alternates": [
+        "Urbanización Brisas de Ceiba"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización residencial",
+      "evidence": "Existencia confirmada por anuncios de vivienda; sin características de lujo ni segmento premium.",
+      "sources": [
+        "https://www.exprealty.com/ceiba-pr-real-estate/163-7-brisas-de-ceiba",
+        "https://www.exprealty.com/ceiba-pr-real-estate/brisas-de-ceiba/163-calle-7"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Jardines de Ceiba I",
+      "slug": "jardines-de-ceiba-i",
+      "alternates": [
+        "Jardines de Ceiba #I",
+        "Urbanización Jardines de Ceiba I"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline documenta una casa vendida en Jardines de Ceiba I, Ceiba, con tres habitaciones, dos baños y cocina-comedor.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4781859"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Jardines de Ceiba II",
+      "slug": "jardines-de-ceiba-ii",
+      "alternates": [
+        "Jardines de Ceiba #II",
+        "Urbanización Jardines de Ceiba II"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline registra en Jardines de Ceiba II, Ceiba, una casa vendida con cuatro habitaciones, dos baños y patio de 337.50 metros cuadrados.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4863425"
+      ],
+      "confidence": "HIGH"
+    }
+  ]
+}

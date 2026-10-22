@@ -1,0 +1,19 @@
+{
+  "municipality": "Manatí",
+  "municipalitySlug": "manati",
+  "region": "norte",
+  "dateVerified": "2026-10-21",
+  "status": "investigado",
+  "communities": [
+    {"name": "Lomas de Manatuabon", "slug": "lomas-de-manatuabon", "alternates": ["Urb. Lomas de Manatuabon"], "priority": "LUXURY", "type": "Urbanización", "evidence": "Anuncio residencial 4H/4B por $672,000 (ClasificadosOnline); señal de precio publicada, no tasación de todas las viviendas.", "sources": ["https://www.clasificadosonline.com/clasificados/BienesRaices/casas/Manati/default.asp?Version=1&offset=5"], "confidence": "HIGH"},
+    {"name": "Hacienda Monserrate", "slug": "hacienda-monserrate", "alternates": ["Urb. Hacienda La Monserrate"], "priority": "HIGH", "type": "Urbanización", "evidence": "Ubicación identificada en ClasificadosOnline con anuncios de casas (ej. 4H/2B).", "sources": ["https://www.clasificadosonline.com/clasificados/BienesRaices/casas/Manati/default.asp?Version=1&offset=5"], "confidence": "HIGH"},
+    {"name": "Santa Teresa", "slug": "santa-teresa-manati", "alternates": ["Urb. Santa Teresa"], "priority": "HIGH", "type": "Urbanización", "evidence": "Anuncio 4H/3.5B por $630,000 (ClasificadosOnline).", "sources": ["https://www.clasificadosonline.com/clasificados/BienesRaices/casas/Manati/default.asp?Version=1&offset=5"], "confidence": "HIGH"},
+    {"name": "Alturas de Luchetti", "slug": "alturas-de-luchetti", "alternates": ["Alturas de Luccheti"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Propiedades identificadas en ClasificadosOnline.", "sources": ["https://www.clasificadosonline.com/clasificados/BienesRaices/casas/Manati/default.asp?Version=1&offset=5"], "confidence": "HIGH"},
+    {"name": "Valles de Manatí", "slug": "valles-de-manati", "alternates": ["Urb. Valles de Manati"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Vivienda categorizada en esa ubicación (ClasificadosOnline).", "sources": ["https://www.clasificadosonline.com/clasificados/BienesRaices/casas/Manati/default.asp?Version=1&offset=5"], "confidence": "HIGH"},
+    {"name": "Los Rosales", "slug": "los-rosales", "alternates": ["Urb. Los Rosales III"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Propiedad identificada como Los Rosales III, Urb. Los Rosales (ClasificadosOnline).", "sources": ["https://www.clasificadosonline.com/clasificados/BienesRaices/casas/Manati/default.asp?Version=1&offset=5"], "confidence": "HIGH"},
+    {"name": "Estancias de Borinquen", "slug": "estancias-de-borinquen", "alternates": ["Urb. Estancias de Borinquen"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Propiedad anunciada en esa ubicación (ClasificadosOnline).", "sources": ["https://www.clasificadosonline.com/clasificados/BienesRaices/casas/Manati/default.asp?Version=1&offset=5"], "confidence": "HIGH"},
+    {"name": "Villa Evangelina IV", "slug": "villa-evangelina-iv", "alternates": ["Res. Villa Evangelina IV"], "priority": "MEDIUM", "type": "Residencial público", "evidence": "Registrado por la AVP de PR con 53 unidades.", "sources": ["https://www.avp.pr.gov/nuestros-residenciales"], "confidence": "HIGH"},
+    {"name": "Brisas de Campo Alegre", "slug": "brisas-de-campo-alegre", "alternates": ["Nuevo Manatí"], "priority": "MEDIUM", "type": "Residencial público", "evidence": "Registrado por la AVP con 149 unidades.", "sources": ["https://www.avp.pr.gov/nuestros-residenciales"], "confidence": "HIGH"},
+    {"name": "Vivameri Apartments", "slug": "vivameri-apartments", "alternates": ["Vivameri"], "priority": "MEDIUM", "type": "Apartamentos", "evidence": "Registrado por la AVP con 144 unidades.", "sources": ["https://www.avp.pr.gov/nuestros-residenciales"], "confidence": "HIGH"}
+  ]
+}

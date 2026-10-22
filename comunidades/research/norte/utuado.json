@@ -1,0 +1,95 @@
+{
+  "municipality": "Utuado",
+  "municipalitySlug": "utuado",
+  "dateVerified": "2026-10-21",
+  "communities": [
+    {
+      "name": "Urbanización Cabrera",
+      "slug": "urbanizacion-cabrera",
+      "alternates": [
+        "Urb. Cabrera"
+      ],
+      "priority": "HIGH",
+      "type": "Urbanización",
+      "evidence": "Anuncio de vivienda 'Property in Urb. Cabrera' y listado en Trulia por $140,000 en la misma urbanización.",
+      "sources": [
+        "https://properties.listingspuertorico.com/listing/38h3z?u=20798",
+        "https://www.trulia.com/home/d-19-urbanizacion-cabrera-utuado-pr-00641-465025495"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Jesús María Lago",
+      "slug": "jesus-maria-lago",
+      "alternates": [
+        "Urb. Jesús María Lago",
+        "Jesus Maria Lago"
+      ],
+      "priority": "HIGH",
+      "type": "Urbanización",
+      "evidence": "Zillow: casa unifamiliar de 3 habitaciones y 2 baños en la urbanización; otra vivienda con venta registrada por $149,000.",
+      "sources": [
+        "https://www.zillow.com/homedetails/0-Utuado-Urb-Jesus-Maria-Lago-Utuado-PR-00641/2078482983_zpid/",
+        "https://www.zillow.com/homedetails/Urb-Jesus-Maria-Lago-B-15-Utuado-PR-00641/457598554_zpid/"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Lomas de Vista Verde",
+      "slug": "lomas-de-vista-verde",
+      "alternates": [
+        "Urb. Lomas de Vista Verde"
+      ],
+      "priority": "LUXURY",
+      "type": "Urbanización",
+      "evidence": "Zillow la describe como 'upscale home community' (posicionamiento premium). El acceso controlado se menciona como plan futuro, no confirmado como existente.",
+      "sources": [
+        "https://www.zillow.com/homedetails/300-Urb-Lomas-De-Vista-Verde-Utuado-PR-00641/2128936880_zpid/"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Jardines de Bubao",
+      "slug": "jardines-de-bubao",
+      "alternates": [
+        "Jardines De Bubao"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial (tipo legal no confirmado)",
+      "evidence": "Zillow: vivienda de 2 habitaciones y 1 baño, 1,200 pies², listada por $135,000 en Jardines de Bubao.",
+      "sources": [
+        "https://www.zillow.com/homedetails/Jardines-De-Bubao-D-5-A-Utuado-PR-00641/465220582_zpid/"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Pérez Matos",
+      "slug": "perez-matos",
+      "alternates": [
+        "Urb. Pérez Matos",
+        "Urb Perez Mnrs (variante no confirmada)"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Findit identifica 'Urb. Pérez Matos' en Utuado con una vivienda de 4 habitaciones y 3 baños. La variante 'Urb Perez Mnrs' no se pudo confirmar como la misma.",
+      "sources": [
+        "https://www.finditpr.com/en/property/Urb-Perez-Matos-Perez-Matos-urbanizacion-Utuado-PR-00641/37099"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Comunidad Rural El Guano",
+      "slug": "comunidad-rural-el-guano",
+      "alternates": [
+        "El Guano"
+      ],
+      "priority": "MEDIUM",
+      "type": "Comunidad / sector",
+      "evidence": "Trulia registra una propiedad con dirección en Comunidad Rural El Guano, Parcela 32, Utuado, y la identifica como vivienda tipo estudio.",
+      "sources": [
+        "https://www.trulia.com/home/123-comunidad-rural-el-guano-parcela-32-utuado-pr-00641-349469607"
+      ],
+      "confidence": "HIGH"
+    }
+  ]
+}
