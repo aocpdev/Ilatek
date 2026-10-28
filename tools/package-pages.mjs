@@ -71,6 +71,13 @@ for (const p of manifest.pages) {
     let source = allMedia.get(url);
     const repoMatch = parsed.pathname.match(/^\/gh\/aocpdev\/Ilatek@[^/]+\/(assets\/.*)$/);
     if (parsed.hostname === 'cdn.jsdelivr.net' && repoMatch) source = path.join(ROOT,decodeURIComponent(repoMatch[1]));
+    const heroMatch = parsed.pathname.match(/^\/hero\/([\w-]+\.jpe?g)$/);
+    if (parsed.hostname === 'comunidades.ilatekpr.com' && heroMatch) {
+      // El subdominio sirve los héroes promovidos del propio repositorio:
+      // el respaldo local es la foto original en Ilatek/Comunidades/.
+      const candidata = path.join(ROOT, 'Comunidades', decodeURIComponent(heroMatch[1]));
+      if (fs.existsSync(candidata)) source = candidata;
+    }
     if (!binaryOK(target)) {
       if (source && binaryOK(source)) fs.copyFileSync(source, target);
       else if (download && !knownBackups.has(url) && !attempted.has(url) && ['assets.cdn.filesafe.space','cdn.jsdelivr.net','storage.googleapis.com','images.leadconnectorhq.com','stcdn.leadconnectorhq.com'].includes(parsed.hostname)) {

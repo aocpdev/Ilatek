@@ -58,7 +58,7 @@ export const hub = mk({
       { slug: 'sellado-de-techos', name: 'Sellado de Techos', desc: 'Silicona 100%, membrana asfáltica, elastomérico, poliuretano y acrílico.' },
       { slug: 'impermeabilizacion-de-techos', name: 'Impermeabilización y Tipos de Techo', desc: 'Concreto, techos planos, zinc, asfalto, teja y madera, cada uno con su sistema.' },
       { slug: 'techos-por-segmento', name: 'Techos por Segmento', desc: 'Soluciones para propiedades residenciales, comerciales e industriales.' },
-      { slug: 'inspeccion-y-mantenimiento-de-techos', name: 'Inspección y Mantenimiento', desc: 'Inspección gratis, planes desde $58/mes, despeje de techos, canaletas y lavado a presión.' },
+      { slug: 'inspeccion-y-mantenimiento-de-techos', name: 'Inspección y Mantenimiento', desc: 'Inspección gratis, mantenimiento desde $250 por labor, despeje de techos, canaletas y lavado a presión.' },
     ],
     cta: { slug: 'cotizacion', label: 'Solicita tu cotización gratis' },
     // Carrusel 3D del hub: tarjeta destacada (mantenimiento y tratamiento) +
@@ -74,7 +74,7 @@ export const hub = mk({
         name: 'Mantenimiento y tratamiento',
         desc: 'El servicio que más piden en Puerto Rico: inspección, limpieza y tratamiento preventivo para que tu techo dure y no vuelva a gotear.',
         img: CDN + '6ac046fa2c503e697d5ff288.jpg', hubWebp: 'https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/hub/mantenimiento.webp',
-        feat: ['Inspección gratis', 'Moho y oxidación', 'Plan desde $58/mes', 'Informe con fotos'],
+        feat: ['Inspección gratis', 'Moho y oxidación', 'Desde $250 por labor', 'Informe con fotos'],
         featured: true,
       },
       {
@@ -118,7 +118,7 @@ export const hub = mk({
         kicker: 'Inspección',
         icon: 'clock',
         name: 'Inspección y Mantenimiento',
-        desc: 'Inspección gratis, planes desde $58/mes, despeje de techos, canaletas y lavado a presión programado.',
+        desc: 'Inspección gratis, mantenimiento desde $250 por labor, despeje de techos, canaletas y lavado a presión programado.',
         img: CDN + '6ac046f82c503e697d5ff24e.jpg', hubWebp: 'https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/hub/inspeccion.webp',
         feat: ['Inspección gratis', 'Limpieza y canaletas', 'Instalación y reemplazo', 'Informe con fotos'],
       },

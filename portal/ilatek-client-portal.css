@@ -1,0 +1,325 @@
+/* =====================================================================
+   ILATEK · Tema para el Client Portal nativo de GoHighLevel
+   ---------------------------------------------------------------------
+   Dónde pegarlo:
+     Sub-cuenta → Memberships → Client Portal → Settings → Branding →
+     Advanced settings → Custom CSS.
+
+   Qué hace:
+     · Tokens de color de la marca (navy / verde / mist / borde).
+     · Tipografía Outfit (títulos) y Manrope (texto).
+     · Bordes redondeados en botones, campos, tarjetas, modales y tags.
+     · Fondo tipo lienzo y tarjetas blancas, como en el video.
+
+   Qué NO hace:
+     · No oculta, mueve ni desactiva ningún elemento.
+     · No toca el DOM, ni formularios, ni flujos de pago, ni permisos.
+     · No cambia tamaños de fuente ni espaciados del layout.
+
+   Verificado contra el portal real: el tema de GHL expone
+   --cp-brand-* / --cp-* y usa los componentes .hr-* / .cp-*.
+   ===================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap');
+
+:root:root {
+  /* Marca */
+  --cp-brand-primary: #00b94f;
+  --cp-brand-secondary: #0b103d;
+  --cp-brand-tertiary: #213d8e;
+  --cp-brand-background: #ffffff;
+  --cp-brand-surface: #f6f8fd;
+  --cp-brand-border: #dbe2f1;
+  --cp-brand-font: #11164b;
+
+  /* Escala secundaria (navy Ilatek) */
+  --cp-secondary-50: #f4f5fa;
+  --cp-secondary-100: #e8eaf4;
+  --cp-secondary-200: #d2d6e8;
+  --cp-secondary-300: #b3bad6;
+  --cp-secondary-400: #8a94bd;
+  --cp-secondary-500: #0b103d;
+  --cp-secondary-600: #0a0e36;
+  --cp-secondary-700: #080b2e;
+  --cp-secondary-800: #070926;
+  --cp-secondary-900: #05071e;
+
+  /* Superficies: lienzo mist, tarjetas blancas */
+  --cp-surface-50: #ffffff;
+  --cp-surface-100: #fbfcff;
+  --cp-surface-200: #f8fafd;
+  --cp-surface-300: #f6f8fc;
+  --cp-surface-400: #f5f7fb;
+  --cp-surface-500: #f4f7fc;
+  --cp-surface-600: #e4eaf4;
+  --cp-surface-700: #d3dcea;
+  --cp-surface-800: #c2cee0;
+  --cp-surface-900: #b1bfd6;
+
+  /* Bordes */
+  --cp-border-50: #f5f8fd;
+  --cp-border-100: #eff3fa;
+  --cp-border-200: #e8eef8;
+  --cp-border-300: #e1e9f5;
+  --cp-border-400: #dbe2f1;
+  --cp-border-500: #dbe2f1;
+  --cp-border-600: #c9d3e8;
+  --cp-border-700: #b7c4dc;
+  --cp-border-800: #a5b5d0;
+  --cp-border-900: #93a6c4;
+
+  /* Texto */
+  --cp-font-50: #f7f8fb;
+  --cp-font-100: #eef0f6;
+  --cp-font-200: #dde1ec;
+  --cp-font-300: #c3c9db;
+  --cp-font-400: #9aa2ba;
+  --cp-font-500: #5b6380;
+  --cp-font-600: #454c68;
+  --cp-font-700: #11164b;
+  --cp-font-800: #0d123f;
+  --cp-font-900: #0b103d;
+
+  /* Radios del tema */
+  --il-radius-control: 14px;
+  --il-radius-card: 22px;
+  --il-radius-modal: 24px;
+  --il-radius-pill: 999px;
+  --il-shadow-card: 0 18px 40px rgba(11, 16, 61, 0.06);
+  --il-focus-ring: 0 0 0 4px rgba(0, 185, 79, 0.14);
+
+  /* Tipografía */
+  --hr-font-family-base: 'Manrope', 'Inter var', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --cp-gokollab-font-primary: 'Outfit', 'Manrope', 'Inter var', -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  --cp-gokollab-font-secondary: 'Manrope', 'Inter var', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Arial, sans-serif;
+
+  /* Naive UI (base de los componentes hr-*) */
+  --n-border-radius: var(--il-radius-control);
+  --n-border-radius-small: 10px;
+}
+
+/* ---------- Lienzo y tipografía base ---------- */
+
+html,
+body {
+  background-color: var(--cp-surface-500);
+  color: var(--cp-brand-font);
+  font-family: var(--hr-font-family-base) !important;
+}
+
+.hr-input__input-el,
+.hr-textarea__textarea,
+.hr-button,
+.hr-button.cp-button {
+  font-family: var(--hr-font-family-base) !important;
+}
+
+.cp-main-content {
+  background-color: var(--cp-surface-500) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.cp-card-v2__title,
+.hr-card-header__title,
+[class*='cp-page-title'],
+[class*='cp-section-title'] {
+  font-family: var(--cp-gokollab-font-primary);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+::selection {
+  background: rgba(0, 185, 79, 0.22);
+  color: var(--cp-font-900);
+}
+
+/* ---------- Botones ---------- */
+
+.hr-button,
+.hr-button.cp-button,
+.n-button {
+  --n-border-radius: var(--il-radius-control) !important;
+  border-radius: var(--il-radius-control) !important;
+  font-family: var(--hr-font-family-base);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.hr-button.cp-button.hr-button--primary,
+.hr-button.cp-button[class*='hr-button--primary'] {
+  box-shadow: 0 10px 24px rgba(0, 185, 79, 0.22);
+}
+
+.hr-button.cp-button.hr-button--primary:hover,
+.hr-button.cp-button[class*='hr-button--primary']:hover {
+  filter: brightness(0.97);
+}
+
+.hr-button.cp-button[class*='hr-button--secondary'],
+.hr-button.cp-button[class*='hr-button--default'] {
+  border-radius: var(--il-radius-control) !important;
+}
+
+.hr-button.cp-button:focus-visible,
+.n-button:focus-visible {
+  outline: none !important;
+  box-shadow: var(--il-focus-ring) !important;
+}
+
+/* ---------- Campos, selects y textareas ---------- */
+
+.hr-input,
+.hr-input__input,
+.hr-input__input-el,
+.hr-input__state-border,
+.hr-base-selection,
+.hr-base-selection__border,
+.hr-base-selection__state-border,
+.hr-textarea,
+.hr-textarea__textarea,
+.hr-textarea__state-border,
+.n-input,
+.n-base-selection {
+  --n-border-radius: var(--il-radius-control) !important;
+  border-radius: var(--il-radius-control) !important;
+}
+
+.hr-input__input,
+.hr-textarea__textarea,
+.hr-base-selection {
+  background-color: #ffffff !important;
+  border-color: var(--cp-border-400) !important;
+}
+
+.hr-input__input:focus-within,
+.hr-textarea:focus-within,
+.hr-base-selection:focus-within,
+.hr-base-selection:hover {
+  border-color: var(--cp-brand-primary) !important;
+  box-shadow: var(--il-focus-ring) !important;
+}
+
+.hr-form-item-label,
+.hr-form-item-label__text,
+.n-form-item-label {
+  font-weight: 600;
+}
+
+/* ---------- Tarjetas y contenedores ---------- */
+
+.hr-card,
+.n-card,
+.cp-card,
+.cp-card-v2 {
+  border-radius: var(--il-radius-card);
+}
+
+.hr-card,
+.n-card,
+.cp-card,
+.cp-card-v2 {
+  border: 1px solid var(--cp-brand-border) !important;
+  box-shadow: var(--il-shadow-card) !important;
+  overflow: hidden;
+}
+
+.hr-card .hr-card-header,
+.hr-card .hr-card-footer,
+.cp-card-v2 .cp-card-v2__header,
+.cp-card-v2 .cp-card-v2__footer {
+  border-color: var(--cp-brand-border) !important;
+}
+
+/* ---------- Modales, drawers y popovers ---------- */
+
+.hr-modal,
+.hr-modal__content,
+.hr-dialog,
+.n-modal,
+.n-modal .n-modal__content,
+.hr-popover,
+.n-popover,
+.hr-dropdown-menu,
+.n-dropdown-menu {
+  border-radius: var(--il-radius-modal) !important;
+  overflow: hidden;
+}
+
+.hr-drawer,
+.n-drawer {
+  border-radius: 0 !important;
+}
+
+/* ---------- Tags, avatares y tablas ---------- */
+
+.hr-tag,
+.n-tag,
+.cp-tag,
+[class*='cp-badge'] {
+  border-radius: var(--il-radius-pill) !important;
+  font-weight: 600;
+}
+
+.hr-data-table,
+.n-data-table,
+.cp-table {
+  border-radius: 18px !important;
+  overflow: hidden;
+  border: 1px solid var(--cp-brand-border);
+}
+
+.hr-data-table .hr-data-table-th,
+.n-data-table .n-data-table-th {
+  background-color: var(--cp-surface-500) !important;
+  color: var(--cp-font-700) !important;
+  font-weight: 700;
+}
+
+/* ---------- Navegación ---------- */
+
+[class*='sidebar'] a,
+[class*='sidebar'] button,
+.cp-nav-item,
+.hr-menu-item {
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.cp-nav-item.is-active,
+.cp-nav-item[aria-current='page'],
+.hr-menu-item.is-active,
+.hr-menu-item[aria-current='page'] {
+  background: rgba(0, 185, 79, 0.1) !important;
+  color: var(--cp-font-900) !important;
+}
+
+/* ---------- Login ---------- */
+
+.cp-main-content .hr-form {
+  border-radius: var(--il-radius-card);
+}
+
+#login-modal-email-password-button {
+  border-radius: var(--il-radius-control) !important;
+}
+
+/* ---------- Utilidades ---------- */
+
+.cp-main-content hr {
+  border-color: var(--cp-brand-border) !important;
+}
+
+@media (max-width: 640px) {
+  :root:root {
+    --il-radius-card: 18px;
+    --il-radius-modal: 20px;
+  }
+}

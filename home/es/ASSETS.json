@@ -16,7 +16,7 @@
   ],
   "socialImage": {
     "role": "social-image",
-    "publicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/home.jpg",
+    "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/bfa88816-50eb-45da-8e03-ea3b9e3beffd.jpg",
     "file": "assets/meta-image.jpg",
     "status": "local-copy",
     "bytes": 161441,
@@ -25,7 +25,7 @@
   "assets": [
     {
       "role": "social-image",
-      "publicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/home.jpg",
+      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/bfa88816-50eb-45da-8e03-ea3b9e3beffd.jpg",
       "file": "assets/meta-image.jpg",
       "status": "local-copy",
       "bytes": 161441,
@@ -62,6 +62,22 @@
       "status": "local-copy",
       "bytes": 860963,
       "sha256": "136e39a5dcfd61355008a5056d959f527b968c39760a29026d0bb9ba0bb7c342"
+    },
+    {
+      "role": "video",
+      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/775d8cdb-8c8c-47ad-8516-47b1abc9315a.mp4",
+      "file": "assets/media/775d8cdb-8c8c-47ad-8516-47b1abc9315a.mp4",
+      "status": "local-copy",
+      "bytes": 1081996,
+      "sha256": "8fbc49af8f1fb733ee36ac8ceab124ae8c97057753407ddd8f24e7c29560d3e5"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://i.ytimg.com/vi/yFt7eY_thIs/maxresdefault.jpg",
+      "file": "assets/media/maxresdefault.jpg",
+      "status": "local-copy",
+      "bytes": 233148,
+      "sha256": "bc1af0a3f5fcc1b04bd3821d00f404e8345821ef65cd8a4cc1b1d654debdbc5f"
     },
     {
       "role": "media-or-fallback",
@@ -129,11 +145,11 @@
     },
     {
       "role": "media-or-fallback",
-      "publicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/hub/segmento.webp",
-      "file": "assets/media/segmento.webp",
+      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acbf7e5bbad531ac89598d2.png",
+      "file": "assets/media/6acbf7e5bbad531ac89598d2.png",
       "status": "local-copy",
-      "bytes": 147654,
-      "sha256": "4696570aa4c763fc66d78d96c0e33b23fa9801bb559f9a41896e5a01427005eb"
+      "bytes": 8142492,
+      "sha256": "3830ea84212475e2b6c1dcf6a7009cbf8c9ba1f7fd328f5e30d422f7a2f7bc63"
     },
     {
       "role": "media-or-fallback",
@@ -286,6 +302,38 @@
       "status": "local-copy",
       "bytes": 718792,
       "sha256": "6f131003e87c4c06d22e66afa65d64719abba3c55df8ca8abccc3ce14b8c394f"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab0a9feff484614db6e6ce7.png",
+      "file": "assets/media/6ab0a9feff484614db6e6ce7.png",
+      "status": "local-copy",
+      "bytes": 1227238,
+      "sha256": "9a809dcf130ac71b60968a70c3f7ced1cfe67bafc8476ed73dda81978401b859"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_512/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab0a9feff484614db6e6ce7.png",
+      "file": "assets/media/6ab0a9feff484614db6e6ce7.png",
+      "status": "local-copy",
+      "bytes": 1227238,
+      "sha256": "9a809dcf130ac71b60968a70c3f7ced1cfe67bafc8476ed73dda81978401b859"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab0aa1430b0f957ccb1b27d.png",
+      "file": "assets/media/6ab0aa1430b0f957ccb1b27d.png",
+      "status": "local-copy",
+      "bytes": 2147127,
+      "sha256": "544c5ba9936b3ef9ac3de7187a433af0eab1976e25d533662b76d319cb084e8d"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_512/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab0aa1430b0f957ccb1b27d.png",
+      "file": "assets/media/6ab0aa1430b0f957ccb1b27d.png",
+      "status": "local-copy",
+      "bytes": 2147127,
+      "sha256": "544c5ba9936b3ef9ac3de7187a433af0eab1976e25d533662b76d319cb084e8d"
     },
     {
       "role": "media-or-fallback",

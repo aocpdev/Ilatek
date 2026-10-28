@@ -1,0 +1,243 @@
+{
+  "generado": "2026-10-22 23:29:59",
+  "politica": "Licencias admitidas: CC0 / dominio publico (uso comercial sin restricciones). Resolucion minima 1920x1080 horizontal, verificada en el archivo descargado. Pertinencia: el nombre de la comunidad debe figurar en titulo/descripcion y anclarse a Puerto Rico; ademas inspeccion visually del montage antes de promover. Lo que no supere el filtro queda con la foto compartida actual como fallback.",
+  "resumen": {
+    "CON_IMAGEN": 1,
+    "CON_CANDIDATAS_PENDIENTES": 1,
+    "SIN_CANDIDATA_VALIDA": 13
+  },
+  "comunidades": [
+    {
+      "slug": "condado",
+      "comunidad": "Condado",
+      "municipio": "San Juan",
+      "candidatas": [
+        {
+          "origen": "wikimedia-commons",
+          "titulo": "File:Condado - The Elks Club.jpg",
+          "descripcion": "Photomechanical print (postcard) : halftone, colored  \n Divided back  \n \nPrinted by Tichnor Bros., Boston (78817)",
+          "autor": "Tichnor Brothers, Boston (publisher)",
+          "licencia": "Public domain",
+          "mime": "image/jpeg",
+          "ancho": 3249,
+          "alto": 2011,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Condado_-_The_Elks_Club.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumb1920": "",
+          "pagina": "https://commons.wikimedia.org/wiki/File%3ACondado_-_The_Elks_Club.jpg",
+          "texto_busqueda": "File:Condado - The Elks Club.jpg Photomechanical print (postcard) : halftone, colored <br>\n<p>Divided back <br>\n</p>\nPrinted by Tichnor Bros., Boston (78817) Public domain Public domain Photomechanical print (postcard) : halftone, colored <br>\n<p>Divided back <br>\n</p>\nPrinted by Tichnor Bros., Boston (78817) Condado - The Elks Club PD US not renewed|Postcards of San Juan, Puerto Rico|San Juan, Puerto Rico in the 1940s|Destroyed buildings in San Juan, Puerto Rico|Postcards of buildings in Puerto Rico|Postcards of Puerto Rico published by Tichnor Brothe",
+          "_descarga": {
+            "archivo": ".tmp-hero-candidatos\\condado-1.jpg",
+            "dimensiones": "3249x2011",
+            "bytes": 2084483
+          },
+          "rechazada_visual": "postal de epoca (Elks Club): no representa vista de comunidad para el hero"
+        },
+        {
+          "origen": "wikimedia-commons",
+          "titulo": "File:San Juan - Condado-Vanderbilt Hotel 01.jpg",
+          "descripcion": "Photomechanical print (postcard) : halftone  \nDivided back  ",
+          "autor": "Unknown author",
+          "licencia": "Public domain",
+          "mime": "image/jpeg",
+          "ancho": 3333,
+          "alto": 1985,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/San_Juan_-_Condado-Vanderbilt_Hotel_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumb1920": "",
+          "pagina": "https://commons.wikimedia.org/wiki/File%3ASan_Juan_-_Condado-Vanderbilt_Hotel_01.jpg",
+          "texto_busqueda": "File:San Juan - Condado-Vanderbilt Hotel 01.jpg Photomechanical print (postcard) : halftone <br>\nDivided back <br> Public domain Public domain Photomechanical print (postcard) : halftone <br>\nDivided back <br> San Juan - Condado-Vanderbilt Hotel 01 Condado Vanderbilt Hotel|PD US expired|Postcards of hotels in Puerto Rico|Postcards of San Juan, Puerto Rico|San Juan, Puerto Rico in the 1920s|PD-US missing SDC copyright status",
+          "_descarga": {
+            "archivo": ".tmp-hero-candidatos\\condado-2.jpg",
+            "dimensiones": "3333x1985",
+            "bytes": 1104248
+          },
+          "rechazada_visual": "postal de epoca (hotel en B/N): no representa vista de comunidad para el hero"
+        },
+        {
+          "origen": "wikimedia-commons",
+          "titulo": "File:San Juan - Lobby, Condado Vanderbilt.jpg",
+          "descripcion": "Photographic print (postcard) : gelatin silver  \nDivided back",
+          "autor": "Unknown author",
+          "licencia": "Public domain",
+          "mime": "image/jpeg",
+          "ancho": 3852,
+          "alto": 2464,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/San_Juan_-_Lobby%2C_Condado_Vanderbilt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumb1920": "",
+          "pagina": "https://commons.wikimedia.org/wiki/File%3ASan_Juan_-_Lobby%2C_Condado_Vanderbilt.jpg",
+          "texto_busqueda": "File:San Juan - Lobby, Condado Vanderbilt.jpg Photographic print (postcard) : gelatin silver <br>\nDivided back Public domain Public domain Photographic print (postcard) : gelatin silver <br>\nDivided back San Juan - Lobby, Condado Vanderbilt 1933 in Puerto Rico|Condado Vanderbilt Hotel|PD US no notice|Postcards of hotels in Puerto Rico|Postcards of San Juan, Puerto Rico|San Juan, Puerto Rico in the 1930s|Hotel corridors in Puerto Rico|PD-US missing SDC copyright status|Real photograph postcards of Puerto Ri",
+          "_descarga": {
+            "archivo": ".tmp-hero-candidatos\\condado-3.jpg",
+            "dimensiones": "3852x2464",
+            "bytes": 1554620
+          },
+          "rechazada_visual": "interior hotelero de epoca en B/N: no representa vista de comunidad para el hero"
+        }
+      ],
+      "estado": "CON_CANDIDATAS"
+    },
+    {
+      "slug": "montehiedra",
+      "comunidad": "Montehiedra",
+      "municipio": "San Juan",
+      "candidatas": [],
+      "estado": "SIN_CANDIDATA_VALIDA"
+    },
+    {
+      "slug": "ocean-park",
+      "comunidad": "Ocean Park",
+      "municipio": "San Juan",
+      "candidatas": [],
+      "estado": "SIN_CANDIDATA_VALIDA"
+    },
+    {
+      "slug": "residences-at-rio",
+      "comunidad": "Residences at Rio",
+      "municipio": "Bayamón",
+      "candidatas": [],
+      "estado": "SIN_CANDIDATA_VALIDA"
+    },
+    {
+      "slug": "riviera-parkview",
+      "comunidad": "Riviera Parkview",
+      "municipio": "Bayamón",
+      "candidatas": [],
+      "estado": "SIN_CANDIDATA_VALIDA"
+    },
+    {
+      "slug": "isla-verde",
+      "comunidad": "Isla Verde",
+      "municipio": "Carolina",
+      "candidatas": [
+        {
+          "origen": "wikimedia-commons",
+          "titulo": "File:PR-26 Isla Verde.jpg",
+          "descripcion": "Carretera 26",
+          "autor": "Ericpr239  ( talk )",
+          "licencia": "Public domain",
+          "mime": "image/jpeg",
+          "ancho": 2311,
+          "alto": 1115,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/PR-26_Isla_Verde.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumb1920": "",
+          "pagina": "https://commons.wikimedia.org/wiki/File%3APR-26_Isla_Verde.jpg",
+          "texto_busqueda": "File:PR-26 Isla Verde.jpg Carretera 26 Public domain Public domain Carretera 26 PR-26 Isla Verde PD-user|Puerto Rico Highway 26 in Carolina, Puerto Rico|Uploaded with MTC!",
+          "_descarga": {
+            "archivo": ".tmp-hero-candidatos\\isla-verde-1.jpg",
+            "dimensiones": "2311x1115",
+            "bytes": 333104
+          },
+          "rechazada_visual": "vista de autopista: pertinencia visual debil para hero de comunidad"
+        },
+        {
+          "origen": "wikimedia-commons",
+          "titulo": "File:Shoreline of Isla Verde, Carolina, Puerto Rico.jpg",
+          "descripcion": "Sony Nex-5..Isla Verde, Puerto Rico.",
+          "autor": "josue armando serrano",
+          "licencia": "CC0",
+          "mime": "image/jpeg",
+          "ancho": 4592,
+          "alto": 3056,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Shoreline_of_Isla_Verde%2C_Carolina%2C_Puerto_Rico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumb1920": "",
+          "pagina": "https://commons.wikimedia.org/wiki/File%3AShoreline_of_Isla_Verde%2C_Carolina%2C_Puerto_Rico.jpg",
+          "texto_busqueda": "File:Shoreline of Isla Verde, Carolina, Puerto Rico.jpg Sony Nex-5..Isla Verde, Puerto Rico. CC0 Creative Commons Zero, Public Domain Dedication Sony Nex-5..Isla Verde, Puerto Rico. Shoreline of Isla Verde, Carolina, Puerto Rico Puerto Rico in the 2010s|CC-Zero|Files with coordinates missing SDC location of creation|Flickr images reviewed by FlickreviewR 2|Beaches of Carolina, Puerto Rico|Isla Verde, Puerto Rico",
+          "_descarga": {
+            "archivo": ".tmp-hero-candidatos\\isla-verde-2.jpg",
+            "dimensiones": "4592x3056",
+            "bytes": 3433966
+          },
+          "promocionada": {
+            "archivo": "Comunidades/isla-verde-hero.jpg",
+            "a": "isla-verde-hero.jpg",
+            "promocionada_at": "2026-10-22 23:29:59",
+            "revision_visual": "aprobada (montage-piloto.png, inspeccion humana)"
+          }
+        },
+        {
+          "origen": "wikimedia-commons",
+          "titulo": "File:Isla Verde - Americana Hotel.jpg",
+          "descripcion": "Photomechanical print (postcard) : halftone, colored  \n Divided back  \n \nPainting based on aerial view of hotel from ocean.",
+          "autor": "Americana Hotel (publisher)",
+          "licencia": "Public domain",
+          "mime": "image/jpeg",
+          "ancho": 3220,
+          "alto": 2087,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Isla_Verde_-_Americana_Hotel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "thumb1920": "",
+          "pagina": "https://commons.wikimedia.org/wiki/File%3AIsla_Verde_-_Americana_Hotel.jpg",
+          "texto_busqueda": "File:Isla Verde - Americana Hotel.jpg Photomechanical print (postcard) : halftone, colored <br>\n<p>Divided back <br>\n</p>\nPainting based on aerial view of hotel from ocean. Public domain Public domain Photomechanical print (postcard) : halftone, colored <br>\n<p>Divided back <br>\n</p>\nPainting based on aerial view of hotel from ocean. Isla Verde - Americana Hotel PD US no notice|1963 in Puerto Rico|Postcards of hotels in Puerto Rico|Americana Hotel, Isla Verde",
+          "_descarga": {
+            "archivo": ".tmp-hero-candidatos\\isla-verde-3.jpg",
+            "dimensiones": "3220x2087",
+            "bytes": 1212127
+          },
+          "rechazada_visual": "postal aerea de epoca (Americana): se prefiere candidata moderna CC0"
+        }
+      ],
+      "estado": "PROMOCIONADA"
+    },
+    {
+      "slug": "villamar",
+      "comunidad": "Villamar",
+      "municipio": "Carolina",
+      "candidatas": [],
+      "estado": "SIN_CANDIDATA_VALIDA"
+    },
+    {
+      "slug": "vistamar-marina",
+      "comunidad": "Vistamar Marina",
+      "municipio": "Carolina",
+      "candidatas": [],
+      "estado": "SIN_CANDIDATA_VALIDA"
+    },
+    {
+      "slug": "garden-hills-north",
+      "comunidad": "Garden Hills North",
+      "municipio": "Guaynabo",
+      "candidatas": [],
+      "estado": "SIN_CANDIDATA_VALIDA"
+    },
+    {
+      "slug": "las-casonas",
+      "comunidad": "Las Casonas",
+      "municipio": "Guaynabo",
+      "candidatas": [],
+      "estado": "SIN_CANDIDATA_VALIDA"
+    },
+    {
+      "slug": "ciudad-jardin-iii",
+      "comunidad": "Ciudad Jardín III",
+      "municipio": "Toa Alta",
+      "candidatas": [],
+      "estado": "SIN_CANDIDATA_VALIDA"
+    },
+    {
+      "slug": "villas-de-la-playa",
+      "comunidad": "Villas de la Playa",
+      "municipio": "Vega Baja",
+      "candidatas": [],
+      "estado": "SIN_CANDIDATA_VALIDA"
+    },
+    {
+      "slug": "hacienda-margarita",
+      "comunidad": "Hacienda Margarita",
+      "municipio": "Luquillo",
+      "candidatas": [],
+      "estado": "SIN_CANDIDATA_VALIDA"
+    },
+    {
+      "slug": "las-aves",
+      "comunidad": "Las Aves",
+      "municipio": "Luquillo",
+      "candidatas": [],
+      "estado": "SIN_CANDIDATA_VALIDA"
+    },
+    {
+      "slug": "puertas-del-sol",
+      "comunidad": "Puertas del Sol",
+      "municipio": "Fajardo",
+      "candidatas": [],
+      "estado": "SIN_CANDIDATA_VALIDA"
+    }
+  ]
+}

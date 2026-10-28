@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ilatek · referencia del tema del portal</title>
+    <link rel="stylesheet" href="ilatek-client-portal.css" />
+    <style>
+      * { box-sizing: border-box; }
+      body { margin: 0; padding: 34px; }
+      .pd-shell { max-width: 1340px; margin: 0 auto; display: grid; grid-template-columns: 250px 1fr; gap: 22px; }
+      .pd-side { background: #fff; border: 1px solid var(--cp-brand-border); border-radius: 22px; padding: 24px 18px; display: flex; flex-direction: column; gap: 8px; }
+      .pd-brand { display: flex; align-items: center; gap: 12px; margin-bottom: 22px; }
+      .pd-brand img { width: 42px; height: 42px; border-radius: 21px; }
+      .pd-brand b { font-family: 'Outfit', sans-serif; letter-spacing: .14em; font-size: 17px; color: var(--cp-font-900); }
+      .pd-side a { padding: 12px 14px; color: var(--cp-font-500); text-decoration: none; border-radius: 12px; }
+      .pd-side a.on { background: rgba(0,185,79,.1); color: var(--cp-font-900); border-left: 3px solid var(--cp-brand-primary); }
+      .pd-main { display: flex; flex-direction: column; gap: 22px; }
+      .pd-top { display: flex; justify-content: space-between; align-items: center; }
+      .pd-hello h1 { margin: 0 0 6px; font-size: 34px; }
+      .pd-hello p { margin: 0; color: var(--cp-font-500); }
+      .pd-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 22px; }
+      .pd-card { padding: 26px; }
+      .pd-hero { background: linear-gradient(110deg, #0b103d 0%, #213d8e 100%); color: #fff; border: 0 !important; }
+      .pd-hero .pd-eyebrow { color: rgba(231,236,255,.7); }
+      .pd-hero h2 { color: #fff; margin: 10px 0 4px; font-size: 30px; }
+      .pd-hero p { margin: 0; color: rgba(231,236,255,.75); }
+      .pd-eyebrow { font-size: 12px; letter-spacing: .18em; text-transform: uppercase; font-weight: 800; color: var(--cp-font-500); }
+      .pd-row { display: flex; justify-content: space-between; gap: 16px; align-items: center; padding: 14px 0; border-bottom: 1px solid var(--cp-brand-border); }
+      .pd-row:last-child { border-bottom: 0; padding-bottom: 0; }
+      .pd-row b { display: block; font-size: 15px; }
+      .pd-row span { color: var(--cp-font-500); font-size: 13px; }
+      .pd-tag { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 999px; background: rgba(0,185,79,.12); color: #009640; font-size: 12px; font-weight: 800; }
+      .pd-btns { display: flex; gap: 10px; flex-wrap: wrap; }
+      .pd-btn { padding: 12px 20px; border-radius: 14px; border: 0; background: var(--cp-brand-primary); color: #04220f; font-weight: 800; font-family: 'Manrope', sans-serif; }
+      .pd-btn.ghost { background: #fff; border: 1px solid var(--cp-brand-border); color: var(--cp-font-900); }
+      .pd-field { margin-top: 14px; }
+      .pd-field label { display: block; font-size: 13px; font-weight: 700; margin-bottom: 7px; color: var(--cp-font-700); }
+      .pd-field input { width: 100%; padding: 12px 14px; border-radius: 14px; border: 1px solid var(--cp-brand-border); background: #fff; font-family: 'Manrope', sans-serif; color: var(--cp-font-700); }
+      .pd-note { font-size: 12px; color: var(--cp-font-500); margin-top: 14px; }
+      @media (max-width: 900px) { .pd-shell, .pd-grid { grid-template-columns: 1fr; } }
+    </style>
+  </head>
+  <body>
+    <div class="pd-shell">
+      <aside class="pd-side hr-card">
+        <div class="pd-brand">
+          <img src="logo.png" alt="Ilatek" />
+          <b>ILATEK</b>
+        </div>
+        <a class="on" href="#">Resumen</a>
+        <a href="#">Servicios</a>
+        <a href="#">Documentos</a>
+        <a href="#">Facturas</a>
+        <a href="#">Mi cuenta</a>
+      </aside>
+
+      <main class="pd-main">
+        <div class="pd-top">
+          <div class="pd-hello">
+            <h1>Resumen de tu propiedad</h1>
+            <p>Todo tu servicio, en un solo lugar.</p>
+          </div>
+          <button class="pd-btn">Agendar servicio</button>
+        </div>
+
+        <div class="pd-grid">
+          <section class="cp-card-v2 hr-card pd-card pd-hero">
+            <div class="pd-eyebrow">Próxima visita</div>
+            <h2>Jueves 22 · 10:30 a.m.</h2>
+            <p>Limpieza profunda · 1,850 pie² · Confirmada</p>
+          </section>
+
+          <section class="cp-card-v2 hr-card pd-card">
+            <div class="pd-eyebrow">Estado</div>
+            <div class="pd-row" style="margin-top: 10px">
+              <div><b>Reservado</b><span>12 de octubre</span></div>
+              <span class="pd-tag">Listo</span>
+            </div>
+            <div class="pd-row">
+              <div><b>Confirmado</b><span>Equipo asignado</span></div>
+              <span class="pd-tag">Listo</span>
+            </div>
+            <div class="pd-row">
+              <div><b>En servicio</b><span>Jueves 22</span></div>
+              <span class="pd-tag" style="background: #eef2f9; color: #5b6380">Pendiente</span>
+            </div>
+          </section>
+        </div>
+
+        <div class="pd-grid">
+          <section class="cp-card-v2 hr-card pd-card">
+            <div class="pd-eyebrow">Documentos</div>
+            <div class="pd-row" style="margin-top: 10px">
+              <div><b>Cotización del servicio</b><span>PDF · 12 oct</span></div>
+              <button class="pd-btn ghost">Descargar</button>
+            </div>
+            <div class="pd-row">
+              <div><b>Garantía de mano de obra</b><span>PDF · 1 año</span></div>
+              <button class="pd-btn ghost">Descargar</button>
+            </div>
+          </section>
+
+          <section class="cp-card-v2 hr-card pd-card">
+            <div class="pd-eyebrow">Preferencias</div>
+            <div class="pd-field">
+              <label for="pd-email">Correo de contacto</label>
+              <input id="pd-email" class="hr-input__input-el" value="cliente@ejemplo.com" />
+            </div>
+            <div class="pd-btns" style="margin-top: 16px">
+              <button class="pd-btn">Guardar</button>
+              <button class="pd-btn ghost">Cancelar</button>
+            </div>
+            <p class="pd-note">Vista de referencia. No es el portal real.</p>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

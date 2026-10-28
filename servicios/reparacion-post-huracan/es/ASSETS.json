@@ -21,8 +21,8 @@
     "status": "local-optimized-backup",
     "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f83b8e61adf5632035.webp",
     "note": "Original CDN no disponible; se conserva la variante WebP del mismo ID existente en el repositorio. No se modificó el embed.",
-    "bytes": 254294,
-    "sha256": "d2b87795575fe0ba15c31dba063d84319c2d81df7a761a488b6fdfd0484ed5f2"
+    "bytes": 64362,
+    "sha256": "d428eb8c222714d99c579c4dc97bc8c463c6ce6a12729469a06a2e4d67236885"
   },
   "assets": [
     {
@@ -72,8 +72,8 @@
       "status": "local-optimized-backup",
       "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f83b8e61adf5632035.webp",
       "note": "Original CDN no disponible; se conserva la variante WebP del mismo ID existente en el repositorio. No se modificó el embed.",
-      "bytes": 254294,
-      "sha256": "d2b87795575fe0ba15c31dba063d84319c2d81df7a761a488b6fdfd0484ed5f2"
+      "bytes": 64362,
+      "sha256": "d428eb8c222714d99c579c4dc97bc8c463c6ce6a12729469a06a2e4d67236885"
     },
     {
       "role": "media-or-fallback",
@@ -82,8 +82,8 @@
       "status": "local-optimized-backup",
       "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f57bca8cd20c4021df.webp",
       "note": "Original CDN no disponible; se conserva la variante WebP del mismo ID existente en el repositorio. No se modificó el embed.",
-      "bytes": 154930,
-      "sha256": "99f729ba699998c9355603f519cba7ff6a4819e0708e639154e134c62f2dafda"
+      "bytes": 82412,
+      "sha256": "7f4b1559701db971dd8f176218cccf732d13847b04c76800a64235a085b3a1db"
     },
     {
       "role": "media-or-fallback",

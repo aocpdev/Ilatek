@@ -82,8 +82,8 @@
       "status": "local-optimized-backup",
       "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac0427e0edabbe5a4a724d7.webp",
       "note": "Original CDN no disponible; se conserva la variante WebP del mismo ID existente en el repositorio. No se modificó el embed.",
-      "bytes": 153606,
-      "sha256": "b405d72b22145f94bf9f9d93f1efabde06529e9a47b6813e0c889946c627c334"
+      "bytes": 49080,
+      "sha256": "72e211a6747f2dbbaf383b8e6b9657618e8a431833117ea33cadbcc934711ec6"
     },
     {
       "role": "media-or-fallback",
