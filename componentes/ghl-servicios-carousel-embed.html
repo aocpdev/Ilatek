@@ -221,7 +221,7 @@ body:has(#ilatek-nav) .mshero-inner{
 (function(w){
   'use strict';
   if(w.ILATEK_GEO)return;
-  var token='{'+'{custom_values.county_name_and_state}'+'}',doc=w.document;
+  var token='{'+'{custom_values.business__county_name}'+'}',doc=w.document;
   function clean(v){v=String(v||'').replace(/\u00a0/g,' ').trim();return /\{\{|\}\}/.test(v)?'':v}
   function county(){
     var declared=doc.querySelectorAll('.dv-ghl-values,#dv-ghl-values'),nodes=declared.length?declared:doc.querySelectorAll('p'),values=[];
@@ -324,7 +324,7 @@ body:has(#ilatek-nav) .mshero-inner{
   No recolecta datos.
 -->
 <section id="ilatek-servicios-slider" aria-labelledby="ilatek-servicios-title"
-  data-location-label="{{custom_values.county_name_and_state}}"
+  data-location-label="{{custom_values.business__county_name}}"
   data-website-url="{{custom_values.website_url}}">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -371,7 +371,7 @@ body:has(#ilatek-nav) .mshero-inner{
   <header class="ils-head">
     <span class="ils-eyebrow" data-es="Servicios" data-en="Services">Servicios</span>
     <h2 id="ilatek-servicios-title" data-en-key="ilsTitle">Los servicios que tu propiedad necesita, <em>todos con precio claro</em>.</h2>
-    <p data-en-key="ilsSub">Los 10 servicios de limpieza más solicitados en {{custom_values.county_name_and_state}}, disponibles en los 78 municipios de Puerto Rico. Cotiza el tuyo en minutos.</p>
+    <p data-en-key="ilsSub">Los 10 servicios de limpieza más solicitados en {{custom_values.business__county_name}}, disponibles en los 78 municipios de Puerto Rico. Cotiza el tuyo en minutos.</p>
   </header>
   </div>
 
@@ -421,16 +421,16 @@ body:has(#ilatek-nav) .mshero-inner{
     /* Los 10 servicios mas solicitados para companias de limpieza en Puerto Rico.
        altSeo: texto ALT dedicado por servicio, con la palabra clave Puerto Rico para SEO. */
     var SERVICES=[
-      {img:IMG_REGULAR,kicker:'Limpieza regular',title:'Tu hogar siempre fresco',desc:'El servicio más solicitado: limpieza recurrente semanal, quincenal o mensual a $0.07 por pie².',slug:'limpieza-estandar',price:'Desde $0.07/pie²',altSeo:'Servicio de limpieza regular en {{custom_values.county_name_and_state}} por Ilatek: limpieza recurrente semanal, quincenal o mensual del hogar a domicilio.',altEn:'Recurring weekly, biweekly or monthly home cleaning service in {{custom_values.county_name_and_state}} by Ilatek.'},
-      {img:IMG_PROFUNDA,kicker:'Limpieza profunda',title:'Renueva cada rincón',desc:'Limpieza a fondo área por área a $0.15 por pie²: ideal para una renovación completa del hogar.',slug:'limpieza-profunda',price:'Desde $0.15/pie²',altSeo:'Limpieza profunda de casa en {{custom_values.county_name_and_state}} por Ilatek: limpieza a fondo habitación por habitación y renovación completa del hogar.',altEn:'In-depth whole-home deep cleaning in {{custom_values.county_name_and_state}} by Ilatek, room by room.'},
-      {img:IMG_MUDANZA,kicker:'Mudanza',title:'Mudanza sin estrés',desc:'Move-in / move-out: entrega o recibe tu espacio impecable, listo para el siguiente capítulo.',slug:'limpieza-de-mudanza',price:'Precio en minutos',altSeo:'Limpieza de mudanza move in move out en {{custom_values.county_name_and_state}} por Ilatek: hogar o apartamento impecable antes o después de mudarte.',altEn:'Move-in/move-out cleaning in {{custom_values.county_name_and_state}} by Ilatek: a spotless home before or after you move.'},
-      {img:IMG_AIRBNB,kicker:'Airbnb & rentals',title:'Reseñas de 5 estrellas',desc:'Turnover profesional para rentals a corto plazo: limpieza rápida y detallada entre huéspedes.',slug:'airbnb-turnover',price:'Precio en minutos',altSeo:'Limpieza para Airbnb y co-host de rentals a corto plazo en {{custom_values.county_name_and_state}} por Ilatek: turnover profesional entre huéspedes con reseñas de 5 estrellas.',altEn:'Airbnb and short-term rental turnover cleaning in {{custom_values.county_name_and_state}} by Ilatek with 5-star reviews.'},
-      {img:IMG_POSTCONSTRUCCION,kicker:'Post-construcción',title:'Del polvo al brillo',desc:'Eliminamos residuos de obra, polvo fino y escombros para estrenar tu espacio como nuevo.',slug:'post-construccion',price:'Precio en minutos',altSeo:'Limpieza post construccion en {{custom_values.county_name_and_state}} por Ilatek: eliminación de polvo de obra, residuos y escombros para estrenar tu espacio.',altEn:'Post-construction cleaning in {{custom_values.county_name_and_state}} by Ilatek: dust, debris and residue removal.'},
-      {img:IMG_VENTANAS,kicker:'Ventanas',title:'Más luz en tu hogar',desc:'Ventanas interiores ($10) y exteriores ($25): cristales impecables y una vista perfecta.',slug:'ventanas',price:'Desde $10',altSeo:'Limpieza de ventanas y cristales en {{custom_values.county_name_and_state}} por Ilatek: ventanas interiores y exteriores impecables con más luz para tu hogar.',altEn:'Interior and exterior window cleaning in {{custom_values.county_name_and_state}} by Ilatek for more light at home.'},
-      {img:IMG_PRESION,kicker:'Lavado a presión',title:'Exteriores como nuevos',desc:'Fachadas, terrazas, verjas y aceras: el poder del agua a presión para eliminar años de suciedad.',slug:'lavado-a-presion',price:'Precio en minutos',altSeo:'Lavado a presión en {{custom_values.county_name_and_state}} por Ilatek: limpieza de fachadas, terrazas, verjas, aceras y exteriores con agua a alta presión.',altEn:'High-pressure washing of facades, terraces, fences and sidewalks in {{custom_values.county_name_and_state}} by Ilatek.'},
-      {img:IMG_ALFOMBRAS,kicker:'Alfombras',title:'Frescor bajo tus pies',desc:'Lavado de alfombras a $0.75 por pie²: elimina manchas, olores y alérgenos acumulados.',slug:'alfombras',price:'Desde $0.75/pie²',altSeo:'Lavado de alfombras y tapetes en {{custom_values.county_name_and_state}} por Ilatek: eliminación de manchas, olores y alérgenos a $0.75 por pie cuadrado.',altEn:'Carpet and rug washing in {{custom_values.county_name_and_state}} by Ilatek: stains, odors and allergens removed.'},
-      {img:IMG_ELECTRODOMESTICOS,kicker:'Electrodomésticos',title:'Cocina como nueva',desc:'Refrigerador ($40), horno ($30), lavaplatos ($10) y lavadora/secadora ($10), por dentro y por fuera.',slug:'electrodomesticos',price:'Desde $10',altSeo:'Limpieza de electrodomesticos en {{custom_values.county_name_and_state}} por Ilatek: refrigerador, horno, lavaplatos, lavadora y secadora limpios por dentro y por fuera.',altEn:'Appliance cleaning in {{custom_values.county_name_and_state}} by Ilatek: fridge, oven, dishwasher, washer and dryer inside and out.'},
-      {img:IMG_ORGANIZACION,kicker:'Organización',title:'Orden que permanece',desc:'Despensas y clósets ($50 c/u) y garaje ($0.50 por pie²): orden funcional que te devuelve tiempo.',slug:'organizacion',price:'Desde $50',altSeo:'Organización del hogar en {{custom_values.county_name_and_state}} por Ilatek: organización profesional de despensas, clósets y garaje en casa.',altEn:'Professional home organization of pantries, closets and garage in {{custom_values.county_name_and_state}} by Ilatek.'}
+      {img:IMG_REGULAR,kicker:'Limpieza regular',title:'Tu hogar siempre fresco',desc:'El servicio más solicitado: limpieza recurrente semanal, quincenal o mensual a $0.07 por pie².',slug:'limpieza-estandar',price:'Desde $0.07/pie²',altSeo:'Servicio de limpieza regular en {{custom_values.business__county_name}} por Ilatek: limpieza recurrente semanal, quincenal o mensual del hogar a domicilio.',altEn:'Recurring weekly, biweekly or monthly home cleaning service in {{custom_values.business__county_name}} by Ilatek.'},
+      {img:IMG_PROFUNDA,kicker:'Limpieza profunda',title:'Renueva cada rincón',desc:'Limpieza a fondo área por área a $0.15 por pie²: ideal para una renovación completa del hogar.',slug:'limpieza-profunda',price:'Desde $0.15/pie²',altSeo:'Limpieza profunda de casa en {{custom_values.business__county_name}} por Ilatek: limpieza a fondo habitación por habitación y renovación completa del hogar.',altEn:'In-depth whole-home deep cleaning in {{custom_values.business__county_name}} by Ilatek, room by room.'},
+      {img:IMG_MUDANZA,kicker:'Mudanza',title:'Mudanza sin estrés',desc:'Move-in / move-out: entrega o recibe tu espacio impecable, listo para el siguiente capítulo.',slug:'limpieza-de-mudanza',price:'Precio en minutos',altSeo:'Limpieza de mudanza move in move out en {{custom_values.business__county_name}} por Ilatek: hogar o apartamento impecable antes o después de mudarte.',altEn:'Move-in/move-out cleaning in {{custom_values.business__county_name}} by Ilatek: a spotless home before or after you move.'},
+      {img:IMG_AIRBNB,kicker:'Airbnb & rentals',title:'Reseñas de 5 estrellas',desc:'Turnover profesional para rentals a corto plazo: limpieza rápida y detallada entre huéspedes.',slug:'airbnb-turnover',price:'Precio en minutos',altSeo:'Limpieza para Airbnb y co-host de rentals a corto plazo en {{custom_values.business__county_name}} por Ilatek: turnover profesional entre huéspedes con reseñas de 5 estrellas.',altEn:'Airbnb and short-term rental turnover cleaning in {{custom_values.business__county_name}} by Ilatek with 5-star reviews.'},
+      {img:IMG_POSTCONSTRUCCION,kicker:'Post-construcción',title:'Del polvo al brillo',desc:'Eliminamos residuos de obra, polvo fino y escombros para estrenar tu espacio como nuevo.',slug:'post-construccion',price:'Precio en minutos',altSeo:'Limpieza post construccion en {{custom_values.business__county_name}} por Ilatek: eliminación de polvo de obra, residuos y escombros para estrenar tu espacio.',altEn:'Post-construction cleaning in {{custom_values.business__county_name}} by Ilatek: dust, debris and residue removal.'},
+      {img:IMG_VENTANAS,kicker:'Ventanas',title:'Más luz en tu hogar',desc:'Ventanas interiores ($10) y exteriores ($25): cristales impecables y una vista perfecta.',slug:'ventanas',price:'Desde $10',altSeo:'Limpieza de ventanas y cristales en {{custom_values.business__county_name}} por Ilatek: ventanas interiores y exteriores impecables con más luz para tu hogar.',altEn:'Interior and exterior window cleaning in {{custom_values.business__county_name}} by Ilatek for more light at home.'},
+      {img:IMG_PRESION,kicker:'Lavado a presión',title:'Exteriores como nuevos',desc:'Fachadas, terrazas, verjas y aceras: el poder del agua a presión para eliminar años de suciedad.',slug:'lavado-a-presion',price:'Precio en minutos',altSeo:'Lavado a presión en {{custom_values.business__county_name}} por Ilatek: limpieza de fachadas, terrazas, verjas, aceras y exteriores con agua a alta presión.',altEn:'High-pressure washing of facades, terraces, fences and sidewalks in {{custom_values.business__county_name}} by Ilatek.'},
+      {img:IMG_ALFOMBRAS,kicker:'Alfombras',title:'Frescor bajo tus pies',desc:'Lavado de alfombras a $0.75 por pie²: elimina manchas, olores y alérgenos acumulados.',slug:'alfombras',price:'Desde $0.75/pie²',altSeo:'Lavado de alfombras y tapetes en {{custom_values.business__county_name}} por Ilatek: eliminación de manchas, olores y alérgenos a $0.75 por pie cuadrado.',altEn:'Carpet and rug washing in {{custom_values.business__county_name}} by Ilatek: stains, odors and allergens removed.'},
+      {img:IMG_ELECTRODOMESTICOS,kicker:'Electrodomésticos',title:'Cocina como nueva',desc:'Refrigerador ($40), horno ($30), lavaplatos ($10) y lavadora/secadora ($10), por dentro y por fuera.',slug:'electrodomesticos',price:'Desde $10',altSeo:'Limpieza de electrodomesticos en {{custom_values.business__county_name}} por Ilatek: refrigerador, horno, lavaplatos, lavadora y secadora limpios por dentro y por fuera.',altEn:'Appliance cleaning in {{custom_values.business__county_name}} by Ilatek: fridge, oven, dishwasher, washer and dryer inside and out.'},
+      {img:IMG_ORGANIZACION,kicker:'Organización',title:'Orden que permanece',desc:'Despensas y clósets ($50 c/u) y garaje ($0.50 por pie²): orden funcional que te devuelve tiempo.',slug:'organizacion',price:'Desde $50',altSeo:'Organización del hogar en {{custom_values.business__county_name}} por Ilatek: organización profesional de despensas, clósets y garaje en casa.',altEn:'Professional home organization of pantries, closets and garage in {{custom_values.business__county_name}} by Ilatek.'}
     ];
     var EN_TITLES={'Tu hogar siempre fresco':'Your home always fresh','Renueva cada rincón':'Renew every corner','Mudanza sin estrés':'Stress-free moving','Reseñas de 5 estrellas':'5-star reviews','Del polvo al brillo':'From dust to shine','Más luz en tu hogar':'More light in your home','Exteriores como nuevos':'Exteriors like new','Frescor bajo tus pies':'Freshness under your feet','Cocina como nueva':'A kitchen like new','Orden que permanece':'Order that lasts'};
 
@@ -443,7 +443,7 @@ body:has(#ilatek-nav) .mshero-inner{
     for(var pass=0;pass<2;pass++){ // duplicamos la lista para el bucle infinito continuo
       SERVICES.forEach(function(s){
         var isEn=document.documentElement.getAttribute('lang')==='en';
-        var alt=isEn?(s.altEn||'Ilatek — service in {{custom_values.county_name_and_state}}'):(s.altSeo||'Ilatek — servicio en {{custom_values.county_name_and_state}}');
+        var alt=isEn?(s.altEn||'Ilatek — service in {{custom_values.business__county_name}}'):(s.altSeo||'Ilatek — servicio en {{custom_values.business__county_name}}');
         var title=s.kicker+' — Ilatek Puerto Rico';
         /* Tarjeta completa clikeable: enlace al sitio con slug del servicio ({{website_url}}/nombre-del-servicio) */
         var url=window.ILATEK_LINKS.join(website,'/'+s.slug);
@@ -453,7 +453,7 @@ body:has(#ilatek-nav) .mshero-inner{
         var pp=isEn?(EN_PRICE[s.price]||s.price):s.price;
         var url=window.ILATEK_LINKS.join(website,'/'+s.slug);
         html+='<a class="ils-card" href="'+url+'" data-ilatek-path="/'+s.slug+'" aria-label="'+tt+' — '+kk+(isEn?' by Ilatek':' de Ilatek')+'">'
-          +'<div class="ils-media"><span>'+kk+'</span>'+window.ILATEK_GEO.image(s.img,alt,kk+(isEn?' — Ilatek in ':' — Ilatek en ')+'{{custom_values.county_name_and_state}}')+'</div>'
+          +'<div class="ils-media"><span>'+kk+'</span>'+window.ILATEK_GEO.image(s.img,alt,kk+(isEn?' — Ilatek in ':' — Ilatek en ')+'{{custom_values.business__county_name}}')+'</div>'
           +'<div class="ils-body"><h5>'+tt+'</h5><p>'+dd+'</p><div class="ils-foot"><span class="ils-price">'+pp+'</span><span class="ils-more">'+(isEn?'View more':'Ver más')+'</span></div></div>'
           +'</a>';
       });
@@ -477,7 +477,7 @@ body:has(#ilatek-nav) .mshero-inner{
     if(window.ResizeObserver){new ResizeObserver(syncSplit).observe(root)}
 
     // Resuelve tokens de GHL restantes (respaldo por si el reemplazo nativo no ocurre)
-    var KCOUNTY='{{custom_values.county_name_and_state}}';var KW_URL='{{custom_values.website_url}}';var values={};values[KCOUNTY]=county;values[KW_URL]=website;
+    var KCOUNTY='{{custom_values.business__county_name}}';var KW_URL='{{custom_values.website_url}}';var values={};values[KCOUNTY]=county;values[KW_URL]=website;
     var walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT),nodes=[],node;
     while(node=walker.nextNode()){if(node.parentElement&&node.parentElement.tagName!=='SCRIPT'&&node.parentElement.tagName!=='STYLE')nodes.push(node)}
     nodes.forEach(function(n){Object.keys(values).forEach(function(k){n.nodeValue=window.ILATEK_LINKS.replace(n.nodeValue,k,values[k])})});

@@ -11,15 +11,15 @@ Servicios de Limpieza en {{custom_values.county_name_and_state}} | Ilatek
 ## Meta Tag Description
 
 ```text
-Servicios de limpieza residencial, comercial e industrial de Ilatek en {{custom_values.county_name_and_state}}: limpieza estándar y profunda, mudanzas, Airbnb, post-construcción, ventanas, lavado a presión, alfombras, electrodomésticos y organización. Precio transparente por pie cuadrado y cobertura en los 78 municipios.
+Servicios de limpieza residencial, comercial e industrial de Ilatek en {{custom_values.county_name_and_state}}: limpieza estándar y profunda, mudanzas, Airbnb, post-construcción, ventanas, lavado a presión, alfombras, electrodomésticos y organización. Precio transparente y cobertura en los 78 municipios.
 ```
 
 ## Meta Tag Image
 
-[Imagen social — URL pública](https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/servicios.jpg)
+[Imagen social — URL pública](https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acaa576195f9172ed3a852a.jpg)
 
 ```text
-https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/servicios.jpg
+https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acaa576195f9172ed3a852a.jpg
 ```
 
 Copia local: [assets/meta-image.jpg](assets/meta-image.jpg). No usar una ruta local en GHL.

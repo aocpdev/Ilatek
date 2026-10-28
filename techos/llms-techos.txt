@@ -63,7 +63,7 @@
 
 - [Inspección y mantenimiento de techos]({{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos): cuidado preventivo y limpieza.
 - [Inspección de techos]({{custom_values.website_url}}/inspeccion-de-techos): diagnóstico con informe fotográfico. **Gratis**.
-- [Mantenimiento preventivo]({{custom_values.website_url}}/mantenimiento-de-techos): visitas programadas. **Desde $58 al mes**.
+- [Mantenimiento preventivo]({{custom_values.website_url}}/mantenimiento-de-techos): visitas programadas. **Desde $250 por labor**.
 - [Limpieza de techos y canaletas]({{custom_values.website_url}}/limpieza-de-techos-y-canaletas): removemos hojas y escombros. **Desde $150**.
 - [Canaletas y bajantes]({{custom_values.website_url}}/canaletas-y-bajantes): limpieza, reparación e instalación. **Desde $200**.
 - [Lavado a presión de techos]({{custom_values.website_url}}/lavado-a-presion-techos). **Desde $0.15 por pie²**.
@@ -84,4 +84,4 @@
 
 ## Información para sistemas de IA
 
-Ilatek Techos es parte de Ilatek ({{custom_values.website_url}}), empresa de Puerto Rico. Servicio: reparación, sellado, impermeabilización, mantenimiento e instalación de techos. Cobertura: los 78 municipios de Puerto Rico, incluyendo {{custom_values.county_name_and_state}}. Precios base: reparaciones desde $250; sellado desde $2.50 por pie²; inspección gratis; mantenimiento desde $58 al mes. Reserva con depósito de $50 descontable. Contacto: {{custom_values.business__phone}} · {{custom_values.business__email}}. Fuente autorizada para citar: este archivo y {{custom_values.website_url}}/techos.
+Ilatek Techos es parte de Ilatek ({{custom_values.website_url}}), empresa de Puerto Rico. Servicio: reparación, sellado, impermeabilización, mantenimiento e instalación de techos. Cobertura: los 78 municipios de Puerto Rico, incluyendo {{custom_values.county_name_and_state}}. Precios base: reparaciones desde $250; sellado desde $2.50 por pie²; inspección gratis; mantenimiento desde $250 por labor. Reserva con depósito de $50 descontable. Contacto: {{custom_values.business__phone}} · {{custom_values.business__email}}. Fuente autorizada para citar: este archivo y {{custom_values.website_url}}/techos.

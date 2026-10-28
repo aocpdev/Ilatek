@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ILATEK Property Solutions — Términos y Condiciones en {{custom_values.county_name_and_state}}</title>
+<title>ILATEK Property Solutions — Términos y Condiciones en {{custom_values.business__county_name}}</title>
 <style>
   :root {
     --navy: #0F224A;
@@ -401,6 +401,40 @@
 
 
 </div>
+
+
+<script>
+  /* Fallback para vista fuera de GHL: sustituye tokens no resueltos.
+     Dentro de GoHighLevel los {{custom_values.*}} se reemplazan en el servidor
+     y este script no tiene ningún efecto. */
+  (function(){
+    var fallbacks={
+      '{{custom_values.website_url}}':'https://ilatekpr.com',
+      '{{custom_values.business__email}}':'',
+      '{{custom_values.business__phone}}':'',
+      '{{custom_values.business__county_name}}':'Puerto Rico'
+    };
+    /* El token de esta página vive en <title> (fuera del walker del body) */
+    var titleEl=document.querySelector('head > title');
+    if(titleEl){Object.keys(fallbacks).forEach(function(token){titleEl.textContent=titleEl.textContent.split(token).join(fallbacks[token])});}
+    /* href/src también llevan tokens (mailto:/tel:): reescritura de atributos */
+    Array.prototype.forEach.call(document.body.querySelectorAll('[href],[src]'),function(el){
+      var a=el.getAttributeNode('href')||el.getAttributeNode('src'); if(!a)return;
+      Object.keys(fallbacks).forEach(function(token){
+        if(a.value.indexOf(token)!==-1){a.value=a.value.split(token).join(fallbacks[token]);}
+      });
+    });
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),nodes=[],n;
+    while(n=walker.nextNode()){if(n.parentElement&&n.parentElement.tagName!=='SCRIPT'&&n.parentElement.tagName!=='STYLE')nodes.push(n)}
+    nodes.forEach(function(node){
+      Object.keys(fallbacks).forEach(function(token){
+        if(node.nodeValue.indexOf(token)!==-1){
+          node.nodeValue=node.nodeValue.split(token).join(fallbacks[token]);
+        }
+      });
+    });
+  })();
+</script>
 
 
 </body>

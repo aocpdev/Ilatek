@@ -12,3 +12,11 @@ tools/ghl-mcp/package-lock.json
 .mcp.json
 .mcp.json.local
 node_modules/
+
+# --- Exclusiones del flujo de trabajo (no publicar) ---
+.tmp*
+tmp-*
+home-page/.backups-uiux/
+shots/
+scripts/.qaenv/
+archivo/

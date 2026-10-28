@@ -11,7 +11,7 @@ Inspección y Mantenimiento de Techos en {{custom_values.county_name_and_state}}
 ## Meta Tag Description
 
 ```text
-Inspección de techos gratis y mantenimiento preventivo en {{custom_values.county_name_and_state}} desde $58 al mes. Limpieza de techos, canaletas, lavado a presión y más. 78 municipios.
+Inspección de techos gratis y mantenimiento preventivo en {{custom_values.county_name_and_state}} desde $250 por labor. Cotización $0 y $50 descontable del total para agendar. 78 municipios.
 ```
 
 ## Meta Tag Image

@@ -221,7 +221,7 @@ body:has(#ilatek-nav) .mshero-inner{
 (function(w){
   'use strict';
   if(w.ILATEK_GEO)return;
-  var token='{'+'{custom_values.county_name_and_state}'+'}',doc=w.document;
+  var token='{'+'{custom_values.business__county_name}'+'}',doc=w.document;
   function clean(v){v=String(v||'').replace(/\u00a0/g,' ').trim();return /\{\{|\}\}/.test(v)?'':v}
   function county(){
     var declared=doc.querySelectorAll('.dv-ghl-values,#dv-ghl-values'),nodes=declared.length?declared:doc.querySelectorAll('p'),values=[];
@@ -314,7 +314,7 @@ body:has(#ilatek-nav) .mshero-inner{
   Imagenes: reemplaza los 3 placeholders marcados con "PEGA AQUI TU IMAGEN".
 -->
 <section id="ilatek-categorias-mini" aria-labelledby="ilatek-categorias-mini-title"
-  data-location-label="{{custom_values.county_name_and_state}}"
+  data-location-label="{{custom_values.business__county_name}}"
   data-website-url="{{custom_values.website_url}}"
   data-business-email="{{custom_values.business__email}}"
   data-business-phone="{{custom_values.business__phone}}">
@@ -365,7 +365,7 @@ body:has(#ilatek-nav) .mshero-inner{
   <div class="ilcm-shell">
     <header class="ilcm-head">
       <span class="ilcm-eyebrow">ILATEK · Soluciones de limpieza</span>
-      <h2 id="ilatek-categorias-mini-title">Servicios de Limpieza en {{custom_values.county_name_and_state}}</h2>
+      <h2 id="ilatek-categorias-mini-title">Servicios de Limpieza en {{custom_values.business__county_name}}</h2>
     </header>
 
     <div class="ilcm-stage" aria-label="Categorías de limpieza de Ilatek (la tarjeta frontal rota en bucle; haz clic en una lateral para traerla al frente)">
@@ -375,8 +375,8 @@ body:has(#ilatek-nav) .mshero-inner{
         <div class="ilcm-media">
           <img src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8582fcc7a5a2b73475d89.jpg" onerror="this.onerror=null;this.src='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8582fcc7a5a2b73475d89.jpg'"
             width="800" height="451" loading="lazy" decoding="async"
-            alt="Limpieza residencial de Ilatek — servicio de limpieza de casas y apartamentos en {{custom_values.county_name_and_state}}"
-            title="Limpieza Residencial en {{custom_values.county_name_and_state}} · Ilatek" data-ilatek-local-alt="Limpieza%20residencial%20de%20Ilatek%20%E2%80%94%20servicio%20de%20limpieza%20de%20casas%20y%20apartamentos%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D" data-ilatek-local-title="Limpieza%20Residencial%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D%20%C2%B7%20Ilatek">
+            alt="Limpieza residencial de Ilatek — servicio de limpieza de casas y apartamentos en {{custom_values.business__county_name}}"
+            title="Limpieza Residencial en {{custom_values.business__county_name}} · Ilatek" data-ilatek-local-alt="Limpieza%20residencial%20de%20Ilatek%20%E2%80%94%20servicio%20de%20limpieza%20de%20casas%20y%20apartamentos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D" data-ilatek-local-title="Limpieza%20Residencial%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%C2%B7%20Ilatek">
         </div>
         <i class="ilcm-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></i>
         <div class="ilcm-body">
@@ -391,8 +391,8 @@ body:has(#ilatek-nav) .mshero-inner{
         <div class="ilcm-media">
           <img src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8582a195f9172ed03aa2b.jpg" onerror="this.onerror=null;this.src='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8582a195f9172ed03aa2b.jpg'"
             width="800" height="451" loading="lazy" decoding="async"
-            alt="Limpieza comercial de Ilatek — limpieza de oficinas, tiendas y negocios en {{custom_values.county_name_and_state}}"
-            title="Limpieza Comercial en {{custom_values.county_name_and_state}} · Ilatek" data-ilatek-local-alt="Limpieza%20comercial%20de%20Ilatek%20%E2%80%94%20limpieza%20de%20oficinas%2C%20tiendas%20y%20negocios%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D" data-ilatek-local-title="Limpieza%20Comercial%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D%20%C2%B7%20Ilatek">
+            alt="Limpieza comercial de Ilatek — limpieza de oficinas, tiendas y negocios en {{custom_values.business__county_name}}"
+            title="Limpieza Comercial en {{custom_values.business__county_name}} · Ilatek" data-ilatek-local-alt="Limpieza%20comercial%20de%20Ilatek%20%E2%80%94%20limpieza%20de%20oficinas%2C%20tiendas%20y%20negocios%20en%20%7B%7Bcustom_values.business__county_name%7D%7D" data-ilatek-local-title="Limpieza%20Comercial%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%C2%B7%20Ilatek">
         </div>
         <i class="ilcm-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg></i>
         <div class="ilcm-body">
@@ -407,8 +407,8 @@ body:has(#ilatek-nav) .mshero-inner{
         <div class="ilcm-media">
           <img src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8582ebbad531ac844941b.jpg" onerror="this.onerror=null;this.src='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8582ebbad531ac844941b.jpg'"
             width="800" height="451" loading="lazy" decoding="async"
-            alt="Limpieza industrial de Ilatek — limpieza de almacenes e instalaciones en {{custom_values.county_name_and_state}}"
-            title="Limpieza Industrial en {{custom_values.county_name_and_state}} · Ilatek" data-ilatek-local-alt="Limpieza%20industrial%20de%20Ilatek%20%E2%80%94%20limpieza%20de%20almacenes%20e%20instalaciones%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D" data-ilatek-local-title="Limpieza%20Industrial%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D%20%C2%B7%20Ilatek">
+            alt="Limpieza industrial de Ilatek — limpieza de almacenes e instalaciones en {{custom_values.business__county_name}}"
+            title="Limpieza Industrial en {{custom_values.business__county_name}} · Ilatek" data-ilatek-local-alt="Limpieza%20industrial%20de%20Ilatek%20%E2%80%94%20limpieza%20de%20almacenes%20e%20instalaciones%20en%20%7B%7Bcustom_values.business__county_name%7D%7D" data-ilatek-local-title="Limpieza%20Industrial%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%C2%B7%20Ilatek">
         </div>
         <i class="ilcm-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M17 18h1"/><path d="M12 18h1"/><path d="M7 18h1"/></svg></i>
         <div class="ilcm-body">
@@ -457,7 +457,7 @@ body:has(#ilatek-nav) .mshero-inner{
     var county=clean(root.getAttribute('data-location-label'))||'Puerto Rico', website=clean(root.dataset.websiteUrl)||'https://ilatekpr.com';
     function token(name){return '{'+'{custom_values.'+name+'}'+'}'}
     var values={};
-    values[token('county_name_and_state')]=county;
+    values[token('business__county_name')]=county;
     values[token('website_url')]=website;
 
     /* Carrusel 3D: roles front/izq/der que avanzan en bucle infinito. La frontal siempre la grande.

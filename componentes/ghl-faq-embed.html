@@ -221,7 +221,7 @@ body:has(#ilatek-nav) .mshero-inner{
 (function(w){
   'use strict';
   if(w.ILATEK_GEO)return;
-  var token='{'+'{custom_values.county_name_and_state}'+'}',doc=w.document;
+  var token='{'+'{custom_values.business__county_name}'+'}',doc=w.document;
   function clean(v){v=String(v||'').replace(/\u00a0/g,' ').trim();return /\{\{|\}\}/.test(v)?'':v}
   function county(){
     var declared=doc.querySelectorAll('.dv-ghl-values,#dv-ghl-values'),nodes=declared.length?declared:doc.querySelectorAll('p'),values=[];
@@ -313,7 +313,7 @@ body:has(#ilatek-nav) .mshero-inner{
   (ChatGPT, Perplexity, Gemini, Copilot). No recolecta datos ni hace requests.
 -->
 <section id="ilatek-faq" aria-labelledby="ilatek-faq-title"
-  data-location-label="{{custom_values.county_name_and_state}}"
+  data-location-label="{{custom_values.business__county_name}}"
   data-website-url="{{custom_values.website_url}}">
 
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
@@ -330,12 +330,12 @@ body:has(#ilatek-nav) .mshero-inner{
     <header class="ilfaq-head">
       <span class="ilfaq-eyebrow">Preguntas frecuentes</span>
       <h2 id="ilatek-faq-title" class="ilfaq-display">Todo lo que necesitas saber antes de tu limpieza.</h2>
-      <p>Respuestas claras sobre precios, cobertura y reservas del servicio de limpieza residencial de Ilatek en {{custom_values.county_name_and_state}}.</p>
+      <p>Respuestas claras sobre precios, cobertura y reservas del servicio de limpieza residencial de Ilatek en {{custom_values.business__county_name}}.</p>
     </header>
 
     <div class="ilfaq-grid">
       <details class="ilfaq-item" open>
-        <summary><h3>¿Cuánto cuesta una limpieza residencial en Puerto Rico?</h3><span class="ilfaq-chevron" aria-hidden="true">▾</span></summary>
+        <summary><h3>¿Cuánto cuesta una limpieza residencial en {{custom_values.business__county_name}}?</h3><span class="ilfaq-chevron" aria-hidden="true">▾</span></summary>
         <p>En Ilatek el precio se calcula por pies cuadrados: la <b>limpieza estándar cuesta $0.07 por pie²</b> y la <b>limpieza profunda $0.15 por pie²</b>. Por ejemplo, una casa de 2,000 pies² cuesta $140 estándar o $300 profunda. Los extras (ventanas, refrigerador, alfombras) se suman con precio fijo. Con nuestro cotizador online ves el <b>precio real en minutos</b>, sin llamadas ni estimados al azar.</p>
       </details>
 
@@ -351,7 +351,7 @@ body:has(#ilatek-nav) .mshero-inner{
 
       <details class="ilfaq-item">
         <summary><h3>¿Atienden mi área en Puerto Rico?</h3><span class="ilfaq-chevron" aria-hidden="true">▾</span></summary>
-        <p>Sí. Ilatek atiende hogares en los <b>78 municipios de Puerto Rico</b>, incluyendo {{custom_values.county_name_and_state}} y toda la isla. Cada servicio se coordina según las necesidades de tu espacio. Visita la página de tu pueblo o solicita tu cotización para confirmar disponibilidad en tu zona.</p>
+        <p>Sí. Ilatek atiende hogares en los <b>78 municipios de Puerto Rico</b>, incluyendo {{custom_values.business__county_name}} y toda la isla. Cada servicio se coordina según las necesidades de tu espacio. Visita la página de tu pueblo o solicita tu cotización para confirmar disponibilidad en tu zona.</p>
       </details>
 
       <details class="ilfaq-item">
@@ -395,10 +395,10 @@ body:has(#ilatek-nav) .mshero-inner{
   <!-- Senal backend para Google y buscadores de IA: indexar esta informacion como FAQPage -->
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"FAQPage","inLanguage":"es","mainEntity":[
-    {"@type":"Question","name":"¿Cuánto cuesta una limpieza residencial en Puerto Rico?","acceptedAnswer":{"@type":"Answer","text":"En Ilatek el precio se calcula por pies cuadrados: la limpieza estándar cuesta $0.07 por pie² y la limpieza profunda $0.15 por pie² . Por ejemplo, una casa de 2,000 pies² cuesta $140 estándar o $300 profunda. Los extras (ventanas, refrigerador, alfombras) se suman con precio fijo. Con nuestro cotizador online ves el precio real en minutos , sin llamadas ni estimados al azar."}},
+    {"@type":"Question","name":"¿Cuánto cuesta una limpieza residencial en {{custom_values.business__county_name}}?","acceptedAnswer":{"@type":"Answer","text":"En Ilatek el precio se calcula por pies cuadrados: la limpieza estándar cuesta $0.07 por pie² y la limpieza profunda $0.15 por pie² . Por ejemplo, una casa de 2,000 pies² cuesta $140 estándar o $300 profunda. Los extras (ventanas, refrigerador, alfombras) se suman con precio fijo. Con nuestro cotizador online ves el precio real en minutos , sin llamadas ni estimados al azar."}},
     {"@type":"Question","name":"¿Qué incluye la limpieza estándar y la limpieza profunda?","acceptedAnswer":{"@type":"Answer","text":"La limpieza estándar mantiene tu hogar fresco y ordenado con atención a cada espacio. La limpieza profunda renueva el hogar área por área, ideal antes o después de una ocasión importante. Ambas son servicios residenciales personalizados: compartes el tamaño de tu propiedad y coordinamos el alcance antes del servicio."}},
     {"@type":"Question","name":"¿Qué servicios extras ofrece Ilatek?","acceptedAnswer":{"@type":"Answer","text":"Además de la limpieza base: ventanas interiores ($10) y exteriores ($25) , refrigerador ($40) , horno ($30) , lavaplatos ($10) , lavadora y secadora ($10 c/u) , limpieza de muebles ($15) y lavado profundo ($30 por pieza) , alfombras ($0.75 por pie²) , lechada y losas ($1.50 por pie²) , y organización de despensas y clósets ($50 c/u) y garaje ($0.50 por pie²) ."}},
-    {"@type":"Question","name":"¿Atienden mi área en Puerto Rico?","acceptedAnswer":{"@type":"Answer","text":"Sí. Ilatek atiende hogares en los 78 municipios de Puerto Rico , incluyendo {{custom_values.county_name_and_state}} y toda la isla. Cada servicio se coordina según las necesidades de tu espacio. Visita la página de tu pueblo o solicita tu cotización para confirmar disponibilidad en tu zona."}},
+    {"@type":"Question","name":"¿Atienden mi área en Puerto Rico?","acceptedAnswer":{"@type":"Answer","text":"Sí. Ilatek atiende hogares en los 78 municipios de Puerto Rico , incluyendo {{custom_values.business__county_name}} y toda la isla. Cada servicio se coordina según las necesidades de tu espacio. Visita la página de tu pueblo o solicita tu cotización para confirmar disponibilidad en tu zona."}},
     {"@type":"Question","name":"¿Cómo obtengo mi precio real al instante?","acceptedAnswer":{"@type":"Answer","text":"Con nuestro cotizador online en 4 pasos: ingresas los pies cuadrados, eliges el tipo de limpieza, agregas servicios y extras, y ves el precio total y la duración estimada al momento. Sin formularios infinitos ni esperas: el precio que ves es el precio del servicio."}},
     {"@type":"Question","name":"¿Qué horarios manejan?","acceptedAnswer":{"@type":"Answer","text":"Atendemos de lunes a sábado, de 8:00 a.m. a 6:00 p.m. Al completar tu cotización eliges directamente la fecha y hora de tu limpieza en el calendario de reserva, según la disponibilidad real de nuestro equipo."}},
     {"@type":"Question","name":"¿Necesito un depósito para reservar mi limpieza?","acceptedAnswer":{"@type":"Answer","text":"Sí, la reserva se asegura con un depósito de $50 que se paga en el calendario al completar tu cita. El depósito se descuenta del valor total de tu servicio. Elegir tu fecha solo toma un minuto después de tu cotización."}},
@@ -415,13 +415,13 @@ body:has(#ilatek-nav) .mshero-inner{
     var location=clean(root.getAttribute('data-location-label'))||'Puerto Rico', website=clean(root.dataset.websiteUrl)||'https://ilatekpr.com';
     function token(name){return '{'+'{custom_values.'+name+'}'+'}'}
     var values={};
-    values[token('county_name_and_state')]=location;
+    values[token('business__county_name')]=location;
     values[token('website_url')]=website;
     var walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT),nodes=[],node;while(node=walker.nextNode()){if(node.parentElement&&node.parentElement.tagName!=='SCRIPT'&&node.parentElement.tagName!=='STYLE')nodes.push(node)}
     nodes.forEach(function(n){Object.keys(values).forEach(function(k){n.nodeValue=window.ILATEK_LINKS.replace(n.nodeValue,k,values[k])})});
     Array.prototype.forEach.call(root.querySelectorAll('*'),function(el){Array.prototype.forEach.call(el.attributes||[],function(a){var v=a.value;Object.keys(values).forEach(function(k){v=window.ILATEK_LINKS.replace(v,k,values[k])});if(v!==a.value)el.setAttribute(a.name,v)})});
     var schema=root.querySelector('script[type="application/ld+json"]');
-    if(schema){try{var data=JSON.parse(window.ILATEK_LINKS.replace(schema.textContent.replace(/{{custom_values\.county_name_and_state}}/g,location),'{'+ '{custom_values.website_url}' +'}',website));schema.textContent=JSON.stringify(data)}catch(e){}}
+    if(schema){try{var data=JSON.parse(window.ILATEK_LINKS.replace(schema.textContent.replace(/{{custom_values\.business__county_name}}/g,location),'{'+ '{custom_values.website_url}' +'}',website));schema.textContent=JSON.stringify(data)}catch(e){}}
   })();
   </script>
 </section>

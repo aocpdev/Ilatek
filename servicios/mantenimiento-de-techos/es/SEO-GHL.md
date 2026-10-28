@@ -11,7 +11,7 @@ Mantenimiento Preventivo de Techos en {{custom_values.county_name_and_state}} | 
 ## Meta Tag Description
 
 ```text
-Mantenimiento preventivo de techos en {{custom_values.county_name_and_state}} desde $58 al mes. Visitas programadas de inspección, limpieza y sellado preventivo. Garantía escrita. 78 municipios.
+Mantenimiento preventivo de techos en {{custom_values.county_name_and_state}} desde $250 por labor. Visitas programadas de inspección, limpieza y sellado preventivo. Garantía escrita. 78 municipios.
 ```
 
 ## Meta Tag Image

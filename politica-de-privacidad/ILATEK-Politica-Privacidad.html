@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ILATEK Property Solutions — Política de Privacidad en {{custom_values.county_name_and_state}}</title>
+<title>ILATEK Property Solutions — Política de Privacidad en {{custom_values.business__county_name}}</title>
 <style>
   :root {
     --navy: #0F224A;
@@ -344,7 +344,8 @@
     var fallbacks={
       '{{custom_values.website_url}}':'https://ilatekpr.com',
       '{{custom_values.business__email}}':'',
-      '{{custom_values.business__phone}}':''
+      '{{custom_values.business__phone}}':'',
+      '{{custom_values.business__county_name}}':'Puerto Rico'
     };
     var unresolved=0;
     var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),nodes=[],n;
@@ -355,6 +356,16 @@
           unresolved++;
           node.nodeValue=node.nodeValue.split(token).join(fallbacks[token]);
         }
+      });
+    });
+    /* <title> queda fuera del walker del body: reemplazo directo */
+    var titleEl=document.querySelector('head > title');
+    if(titleEl){Object.keys(fallbacks).forEach(function(token){titleEl.textContent=titleEl.textContent.split(token).join(fallbacks[token])});}
+    /* href/src también llevan tokens (mailto:/tel:): reescritura de atributos */
+    Array.prototype.forEach.call(document.body.querySelectorAll('[href],[src]'),function(el){
+      var a=el.getAttributeNode('href')||el.getAttributeNode('src'); if(!a)return;
+      Object.keys(fallbacks).forEach(function(token){
+        if(a.value.indexOf(token)!==-1){a.value=a.value.split(token).join(fallbacks[token]);}
       });
     });
     /* Oculta filas de contacto cuyos valores quedaron vacíos */

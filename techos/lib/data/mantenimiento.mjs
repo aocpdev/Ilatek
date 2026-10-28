@@ -12,7 +12,7 @@ export const mantenimiento = [
     h1after: '.',
     metaTitle: 'Inspección y Mantenimiento de Techos | Ilatek Techos',
     metaDescription:
-      'Inspección de techos gratis y mantenimiento preventivo en Puerto Rico desde $58 al mes. Limpieza de techos, canaletas, lavado a presión y más. 78 municipios.',
+      'Inspección de techos gratis y mantenimiento preventivo en Puerto Rico desde $250 por labor. Cotización $0 y $50 descontable del total para agendar. 78 municipios.',
     hero: pic('presion', {
       alt: 'Inspección y mantenimiento de techos de Ilatek Techos en Puerto Rico — {{custom_values.county_name_and_state}}',
       title: 'Inspección y mantenimiento de techos · Ilatek Techos',
@@ -24,10 +24,10 @@ export const mantenimiento = [
       caption: 'Inspección · Limpieza del techo · Prevención',
     }),
     heroSub:
-      'El mejor momento para tu techo es antes de que falle. Ilatek inspecciona tu techo <b>gratis</b> y da mantenimiento preventivo en {{custom_values.county_name_and_state}} <b>desde $58 al mes</b>, con limpieza, canaletas, lavado y garantía escrita.',
+      'El mejor momento para tu techo es antes de que falle. Ilatek inspecciona tu techo <b>gratis</b> y da mantenimiento preventivo en {{custom_values.county_name_and_state}} <b>desde $250 por labor</b>, con limpieza, canaletas, lavado y garantía escrita.',
     facts: [
-      { b: '$0', s: 'inspección', label: 'Diagnóstico gratis' },
-      { b: '$58', s: 'al mes', label: 'Plan de mantenimiento' },
+      { b: '$250', s: 'por labor', label: 'Mantenimiento' },
+      { b: '$0', s: 'cotización', label: 'Inspección gratis' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
     ],
     benefits: [
@@ -36,6 +36,10 @@ export const mantenimiento = [
       { icon: 'drop', h: 'Todo el techo cuidado', p: 'Limpieza, canaletas, desagües, lavado y sellado preventivo: un solo responsable para el cuidado de tu techo.' },
     ],
     benTitle: 'Cuida tu techo antes de que te cueste caro.',
+    // Cierre propio de esta landing: la cotización es $0 y el depósito de $50 se
+    // descuenta del total al agendar (mismo dato que su meta description).
+    ctaText:
+      'Solicita tu cotización gratis de inspección y mantenimiento de techos en {{custom_values.county_name_and_state}} y recibe precio claro y por escrito — cotización $0 y $50 descontable del total para agendar, con cobertura en los 78 municipios de Puerto Rico.',
     incluye: {
       title: 'Qué incluye el cuidado de tu techo.',
       answer:
@@ -55,7 +59,7 @@ export const mantenimiento = [
       title: 'Todo lo que necesita tu techo.',
       kids: [
         { slug: 'inspeccion-de-techos', name: 'Inspección de Techos', desc: 'Evaluación completa y gratis de tu techo, con informe fotográfico y recomendaciones.' },
-        { slug: 'mantenimiento-de-techos', name: 'Mantenimiento Preventivo', desc: 'Plan de visitas periódicas desde $58 al mes para mantener tu techo protegido.' },
+        { slug: 'mantenimiento-de-techos', name: 'Mantenimiento Preventivo', desc: 'Plan de visitas periódicas desde $250 por labor para mantener tu techo protegido.' },
         { slug: 'limpieza-de-techos-y-canaletas', name: 'Limpieza de Techos y Canaletas', desc: 'Removemos hojas, arena y escombros que obstruyen el drenaje de tu techo.' },
         { slug: 'canaletas-y-bajantes', name: 'Canaletas y Bajantes', desc: 'Limpieza, reparación e instalación de canaletas y bajantes para que el agua corra.' },
         { slug: 'lavado-a-presion-techos', name: 'Lavado a Presión de Techos', desc: 'Limpieza profunda a presión que prepara y alarga la vida del techo.' },
@@ -65,14 +69,14 @@ export const mantenimiento = [
       cta: { slug: 'cotizacion', label: 'Solicita tu cotización gratis' },
     },
     faq: [
-      { q: '¿Cuánto cuesta inspeccionar y dar mantenimiento a un techo?', a: 'La <b>inspección de techos de Ilatek es gratis</b>. El mantenimiento preventivo comienza <b>desde $58 al mes</b> y varía según el tamaño del techo y las visitas necesarias. Cotiza para tu plan.' },
+      { q: '¿Cuánto cuesta inspeccionar y dar mantenimiento a un techo?', a: 'La <b>inspección de techos de Ilatek es gratis</b>. El mantenimiento preventivo comienza <b>desde $250 por labor</b> y varía según el tamaño del techo y el trabajo necesario. Cotiza para tu plan.' },
       { q: '¿Cuántas veces al año debo darle mantenimiento al techo?', a: 'Recomendamos <b>al menos una inspección anual</b> y limpieza de canaletas dos veces al año. Techos en zonas costeras o con árboles cerca pueden necesitar más frecuencia.' },
       { q: '¿Por qué dar mantenimiento si mi techo está bien?', a: 'Porque <b>prevenir cuesta mucho menos que reparar</b>. El mantenimiento detecta fallas tempranas, cuando aún son baratas, y evita goteras y daños estructurales.' },
       { q: '¿El plan de mantenimiento incluye reparaciones?', a: 'El plan incluye <b>inspección, limpieza, desagües y sellado preventivo</b>. Las reparaciones mayores se cotizan por separado, pero como cliente del plan tienes prioridad y visitas programadas.' },
       { q: '¿Qué revisan en la inspección de techos?', a: 'Revisamos <b>grietas, selladores vencidos, empozamientos, desagües, canaletas, uniones y remates</b>. Te entregamos un informe con fotos y las recomendaciones por prioridad.' },
       { q: '¿La inspección tiene algún costo o compromiso?', a: '<b>No.</b> La inspección es gratis y sin compromiso: te explicamos el estado de tu techo y las opciones, y decides con calma.' },
       { q: '¿Ofrecen mantenimiento a negocios y comercios?', a: 'Sí: planes de mantenimiento para <b>techos comerciales e industriales</b>, con visitas programadas y documentación para tu expediente.' },
-      { q: '¿Por qué elegir Ilatek Techos?', a: 'Inspección gratis, mantenimiento <b>desde $58 al mes</b>, limpieza, canaletas y lavado en un solo proveedor, con garantía escrita y cobertura en los 78 municipios de Puerto Rico.' },
+      { q: '¿Por qué elegir Ilatek Techos?', a: 'Inspección gratis, mantenimiento <b>desde $250 por labor</b>, limpieza, canaletas y lavado en un solo proveedor, con garantía escrita y cobertura en los 78 municipios de Puerto Rico.' },
     ],
   }),
 
@@ -141,23 +145,23 @@ export const mantenimiento = [
     noun: 'mantenimiento de techos',
     h1before: 'Mantenimiento Preventivo de Techos en',
     h1em: 'Puerto Rico',
-    h1after: ' desde $58 al mes.',
+    h1after: ' desde $250 por labor.',
     metaTitle: 'Mantenimiento Preventivo de Techos | Ilatek Techos',
     metaDescription:
-      'Mantenimiento preventivo de techos en Puerto Rico desde $58 al mes. Visitas programadas de inspección, limpieza y sellado preventivo. Garantía escrita. 78 municipios.',
-    hero: pic('postconstruccion', { alt: 'Mantenimiento preventivo de techos en Puerto Rico — {{custom_values.county_name_and_state}}', title: 'Mantenimiento de techos · Ilatek Techos', badge: 'Desde $58/mes' }),
+      'Mantenimiento preventivo de techos en Puerto Rico desde $250 por labor. Visitas programadas de inspección, limpieza y sellado preventivo. Garantía escrita. 78 municipios.',
+    hero: pic('postconstruccion', { alt: 'Mantenimiento preventivo de techos en Puerto Rico — {{custom_values.county_name_and_state}}', title: 'Mantenimiento de techos · Ilatek Techos', badge: 'Desde $250 por labor' }),
     incl: pic('presion', { alt: 'Plan de mantenimiento de techo por Ilatek Techos en Puerto Rico — visitas programadas', title: 'Mantenimiento preventivo · Ilatek Techos', caption: 'Visitas programadas · Techo al día' }),
     heroSub:
-      'Un plan de mantenimiento mantiene tu techo sano y detecta problemas antes de que sean caros. Ilatek ofrece mantenimiento preventivo en {{custom_values.county_name_and_state}} <b>desde $58 al mes</b>, con visitas programadas e informe fotográfico.',
+      'Un plan de mantenimiento mantiene tu techo sano y detecta problemas antes de que sean caros. Ilatek ofrece mantenimiento preventivo en {{custom_values.county_name_and_state}} <b>desde $250 por labor</b>, con visitas programadas e informe fotográfico.',
     facts: [
-      { b: '$58', s: 'al mes', label: 'Plan preventivo' },
+      { b: '$250', s: 'por labor', label: 'Plan preventivo' },
       { b: '2', s: 'visitas/año', label: 'Programadas' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
     ],
     benefits: [
       { icon: 'clock', h: 'Cero sorpresas', p: 'Con visitas programadas detectamos fallas antes de que se conviertan en goteras y gastos grandes.' },
       { icon: 'shield', h: 'Prioridad de servicio', p: 'Como cliente del plan tienes atención prioritaria cuando el techo presenta cualquier problema.' },
-      { icon: 'tag', h: 'Pago mensual accesible', p: 'Repartes el cuidado de tu techo en una cuota mensual desde $58, sin un gasto grande de una sola vez.' },
+      { icon: 'tag', h: 'Precio por labor', p: 'Pagas por el trabajo que tu techo necesita, desde $250 por labor, con visitas programadas y sin sorpresas.' },
     ],
     incluye: {
       title: 'Qué incluye el plan de mantenimiento.',
@@ -183,14 +187,14 @@ export const mantenimiento = [
       ],
     },
     faq: [
-      { q: '¿Cuánto cuesta el mantenimiento de un techo?', a: 'El plan de mantenimiento preventivo de Ilatek <b>comienza desde $58 al mes</b>. El precio depende del tamaño del techo y de la frecuencia de visitas. Te cotizamos el plan a tu medida.' },
+      { q: '¿Cuánto cuesta el mantenimiento de un techo?', a: 'El mantenimiento preventivo de Ilatek <b>comienza desde $250 por labor</b>. El precio depende del tamaño del techo y del alcance de la visita. Te cotizamos a tu medida.' },
       { q: '¿Qué incluye el plan de mantenimiento?', a: 'Incluye <b>inspecciones programadas, limpieza de superficie y desagües, limpieza de canaletas y sellado preventivo de fallas menores</b>, con un informe fotográfico después de cada visita.' },
       { q: '¿Vale la pena el mantenimiento preventivo?', a: '<b>Sí.</b> Prevenir cuesta mucho menos que reparar: el mantenimiento detecta fallas cuando son baratas y evita goteras, daños estructurales y reparaciones de miles de dólares.' },
       { q: '¿Cuántas visitas al año incluye?', a: 'Depende del plan: normalmente <b>una a tres visitas al año</b>. En zonas con muchos árboles o en la costa, recomendamos más frecuencia.' },
       { q: '¿El plan cubre reparaciones mayores?', a: 'El plan cubre <b>prevención y fallas menores</b>. Las reparaciones mayores se cotizan aparte, pero los clientes del plan tienen prioridad de agenda y precio preferente.' },
       { q: '¿Hay contrato de permanencia?', a: 'Te explicamos las condiciones <b>con transparencia antes de firmar</b>. El objetivo es que el plan te convenga; no buscamos atarte con letra pequeña.' },
       { q: '¿Ofrecen planes para negocios?', a: 'Sí: <b>planes comerciales e industriales</b> con visitas programadas y documentación, para mantener el techo de tu operación en buen estado.' },
-      { q: '¿Por qué elegir Ilatek Techos?', a: 'Mantenimiento preventivo <b>desde $58 al mes</b>, visitas programadas, informe fotográfico, prioridad de servicio y cobertura en los 78 municipios de Puerto Rico.' },
+      { q: '¿Por qué elegir Ilatek Techos?', a: 'Mantenimiento preventivo <b>desde $250 por labor</b>, visitas programadas, informe fotográfico, prioridad de servicio y cobertura en los 78 municipios de Puerto Rico.' },
     ],
   }),
 

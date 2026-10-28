@@ -3,7 +3,7 @@
 export const FAQ_SOURCES = {
   "home": [
     {
-      "q": "¿Cuánto cuesta una limpieza residencial en Puerto Rico?",
+      "q": "¿Cuánto cuesta una limpieza residencial en {{custom_values.business__county_name}}?",
       "a": "En Ilatek el precio se calcula por pies cuadrados: la <b>limpieza estándar cuesta $0.07 por pie²</b> y la <b>limpieza profunda $0.15 por pie²</b>. Por ejemplo, una casa de 2,000 pies² cuesta $140 estándar o $300 profunda. Los extras (ventanas, refrigerador, alfombras) se suman con precio fijo. Con nuestro cotizador online ves el <b>precio real en minutos</b>, sin llamadas ni estimados al azar."
     },
     {
@@ -16,7 +16,7 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Atienden mi área en Puerto Rico?",
-      "a": "Sí. Ilatek atiende hogares en los <b>78 municipios de Puerto Rico</b>, incluyendo {{custom_values.county_name_and_state}} y toda la isla. Cada servicio se coordina según las necesidades de tu espacio. Visita la página de tu pueblo o solicita tu cotización para confirmar disponibilidad en tu zona."
+      "a": "Sí. Ilatek atiende hogares en los <b>78 municipios de Puerto Rico</b>, incluyendo {{custom_values.business__county_name}} y toda la isla. Cada servicio se coordina según las necesidades de tu espacio. Visita la página de tu pueblo o solicita tu cotización para confirmar disponibilidad en tu zona."
     },
     {
       "q": "¿Cómo obtengo mi precio real al instante?",
@@ -45,7 +45,7 @@ export const FAQ_SOURCES = {
   ],
   "home-opt": [
     {
-      "q": "¿Cuánto cuesta una limpieza residencial en Puerto Rico?",
+      "q": "¿Cuánto cuesta una limpieza residencial en {{custom_values.business__county_name}}?",
       "a": "En Ilatek el precio se calcula por pies cuadrados: la <b>limpieza estándar cuesta $0.07 por pie²</b> y la <b>limpieza profunda $0.15 por pie²</b>. Por ejemplo, una casa de 2,000 pies² cuesta $140 estándar o $300 profunda. Los extras (ventanas, refrigerador, alfombras) se suman con precio fijo. Con nuestro cotizador online ves el <b>precio real en minutos</b>, sin llamadas ni estimados al azar."
     },
     {
@@ -58,7 +58,7 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Atienden mi área en Puerto Rico?",
-      "a": "Sí. Ilatek atiende hogares en los <b>78 municipios de Puerto Rico</b>, incluyendo {{custom_values.county_name_and_state}} y toda la isla. Cada servicio se coordina según las necesidades de tu espacio. Visita la página de tu pueblo o solicita tu cotización para confirmar disponibilidad en tu zona."
+      "a": "Sí. Ilatek atiende hogares en los <b>78 municipios de Puerto Rico</b>, incluyendo {{custom_values.business__county_name}} y toda la isla. Cada servicio se coordina según las necesidades de tu espacio. Visita la página de tu pueblo o solicita tu cotización para confirmar disponibilidad en tu zona."
     },
     {
       "q": "¿Cómo obtengo mi precio real al instante?",
@@ -87,7 +87,7 @@ export const FAQ_SOURCES = {
   ],
   "faq-embed": [
     {
-      "q": "¿Cuánto cuesta una limpieza residencial en Puerto Rico?",
+      "q": "¿Cuánto cuesta una limpieza residencial en {{custom_values.business__county_name}}?",
       "a": "En Ilatek el precio se calcula por pies cuadrados: la <b>limpieza estándar cuesta $0.07 por pie²</b> y la <b>limpieza profunda $0.15 por pie²</b>. Por ejemplo, una casa de 2,000 pies² cuesta $140 estándar o $300 profunda. Los extras (ventanas, refrigerador, alfombras) se suman con precio fijo. Con nuestro cotizador online ves el <b>precio real en minutos</b>, sin llamadas ni estimados al azar."
     },
     {
@@ -100,7 +100,7 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Atienden mi área en Puerto Rico?",
-      "a": "Sí. Ilatek atiende hogares en los <b>78 municipios de Puerto Rico</b>, incluyendo {{custom_values.county_name_and_state}} y toda la isla. Cada servicio se coordina según las necesidades de tu espacio. Visita la página de tu pueblo o solicita tu cotización para confirmar disponibilidad en tu zona."
+      "a": "Sí. Ilatek atiende hogares en los <b>78 municipios de Puerto Rico</b>, incluyendo {{custom_values.business__county_name}} y toda la isla. Cada servicio se coordina según las necesidades de tu espacio. Visita la página de tu pueblo o solicita tu cotización para confirmar disponibilidad en tu zona."
     },
     {
       "q": "¿Cómo obtengo mi precio real al instante?",
@@ -129,7 +129,7 @@ export const FAQ_SOURCES = {
   ],
   "servicios": [
     {
-      "q": "¿Cuánto cuesta un servicio de limpieza en Puerto Rico?",
+      "q": "¿Cuánto cuesta un servicio de limpieza en {{custom_values.business__county_name}}?",
       "a": "En Ilatek el precio se calcula por pies cuadrados: la <b>limpieza estándar cuesta $0.07 por pie²</b> y la <b>limpieza profunda $0.15 por pie²</b>. Una casa de 2,000 pies² cuesta $140 estándar o $300 profunda. Los extras (ventanas, refrigerador, alfombras) se suman con precio fijo. Con nuestro <a href=\"https://ilatekpr.com/cotizacion\">cotizador online</a> ves el precio real en minutos."
     },
     {
@@ -142,7 +142,7 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Atienden mi área de Puerto Rico?",
-      "a": "Sí. Ilatek brinda todos sus servicios en los <b>78 municipios de Puerto Rico</b>, incluyendo {{custom_values.county_name_and_state}}. Busca tu pueblo en la sección de cobertura de esta página o solicita tu cotización para confirmar disponibilidad en tu zona."
+      "a": "Sí. Ilatek brinda todos sus servicios en los <b>78 municipios de Puerto Rico</b>, incluyendo {{custom_values.business__county_name}}. Busca tu pueblo en la sección de cobertura de esta página o solicita tu cotización para confirmar disponibilidad en tu zona."
     },
     {
       "q": "¿Cómo obtengo el precio de mi servicio al instante?",
@@ -171,7 +171,7 @@ export const FAQ_SOURCES = {
   ],
   "airbnb": [
     {
-      "q": "¿Cuánto se cobra por la limpieza de un Airbnb en Puerto Rico?",
+      "q": "¿Cuánto se cobra por la limpieza de un Airbnb en {{custom_values.business__county_name}}?",
       "a": "El precio depende del tamaño de la unidad y el alcance del turnover. Usa el cotizador y recibe tu número real en minutos — la <b>tarifa de limpieza</b> que cobras al huésped puede cubrirlo. Precio claro y por escrito, sin compromiso."
     },
     {
@@ -200,12 +200,12 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Por qué elegir Ilatek para tu Airbnb?",
-      "a": "Reseñas protegidas con limpieza guest-ready, sincronización con tu calendario de reservas, precio real en minutos, depósito de $50 descontable y cobertura en los 78 municipios. Tus huéspedes llegan a una unidad impecable en {{custom_values.county_name_and_state}}."
+      "a": "Reseñas protegidas con limpieza guest-ready, sincronización con tu calendario de reservas, precio real en minutos, depósito de $50 descontable y cobertura en los 78 municipios. Tus huéspedes llegan a una unidad impecable en {{custom_values.business__county_name}}."
     }
   ],
   "alfombras": [
     {
-      "q": "¿Cuánto cuesta la limpieza de alfombras en Puerto Rico?",
+      "q": "¿Cuánto cuesta la limpieza de alfombras en {{custom_values.business__county_name}}?",
       "a": "Ilatek cobra <b>$0.75 por pie²</b>: el precio depende solo del tamaño de tu alfombra o área de moqueta. Usa el cotizador y recibe tu número real en minutos — precio claro y por escrito, sin compromiso."
     },
     {
@@ -234,12 +234,12 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Por qué elegir Ilatek para tus alfombras?",
-      "a": "Precio transparente por pie² ($0.75), proceso completo de 5 pasos con vapor, tratamiento enzimático de olores, secado acelerado de 6–12 horas, depósito de $50 descontable y cobertura en los 78 municipios. Frescor bajo tus pies en {{custom_values.county_name_and_state}}."
+      "a": "Precio transparente por pie² ($0.75), proceso completo de 5 pasos con vapor, tratamiento enzimático de olores, secado acelerado de 6–12 horas, depósito de $50 descontable y cobertura en los 78 municipios. Frescor bajo tus pies en {{custom_values.business__county_name}}."
     }
   ],
   "electrodomesticos": [
     {
-      "q": "¿Cuánto cuesta la limpieza de electrodomésticos en Puerto Rico?",
+      "q": "¿Cuánto cuesta la limpieza de electrodomésticos en {{custom_values.business__county_name}}?",
       "a": "Precios publicados por enser: <b>refrigerador $40 · horno $30 · lavaplatos, lavadora y secadora $10 c/u</b>. Elige los tuyos y recibe tu total en minutos en el cotizador — precio claro y por escrito, sin compromiso."
     },
     {
@@ -268,12 +268,12 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Por qué elegir Ilatek para tus enseres?",
-      "a": "Precios por enser publicados (desde $10), limpieza por dentro y por fuera, desinfección apta para alimentos, precio real en minutos, depósito de $50 descontable y cobertura en los 78 municipios. Cocina como nueva en {{custom_values.county_name_and_state}}."
+      "a": "Precios por enser publicados (desde $10), limpieza por dentro y por fuera, desinfección apta para alimentos, precio real en minutos, depósito de $50 descontable y cobertura en los 78 municipios. Cocina como nueva en {{custom_values.business__county_name}}."
     }
   ],
   "limpieza-comercial": [
     {
-      "q": "¿Cuánto se cobra por limpiar oficinas en Puerto Rico?",
+      "q": "¿Cuánto se cobra por limpiar oficinas en {{custom_values.business__county_name}}?",
       "a": "Depende del tamaño del espacio, la cantidad de baños, la condición y la frecuencia. Ilatek cotiza tu oficina con <b>precio claro y por escrito</b> — usa el cotizador o solicita tu cotización y recibe tu número real en minutos, sin compromiso."
     },
     {
@@ -290,7 +290,7 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Cubren mi área en Puerto Rico?",
-      "a": "Sí. Ilatek atiende negocios en los <b>78 municipios de Puerto Rico</b>, incluyendo {{custom_values.county_name_and_state}} y el área metropolitana. Cotiza tu espacio y confirma tu plan en minutos."
+      "a": "Sí. Ilatek atiende negocios en los <b>78 municipios de Puerto Rico</b>, incluyendo {{custom_values.business__county_name}} y el área metropolitana. Cotiza tu espacio y confirma tu plan en minutos."
     },
     {
       "q": "¿Hay contrato o compromiso mínimo?",
@@ -302,12 +302,12 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Por qué elegir Ilatek para la limpieza de mi negocio?",
-      "a": "Horario flexible que no interrumpe tu operación, precio claro por escrito, cobertura en los 78 municipios y un equipo profesional supervisado. Tu negocio siempre presentable en {{custom_values.county_name_and_state}}."
+      "a": "Horario flexible que no interrumpe tu operación, precio claro por escrito, cobertura en los 78 municipios y un equipo profesional supervisado. Tu negocio siempre presentable en {{custom_values.business__county_name}}."
     }
   ],
   "limpieza-de-mudanza": [
     {
-      "q": "¿Cuánto cuesta la limpieza de mudanza en Puerto Rico?",
+      "q": "¿Cuánto cuesta la limpieza de mudanza en {{custom_values.business__county_name}}?",
       "a": "Ilatek cobra <b>precio real en minutos</b> para la limpieza de mudanza: el precio depende del tamaño de tu hogar. Usa el cotizador y recibe tu número real en minutos — precio claro y por escrito, sin compromiso."
     },
     {
@@ -324,7 +324,7 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Cubren mi área en Puerto Rico?",
-      "a": "Sí. Ilatek atiende hogares en los <b>78 municipios de Puerto Rico</b>, incluyendo {{custom_values.county_name_and_state}} — urbanizaciones, condominios y apartamentos. Cotiza tu hogar y confirma tu plan en minutos."
+      "a": "Sí. Ilatek atiende hogares en los <b>78 municipios de Puerto Rico</b>, incluyendo {{custom_values.business__county_name}} — urbanizaciones, condominios y apartamentos. Cotiza tu hogar y confirma tu plan en minutos."
     },
     {
       "q": "¿Hay contrato o compromiso mínimo?",
@@ -336,12 +336,12 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Por qué elegir Ilatek para la limpieza de tu hogar?",
-      "a": "Precio real en minutos con el cotizador, limpieza de unidad vacía de arriba a abajo, coordinación exacta con tu fecha de mudanza, depósito de $50 descontable y cobertura en los 78 municipios. Tu entrega sin pendientes en {{custom_values.county_name_and_state}}."
+      "a": "Precio real en minutos con el cotizador, limpieza de unidad vacía de arriba a abajo, coordinación exacta con tu fecha de mudanza, depósito de $50 descontable y cobertura en los 78 municipios. Tu entrega sin pendientes en {{custom_values.business__county_name}}."
     }
   ],
   "limpieza-estandar": [
     {
-      "q": "¿Cuánto cuesta la limpieza estándar en Puerto Rico?",
+      "q": "¿Cuánto cuesta la limpieza estándar en {{custom_values.business__county_name}}?",
       "a": "Ilatek cobra <b>$0.07 por pie²</b>: el precio depende solo del tamaño de tu hogar y la frecuencia que elijas. Usa el cotizador y recibe tu número real en minutos — precio claro y por escrito, sin compromiso."
     },
     {
@@ -358,7 +358,7 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Cubren mi área en Puerto Rico?",
-      "a": "Sí. Ilatek atiende hogares en los <b>78 municipios de Puerto Rico</b>, incluyendo {{custom_values.county_name_and_state}} — urbanizaciones, condominios y apartamentos. Cotiza tu hogar y confirma tu plan en minutos."
+      "a": "Sí. Ilatek atiende hogares en los <b>78 municipios de Puerto Rico</b>, incluyendo {{custom_values.business__county_name}} — urbanizaciones, condominios y apartamentos. Cotiza tu hogar y confirma tu plan en minutos."
     },
     {
       "q": "¿Hay contrato o compromiso mínimo?",
@@ -370,12 +370,12 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Por qué elegir Ilatek para la limpieza de tu hogar?",
-      "a": "Precio claro por pie² ($0.07), cotizador con precio real en minutos, equipo puntual y confiable, depósito de $50 descontable y cobertura en los 78 municipios. Tu hogar siempre fresco en {{custom_values.county_name_and_state}}."
+      "a": "Precio claro por pie² ($0.07), cotizador con precio real en minutos, equipo puntual y confiable, depósito de $50 descontable y cobertura en los 78 municipios. Tu hogar siempre fresco en {{custom_values.business__county_name}}."
     }
   ],
   "limpieza-industrial": [
     {
-      "q": "¿Cuánto cuesta la limpieza industrial en Puerto Rico?",
+      "q": "¿Cuánto cuesta la limpieza industrial en {{custom_values.business__county_name}}?",
       "a": "Depende del tamaño de la instalación, el tipo de superficie, la condición (grasa, polvo, residuos) y la frecuencia. Ilatek cotiza con <b>precio claro y por escrito</b> — usa el cotizador o solicita tu cotización y recibe tu número real en minutos, sin compromiso."
     },
     {
@@ -392,7 +392,7 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Cubren mi zona industrial en Puerto Rico?",
-      "a": "Sí. Ilatek atiende instalaciones en los <b>78 municipios de Puerto Rico</b>, incluyendo {{custom_values.county_name_and_state}} y los parques industriales del área metropolitana. Cotiza tu instalación y confirma tu plan en minutos."
+      "a": "Sí. Ilatek atiende instalaciones en los <b>78 municipios de Puerto Rico</b>, incluyendo {{custom_values.business__county_name}} y los parques industriales del área metropolitana. Cotiza tu instalación y confirma tu plan en minutos."
     },
     {
       "q": "¿Hay contrato o compromiso mínimo?",
@@ -404,12 +404,12 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Por qué elegir Ilatek para la limpieza de mi instalación?",
-      "a": "Trabajo sin detener tu producción, equipos industriales de verdad, seguridad de planta (EPP y coordinación con supervisión), precio claro por escrito y cobertura en los 78 municipios. Tu instalación siempre operativa en {{custom_values.county_name_and_state}}."
+      "a": "Trabajo sin detener tu producción, equipos industriales de verdad, seguridad de planta (EPP y coordinación con supervisión), precio claro por escrito y cobertura en los 78 municipios. Tu instalación siempre operativa en {{custom_values.business__county_name}}."
     }
   ],
   "limpieza-profunda": [
     {
-      "q": "¿Cuánto cuesta la limpieza profunda en Puerto Rico?",
+      "q": "¿Cuánto cuesta la limpieza profunda en {{custom_values.business__county_name}}?",
       "a": "Ilatek cobra <b>$0.15 por pie²</b> para la limpieza profunda: el precio depende del tamaño de tu hogar. Usa el cotizador y recibe tu número real en minutos — precio claro y por escrito, sin compromiso."
     },
     {
@@ -426,7 +426,7 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Cubren mi área en Puerto Rico?",
-      "a": "Sí. Ilatek atiende hogares en los <b>78 municipios de Puerto Rico</b>, incluyendo {{custom_values.county_name_and_state}} — urbanizaciones, condominios y apartamentos. Cotiza tu hogar y confirma tu plan en minutos."
+      "a": "Sí. Ilatek atiende hogares en los <b>78 municipios de Puerto Rico</b>, incluyendo {{custom_values.business__county_name}} — urbanizaciones, condominios y apartamentos. Cotiza tu hogar y confirma tu plan en minutos."
     },
     {
       "q": "¿Hay contrato o compromiso mínimo?",
@@ -438,12 +438,12 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Por qué elegir Ilatek para la limpieza de tu hogar?",
-      "a": "Precio claro por pie² ($0.15), cotizador con precio real en minutos, equipo puntual y confiable, depósito de $50 descontable y cobertura en los 78 municipios. Tu hogar siempre fresco en {{custom_values.county_name_and_state}}."
+      "a": "Precio claro por pie² ($0.15), cotizador con precio real en minutos, equipo puntual y confiable, depósito de $50 descontable y cobertura en los 78 municipios. Tu hogar siempre fresco en {{custom_values.business__county_name}}."
     }
   ],
   "limpieza-residencial": [
     {
-      "q": "¿Cuánto se cobra por limpiar una casa en Puerto Rico?",
+      "q": "¿Cuánto se cobra por limpiar una casa en {{custom_values.business__county_name}}?",
       "a": "Depende del tamaño y del tipo de limpieza. Ilatek cobra <b>$0.07 por pie cuadrado</b> para limpieza regular y <b>$0.15 por pie cuadrado</b> para limpieza profunda — sin sorpresas. Con el cotizador de ilatekpr.com ves tu precio real en minutos antes de reservar."
     },
     {
@@ -456,7 +456,7 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Cubren mi área en Puerto Rico?",
-      "a": "Sí. Ilatek cubre los <b>78 municipios de Puerto Rico</b>, incluyendo {{custom_values.county_name_and_state}} y su área metropolitana. Reserva desde el cotizador y confirma tu fecha en minutos."
+      "a": "Sí. Ilatek cubre los <b>78 municipios de Puerto Rico</b>, incluyendo {{custom_values.business__county_name}} y su área metropolitana. Reserva desde el cotizador y confirma tu fecha en minutos."
     },
     {
       "q": "¿Necesito dejar productos o equipos listos?",
@@ -472,12 +472,12 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Por qué elegir Ilatek para la limpieza de mi hogar?",
-      "a": "Precio transparente por pie cuadrado, cotización instantánea, cobertura en los 78 municipios y un equipo profesional que llega con todo. Miles de pies cuadrados limpios en {{custom_values.county_name_and_state}} nos respaldan."
+      "a": "Precio transparente por pie cuadrado, cotización instantánea, cobertura en los 78 municipios y un equipo profesional que llega con todo. Miles de pies cuadrados limpios en {{custom_values.business__county_name}} nos respaldan."
     }
   ],
   "organizacion": [
     {
-      "q": "¿Cuánto cuesta la organización del hogar en Puerto Rico?",
+      "q": "¿Cuánto cuesta la organización del hogar en {{custom_values.business__county_name}}?",
       "a": "Precios publicados por espacio: <b>despensas y clósets $50 c/u · garaje $0.50 por pie²</b>. Elige los espacios y recibe tu total en minutos en el cotizador — precio claro y por escrito, sin compromiso."
     },
     {
@@ -506,12 +506,12 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Por qué elegir Ilatek para organizar tu hogar?",
-      "a": "Precios por espacio publicados (desde $50), sistemas de orden que permanecen, etiquetado incluido, precio real en minutos, depósito de $50 descontable y cobertura en los 78 municipios. Orden que permanece en {{custom_values.county_name_and_state}}."
+      "a": "Precios por espacio publicados (desde $50), sistemas de orden que permanecen, etiquetado incluido, precio real en minutos, depósito de $50 descontable y cobertura en los 78 municipios. Orden que permanece en {{custom_values.business__county_name}}."
     }
   ],
   "post-construccion": [
     {
-      "q": "¿Cuánto cuesta una limpieza post-construcción en Puerto Rico?",
+      "q": "¿Cuánto cuesta una limpieza post-construcción en {{custom_values.business__county_name}}?",
       "a": "Depende del tamaño del espacio, el nivel de polvo y residuos, y la fase en que entramos. Usa el cotizador y recibe tu número real en minutos — precio claro y por escrito, sin compromiso."
     },
     {
@@ -540,12 +540,12 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Por qué elegir Ilatek para tu post-construcción?",
-      "a": "Remoción real de polvo fino (no solo lo visible), detalle de adhesivos y vidrios, coordinación con tu contratista, precio real en minutos, depósito de $50 descontable y cobertura en los 78 municipios. Tu obra lista para habitar en {{custom_values.county_name_and_state}}."
+      "a": "Remoción real de polvo fino (no solo lo visible), detalle de adhesivos y vidrios, coordinación con tu contratista, precio real en minutos, depósito de $50 descontable y cobertura en los 78 municipios. Tu obra lista para habitar en {{custom_values.business__county_name}}."
     }
   ],
   "ventanas": [
     {
-      "q": "¿Cuánto cuesta la limpieza de ventanas en Puerto Rico?",
+      "q": "¿Cuánto cuesta la limpieza de ventanas en {{custom_values.business__county_name}}?",
       "a": "Ilatek cobra <b>$10 por ventana interior</b> y <b>$25 por ventana exterior</b>: el total depende de la cantidad y el tipo de ventana. Usa el cotizador y recibe tu número real en minutos — precio claro y por escrito, sin compromiso."
     },
     {
@@ -574,12 +574,12 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Por qué elegir Ilatek para tus ventanas?",
-      "a": "Precio claro por ventana ($10 interior / $25 exterior), técnica sin rayas, marcos y rieles incluidos, productos seguros para cualquier cristal, depósito de $50 descontable y cobertura en los 78 municipios. Tu vista clara en {{custom_values.county_name_and_state}}."
+      "a": "Precio claro por ventana ($10 interior / $25 exterior), técnica sin rayas, marcos y rieles incluidos, productos seguros para cualquier cristal, depósito de $50 descontable y cobertura en los 78 municipios. Tu vista clara en {{custom_values.business__county_name}}."
     }
   ],
   "lavado": [
     {
-      "q": "¿Cuánto cuesta el lavado a presión en Puerto Rico?",
+      "q": "¿Cuánto cuesta el lavado a presión en {{custom_values.business__county_name}}?",
       "a": "Depende de las superficies, el tamaño del área y el nivel de suciedad (moho, salitre, manchas). Usa el cotizador y recibe tu número real en minutos — precio claro y por escrito, sin compromiso."
     },
     {
@@ -608,12 +608,12 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Por qué elegir Ilatek para tus exteriores?",
-      "a": "PSI calibrado por superficie (no \"un PSI para todo\"), soft wash para lo delicado, equipo comercial completo, precio real en minutos, depósito de $50 descontable y cobertura en los 78 municipios. Exteriores como nuevos en {{custom_values.county_name_and_state}}."
+      "a": "PSI calibrado por superficie (no \"un PSI para todo\"), soft wash para lo delicado, equipo comercial completo, precio real en minutos, depósito de $50 descontable y cobertura en los 78 municipios. Exteriores como nuevos en {{custom_values.business__county_name}}."
     }
   ],
   "dental": [
     {
-      "q": "¿Cuánto cuesta una limpieza dental en Puerto Rico?",
+      "q": "¿Cuánto cuesta una limpieza dental en {{custom_values.business__county_name}}?",
       "a": "En Tu Sonrisa la <b>limpieza dental empieza en $75</b> e incluye detartraje con ultrasonido, pulido y flúor. El blanqueamiento empieza en $199, la endodoncia en $250 y los implantes en $850. Con nuestro evaluador online ves el <b>plan y el precio real en minutos</b>, sin llamadas ni estimados al azar."
     },
     {

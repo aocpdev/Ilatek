@@ -221,7 +221,7 @@ body:has(#ilatek-nav) .mshero-inner{
 (function(w){
   'use strict';
   if(w.ILATEK_GEO)return;
-  var token='{'+'{custom_values.county_name_and_state}'+'}',doc=w.document;
+  var token='{'+'{custom_values.business__county_name}'+'}',doc=w.document;
   function clean(v){v=String(v||'').replace(/\u00a0/g,' ').trim();return /\{\{|\}\}/.test(v)?'':v}
   function county(){
     var declared=doc.querySelectorAll('.dv-ghl-values,#dv-ghl-values'),nodes=declared.length?declared:doc.querySelectorAll('p'),values=[];
@@ -324,8 +324,8 @@ body:has(#ilatek-nav) .mshero-inner{
   (schema FAQPage) y CTA con calendario. No reemplaza al embed standalone
   resenas/ghl-resenas-embed.html, que sigue usándose en las landings.
 -->
-<section id="ilatek-resenas-lp" aria-label="Reseñas y confianza de Ilatek {{custom_values.county_name_and_state}}"
-  data-location-label="{{custom_values.county_name_and_state}}"
+<section id="ilatek-resenas-lp" aria-label="Reseñas y confianza de Ilatek {{custom_values.business__county_name}}"
+  data-location-label="{{custom_values.business__county_name}}"
   data-website-url="{{custom_values.website_url}}"
   data-business-email="{{custom_values.business__email}}"
   data-business-phone="{{custom_values.business__phone}}"
@@ -529,7 +529,7 @@ html,body{overflow-x:clip}
 
     <!-- 1. HERO: imagen a ancho completo (100% del viewport), copy encima con scrim -->
     <header class="ilr-hero">
-      <img class="ilr-hero-img" src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab0a4884091fa65e6a1ce3d.jpg" loading="eager" decoding="async" fetchpriority="high" alt="Equipo de Ilatek Property Solution en {{custom_values.county_name_and_state}} — profesionales de limpieza y techos frente a las camionetas de la empresa" title="Ilatek Property Solution — servicio en {{custom_values.county_name_and_state}}" data-ilatek-local-alt="Equipo%20de%20Ilatek%20Property%20Solution%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D%20%E2%80%94%20profesionales%20de%20limpieza%20y%20techos%20frente%20a%20las%20camionetas%20de%20la%20empresa" data-ilatek-local-title="Ilatek%20Property%20Solution%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D">
+      <img class="ilr-hero-img" src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab0a4884091fa65e6a1ce3d.jpg" loading="eager" decoding="async" fetchpriority="high" alt="Equipo de Ilatek Property Solution en {{custom_values.business__county_name}} — profesionales de limpieza y techos frente a las camionetas de la empresa" title="Ilatek Property Solution — servicio en {{custom_values.business__county_name}}" data-ilatek-local-alt="Equipo%20de%20Ilatek%20Property%20Solution%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%E2%80%94%20profesionales%20de%20limpieza%20y%20techos%20frente%20a%20las%20camionetas%20de%20la%20empresa" data-ilatek-local-title="Ilatek%20Property%20Solution%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D">
       <span class="ilr-hero-scrim" aria-hidden="true"></span>
       <div class="ilr-shell ilr-hero-grid">
         <div class="ilr-hero-copy ilr-reveal">
@@ -617,6 +617,7 @@ html,body{overflow-x:clip}
       </div>
     </section>
 
+
     <!-- 5. FUNDADORES -->
     <section class="ilr-team" aria-labelledby="ilr-team-title">
       <div class="ilr-shell">
@@ -627,7 +628,7 @@ html,body{overflow-x:clip}
         </header>
         <div class="ilr-team-grid">
           <article class="ilr-person ilr-reveal">
-            <img src="https://aocpdev.github.io/Ilatek/assets/luis-cardec-512.webp" onerror="this.onerror=null;this.src='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab0a9feff484614db6e6ce7.png'" width="512" height="512" loading="lazy" decoding="async" alt="Luis A. Cardec, fundador de Ilatek en {{custom_values.county_name_and_state}}, Puerto Rico" title="Luis A. Cardec · Fundador de Ilatek — servicio en {{custom_values.county_name_and_state}}" data-ilatek-local-alt="Luis%20A.%20Cardec%2C%20fundador%20de%20Ilatek%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D%2C%20Puerto%20Rico" data-ilatek-local-title="Luis%20A.%20Cardec%20%C2%B7%20Fundador%20de%20Ilatek%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D">
+            <img src="https://aocpdev.github.io/Ilatek/assets/luis-cardec-512.webp" onerror="this.onerror=null;this.src='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab0a9feff484614db6e6ce7.png'" width="512" height="512" loading="lazy" decoding="async" alt="Luis A. Cardec, fundador de Ilatek en {{custom_values.business__county_name}}, Puerto Rico" title="Luis A. Cardec · Fundador de Ilatek — servicio en {{custom_values.business__county_name}}" data-ilatek-local-alt="Luis%20A.%20Cardec%2C%20fundador%20de%20Ilatek%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%2C%20Puerto%20Rico" data-ilatek-local-title="Luis%20A.%20Cardec%20%C2%B7%20Fundador%20de%20Ilatek%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D">
             <div>
               <h3>Luis A. Cardec</h3>
               <p>Fundador</p>
@@ -635,7 +636,7 @@ html,body{overflow-x:clip}
             </div>
           </article>
           <article class="ilr-person ilr-reveal">
-            <img src="https://aocpdev.github.io/Ilatek/assets/aida-cintron-512.webp" onerror="this.onerror=null;this.src='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab0aa1430b0f957ccb1b27d.png'" width="512" height="512" loading="lazy" decoding="async" alt="Aida Cintron, fundadora de Ilatek — limpieza residencial y comercial en {{custom_values.county_name_and_state}}, Puerto Rico" title="Aida Cintron · Fundadora de Ilatek — servicio en {{custom_values.county_name_and_state}}" data-ilatek-local-alt="Aida%20Cintron%2C%20fundadora%20de%20Ilatek%20%E2%80%94%20limpieza%20residencial%20y%20comercial%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D%2C%20Puerto%20Rico" data-ilatek-local-title="Aida%20Cintron%20%C2%B7%20Fundadora%20de%20Ilatek%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D">
+            <img src="https://aocpdev.github.io/Ilatek/assets/aida-cintron-512.webp" onerror="this.onerror=null;this.src='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab0aa1430b0f957ccb1b27d.png'" width="512" height="512" loading="lazy" decoding="async" alt="Aida Cintron, fundadora de Ilatek — limpieza residencial y comercial en {{custom_values.business__county_name}}, Puerto Rico" title="Aida Cintron · Fundadora de Ilatek — servicio en {{custom_values.business__county_name}}" data-ilatek-local-alt="Aida%20Cintron%2C%20fundadora%20de%20Ilatek%20%E2%80%94%20limpieza%20residencial%20y%20comercial%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%2C%20Puerto%20Rico" data-ilatek-local-title="Aida%20Cintron%20%C2%B7%20Fundadora%20de%20Ilatek%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D">
             <div>
               <h3>Aida Cintrón</h3>
               <p>Fundadora</p>
@@ -661,7 +662,7 @@ html,body{overflow-x:clip}
           <details class="ilr-faq-item"><summary><h3>¿Por qué piden un depósito de $50?</h3><span class="ilr-chevron" aria-hidden="true">▾</span></summary><p>El depósito <b>reserva tu fecha y bloquea el equipo</b> para tu zona. No es un cargo extra: <b>se descuenta del total</b> del servicio el día del trabajo. Si por nuestra causa no podemos asistir, se te reembolsa completo.</p></details>
           <details class="ilr-faq-item"><summary><h3>¿Quién entra a mi casa?</h3><span class="ilr-chevron" aria-hidden="true">▾</span></summary><p>Siempre <b>personal de Ilatek, uniformado e identificado</b>. Te confirmamos por mensaje los nombres del equipo que llegará y el horario. No cedemos tus llaves ni tu información a terceros.</p></details>
           <details class="ilr-faq-item"><summary><h3>¿Cuánto tardan en responderme?</h3><span class="ilr-chevron" aria-hidden="true">▾</span></summary><p>En horario laboral, <b>en minutos</b>: el cotizador de la web te da un precio real al instante, y por WhatsApp o llamada confirmamos detalles y agendamos. Para emergencias de goteras priorizamos la visita.</p></details>
-          <details class="ilr-faq-item"><summary><h3>¿Por qué confiar en Ilatek para mi casa o negocio?</h3><span class="ilr-chevron" aria-hidden="true">▾</span></summary><p>Porque combinamos <b>reseñas verificables de tres fuentes, garantía por escrito, precio claro y equipos propios</b> con el trato de una empresa local de {{custom_values.county_name_and_state}}. La confianza no la decimos nosotros — la respaldan quienes ya nos contrataron.</p></details>
+          <details class="ilr-faq-item"><summary><h3>¿Por qué confiar en Ilatek para mi casa o negocio?</h3><span class="ilr-chevron" aria-hidden="true">▾</span></summary><p>Porque combinamos <b>reseñas verificables de tres fuentes, garantía por escrito, precio claro y equipos propios</b> con el trato de una empresa local de {{custom_values.business__county_name}}. La confianza no la decimos nosotros — la respaldan quienes ya nos contrataron.</p></details>
         </div>
       </div>
     </section>
@@ -673,7 +674,7 @@ html,body{overflow-x:clip}
           <div class="ilr-cta-copy">
             <span class="ilr-cta-eyebrow">Cotización gratis</span>
             <h2 id="ilr-cta-title" class="ilr-display">Convierte la confianza en tu próximo servicio.</h2>
-            <p>Solicita tu cotización gratis en {{custom_values.county_name_and_state}}: precio claro por escrito, inspección sin costo cuando aplica y el respaldo de reseñas que ya leíste arriba.</p>
+            <p>Solicita tu cotización gratis en {{custom_values.business__county_name}}: precio claro por escrito, inspección sin costo cuando aplica y el respaldo de reseñas que ya leíste arriba.</p>
             <div class="ilr-cta-actions">
               <a class="ilr-button" href="https://{{custom_values.website_url}}/resenas#ilr-agenda" data-ilatek-path="/resenas#ilr-agenda" data-ilatek-anchor="ilr-agenda"><span>Agenda tu servicio</span><span aria-hidden="true">↗</span></a>
               <small>Respuesta en minutos · Sin compromiso</small>
@@ -694,7 +695,7 @@ html,body{overflow-x:clip}
         <header class="ilr-cal-head ilr-reveal">
           <span class="ilr-eyebrow">Agenda tu servicio</span>
           <h2 id="ilr-cal-title" class="ilr-display">¿Techos o limpieza? Agenda en minutos.</h2>
-          <p>Elige tu línea de servicio y reserva tu fecha y hora. Atendemos {{custom_values.county_name_and_state}} y los 78 municipios de Puerto Rico.</p>
+          <p>Elige tu línea de servicio y reserva tu fecha y hora. Atendemos {{custom_values.business__county_name}} y los 78 municipios de Puerto Rico.</p>
         </header>
         <div class="ilr-book ilr-reveal">
           <a class="ilr-book-card" data-line="techos" href="https://{{custom_values.website_url}}/cotizacion-techos" data-ilatek-path="/cotizacion-techos">
@@ -722,7 +723,7 @@ html,body{overflow-x:clip}
     function token(name){return '{'+'{custom_values.'+name+'}'+'}'}
     var county=clean(root.getAttribute('data-location-label'))||'Puerto Rico', website=clean(root.getAttribute('data-website-url'))||'https://ilatekpr.com';
     var values={};
-    values[token('county_name_and_state')]=county;
+    values[token('business__county_name')]=county;
     values[token('website_url')]=website;
     values[token('business__email')]=clean(root.getAttribute('data-business-email'));
     values[token('business__phone')]=clean(root.getAttribute('data-business-phone'));

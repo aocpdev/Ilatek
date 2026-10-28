@@ -221,7 +221,7 @@ body:has(#ilatek-nav) .mshero-inner{
 (function(w){
   'use strict';
   if(w.ILATEK_GEO)return;
-  var token='{'+'{custom_values.county_name_and_state}'+'}',doc=w.document;
+  var token='{'+'{custom_values.business__county_name}'+'}',doc=w.document;
   function clean(v){v=String(v||'').replace(/\u00a0/g,' ').trim();return /\{\{|\}\}/.test(v)?'':v}
   function county(){
     var declared=doc.querySelectorAll('.dv-ghl-values,#dv-ghl-values'),nodes=declared.length?declared:doc.querySelectorAll('p'),values=[];
@@ -437,7 +437,7 @@ body:has(#ilatek-nav) .mshero-inner{
 
   <div class="iln-shell">
     <a class="iln-brand" href="https://{{custom_values.website_url}}/home" data-ilatek-path="/home" aria-label="Ilatek, inicio">
-      <img src="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/ilatek-logo-256.webp" onerror="this.onerror=null;this.src='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab044d04091fa65e69921f6.png'" alt="Logo de Ilatek - Limpieza y Techos en {{custom_values.county_name_and_state}}" title="Ilatek - Limpieza y Techos en {{custom_values.county_name_and_state}}" width="52" height="52" loading="eager" decoding="async" data-ilatek-local-alt="Logo%20de%20Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D" data-ilatek-local-title="Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D">
+      <img src="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/ilatek-logo-256.webp" onerror="this.onerror=null;this.src='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab044d04091fa65e69921f6.png'" alt="Logo de Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}" title="Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}" width="52" height="52" loading="eager" decoding="async" data-ilatek-local-alt="Logo%20de%20Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D" data-ilatek-local-title="Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D">
     </a>
 
     <nav class="iln-links" id="iln-links" aria-label="Navegación principal">
@@ -615,7 +615,7 @@ body:has(#ilatek-nav) .mshero-inner{
     function resolve(text){
       var cel=document.querySelector('[data-location-label]');
       if(cel){var cv=clean(cel.getAttribute('data-location-label'));if(cv)county=cv}
-      return window.ILATEK_LINKS.replace(String(text||'').split(token('county_name_and_state')).join(county),token('website_url'),website)
+      return window.ILATEK_LINKS.replace(String(text||'').split(token('business__county_name')).join(county),token('website_url'),website)
     }
     var btn=root.querySelector('.iln-lang');
     var wrap=btn?btn.parentElement:null;

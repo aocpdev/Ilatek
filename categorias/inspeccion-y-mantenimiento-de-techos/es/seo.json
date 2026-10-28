@@ -3,7 +3,7 @@
   "language": "es",
   "status": "plantilla-local-delta-system",
   "metaTagTitle": "Inspección y Mantenimiento de Techos en {{custom_values.county_name_and_state}} | Ilatek Techos",
-  "metaTagDescription": "Inspección de techos gratis y mantenimiento preventivo en {{custom_values.county_name_and_state}} desde $58 al mes. Limpieza de techos, canaletas, lavado a presión y más. 78 municipios.",
+  "metaTagDescription": "Inspección de techos gratis y mantenimiento preventivo en {{custom_values.county_name_and_state}} desde $250 por labor. Cotización $0 y $50 descontable del total para agendar. 78 municipios.",
   "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac85838195f9172ed03ac13.jpg",
   "locationCustomValue": "{{custom_values.county_name_and_state}}",
   "metaTagImageAlt": "Inspección y Mantenimiento de Techos en {{custom_values.county_name_and_state}} | Ilatek Techos",

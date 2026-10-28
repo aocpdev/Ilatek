@@ -221,7 +221,7 @@ body:has(#ilatek-nav) .mshero-inner{
 (function(w){
   'use strict';
   if(w.ILATEK_GEO)return;
-  var token='{'+'{custom_values.county_name_and_state}'+'}',doc=w.document;
+  var token='{'+'{custom_values.business__county_name}'+'}',doc=w.document;
   function clean(v){v=String(v||'').replace(/\u00a0/g,' ').trim();return /\{\{|\}\}/.test(v)?'':v}
   function county(){
     var declared=doc.querySelectorAll('.dv-ghl-values,#dv-ghl-values'),nodes=declared.length?declared:doc.querySelectorAll('p'),values=[];
@@ -309,11 +309,11 @@ body:has(#ilatek-nav) .mshero-inner{
   ILATEK · GHL Custom HTML · Cobertura Local · Directorio de 78 municipios de Puerto Rico
   Estilo: sección "Cobertura local" de Devasks, adaptada a la marca ILATEK (limpieza residencial).
   Menú: NO incluido — se usa el menú nativo de GHL.
-  Custom values usados: {{custom_values.county_name_and_state}} · {{custom_values.website_url}}
+  Custom values usados: {{custom_values.business__county_name}} · {{custom_values.website_url}}
   Renderiza contenido y enlaces únicamente. No envía formularios ni hace peticiones en segundo plano.
 -->
 <section id="ilatek-cobertura-dir" aria-label="Cobertura de limpieza de Ilatek en Puerto Rico"
-  data-location-label="{{custom_values.county_name_and_state}}"
+  data-location-label="{{custom_values.business__county_name}}"
   data-website-url="{{custom_values.website_url}}"
   data-primary-location="Puerto Rico"
   data-business-email="{{custom_values.business__email}}"
@@ -396,7 +396,7 @@ body:has(#ilatek-nav) .mshero-inner{
         <span class="icd-eyebrow">Cobertura local</span>
         <h2>Limpieza impecable, <em>Cobertura en Toda la Isla</em>.</h2>
       </div>
-      <p>Explora los servicios de limpieza de <strong>Ilatek</strong> disponibles en los <strong>78 municipios de Puerto Rico</strong> y visita la página de tu pueblo. Atendemos hogares en <strong>{{custom_values.county_name_and_state}}</strong> y toda la isla.</p>
+      <p>Explora los servicios de limpieza de <strong>Ilatek</strong> disponibles en los <strong>78 municipios de Puerto Rico</strong> y visita la página de tu pueblo. Atendemos hogares en <strong>{{custom_values.business__county_name}}</strong> y toda la isla.</p>
     </header>
     <div class="icd-directory">
       <div class="icd-search">
@@ -443,7 +443,7 @@ body:has(#ilatek-nav) .mshero-inner{
     /* Slug del servicio (lo estampa el build de techos). Sin él → raíz del subdominio. */
     var serviceSlug=clean(root.getAttribute('data-service-slug'));
     var values={};
-    values[token('county_name_and_state')]=locationLabel;
+    values[token('business__county_name')]=locationLabel;
     values[token('website_url')]=website;
     values[token('business__email')]=clean(root.getAttribute('data-business-email'));
     values[token('business__phone')]=clean(root.getAttribute('data-business-phone'));
