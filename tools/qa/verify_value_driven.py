@@ -106,7 +106,7 @@ def main() -> None:
               f"bridge={'expandido' if r.get('bridgeExpanded') else ('crudo' if r.get('bridgePresent') else 'ausente')} title={r.get('title','?')[:60]}"
               f"{'  ERR=' + r['err'] if 'err' in r else ''}")
     print(f"\nResumen {args.domain}: {len(results)} páginas -> {counts}")
-    out_dir = Path(__file__).resolve().parents[3] / "shots"
+    out_dir = next(p for p in Path(__file__).resolve().parents if (p / ".git").exists()) / "shots"
     out_dir.mkdir(exist_ok=True)
     (out_dir / "verify-value-driven.json").write_text(json.dumps({"domain": args.domain, "pueblo": args.pueblo, "counts": counts, "results": results}, ensure_ascii=False, indent=1), encoding="utf-8")
     fails = [r for r in results if r["state"] != "verde"]

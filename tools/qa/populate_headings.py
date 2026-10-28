@@ -16,7 +16,8 @@ import re
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[3]
+ILATEK = next(p for p in Path(__file__).resolve().parents if (p / ".git").exists())
+ROOT = ILATEK.parent
 TOKEN = "{{custom_values.business__county_name}}"
 
 # Titulares local: literal exacto donde "Puerto Rico" ES el pueblo.
@@ -35,7 +36,7 @@ EXACT = [
 # FAQ de precio: prefijo + "en Puerto Rico?" => tokenizar el pueblo.
 PRICE_Q = re.compile(r"(¿(?:Cuánto cuesta|Cuánto se cobra)[^<>{}]*?) en Puerto Rico\?")
 
-FAQ_SOURCE = ROOT / "Ilatek" / "src" / "faq" / "faq-source.mjs"
+FAQ_SOURCE = ILATEK / "src" / "faq" / "faq-source.mjs"
 
 # H1 hero: TODO 'Puerto Rico' del titular es local (el h1 de un canónico es el
 # titular del pueblo), incluido cuando el marcado lo parte ("en <em>Puerto Rico</em>").
@@ -47,8 +48,8 @@ HERO_H1 = re.compile(r"(<h1\b[^>]*>)([\s\S]*?)(</h1>)", re.I)
 def targets() -> list[Path]:
     files = [FAQ_SOURCE]
     for tier in ("categorias", "servicios"):
-        files += sorted((ROOT / "Ilatek" / tier).glob("*/es/landing-pages/ghl-*-landing.html"))
-    files.append(ROOT / "Ilatek" / "componentes" / "ghl-faq-embed.html")
+        files += sorted((ILATEK / tier).glob("*/es/landing-pages/ghl-*-landing.html"))
+    files.append(ILATEK / "componentes" / "ghl-faq-embed.html")
     return files
 
 

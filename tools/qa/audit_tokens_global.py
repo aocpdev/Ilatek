@@ -16,7 +16,7 @@ import sys
 from collections import Counter
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[3]
+ROOT = next(p for p in Path(__file__).resolve().parents if (p / ".git").exists())  # raíz del repo (marcador .git)
 CANON = {
     # Lista exacta del owner (Oct 2026): los 14 custom_values permitidos globalmente.
     "access_token",

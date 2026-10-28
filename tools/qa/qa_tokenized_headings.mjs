@@ -12,12 +12,19 @@
 // que CADA titular tokenizado resuelva TestCounty y que no quede ningún token
 // crudo visible (cubre los 39 h1 tokenizados por tools/qa/populate_headings.py).
 import { createRequire } from 'node:module';
-import { readFileSync, readdirSync } from 'node:fs';
+import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import path from 'node:path';
 import http from 'node:http';
 
-const ROOT = path.resolve(import.meta.dirname, '../../..');
-const LP = (...p) => path.join(ROOT, 'Ilatek', ...p);
+// Raíz del repo descubierta por el marcador .git (sin contar niveles fijos).
+function repoRoot(start) {
+  for (let d = start; ; d = path.dirname(d)) {
+    if (existsSync(path.join(d, '.git'))) return d;
+    if (path.dirname(d) === d) throw new Error('repo root (.git) not found above ' + start);
+  }
+}
+const REPO = repoRoot(import.meta.dirname);
+const LP = (...p) => path.join(REPO, ...p);
 const DETAILED = [
   { label: 'sellado-de-techos', file: LP('categorias', 'sellado-de-techos', 'es', 'landing-pages', 'ghl-sellado-de-techos-landing.html'), variants: ['ok', 'no', 'bad'] },
   { label: 'techos-de-zinc', file: LP('servicios', 'techos-de-zinc', 'es', 'landing-pages', 'ghl-techos-de-zinc-landing.html'), variants: ['ok', 'no'] },
@@ -42,11 +49,16 @@ function canonicos() {
 
 // Same playwright resolution as tools/qa/run_runtime_qa.mjs.
 const { chromium } = await (async () => {
-  try { return await import('playwright'); }
-  catch {
-    const envRequire = createRequire(path.join(ROOT, 'scripts', '.qaenv', 'node_modules', 'playwright', 'package.json'));
-    return { chromium: envRequire('playwright').chromium };
+  try { return await import('playwright'); } catch { /* sigue con las rutas locales */ }
+  const cands = [
+    process.env.PLAYWRIGHT_MODULES && path.join(process.env.PLAYWRIGHT_MODULES, 'playwright', 'package.json'),
+    path.join(REPO, 'node_modules', 'playwright', 'package.json'),
+    path.join(REPO, '..', 'scripts', '.qaenv', 'node_modules', 'playwright', 'package.json'),
+  ].filter((c) => c && existsSync(c));
+  for (const c of cands) {
+    try { return { chromium: createRequire(c)('playwright').chromium }; } catch { /* siguiente candidato */ }
   }
+  throw new Error('playwright no resoluble: instalalo, exportá PLAYWRIGHT_MODULES (dir node_modules) o dejá scripts/.qaenv junto al repo');
 })();
 
 const OK_BRIDGE = [

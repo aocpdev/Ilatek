@@ -24,8 +24,8 @@ import re
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[3]
-ILATEK = ROOT / "Ilatek"
+ILATEK = next(p for p in Path(__file__).resolve().parents if (p / ".git").exists())
+ROOT = ILATEK.parent
 
 MARKER = "ILATEK_BRIDGE"
 

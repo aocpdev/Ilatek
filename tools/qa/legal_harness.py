@@ -22,10 +22,11 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from build_runtime_harness import SENTINELS, expand_tokens  # noqa: E402
 
+REPO = next(p for p in Path(__file__).resolve().parents if (p / ".git").exists())
 PAGES = {
-    "garantias": Path(__file__).resolve().parents[3] / "Ilatek" / "garantia" / "ILATEK-Garantias.html",
-    "privacidad": Path(__file__).resolve().parents[3] / "Ilatek" / "politica-de-privacidad" / "ILATEK-Politica-Privacidad.html",
-    "terminos": Path(__file__).resolve().parents[3] / "Ilatek" / "terminos-y-condiciones" / "ILATEK-Terminos-Condiciones.html",
+    "garantias": REPO / "garantia" / "ILATEK-Garantias.html",
+    "privacidad": REPO / "politica-de-privacidad" / "ILATEK-Politica-Privacidad.html",
+    "terminos": REPO / "terminos-y-condiciones" / "ILATEK-Terminos-Condiciones.html",
 }
 
 

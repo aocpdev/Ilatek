@@ -25,8 +25,8 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[3]
-ILATEK = ROOT / "Ilatek"
+ILATEK = next(p for p in Path(__file__).resolve().parents if (p / ".git").exists())
+ROOT = ILATEK.parent
 
 HOME = ILATEK / "home" / "es" / "landing-pages" / "ghl-home-multiservicios.html"
 

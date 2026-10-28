@@ -26,7 +26,8 @@ import shutil
 import tempfile
 from pathlib import Path
 
-SRC = Path(__file__).resolve().parents[3] / "Ilatek" / "home" / "es" / "landing-pages" / "ghl-home-multiservicios.html"
+REPO = next(p for p in Path(__file__).resolve().parents if (p / ".git").exists())
+SRC = REPO / "home" / "es" / "landing-pages" / "ghl-home-multiservicios.html"
 
 SENTINELS = {
     "business__county_name": "TestCounty",
