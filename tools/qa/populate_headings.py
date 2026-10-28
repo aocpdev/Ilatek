@@ -16,8 +16,8 @@ import re
 import sys
 from pathlib import Path
 
-ILATEK = next(p for p in Path(__file__).resolve().parents if (p / ".git").exists())
-ROOT = ILATEK.parent
+from repo_root import REPO
+
 TOKEN = "{{custom_values.business__county_name}}"
 
 # Titulares local: literal exacto donde "Puerto Rico" ES el pueblo.
@@ -36,7 +36,7 @@ EXACT = [
 # FAQ de precio: prefijo + "en Puerto Rico?" => tokenizar el pueblo.
 PRICE_Q = re.compile(r"(¿(?:Cuánto cuesta|Cuánto se cobra)[^<>{}]*?) en Puerto Rico\?")
 
-FAQ_SOURCE = ILATEK / "src" / "faq" / "faq-source.mjs"
+FAQ_SOURCE = REPO / "src" / "faq" / "faq-source.mjs"
 
 # H1 hero: TODO 'Puerto Rico' del titular es local (el h1 de un canónico es el
 # titular del pueblo), incluido cuando el marcado lo parte ("en <em>Puerto Rico</em>").
@@ -48,8 +48,8 @@ HERO_H1 = re.compile(r"(<h1\b[^>]*>)([\s\S]*?)(</h1>)", re.I)
 def targets() -> list[Path]:
     files = [FAQ_SOURCE]
     for tier in ("categorias", "servicios"):
-        files += sorted((ILATEK / tier).glob("*/es/landing-pages/ghl-*-landing.html"))
-    files.append(ILATEK / "componentes" / "ghl-faq-embed.html")
+        files += sorted((REPO / tier).glob("*/es/landing-pages/ghl-*-landing.html"))
+    files.append(REPO / "componentes" / "ghl-faq-embed.html")
     return files
 
 
@@ -91,7 +91,7 @@ def main() -> int:
             changed.append((f, n))
     total = sum(n for _, n in changed)
     for f, n in changed:
-        print(f"  {n:2d} {f.relative_to(ROOT)}")
+        print(f"  {n:2d} {f.relative_to(REPO)}")
     print(f"TOTAL: {len(changed)} archivos, {total} titulares tokenificados")
     return 0
 

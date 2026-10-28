@@ -25,18 +25,17 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
-ILATEK = next(p for p in Path(__file__).resolve().parents if (p / ".git").exists())
-ROOT = ILATEK.parent
+from repo_root import REPO
 
-HOME = ILATEK / "home" / "es" / "landing-pages" / "ghl-home-multiservicios.html"
+HOME = REPO / "home" / "es" / "landing-pages" / "ghl-home-multiservicios.html"
 
 # Paginas no-servicio conocidas y sus servidores de archivos
 UTIL = {
-    "terminos-y-condiciones": ILATEK / "terminos-y-condiciones" / "ILATEK-Terminos-Condiciones.html",
-    "politica-de-privacidad": ILATEK / "politica-de-privacidad" / "ILATEK-Politica-Privacidad.html",
-    "resenas": ILATEK / "resenas" / "ghl-resenas-landing.html",
-    "cotizacion": ILATEK / "cotizador" / "landing-pages" / "ghl-cotizador-landing.html",
-    "contactanos": ILATEK / "contacto" / "landing-pages" / "ghl-contacto-landing.html",
+    "terminos-y-condiciones": REPO / "terminos-y-condiciones" / "ILATEK-Terminos-Condiciones.html",
+    "politica-de-privacidad": REPO / "politica-de-privacidad" / "ILATEK-Politica-Privacidad.html",
+    "resenas": REPO / "resenas" / "ghl-resenas-landing.html",
+    "cotizacion": REPO / "cotizador" / "landing-pages" / "ghl-cotizador-landing.html",
+    "contactanos": REPO / "contacto" / "landing-pages" / "ghl-contacto-landing.html",
 }
 # Paginas construidas con elementos NATIVOS del builder GHL (sin Custom Code):
 # el runtime no aplica, no llevan canónico del repo (verde en el sweep con 0 crudos).
@@ -51,11 +50,11 @@ NATIVA_GHL = {
 }
 # Rutas de categoria/servicios-categoria (dir categorias)
 CATEGORIA = {
-    "servicios-techos": ILATEK / "categorias" / "techos" / "es" / "landing-pages",
-    "servicios-limpieza": ILATEK / "categorias" / "limpieza" / "es" / "landing-pages",
-    "limpieza-residencial": ILATEK / "categorias" / "limpieza-residencial" / "es" / "landing-pages",
-    "limpieza-comercial": ILATEK / "categorias" / "limpieza-comercial" / "es" / "landing-pages",
-    "limpieza-industrial": ILATEK / "categorias" / "limpieza-industrial" / "es" / "landing-pages",
+    "servicios-techos": REPO / "categorias" / "techos" / "es" / "landing-pages",
+    "servicios-limpieza": REPO / "categorias" / "limpieza" / "es" / "landing-pages",
+    "limpieza-residencial": REPO / "categorias" / "limpieza-residencial" / "es" / "landing-pages",
+    "limpieza-comercial": REPO / "categorias" / "limpieza-comercial" / "es" / "landing-pages",
+    "limpieza-industrial": REPO / "categorias" / "limpieza-industrial" / "es" / "landing-pages",
 }
 
 
@@ -98,8 +97,8 @@ def _lookup(slug: str, tag: str) -> tuple[Path | None, str]:
     if slug in CATEGORIA:
         return landing_file(CATEGORIA[slug], slug.replace("servicios-", "")), tag
     for tier in ("servicios", "categorias"):
-        if (ILATEK / tier / slug).exists():
-            return landing_file(ILATEK / tier / slug / "es" / "landing-pages", slug), tag
+        if (REPO / tier / slug).exists():
+            return landing_file(REPO / tier / slug / "es" / "landing-pages", slug), tag
     return None, ""
 
 
@@ -121,7 +120,7 @@ def main() -> None:
     for u in urls:
         path = "/" + u.split("/", 3)[-1] if u.count("/") > 2 else "/"
         canon, tag = map_path(path)
-        rel = str(canon.relative_to(ROOT)) if canon else (tag or "?SIN-MAPPING?")
+        rel = str(canon.relative_to(REPO)) if canon else (tag or "?SIN-MAPPING?")
         row = {"url": u, "path": path, "canon": rel}
         if tag == "NATIVA-GHL":
             native.append(row)

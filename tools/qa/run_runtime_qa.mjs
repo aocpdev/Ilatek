@@ -1,18 +1,9 @@
 import { spawn, spawnSync } from 'node:child_process';
-import { createRequire } from 'node:module';
-import { createReadStream, existsSync } from 'node:fs';
+import { createReadStream, mkdirSync, writeFileSync } from 'node:fs';
 import http from 'node:http';
 import path from 'node:path';
-import { mkdirSync, writeFileSync } from 'node:fs';
 
-// Raíz del repo descubierta por el marcador .git (sin contar niveles fijos).
-function repoRoot(start) {
-  for (let d = start; ; d = path.dirname(d)) {
-    if (existsSync(path.join(d, '.git'))) return d;
-    if (path.dirname(d) === d) throw new Error('repo root (.git) not found above ' + start);
-  }
-}
-const REPO = repoRoot(import.meta.dirname);
+import { REPO, getChromium } from './repo_root.mjs';
 
 // 1) Build harness copies (TMP= printed on first line).
 const build = spawnSync(process.platform === 'win32' ? 'python' : 'python3', [path.join(import.meta.dirname, 'build_runtime_harness.py')], { cwd: import.meta.dirname, encoding: 'utf8' });
@@ -33,18 +24,7 @@ const server = http.createServer((req, res) => {
 await new Promise((ok) => server.listen(8932, '127.0.0.1', ok));
 
 // 3) Chromium + runtime_qa.
-const { chromium } = await (async () => {
-  try { return await import('playwright'); } catch { /* sigue con las rutas locales */ }
-  const cands = [
-    process.env.PLAYWRIGHT_MODULES && path.join(process.env.PLAYWRIGHT_MODULES, 'playwright', 'package.json'),
-    path.join(REPO, 'node_modules', 'playwright', 'package.json'),
-    path.join(REPO, '..', 'scripts', '.qaenv', 'node_modules', 'playwright', 'package.json'),
-  ].filter((c) => c && existsSync(c));
-  for (const c of cands) {
-    try { return { chromium: createRequire(c)('playwright').chromium }; } catch { /* siguiente candidato */ }
-  }
-  throw new Error('playwright no resoluble: instalalo, exportá PLAYWRIGHT_MODULES (dir node_modules) o dejá scripts/.qaenv junto al repo');
-})();
+const chromium = await getChromium();
 const browser = await chromium.launch();
 const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
 const out = await (await import('./runtime_qa.mjs')).default(page, console);

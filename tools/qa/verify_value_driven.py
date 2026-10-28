@@ -27,6 +27,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from ghl_paste_map import map_path  # noqa: E402
+from repo_root import REPO  # noqa: E402
 
 RAW_RE = re.compile(r"\{\{\s*custom_values\.", re.I)
 BRIDGE_RE = re.compile(r"<(?:p|span|div)[^>]*dv-ghl-values[^>]*>.*?</(?:p|span|div)>", re.S | re.I)
@@ -106,7 +107,7 @@ def main() -> None:
               f"bridge={'expandido' if r.get('bridgeExpanded') else ('crudo' if r.get('bridgePresent') else 'ausente')} title={r.get('title','?')[:60]}"
               f"{'  ERR=' + r['err'] if 'err' in r else ''}")
     print(f"\nResumen {args.domain}: {len(results)} páginas -> {counts}")
-    out_dir = next(p for p in Path(__file__).resolve().parents if (p / ".git").exists()) / "shots"
+    out_dir = REPO / "shots"
     out_dir.mkdir(exist_ok=True)
     (out_dir / "verify-value-driven.json").write_text(json.dumps({"domain": args.domain, "pueblo": args.pueblo, "counts": counts, "results": results}, ensure_ascii=False, indent=1), encoding="utf-8")
     fails = [r for r in results if r["state"] != "verde"]

@@ -16,23 +16,10 @@ import sys
 from collections import Counter
 from pathlib import Path
 
-ROOT = next(p for p in Path(__file__).resolve().parents if (p / ".git").exists())  # raíz del repo (marcador .git)
-CANON = {
-    # Lista exacta del owner (Oct 2026): los 14 custom_values permitidos globalmente.
-    "access_token",
-    "business__county_domain",
-    "business__county_name",
-    "business__email",
-    "business__phone",
-    "business_id",
-    "county_name_and_state",
-    "facebook_url",
-    "instagram_url",
-    "pixel_id",
-    "precio_total",
-    "website_favicon",
-    "website_url",
-}
+from repo_root import REPO
+
+CONTRACT = json.loads((Path(__file__).resolve().parent / "custom-values.json").read_text(encoding="utf-8"))
+CANON = set(CONTRACT["custom_values"])  # lista exacta del owner: custom-values.json
 EXCLUDE_DIRS = {
     ".backups-uiux", "archivo", "docs", "documentacion", "tools",
     "node_modules", ".git", "src", "Comunidades",
@@ -107,7 +94,7 @@ def audit_file(path: Path) -> dict:
 
     return {
         "file": str(path),
-        "category": classify_rel(str(path.relative_to(ROOT))),
+        "category": classify_rel(str(path.relative_to(REPO))),
         "bytes": len(text),
         "tokens": dict(token_counts),
         "tokensTotal": sum(token_counts.values()),
@@ -123,8 +110,8 @@ def audit_file(path: Path) -> dict:
 
 def main() -> None:
     files = []
-    for p in sorted(ROOT.rglob("*.html")):
-        rel = p.relative_to(ROOT)
+    for p in sorted(REPO.rglob("*.html")):
+        rel = p.relative_to(REPO)
         if included(rel):
             files.append(p)
     files = list(dict.fromkeys(files))
@@ -133,7 +120,7 @@ def main() -> None:
     ok = [r for r in results if "error" not in r]
 
     by_category = Counter(r["category"] for r in ok)
-    no_token = [r["file"].replace(str(ROOT) + "\\", "") for r in ok if r["tokensTotal"] == 0]
+    no_token = [r["file"].replace(str(REPO) + "\\", "") for r in ok if r["tokensTotal"] == 0]
     with_noncanon = [r for r in ok if r["tokensNonCanon"]]
     with_leaks = [
         r for r in ok
@@ -148,11 +135,11 @@ def main() -> None:
         "byCategory": dict(by_category),
         "filesWithoutTokens": no_token,
         "filesWithNonCanonicalTokens": [
-            {"file": r["file"].replace(str(ROOT) + "\\", ""), "tokens": r["tokensNonCanon"]} for r in with_noncanon
+            {"file": r["file"].replace(str(REPO) + "\\", ""), "tokens": r["tokensNonCanon"]} for r in with_noncanon
         ],
         "filesWithLeaksOrNoBridge": [
             {
-                "file": r["file"].replace(str(ROOT) + "\\", ""),
+                "file": r["file"].replace(str(REPO) + "\\", ""),
                 "phones": r["phones"],
                 "hardcodedHrefs": r["hardcodedHrefs"],
                 "otherMerge": r["otherMerge"],
@@ -163,7 +150,7 @@ def main() -> None:
         ],
     }
 
-    out = ROOT / "shots"
+    out = REPO / "shots"
     out.mkdir(exist_ok=True)
     (out / "audit-tokens-global.json").write_text(
         json.dumps({"summary": summary, "files": results}, ensure_ascii=False, indent=1),
@@ -177,7 +164,7 @@ def main() -> None:
         print(f"  - {f}")
     print(f"\nfiles with NON-CANONICAL token names ({len(with_noncanon)}):")
     for r in with_noncanon:
-        print(f"  - {r['file'].replace(str(ROOT) + chr(92), '')}: {r['tokensNonCanon']}")
+        print(f"  - {r['file'].replace(str(REPO) + chr(92), '')}: {r['tokensNonCanon']}")
     print(f"\nfiles with leaks (phone / hardcoded href / other merge / bridge-less tokens) ({len(with_leaks)}):")
     for item in summary["filesWithLeaksOrNoBridge"]:
         print(f"  - {item['file']}: phones={item['phones']} hrefs={item['hardcodedHrefs']} otherMerge={item['otherMerge'] or '-'} bridges={item['bridges'] if item['tokensTotal'] else '-'}")

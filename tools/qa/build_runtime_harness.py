@@ -26,7 +26,7 @@ import shutil
 import tempfile
 from pathlib import Path
 
-REPO = next(p for p in Path(__file__).resolve().parents if (p / ".git").exists())
+from repo_root import REPO
 SRC = REPO / "home" / "es" / "landing-pages" / "ghl-home-multiservicios.html"
 
 SENTINELS = {

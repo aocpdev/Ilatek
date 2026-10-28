@@ -1,0 +1,29 @@
+{
+  "_doc": "Contrato único de custom values de GHL para Ilatek. Los 13 nombres canónicos (lista del owner) y el orden de slots del párrafo puente dv-ghl-values viven SOLO aquí: audit_tokens_global.py, qa_tokenized_headings.mjs y fix_resolver_bridge.py lo leen en vez de retyping.",
+  "custom_values": [
+    "access_token",
+    "business__county_domain",
+    "business__county_name",
+    "business__email",
+    "business__phone",
+    "business_id",
+    "county_name_and_state",
+    "facebook_url",
+    "instagram_url",
+    "pixel_id",
+    "precio_total",
+    "website_favicon",
+    "website_url"
+  ],
+  "bridge": {
+    "separator": "|||DV|||",
+    "slots": [
+      "business__county_name",
+      "business__email",
+      "business__phone",
+      "website_url",
+      "facebook_url",
+      "instagram_url"
+    ]
+  }
+}

@@ -7,7 +7,9 @@ por seccion, y localiza los resolvers client-side de cada seccion.
 import re
 from pathlib import Path
 
-SRC = Path("Ilatek/home/es/landing-pages/ghl-home-multiservicios.html")
+from repo_root import REPO
+
+SRC = REPO / "home" / "es" / "landing-pages" / "ghl-home-multiservicios.html"
 lines = SRC.read_text(encoding="utf-8").splitlines()
 
 SECTIONS = [

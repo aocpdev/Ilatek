@@ -1,0 +1,26 @@
+<!-- ILATEK · resolver global del puente dv-ghl-values (párrafo nativo GHL).
+     Reglas: literal data-* gana sin cambios; token crudo dentro de data-* se
+     resuelve contra el slot correspondiente del puente; sin puente el slot da
+     '' y el fallback real de cada resolver aplica. -->
+<script>
+(function(){
+  if(window.ILATEK_BRIDGE)return;
+  var SLOT=__SLOT_MAP__;
+  function clean(v){v=String(v==null?'':v).replace(/\u00a0/g,' ').trim();return /^\s*\{\{[^}]+\}\}\s*$/.test(v)?'':v}
+  function slots(){
+    var ps=document.querySelectorAll('.dv-ghl-values,#dv-ghl-values');
+    for(var i=0;i<ps.length;i++){
+      var parts=String(ps[i].textContent||'').split('__SEPARATOR__');
+      if(parts.length===__SLOT_COUNT__)return parts;
+    }
+    return null;
+  }
+  function slot(i){var s=slots();if(!s)return '';var v=clean(s[i]);return /^\{\{/.test(v)?'':v}
+  function attr(v){
+    return String(v==null?'':v).replace(/\{\{\s*custom_values\.([a-z_]+)\s*\}\}/g,function(m,n){
+      return SLOT.hasOwnProperty(n)?slot(SLOT[n]):m;
+    });
+  }
+  window.ILATEK_BRIDGE={slot:slot,attr:attr};
+})();
+</script>

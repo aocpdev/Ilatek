@@ -11,19 +11,12 @@
 // Barrido (sweep): los 47 canónicos publicables en ok-bridge; por landing exige
 // que CADA titular tokenizado resuelva TestCounty y que no quede ningún token
 // crudo visible (cubre los 39 h1 tokenizados por tools/qa/populate_headings.py).
-import { createRequire } from 'node:module';
-import { readFileSync, readdirSync, existsSync } from 'node:fs';
+import { readFileSync, readdirSync } from 'node:fs';
 import path from 'node:path';
 import http from 'node:http';
 
-// Raíz del repo descubierta por el marcador .git (sin contar niveles fijos).
-function repoRoot(start) {
-  for (let d = start; ; d = path.dirname(d)) {
-    if (existsSync(path.join(d, '.git'))) return d;
-    if (path.dirname(d) === d) throw new Error('repo root (.git) not found above ' + start);
-  }
-}
-const REPO = repoRoot(import.meta.dirname);
+import { REPO, getChromium } from './repo_root.mjs';
+
 const LP = (...p) => path.join(REPO, ...p);
 const DETAILED = [
   { label: 'sellado-de-techos', file: LP('categorias', 'sellado-de-techos', 'es', 'landing-pages', 'ghl-sellado-de-techos-landing.html'), variants: ['ok', 'no', 'bad'] },
@@ -47,29 +40,29 @@ function canonicos() {
   return out.sort((a, b) => a.file.localeCompare(b.file));
 }
 
-// Same playwright resolution as tools/qa/run_runtime_qa.mjs.
-const { chromium } = await (async () => {
-  try { return await import('playwright'); } catch { /* sigue con las rutas locales */ }
-  const cands = [
-    process.env.PLAYWRIGHT_MODULES && path.join(process.env.PLAYWRIGHT_MODULES, 'playwright', 'package.json'),
-    path.join(REPO, 'node_modules', 'playwright', 'package.json'),
-    path.join(REPO, '..', 'scripts', '.qaenv', 'node_modules', 'playwright', 'package.json'),
-  ].filter((c) => c && existsSync(c));
-  for (const c of cands) {
-    try { return { chromium: createRequire(c)('playwright').chromium }; } catch { /* siguiente candidato */ }
-  }
-  throw new Error('playwright no resoluble: instalalo, exportá PLAYWRIGHT_MODULES (dir node_modules) o dejá scripts/.qaenv junto al repo');
-})();
+const chromium = await getChromium();
 
-const OK_BRIDGE = [
-  'TestCounty',
-  'qa@example.com',
-  '(787) 000-0000',
-  'https://qa.example.com',
-  'https://facebook.com/qa',
-  'https://instagram.com/qa',
-].join('|||DV|||');
-const BAD_BRIDGE = 'OtroCondado|||qa@example.com|||(787) 000-0000'; // solo 3 slots
+// Contrato único del puente (custom-values.json): slots y separador no se retypean.
+const CONTRACT = JSON.parse(readFileSync(path.join(import.meta.dirname, 'custom-values.json'), 'utf8'));
+const { separator: BRIDGE_SEP, slots: BRIDGE_SLOTS } = CONTRACT.bridge;
+for (const name of BRIDGE_SLOTS) {
+  if (!CONTRACT.custom_values.includes(name)) throw new Error(`slot del puente fuera del contrato: ${name}`);
+}
+// Valor de prueba por slot; el ORDEN lo manda el contrato, no esta lista.
+const SLOT_VALUES = {
+  business__county_name: 'TestCounty',
+  business__email: 'qa@example.com',
+  business__phone: '(787) 000-0000',
+  website_url: 'https://qa.example.com',
+  facebook_url: 'https://facebook.com/qa',
+  instagram_url: 'https://instagram.com/qa',
+};
+const bridgeOf = (names, override = {}) => names
+  .map((n) => override[n] ?? SLOT_VALUES[n] ?? `qa-${n}`)
+  .join(BRIDGE_SEP);
+
+const OK_BRIDGE = bridgeOf(BRIDGE_SLOTS);
+const BAD_BRIDGE = bridgeOf(BRIDGE_SLOTS.slice(0, 3), { business__county_name: 'OtroCondado' }); // solo 3 slots
 
 // Qué lleva token el canónico crudo: sin esto el check del titular no tiene
 // sentido y se reporta SKIP (nunca un PASS regalado).
