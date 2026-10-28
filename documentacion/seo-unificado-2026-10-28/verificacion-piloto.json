@@ -1,0 +1,158 @@
+{
+  "checkedAt": "2026-10-28T21:19:02.568770+00:00",
+  "pages": [
+    {
+      "id": "mvyXWydnh0kx7DxUTUQw",
+      "name": "Servicio - Organización de espacios",
+      "url": "https://ilatekpr.com/organizacion",
+      "status": 200,
+      "lang": "es",
+      "titles": [
+        "Organización de espacios en Puerto Rico | Ilatek"
+      ],
+      "canonical": [
+        "https://ilatekpr.com/organizacion"
+      ],
+      "keyCounts": {
+        "description": 1,
+        "og:title": 1,
+        "og:description": 1,
+        "og:image": 1,
+        "twitter:card": 1,
+        "twitter:image": 1
+      },
+      "pending": [],
+      "h1Unchanged": true,
+      "schemaUnchanged": true,
+      "nativeTitlePreserved": true,
+      "metadata": [
+        {
+          "charset": "utf-8"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        },
+        {
+          "name": "title",
+          "content": "Organización de espacios en Puerto Rico | Ilatek"
+        },
+        {
+          "property": "og:title",
+          "content": "Organización de espacios en Puerto Rico | Ilatek"
+        },
+        {
+          "name": "description",
+          "content": "Organización de espacios en Puerto Rico | Ilatek Property Solution. Delega y optimiza tus espacios"
+        },
+        {
+          "property": "og:description",
+          "content": "Organización de espacios en Puerto Rico | Ilatek Property Solution. Delega y optimiza tus espacios"
+        },
+        {
+          "name": "author",
+          "content": "Devasks"
+        },
+        {
+          "property": "og:author",
+          "content": "Devasks"
+        },
+        {
+          "name": "image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7266dd5f4a8af439f5c06.jpg"
+        },
+        {
+          "property": "og:image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7266dd5f4a8af439f5c06.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7266dd5f4a8af439f5c06.jpg"
+        },
+        {
+          "name": "keywords",
+          "content": "Organización de espacios Puerto Rico\nservicios de limpieza Puerto Rico\nlimpieza profesional en Puerto Rico\ncompañía de limpieza en Puerto Rico\nlimpieza residencial\nlimpieza comercial\nlimpieza de oficinas\nlimpieza de propiedades\nmantenimiento y limpieza\nservicios de limpieza profesional\nlimpieza de casas\nIlatek - Limpieza Industrial"
+        },
+        {
+          "property": "og:keywords",
+          "content": "Organización de espacios Puerto Rico\nservicios de limpieza Puerto Rico\nlimpieza profesional en Puerto Rico\ncompañía de limpieza en Puerto Rico\nlimpieza residencial\nlimpieza comercial\nlimpieza de oficinas\nlimpieza de propiedades\nmantenimiento y limpieza\nservicios de limpieza profesional\nlimpieza de casas\nIlatek - Limpieza Industrial"
+        },
+        {
+          "property": "og:type",
+          "content": "website"
+        },
+        {
+          "property": "twitter:type",
+          "content": "website"
+        },
+        {
+          "property": "googlebot",
+          "content": "index, follow"
+        },
+        {
+          "property": "bingbot",
+          "content": "index, follow"
+        },
+        {
+          "property": "msnbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "slurp\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "yandex\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "duckduckbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "gptbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "ccbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "anthropic\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "claudebot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "perplexitybot",
+          "content": "index, follow"
+        },
+        {
+          "property": "bytespider",
+          "content": "index, follow"
+        },
+        {
+          "property": "facebookexternalhit",
+          "content": "index, follow"
+        },
+        {
+          "property": "twitterbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "linkedinbot\t",
+          "content": "index, follow"
+        },
+        {
+          "charset": "utf-8"
+        }
+      ]
+    }
+  ]
+}

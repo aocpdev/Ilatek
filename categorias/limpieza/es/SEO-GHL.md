@@ -16,10 +16,10 @@ Servicios de limpieza residencial, comercial e industrial de Ilatek en {{custom_
 
 ## Meta Tag Image
 
-[Imagen social — URL pública](https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/servicios.jpg)
+[Imagen social — URL pública](https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acaa576195f9172ed3a852a.jpg)
 
 ```text
-https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/servicios.jpg
+https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acaa576195f9172ed3a852a.jpg
 ```
 
 Copia local: [assets/meta-image.jpg](assets/meta-image.jpg). No usar una ruta local en GHL.

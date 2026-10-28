@@ -2,6 +2,16 @@
 
 Home principal: **[ghl-home-multiservicios.html](home/es/landing-pages/ghl-home-multiservicios.html)**.
 
+## Publicación vigente en GHL — 28 de octubre de 2026
+
+Las versiones publicadas en GHL incluyen ediciones más recientes que algunas plantillas locales. Para restaurar o replicar el snapshot, usar estos entregables verificados:
+
+- [Custom Values: publicación de las 60 páginas](documentacion/publicacion-custom-values-2026-10-28/RESULTADO.md), con inventario, respaldos y bloques preparados. El Home publicado está en [home-custom-code.html](documentacion/publicacion-custom-values-2026-10-28/preparados/home-custom-code.html); su Paragraph nativo de seis valores se conserva como elemento separado.
+- [SEO unificado: 15 páginas corregidas](documentacion/seo-unificado-2026-10-28/RESULTADO.md). Los bloques de esta entrega sustituyen a los de la publicación anterior para esas 15 páginas; [SEO-GHL.md](documentacion/seo-unificado-2026-10-28/SEO-GHL.md) identifica el archivo exacto y la configuración nativa de cada una.
+- [Verificación pública final de las 60 páginas](documentacion/seo-unificado-2026-10-28/verificacion-60-paginas.json): HTTP 200, un solo título y canonical por página, sin Custom Values pendientes, con H1 y JSON-LD conservados.
+
+El panel SEO nativo de GHL es la fuente de los metadatos publicados. Los bloques preparados no deben recibir otro HEAD SEO al pegarlos. Las plantillas autónomas de las carpetas `landing-pages/` y `HEAD-TEMPLATE.html` siguen siendo referencias de desarrollo; no reemplazar con ellas una página publicada sin reconciliar primero sus ediciones actuales.
+
 Delta System: las fichas SEO y los textos descriptivos de imágenes usan `{{custom_values.county_name_and_state}}`. Ver [localización SEO e instalación por pueblo](documentacion/LOCALIZACION-SEO.md).
 
 La organización sigue el patrón de entrega GHL de Aires Inverters y la estructura local verificada de Guz Plumbing: página → idioma → landing-pages, assets y ficha SEO. Se conserva el contenido existente de ILATEK y sus URLs de producción.
@@ -41,7 +51,7 @@ Las carpetas `en/` documentan el selector o la ausencia de una landing independi
 
 ## Copiar a GHL
 
-1. Abrir la ficha de la página en el mapa y copiar su HTML de `es/landing-pages/`.
+1. Para las páginas publicadas, localizar primero su bloque vigente en los informes anteriores. Para una página nueva, usar su HTML de `es/landing-pages/` como punto de partida y separar el HEAD SEO antes de pegarlo en GHL.
 2. Pegar el archivo completo en un único Custom Code de GHL: incluye menú, contenido y footer. No agregar un header/footer global adicional. Fuentes: [menú](componentes/ghl-nav-embed.html) y [footer](ghl-footer-embed.html). Ver [composición y mantenimiento](documentacion/HEADER-FOOTER.md).
 3. Configurar los tres campos descritos en `SEO-GHL.md` de esa página. Revisar los avisos de imágenes antiguas, si los hay, y evitar duplicados de meta tags.
 4. Las carpetas locales no se suben automáticamente a GHL. Los embeds mantienen URLs públicas absolutas; los assets locales son respaldos verificables.

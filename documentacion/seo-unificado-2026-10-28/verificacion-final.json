@@ -1,0 +1,2314 @@
+{
+  "checkedAt": "2026-10-28T21:29:44.336040+00:00",
+  "pages": [
+    {
+      "id": "wx22buIIoJocPotRlwRO",
+      "name": "Servicios",
+      "url": "https://ilatekpr.com/servicios",
+      "status": 200,
+      "lang": "es",
+      "titles": [
+        "Servicios de Limpieza en Puerto Rico | Ilatek"
+      ],
+      "canonical": [
+        "https://ilatekpr.com/servicios"
+      ],
+      "keyCounts": {
+        "description": 1,
+        "og:title": 1,
+        "og:description": 1,
+        "og:image": 1,
+        "twitter:card": 1,
+        "twitter:image": 1
+      },
+      "pending": [],
+      "h1Unchanged": true,
+      "schemaUnchanged": true,
+      "nativeTitlePreserved": true,
+      "metadata": [
+        {
+          "charset": "utf-8"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        },
+        {
+          "name": "title",
+          "content": "Servicios de Limpieza en Puerto Rico | Ilatek"
+        },
+        {
+          "property": "og:title",
+          "content": "Servicios de Limpieza en Puerto Rico | Ilatek"
+        },
+        {
+          "name": "description",
+          "content": "Servicio de limpieza Residencial, Comercial e Industrial en Puerto Rico | Ilatek Property Solution\n"
+        },
+        {
+          "property": "og:description",
+          "content": "Servicio de limpieza Residencial, Comercial e Industrial en Puerto Rico | Ilatek Property Solution\n"
+        },
+        {
+          "name": "author",
+          "content": "Devasks"
+        },
+        {
+          "property": "og:author",
+          "content": "Devasks"
+        },
+        {
+          "name": "image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acaa576195f9172ed3a852a.jpg"
+        },
+        {
+          "property": "og:image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acaa576195f9172ed3a852a.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acaa576195f9172ed3a852a.jpg"
+        },
+        {
+          "name": "keywords",
+          "content": "servicio de limpieza en Puerto Rico\nservicios de limpieza Puerto Rico\nlimpieza profesional en Puerto Rico\ncompañía de limpieza en Puerto Rico\nlimpieza residencial\nlimpieza comercial\nlimpieza de oficinas\nlimpieza de propiedades\nmantenimiento y limpieza\nservicios de limpieza profesional\nlimpieza de casas\nIlatek"
+        },
+        {
+          "property": "og:keywords",
+          "content": "servicio de limpieza en Puerto Rico\nservicios de limpieza Puerto Rico\nlimpieza profesional en Puerto Rico\ncompañía de limpieza en Puerto Rico\nlimpieza residencial\nlimpieza comercial\nlimpieza de oficinas\nlimpieza de propiedades\nmantenimiento y limpieza\nservicios de limpieza profesional\nlimpieza de casas\nIlatek"
+        },
+        {
+          "property": "og:type",
+          "content": "website"
+        },
+        {
+          "property": "twitter:type",
+          "content": "website"
+        },
+        {
+          "property": "googlebot",
+          "content": "index, follow"
+        },
+        {
+          "property": "bingbot",
+          "content": "index, follow"
+        },
+        {
+          "property": "msnbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "slurp\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "yandex\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "duckduckbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "gptbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "ccbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "anthropic\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "claudebot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "perplexitybot",
+          "content": "index, follow"
+        },
+        {
+          "property": "bytespider",
+          "content": "index, follow"
+        },
+        {
+          "property": "facebookexternalhit",
+          "content": "index, follow"
+        },
+        {
+          "property": "twitterbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "linkedinbot\t",
+          "content": "index, follow"
+        },
+        {
+          "charset": "utf-8"
+        },
+        {
+          "charset": "utf-8"
+        }
+      ]
+    },
+    {
+      "id": "Vu2tbk5IhTD10dy6AjEi",
+      "name": "Servicio - Limpieza Residencial",
+      "url": "https://ilatekpr.com/limpieza-residencial",
+      "status": 200,
+      "lang": "es",
+      "titles": [
+        "Limpieza Residencial en Puerto Rico | Ilatek"
+      ],
+      "canonical": [
+        "https://ilatekpr.com/limpieza-residencial"
+      ],
+      "keyCounts": {
+        "description": 1,
+        "og:title": 1,
+        "og:description": 1,
+        "og:image": 1,
+        "twitter:card": 1,
+        "twitter:image": 1
+      },
+      "pending": [],
+      "h1Unchanged": true,
+      "schemaUnchanged": true,
+      "nativeTitlePreserved": true,
+      "metadata": [
+        {
+          "charset": "utf-8"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        },
+        {
+          "name": "title",
+          "content": "Limpieza Residencial en Puerto Rico | Ilatek"
+        },
+        {
+          "property": "og:title",
+          "content": "Limpieza Residencial en Puerto Rico | Ilatek"
+        },
+        {
+          "name": "description",
+          "content": "Servicio de limpieza Residencial en Puerto Rico | Ilatek Property Solution\n"
+        },
+        {
+          "property": "og:description",
+          "content": "Servicio de limpieza Residencial en Puerto Rico | Ilatek Property Solution\n"
+        },
+        {
+          "name": "author",
+          "content": "Devasks"
+        },
+        {
+          "property": "og:author",
+          "content": "Devasks"
+        },
+        {
+          "name": "image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac72670bbad531ac8247733.jpg"
+        },
+        {
+          "property": "og:image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac72670bbad531ac8247733.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac72670bbad531ac8247733.jpg"
+        },
+        {
+          "name": "keywords",
+          "content": "servicio de limpieza en Puerto Rico\nservicios de limpieza Puerto Rico\nlimpieza profesional en Puerto Rico\ncompañía de limpieza en Puerto Rico\nlimpieza residencial\nlimpieza comercial\nlimpieza de oficinas\nlimpieza de propiedades\nmantenimiento y limpieza\nservicios de limpieza profesional\nlimpieza de casas\nIlatek"
+        },
+        {
+          "property": "og:keywords",
+          "content": "servicio de limpieza en Puerto Rico\nservicios de limpieza Puerto Rico\nlimpieza profesional en Puerto Rico\ncompañía de limpieza en Puerto Rico\nlimpieza residencial\nlimpieza comercial\nlimpieza de oficinas\nlimpieza de propiedades\nmantenimiento y limpieza\nservicios de limpieza profesional\nlimpieza de casas\nIlatek"
+        },
+        {
+          "property": "og:type",
+          "content": "website"
+        },
+        {
+          "property": "twitter:type",
+          "content": "website"
+        },
+        {
+          "property": "googlebot",
+          "content": "index, follow"
+        },
+        {
+          "property": "bingbot",
+          "content": "index, follow"
+        },
+        {
+          "property": "msnbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "slurp\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "yandex\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "duckduckbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "gptbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "ccbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "anthropic\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "claudebot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "perplexitybot",
+          "content": "index, follow"
+        },
+        {
+          "property": "bytespider",
+          "content": "index, follow"
+        },
+        {
+          "property": "facebookexternalhit",
+          "content": "index, follow"
+        },
+        {
+          "property": "twitterbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "linkedinbot\t",
+          "content": "index, follow"
+        },
+        {
+          "name": "robots",
+          "content": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        },
+        {
+          "charset": "utf-8"
+        }
+      ]
+    },
+    {
+      "id": "w3Ftr3DuoKu3fxsLrDCb",
+      "name": "Servicio - Limpieza Comercial",
+      "url": "https://ilatekpr.com/limpieza-comercial",
+      "status": 200,
+      "lang": "es",
+      "titles": [
+        "Limpieza Comercial en Puerto Rico | Ilatek"
+      ],
+      "canonical": [
+        "https://ilatekpr.com/limpieza-comercial"
+      ],
+      "keyCounts": {
+        "description": 1,
+        "og:title": 1,
+        "og:description": 1,
+        "og:image": 1,
+        "twitter:card": 1,
+        "twitter:image": 1
+      },
+      "pending": [],
+      "h1Unchanged": true,
+      "schemaUnchanged": true,
+      "nativeTitlePreserved": true,
+      "metadata": [
+        {
+          "charset": "utf-8"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        },
+        {
+          "name": "title",
+          "content": "Limpieza Comercial en Puerto Rico | Ilatek"
+        },
+        {
+          "property": "og:title",
+          "content": "Limpieza Comercial en Puerto Rico | Ilatek"
+        },
+        {
+          "name": "description",
+          "content": "Servicio de limpieza Comercial en Puerto Rico | Ilatek Property Solution\n"
+        },
+        {
+          "property": "og:description",
+          "content": "Servicio de limpieza Comercial en Puerto Rico | Ilatek Property Solution\n"
+        },
+        {
+          "name": "author",
+          "content": "Devasks"
+        },
+        {
+          "property": "og:author",
+          "content": "Devasks"
+        },
+        {
+          "name": "image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7266fd5f4a8af439f5c4c.jpg"
+        },
+        {
+          "property": "og:image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7266fd5f4a8af439f5c4c.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7266fd5f4a8af439f5c4c.jpg"
+        },
+        {
+          "name": "keywords",
+          "content": "servicio de limpieza en Puerto Rico\nservicios de limpieza Puerto Rico\nlimpieza profesional en Puerto Rico\ncompañía de limpieza en Puerto Rico\nlimpieza residencial\nlimpieza comercial\nlimpieza de oficinas\nlimpieza de propiedades\nmantenimiento y limpieza\nservicios de limpieza profesional\nlimpieza de casas\nIlatek"
+        },
+        {
+          "property": "og:keywords",
+          "content": "servicio de limpieza en Puerto Rico\nservicios de limpieza Puerto Rico\nlimpieza profesional en Puerto Rico\ncompañía de limpieza en Puerto Rico\nlimpieza residencial\nlimpieza comercial\nlimpieza de oficinas\nlimpieza de propiedades\nmantenimiento y limpieza\nservicios de limpieza profesional\nlimpieza de casas\nIlatek"
+        },
+        {
+          "property": "og:type",
+          "content": "website"
+        },
+        {
+          "property": "twitter:type",
+          "content": "website"
+        },
+        {
+          "property": "googlebot",
+          "content": "index, follow"
+        },
+        {
+          "property": "bingbot",
+          "content": "index, follow"
+        },
+        {
+          "property": "msnbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "slurp\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "yandex\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "duckduckbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "gptbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "ccbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "anthropic\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "claudebot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "perplexitybot",
+          "content": "index, follow"
+        },
+        {
+          "property": "bytespider",
+          "content": "index, follow"
+        },
+        {
+          "property": "facebookexternalhit",
+          "content": "index, follow"
+        },
+        {
+          "property": "twitterbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "linkedinbot\t",
+          "content": "index, follow"
+        },
+        {
+          "charset": "utf-8"
+        }
+      ]
+    },
+    {
+      "id": "FgSOlIcvWDuZW3boc9Ch",
+      "name": "Servicio - Limpieza Industrial",
+      "url": "https://ilatekpr.com/limpieza-industrial",
+      "status": 200,
+      "lang": "es",
+      "titles": [
+        "Limpieza Industrial en Puerto Rico | Ilatek"
+      ],
+      "canonical": [
+        "https://ilatekpr.com/limpieza-industrial"
+      ],
+      "keyCounts": {
+        "description": 1,
+        "og:title": 1,
+        "og:description": 1,
+        "og:image": 1,
+        "twitter:card": 1,
+        "twitter:image": 1
+      },
+      "pending": [],
+      "h1Unchanged": true,
+      "schemaUnchanged": true,
+      "nativeTitlePreserved": true,
+      "metadata": [
+        {
+          "charset": "utf-8"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        },
+        {
+          "name": "title",
+          "content": "Limpieza Industrial en Puerto Rico | Ilatek"
+        },
+        {
+          "property": "og:title",
+          "content": "Limpieza Industrial en Puerto Rico | Ilatek"
+        },
+        {
+          "name": "description",
+          "content": "Servicio de Limpieza Industrial en Puerto Rico | Ilatek Property Solution\n"
+        },
+        {
+          "property": "og:description",
+          "content": "Servicio de Limpieza Industrial en Puerto Rico | Ilatek Property Solution\n"
+        },
+        {
+          "name": "author",
+          "content": "Devasks"
+        },
+        {
+          "property": "og:author",
+          "content": "Devasks"
+        },
+        {
+          "name": "image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7266f8c077584b4ece363.jpg"
+        },
+        {
+          "property": "og:image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7266f8c077584b4ece363.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7266f8c077584b4ece363.jpg"
+        },
+        {
+          "name": "keywords",
+          "content": "servicio de limpieza en Puerto Rico\nservicios de limpieza Puerto Rico\nlimpieza profesional en Puerto Rico\ncompañía de limpieza en Puerto Rico\nlimpieza residencial\nlimpieza comercial\nlimpieza de oficinas\nlimpieza de propiedades\nmantenimiento y limpieza\nservicios de limpieza profesional\nlimpieza de casas\nIlatek - Limpieza Industrial"
+        },
+        {
+          "property": "og:keywords",
+          "content": "servicio de limpieza en Puerto Rico\nservicios de limpieza Puerto Rico\nlimpieza profesional en Puerto Rico\ncompañía de limpieza en Puerto Rico\nlimpieza residencial\nlimpieza comercial\nlimpieza de oficinas\nlimpieza de propiedades\nmantenimiento y limpieza\nservicios de limpieza profesional\nlimpieza de casas\nIlatek - Limpieza Industrial"
+        },
+        {
+          "property": "og:type",
+          "content": "website"
+        },
+        {
+          "property": "twitter:type",
+          "content": "website"
+        },
+        {
+          "property": "googlebot",
+          "content": "index, follow"
+        },
+        {
+          "property": "bingbot",
+          "content": "index, follow"
+        },
+        {
+          "property": "msnbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "slurp\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "yandex\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "duckduckbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "gptbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "ccbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "anthropic\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "claudebot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "perplexitybot",
+          "content": "index, follow"
+        },
+        {
+          "property": "bytespider",
+          "content": "index, follow"
+        },
+        {
+          "property": "facebookexternalhit",
+          "content": "index, follow"
+        },
+        {
+          "property": "twitterbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "linkedinbot\t",
+          "content": "index, follow"
+        },
+        {
+          "name": "robots",
+          "content": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        },
+        {
+          "charset": "utf-8"
+        }
+      ]
+    },
+    {
+      "id": "ts0xky5IxLT8ML1oooEN",
+      "name": "Servicio - Limpieza Estandar",
+      "url": "https://ilatekpr.com/limpieza-estandar",
+      "status": 200,
+      "lang": "es",
+      "titles": [
+        "Limpieza estandar en Puerto Rico | Ilatek"
+      ],
+      "canonical": [
+        "https://ilatekpr.com/limpieza-estandar"
+      ],
+      "keyCounts": {
+        "description": 1,
+        "og:title": 1,
+        "og:description": 1,
+        "og:image": 1,
+        "twitter:card": 1,
+        "twitter:image": 1
+      },
+      "pending": [],
+      "h1Unchanged": true,
+      "schemaUnchanged": true,
+      "nativeTitlePreserved": true,
+      "metadata": [
+        {
+          "charset": "utf-8"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        },
+        {
+          "name": "title",
+          "content": "Limpieza estandar en Puerto Rico | Ilatek"
+        },
+        {
+          "property": "og:title",
+          "content": "Limpieza estandar en Puerto Rico | Ilatek"
+        },
+        {
+          "name": "description",
+          "content": "Servicio de Limpieza estandar en Puerto Rico | Ilatek Property Solution\n"
+        },
+        {
+          "property": "og:description",
+          "content": "Servicio de Limpieza estandar en Puerto Rico | Ilatek Property Solution\n"
+        },
+        {
+          "name": "author",
+          "content": "Devasks"
+        },
+        {
+          "property": "og:author",
+          "content": "Devasks"
+        },
+        {
+          "name": "image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7266fc478ac55353c2637.jpg"
+        },
+        {
+          "property": "og:image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7266fc478ac55353c2637.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7266fc478ac55353c2637.jpg"
+        },
+        {
+          "name": "keywords",
+          "content": "servicio de limpieza en Puerto Rico\nservicios de limpieza Puerto Rico\nlimpieza profesional en Puerto Rico\ncompañía de limpieza en Puerto Rico\nlimpieza residencial\nlimpieza comercial\nlimpieza de oficinas\nlimpieza de propiedades\nmantenimiento y limpieza\nservicios de limpieza profesional\nlimpieza de casas\nIlatek - Limpieza Industrial"
+        },
+        {
+          "property": "og:keywords",
+          "content": "servicio de limpieza en Puerto Rico\nservicios de limpieza Puerto Rico\nlimpieza profesional en Puerto Rico\ncompañía de limpieza en Puerto Rico\nlimpieza residencial\nlimpieza comercial\nlimpieza de oficinas\nlimpieza de propiedades\nmantenimiento y limpieza\nservicios de limpieza profesional\nlimpieza de casas\nIlatek - Limpieza Industrial"
+        },
+        {
+          "property": "og:type",
+          "content": "website"
+        },
+        {
+          "property": "twitter:type",
+          "content": "website"
+        },
+        {
+          "property": "googlebot",
+          "content": "index, follow"
+        },
+        {
+          "property": "bingbot",
+          "content": "index, follow"
+        },
+        {
+          "property": "msnbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "slurp\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "yandex\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "duckduckbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "gptbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "ccbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "anthropic\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "claudebot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "perplexitybot",
+          "content": "index, follow"
+        },
+        {
+          "property": "bytespider",
+          "content": "index, follow"
+        },
+        {
+          "property": "facebookexternalhit",
+          "content": "index, follow"
+        },
+        {
+          "property": "twitterbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "linkedinbot\t",
+          "content": "index, follow"
+        },
+        {
+          "charset": "utf-8"
+        }
+      ]
+    },
+    {
+      "id": "RxmvNuy2kWtcqYOf5ey5",
+      "name": "Servicio - Limpieza Profunda",
+      "url": "https://ilatekpr.com/limpieza-profunda",
+      "status": 200,
+      "lang": "es",
+      "titles": [
+        "Limpieza profunda en Puerto Rico | Ilatek"
+      ],
+      "canonical": [
+        "https://ilatekpr.com/limpieza-profunda"
+      ],
+      "keyCounts": {
+        "description": 1,
+        "og:title": 1,
+        "og:description": 1,
+        "og:image": 1,
+        "twitter:card": 1,
+        "twitter:image": 1
+      },
+      "pending": [],
+      "h1Unchanged": true,
+      "schemaUnchanged": true,
+      "nativeTitlePreserved": true,
+      "metadata": [
+        {
+          "charset": "utf-8"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        },
+        {
+          "name": "title",
+          "content": "Limpieza profunda en Puerto Rico | Ilatek"
+        },
+        {
+          "property": "og:title",
+          "content": "Limpieza profunda en Puerto Rico | Ilatek"
+        },
+        {
+          "name": "description",
+          "content": "Servicio de limpieza Profunda en Puerto Rico | Ilatek Property Solution\n"
+        },
+        {
+          "property": "og:description",
+          "content": "Servicio de limpieza Profunda en Puerto Rico | Ilatek Property Solution\n"
+        },
+        {
+          "name": "author",
+          "content": "Devasks"
+        },
+        {
+          "property": "og:author",
+          "content": "Devasks"
+        },
+        {
+          "name": "image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7266fbbad531ac8247717.jpg"
+        },
+        {
+          "property": "og:image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7266fbbad531ac8247717.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7266fbbad531ac8247717.jpg"
+        },
+        {
+          "name": "keywords",
+          "content": "servicio de limpieza en Puerto Rico\nservicios de limpieza Puerto Rico\nlimpieza profesional en Puerto Rico\ncompañía de limpieza en Puerto Rico\nlimpieza residencial\nlimpieza comercial\nlimpieza de oficinas\nlimpieza de propiedades\nmantenimiento y limpieza\nservicios de limpieza profesional\nlimpieza de casas\nIlatek - Limpieza Industrial"
+        },
+        {
+          "property": "og:keywords",
+          "content": "servicio de limpieza en Puerto Rico\nservicios de limpieza Puerto Rico\nlimpieza profesional en Puerto Rico\ncompañía de limpieza en Puerto Rico\nlimpieza residencial\nlimpieza comercial\nlimpieza de oficinas\nlimpieza de propiedades\nmantenimiento y limpieza\nservicios de limpieza profesional\nlimpieza de casas\nIlatek - Limpieza Industrial"
+        },
+        {
+          "property": "og:type",
+          "content": "website"
+        },
+        {
+          "property": "twitter:type",
+          "content": "website"
+        },
+        {
+          "property": "googlebot",
+          "content": "index, follow"
+        },
+        {
+          "property": "bingbot",
+          "content": "index, follow"
+        },
+        {
+          "property": "msnbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "slurp\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "yandex\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "duckduckbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "gptbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "ccbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "anthropic\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "claudebot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "perplexitybot",
+          "content": "index, follow"
+        },
+        {
+          "property": "bytespider",
+          "content": "index, follow"
+        },
+        {
+          "property": "facebookexternalhit",
+          "content": "index, follow"
+        },
+        {
+          "property": "twitterbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "linkedinbot\t",
+          "content": "index, follow"
+        },
+        {
+          "charset": "utf-8"
+        }
+      ]
+    },
+    {
+      "id": "jFYqPCdMftreng0ZvJBU",
+      "name": "Servicio - Limpieza de Airbnb & rentals",
+      "url": "https://ilatekpr.com/airbnb-turnover",
+      "status": 200,
+      "lang": "es",
+      "titles": [
+        "Limpieza de Airbnb & rentals en Puerto Rico | Ilatek"
+      ],
+      "canonical": [
+        "https://ilatekpr.com/airbnb-turnover"
+      ],
+      "keyCounts": {
+        "description": 1,
+        "og:title": 1,
+        "og:description": 1,
+        "og:image": 1,
+        "twitter:card": 1,
+        "twitter:image": 1
+      },
+      "pending": [],
+      "h1Unchanged": true,
+      "schemaUnchanged": true,
+      "nativeTitlePreserved": true,
+      "metadata": [
+        {
+          "charset": "utf-8"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        },
+        {
+          "name": "title",
+          "content": "Limpieza de Airbnb & rentals en Puerto Rico | Ilatek"
+        },
+        {
+          "property": "og:title",
+          "content": "Limpieza de Airbnb & rentals en Puerto Rico | Ilatek"
+        },
+        {
+          "name": "description",
+          "content": "Limpieza de Airbnb & rentals en Puerto Rico | Ilatek Property Solution - Limpieza pre mudanza \n"
+        },
+        {
+          "property": "og:description",
+          "content": "Limpieza de Airbnb & rentals en Puerto Rico | Ilatek Property Solution - Limpieza pre mudanza \n"
+        },
+        {
+          "name": "author",
+          "content": "Devasks"
+        },
+        {
+          "property": "og:author",
+          "content": "Devasks"
+        },
+        {
+          "name": "image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7266ed5f4a8af439f5c40.jpg"
+        },
+        {
+          "property": "og:image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7266ed5f4a8af439f5c40.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7266ed5f4a8af439f5c40.jpg"
+        },
+        {
+          "name": "keywords",
+          "content": "Limpieza de Airbnb & rentals en Puerto Rico\nservicios de limpieza Puerto Rico\nlimpieza profesional en Puerto Rico\ncompañía de limpieza en Puerto Rico\nlimpieza residencial\nlimpieza comercial\nlimpieza de oficinas\nlimpieza de propiedades\nmantenimiento y limpieza\nservicios de limpieza profesional\nlimpieza de casas\nIlatek - Limpieza Industrial"
+        },
+        {
+          "property": "og:keywords",
+          "content": "Limpieza de Airbnb & rentals en Puerto Rico\nservicios de limpieza Puerto Rico\nlimpieza profesional en Puerto Rico\ncompañía de limpieza en Puerto Rico\nlimpieza residencial\nlimpieza comercial\nlimpieza de oficinas\nlimpieza de propiedades\nmantenimiento y limpieza\nservicios de limpieza profesional\nlimpieza de casas\nIlatek - Limpieza Industrial"
+        },
+        {
+          "property": "og:type",
+          "content": "website"
+        },
+        {
+          "property": "twitter:type",
+          "content": "website"
+        },
+        {
+          "property": "googlebot",
+          "content": "index, follow"
+        },
+        {
+          "property": "bingbot",
+          "content": "index, follow"
+        },
+        {
+          "property": "msnbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "slurp\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "yandex\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "duckduckbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "gptbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "ccbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "anthropic\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "claudebot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "perplexitybot",
+          "content": "index, follow"
+        },
+        {
+          "property": "bytespider",
+          "content": "index, follow"
+        },
+        {
+          "property": "facebookexternalhit",
+          "content": "index, follow"
+        },
+        {
+          "property": "twitterbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "linkedinbot\t",
+          "content": "index, follow"
+        },
+        {
+          "charset": "utf-8"
+        }
+      ]
+    },
+    {
+      "id": "mT1GEeQxrVziaw3wPoEO",
+      "name": "Servicio - Limpieza de Post Construcción",
+      "url": "https://ilatekpr.com/post-construccion",
+      "status": 200,
+      "lang": "es",
+      "titles": [
+        "Limpieza Post-Construcción en Puerto Rico | Ilatek"
+      ],
+      "canonical": [
+        "https://ilatekpr.com/post-construccion"
+      ],
+      "keyCounts": {
+        "description": 1,
+        "og:title": 1,
+        "og:description": 1,
+        "og:image": 1,
+        "twitter:card": 1,
+        "twitter:image": 1
+      },
+      "pending": [],
+      "h1Unchanged": true,
+      "schemaUnchanged": true,
+      "nativeTitlePreserved": true,
+      "metadata": [
+        {
+          "charset": "utf-8"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        },
+        {
+          "name": "title",
+          "content": "Limpieza Post-Construcción en Puerto Rico | Ilatek"
+        },
+        {
+          "property": "og:title",
+          "content": "Limpieza Post-Construcción en Puerto Rico | Ilatek"
+        },
+        {
+          "name": "description",
+          "content": "Limpieza de Post Construcción en Puerto Rico | Ilatek Property Solution - Limpieza pre mudanza \n"
+        },
+        {
+          "property": "og:description",
+          "content": "Limpieza de Post Construcción en Puerto Rico | Ilatek Property Solution - Limpieza pre mudanza \n"
+        },
+        {
+          "name": "author",
+          "content": "Devasks"
+        },
+        {
+          "property": "og:author",
+          "content": "Devasks"
+        },
+        {
+          "name": "image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7266dc478ac55353c25e2.jpg"
+        },
+        {
+          "property": "og:image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7266dc478ac55353c25e2.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7266dc478ac55353c25e2.jpg"
+        },
+        {
+          "name": "keywords",
+          "content": "Limpieza de Airbnb & rentals en Puerto Rico\nservicios de limpieza Puerto Rico\nlimpieza profesional en Puerto Rico\ncompañía de limpieza en Puerto Rico\nlimpieza residencial\nlimpieza comercial\nlimpieza de oficinas\nlimpieza de propiedades\nmantenimiento y limpieza\nservicios de limpieza profesional\nlimpieza de casas\nIlatek - Limpieza Industrial"
+        },
+        {
+          "property": "og:keywords",
+          "content": "Limpieza de Airbnb & rentals en Puerto Rico\nservicios de limpieza Puerto Rico\nlimpieza profesional en Puerto Rico\ncompañía de limpieza en Puerto Rico\nlimpieza residencial\nlimpieza comercial\nlimpieza de oficinas\nlimpieza de propiedades\nmantenimiento y limpieza\nservicios de limpieza profesional\nlimpieza de casas\nIlatek - Limpieza Industrial"
+        },
+        {
+          "property": "og:type",
+          "content": "website"
+        },
+        {
+          "property": "twitter:type",
+          "content": "website"
+        },
+        {
+          "property": "googlebot",
+          "content": "index, follow"
+        },
+        {
+          "property": "bingbot",
+          "content": "index, follow"
+        },
+        {
+          "property": "msnbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "slurp\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "yandex\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "duckduckbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "gptbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "ccbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "anthropic\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "claudebot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "perplexitybot",
+          "content": "index, follow"
+        },
+        {
+          "property": "bytespider",
+          "content": "index, follow"
+        },
+        {
+          "property": "facebookexternalhit",
+          "content": "index, follow"
+        },
+        {
+          "property": "twitterbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "linkedinbot\t",
+          "content": "index, follow"
+        },
+        {
+          "charset": "utf-8"
+        }
+      ]
+    },
+    {
+      "id": "PjpqPwDXcqdM4MrJHecJ",
+      "name": "Servicio - Limpieza de Ventanas",
+      "url": "https://ilatekpr.com/ventanas",
+      "status": 200,
+      "lang": "es",
+      "titles": [
+        "Limpieza de ventanas en Puerto Rico | Ilatek"
+      ],
+      "canonical": [
+        "https://ilatekpr.com/ventanas"
+      ],
+      "keyCounts": {
+        "description": 1,
+        "og:title": 1,
+        "og:description": 1,
+        "og:image": 1,
+        "twitter:card": 1,
+        "twitter:image": 1
+      },
+      "pending": [],
+      "h1Unchanged": true,
+      "schemaUnchanged": true,
+      "nativeTitlePreserved": true,
+      "metadata": [
+        {
+          "charset": "utf-8"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        },
+        {
+          "name": "title",
+          "content": "Limpieza de ventanas en Puerto Rico | Ilatek"
+        },
+        {
+          "property": "og:title",
+          "content": "Limpieza de ventanas en Puerto Rico | Ilatek"
+        },
+        {
+          "name": "description",
+          "content": "Limpieza de ventanas en Puerto Rico | Ilatek Property Solution - Limpieza pre mudanza \n"
+        },
+        {
+          "property": "og:description",
+          "content": "Limpieza de ventanas en Puerto Rico | Ilatek Property Solution - Limpieza pre mudanza \n"
+        },
+        {
+          "name": "author",
+          "content": "Devasks"
+        },
+        {
+          "property": "og:author",
+          "content": "Devasks"
+        },
+        {
+          "name": "image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7266d195f9172ede3875e.jpg"
+        },
+        {
+          "property": "og:image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7266d195f9172ede3875e.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7266d195f9172ede3875e.jpg"
+        },
+        {
+          "name": "keywords",
+          "content": "Limpieza de ventanas en Puerto Rico\nservicios de limpieza Puerto Rico\nlimpieza profesional en Puerto Rico\ncompañía de limpieza en Puerto Rico\nlimpieza residencial\nlimpieza comercial\nlimpieza de oficinas\nlimpieza de propiedades\nmantenimiento y limpieza\nservicios de limpieza profesional\nlimpieza de casas\nIlatek - Limpieza Industrial"
+        },
+        {
+          "property": "og:keywords",
+          "content": "Limpieza de ventanas en Puerto Rico\nservicios de limpieza Puerto Rico\nlimpieza profesional en Puerto Rico\ncompañía de limpieza en Puerto Rico\nlimpieza residencial\nlimpieza comercial\nlimpieza de oficinas\nlimpieza de propiedades\nmantenimiento y limpieza\nservicios de limpieza profesional\nlimpieza de casas\nIlatek - Limpieza Industrial"
+        },
+        {
+          "property": "og:type",
+          "content": "website"
+        },
+        {
+          "property": "twitter:type",
+          "content": "website"
+        },
+        {
+          "property": "googlebot",
+          "content": "index, follow"
+        },
+        {
+          "property": "bingbot",
+          "content": "index, follow"
+        },
+        {
+          "property": "msnbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "slurp\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "yandex\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "duckduckbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "gptbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "ccbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "anthropic\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "claudebot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "perplexitybot",
+          "content": "index, follow"
+        },
+        {
+          "property": "bytespider",
+          "content": "index, follow"
+        },
+        {
+          "property": "facebookexternalhit",
+          "content": "index, follow"
+        },
+        {
+          "property": "twitterbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "linkedinbot\t",
+          "content": "index, follow"
+        },
+        {
+          "charset": "utf-8"
+        }
+      ]
+    },
+    {
+      "id": "e57rVlmKBHyEUlr3xIOY",
+      "name": "Servicio - Lavado a presion",
+      "url": "https://ilatekpr.com/lavado-a-presion",
+      "status": 200,
+      "lang": "es",
+      "titles": [
+        "Lavado a presión en Puerto Rico | Ilatek"
+      ],
+      "canonical": [
+        "https://ilatekpr.com/lavado-a-presion"
+      ],
+      "keyCounts": {
+        "description": 1,
+        "og:title": 1,
+        "og:description": 1,
+        "og:image": 1,
+        "twitter:card": 1,
+        "twitter:image": 1
+      },
+      "pending": [],
+      "h1Unchanged": true,
+      "schemaUnchanged": true,
+      "nativeTitlePreserved": true,
+      "metadata": [
+        {
+          "charset": "utf-8"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        },
+        {
+          "name": "title",
+          "content": "Lavado a presión en Puerto Rico | Ilatek"
+        },
+        {
+          "property": "og:title",
+          "content": "Lavado a presión en Puerto Rico | Ilatek"
+        },
+        {
+          "name": "description",
+          "content": "Lavado a presión en Puerto Rico | Ilatek Property Solution - Limpieza pre mudanza \n"
+        },
+        {
+          "property": "og:description",
+          "content": "Lavado a presión en Puerto Rico | Ilatek Property Solution - Limpieza pre mudanza \n"
+        },
+        {
+          "name": "author",
+          "content": "Devasks"
+        },
+        {
+          "property": "og:author",
+          "content": "Devasks"
+        },
+        {
+          "name": "image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7266d8c077584b4ece2ff.jpg"
+        },
+        {
+          "property": "og:image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7266d8c077584b4ece2ff.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7266d8c077584b4ece2ff.jpg"
+        },
+        {
+          "name": "keywords",
+          "content": "Lavado a presión en Puerto Rico\nservicios de limpieza Puerto Rico\nlimpieza profesional en Puerto Rico\ncompañía de limpieza en Puerto Rico\nlimpieza residencial\nlimpieza comercial\nlimpieza de oficinas\nlimpieza de propiedades\nmantenimiento y limpieza\nservicios de limpieza profesional\nlimpieza de casas\nIlatek - Limpieza Industrial"
+        },
+        {
+          "property": "og:keywords",
+          "content": "Lavado a presión en Puerto Rico\nservicios de limpieza Puerto Rico\nlimpieza profesional en Puerto Rico\ncompañía de limpieza en Puerto Rico\nlimpieza residencial\nlimpieza comercial\nlimpieza de oficinas\nlimpieza de propiedades\nmantenimiento y limpieza\nservicios de limpieza profesional\nlimpieza de casas\nIlatek - Limpieza Industrial"
+        },
+        {
+          "property": "og:type",
+          "content": "website"
+        },
+        {
+          "property": "twitter:type",
+          "content": "website"
+        },
+        {
+          "property": "googlebot",
+          "content": "index, follow"
+        },
+        {
+          "property": "bingbot",
+          "content": "index, follow"
+        },
+        {
+          "property": "msnbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "slurp\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "yandex\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "duckduckbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "gptbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "ccbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "anthropic\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "claudebot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "perplexitybot",
+          "content": "index, follow"
+        },
+        {
+          "property": "bytespider",
+          "content": "index, follow"
+        },
+        {
+          "property": "facebookexternalhit",
+          "content": "index, follow"
+        },
+        {
+          "property": "twitterbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "linkedinbot\t",
+          "content": "index, follow"
+        },
+        {
+          "charset": "utf-8"
+        }
+      ]
+    },
+    {
+      "id": "L7QGcfFdm9qdVdPekdXf",
+      "name": "Servicio - Lavado de alfombras",
+      "url": "https://ilatekpr.com/alfombras",
+      "status": 200,
+      "lang": "es",
+      "titles": [
+        "Lavado de alfombras en Puerto Rico | Ilatek"
+      ],
+      "canonical": [
+        "https://ilatekpr.com/alfombras"
+      ],
+      "keyCounts": {
+        "description": 1,
+        "og:title": 1,
+        "og:description": 1,
+        "og:image": 1,
+        "twitter:card": 1,
+        "twitter:image": 1
+      },
+      "pending": [],
+      "h1Unchanged": true,
+      "schemaUnchanged": true,
+      "nativeTitlePreserved": true,
+      "metadata": [
+        {
+          "charset": "utf-8"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        },
+        {
+          "name": "title",
+          "content": "Lavado de alfombras en Puerto Rico | Ilatek"
+        },
+        {
+          "property": "og:title",
+          "content": "Lavado de alfombras en Puerto Rico | Ilatek"
+        },
+        {
+          "name": "description",
+          "content": "Lavado de alfombras en Puerto Rico | Ilatek Property Solution - Limpieza pre mudanza \n"
+        },
+        {
+          "property": "og:description",
+          "content": "Lavado de alfombras en Puerto Rico | Ilatek Property Solution - Limpieza pre mudanza \n"
+        },
+        {
+          "name": "author",
+          "content": "Devasks"
+        },
+        {
+          "property": "og:author",
+          "content": "Devasks"
+        },
+        {
+          "name": "image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7266dc478ac55353c25e1.jpg"
+        },
+        {
+          "property": "og:image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7266dc478ac55353c25e1.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7266dc478ac55353c25e1.jpg"
+        },
+        {
+          "name": "keywords",
+          "content": "Lavado de alfombras en Puerto Rico\nservicios de limpieza Puerto Rico\nlimpieza profesional en Puerto Rico\ncompañía de limpieza en Puerto Rico\nlimpieza residencial\nlimpieza comercial\nlimpieza de oficinas\nlimpieza de propiedades\nmantenimiento y limpieza\nservicios de limpieza profesional\nlimpieza de casas\nIlatek - Limpieza Industrial"
+        },
+        {
+          "property": "og:keywords",
+          "content": "Lavado de alfombras en Puerto Rico\nservicios de limpieza Puerto Rico\nlimpieza profesional en Puerto Rico\ncompañía de limpieza en Puerto Rico\nlimpieza residencial\nlimpieza comercial\nlimpieza de oficinas\nlimpieza de propiedades\nmantenimiento y limpieza\nservicios de limpieza profesional\nlimpieza de casas\nIlatek - Limpieza Industrial"
+        },
+        {
+          "property": "og:type",
+          "content": "website"
+        },
+        {
+          "property": "twitter:type",
+          "content": "website"
+        },
+        {
+          "property": "googlebot",
+          "content": "index, follow"
+        },
+        {
+          "property": "bingbot",
+          "content": "index, follow"
+        },
+        {
+          "property": "msnbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "slurp\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "yandex\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "duckduckbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "gptbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "ccbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "anthropic\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "claudebot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "perplexitybot",
+          "content": "index, follow"
+        },
+        {
+          "property": "bytespider",
+          "content": "index, follow"
+        },
+        {
+          "property": "facebookexternalhit",
+          "content": "index, follow"
+        },
+        {
+          "property": "twitterbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "linkedinbot\t",
+          "content": "index, follow"
+        },
+        {
+          "charset": "utf-8"
+        }
+      ]
+    },
+    {
+      "id": "WSsm5IYmqdxhMV6sEJpJ",
+      "name": "Servicio - Limpieza de electrodomésticos",
+      "url": "https://ilatekpr.com/electrodomesticos",
+      "status": 200,
+      "lang": "es",
+      "titles": [
+        "Limpieza de electrodomésticos en Puerto Rico | Ilatek"
+      ],
+      "canonical": [
+        "https://ilatekpr.com/electrodomesticos"
+      ],
+      "keyCounts": {
+        "description": 1,
+        "og:title": 1,
+        "og:description": 1,
+        "og:image": 1,
+        "twitter:card": 1,
+        "twitter:image": 1
+      },
+      "pending": [],
+      "h1Unchanged": true,
+      "schemaUnchanged": true,
+      "nativeTitlePreserved": true,
+      "metadata": [
+        {
+          "charset": "utf-8"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        },
+        {
+          "name": "title",
+          "content": "Limpieza de electrodomésticos en Puerto Rico | Ilatek"
+        },
+        {
+          "property": "og:title",
+          "content": "Limpieza de electrodomésticos en Puerto Rico | Ilatek"
+        },
+        {
+          "name": "description",
+          "content": "Limpieza de electrodomésticos en Puerto Rico | Ilatek Property Solution -"
+        },
+        {
+          "property": "og:description",
+          "content": "Limpieza de electrodomésticos en Puerto Rico | Ilatek Property Solution -"
+        },
+        {
+          "name": "author",
+          "content": "Devasks"
+        },
+        {
+          "property": "og:author",
+          "content": "Devasks"
+        },
+        {
+          "name": "image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7266dd5f4a8af439f5c07.jpg"
+        },
+        {
+          "property": "og:image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7266dd5f4a8af439f5c07.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7266dd5f4a8af439f5c07.jpg"
+        },
+        {
+          "name": "keywords",
+          "content": "Lavado de alfombras en Puerto Rico\nservicios de limpieza Puerto Rico\nlimpieza profesional en Puerto Rico\ncompañía de limpieza en Puerto Rico\nlimpieza residencial\nlimpieza comercial\nlimpieza de oficinas\nlimpieza de propiedades\nmantenimiento y limpieza\nservicios de limpieza profesional\nlimpieza de casas\nIlatek - Limpieza Industrial"
+        },
+        {
+          "property": "og:keywords",
+          "content": "Lavado de alfombras en Puerto Rico\nservicios de limpieza Puerto Rico\nlimpieza profesional en Puerto Rico\ncompañía de limpieza en Puerto Rico\nlimpieza residencial\nlimpieza comercial\nlimpieza de oficinas\nlimpieza de propiedades\nmantenimiento y limpieza\nservicios de limpieza profesional\nlimpieza de casas\nIlatek - Limpieza Industrial"
+        },
+        {
+          "property": "og:type",
+          "content": "website"
+        },
+        {
+          "property": "twitter:type",
+          "content": "website"
+        },
+        {
+          "property": "googlebot",
+          "content": "index, follow"
+        },
+        {
+          "property": "bingbot",
+          "content": "index, follow"
+        },
+        {
+          "property": "msnbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "slurp\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "yandex\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "duckduckbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "gptbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "ccbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "anthropic\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "claudebot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "perplexitybot",
+          "content": "index, follow"
+        },
+        {
+          "property": "bytespider",
+          "content": "index, follow"
+        },
+        {
+          "property": "facebookexternalhit",
+          "content": "index, follow"
+        },
+        {
+          "property": "twitterbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "linkedinbot\t",
+          "content": "index, follow"
+        },
+        {
+          "charset": "utf-8"
+        }
+      ]
+    },
+    {
+      "id": "mvyXWydnh0kx7DxUTUQw",
+      "name": "Servicio - Organización de espacios",
+      "url": "https://ilatekpr.com/organizacion",
+      "status": 200,
+      "lang": "es",
+      "titles": [
+        "Organización de espacios en Puerto Rico | Ilatek"
+      ],
+      "canonical": [
+        "https://ilatekpr.com/organizacion"
+      ],
+      "keyCounts": {
+        "description": 1,
+        "og:title": 1,
+        "og:description": 1,
+        "og:image": 1,
+        "twitter:card": 1,
+        "twitter:image": 1
+      },
+      "pending": [],
+      "h1Unchanged": true,
+      "schemaUnchanged": true,
+      "nativeTitlePreserved": true,
+      "metadata": [
+        {
+          "charset": "utf-8"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        },
+        {
+          "name": "title",
+          "content": "Organización de espacios en Puerto Rico | Ilatek"
+        },
+        {
+          "property": "og:title",
+          "content": "Organización de espacios en Puerto Rico | Ilatek"
+        },
+        {
+          "name": "description",
+          "content": "Organización de espacios en Puerto Rico | Ilatek Property Solution. Delega y optimiza tus espacios"
+        },
+        {
+          "property": "og:description",
+          "content": "Organización de espacios en Puerto Rico | Ilatek Property Solution. Delega y optimiza tus espacios"
+        },
+        {
+          "name": "author",
+          "content": "Devasks"
+        },
+        {
+          "property": "og:author",
+          "content": "Devasks"
+        },
+        {
+          "name": "image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7266dd5f4a8af439f5c06.jpg"
+        },
+        {
+          "property": "og:image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7266dd5f4a8af439f5c06.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7266dd5f4a8af439f5c06.jpg"
+        },
+        {
+          "name": "keywords",
+          "content": "Organización de espacios Puerto Rico\nservicios de limpieza Puerto Rico\nlimpieza profesional en Puerto Rico\ncompañía de limpieza en Puerto Rico\nlimpieza residencial\nlimpieza comercial\nlimpieza de oficinas\nlimpieza de propiedades\nmantenimiento y limpieza\nservicios de limpieza profesional\nlimpieza de casas\nIlatek - Limpieza Industrial"
+        },
+        {
+          "property": "og:keywords",
+          "content": "Organización de espacios Puerto Rico\nservicios de limpieza Puerto Rico\nlimpieza profesional en Puerto Rico\ncompañía de limpieza en Puerto Rico\nlimpieza residencial\nlimpieza comercial\nlimpieza de oficinas\nlimpieza de propiedades\nmantenimiento y limpieza\nservicios de limpieza profesional\nlimpieza de casas\nIlatek - Limpieza Industrial"
+        },
+        {
+          "property": "og:type",
+          "content": "website"
+        },
+        {
+          "property": "twitter:type",
+          "content": "website"
+        },
+        {
+          "property": "googlebot",
+          "content": "index, follow"
+        },
+        {
+          "property": "bingbot",
+          "content": "index, follow"
+        },
+        {
+          "property": "msnbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "slurp\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "yandex\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "duckduckbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "gptbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "ccbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "anthropic\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "claudebot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "perplexitybot",
+          "content": "index, follow"
+        },
+        {
+          "property": "bytespider",
+          "content": "index, follow"
+        },
+        {
+          "property": "facebookexternalhit",
+          "content": "index, follow"
+        },
+        {
+          "property": "twitterbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "linkedinbot\t",
+          "content": "index, follow"
+        },
+        {
+          "charset": "utf-8"
+        }
+      ]
+    },
+    {
+      "id": "Qa09zRjT9HjUEBFx3bDI",
+      "name": "Limpieza",
+      "url": "https://ilatekpr.com/home-698854",
+      "status": 200,
+      "lang": "es",
+      "titles": [
+        "Compañía de Limpieza en Puerto Rico | Ilatek Property Solution"
+      ],
+      "canonical": [
+        "https://ilatekpr.com/limpieza"
+      ],
+      "keyCounts": {
+        "description": 1,
+        "og:title": 1,
+        "og:description": 1,
+        "og:image": 1,
+        "twitter:card": 1,
+        "twitter:image": 1
+      },
+      "pending": [],
+      "h1Unchanged": true,
+      "schemaUnchanged": true,
+      "nativeTitlePreserved": true,
+      "metadata": [
+        {
+          "charset": "utf-8"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        },
+        {
+          "name": "title",
+          "content": "Compañía de Limpieza en Puerto Rico | Ilatek Property Solution"
+        },
+        {
+          "property": "og:title",
+          "content": "Compañía de Limpieza en Puerto Rico | Ilatek Property Solution"
+        },
+        {
+          "name": "description",
+          "content": "Compañía de Limpieza de Airbnb, Soluciones para tu propiedad Residencial, Comercial, Industrial en Puerto Rico \n"
+        },
+        {
+          "property": "og:description",
+          "content": "Compañía de Limpieza de Airbnb, Soluciones para tu propiedad Residencial, Comercial, Industrial en Puerto Rico \n"
+        },
+        {
+          "name": "author",
+          "content": "Devasks"
+        },
+        {
+          "property": "og:author",
+          "content": "Devasks"
+        },
+        {
+          "name": "image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acad798bd6bb710ca3bf84b.png"
+        },
+        {
+          "property": "og:image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acad798bd6bb710ca3bf84b.png"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acad798bd6bb710ca3bf84b.png"
+        },
+        {
+          "name": "keywords",
+          "content": "techos en Puerto Rico, techos PR, compañía de techos en Puerto Rico, contratista de techos Puerto Rico, empresa de techos PR, servicios de techos Puerto Rico, reparación de techos, reparación de techos Puerto Rico, arreglar techo, reparar techo, arreglo de techo, roofing Puerto Rico, techero Puerto Rico, maestro de techos Puerto Rico, impermeabilización de techos, impermeabilización de techos Puerto Rico, impermeabilizar el techo, impermeabilizante de techos, impermeabilización de losa, impermeabilización de techo plano, waterproofing de techos Puerto Rico, sellado de techos, sellado de techos Puerto Rico, sellar el techo, sellado de techo de zinc, sellado de techo de asfalto, sellado de techo de concreto, sellado de goteras, aplicador de sellado, sellado de techo precio, sellado con silicona, silicona para techos, silicona para techo de zinc, membrana asfáltica para techos, manto asfáltico, impermeabilizante asfáltico, recubrimiento elastomérico, elastomérico para techos, roof coating Puerto Rico, pintura elastomérica de techos, sellado de poliuretano, poliuretano para techos, sellado acrílico, acrílico para techos, impermeabilizante acrílico, mantenimiento de techos, mantenimiento de techos Puerto Rico, mantenimiento preventivo de techos, inspección de techos, inspección de techo gratis, chequeo de techo, evaluación de techo, limpieza de canaletas, limpieza de techos y canaletas, bajantes de agua, limpieza de gutters Puerto Rico, canaletas tapadas, lavado a presión de techos, pressure washing de techo, limpieza de techo con presión, tragaluces de techo, skylights Puerto Rico, instalación de tragaluces, filtración en tragaluz, instalación de techos, reemplazo de techo, techo nuevo, instalación de techo de zinc, cambio de techo, reparación vs reemplazo de techo, reparación de goteras, goteras en el techo, techo con gotera, arreglar goteras del techo, goteras cuando llueve, filtraciones de agua en el techo, techo goteando, reparación de filtraciones, filtración de agua en techo, humedad en el techo, manchas de agua en el techo, filtración en losa, reparación de grietas, grietas en el techo, rajaduras en el techo, grietas en losa, fisuras de techo, empozamiento de agua en el techo, agua estancada en el techo, pozo de agua en techo plano, drenaje de techo plano, oxidación de techos, techo de zinc oxidado, varillas expuestas en el techo, corrosión de techo, techo de metal oxidado, moho en el techo, hongos en el techo, techo con humedad y moho, reparación de techos después de huracán, daños de huracán en el techo, techo dañado por huracán, reparación de techo por tormenta, emergencia de techo por huracán, reclamos de seguro por techo, reparación de techo de zinc, reparación de techo de asfalto, reparación de techo de concreto, reparación de techo de teja, reparación de techo de madera, reparación de techos residenciales, reparación de techos comerciales, techo de concreto, techo plano, techo de zinc, techo de asfalto, shingles, techo de teja, techo de madera, losa de concreto, techo de metal, techo de cemento, techos residenciales, techos comerciales, techos industriales, techos para Airbnb, techos de almacenes y bodegas, techos de condominios, techos de HOA, techos de escuelas, techos de iglesias, techos de plaza comercial, techos en San Juan, techos en Bayamón, techos en Carolina, techos en Caguas, techos en Ponce, techos en Guaynabo, techos en Arecibo, techos en Mayagüez, techos en Trujillo Alto, techos en Dorado, techos en Toa Baja, techos en Vega Baja, techos en Humacao, techos en Fajardo, techos en Aguadilla, techos en Manatí, techos en Cayey, techos en Canóvanas, techos en Río Grande, techos en Coamo, techos en Yauco, techos en Cabo Rojo, techos en Isabela, techos en Barceloneta, techos en San Germán, techos en Hormigueros, techos en Sabana Grande, reparación de techos en San Juan, impermeabilización de techos en Bayamón, techos cerca de mí, servicio de techos a domicilio, precio de techos, costo de techos, cotización de techos gratis, presupuesto de techos, techos económicos, reparación de techos urgente, emergencia de techos, servicio de techos 24/7, techos con garantía, techos licenciado y asegurado, techos asegurados, mejor compañía de techos, reseñas de techos, techos antes y después, financiamiento para techos, cuánto cuesta reparar un techo en Puerto Rico, cómo saber si mi techo tiene goteras, cada cuánto sellar un techo, qué es el recubrimiento elastomérico, silicona vs elastomérico para techos, cómo impermeabilizar un techo plano, mi techo tiene moho qué hago, por qué se empoza el agua en mi techo plano, qué hacer si mi techo se dañó con el huracán, cubre el seguro la reparación del techo, roof repair Puerto Rico, roof sealing PR, roof waterproofing Puerto Rico, roof coating San Juan, roof leak repair, roof inspection Puerto Rico, hurricane roof damage repair PR, roof maintenance San Juan, commercial roof repair PR"
+        },
+        {
+          "property": "og:keywords",
+          "content": "techos en Puerto Rico, techos PR, compañía de techos en Puerto Rico, contratista de techos Puerto Rico, empresa de techos PR, servicios de techos Puerto Rico, reparación de techos, reparación de techos Puerto Rico, arreglar techo, reparar techo, arreglo de techo, roofing Puerto Rico, techero Puerto Rico, maestro de techos Puerto Rico, impermeabilización de techos, impermeabilización de techos Puerto Rico, impermeabilizar el techo, impermeabilizante de techos, impermeabilización de losa, impermeabilización de techo plano, waterproofing de techos Puerto Rico, sellado de techos, sellado de techos Puerto Rico, sellar el techo, sellado de techo de zinc, sellado de techo de asfalto, sellado de techo de concreto, sellado de goteras, aplicador de sellado, sellado de techo precio, sellado con silicona, silicona para techos, silicona para techo de zinc, membrana asfáltica para techos, manto asfáltico, impermeabilizante asfáltico, recubrimiento elastomérico, elastomérico para techos, roof coating Puerto Rico, pintura elastomérica de techos, sellado de poliuretano, poliuretano para techos, sellado acrílico, acrílico para techos, impermeabilizante acrílico, mantenimiento de techos, mantenimiento de techos Puerto Rico, mantenimiento preventivo de techos, inspección de techos, inspección de techo gratis, chequeo de techo, evaluación de techo, limpieza de canaletas, limpieza de techos y canaletas, bajantes de agua, limpieza de gutters Puerto Rico, canaletas tapadas, lavado a presión de techos, pressure washing de techo, limpieza de techo con presión, tragaluces de techo, skylights Puerto Rico, instalación de tragaluces, filtración en tragaluz, instalación de techos, reemplazo de techo, techo nuevo, instalación de techo de zinc, cambio de techo, reparación vs reemplazo de techo, reparación de goteras, goteras en el techo, techo con gotera, arreglar goteras del techo, goteras cuando llueve, filtraciones de agua en el techo, techo goteando, reparación de filtraciones, filtración de agua en techo, humedad en el techo, manchas de agua en el techo, filtración en losa, reparación de grietas, grietas en el techo, rajaduras en el techo, grietas en losa, fisuras de techo, empozamiento de agua en el techo, agua estancada en el techo, pozo de agua en techo plano, drenaje de techo plano, oxidación de techos, techo de zinc oxidado, varillas expuestas en el techo, corrosión de techo, techo de metal oxidado, moho en el techo, hongos en el techo, techo con humedad y moho, reparación de techos después de huracán, daños de huracán en el techo, techo dañado por huracán, reparación de techo por tormenta, emergencia de techo por huracán, reclamos de seguro por techo, reparación de techo de zinc, reparación de techo de asfalto, reparación de techo de concreto, reparación de techo de teja, reparación de techo de madera, reparación de techos residenciales, reparación de techos comerciales, techo de concreto, techo plano, techo de zinc, techo de asfalto, shingles, techo de teja, techo de madera, losa de concreto, techo de metal, techo de cemento, techos residenciales, techos comerciales, techos industriales, techos para Airbnb, techos de almacenes y bodegas, techos de condominios, techos de HOA, techos de escuelas, techos de iglesias, techos de plaza comercial, techos en San Juan, techos en Bayamón, techos en Carolina, techos en Caguas, techos en Ponce, techos en Guaynabo, techos en Arecibo, techos en Mayagüez, techos en Trujillo Alto, techos en Dorado, techos en Toa Baja, techos en Vega Baja, techos en Humacao, techos en Fajardo, techos en Aguadilla, techos en Manatí, techos en Cayey, techos en Canóvanas, techos en Río Grande, techos en Coamo, techos en Yauco, techos en Cabo Rojo, techos en Isabela, techos en Barceloneta, techos en San Germán, techos en Hormigueros, techos en Sabana Grande, reparación de techos en San Juan, impermeabilización de techos en Bayamón, techos cerca de mí, servicio de techos a domicilio, precio de techos, costo de techos, cotización de techos gratis, presupuesto de techos, techos económicos, reparación de techos urgente, emergencia de techos, servicio de techos 24/7, techos con garantía, techos licenciado y asegurado, techos asegurados, mejor compañía de techos, reseñas de techos, techos antes y después, financiamiento para techos, cuánto cuesta reparar un techo en Puerto Rico, cómo saber si mi techo tiene goteras, cada cuánto sellar un techo, qué es el recubrimiento elastomérico, silicona vs elastomérico para techos, cómo impermeabilizar un techo plano, mi techo tiene moho qué hago, por qué se empoza el agua en mi techo plano, qué hacer si mi techo se dañó con el huracán, cubre el seguro la reparación del techo, roof repair Puerto Rico, roof sealing PR, roof waterproofing Puerto Rico, roof coating San Juan, roof leak repair, roof inspection Puerto Rico, hurricane roof damage repair PR, roof maintenance San Juan, commercial roof repair PR"
+        },
+        {
+          "property": "og:type",
+          "content": "website"
+        },
+        {
+          "property": "twitter:type",
+          "content": "website"
+        },
+        {
+          "property": "googlebot",
+          "content": "index, follow"
+        },
+        {
+          "property": "bingbot",
+          "content": "index, follow"
+        },
+        {
+          "property": "msnbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "slurp\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "yandex\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "duckduckbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "gptbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "ccbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "anthropic\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "claudebot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "perplexitybot",
+          "content": "index, follow"
+        },
+        {
+          "property": "bytespider",
+          "content": "index, follow"
+        },
+        {
+          "property": "facebookexternalhit",
+          "content": "index, follow"
+        },
+        {
+          "property": "twitterbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "linkedinbot\t",
+          "content": "index, follow"
+        },
+        {
+          "charset": "utf-8"
+        },
+        {
+          "charset": "utf-8"
+        }
+      ]
+    },
+    {
+      "id": "Fto0pM1t7xfYiJvjG1Go",
+      "name": "Servicio - Limpieza de Mudanza",
+      "url": "https://ilatekpr.com/limpieza-de-mudanza",
+      "status": 200,
+      "lang": "es",
+      "titles": [
+        "Limpieza de mudanza en Puerto Rico | Ilatek"
+      ],
+      "canonical": [
+        "https://ilatekpr.com/limpieza-de-mudanza"
+      ],
+      "keyCounts": {
+        "description": 1,
+        "og:title": 1,
+        "og:description": 1,
+        "og:image": 1,
+        "twitter:card": 1,
+        "twitter:image": 1
+      },
+      "pending": [],
+      "h1Unchanged": true,
+      "schemaUnchanged": true,
+      "nativeTitlePreserved": true,
+      "metadata": [
+        {
+          "charset": "utf-8"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        },
+        {
+          "name": "title",
+          "content": "Limpieza de mudanza en Puerto Rico | Ilatek"
+        },
+        {
+          "property": "og:title",
+          "content": "Limpieza de mudanza en Puerto Rico | Ilatek"
+        },
+        {
+          "name": "description",
+          "content": "Limpieza de mudanza en Puerto Rico | Ilatek Property Solution - Limpieza pre mudanza \n"
+        },
+        {
+          "property": "og:description",
+          "content": "Limpieza de mudanza en Puerto Rico | Ilatek Property Solution - Limpieza pre mudanza \n"
+        },
+        {
+          "name": "author",
+          "content": "Devasks"
+        },
+        {
+          "property": "og:author",
+          "content": "Devasks"
+        },
+        {
+          "name": "image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7266fc478ac55353c262b.jpg"
+        },
+        {
+          "property": "og:image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7266fc478ac55353c262b.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:image",
+          "content": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7266fc478ac55353c262b.jpg"
+        },
+        {
+          "name": "keywords",
+          "content": "servicio de limpieza en Puerto Rico\nservicios de limpieza Puerto Rico\nlimpieza profesional en Puerto Rico\ncompañía de limpieza en Puerto Rico\nlimpieza residencial\nlimpieza comercial\nlimpieza de oficinas\nlimpieza de propiedades\nmantenimiento y limpieza\nservicios de limpieza profesional\nlimpieza de casas\nIlatek - Limpieza Industrial"
+        },
+        {
+          "property": "og:keywords",
+          "content": "servicio de limpieza en Puerto Rico\nservicios de limpieza Puerto Rico\nlimpieza profesional en Puerto Rico\ncompañía de limpieza en Puerto Rico\nlimpieza residencial\nlimpieza comercial\nlimpieza de oficinas\nlimpieza de propiedades\nmantenimiento y limpieza\nservicios de limpieza profesional\nlimpieza de casas\nIlatek - Limpieza Industrial"
+        },
+        {
+          "property": "og:type",
+          "content": "website"
+        },
+        {
+          "property": "twitter:type",
+          "content": "website"
+        },
+        {
+          "property": "googlebot",
+          "content": "index, follow"
+        },
+        {
+          "property": "bingbot",
+          "content": "index, follow"
+        },
+        {
+          "property": "msnbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "slurp\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "yandex\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "duckduckbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "gptbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "ccbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "anthropic\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "claudebot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "perplexitybot",
+          "content": "index, follow"
+        },
+        {
+          "property": "bytespider",
+          "content": "index, follow"
+        },
+        {
+          "property": "facebookexternalhit",
+          "content": "index, follow"
+        },
+        {
+          "property": "twitterbot\t",
+          "content": "index, follow"
+        },
+        {
+          "property": "linkedinbot\t",
+          "content": "index, follow"
+        },
+        {
+          "charset": "utf-8"
+        }
+      ]
+    }
+  ]
+}

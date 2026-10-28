@@ -4,7 +4,7 @@
   "status": "plantilla-local-delta-system",
   "metaTagTitle": "Limpieza y Mantenimiento de Propiedades en {{custom_values.county_name_and_state}} | Ilatek",
   "metaTagDescription": "Limpieza residencial, comercial e industrial + mantenimiento de techos en {{custom_values.county_name_and_state}}. Precios transparentes por pie², cotizador online y cobertura en los 78 municipios.",
-  "metaTagImage": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/home.jpg",
+  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/bfa88816-50eb-45da-8e03-ea3b9e3beffd.jpg",
   "locationCustomValue": "{{custom_values.county_name_and_state}}",
   "metaTagImageAlt": "Limpieza y Mantenimiento de Propiedades en {{custom_values.county_name_and_state}} | Ilatek",
   "canonical": "https://{{custom_values.website_url}}/home",

@@ -16,7 +16,7 @@
   ],
   "socialImage": {
     "role": "social-image",
-    "publicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/home.jpg",
+    "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/bfa88816-50eb-45da-8e03-ea3b9e3beffd.jpg",
     "file": "assets/meta-image.jpg",
     "status": "local-copy",
     "bytes": 161441,
@@ -25,7 +25,7 @@
   "assets": [
     {
       "role": "social-image",
-      "publicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/home.jpg",
+      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/bfa88816-50eb-45da-8e03-ea3b9e3beffd.jpg",
       "file": "assets/meta-image.jpg",
       "status": "local-copy",
       "bytes": 161441,
@@ -62,6 +62,22 @@
       "status": "local-copy",
       "bytes": 860963,
       "sha256": "136e39a5dcfd61355008a5056d959f527b968c39760a29026d0bb9ba0bb7c342"
+    },
+    {
+      "role": "video",
+      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/775d8cdb-8c8c-47ad-8516-47b1abc9315a.mp4",
+      "file": "assets/media/775d8cdb-8c8c-47ad-8516-47b1abc9315a.mp4",
+      "status": "local-copy",
+      "bytes": 1081996,
+      "sha256": "8fbc49af8f1fb733ee36ac8ceab124ae8c97057753407ddd8f24e7c29560d3e5"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://i.ytimg.com/vi/yFt7eY_thIs/maxresdefault.jpg",
+      "file": "assets/media/maxresdefault.jpg",
+      "status": "local-copy",
+      "bytes": 233148,
+      "sha256": "bc1af0a3f5fcc1b04bd3821d00f404e8345821ef65cd8a4cc1b1d654debdbc5f"
     },
     {
       "role": "media-or-fallback",
@@ -129,11 +145,11 @@
     },
     {
       "role": "media-or-fallback",
-      "publicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/hub/segmento.webp",
-      "file": "assets/media/segmento.webp",
+      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acbf7e5bbad531ac89598d2.png",
+      "file": "assets/media/6acbf7e5bbad531ac89598d2.png",
       "status": "local-copy",
-      "bytes": 147654,
-      "sha256": "4696570aa4c763fc66d78d96c0e33b23fa9801bb559f9a41896e5a01427005eb"
+      "bytes": 8142492,
+      "sha256": "3830ea84212475e2b6c1dcf6a7009cbf8c9ba1f7fd328f5e30d422f7a2f7bc63"
     },
     {
       "role": "media-or-fallback",
@@ -366,40 +382,6 @@
       "status": "local-copy",
       "bytes": 941,
       "sha256": "4bebe72147bfd89f46554899dc5228e3436d48bac1ce52da439c14ff7f62d7ba"
-    },
-    {
-      "role": "social-image",
-      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/bfa88816-50eb-45da-8e03-ea3b9e3beffd.jpg",
-      "file": "assets/media/bfa88816-50eb-45da-8e03-ea3b9e3beffd.jpg",
-      "status": "local-copy",
-      "bytes": 138662,
-      "sha256": "ed5587279a0fa8710acb98696cc224c81a9b1fb934721283c0ed8f5ba3aee8c1"
-    },
-    {
-      "role": "media-or-fallback",
-      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/775d8cdb-8c8c-47ad-8516-47b1abc9315a.mp4",
-      "file": "assets/media/775d8cdb-8c8c-47ad-8516-47b1abc9315a.mp4",
-      "status": "local-copy",
-      "bytes": 1081996,
-      "sha256": "8fbc49af8f1fb733ee36ac8ceab124ae8c97057753407ddd8f24e7c29560d3e5"
-    },
-    {
-      "role": "media-or-fallback",
-      "publicUrl": "https://i.ytimg.com/vi/yFt7eY_thIs/maxresdefault.jpg",
-      "file": "assets/media/youtube-yFt7eY_thIs-maxresdefault.jpg",
-      "status": "local-copy",
-      "bytes": 233148,
-      "sha256": "bc1af0a3f5fcc1b04bd3821d00f404e8345821ef65cd8a4cc1b1d654debdbc5f"
-    },
-    {
-      "role": "media-or-fallback",
-      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acbf7e5bbad531ac89598d2.png",
-      "file": "assets/media/6acbf7e5bbad531ac89598d2.webp",
-      "status": "local-optimized-backup",
-      "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6acbf7e5bbad531ac89598d2.webp",
-      "note": "Copia local: variante WebP optimizada del mismo archivo, ya versionada en el repositorio; no se duplica el PNG de 8,1 MB. No se modificó el embed.",
-      "bytes": 124754,
-      "sha256": "b4b3180fb990fce9bd71dd7a9935cb22e79911dc3672418379d003ad5181a6ac"
     }
   ]
 }
