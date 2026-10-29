@@ -15,6 +15,8 @@ tools/qa/
 ├── bridge/ilatek-bridge.html   plantilla del helper ILATEK_BRIDGE
 ├── fix_resolver_bridge.py      renderiza la plantilla e inyecta helper + alias de resolver
 ├── audit_tokens_global.py      audita los nombres de token contra el contrato
+├── agenda/ilcal-limpieza.html  plantilla del bloque de agenda (limpieza)
+├── agenda_blocks.py            dueño y gate de la agenda de GHL por vertical
 ├── qa_tokenized_headings.mjs   contrato bridge-only + barrido de los 66 consumidores
 └── …resto de utilidades
 ```
@@ -59,6 +61,19 @@ tools/qa/
   home + legales/embeds + componentes) reciben el helper renderizado y por tanto
   el pixel. La home es `ghl-home-multiservicios.html`, que no termina en
   `-landing.html`: una regla por nombre la dejaba fuera y sin pixel.
+- **Agenda: una definición por vertical y un gate.** El bloque de calendario
+  (28 líneas) ya no se copia a mano en cada landing: `agenda_blocks.py` tiene el
+  calendario de cada vertical (`VERTICALS`), la plantilla
+  `agenda/ilcal-limpieza.html` y la única tabla de copy (`LIMPIEZA`, slug →
+  etiqueta del H2 y del `title` del iframe). `--check` recorre las 48 canónicas
+  (11 `categorias/` + 36 `servicios/` + la home, que no termina en
+  `-landing.html`) y falla por calendario del vertical equivocado, más de un
+  `widget/booking`, más de un `form_embed.js`, ids duplicados o bloque propio
+  fuera de la plantilla; sin `--check` re-renderiza el bloque de limpieza
+  (idempotente). Techos se **valida pero no se reescribe**: su bloque vive dentro
+  del wrapper de la página y usa su paleta (`var(--blue)`, `var(--muted)`).
+  `NO_AGENDA` deja por escrito, con razón, las dos canónicas que se quedan sin
+  agenda hoy (la home y el hub mixto `categorias/servicios`).
 - **Canales de resolución, en orden.** párrafo nativo / `data-*` expandidos →
   `<title>`/`og:description` (GHL expande ahí el pueblo del mismo custom value) →
   subdominio (`juncos.ilatekpr.com` → Juncos, con acentos desde
@@ -119,6 +134,7 @@ Los artefactos de QA (`shots/`) se escriben **dentro de la raíz del repo**
 | `python tools/qa/populate_headings.py` | Tokeniza titulares locales (H1 hero completo, H2, FAQ de precio) — idempotente. |
 | `python tools/qa/fix_resolver_bridge.py [--check]` | Inyecta el helper renderizado (helper + pixel) en los 66 consumidores del puente, parchea los resolvers de los canónicos y hace tolerantes los gates de 6 slots (idempotente; sin `--check` re-renderiza helpers obsoletos, con `--check` valida helper, gates y `ilBV.slot`). |
 | `python tools/qa/audit_tokens_global.py` | Audita que solo existan los `custom_values` del contrato y que los 66 consumidores del puente tengan el Meta Pixel y 0 gates exactos-6 (exit 1 si falta) → `shots/audit-tokens-global.json`. |
+| `python tools/qa/agenda_blocks.py [--check]` | Dueño de la agenda de GHL: `--check` exige un calendario por landing canónica, el del vertical correcto, un solo `form_embed.js`, ids únicos y el bloque de limpieza byte a byte igual a `agenda/ilcal-limpieza.html`; sin `--check` re-renderiza ese bloque (idempotente; techos no se toca). Exit 1 si alguna se sale. |
 | `python tools/qa/build_runtime_harness.py` | Construye las copias del harness (sentinel / resolver / original / late / missing / double / badpixel) e imprime `TMP=…`. |
 | `node tools/qa/run_runtime_qa.mjs` | QA completo del runtime del home + los cuatro bordes del bridge (párrafo tardío, ausente, doble y píxel inválido) → `<repo>/shots/qa-result4.json`. Exit 1 si un borde del bridge falla. |
 | `node tools/qa/qa_tokenized_headings.mjs` | Contrato bridge-only: casos con variantes de puente, bordes del pixel (párrafo después, dos párrafos, helper duplicado, ids inválidos) y barrido de los 66 consumidores; exige pueblo, un `init` + un `PageView`, enlaces al subdominio y cero tokens crudos. |

@@ -1917,6 +1917,35 @@ body:has(#ilatek-nav) .mshero-inner{
   (function(){var ilTitle=function(){var imgs=document.images;for(var i=0;i<imgs.length;i++){var im=imgs[i];if(!im.title&&!im.closest('a[aria-label]')&&!im.closest('[aria-hidden="true"]')){var t=im.alt||'';if(t.length>60)t=t.slice(0,57)+'...';im.title=t||'Ilatek - Servicio de Limpieza en Puerto Rico'}}};if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',ilTitle)}else{ilTitle()}window.addEventListener('load',ilTitle)})();
   </script>
 </section>
+<style id="ilcal-css">
+/* Fondo = --mist de la paleta: el bloque vive fuera del wrapper que define las variables */
+.ilcal{padding:96px 0;background:#f4f7fc}
+.ilcal-shell{width:min(100% - 32px,1100px);margin:0 auto}
+.ilcal-head{max-width:660px;margin:0 auto 32px;text-align:center}
+.ilcal-eyebrow{display:inline-flex;align-items:center;padding:7px 14px;border-radius:999px;background:#eef3ff;color:#213d8e;font:800 12px/1 Manrope,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.ilcal h2{margin:16px 0 0;font-size:clamp(28px,3.4vw,44px);font-weight:800;line-height:1.1;color:#11164b}
+.ilcal-head p{margin:14px 0 0;font-size:16px;line-height:1.6;color:#5b6380}
+.ilcal-box{padding:16px;border:1px solid #dbe2f1;border-radius:20px;background:#fff;box-shadow:0 20px 45px rgba(16,25,75,.08)}
+.ilcal-box iframe{display:block;width:100%;min-height:820px;border:0;border-radius:12px;background:#fff}
+.ilcal-fallback{margin:12px 0 0;text-align:center;font-size:14px;color:#5b6380}
+.ilcal-fallback a{color:#213d8e;font-weight:700}
+@media(max-width:560px){.ilcal{padding:64px 0}.ilcal-box{padding:9px;border-radius:14px}.ilcal-box iframe{min-height:760px;border-radius:9px}}
+</style>
+<!-- Agenda: calendario de limpieza de GHL embebido -->
+<section class="ilcal" id="ilcal-agenda" aria-labelledby="ilcal-title">
+  <div class="ilcal-shell">
+    <header class="ilcal-head">
+      <span class="ilcal-eyebrow">Agenda tu servicio</span>
+      <h2 id="ilcal-title">Reserva tu limpieza de alfombras en minutos.</h2>
+      <p>Elige el día y la hora que te convengan. Cubrimos los 78 municipios de la isla, con servicio en {{custom_values.business__county_name}}.</p>
+    </header>
+    <div class="ilcal-box">
+      <iframe src="https://link.msgsndr.com/widget/booking/i5HZobZjuSZcDl43qgOG" allow="payment" scrolling="no" title="Agenda tu limpieza de alfombras — Ilatek" id="i5HZobZjuSZcDl43qgOG_1791075788804"></iframe>
+      <p class="ilcal-fallback">¿No carga el calendario? <a href="https://{{custom_values.website_url}}/cotizacion" data-ilatek-path="/cotizacion">Solicita tu cotización aquí</a>.</p>
+    </div>
+  </div>
+  <script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
+</section>
 <!-- ILATEK:SHELL:FOOTER:START -->
 <!--
   ILATEK · GHL Custom Code · Footer global (embed independiente)
