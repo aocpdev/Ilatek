@@ -20,3 +20,6 @@ home-page/.backups-uiux/
 shots/
 scripts/.qaenv/
 archivo/
+
+# Perfil de Chrome para automatizar GHL (no publicar, no versionar)
+.chrome-*

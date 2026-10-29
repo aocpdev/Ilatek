@@ -1,6 +1,46 @@
 User-agent: *
 Allow: /
 Disallow: /dnf/
+# Servicios publicados (36): catalogo completo, Limpieza y Techos.
+# Una linea Allow por servicio; los slugs salen de Ilatek/servicios/README.md.
+# Limpieza (10)
+Allow: /airbnb-turnover
+Allow: /alfombras
+Allow: /electrodomesticos
+Allow: /lavado-a-presion
+Allow: /limpieza-de-mudanza
+Allow: /limpieza-estandar
+Allow: /limpieza-profunda
+Allow: /organizacion
+Allow: /post-construccion
+Allow: /ventanas
+# Techos (26)
+Allow: /canaletas-y-bajantes
+Allow: /empozamiento-de-techos
+Allow: /inspeccion-de-techos
+Allow: /instalacion-y-reemplazo-de-techos
+Allow: /lavado-a-presion-techos
+Allow: /limpieza-de-techos-y-canaletas
+Allow: /mantenimiento-de-techos
+Allow: /membrana-asfaltica
+Allow: /recubrimiento-elastomerico
+Allow: /reparacion-de-filtraciones
+Allow: /reparacion-de-goteras
+Allow: /reparacion-de-grietas-techos
+Allow: /reparacion-post-huracan
+Allow: /sellado-acrilico
+Allow: /sellado-de-poliuretano
+Allow: /sellado-de-silicona
+Allow: /sellado-de-techos-comercial
+Allow: /sellado-de-techos-industrial
+Allow: /sellado-de-techos-residencial
+Allow: /techos-de-asfalto
+Allow: /techos-de-concreto
+Allow: /techos-de-madera
+Allow: /techos-de-teja
+Allow: /techos-de-zinc
+Allow: /techos-planos
+Allow: /tragaluces
 
 # Buscadores con IA (AEO/GEO): acceso explicito para que puedan rastrear, citar
 # y enlazar el contenido de Ilatek en respuestas generadas.
