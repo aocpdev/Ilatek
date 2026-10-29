@@ -1,17 +1,17 @@
-# SEO — Inspección de Techos Gratis en {{custom_values.county_name_and_state}} | Ilatek Techos
+# SEO — Inspección de Techos Gratis en {{custom_values.business__county_name}} | Ilatek Techos
 
-Plantilla local Delta System para {{custom_values.county_name_and_state}}. Título, descripción y textos de imágenes sincronizados con los entregables.
+Plantilla local Delta System para {{custom_values.business__county_name}}. Título, descripción y textos de imágenes sincronizados con los entregables.
 
 ## Meta Tag Title
 
 ```text
-Inspección de Techos Gratis en {{custom_values.county_name_and_state}} | Ilatek Techos
+Inspección de Techos Gratis en {{custom_values.business__county_name}} | Ilatek Techos
 ```
 
 ## Meta Tag Description
 
 ```text
-Inspección de techos gratis en {{custom_values.county_name_and_state}}. Diagnóstico completo con informe fotográfico, sin compromiso. Detectamos filtraciones y daños a tiempo. 78 municipios.
+Inspección de techos gratis en {{custom_values.business__county_name}}. Diagnóstico completo con informe fotográfico, sin compromiso. Detectamos filtraciones y daños a tiempo. 78 municipios.
 ```
 
 ## Meta Tag Image
@@ -40,12 +40,12 @@ Inventario: [ASSETS.json](ASSETS.json). Datos reutilizables: [seo.json](seo.json
 
 ## Localización del snapshot — SEO, AEO y GEO
 
-Custom Value obligatorio: `{{custom_values.county_name_and_state}}`. Usar la etiqueta completa del pueblo y estado; no añadir Puerto Rico nuevamente si ya forma parte del valor. No sustituirlo por `business__county_name`.
+Custom Value obligatorio: `{{custom_values.business__county_name}}`. Usar la etiqueta completa del pueblo y estado; no añadir Puerto Rico nuevamente si ya forma parte del valor. No sustituirlo por `business__county_name`.
 
 ### Meta Tag Image Alt
 
 ```text
-Inspección de Techos Gratis en {{custom_values.county_name_and_state}} | Ilatek Techos
+Inspección de Techos Gratis en {{custom_values.business__county_name}} | Ilatek Techos
 ```
 
 El HEAD incluye `og:image:alt` y `twitter:image:alt`. Los atributos `alt` y `title` descriptivos de las imágenes usan la misma localidad, conservando lo que representa cada imagen. Las imágenes decorativas mantienen `alt=""` por accesibilidad. Las URLs de medios no son texto SEO y se conservan.

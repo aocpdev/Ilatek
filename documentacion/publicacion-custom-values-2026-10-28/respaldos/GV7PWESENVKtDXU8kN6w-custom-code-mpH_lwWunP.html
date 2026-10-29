@@ -1,0 +1,955 @@
+<!-- =========================================================
+     ILATEK PROPERTY SOLUTIONS
+     CALCULADORA PARA CLIENTES - GOHIGHLEVEL
+     ========================================================= -->
+
+<div id="ilatek-calculator">
+
+  <style>
+    #ilatek-calculator {
+      max-width: 850px;
+      margin: 0 auto;
+      font-family: Arial, sans-serif;
+      color: #172033;
+      line-height: 1.4;
+    }
+
+    #ilatek-calculator * {
+      box-sizing: border-box;
+    }
+
+    #ilatek-calculator .il-section {
+      margin-bottom: 22px;
+    }
+
+    #ilatek-calculator .il-card {
+      border: 1px solid #d9dee7;
+      border-radius: 12px;
+      padding: 18px;
+      background: #fff;
+    }
+
+    #ilatek-calculator h3 {
+      margin: 0 0 12px;
+      font-size: 19px;
+    }
+
+    #ilatek-calculator p {
+      margin: 5px 0;
+    }
+
+    #ilatek-calculator .muted {
+      color: #667085;
+      font-size: 14px;
+    }
+
+    #ilatek-calculator select,
+    #ilatek-calculator input {
+      width: 100%;
+      min-height: 46px;
+      padding: 10px 12px;
+      border: 1px solid #cfd5df;
+      border-radius: 8px;
+      background: #fff;
+      font-size: 16px;
+    }
+
+    #ilatek-calculator .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    #ilatek-calculator .qty-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      padding: 12px;
+      border: 1px solid #d9dee7;
+      border-radius: 9px;
+    }
+
+    #ilatek-calculator .qty-row span {
+      font-weight: 600;
+    }
+
+    #ilatek-calculator .qty-row input {
+      width: 90px;
+      flex-shrink: 0;
+    }
+
+    #ilatek-calculator .result {
+      border: 2px solid #172033;
+      border-radius: 14px;
+      padding: 22px;
+      background: #fff;
+    }
+
+    #ilatek-calculator .result-flex {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    #ilatek-calculator .result-label {
+      color: #667085;
+      font-size: 14px;
+    }
+
+    #ilatek-calculator #tipoLabel {
+      display: block;
+      margin-top: 4px;
+      font-size: 20px;
+    }
+
+    #ilatek-calculator #total {
+      display: block;
+      margin-top: 4px;
+      font-size: 34px;
+      font-weight: 700;
+    }
+
+    #ilatek-calculator .right {
+      text-align: right;
+    }
+
+    #ilatek-calculator #especial {
+      display: none;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 600px) {
+      #ilatek-calculator .grid {
+        grid-template-columns: 1fr;
+      }
+
+      #ilatek-calculator .right {
+        text-align: left;
+      }
+
+      #ilatek-calculator .result-flex {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+  </style>
+
+
+  <!-- INTRO -->
+  <div class="il-section il-card">
+    <strong>Configure el servicio que necesita</strong>
+    <p class="muted">
+      Seleccione el tipo de limpieza, las áreas,
+      servicios adicionales y municipio.
+    </p>
+  </div>
+
+
+  <!-- TIPO DE LIMPIEZA -->
+  <div class="il-section">
+
+    <h3>Tipo de limpieza</h3>
+
+    <select id="il-tipo">
+      <option value="">Seleccione el tipo de limpieza</option>
+
+      <option value="general">
+        Limpieza general / mantenimiento
+      </option>
+
+      <option value="profunda">
+        Limpieza profunda
+      </option>
+
+      <option value="comercial">
+        Limpieza comercial
+      </option>
+
+      <option value="mudanza">
+        Limpieza de mudanza
+      </option>
+
+      <option value="post">
+        Limpieza post-construcción
+      </option>
+    </select>
+
+  </div>
+
+
+  <!-- AREAS -->
+  <div class="il-section">
+
+    <h3>Áreas principales</h3>
+
+    <div class="grid">
+
+      <label class="qty-row">
+        <span>Habitaciones</span>
+        <input
+          class="il-qty"
+          data-group="area"
+          data-key="habitacion"
+          type="number"
+          min="0"
+          step="1"
+          value="0">
+      </label>
+
+
+      <label class="qty-row">
+        <span>Sala</span>
+        <input
+          class="il-qty"
+          data-group="area"
+          data-key="sala"
+          type="number"
+          min="0"
+          step="1"
+          value="0">
+      </label>
+
+
+      <label class="qty-row">
+        <span>Comedor</span>
+        <input
+          class="il-qty"
+          data-group="area"
+          data-key="comedor"
+          type="number"
+          min="0"
+          step="1"
+          value="0">
+      </label>
+
+
+      <label class="qty-row">
+        <span>Family</span>
+        <input
+          class="il-qty"
+          data-group="area"
+          data-key="family"
+          type="number"
+          min="0"
+          step="1"
+          value="0">
+      </label>
+
+
+      <label class="qty-row">
+        <span>Cocina</span>
+        <input
+          class="il-qty"
+          data-group="area"
+          data-key="cocina"
+          type="number"
+          min="0"
+          step="1"
+          value="0">
+      </label>
+
+
+      <label class="qty-row">
+        <span>Baños completos</span>
+        <input
+          class="il-qty"
+          data-group="area"
+          data-key="bano"
+          type="number"
+          min="0"
+          step="1"
+          value="0">
+      </label>
+
+
+      <label class="qty-row">
+        <span>Medios baños</span>
+        <input
+          class="il-qty"
+          data-group="area"
+          data-key="medio"
+          type="number"
+          min="0"
+          step="1"
+          value="0">
+      </label>
+
+    </div>
+
+  </div>
+
+
+  <!-- EXTRAS -->
+  <div class="il-section">
+
+    <h3>Extras</h3>
+
+    <div class="grid">
+
+      <label class="qty-row">
+        <span>Laundry</span>
+        <input
+          class="il-qty"
+          data-group="extra"
+          data-key="laundry_area"
+          type="number"
+          min="0"
+          step="1"
+          value="0">
+      </label>
+
+
+      <label class="qty-row">
+        <span>Garage</span>
+        <input
+          class="il-qty"
+          data-group="extra"
+          data-key="garage"
+          type="number"
+          min="0"
+          step="1"
+          value="0">
+      </label>
+
+
+      <label class="qty-row">
+        <span>Mascotas</span>
+        <input
+          class="il-qty"
+          data-group="extra"
+          data-key="mascotas"
+          type="number"
+          min="0"
+          step="1"
+          value="0">
+      </label>
+
+
+      <label class="qty-row">
+        <span>Ventanas interiores</span>
+        <input
+          class="il-qty"
+          data-group="extra"
+          data-key="ventana_interior"
+          type="number"
+          min="0"
+          step="1"
+          value="0">
+      </label>
+
+
+      <label class="qty-row">
+        <span>Ventanas interior + exterior</span>
+        <input
+          class="il-qty"
+          data-group="extra"
+          data-key="ventana_ie"
+          type="number"
+          min="0"
+          step="1"
+          value="0">
+      </label>
+
+
+      <label class="qty-row">
+        <span>Limpieza de horno</span>
+        <input
+          class="il-qty"
+          data-group="extra"
+          data-key="horno"
+          type="number"
+          min="0"
+          step="1"
+          value="0">
+      </label>
+
+
+      <label class="qty-row">
+        <span>Limpieza de refrigerador</span>
+        <input
+          class="il-qty"
+          data-group="extra"
+          data-key="refrigerador"
+          type="number"
+          min="0"
+          step="1"
+          value="0">
+      </label>
+
+
+      <label class="qty-row">
+        <span>Lavandería de ropa</span>
+        <input
+          class="il-qty"
+          data-group="extra"
+          data-key="lavanderia_ropa"
+          type="number"
+          min="0"
+          step="1"
+          value="0">
+      </label>
+
+
+      <label class="qty-row">
+        <span>Gabinetes por dentro</span>
+        <input
+          class="il-qty"
+          data-group="extra"
+          data-key="gabinetes"
+          type="number"
+          min="0"
+          step="1"
+          value="0">
+      </label>
+
+    </div>
+
+  </div>
+
+
+  <!-- MUNICIPIO -->
+  <div class="il-section il-card">
+
+    <h3>Municipio de la propiedad</h3>
+
+    <select id="il-municipio">
+      <option value="">Seleccione municipio</option>
+    </select>
+
+    <p id="especial" class="muted">
+      Este municipio requiere una cotización especial de transporte.
+    </p>
+
+  </div>
+
+
+  <!-- RESULTADO -->
+  <div class="il-section result">
+
+    <div class="result-flex">
+
+      <div>
+        <span class="result-label">
+          Servicio de limpieza
+        </span>
+
+        <strong id="tipoLabel">
+          Seleccione su servicio
+        </strong>
+      </div>
+
+
+      <div class="right">
+
+        <span class="result-label">
+          Total estimado
+        </span>
+
+        <strong id="total">
+          $0.00
+        </strong>
+
+      </div>
+
+    </div>
+
+    <p class="muted" style="margin-top:16px;">
+      El total se calcula automáticamente según las opciones seleccionadas.
+    </p>
+
+  </div>
+
+</div>
+
+
+<script>
+(function () {
+
+  const root = document.getElementById("ilatek-calculator");
+
+  if (!root || root.dataset.initialized === "1") {
+    return;
+  }
+
+  root.dataset.initialized = "1";
+
+
+  /* ======================================================
+     TARIFAS INTERNAS
+     NO SE MUESTRAN AL CLIENTE
+     ====================================================== */
+
+  const AREAS = {
+
+    habitacion: [21, 31.50],
+
+    sala: [26.25, 42],
+
+    comedor: [26.25, 42],
+
+    family: [21, 31.50],
+
+    cocina: [31.50, 52.50],
+
+    bano: [13.125, 21],
+
+    medio: [7.875, 13.125]
+
+  };
+
+
+  const EXTRAS = {
+
+    laundry_area: [13.125, 21],
+
+    garage: [26.25, 26.25],
+
+    mascotas: [10, 10],
+
+    ventana_interior: [15.75, 26.25],
+
+    ventana_ie: [26.25, 42],
+
+    horno: [10.50, 21],
+
+    refrigerador: [13.125, 26.25],
+
+    lavanderia_ropa: [13.125, 52.50],
+
+    gabinetes: [21, 42]
+
+  };
+
+
+  /* ======================================================
+     TIPO DE SERVICIO
+     ====================================================== */
+
+  const SERVICIOS = {
+
+    general: {
+      porcentaje: 0,
+      fee: 10,
+      nombre: "General / mantenimiento"
+    },
+
+    profunda: {
+      porcentaje: 0.2977,
+      fee: 15,
+      nombre: "Profunda"
+    },
+
+    comercial: {
+      porcentaje: 0.50,
+      fee: 55,
+      nombre: "Comercial"
+    },
+
+    mudanza: {
+      porcentaje: 0.8473,
+      fee: 25,
+      nombre: "Mudanza"
+    },
+
+    post: {
+      porcentaje: 2,
+      fee: 75,
+      nombre: "Post-construcción"
+    }
+
+  };
+
+
+  /* ======================================================
+     MUNICIPIOS / VIAJE
+     distancia = UNA vía
+     peaje = ida y vuelta
+     ====================================================== */
+
+  const D = {
+
+    "Las Piedras": [0, 0],
+    "Humacao": [8, 0],
+    "Juncos": [8, 0],
+    "San Lorenzo": [12, 0],
+    "Gurabo": [16, 0],
+    "Naguabo": [19, 0],
+    "Yabucoa": [20, 0],
+
+    "Caguas": [24, 3.6],
+
+    "Canóvanas": [27, 0],
+    "Maunabo": [27, 0],
+    "Río Grande": [28, 0],
+
+    "Carolina": [30, 4.1],
+    "Trujillo Alto": [30, 3.6],
+
+    "Ceiba": [33, 1.45],
+    "Patillas": [34, 0],
+    "Loíza": [35, 0],
+    "Luquillo": [35, 0],
+
+    "Fajardo": [37, 1.45],
+    "Aguas Buenas": [38, 3.6],
+    "Cidra": [40, 3.6],
+    "Guaynabo": [41, 4.1],
+    "Arroyo": [42, 1.4],
+    "Cayey": [42, 3.6],
+    "Guayama": [45, 1.4],
+
+    "Bayamón": [50, 4.1],
+    "Cataño": [50, 4.1],
+    "San Juan": [52, 4.1],
+
+    "Comerío": [56, 3.6],
+    "Toa Alta": [60, 6.1],
+    "Naranjito": [62, 4.1],
+    "Aibonito": [63, 5.9],
+    "Toa Baja": [65, 6.1],
+    "Salinas": [67, 5.9],
+    "Dorado": [68, 6.1],
+    "Barranquitas": [69, 5.9],
+    "Coamo": [69, 5.9],
+    "Vega Alta": [72, 7.9],
+    "Corozal": [75, 4.1],
+
+    "Santa Isabel": [81, 5.9],
+    "Vega Baja": [81, 7.9],
+    "Orocovis": [82, 5.9],
+    "Morovis": [87, 6.1],
+    "Juana Díaz": [91, 7.3],
+    "Manatí": [93, 7.9],
+    "Ciales": [97, 5.9],
+    "Florida": [99, 7.9],
+    "Villalba": [99, 7.3],
+
+    "Barceloneta": [100, 9.3],
+    "Ponce": [107, 9.3],
+    "Jayuya": [114, 7.3],
+    "Peñuelas": [120, 9.3],
+    "Arecibo": [124, 9.3],
+    "Guayanilla": [131, 9.3],
+    "Utuado": [132, 7.9],
+    "Adjuntas": [135, 9.3],
+    "Yauco": [138, 9.3],
+    "Hatillo": [140, 9.3],
+    "Camuy": [142, 9.3],
+    "Guánica": [148, 9.3],
+    "Sabana Grande": [152, 9.3],
+    "Quebradillas": [154, 9.3],
+    "Las Marías": [156, 9.3],
+    "San Sebastián": [157, 9.3],
+    "Lares": [160, 9.3],
+    "San Germán": [164, 9.3],
+    "Isabela": [167, 9.3],
+    "Lajas": [167, 9.3],
+    "Hormigueros": [175, 9.3],
+    "Maricao": [175, 9.3],
+    "Moca": [175, 9.3],
+    "Añasco": [177, 9.3],
+    "Mayagüez": [177, 9.3],
+    "Cabo Rojo": [178, 9.3],
+    "Aguadilla": [182, 9.3],
+    "Aguada": [185, 9.3],
+    "Rincón": [193, 9.3],
+
+    "Vieques": [null, 0],
+    "Culebra": [null, 0]
+
+  };
+
+
+  /* ======================================================
+     CONFIGURACIÓN DE VIAJE
+     ====================================================== */
+
+  const PRECIO_GASOLINA = 1.187;
+
+  const MPG = 27;
+
+  const DESGASTE_KM = 0.15;
+
+  const MARGEN_VIAJE = 0.20;
+
+  const BLOQUE_REDONDEO = 5;
+
+
+  function puntoMedio(rango) {
+
+    return (rango[0] + rango[1]) / 2;
+
+  }
+
+
+  function dinero(valor) {
+
+    return "$" + valor.toFixed(2);
+
+  }
+
+
+  /* ======================================================
+     CARGAR MUNICIPIOS
+     ====================================================== */
+
+  const municipioSelect =
+    root.querySelector("#il-municipio");
+
+
+  Object.keys(D).forEach(function (municipio) {
+
+    const option =
+      document.createElement("option");
+
+    option.value = municipio;
+
+    option.textContent = municipio;
+
+    municipioSelect.appendChild(option);
+
+  });
+
+
+  /* ======================================================
+     CALCULAR VIAJE
+     ====================================================== */
+
+  function calcularViaje(datos) {
+
+    if (!datos || datos[0] === null) {
+      return 0;
+    }
+
+
+    const distanciaIda = datos[0];
+
+    const peajes = datos[1];
+
+
+    const kmIdaVuelta =
+      distanciaIda * 2;
+
+
+    const kmPorLitro =
+      MPG * 0.425144;
+
+
+    const litros =
+      kmIdaVuelta / kmPorLitro;
+
+
+    const costoGasolina =
+      litros * PRECIO_GASOLINA;
+
+
+    const desgaste =
+      kmIdaVuelta * DESGASTE_KM;
+
+
+    const costoReal =
+      costoGasolina +
+      desgaste +
+      peajes;
+
+
+    const costoConMargen =
+      costoReal * (1 + MARGEN_VIAJE);
+
+
+    if (costoReal <= 0) {
+      return 0;
+    }
+
+
+    return Math.ceil(
+      costoConMargen / BLOQUE_REDONDEO
+    ) * BLOQUE_REDONDEO;
+
+  }
+
+
+  /* ======================================================
+     CALCULADORA
+     ====================================================== */
+
+  function calcular() {
+
+    const tipo =
+      root.querySelector("#il-tipo").value;
+
+
+    const totalOutput =
+      root.querySelector("#total");
+
+
+    const tipoOutput =
+      root.querySelector("#tipoLabel");
+
+
+    const especial =
+      root.querySelector("#especial");
+
+
+    /* Si todavía no escogió servicio */
+
+    if (!tipo) {
+
+      tipoOutput.textContent =
+        "Seleccione su servicio";
+
+      totalOutput.textContent =
+        "$0.00";
+
+      return;
+
+    }
+
+
+    let totalAreas = 0;
+
+    let totalExtras = 0;
+
+
+    root.querySelectorAll(".il-qty")
+      .forEach(function (input) {
+
+        const cantidad =
+          Math.max(
+            0,
+            Number(input.value) || 0
+          );
+
+
+        const key =
+          input.dataset.key;
+
+
+        const grupo =
+          input.dataset.group;
+
+
+        if (grupo === "area") {
+
+          totalAreas +=
+            cantidad *
+            puntoMedio(AREAS[key]);
+
+        }
+
+
+        if (grupo === "extra") {
+
+          totalExtras +=
+            cantidad *
+            puntoMedio(EXTRAS[key]);
+
+        }
+
+      });
+
+
+    const servicio =
+      SERVICIOS[tipo];
+
+
+    /* Ajuste por tipo de limpieza */
+
+    const precioServicio =
+      totalAreas +
+      (totalAreas * servicio.porcentaje);
+
+
+    /* Viaje */
+
+    const municipio =
+      municipioSelect.value;
+
+
+    const datosMunicipio =
+      D[municipio];
+
+
+    const cargoViaje =
+      calcularViaje(datosMunicipio);
+
+
+    /* Vieques / Culebra */
+
+    if (
+      datosMunicipio &&
+      datosMunicipio[0] === null
+    ) {
+
+      especial.style.display = "block";
+
+    } else {
+
+      especial.style.display = "none";
+
+    }
+
+
+    /* Subtotal interno
+
+       Cliente NO ve este desglose.
+
+       Incluye:
+       - limpieza
+       - extras
+       - productos/equipo
+       - viaje
+    */
+
+    const subtotal =
+      precioServicio +
+      totalExtras +
+      servicio.fee +
+      cargoViaje;
+
+
+    /* IVU 11.5% interno */
+
+    const ivu =
+      subtotal * 0.115;
+
+
+    const totalFinal =
+      subtotal + ivu;
+
+
+    /* Lo único que ve el cliente */
+
+    tipoOutput.textContent =
+      servicio.nombre;
+
+
+    totalOutput.textContent =
+      dinero(totalFinal);
+
+  }
+
+
+  /* ======================================================
+     EVENTOS
+     ====================================================== */
+
+  root.addEventListener(
+    "input",
+    calcular
+  );
+
+
+  root.addEventListener(
+    "change",
+    calcular
+  );
+
+
+  calcular();
+
+})();
+</script>

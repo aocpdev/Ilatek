@@ -1,0 +1,38 @@
+{
+  "municipality": "Culebra",
+  "municipalitySlug": "culebra",
+  "dateVerified": "2026-10-21",
+  "note": "Se verificaron un complejo residencial tipo resort y una comunidad privada; la fuente del resort describe también instalaciones recreativas y muelle.",
+  "communities": [
+    {
+      "name": "Costa Bonita Beach Resort",
+      "slug": "costa-bonita-beach-resort",
+      "alternates": [
+        "Costa Bonita Resort Condominium",
+        "Costa Bonita"
+      ],
+      "priority": "LUXURY",
+      "type": "Condominio",
+      "evidence": "La página inmobiliaria describe un complejo de 164 condominios, con casa club, piscinas, muelle y ubicación junto a la bahía Ensenada Honda.",
+      "sources": [
+        "https://www.culebrarealestatesales.com/culebra-costa-bonita-3203.html"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Posada del Coronel",
+      "slug": "posada-del-coronel",
+      "alternates": [
+        "Comunidad Posada del Coronel",
+        "Posada del Coronel Neighborhood"
+      ],
+      "priority": "MEDIUM",
+      "type": "Comunidad / sector",
+      "evidence": "El sitio del proyecto describe una comunidad privada de 41 solares, con calles amplias, utilidades soterradas, parque central y alquileres de corto plazo.",
+      "sources": [
+        "https://posadadelcoronelculebra.com/posadadelcoronel-culebra-project.html"
+      ],
+      "confidence": "HIGH"
+    }
+  ]
+}

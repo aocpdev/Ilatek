@@ -16,7 +16,7 @@ function j(obj) {
 
 function areaServed() {
   return [
-    { '@type': 'AdministrativeArea', name: '{{custom_values.county_name_and_state}}' },
+    { '@type': 'AdministrativeArea', name: '{{custom_values.business__county_name}}' },
     { '@type': 'Country', name: 'Puerto Rico' },
   ];
 }

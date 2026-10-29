@@ -1,0 +1,6 @@
+# Intermedios regenerables: no se versionan (ver README, seccion "Pipeline de coordenadas").
+data/_municipios-osm.json
+data/_osm-lugares-pr.json
+data/_nominatim-cache.json
+__pycache__/
+.tmp/

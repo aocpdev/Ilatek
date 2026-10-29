@@ -1,0 +1,137 @@
+{
+  "municipality": "Salinas",
+  "municipalitySlug": "salinas",
+  "dateVerified": "2026-10-21",
+  "note": "La búsqueda encontró anuncios inmobiliarios y entradas oficiales de vivienda pública, pero no un catálogo completo de urbanizaciones o sectores. Los anuncios pueden caducar.",
+  "communities": [
+    {
+      "name": "Bella Vista",
+      "slug": "bella-vista",
+      "alternates": [
+        "Residencial Bella Vista"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "La Administración de Vivienda Pública incluye Bella Vista en Salinas; una publicación oficial también identifica allí el residencial público.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales",
+        "https://www.facebook.com/AVPPuertoRico/posts/en-el-residencial-bella-vista-en-salinasyo-%EF%B8%8F-mi-comunidad-2025j%C3%B3venes-y-ni%C3%B1os-hi/1121612006822946/"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Brisas del Mar",
+      "slug": "brisas-del-mar",
+      "alternates": [
+        "Residencial Brisas del Mar"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "El directorio de la Administración de Vivienda Pública incluye Brisas del Mar en Salinas y consigna su ubicación hacia la playa.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "La Arboleda",
+      "slug": "la-arboleda",
+      "alternates": [
+        "Urb. La Arboleda"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline identifica La Arboleda como urbanización de Salinas y muestra una casa anunciada en esa ubicación.",
+      "sources": [
+        "https://www.clasificadosonline.com/clasificados/BienesRaices/casas/Salinas/default.asp?Version=1"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "El Coco",
+      "slug": "el-coco",
+      "alternates": [
+        "Comunidad El Coco",
+        "Barrio El Coco"
+      ],
+      "priority": "MEDIUM",
+      "type": "Comunidad / sector",
+      "evidence": "El listado de Salinas registra anuncios residenciales asociados a El Coco y etiqueta el área como Barrio-El Coco.",
+      "sources": [
+        "https://www.clasificadosonline.com/clasificados/BienesRaices/casas/Salinas/default.asp?Version=1"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Paseo Costa del Sur",
+      "slug": "paseo-costa-del-sur",
+      "alternates": [
+        "Paseos Costa de Salinas",
+        "Urb. Paseo Costa del Sur"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline muestra propiedades en Salinas bajo Paseo Costa del Sur y Paseos Costa de Salinas; conserva ambas variantes observadas.",
+      "sources": [
+        "https://www.clasificadosonline.com/clasificados/BienesRaices/casas/Salinas/default.asp?Version=1"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Marbella",
+      "slug": "marbella",
+      "alternates": [
+        "Urb. Marbella"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "El listado inmobiliario de Salinas identifica Marbella como urbanización y muestra una residencia anunciada en esa zona.",
+      "sources": [
+        "https://www.clasificadosonline.com/clasificados/BienesRaices/casas/Salinas/default.asp?Version=1"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Las Margaritas II",
+      "slug": "las-margaritas-ii",
+      "alternates": [
+        "Urb. Las Margaritas II"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline clasifica una propiedad anunciada cerca de la playa como ubicada en Las Margaritas II, urbanización de Salinas.",
+      "sources": [
+        "https://www.clasificadosonline.com/clasificados/BienesRaices/casas/Salinas/default.asp?Version=1"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Parque Gabriela",
+      "slug": "parque-gabriela",
+      "alternates": [
+        "Urb. Parque Gabriela"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "El inventario inmobiliario consultado incluye una casa anunciada en Parque Gabriela y la identifica como urbanización de Salinas.",
+      "sources": [
+        "https://www.clasificadosonline.com/clasificados/BienesRaices/casas/Salinas/default.asp?Version=1"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Rancho La Julia",
+      "slug": "rancho-la-julia",
+      "alternates": [
+        "Sector La Julia"
+      ],
+      "priority": "LUXURY",
+      "type": "Comunidad / sector",
+      "evidence": "Un anuncio clasifica una propiedad en el sector Rancho La Julia, Salinas, con precio publicado de $1,100,000; no se infiere exclusividad general.",
+      "sources": [
+        "https://www.clasificadosonline.com/clasificados/BienesRaices/casas/Salinas/default.asp?Version=1"
+      ],
+      "confidence": "MEDIUM"
+    }
+  ]
+}

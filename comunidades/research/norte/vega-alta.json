@@ -1,0 +1,16 @@
+{
+  "municipality": "Vega Alta",
+  "municipalitySlug": "vega-alta",
+  "region": "norte",
+  "dateVerified": "2026-10-21",
+  "status": "investigado",
+  "communities": [
+    {"name": "Treasure Point", "slug": "treasure-point", "alternates": ["Treasure Point Condominium"], "priority": "HIGH", "type": "Comunidad cerrada", "evidence": "Ficha inmobiliaria la identifica como comunidad cerrada con seguridad y viviendas residenciales.", "sources": ["https://www.clearoceangroup.com/properties/16-cornelian-at-treasure-point"], "confidence": "HIGH"},
+    {"name": "Grand Palm I", "slug": "grand-palm-i", "alternates": ["Grand Palm"], "priority": "HIGH", "type": "Urbanización / unifamiliares", "evidence": "Vivienda unifamiliar identificada en Grand Palm I (Zillow).", "sources": ["https://www.zillow.com/homedetails/Grand-Palm-I-Vega-Alta-PR-00692/2061817352_zpid/"], "confidence": "HIGH"},
+    {"name": "Grand Palm II", "slug": "grand-palm-ii", "alternates": ["Grand Palm 2"], "priority": "HIGH", "type": "Urbanización / unifamiliares", "evidence": "Ficha de vivienda con dirección en Grand Palm II (Realtor).", "sources": ["https://www.realtor.com/realestateandhomes-detail/A-5-Calle-Alamo-Grand-Palm-Ii_Vega-Alta_PR_00692_M96577-41302"], "confidence": "MEDIUM"},
+    {"name": "Vega Dorada", "slug": "vega-dorada", "alternates": ["Urb. Vega Dorada"], "priority": "HIGH", "type": "Urbanización", "evidence": "Vivienda unifamiliar con acceso controlado y amenidades comunales (Zillow).", "sources": ["https://www.zillow.com/homedetails/Palma-Corozo-Urb-Vega-Dorada-20-Vega-Alta-PR-00692/450381144_zpid/"], "confidence": "HIGH"},
+    {"name": "Alturas de Cerro Gordo III y IV", "slug": "alturas-de-cerro-gordo", "alternates": ["Alturas de Cerro Gordo 3 y 4"], "priority": "HIGH", "type": "Comunidad con acceso controlado", "evidence": "Vecindario con acceso controlado identificado en Zillow.", "sources": ["https://www.zillow.com/homedetails/Alturas-De-Cerro-Gordo-3-Y-4-Vega-Alta-PR-00692/2103057493_zpid/"], "confidence": "HIGH"},
+    {"name": "Comunidad La Ponderosa", "slug": "la-ponderosa", "alternates": [], "priority": "MEDIUM", "type": "Comunidad residencial", "evidence": "Área residencial identificada así por Zillow y Trulia.", "sources": ["https://www.zillow.com/comunidad-la-ponderosa-vega-alta-pr/", "https://www.trulia.com/PR/Vega_Alta,Comunidad_La_Ponderosa/"], "confidence": "MEDIUM"},
+    {"name": "Villa Linares", "slug": "villa-linares", "alternates": ["Urb. Villa Linares"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Vivienda unifamiliar listada en eXp Realty.", "sources": ["https://www.exprealty.com/urb-villa-linares-vega-alta-pr-real-estate"], "confidence": "HIGH"}
+  ]
+}

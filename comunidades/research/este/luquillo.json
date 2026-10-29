@@ -1,0 +1,192 @@
+{
+  "municipality": "Luquillo",
+  "municipalitySlug": "luquillo",
+  "dateVerified": "2026-10-21",
+  "note": "No hay inventario completo de urbanizaciones ni datos censales por comunidad. Precios de listados son de propiedades individuales, no de la comunidad.",
+  "communities": [
+    {
+      "name": "Colinas de Luquillo",
+      "slug": "colinas-de-luquillo",
+      "alternates": [
+        "Urb. Colinas de Luquillo"
+      ],
+      "priority": "LUXURY",
+      "type": "Urbanización residencial; casas y lotes",
+      "evidence": "Residencias anunciadas por $1,975,000 y $745,000 con piscina y terreno amplio; describe propiedades individuales.",
+      "sources": [
+        "https://www.zillow.com/homedetails/0-Urb-Colinas-De-Luquillo-Luquillo-PR-00773/462316645_zpid/",
+        "https://investatepr.com/home-search/listings/793063405974966428-Lote-142-COLINAS-DE-LUQUILLO"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Hacienda Margarita",
+      "slug": "hacienda-margarita",
+      "alternates": [
+        "Urb. Hacienda Margarita"
+      ],
+      "priority": "LUXURY",
+      "type": "Comunidad residencial privada con seguridad y amenidades",
+      "evidence": "Seguridad, piscina, canchas y casas con terrenos amplios; ventas de $450,000 y anuncios de $695,000.",
+      "sources": [
+        "https://arkrealestatepr.com/properties/117-calle-melao-urb-hacienda-margarita-luquillo-pr-00773-pr9096680",
+        "https://www.trulia.com/home/98-hacienda-margarita-luquillo-pr-00773-464824741"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Las Aves",
+      "slug": "las-aves",
+      "alternates": [
+        "Urb. Las Aves"
+      ],
+      "priority": "LUXURY",
+      "type": "Urbanización residencial privada",
+      "evidence": "Doble control de acceso, vistas al océano, piscina y casa club en un listado de $599,000 con cuota HOA; el perfil no prueba que todas las propiedades sean de lujo.",
+      "sources": [
+        "https://www.trulia.com/home/1-camino-las-aves-luquillo-pr-00773-464430364",
+        "https://www.zillow.com/homedetails/1-Camino-Las-Aves-Luquillo-PR-00773/464430364_zpid/"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Paisajes del Lago",
+      "slug": "paisajes-del-lago",
+      "alternates": [
+        "Urb. Paisajes del Lago"
+      ],
+      "priority": "LUXURY",
+      "type": "Urbanización privada; casas unifamiliares",
+      "evidence": "Acceso doblemente controlado, seguridad 24 horas, piscinas y canchas; precios de $495,000 y $1,225,000.",
+      "sources": [
+        "https://www.zillow.com/homedetails/B-Paisajes-Del-Lago-Luquillo-PR-00773/460653142_zpid/",
+        "https://www.finditpr.com/en/property/Camino-Del-Campo-Paisajes-Del-Lago-urbanizacion-Luquillo-PR-00773/43200"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Paisajes del Río",
+      "slug": "paisajes-del-rio",
+      "alternates": [
+        "Paisaje del Río",
+        "Urbanización Paisajes del Río"
+      ],
+      "priority": "LUXURY",
+      "type": "Comunidad residencial privada; urbanización cerrada",
+      "evidence": "Acceso controlado, seguridad 24/7, piscina, gimnasio y canchas; casas amplias anunciadas entre $598,000 y $599,000.",
+      "sources": [
+        "https://properties.listingspuertorico.com/listing/38b5p?u=1366495",
+        "https://www.finditpr.com/en/property/-Paisaje-del-Rio-Luquillo-PR-Luquillo-PR-00773/63379"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Costa Azul",
+      "slug": "costa-azul",
+      "alternates": [
+        "Urb. Costa Azul"
+      ],
+      "priority": "HIGH",
+      "type": "Urbanización residencial costera",
+      "evidence": "Viviendas junto a la playa Costa Azul; una propiedad de alto precio no justifica clasificar toda la urbanización como lujo.",
+      "sources": [
+        "https://www.trulia.com/home/a-9-costa-azul-luquillo-pr-00773-2064410168",
+        "https://www.finditpr.com/en/property/Urb-Costa-Azul-A13-Calle-A-Luquillo-PR-00773/46590"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Playa Azul I",
+      "slug": "playa-azul-i",
+      "alternates": [
+        "Condominio Playa Azul I",
+        "Playa Azul Torre 1"
+      ],
+      "priority": "HIGH",
+      "type": "Condominio de playa; apartamentos",
+      "evidence": "Administración confirma complejo de ventas y alquileres; apartamento frente al mar en Torre 1. Premium costero, sin exclusividad de lujo demostrada.",
+      "sources": [
+        "https://playaazulmanagement.com/",
+        "https://www.finditpr.com/en/property/2205-Cond-Playa-Azul-Torre-1-Luquillo-PR-00773/53028"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Playa Azul III",
+      "slug": "playa-azul-iii",
+      "alternates": [
+        "Condominio Playa Azul III",
+        "Playa Azul Torre 3"
+      ],
+      "priority": "HIGH",
+      "type": "Condominio costero; apartamentos",
+      "evidence": "Listado identifica el condominio con unidad de vista al mar y acceso controlado; administración confirma operación en Luquillo.",
+      "sources": [
+        "https://playaazulmanagement.com/",
+        "https://www.finditpr.com/en/property/1710-Cond-Playa-Azul-Torre-3-Luquillo-PR-00773/53571"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "River Edge Hills",
+      "slug": "river-edge-hills",
+      "alternates": [
+        "Urb. River Edge Hills",
+        "River Edge Hls"
+      ],
+      "priority": "HIGH",
+      "type": "Urbanización residencial cerrada",
+      "evidence": "Acceso controlado y piscina; casas unifamiliares entre $325,000 y $450,000. Sin evidencia de enclave de lujo.",
+      "sources": [
+        "https://www.bidicua.com/en/neighborhoods/river-edge-hills",
+        "https://investatepr.com/home-search/listings/7930911233258039977-URB-RIVER-EDGE-HILLS-A-29"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Brisas del Mar",
+      "slug": "brisas-del-mar",
+      "alternates": [
+        "Urb. Brisas del Mar"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización residencial; casas unifamiliares",
+      "evidence": "Viviendas de tamaño y precio moderados, entre $155,000 y $222,500; sin amenidades de nivel alto documentadas.",
+      "sources": [
+        "https://investatepr.com/home-search/listings/7930689298206443169-C14-CALLE-5-URB-BRISAS-DEL-MAR",
+        "https://investatepr.com/home-search/listings/793069377242195401-Brisas-del-Mar-CALLE-3-HH-37"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Luquillo Mar",
+      "slug": "luquillo-mar",
+      "alternates": [
+        "Urb. Luquillo Mar"
+      ],
+      "priority": "MEDIUM",
+      "type": "Comunidad / sector",
+      "evidence": "Zillow mantiene una página inmobiliaria específica para Luquillo Mar, Luquillo, con viviendas en venta y listados residenciales en esa zona.",
+      "sources": [
+        "https://www.zillow.com/luquillo-mar-luquillo-pr/"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Sandy Hills",
+      "slug": "sandy-hills",
+      "alternates": [
+        "Condominio Sandy Hills",
+        "Sandy Hills Condominiums"
+      ],
+      "priority": "MEDIUM",
+      "type": "Condominio residencial; apartamentos",
+      "evidence": "Apartamentos disponibles, incluido uno de 685 pies cuadrados por $210,375; sin posición premium.",
+      "sources": [
+        "https://www.finditpr.com/en/luquillo/condos-for-sale",
+        "https://www.zillow.com/sandy-hills-luquillo-pr/condos/"
+      ],
+      "confidence": "MEDIUM"
+    }
+  ]
+}

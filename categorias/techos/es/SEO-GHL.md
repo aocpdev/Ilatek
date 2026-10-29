@@ -1,19 +1,19 @@
-# SEO — Reparación y Sellado de Techos en {{custom_values.county_name_and_state}} | Ilatek Techos
+# SEO — Reparación y Sellado de Techos en {{custom_values.business__county_name}} | Ilatek Techos
 
-Plantilla local Delta System para {{custom_values.county_name_and_state}}. Título, descripción y textos de imágenes sincronizados con los entregables.
+Plantilla local Delta System para {{custom_values.business__county_name}}. Título, descripción y textos de imágenes sincronizados con los entregables.
 
 > Esta página de techos es un legado: su canonical existente apunta a /home. No sustituye el Home multiservicios ni debe publicarse como un segundo Home.
 
 ## Meta Tag Title
 
 ```text
-Reparación y Sellado de Techos en {{custom_values.county_name_and_state}} | Ilatek Techos
+Reparación y Sellado de Techos en {{custom_values.business__county_name}} | Ilatek Techos
 ```
 
 ## Meta Tag Description
 
 ```text
-Reparación y sellado de techos en {{custom_values.county_name_and_state}}: goteras, filtraciones, impermeabilización y mantenimiento. Precios desde $2.50 por pie², inspección gratis y 78 municipios.
+Reparación y sellado de techos en {{custom_values.business__county_name}}: goteras, filtraciones, impermeabilización y mantenimiento. Precios desde $2.50 por pie², inspección gratis y 78 municipios.
 ```
 
 ## Meta Tag Image
@@ -42,12 +42,12 @@ Inventario: [ASSETS.json](ASSETS.json). Datos reutilizables: [seo.json](seo.json
 
 ## Localización del snapshot — SEO, AEO y GEO
 
-Custom Value obligatorio: `{{custom_values.county_name_and_state}}`. Usar la etiqueta completa del pueblo y estado; no añadir Puerto Rico nuevamente si ya forma parte del valor. No sustituirlo por `business__county_name`.
+Custom Value obligatorio: `{{custom_values.business__county_name}}`. Usar la etiqueta completa del pueblo y estado; no añadir Puerto Rico nuevamente si ya forma parte del valor. No sustituirlo por `business__county_name`.
 
 ### Meta Tag Image Alt
 
 ```text
-Reparación y Sellado de Techos en {{custom_values.county_name_and_state}} | Ilatek Techos
+Reparación y Sellado de Techos en {{custom_values.business__county_name}} | Ilatek Techos
 ```
 
 El HEAD incluye `og:image:alt` y `twitter:image:alt`. Los atributos `alt` y `title` descriptivos de las imágenes usan la misma localidad, conservando lo que representa cada imagen. Las imágenes decorativas mantienen `alt=""` por accesibilidad. Las URLs de medios no son texto SEO y se conservan.

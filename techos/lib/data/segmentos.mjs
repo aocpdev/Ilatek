@@ -19,12 +19,12 @@ export const segmentos = [
       badge: 'Residencial · Comercial · Industrial',
     }),
     incl: pic('comercial', {
-      alt: 'Sellado de techo comercial e industrial por Ilatek Techos en Puerto Rico — {{custom_values.county_name_and_state}}',
+      alt: 'Sellado de techo comercial e industrial por Ilatek Techos en Puerto Rico — {{custom_values.business__county_name}}',
       title: 'Sellado por segmento · Ilatek Techos',
       caption: 'Sistema según el uso del techo',
     }),
     heroSub:
-      'No es lo mismo el techo de una casa que el de un edificio comercial: el tránsito, el tamaño y el horario cambian el sistema. Ilatek sella los tres segmentos en {{custom_values.county_name_and_state}} <b>desde $250</b>, con cotización $0 y garantía escrita.',
+      'No es lo mismo el techo de una casa que el de un edificio comercial: el tránsito, el tamaño y el horario cambian el sistema. Ilatek sella los tres segmentos en {{custom_values.business__county_name}} <b>desde $250</b>, con cotización $0 y garantía escrita.',
     facts: [
       { b: '$250', s: 'por sellado', label: 'Precio de entrada' },
       { b: '3', s: 'segmentos', label: 'Cubiertos' },
@@ -82,10 +82,10 @@ export const segmentos = [
     metaTitle: 'Sellado de Techos Residencial en Puerto Rico | Ilatek Techos',
     metaDescription:
       'Sellado de techos residencial en Puerto Rico desde $2.50 por pie². Protege tu hogar de filtraciones con inspección gratis y garantía escrita. 78 municipios.',
-    hero: pic('residencial', { alt: 'Sellado de techo residencial en Puerto Rico — {{custom_values.county_name_and_state}}', title: 'Sellado de techos residencial · Ilatek Techos', badge: 'Para tu hogar' }),
+    hero: pic('residencial', { alt: 'Sellado de techo residencial en Puerto Rico — {{custom_values.business__county_name}}', title: 'Sellado de techos residencial · Ilatek Techos', badge: 'Para tu hogar' }),
     incl: pic('postconstruccion', { alt: 'Sellado de techo de residencia por Ilatek Techos en Puerto Rico — protección de hogar', title: 'Sellado residencial · Ilatek Techos', caption: 'Tu casa protegida · Trato cuidado' }),
     heroSub:
-      'Tu casa merece un techo que no gotee. Ilatek sella techos residenciales en {{custom_values.county_name_and_state}} <b>desde $2.50 por pie²</b>: protegemos tu hogar de las filtraciones sin complicarte, con inspección gratis y garantía escrita.',
+      'Tu casa merece un techo que no gotee. Ilatek sella techos residenciales en {{custom_values.business__county_name}} <b>desde $2.50 por pie²</b>: protegemos tu hogar de las filtraciones sin complicarte, con inspección gratis y garantía escrita.',
     facts: [
       { b: '$2.50', s: 'por pie²', label: 'Precio base' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
@@ -141,10 +141,10 @@ export const segmentos = [
     metaTitle: 'Sellado de Techos Comercial en Puerto Rico | Ilatek Techos',
     metaDescription:
       'Sellado de techos comercial en Puerto Rico desde $2.50 por pie². Trabajo planificado para operar sin cerrar. Inspección gratis y garantía escrita. 78 municipios.',
-    hero: pic('comercial', { alt: 'Sellado de techo comercial en Puerto Rico — {{custom_values.county_name_and_state}}', title: 'Sellado de techos comercial · Ilatek Techos', badge: 'Sin cerrar tu negocio' }),
+    hero: pic('comercial', { alt: 'Sellado de techo comercial en Puerto Rico — {{custom_values.business__county_name}}', title: 'Sellado de techos comercial · Ilatek Techos', badge: 'Sin cerrar tu negocio' }),
     incl: pic('industrial', { alt: 'Sellado de techo comercial por Ilatek Techos en Puerto Rico — edificios y oficinas', title: 'Sellado comercial · Ilatek Techos', caption: 'Por fases · Horarios flexibles' }),
     heroSub:
-      'Una filtración en tu negocio cuesta ventas y clientes. Ilatek sella techos comerciales en {{custom_values.county_name_and_state}} <b>desde $2.50 por pie²</b>, planificando el trabajo para que no tengas que cerrar, con inspección gratis y garantía escrita.',
+      'Una filtración en tu negocio cuesta ventas y clientes. Ilatek sella techos comerciales en {{custom_values.business__county_name}} <b>desde $2.50 por pie²</b>, planificando el trabajo para que no tengas que cerrar, con inspección gratis y garantía escrita.',
     facts: [
       { b: '$2.50', s: 'por pie²', label: 'Precio base' },
       { b: '3', s: 'turnos', label: 'Horarios flexibles' },
@@ -200,10 +200,10 @@ export const segmentos = [
     metaTitle: 'Sellado de Techos Industrial en Puerto Rico | Ilatek Techos',
     metaDescription:
       'Sellado de techos industrial en Puerto Rico. Sistemas de alta resistencia para naves y plantas. Cotización por pie² con inspección gratis y garantía escrita.',
-    hero: pic('industrial', { alt: 'Sellado de techo industrial en Puerto Rico — naves y plantas en {{custom_values.county_name_and_state}}', title: 'Sellado de techos industrial · Ilatek Techos', badge: 'Alta resistencia' }),
+    hero: pic('industrial', { alt: 'Sellado de techo industrial en Puerto Rico — naves y plantas en {{custom_values.business__county_name}}', title: 'Sellado de techos industrial · Ilatek Techos', badge: 'Alta resistencia' }),
     incl: pic('comercial', { alt: 'Sellado de techo industrial por Ilatek Techos en Puerto Rico — gran superficie', title: 'Sellado industrial · Ilatek Techos', caption: 'Grandes superficies · Materiales de alta resistencia' }),
     heroSub:
-      'Las naves y plantas exigen techos que resistan calor, tránsito y grandes superficies. Ilatek sella techos industriales en {{custom_values.county_name_and_state}} con sistemas de alta resistencia <b>desde $2.50 por pie²</b>, con cotización por escala e inspección gratis con garantía escrita.',
+      'Las naves y plantas exigen techos que resistan calor, tránsito y grandes superficies. Ilatek sella techos industriales en {{custom_values.business__county_name}} con sistemas de alta resistencia <b>desde $2.50 por pie²</b>, con cotización por escala e inspección gratis con garantía escrita.',
     facts: [
       { b: 'Alta', s: 'resistencia', label: 'Sistemas industriales' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },

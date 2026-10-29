@@ -1,0 +1,348 @@
+[
+  {
+    "id": "mvyXWydnh0kx7DxUTUQw",
+    "name": "Servicio - Organización de espacios",
+    "url": "https://ilatekpr.com/organizacion",
+    "codes": [
+      {
+        "id": "custom-code-IEC8InXjePT",
+        "backup": "respaldos/mvyXWydnh0kx7DxUTUQw-custom-code-IEC8InXjePT.html",
+        "prepared": "preparados/mvyXWydnh0kx7DxUTUQw-custom-code-IEC8InXjePT.html",
+        "removedBytes": 3575,
+        "beforeHash": "a0229a4c30d648cb07fa44c8719be7629dea0602aba5ced0e9540a89cfd1e36a",
+        "afterHash": "c2a023cb923e8ae458ca88b39c89b91ea45e52ca81eb305e1051204f6e062ae0",
+        "unchangedContentHash": "05d4e0d10427163c627fae50af59347af9effe9b0a2e2b9d26203e12204e9819"
+      }
+    ],
+    "status": "published-verified",
+    "nativeSeo": {
+      "title": "Organización de espacios en {{custom_values.county_name_and_state}} | Ilatek",
+      "description": "Organización de espacios en {{custom_values.county_name_and_state}} | Ilatek Property Solution. Delega y optimiza tus espacios",
+      "languageBefore": "en",
+      "languageAfter": "es"
+    },
+    "verifiedTitleCount": 1
+  },
+  {
+    "id": "wx22buIIoJocPotRlwRO",
+    "name": "Servicios",
+    "url": "https://ilatekpr.com/servicios",
+    "codes": [
+      {
+        "id": "custom-code-XVALbDlW40M",
+        "backup": "respaldos/wx22buIIoJocPotRlwRO-custom-code-XVALbDlW40M.html",
+        "prepared": "preparados/wx22buIIoJocPotRlwRO-custom-code-XVALbDlW40M.html",
+        "removedBytes": 4546,
+        "beforeHash": "b6fa2797d61fb0422a33b601471cc48591da1f36eb4b3cd7e38924043b1b8b20",
+        "afterHash": "b5de4099d6027e899b23d5c05296e820f45f36146af2f874bd783230d20638fa",
+        "unchangedContentHash": "807bce4bfa9f8242a257dd3dd16fc3b81ae147e8da954df9a1ba7bb1df4043ea"
+      }
+    ],
+    "status": "published-verified",
+    "nativeSeo": {
+      "title": "Servicios de Limpieza en {{custom_values.county_name_and_state}} | Ilatek",
+      "description": "Servicio de limpieza Residencial, Comercial e Industrial en {{custom_values.county_name_and_state}} | Ilatek Property Solution\n",
+      "language": "es"
+    },
+    "verifiedTitleCount": 1
+  },
+  {
+    "id": "Vu2tbk5IhTD10dy6AjEi",
+    "name": "Servicio - Limpieza Residencial",
+    "url": "https://ilatekpr.com/limpieza-residencial",
+    "codes": [
+      {
+        "id": "custom-code-HTvzJlvJl9b",
+        "backup": "respaldos/Vu2tbk5IhTD10dy6AjEi-custom-code-HTvzJlvJl9b.html",
+        "prepared": "preparados/Vu2tbk5IhTD10dy6AjEi-custom-code-HTvzJlvJl9b.html",
+        "removedBytes": 4036,
+        "beforeHash": "4d2c2d69187d1edaac2b3cacec141efbee2e0da55993d0ba7fc5ae01e915b570",
+        "afterHash": "e1717acfdf3ee1ac0c958e3d6f4bb1333d0bb857f71ef942961d7e96acfead88",
+        "unchangedContentHash": "c61e0dd58e65905a746c892d951d07ce29ef8f7522ea943f9b5ee1eab716fc3b"
+      }
+    ],
+    "status": "published-verified",
+    "nativeSeo": {
+      "title": "Limpieza Residencial en {{custom_values.county_name_and_state}} | Ilatek",
+      "description": "Servicio de limpieza Residencial en {{custom_values.county_name_and_state}} | Ilatek Property Solution\n",
+      "language": "es"
+    },
+    "verifiedTitleCount": 1
+  },
+  {
+    "id": "w3Ftr3DuoKu3fxsLrDCb",
+    "name": "Servicio - Limpieza Comercial",
+    "url": "https://ilatekpr.com/limpieza-comercial",
+    "codes": [
+      {
+        "id": "custom-code-DphhVhbJd-S",
+        "backup": "respaldos/w3Ftr3DuoKu3fxsLrDCb-custom-code-DphhVhbJd-S.html",
+        "prepared": "preparados/w3Ftr3DuoKu3fxsLrDCb-custom-code-DphhVhbJd-S.html",
+        "removedBytes": 3818,
+        "beforeHash": "bc79fb9ec5b61461aa19afdbf94707fa4f80ee80d3996d37b67b3bc00c1e9f7f",
+        "afterHash": "aa7a8f66d6916177c6f1d2812cf48dfaaa6f0556f7a2570a4a2232af93e3bba3",
+        "unchangedContentHash": "fa0181b90e4bba19544238553042b0a638b8f20d70f73db26457857e26b38fe1"
+      }
+    ],
+    "status": "published-verified",
+    "nativeSeo": {
+      "title": "Limpieza Comercial en {{custom_values.county_name_and_state}} | Ilatek",
+      "description": "Servicio de limpieza Comercial en {{custom_values.county_name_and_state}} | Ilatek Property Solution\n",
+      "language": "es"
+    },
+    "verifiedTitleCount": 1
+  },
+  {
+    "id": "FgSOlIcvWDuZW3boc9Ch",
+    "name": "Servicio - Limpieza Industrial",
+    "url": "https://ilatekpr.com/limpieza-industrial",
+    "codes": [
+      {
+        "id": "custom-code-74G1bMf693g",
+        "backup": "respaldos/FgSOlIcvWDuZW3boc9Ch-custom-code-74G1bMf693g.html",
+        "prepared": "preparados/FgSOlIcvWDuZW3boc9Ch-custom-code-74G1bMf693g.html",
+        "removedBytes": 3924,
+        "beforeHash": "fbf4e5d590dc285952244558afe729c59d87d915c2205f2d4248fd36f386c603",
+        "afterHash": "a8eb0471baa78f4fc4b7b36c4f98f204d779a8b4fe022130c8cb4e0af23f43a2",
+        "unchangedContentHash": "eb046acf73622efb72bf9df83ba228b20d307c0c71f548e5077bf682edaf0dd2"
+      }
+    ],
+    "status": "published-verified",
+    "nativeSeo": {
+      "title": "Limpieza Industrial en {{custom_values.county_name_and_state}} | Ilatek",
+      "description": "Servicio de Limpieza Industrial en {{custom_values.county_name_and_state}} | Ilatek Property Solution\n",
+      "language": "es"
+    },
+    "verifiedTitleCount": 1
+  },
+  {
+    "id": "ts0xky5IxLT8ML1oooEN",
+    "name": "Servicio - Limpieza Estandar",
+    "url": "https://ilatekpr.com/limpieza-estandar",
+    "codes": [
+      {
+        "id": "custom-code-wL2YYB1KJrF",
+        "backup": "respaldos/ts0xky5IxLT8ML1oooEN-custom-code-wL2YYB1KJrF.html",
+        "prepared": "preparados/ts0xky5IxLT8ML1oooEN-custom-code-wL2YYB1KJrF.html",
+        "removedBytes": 3851,
+        "beforeHash": "022a382031fb7941ebeccce69caf1601722a20724721ea9262aef9d91de57cbb",
+        "afterHash": "087ca9ef2fda43c308bce5e566295b31161c38a61ee60be01a319900ad73bc28",
+        "unchangedContentHash": "dcc6190475f5db964558d681ddeca56b95bb83bbffd66dfe647cad0198ccbd8a"
+      }
+    ],
+    "status": "published-verified",
+    "nativeSeo": {
+      "title": "Limpieza estandar en {{custom_values.county_name_and_state}} | Ilatek",
+      "description": "Servicio de Limpieza estandar en {{custom_values.county_name_and_state}} | Ilatek Property Solution\n",
+      "language": "es"
+    },
+    "verifiedTitleCount": 1
+  },
+  {
+    "id": "RxmvNuy2kWtcqYOf5ey5",
+    "name": "Servicio - Limpieza Profunda",
+    "url": "https://ilatekpr.com/limpieza-profunda",
+    "codes": [
+      {
+        "id": "custom-code-bO6UztDhiAc",
+        "backup": "respaldos/RxmvNuy2kWtcqYOf5ey5-custom-code-bO6UztDhiAc.html",
+        "prepared": "preparados/RxmvNuy2kWtcqYOf5ey5-custom-code-bO6UztDhiAc.html",
+        "removedBytes": 3850,
+        "beforeHash": "09c6be271829abf632022c846b4e4eb81145d4047a156f70358cc29a5b3ca2f0",
+        "afterHash": "09a5fb0580259f0aac300f93bf3b4cc1af81c8eb250ac41116ba7244bc31c7d9",
+        "unchangedContentHash": "7748506cfa7174375f352a13ca2df700d972e4a73b07a3cffd73763408a97930"
+      }
+    ],
+    "status": "published-verified",
+    "nativeSeo": {
+      "title": "Limpieza profunda en {{custom_values.county_name_and_state}} | Ilatek",
+      "description": "Servicio de limpieza Profunda en {{custom_values.county_name_and_state}} | Ilatek Property Solution\n",
+      "language": "es"
+    },
+    "verifiedTitleCount": 1
+  },
+  {
+    "id": "Fto0pM1t7xfYiJvjG1Go",
+    "name": "Servicio - Limpieza de Mudanza",
+    "url": "https://ilatekpr.com/limpieza-de-mudanza",
+    "codes": [
+      {
+        "id": "custom-code-LnVv4XUI-U1",
+        "backup": "respaldos/Fto0pM1t7xfYiJvjG1Go-custom-code-LnVv4XUI-U1.html",
+        "prepared": "preparados/Fto0pM1t7xfYiJvjG1Go-custom-code-LnVv4XUI-U1.html",
+        "removedBytes": 3668,
+        "beforeHash": "8f8a29bc7d33f4b87abd642c9dec05b4b803c01e82b3a9bf4772b3aeb5ceac59",
+        "afterHash": "4fb5dbd68d88073da8bc894f7bb01f3da732bd56f6dadce2d35d14ed663fdf8e",
+        "unchangedContentHash": "a42f0c8aebb4fed506f11ff4bf968a58a000b9b108a25b86a7c767aaf791066b"
+      }
+    ],
+    "status": "published-verified",
+    "nativeSeo": {
+      "title": "Limpieza de mudanza en {{custom_values.county_name_and_state}} | Ilatek",
+      "description": "Limpieza de mudanza en {{custom_values.county_name_and_state}} | Ilatek Property Solution - Limpieza pre mudanza \n",
+      "language": "es"
+    },
+    "verifiedTitleCount": 1
+  },
+  {
+    "id": "jFYqPCdMftreng0ZvJBU",
+    "name": "Servicio - Limpieza de Airbnb & rentals",
+    "url": "https://ilatekpr.com/airbnb-turnover",
+    "codes": [
+      {
+        "id": "custom-code-IVgaH-l_Hpj",
+        "backup": "respaldos/jFYqPCdMftreng0ZvJBU-custom-code-IVgaH-l_Hpj.html",
+        "prepared": "preparados/jFYqPCdMftreng0ZvJBU-custom-code-IVgaH-l_Hpj.html",
+        "removedBytes": 3774,
+        "beforeHash": "9a9ff484ea6e1d8cc9af46e16ada807ab8b48c4a35a45a6eec70c0751698178d",
+        "afterHash": "4a14926f8a78a5393f99a8b34cbd4e9fcb8e6e80e543478b66bbf3206cfdce2e",
+        "unchangedContentHash": "e956dd2f73becc4d19266245e772bdb4f32fcc9874bab2b0ef28876df5241d3c"
+      }
+    ],
+    "status": "published-verified",
+    "nativeSeo": {
+      "title": "Limpieza de Airbnb & rentals en {{custom_values.county_name_and_state}} | Ilatek",
+      "description": "Limpieza de Airbnb & rentals en {{custom_values.county_name_and_state}} | Ilatek Property Solution - Limpieza pre mudanza \n",
+      "language": "es"
+    },
+    "verifiedTitleCount": 1
+  },
+  {
+    "id": "mT1GEeQxrVziaw3wPoEO",
+    "name": "Servicio - Limpieza de Post Construcción",
+    "url": "https://ilatekpr.com/post-construccion",
+    "codes": [
+      {
+        "id": "custom-code-0uXpRpMhUhr",
+        "backup": "respaldos/mT1GEeQxrVziaw3wPoEO-custom-code-0uXpRpMhUhr.html",
+        "prepared": "preparados/mT1GEeQxrVziaw3wPoEO-custom-code-0uXpRpMhUhr.html",
+        "removedBytes": 3848,
+        "beforeHash": "517bd31f9876cdb38f9fc9980090a3bb1a2f92a0e63450274a262e477b2d821a",
+        "afterHash": "ca0b6b908d864db06805259fe69bec0bdb6a855c041980ee097d40868f5a4809",
+        "unchangedContentHash": "92b5876c5d82f8e85ccd026e7b84e25616b755534ad6b9d43e9eb851e3afe043"
+      }
+    ],
+    "status": "published-verified",
+    "nativeSeo": {
+      "title": "Limpieza Post-Construcción en {{custom_values.county_name_and_state}} | Ilatek",
+      "description": "Limpieza de Post Construcción en {{custom_values.county_name_and_state}} | Ilatek Property Solution - Limpieza pre mudanza \n",
+      "language": "es"
+    },
+    "verifiedTitleCount": 1
+  },
+  {
+    "id": "PjpqPwDXcqdM4MrJHecJ",
+    "name": "Servicio - Limpieza de Ventanas",
+    "url": "https://ilatekpr.com/ventanas",
+    "codes": [
+      {
+        "id": "custom-code-7xo4Up1ZRsq",
+        "backup": "respaldos/PjpqPwDXcqdM4MrJHecJ-custom-code-7xo4Up1ZRsq.html",
+        "prepared": "preparados/PjpqPwDXcqdM4MrJHecJ-custom-code-7xo4Up1ZRsq.html",
+        "removedBytes": 3570,
+        "beforeHash": "5112277f37f577cee1b0e5d615456081222680019856d84ca84aacaf43c379fe",
+        "afterHash": "792c47037690113d05adc3593a16dc74b38225f5052c6d0a5487d1a2b4131451",
+        "unchangedContentHash": "632d4b5fb822640609da1bf33471598db62fc08c5db47f4c1a295efbe2a0b3c6"
+      }
+    ],
+    "status": "published-verified",
+    "nativeSeo": {
+      "title": "Limpieza de ventanas en {{custom_values.county_name_and_state}} | Ilatek",
+      "description": "Limpieza de ventanas en {{custom_values.county_name_and_state}} | Ilatek Property Solution - Limpieza pre mudanza \n",
+      "language": "es"
+    },
+    "verifiedTitleCount": 1
+  },
+  {
+    "id": "e57rVlmKBHyEUlr3xIOY",
+    "name": "Servicio - Lavado a presion",
+    "url": "https://ilatekpr.com/lavado-a-presion",
+    "codes": [
+      {
+        "id": "custom-code-59hlE6NW8d3",
+        "backup": "respaldos/e57rVlmKBHyEUlr3xIOY-custom-code-59hlE6NW8d3.html",
+        "prepared": "preparados/e57rVlmKBHyEUlr3xIOY-custom-code-59hlE6NW8d3.html",
+        "removedBytes": 3579,
+        "beforeHash": "85fc6cabd3d4768977b9b03681f0788ca1404a83b3f1a7e0204639d702045d4f",
+        "afterHash": "efaabd4cfd5c2cd0d741318e962089d488a2e275f533cc3c119c2ae50d75a7c7",
+        "unchangedContentHash": "5f0a975b92f34b4a132403c9a44bf9d8458fa5ea958a9d41e453f15b0dc95417"
+      }
+    ],
+    "status": "published-verified",
+    "nativeSeo": {
+      "title": "Lavado a presión en {{custom_values.county_name_and_state}} | Ilatek",
+      "description": "Lavado a presión en {{custom_values.county_name_and_state}} | Ilatek Property Solution - Limpieza pre mudanza \n",
+      "language": "es"
+    },
+    "verifiedTitleCount": 1
+  },
+  {
+    "id": "L7QGcfFdm9qdVdPekdXf",
+    "name": "Servicio - Lavado de alfombras",
+    "url": "https://ilatekpr.com/alfombras",
+    "codes": [
+      {
+        "id": "custom-code-uU_2VNnVMlc",
+        "backup": "respaldos/L7QGcfFdm9qdVdPekdXf-custom-code-uU_2VNnVMlc.html",
+        "prepared": "preparados/L7QGcfFdm9qdVdPekdXf-custom-code-uU_2VNnVMlc.html",
+        "removedBytes": 3592,
+        "beforeHash": "9ebf0ca7120df380126236e7caea3640d3d8b6cc56be3931cf36fc772b9fee9d",
+        "afterHash": "d74840f3e22bce5d663b4505f473c6401bdbde7323c308531109b14ab005cbc4",
+        "unchangedContentHash": "df874b623d1bcebcca58e3be9eb1e58613115d3f4382fe61600da1cbf225906a"
+      }
+    ],
+    "status": "published-verified",
+    "nativeSeo": {
+      "title": "Lavado de alfombras en {{custom_values.county_name_and_state}} | Ilatek",
+      "description": "Lavado de alfombras en {{custom_values.county_name_and_state}} | Ilatek Property Solution - Limpieza pre mudanza \n",
+      "language": "es"
+    },
+    "verifiedTitleCount": 1
+  },
+  {
+    "id": "WSsm5IYmqdxhMV6sEJpJ",
+    "name": "Servicio - Limpieza de electrodomésticos",
+    "url": "https://ilatekpr.com/electrodomesticos",
+    "codes": [
+      {
+        "id": "custom-code-xIcDzs2Jvx1",
+        "backup": "respaldos/WSsm5IYmqdxhMV6sEJpJ-custom-code-xIcDzs2Jvx1.html",
+        "prepared": "preparados/WSsm5IYmqdxhMV6sEJpJ-custom-code-xIcDzs2Jvx1.html",
+        "removedBytes": 3793,
+        "beforeHash": "bf6b5f0791b6edf4b1afbe935c30783868f406a0b95b38cb6f07158b94fb9767",
+        "afterHash": "2c5704a52d268692bc100b137d479ee32d1669cbe2c50733340a1259dfac98d9",
+        "unchangedContentHash": "6db43b37707a6ef390c047f37960d23723a4cbc963d9422012d185baee547c32"
+      }
+    ],
+    "status": "published-verified",
+    "nativeSeo": {
+      "title": "Limpieza de electrodomésticos en {{custom_values.county_name_and_state}} | Ilatek",
+      "description": "Limpieza de electrodomésticos en {{custom_values.county_name_and_state}} | Ilatek Property Solution -",
+      "language": "es"
+    },
+    "verifiedTitleCount": 1
+  },
+  {
+    "id": "Qa09zRjT9HjUEBFx3bDI",
+    "name": "Limpieza",
+    "url": "https://ilatekpr.com/home-698854",
+    "codes": [
+      {
+        "id": "custom-code-gVFP1bR2nK",
+        "backup": "respaldos/Qa09zRjT9HjUEBFx3bDI-custom-code-gVFP1bR2nK.html",
+        "prepared": "preparados/Qa09zRjT9HjUEBFx3bDI-custom-code-gVFP1bR2nK.html",
+        "removedBytes": 4452,
+        "beforeHash": "e6485cde63829ba96546ac2c33503025c17d67f5942cab2a1624cd2ce5eb5595",
+        "afterHash": "9f61b1579fdcb0be9cba5952bd68d7cb421a6ee10569cea2b5b41c59383f27b0",
+        "unchangedContentHash": "bed6313635be4d4a97a78b239d774bac63ee32ca22b6fd98803ca03ac6358353"
+      }
+    ],
+    "status": "published-verified",
+    "nativeSeo": {
+      "title": "Compañía de Limpieza en {{custom_values.county_name_and_state}} | Ilatek Property Solution",
+      "description": "Compañía de Limpieza de Airbnb, Soluciones para tu propiedad Residencial, Comercial, Industrial en {{custom_values.county_name_and_state}} \n",
+      "language": "es"
+    },
+    "verifiedTitleCount": 1
+  }
+]

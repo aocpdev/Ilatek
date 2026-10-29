@@ -1,0 +1,19 @@
+{
+  "municipality": "Loíza",
+  "municipalitySlug": "loiza",
+  "region": "metro",
+  "dateVerified": "2026-10-21",
+  "status": "investigado",
+  "communities": [
+    {"name": "Ocean Point", "slug": "ocean-point", "alternates": ["Cond. Ocean Point"], "priority": "HIGH", "type": "Condominio", "evidence": "Registrado en lista de sectores de Medianía Baja; unidad 3H/2B publicada en Corcoran (1502 Ocean Point).", "sources": ["https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Lo%C3%ADza,_Puerto_Rico", "https://www.corcoran.com/search/for-sale/location/loiza-pr-17540437/regionId/118"], "confidence": "HIGH"},
+    {"name": "Villa del Mar Beach Resort", "slug": "villa-del-mar-beach-resort", "alternates": ["Villas del Mar Resort"], "priority": "HIGH", "type": "Condominio / resort residencial", "evidence": "Registrado en Medianía Alta (lista de sectores); propiedad en Villas del Mar Resort publicada por Corcoran.", "sources": ["https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Lo%C3%ADza,_Puerto_Rico", "https://www.corcoran.com/search/for-sale/location/loiza-pr-17540437/regionId/118"], "confidence": "HIGH"},
+    {"name": "Brisas de Loíza", "slug": "brisas-de-loiza", "alternates": [], "priority": "MEDIUM", "type": "Residencial multifamiliar", "evidence": "Residencial en lista de sectores de Barrio-Pueblo.", "sources": ["https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Lo%C3%ADza,_Puerto_Rico"], "confidence": "MEDIUM"},
+    {"name": "Jardines de Loíza", "slug": "jardines-de-loiza", "alternates": [], "priority": "MEDIUM", "type": "Residencial multifamiliar", "evidence": "Residencial en lista de sectores de Barrio-Pueblo.", "sources": ["https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Lo%C3%ADza,_Puerto_Rico"], "confidence": "MEDIUM"},
+    {"name": "San Patricio", "slug": "san-patricio-loiza", "alternates": [], "priority": "MEDIUM", "type": "Residencial multifamiliar", "evidence": "Residencial en lista de sectores de Barrio-Pueblo (nota: distinto de Urb. San Patricio, Guaynabo).", "sources": ["https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Lo%C3%ADza,_Puerto_Rico"], "confidence": "MEDIUM"},
+    {"name": "Yuquiyú", "slug": "yuquiyu", "alternates": ["Residencial Yukiyú"], "priority": "MEDIUM", "type": "Residencial multifamiliar", "evidence": "Residencial en lista de sectores de Barrio-Pueblo.", "sources": ["https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Lo%C3%ADza,_Puerto_Rico"], "confidence": "MEDIUM"},
+    {"name": "El Portal", "slug": "el-portal", "alternates": ["Urb. El Portal"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Urb. en lista de sectores de Medianía Alta.", "sources": ["https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Lo%C3%ADza,_Puerto_Rico"], "confidence": "MEDIUM"},
+    {"name": "Palmarena", "slug": "palmarena", "alternates": ["Urb. Palmarena"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Urb. en lista de sectores de Medianía Baja.", "sources": ["https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Lo%C3%ADza,_Puerto_Rico"], "confidence": "MEDIUM"},
+    {"name": "Santillana del Mar", "slug": "santillana-del-mar", "alternates": ["Urb. Santillana del Mar"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Urb. en lista de sectores de Medianía Baja.", "sources": ["https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Lo%C3%ADza,_Puerto_Rico"], "confidence": "MEDIUM"},
+    {"name": "Estancias del Río", "slug": "estancias-del-rio", "alternates": ["Urb. Estancias del Río"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Urb. en lista de sectores de Medianía Baja.", "sources": ["https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Lo%C3%ADza,_Puerto_Rico"], "confidence": "MEDIUM"}
+  ]
+}

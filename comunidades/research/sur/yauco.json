@@ -1,0 +1,81 @@
+{
+  "municipality": "Yauco",
+  "municipalitySlug": "yauco",
+  "dateVerified": "2026-10-21",
+  "note": "La página consultada de Alturas del Cafetal tiene una discrepancia entre el título y la ubicación mostrada en la ficha; se incluye con confianza media y esa limitación explícita.",
+  "communities": [
+    {
+      "name": "Villas del Cafetal",
+      "slug": "villas-del-cafetal",
+      "alternates": [
+        "Villas del Cafetal (Yauco Housing)",
+        "Yauco Housing"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "AVP identifica Villas del Cafetal como residencial público de Yauco con 79 unidades; la agencia también documenta actividad de su consejo de residentes.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales",
+        "https://www.avp.pr.gov/noticias/administrador-de-vivienda-publica-inaugura-nueva-oficina-de-consejo-de-residentes-en-yauco",
+        "https://www.clasificadosonline.com/m/REListingCOBarrioM.asp?ID=4629"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Santa Catalina",
+      "slug": "santa-catalina",
+      "alternates": [
+        "Residencial Santa Catalina"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "El directorio oficial de AVP sitúa Santa Catalina en la calle 25 de Julio, salida hacia Guánica, y registra 200 unidades en Yauco.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Extensión Santa Catalina",
+      "slug": "extension-santa-catalina",
+      "alternates": [
+        "Ext. Santa Catalina"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "AVP enumera Extensión Santa Catalina por separado en Yauco, en la calle 25 de Julio, y registra 24 unidades para el proyecto.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "La Quinta",
+      "slug": "la-quinta",
+      "alternates": [
+        "Urbanización La Quinta"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline documenta una casa de cuatro cuartos y dos baños en Urbanización La Quinta, Yauco, marcada como vendida en agosto de 2024.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4793591&Version=1"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Alturas del Cafetal",
+      "slug": "alturas-del-cafetal",
+      "alternates": [
+        "Urb. Alturas del Cafetal"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Findit titula una ficha de Yauco como Alturas del Cafetal, aunque el texto extraído muestra una ubicación distinta; la asociación requiere confirmación.",
+      "sources": [
+        "https://www.finditpr.com/en/property/Urb-Alturas-Del-Cafetal-Calle-Orquidea-Alturas-Del-Cafetal-urbanizacion-Yauco-PR-00698/43336"
+      ],
+      "confidence": "MEDIUM"
+    }
+  ]
+}

@@ -14,7 +14,7 @@ export const impermeabilizacion = [
     metaDescription:
       'Impermeabilización de techos en Puerto Rico desde $3.00 por pie². Sellado de concreto, techos planos, zinc, asfalto, teja y madera. Inspección gratis y garantía escrita.',
     hero: pic('industrial', {
-      alt: 'Impermeabilización de techos de Ilatek Techos en Puerto Rico — {{custom_values.county_name_and_state}}',
+      alt: 'Impermeabilización de techos de Ilatek Techos en Puerto Rico — {{custom_values.business__county_name}}',
       title: 'Impermeabilización de techos · Ilatek Techos',
       badge: 'Concreto · Zinc · Asfalto · Teja',
     }),
@@ -24,7 +24,7 @@ export const impermeabilizacion = [
       caption: 'Cada techo, su sistema',
     }),
     heroSub:
-      'Cada tipo de techo pide un sistema distinto de impermeabilización. Ilatek sella concreto, techos planos, zinc, asfalto, teja y madera en {{custom_values.county_name_and_state}} <b>desde $3.00 por pie²</b>, con inspección gratis y garantía escrita.',
+      'Cada tipo de techo pide un sistema distinto de impermeabilización. Ilatek sella concreto, techos planos, zinc, asfalto, teja y madera en {{custom_values.business__county_name}} <b>desde $3.00 por pie²</b>, con inspección gratis y garantía escrita.',
     facts: [
       { b: '$3.00', s: 'por pie²', label: 'Precio base' },
       { b: '6', s: 'tipos de techo', label: 'Cubiertos' },
@@ -86,11 +86,11 @@ export const impermeabilizacion = [
     metaDescription:
       'Reparación de techos de concreto y losas en Puerto Rico desde $250. Sellado de grietas y filtraciones, cotización gratis y garantía escrita.',
     hero: pic('comercial', {
-      alt: 'Reparación de techo de concreto y losa en Puerto Rico — {{custom_values.county_name_and_state}}', title: 'Reparación de techos de concreto · Ilatek Techos', badge: 'Reparación de losas'
+      alt: 'Reparación de techo de concreto y losa en Puerto Rico — {{custom_values.business__county_name}}', title: 'Reparación de techos de concreto · Ilatek Techos', badge: 'Reparación de losas'
     }),
     incl: pic('industrial', { alt: 'Sellado de grietas de losa de concreto por Ilatek Techos en Puerto Rico — reparación de techos de concreto', title: 'Reparación de losas de concreto · Ilatek Techos', caption: 'Grietas selladas · Filtraciones corregidas' }),
     heroSub:
-      'La losa de concreto es el techo más común en Puerto Rico: resistente, pero propensa a grietas y filtraciones con el tiempo. Ilatek repara techos de concreto en {{custom_values.county_name_and_state}} <b>desde $250</b>, con cotización gratis y garantía escrita.',
+      'La losa de concreto es el techo más común en Puerto Rico: resistente, pero propensa a grietas y filtraciones con el tiempo. Ilatek repara techos de concreto en {{custom_values.business__county_name}} <b>desde $250</b>, con cotización gratis y garantía escrita.',
     facts: [
       { b: '$250', s: 'por reparación', label: 'Precio de entrada' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
@@ -146,10 +146,10 @@ export const impermeabilizacion = [
     metaTitle: 'Impermeabilización de Techos Planos (EPDM, TPO) | Ilatek Techos',
     metaDescription:
       'Impermeabilización de techos planos en Puerto Rico desde $250. Membranas EPDM, TPO y asfálticas selladas, cotización $0 agendada con $50 reembolsables y garantía escrita.',
-    hero: pic('comercial', { alt: 'Impermeabilización de techo plano en Puerto Rico — {{custom_values.county_name_and_state}}', title: 'Techos planos · Ilatek Techos', badge: 'EPDM · TPO · Asfáltica' }),
+    hero: pic('comercial', { alt: 'Impermeabilización de techo plano en Puerto Rico — {{custom_values.business__county_name}}', title: 'Techos planos · Ilatek Techos', badge: 'EPDM · TPO · Asfáltica' }),
     incl: pic('industrial', { alt: 'Membrana impermeabilizante en techo plano por Ilatek Techos en Puerto Rico', title: 'Techos planos y membranas · Ilatek Techos', caption: 'Membrana continua · Drenaje correcto' }),
     heroSub:
-      'Los techos planos acumulan agua y exigen una membrana que cubra toda la superficie sin fallas. Ilatek impermeabiliza techos planos en {{custom_values.county_name_and_state}} <b>desde $250</b>, corrigiendo drenaje, con cotización $0 y garantía escrita.',
+      'Los techos planos acumulan agua y exigen una membrana que cubra toda la superficie sin fallas. Ilatek impermeabiliza techos planos en {{custom_values.business__county_name}} <b>desde $250</b>, corrigiendo drenaje, con cotización $0 y garantía escrita.',
     facts: [
       { b: '$250', s: 'por trabajo', label: 'Precio de entrada' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
@@ -206,10 +206,10 @@ export const impermeabilizacion = [
     metaTitle: 'Reparación de Techos de Zinc y Metal desde $250 | Ilatek Techos',
     metaDescription:
       'Reparación y sellado de techos de zinc y metal en Puerto Rico desde $250. Tratamiento de óxido, sellado de traslapes y protección anticorrosiva, cotización gratis y garantía escrita.',
-    hero: pic('presion', { alt: 'Techos de metal y zinc en Puerto Rico — instalación, sellado y protección en {{custom_values.county_name_and_state}}', title: 'Techos de metal y zinc · Ilatek Techos', badge: 'Metal y zinc · Sellado' }),
+    hero: pic('presion', { alt: 'Techos de metal y zinc en Puerto Rico — instalación, sellado y protección en {{custom_values.business__county_name}}', title: 'Techos de metal y zinc · Ilatek Techos', badge: 'Metal y zinc · Sellado' }),
     incl: pic('postconstruccion', { alt: 'Sellado y tratamiento anticorrosivo de techo de zinc por Ilatek Techos en Puerto Rico', title: 'Techos de zinc · Ilatek Techos', caption: 'Traslapes · Tornillos · Anticorrosivo' }),
     heroSub:
-      'Los techos de zinc son comunes en anexos, garajes y quioscos, pero el óxido y el viento los castigan. Ilatek repara y sella techos de zinc en {{custom_values.county_name_and_state}} <b>desde $250</b>, con tratamiento anticorrosivo, cotización gratis y garantía escrita.',
+      'Los techos de zinc son comunes en anexos, garajes y quioscos, pero el óxido y el viento los castigan. Ilatek repara y sella techos de zinc en {{custom_values.business__county_name}} <b>desde $250</b>, con tratamiento anticorrosivo, cotización gratis y garantía escrita.',
     facts: [
       { b: '$250', s: 'por reparación', label: 'Tratamiento incluido' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
@@ -266,10 +266,10 @@ export const impermeabilizacion = [
     metaTitle: 'Reparación de Techos de Asfalto (Shingles) | Ilatek Techos',
     metaDescription:
       'Reparación de techos de asfalto y shingles en Puerto Rico desde $350. Sustitución de tejas dañadas y sellado de filtraciones con garantía escrita. Inspección gratis.',
-    hero: pic('residencial', { alt: 'Reparación de techo de asfalto y shingles en Puerto Rico — {{custom_values.county_name_and_state}}', title: 'Techos de asfalto · Ilatek Techos', badge: 'Shingles reparados' }),
+    hero: pic('residencial', { alt: 'Reparación de techo de asfalto y shingles en Puerto Rico — {{custom_values.business__county_name}}', title: 'Techos de asfalto · Ilatek Techos', badge: 'Shingles reparados' }),
     incl: pic('postconstruccion', { alt: 'Reparación de shingles de techo por Ilatek Techos en Puerto Rico — filtraciones selladas', title: 'Techos de asfalto · Ilatek Techos', caption: 'Shingles sustituidos · Sellado de filtraciones' }),
     heroSub:
-      'Los shingles de asfalto se levantan, se parten y dejan pasar el agua por debajo. Ilatek repara techos de asfalto en {{custom_values.county_name_and_state}} <b>desde $350</b>, sustituyendo piezas dañadas y sellando filtraciones, con garantía escrita.',
+      'Los shingles de asfalto se levantan, se parten y dejan pasar el agua por debajo. Ilatek repara techos de asfalto en {{custom_values.business__county_name}} <b>desde $350</b>, sustituyendo piezas dañadas y sellando filtraciones, con garantía escrita.',
     facts: [
       { b: '$350', s: 'por reparación', label: 'Piezas incluidas' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
@@ -325,10 +325,10 @@ export const impermeabilizacion = [
     metaTitle: 'Reparación de Techos de Teja desde $250 | Ilatek Techos',
     metaDescription:
       'Reparación y sellado de techos de teja en Puerto Rico desde $250. Sellado de traslapes y remates sin dañar la pieza, cotización gratis y garantía escrita.',
-    hero: pic('residencial', { alt: 'Reparación de techo de teja en Puerto Rico — {{custom_values.county_name_and_state}}', title: 'Techos de teja · Ilatek Techos', badge: 'Trato cuidadoso de la teja' }),
+    hero: pic('residencial', { alt: 'Reparación de techo de teja en Puerto Rico — {{custom_values.business__county_name}}', title: 'Techos de teja · Ilatek Techos', badge: 'Trato cuidadoso de la teja' }),
     incl: pic('postconstruccion', { alt: 'Sellado de techo de teja por Ilatek Techos en Puerto Rico — traslapes y remates', title: 'Techos de teja · Ilatek Techos', caption: 'Traslapes sellados · Remates firmes' }),
     heroSub:
-      'Las tejas son hermosas pero delicadas: una pieza suelta o un traslape abierto deja pasar el agua. Ilatek repara y sella techos de teja en {{custom_values.county_name_and_state}} <b>desde $250</b>, con cuidado de la pieza, cotización gratis y garantía escrita.',
+      'Las tejas son hermosas pero delicadas: una pieza suelta o un traslape abierto deja pasar el agua. Ilatek repara y sella techos de teja en {{custom_values.business__county_name}} <b>desde $250</b>, con cuidado de la pieza, cotización gratis y garantía escrita.',
     facts: [
       { b: '$250', s: 'por reparación', label: 'Precio de entrada' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
@@ -385,10 +385,10 @@ export const impermeabilizacion = [
     metaTitle: 'Sellado y Protección de Techos de Madera desde $250 | Ilatek Techos',
     metaDescription:
       'Sellado y protección de techos de madera en Puerto Rico desde $250. Tratamiento contra humedad, comején y filtración, cotización gratis y garantía escrita.',
-    hero: pic('residencial', { alt: 'Sellado y protección de techo de madera en Puerto Rico — {{custom_values.county_name_and_state}}', title: 'Techos de madera · Ilatek Techos', badge: 'Contra humedad y comején' }),
+    hero: pic('residencial', { alt: 'Sellado y protección de techo de madera en Puerto Rico — {{custom_values.business__county_name}}', title: 'Techos de madera · Ilatek Techos', badge: 'Contra humedad y comején' }),
     incl: pic('postconstruccion', { alt: 'Protección de techo de madera por Ilatek Techos en Puerto Rico — tratamiento antihumedad', title: 'Techos de madera · Ilatek Techos', caption: 'Humedad tratada · Madera protegida' }),
     heroSub:
-      'La madera del techo sufre con la humedad, el sol y el comején. Ilatek la sella y protege en {{custom_values.county_name_and_state}} <b>desde $250</b>, cortando la filtración y prolongando la vida de la estructura, con cotización gratis y garantía escrita.',
+      'La madera del techo sufre con la humedad, el sol y el comején. Ilatek la sella y protege en {{custom_values.business__county_name}} <b>desde $250</b>, cortando la filtración y prolongando la vida de la estructura, con cotización gratis y garantía escrita.',
     facts: [
       { b: '$250', s: 'por sellado', label: 'Precio de entrada' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },

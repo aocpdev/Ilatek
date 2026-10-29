@@ -1,6 +1,6 @@
 # Localización SEO e imágenes — Delta System ILATEK
 
-Custom Value confirmado: `{{custom_values.county_name_and_state}}`.
+Custom Value confirmado: `{{custom_values.business__county_name}}`.
 
 El mismo valor se usa en las 47 fichas SEO-GHL.md, seo.json y HEAD-TEMPLATE.html; Title, Description, Open Graph/Twitter, sus descripciones de imagen y geo.placename quedan sincronizados. Los nombres/descripciones WebPage se localizan sin alterar direcciones, países ni otros datos reales de la empresa. No se crearon oficinas municipales, coordenadas, reseñas o nuevas páginas EN.
 

@@ -1,0 +1,51 @@
+{
+  "municipality": "Guánica",
+  "municipalitySlug": "guanica",
+  "dateVerified": "2026-10-21",
+  "note": "Solo pude confirmar tres comunidades con páginas leídas directamente. No añadí otros barrios o urbanizaciones presentes únicamente en resultados de búsqueda no verificados.",
+  "communities": [
+    {
+      "name": "Jardines de Guánica",
+      "slug": "jardines-de-guanica",
+      "alternates": [
+        "Residencial Jardines de Guánica"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "El directorio de la Administración de Vivienda Pública incluye Jardines de Guánica, ubicado en la calle 25 de Julio, con 70 unidades.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Luis Muñoz Rivera",
+      "slug": "luis-munoz-rivera",
+      "alternates": [
+        "Residencial Luis Muñoz Rivera"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "AVP registra Luis Muñoz Rivera en la calle Industrial, calle 25 de Julio, Guánica, con 200 unidades y administrador identificado.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales",
+        "https://www.avp.pr.gov/centro-educativo-tecnologico"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Valle Tania",
+      "slug": "valle-tania",
+      "alternates": [
+        "Urbanización Valle Tania"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "La página del desarrollo lo ubica en Guánica y reporta viviendas vendidas y unidades planificadas; no aporta evidencia suficiente para clasificarlo como lujo.",
+      "sources": [
+        "https://hogar.com/urb-valletania/"
+      ],
+      "confidence": "MEDIUM"
+    }
+  ]
+}

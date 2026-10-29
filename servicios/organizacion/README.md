@@ -1,4 +1,4 @@
-# Organización del Hogar en {{custom_values.county_name_and_state}} | Ilatek
+# Organización del Hogar en {{custom_values.business__county_name}} | Ilatek
 
 Landing completa con menú universal y footer integrados; conserva el contenido existente.
 

@@ -1,0 +1,102 @@
+{
+ "Aguas Buenas, Puerto Rico": {
+  "lat": 18.25694444,
+  "lon": -66.10305556
+ },
+ "Bayamón, Puerto Rico": {
+  "lat": 18.38,
+  "lon": -66.16333333
+ },
+ "Cabo Rojo, Puerto Rico": {
+  "lat": 18.08666667,
+  "lon": -67.14583333
+ },
+ "Carolina, Puerto Rico": {
+  "lat": 18.40611111,
+  "lon": -65.96722222
+ },
+ "Ceiba, Puerto Rico": {
+  "lat": 18.23805556,
+  "lon": -65.62777778
+ },
+ "Culebra, Puerto Rico": {
+  "lat": 18.31694444,
+  "lon": -65.29
+ },
+ "Dorado, Puerto Rico": {
+  "lat": 18.45888889,
+  "lon": -66.26777778
+ },
+ "Fajardo, Puerto Rico": {
+  "lat": 18.32583333,
+  "lon": -65.6525
+ },
+ "Guaynabo, Puerto Rico": {
+  "lat": 18.36666667,
+  "lon": -66.1
+ },
+ "Gurabo, Puerto Rico": {
+  "lat": 18.25444444,
+  "lon": -65.97305556
+ },
+ "Humacao, Puerto Rico": {
+  "lat": 18.14972222,
+  "lon": -65.8275
+ },
+ "Luquillo, Puerto Rico": {
+  "lat": 18.3725,
+  "lon": -65.71666667
+ },
+ "Manatí, Puerto Rico": {
+  "lat": 18.4325,
+  "lon": -66.48444444
+ },
+ "Maunabo, Puerto Rico": {
+  "lat": 18.00694444,
+  "lon": -65.89916667
+ },
+ "Naguabo, Puerto Rico": {
+  "lat": 18.21944444,
+  "lon": -65.73666667
+ },
+ "Ponce, Puerto Rico": {
+  "lat": 18.01087,
+  "lon": -66.61392983
+ },
+ "Rincón, Puerto Rico": {
+  "lat": 18.34027778,
+  "lon": -67.25166667
+ },
+ "Río Grande, Puerto Rico": {
+  "lat": 18.38027778,
+  "lon": -65.83138889
+ },
+ "Salinas, Puerto Rico": {
+  "lat": 17.977,
+  "lon": -66.298
+ },
+ "San Juan, Puerto Rico": {
+  "lat": 18.40638889,
+  "lon": -66.06388889
+ },
+ "Toa Alta, Puerto Rico": {
+  "lat": 18.38833333,
+  "lon": -66.24833333
+ },
+ "Trujillo Alto, Puerto Rico": {
+  "lat": 18.36277778,
+  "lon": -66.0175
+ },
+ "Utuado, Puerto Rico": {
+  "lat": 18.26555556,
+  "lon": -66.70055556
+ },
+ "Vega Baja, Puerto Rico": {
+  "lat": 18.44611111,
+  "lon": -66.3875
+ },
+ "Vieques, Puerto Rico": {
+  "lat": 18.11666667,
+  "lon": -65.41666667
+ }
+}

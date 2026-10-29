@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "note": "Regiones de servicio de Ilatek para el mapa del home: cada municipio pertenece a UNA region. Slug = county slug de GHL.",
+  "regions": [
+    {
+      "slug": "metro",
+      "label": "Área Metropolitana",
+      "labelEn": "Metropolitan Area",
+      "municipios": ["san-juan", "bayamon", "carolina", "guaynabo", "catano", "trujillo-alto", "toa-baja", "toa-alta", "loiza", "caguas", "gurabo", "cidra", "aguas-buenas"]
+    },
+    {
+      "slug": "norte",
+      "label": "Norte",
+      "labelEn": "North",
+      "municipios": ["arecibo", "barceloneta", "manati", "vega-baja", "vega-alta", "dorado", "hatillo", "camuy", "quebradillas", "isabela", "utuado", "florida"]
+    },
+    {
+      "slug": "este",
+      "label": "Este (Costa del Sol y Palma)",
+      "labelEn": "East (Sun & Palm Coasts)",
+      "municipios": ["rio-grande", "luquillo", "fajardo", "ceiba", "naguabo", "humacao", "juncos", "san-lorenzo", "las-piedras", "canovanas", "culebra", "vieques", "yabucoa", "maunabo"]
+    },
+    {
+      "slug": "sur",
+      "label": "Sur",
+      "labelEn": "South",
+      "municipios": ["guayama", "arroyo", "patillas", "salinas", "coamo", "santa-isabel", "juana-diaz", "ponce", "penuelas", "guayanilla", "yauco", "guanica"]
+    },
+    {
+      "slug": "oeste",
+      "label": "Oeste (Porta del Sol)",
+      "labelEn": "West (Gateway to the Sun)",
+      "municipios": ["cabo-rojo", "lajas", "san-german", "hormigueros", "sabana-grande", "mayaguez", "aguada", "aguadilla", "moca", "anasco", "rincon", "las-marias", "maricao", "san-sebastian"]
+    },
+    {
+      "slug": "central",
+      "label": "Región Central (Cordillera)",
+      "labelEn": "Central Region (Mountain Range)",
+      "municipios": ["orocovis", "morovis", "ciales", "corozal", "naranjito", "comerio", "barranquitas", "aibonito", "cayey", "villalba", "jayuya", "adjuntas", "lares"]
+    }
+  ],
+  "urlPattern": "https://ilatekpr.com/<municipio-slug>/<comunidad-slug>",
+  "totalMunicipios": 78
+}

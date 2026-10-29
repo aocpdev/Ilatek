@@ -120,6 +120,6 @@ export function mk(p) {
     ctaTitle: p.ctaTitle || 'Protege tu techo antes de la próxima lluvia.',
     ctaText:
       p.ctaText ||
-      `Solicita tu cotización gratis de ${noun} en {{custom_values.county_name_and_state}} y recibe precio claro y por escrito — con inspección incluida y cobertura en los 78 municipios de Puerto Rico.`,
+      `Solicita tu cotización gratis de ${noun} en {{custom_values.business__county_name}} y recibe precio claro y por escrito — con inspección incluida y cobertura en los 78 municipios de Puerto Rico.`,
   };
 }

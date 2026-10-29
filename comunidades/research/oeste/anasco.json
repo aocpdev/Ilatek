@@ -1,0 +1,51 @@
+{
+  "municipality": "Añasco",
+  "municipalitySlug": "anasco",
+  "dateVerified": "2026-10-21",
+  "note": "Selección de comunidades verificadas en anuncios y una página oficial; el nombre del anuncio de Brisas también menciona Valle de Añasco.",
+  "communities": [
+    {
+      "name": "Brisas de Añasco",
+      "slug": "brisas-de-anasco",
+      "alternates": [
+        "Urbanización Brisas De Anasco"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Anuncio clasifica una vivienda de tres habitaciones y dos baños en Urbanización Brisas de Añasco, Añasco, y la describe como Valle de Añasco.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRED.asp?ID=4906639&Version=1"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Paseo del Valle",
+      "slug": "paseo-del-valle",
+      "alternates": [
+        "Paseos del Valle",
+        "Urbanización Paseo Del Valle"
+      ],
+      "priority": "HIGH",
+      "type": "Urbanización",
+      "evidence": "Anuncio de terreno identifica Paseo del Valle en Añasco y señala que la urbanización cuenta con control de acceso y servicios cercanos.",
+      "sources": [
+        "https://www.clasificadosonline.com/xREAnascod.asp?id=4754740&Version=1"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "The Francis Villages",
+      "slug": "the-francis-villages",
+      "alternates": [
+        "Francis Villages"
+      ],
+      "priority": "MEDIUM",
+      "type": "Comunidad / sector",
+      "evidence": "El directorio oficial del Departamento de la Vivienda registra The Francis Villages en Añasco y proporciona su dirección en la calle 65 de Infantería.",
+      "sources": [
+        "https://www.vivienda.pr.gov/egidas"
+      ],
+      "confidence": "HIGH"
+    }
+  ]
+}

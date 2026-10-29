@@ -1,0 +1,78 @@
+{
+  "municipality": "Arroyo",
+  "municipalitySlug": "arroyo",
+  "dateVerified": "2026-10-21",
+  "note": "Se verificaron cinco comunidades mediante AVP, el municipio y anuncios inmobiliarios. La página municipal confirma la extensión de Valles de Arroyo como desarrollo diferenciado; no se halló evidencia suficiente para clasificar comunidades como de lujo.",
+  "communities": [
+    {
+      "name": "Isidro Cora",
+      "slug": "isidro-cora",
+      "alternates": [],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "AVP registra Isidro Cora como residencial público de Arroyo, en la calle Morse Interior, junto a la escuela superior, con 150 unidades.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Valles de Arroyo",
+      "slug": "valles-de-arroyo",
+      "alternates": [
+        "Urb. Valles de Arroyo"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "El municipio convocó a residentes de Valles de Arroyo a una reunión sobre el servicio de buzones; Zillow también muestra viviendas en esa comunidad.",
+      "sources": [
+        "https://www.arroyopr.gov/en/event-details/reunion-urb-valles-de-arroyo-y-extension",
+        "https://www.zillow.com/homedetails/9-Urb-Valleys-L-12-Arroyo-PR-00714/2057192661_zpid/"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Extensión Valles de Arroyo",
+      "slug": "extension-valles-de-arroyo",
+      "alternates": [
+        "Valles de Arroyo Extension",
+        "Urb. Ext. Valles de Arroyo"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "El municipio menciona expresamente a residentes de Valles de Arroyo Extension, por separado de Valles de Arroyo, en una convocatoria comunitaria.",
+      "sources": [
+        "https://www.arroyopr.gov/en/event-details/reunion-urb-valles-de-arroyo-y-extension"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Jardines de Lafayette",
+      "slug": "jardines-de-lafayette",
+      "alternates": [
+        "Urb. Jardines de Lafayette"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Zillow identifica Jardines de Lafayette en Arroyo como zona residencial y muestra viviendas y transacciones asociadas a esa comunidad.",
+      "sources": [
+        "https://www.zillow.com/jardines-de-lafayette-arroyo-pr/"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "San Antonio",
+      "slug": "san-antonio",
+      "alternates": [
+        "Urb. San Antonio"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline ubica una residencia de tres habitaciones en la Urbanización San Antonio de Arroyo y la describe como comunidad residencial tranquila.",
+      "sources": [
+        "https://www.clasificadosonline.com/xREArroyoD.asp?ID=4907988"
+      ],
+      "confidence": "HIGH"
+    }
+  ]
+}

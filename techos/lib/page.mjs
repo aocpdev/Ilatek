@@ -35,7 +35,7 @@ const AGENDA_ANCHOR = '#ilt-agenda';
 // foto en otro momento del fundido, así que van decorativas y marcadas aria-hidden
 // para que el auditor las distinga de un alt olvidado.
 function shotStack(cfg, list) {
-  const alt = cfg.name + ' de Ilatek Techos en {{custom_values.county_name_and_state}}';
+  const alt = cfg.name + ' de Ilatek Techos en {{custom_values.business__county_name}}';
   return list
     .map((shot, i) => {
       const on = i === 0;
@@ -62,8 +62,8 @@ export function buildPage(page) {
   Cobertura y Reviews: bloques VERBATIM del home (78 municipios + tabs Google/Selfie).
   Canonical self-referencing /${page.slug}: ver Ilatek/techos/ghl-techos-head-seo.html (se pega en GHL Tracking Code HEADER).
 -->`);
-  parts.push(`<section id="${rootId}" aria-label="Ilatek ${page.eyebrow} {{custom_values.county_name_and_state}}"
-  data-location-label="{{custom_values.county_name_and_state}}"
+  parts.push(`<section id="${rootId}" aria-label="Ilatek ${page.eyebrow} {{custom_values.business__county_name}}"
+  data-location-label="{{custom_values.business__county_name}}"
   data-business-email="{{custom_values.business__email}}"
   data-business-phone="{{custom_values.business__phone}}"
   data-website-url="{{custom_values.website_url}}"
@@ -323,7 +323,7 @@ function coberturaCfg(page) {
     label: page.noun,
     eyebrow: page.eyebrow,
     titleHtml: `Cobertura de <em>${page.eyebrow.toLowerCase()}</em> en toda la isla.`,
-    text: `Ilatek Techos brinda ${page.noun} en los <strong>78 municipios de Puerto Rico</strong>. Atendemos tu área en <strong>{{custom_values.county_name_and_state}}</strong> y toda la isla: busca tu pueblo en el directorio y visita su página.`,
+    text: `Ilatek Techos brinda ${page.noun} en los <strong>78 municipios de Puerto Rico</strong>. Atendemos tu área en <strong>{{custom_values.business__county_name}}</strong> y toda la isla: busca tu pueblo en el directorio y visita su página.`,
   };
 }
 
@@ -400,7 +400,7 @@ function calendarSection() {
         <header class="ilt-cal-head ilt-reveal">
           <span class="ilt-eyebrow">Agenda tu inspección</span>
           <h2 id="ilt-cal-title" class="ilt-display">Reserva tu inspección gratis en minutos.</h2>
-          <p>Elige el día y la hora que te convengan. Atendemos {{custom_values.county_name_and_state}} y los 78 municipios de Puerto Rico.</p>
+          <p>Elige el día y la hora que te convengan. Atendemos {{custom_values.business__county_name}} y los 78 municipios de Puerto Rico.</p>
         </header>
         <div class="ilt-cal-box ilt-reveal">
           <div class="ilt-cal-embed">

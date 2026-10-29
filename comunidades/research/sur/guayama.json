@@ -1,0 +1,96 @@
+{
+  "municipality": "Guayama",
+  "municipalitySlug": "guayama",
+  "dateVerified": "2026-10-21",
+  "note": "El inventario oficial de AVP verifica cinco residenciales públicos; también se corroboraron Caribe Mar y Rex Manor. No se verificó evidencia sólida de comunidades de lujo ni de condominios premium.",
+  "communities": [
+    {
+      "name": "Carioca",
+      "slug": "carioca",
+      "alternates": [],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "AVP incluye Carioca en Guayama y registra su ubicación en la calle Vicente Palés, con 200 unidades de vivienda pública.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Fernando Calimano",
+      "slug": "fernando-calimano",
+      "alternates": [],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "El catálogo oficial de AVP identifica Fernando Calimano como residencial de Guayama y contabiliza 146 unidades en la calle Palma.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Jardines de Guamaní",
+      "slug": "jardines-de-guamani",
+      "alternates": [],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "AVP registra Jardines de Guamaní en Guayama, en la PR-3, kilómetro 140, barrio Jobos, con 100 unidades.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Luis Palés Matos",
+      "slug": "luis-pales-matos",
+      "alternates": [],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "El listado oficial de AVP sitúa Luis Palés Matos en el barrio Machete de Guayama y registra 298 unidades residenciales.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Valles de Guayama",
+      "slug": "valles-de-guayama",
+      "alternates": [],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "AVP identifica un residencial llamado Valles de Guayama en el desvío sur, barrio Machete, y registra 50 unidades.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Caribe Mar",
+      "slug": "caribe-mar",
+      "alternates": [
+        "Urb. Caribe Mar"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Un anuncio residencial identifica Caribe Mar en Guayama y describe una casa de tres habitaciones, patio y terraza dentro de la urbanización.",
+      "sources": [
+        "https://www.clasificadosonline.com/xREGuayamaD.asp?Version=1&offset=0&ID=4906948"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Rex Manor",
+      "slug": "rex-manor",
+      "alternates": [
+        "Rexmanor"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Un anuncio de terreno en Rex Manor describe una comunidad residencial establecida con cancha de baloncesto y actividad comunitaria de pickleball.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4861559&Version=1"
+      ],
+      "confidence": "HIGH"
+    }
+  ]
+}

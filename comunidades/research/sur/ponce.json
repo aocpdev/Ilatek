@@ -1,0 +1,136 @@
+{
+  "municipality": "Ponce",
+  "municipalitySlug": "ponce",
+  "dateVerified": "2026-10-21",
+  "note": "La evidencia inmobiliaria procede principalmente de anuncios y directorios; puede cambiar o caducar. No se presenta como inventario municipal completo ni como verificación catastral.",
+  "communities": [
+    {
+      "name": "Costa Caribe Golf Villas",
+      "slug": "costa-caribe-golf-villas",
+      "alternates": [
+        "Costa Caribe Golf Villas, Ponce"
+      ],
+      "priority": "LUXURY",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline anuncia allí una propiedad por $1,850,000 y describe acceso al campo de golf de Costa Caribe Golf & Country Club.",
+      "sources": [
+        "https://dev.clasificadosonline.com/UDRED.asp?ID=4905930"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Estancias del Golf Club",
+      "slug": "estancias-del-golf-club",
+      "alternates": [
+        "Urb. Estancias del Golf Club"
+      ],
+      "priority": "HIGH",
+      "type": "Urbanización",
+      "evidence": "Un anuncio inmobiliario identifica la urbanización y describe acceso controlado, además de facilidades recreativas para residentes.",
+      "sources": [
+        "https://www.clasificadosonline.com/clasificados/BienesRaices/casas/Ponce/default.asp?Version=1"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Estancias del Monte",
+      "slug": "estancias-del-monte",
+      "alternates": [
+        "Urb. Estancias del Monte"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline registra propiedades en esta urbanización y describe un proyecto de villas dúplex con piscina, cancha, gazebo y parque infantil.",
+      "sources": [
+        "https://www.clasificadosonline.com/clasificados/BienesRaices/casas/Ponce/default.asp?Version=1",
+        "https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4650578"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "El Monte",
+      "slug": "el-monte",
+      "alternates": [
+        "Urb. El Monte"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "El listado inmobiliario de Ponce ubica propiedades en El Monte, incluyendo una residencia anunciada con esa urbanización como área.",
+      "sources": [
+        "https://www.clasificadosonline.com/clasificados/BienesRaices/casas/Ponce/default.asp?Version=1"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Perla del Sur",
+      "slug": "perla-del-sur",
+      "alternates": [
+        "Urb. Perla del Sur"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline clasifica una casa en venta en Ponce dentro de la Urbanización Perla del Sur.",
+      "sources": [
+        "https://www.clasificadosonline.com/clasificados/BienesRaices/casas/Ponce/default.asp?Version=1"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Jardines de Fagot",
+      "slug": "jardines-de-fagot",
+      "alternates": [
+        "Urb. Jardines Fagot"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "El listado de casas de Ponce identifica Jardines de Fagot como urbanización y muestra una propiedad residencial anunciada allí.",
+      "sources": [
+        "https://www.clasificadosonline.com/clasificados/BienesRaices/casas/Ponce/default.asp?Version=1"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Jardines del Caribe",
+      "slug": "jardines-del-caribe",
+      "alternates": [
+        "Urb. Jardines del Caribe"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline presenta propiedades de Ponce en Jardines del Caribe, identificada expresamente como urbanización.",
+      "sources": [
+        "https://www.clasificadosonline.com/clasificados/BienesRaices/casas/Ponce/default.asp?Version=1"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Brisas de Laurel",
+      "slug": "brisas-de-laurel",
+      "alternates": [
+        "Urb. Brisas de Laurel",
+        "Coto Laurel"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Un anuncio inmobiliario identifica Brisas de Laurel en Ponce y describe una residencia de tres habitaciones en esa urbanización.",
+      "sources": [
+        "https://www.clasificadosonline.com/clasificados/BienesRaices/casas/Ponce/default.asp?Version=1"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Ernesto Ramos Antonini",
+      "slug": "ernesto-ramos-antonini",
+      "alternates": [
+        "Residencial Ernesto Ramos Antonini"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "La Administración de Vivienda Pública confirma actividades con residentes del residencial Ernesto Ramos Antonini, en Ponce.",
+      "sources": [
+        "https://www.avp.pr.gov/noticias/se-ofrece-a-jovenes-de-residenciales-en-ponce-por-primera-vez-curso-de-rescate-cert"
+      ],
+      "confidence": "HIGH"
+    }
+  ]
+}

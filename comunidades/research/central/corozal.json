@@ -1,0 +1,34 @@
+{
+  "municipality": "Corozal",
+  "municipalitySlug": "corozal",
+  "dateVerified": "2026-10-21",
+  "note": "AVP confirma dos residenciales públicos: Alturas del Cibuco y Enrique Landrón. No encontré páginas visitables que verificaran Pueblo del Mar ni Riba Duz, ni evidencia suficiente para identificar otros residenciales públicos locales; no se añaden nombres sin respaldo.",
+  "communities": [
+    {
+      "name": "Alturas del Cibuco",
+      "slug": "alturas-del-cibuco",
+      "alternates": [],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "AVP registra Alturas del Cibuco en la carretera 818, barrio Cibuco, con 12 unidades y administración de Inn-Capital Housing Division.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Enrique Landrón",
+      "slug": "enrique-landron",
+      "alternates": [
+        "Enrique Landrón"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "El inventario de AVP ubica Enrique Landrón en la carretera 159, junto a la escuela Abraham Fimela, y registra 100 unidades.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    }
+  ]
+}

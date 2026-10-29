@@ -1,0 +1,999 @@
+[
+  {
+    "slug": "airbnb-turnover",
+    "url": "https://ilatekpr.com/airbnb-turnover",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 116,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "alfombras",
+    "url": "https://ilatekpr.com/alfombras",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 116,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "canaletas-y-bajantes",
+    "url": "https://ilatekpr.com/canaletas-y-bajantes",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 115,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "electrodomesticos",
+    "url": "https://ilatekpr.com/electrodomesticos",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 116,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "empozamiento-de-techos",
+    "url": "https://ilatekpr.com/empozamiento-de-techos",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 115,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "home",
+    "url": "https://ilatekpr.com/",
+    "rawTokens": 274,
+    "doubleProtocolLinks": 0,
+    "sampleRaw": [
+      {
+        "tag": "meta",
+        "attr": "content",
+        "value": "Limpieza residencial, comercial e industrial + mantenimiento de techos en {{custom_values.business__county_name}}. Precios transparentes por pie², cotizador online y cobertura en los 78 municipios."
+      },
+      {
+        "tag": "link",
+        "attr": "href",
+        "value": "https://{{custom_values.website_url}}/home"
+      }
+    ],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "impermeabilizacion-de-techos",
+    "url": "https://ilatekpr.com/impermeabilizacion-de-techos",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 122,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "inspeccion-de-techos",
+    "url": "https://ilatekpr.com/inspeccion-de-techos",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 115,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "inspeccion-y-mantenimiento-de-techos",
+    "url": "https://ilatekpr.com/inspeccion-y-mantenimiento-de-techos",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 48,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "instalacion-y-reemplazo-de-techos",
+    "url": "https://ilatekpr.com/instalacion-y-reemplazo-de-techos",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 115,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "lavado-a-presion",
+    "url": "https://ilatekpr.com/lavado-a-presion",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 116,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "lavado-a-presion-techos",
+    "url": "https://ilatekpr.com/lavado-a-presion-techos",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 48,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "limpieza-comercial",
+    "url": "https://ilatekpr.com/limpieza-comercial",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 116,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "limpieza-de-mudanza",
+    "url": "https://ilatekpr.com/limpieza-de-mudanza",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 116,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "limpieza-de-techos-y-canaletas",
+    "url": "https://ilatekpr.com/limpieza-de-techos-y-canaletas",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 115,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "limpieza-estandar",
+    "url": "https://ilatekpr.com/limpieza-estandar",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 116,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "limpieza-industrial",
+    "url": "https://ilatekpr.com/limpieza-industrial",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 116,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "limpieza-profunda",
+    "url": "https://ilatekpr.com/limpieza-profunda",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 116,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "limpieza-residencial",
+    "url": "https://ilatekpr.com/limpieza-residencial",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 115,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "mantenimiento-de-techos",
+    "url": "https://ilatekpr.com/mantenimiento-de-techos",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 115,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "membrana-asfaltica",
+    "url": "https://ilatekpr.com/membrana-asfaltica",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 115,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "organizacion",
+    "url": "https://ilatekpr.com/organizacion",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 116,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "post-construccion",
+    "url": "https://ilatekpr.com/post-construccion",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 116,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "recubrimiento-elastomerico",
+    "url": "https://ilatekpr.com/recubrimiento-elastomerico",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 115,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "reparacion-de-filtraciones",
+    "url": "https://ilatekpr.com/reparacion-de-filtraciones",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 163,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "reparacion-de-goteras",
+    "url": "https://ilatekpr.com/reparacion-de-goteras",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 115,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "reparacion-de-grietas-techos",
+    "url": "https://ilatekpr.com/reparacion-de-grietas-techos",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 115,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "reparacion-de-techos",
+    "url": "https://ilatekpr.com/reparacion-de-techos",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 121,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "reparacion-post-huracan",
+    "url": "https://ilatekpr.com/reparacion-post-huracan",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 115,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "sellado-acrilico",
+    "url": "https://ilatekpr.com/sellado-acrilico",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 115,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "sellado-de-poliuretano",
+    "url": "https://ilatekpr.com/sellado-de-poliuretano",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 115,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "sellado-de-silicona",
+    "url": "https://ilatekpr.com/sellado-de-silicona",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 115,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "sellado-de-techos",
+    "url": "https://ilatekpr.com/sellado-de-techos",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 121,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "sellado-de-techos-comercial",
+    "url": "https://ilatekpr.com/sellado-de-techos-comercial",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 115,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "sellado-de-techos-industrial",
+    "url": "https://ilatekpr.com/sellado-de-techos-industrial",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 115,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "sellado-de-techos-residencial",
+    "url": "https://ilatekpr.com/sellado-de-techos-residencial",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 115,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "servicios",
+    "url": "https://ilatekpr.com/servicios",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 130,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "techos",
+    "url": "https://ilatekpr.com/techos",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 0,
+    "sampleRaw": [],
+    "social": []
+  },
+  {
+    "slug": "techos-de-asfalto",
+    "url": "https://ilatekpr.com/techos-de-asfalto",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 115,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "techos-de-concreto",
+    "url": "https://ilatekpr.com/techos-de-concreto",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 115,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "techos-de-madera",
+    "url": "https://ilatekpr.com/techos-de-madera",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 115,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "techos-de-teja",
+    "url": "https://ilatekpr.com/techos-de-teja",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 115,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "techos-de-zinc",
+    "url": "https://ilatekpr.com/techos-de-zinc",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 115,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "techos-planos",
+    "url": "https://ilatekpr.com/techos-planos",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 115,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "techos-por-segmento",
+    "url": "https://ilatekpr.com/techos-por-segmento",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 119,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "tragaluces",
+    "url": "https://ilatekpr.com/tragaluces",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 115,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  },
+  {
+    "slug": "ventanas",
+    "url": "https://ilatekpr.com/ventanas",
+    "rawTokens": 0,
+    "doubleProtocolLinks": 116,
+    "sampleRaw": [],
+    "social": [
+      {
+        "href": "https://www.facebook.com/ilatek.pr/",
+        "aria-label": "Facebook",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      },
+      {
+        "href": "https://www.instagram.com/ilatek.pr/",
+        "aria-label": "Instagram",
+        "target": "_blank",
+        "rel": "noopener nofollow"
+      }
+    ]
+  }
+]

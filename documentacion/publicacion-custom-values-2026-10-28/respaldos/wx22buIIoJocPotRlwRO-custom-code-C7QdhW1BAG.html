@@ -1,0 +1,259 @@
+<!-- =====================================================================
+     Ilatek · Sección de video vertical (YouTube) + CTA "Descubre más"
+     · Ubicación dinámica: {{custom_values.county_name_and_state}}
+     · Tarjeta con shadow, video 9:16, scroll suave al siguiente bloque
+     · Pegar en un elemento Embed / Custom Code de GHL
+     ===================================================================== -->
+<section id="ilatek-video" aria-label="Video de sellado de techos">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&family=Outfit:wght@500..800&display=swap');
+
+    #ilatek-video{
+      --ink:#11164b; --ink-deep:#0b103d; --blue:#213d8e; --blue-soft:#eef3ff;
+      --green:#00b94f; --green-dark:#009640; --mist:#f4f7fc; --muted:#5b6380; --line:#dbe2f1;
+      width:100%;
+      padding:56px 20px;
+      box-sizing:border-box;
+      background:
+        radial-gradient(70% 55% at 50% 0%, #eef3ff 0%, rgba(238,243,255,0) 72%),
+        var(--mist);
+      color:var(--ink);
+      font-family:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;
+      text-align:center;
+      isolation:isolate;
+    }
+    #ilatek-video *{box-sizing:border-box}
+    #ilatek-video .ilv-shell{width:min(100%,720px);margin:0 auto}
+
+    #ilatek-video .ilv-eyebrow{
+      display:inline-flex;align-items:center;gap:8px;
+      font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;
+      color:var(--blue);
+    }
+    #ilatek-video .ilv-eyebrow::before{
+      content:'';width:7px;height:7px;border-radius:50%;background:var(--green);
+    }
+    #ilatek-video .ilv-title{
+      margin:12px 0 0;
+      font-family:'Outfit','Manrope',sans-serif;
+      font-size:clamp(28px,3.4vw,40px);
+      font-weight:800;line-height:1.05;letter-spacing:-.04em;
+    }
+    #ilatek-video .ilv-title em{font-style:normal;color:var(--blue)}
+
+    /* Subheadline en una sola línea */
+    #ilatek-video .ilv-sub{
+      max-width:none;
+      margin:12px auto 0;
+      color:var(--muted);
+      font-size:16px;line-height:1.6;
+      white-space:nowrap;
+    }
+
+    /* Tamaño que cabe en pantalla: no se corta por abajo */
+    #ilatek-video .ilv-figure{
+      width:clamp(240px, calc((100vh - 380px) * 9 / 16), 320px);
+      width:clamp(240px, calc((100svh - 380px) * 9 / 16), 320px);
+      max-width:86vw;
+      margin:28px auto 0;
+    }
+
+    /* Tarjeta con shadow */
+    #ilatek-video .ilv-card{
+      position:relative;
+      padding:12px;
+      border:1px solid rgba(17,22,75,.07);
+      border-radius:28px;
+      background:#fff;
+      box-shadow:
+        0 2px 4px rgba(17,22,75,.04),
+        0 18px 40px rgba(17,22,75,.12),
+        0 44px 80px rgba(33,61,142,.14);
+    }
+
+    /* 9:16 forzado: YouTube dibuja el video vertical, sin franjas */
+    #ilatek-video .ilv-frame{
+      position:relative !important;
+      aspect-ratio:9 / 16 !important;
+      border-radius:18px;
+      overflow:hidden !important;
+      background:var(--ink-deep);
+      isolation:isolate;
+    }
+    #ilatek-video .ilv-frame > *{
+      position:absolute !important;
+      inset:0 !important;
+      width:100% !important;
+      height:100% !important;
+      max-width:100% !important;
+      max-height:100% !important;
+      margin:0 !important;
+      padding:0 !important;
+      border:0 !important;
+    }
+    #ilatek-video .ilv-frame iframe{
+      position:absolute !important;
+      inset:0 !important;
+      display:block !important;
+      width:100% !important;
+      height:100% !important;
+      max-width:none !important;
+      max-height:none !important;
+      border:0 !important;
+    }
+
+    #ilatek-video .ilv-caption{
+      margin:16px 0 0;
+      font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+      color:var(--muted);
+    }
+
+    /* Botón Descubre más */
+    #ilatek-video .ilv-more{
+      display:inline-flex;align-items:center;justify-content:center;gap:10px;
+      margin:22px 0 0;
+      padding:15px 30px;
+      border:0;
+      border-radius:14px;
+      background:var(--green);
+      color:#fff;
+      font-family:'Manrope',sans-serif;
+      font-size:15px;font-weight:800;letter-spacing:.01em;
+      line-height:1;
+      cursor:pointer;
+      -webkit-appearance:none;appearance:none;
+      box-shadow:0 10px 24px rgba(0,185,79,.28);
+      transition:background .2s ease, transform .2s ease, box-shadow .2s ease;
+    }
+    #ilatek-video .ilv-more:hover{
+      background:var(--green-dark);
+      transform:translateY(-2px);
+      box-shadow:0 14px 30px rgba(0,185,79,.34);
+    }
+    #ilatek-video .ilv-more:active{transform:translateY(0)}
+    #ilatek-video .ilv-more:focus-visible{outline:3px solid rgba(33,61,142,.45);outline-offset:3px}
+    #ilatek-video .ilv-more svg{width:16px;height:16px;flex:0 0 auto;transition:transform .2s ease}
+    #ilatek-video .ilv-more:hover svg{transform:translateY(3px)}
+
+    @media (prefers-reduced-motion: reduce){
+      #ilatek-video .ilv-more,
+      #ilatek-video .ilv-more svg{transition:none}
+      #ilatek-video .ilv-more:hover{transform:none}
+    }
+
+    @media (max-width:760px){
+      #ilatek-video .ilv-sub{white-space:normal;max-width:340px;font-size:15px}
+    }
+    @media (max-width:640px){
+      #ilatek-video{padding:48px 16px}
+      #ilatek-video .ilv-figure{margin-top:24px}
+      #ilatek-video .ilv-card{padding:10px;border-radius:24px}
+      #ilatek-video .ilv-frame{border-radius:15px}
+      #ilatek-video .ilv-more{width:100%;max-width:300px}
+    }
+  </style>
+
+  <div class="ilv-shell">
+
+    <!-- Opcional: bórralo si la sección ya tiene encabezado -->
+    <div class="ilv-head">
+      <span class="ilv-eyebrow">Ilatek Techos</span>
+      <h2 class="ilv-title">Mira nuestro trabajo <em>en video</em></h2>
+      <p class="ilv-sub">Sellado de techos en {{custom_values.county_name_and_state}}, paso a paso.</p>
+    </div>
+
+    <figure class="ilv-figure">
+      <div class="ilv-card">
+        <div class="ilv-frame">
+          <iframe
+            width="360" height="640"
+            src="https://www.youtube.com/embed/sTJxFrVd6VA?playsinline=1&rel=0&modestbranding=1"
+            title="Sellado de Techos en Puerto Rico | Ilatek Property Solution"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+      <figcaption class="ilv-caption">Sellado de Techos en {{custom_values.county_name_and_state}} · Ilatek Property Solution</figcaption>
+    </figure>
+
+    <!-- data-target: selector opcional de la sección destino (ej. "#hero-techos")
+         data-gap: aire entre el header y el eyebrow del destino
+         data-offset: modo manual en píxeles -->
+    <button type="button" class="ilv-more" data-target="" data-gap="12">
+      Descubre más
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+           stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M12 5v14"/><path d="m5 12 7 7 7-7"/>
+      </svg>
+    </button>
+
+  </div>
+
+  <script>
+    (function () {
+      var sec = document.getElementById('ilatek-video');
+      if (!sec) return;
+      var btn = sec.querySelector('.ilv-more');
+      if (!btn) return;
+
+      function nextBlock(from) {
+        var node = from;
+        while (node && node.parentElement && node.parentElement !== document.body) {
+          var sib = node.nextElementSibling;
+          while (sib && !sib.offsetHeight) sib = sib.nextElementSibling;
+          if (sib) return sib;
+          node = node.parentElement;
+        }
+        return null;
+      }
+
+      function headerBottom() {
+        var max = 0;
+        var nodes = document.querySelectorAll(
+          'header,nav,[class*="header"],[class*="nav"],[id*="header"],[id*="nav"]'
+        );
+        for (var i = 0; i < nodes.length; i++) {
+          var el = nodes[i];
+          var cs = getComputedStyle(el);
+          if (cs.position !== 'fixed' && cs.position !== 'sticky') continue;
+          var r = el.getBoundingClientRect();
+          if (r.height > 0 && r.height < 260 && r.bottom > 0 && r.bottom < 260 && r.bottom > max) {
+            max = r.bottom;
+          }
+        }
+        return max;
+      }
+
+      btn.addEventListener('click', function () {
+        var sel = (btn.getAttribute('data-target') || '').trim();
+        var target = sel ? document.querySelector(sel) : nextBlock(sec);
+        var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        var behavior = reduce ? 'auto' : 'smooth';
+
+        if (!target) {
+          window.scrollBy({ top: window.innerHeight * 0.9, behavior: behavior });
+          return;
+        }
+
+        var manual = btn.getAttribute('data-offset');
+        var top;
+
+        if (manual) {
+          top = target.getBoundingClientRect().top + window.scrollY - parseInt(manual, 10);
+        } else {
+          var anchor = target.querySelector(
+            '[class*="eyebrow"],[class*="kicker"],[class*="overline"],h1,h2,h3'
+          ) || target;
+          var gap = parseInt(btn.getAttribute('data-gap') || '12', 10);
+          top = anchor.getBoundingClientRect().top + window.scrollY - headerBottom() - gap;
+        }
+
+        window.scrollTo({ top: Math.max(top, 0), behavior: behavior });
+      });
+    })();
+  </script>
+
+</section>

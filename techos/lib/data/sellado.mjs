@@ -14,7 +14,7 @@ export const sellado = [
     metaDescription:
       'Sellado de techos en Puerto Rico labor desde $250: silicona 100%, membrana asfáltica, elastomérico, poliuretano y acrílico. Inspección gratis y garantía escrita.',
     hero: pic('industrial', {
-      alt: 'Sellado de techos de Ilatek Techos en Puerto Rico — impermeabilización en {{custom_values.county_name_and_state}}',
+      alt: 'Sellado de techos de Ilatek Techos en Puerto Rico — impermeabilización en {{custom_values.business__county_name}}',
       title: 'Sellado de Techos en Puerto Rico · Ilatek Techos',
       badge: 'Sistemas certificados · Garantía escrita',
     }),
@@ -24,7 +24,7 @@ export const sellado = [
       caption: 'Primer · Membrana · Sellado final',
     }),
     heroSub:
-      'Ilatek sella techos residenciales, comerciales e industriales en {{custom_values.county_name_and_state}} <b>labor desde $250</b>: removemos el material vencido, corregimos empozamientos y aplicamos el sistema de sellado correcto para tu techo — con garantía por escrito.',
+      'Ilatek sella techos residenciales, comerciales e industriales en {{custom_values.business__county_name}} <b>labor desde $250</b>: removemos el material vencido, corregimos empozamientos y aplicamos el sistema de sellado correcto para tu techo — con garantía por escrito.',
     facts: [
       { b: 'labor desde', s: '$250', label: 'Precio base' },
       { b: '5', s: 'sistemas', label: 'De sellado' },
@@ -84,10 +84,10 @@ export const sellado = [
     metaTitle: 'Sellado de Silicona 100% para Techos | Ilatek Techos',
     metaDescription:
       'Sellado de techo con silicona 100% en Puerto Rico desde $3.50 por pie². Máxima elasticidad y durabilidad de 20 a 25 años. Inspección gratis y garantía escrita.',
-    hero: pic('industrial', { alt: 'Sellado de techo con silicona 100% en Puerto Rico — {{custom_values.county_name_and_state}}', title: 'Sellado de silicona 100% · Ilatek Techos', badge: '20–25 años de durabilidad' }),
+    hero: pic('industrial', { alt: 'Sellado de techo con silicona 100% en Puerto Rico — {{custom_values.business__county_name}}', title: 'Sellado de silicona 100% · Ilatek Techos', badge: '20–25 años de durabilidad' }),
     incl: pic('comercial', { alt: 'Aplicación de silicona 100% en techo de Ilatek Techos en Puerto Rico — sellado impermeable', title: 'Sellado de silicona en Puerto Rico · Ilatek Techos', caption: 'Elasticidad permanente · Resistente al UV' }),
     heroSub:
-      'La silicona 100% es el sistema de sellado más duradero para techos en Puerto Rico: mantiene su elasticidad por décadas frente al sol y la lluvia. Ilatek lo aplica en {{custom_values.county_name_and_state}} <b>desde $3.50 por pie²</b>, con garantía escrita.',
+      'La silicona 100% es el sistema de sellado más duradero para techos en Puerto Rico: mantiene su elasticidad por décadas frente al sol y la lluvia. Ilatek lo aplica en {{custom_values.business__county_name}} <b>desde $3.50 por pie²</b>, con garantía escrita.',
     facts: [
       { b: '$3.50', s: 'por pie²', label: 'Sistema completo' },
       { b: '20–25', s: 'años', label: 'Durabilidad' },
@@ -143,10 +143,10 @@ export const sellado = [
     metaTitle: 'Membrana Asfáltica para Techos | Ilatek Techos',
     metaDescription:
       'Instalación de membrana asfáltica en techos en Puerto Rico desde $4.00 por pie². Sellado de gran espesor y resistencia al tránsito. Inspección gratis y garantía escrita.',
-    hero: pic('comercial', { alt: 'Instalación de membrana asfáltica en techo en Puerto Rico — {{custom_values.county_name_and_state}}', title: 'Membrana asfáltica para techos · Ilatek Techos', badge: 'Alta resistencia al tránsito' }),
+    hero: pic('comercial', { alt: 'Instalación de membrana asfáltica en techo en Puerto Rico — {{custom_values.business__county_name}}', title: 'Membrana asfáltica para techos · Ilatek Techos', badge: 'Alta resistencia al tránsito' }),
     incl: pic('industrial', { alt: 'Membrana asfáltica aplicada en techo por Ilatek Techos en Puerto Rico — sellado impermeable', title: 'Membrana asfáltica en Puerto Rico · Ilatek Techos', caption: 'Membrana modificada · Resiste el sol' }),
     heroSub:
-      'La membrana asfáltica da a tu techo un sellado grueso y resistente al tránsito y al sol. Ilatek la instala en {{custom_values.county_name_and_state}} <b>desde $4.00 por pie²</b>, con preparación completa y garantía por escrito.',
+      'La membrana asfáltica da a tu techo un sellado grueso y resistente al tránsito y al sol. Ilatek la instala en {{custom_values.business__county_name}} <b>desde $4.00 por pie²</b>, con preparación completa y garantía por escrito.',
     facts: [
       { b: '$4.00', s: 'por pie²', label: 'Sistema completo' },
       { b: '10–15', s: 'años', label: 'Durabilidad' },
@@ -202,10 +202,10 @@ export const sellado = [
     metaTitle: 'Recubrimiento Elastomérico para Techos | Ilatek Techos',
     metaDescription:
       'Recubrimiento elastomérico para techos en Puerto Rico desde $3.00 por pie². Coating elástico blanco que refleja el calor y sella microfisuras. Inspección gratis.',
-    hero: pic('industrial', { alt: 'Recubrimiento elastomérico blanco en techo en Puerto Rico — {{custom_values.county_name_and_state}}', title: 'Recubrimiento elastomérico · Ilatek Techos', badge: 'Refleja el calor' }),
+    hero: pic('industrial', { alt: 'Recubrimiento elastomérico blanco en techo en Puerto Rico — {{custom_values.business__county_name}}', title: 'Recubrimiento elastomérico · Ilatek Techos', badge: 'Refleja el calor' }),
     incl: pic('comercial', { alt: 'Coating elastomérico aplicado en techo por Ilatek Techos en Puerto Rico — sellado reflectivo', title: 'Recubrimiento elastomérico · Ilatek Techos', caption: 'Elástico · Reflectivo · Sellador' }),
     heroSub:
-      'El recubrimiento elastomérico blanco sella microgrietas y refleja el calor del sol, bajando la temperatura del techo. Ilatek lo aplica en {{custom_values.county_name_and_state}} <b>desde $3.00 por pie²</b>, con garantía escrita.',
+      'El recubrimiento elastomérico blanco sella microgrietas y refleja el calor del sol, bajando la temperatura del techo. Ilatek lo aplica en {{custom_values.business__county_name}} <b>desde $3.00 por pie²</b>, con garantía escrita.',
     facts: [
       { b: '$3.00', s: 'por pie²', label: 'Sistema completo' },
       { b: '5–10', s: 'años', label: 'Durabilidad' },
@@ -261,10 +261,10 @@ export const sellado = [
     metaTitle: 'Sellado de Poliuretano para Techos | Ilatek Techos',
     metaDescription:
       'Sellado de poliuretano para techos en Puerto Rico desde $4.50 por pie². Alta resistencia mecánica y química para superficies exigentes. Inspección gratis.',
-    hero: pic('comercial', { alt: 'Sellado de poliuretano en techo en Puerto Rico — {{custom_values.county_name_and_state}}', title: 'Sellado de poliuretano · Ilatek Techos', badge: 'Alta resistencia' }),
+    hero: pic('comercial', { alt: 'Sellado de poliuretano en techo en Puerto Rico — {{custom_values.business__county_name}}', title: 'Sellado de poliuretano · Ilatek Techos', badge: 'Alta resistencia' }),
     incl: pic('industrial', { alt: 'Aplicación de sellador de poliuretano en techo por Ilatek Techos en Puerto Rico', title: 'Sellado de poliuretano · Ilatek Techos', caption: 'Dureza mecánica · Adherencia fuerte' }),
     heroSub:
-      'El poliuretano forma un sellado de gran dureza y adherencia para los techos más exigidos. Ilatek lo aplica en {{custom_values.county_name_and_state}} <b>desde $4.50 por pie²</b>, preparando la superficie y con garantía escrita.',
+      'El poliuretano forma un sellado de gran dureza y adherencia para los techos más exigidos. Ilatek lo aplica en {{custom_values.business__county_name}} <b>desde $4.50 por pie²</b>, preparando la superficie y con garantía escrita.',
     facts: [
       { b: '$4.50', s: 'por pie²', label: 'Sistema completo' },
       { b: '10–15', s: 'años', label: 'Durabilidad' },
@@ -320,10 +320,10 @@ export const sellado = [
     metaTitle: 'Sellado Acrílico para Techos | Ilatek Techos',
     metaDescription:
       'Sellado acrílico para techos en Puerto Rico desde $2.00 por pie². Opción económica y reflectiva para mantenimiento periódico. Inspección gratis y garantía escrita.',
-    hero: pic('industrial', { alt: 'Sellado acrílico blanco en techo en Puerto Rico — {{custom_values.county_name_and_state}}', title: 'Sellado acrílico · Ilatek Techos', badge: 'Económico y reflectivo' }),
+    hero: pic('industrial', { alt: 'Sellado acrílico blanco en techo en Puerto Rico — {{custom_values.business__county_name}}', title: 'Sellado acrílico · Ilatek Techos', badge: 'Económico y reflectivo' }),
     incl: pic('comercial', { alt: 'Aplicación de sellador acrílico en techo por Ilatek Techos en Puerto Rico', title: 'Sellado acrílico · Ilatek Techos', caption: 'Reflectivo · Mantenimiento periódico' }),
     heroSub:
-      'El sellado acrílico es la opción más económica para mantener tu techo sellado y reflejando calor. Ilatek lo aplica en {{custom_values.county_name_and_state}} <b>desde $2.00 por pie²</b>, con preparación y garantía escrita.',
+      'El sellado acrílico es la opción más económica para mantener tu techo sellado y reflejando calor. Ilatek lo aplica en {{custom_values.business__county_name}} <b>desde $2.00 por pie²</b>, con preparación y garantía escrita.',
     facts: [
       { b: '$2.00', s: 'por pie²', label: 'Opción económica' },
       { b: '7–10', s: 'años', label: 'Durabilidad' },

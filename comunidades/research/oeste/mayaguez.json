@@ -1,0 +1,221 @@
+{
+  "municipality": "Mayagüez",
+  "municipalitySlug": "mayaguez",
+  "dateVerified": "2026-10-21",
+  "note": "El directorio oficial de AVP respalda los residenciales públicos enumerados. No se añaden condominios ni urbanizaciones privadas sin páginas leídas que acrediten sus nombres.",
+  "communities": [
+    {
+      "name": "Columbus Landing",
+      "slug": "columbus-landing",
+      "alternates": [
+        "Residencial Columbus Landing"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "El inventario oficial de AVP identifica Columbus Landing en Mayagüez, con dirección en avenida González Clemente y 476 unidades públicas.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Cuesta de las Piedras",
+      "slug": "cuesta-de-las-piedras",
+      "alternates": [
+        "Residencial Cuesta de las Piedras"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "El directorio oficial de AVP incluye Cuesta de las Piedras en Mayagüez, con dirección en calle Post Sur y 142 unidades.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "El Carmen",
+      "slug": "el-carmen",
+      "alternates": [
+        "Residencial El Carmen"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "La AVP registra El Carmen en Mayagüez, ubicado en la avenida José González Clemente, con un inventario de 252 unidades.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Flamboyán Gardens",
+      "slug": "flamboyan-gardens",
+      "alternates": [
+        "Residencial Flamboyán Gardens"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "El directorio oficial de AVP lista Flamboyán Gardens en Mayagüez, en la avenida Los Flamboyanes, con 74 unidades.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Franklin Delano Roosevelt I-II",
+      "slug": "franklin-delano-roosevelt-i-ii",
+      "alternates": [
+        "Residencial Franklin Delano Roosevelt"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "AVP identifica Franklin Delano Roosevelt I-II en el barrio Colombia de Mayagüez y consigna 600 unidades en su directorio.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Jardines de Concordia",
+      "slug": "jardines-de-concordia",
+      "alternates": [
+        "Residencial Jardines de Concordia"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "El inventario de la AVP incluye Jardines de Concordia en el sector El Seco de Mayagüez y le asigna 200 unidades.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Manuel Hernández Rosa (Candelaria)",
+      "slug": "manuel-hernandez-rosa-candelaria",
+      "alternates": [
+        "Residencial Manuel Hernández Rosa",
+        "Candelaria"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "La AVP registra Manuel Hernández Rosa (Candelaria) en Mayagüez, sobre la avenida José González Clemente, con 268 unidades.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Mar y Sol",
+      "slug": "mar-y-sol",
+      "alternates": [
+        "Residencial Mar y Sol"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "El directorio oficial de AVP incluye Mar y Sol en el sector El Malecón de Mayagüez y especifica 124 unidades.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Mayagüez Gardens",
+      "slug": "mayaguez-gardens",
+      "alternates": [
+        "Residencial Mayagüez Gardens"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "AVP lista Mayagüez Gardens en la avenida Los Flamboyanes y consigna 71 unidades para este residencial del municipio.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Mayagüez Housing I",
+      "slug": "mayaguez-housing-i",
+      "alternates": [
+        "Residencial Mayagüez Housing I"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "El directorio de AVP identifica Mayagüez Housing I en la calle Carrau, barrio Río Hondo, con 48 unidades.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Mayagüez Housing II (La Arboleda)",
+      "slug": "mayaguez-housing-ii-la-arboleda",
+      "alternates": [
+        "La Arboleda",
+        "Residencial Mayagüez Housing II"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "La AVP incluye Mayagüez Housing II (La Arboleda) en Sultana Park y registra 50 unidades en su directorio oficial.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Monte Isleño",
+      "slug": "monte-isleno",
+      "alternates": [
+        "Residencial Monte Isleño"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "El inventario oficial de AVP identifica Monte Isleño en el sector El Malecón de Mayagüez, con un total de 185 unidades.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Parque Sultana I",
+      "slug": "parque-sultana-i",
+      "alternates": [
+        "Residencial Parque Sultana I"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "La AVP registra Parque Sultana I en Mayagüez, con dirección en la calle Tenerife y 74 unidades.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Rafael Hernández (Kennedy)",
+      "slug": "rafael-hernandez-kennedy",
+      "alternates": [
+        "Residencial Rafael Hernández",
+        "Kennedy"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "El directorio oficial incluye Rafael Hernández (Kennedy) en Mayagüez, en la avenida Duscombe, con 274 unidades públicas.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Ramírez de Arellano",
+      "slug": "ramirez-de-arellano",
+      "alternates": [
+        "Residencial Ramírez de Arellano"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "La AVP lista Ramírez de Arellano en Mayagüez, con dirección en la calle Federico Degetau Mangual y 80 unidades.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    }
+  ]
+}

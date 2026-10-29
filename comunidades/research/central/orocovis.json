@@ -1,0 +1,52 @@
+{
+  "municipality": "Orocovis",
+  "municipalitySlug": "orocovis",
+  "dateVerified": "2026-10-21",
+  "note": "La AVP identifica dos residenciales públicos en Orocovis; una venta registrada confirma también viviendas en Alturas de Orocovis. No encontré evidencia suficiente para clasificar comunidades como HIGH o LUXURY.",
+  "communities": [
+    {
+      "name": "José V. Fortis",
+      "slug": "jose-v-fortis",
+      "alternates": [
+        "Residencial José V. Fortis",
+        "Residencial Jose Fortis"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "La AVP lista José V. Fortis en Orocovis, cerca de la calle Juan B. Rivera y la PR-155, con 70 unidades.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Villas de Orocovis",
+      "slug": "villas-de-orocovis",
+      "alternates": [
+        "Residencial Villas de Orocovis"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "El inventario oficial de AVP sitúa Villas de Orocovis en el barrio Sabana, junto al estadio municipal, y reporta 50 unidades.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Alturas de Orocovis",
+      "slug": "alturas-de-orocovis",
+      "alternates": [
+        "Urbanización Alturas de Orocovis"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline identifica Alturas de Orocovis como urbanización y documenta una casa vendible allí, de tres dormitorios y dos baños.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4832269",
+        "https://www.clasificadosonline.com/m/DetailRealEstate.asp?ID=4832269&Sec=1"
+      ],
+      "confidence": "HIGH"
+    }
+  ]
+}

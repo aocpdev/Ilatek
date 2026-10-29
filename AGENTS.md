@@ -27,7 +27,7 @@ Guía detallada: `documentacion/ENLACES-INTERNOS.md`. Mapa de archivos: `docs/es
 
 ## Localización SEO e imágenes — Delta System
 
-- El Custom Value confirmado por el propietario es exactamente `{{custom_values.county_name_and_state}}`, no `business__county_name`. Usarlo en Title, Description, metadatos sociales y textos descriptivos alt/title de las imágenes.
+- El Custom Value confirmado por el propietario es exactamente `{{custom_values.business__county_name}}`, no `business__county_name`. Usarlo en Title, Description, metadatos sociales y textos descriptivos alt/title de las imágenes.
 - Conservar el alt vacío de las imágenes decorativas. No añadir localidad a URLs de assets, no inventar oficinas ni afirmar que una foto documenta un trabajo realizado en un pueblo.
 - `tools/location-contract.mjs` aplica el contrato al formatear los entregables; `src/compartido/location-values.js` resuelve imágenes y metadatos para vista previa y llegada tardía del párrafo GHL. Las plantillas codificadas conservan la localidad al cambiar ES/EN.
 - Actualizar fuentes, sincronizar layout, ejecutar `node tools/apply-internal-links.mjs` y `node tools/package-pages.mjs`, luego pruebas. Los SEO-GHL.md se generan desde el HEAD real: no corregir únicamente el Markdown.

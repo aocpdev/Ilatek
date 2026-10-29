@@ -1,0 +1,83 @@
+{
+  "municipality": "Adjuntas",
+  "municipalitySlug": "adjuntas",
+  "dateVerified": "2026-10-21",
+  "note": "El inventario oficial de AVP consultado identifica dos residenciales públicos en Adjuntas: Alturas de Adjuntas (55 unidades) y Villa Valle Verde (150). No encontré evidencia verificable para Residencial Las Carolinas, el área de Vega ni Colinas del Gigante; tampoco evidencia suficiente para clasificar alguna comunidad como de lujo o con viviendas sobre $500,000.",
+  "communities": [
+    {
+      "name": "Villa Valle Verde",
+      "slug": "villa-valle-verde",
+      "alternates": [
+        "Villa Valle Verde Housing",
+        "Valle Verde Housing"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "AVP lista Villa Valle Verde en Adjuntas, en la Carr. 10 hacia Utuado, con 150 unidades; un anuncio local la identifica como vivienda HUD/Sección 8.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales",
+        "https://www.clasificadosonline.com/UDRentalsDetail.asp?ReForRentAdID=1876037"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Alturas de Adjuntas",
+      "slug": "alturas-de-adjuntas",
+      "alternates": [
+        "Residencial Alturas de Adjuntas"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "AVP la incluye en su inventario oficial en la Carr. 518, barrio Saltillo, con 55 unidades y Blanco Enterprises como agente administrador.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Los Maestros",
+      "slug": "los-maestros",
+      "alternates": [
+        "Urbanización Los Maestros",
+        "Urb. Los Maestros"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline registra la urbanización en Adjuntas y casas de cuatro habitaciones y dos baños; una venta reportada aparece a $107,000.",
+      "sources": [
+        "https://www.clasificadosonline.com/m/REListingCOBarrioM.asp?ID=9284",
+        "https://www.clasificadosonline.com/m/DetailRealEstate.asp?ID=4878057&Sec=1"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "La Granja",
+      "slug": "la-granja",
+      "alternates": [
+        "Urbanización La Granja",
+        "Urb. La Granja"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Un anuncio titulado Urb. La Granja, Pueblo Adjuntas describe una propiedad multifamiliar de cinco cuartos y cuatro baños, anunciada a $250,000; está expirado.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4830444"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Jardines de Adjuntas",
+      "slug": "jardines-de-adjuntas",
+      "alternates": [
+        "Urbanización Jardines de Adjuntas"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Un anuncio bajo Urbanización Jardines de Adjuntas identifica una casa-vagón rural con una cuerda, jacuzzi y potencial de alquiler; el anuncio está expirado.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRED.asp?ID=4882475&Version=1"
+      ],
+      "confidence": "MEDIUM"
+    }
+  ]
+}

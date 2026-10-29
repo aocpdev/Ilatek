@@ -1,5 +1,5 @@
 // Delta System: localize descriptive metadata, never asset URLs or real country data.
-export const COUNTY = '{{custom_values.county_name_and_state}}';
+export const COUNTY = '{{custom_values.business__county_name}}';
 export const encodeTemplate = value => encodeURIComponent(value).replace(/'/g,'%27');
 const decodeHtml = s => s.replace(/&amp;/g,'&').replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/&lt;/g,'<').replace(/&gt;/g,'>');
 const escapeHtml = s => s.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');

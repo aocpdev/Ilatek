@@ -1,0 +1,51 @@
+{
+  "municipality": "Aguadilla",
+  "municipalitySlug": "aguadilla",
+  "dateVerified": "2026-10-21",
+  "note": "Comunidades con evidencia inmobiliaria directa; no se presume que los nombres de anuncios representen límites administrativos oficiales ni que la lista sea exhaustiva.",
+  "communities": [
+    {
+      "name": "Villa Linda",
+      "slug": "villa-linda",
+      "alternates": [
+        "Urbanización Villa Linda"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Anuncio de vivienda en Villa Linda identifica una casa de dos habitaciones y dos baños en un solar de 800 metros cuadrados, Aguadilla.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRED.asp?ID=4906896&Version=1"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Vista Verde",
+      "slug": "vista-verde",
+      "alternates": [
+        "Urbanización Vista Verde"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Anuncio identifica una residencia en la Urbanización Vista Verde, Aguadilla, y documenta una propiedad residencial de tres habitaciones y tres baños.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRED.asp?ID=4902081&Version=1"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Ramey",
+      "slug": "ramey",
+      "alternates": [
+        "Urbanización Ramey",
+        "Base Ramey"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Anuncio clasifica la propiedad en Urbanización Ramey, Aguadilla, y describe una residencia situada a minutos del aeropuerto Rafael Hernández y playas cercanas.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRED.asp?ID=4905537&Version=1"
+      ],
+      "confidence": "HIGH"
+    }
+  ]
+}

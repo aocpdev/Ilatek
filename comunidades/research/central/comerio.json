@@ -1,0 +1,138 @@
+{
+  "municipality": "Comerío",
+  "municipalitySlug": "comerio",
+  "dateVerified": "2026-10-21",
+  "note": "La lista oficial de AVP confirma un residencial público y 150 unidades. La fuente consultada de barrios y sectores documenta otras comunidades; no hallé evidencia fuerte de mercado de lujo en las páginas visitadas.",
+  "communities": [
+    {
+      "name": "Residencial Manuel Martorell Pérez",
+      "slug": "residencial-manuel-martorell-perez",
+      "alternates": [
+        "Residencial Manuel Martorell",
+        "Manuel Martorell"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "AVP registra Manuel Martorell Pérez en Comerío con 150 unidades; un comunicado de la agencia confirma una visita oficial al residencial en 2025.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales",
+        "https://www.avp.pr.gov/noticias/administrador-de-avp-visita-residencial-en-comerio"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Urbanización Río Plata",
+      "slug": "urbanizacion-rio-plata",
+      "alternates": [
+        "Río Plata"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "El listado de barrios y sectores de Comerío incluye Urbanización Río Plata entre las comunidades del barrio-pueblo del municipio.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Comer%C3%ADo,_Puerto_Rico"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Urbanización Hacienda Campo Bello",
+      "slug": "urbanizacion-hacienda-campo-bello",
+      "alternates": [
+        "Hacienda Campo Bello"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "El listado de comunidades de Comerío incluye Hacienda Campo Bello como urbanización en el barrio Naranjo.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Comer%C3%ADo,_Puerto_Rico"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Urbanización Vista Verde",
+      "slug": "urbanizacion-vista-verde",
+      "alternates": [
+        "Vista Verde"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "La fuente consultada sobre barrios y sectores de Comerío identifica Urbanización Vista Verde entre las comunidades del barrio Naranjo.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Comer%C3%ADo,_Puerto_Rico"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Condominios Monte Flor",
+      "slug": "condominios-monte-flor",
+      "alternates": [
+        "Monte Flor",
+        "Condominio Monteflor"
+      ],
+      "priority": "MEDIUM",
+      "type": "Condominio",
+      "evidence": "El listado de comunidades de Comerío incluye Condominios Monte Flor en el barrio-pueblo; AVP también registra un proyecto PBV llamado Condominio Monteflor.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Comer%C3%ADo,_Puerto_Rico",
+        "https://www.avp.pr.gov/proyectos-pbv"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Condominios Brisas de la Sierra",
+      "slug": "condominios-brisas-de-la-sierra",
+      "alternates": [
+        "Brisas de la Sierra"
+      ],
+      "priority": "MEDIUM",
+      "type": "Condominio",
+      "evidence": "El listado de barrios y sectores de Comerío enumera Condominios Brisas de la Sierra en el barrio Palomas.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Comer%C3%ADo,_Puerto_Rico"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Urbanización San Andrés",
+      "slug": "urbanizacion-san-andres",
+      "alternates": [
+        "San Andrés"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "La fuente consultada sobre comunidades de Comerío registra Urbanización San Andrés entre las comunidades del barrio Palomas.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Comer%C3%ADo,_Puerto_Rico"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Urbanización La Hacienda",
+      "slug": "urbanizacion-la-hacienda",
+      "alternates": [
+        "La Hacienda"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "El listado de barrios y sectores de Comerío identifica Urbanización La Hacienda en Piñas, junto con otras comunidades locales.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Comer%C3%ADo,_Puerto_Rico"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Urbanización Sabana del Palmar",
+      "slug": "urbanizacion-sabana-del-palmar",
+      "alternates": [
+        "Sabana del Palmar"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "La fuente consultada registra Urbanización Sabana del Palmar entre las comunidades del barrio Río Hondo de Comerío.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Comer%C3%ADo,_Puerto_Rico"
+      ],
+      "confidence": "MEDIUM"
+    }
+  ]
+}

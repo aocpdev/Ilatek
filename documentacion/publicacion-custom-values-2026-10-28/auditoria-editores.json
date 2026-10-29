@@ -1,0 +1,201 @@
+[
+  {
+    "id": "A16Hw5QP2aB0yTmkEZH2",
+    "name": "Servicios - Sellado y Mantenimiento de T...",
+    "url": "https://ilatekpr.com/servicios-techos",
+    "codes": [
+      {
+        "id": "custom-code-C7QdhW1BAG",
+        "backup": "respaldos/A16Hw5QP2aB0yTmkEZH2-custom-code-C7QdhW1BAG.html",
+        "length": 9399,
+        "keys": [
+          "{{custom_values.county_name_and_state}}"
+        ],
+        "alias": false,
+        "customBridge": false,
+        "hardcodedEmail": false
+      },
+      {
+        "id": "custom-code-kvOFaEJGF01",
+        "backup": "respaldos/A16Hw5QP2aB0yTmkEZH2-custom-code-kvOFaEJGF01.html",
+        "length": 278328,
+        "keys": [
+          "{{custom_values.website_url}}",
+          "{{custom_values.county_name_and_state}}",
+          "{{custom_values.business__email}}",
+          "{{custom_values.business__phone}}",
+          "{{custom_values.facebook_url}}",
+          "{{custom_values.instagram_url}}"
+        ],
+        "alias": false,
+        "customBridge": false,
+        "hardcodedEmail": false
+      }
+    ]
+  },
+  {
+    "id": "wx22buIIoJocPotRlwRO",
+    "name": "Servicios",
+    "url": "https://ilatekpr.com/servicios",
+    "codes": [
+      {
+        "id": "custom-code-XVALbDlW40M",
+        "backup": "respaldos/wx22buIIoJocPotRlwRO-custom-code-XVALbDlW40M.html",
+        "length": 267038,
+        "keys": [
+          "{{custom_values.county_name_and_state}}",
+          "{{custom_values.website_url}}",
+          "{{custom_values.business__email}}",
+          "{{custom_values.business__phone}}",
+          "{{custom_values.facebook_url}}",
+          "{{custom_values.instagram_url}}"
+        ],
+        "alias": false,
+        "customBridge": false,
+        "hardcodedEmail": false
+      }
+    ]
+  },
+  {
+    "id": "qzWuOOSNApxuprx0w70Q",
+    "name": "Empleo de Limpieza en Puerto Rico",
+    "url": "https://ilatekpr.com/reclutamiento-empleo",
+    "codes": [
+      {
+        "id": "custom-code-4FraXV2wan",
+        "backup": "respaldos/qzWuOOSNApxuprx0w70Q-custom-code-4FraXV2wan.html",
+        "length": 104126,
+        "keys": [
+          "{{custom_values.website_url}}",
+          "{{custom_values.county_name_and_state}}"
+        ],
+        "alias": false,
+        "customBridge": false,
+        "hardcodedEmail": false
+      },
+      {
+        "id": "custom-code-vOix44IuR6",
+        "backup": "respaldos/qzWuOOSNApxuprx0w70Q-custom-code-vOix44IuR6.html",
+        "length": 63257,
+        "keys": [
+          "{{custom_values.county_name_and_state}}",
+          "{{custom_values.website_url}}"
+        ],
+        "alias": false,
+        "customBridge": false,
+        "hardcodedEmail": false
+      }
+    ]
+  },
+  {
+    "id": "huGdCn2lHcrx0SbDn16O",
+    "name": "Gracias por Aplicar",
+    "url": "https://ilatekpr.com/reclutamiento-empleo-gracias-por-aplicar",
+    "codes": [
+      {
+        "id": "custom-code-4FraXV2wan",
+        "backup": "respaldos/huGdCn2lHcrx0SbDn16O-custom-code-4FraXV2wan.html",
+        "length": 104126,
+        "keys": [
+          "{{custom_values.website_url}}",
+          "{{custom_values.county_name_and_state}}"
+        ],
+        "alias": false,
+        "customBridge": false,
+        "hardcodedEmail": false
+      },
+      {
+        "id": "custom-code-vOix44IuR6",
+        "backup": "respaldos/huGdCn2lHcrx0SbDn16O-custom-code-vOix44IuR6.html",
+        "length": 63257,
+        "keys": [
+          "{{custom_values.county_name_and_state}}",
+          "{{custom_values.website_url}}"
+        ],
+        "alias": false,
+        "customBridge": false,
+        "hardcodedEmail": false
+      }
+    ]
+  },
+  {
+    "id": "GV7PWESENVKtDXU8kN6w",
+    "name": "Limpieza - Cotización Gratis",
+    "url": "https://ilatekpr.com/cotizacion",
+    "codes": [
+      {
+        "id": "custom-code-4FraXV2wan",
+        "backup": "respaldos/GV7PWESENVKtDXU8kN6w-custom-code-4FraXV2wan.html",
+        "length": 104126,
+        "keys": [
+          "{{custom_values.website_url}}",
+          "{{custom_values.county_name_and_state}}"
+        ],
+        "alias": false,
+        "customBridge": false,
+        "hardcodedEmail": false
+      },
+      {
+        "id": "custom-code-mpH_lwWunP",
+        "backup": "respaldos/GV7PWESENVKtDXU8kN6w-custom-code-mpH_lwWunP.html",
+        "length": 17221,
+        "keys": [],
+        "alias": false,
+        "customBridge": false,
+        "hardcodedEmail": false
+      },
+      {
+        "id": "custom-code-vOix44IuR6",
+        "backup": "respaldos/GV7PWESENVKtDXU8kN6w-custom-code-vOix44IuR6.html",
+        "length": 63257,
+        "keys": [
+          "{{custom_values.county_name_and_state}}",
+          "{{custom_values.website_url}}"
+        ],
+        "alias": false,
+        "customBridge": false,
+        "hardcodedEmail": false
+      }
+    ]
+  },
+  {
+    "id": "5YcjXSxjngQjavMxkv1m",
+    "name": "Terminos y Condiciones",
+    "url": "https://ilatekpr.com/terminos-y-condiciones",
+    "codes": [
+      {
+        "id": "custom-code-4FraXV2wan",
+        "backup": "respaldos/5YcjXSxjngQjavMxkv1m-custom-code-4FraXV2wan.html",
+        "length": 104126,
+        "keys": [
+          "{{custom_values.website_url}}",
+          "{{custom_values.county_name_and_state}}"
+        ],
+        "alias": false,
+        "customBridge": false,
+        "hardcodedEmail": false
+      },
+      {
+        "id": "custom-code-uAVEBbbZKg",
+        "backup": "respaldos/5YcjXSxjngQjavMxkv1m-custom-code-uAVEBbbZKg.html",
+        "length": 17912,
+        "keys": [],
+        "alias": false,
+        "customBridge": false,
+        "hardcodedEmail": false
+      },
+      {
+        "id": "custom-code-vOix44IuR6",
+        "backup": "respaldos/5YcjXSxjngQjavMxkv1m-custom-code-vOix44IuR6.html",
+        "length": 63257,
+        "keys": [
+          "{{custom_values.county_name_and_state}}",
+          "{{custom_values.website_url}}"
+        ],
+        "alias": false,
+        "customBridge": false,
+        "hardcodedEmail": false
+      }
+    ]
+  }
+]

@@ -16,7 +16,7 @@ export const reparacion = [
     metaDescription:
       'Reparación de techos en Puerto Rico desde $250: goteras, filtraciones y grietas en techos de concreto, zinc y asfalto. Inspección gratis, garantía por escrito y 78 municipios.',
     hero: pic('postconstruccion', {
-      alt: 'Equipo de Ilatek Techos reparando un techo en Puerto Rico — sellado de filtraciones y goteras en {{custom_values.county_name_and_state}}',
+      alt: 'Equipo de Ilatek Techos reparando un techo en Puerto Rico — sellado de filtraciones y goteras en {{custom_values.business__county_name}}',
       title: 'Reparación de Techos en Puerto Rico · Ilatek Techos',
       badge: 'Inspección gratis · Garantía escrita',
     }),
@@ -26,7 +26,7 @@ export const reparacion = [
       caption: 'Concreto · Zinc · Asfalto · Membranas',
     }),
     heroSub:
-      'Ilatek repara techos de concreto, zinc y asfalto en {{custom_values.county_name_and_state}} <b>desde $250</b>: sellamos goteras, filtraciones y grietas con materiales certificados y garantía por escrito. Inspección gratis y cobertura en los 78 municipios.',
+      'Ilatek repara techos de concreto, zinc y asfalto en {{custom_values.business__county_name}} <b>desde $250</b>: sellamos goteras, filtraciones y grietas con materiales certificados y garantía por escrito. Inspección gratis y cobertura en los 78 municipios.',
     facts: [
       { b: '$250', s: 'por reparación', label: 'Diagnóstico incluido' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
@@ -74,7 +74,7 @@ export const reparacion = [
       { q: '¿Cuánto tarda una reparación de techo?', a: 'La mayoría de las reparaciones puntuales se completan en <b>un día</b>. Trabajos mayores —sustitución de láminas, corrección de pendientes o reparación post-huracán— pueden tomar de 1 a 3 días; te damos el tiempo estimado en la cotización.' },
       { q: '¿La reparación tiene garantía?', a: '<b>Sí.</b> Todo trabajo se entrega con garantía de mano de obra por escrito. Si el problema reaparece dentro del periodo cubierto, regresamos a corregirlo sin costo.' },
       { q: '¿Atienden emergencias de goteras?', a: 'Sí: atendemos <b>emergencias y trabajos planificados</b>. Si tu techo está filtrando ahora, priorizamos la visita para detener el agua antes de que dañe el interior. Reservas con el depósito de $50 descontable.' },
-      { q: '¿Por qué reparar con Ilatek Techos?', a: 'Diagnóstico honesto, materiales certificados, <b>precio desde $250 por escrito</b>, inspección gratis, garantía de mano de obra y cobertura en los 78 municipios — con el respaldo de Ilatek en {{custom_values.county_name_and_state}}.' },
+      { q: '¿Por qué reparar con Ilatek Techos?', a: 'Diagnóstico honesto, materiales certificados, <b>precio desde $250 por escrito</b>, inspección gratis, garantía de mano de obra y cobertura en los 78 municipios — con el respaldo de Ilatek en {{custom_values.business__county_name}}.' },
     ],
   }),
 
@@ -88,10 +88,10 @@ export const reparacion = [
     metaTitle: 'Reparación de Goteras en Puerto Rico | Ilatek Techos',
     metaDescription:
       'Reparación de goteras en techos de concreto, zinc y asfalto en Puerto Rico desde $250. Localizamos y sellamos el punto exacto. Inspección gratis y garantía escrita.',
-    hero: pic('presion', { alt: 'Reparación de goteras en el techo en Puerto Rico — sellado del punto de filtración en {{custom_values.county_name_and_state}}', title: 'Reparación de Goteras en Puerto Rico · Ilatek Techos', badge: 'Goteras activas · Visita prioritaria' }),
+    hero: pic('presion', { alt: 'Reparación de goteras en el techo en Puerto Rico — sellado del punto de filtración en {{custom_values.business__county_name}}', title: 'Reparación de Goteras en Puerto Rico · Ilatek Techos', badge: 'Goteras activas · Visita prioritaria' }),
     incl: pic('postconstruccion', { alt: 'Sellado de goteras de techo de Ilatek Techos en Puerto Rico — reparación de láminas y filtraciones', title: 'Reparación de goteras en Puerto Rico · Ilatek Techos', caption: 'Detección de causa · Sellado exacto' }),
     heroSub:
-      'Una gotera que gotea hoy dañará tu cielo raso, tu pintura y tu instalación eléctrica mañana. Ilatek localiza el punto real de la filtración y lo sella en {{custom_values.county_name_and_state}} <b>desde $250</b>, con inspección gratis y garantía escrita.',
+      'Una gotera que gotea hoy dañará tu cielo raso, tu pintura y tu instalación eléctrica mañana. Ilatek localiza el punto real de la filtración y lo sella en {{custom_values.business__county_name}} <b>desde $250</b>, con inspección gratis y garantía escrita.',
     facts: [
       { b: '$250', s: 'por gotera', label: 'Reparación puntual' },
       { b: '1', s: 'día típico', label: 'Trabajo completado' },
@@ -147,10 +147,10 @@ export const reparacion = [
     metaTitle: 'Reparación de Filtraciones de Agua en Techos | Ilatek Techos',
     metaDescription:
       'Reparación de filtraciones de agua en techos en Puerto Rico desde $300. Sellado profundo de humedad y filtraciones en concreto, zinc y asfalto con garantía escrita.',
-    hero: pic('industrial', { alt: 'Reparación de filtraciones de agua en techo en Puerto Rico — sellado profundo en {{custom_values.county_name_and_state}}', title: 'Reparación de Filtraciones en Techos · Ilatek Techos', badge: 'Sellado profundo · Garantía escrita' }),
+    hero: pic('industrial', { alt: 'Reparación de filtraciones de agua en techo en Puerto Rico — sellado profundo en {{custom_values.business__county_name}}', title: 'Reparación de Filtraciones en Techos · Ilatek Techos', badge: 'Sellado profundo · Garantía escrita' }),
     incl: pic('postconstruccion', { alt: 'Impermeabilización de filtraciones de techo de Ilatek Techos en Puerto Rico — tratamiento de humedad', title: 'Reparación de filtraciones en Puerto Rico · Ilatek Techos', caption: 'Humedad tratada · Estructura protegida' }),
     heroSub:
-      'Una filtración silenciosa daña vigas, varillas y cielo raso antes de que la notes. Ilatek sella filtraciones y humedad en techos de {{custom_values.county_name_and_state}} <b>desde $300</b>, con inspección gratis y garantía por escrito.',
+      'Una filtración silenciosa daña vigas, varillas y cielo raso antes de que la notes. Ilatek sella filtraciones y humedad en techos de {{custom_values.business__county_name}} <b>desde $300</b>, con inspección gratis y garantía por escrito.',
     facts: [
       { b: '$300', s: 'por filtración', label: 'Sellado profundo' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
@@ -192,7 +192,7 @@ export const reparacion = [
       { q: '¿Pueden sellar solo la parte que filtra?', a: 'Sí, sellamos el área afectada; pero si el sellador del resto del techo ya está vencido, recomendamos el sistema completo para que no aparezcan nuevas filtraciones al lado. Te explicamos ambas opciones con precio.' },
       { q: '¿Cuánto tarda el trabajo?', a: 'Depende del área: una filtración puntual se resuelve en <b>uno o dos días</b>, incluyendo remoción, lavado a presión, primer y membrana. El tiempo de curado varía por el clima de Puerto Rico; te lo indicamos al terminar.' },
       { q: '¿La reparación de filtración tiene garantía?', a: '<b>Sí.</b> Entregamos garantía de mano de obra por escrito. Si la filtración reaparece dentro del periodo cubierto, regresamos a corregirla.' },
-      { q: '¿Por qué elegir Ilatek Techos?', a: 'Aplicamos el sistema correcto para cada techo, <b>desde $300</b>, con inspección gratis, garantía escrita y cobertura en los 78 municipios — protegiendo tu hogar en {{custom_values.county_name_and_state}}.' },
+      { q: '¿Por qué elegir Ilatek Techos?', a: 'Aplicamos el sistema correcto para cada techo, <b>desde $300</b>, con inspección gratis, garantía escrita y cobertura en los 78 municipios — protegiendo tu hogar en {{custom_values.business__county_name}}.' },
     ],
   }),
 
@@ -206,10 +206,10 @@ export const reparacion = [
     metaTitle: 'Reparación de Grietas en Techos de Concreto | Ilatek Techos',
     metaDescription:
       'Reparación de grietas en techos de concreto y losas en Puerto Rico desde $275. Sellado estructural que detiene la entrada de agua con garantía por escrito.',
-    hero: pic('comercial', { alt: 'Reparación de grietas en techo de concreto en Puerto Rico — sellado de losa en {{custom_values.county_name_and_state}}', title: 'Reparación de Grietas en Techos · Ilatek Techos', badge: 'Sellado estructural' }),
+    hero: pic('comercial', { alt: 'Reparación de grietas en techo de concreto en Puerto Rico — sellado de losa en {{custom_values.business__county_name}}', title: 'Reparación de Grietas en Techos · Ilatek Techos', badge: 'Sellado estructural' }),
     incl: pic('postconstruccion', { alt: 'Sellado de grietas en losa de concreto de Ilatek Techos en Puerto Rico — reparación de techos', title: 'Reparación de grietas en techos · Ilatek Techos', caption: 'Sellado flexible · Resistente al calor' }),
     heroSub:
-      'Una grieta en la losa es una puerta abierta al agua y al óxido de las varillas. Ilatek sella grietas en techos de concreto de {{custom_values.county_name_and_state}} <b>desde $275</b>, con sellador flexible y garantía escrita.',
+      'Una grieta en la losa es una puerta abierta al agua y al óxido de las varillas. Ilatek sella grietas en techos de concreto de {{custom_values.business__county_name}} <b>desde $275</b>, con sellador flexible y garantía escrita.',
     facts: [
       { b: '$275', s: 'por grieta', label: 'Sellado puntual' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
@@ -251,7 +251,7 @@ export const reparacion = [
       { q: '¿Se puede sellar la grieta si está mojada?', a: 'No de forma definitiva: <b>el sellador necesita superficie seca para adherir</b>. Si hay lluvia activa, estabilizamos y volvemos cuando la superficie esté seca para el sellado permanente.' },
       { q: '¿Cómo sabré si la grieta necesitaba reparación estructural?', a: '<b>En la inspección lo determinamos.</b> Si la grieta expone varillas oxidadas o atraviesa toda la losa, te lo decimos de frente y cotizamos el refuerzo necesario, sin venderte de más.' },
       { q: '¿Cuánto tarda sellar las grietas de un techo?', a: 'Un techo residencial típico se completa <b>el mismo día</b>, incluyendo lavado a presión, relleno y membrana. Techos grandes o con muchas grietas pueden extenderse a dos días; te lo confirmamos en la cotización.' },
-      { q: '¿Por qué elegir Ilatek Techos para tus grietas?', a: 'Sellador flexible correcto, diagnóstico honesto y <b>precio desde $275</b> con inspección gratis y garantía por escrito, cubriendo {{custom_values.county_name_and_state}} y los 78 municipios de Puerto Rico.' },
+      { q: '¿Por qué elegir Ilatek Techos para tus grietas?', a: 'Sellador flexible correcto, diagnóstico honesto y <b>precio desde $275</b> con inspección gratis y garantía por escrito, cubriendo {{custom_values.business__county_name}} y los 78 municipios de Puerto Rico.' },
     ],
   }),
 
@@ -265,10 +265,10 @@ export const reparacion = [
     metaTitle: 'Empozamiento de Agua en Techos | Ilatek Techos',
     metaDescription:
       'Corrección de empozamientos de agua en techos planos y losas en Puerto Rico desde $350. Corregimos pendiente y drenaje para evitar filtraciones. Inspección gratis.',
-    hero: pic('industrial', { alt: 'Corrección de empozamiento de agua en techo en Puerto Rico — drenaje y pendiente en {{custom_values.county_name_and_state}}', title: 'Empozamiento de agua en techos · Ilatek Techos', badge: 'Drenaje corregido' }),
+    hero: pic('industrial', { alt: 'Corrección de empozamiento de agua en techo en Puerto Rico — drenaje y pendiente en {{custom_values.business__county_name}}', title: 'Empozamiento de agua en techos · Ilatek Techos', badge: 'Drenaje corregido' }),
     incl: pic('comercial', { alt: 'Corrección de pendiente y drenaje de techo de Ilatek Techos en Puerto Rico — empozamiento', title: 'Empozamiento de techos en Puerto Rico · Ilatek Techos', caption: 'Pendiente · Drenaje · Membrana' }),
     heroSub:
-      'El agua estancada en tu techo es la causa silenciosa de las filtraciones: pesa, penetra y oxida. Ilatek corrige empozamientos en techos de {{custom_values.county_name_and_state}} <b>desde $350</b>, arreglando drenaje y pendiente con garantía escrita.',
+      'El agua estancada en tu techo es la causa silenciosa de las filtraciones: pesa, penetra y oxida. Ilatek corrige empozamientos en techos de {{custom_values.business__county_name}} <b>desde $350</b>, arreglando drenaje y pendiente con garantía escrita.',
     facts: [
       { b: '$350', s: 'por corrección', label: 'Drenaje incluido' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
@@ -310,7 +310,7 @@ export const reparacion = [
       { q: '¿Pueden arreglar solo el desagüe tapado?', a: 'Si el empozamiento se debe únicamente a un drenaje obstruido, <b>sí</b>. Si además falta pendiente, te lo explicamos con ambas opciones y precio para que decidas.' },
       { q: '¿Cada cuánto debo despejar los desagües del techo?', a: 'Recomendamos revisar y despejar los desagües del techo <b>al menos dos veces al año</b>, y siempre tras la temporada de lluvias o una tormenta, para que el agua no se estanque.' },
       { q: '¿La corrección de empozamiento tiene garantía?', a: '<b>Sí</b>, cada corrección se entrega con garantía de mano de obra por escrito. Si el empozamiento reaparece dentro del periodo cubierto, regresamos.' },
-      { q: '¿Por qué elegir Ilatek Techos?', a: 'Atacamos la causa del empozamiento —drenaje y pendiente— <b>desde $350</b>, con inspección gratis, garantía escrita y cobertura en los 78 municipios, protegiendo tu techo en {{custom_values.county_name_and_state}}.' },
+      { q: '¿Por qué elegir Ilatek Techos?', a: 'Atacamos la causa del empozamiento —drenaje y pendiente— <b>desde $350</b>, con inspección gratis, garantía escrita y cobertura en los 78 municipios, protegiendo tu techo en {{custom_values.business__county_name}}.' },
     ],
   }),
 
@@ -324,10 +324,10 @@ export const reparacion = [
     metaTitle: 'Oxidación y Varillas Expuestas en Techos | Ilatek Techos',
     metaDescription:
       'Tratamiento de oxidación y varillas expuestas en techos de zinc y concreto en Puerto Rico desde $400. Refuerzo y protección anticorrosiva con garantía escrita.',
-    hero: pic('presion', { alt: 'Tratamiento de oxidación y varillas expuestas en techo en Puerto Rico — protección anticorrosiva en {{custom_values.county_name_and_state}}', title: 'Oxidación de techos en Puerto Rico · Ilatek Techos', badge: 'Protección anticorrosiva' }),
+    hero: pic('presion', { alt: 'Tratamiento de oxidación y varillas expuestas en techo en Puerto Rico — protección anticorrosiva en {{custom_values.business__county_name}}', title: 'Oxidación de techos en Puerto Rico · Ilatek Techos', badge: 'Protección anticorrosiva' }),
     incl: pic('postconstruccion', { alt: 'Tratamiento de óxido y varillas oxidadas de techo de Ilatek Techos en Puerto Rico', title: 'Oxidación y varillas de techo · Ilatek Techos', caption: 'Óxido tratado · Refuerzo aplicado' }),
     heroSub:
-      'El óxido no es solo estético: debilita el metal y las varillas hasta que el techo falla. Ilatek trata la oxidación y protege techos de zinc y concreto de {{custom_values.county_name_and_state}} <b>desde $400</b>, con garantía escrita.',
+      'El óxido no es solo estético: debilita el metal y las varillas hasta que el techo falla. Ilatek trata la oxidación y protege techos de zinc y concreto de {{custom_values.business__county_name}} <b>desde $400</b>, con garantía escrita.',
     facts: [
       { b: '$400', s: 'por tratamiento', label: 'Protección incluida' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
@@ -383,10 +383,10 @@ export const reparacion = [
     metaTitle: 'Moho y Humedad por Filtración de Techo | Ilatek Techos',
     metaDescription:
       'Eliminación de moho y humedad por filtración de techo en Puerto Rico desde $300. Sellamos la entrada de agua y tratamos la superficie. Inspección gratis.',
-    hero: pic('industrial', { alt: 'Tratamiento de moho y humedad por filtración de techo en Puerto Rico — {{custom_values.county_name_and_state}}', title: 'Moho y humedad de techo · Ilatek Techos', badge: 'Causa + superficie' }),
+    hero: pic('industrial', { alt: 'Tratamiento de moho y humedad por filtración de techo en Puerto Rico — {{custom_values.business__county_name}}', title: 'Moho y humedad de techo · Ilatek Techos', badge: 'Causa + superficie' }),
     incl: pic('residencial', { alt: 'Eliminación de humedad y moho de techo de Ilatek Techos en Puerto Rico — sellado de filtración', title: 'Moho y humedad de techo · Ilatek Techos', caption: 'Sin agua · sin hongos' }),
     heroSub:
-      'El moho no se limpia: se elimina la humedad que lo alimenta. Ilatek sella la filtración del techo y trata la superficie afectada en {{custom_values.county_name_and_state}} <b>desde $300</b>, con inspección gratis y garantía escrita.',
+      'El moho no se limpia: se elimina la humedad que lo alimenta. Ilatek sella la filtración del techo y trata la superficie afectada en {{custom_values.business__county_name}} <b>desde $300</b>, con inspección gratis y garantía escrita.',
     facts: [
       { b: '$300', s: 'por tratamiento', label: 'Causa incluida' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
@@ -442,10 +442,10 @@ export const reparacion = [
     metaTitle: 'Reparación de Techos Post-Huracán | Ilatek Techos',
     metaDescription:
       'Reparación de techos post-huracán en Puerto Rico desde $350: estabilización, tarping, reparación y documentación para el seguro. Atención prioritaria.',
-    hero: pic('postconstruccion', { alt: 'Reparación de techo dañado por huracán en Puerto Rico — estabilización y sellado en {{custom_values.county_name_and_state}}', title: 'Reparación de techos post-huracán · Ilatek Techos', badge: 'Atención prioritaria' }),
+    hero: pic('postconstruccion', { alt: 'Reparación de techo dañado por huracán en Puerto Rico — estabilización y sellado en {{custom_values.business__county_name}}', title: 'Reparación de techos post-huracán · Ilatek Techos', badge: 'Atención prioritaria' }),
     incl: pic('presion', { alt: 'Reparación post-huracán de techos de Ilatek Techos en Puerto Rico — láminas y sellado de emergencia', title: 'Reparación post-huracán · Ilatek Techos', caption: 'Estabilizar · Documentar · Reparar' }),
     heroSub:
-      'Después de una tormenta, cada hora que pasa con el techo abierto multiplica el daño. Ilatek estabiliza, documenta y repara techos dañados por huracán en {{custom_values.county_name_and_state}} <b>desde $350</b> — con atención prioritaria y garantía escrita.',
+      'Después de una tormenta, cada hora que pasa con el techo abierto multiplica el daño. Ilatek estabiliza, documenta y repara techos dañados por huracán en {{custom_values.business__county_name}} <b>desde $350</b> — con atención prioritaria y garantía escrita.',
     facts: [
       { b: '$350', s: 'emergencia', label: 'Estabilización' },
       { b: '24h', s: 'respuesta', label: 'Visita prioritaria' },

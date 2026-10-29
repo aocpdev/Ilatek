@@ -1,17 +1,17 @@
-# SEO — Sellado de Silicona 100% para Techos en {{custom_values.county_name_and_state}} | Ilatek Techos
+# SEO — Sellado de Silicona 100% para Techos en {{custom_values.business__county_name}} | Ilatek Techos
 
-Plantilla local Delta System para {{custom_values.county_name_and_state}}. Título, descripción y textos de imágenes sincronizados con los entregables.
+Plantilla local Delta System para {{custom_values.business__county_name}}. Título, descripción y textos de imágenes sincronizados con los entregables.
 
 ## Meta Tag Title
 
 ```text
-Sellado de Silicona 100% para Techos en {{custom_values.county_name_and_state}} | Ilatek Techos
+Sellado de Silicona 100% para Techos en {{custom_values.business__county_name}} | Ilatek Techos
 ```
 
 ## Meta Tag Description
 
 ```text
-Sellado de techo con silicona 100% en {{custom_values.county_name_and_state}} desde $3.50 por pie². Máxima elasticidad y durabilidad de 20 a 25 años. Inspección gratis y garantía escrita.
+Sellado de techo con silicona 100% en {{custom_values.business__county_name}} desde $3.50 por pie². Máxima elasticidad y durabilidad de 20 a 25 años. Inspección gratis y garantía escrita.
 ```
 
 ## Meta Tag Image
@@ -40,12 +40,12 @@ Inventario: [ASSETS.json](ASSETS.json). Datos reutilizables: [seo.json](seo.json
 
 ## Localización del snapshot — SEO, AEO y GEO
 
-Custom Value obligatorio: `{{custom_values.county_name_and_state}}`. Usar la etiqueta completa del pueblo y estado; no añadir Puerto Rico nuevamente si ya forma parte del valor. No sustituirlo por `business__county_name`.
+Custom Value obligatorio: `{{custom_values.business__county_name}}`. Usar la etiqueta completa del pueblo y estado; no añadir Puerto Rico nuevamente si ya forma parte del valor. No sustituirlo por `business__county_name`.
 
 ### Meta Tag Image Alt
 
 ```text
-Sellado de Silicona 100% para Techos en {{custom_values.county_name_and_state}} | Ilatek Techos
+Sellado de Silicona 100% para Techos en {{custom_values.business__county_name}} | Ilatek Techos
 ```
 
 El HEAD incluye `og:image:alt` y `twitter:image:alt`. Los atributos `alt` y `title` descriptivos de las imágenes usan la misma localidad, conservando lo que representa cada imagen. Las imágenes decorativas mantienen `alt=""` por accesibilidad. Las URLs de medios no son texto SEO y se conservan.

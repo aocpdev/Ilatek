@@ -1,0 +1,51 @@
+{
+  "municipality": "Moca",
+  "municipalitySlug": "moca",
+  "dateVerified": "2026-10-21",
+  "note": "La evidencia disponible incluye anuncios inmobiliarios y el directorio oficial de égidas; no se verificó un inventario completo de comunidades residenciales del municipio.",
+  "communities": [
+    {
+      "name": "La Monserrate",
+      "slug": "la-monserrate",
+      "alternates": [
+        "Urbanización La Monserrate"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Anuncio de propiedad en Moca identifica La Monserrate como urbanización y documenta una residencia de tres dormitorios en un solar de 319 metros cuadrados.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4876805&Version=1"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Lomas Verdes",
+      "slug": "lomas-verdes",
+      "alternates": [
+        "Urbanización Lomas Verdes"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Anuncio inmobiliario de Moca identifica Lomas Verdes y describe una propiedad multifamiliar con apartamentos, residencia y aproximadamente 350 metros cuadrados de solar.",
+      "sources": [
+        "https://www.clasificadosonline.com/xREMocad.asp?id=4838220&Version=1"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Centro Residencial Edad Dorada",
+      "slug": "centro-residencial-edad-dorada",
+      "alternates": [
+        "Edad Dorada",
+        "Moca Elderly"
+      ],
+      "priority": "MEDIUM",
+      "type": "Comunidad / sector",
+      "evidence": "El Departamento de la Vivienda incluye el Centro Residencial Edad Dorada en Moca y ofrece su dirección en la calle Monseñor, barrio Pueblo.",
+      "sources": [
+        "https://www.vivienda.pr.gov/egidas"
+      ],
+      "confidence": "HIGH"
+    }
+  ]
+}

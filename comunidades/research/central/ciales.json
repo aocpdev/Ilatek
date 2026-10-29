@@ -1,0 +1,60 @@
+{
+  "municipality": "Ciales",
+  "municipalitySlug": "ciales",
+  "dateVerified": "2026-10-21",
+  "note": "AVP confirma tres residenciales públicos en Ciales. No se verificó evidencia suficiente para atribuir a una comunidad concreta anuncios superiores a $500,000 ni amenidades premium; el anuncio de Los Llanos está expirado.",
+  "communities": [
+    {
+      "name": "Alturas de Ciales",
+      "slug": "alturas-de-ciales",
+      "alternates": [],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "El inventario oficial de AVP registra Alturas de Ciales, en la carretera 146 con la 685, con 50 unidades administradas por Inn-Capital Housing Division.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Dos Ríos",
+      "slug": "dos-rios",
+      "alternates": [
+        "Dos Ríos, Ciales"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "AVP incluye Dos Ríos en Ciales, junto a la carretera 149 y los ríos Grande de Manatí y Cialito, con 60 unidades.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Fernando Sierra Berdecía",
+      "slug": "fernando-sierra-berdecia",
+      "alternates": [],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "El listado oficial de AVP identifica Fernando Sierra Berdecía en Ciales, en la calle Betances, barrio Jaguas, y registra 100 unidades.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Los Llanos",
+      "slug": "los-llanos",
+      "alternates": [
+        "Urb. Los Llanos"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Un anuncio inmobiliario identifica una vivienda en la Urbanización Los Llanos, Ciales, de tres habitaciones y un baño; el anuncio consultado está expirado.",
+      "sources": [
+        "https://www.clasificadosonline.com/xRECialesd.asp?id=4863922&Version=1"
+      ],
+      "confidence": "HIGH"
+    }
+  ]
+}

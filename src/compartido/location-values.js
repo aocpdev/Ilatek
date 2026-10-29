@@ -2,7 +2,7 @@
 (function(w){
   'use strict';
   if(w.ILATEK_GEO)return;
-  var token='{'+'{custom_values.county_name_and_state}'+'}',doc=w.document;
+  var token='{'+'{custom_values.business__county_name}'+'}',doc=w.document;
   function clean(v){v=String(v||'').replace(/\u00a0/g,' ').trim();return /\{\{|\}\}/.test(v)?'':v}
   function county(){
     var declared=doc.querySelectorAll('.dv-ghl-values,#dv-ghl-values'),nodes=declared.length?declared:doc.querySelectorAll('p'),values=[];

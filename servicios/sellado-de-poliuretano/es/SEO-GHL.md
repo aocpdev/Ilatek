@@ -1,17 +1,17 @@
-# SEO — Sellado de Poliuretano para Techos en {{custom_values.county_name_and_state}} | Ilatek Techos
+# SEO — Sellado de Poliuretano para Techos en {{custom_values.business__county_name}} | Ilatek Techos
 
-Plantilla local Delta System para {{custom_values.county_name_and_state}}. Título, descripción y textos de imágenes sincronizados con los entregables.
+Plantilla local Delta System para {{custom_values.business__county_name}}. Título, descripción y textos de imágenes sincronizados con los entregables.
 
 ## Meta Tag Title
 
 ```text
-Sellado de Poliuretano para Techos en {{custom_values.county_name_and_state}} | Ilatek Techos
+Sellado de Poliuretano para Techos en {{custom_values.business__county_name}} | Ilatek Techos
 ```
 
 ## Meta Tag Description
 
 ```text
-Sellado de poliuretano para techos en {{custom_values.county_name_and_state}} desde $4.50 por pie². Alta resistencia mecánica y química para superficies exigentes. Inspección gratis.
+Sellado de poliuretano para techos en {{custom_values.business__county_name}} desde $4.50 por pie². Alta resistencia mecánica y química para superficies exigentes. Inspección gratis.
 ```
 
 ## Meta Tag Image
@@ -40,12 +40,12 @@ Inventario: [ASSETS.json](ASSETS.json). Datos reutilizables: [seo.json](seo.json
 
 ## Localización del snapshot — SEO, AEO y GEO
 
-Custom Value obligatorio: `{{custom_values.county_name_and_state}}`. Usar la etiqueta completa del pueblo y estado; no añadir Puerto Rico nuevamente si ya forma parte del valor. No sustituirlo por `business__county_name`.
+Custom Value obligatorio: `{{custom_values.business__county_name}}`. Usar la etiqueta completa del pueblo y estado; no añadir Puerto Rico nuevamente si ya forma parte del valor. No sustituirlo por `business__county_name`.
 
 ### Meta Tag Image Alt
 
 ```text
-Sellado de Poliuretano para Techos en {{custom_values.county_name_and_state}} | Ilatek Techos
+Sellado de Poliuretano para Techos en {{custom_values.business__county_name}} | Ilatek Techos
 ```
 
 El HEAD incluye `og:image:alt` y `twitter:image:alt`. Los atributos `alt` y `title` descriptivos de las imágenes usan la misma localidad, conservando lo que representa cada imagen. Las imágenes decorativas mantienen `alt=""` por accesibilidad. Las URLs de medios no son texto SEO y se conservan.

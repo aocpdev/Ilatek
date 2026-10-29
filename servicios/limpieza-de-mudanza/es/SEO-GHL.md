@@ -1,17 +1,17 @@
-# SEO — Limpieza de Mudanza en {{custom_values.county_name_and_state}} | Ilatek
+# SEO — Limpieza de Mudanza en {{custom_values.business__county_name}} | Ilatek
 
-Plantilla local Delta System para {{custom_values.county_name_and_state}}. Título, descripción y textos de imágenes sincronizados con los entregables.
+Plantilla local Delta System para {{custom_values.business__county_name}}. Título, descripción y textos de imágenes sincronizados con los entregables.
 
 ## Meta Tag Title
 
 ```text
-Limpieza de Mudanza en {{custom_values.county_name_and_state}} | Ilatek
+Limpieza de Mudanza en {{custom_values.business__county_name}} | Ilatek
 ```
 
 ## Meta Tag Description
 
 ```text
-Limpieza de mudanza move-in / move-out en {{custom_values.county_name_and_state}}: deja el espacio listo para entregar o habitar. Cotizador online con precio real y cobertura en los 78 municipios.
+Limpieza de mudanza move-in / move-out en {{custom_values.business__county_name}}: deja el espacio listo para entregar o habitar. Cotizador online con precio real y cobertura en los 78 municipios.
 ```
 
 ## Meta Tag Image
@@ -40,12 +40,12 @@ Inventario: [ASSETS.json](ASSETS.json). Datos reutilizables: [seo.json](seo.json
 
 ## Localización del snapshot — SEO, AEO y GEO
 
-Custom Value obligatorio: `{{custom_values.county_name_and_state}}`. Usar la etiqueta completa del pueblo y estado; no añadir Puerto Rico nuevamente si ya forma parte del valor. No sustituirlo por `business__county_name`.
+Custom Value obligatorio: `{{custom_values.business__county_name}}`. Usar la etiqueta completa del pueblo y estado; no añadir Puerto Rico nuevamente si ya forma parte del valor. No sustituirlo por `business__county_name`.
 
 ### Meta Tag Image Alt
 
 ```text
-Limpieza de Mudanza en {{custom_values.county_name_and_state}} | Ilatek
+Limpieza de Mudanza en {{custom_values.business__county_name}} | Ilatek
 ```
 
 El HEAD incluye `og:image:alt` y `twitter:image:alt`. Los atributos `alt` y `title` descriptivos de las imágenes usan la misma localidad, conservando lo que representa cada imagen. Las imágenes decorativas mantienen `alt=""` por accesibilidad. Las URLs de medios no son texto SEO y se conservan.

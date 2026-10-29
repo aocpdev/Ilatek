@@ -1,0 +1,52 @@
+{
+  "municipality": "Morovis",
+  "municipalitySlug": "morovis",
+  "dateVerified": "2026-10-21",
+  "note": "La lista de AVP confirma Tomás Sorolla y 74 unidades. AVP también publica Morovis Elderly como proyecto de Égida/PBV; no se trata de un residencial público convencional. No confirmé en fuentes visitadas otros proyectos residenciales públicos de Morovis.",
+  "communities": [
+    {
+      "name": "Residencial Tomás Sorolla",
+      "slug": "residencial-tomas-sorolla",
+      "alternates": [
+        "Tomás Sorolla",
+        "Padre Tomás Sorolla"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "El inventario oficial de AVP registra Tomás Sorolla en Morovis, carretera 155, y especifica 74 unidades bajo administración de Inn-Capital Housing Division.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Morovis Elderly",
+      "slug": "morovis-elderly",
+      "alternates": [
+        "Morovis Elderly Égida"
+      ],
+      "priority": "MEDIUM",
+      "type": "Comunidad / sector",
+      "evidence": "AVP clasifica Morovis Elderly como proyecto de Égida con ubicación en barrio Montellanos; es vivienda asistida, no residencial público convencional.",
+      "sources": [
+        "https://www.avp.pr.gov/proyectos-pbv",
+        "https://www.vivienda.pr.gov/egidas"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Brisas del Norte",
+      "slug": "brisas-del-norte",
+      "alternates": [
+        "Urbanización Brisas del Norte"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Una ficha inmobiliaria titulada Brisas del Norte Urbanization identifica una vivienda de tres habitaciones, un baño y 1,200 pies cuadrados en Morovis.",
+      "sources": [
+        "https://www.finditpr.com/en/property/BRISAS-DEL-NORTE-URBANIZATION-Morovis-PR-00687/61697"
+      ],
+      "confidence": "MEDIUM"
+    }
+  ]
+}

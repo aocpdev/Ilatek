@@ -1,0 +1,14 @@
+{
+  "municipality": "Camuy",
+  "municipalitySlug": "camuy",
+  "region": "norte",
+  "dateVerified": "2026-10-21",
+  "status": "investigado",
+  "communities": [
+    {"name": "Haciendas de Camuy", "slug": "haciendas-de-camuy", "alternates": ["Urb. Haciendas de Camuy"], "priority": "HIGH", "type": "Urbanización con control de acceso", "evidence": "Anuncios describen el proyecto con control de acceso y documentan residencias del sector.", "sources": ["https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4821763", "https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4887509"], "confidence": "HIGH"},
+    {"name": "Brisas de Camuy", "slug": "brisas-de-camuy", "alternates": ["Urb. Brisas de Camuy"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Vivienda 4H/2B identificada (anuncio expirado).", "sources": ["https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4801136"], "confidence": "HIGH"},
+    {"name": "Las Veredas", "slug": "las-veredas-camuy", "alternates": ["Urb. Las Veredas de Camuy"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Vivienda identificada con ~299 m² de terreno (anuncio expirado).", "sources": ["https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4869237"], "confidence": "HIGH"},
+    {"name": "Alturas de Camuy", "slug": "alturas-de-camuy", "alternates": ["Urb. Alturas de Camuy"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Casa de dos niveles con ~1,974 m² (registro de venta).", "sources": ["https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4765337"], "confidence": "HIGH"},
+    {"name": "Vistas de Camuy", "slug": "vistas-de-camuy", "alternates": ["Urb. Vistas de Camuy"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Vivienda 3H identificada (anuncio vendido).", "sources": ["https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4841270"], "confidence": "HIGH"}
+  ]
+}

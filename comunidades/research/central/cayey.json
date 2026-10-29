@@ -1,0 +1,105 @@
+{
+  "municipality": "Cayey",
+  "municipalitySlug": "cayey",
+  "dateVerified": "2026-10-21",
+  "note": "AVP confirma varios residenciales y sus unidades. No encontré páginas visitadas que verificaran comunidades Singer/Berre Creation ni Villa Turreece; no las incluyo. La evidencia disponible no confirma comunidades con casas sobre $1M.",
+  "communities": [
+    {
+      "name": "Mansiones Monte Verde",
+      "slug": "mansiones-monte-verde",
+      "alternates": [
+        "Mansiones de Monte Verde",
+        "Urb. Mansiones Monte Verde"
+      ],
+      "priority": "HIGH",
+      "type": "Urbanización",
+      "evidence": "El proyecto anuncia precios desde los medianos $500 mil, control de acceso con guardia 24/7 y facilidades recreativas propias.",
+      "sources": [
+        "https://monteverdecayey.com/",
+        "https://www.zillow.com/homedetails/B5-Calle-Preciosa-Cayey-PR-00736/442001985_zpid/"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Jardines de Cayey",
+      "slug": "jardines-de-cayey",
+      "alternates": [
+        "Jard De Cayey"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Zillow identifica una vivienda unifamiliar de tres dormitorios y dos baños en Jardines de Cayey, en una dirección de Cayey.",
+      "sources": [
+        "https://www.zillow.com/homedetails/Jardines-De-Cayey-G-7-Cayey-PR-00736/2103740462_zpid/"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Brisas de Cayey",
+      "slug": "brisas-de-cayey",
+      "alternates": [],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "La AVP registra el residencial en Cayey, junto a la PR-14, salida hacia Aibonito, y reporta 210 unidades.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Jardines de Montellano",
+      "slug": "jardines-de-montellano",
+      "alternates": [
+        "Jardines de Montellano, Cayey"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "El inventario oficial de AVP incluye Jardines de Montellano en Cayey y reporta 250 unidades bajo administración de S. P. Management.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Luis Muñoz Morales",
+      "slug": "luis-munoz-morales",
+      "alternates": [
+        "Residencial Luis Muñoz Morales"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "La AVP lista Luis Muñoz Morales en Cayey, en la avenida Fernández García, con 280 unidades de vivienda pública.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Villas de Beatriz (Johnny Toledo)",
+      "slug": "villas-de-beatriz-johnny-toledo",
+      "alternates": [
+        "Villas de Johnny Toledo",
+        "Villas de Beatriz"
+      ],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "La AVP incluye Villas de Beatriz (Johnny Toledo) en Cayey y registra 54 unidades en el sector Pozuelo.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Alturas de Montellanos",
+      "slug": "alturas-de-montellanos",
+      "alternates": [],
+      "priority": "MEDIUM",
+      "type": "Residencial público",
+      "evidence": "El inventario de AVP nombra Alturas de Montellanos en Cayey y consigna siete unidades en la avenida Antonio R. Barceló.",
+      "sources": [
+        "https://www.avp.pr.gov/nuestros-residenciales"
+      ],
+      "confidence": "HIGH"
+    }
+  ]
+}

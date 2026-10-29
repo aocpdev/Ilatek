@@ -13,7 +13,7 @@ export const hub = mk({
   metaDescription:
     'Reparación y sellado de techos en Puerto Rico: goteras, filtraciones, impermeabilización y mantenimiento. Precios desde $2.50 por pie², inspección gratis y 78 municipios.',
   hero: pic('industrial', {
-    alt: 'Reparación y sellado de techos de Ilatek Techos en Puerto Rico — {{custom_values.county_name_and_state}}',
+    alt: 'Reparación y sellado de techos de Ilatek Techos en Puerto Rico — {{custom_values.business__county_name}}',
     title: 'Reparación y Sellado de Techos en Puerto Rico · Ilatek Techos',
     badge: 'Inspección gratis · Garantía escrita',
   }),
@@ -23,7 +23,7 @@ export const hub = mk({
     caption: 'Reparación · Sellado · Mantenimiento',
   }),
   heroSub:
-    'Ilatek Techos repara, sella e impermeabiliza techos en {{custom_values.county_name_and_state}}: <b>reparación de goteras y filtraciones desde $250</b> y <b>sellado desde $2.50 por pie²</b>. Inspección gratis, garantía por escrito y cobertura en los 78 municipios de Puerto Rico.',
+    'Ilatek Techos repara, sella e impermeabiliza techos en {{custom_values.business__county_name}}: <b>reparación de goteras y filtraciones desde $250</b> y <b>sellado desde $2.50 por pie²</b>. Inspección gratis, garantía por escrito y cobertura en los 78 municipios de Puerto Rico.',
   facts: [
     { b: '$2.50', s: 'por pie²', label: 'Sellado de techos' },
     { b: '$250', s: 'reparaciones', label: 'Desde' },
@@ -51,8 +51,8 @@ export const hub = mk({
   },
   extra: {
     eyebrow: 'Servicios',
-    title: 'Todos los servicios de techos en {{custom_values.county_name_and_state}}.',
-    lead: 'Ilatek Techos repara, sella e impermeabiliza techos en toda la isla. Elige una categoría y entra directo al servicio que necesitas en {{custom_values.county_name_and_state}}.',
+    title: 'Todos los servicios de techos en {{custom_values.business__county_name}}.',
+    lead: 'Ilatek Techos repara, sella e impermeabiliza techos en toda la isla. Elige una categoría y entra directo al servicio que necesitas en {{custom_values.business__county_name}}.',
     kids: [
       { slug: 'reparacion-de-techos', name: 'Reparación de Techos', desc: 'Goteras, filtraciones, grietas, empozamientos, oxidación y reparación post-huracán.' },
       { slug: 'sellado-de-techos', name: 'Sellado de Techos', desc: 'Silicona 100%, membrana asfáltica, elastomérico, poliuretano y acrílico.' },
@@ -132,7 +132,7 @@ export const hub = mk({
     { q: '¿Qué tipos de techo cubren?', a: 'Cubrimos <b>concreto y losas, techos planos con membrana, zinc y metal, asfalto (shingles), teja y madera</b>. Cada uno se trata con el sistema y sellador que le corresponde.' },
     { q: '¿Trabajan residencial, comercial e industrial?', a: '<b>Sí.</b> Atendemos hogares, comercios y plantas industriales, con sistemas y logística adaptados a cada segmento — incluso trabajando sin que tengas que cerrar.' },
     { q: '¿Los trabajos tienen garantía?', a: '<b>Sí.</b> Cada reparación, sellado e instalación se entrega con garantía de mano de obra por escrito. Si algo falla en el periodo cubierto, regresamos.' },
-    { q: '¿En qué municipios brindan servicio?', a: 'Brindamos servicio en los <b>78 municipios de Puerto Rico</b>, incluyendo {{custom_values.county_name_and_state}}. Reserva con el depósito descontable de $50 al confirmar tu visita.' },
+    { q: '¿En qué municipios brindan servicio?', a: 'Brindamos servicio en los <b>78 municipios de Puerto Rico</b>, incluyendo {{custom_values.business__county_name}}. Reserva con el depósito descontable de $50 al confirmar tu visita.' },
     { q: '¿Por qué elegir Ilatek Techos?', a: 'Porque cubrimos todo el techo en un solo proveedor: <b>reparación desde $250, sellado desde $2.50 por pie²</b>, inspección gratis, garantía escrita y materiales certificados — con el respaldo de Ilatek.' },
   ],
 });

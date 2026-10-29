@@ -1,0 +1,363 @@
+{
+  "municipality": "Bayamón",
+  "municipalitySlug": "bayamon",
+  "region": "metro",
+  "dateVerified": "2026-10-21",
+  "status": "investigado",
+  "communities": [
+    {
+      "name": "Riviera",
+      "slug": "riviera",
+      "alternates": [
+        "Riviera Bayamón"
+      ],
+      "priority": "LUXURY",
+      "type": "Comunidad cerrada",
+      "evidence": "Comunidad privada con acceso controlado y amenidades estilo resort (sitio oficial); propiedad en Trulia a $1,350,000.",
+      "sources": [
+        "https://www.rivierapr.com/",
+        "https://www.trulia.com/PR/Bayamon/"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Riviera Parkview",
+      "slug": "riviera-parkview",
+      "alternates": [
+        "Riviera Park View"
+      ],
+      "priority": "LUXURY",
+      "type": "Comunidad residencial",
+      "evidence": "Trulia: propiedad a $1,780,000 y otra (Everglade Riviera Parkview) a $1,795,000.",
+      "sources": [
+        "https://www.trulia.com/PR/Bayamon/"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Residences at Rio",
+      "slug": "residences-at-rio",
+      "alternates": [
+        "The Residences at Rio"
+      ],
+      "priority": "LUXURY",
+      "type": "Comunidad residencial",
+      "evidence": "Trulia: residencia en el desarrollo a $990,000.",
+      "sources": [
+        "https://www.trulia.com/PR/Bayamon/"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Mirabella Village and Club",
+      "slug": "mirabella-village-and-club",
+      "alternates": [
+        "Mirabella Village & Club"
+      ],
+      "priority": "HIGH",
+      "type": "Comunidad residencial",
+      "evidence": "Zillow/Trulia: casa en Mirabella Village and Club por $530,000.",
+      "sources": [
+        "https://www.zillow.com/bayamon-pr/"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Quintas del Río",
+      "slug": "quintas-del-rio",
+      "alternates": [
+        "Quintas del Rio"
+      ],
+      "priority": "HIGH",
+      "type": "Urbanización",
+      "evidence": "Trulia: propiedad por $425,000.",
+      "sources": [
+        "https://www.trulia.com/PR/Bayamon/"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Estancias de Río Hondo",
+      "slug": "estancias-de-rio-hondo",
+      "alternates": [
+        "Estancias de Rio Hondo"
+      ],
+      "priority": "HIGH",
+      "type": "Urbanización",
+      "evidence": "Trulia: propiedad por $365,000.",
+      "sources": [
+        "https://www.trulia.com/PR/Bayamon/"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Sierra Taína",
+      "slug": "sierra-taina",
+      "alternates": [
+        "Sierra Taina"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización / sector",
+      "evidence": "Trulia: solares a $95,000; citada en el mapa municipal de clasificación de suelos.",
+      "sources": [
+        "https://www.trulia.com/PR/Bayamon/",
+        "https://www.municipiodebayamon.com/pdf/mapa_clasificacion_de_suelos-web.pdf"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Santa Juanita",
+      "slug": "santa-juanita",
+      "alternates": [
+        "Urb. Santa Juanita"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización / sector",
+      "evidence": "Anuncio de solar en el área de Santa Juanita (Trulia).",
+      "sources": [
+        "https://www.trulia.com/PR/Bayamon/"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Magnolia Gardens",
+      "slug": "magnolia-gardens",
+      "alternates": [
+        "Urb. Magnolia Gardens"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Trulia: propiedades a $245,000 y $255,000.",
+      "sources": [
+        "https://www.trulia.com/PR/Bayamon/"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Bayamón Gardens",
+      "slug": "bayamon-gardens",
+      "alternates": [
+        "Urb. Bayamon Gardens"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Trulia: casa en Urb Bayamon Gardens por $210,000.",
+      "sources": [
+        "https://www.trulia.com/PR/Bayamon/"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Flamingo Hills",
+      "slug": "flamingo-hills",
+      "alternates": [
+        "Flamingo Hills Development",
+        "Urb. Flamingo Hills"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización / desarrollo",
+      "evidence": "Trulia: propiedad por $310,000.",
+      "sources": [
+        "https://www.trulia.com/PR/Bayamon/"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Royal Gardens",
+      "slug": "royal-gardens",
+      "alternates": [
+        "Urb. Royal Gardens"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Trulia: propiedad por $249,900.",
+      "sources": [
+        "https://www.trulia.com/PR/Bayamon/"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Jardines de Caparra",
+      "slug": "jardines-de-caparra",
+      "alternates": [
+        "Jardines de Caparra Dev."
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización / desarrollo",
+      "evidence": "Trulia: propiedad por $225,000; fases por confirmar.",
+      "sources": [
+        "https://www.trulia.com/PR/Bayamon/"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Extensión Villa Rica",
+      "slug": "extension-villa-rica",
+      "alternates": [
+        "2da Extensión Villa Rica"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización / extensión",
+      "evidence": "Trulia: casa por $250,000.",
+      "sources": [
+        "https://www.trulia.com/PR/Bayamon/"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "River Park",
+      "slug": "river-park",
+      "alternates": [
+        "Cond. River Park"
+      ],
+      "priority": "MEDIUM",
+      "type": "Condominio",
+      "evidence": "Trulia: unidad por $160,000; ficha Zillow Bayamón PR 00961.",
+      "sources": [
+        "https://www.trulia.com/PR/Bayamon/",
+        "https://www.zillow.com/bayamon-pr/"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Las Torres Norte",
+      "slug": "las-torres-norte",
+      "alternates": [
+        "Cond. Las Torres Norte"
+      ],
+      "priority": "MEDIUM",
+      "type": "Condominio",
+      "evidence": "Trulia: unidad por $130,000.",
+      "sources": [
+        "https://www.trulia.com/PR/Bayamon/"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Las Torres Sur",
+      "slug": "las-torres-sur",
+      "alternates": [
+        "Cond. Las Torres Sur"
+      ],
+      "priority": "MEDIUM",
+      "type": "Condominio",
+      "evidence": "Trulia: unidad por $130,000.",
+      "sources": [
+        "https://www.trulia.com/PR/Bayamon/"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Lomas Verdes",
+      "slug": "lomas-verdes",
+      "alternates": [
+        "Urb. Lomas Verdes"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline muestra viviendas en Lomas Verdes, Bayamón, incluyendo una casa de tres dormitorios y dos baños anunciada por $240,000.",
+      "sources": [
+        "https://www.clasificadosonline.com/m/REListingCOBarrioM.asp?ID=466"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "El Cortijo",
+      "slug": "el-cortijo",
+      "alternates": [
+        "Urb. El Cortijo"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline identifica una casa de tres dormitorios y dos baños en la urbanización El Cortijo, Bayamón, con precio anunciado de $180,000.",
+      "sources": [
+        "https://www.clasificadosonline.com/m/DetailRealEstate.asp?ID=4901280&Sec=1"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Santa Rosa",
+      "slug": "santa-rosa",
+      "alternates": [
+        "Urb. Santa Rosa"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Un anuncio de ClasificadosOnline identifica una residencia unifamiliar en la urbanización Santa Rosa de Bayamón, con dos habitaciones y dos baños.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRED.asp?ID=4895334&Version=1"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Villa España",
+      "slug": "villa-espana",
+      "alternates": [
+        "Urb. Villa España"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline documenta una casa vendida en Villa España, Bayamón, con tres habitaciones, dos baños, terraza y patio amplio.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4843788"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Las Américas",
+      "slug": "las-americas",
+      "alternates": [
+        "Urb. Las Americas"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Un anuncio vendido ubica en Las Américas, Bayamón, una casa de tres habitaciones y un baño, con marquesina y terraza.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4810378"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Monteclaro",
+      "slug": "monteclaro",
+      "alternates": [
+        "Urb. Monteclaro"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "Una página de ClasificadosOnline anuncia alquiler de largo plazo en Urb. MonteClaro, Bayamón, confirmando su ubicación como comunidad residencial.",
+      "sources": [
+        "https://www.clasificadosonline.com/DestaqueRentals.asp?ID=1946837"
+      ],
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "Estancias de Cerro Gordo",
+      "slug": "estancias-de-cerro-gordo",
+      "alternates": [
+        "Estancias Cerro Gordo"
+      ],
+      "priority": "HIGH",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline registra casas de tres habitaciones en Estancias de Cerro Gordo, Bayamón, y describe anuncios de la urbanización con control de acceso.",
+      "sources": [
+        "https://www.clasificadosonline.com/m/REListingCOBarrioM.asp?ID=5959"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Los Dominicos",
+      "slug": "los-dominicos",
+      "alternates": [
+        "Cond. Los Dominicos"
+      ],
+      "priority": "MEDIUM",
+      "type": "Urbanización",
+      "evidence": "ClasificadosOnline identifica Los Dominicos como urbanización de Bayamón y muestra anuncios residenciales de casas en esa comunidad.",
+      "sources": [
+        "https://www.clasificadosonline.com/UDRealEstateDetail.asp?ID=4863755"
+      ],
+      "confidence": "MEDIUM"
+    }
+  ]
+}

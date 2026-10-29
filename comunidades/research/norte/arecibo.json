@@ -1,0 +1,21 @@
+{
+  "municipality": "Arecibo",
+  "municipalitySlug": "arecibo",
+  "region": "norte",
+  "dateVerified": "2026-10-21",
+  "status": "investigado",
+  "communities": [
+    {"name": "Condominios del Atlántico", "slug": "condominios-del-atlantico", "alternates": [], "priority": "MEDIUM", "type": "Condominio", "evidence": "Identificado en Arecibo barrio-pueblo y clasificado como condominio en la lista de barrios y sectores.", "sources": ["https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Arecibo,_Puerto_Rico"], "confidence": "MEDIUM"},
+    {"name": "Campo Real", "slug": "campo-real", "alternates": ["Urb. Campo Real"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Registrada en Hato Abajo (lista de sectores).", "sources": ["https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Arecibo,_Puerto_Rico"], "confidence": "MEDIUM"},
+    {"name": "Colinas de Palmarito", "slug": "colinas-de-palmarito", "alternates": ["Urb. Colinas de Palmarito"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Registrada en Hato Abajo (lista de sectores).", "sources": ["https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Arecibo,_Puerto_Rico"], "confidence": "MEDIUM"},
+    {"name": "Alturas del Atlántico", "slug": "alturas-del-atlantico", "alternates": ["Urb. Alturas del Atlántico"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Registrada en Hato Abajo (lista de sectores).", "sources": ["https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Arecibo,_Puerto_Rico"], "confidence": "MEDIUM"},
+    {"name": "Estancias del Norte", "slug": "estancias-del-norte", "alternates": ["Urb. Estancias del Norte"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Registrada en Hato Abajo (lista de sectores).", "sources": ["https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Arecibo,_Puerto_Rico"], "confidence": "MEDIUM"},
+    {"name": "Las Brisas", "slug": "las-brisas-arecibo", "alternates": ["Urb. Las Brisas"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Registrada en Hato Abajo (lista de sectores).", "sources": ["https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Arecibo,_Puerto_Rico"], "confidence": "MEDIUM"},
+    {"name": "Vista Azul", "slug": "vista-azul", "alternates": ["Urb. Vista Azul"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Registrada en Hato Abajo (lista de sectores).", "sources": ["https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Arecibo,_Puerto_Rico"], "confidence": "MEDIUM"},
+    {"name": "Vistas del Atlántico", "slug": "vistas-del-atlantico", "alternates": ["Urb. Vistas del Atlántico"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Registrada en Hato Abajo (lista de sectores).", "sources": ["https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Arecibo,_Puerto_Rico"], "confidence": "MEDIUM"},
+    {"name": "Costas del Mar", "slug": "costas-del-mar", "alternates": ["Urb. Costas del Mar"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Registrada en Islote (lista de sectores).", "sources": ["https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Arecibo,_Puerto_Rico"], "confidence": "MEDIUM"},
+    {"name": "Costa de Oro", "slug": "costa-de-oro", "alternates": ["Urb. Costa de Oro"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Registrada en Islote (lista de sectores).", "sources": ["https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Arecibo,_Puerto_Rico"], "confidence": "MEDIUM"},
+    {"name": "Estancias Balseiro", "slug": "estancias-balseiro", "alternates": ["Urb. Estancias Balseiro"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Registrada en Santana (lista de sectores).", "sources": ["https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Arecibo,_Puerto_Rico"], "confidence": "MEDIUM"},
+    {"name": "Tanamá", "slug": "tanama", "alternates": ["Urb. Tanamá"], "priority": "MEDIUM", "type": "Urbanización", "evidence": "Registrada en Santana (lista de sectores).", "sources": ["https://en.wikipedia.org/wiki/List_of_barrios_and_sectors_of_Arecibo,_Puerto_Rico"], "confidence": "MEDIUM"}
+  ]
+}
