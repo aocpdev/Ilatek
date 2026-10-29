@@ -32,6 +32,13 @@ OTHER_MERGE_RE = re.compile(r"\{\{\s*(?!custom_values)(contact|user|location|acc
 PHONE_RE = re.compile(r"\+\s?1?\s?\(?787\)?|\+\s?1?\s?\(?939\)?")
 HARDCODED_HREF_RE = re.compile(r"https?://(?:www\.)?(?:juncos|adjuntas|aguada|bayamon|caguas|carolina|ponce|sanjuan|san-juan|sanjuanpr)?[a-z-]*\.?ilatekpr\.com/home|[a-z-]+\.ilatekpr\.com/(?!\"|</|\s|$)?.*?/[a-z0-9-]{2,}")
 BRIDGE_ATTRS = ["data-location-label", "data-website-url", "data-facebook-url", "data-instagram-url"]
+# Todo archivo que LEE el puente lleva el helper y el Meta Pixel: es la misma
+# condición, no una lista de nombres que se queda corta (la home quedaba fuera).
+PIXEL_RAW_RE = re.compile(r"\{\{\s*custom_values\.pixel_id\s*\}\}")
+# El párrafo portador que viaja en el embed lleva los tokens a propósito: no es
+# un token crudo perdido en un resolver, así que no cuenta como leak.
+CARRIER_RE = re.compile(r"<!-- ILATEK · párrafo portador.*?</p>", re.S)
+GATE_STRICT_RE = re.compile(r"parts\.length\s*[!=]==?\s*6(?!\d)")
 
 
 def classify_rel(rel: str) -> str:
@@ -91,6 +98,17 @@ def audit_file(path: Path) -> dict:
     phone_hits = len(PHONE_RE.findall(text))
     hardcoded_hrefs = HARDCODED_HREF_RE.findall(text)
     hardcoded_juncos = len(re.findall(r"\bJuncos\b", text))
+    # Meta Pixel: el helper lo enciende con el id del último slot del puente.
+    pixel = {
+        "consumer": "dv-ghl-values" in text,
+        "bridge": "ILATEK_BRIDGE" in text,
+        "bootstrap": "connect.facebook.net/en_US/fbevents.js" in text,
+        "api": "pixel:pixel" in text,
+        "rawToken": len(PIXEL_RAW_RE.findall(CARRIER_RE.sub("", text))),
+    }
+    # Gate exacto de 6 slots: descarta el párrafo de 7 y tira los enlaces al
+    # dominio central. Debe ser 0 en cada consumidor del puente.
+    strict_gates = len(GATE_STRICT_RE.findall(text))
 
     return {
         "file": str(path),
@@ -105,6 +123,8 @@ def audit_file(path: Path) -> dict:
         "phones": phone_hits,
         "hardcodedHrefs": len(hardcoded_hrefs),
         "hardcodedJuncos": hardcoded_juncos,
+        "pixel": pixel,
+        "strictGates": strict_gates,
     }
 
 
@@ -128,6 +148,13 @@ def main() -> None:
             r["tokensTotal"] > 0 and sum(r["bridges"][a] for a in BRIDGE_ATTRS) == 0
         )
     ]
+    bridge_landings = [r for r in ok if r["pixel"]["consumer"]]
+    pixel_missing = [
+        r for r in bridge_landings
+        if not (r["pixel"]["bridge"] and r["pixel"]["bootstrap"] and r["pixel"]["api"])
+    ]
+    pixel_raw = [r for r in ok if r["pixel"]["rawToken"]]
+    strict_gates = [r for r in bridge_landings if r["strictGates"]]
 
     summary = {
         "filesAudited": len(ok),
@@ -137,6 +164,15 @@ def main() -> None:
         "filesWithNonCanonicalTokens": [
             {"file": r["file"].replace(str(REPO) + "\\", ""), "tokens": r["tokensNonCanon"]} for r in with_noncanon
         ],
+        "pixel": {
+            "bridgeLandings": len(bridge_landings),
+            "withPixel": len(bridge_landings) - len(pixel_missing),
+            "missing": [r["file"].replace(str(REPO) + "\\", "") for r in pixel_missing],
+            "rawTokenFiles": [r["file"].replace(str(REPO) + "\\", "") for r in pixel_raw],
+            "strictSixGate": [
+                {"file": r["file"].replace(str(REPO) + "\\", ""), "gates": r["strictGates"]} for r in strict_gates
+            ],
+        },
         "filesWithLeaksOrNoBridge": [
             {
                 "file": r["file"].replace(str(REPO) + "\\", ""),
@@ -168,7 +204,23 @@ def main() -> None:
     print(f"\nfiles with leaks (phone / hardcoded href / other merge / bridge-less tokens) ({len(with_leaks)}):")
     for item in summary["filesWithLeaksOrNoBridge"]:
         print(f"  - {item['file']}: phones={item['phones']} hrefs={item['hardcodedHrefs']} otherMerge={item['otherMerge'] or '-'} bridges={item['bridges'] if item['tokensTotal'] else '-'}")
+    have_pixel = len(bridge_landings) - len(pixel_missing)
+    print(f"\npixel (Meta) en consumidores del puente: {have_pixel}/{len(bridge_landings)}")
+    for item in pixel_missing:
+        print(f"  - MISSING pixel: {item['file'].replace(str(REPO) + chr(92), '')}")
+    for item in pixel_raw:
+        print(f"  - RAW token pixel_id: {item['file'].replace(str(REPO) + chr(92), '')}")
+    print(f"gates exactos-6 en consumidores del puente: {sum(r['strictGates'] for r in strict_gates)} en {len(strict_gates)} archivo(s)")
+    for item in strict_gates:
+        print(f"  - STRICT-6: {item['file'].replace(str(REPO) + chr(92), '')} ({item['strictGates']})")
     print(f"\njson -> shots/audit-tokens-global.json")
+
+    if pixel_missing or pixel_raw or strict_gates:
+        print(
+            f"\nPIXEL FAIL: {len(pixel_missing)} consumidor(es) sin pixel, "
+            f"{len(pixel_raw)} con token crudo y {len(strict_gates)} con gate exacto-6"
+        )
+        sys.exit(1)
 
 
 if __name__ == "__main__":

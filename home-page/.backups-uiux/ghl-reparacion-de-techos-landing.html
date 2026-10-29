@@ -6,8 +6,8 @@
   Cobertura y Reviews: bloques VERBATIM del home (78 municipios + tabs Google/Selfie).
   Canonical self-referencing /reparacion-de-techos: ver Ilatek/techos/ghl-techos-head-seo.html (se pega en GHL Tracking Code HEADER).
 -->
-<section id="ilatek-techos-reparacion-de-techos" aria-label="Ilatek Reparación de techos {{custom_values.county_name_and_state}}"
-  data-location-label="{{custom_values.county_name_and_state}}"
+<section id="ilatek-techos-reparacion-de-techos" aria-label="Ilatek Reparación de techos {{custom_values.business__county_name}}"
+  data-location-label="{{custom_values.business__county_name}}"
   data-business-email="{{custom_values.business__email}}"
   data-business-phone="{{custom_values.business__phone}}"
   data-website-url="{{custom_values.website_url}}"
@@ -276,7 +276,7 @@ html,body{overflow-x:clip}</style>
         <div class="ilt-hero-copy ilt-reveal">
           <span class="ilt-eyebrow">Reparación de techos</span>
           <h1 class="ilt-display">Reparación de Techos en Puerto Rico que <em>detiene filtraciones</em> de raíz.</h1>
-          <p class="ilt-hero-sub">Ilatek repara techos de concreto, zinc y asfalto en {{custom_values.county_name_and_state}} <b>desde $250</b>: sellamos goteras, filtraciones y grietas con materiales certificados y garantía por escrito. Inspección gratis y cobertura en los 78 municipios.</p>
+          <p class="ilt-hero-sub">Ilatek repara techos de concreto, zinc y asfalto en {{custom_values.business__county_name}} <b>desde $250</b>: sellamos goteras, filtraciones y grietas con materiales certificados y garantía por escrito. Inspección gratis y cobertura en los 78 municipios.</p>
           <div class="ilt-hero-actions">
             <a class="ilt-button" href="#ilt-agenda"><span>Solicita tu cotización</span><span aria-hidden="true">↗</span></a>
             <a class="ilt-text-link" href="#ilatek-techos-reparacion-de-techos-incluye">Qué incluye el servicio ↓</a>
@@ -288,7 +288,7 @@ html,body{overflow-x:clip}</style>
           </div>
         </div>
         <figure class="ilt-hero-card ilt-reveal">
-          <img src="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f30edabbe5a4a763bc.webp" onerror="this.onerror=null;this.src='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f30edabbe5a4a763bc.jpg'" width="1200" height="1320" loading="eager" decoding="async" fetchpriority="high" alt="Equipo de Ilatek Techos reparando un techo en Puerto Rico — sellado de filtraciones y goteras en {{custom_values.county_name_and_state}}" title="Reparación de Techos en Puerto Rico · Ilatek Techos">
+          <img src="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f30edabbe5a4a763bc.webp" onerror="this.onerror=null;this.src='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f30edabbe5a4a763bc.jpg'" width="1200" height="1320" loading="eager" decoding="async" fetchpriority="high" alt="Equipo de Ilatek Techos reparando un techo en Puerto Rico — sellado de filtraciones y goteras en {{custom_values.business__county_name}}" title="Reparación de Techos en Puerto Rico · Ilatek Techos">
           <span class="ilt-hero-badge"><i></i>Inspección gratis · Garantía escrita</span>
         </figure>
       </div>
@@ -405,7 +405,7 @@ html,body{overflow-x:clip}</style>
     </section>
     <!-- 6. COBERTURA: sección idéntica al home (78 municipios, verbatim) -->
 <section id="ilatek-cobertura-dir" data-service-slug="reparacion-de-techos" aria-label="Cobertura de reparación de techos de Ilatek Techos en Puerto Rico"
-  data-location-label="{{custom_values.county_name_and_state}}"
+  data-location-label="{{custom_values.business__county_name}}"
   data-website-url="{{custom_values.website_url}}"
   data-primary-location="Puerto Rico"
   data-business-email="{{custom_values.business__email}}"
@@ -488,7 +488,7 @@ html,body{overflow-x:clip}</style>
         <span class="icd-eyebrow">Reparación de techos</span>
         <h2>Cobertura de <em>reparación de techos</em> en toda la isla.</h2>
       </div>
-      <p>Ilatek Techos brinda reparación de techos en los <strong>78 municipios de Puerto Rico</strong>. Atendemos tu área en <strong>{{custom_values.county_name_and_state}}</strong> y toda la isla: busca tu pueblo en el directorio y visita su página.</p>
+      <p>Ilatek Techos brinda reparación de techos en los <strong>78 municipios de Puerto Rico</strong>. Atendemos tu área en <strong>{{custom_values.business__county_name}}</strong> y toda la isla: busca tu pueblo en el directorio y visita su página.</p>
     </header>
     <div class="icd-directory">
       <div class="icd-search">
@@ -535,7 +535,7 @@ html,body{overflow-x:clip}</style>
     /* Slug del servicio (lo estampa el build de techos). Sin él → raíz del subdominio. */
     var serviceSlug=clean(root.getAttribute('data-service-slug'));
     var values={};
-    values[token('county_name_and_state')]=locationLabel;
+    values[token('business__county_name')]=locationLabel;
     values[token('website_url')]=website;
     values[token('business__email')]=clean(root.getAttribute('data-business-email'));
     values[token('business__phone')]=clean(root.getAttribute('data-business-phone'));
@@ -619,7 +619,7 @@ html,body{overflow-x:clip}</style>
           <details class="ilt-faq-item"><summary><h3>¿Cuánto tarda una reparación de techo?</h3><span class="ilt-chevron" aria-hidden="true">▾</span></summary><p>La mayoría de las reparaciones puntuales se completan en <b>un día</b>. Trabajos mayores —sustitución de láminas, corrección de pendientes o reparación post-huracán— pueden tomar de 1 a 3 días; te damos el tiempo estimado en la cotización.</p></details>
           <details class="ilt-faq-item"><summary><h3>¿La reparación tiene garantía?</h3><span class="ilt-chevron" aria-hidden="true">▾</span></summary><p><b>Sí.</b> Todo trabajo se entrega con garantía de mano de obra por escrito. Si el problema reaparece dentro del periodo cubierto, regresamos a corregirlo sin costo.</p></details>
           <details class="ilt-faq-item"><summary><h3>¿Atienden emergencias de goteras?</h3><span class="ilt-chevron" aria-hidden="true">▾</span></summary><p>Sí: atendemos <b>emergencias y trabajos planificados</b>. Si tu techo está filtrando ahora, priorizamos la visita para detener el agua antes de que dañe el interior. Reservas con el depósito de $50 descontable.</p></details>
-          <details class="ilt-faq-item"><summary><h3>¿Por qué reparar con Ilatek Techos?</h3><span class="ilt-chevron" aria-hidden="true">▾</span></summary><p>Diagnóstico honesto, materiales certificados, <b>precio desde $250 por escrito</b>, inspección gratis, garantía de mano de obra y cobertura en los 78 municipios — con el respaldo de Ilatek en {{custom_values.county_name_and_state}}.</p></details>
+          <details class="ilt-faq-item"><summary><h3>¿Por qué reparar con Ilatek Techos?</h3><span class="ilt-chevron" aria-hidden="true">▾</span></summary><p>Diagnóstico honesto, materiales certificados, <b>precio desde $250 por escrito</b>, inspección gratis, garantía de mano de obra y cobertura en los 78 municipios — con el respaldo de Ilatek en {{custom_values.business__county_name}}.</p></details>
           <details class="ilt-faq-item"><summary><h3>¿Por qué elegir Ilatek Techos para reparar tu techo?</h3><span class="ilt-chevron" aria-hidden="true">▾</span></summary><p>Localizamos la causa real de la filtración en vez de tapar la mancha, usamos el sellador correcto para concreto, zinc o asfalto, y entregamos garantía de mano de obra por escrito — desde $250 por reparación e inspección gratis.</p></details>
         </div>
       </div>
@@ -631,7 +631,7 @@ html,body{overflow-x:clip}</style>
           <div class="ilt-cta-copy">
             <span class="ilt-cta-eyebrow">Cotización gratis</span>
             <h2 id="ilt-cta-title" class="ilt-display">Protege tu techo antes de la próxima lluvia.</h2>
-            <p>Solicita tu cotización gratis de reparación de techos en {{custom_values.county_name_and_state}} y recibe precio claro y por escrito — con inspección incluida y cobertura en los 78 municipios de Puerto Rico.</p>
+            <p>Solicita tu cotización gratis de reparación de techos en {{custom_values.business__county_name}} y recibe precio claro y por escrito — con inspección incluida y cobertura en los 78 municipios de Puerto Rico.</p>
             <div class="ilt-cta-actions">
               <a class="ilt-button" href="#ilt-agenda"><span>Solicita tu cotización gratis</span><span aria-hidden="true">↗</span></a>
               <small>Respuesta en minutos · Sin compromiso</small>
@@ -651,7 +651,7 @@ html,body{overflow-x:clip}</style>
         <header class="ilt-cal-head ilt-reveal">
           <span class="ilt-eyebrow">Agenda tu inspección</span>
           <h2 id="ilt-cal-title" class="ilt-display">Reserva tu inspección gratis en minutos.</h2>
-          <p>Elige el día y la hora que te convengan. Atendemos {{custom_values.county_name_and_state}} y los 78 municipios de Puerto Rico.</p>
+          <p>Elige el día y la hora que te convengan. Atendemos {{custom_values.business__county_name}} y los 78 municipios de Puerto Rico.</p>
         </header>
         <div class="ilt-cal-box ilt-reveal">
           <div class="ilt-cal-embed">
@@ -673,7 +673,7 @@ html,body{overflow-x:clip}</style>
     function token(name){return '{'+'{custom_values.'+name+'}'+'}'}
     var county=clean(root.getAttribute('data-location-label'))||'Puerto Rico', website=clean(root.dataset.websiteUrl)||'https://ilatekpr.com', phone=clean(root.dataset.businessPhone), email=clean(root.dataset.businessEmail), fb=clean(root.dataset.facebookUrl)||'https://www.facebook.com/ilatek.pr/', ig=clean(root.dataset.instagramUrl)||'https://www.instagram.com/ilatek.pr/';
     var values={};
-    values[token('county_name_and_state')]=county;
+    values[token('business__county_name')]=county;
     values[token('website_url')]=website;
     values[token('business__phone')]=phone;
     values[token('business__email')]=email;
@@ -735,7 +735,7 @@ html,body{overflow-x:clip}</style>
    "areaServed": [
     {
      "@type": "AdministrativeArea",
-     "name": "{{custom_values.county_name_and_state}}"
+     "name": "{{custom_values.business__county_name}}"
     },
     {
      "@type": "Country",
@@ -868,7 +868,7 @@ html,body{overflow-x:clip}</style>
    "areaServed": [
     {
      "@type": "AdministrativeArea",
-     "name": "{{custom_values.county_name_and_state}}"
+     "name": "{{custom_values.business__county_name}}"
     },
     {
      "@type": "Country",
@@ -995,7 +995,7 @@ html,body{overflow-x:clip}</style>
    "name": "¿Por qué reparar con Ilatek Techos?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Diagnóstico honesto, materiales certificados, precio desde $250 por escrito, inspección gratis, garantía de mano de obra y cobertura en los 78 municipios — con el respaldo de Ilatek en {{custom_values.county_name_and_state}}."
+    "text": "Diagnóstico honesto, materiales certificados, precio desde $250 por escrito, inspección gratis, garantía de mano de obra y cobertura en los 78 municipios — con el respaldo de Ilatek en {{custom_values.business__county_name}}."
    }
   },
   {

@@ -6,8 +6,8 @@
   Facts: despensas/clósets $50 c/u · garaje $0.50 por pie² · deposito $50 · 78 municipios · Lun-Sab 8-6.
   Imagenes: hero + seccion incluye (filesafe, definidas por el usuario).
 -->
-<section id="ilatek-organizacion" aria-label="Ilatek Organización del Hogar {{custom_values.county_name_and_state}}"
-  data-location-label="{{custom_values.county_name_and_state}}"
+<section id="ilatek-organizacion" aria-label="Ilatek Organización del Hogar {{custom_values.business__county_name}}"
+  data-location-label="{{custom_values.business__county_name}}"
   data-business-email="{{custom_values.business__email}}"
   data-business-phone="{{custom_values.business__phone}}"
   data-website-url="{{custom_values.website_url}}"
@@ -117,7 +117,7 @@
         <div class="ilc2-hero-copy ilc2-reveal">
           <span class="ilc2-eyebrow">Organización del hogar</span>
           <h1 class="ilc2-display">Organización del Hogar en <em>Puerto Rico</em> donde el orden por fin permanece.</h1>
-          <p class="ilc2-hero-sub">Ilatek organiza despensas, clósets y garaje en {{custom_values.county_name_and_state}}: despensas y clósets a $50 c/u, garaje a $0.50 por pie² — categorización, doblado y etiquetado con sistemas de orden que permanecen. Precio real en minutos y reserva con $50 descontable.</p>
+          <p class="ilc2-hero-sub">Ilatek organiza despensas, clósets y garaje en {{custom_values.business__county_name}}: despensas y clósets a $50 c/u, garaje a $0.50 por pie² — categorización, doblado y etiquetado con sistemas de orden que permanecen. Precio real en minutos y reserva con $50 descontable.</p>
           <div class="ilc2-hero-actions">
             <a class="ilc2-button" href="{{custom_values.website_url}}/cotizacion"><span>Solicita tu cotización</span><span aria-hidden="true">↗</span></a>
             <a class="ilc2-text-link" href="#ilatek-org-incluye">Qué incluye el servicio ↓</a>
@@ -132,7 +132,7 @@
           <img src="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/svc-organizacion-800.webp"
             onerror="this.onerror=null;this.src='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aac6cd7254a2c54081fa165.png'"
             width="1200" height="900" loading="eager" decoding="async" fetchpriority="high"
-            alt="Organización del hogar en Puerto Rico por Ilatek — despensas, clósets y garaje con orden funcional en {{custom_values.county_name_and_state}}"
+            alt="Organización del hogar en Puerto Rico por Ilatek — despensas, clósets y garaje con orden funcional en {{custom_values.business__county_name}}"
             title="Organización del Hogar en Puerto Rico · Ilatek">
         </figure>
       </div>
@@ -156,7 +156,7 @@
           <article class="ilc2-ben ilc2-reveal">
             <i class="ilc2-ben-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M20 6 9 17l-5-5"/></svg></i>
             <h3>Tus cosas, con respeto</h3>
-            <p>Trabajamos espacio por espacio en {{custom_values.county_name_and_state}}, sin sacar todo a la calle: categorizamos, doblamos y etiquetamos con cuidado — y nada se bota sin tu aprobación.</p>
+            <p>Trabajamos espacio por espacio en {{custom_values.business__county_name}}, sin sacar todo a la calle: categorizamos, doblamos y etiquetamos con cuidado — y nada se bota sin tu aprobación.</p>
           </article>
         </div>
       </div>
@@ -186,7 +186,7 @@
           <img src="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/svc-mudanza-800.webp"
             onerror="this.onerror=null;this.src='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab0c2d4ff484614db70610c.png'"
             width="1200" height="900" loading="lazy" decoding="async"
-            alt="Organización de espacios de Ilatek en Puerto Rico — despensa, clósets y garaje con sistema y etiquetas en {{custom_values.county_name_and_state}}"
+            alt="Organización de espacios de Ilatek en Puerto Rico — despensa, clósets y garaje con sistema y etiquetas en {{custom_values.business__county_name}}"
             title="Organización del Hogar en Puerto Rico · Ilatek">
           <figcaption>Precio por espacio · etiquetado incluido</figcaption>
         </figure>
@@ -243,7 +243,7 @@
 
     <!-- 6. COBERTURA: seccion identica al home (78 municipios) -->
     <section id="ilatek-cobertura-dir" aria-label="Cobertura de limpieza de Ilatek en Puerto Rico"
-  data-location-label="{{custom_values.county_name_and_state}}"
+  data-location-label="{{custom_values.business__county_name}}"
   data-website-url="{{custom_values.website_url}}"
   data-primary-location="Puerto Rico"
   data-business-email="{{custom_values.business__email}}"
@@ -323,7 +323,7 @@
         <span class="icd-eyebrow">Cobertura local</span>
         <h2>Limpieza impecable, <em>Cobertura en Toda la Isla</em>.</h2>
       </div>
-      <p>Explora los servicios de limpieza de <strong>Ilatek</strong> disponibles en los <strong>78 municipios de Puerto Rico</strong> y visita la página de tu pueblo. Atendemos hogares en <strong>{{custom_values.county_name_and_state}}</strong> y toda la isla.</p>
+      <p>Explora los servicios de limpieza de <strong>Ilatek</strong> disponibles en los <strong>78 municipios de Puerto Rico</strong> y visita la página de tu pueblo. Atendemos hogares en <strong>{{custom_values.business__county_name}}</strong> y toda la isla.</p>
     </header>
     <div class="icd-directory">
       <div class="icd-search">
@@ -368,7 +368,7 @@
     var locationLabel=hostTown?hostTown+', '+primaryLocation:(clean(root.getAttribute('data-location-label'))||primaryLocation);
     var website=clean(root.getAttribute('data-website-url'))||'https://ilatekpr.com';
     var values={};
-    values[token('county_name_and_state')]=locationLabel;
+    values[token('business__county_name')]=locationLabel;
     values[token('website_url')]=website;
     values[token('business__email')]=clean(root.getAttribute('data-business-email'));
     values[token('business__phone')]=clean(root.getAttribute('data-business-phone'));
@@ -454,7 +454,7 @@
           <details class="ilc2-faq-item"><summary><h3>¿Cuánto tarda la organización?</h3><span class="ilc2-chevron" aria-hidden="true">▾</span></summary><p>Referencia profesional: <b>2 a 4 horas</b> por clóset o despensa, medio día para un garaje estándar. Coordinamos la visita y entregamos cada espacio listo para usarse el mismo día.</p></details>
           <details class="ilc2-faq-item"><summary><h3>¿El orden se mantiene después?</h3><span class="ilc2-chevron" aria-hidden="true">▾</span></summary><p>Ese es el objetivo: cada categoría queda <b>etiquetada</b> y con un sistema lógico que tu familia puede sostener. Con el cambio de temporada, una visita de rotación lo renueva.</p></details>
           <details class="ilc2-faq-item"><summary><h3>¿Organizan solo un espacio o toda la casa?</h3><span class="ilc2-chevron" aria-hidden="true">▾</span></summary><p>Eliges los espacios: despensas y clósets a $50 c/u y garaje a $0.50 por pie². Empieza por el que más te estresa y suma los demás en la misma visita o en otra coordinada.</p></details>
-          <details class="ilc2-faq-item"><summary><h3>¿Por qué elegir Ilatek para organizar tu hogar?</h3><span class="ilc2-chevron" aria-hidden="true">▾</span></summary><p>Precios por espacio publicados (desde $50), sistemas de orden que permanecen, etiquetado incluido, precio real en minutos, depósito de $50 descontable y cobertura en los 78 municipios. Orden que permanece en {{custom_values.county_name_and_state}}.</p></details>
+          <details class="ilc2-faq-item"><summary><h3>¿Por qué elegir Ilatek para organizar tu hogar?</h3><span class="ilc2-chevron" aria-hidden="true">▾</span></summary><p>Precios por espacio publicados (desde $50), sistemas de orden que permanecen, etiquetado incluido, precio real en minutos, depósito de $50 descontable y cobertura en los 78 municipios. Orden que permanece en {{custom_values.business__county_name}}.</p></details>
         </div>
         <div class="ilc2-faq-cta ilc2-reveal">
           <p>¿Clóset que no cierra? Déjanos el orden.</p>
@@ -472,7 +472,7 @@
     var county=clean(root.getAttribute('data-location-label'))||'Puerto Rico', website=clean(root.dataset.websiteUrl)||'https://ilatekpr.com', fb=clean(root.dataset.facebookUrl)||'https://www.facebook.com/ilatek.pr/', ig=clean(root.dataset.instagramUrl)||'https://www.instagram.com/ilatek.pr/';
     function token(name){return '{'+'{custom_values.'+name+'}'+'}'}
     var values={};
-    values[token('county_name_and_state')]=county;
+    values[token('business__county_name')]=county;
     values[token('website_url')]=website;
     values[token('facebook_url')]=fb;
     values[token('instagram_url')]=ig;
@@ -505,7 +505,7 @@
   <!-- Schema principal: HouseCleaning + WebSite (SEO/GEO) -->
   <script type="application/ld+json">
   {"@context":"https://schema.org","@graph":[
-    {"@type":"HouseCleaning","@id":"{{custom_values.website_url}}/organizacion/#service","name":"Organización del Hogar en Puerto Rico | Ilatek","description":"Organización del hogar de Ilatek en Puerto Rico: despensas, clósets y garaje con sistemas de orden funcionales — categorización, doblado y etiquetado. Precios por espacio desde $50, depósito de $50 descontable y cobertura en los 78 municipios.","url":"{{custom_values.website_url}}/organizacion","telephone":"{{custom_values.business__phone}}","email":"{{custom_values.business__email}}","image":"https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aac6cd7254a2c54081fa165.png","logo":"https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aa1c05dd953a0128b5348c2.jpg","priceRange":"$$","currenciesAccepted":"USD","paymentAccepted":"Cash, Credit Card, Debit Card","areaServed":[{"@type":"AdministrativeArea","name":"{{custom_values.county_name_and_state}}"},{"@type":"Country","name":"Puerto Rico"}],"availableLanguage":["es"],"sameAs":["{{custom_values.facebook_url}}","{{custom_values.instagram_url}}"],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"08:00","closes":"18:00"}]},
+    {"@type":"HouseCleaning","@id":"{{custom_values.website_url}}/organizacion/#service","name":"Organización del Hogar en Puerto Rico | Ilatek","description":"Organización del hogar de Ilatek en Puerto Rico: despensas, clósets y garaje con sistemas de orden funcionales — categorización, doblado y etiquetado. Precios por espacio desde $50, depósito de $50 descontable y cobertura en los 78 municipios.","url":"{{custom_values.website_url}}/organizacion","telephone":"{{custom_values.business__phone}}","email":"{{custom_values.business__email}}","image":"https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aac6cd7254a2c54081fa165.png","logo":"https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aa1c05dd953a0128b5348c2.jpg","priceRange":"$$","currenciesAccepted":"USD","paymentAccepted":"Cash, Credit Card, Debit Card","areaServed":[{"@type":"AdministrativeArea","name":"{{custom_values.business__county_name}}"},{"@type":"Country","name":"Puerto Rico"}],"availableLanguage":["es"],"sameAs":["{{custom_values.facebook_url}}","{{custom_values.instagram_url}}"],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"08:00","closes":"18:00"}]},
     {"@type":"WebSite","@id":"{{custom_values.website_url}}/#website","url":"{{custom_values.website_url}}","name":"Ilatek","inLanguage":"es","publisher":{"@id":"{{custom_values.website_url}}/organizacion/#service"}}
   ]}
   </script>
@@ -520,7 +520,7 @@
     {"@type":"Question","name":"¿Cuánto tarda la organización?","acceptedAnswer":{"@type":"Answer","text":"Referencia profesional: 2 a 4 horas por clóset o despensa, medio día para un garaje estándar. Coordinamos la visita y entregamos cada espacio listo para usarse el mismo día."}},
     {"@type":"Question","name":"¿El orden se mantiene después?","acceptedAnswer":{"@type":"Answer","text":"Ese es el objetivo: cada categoría queda etiquetada y con un sistema lógico que tu familia puede sostener. Con el cambio de temporada, una visita de rotación lo renueva."}},
     {"@type":"Question","name":"¿Organizan solo un espacio o toda la casa?","acceptedAnswer":{"@type":"Answer","text":"Eliges los espacios: despensas y clósets a $50 c/u y garaje a $0.50 por pie². Empieza por el que más te estresa y suma los demás en la misma visita o en otra coordinada."}},
-    {"@type":"Question","name":"¿Por qué elegir Ilatek para organizar tu hogar?","acceptedAnswer":{"@type":"Answer","text":"Precios por espacio publicados (desde $50), sistemas de orden que permanecen, etiquetado incluido, precio real en minutos, depósito de $50 descontable y cobertura en los 78 municipios. Orden que permanece en {{custom_values.county_name_and_state}}."}}
+    {"@type":"Question","name":"¿Por qué elegir Ilatek para organizar tu hogar?","acceptedAnswer":{"@type":"Answer","text":"Precios por espacio publicados (desde $50), sistemas de orden que permanecen, etiquetado incluido, precio real en minutos, depósito de $50 descontable y cobertura en los 78 municipios. Orden que permanece en {{custom_values.business__county_name}}."}}
   ]}
   </script>
 

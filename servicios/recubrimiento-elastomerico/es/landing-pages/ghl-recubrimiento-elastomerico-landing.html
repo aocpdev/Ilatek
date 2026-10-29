@@ -1,29 +1,352 @@
-<!-- ILATEK · resolver global del puente dv-ghl-values (párrafo nativo GHL).
-     Reglas: literal data-* gana sin cambios; token crudo dentro de data-* se
-     resuelve contra el slot correspondiente del puente; sin puente el slot da
-     '' y el fallback real de cada resolver aplica. -->
+<!-- ILATEK · resolver global del puente dv-ghl-values + valores de marca.
+     Sin gate: la página pinta de inmediato y los values se aplican en cuanto
+     están disponibles (no se oculta nada, no se encola ningún handler).
+     Canales, en orden de precedencia:
+       1. párrafo nativo expandido por GHL (7 slots; acepta el viejo
+          de 6) o sus data-* ya expandidos;
+          (en la raíz publicada GHL expande data-location-label con el pueblo,
+          así que este canal ya trae valores reales sin párrafo);
+       2. el pueblo que GHL SÍ expande server-side en <title>/og:title/
+          og:description ("… en Juncos, Puerto Rico"): el título sale de
+          {{custom_values.business__county_name}}, así que es el mismo custom
+          value, sin depender de que el builder expanda el Custom Code;
+       3. el subdominio del sitio (juncos.ilatekpr.com → Juncos);
+       4. los valores de marca del contrato (custom-values.json → brand).
+     El portador que viaja en el embed se oculta siempre (nunca es contenido).
+     Estado en <html>: data-ilatek-values="ready" | "missing" (diagnóstico).
+     El último slot es el pixel (Meta Pixel): un init y un PageView por carga,
+     solo con id numérico; sin id válido no se carga ningún script de terceros. -->
 <script>
 (function(){
   if(window.ILATEK_BRIDGE)return;
-  var SLOT={business__county_name:0,business__email:1,business__phone:2,website_url:3,facebook_url:4,instagram_url:5};
-  function clean(v){v=String(v==null?'':v).replace(/\u00a0/g,' ').trim();return /^\s*\{\{[^}]+\}\}\s*$/.test(v)?'':v}
-  function slots(){
-    var ps=document.querySelectorAll('.dv-ghl-values,#dv-ghl-values');
-    for(var i=0;i<ps.length;i++){
-      var parts=String(ps[i].textContent||'').split('|||DV|||');
-      if(parts.length===6)return parts;
+  var SLOT={business__county_name:0,business__email:1,business__phone:2,website_url:3,facebook_url:4,instagram_url:5,pixel_id:6},MIN=6,FULL=7,PIXEL=6,SEP='|||DV|||';
+  var BRAND={"business__county_name": "Puerto Rico", "business__email": "info@ilatekpr.com", "business__phone": "787-561-7333", "facebook_url": "https://www.facebook.com/ilatek.pr/", "instagram_url": "https://www.instagram.com/ilatek.pr/", "pixel_id": "2092249571384387", "website_url": "https://ilatekpr.com"},TOWNS={"anasco": "Añasco", "bayamon": "Bayamón", "canovanas": "Canóvanas", "catano": "Cataño", "comerio": "Comerío", "guanica": "Guánica", "juana-diaz": "Juana Díaz", "las-marias": "Las Marías", "loiza": "Loíza", "manati": "Manatí", "mayaguez": "Mayagüez", "penuelas": "Peñuelas", "rincon": "Rincón", "san-german": "San Germán", "san-sebastian": "San Sebastián"};
+  var TOKEN=/\{\{\s*custom_values\.([a-z_]+)\s*\}\}/g;
+  var COUNTY=SLOT.business__county_name;
+  // Defensa por slot: última instancia cuando ningún canal trae el valor.
+  var DEF=[],i;
+  for(var k in BRAND){if(SLOT.hasOwnProperty(k))DEF[SLOT[k]]=String(BRAND[k]||'')}
+  var ATTRS={};
+  ATTRS['data-location-label']=COUNTY;
+  ATTRS['data-primary-location']=COUNTY;
+  ATTRS['data-website-url']=SLOT.website_url;
+  ATTRS['data-business-email']=SLOT.business__email;
+  ATTRS['data-business-phone']=SLOT.business__phone;
+  ATTRS['data-facebook-url']=SLOT.facebook_url;
+  ATTRS['data-instagram-url']=SLOT.instagram_url;
+  var doc=document,root=doc.documentElement;
+  var values=null,source='',state='',nodes=[],waiters=[],fired=false;
+  // Diario del barrido con fallback: permite volver a resolver si el párrafo
+  // llega después de haber pintado.
+  var journal=[];
+
+  function clean(v){v=String(v==null?'':v).replace(/\u00a0/g,' ').trim();return /\{\{/.test(v)?'':v}
+  function list(sel){var out=[],n=doc.querySelectorAll(sel);for(var i=0;i<n.length;i++)out.push(n[i]);return out}
+
+  // Párrafo completo > párrafo viejo (min_slots) > cualquier bloque hoja con el
+  // separador (el builder nuevo no siempre expone el campo de clase). Un párrafo
+  // con tokens crudos no cuenta: ese es el caso 'sin expandir'.
+  function fromParagraph(){
+    var ps=list('.dv-ghl-values,#dv-ghl-values'),old=null,i;
+    for(i=0;i<ps.length;i++){
+      var raw=String(ps[i].textContent||'');
+      if(raw.indexOf('{{')>=0)continue;
+      var parts=raw.split(SEP);
+      if(parts.length>=FULL)return {values:parts,nodes:ps,source:'parrafo'};
+      if(!old&&parts.length>=MIN)old={values:parts,nodes:ps,source:'parrafo'};
     }
-    return null;
+    if(old)return old;
+    var cand=doc.querySelectorAll('p,div,span'),best=null;
+    for(i=0;i<cand.length;i++){
+      var tx=String(cand[i].textContent||'');
+      if(tx.indexOf(SEP)<0||tx.indexOf('{{')>=0)continue;
+      if(tx.length>400)continue;
+      var kids=cand[i].children,inner=false;
+      for(var c=0;c<kids.length;c++){
+        if(String(kids[c].textContent||'').indexOf(SEP)>=0){inner=true;break}
+      }
+      if(inner)continue;
+      var pp=tx.split(SEP);
+      if(pp.length>=FULL)return {values:pp,nodes:ps,source:'parrafo'};
+      if(!best&&pp.length>=MIN)best={values:pp,nodes:ps,source:'parrafo'};
+    }
+    return best;
   }
-  function slot(i){var s=slots();if(!s)return '';var v=clean(s[i]);return /^\{\{/.test(v)?'':v}
+
+  // Atributos data-* que GHL expandió (si expandió alguno).
+  function fromData(){
+    var found=null,count=0;
+    for(var name in ATTRS){
+      var idx=ATTRS[name];
+      if(found&&found[idx])continue;
+      var el=doc.querySelector('['+name+']');
+      if(!el)continue;
+      var v=clean(el.getAttribute(name));
+      if(!v)continue;
+      found=found||[];
+      found[idx]=v;
+      count++;
+    }
+    return found&&count?{values:found,nodes:[],source:'data'}:null;
+  }
+
+  // El pueblo que GHL expande en el <head>. Es el mismo custom value del título
+  // de la página; sin párrafo nativo es el único canal que trae un valor real.
+  function metaCounty(){
+    var cands=[],els=['meta[property="og:title"]','meta[name="title"]','meta[property="og:description"]','meta[name="description"]'],e;
+    if(doc.title)cands.push(doc.title);
+    for(var i=0;i<els.length;i++){e=doc.querySelector(els[i]);if(e)cands.push(e.getAttribute('content')||'')}
+    var re=/\ben\s+([A-Za-z\u00c0-\u00ff][^,<>|;]{1,40}?),\s*Puerto\s*Rico/;
+    for(i=0;i<cands.length;i++){
+      var m=re.exec(cands[i]||'');
+      if(m){var t=clean(m[1].replace(/\s+/g,' '));if(t)return t}
+    }
+    return '';
+  }
+
+  // Último recurso sin tocar el builder: el pueblo está en el subdominio.
+  function hostTown(){
+    var host=String(location.hostname||'').toLowerCase();
+    if(!host||/^\d+\.[\d.]+$/.test(host))return '';
+    var labels=host.split('.');
+    if(labels.length<3)return '';
+    var sub=labels[0];
+    if(!sub||sub==='www'||sub==='app')return '';
+    if(TOWNS.hasOwnProperty(sub))return String(TOWNS[sub]);
+    return sub.replace(/-/g,' ').replace(/(^|\s)([a-z\u00e0-\u00ff])/g,function(m,a,b){return a+b.toUpperCase()});
+  }
+
+  function read(){
+    var got=fromParagraph();
+    if(got)return got;
+    var base=fromData();
+    var vals=base?base.values.slice():[];
+    var src=base?base.source:'';
+    // El título manda sobre el data-*: un data-location-label horneado con el
+    // literal genérico no debe pisar el pueblo que GHL expandió en el <head>.
+    var mc=metaCounty();
+    // Un data-* horneado con el literal genérico ("Puerto Rico") cuenta como
+    // vacío: no debe impedir que el pueblo llegue por el subdominio.
+    var dv=clean(vals[COUNTY]);
+    if(mc){vals[COUNTY]=mc;src='meta'}
+    else if(!dv||dv===DEF[COUNTY]){
+      var ht=hostTown();
+      if(ht){vals[COUNTY]=ht;src='host'}
+    }
+
+    if(!src)return null;
+    return {values:vals,nodes:[],source:src};
+  }
+
+  // El párrafo manda: si un resolver corrió con título/data-*, el valor real se
+  // sube en cuanto el párrafo aparece.
+  function ensure(){
+    if(values&&source==='parrafo')return values;
+    var got=read();
+    if(!got)return values;
+    var vals=[];
+    for(var i=0;i<FULL;i++)vals[i]=clean(got.values[i]);
+    values=vals;
+    nodes=got.nodes||[];
+    source=got.source;
+    return values;
+  }
+
+  function slot(i){var v=ensure();var x=v?clean(v[i]):'';return x||DEF[i]||''}
+
   function attr(v){
-    return String(v==null?'':v).replace(/\{\{\s*custom_values\.([a-z_]+)\s*\}\}/g,function(m,n){
-      return SLOT.hasOwnProperty(n)?slot(SLOT[n]):m;
+    return String(v==null?'':v).replace(TOKEN,function(m,n){
+      if(!SLOT.hasOwnProperty(n))return m;
+      var got=ensure(),i=SLOT[n],x=got?clean(got[i]):'';
+      return x||DEF[i]||m;
     });
   }
-  window.ILATEK_BRIDGE={slot:slot,attr:attr};
+
+  // Ningún token crudo visible: textos y atributos que ningún resolver tocó.
+  function restore(){
+    for(var i=journal.length-1;i>=0;i--){
+      var j=journal[i];
+      if(j.length===3)j[0].setAttribute(j[1],j[2]);
+      else j[0].nodeValue=j[1];
+    }
+    journal=[];
+  }
+
+  function sweep(record){
+    var v=values||[];
+    // El portador no es contenido: si se barriera, el bridge leería su propio
+    // reemplazo como si GHL lo hubiera expandido.
+    var carriers=list('.dv-ghl-values,#dv-ghl-values');
+    function rep(m,n){
+      var i=SLOT.hasOwnProperty(n)?SLOT[n]:-1;
+      return i<0?'':(clean(v[i])||DEF[i]||'');
+    }
+    var walker=doc.createTreeWalker(root,4,null,false),t,texts=[];
+    while((t=walker.nextNode())){
+      if(!t.nodeValue||t.nodeValue.indexOf('{{')<0)continue;
+      var tag=t.parentNode&&t.parentNode.nodeName;
+      if(tag==='SCRIPT'||tag==='STYLE')continue;
+      if(carriers.indexOf(t.parentNode)>=0)continue;
+      texts.push(t);
+    }
+    for(var i=0;i<texts.length;i++){
+      if(record)journal.push([texts[i],texts[i].nodeValue]);
+      texts[i].nodeValue=texts[i].nodeValue.replace(TOKEN,rep);
+    }
+    var els=root.querySelectorAll('*');
+    for(i=0;i<els.length;i++){
+      if(carriers.indexOf(els[i])>=0)continue;
+      var at=els[i].attributes;
+      for(var j=0;j<at.length;j++){
+        if(!/^(href|src|alt|title|content|placeholder|aria-[a-z-]+|data-[a-z-]+)$/.test(at[j].name))continue;
+        var val=at[j].value;
+        if(!val||val.indexOf('{{')<0)continue;
+        if(record)journal.push([els[i],at[j].name,val]);
+        els[i].setAttribute(at[j].name,val.replace(TOKEN,rep));
+      }
+    }
+  }
+
+  // Rescate del texto que el generador del nav/tarjetas ya escribió con el
+  // literal genérico antes de que hubiera values ('… en Puerto Rico'). Se limita
+  // a los nodos del sistema i18n (data-es/data-en), donde ese patrón siempre es
+  // el pueblo, y se corrige también el atributo para los cambios de idioma.
+  function landed(){
+    var c=slot(COUNTY);
+    if(!c||c==='Puerto Rico')return;
+    var re=/\ben\s+Puerto\s+Rico\b/g,rep='en '+c;
+    var els=doc.querySelectorAll('[data-es],[data-en]');
+    for(var i=0;i<els.length;i++){
+      var el=els[i],at=el.attributes,j,n;
+      for(j=0;j<at.length;j++){
+        n=at[j];
+        if(n.name!=='data-es'&&n.name!=='data-en')continue;
+        if(n.value&&n.value.indexOf('en Puerto Rico')>=0)el.setAttribute(n.name,n.value.replace(re,rep));
+      }
+      var kids=el.childNodes;
+      for(j=0;j<kids.length;j++){
+        if(kids[j].nodeType===3&&kids[j].nodeValue&&kids[j].nodeValue.indexOf('en Puerto Rico')>=0){
+          kids[j].nodeValue=kids[j].nodeValue.replace(re,rep);
+        }
+      }
+    }
+  }
+
+  function pixel(){
+    if(window.__ilatekPixel)return window.__ilatekPixel;
+    // Se decide con la página ya cargada: si GHL enciende Meta por su cuenta
+    // (funnel settings) se reutiliza ese fbq en vez de duplicar fbevents.js.
+    if(doc.readyState!=='complete'){
+      if(!window.__ilatekPixelWait){
+        window.__ilatekPixelWait=1;
+        window.addEventListener('load',function(){window.__ilatekPixelWait=0;pixel()},{once:true});
+      }
+      return '';
+    }
+    var v=ensure(),id=v?clean(v[PIXEL]):'';
+    // Sin slot en el párrafo -> pixel de marca; con un id explícitamente
+    // inválido en el párrafo -> no se carga Meta (no se adivina).
+    if(!id)id=DEF[PIXEL]||'';
+    if(!/^\d{6,20}$/.test(id)){
+      if(!window.__ilatekPixelWarn){
+        window.__ilatekPixelWarn=1;
+        if(window.console&&console.warn)console.warn('[ILATEK] pixel_id inválido: Meta Pixel no se carga');
+      }
+      return '';
+    }
+    // GHL ya puede haber encendido Meta (funnel settings): no dupliques init ni
+    // PageView. Si el id no está en la cola, se inicializa el nuestro.
+    var q=window.fbq&&window.fbq.queue;
+    var hasLoader=doc.querySelectorAll('script[src*="connect.facebook.net"]').length>0;
+    if(q||hasLoader){
+      var hasInit=false,hasPV=false,a;
+      for(var i=0;i<q.length;i++){
+        a=q[i];
+        if(!a||!a.length)continue;
+        if(a[0]==='init'&&String(a[1])===id)hasInit=true;
+        if(a[0]==='track'&&a[1]==='PageView')hasPV=true;
+      }
+      window.__ilatekPixel=id;
+      if(hasInit)return id;
+      if(window.fbq){
+        window.fbq('init',id);
+        if(!hasPV)window.fbq('track','PageView');
+      }
+      return id;
+    }
+    window.__ilatekPixel=id;
+    !function(f,b,e,url){if(f.fbq)return;var n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];var t=b.createElement(e);t.async=!0;t.src=url;var s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    window.fbq('init',id);window.fbq('track','PageView');
+    return id;
+  }
+
+  // Resuelve una vez listo. Segunda llamada idempotente salvo subida a párrafo.
+  function settle(){
+    if(state==='ready'&&source==='parrafo')return true;
+    if(!ensure())return false;
+    if(journal.length)restore();
+    sweep();
+    landed();
+    state='ready';
+    root.setAttribute('data-ilatek-values','ready');
+    if(!fired){
+      fired=true;
+      try{window.dispatchEvent(new CustomEvent('ilatek:values',{detail:{state:state,source:source,values:values}}))}catch(e){}
+      try{var en=(doc.documentElement.lang||'es').toLowerCase().indexOf('en')===0;window.dispatchEvent(new CustomEvent('ilatek:lang',{detail:en?'en':'es'}))}catch(e){}
+      var w=waiters;waiters=[];
+      for(var i=0;i<w.length;i++){try{w[i](state)}catch(e){}}
+    }
+    pixel();
+    return true;
+  }
+
+  function boot(){
+    if(settle())return;
+    state='missing';
+    root.setAttribute('data-ilatek-values','missing');
+    sweep(true); // fallback visible, sin tokens crudos; se deshace si el párrafo llega
+    if(window.console&&console.warn)console.warn('[ILATEK] custom values: ni párrafo dv-ghl-values ni pueblo en el título/subdominio — la página sigue con fallback');
+    // Los values pueden llegar después (GHL inyecta o expande tarde).
+    var ticks=0;
+    var poll=setInterval(function(){
+      if(settle()||++ticks>80){clearInterval(poll);poll=null}
+    },250);
+    if(window.MutationObserver){
+      var obs=new MutationObserver(function(){if(settle())obs.disconnect()});
+      obs.observe(root,{childList:true,subtree:true,characterData:true});
+    }
+  }
+
+  // El portador nunca es contenido: se oculta por CSS desde el primer paint.
+  try{
+    var st=doc.createElement('style');
+    st.id='ilatek-values-carrier';
+    st.textContent='.dv-ghl-values,#dv-ghl-values{display:none!important}';
+    (doc.head||root).appendChild(st);
+  }catch(e){}
+
+  function start(){try{boot()}catch(e){}}
+  if(doc.readyState==='loading')doc.addEventListener('DOMContentLoaded',start,{once:true});
+  else start();
+
+  window.ILATEK_BRIDGE={
+    slot:slot,
+    attr:attr,
+    pixel:pixel,
+    values:function(){return values?values.slice():[]},
+    county:function(){return slot(COUNTY)},
+    ready:function(cb){if(typeof cb!=='function')return;if(state==='ready')cb(state);else waiters.push(cb)},
+    state:function(){return state},
+    source:function(){return source},
+    reason:function(){return state==='missing'?'sin párrafo, sin pueblo en el título y sin subdominio de pueblo':''}
+  };
 })();
 </script>
+<!-- ILATEK · párrafo portador de los custom values (viaja en el embed; GHL solo lo expande si se pega
+     como elemento nativo del builder). -->
+<p class="dv-ghl-values" id="dv-ghl-values" hidden>{{custom_values.business__county_name}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}</p>
+
+
 <!-- ILATEK:INTERNAL-LINKS:START -->
 <style>
 /* A single, unframed logo. Keep its 52px slot inside the existing 64px bar.
@@ -180,7 +503,7 @@ body:has(#ilatek-nav) .mshero-inner{
     var values = [];
     for (var i = 0; i < nodes.length; i++) {
       var parts = nodes[i].textContent.split('|||DV|||');
-      if (parts.length !== 6) continue;
+      if (parts.length<6) continue;
       var value = normalize(parts[3]);
       if (value && values.indexOf(value) < 0) values.push(value);
     }
@@ -253,7 +576,7 @@ body:has(#ilatek-nav) .mshero-inner{
     var declared=doc.querySelectorAll('.dv-ghl-values,#dv-ghl-values'),nodes=declared.length?declared:doc.querySelectorAll('p'),values=[];
     for(var i=0;i<nodes.length;i++){
       var parts=nodes[i].textContent.split('|||DV|||');
-      if(parts.length!==6)continue;
+      if(parts.length<6)continue;
       nodes[i].style.display='none';nodes[i].setAttribute('aria-hidden','true');
       var value=clean(parts[0]);if(value&&values.indexOf(value)<0)values.push(value);
     }
@@ -664,7 +987,8 @@ body:has(#ilatek-nav) .mshero-inner{
     function clean(v){v=String(v||'').replace(/ /g,' ').trim();return /^\s*\{\{[^}]+\}\}\s*$/.test(v)?'':v}
     var ilBV=window.ILATEK_BRIDGE||{slot:function(){return ''},attr:function(v){return String(v==null?'':v)}};
     var website=ilBV.attr(root.getAttribute('data-website-url'))||ilBV.slot(3)||'https://ilatekpr.com';
-    var county='Puerto Rico';
+    var county=(function(){try{var b=window.ILATEK_BRIDGE;if(b&&b.county)return b.county()||'Puerto Rico'}catch(e){}return 'Puerto Rico'})();
+    if(document&&document.addEventListener&&!window.__ilnCountyHook){window.__ilnCountyHook=1;document.addEventListener('ilatek:values',function(){try{window.__ilatekSetLang&&window.__ilatekSetLang(window.__ilatekLang||document.documentElement.lang||'es')}catch(e){}});}
     function resolve(text){
       var cel=document.querySelector('[data-location-label]');
       var ilBV=window.ILATEK_BRIDGE||{slot:function(){return ''},attr:function(v){return String(v==null?'':v)}};
@@ -675,7 +999,8 @@ body:has(#ilatek-nav) .mshero-inner{
     var wrap=btn?btn.parentElement:null;
     function dictVal(el,lang){
       var k=el.getAttribute('data-en-key'),d=window.ILATEK_I18N;
-      return (d&&d[k]&&d[k][lang])?d[k][lang]:null;
+      var v=(d&&d[k]&&d[k][lang])?d[k][lang]:null;
+      return v==null?null:resolve(v);
     }
     function applyLang(lang){
       document.documentElement.setAttribute('lang',lang);
@@ -1555,7 +1880,7 @@ html,body{overflow-x:clip}</style>
     .il-reviews{padding:112px 0;background:var(--paper)}.il-reviews-head{max-width:690px;margin:0 auto 48px;text-align:center}.il-reviews h2{margin:16px 0 0;font-size:clamp(42px,4.6vw,66px);font-weight:800;line-height:1.02}.il-reviews-head p{margin:18px auto 0;color:var(--muted);font-size:16px;line-height:1.65}.il-reviews-frame{min-height:320px;padding:16px;border:1px solid var(--line);border-radius:20px;background:var(--mist);box-shadow:0 20px 45px rgba(16,25,75,.08);overflow:hidden}.il-reviews-frame iframe{display:block;width:100%;min-height:720px;border:0;background:#fff;border-radius:12px}.il-reviews-tabs{display:flex;gap:7px;width:max-content;max-width:100%;margin:0 auto 18px;padding:5px;border:1px solid var(--line);border-radius:12px;background:var(--mist);overflow-x:auto;scrollbar-width:none}.il-reviews-tabs::-webkit-scrollbar{display:none}.il-reviews-tab{min-height:42px;padding:10px 18px;border:0;border-radius:8px;background:transparent;color:var(--muted);font:800 13px/1 Manrope,Arial,sans-serif;cursor:pointer;white-space:nowrap;transition:background .22s ease,color .22s ease}.il-reviews-tab:hover,.il-reviews-tab:focus-visible{color:var(--ink)}.il-reviews-tab[aria-selected=true]{background:var(--ink);color:#fff}.il-reviews-eyebrow{margin:0 auto 10px;text-align:center;color:var(--muted);font:800 12px/1 Manrope,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase}.il-reviews-tab .il-sico{width:15px;height:15px;margin-right:6px;flex:none;color:currentColor}.il-review-panel[hidden]{display:none!important}@media(max-width:560px){.il-reviews-tabs{width:100%;gap:3px;flex-wrap:nowrap}.il-reviews-tab{flex:1 1 0;min-width:0;padding-inline:5px;font-size:11px;letter-spacing:-.1px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.il-reviews-tab .il-sico{display:none}.il-reviews{padding:78px 0}.il-reviews-frame{padding:9px;border-radius:15px}.il-reviews-frame iframe{min-height:620px;border-radius:9px}}
     .il-reviews-tab .il-glogo{width:17px;height:17px;flex:none;margin-right:6px;display:inline-flex;align-items:center;justify-content:center;background:#fff;border-radius:50%;padding:2.5px;box-shadow:0 1px 3px rgba(11,16,61,.22)}.il-reviews-tab .il-glogo svg{width:100%;height:100%;display:block}
 </style>
-<section id="ilatek-reviews" class="il-reviews" aria-labelledby="ilatek-reviews-title"><div class="il-shell"><header class="il-reviews-head il-reveal"><span class="il-eyebrow">Opiniones de clientes</span><h2 id="ilatek-reviews-title" class="il-display">Reseñas de clientes de Ilatek.</h2><p>Reseñas de personas que confiaron en Ilatek para limpieza, mantenimiento y sellado de techos en Puerto Rico. Cambia de pestaña para ver cada fuente.</p></header><p class="il-reviews-eyebrow">Reseñas</p><div class="il-reviews-tabs" role="tablist" aria-label="Fuentes de reseñas"><button class="il-reviews-tab" id="il-tab-google" type="button" role="tab" aria-selected="true" aria-controls="il-panel-google"><span class="il-glogo" aria-hidden="true"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" focusable="false" role="presentation"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg></span>Reseñas de Google</button><button class="il-reviews-tab" id="il-tab-limpieza" type="button" role="tab" aria-selected="false" aria-controls="il-panel-limpieza" tabindex="-1"><svg class="il-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 1.9 4.6L18.5 9.5l-4.6 1.9L12 16l-1.9-4.6L5.5 9.5l4.6-1.9z"/><path d="m18 15 .9 2.1L21 18l-2.1.9L18 21l-.9-2.1L15 18l2.1-.9z"/></svg>Servicios</button><button class="il-reviews-tab" id="il-tab-techos" type="button" role="tab" aria-selected="false" aria-controls="il-panel-techos" tabindex="-1"><svg class="il-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>Reseñas de Techos</button></div><div class="il-reviews-frame il-reveal"><div class="il-review-panel" id="il-panel-google" role="tabpanel" aria-labelledby="il-tab-google"><script type="text/javascript" src="https://reputationhub.site/reputation/assets/review-widget.js" defer></script><iframe class="lc_reviews_widget" src="https://reputationhub.site/reputation/widgets/review_widget/8OxUENFVM60EKzqsTcoD" title="Reseñas de Google de clientes de Ilatek" frameborder="0" scrolling="no" loading="lazy" style="min-width:100%;width:100%;"></iframe></div><div class="il-review-panel" id="il-panel-limpieza" role="tabpanel" aria-labelledby="il-tab-limpieza" hidden><iframe class="lc_reviews_widget" src="about:blank" data-src="https://reputationhub.site/reputation/widgets/review_widget/8OxUENFVM60EKzqsTcoD?widgetId=6ab060ce32d0d3c755f9fd73" title="Reseñas de Limpieza de Ilatek" frameborder="0" scrolling="no" loading="lazy" style="min-width:100%;width:100%;"></iframe></div><div class="il-review-panel" id="il-panel-techos" role="tabpanel" aria-labelledby="il-tab-techos" hidden><iframe class="lc_reviews_widget" data-src="https://reputationhub.site/reputation/widgets/review_widget/8OxUENFVM60EKzqsTcoD?widgetId=6ac3eb680432b6ce3f30b035" src="about:blank" title="Reseñas de Mantenimiento de Techos de Ilatek" frameborder="0" scrolling="no" loading="lazy" style="min-width:100%;width:100%;"></iframe></div></div></div></section>
+<section id="ilatek-reviews" class="il-reviews" aria-labelledby="ilatek-reviews-title"><div class="il-shell"><header class="il-reviews-head il-reveal"><span class="il-eyebrow">Opiniones de clientes</span><h2 id="ilatek-reviews-title" class="il-display">Reseñas de clientes de Ilatek.</h2><p>Reseñas de personas que confiaron en Ilatek para limpieza, mantenimiento y sellado de techos en {{custom_values.business__county_name}}. Cambia de pestaña para ver cada fuente.</p></header><p class="il-reviews-eyebrow">Reseñas</p><div class="il-reviews-tabs" role="tablist" aria-label="Fuentes de reseñas"><button class="il-reviews-tab" id="il-tab-google" type="button" role="tab" aria-selected="true" aria-controls="il-panel-google"><span class="il-glogo" aria-hidden="true"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" focusable="false" role="presentation"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg></span>Reseñas de Google</button><button class="il-reviews-tab" id="il-tab-limpieza" type="button" role="tab" aria-selected="false" aria-controls="il-panel-limpieza" tabindex="-1"><svg class="il-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 1.9 4.6L18.5 9.5l-4.6 1.9L12 16l-1.9-4.6L5.5 9.5l4.6-1.9z"/><path d="m18 15 .9 2.1L21 18l-2.1.9L18 21l-.9-2.1L15 18l2.1-.9z"/></svg>Servicios</button><button class="il-reviews-tab" id="il-tab-techos" type="button" role="tab" aria-selected="false" aria-controls="il-panel-techos" tabindex="-1"><svg class="il-sico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>Reseñas de Techos</button></div><div class="il-reviews-frame il-reveal"><div class="il-review-panel" id="il-panel-google" role="tabpanel" aria-labelledby="il-tab-google"><script type="text/javascript" src="https://reputationhub.site/reputation/assets/review-widget.js" defer></script><iframe class="lc_reviews_widget" src="https://reputationhub.site/reputation/widgets/review_widget/8OxUENFVM60EKzqsTcoD" title="Reseñas de Google de clientes de Ilatek" frameborder="0" scrolling="no" loading="lazy" style="min-width:100%;width:100%;"></iframe></div><div class="il-review-panel" id="il-panel-limpieza" role="tabpanel" aria-labelledby="il-tab-limpieza" hidden><iframe class="lc_reviews_widget" src="about:blank" data-src="https://reputationhub.site/reputation/widgets/review_widget/8OxUENFVM60EKzqsTcoD?widgetId=6ab060ce32d0d3c755f9fd73" title="Reseñas de Limpieza de Ilatek" frameborder="0" scrolling="no" loading="lazy" style="min-width:100%;width:100%;"></iframe></div><div class="il-review-panel" id="il-panel-techos" role="tabpanel" aria-labelledby="il-tab-techos" hidden><iframe class="lc_reviews_widget" data-src="https://reputationhub.site/reputation/widgets/review_widget/8OxUENFVM60EKzqsTcoD?widgetId=6ac3eb680432b6ce3f30b035" src="about:blank" title="Reseñas de Mantenimiento de Techos de Ilatek" frameborder="0" scrolling="no" loading="lazy" style="min-width:100%;width:100%;"></iframe></div></div></div></section>
 
   <!-- Resize autónomo del widget de reseñas: el escucha del proveedor
     (reputationhub review-widget.js) aplica la altura solo si su script
@@ -2363,16 +2688,17 @@ html,body{overflow-x:clip}</style>
     }
     var ilBV=window.ILATEK_BRIDGE||{slot:function(){return ''},attr:function(v){return String(v==null?'':v)}};
     var website=ilBV.attr(root.getAttribute('data-website-url')||'')||ilBV.slot(3)||'https://ilatekpr.com';
-    var county='Puerto Rico';
+    var county=(function(){try{var b=window.ILATEK_BRIDGE;if(b&&b.county)return b.county()||'Puerto Rico'}catch(e){}return 'Puerto Rico'})();
+    if(document&&document.addEventListener&&!window.__ilnCountyHook){window.__ilnCountyHook=1;document.addEventListener('ilatek:values',function(){try{window.__ilatekSetLang&&window.__ilatekSetLang(window.__ilatekLang||document.documentElement.lang||'es')}catch(e){}});}
     function readCounty(){
       var candidates=[],nodes=document.querySelectorAll('.dv-ghl-values,#dv-ghl-values');
       for(var i=0;i<nodes.length;i++){
         var parts=nodes[i].textContent.split('|||DV|||');
-        if(parts.length===6){var value=clean(parts[0]);if(value&&candidates.indexOf(value)<0)candidates.push(value)}
+        if(parts.length>=6){var value=clean(parts[0]);if(value&&candidates.indexOf(value)<0)candidates.push(value)}
       }
       if(candidates.length===1)return candidates[0];
       var content=document.querySelector('[data-location-label]');
-      return clean(content&&content.getAttribute('data-location-label'))||'Puerto Rico';
+      return clean(content&&content.getAttribute('data-location-label'))||(function(){try{var b=window.ILATEK_BRIDGE;if(b&&b.county)return b.county()||'Puerto Rico'}catch(e){}return 'Puerto Rico'})();
     }
     function applyLang(lang){
       county=readCounty();

@@ -27,10 +27,13 @@ await new Promise((ok) => server.listen(8932, '127.0.0.1', ok));
 const chromium = await getChromium();
 const browser = await chromium.launch();
 const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
+// Meta no sale a la red: se mide init/PageView, no la latencia del CDN.
+await page.route('**/connect.facebook.net/**', (route) => route.fulfill({ status: 200, contentType: 'application/javascript', body: '' }));
 const out = await (await import('./runtime_qa.mjs')).default(page, console);
 mkdirSync(path.join(REPO, 'shots'), { recursive: true });
 writeFileSync(path.join(REPO, "shots", "qa-result4.json"), JSON.stringify(out, null, 1));
 console.log(JSON.stringify(out, null, 1));
+console.log('bridge checks:', JSON.stringify(out.checks || {}));
 await browser.close();
 server.close();
-process.exit(0);
+process.exit(out.checks && out.checks.ok === false ? 1 : 0);

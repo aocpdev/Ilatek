@@ -6,8 +6,8 @@
   Cobertura y Reviews: bloques VERBATIM del home (78 municipios + tabs Google/Selfie).
   Canonical self-referencing /impermeabilizacion-de-techos: ver Ilatek/techos/ghl-techos-head-seo.html (se pega en GHL Tracking Code HEADER).
 -->
-<section id="ilatek-techos-impermeabilizacion-de-techos" aria-label="Ilatek Impermeabilización {{custom_values.county_name_and_state}}"
-  data-location-label="{{custom_values.county_name_and_state}}"
+<section id="ilatek-techos-impermeabilizacion-de-techos" aria-label="Ilatek Impermeabilización {{custom_values.business__county_name}}"
+  data-location-label="{{custom_values.business__county_name}}"
   data-business-email="{{custom_values.business__email}}"
   data-business-phone="{{custom_values.business__phone}}"
   data-website-url="{{custom_values.website_url}}"
@@ -276,7 +276,7 @@ html,body{overflow-x:clip}</style>
         <div class="ilt-hero-copy ilt-reveal">
           <span class="ilt-eyebrow">Impermeabilización</span>
           <h1 class="ilt-display">Impermeabilización de Techos en <em>Puerto Rico</em> para cada tipo de techo.</h1>
-          <p class="ilt-hero-sub">Cada tipo de techo pide un sistema distinto de impermeabilización. Ilatek sella concreto, techos planos, zinc, asfalto, teja y madera en {{custom_values.county_name_and_state}} <b>desde $3.00 por pie²</b>, con inspección gratis y garantía escrita.</p>
+          <p class="ilt-hero-sub">Cada tipo de techo pide un sistema distinto de impermeabilización. Ilatek sella concreto, techos planos, zinc, asfalto, teja y madera en {{custom_values.business__county_name}} <b>desde $3.00 por pie²</b>, con inspección gratis y garantía escrita.</p>
           <div class="ilt-hero-actions">
             <a class="ilt-button" href="#ilt-agenda"><span>Solicita tu cotización</span><span aria-hidden="true">↗</span></a>
             <a class="ilt-text-link" href="#ilatek-techos-impermeabilizacion-de-techos-incluye">Qué incluye el servicio ↓</a>
@@ -288,7 +288,7 @@ html,body{overflow-x:clip}</style>
           </div>
         </div>
         <figure class="ilt-hero-card ilt-reveal">
-          <img src="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f5849322987426393b.webp" onerror="this.onerror=null;this.src='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f5849322987426393b.jpg'" width="1200" height="1320" loading="eager" decoding="async" fetchpriority="high" alt="Impermeabilización de techos de Ilatek Techos en Puerto Rico — {{custom_values.county_name_and_state}}" title="Impermeabilización de techos · Ilatek Techos">
+          <img src="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f5849322987426393b.webp" onerror="this.onerror=null;this.src='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f5849322987426393b.jpg'" width="1200" height="1320" loading="eager" decoding="async" fetchpriority="high" alt="Impermeabilización de techos de Ilatek Techos en Puerto Rico — {{custom_values.business__county_name}}" title="Impermeabilización de techos · Ilatek Techos">
           <span class="ilt-hero-badge"><i></i>Concreto · Zinc · Asfalto · Teja</span>
         </figure>
       </div>
@@ -405,7 +405,7 @@ html,body{overflow-x:clip}</style>
     </section>
     <!-- 6. COBERTURA: sección idéntica al home (78 municipios, verbatim) -->
 <section id="ilatek-cobertura-dir" data-service-slug="impermeabilizacion-de-techos" aria-label="Cobertura de impermeabilización de techos de Ilatek Techos en Puerto Rico"
-  data-location-label="{{custom_values.county_name_and_state}}"
+  data-location-label="{{custom_values.business__county_name}}"
   data-website-url="{{custom_values.website_url}}"
   data-primary-location="Puerto Rico"
   data-business-email="{{custom_values.business__email}}"
@@ -488,7 +488,7 @@ html,body{overflow-x:clip}</style>
         <span class="icd-eyebrow">Impermeabilización</span>
         <h2>Cobertura de <em>impermeabilización</em> en toda la isla.</h2>
       </div>
-      <p>Ilatek Techos brinda impermeabilización de techos en los <strong>78 municipios de Puerto Rico</strong>. Atendemos tu área en <strong>{{custom_values.county_name_and_state}}</strong> y toda la isla: busca tu pueblo en el directorio y visita su página.</p>
+      <p>Ilatek Techos brinda impermeabilización de techos en los <strong>78 municipios de Puerto Rico</strong>. Atendemos tu área en <strong>{{custom_values.business__county_name}}</strong> y toda la isla: busca tu pueblo en el directorio y visita su página.</p>
     </header>
     <div class="icd-directory">
       <div class="icd-search">
@@ -535,7 +535,7 @@ html,body{overflow-x:clip}</style>
     /* Slug del servicio (lo estampa el build de techos). Sin él → raíz del subdominio. */
     var serviceSlug=clean(root.getAttribute('data-service-slug'));
     var values={};
-    values[token('county_name_and_state')]=locationLabel;
+    values[token('business__county_name')]=locationLabel;
     values[token('website_url')]=website;
     values[token('business__email')]=clean(root.getAttribute('data-business-email'));
     values[token('business__phone')]=clean(root.getAttribute('data-business-phone'));
@@ -630,7 +630,7 @@ html,body{overflow-x:clip}</style>
           <div class="ilt-cta-copy">
             <span class="ilt-cta-eyebrow">Cotización gratis</span>
             <h2 id="ilt-cta-title" class="ilt-display">Protege tu techo antes de la próxima lluvia.</h2>
-            <p>Solicita tu cotización gratis de impermeabilización de techos en {{custom_values.county_name_and_state}} y recibe precio claro y por escrito — con inspección incluida y cobertura en los 78 municipios de Puerto Rico.</p>
+            <p>Solicita tu cotización gratis de impermeabilización de techos en {{custom_values.business__county_name}} y recibe precio claro y por escrito — con inspección incluida y cobertura en los 78 municipios de Puerto Rico.</p>
             <div class="ilt-cta-actions">
               <a class="ilt-button" href="#ilt-agenda"><span>Solicita tu cotización gratis</span><span aria-hidden="true">↗</span></a>
               <small>Respuesta en minutos · Sin compromiso</small>
@@ -650,7 +650,7 @@ html,body{overflow-x:clip}</style>
         <header class="ilt-cal-head ilt-reveal">
           <span class="ilt-eyebrow">Agenda tu inspección</span>
           <h2 id="ilt-cal-title" class="ilt-display">Reserva tu inspección gratis en minutos.</h2>
-          <p>Elige el día y la hora que te convengan. Atendemos {{custom_values.county_name_and_state}} y los 78 municipios de Puerto Rico.</p>
+          <p>Elige el día y la hora que te convengan. Atendemos {{custom_values.business__county_name}} y los 78 municipios de Puerto Rico.</p>
         </header>
         <div class="ilt-cal-box ilt-reveal">
           <div class="ilt-cal-embed">
@@ -672,7 +672,7 @@ html,body{overflow-x:clip}</style>
     function token(name){return '{'+'{custom_values.'+name+'}'+'}'}
     var county=clean(root.getAttribute('data-location-label'))||'Puerto Rico', website=clean(root.dataset.websiteUrl)||'https://ilatekpr.com', phone=clean(root.dataset.businessPhone), email=clean(root.dataset.businessEmail), fb=clean(root.dataset.facebookUrl)||'https://www.facebook.com/ilatek.pr/', ig=clean(root.dataset.instagramUrl)||'https://www.instagram.com/ilatek.pr/';
     var values={};
-    values[token('county_name_and_state')]=county;
+    values[token('business__county_name')]=county;
     values[token('website_url')]=website;
     values[token('business__phone')]=phone;
     values[token('business__email')]=email;
@@ -734,7 +734,7 @@ html,body{overflow-x:clip}</style>
    "areaServed": [
     {
      "@type": "AdministrativeArea",
-     "name": "{{custom_values.county_name_and_state}}"
+     "name": "{{custom_values.business__county_name}}"
     },
     {
      "@type": "Country",
@@ -867,7 +867,7 @@ html,body{overflow-x:clip}</style>
    "areaServed": [
     {
      "@type": "AdministrativeArea",
-     "name": "{{custom_values.county_name_and_state}}"
+     "name": "{{custom_values.business__county_name}}"
     },
     {
      "@type": "Country",

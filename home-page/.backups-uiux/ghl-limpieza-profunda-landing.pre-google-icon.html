@@ -6,8 +6,8 @@
   Facts: precio por cotizacion (comercial) · deposito $50 · 78 municipios · Lun-Sab 8-6.
   Imagenes: hero + seccion incluye (filesafe, definidas por el usuario).
 -->
-<section id="ilatek-limpieza-profunda" aria-label="Ilatek Limpieza Profunda {{custom_values.county_name_and_state}}"
-  data-location-label="{{custom_values.county_name_and_state}}"
+<section id="ilatek-limpieza-profunda" aria-label="Ilatek Limpieza Profunda {{custom_values.business__county_name}}"
+  data-location-label="{{custom_values.business__county_name}}"
   data-business-email="{{custom_values.business__email}}"
   data-business-phone="{{custom_values.business__phone}}"
   data-website-url="{{custom_values.website_url}}"
@@ -117,7 +117,7 @@
         <div class="ilc2-hero-copy ilc2-reveal">
           <span class="ilc2-eyebrow">Limpieza profunda</span>
           <h1 class="ilc2-display">Limpieza Profunda en <em>Puerto Rico</em> que renueva cada rincón de tu hogar.</h1>
-          <p class="ilc2-hero-sub">Ilatek renueva tu hogar área por área en {{custom_values.county_name_and_state}}: la limpieza a fondo que elimina la acumulación que el mantenimiento regular no alcanza — a $0.15 por pie². Precio real en minutos con el cotizador y reserva con $50 descontable.</p>
+          <p class="ilc2-hero-sub">Ilatek renueva tu hogar área por área en {{custom_values.business__county_name}}: la limpieza a fondo que elimina la acumulación que el mantenimiento regular no alcanza — a $0.15 por pie². Precio real en minutos con el cotizador y reserva con $50 descontable.</p>
           <div class="ilc2-hero-actions">
             <a class="ilc2-button" href="{{custom_values.website_url}}/cotizacion"><span>Solicita tu cotización</span><span aria-hidden="true">↗</span></a>
             <a class="ilc2-text-link" href="#ilatek-profunda-incluye">Qué incluye el servicio ↓</a>
@@ -132,7 +132,7 @@
           <img src="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/svc-profunda-800.webp"
             onerror="this.onerror=null;this.src='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aac6cd7254a2c54081fa165.png'"
             width="1200" height="900" loading="eager" decoding="async" fetchpriority="high"
-            alt="Equipo de Ilatek realizando una limpieza profunda en una casa en Puerto Rico — renovación área por área de hogares en {{custom_values.county_name_and_state}}"
+            alt="Equipo de Ilatek realizando una limpieza profunda en una casa en Puerto Rico — renovación área por área de hogares en {{custom_values.business__county_name}}"
             title="Limpieza Profunda en Puerto Rico · Ilatek">
         </figure>
       </div>
@@ -156,7 +156,7 @@
           <article class="ilc2-ben ilc2-reveal">
             <i class="ilc2-ben-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M20 6 9 17l-5-5"/></svg></i>
             <h3>Equipo y productos de grado profesional</h3>
-            <p>Productos profesionales desengrasantes y desinfectantes, seguros para tu familia y mascotas, con el equipo para cada superficie en {{custom_values.county_name_and_state}}.</p>
+            <p>Productos profesionales desengrasantes y desinfectantes, seguros para tu familia y mascotas, con el equipo para cada superficie en {{custom_values.business__county_name}}.</p>
           </article>
         </div>
       </div>
@@ -186,7 +186,7 @@
           <img src="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/svc-airbnb-800.webp"
             onerror="this.onerror=null;this.src='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aac6cd7254a2c54081fa165.png'"
             width="1200" height="900" loading="lazy" decoding="async"
-            alt="Limpieza profunda de Ilatek en Puerto Rico — renovación a fondo de habitaciones, enseres y juntas en {{custom_values.county_name_and_state}}"
+            alt="Limpieza profunda de Ilatek en Puerto Rico — renovación a fondo de habitaciones, enseres y juntas en {{custom_values.business__county_name}}"
             title="Limpieza Profunda en Puerto Rico · Ilatek">
           <figcaption>Desengrasantes profesionales · seguros para tu familia y mascotas</figcaption>
         </figure>
@@ -243,7 +243,7 @@
 
     <!-- 6. COBERTURA: seccion identica al home (78 municipios) -->
     <section id="ilatek-cobertura-dir" aria-label="Cobertura de limpieza de Ilatek en Puerto Rico"
-  data-location-label="{{custom_values.county_name_and_state}}"
+  data-location-label="{{custom_values.business__county_name}}"
   data-website-url="{{custom_values.website_url}}"
   data-primary-location="Puerto Rico"
   data-business-email="{{custom_values.business__email}}"
@@ -323,7 +323,7 @@
         <span class="icd-eyebrow">Cobertura local</span>
         <h2>Limpieza impecable, <em>Cobertura en Toda la Isla</em>.</h2>
       </div>
-      <p>Explora los servicios de limpieza de <strong>Ilatek</strong> disponibles en los <strong>78 municipios de Puerto Rico</strong> y visita la página de tu pueblo. Atendemos hogares en <strong>{{custom_values.county_name_and_state}}</strong> y toda la isla.</p>
+      <p>Explora los servicios de limpieza de <strong>Ilatek</strong> disponibles en los <strong>78 municipios de Puerto Rico</strong> y visita la página de tu pueblo. Atendemos hogares en <strong>{{custom_values.business__county_name}}</strong> y toda la isla.</p>
     </header>
     <div class="icd-directory">
       <div class="icd-search">
@@ -368,7 +368,7 @@
     var locationLabel=hostTown?hostTown+', '+primaryLocation:(clean(root.getAttribute('data-location-label'))||primaryLocation);
     var website=clean(root.getAttribute('data-website-url'))||'https://ilatekpr.com';
     var values={};
-    values[token('county_name_and_state')]=locationLabel;
+    values[token('business__county_name')]=locationLabel;
     values[token('website_url')]=website;
     values[token('business__email')]=clean(root.getAttribute('data-business-email'));
     values[token('business__phone')]=clean(root.getAttribute('data-business-phone'));
@@ -451,10 +451,10 @@
           <details class="ilc2-faq-item"><summary><h3>¿Qué incluye una limpieza profunda?</h3><span class="ilc2-chevron" aria-hidden="true">▾</span></summary><p>Incluye cocina a fondo (interiores de nevera y horno), baños con juntas y desincrustación, desempolvo alto y bajo en cuartos, muebles y marcos en sala, pisos con tratamiento profundo y detalles como zócalos e interruptores. El alcance exacto queda definido en tu cotización.</p></details>
           <details class="ilc2-faq-item"><summary><h3>¿Cuál es la diferencia entre limpieza profunda y estándar?</h3><span class="ilc2-chevron" aria-hidden="true">▾</span></summary><p>La estándar es el <b>mantenimiento regular</b>: superficies, baños, cocina y pisos. La profunda va más a fondo —interiores de enseres, juntas y acumulación— y se recomienda como primera visita; luego la estándar ($0.07/pie²) mantiene tu hogar al día.</p></details>
           <details class="ilc2-faq-item"><summary><h3>¿Cada cuánto debo limpiar mi casa?</h3><span class="ilc2-chevron" aria-hidden="true">▾</span></summary><p>Depende del ritmo de tu hogar: con niños o mascotas funciona <b>semanal</b>; la mayoría de nuestros clientes elige <b>quincenal</b>; y hogares pequeños o tranquilos, <b>mensual</b>. En la cotización te recomendamos la frecuencia ideal según tu caso.</p></details>
-          <details class="ilc2-faq-item"><summary><h3>¿Cubren mi área en Puerto Rico?</h3><span class="ilc2-chevron" aria-hidden="true">▾</span></summary><p>Sí. Ilatek atiende hogares en los <b>78 municipios de Puerto Rico</b>, incluyendo {{custom_values.county_name_and_state}} — urbanizaciones, condominios y apartamentos. Cotiza tu hogar y confirma tu plan en minutos.</p></details>
+          <details class="ilc2-faq-item"><summary><h3>¿Cubren mi área en Puerto Rico?</h3><span class="ilc2-chevron" aria-hidden="true">▾</span></summary><p>Sí. Ilatek atiende hogares en los <b>78 municipios de Puerto Rico</b>, incluyendo {{custom_values.business__county_name}} — urbanizaciones, condominios y apartamentos. Cotiza tu hogar y confirma tu plan en minutos.</p></details>
           <details class="ilc2-faq-item"><summary><h3>¿Hay contrato o compromiso mínimo?</h3><span class="ilc2-chevron" aria-hidden="true">▾</span></summary><p>Definimos juntos el plan y la frecuencia — sin letra pequeña. Reservas con un depósito de <b>$50 descontable</b> y ajustamos el servicio cuando tu hogar lo necesite.</p></details>
           <details class="ilc2-faq-item"><summary><h3>¿Qué productos y equipos utilizan?</h3><span class="ilc2-chevron" aria-hidden="true">▾</span></summary><p>Llegamos con <b>productos y equipos profesionales de limpieza residencial</b>, seguros para tu familia y tus mascotas. Si prefieres algo específico (eco-amigable, sin fragancia), coordínalo en la cotización.</p></details>
-          <details class="ilc2-faq-item"><summary><h3>¿Por qué elegir Ilatek para la limpieza de tu hogar?</h3><span class="ilc2-chevron" aria-hidden="true">▾</span></summary><p>Precio claro por pie² ($0.15), cotizador con precio real en minutos, equipo puntual y confiable, depósito de $50 descontable y cobertura en los 78 municipios. Tu hogar siempre fresco en {{custom_values.county_name_and_state}}.</p></details>
+          <details class="ilc2-faq-item"><summary><h3>¿Por qué elegir Ilatek para la limpieza de tu hogar?</h3><span class="ilc2-chevron" aria-hidden="true">▾</span></summary><p>Precio claro por pie² ($0.15), cotizador con precio real en minutos, equipo puntual y confiable, depósito de $50 descontable y cobertura en los 78 municipios. Tu hogar siempre fresco en {{custom_values.business__county_name}}.</p></details>
         </div>
         <div class="ilc2-faq-cta ilc2-reveal">
           <p>¿Tu hogar merece el estándar Ilatek?</p>
@@ -472,7 +472,7 @@
     var county=clean(root.getAttribute('data-location-label'))||'Puerto Rico', website=clean(root.dataset.websiteUrl)||'https://ilatekpr.com', fb=clean(root.dataset.facebookUrl)||'https://www.facebook.com/ilatek.pr/', ig=clean(root.dataset.instagramUrl)||'https://www.instagram.com/ilatek.pr/';
     function token(name){return '{'+'{custom_values.'+name+'}'+'}'}
     var values={};
-    values[token('county_name_and_state')]=county;
+    values[token('business__county_name')]=county;
     values[token('website_url')]=website;
     values[token('facebook_url')]=fb;
     values[token('instagram_url')]=ig;
@@ -505,7 +505,7 @@
   <!-- Schema principal: HouseCleaning + WebSite (SEO/GEO) -->
   <script type="application/ld+json">
   {"@context":"https://schema.org","@graph":[
-    {"@type":"HouseCleaning","@id":"{{custom_values.website_url}}/limpieza-profunda/#service","name":"Limpieza Profunda en Puerto Rico | Ilatek","description":"Limpieza profunda de Ilatek en Puerto Rico: renovación área por área del hogar —interiores de enseres, juntas, desengrase y detalles— a $0.15 por pie², con cotizador de precio real en minutos, depósito de $50 descontable y cobertura en los 78 municipios.","url":"{{custom_values.website_url}}/limpieza-profunda","telephone":"{{custom_values.business__phone}}","email":"{{custom_values.business__email}}","image":"https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aac6cd7254a2c54081fa165.png","logo":"https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aa1c05dd953a0128b5348c2.jpg","priceRange":"$$","currenciesAccepted":"USD","paymentAccepted":"Cash, Credit Card, Debit Card","areaServed":[{"@type":"AdministrativeArea","name":"{{custom_values.county_name_and_state}}"},{"@type":"Country","name":"Puerto Rico"}],"availableLanguage":["es"],"sameAs":["{{custom_values.facebook_url}}","{{custom_values.instagram_url}}"],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"08:00","closes":"18:00"}]},
+    {"@type":"HouseCleaning","@id":"{{custom_values.website_url}}/limpieza-profunda/#service","name":"Limpieza Profunda en Puerto Rico | Ilatek","description":"Limpieza profunda de Ilatek en Puerto Rico: renovación área por área del hogar —interiores de enseres, juntas, desengrase y detalles— a $0.15 por pie², con cotizador de precio real en minutos, depósito de $50 descontable y cobertura en los 78 municipios.","url":"{{custom_values.website_url}}/limpieza-profunda","telephone":"{{custom_values.business__phone}}","email":"{{custom_values.business__email}}","image":"https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aac6cd7254a2c54081fa165.png","logo":"https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aa1c05dd953a0128b5348c2.jpg","priceRange":"$$","currenciesAccepted":"USD","paymentAccepted":"Cash, Credit Card, Debit Card","areaServed":[{"@type":"AdministrativeArea","name":"{{custom_values.business__county_name}}"},{"@type":"Country","name":"Puerto Rico"}],"availableLanguage":["es"],"sameAs":["{{custom_values.facebook_url}}","{{custom_values.instagram_url}}"],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"08:00","closes":"18:00"}]},
     {"@type":"WebSite","@id":"{{custom_values.website_url}}/#website","url":"{{custom_values.website_url}}","name":"Ilatek","inLanguage":"es","publisher":{"@id":"{{custom_values.website_url}}/limpieza-profunda/#service"}}
   ]}
   </script>
@@ -517,10 +517,10 @@
     {"@type":"Question","name":"¿Qué incluye una limpieza profunda?","acceptedAnswer":{"@type":"Answer","text":"Incluye cocina a fondo (interiores de nevera y horno), baños con juntas y desincrustación, desempolvo alto y bajo en cuartos, muebles y marcos en sala, pisos con tratamiento profundo y detalles como zócalos e interruptores. El alcance exacto queda definido en tu cotización."}},
     {"@type":"Question","name":"¿Cuál es la diferencia entre limpieza profunda y estándar?","acceptedAnswer":{"@type":"Answer","text":"La estándar es el mantenimiento regular : superficies, baños, cocina y pisos. La profunda va más a fondo —interiores de enseres, juntas y acumulación— y se recomienda como primera visita; luego la estándar ($0.07/pie²) mantiene tu hogar al día."}},
     {"@type":"Question","name":"¿Cada cuánto debo limpiar mi casa?","acceptedAnswer":{"@type":"Answer","text":"Depende del ritmo de tu hogar: con niños o mascotas funciona semanal ; la mayoría de nuestros clientes elige quincenal ; y hogares pequeños o tranquilos, mensual . En la cotización te recomendamos la frecuencia ideal según tu caso."}},
-    {"@type":"Question","name":"¿Cubren mi área en Puerto Rico?","acceptedAnswer":{"@type":"Answer","text":"Sí. Ilatek atiende hogares en los 78 municipios de Puerto Rico , incluyendo {{custom_values.county_name_and_state}} — urbanizaciones, condominios y apartamentos. Cotiza tu hogar y confirma tu plan en minutos."}},
+    {"@type":"Question","name":"¿Cubren mi área en Puerto Rico?","acceptedAnswer":{"@type":"Answer","text":"Sí. Ilatek atiende hogares en los 78 municipios de Puerto Rico , incluyendo {{custom_values.business__county_name}} — urbanizaciones, condominios y apartamentos. Cotiza tu hogar y confirma tu plan en minutos."}},
     {"@type":"Question","name":"¿Hay contrato o compromiso mínimo?","acceptedAnswer":{"@type":"Answer","text":"Definimos juntos el plan y la frecuencia — sin letra pequeña. Reservas con un depósito de $50 descontable y ajustamos el servicio cuando tu hogar lo necesite."}},
     {"@type":"Question","name":"¿Qué productos y equipos utilizan?","acceptedAnswer":{"@type":"Answer","text":"Llegamos con productos y equipos profesionales de limpieza residencial , seguros para tu familia y tus mascotas. Si prefieres algo específico (eco-amigable, sin fragancia), coordínalo en la cotización."}},
-    {"@type":"Question","name":"¿Por qué elegir Ilatek para la limpieza de tu hogar?","acceptedAnswer":{"@type":"Answer","text":"Precio claro por pie² ($0.15), cotizador con precio real en minutos, equipo puntual y confiable, depósito de $50 descontable y cobertura en los 78 municipios. Tu hogar siempre fresco en {{custom_values.county_name_and_state}}."}}
+    {"@type":"Question","name":"¿Por qué elegir Ilatek para la limpieza de tu hogar?","acceptedAnswer":{"@type":"Answer","text":"Precio claro por pie² ($0.15), cotizador con precio real en minutos, equipo puntual y confiable, depósito de $50 descontable y cobertura en los 78 municipios. Tu hogar siempre fresco en {{custom_values.business__county_name}}."}}
   ]}
   </script>
 

@@ -1,5 +1,5 @@
 {
-  "_doc": "Contrato único de custom values de GHL para Ilatek. Los 13 nombres canónicos (lista del owner) y el orden de slots del párrafo puente dv-ghl-values viven SOLO aquí: audit_tokens_global.py, qa_tokenized_headings.mjs y fix_resolver_bridge.py lo leen en vez de retyping.",
+  "_doc": "Contrato único de custom values de GHL para Ilatek. Los 13 nombres canónicos (lista del owner), el orden de slots del párrafo puente dv-ghl-values y los valores de marca viven SOLO aquí: audit_tokens_global.py, qa_tokenized_headings.mjs y fix_resolver_bridge.py lo leen en vez de retyping. El slot pixel_id es el último y opcional: min_slots permite que un párrafo viejo de 6 slots siga resolviendo el resto. brand son los literales con los que el embed se defiende cuando GHL no expande nada (Custom Code): el pueblo igual se lee del <title>, que GHL sí expande.",
   "custom_values": [
     "access_token",
     "business__county_domain",
@@ -17,13 +17,43 @@
   ],
   "bridge": {
     "separator": "|||DV|||",
+    "min_slots": 6,
     "slots": [
       "business__county_name",
       "business__email",
       "business__phone",
       "website_url",
       "facebook_url",
-      "instagram_url"
+      "instagram_url",
+      "pixel_id"
     ]
+  },
+  "brand": {
+    "_doc": "Fallback por custom value, en orden de última instancia. pixel_id es el Meta Pixel que GHL ya enciende en la raíz publicada (fbq('init','2092249571384387')): el embed lo usa cuando el párrafo nativo no trae el suyo, y lo omite si el párrafo trae un id explícitamente inválido.",
+    "business__county_name": "Puerto Rico",
+    "business__email": "info@ilatekpr.com",
+    "business__phone": "787-561-7333",
+    "website_url": "https://ilatekpr.com",
+    "facebook_url": "https://www.facebook.com/ilatek.pr/",
+    "instagram_url": "https://www.instagram.com/ilatek.pr/",
+    "pixel_id": "2092249571384387"
+  },
+  "town_accents": {
+    "_doc": "Subdominio -> nombre con acentos, para cuando el <title> no trae el pueblo. Solo los que el title-case rompería.",
+    "anasco": "Añasco",
+    "bayamon": "Bayamón",
+    "canovanas": "Canóvanas",
+    "catano": "Cataño",
+    "comerio": "Comerío",
+    "guanica": "Guánica",
+    "juana-diaz": "Juana Díaz",
+    "las-marias": "Las Marías",
+    "loiza": "Loíza",
+    "manati": "Manatí",
+    "mayaguez": "Mayagüez",
+    "penuelas": "Peñuelas",
+    "rincon": "Rincón",
+    "san-german": "San Germán",
+    "san-sebastian": "San Sebastián"
   }
 }

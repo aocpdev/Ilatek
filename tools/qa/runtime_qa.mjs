@@ -112,7 +112,8 @@ export default async function run(page, ui) {
   // ---------- Variant C: original.html (clean()-discard fallback) ----------
   currentSeg = 'original';
   await page.goto('http://127.0.0.1:8932/original.html', { waitUntil: 'load', timeout: 45000 });
-  await settle(2500);
+  // Sin párrafo el gate vence a los 2500 ms: se espera el reveal, no antes.
+  await settle(3500);
   const c = {};
   c.scanBody = await page.evaluate(() => {
     const raw = document.body.innerText;
@@ -133,6 +134,133 @@ export default async function run(page, ui) {
   });
   await page.screenshot({ path: './shots/full-original.png', fullPage: false }).catch(() => {});
   out.pages.original = c;
+
+  // ---------- Variant D: late.html (GHL puebla el párrafo después) ----------
+  currentSeg = 'late';
+  await page.goto('http://127.0.0.1:8932/late.html', { waitUntil: 'domcontentloaded', timeout: 45000 });
+  await page.waitForTimeout(250);
+  const d = {};
+  d.beforeArrival = await page.evaluate(() => ({
+    state: document.documentElement.getAttribute('data-ilatek-values'),
+    visibility: document.body ? getComputedStyle(document.body).visibility : 'no-body',
+  }));
+  // El value llega tarde: se inyecta el párrafo nativo y el gate debe resolver.
+  const lateValues = await page.evaluate(() => {
+    const m = document.querySelector('meta[name="ilatek-qa-bridge"]');
+    return m ? m.getAttribute('content') : '';
+  });
+  await page.evaluate((txt) => {
+    const p = document.createElement('p');
+    p.className = 'dv-ghl-values';
+    p.id = 'dv-ghl-values';
+    p.textContent = txt;
+    document.body.appendChild(p);
+  }, lateValues);
+  try {
+    await page.waitForFunction(() => document.documentElement.getAttribute('data-ilatek-values') === 'ready', { timeout: 8000 });
+    d.ready = true;
+  } catch (e) { d.ready = false; }
+  await page.waitForTimeout(500);
+  d.after = await page.evaluate(() => {
+    const txt = document.body.innerText;
+    const q = (window.fbq && window.fbq.queue) || [];
+    return {
+      state: document.documentElement.getAttribute('data-ilatek-values'),
+      source: window.ILATEK_BRIDGE ? window.ILATEK_BRIDGE.source() : '',
+      countyVisible: txt.includes('TestCounty'),
+      rawVisible: (txt.match(/\{\{custom_values/g) || []).length,
+      inits: q.filter((a) => a[0] === 'init').map((a) => a[1]),
+      pageViews: q.filter((a) => a[0] === 'track' && a[1] === 'PageView').length,
+      scripts: document.querySelectorAll('script[src*="fbevents.js"]').length,
+      visibility: document.body ? getComputedStyle(document.body).visibility : 'no-body',
+    };
+  });
+  out.pages.late = d;
+
+  // ---------- Variant E: missing.html (sin párrafo: 'missing' + fallback) ----------
+  currentSeg = 'missing';
+  await page.goto('http://127.0.0.1:8932/missing.html', { waitUntil: 'load', timeout: 45000 });
+  await page.waitForTimeout(1200);
+  out.pages.missing = await page.evaluate(() => {
+    const txt = document.body.innerText;
+    const q = (window.fbq && window.fbq.queue) || [];
+    return {
+      state: document.documentElement.getAttribute('data-ilatek-values'),
+      reason: window.ILATEK_BRIDGE ? window.ILATEK_BRIDGE.reason() : '',
+      visibility: document.body ? getComputedStyle(document.body).visibility : 'no-body',
+      fallbackVisible: txt.includes('Puerto Rico'),
+      rawVisible: (txt.match(/\{\{custom_values/g) || []).length,
+      inits: q.filter((a) => a[0] === 'init').length,
+      pageViews: q.filter((a) => a[0] === 'track' && a[1] === 'PageView').length,
+      scripts: document.querySelectorAll('script[src*="fbevents.js"]').length,
+    };
+  });
+
+  // ---------- Variant F: double.html (6 slots + 7 slots: gana el de 7) ----------
+  currentSeg = 'double';
+  await page.goto('http://127.0.0.1:8932/double.html', { waitUntil: 'load', timeout: 45000 });
+  await page.waitForTimeout(1400);
+  out.pages.double = await page.evaluate(() => {
+    const txt = document.body.innerText;
+    const q = (window.fbq && window.fbq.queue) || [];
+    const hrefs = Array.from(document.querySelectorAll('a[href]')).map((a) => a.getAttribute('href') || '');
+    return {
+      state: document.documentElement.getAttribute('data-ilatek-values'),
+      county: txt.includes('TestCounty'),
+      viejoVisible: txt.includes('PuebloViejo'),
+      sieteHref: hrefs.some((h) => h.includes('https://ilatekpr.com')),
+      viejoHref: hrefs.some((h) => h.includes('viejo.example')),
+      inits: q.filter((a) => a[0] === 'init').map((a) => a[1]),
+      pageViews: q.filter((a) => a[0] === 'track' && a[1] === 'PageView').length,
+      scripts: document.querySelectorAll('script[src*="fbevents.js"]').length,
+    };
+  });
+
+  // ---------- Variant G: badpixel.html (pixel_id no numérico) ----------
+  currentSeg = 'badpixel';
+  await page.goto('http://127.0.0.1:8932/badpixel.html', { waitUntil: 'load', timeout: 45000 });
+  await page.waitForTimeout(1400);
+  out.pages.badpixel = await page.evaluate(() => {
+    const txt = document.body.innerText;
+    const q = (window.fbq && window.fbq.queue) || [];
+    return {
+      state: document.documentElement.getAttribute('data-ilatek-values'),
+      county: txt.includes('TestCounty'),
+      pixelId: window.__ilatekPixel || '',
+      inits: q.filter((a) => a[0] === 'init').length,
+      pageViews: q.filter((a) => a[0] === 'track' && a[1] === 'PageView').length,
+      scripts: document.querySelectorAll('script[src*="fbevents.js"]').length,
+    };
+  });
+
+  const pass = {
+    late: d.beforeArrival.state === 'missing'
+      && d.beforeArrival.visibility === 'visible'
+      && d.ready === true
+      && d.after.state === 'ready'
+      && d.after.countyVisible === true
+      && d.after.rawVisible === 0
+      && d.after.inits.length === 1
+      && d.after.pageViews === 1
+      && d.after.scripts === 1,
+    missing: out.pages.missing.state === 'missing'
+      && out.pages.missing.visibility === 'visible'
+      && out.pages.missing.rawVisible === 0
+      && out.pages.missing.inits === 0
+      && out.pages.missing.scripts === 0,
+    double: out.pages.double.state === 'ready'
+      && out.pages.double.county === true
+      && out.pages.double.viejoHref === false
+      && out.pages.double.inits.length === 1
+      && out.pages.double.pageViews === 1
+      && out.pages.double.scripts === 1,
+    badpixel: out.pages.badpixel.state === 'ready'
+      && out.pages.badpixel.county === true
+      && out.pages.badpixel.inits === 0
+      && out.pages.badpixel.pageViews === 0
+      && out.pages.badpixel.scripts === 0,
+  };
+  out.checks = { ok: Object.values(pass).every(Boolean), pass };
 
   out.done = true;
   out.pageErrors = pageErrors;

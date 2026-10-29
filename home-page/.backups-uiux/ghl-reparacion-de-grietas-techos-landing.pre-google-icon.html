@@ -6,8 +6,8 @@
   Cobertura y Reviews: bloques VERBATIM del home (78 municipios + tabs Google/Selfie).
   Canonical self-referencing /reparacion-de-grietas-techos: ver Ilatek/techos/ghl-techos-head-seo.html (se pega en GHL Tracking Code HEADER).
 -->
-<section id="ilatek-techos-reparacion-de-grietas-techos" aria-label="Ilatek Reparación de grietas {{custom_values.county_name_and_state}}"
-  data-location-label="{{custom_values.county_name_and_state}}"
+<section id="ilatek-techos-reparacion-de-grietas-techos" aria-label="Ilatek Reparación de grietas {{custom_values.business__county_name}}"
+  data-location-label="{{custom_values.business__county_name}}"
   data-business-email="{{custom_values.business__email}}"
   data-business-phone="{{custom_values.business__phone}}"
   data-website-url="{{custom_values.website_url}}"
@@ -276,7 +276,7 @@ html,body{overflow-x:clip}</style>
         <div class="ilt-hero-copy ilt-reveal">
           <span class="ilt-eyebrow">Reparación de grietas</span>
           <h1 class="ilt-display">Reparación de Grietas en Techos de <em>Concreto y Losas</em> en Puerto Rico.</h1>
-          <p class="ilt-hero-sub">Una grieta en la losa es una puerta abierta al agua y al óxido de las varillas. Ilatek sella grietas en techos de concreto de {{custom_values.county_name_and_state}} <b>desde $275</b>, con sellador flexible y garantía escrita.</p>
+          <p class="ilt-hero-sub">Una grieta en la losa es una puerta abierta al agua y al óxido de las varillas. Ilatek sella grietas en techos de concreto de {{custom_values.business__county_name}} <b>desde $275</b>, con sellador flexible y garantía escrita.</p>
           <div class="ilt-hero-actions">
             <a class="ilt-button" href="#ilt-agenda"><span>Solicita tu cotización</span><span aria-hidden="true">↗</span></a>
             <a class="ilt-text-link" href="#ilatek-techos-reparacion-de-grietas-techos-incluye">Qué incluye el servicio ↓</a>
@@ -288,7 +288,7 @@ html,body{overflow-x:clip}</style>
           </div>
         </div>
         <figure class="ilt-hero-card ilt-reveal">
-          <img src="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046fb0edabbe5a4a7647c.webp" onerror="this.onerror=null;this.src='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046fb0edabbe5a4a7647c.jpg'" width="1200" height="1320" loading="eager" decoding="async" fetchpriority="high" alt="Reparación de grietas en techo de concreto en Puerto Rico — sellado de losa en {{custom_values.county_name_and_state}}" title="Reparación de Grietas en Techos · Ilatek Techos">
+          <img src="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046fb0edabbe5a4a7647c.webp" onerror="this.onerror=null;this.src='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046fb0edabbe5a4a7647c.jpg'" width="1200" height="1320" loading="eager" decoding="async" fetchpriority="high" alt="Reparación de grietas en techo de concreto en Puerto Rico — sellado de losa en {{custom_values.business__county_name}}" title="Reparación de Grietas en Techos · Ilatek Techos">
           <span class="ilt-hero-badge"><i></i>Sellado estructural</span>
         </figure>
       </div>
@@ -389,7 +389,7 @@ html,body{overflow-x:clip}</style>
     </section>
     <!-- 6. COBERTURA: sección idéntica al home (78 municipios, verbatim) -->
 <section id="ilatek-cobertura-dir" data-service-slug="reparacion-de-grietas-techos" aria-label="Cobertura de reparación de grietas en techos de Ilatek Techos en Puerto Rico"
-  data-location-label="{{custom_values.county_name_and_state}}"
+  data-location-label="{{custom_values.business__county_name}}"
   data-website-url="{{custom_values.website_url}}"
   data-primary-location="Puerto Rico"
   data-business-email="{{custom_values.business__email}}"
@@ -472,7 +472,7 @@ html,body{overflow-x:clip}</style>
         <span class="icd-eyebrow">Reparación de grietas</span>
         <h2>Cobertura de <em>reparación de grietas</em> en toda la isla.</h2>
       </div>
-      <p>Ilatek Techos brinda reparación de grietas en techos en los <strong>78 municipios de Puerto Rico</strong>. Atendemos tu área en <strong>{{custom_values.county_name_and_state}}</strong> y toda la isla: busca tu pueblo en el directorio y visita su página.</p>
+      <p>Ilatek Techos brinda reparación de grietas en techos en los <strong>78 municipios de Puerto Rico</strong>. Atendemos tu área en <strong>{{custom_values.business__county_name}}</strong> y toda la isla: busca tu pueblo en el directorio y visita su página.</p>
     </header>
     <div class="icd-directory">
       <div class="icd-search">
@@ -519,7 +519,7 @@ html,body{overflow-x:clip}</style>
     /* Slug del servicio (lo estampa el build de techos). Sin él → raíz del subdominio. */
     var serviceSlug=clean(root.getAttribute('data-service-slug'));
     var values={};
-    values[token('county_name_and_state')]=locationLabel;
+    values[token('business__county_name')]=locationLabel;
     values[token('website_url')]=website;
     values[token('business__email')]=clean(root.getAttribute('data-business-email'));
     values[token('business__phone')]=clean(root.getAttribute('data-business-phone'));
@@ -614,7 +614,7 @@ html,body{overflow-x:clip}</style>
           <div class="ilt-cta-copy">
             <span class="ilt-cta-eyebrow">Cotización gratis</span>
             <h2 id="ilt-cta-title" class="ilt-display">Protege tu techo antes de la próxima lluvia.</h2>
-            <p>Solicita tu cotización gratis de reparación de grietas en techos en {{custom_values.county_name_and_state}} y recibe precio claro y por escrito — con inspección incluida y cobertura en los 78 municipios de Puerto Rico.</p>
+            <p>Solicita tu cotización gratis de reparación de grietas en techos en {{custom_values.business__county_name}} y recibe precio claro y por escrito — con inspección incluida y cobertura en los 78 municipios de Puerto Rico.</p>
             <div class="ilt-cta-actions">
               <a class="ilt-button" href="#ilt-agenda"><span>Solicita tu cotización gratis</span><span aria-hidden="true">↗</span></a>
               <small>Respuesta en minutos · Sin compromiso</small>
@@ -634,7 +634,7 @@ html,body{overflow-x:clip}</style>
         <header class="ilt-cal-head ilt-reveal">
           <span class="ilt-eyebrow">Agenda tu inspección</span>
           <h2 id="ilt-cal-title" class="ilt-display">Reserva tu inspección gratis en minutos.</h2>
-          <p>Elige el día y la hora que te convengan. Atendemos {{custom_values.county_name_and_state}} y los 78 municipios de Puerto Rico.</p>
+          <p>Elige el día y la hora que te convengan. Atendemos {{custom_values.business__county_name}} y los 78 municipios de Puerto Rico.</p>
         </header>
         <div class="ilt-cal-box ilt-reveal">
           <div class="ilt-cal-embed">
@@ -656,7 +656,7 @@ html,body{overflow-x:clip}</style>
     function token(name){return '{'+'{custom_values.'+name+'}'+'}'}
     var county=clean(root.getAttribute('data-location-label'))||'Puerto Rico', website=clean(root.dataset.websiteUrl)||'https://ilatekpr.com', phone=clean(root.dataset.businessPhone), email=clean(root.dataset.businessEmail), fb=clean(root.dataset.facebookUrl)||'https://www.facebook.com/ilatek.pr/', ig=clean(root.dataset.instagramUrl)||'https://www.instagram.com/ilatek.pr/';
     var values={};
-    values[token('county_name_and_state')]=county;
+    values[token('business__county_name')]=county;
     values[token('website_url')]=website;
     values[token('business__phone')]=phone;
     values[token('business__email')]=email;
@@ -718,7 +718,7 @@ html,body{overflow-x:clip}</style>
    "areaServed": [
     {
      "@type": "AdministrativeArea",
-     "name": "{{custom_values.county_name_and_state}}"
+     "name": "{{custom_values.business__county_name}}"
     },
     {
      "@type": "Country",
@@ -851,7 +851,7 @@ html,body{overflow-x:clip}</style>
    "areaServed": [
     {
      "@type": "AdministrativeArea",
-     "name": "{{custom_values.county_name_and_state}}"
+     "name": "{{custom_values.business__county_name}}"
     },
     {
      "@type": "Country",

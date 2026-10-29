@@ -1,17 +1,23 @@
 # Runbook: landing multiservicios por location (flujo snapshot)
 
 El HTML (`ghl-home-multiservicios.html`) no se modifica por pueblo. El valor
-del pueblo entra al sitio por **dos canales que GHL SÍ resuelve**, nunca por
+del pueblo entra al sitio por **tres canales que GHL SÍ resuelve**, nunca por
 el HTML pegado:
 
 1. **SEO nativo del panel** (title / meta description con
    `{{custom_values.business__county_name}}` en el campo SEO de la página):
    GHL lo sustituye server-side al servir la página — verificado en vivo en
    juncos.ilatekpr.com 2026-10-27 (`<title>...en Juncos, Puerto Rico</title>`).
-2. **Un Paragraph NATIVO de GHL** (elemento del builder, NO custom code) con
+2. **Los `data-*` del propio HTML** (`data-location-label="Juncos, Puerto Rico"`,
+   `data-website-url`, `data-business-phone`…): en páginas ya servidas GHL los
+   expande al publicar. Medido en `juncos.ilatekpr.com/servicios-techos`
+   (2026-10-28): el markup servido trae el pueblo y el dominio reales.
+3. **Un Paragraph NATIVO de GHL** (elemento del builder, NO custom code) con
    clase `dv-ghl-values` pegado ANTES del Custom Code, cuyo texto es el de
    [CUSTOM-VALUES-PARRAFO.txt](../../documentacion/CUSTOM-VALUES-PARRAFO.txt)
-   (6 tokens unidos por `|||DV|||`). GHL expande esos tokens porque es un
+   (7 tokens unidos por `|||DV|||`; el último es `pixel_id`, el del Meta Pixel).
+   Un párrafo viejo de 6 slots sigue resolviendo pueblo/contacto, y el pixel
+   cae al de marca. GHL expande esos tokens porque es un
    elemento nativo de página; el runtime los lee, los propaga a TODO el DOM
    (textos, teléfonos, hrefs, redes, alt/aria) y oculta ese párrafo.
 
@@ -23,7 +29,7 @@ visible tras runtime).
 
 ---
 
-## 1. Los 6 Custom Values (crear en el location MASTER)
+## 1. Los 7 Custom Values (crear en el location MASTER)
 
 Settings del location → **Custom Values** → crear con estos nombres EXACTOS
 (minúsculas, con los dos guiones donde corre):
@@ -36,6 +42,7 @@ Settings del location → **Custom Values** → crear con estos nombres EXACTOS
 | `website_url` | `juncos.ilatekpr.com` (sin `https://`) | Todos los hrefs internos |
 | `facebook_url` | URL completa de Facebook | Redes del footer |
 | `instagram_url` | URL completa de Instagram | Redes del footer |
+| `pixel_id` | id numérico de Meta (15-16 dígitos) | Meta Pixel del puente: un `init` + un `PageView` por carga |
 
 ⚠️ **`website_url` sin esquema**: el HTML construye `https://` + valor;
 con `https://` adentro salen CTAs con doble esquema.
@@ -50,14 +57,53 @@ viejo a propósito.
 mal escrito → token crudo; el canvas del builder SIEMPRE muestra tokens
 crudos; la prueba real es la página publicada (paso 5).
 
-## 2. Cada página del location (home + 47 landings) lleva 2 piezas
+⚠️ El pueblo en duro ya no existe en titulares: `fix_resolver_bridge.py` lo
+convierte al custom value (y salta el texto legal, donde «en Puerto Rico» es
+jurisdicción). El JSON-LD todavía lleva el literal: es la siguiente pasada.
+
+## 2. Cada página del location (home + 47 landings)
 
 1. **Custom Code** con el HTML completo (solo cambio por página: su HTML).
-2. **Paragraph nativo** ANTES del Custom Code:
+   Con eso la página ya funciona: el pueblo sale del `<title>`/`data-*` y, si
+   ahí no está, del subdominio (`juncos.ilatekpr.com` → Juncos).
+   Los titulares de las secciones (tarjetas `ilcg-`/`ilcm-`, mega-menú, FAQ)
+   ya **no** llevan el pueblo escrito: traen
+   `{{custom_values.business__county_name}}` y lo resuelve el mismo puente que
+   el H1. Si ves «… en Puerto Rico» en una sección, ese bloque es un pegado
+   viejo de GHL: reemplazalo por el archivo del repo y republicá.
+2. **Paragraph nativo** (opcional, recomendado) ANTES del Custom Code:
    - texto exacto de [CUSTOM-VALUES-PARRAFO.txt](../../documentacion/CUSTOM-VALUES-PARRAFO.txt)
    - clase CSS del párrafo: `dv-ghl-values`
    - sin otros estilos; el runtime lo oculta solo.
-   Sin este párrafo el body queda en fallback ("Puerto Rico").
+   Solo aporta lo que ningún otro canal trae: un `pixel_id` propio del location
+   y valores de contacto distintos del set de marca.
+
+## 2.b El portador del embed (y por qué no basta)
+
+El fixer deja, justo después del helper, un párrafo oculto con los 7 tokens
+(`<p class="dv-ghl-values" id="dv-ghl-values" hidden>`). Se oculta siempre
+por CSS y nunca es contenido: es el portador que viaja con el embed.
+
+**GHL no expande tokens dentro del Custom Code.** Verificado en vivo
+(ilatekpr.com, oct 2026): el markup servido tiene 69 tokens crudos en texto y
+399 en atributos, y cero valores reales. Por eso el portador del embed no
+puebla por sí solo: es una red de seguridad para cuando pegues el Paragraph
+nativo (sección 2).
+
+El embed se defiende solo, sin gate y sin ocultar nada. Precedencia del bridge:
+
+1. párrafo nativo / `data-*` expandidos (valores reales completos);
+2. `<title>` / `og:description` — el pueblo que GHL expande del mismo custom
+   value (`… en Juncos, Puerto Rico`);
+3. subdominio del sitio (con acentos desde `custom-values.json`);
+4. `brand` del contrato: email, teléfono, dominio, redes y **pixel_id**
+   (`2092249571384387`, el que GHL ya enciende en la raíz).
+
+El píxel se decide con la página ya cargada y reutiliza el `fbq` de GHL cuando
+existe: nunca duplica `fbevents.js`, `init` ni `PageView`. Si el párrafo trae
+un `pixel_id` explícitamente inválido, no se carga Meta. El estado queda en
+`<html data-ilatek-values="ready|missing">`, y si el párrafo llega después de
+pintar, el bridge restaura y vuelve a resolver.
 
 ## 3. Snapshot
 
@@ -89,7 +135,9 @@ curl -s https://pueblo.ilatekpr.com/home | grep -m1 'dv-ghl-values'
 ```
 
 Fallback en vivo: si falta el value, la página muestra "Puerto Rico" y no
-token crudo — el sitio nunca se ve roto.
+token crudo — el sitio nunca se ve roto. En el navegador, `ILATEK_BRIDGE.state()`
+debe dar `ready` y `ILATEK_BRIDGE.county()` el pueblo; `source()` dice de dónde
+salió (`parrafo`, `meta`, `host`, `data`).
 
 ## 6. Mantenimiento del set
 
@@ -109,7 +157,7 @@ estado anterior, donde las landings verdes traían el pueblo literalizado).
 | `node scripts/run_runtime_qa.mjs` | QA local del runtime (Playwright en `scripts/.qaenv`): copia tokenizada + variantes bridge/resolver; exige 0 tokens crudos visibles, secciones pobladas con el value, href resuelto y 0 errores JS → `shots/qa-result4.json`. GREEN antes de tocar GHL. |
 | `python scripts/fix_resolver_bridge.py [–check]` | (idempotente; 47 canónicos). Inserta helper `ILATEK_BRIDGE` al inicio del fragmento y parchea TODOS los resolvers (iltro A, secciones B1/B2/B3, nav C, footer D) para que resuelvan tokens crudos de data-* contra los slots del puente (literal gana; 'Puerto Rico' solo sin puente; alias propio por statement → 0 errores). `node scripts/qa_tokenized_headings.mjs` = contrato producción bridge-only: 3 casos detallados con variantes de puente (sellado-de-techos ok/ausente/malformado, techos-de-zinc ok/ausente, techos ok/ausente — techos y zinc prueban el h2 POSITIVO; el h2 estático de sellado reporta SKIP) + **barrido de los 47 canónicos publicables** en ok-bridge: cada titular tokenizado (h1/h2/h3) resuelve TestCounty y 0 tokens crudos visibles. |
 | `python scripts/ghl_paste_map.py [dominio]` | Mapea 60/60 URLs del sitemap del pueblo a su archivo canónico (`Ilatek/servicios|categorias/<slug>/es/landing-pages/...`); marca NATIVA-GHL (páginas del builder) y clones con sufijo. |
-| `python scripts/verify_value_driven.py [dominio] --pueblo <Pueblo>` | Barrido live del sitemap (60 URLs): para páginas con Custom Code exige puente `dv-ghl-values` EXPANDIDO por GHL (6 slots, 0 `{{}}`), `<title>` con el pueblo y **cero literales del pueblo fuera de title/meta/puente**; para NATIVA-GHL exige 0 crudos + title expandido. Exit 2 si alguna falla. JSON en `shots/verify-value-driven.json`. |
+| `python tools/qa/verify_value_driven.py [dominio] --pueblo <Pueblo>` | Barrido live del sitemap: para páginas con Custom Code exige puente `dv-ghl-values` EXPANDIDO por GHL con al menos `min_slots` slots del contrato (6 o 7), `<title>` con el pueblo, **cero literales del pueblo fuera de title/meta/puente** y, en Chromium sobre la URL servida, el Meta Pixel encendido (`fbq('init')` con el id del slot, un `PageView`, un `fbevents.js`, sin tokens crudos visibles). Para NATIVA-GHL exige 0 crudos + title expandido (`pixel=n/a`). Exit 2 si alguna falla o si no hay render. JSON en `shots/verify-value-driven.json`. |
 
 ### Flujo de repaste (landings hoy literalizadas → value-driven)
 

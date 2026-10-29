@@ -331,7 +331,7 @@
     function resolve(text){
       var cel=document.querySelector('[data-location-label]');
       if(cel){var cv=clean(cel.getAttribute('data-location-label'));if(cv)county=cv}
-      return String(text||'').split(token('county_name_and_state')).join(county).split(token('website_url')).join(website)
+      return String(text||'').split(token('business__county_name')).join(county).split(token('website_url')).join(website)
     }
     var btn=root.querySelector('.iln-lang');
     var wrap=btn?btn.parentElement:null;

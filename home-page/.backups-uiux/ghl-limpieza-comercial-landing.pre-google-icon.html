@@ -6,8 +6,8 @@
   Facts: precio por cotizacion (comercial) · deposito $50 · 78 municipios · Lun-Sab 8-6.
   Imagenes: las 2 fotos de oficinas ya son las definitivas (filesafe).
 -->
-<section id="ilatek-limpieza-comercial" aria-label="Ilatek Limpieza Comercial {{custom_values.county_name_and_state}}"
-  data-location-label="{{custom_values.county_name_and_state}}"
+<section id="ilatek-limpieza-comercial" aria-label="Ilatek Limpieza Comercial {{custom_values.business__county_name}}"
+  data-location-label="{{custom_values.business__county_name}}"
   data-business-email="{{custom_values.business__email}}"
   data-business-phone="{{custom_values.business__phone}}"
   data-website-url="{{custom_values.website_url}}"
@@ -117,7 +117,7 @@
         <div class="ilc2-hero-copy ilc2-reveal">
           <span class="ilc2-eyebrow">Limpieza comercial</span>
           <h1 class="ilc2-display">Limpieza Comercial en <em>Puerto Rico</em> que trabaja fuera de tu horario.</h1>
-          <p class="ilc2-hero-sub">Ilatek limpia oficinas, comercios y espacios de trabajo en {{custom_values.county_name_and_state}} con un plan que se ajusta a tu operación: antes de abrir, después de cerrar o en tu frecuencia ideal. Cotiza en minutos y reserva con $50.</p>
+          <p class="ilc2-hero-sub">Ilatek limpia oficinas, comercios y espacios de trabajo en {{custom_values.business__county_name}} con un plan que se ajusta a tu operación: antes de abrir, después de cerrar o en tu frecuencia ideal. Cotiza en minutos y reserva con $50.</p>
           <div class="ilc2-hero-actions">
             <a class="ilc2-button" href="{{custom_values.website_url}}/cotizacion"><span>Solicita tu cotización</span><span aria-hidden="true">↗</span></a>
             <a class="ilc2-text-link" href="#ilatek-comercial-incluye">Qué incluye el servicio ↓</a>
@@ -132,7 +132,7 @@
           <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_900/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab3255f7c231bdb64f77278.png"
             onerror="this.onerror=null;this.src='https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab0c2d44091fa65e6a436d3.png'"
             width="1671" height="941" loading="eager" decoding="async" fetchpriority="high"
-            alt="Equipo de Ilatek limpiando una oficina en Puerto Rico — limpieza comercial de espacios de trabajo en {{custom_values.county_name_and_state}}"
+            alt="Equipo de Ilatek limpiando una oficina en Puerto Rico — limpieza comercial de espacios de trabajo en {{custom_values.business__county_name}}"
             title="Limpieza Comercial en Puerto Rico · Ilatek">
         </figure>
       </div>
@@ -156,7 +156,7 @@
           <article class="ilc2-ben ilc2-reveal">
             <i class="ilc2-ben-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M20 6 9 17l-5-5"/></svg></i>
             <h3>Equipo confiable</h3>
-            <p>Personal profesional y supervisado que llega con todos los productos y equipos. El mismo estándar en cada visita en {{custom_values.county_name_and_state}}.</p>
+            <p>Personal profesional y supervisado que llega con todos los productos y equipos. El mismo estándar en cada visita en {{custom_values.business__county_name}}.</p>
           </article>
         </div>
       </div>
@@ -185,7 +185,7 @@
           <!-- Imagen: tecnica Ilatek en oficina (filesafe) -->
           <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_900/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab3255f7c231bdb64f77278.png"
             width="1000" height="750" loading="lazy" decoding="async"
-            alt="Detalles de limpieza comercial de Ilatek en Puerto Rico — desinfección de áreas de trabajo en {{custom_values.county_name_and_state}}"
+            alt="Detalles de limpieza comercial de Ilatek en Puerto Rico — desinfección de áreas de trabajo en {{custom_values.business__county_name}}"
             title="Limpieza de Oficinas en Puerto Rico · Ilatek">
           <figcaption>Productos profesionales · seguros para tu equipo</figcaption>
         </figure>
@@ -242,7 +242,7 @@
 
     <!-- 6. COBERTURA: seccion identica al home (78 municipios) -->
     <section id="ilatek-cobertura-dir" aria-label="Cobertura de limpieza de Ilatek en Puerto Rico"
-  data-location-label="{{custom_values.county_name_and_state}}"
+  data-location-label="{{custom_values.business__county_name}}"
   data-website-url="{{custom_values.website_url}}"
   data-primary-location="Puerto Rico"
   data-business-email="{{custom_values.business__email}}"
@@ -322,7 +322,7 @@
         <span class="icd-eyebrow">Cobertura local</span>
         <h2>Limpieza impecable, <em>Cobertura en Toda la Isla</em>.</h2>
       </div>
-      <p>Explora los servicios de limpieza de <strong>Ilatek</strong> disponibles en los <strong>78 municipios de Puerto Rico</strong> y visita la página de tu pueblo. Atendemos hogares en <strong>{{custom_values.county_name_and_state}}</strong> y toda la isla.</p>
+      <p>Explora los servicios de limpieza de <strong>Ilatek</strong> disponibles en los <strong>78 municipios de Puerto Rico</strong> y visita la página de tu pueblo. Atendemos hogares en <strong>{{custom_values.business__county_name}}</strong> y toda la isla.</p>
     </header>
     <div class="icd-directory">
       <div class="icd-search">
@@ -367,7 +367,7 @@
     var locationLabel=hostTown?hostTown+', '+primaryLocation:(clean(root.getAttribute('data-location-label'))||primaryLocation);
     var website=clean(root.getAttribute('data-website-url'))||'https://ilatekpr.com';
     var values={};
-    values[token('county_name_and_state')]=locationLabel;
+    values[token('business__county_name')]=locationLabel;
     values[token('website_url')]=website;
     values[token('business__email')]=clean(root.getAttribute('data-business-email'));
     values[token('business__phone')]=clean(root.getAttribute('data-business-phone'));
@@ -450,10 +450,10 @@
           <details class="ilc2-faq-item"><summary><h3>¿Qué incluye una limpieza de oficina?</h3><span class="ilc2-chevron" aria-hidden="true">▾</span></summary><p>Incluye áreas de trabajo (escritorios y superficies), desinfección de baños y reabasto, áreas comunes y recepción, pisos según superficie y cristales de acceso al cliente. El alcance exacto queda definido en tu cotización.</p></details>
           <details class="ilc2-faq-item"><summary><h3>¿Pueden limpiar fuera del horario de mi negocio?</h3><span class="ilc2-chevron" aria-hidden="true">▾</span></summary><p>Sí — es lo más común. Trabajamos <b>antes de abrir o después de cerrar</b> y coordinamos el acceso contigo. Tus operaciones nunca se detienen: tus clientes solo ven el resultado.</p></details>
           <details class="ilc2-faq-item"><summary><h3>¿Cada cuánto deben limpiar mi local?</h3><span class="ilc2-chevron" aria-hidden="true">▾</span></summary><p>Depende del tráfico: locales con clientes diarios piden limpieza <b>entre semana</b>; la mayoría de oficinas funciona perfecto con <b>2–3 veces por semana</b>; espacios pequeños con <b>semanal o quincenal</b>. En la cotización te recomendamos la frecuencia según tu operación.</p></details>
-          <details class="ilc2-faq-item"><summary><h3>¿Cubren mi área en Puerto Rico?</h3><span class="ilc2-chevron" aria-hidden="true">▾</span></summary><p>Sí. Ilatek atiende negocios en los <b>78 municipios de Puerto Rico</b>, incluyendo {{custom_values.county_name_and_state}} y el área metropolitana. Cotiza tu espacio y confirma tu plan en minutos.</p></details>
+          <details class="ilc2-faq-item"><summary><h3>¿Cubren mi área en Puerto Rico?</h3><span class="ilc2-chevron" aria-hidden="true">▾</span></summary><p>Sí. Ilatek atiende negocios en los <b>78 municipios de Puerto Rico</b>, incluyendo {{custom_values.business__county_name}} y el área metropolitana. Cotiza tu espacio y confirma tu plan en minutos.</p></details>
           <details class="ilc2-faq-item"><summary><h3>¿Hay contrato o compromiso mínimo?</h3><span class="ilc2-chevron" aria-hidden="true">▾</span></summary><p>Definimos juntos el plan y la frecuencia — sin letra pequeña. Reservas con un depósito de <b>$50 descontable</b> y ajustamos el servicio cuando tu operación lo necesite.</p></details>
           <details class="ilc2-faq-item"><summary><h3>¿Traen sus propios productos y equipos?</h3><span class="ilc2-chevron" aria-hidden="true">▾</span></summary><p>Sí. El equipo llega con <b>todos los productos y equipos profesionales</b>, seguros para tu personal y tus clientes. Si tu espacio requiere algo específico (grado hospitalario, eco-amigable), coordínalo en la cotización.</p></details>
-          <details class="ilc2-faq-item"><summary><h3>¿Por qué elegir Ilatek para la limpieza de mi negocio?</h3><span class="ilc2-chevron" aria-hidden="true">▾</span></summary><p>Horario flexible que no interrumpe tu operación, precio claro por escrito, cobertura en los 78 municipios y un equipo profesional supervisado. Tu negocio siempre presentable en {{custom_values.county_name_and_state}}.</p></details>
+          <details class="ilc2-faq-item"><summary><h3>¿Por qué elegir Ilatek para la limpieza de mi negocio?</h3><span class="ilc2-chevron" aria-hidden="true">▾</span></summary><p>Horario flexible que no interrumpe tu operación, precio claro por escrito, cobertura en los 78 municipios y un equipo profesional supervisado. Tu negocio siempre presentable en {{custom_values.business__county_name}}.</p></details>
         </div>
         <div class="ilc2-faq-cta ilc2-reveal">
           <p>¿Tu negocio merece el estándar Ilatek?</p>
@@ -471,7 +471,7 @@
     var county=clean(root.getAttribute('data-location-label'))||'Puerto Rico', website=clean(root.dataset.websiteUrl)||'https://ilatekpr.com', fb=clean(root.dataset.facebookUrl)||'https://www.facebook.com/ilatek.pr/', ig=clean(root.dataset.instagramUrl)||'https://www.instagram.com/ilatek.pr/';
     function token(name){return '{'+'{custom_values.'+name+'}'+'}'}
     var values={};
-    values[token('county_name_and_state')]=county;
+    values[token('business__county_name')]=county;
     values[token('website_url')]=website;
     values[token('facebook_url')]=fb;
     values[token('instagram_url')]=ig;
@@ -504,7 +504,7 @@
   <!-- Schema principal: HouseCleaning + WebSite (SEO/GEO) -->
   <script type="application/ld+json">
   {"@context":"https://schema.org","@graph":[
-    {"@type":"HouseCleaning","@id":"{{custom_values.website_url}}/limpieza-comercial/#service","name":"Limpieza Comercial en Puerto Rico | Ilatek","description":"Limpieza comercial de Ilatek en Puerto Rico: oficinas, tiendas y espacios profesionales con horario flexible (antes de abrir o después de cerrar), precio claro por cotización y cobertura en los 78 municipios.","url":"{{custom_values.website_url}}/limpieza-comercial","telephone":"{{custom_values.business__phone}}","email":"{{custom_values.business__email}}","image":"https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab0c2d44091fa65e6a436d3.png","logo":"https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aa1c05dd953a0128b5348c2.jpg","priceRange":"$$","currenciesAccepted":"USD","paymentAccepted":"Cash, Credit Card, Debit Card","areaServed":[{"@type":"AdministrativeArea","name":"{{custom_values.county_name_and_state}}"},{"@type":"Country","name":"Puerto Rico"}],"availableLanguage":["es"],"sameAs":["{{custom_values.facebook_url}}","{{custom_values.instagram_url}}"],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"08:00","closes":"18:00"}]},
+    {"@type":"HouseCleaning","@id":"{{custom_values.website_url}}/limpieza-comercial/#service","name":"Limpieza Comercial en Puerto Rico | Ilatek","description":"Limpieza comercial de Ilatek en Puerto Rico: oficinas, tiendas y espacios profesionales con horario flexible (antes de abrir o después de cerrar), precio claro por cotización y cobertura en los 78 municipios.","url":"{{custom_values.website_url}}/limpieza-comercial","telephone":"{{custom_values.business__phone}}","email":"{{custom_values.business__email}}","image":"https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab0c2d44091fa65e6a436d3.png","logo":"https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aa1c05dd953a0128b5348c2.jpg","priceRange":"$$","currenciesAccepted":"USD","paymentAccepted":"Cash, Credit Card, Debit Card","areaServed":[{"@type":"AdministrativeArea","name":"{{custom_values.business__county_name}}"},{"@type":"Country","name":"Puerto Rico"}],"availableLanguage":["es"],"sameAs":["{{custom_values.facebook_url}}","{{custom_values.instagram_url}}"],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"08:00","closes":"18:00"}]},
     {"@type":"WebSite","@id":"{{custom_values.website_url}}/#website","url":"{{custom_values.website_url}}","name":"Ilatek","inLanguage":"es","publisher":{"@id":"{{custom_values.website_url}}/limpieza-comercial/#service"}}
   ]}
   </script>
@@ -516,10 +516,10 @@
     {"@type":"Question","name":"¿Qué incluye una limpieza de oficina?","acceptedAnswer":{"@type":"Answer","text":"Incluye áreas de trabajo (escritorios y superficies), desinfección de baños y reabasto, áreas comunes y recepción, pisos según superficie y cristales de acceso al cliente. El alcance exacto queda definido en tu cotización."}},
     {"@type":"Question","name":"¿Pueden limpiar fuera del horario de mi negocio?","acceptedAnswer":{"@type":"Answer","text":"Sí — es lo más común. Trabajamos antes de abrir o después de cerrar y coordinamos el acceso contigo. Tus operaciones nunca se detienen: tus clientes solo ven el resultado."}},
     {"@type":"Question","name":"¿Cada cuánto deben limpiar mi local?","acceptedAnswer":{"@type":"Answer","text":"Depende del tráfico: locales con clientes diarios piden limpieza entre semana ; la mayoría de oficinas funciona perfecto con 2–3 veces por semana ; espacios pequeños con semanal o quincenal . En la cotización te recomendamos la frecuencia según tu operación."}},
-    {"@type":"Question","name":"¿Cubren mi área en Puerto Rico?","acceptedAnswer":{"@type":"Answer","text":"Sí. Ilatek atiende negocios en los 78 municipios de Puerto Rico , incluyendo {{custom_values.county_name_and_state}} y el área metropolitana. Cotiza tu espacio y confirma tu plan en minutos."}},
+    {"@type":"Question","name":"¿Cubren mi área en Puerto Rico?","acceptedAnswer":{"@type":"Answer","text":"Sí. Ilatek atiende negocios en los 78 municipios de Puerto Rico , incluyendo {{custom_values.business__county_name}} y el área metropolitana. Cotiza tu espacio y confirma tu plan en minutos."}},
     {"@type":"Question","name":"¿Hay contrato o compromiso mínimo?","acceptedAnswer":{"@type":"Answer","text":"Definimos juntos el plan y la frecuencia — sin letra pequeña. Reservas con un depósito de $50 descontable y ajustamos el servicio cuando tu operación lo necesite."}},
     {"@type":"Question","name":"¿Traen sus propios productos y equipos?","acceptedAnswer":{"@type":"Answer","text":"Sí. El equipo llega con todos los productos y equipos profesionales , seguros para tu personal y tus clientes. Si tu espacio requiere algo específico (grado hospitalario, eco-amigable), coordínalo en la cotización."}},
-    {"@type":"Question","name":"¿Por qué elegir Ilatek para la limpieza de mi negocio?","acceptedAnswer":{"@type":"Answer","text":"Horario flexible que no interrumpe tu operación, precio claro por escrito, cobertura en los 78 municipios y un equipo profesional supervisado. Tu negocio siempre presentable en {{custom_values.county_name_and_state}}."}}
+    {"@type":"Question","name":"¿Por qué elegir Ilatek para la limpieza de mi negocio?","acceptedAnswer":{"@type":"Answer","text":"Horario flexible que no interrumpe tu operación, precio claro por escrito, cobertura en los 78 municipios y un equipo profesional supervisado. Tu negocio siempre presentable en {{custom_values.business__county_name}}."}}
   ]}
   </script>
 
