@@ -2,5 +2,6 @@
 data/_municipios-osm.json
 data/_osm-lugares-pr.json
 data/_nominatim-cache.json
+data/ghl/
 __pycache__/
 .tmp/

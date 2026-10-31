@@ -1,6 +1,6 @@
 # Ledger de progreso · Master Prompt comunidades PR
 
-Última actualización: 2026-10-22 (sesión 7)
+Última actualización: 2026-10-31 (sesión 8)
 
 ## Estado
 
@@ -236,12 +236,31 @@ Método: cada municipio pasa por 4 estados → `pendiente` → `en-progreso` →
   todos los orígenes) y ya **no está en el repo**. El mapa usa **MapLibre GL + OpenFreeMap**,
   sin credenciales en el cliente.
 - ✅ RESUELTO: investigación de los 78 municipios (sesión 6 cierra la región Central).
-- Regla de rutas `/municipio/comunidad` en GHL: hay que definir en la cuenta cómo
-  GHL sirve subdirectorios anidados (folders + domain routing) antes de publicar
-  páginas. En el repo los HTML ya están generados con slugs.
+- ✅ RESUELTO (sesión 8): GHL soporta rutas anidadas (hasta 5 niveles). La regla
+  queda en un funnel por comunidad con dos páginas hermanas:
+  `/<municipio>/<comunidad>/sellado-de-techo` y `/<municipio>/<comunidad>/limpieza`.
+  Ver [documentacion/COMUNIDADES-FUNNELS-GHL.md](../documentacion/COMUNIDADES-FUNNELS-GHL.md).
 - Tercera pasada de verificación para los 8 registros NOT APPLICABLE (7 LOW +
   Canóvanas/River Valley): requieren una fuente pública real; si no aparece,
   se descartan de la base.
-- Tier 2 · HIGH (86 comunidades): generar landings cuando se autorice publicar.
-- Tier 3 · MEDIUM (402 comunidades): solo tiene sentido si el modelo de negocio
-  incluye volumen (vivienda pública de AVP y urbanizaciones de precio bajo).
+- Tier 2 · HIGH (86) y Tier 3 · MEDIUM (402): las landings ya están generadas
+  (556 comunidades × 2 páginas). Falta el alta de sus funnels en GHL.
+
+## Sesión 8 (2026-10-31): funnels por comunidad
+
+- Adaptador `scripts/preparar-funnel-ghl.mjs`: convierte las dos landings de una
+  comunidad en payloads de páginas GHL, incrusta `styles.css`, reescribe los
+  assets a la Media Library y emite el ledger `data/ghl/index.json`.
+- Verificador `scripts/verificar-funnel-ghl.mjs`: estructura, canonical, JSON-LD,
+  rutas relativas, tokens y enlaces.
+- Piloto **Isla Verde (Carolina) PUBLICADO y verificado**:
+  `/carolina/isla-verde/sellado-de-techo` (A) y `/carolina/isla-verde/limpieza`
+  (B), con favicon, GTM/GA4/Meta Pixel, chat widget Ilatek, SEO y screenshot
+  1200×630 sin scrollbar como imagen social.
+- Barrido de las 1.112 landings: UTF-8 válido, sin mojibake (el único carácter
+  no-ASCII fuera de acentos es `©` del footer).
+- La API pública v2 **no crea funnels ni páginas**: el alta es por UI. El path
+  que manda es `Pages → ⋯ → Edit → URL Path/Slug`, no el path del step.
+- Pasos exactos del lote en
+  [documentacion/COMUNIDADES-FUNNELS-GHL.md](../documentacion/COMUNIDADES-FUNNELS-GHL.md).
+

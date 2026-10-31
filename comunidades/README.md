@@ -39,14 +39,14 @@ Landing Page Generation" (en `C:\Users\Omele\Downloads\research comunidades ilat
 7. Registrar el gap de investigación con transparencia.
 8. Landings solo cuando la comunidad es verificable, el servicio es relevante y la
    página aportaría información local genuina.
-9. Jerarquía por defecto: Municipio → Comunidad → Servicio. Para este proyecto queda
-   fija como `<municipio>/<comunidad>` **dentro del subdominio `comunidades.ilatekpr.com`**:
-   la URL canónica de la comunidad es la de su página, y sus dos páginas de
-   servicio cuelgan de ella (`/<municipio>/<comunidad>/sellado-de-techos` y
-   `.../limpieza`).
-10. El subdominio se publica como **HTML estático**: ahí no hay GHL que resuelva
-    tokens, así que las landings de comunidad **no llevan** `{{custom_values.*}}`
-    ni `data-ilatek-path`; su URL es literal y los enlaces a servicios y
+9. Jerarquía fija: Municipio → Comunidad → Servicio, **dentro del subdominio
+   `comunidades.ilatekpr.com`**: `/<municipio>/<comunidad>/sellado-de-techo` y
+   `/<municipio>/<comunidad>/limpieza`. No hay hub de comunidad: cada landing
+   cubre un solo servicio y ambas son entrada directa.
+10. El subdominio se publica con **un funnel de GHL por comunidad** y dos páginas
+    hermanas (una por servicio), inyectando el HTML generado en un bloque de
+    código. Las landings **no llevan** `{{custom_values.*}}` ni
+    `data-ilatek-path`; su URL es literal y los enlaces a servicios y
     formularios usan la URL absoluta del dominio principal (`https://ilatekpr.com`),
     que es otro host. Las páginas del sitio principal siguen con el contrato de
     tokens de GHL (`tools/internal-link-contract.mjs`).
@@ -75,16 +75,18 @@ Landing Page Generation" (en `C:\Users\Omele\Downloads\research comunidades ilat
 
 ## Publicación en el subdominio
 
-- Las landings de comunidad se publican como **HTML estático** en
-  `https://comunidades.ilatekpr.com/<municipio>/<comunidad>/`, de forma que
-  `index.html` quede en `/<municipio>/<comunidad>` y sus dos páginas de servicio en
-  `/<municipio>/<comunidad>/sellado-de-techos` y `/<municipio>/<comunidad>/limpieza`.
+- Un **funnel de GHL por comunidad** con dos páginas hermanas:
+  `/<municipio>/<comunidad>/sellado-de-techo` y `/<municipio>/<comunidad>/limpieza`.
+  No hay página hub en `/<municipio>/<comunidad>`: la raíz redirige 301 a techos.
+- El contenido sale de `landings/<municipio>/<comunidad>/<servicio>/index.html` y se
+  inyecta en GHL con `scripts/preparar-funnel-ghl.mjs`; los assets se suben a la
+  Media Library y se referencian por URL absoluta.
 - Ese host es otro dominio: por eso las landings **no** llevan `{{custom_values.*}}` ni
   `data-ilatek-path` y enlazan al dominio principal con URL absoluta
   (`https://ilatekpr.com`). El contrato de tokens de GHL
   (`tools/internal-link-contract.mjs`) solo aplica a las páginas del sitio principal.
-- **Pendiente de autorización**: subir `landings/<municipio>/<comunidad>/` al subdominio.
-  Hasta entonces la sección del mapa del Home ya apunta a esas rutas.
+- El alta, la verificación y el lote están en
+  [documentacion/COMUNIDADES-FUNNELS-GHL.md](../documentacion/COMUNIDADES-FUNNELS-GHL.md).
 
 ## Pipeline de coordenadas
 
@@ -111,7 +113,7 @@ y la caché de Nominatim son **intermedios regenerables**: no se versionan.
 ## Pipeline
 
 ```bash
-node scripts/generar-landings-luxury.mjs   # 3 HTML por comunidad LUXURY (hub + 2 servicios)
+node scripts/generar-landings.mjs          # 2 HTML por comunidad (techos + limpieza)
 python scripts/consolidar.py                 # research/<region>/*.json -> base maestra + cobertura
 python scripts/qc-pass.py                    # QC de los HTML + inventory/roadmap/qc-report
 python scripts/geocodificar-nominatim.py     # punto de los 78 municipios (Wikipedia)
@@ -135,12 +137,16 @@ de verificación sobre los registros UNVERIFIED/LOW.
 - [x] cobertura-report.md
 - [x] landing-inventory.md
 - [x] roadmap.md
-- [x] qc-report.md — 204 archivos, 0 hallazgos
+- [x] qc-report.md
 - [x] mapa/mapa-regiones.html — verificado en navegador con MapLibre + OpenFreeMap (sin token)
-- [x] landings de comunidad en el subdominio propio (204 HTML: hub + 2 servicios × 68 comunidades)
+- [x] landings de comunidad (**1.112 HTML: 2 servicios × 556 comunidades**)
 - [x] data/mapa-comunidades.json + sección del mapa de comunidades integrada en el Home
 - [x] token revocado de Mapbox fuera del repo (migración a MapLibre + OpenFreeMap)
+- [x] adaptador de landings a páginas GHL y verificador
+- [x] funnel piloto de Isla Verde **publicado**: `/carolina/isla-verde/sellado-de-techo`
+      y `/carolina/isla-verde/limpieza`, con favicon, tracking (GTM/GA4/Meta
+      Pixel), chat widget Ilatek y SEO con screenshot 1200×630 como imagen social.
+- [ ] lote de funnels por comunidad (LUXURY → HIGH → MEDIUM).
 
-Pendiente de autorización: publicar el subdominio `comunidades.ilatekpr.com` (subir
-`landings/<municipio>/<comunidad>/` de forma que `index.html` quede en
-`/<municipio>/<comunidad>`) y generar el tier HIGH.
+Pendiente: el lote de los funnels restantes del subdominio
+`comunidades.ilatekpr.com` y completar el lote LUXURY → HIGH → MEDIUM.
