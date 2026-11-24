@@ -1,0 +1,56 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["LocalBusiness", "RoofingContractor"],
+      "@id": "https://ilatekpr.com/#localbusiness",
+      "name": "Ilatek Property Solution",
+      "url": "https://ilatekpr.com/",
+      "description": "Roof sealing, waterproofing and roof maintenance, plus residential and commercial cleaning in Puerto Rico.",
+      "telephone": "+17874953277",
+      "email": "ilatek.pr@gmail.com",
+      "image": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac7ec6961217e682bbf3ae6.png",
+      "logo": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab044d04091fa65e69921f6.png",
+      "priceRange": "From $250 per service",
+      "currenciesAccepted": "USD",
+      "paymentAccepted": "Cash, ATH Móvil, bank transfer",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "PR",
+        "addressRegion": "PR"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Puerto Rico"
+      },
+      "parentOrganization": {
+        "@id": "#organization"
+      },
+      "sameAs": [
+        "https://www.facebook.com/ilatekpr",
+        "https://www.instagram.com/ilatekpr",
+        "https://www.youtube.com/@Ilatekpr"
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://ilatekpr.com/en/home#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ilatekpr.com/en/home"
+        }
+      ]
+    }
+  ]
+}

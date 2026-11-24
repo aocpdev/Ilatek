@@ -279,7 +279,7 @@ imágenes genérico: que se sienta Puerto Rico.
 ## 28. Inspección de Techos Gratis — `inspeccion-de-techos`
 
 **Hero (1200×1320, 4:4.4)**
-> Plano vertical de un técnico inspeccionando el techo de una residencia en Puerto Rico con tablet y cámara, documentando el estado de cada área; encuadre de perfil con casco, techo y cielo tropical de fondo. Luz natural, sensación de inspección gratis y sin compromiso, sin texto ni logos.
+> Plano vertical de un técnico inspeccionando el techo de una residencia en Puerto Rico con tablet y cámara, documentando el estado de cada área; encuadre de perfil con casco, techo y cielo tropical de fondo. Luz natural, sensación de visita profesional sin compromiso, sin texto ni logos.
 
 **Qué incluye (1200×900, 4:3)**
 > Plano horizontal de un informe de inspección: el técnico fotografía con tablet distintos puntos del techo (sellador, grieta, canaleta) y luego muestra en pantalla las fotos ordenadas por zona, con el techo de concreto de fondo. Puerto Rico, luz natural, sin texto ni logos.

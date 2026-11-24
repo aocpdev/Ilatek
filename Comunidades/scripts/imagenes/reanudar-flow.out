@@ -1,0 +1,130 @@
+[2026-11-02 15:29:00] reanudador arrancado · 604 PNG · 508 pendientes · siguiente espera 5 min si no hay imagenes
+[2026-11-02 15:29:00] hay un lote dentro de Flow; se espera 60 s sin lanzar nada
+[2026-11-02 15:30:00] hay un lote dentro de Flow; se espera 60 s sin lanzar nada
+[2026-11-02 15:31:00] inicio · 604 PNG en disco · 508 imágenes pendientes · tanda 25
+[2026-11-02 15:31:00] tanda 1 · 508 pendientes · generando 25 en flow
+proyecto: https://flow.google.com/u/2/project/53385750-211b-448d-b197-3799c43b0060 | cuenta: Cuenta de Google: Osvaldo D. Melendez   (o.melendez1991@gmail.com)
+1/25 Costa Dorada (Dorado) -> CUOTA AGO[2026-11-02 15:32:19] inicio · 604 PNG en disco · 508 imágenes pendientes · tanda 25
+[2026-11-02 15:32:19] tERROR: fullnessfrequency@gmail.com no tiene sesion abierta en Chrome.
+La cuenta siguiente pide login y no llego: se reanuda con el mismo comando.
+[2026-11-02 15:32:30] tanda 1 terminada [2026-11-02 15:33:20] fin · 604 PNG en disco · 508 imágenes siguen pendientes
+[2026-11-02 15:33:20] sin imagenes nuevas (el lote salio con 0) · 604 PNG · 508 pendientes · siguiente intento en 5 min
+[2026-11-02 15:38:21] inicio · 604 PNG en disco · 508 imágenes pendientes · tanda 25
+[2026-11-02 15:38:21] tanda 1 · 508 pendientes · generando 25 en flow
+proyecto: https://flow.google.com/u/2/project/4efb8d50-9912-4f7f-8245-73d2b318ae66 | cuenta: Cuenta de Google: Osvaldo D. Melendez   (o.melendez1991@gmail.com)
+1/25 Costa Dorada (Dorado) -> CUOTA AGOTADA en Cuenta de Google: Osvaldo D. Melendez (o.melendez1991@gmail.com): se pasa a fullnessfrequency@gmail.com
+ERROR: fullnessfrequency@gmail.com no tiene sesion abierta en Chrome.
+La cuenta siguiente pide login y no llego: se reanuda con el mismo comando.
+[2026-11-02 15:39:50] tanda 1 terminada · 0 imágenes nuevas · 604 PNG en total
+[2026-11-02 15:39:50] sin cuota en el motor en uso: se detiene. Se reanuda con el mismo comando.
+[2026-11-02 15:39:50] fin · 604 PNG en disco · 508 imágenes siguen pendientes
+[2026-11-02 15:39:51] sin imagenes nuevas (el lote salio con 0) · 604 PNG · 508 pendientes · siguiente intento en 10 min
+[2026-11-02 16:10:01] reanudador arrancado · 607 PNG · 505 pendientes · siguiente espera 5 min si no hay imagenes
+[2026-11-02 16:10:02] Flow ocupado por otro lote; se espera 60 s sin lanzar nada
+[2026-11-02 16:11:03] inicio · 607 PNG en disco · 505 imágenes pendientes · tanda 25
+[2026-11-02 16:11:03] tanda 1 · 505 pendientes · generando 25 en flow
+Ya hay un lote de Flow en marcha; espera a que termine.
+[2026-11-02 16:11:03] otro lote tiene el candado; se espera 60 s y se reintenta
+[2026-11-02 16:11:04] sin imagenes nuevas (el lote salio con 4294967295) · 607 PNG · 505 pendientes · siguiente intento en 5 min
+[2026-11-02 16:16:05] inicio · 609 PNG en disco · 503 imágenes pendientes · tanda 25
+[2026-11-02 16:16:05] tanda 1 · 503 pendientes · generando 25 en flow
+Ya hay un lote de Flow en marcha; espera a que termine.
+[2026-11-02 16:16:06] otro lote tiene el candado; se espera 60 s y se reintenta
+[2026-11-02 16:16:16] sin imagenes nuevas (el lote salio con 4294967295) · 609 PNG · 503 pendientes · siguiente intento en 10 min
+[2026-11-02 16:26:16] Flow ocupado por otro lote; se espera 60 s sin lanzar nada
+[2026-11-02 16:27:17] inicio · 613 PNG en disco · 499 imágenes pendientes · tanda 25
+[2026-11-02 16:27:17] tanda 1 · 499 pendientes · generando 25 en flow
+proyecto: https://flow.google.com/u/4/project/3622f1da-3682-4fc8-8531-e84b9338ce32 | cuenta: Cuenta de Google: Fullness   (fullnessfrequency@gmail.com)
+[2026-11-02 16:32:47] reanudador arrancado · 614 PNG · 498 pendientes · siguiente espera 5 min si no hay imagenes
+[2026-11-02 16:32:47] Flow ocupado por otro lote; se espera 60 s sin lanzar nada
+[2026-11-02 16:33:48] Flow ocupado por otro lote; se espera 60 s sin lanzar nada
+[2026-11-02 16:34:50] inicio · 617 PNG en disco · 495 imágenes pendientes · tanda 60
+[2026-11-02 16:34:51] tanda 1 · 495 pendientes · generando 60 en flow
+Ya hay un lote de Flow en marcha; espera a que termine.
+[2026-11-02 16:34:51] otro lote tiene el candado; se espera 15 s y se reintenta
+[2026-11-02 16:35:06] fin · 617 PNG en disco · 495 imágenes siguen pendientes
+[2026-11-02 16:35:06] sin imagenes nuevas (el lote salio con 0) · 617 PNG · 495 pendientes · siguiente intento en 5 min
+[2026-11-02 16:40:09] inicio · 623 PNG en disco · 489 imágenes pendientes · tanda 60
+[2026-11-02 16:40:09] tanda 1 · 489 pendientes · generando 60 en flow
+Ya hay un lote de Flow en marcha; espera a que termine.
+[2026-11-02 16:40:09] otro lote tiene el candado; se espera 15 s y se reintenta
+[2026-11-02 16:40:24] fin · 624 PNG en disco · 488 imágenes siguen pendientes
+[2026-11-02 16:40:24] tanda con 1 imagenes nuevas · 624 PNG · se repite de inmediato
+[2026-11-02 16:40:27] inicio · 624 PNG en disco · 488 imágenes pendientes · tanda 60
+[2026-11-02 16:40:27] tanda 1 · 488 pendientes · generando 60 en flow
+Ya hay un lote de Flow en marcha; espera a que termine.
+[2026-11-02 16:40:27] otro lote tiene el candado; se espera 15 s y se reintenta
+[2026-11-02 16:40:33] sin imagenes nuevas (el lote salio con 4294967295) · 624 PNG · 488 pendientes · siguiente intento en 5 min
+[2026-11-02 16:45:35] inicio · 626 PNG en disco · 486 imágenes pendientes · tanda 60
+[2026-11-02 16:45:35] tanda 1 · 486 pendientes · generando 60 en flow
+Ya hay un lote de Flow en marcha; espera a que termine.
+[2026-11-02 16:45:36] otro lote tiene el candado; se espera 15 s y se reintenta
+[2026-11-02 16:45:48] sin imagenes nuevas (el lote salio con 4294967295) · 626 PNG · 486 pendientes · siguiente intento en 10 min
+[2026-11-02 16:55:50] inicio · 638 PNG en disco · 474 imágenes pendientes · tanda 60
+[2026-11-02 16:55:50] tanda 1 · 474 pendientes · generando 60 en flow
+Ya hay un lote de Flow en marcha; espera a que termine.
+[2026-11-02 16:55:52] otro lote tiene el candado; se espera 15 s y se reintenta
+[2026-11-02 16:56:07] fin · 639 PNG en disco · 473 imágenes siguen pendientes
+[2026-11-02 16:56:07] tanda con 1 imagenes nuevas · 639 PNG · se repite de inmediato
+[2026-11-02 16:56:09] inicio · 639 PNG en disco · 473 imágenes pendientes · tanda 60
+[2026-11-02 16:56:09] tanda 1 · 473 pendientes · generando 60 en flow
+Ya hay un lote de Flow en marcha; espera a que termine.
+[2026-11-02 16:56:10] otro lote tiene el candado; se espera 15 s y se reintenta
+[2026-11-02 16:56:18] sin imagenes nuevas (el lote salio con 4294967295) · 639 PNG · 473 pendientes · siguiente intento en 5 min
+[2026-11-02 17:01:21] inicio · 645 PNG en disco · 467 imágenes pendientes · tanda 60
+[2026-11-02 17:01:21] tanda 1 · 467 pendientes · generando 60 en flow
+Ya hay un lote de Flow en marcha; espera a que termine.
+[2026-11-02 17:01:21] otro lote tiene el candado; se espera 15 s y se reintenta
+[2026-11-02 17:01:32] tanda con 1 imagenes nuevas · 646 PNG · se repite de inmediato
+[2026-11-02 17:01:34] inicio · 646 PNG en disco · 466 imágenes pendientes · tanda 60
+[2026-11-02 17:01:34] tanda 1 · 466 pendientes · generando 60 en flow
+Ya hay un lote de Flow en marcha; espera a que termine.
+[2026-11-02 17:01:35] otro lote tiene el candado; se espera 15 s y se reintenta
+[2026-11-02 17:01:50] fin · 646 PNG en disco · 466 imágenes siguen pendientes
+[2026-11-02 17:01:50] sin imagenes nuevas (el lote salio con 0) · 646 PNG · 466 pendientes · siguiente intento en 5 min
+[2026-11-02 17:06:52] inicio · 652 PNG en disco · 460 imágenes pendientes · tanda 60
+[2026-11-02 17:06:52] tanda 1 · 460 pendientes · generando 60 en flow
+Ya hay un lote de Flow en marcha; espera a que termine.
+[2026-11-02 17:06:53] otro lote tiene el candado; se espera 15 s y se reintenta
+[2026-11-02 17:07:08] fin · 652 PNG en disco · 460 imágenes siguen pendientes
+[2026-11-02 17:07:08] sin imagenes nuevas (el lote salio con 0) · 652 PNG · 460 pendientes · siguiente intento en 10 min
+[2026-11-02 17:17:10] inicio · 666 PNG en disco · 446 imágenes pendientes · tanda 60
+[2026-11-02 17:17:10] tanda 1 · 446 pendientes · generando 60 en flow
+Ya hay un lote de Flow en marcha; espera a que termine.
+[2026-11-02 17:17:11] otro lote tiene el candado; se espera 15 s y se reintenta
+[2026-11-02 17:17:15] sin imagenes nuevas (el lote salio con 4294967295) · 666 PNG · 446 pendientes · siguiente intento en 20 min
+[2026-11-02 17:37:17] inicio · 696 PNG en disco · 416 imágenes pendientes · tanda 60
+[2026-11-02 17:37:17] tanda 1 · 416 pendientes · generando 60 en flow
+Ya hay un lote de Flow en marcha; espera a que termine.
+[2026-11-02 17:37:18] otro lote tiene el candado; se espera 15 s y se reintenta
+[2026-11-02 17:37:19] sin imagenes nuevas (el lote salio con 4294967295) · 696 PNG · 416 pendientes · siguiente intento en 30 min
+[2026-11-02 18:07:19] Flow ocupado por otro lote; se espera 60 s sin lanzar nada
+[2026-11-02 18:08:22] inicio · 738 PNG en disco · 374 imágenes pendientes · tanda 60
+[2026-11-02 18:08:22] tanda 1 · 374 pendientes · generando 60 en flow
+Ya hay un lote de Flow en marcha; espera a que termine.
+[2026-11-02 18:08:22] otro lote tiene el candado; se espera 15 s y se reintenta
+[2026-11-02 18:08:37] fin · 738 PNG en disco · 374 imágenes siguen pendientes
+[2026-11-02 18:08:37] sin imagenes nuevas (el lote salio con 0) · 738 PNG · 374 pendientes · siguiente intento en 30 min
+[2026-11-02 18:38:40] inicio · 801 PNG en disco · 311 imágenes pendientes · tanda 60
+[2026-11-02 18:38:40] tanda 1 · 311 pendientes · generando 60 en flow
+Ya hay un lote de Flow en marcha; espera a que termine.
+[2026-11-02 18:38:41] otro lote tiene el candado; se espera 15 s y se reintenta
+[2026-11-02 18:38:56] fin · 801 PNG en disco · 311 imágenes siguen pendientes
+[2026-11-02 18:38:56] sin imagenes nuevas (el lote salio con 0) · 801 PNG · 311 pendientes · siguiente intento en 30 min
+[2026-11-02 19:08:59] inicio · 868 PNG en disco · 244 imágenes pendientes · tanda 60
+[2026-11-02 19:08:59] tanda 1 · 244 pendientes · generando 60 en flow
+Ya hay un lote de Flow en marcha; espera a que termine.
+[2026-11-02 19:09:00] otro lote tiene el candado; se espera 15 s y se reintenta
+[2026-11-02 19:09:10] sin imagenes nuevas (el lote salio con 4294967295) · 868 PNG · 244 pendientes · siguiente intento en 30 min
+[2026-11-02 19:39:10] Flow ocupado por otro lote; se espera 60 s sin lanzar nada
+[2026-11-02 19:40:12] inicio · 910 PNG en disco · 202 imágenes pendientes · tanda 60
+[2026-11-02 19:40:12] tanda 1 · 202 pendientes · generando 60 en flow
+Ya hay un lote de Flow en marcha; espera a que termine.
+[2026-11-02 19:40:14] otro lote tiene el candado; se espera 15 s y se reintenta
+[2026-11-02 19:40:29] fin · 910 PNG en disco · 202 imágenes siguen pendientes
+[2026-11-02 19:40:29] sin imagenes nuevas (el lote salio con 0) · 910 PNG · 202 pendientes · siguiente intento en 30 min
+[2026-11-02 20:10:31] inicio · 925 PNG en disco · 187 imágenes pendientes · tanda 60
+[2026-11-02 20:10:31] tanda 1 · 187 pendientes · generando 60 en flow
+Ya hay un lote de Flow en marcha; espera a que termine.
+[2026-11-02 20:10:33] otro lote tiene el candado; se espera 15 s y se reintenta
+[2026-11-02 20:10:39] sin imagenes nuevas (el lote salio con 4294967295) · 925 PNG · 187 pendientes · siguiente intento en 30 min
