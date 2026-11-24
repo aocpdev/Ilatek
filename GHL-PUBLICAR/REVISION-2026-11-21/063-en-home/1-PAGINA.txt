@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Home (EN)
+Slug: en/home
+URL: https://ilatekpr.com/en/home
+Acción: CREAR PÁGINA
+Estado hoy: HTTP 404
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (435 KB, sha256 6ebbe53a08ee)
+Origen en el repo: home/en/landing-pages/home.en.html
+Sección de clima: sí
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

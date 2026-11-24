@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://toa-baja.ilatekpr.com/sitemap.xml

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://juana-diaz.ilatekpr.com/sitemap.xml

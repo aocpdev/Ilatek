@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Resenas (EN)
+Slug: en/resenas
+URL: https://ilatekpr.com/en/resenas
+Acción: CREAR PÁGINA
+Estado hoy: HTTP 404
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (224 KB, sha256 31cf5cf2415e)
+Origen en el repo: resenas/en/landing-pages/resenas.en.html
+Sección de clima: no
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

@@ -3,11 +3,11 @@
   "language": "es",
   "status": "plantilla-local-delta-system",
   "metaTagTitle": "Sellado de Techos Industrial en {{custom_values.business__county_name}} | Ilatek Techos",
-  "metaTagDescription": "Sellado de techos industrial en {{custom_values.business__county_name}}. Sistemas de alta resistencia para naves y plantas. Cotización por pie² con inspección gratis y garantía escrita.",
-  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046ee0edabbe5a4a76380.jpg",
+  "metaTagDescription": "Sellado de techos industrial en {{custom_values.business__county_name}}. Sistemas de alta resistencia para naves y plantas. Cotización por servicio con agenda con $50 descontables del total y garantía escrita.",
+  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/5e4d9948-ce9d-4b2d-85bf-22a1ed0270d0.webp",
   "locationCustomValue": "{{custom_values.business__county_name}}",
   "metaTagImageAlt": "Sellado de Techos Industrial en {{custom_values.business__county_name}} | Ilatek Techos",
   "canonical": "https://{{custom_values.website_url}}/sellado-de-techos-industrial",
-  "socialImageFile": "assets/respaldo/6ac046ee0edabbe5a4a76380.webp",
+  "socialImageFile": "assets/meta-image.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."
 }

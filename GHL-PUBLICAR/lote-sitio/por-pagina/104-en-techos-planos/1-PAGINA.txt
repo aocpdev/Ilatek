@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Techos Planos (EN)
+Slug: en/techos-planos
+URL: https://ilatekpr.com/en/techos-planos
+Acción: CREAR PÁGINA
+Estado hoy: HTTP 404
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (241 KB, sha256 c00081d8bebe)
+Origen en el repo: servicios/techos-planos/en/landing-pages/techos-planos.en.html
+Sección de clima: no
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

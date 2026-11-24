@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Techos Por Segmento
+Slug: techos-por-segmento
+URL: https://ilatekpr.com/techos-por-segmento
+Acción: REPUBLICAR
+Estado hoy: HTTP 200
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (244 KB, sha256 fb48e2aea825)
+Origen en el repo: categorias/techos-por-segmento/es/landing-pages/ghl-techos-por-segmento-landing.html
+Sección de clima: sí
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

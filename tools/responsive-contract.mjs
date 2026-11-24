@@ -1,6 +1,6 @@
 // Shared presentation fixes; preserve each page's content, links and section layout.
 export const heroSelector='.il-hero,.ilr-hero,.ilc2-hero,.ilsx-hero,.ilt-hero';
-export const hasServiceHero=html=>/class=["'][^"']*\b(?:il|ilr|ilc2|ilsx|ilt)-hero\b/.test(html);
+export const hasServiceHero=html=>/class=["'][^"']*\b(?:(?:il|ilr|ilc2|ilsx|ilt)-hero|mshero)\b/.test(html);
 function compactNavigation(code){
   if(!code.includes('var compact=false,acc=0,lastY=0,ticking=false;')||code.includes('function syncCompactBrand()'))return code;
   code=code.replace('var compact=false,acc=0,lastY=0,ticking=false;',`var compact=false,acc=0,lastY=0,ticking=false;

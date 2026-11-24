@@ -1,0 +1,142 @@
+{{custom_values.business__county_name}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}
+Lavado a Presión en {{custom_values.business__county_name}} | Ilatek
+/og:title/ og:description ("… en Juncos, Puerto Rico"): el título sale de {{custom_values.business__county_name}}, así que es el mismo custom value, sin depender de que el builder expanda el Custom Code; 3. el subdominio del sitio (juncos.ilatekpr.com → Juncos); 4. los valores de marca del contrato (custom-values.json → brand). El portador que viaja en el embed se oculta siempre (nunca es contenido). Estado en
+Login
+Lavado a presión
+Lavado a Presión en
+{{custom_values.business__county_name}}
+que renueva tus exteriores.
+Ilatek elimina años de suciedad, moho y salitre de tus exteriores en {{custom_values.business__county_name}}: fachadas, terrazas, verjas, aceras y driveway con el equipo y la presión correctos para cada superficie. Precio real en minutos y reserva con $50 descontable.
+Solicita tu cotización
+Qué incluye el servicio ↓
+minutos
+Precio real y por escrito
+municipios
+Cobertura en PR
+depósito
+Descontable al reservar
+Por qué Ilatek
+Años de suciedad, fuera en horas.
+La presión correcta para cada superficie
+Concreto, madera, vinilo o coralina no se limpian igual: calibramos PSI y boquillas por superficie — presión fuerte donde toca, soft wash donde la delicadeza manda.
+Curb appeal instantáneo
+Fachada, verja y driveway impecables cambian la cara de tu propiedad: el lavado a presión es la mejora de mayor impacto visual por dolar invertido.
+Equipo profesional completo
+Máquina de presión comercial, agua a caudal correcto y protectores para tus areas: llegamos con todo y trabajamos limpio en {{custom_values.business__county_name}}.
+Qué incluye
+Tus exteriores completos, sin rastro de suciedad.
+El lavado a presión de Ilatek cubre fachadas, terrazas, driveway, aceras, verjas y muebles de patio — el exterior completo, con el alcance definido en tu cotización.
+Fachadas: paredes exteriores y acabados
+Terrazas y patios: concreto y losa
+Driveway y aceras: manchas, moho y salitre
+Verjas, portones y paredes perimetrales
+Muebles de patio y pérgolas
+Soft wash para superficies delicadas
+Cotiza tus exteriores
+PSI calibrado por superficie · soft wash disponible
+Espacios
+Limpiamos todo tipo de superficie.
+Concreto y losa
+Driveways, aceras y terrazas: máxima presión y boquilla de abanico para levantar años de moho, salitre y manchas sin dañar el acabado.
+Fachadas y vinilo
+Paredes exteriores y siding: soft wash con detergentes profesionales — remueve moho y algas sin forzar el material ni la pintura.
+Madera y coralina
+Terrazas de coralina, decks y pérgolas de madera: presión baja y distancia calibrada — la belleza natural intacta, sin astillas.
+Frecuencia
+El ritmo que tus exteriores necesitan.
+1–2 veces al año
+El mantenimiento recomendado
+La recomendación profesional: dos limpiezas al año mantienen tus exteriores claras — en la costa, donde la brisa marina deja residuo salino, cada 3–4 meses funciona mejor.
+Antes de vender
+Venta o renta
+Fotos de listing con fachada impecable elevan el precio percibido: lavamos antes de publicar o mostrar la propiedad.
+Como combo
+Interior + exterior
+Combínalo con tu limpieza interior o post-construcción: dentro y fuera impecables en la misma visita — un solo agendamiento.
+Cotiza tus exteriores hoy
+Cobertura local
+Limpieza impecable,
+Cobertura en Toda la Isla
+Explora los servicios de limpieza de
+Ilatek
+disponibles en los
+78 municipios de Puerto Rico
+y visita la página de tu pueblo. Atendemos hogares en
+y toda la isla.
+No encontramos ese pueblo. Verifica el nombre e intenta nuevamente.
+Página 1 de 1
+Preguntas frecuentes
+Todo lo que preguntas antes de contratar.
+¿Cuánto cuesta el lavado a presión en {{custom_values.business__county_name}}?
+Depende de las superficies, el tamaño del área y el nivel de suciedad (moho, salitre, manchas). Usa el cotizador y recibe tu número real en minutos — precio claro y por escrito, sin compromiso.
+¿Qué incluye un lavado a presión?
+Incluye fachadas, terrazas, driveway, aceras, verjas y muebles de patio, con
+PSI y boquilla calibrados por superficie
+— y soft wash con detergentes profesionales para lo delicado. El alcance exacto queda definido en tu cotización.
+¿El lavado a presión daña la pintura o el vinilo?
+No, cuando se hace bien: a
+pintura y vinilo les corresponde soft wash
+(presión baja + detergentes), no chorro directo. El concreto y la losa aguantan presión alta. Calibramos PSI y boquilla por superficie para limpiar sin dañar.
+¿Cada cuánto se debe lavar una casa a presión?
+La recomendación profesional es
+; en zonas de costa o alta humedad, cada 6 meses evita que el moho y el salitre regresen. En la cotización te recomendamos el ritmo según tu ubicación.
+¿Qué significa PSI y por qué importa?
+PSI = libras de presión por pulgada².
+Más PSI no es mejor
+: el concreto aguanta 2,500–3,000, pero pintura, madera y vinilo necesitan mucho menos y detergentes. Por eso calibramos el equipo por superficie, no al máximo.
+¿Necesito estar en casa durante el lavado?
+No es necesario
+— solo acceso al área exterior y una llave de agua. Coordinamos todo contigo y te avisamos al terminar; si hay zonas delicadas, las marcamos juntos antes de empezar.
+¿Qué productos y equipos utilizan?
+Llegamos con
+productos y equipos profesionales de limpieza residencial
+, seguros para tu familia y tus mascotas. Si prefieres algo específico (eco-amigable, sin fragancia), coordínalo en la cotización.
+¿Por qué elegir Ilatek para tus exteriores?
+PSI calibrado por superficie (no "un PSI para todo"), soft wash para lo delicado, equipo comercial completo, precio real en minutos, depósito de $50 descontable y cobertura en los 78 municipios. Exteriores como nuevos en {{custom_values.business__county_name}}.
+¿Moho y salitre acumulado? Déjanos la presión.
+Solicita tu cotización ↗
+Devasks
+Navegación de Ilatek
+Ilatek, inicio
+Logo de Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Logo%20de%20Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Navegación principal
+Idioma / Language
+Español
+English
+Abrir o cerrar el menú
+Ilatek Lavado a Presión {{custom_values.business__county_name}}
+Equipo de Ilatek realizando lavado a presión en una casa — fachadas, terrazas y aceras como nuevas en {{custom_values.business__county_name}}
+Lavado a Presión en {{custom_values.business__county_name}} · Ilatek
+Equipo%20de%20Ilatek%20realizando%20lavado%20a%20presi%C3%B3n%20en%20una%20casa%20%E2%80%94%20fachadas%2C%20terrazas%20y%20aceras%20como%20nuevas%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Lavado%20a%20Presi%C3%B3n%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%C2%B7%20Ilatek
+Lavado a presión de exteriores de Ilatek — concreto, terrazas y verjas libres de años de suciedad en {{custom_values.business__county_name}}
+Lavado%20a%20presi%C3%B3n%20de%20exteriores%20de%20Ilatek%20%E2%80%94%20concreto%2C%20terrazas%20y%20verjas%20libres%20de%20a%C3%B1os%20de%20suciedad%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Cobertura de limpieza de Ilatek en Puerto Rico
+Busca tu pueblo
+Buscar un municipio de Puerto Rico
+Limpiar búsqueda
+Municipios de Puerto Rico con servicio de Ilatek
+Pie de página de Ilatek
+Facebook
+Facebook — servicio en {{custom_values.business__county_name}}
+Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Instagram
+Instagram — servicio en {{custom_values.business__county_name}}
+Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Youtube
+Youtube — servicio en {{custom_values.business__county_name}}
+Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+TikTok
+TikTok — servicio en {{custom_values.business__county_name}}
+TikTok%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+X — servicio en {{custom_values.business__county_name}}
+X%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+LinkedIn
+LinkedIn — servicio en {{custom_values.business__county_name}}
+LinkedIn%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Pinterest
+Pinterest — servicio en {{custom_values.business__county_name}}
+Pinterest%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D

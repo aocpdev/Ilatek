@@ -1,0 +1,1784 @@
+[
+  {
+    "id": "38ydOGdXAwJE76q47koz",
+    "name": "Comunidad · Brisas Tortuguero (Vega Baja) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "XeY6SI1Q5wS2eXILPPgz",
+    "name": "Comunidad · Caimito (San Juan) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "bWyeKq3nhT4bk8PKnGSv",
+    "name": "Comunidad · Caimito (San Juan) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "Z2bwleehHLyGDfVDsP1v",
+    "name": "Comunidad · Jardines de Cidra (Cidra) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "Bi8WV1yvoqKFhW2jIFnQ",
+    "name": "Comunidad · Fernando Sierra Berdecía (Ciales) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "VwXFdr07hyf1jfaT9BtN",
+    "name": "Comunidad · Fernando Sierra Berdecía (Ciales) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "VtT0wN6i7B448QF9mJwH",
+    "name": "Comunidad · Caguas Real - Mansiones del Golf (Caguas) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "qdsmxxWLF9qsU7eku21W",
+    "name": "Comunidad · Dos Ríos (Ciales) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "RiJWGmiRMEDEb3MCWFLj",
+    "name": "Comunidad · Sabanaera (Cidra) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "1FXlPAmp8hOhL24ttHhd",
+    "name": "Comunidad · Jardines de Ceiba II (Ceiba) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "Ur1TUTu5RRllaPH8h81K",
+    "name": "Comunidad · Costa Brava (Ceiba) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "nnniF3yULe9YUIsQ30DO",
+    "name": "Comunidad · Villas de Beatriz (Johnny Toledo) (Cayey) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "GEk6vJ4GO4qvj23w6oWa",
+    "name": "Comunidad · Jardines de Cayey (Cayey) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "Nk7kkprXxomJKe4H1UDZ",
+    "name": "Comunidad · Luis Muñoz Morales (Cayey) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "cCsHhuZXWUCTVlVXgp5j",
+    "name": "Comunidad · Brisas de Cayey (Cayey) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "5LftleG9bIBedoESx7v1",
+    "name": "Comunidad · Valparaíso (Cataño) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "Xf0xZT9xPZjPdArLqVfg",
+    "name": "Comunidad · Valparaíso (Cataño) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "xNNUVvnbcogAVWMf7vW1",
+    "name": "Comunidad · Mansión del Río (Cataño) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "3VHgOTWhWKBzS6GOmUSi",
+    "name": "Comunidad · Mansión del Norte (Cataño) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "IiVGNGVz1hqBqwQFWPk2",
+    "name": "Comunidad · Mansión del Norte (Cataño) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "goNY4X5r2l8Szb1jSnXl",
+    "name": "Comunidad · Las Vegas (Cataño) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "sW3Xzb9jdGtcgLAcOLD4",
+    "name": "Comunidad · Enramada (Cataño) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "ePJzlPrcbtuoRq0Emf1h",
+    "name": "Comunidad · Jardines de Cataño (Cataño) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "mq5BogEpiXIQLGMgDrhF",
+    "name": "Comunidad · Bay View (Cataño) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "JNKi68syciPZAgHRWl9w",
+    "name": "Comunidad · Villa Carolina (Carolina) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "vZUggZa2B5sKknebRIKO",
+    "name": "Comunidad · La Posada (Carolina) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "tXfexrmmS9YZZ2aJlmXe",
+    "name": "Comunidad · Vistas de Camuy (Camuy) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "tFE9vYyft1pbuH8WVG5z",
+    "name": "Comunidad · Alturas de Camuy (Camuy) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "l3lhya0Gknq3xpvG4wUB",
+    "name": "Comunidad · Villa del Rey 4ta Sección (Caguas) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "SrTLK4jQqxjolYOXlAcL",
+    "name": "Comunidad · Villa del Rey 1ra Sección (Caguas) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "oQPtW3g5Wk94LSrKVAWW",
+    "name": "Comunidad · Los Prados - La Reserva (Caguas) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "lvLxBhjzZUZBKFflVVor",
+    "name": "Comunidad · Los Prados - El Valle (Caguas) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "9mYxODwzbtgvPJmIQz9l",
+    "name": "Comunidad · Bairoa Park (Caguas) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "lmZVa8WXFmBy78cF497t",
+    "name": "Comunidad · Bairoa Park (Caguas) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "aSvlVzJuvPMQYbgsXKqY",
+    "name": "Comunidad · Santa Rita de Casia (Cabo Rojo) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "JmOe8a14IU33f6ITfypZ",
+    "name": "Comunidad · Santa Juanita (Bayamón) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "0NLAxo3IWl8JgzU1KaJW",
+    "name": "Comunidad · Villa España (Bayamón) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "fx5RNyyYRu1CUaJHUwFN",
+    "name": "Comunidad · River Park (Bayamón) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "USgwfs2hzzGJIoTSbvcx",
+    "name": "Comunidad · Magnolia Gardens (Bayamón) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "yOVK3vv6PoGVxeTOLXfR",
+    "name": "Comunidad · Lomas Verdes (Bayamón) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "frRrawTfqG6zn89Oy1pU",
+    "name": "Comunidad · Las Torres Norte (Bayamón) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "aFf29QtzqE0pTlLj19Lv",
+    "name": "Comunidad · Bayamón Gardens (Bayamón) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "41DkTIDhbxYS5Cpg9IER",
+    "name": "Comunidad · Mansión del Sol (Toa Baja) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "yzmYl3o7FrkhkvynABYZ",
+    "name": "Comunidad · Santa Catalina (Yauco) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "LToRglJvtn4Y2St2wVoR",
+    "name": "Comunidad · El Atlántico (Toa Baja) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "dJjhNzZ1ENKGN9zzj2zl",
+    "name": "Comunidad · Comunidad Rural El Guano (Utuado) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "0C6z4EsCvB3jnoChlgci",
+    "name": "Comunidad · Santa Catalina (Yauco) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "EToV74nW27maiabXKaU5",
+    "name": "Comunidad · Urbanización Méndez (Yabucoa) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "YJbQnCB78h7Gpm3XXYxj",
+    "name": "Comunidad · El Atlántico (Toa Baja) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "vksWuMrs4DZcgl1uNwBH",
+    "name": "Comunidad · Comunidad Rural El Guano (Utuado) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "h5ckdqEwmBmHMBrbSzjS",
+    "name": "Comunidad · Candelaria Arenas (Toa Baja) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "hFJWc1TN3hmyMJaQ26nE",
+    "name": "Comunidad · Urbanización Méndez (Yabucoa) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "tp2ZQltE2zD1tzpZixRC",
+    "name": "Comunidad · Jardines de Vieques (Vieques) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "vH483nSypOtBwvgA7iBZ",
+    "name": "Comunidad · Mansión del Sol (Toa Baja) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "bb96g232Pd7l9awdm1b2",
+    "name": "Comunidad · Lago Vista I y II (Toa Baja) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "9MhDHCMkXrUMmvOM61UJ",
+    "name": "Comunidad · Candelaria Arenas (Toa Baja) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "OeitBYa4EjNR2I0Zj6ld",
+    "name": "Comunidad · Jardines de Vieques (Vieques) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "K1JpYjM77zj4MeX8QFsD",
+    "name": "Comunidad · Lago Vista I y II (Toa Baja) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "2n26kG866oAVrUxOBmqd",
+    "name": "Comunidad · Camino del Mar (Toa Baja) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "uM3LnMt5NHClaabewji1",
+    "name": "Comunidad · Vistas de Montecasino (Toa Alta) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "1jAsvfoeVU4Ko5ivOMuI",
+    "name": "Comunidad · Mansiones de Montecasino II (Toa Alta) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "U6RrjO3iCzuSVdoanfTR",
+    "name": "Comunidad · Camino del Mar (Toa Baja) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "hBHjDU0e9EvUrmVh9D9N",
+    "name": "Comunidad · Villa Mar (Santa Isabel) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "a7JpIrURN5u0fRN6marE",
+    "name": "Comunidad · Vistas de Montecasino (Toa Alta) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "ZzYUcWK8Y9CuYXRWPwM7",
+    "name": "Comunidad · Mansiones de Montecasino II (Toa Alta) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "vYKUcwOUTmcNkipgMgTJ",
+    "name": "Comunidad · Palacios de Versalles (Toa Alta) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "dFad6vK4XWKpqhIftKIC",
+    "name": "Comunidad · Villa Mar (Santa Isabel) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "s3Qslv3CepNHthapTRgr",
+    "name": "Comunidad · Haciendas del Caribe (Toa Alta) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "DHB4ph5HRscnxZhzbDGm",
+    "name": "Comunidad · Palacios de Versalles (Toa Alta) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "7DkhB318fybhBCzKZcfm",
+    "name": "Comunidad · San Miguel (Santa Isabel) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "UBxVSs8x2TSIWNqcPb5O",
+    "name": "Comunidad · Haciendas del Caribe (Toa Alta) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "eeHpoazhEXBBdD04UPkz",
+    "name": "Comunidad · Monte Verde (Toa Alta) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "kcJBW5AW6KQlXZXaHfpg",
+    "name": "Comunidad · San Miguel (Santa Isabel) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "azakITEXyV4WUJMDVuWW",
+    "name": "Comunidad · Villa Serena (Santa Isabel) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "nf4jSD1dGtjfXcEuZ6rH",
+    "name": "Comunidad · Monte Verde (Toa Alta) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "94GbFrLPibokQH56PrTe",
+    "name": "Comunidad · Prados del Soñador (Santa Isabel) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "CJQaE6LNjekIBTWlZSIE",
+    "name": "Comunidad · Villa Serena (Santa Isabel) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "tnUZd4rQlbUOKydmfH8n",
+    "name": "Comunidad · Brisas del Prado (Santa Isabel) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "qwAGnpCmeMGbSvAqkuX3",
+    "name": "Comunidad · Prados del Soñador (Santa Isabel) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "EVYJILkCFiPdkOJP3Tvb",
+    "name": "Comunidad · Portal de la Reina (Santa Isabel) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "8roECXOWfu0HuV6BIgYa",
+    "name": "Comunidad · Brisas del Prado (Santa Isabel) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "5XKSuxdeg0yKDa0lKaUK",
+    "name": "Comunidad · Hacienda San Andrés (San Sebastián) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "JQHGAZWMfZacw53Yj12y",
+    "name": "Comunidad · Portal de la Reina (Santa Isabel) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "oqJRfFlNOacXEFD3uRlO",
+    "name": "Comunidad · Villa Rita (San Sebastián) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "LA7k7kvRhG2ScM4NZ6c1",
+    "name": "Comunidad · Hacienda San Andrés (San Sebastián) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "kIWU0vpEHdyEQ3DkV20t",
+    "name": "Comunidad · Savannah Real (San Lorenzo) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "7bhsCv7jfbAeZh9n4GaE",
+    "name": "Comunidad · Villa Rita (San Sebastián) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "eaJaqzeu1KMvwIxMQOAy",
+    "name": "Comunidad · Playita Cortada (Santa Isabel) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "DVJS1JG9esbSyYC0bYv3",
+    "name": "Comunidad · San Sebastián Court (San Sebastián) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "1OMYXeZSUhva9x6IrxnS",
+    "name": "Comunidad · Savannah Real (San Lorenzo) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "vDmZm6BYMThdp5yxUiSJ",
+    "name": "Comunidad · Playita Cortada (Santa Isabel) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "SrLPvtJOrAMXuHM6DOXj",
+    "name": "Comunidad · San Sebastián Court (San Sebastián) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "RyaUwD6I5SOhws5sqMmo",
+    "name": "Comunidad · Portal del Sol (San Lorenzo) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "KOGfuTqkd540ZH0bRiqw",
+    "name": "Comunidad · Villas del Señorial (San Juan) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "EnymMqiwtMd6obrQcVPa",
+    "name": "Comunidad · Portal del Sol (San Lorenzo) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "1hpZ4eNYnG7gwC2uVonD",
+    "name": "Comunidad · Jardines de San Lorenzo (San Lorenzo) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "nZ0jeE89LG6ShLNNUQ3Q",
+    "name": "Comunidad · Villas del Señorial (San Juan) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "A5lqnipAY4IUKmUx6IQg",
+    "name": "Comunidad · Río Piedras Pueblo (San Juan) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "QFf7KyjF40cnQfGcdocC",
+    "name": "Comunidad · University Gardens (San Juan) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "1W3aAPAc0YUW27alTxME",
+    "name": "Comunidad · Jardines de San Lorenzo (San Lorenzo) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "VhhtF2UokEg06jI4nuVS",
+    "name": "Comunidad · Río Piedras Pueblo (San Juan) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "Sbwj0siQs5YW8zRNQ39I",
+    "name": "Comunidad · University Gardens (San Juan) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "5tz4DiJQNK9phFWAwUyO",
+    "name": "Comunidad · Ciudad Masso (San Lorenzo) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "I4PCU2E9bWriVDEcSEKS",
+    "name": "Comunidad · Puerto Nuevo (San Juan) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "Lqnd47JARZxiH9BVfvIS",
+    "name": "Comunidad · San Juan Antiguo (San Juan) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "orXvoZzx8w9pyzrmGNGf",
+    "name": "Comunidad · Ciudad Masso (San Lorenzo) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "5IqLpibBidLdEjkJNBmY",
+    "name": "Comunidad · Puerto Nuevo (San Juan) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "54dMZirKoSJcwr6qgkTE",
+    "name": "Comunidad · San Juan Antiguo (San Juan) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "TJbD5M7grpwLe7plHfwf",
+    "name": "Comunidad · Monte Verde Real (San Juan) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "Ihko03KQuvd3UCCwFEmU",
+    "name": "Comunidad · El Coco (Salinas) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "o8uXKiPk2Py6wbGik3rt",
+    "name": "Comunidad · Monte Verde Real (San Juan) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "lGxzSruskdu37oxLlB1P",
+    "name": "Comunidad · Parque Gabriela (Salinas) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "lQwLIBGCT7Gb2eb27K89",
+    "name": "Comunidad · El Coco (Salinas) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "9YBLvYlPBiAOjF4DBVWh",
+    "name": "Comunidad · Villas de Maunabo (Maunabo) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "JafU37nFKdqjDO5dIz9g",
+    "name": "Comunidad · Morovis Elderly (Morovis) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "Fum0TYgOJM08qG0gRQwZ",
+    "name": "Comunidad · Parque Gabriela (Salinas) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "G4VZ5ivcIzGN2jZK3wic",
+    "name": "Comunidad · Colinas del Río (San Germán) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "Mor1ehdVxWT3GCLeEojW",
+    "name": "Comunidad · Cuesta de las Piedras (Mayagüez) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "0GeKJkCsViUcMaV1Lvr0",
+    "name": "Comunidad · Brisas del Mar (Salinas) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "5O5rtgRIPobLUX3PNee7",
+    "name": "Comunidad · Marbella (Salinas) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "OI7qFhKAnl2ekMzYNvxB",
+    "name": "Comunidad · Manuel Hernández Rosa (Candelaria) (Mayagüez) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "X8LIXATREsYiGec1EHPu",
+    "name": "Comunidad · Colinas del Río (San Germán) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "qNs2EyGjmqrkemw2IiSK",
+    "name": "Comunidad · Brisas del Mar (Salinas) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "Vhl3vr3712L8qqecp6wD",
+    "name": "Comunidad · Paseo Costa del Sur (Salinas) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "WjF65XaHdULkjqnyM7t6",
+    "name": "Comunidad · Marbella (Salinas) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "6Ki1p0JbUPOALfUdPaPn",
+    "name": "Comunidad · La Arboleda (Salinas) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "Xv8kPyldPPhiG20TpHji",
+    "name": "Comunidad · Bella Vista (Salinas) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "iPVZzR1JoETXDhfGe0y2",
+    "name": "Comunidad · Las Margaritas II (Salinas) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "bZXghU8MoS9OgFS4Wnwg",
+    "name": "Comunidad · Paseo Costa del Sur (Salinas) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "0WPvLIBOU4Rpx8Qn1f3U",
+    "name": "Comunidad · La Arboleda (Salinas) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "dclPjnZL3l1tx1wAZ0V9",
+    "name": "Comunidad · Bella Vista (Salinas) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "ZjrcdDzxY81nlU5P4hMa",
+    "name": "Comunidad · Mansiones de Sabana Grande (Sabana Grande) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "FvfywzOPwDkw2hqHGobO",
+    "name": "Comunidad · Las Margaritas II (Salinas) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "PdPZwVX0cJgn9uS4ognx",
+    "name": "Comunidad · Villa Graciela (Juncos) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "gaTCIT7TH5GcPNrXoS6i",
+    "name": "Comunidad · Santa Marina (Quebradillas) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "a1eTE3RJ7RCG1guPMETI",
+    "name": "Comunidad · Colinas de Villa Rosa (Sabana Grande) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "CKpbcng2i3p7evLREyZp",
+    "name": "Comunidad · Mansiones de Sabana Grande (Sabana Grande) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "Gj2LqE0wR0gktw60WGoR",
+    "name": "Comunidad · Santa Marina (Quebradillas) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "ZYyGE5edJaShCn92qcw1",
+    "name": "Comunidad · José Castillo Mercado (Sabana Grande) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "sn2dDdSSB3nl3s3jKC9I",
+    "name": "Comunidad · Colinas de Villa Rosa (Sabana Grande) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "r08nZ5bRBqOaQaKeVKLX",
+    "name": "Comunidad · La Ceiba (Quebradillas) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "C7EUJ7TgMg1Td8AElcjN",
+    "name": "Comunidad · Santa Rosa Elderly (Rincón) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "8yOR7fAywHKfGb2rmfkb",
+    "name": "Comunidad · José Castillo Mercado (Sabana Grande) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "9nmyU19GSeTAdD8kDx2g",
+    "name": "Comunidad · La Ceiba (Quebradillas) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "XH2jc9NpzvYzmuBOAOUO",
+    "name": "Comunidad · Santa Rosa Elderly (Rincón) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "DV3GV7Jeg7b7ee2pPpLR",
+    "name": "Comunidad · El Hucar (Sabana Grande) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "MYMZyFj39EAk4S2CCuIo",
+    "name": "Comunidad · Perla del Sur (Ponce) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "9RYgl5EmO4ZqFh0ONPg5",
+    "name": "Comunidad · Sombras de la Ceiba (Quebradillas) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "lDkdypWwg2t3lYUm1rxP",
+    "name": "Comunidad · El Hucar (Sabana Grande) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "xy6eHMRbFIpdbeU0CfAV",
+    "name": "Comunidad · Perla del Sur (Ponce) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "FppYK44naIanNapoC3eA",
+    "name": "Comunidad · Sombras de la Ceiba (Quebradillas) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "tPV3OxX21uAwvyGlJwqM",
+    "name": "Comunidad · Jardines del Caribe (Ponce) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "VzeVMyQWVCBMxgf28XBj",
+    "name": "Comunidad · Comunidad Caracoles (Peñuelas) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "KkxGUCh3WbnGd1s5JyPw",
+    "name": "Comunidad · El Monte (Ponce) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "dwSgZeIsziqIKTknFP9f",
+    "name": "Comunidad · Comunidad Caracoles (Peñuelas) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "ootbWpK6L6F3U9BoVT49",
+    "name": "Comunidad · Jardines del Caribe (Ponce) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "rjfGiHT9FgK9iYwGXJMH",
+    "name": "Comunidad · El Monte (Ponce) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "au4XSmCiSjXNXfCvo1Vd",
+    "name": "Comunidad · Alturas de Peñuelas (Peñuelas) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "uam8nVqTi42shWfYa4XO",
+    "name": "Comunidad · Jardines de Fagot (Ponce) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "Th7eCGumuyNP7ThMVMRg",
+    "name": "Comunidad · Brisas de Laurel (Ponce) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "qhmi7CukCr5uU2WQqFvw",
+    "name": "Comunidad · Alturas de Peñuelas (Peñuelas) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "ygVROoJnZNNMfxCk51t3",
+    "name": "Comunidad · Jardines de Fagot (Ponce) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "tn2mesHB0LgZBK5Om7iC",
+    "name": "Comunidad · Ernesto Ramos Antonini (Ponce) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "bPbTmd7vCUId5TBIAvvH",
+    "name": "Comunidad · Brisas de Laurel (Ponce) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "0zUpr8186IjnYZlWsmDQ",
+    "name": "Comunidad · Villas del Caribe (Patillas) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "FNRNmOgaAIkvwexJQhhr",
+    "name": "Comunidad · Los Flamboyanes (Peñuelas) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "ACXzZEwMFBkXSPp3MuEx",
+    "name": "Comunidad · Ernesto Ramos Antonini (Ponce) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "2IAAbvyVn6QZ15JpStXI",
+    "name": "Comunidad · Villas del Caribe (Patillas) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "t1YFqGWRfkUwqpO0jrme",
+    "name": "Comunidad · Los Flamboyanes (Peñuelas) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "5asocUKaF5MiA32nuNGd",
+    "name": "Comunidad · Lomas (Naranjito) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "XvRIBXqdqI6gsuQ1C1Eg",
+    "name": "Comunidad · Achiote (Naranjito) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "5olEZz97NTAUS63PauqB",
+    "name": "Comunidad · Villa Real (Patillas) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "n1hNNmY3PRGOJ1a0jvPf",
+    "name": "Comunidad · Lomas (Naranjito) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "cv7oDSs8oSJTi58cY1ia",
+    "name": "Comunidad · Villa Real (Patillas) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "9M3AsszOxLrXrlj8jJ6x",
+    "name": "Comunidad · Achiote (Naranjito) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "LKfH9aQaoP67sMobH0P1",
+    "name": "Comunidad · Jardines de Naranjito (Naranjito) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "kUkcG9shpEGp2syP7XMe",
+    "name": "Comunidad · Villas de Orocovis (Orocovis) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "UUcBcvVB2vFWzqeCjlBk",
+    "name": "Comunidad · Vista Verde (Naguabo) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "eOZw3Ir4NshsuNjB4jnG",
+    "name": "Comunidad · Jardines de Naranjito (Naranjito) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "jUrTo1bhtXruPszMFqEQ",
+    "name": "Comunidad · Villas de Orocovis (Orocovis) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "bnIY71mptsfHgT7iwJJx",
+    "name": "Comunidad · Vista Verde (Naguabo) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "GBSe1HF1HYqqGMdt735B",
+    "name": "Comunidad · Candelario Torres (Naranjito) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "DyzCMOJZz5dzUGAjdyFq",
+    "name": "Comunidad · José V. Fortis (Orocovis) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "QulUZC5972h8deFnkvy3",
+    "name": "Comunidad · Mayagüez Housing I (Mayagüez) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "nzTayednIf1pXvFyo2gf",
+    "name": "Comunidad · José V. Fortis (Orocovis) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "0z9KGkwf9CpDluGrwoSY",
+    "name": "Comunidad · Candelario Torres (Naranjito) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "oh0r7TO4bChAxFJVuE57",
+    "name": "Comunidad · Mayagüez Housing I (Mayagüez) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "Kbb2xoBfmxkeA5It9bVR",
+    "name": "Comunidad · Brisas del Valle (Naguabo) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "42TlxcilP8fXGlE4ylaQ",
+    "name": "Comunidad · El Carmen (Mayagüez) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "KXTBFZ5OrlwCO69ahX0v",
+    "name": "Comunidad · Mayagüez Gardens (Mayagüez) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "vpxcvkTZJjHaZvF1woh0",
+    "name": "Comunidad · Brisas del Valle (Naguabo) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "km1bw6rD6L5OkhEEQlhn",
+    "name": "Comunidad · El Carmen (Mayagüez) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "6hqc6V1nV6ZzaLjzYhQz",
+    "name": "Comunidad · Residencial Tomás Sorolla (Morovis) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "lCy37YrK8IRzcol7lu4Q",
+    "name": "Comunidad · Mayagüez Gardens (Mayagüez) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "VSVcQot7AoxRKRd6fFZo",
+    "name": "Comunidad · Cuesta de las Piedras (Mayagüez) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "aScH4VrMaipkyAIotFSg",
+    "name": "Comunidad · Jardines de Concordia (Mayagüez) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "DHRYJZHtyiSgGC6bKPrs",
+    "name": "Comunidad · Villa Navarro (Maunabo) · Limpieza",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  },
+  {
+    "id": "yLEIBFbHaIoECKGuSeMa",
+    "name": "Comunidad · Residencial Tomás Sorolla (Morovis) · Techos",
+    "ok": false,
+    "applied": true,
+    "same": false,
+    "head": 22537,
+    "sha": "88ec7e557ce2"
+  }
+]

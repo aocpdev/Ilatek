@@ -16,13 +16,13 @@ Servicios de limpieza residencial, comercial e industrial de Ilatek en {{custom_
 
 ## Meta Tag Image
 
-[Imagen social — URL pública](https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acaa576195f9172ed3a852a.jpg)
+[Imagen social — URL pública](https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/social/servicios-1200.webp)
 
 ```text
-https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acaa576195f9172ed3a852a.jpg
+https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/social/servicios-1200.webp
 ```
 
-Copia local: [assets/meta-image.jpg](assets/meta-image.jpg). No usar una ruta local en GHL.
+Copia local: [assets/meta-image.webp](assets/meta-image.webp). No usar una ruta local en GHL.
 
 ## Canonical existente
 
@@ -45,7 +45,7 @@ Custom Value obligatorio: `{{custom_values.business__county_name}}`. Usar la eti
 ### Meta Tag Image Alt
 
 ```text
-Servicios de Limpieza en {{custom_values.business__county_name}} | Ilatek
+Todos los servicios de limpieza — Ilatek en {{custom_values.business__county_name}}
 ```
 
 El HEAD incluye `og:image:alt` y `twitter:image:alt`. Los atributos `alt` y `title` descriptivos de las imágenes usan la misma localidad, conservando lo que representa cada imagen. Las imágenes decorativas mantienen `alt=""` por accesibilidad. Las URLs de medios no son texto SEO y se conservan.

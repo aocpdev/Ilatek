@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Reparacion De Grietas Techos (EN)
+Slug: en/reparacion-de-grietas-techos
+URL: https://ilatekpr.com/en/reparacion-de-grietas-techos
+Acción: CREAR PÁGINA
+Estado hoy: HTTP 404
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (245 KB, sha256 c1dc871a3b9a)
+Origen en el repo: servicios/reparacion-de-grietas-techos/en/landing-pages/reparacion-de-grietas-techos.en.html
+Sección de clima: no
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

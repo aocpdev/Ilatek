@@ -3,11 +3,11 @@
   "language": "es",
   "status": "plantilla-local-delta-system",
   "metaTagTitle": "Sellado de Silicona 100% para Techos en {{custom_values.business__county_name}} | Ilatek Techos",
-  "metaTagDescription": "Sellado de techo con silicona 100% en {{custom_values.business__county_name}} desde $3.50 por pie². Máxima elasticidad y durabilidad de 20 a 25 años. Inspección gratis y garantía escrita.",
-  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f585f560d1666999aa.jpg",
+  "metaTagDescription": "Sellado de techo con silicona 100% en {{custom_values.business__county_name}} desde $250. Máxima elasticidad y durabilidad de 20 a 25 años. Agenda con $50 descontables del total y garantía escrita.",
+  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/af83a061-e071-4912-8a67-99b3e35eb461.webp",
   "locationCustomValue": "{{custom_values.business__county_name}}",
   "metaTagImageAlt": "Sellado de Silicona 100% para Techos en {{custom_values.business__county_name}} | Ilatek Techos",
   "canonical": "https://{{custom_values.website_url}}/sellado-de-silicona",
-  "socialImageFile": "assets/respaldo/6ac046f585f560d1666999aa.webp",
+  "socialImageFile": "assets/meta-image.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."
 }

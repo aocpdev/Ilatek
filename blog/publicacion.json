@@ -1,0 +1,8 @@
+{
+  "publicado": false,
+  "url": "/blog",
+  "sitemap": "/sitemap-blog.xml",
+  "motivo": "El host no sirve /blog ni /sitemap-blog.xml: devuelven 404 aunque el generador produce 118 paginas y su XML. No se listan en el sitemap principal hasta que las rutas existan en el host.",
+  "evidencia": "Auditoria 2026-11-07: /blog = 404, /sitemap-blog.xml = 404; blog/ tiene 118 HTML y sitemap-blog.xml con 118 URLs.",
+  "cambioNecesario": "Publicar blog/ como rutas estaticas del dominio principal (o crear la pagina /blog en GHL que renderice el indice), subir sitemap-blog.xml, enlazarlo desde el sitemap principal y volver a correr npm run build:sitemap con publicado=true."
+}

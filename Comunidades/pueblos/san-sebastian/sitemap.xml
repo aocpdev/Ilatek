@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- san-sebastian.ilatekpr.com — landings de las comunidades de este municipio.
+     Generado por scripts/genera-pueblos.mjs; una URL por comunidad y servicio. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://san-sebastian.ilatekpr.com/andres-mendez-liceaga/limpieza</loc></url>
+  <url><loc>https://san-sebastian.ilatekpr.com/andres-mendez-liceaga/sellado-de-techo</loc></url>
+  <url><loc>https://san-sebastian.ilatekpr.com/hacienda-san-andres/limpieza</loc></url>
+  <url><loc>https://san-sebastian.ilatekpr.com/hacienda-san-andres/sellado-de-techo</loc></url>
+  <url><loc>https://san-sebastian.ilatekpr.com/san-sebastian-court/limpieza</loc></url>
+  <url><loc>https://san-sebastian.ilatekpr.com/san-sebastian-court/sellado-de-techo</loc></url>
+  <url><loc>https://san-sebastian.ilatekpr.com/villa-rita/limpieza</loc></url>
+  <url><loc>https://san-sebastian.ilatekpr.com/villa-rita/sellado-de-techo</loc></url>
+</urlset>

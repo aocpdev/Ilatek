@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Reparacion De Techos
+Slug: reparacion-de-techos
+URL: https://ilatekpr.com/reparacion-de-techos
+Acción: REPUBLICAR
+Estado hoy: HTTP 200
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (246 KB, sha256 b3bba090f384)
+Origen en el repo: categorias/reparacion-de-techos/es/landing-pages/ghl-reparacion-de-techos-landing.html
+Sección de clima: sí
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

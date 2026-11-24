@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Sellado De Silicona (EN)
+Slug: en/sellado-de-silicona
+URL: https://ilatekpr.com/en/sellado-de-silicona
+Acción: CREAR PÁGINA
+Estado hoy: HTTP 404
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (242 KB, sha256 6f36586c2a2b)
+Origen en el repo: servicios/sellado-de-silicona/en/landing-pages/sellado-de-silicona.en.html
+Sección de clima: no
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

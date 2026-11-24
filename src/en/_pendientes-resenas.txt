@@ -1,0 +1,143 @@
+{{custom_values.county_name_and_state}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}
+/og:title/ og:description ("… en Juncos, Puerto Rico"): el título sale de {{custom_values.business__county_name}}, así que es el mismo custom value, sin depender de que el builder expanda el Custom Code; 3. el subdominio del sitio (juncos.ilatekpr.com → Juncos); 4. los valores de marca del contrato (custom-values.json → brand). El portador que viaja en el embed se oculta siempre (nunca es contenido). Estado en
+{{custom_values.business__county_name}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}
+Login
+Reseñas y confianza
+La confianza en Ilatek
+se demuestra
+, no se promete.
+Somos una empresa local de Puerto Rico con equipos propios, precios por escrito y garantía de mano de obra. Aquí puedes leer las reseñas reales de clientes de limpieza y de techos, conocer a quiénes les confías tu casa y resolver cada duda antes de reservar —
+sin sorpresas
+Agenda tu servicio
+Leer las reseñas ↓
+fuentes reales
+Google · Limpieza · Techos
+municipios
+Cobertura en PR
+depósito
+Descontable del total
+Por qué confiar
+Cinco razones que convierten una promesa en confianza.
+Precio por escrito
+El número que te damos es el número que pagas: cotización clara antes de empezar.
+Garantía de mano de obra
+Por escrito en cada trabajo. Si algo no queda bien, regresamos a corregirlo.
+Materiales certificados
+Selladores y productos profesionales, correctos para cada superficie.
+Equipo propio y verificado
+Técnicos uniformados de Ilatek — no subcontratamos extraños en tu casa.
+Depósito de $50 descontable
+Reservas tu fecha con $50 que se descuentan del total del servicio.
+Municipios atendidos
+Fuentes de reseñas
+Líneas: Limpieza y Techos
+equipo
+De principio a fin
+Reseñas verificadas
+Lo que dicen quienes ya confiaron.
+Tres fuentes, una sola experiencia: reseñas de Google, de nuestros clientes de limpieza y de techos en {{custom_values.county_name_and_state}}. Cambia de pestaña para leer cada una.
+Reseñas de Google
+Reseñas de Techos
+Conócenos
+Rostros detrás de cada servicio.
+Ilatek es una empresa puertorriqueña fundada por personas que viven las mismas comunidades que atendemos. Cuando llamas, hablas con nosotros — no con un call center.
+Luis A. Cardec
+Fundador
+"Cada casa que atendemos lleva nuestro nombre. Por eso el estándar no se negocia: si no queda como te lo prometimos, volvemos."
+Aida Cintrón
+Fundadora
+"La confianza empieza antes de que lleguemos: precio claro por escrito, respuestas rápidas y un equipo que respetu tu hogar como si fuera el nuestro."
+Preguntas frecuentes
+Todo lo que necesitas saber para confiar.
+¿Ilatek es una empresa local de Puerto Rico?
+Somos una empresa puertorriqueña con operaciones en los 78 municipios. No somos una franquicia ni una plataforma que subcontrata: tenemos equipos propios, camionetas de la empresa y supervisión directa en cada trabajo.
+¿Las reseñas de esta página son reales?
+Publicamos tres fuentes verificadas: reseñas de Google y widgets independientes con las reseñas de nuestros servicios de Limpieza y de Techos. Ninguna se edita ni se filtra — cambia de pestaña y léelas directamente.
+¿Están asegurados?
+Ilatek opera con cobertura de responsabilidad civil y todos nuestros técnicos trabajan con el equipo de protección requerido para cada servicio — en techos, arnés y anclajes; en limpieza, productos seguros para familias y mascotas.
+¿Qué pasa si no quedo satisfecho con el servicio?
+Nos avisas y
+regresamos a corregirlo
+: la garantía de mano de obra está por escrito en cada trabajo de techos, y en limpieza coordinamos un reproceso de las áreas señaladas. Prefiero perder una hora que un cliente.
+¿Por qué piden un depósito de $50?
+El depósito
+reserva tu fecha y bloquea el equipo
+para tu zona. No es un cargo extra:
+se descuenta del total
+del servicio el día del trabajo. Si por nuestra causa no podemos asistir, se te reembolsa completo.
+¿Quién entra a mi casa?
+Siempre
+personal de Ilatek, uniformado e identificado
+. Te confirmamos por mensaje los nombres del equipo que llegará y el horario. No cedemos tus llaves ni tu información a terceros.
+¿Cuánto tardan en responderme?
+En horario laboral,
+en minutos
+: el cotizador de la web te da un precio real al instante, y por WhatsApp o llamada confirmamos detalles y agendamos. Para emergencias de goteras priorizamos la visita.
+¿Por qué confiar en Ilatek para mi casa o negocio?
+Porque combinamos
+reseñas verificables, garantía por escrito, precio claro y equipos propios
+con el trato de una empresa local de {{custom_values.county_name_and_state}}. La confianza no la decimos nosotros — la respaldan quienes ya nos contrataron.
+Cotización gratis
+Convierte la confianza en tu próximo servicio.
+Solicita tu cotización gratis en {{custom_values.county_name_and_state}}: precio claro por escrito y el respaldo de reseñas que ya leíste arriba.
+Respuesta en minutos · Sin compromiso
+Precio claro por escrito
+sin sorpresas el día del servicio.
+respaldada por escrito en cada trabajo.
+Reserva con $50
+descontable del total de tu servicio.
+¿Techos o limpieza? Agenda en minutos.
+Elige tu línea de servicio y reserva tu fecha y hora. Atendemos {{custom_values.county_name_and_state}} y los 78 municipios de Puerto Rico.
+Reservas con el
+depósito de $50 descontable
+· Respuesta en minutos · Sin compromiso
+Devasks
+Navegación de Ilatek
+Ilatek, inicio
+Logo de Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Logo%20de%20Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Navegación principal
+Idioma / Language
+Español
+English
+Abrir o cerrar el menú
+Reseñas y confianza de Ilatek {{custom_values.county_name_and_state}}
+Equipo de Ilatek Property Solution en {{custom_values.county_name_and_state}} — profesionales de limpieza y techos frente a las camionetas de la empresa — servicio en {{custom_values.business__county_name}}
+Ilatek Property Solution — servicio en {{custom_values.county_name_and_state}} — servicio en {{custom_values.business__county_name}}
+Equipo%20de%20Ilatek%20Property%20Solution%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D%20%E2%80%94%20profesionales%20de%20limpieza%20y%20techos%20frente%20a%20las%20camionetas%20de%20la%20empresa%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ilatek%20Property%20Solution%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Cifras de Ilatek
+Reseñas de Google de clientes de Ilatek
+Reseñas de Limpieza de Ilatek
+Reseñas de Techos de Ilatek
+Luis A. Cardec, fundador de Ilatek en {{custom_values.county_name_and_state}}, {{custom_values.business__county_name}}
+Luis A. Cardec · Fundador de Ilatek — servicio en {{custom_values.county_name_and_state}} — servicio en {{custom_values.business__county_name}}
+Luis%20A.%20Cardec%2C%20fundador%20de%20Ilatek%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D%2C%20%7B%7Bcustom_values.business__county_name%7D%7D
+Luis%20A.%20Cardec%20%C2%B7%20Fundador%20de%20Ilatek%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Aida Cintron, fundadora de Ilatek — limpieza residencial y comercial en {{custom_values.county_name_and_state}}, {{custom_values.business__county_name}}
+Aida Cintron · Fundadora de Ilatek — servicio en {{custom_values.county_name_and_state}} — servicio en {{custom_values.business__county_name}}
+Aida%20Cintron%2C%20fundadora%20de%20Ilatek%20%E2%80%94%20limpieza%20residencial%20y%20comercial%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D%2C%20%7B%7Bcustom_values.business__county_name%7D%7D
+Aida%20Cintron%20%C2%B7%20Fundadora%20de%20Ilatek%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Pie de página de Ilatek
+Facebook
+Facebook — servicio en {{custom_values.business__county_name}}
+Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Instagram
+Instagram — servicio en {{custom_values.business__county_name}}
+Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Youtube
+Youtube — servicio en {{custom_values.business__county_name}}
+Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+TikTok
+TikTok — servicio en {{custom_values.business__county_name}}
+TikTok%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+X — servicio en {{custom_values.business__county_name}}
+X%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+LinkedIn
+LinkedIn — servicio en {{custom_values.business__county_name}}
+LinkedIn%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Pinterest
+Pinterest — servicio en {{custom_values.business__county_name}}
+Pinterest%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D

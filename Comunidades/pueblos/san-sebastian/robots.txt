@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://san-sebastian.ilatekpr.com/sitemap.xml

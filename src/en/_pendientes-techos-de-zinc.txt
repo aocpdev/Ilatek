@@ -1,0 +1,164 @@
+/og:title/ og:description ("… en Juncos, Puerto Rico"): el título sale de {{custom_values.business__county_name}}, así que es el mismo custom value, sin depender de que el builder expanda el Custom Code; 3. el subdominio del sitio (juncos.ilatekpr.com → Juncos); 4. los valores de marca del contrato (custom-values.json → brand). El portador que viaja en el embed se oculta siempre (nunca es contenido). Estado en
+{{custom_values.business__county_name}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}
+Login
+Techos de zinc
+Reparación y Sellado de Techos de Zinc y Metal en
+Puerto Rico
+desde $250.
+Los techos de zinc son comunes en anexos, garajes y quioscos, pero el óxido y el viento los castigan. Ilatek repara y sella techos de zinc en {{custom_values.business__county_name}}
+desde $250
+, con tratamiento anticorrosivo, cotización por $50 descontables del total y garantía escrita.
+Solicita tu cotización
+Qué incluye el servicio ↓
+por reparación
+Tratamiento incluido
+municipios
+Cobertura en PR
+al agendar
+Se descuenta del total
+Metal y zinc · Sellado
+undefined
+El zinc dura años si le frenas el óxido a tiempo.
+Frena el óxido
+Tratamos la corrosión activa y aplicamos recubrimiento que protege el metal por más tiempo.
+Sella traslapes y tornillos
+Sellamos las uniones entre láminas y los tornillos flojos, que son las entradas de agua más comunes.
+Asegura contra el viento
+Reforzamos las fijaciones para que las láminas no se levanten con los vientos de tormenta.
+Qué incluye
+Cómo reparamos un techo de zinc.
+En el zinc, el enemigo es el óxido y los traslapes abiertos.
+Ilatek limpia el metal, trata la corrosión, aprieta y sella tornillos, sella las uniones entre láminas y aplica protección anticorrosiva.
+Cepillado y preparación del metal
+Tratamiento del óxido activo
+Sellado de traslapes y uniones
+Reemplazo de tornillos y fijaciones
+Recubrimiento anticorrosivo
+Garantía por escrito del trabajo
+Cotiza tu techo de zinc
+Traslapes · Tornillos · Anticorrosivo
+Problemas típicos
+Qué daña un techo de zinc en Puerto Rico.
+Óxido
+Corrosión por sal y humedad
+La brisa salina de la costa y la humedad constante perforan el zinc sin protección.
+Agua
+Traslapes abiertos
+Las uniones entre láminas se aflojan y dejan pasar el agua directamente.
+Viento
+Láminas levantadas
+Tornillos flojos o herrumbrados permiten que el viento levante las láminas en tormentas.
+Cómo funciona
+Cómo sellamos tu techo de zinc.
+Tratamos el óxido, sellamos traslapes y tornillos, y aplicamos recubrimiento anticorrosivo para proteger el metal.
+PASO 1
+Cotiza tu reparación de techos de zinc
+Usa el cotizador de Ilatek o escríbenos: evaluamos tu techo y te damos el precio de reparación de techos de zinc por escrito en minutos — sin compromiso.
+PASO 2
+Inspección y agenda
+Confirmamos el alcance de reparación de techos de zinc con una inspección del techo, defines la fecha y reservas con el depósito de $50, que se descuenta del total.
+PASO 3
+Trabajo terminado
+Ejecutamos reparación de techos de zinc con materiales certificados, protegemos el área y te entregamos la garantía por escrito.
+Cobertura de
+techos de zinc
+en toda la isla.
+Ilatek Techos brinda reparación de techos de zinc en los
+78 municipios de Puerto Rico
+. Atendemos tu área en
+{{custom_values.business__county_name}}
+y toda la isla: busca tu pueblo en el directorio y visita su página.
+No encontramos ese pueblo. Verifica el nombre e intenta nuevamente.
+Página 1 de 1
+Reseñas de clientes de Ilatek.
+Reseñas de personas que confiaron en Ilatek para mantenimiento y sellado de techos en Puerto Rico. Cambia de pestaña para ver cada fuente.
+Preguntas frecuentes
+Preguntas frecuentes sobre reparación de techos de zinc.
+¿Cuánto cuesta reparar un techo de zinc?
+La reparación y sellado de techos de zinc de Ilatek
+comienza desde $250
+, incluyendo tratamiento anticorrosivo y sellado de uniones. La visita o inspección cuesta $50 y se descuenta del total del servicio.
+¿Por qué se oxida tan rápido el zinc en Puerto Rico?
+Por el
+aire salino de la costa, la humedad y la lluvia constante
+. Sin recubrimiento protector, el zinc se perfora en pocos años y comienza a gotear.
+¿Se puede reparar un techo de zinc oxidado?
+Si el óxido es superficial o puntual, sí
+: se trata y se protege. Si ya perforó grandes áreas, evaluamos sustituir las láminas dañadas. Te lo decimos claro.
+¿Qué sellador se usa en techos de zinc?
+Usamos
+selladores y recubrimientos específicos para metal
+, con tratamiento anticorrosivo previo, porque un sellador para concreto no adhiere bien al zinc.
+¿Cómo sellan las uniones entre láminas?
+Aplicamos
+sellador flexible en los traslapes
+y reponemos tornillos y arandelas de sellado para que el agua no pase por las uniones ni por las fijaciones.
+¿Cuánto tarda el trabajo?
+Un techo de zinc de anexo o garaje se completa normalmente en
+uno a dos días
+, según el área y el grado de oxidación.
+¿La cotización de mi techo de zinc tiene costo?
+La visita o inspección es
+y se descuenta del total del servicio: si aceptas el trabajo, ese monto se acredita al total. Así confirmamos tu fecha y el monto se descuenta del total.
+¿La reparación del techo de zinc tiene garantía?
+Entregamos garantía de mano de obra por escrito sobre el tratamiento y sellado aplicado.
+¿Por qué elegir Ilatek Techos para el techo de zinc?
+El zinc de anexos y garajes se oxida con la brisa salina y filtra por los traslapes: tratamos la corrosión, sellamos uniones y reponemos fijaciones desde $250, con cotización por $50 descontables del total y garantía escrita.
+Visita o inspección por $50
+Protege tu techo antes de la próxima lluvia.
+Solicita tu cotización por $50 descontables del total de reparación de techos de zinc en {{custom_values.business__county_name}} y recibe precio claro y por escrito — cotización por $50 descontables del total y cobertura en los 78 municipios de Puerto Rico.
+Solicita tu cotización por $50 descontables del total
+Respuesta en minutos · Sin compromiso
+Precio claro por escrito
+desde $250, confirmado después de la inspección.
+Inspección sin compromiso
+Subimos, diagnosticamos y te explicamos las opciones.
+Garantía de mano de obra
+Respaldada por escrito en cada trabajo que hacemos.
+Devasks
+Navegación de Ilatek
+Ilatek, inicio
+Logo de Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Logo%20de%20Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Navegación principal
+Idioma / Language
+Español
+English
+Abrir o cerrar el menú
+Ilatek Techos de zinc {{custom_values.business__county_name}}
+Techos de metal y zinc — instalación, sellado y protección en {{custom_values.business__county_name}}
+Techos de metal y zinc · Ilatek Techos — servicio en {{custom_values.business__county_name}}
+Techos%20de%20metal%20y%20zinc%20%E2%80%94%20instalaci%C3%B3n%2C%20sellado%20y%20protecci%C3%B3n%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Techos%20de%20metal%20y%20zinc%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Sellado y tratamiento anticorrosivo de techo de zinc por Ilatek Techos en {{custom_values.business__county_name}}
+Techos de zinc · Ilatek Techos — servicio en {{custom_values.business__county_name}}
+Sellado%20y%20tratamiento%20anticorrosivo%20de%20techo%20de%20zinc%20por%20Ilatek%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Techos%20de%20zinc%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Cobertura de reparación de techos de zinc de Ilatek Techos en Puerto Rico
+Busca tu pueblo
+Buscar un municipio de Puerto Rico
+Limpiar búsqueda
+Municipios de Puerto Rico con servicio de reparación de techos de zinc
+Pie de página de Ilatek
+Facebook
+Facebook — servicio en {{custom_values.business__county_name}}
+Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Instagram
+Instagram — servicio en {{custom_values.business__county_name}}
+Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Youtube
+Youtube — servicio en {{custom_values.business__county_name}}
+Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+TikTok
+TikTok — servicio en {{custom_values.business__county_name}}
+TikTok%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+X — servicio en {{custom_values.business__county_name}}
+X%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+LinkedIn
+LinkedIn — servicio en {{custom_values.business__county_name}}
+LinkedIn%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Pinterest
+Pinterest — servicio en {{custom_values.business__county_name}}
+Pinterest%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D

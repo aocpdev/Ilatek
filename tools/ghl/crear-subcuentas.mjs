@@ -71,7 +71,6 @@ const STATE = "PR";
 // pueblo: PR para todo el archivo, y Puerto Rico como región (lo que muestra el
 // desplegable de GHL para PR).
 const REGION = "Puerto Rico";
-const BRAND_WEBSITE = "ilatekpr.com"; // sin protocolo: lo exige el contrato de enlaces
 // Datos fijos del molde: no cambian por municipio.
 const CUENTA_FIRST_NAME = "Luis y Aida";
 const CUENTA_LAST_NAME = "Ilatek";
@@ -317,7 +316,10 @@ function valoresFor(e) {
       key: "business__phone",
       value: phone.replace(/^\+1/, "").replace(/(\d{3})(\d{3})(\d{4})/, "$1-$2-$3"),
     },
-    { name: "Website Url", key: "website_url", value: BRAND_WEBSITE },
+    // `website_url` ES el dominio del municipio: el propietario exige que sea
+    // idéntico a `business__county_domain` para que los enlaces internos no
+    // salten al dominio principal.
+    { name: "Website Url", key: "website_url", value: e.subdominio },
     { name: "Facebook Url", key: "facebook_url", value: brand.facebook_url },
     { name: "Instagram Url", key: "instagram_url", value: brand.instagram_url },
     // Los cuatro que el snapshot también deja vacíos pero con valor conocido.

@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Garantia (EN)
+Slug: en/garantia
+URL: https://ilatekpr.com/en/garantia
+Acción: CREAR PÁGINA
+Estado hoy: HTTP 404
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (207 KB, sha256 c7d8f6b4b4b3)
+Origen en el repo: garantia/en/landing-pages/ghl-garantia-embed.en.html
+Sección de clima: no
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- las-marias.ilatekpr.com — landings de las comunidades de este municipio.
+     Generado por scripts/genera-pueblos.mjs; una URL por comunidad y servicio. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://las-marias.ilatekpr.com/buena-vista/limpieza</loc></url>
+  <url><loc>https://las-marias.ilatekpr.com/buena-vista/sellado-de-techo</loc></url>
+  <url><loc>https://las-marias.ilatekpr.com/jardines-de-las-marias/limpieza</loc></url>
+  <url><loc>https://las-marias.ilatekpr.com/jardines-de-las-marias/sellado-de-techo</loc></url>
+</urlset>

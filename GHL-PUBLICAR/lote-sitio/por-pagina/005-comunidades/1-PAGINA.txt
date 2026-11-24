@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Comunidades
+Slug: comunidades
+URL: https://ilatekpr.com/comunidades
+Acción: CREAR PÁGINA
+Estado hoy: HTTP 404
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (633 KB, sha256 8b7505f8bbe5)
+Origen en el repo: Comunidades/landing-pages/comunidades.html
+Sección de clima: sí
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

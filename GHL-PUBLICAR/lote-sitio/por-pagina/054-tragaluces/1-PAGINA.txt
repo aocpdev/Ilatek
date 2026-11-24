@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Tragaluces
+Slug: tragaluces
+URL: https://ilatekpr.com/tragaluces
+Acción: REPUBLICAR
+Estado hoy: HTTP 200
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (241 KB, sha256 b987692c53d8)
+Origen en el repo: servicios/tragaluces/es/landing-pages/ghl-tragaluces-landing.html
+Sección de clima: sí
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

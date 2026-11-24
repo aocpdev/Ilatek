@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Limpieza Profunda
+Slug: limpieza-profunda
+URL: https://ilatekpr.com/limpieza-profunda
+Acción: REPUBLICAR
+Estado hoy: HTTP 200
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (238 KB, sha256 c94f57dfecc2)
+Origen en el repo: servicios/limpieza-profunda/es/landing-pages/ghl-limpieza-profunda-landing.html
+Sección de clima: sí
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

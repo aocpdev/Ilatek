@@ -1,0 +1,147 @@
+{{custom_values.business__county_name}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}
+Limpieza Profunda en {{custom_values.business__county_name}} | Ilatek
+/og:title/ og:description ("… en Juncos, Puerto Rico"): el título sale de {{custom_values.business__county_name}}, así que es el mismo custom value, sin depender de que el builder expanda el Custom Code; 3. el subdominio del sitio (juncos.ilatekpr.com → Juncos); 4. los valores de marca del contrato (custom-values.json → brand). El portador que viaja en el embed se oculta siempre (nunca es contenido). Estado en
+Login
+Limpieza profunda
+Limpieza Profunda en
+{{custom_values.business__county_name}}
+que renueva cada rincón de tu hogar.
+Ilatek renueva tu hogar área por área en {{custom_values.business__county_name}}: la limpieza a fondo que elimina la acumulación que el mantenimiento regular no alcanza — desde $250. Precio real en minutos con el cotizador y reserva con $50 descontable.
+Solicita tu cotización
+Qué incluye el servicio ↓
+por servicio
+Precio claro y por escrito
+municipios
+Cobertura en PR
+depósito
+Descontable al reservar
+Por qué Ilatek
+Renovación completa, esquina por esquina.
+Va donde el mantenimiento no llega
+Interiores de enseres, juntas, acumulación de grasa y polvo en zonas altas: atacamos lo que la limpieza regular deja pendiente.
+Ideal como primera visita
+¿Tu casa no recibe mantenimiento hace tiempo? Empezamos con la profunda y luego la limpieza estándar (desde $250) mantiene el resultado al día.
+Equipo y productos de grado profesional
+Productos profesionales desengrasantes y desinfectantes, seguros para tu familia y mascotas, con el equipo para cada superficie en {{custom_values.business__county_name}}.
+Qué incluye
+Renovación a fondo, área por área.
+La limpieza profunda de Ilatek va más allá del mantenimiento: interiores de enseres, juntas y esquinas, acumulación y detalles que devuelven tu casa a su mejor versión — con el alcance definido en tu cotización.
+Cocina a fondo: interiores de nevera y horno
+Baños a fondo: juntas, grifería y desincrustación
+Cuartos: desempolvo alto y bajo, incluido bajo muebles
+Sala y comedor: muebles, marcos y ventanales
+Pisos: tratamiento profundo en cada habitación
+Detalles: zócalos, interruptores y puertas
+Cotiza tu renovación
+Desengrasantes profesionales · seguros para tu familia y mascotas
+Espacios
+Perfecta en estos momentos.
+Primera limpieza con Ilatek
+Arrancamos dejando tu casa impecable a fondo; luego la limpieza estándar la mantiene al día con menos costo por visita.
+Después de una obra o remodelación
+Polvo de construcción, residuos y detalles: si tu proyecto fue menor, la profunda devuelve el hogar a su estado — para obras mayores tenemos post-construcción.
+Limpieza de temporada o evento
+Semana santa, fiestas, cambio de estación: una renovación completa que deja la casa lista para recibir — y luego la estándar sostiene el resultado.
+Frecuencia
+El momento perfecto para una profunda.
+1–2 veces al año
+El estándar recomendado
+La recomendación profesional: una o dos limpiezas profundas al año para renovar lo que el mantenimiento diario no alcanza.
+Como primera visita
+Antes de iniciar el plan recurrente
+El mejor arranque: dejamos la casa impecable a fondo y las visitas estándar (desde $250) mantienen el nivel con menos esfuerzo.
+En momentos clave
+Cuando la casa lo pide
+Cambio de estación, llegada de un bebé, huéspedes o simplemente "toca renovar": una profunda y tu casa vuelve a empezar.
+Cotiza tu limpieza profunda
+Cobertura local
+Limpieza impecable,
+Cobertura en Toda la Isla
+Explora los servicios de limpieza de
+Ilatek
+disponibles en los
+78 municipios de Puerto Rico
+y visita la página de tu pueblo. Atendemos hogares en
+y toda la isla.
+No encontramos ese pueblo. Verifica el nombre e intenta nuevamente.
+Página 1 de 1
+Preguntas frecuentes
+Todo lo que preguntas antes de contratar.
+¿Cuánto cuesta la limpieza profunda en {{custom_values.business__county_name}}?
+Ilatek cobra
+desde $250
+para la limpieza profunda: el precio depende del tamaño de tu hogar. Usa el cotizador y recibe tu número real en minutos — precio claro y por escrito, sin compromiso.
+¿Qué incluye una limpieza profunda?
+Incluye cocina a fondo (interiores de nevera y horno), baños con juntas y desincrustación, desempolvo alto y bajo en cuartos, muebles y marcos en sala, pisos con tratamiento profundo y detalles como zócalos e interruptores. El alcance exacto queda definido en tu cotización.
+¿Cuál es la diferencia entre limpieza profunda y estándar?
+La estándar es el
+mantenimiento regular
+: superficies, baños, cocina y pisos. La profunda va más a fondo —interiores de enseres, juntas y acumulación— y se recomienda como primera visita; luego la estándar (desde $250) mantiene tu hogar al día.
+¿Cada cuánto debo limpiar mi casa?
+Depende del ritmo de tu hogar: con niños o mascotas funciona
+semanal
+; la mayoría de nuestros clientes elige
+quincenal
+; y hogares pequeños o tranquilos,
+mensual
+. En la cotización te recomendamos la frecuencia ideal según tu caso.
+¿Cubren mi área en {{custom_values.business__county_name}}?
+Sí. Ilatek atiende hogares en los
+, incluyendo {{custom_values.business__county_name}} — urbanizaciones, condominios y apartamentos. Cotiza tu hogar y confirma tu plan en minutos.
+¿Hay contrato o compromiso mínimo?
+Definimos juntos el plan y la frecuencia — sin letra pequeña. Reservas con un depósito de
+$50 descontable
+y ajustamos el servicio cuando tu hogar lo necesite.
+¿Qué productos y equipos utilizan?
+Llegamos con
+productos y equipos profesionales de limpieza residencial
+, seguros para tu familia y tus mascotas. Si prefieres algo específico (eco-amigable, sin fragancia), coordínalo en la cotización.
+¿Por qué elegir Ilatek para la limpieza de tu hogar?
+Precio claro por trabajo desde $250, cotizador con precio real en minutos, equipo puntual y confiable, depósito de $50 descontable y cobertura en los 78 municipios. Tu hogar siempre fresco en {{custom_values.business__county_name}}.
+¿Tu hogar merece el estándar Ilatek?
+Solicita tu cotización ↗
+Devasks
+Navegación de Ilatek
+Ilatek, inicio
+Logo de Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Logo%20de%20Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Navegación principal
+Idioma / Language
+Español
+English
+Abrir o cerrar el menú
+Ilatek Limpieza Profunda {{custom_values.business__county_name}}
+Equipo de Ilatek realizando una limpieza profunda en una casa — renovación área por área de hogares en {{custom_values.business__county_name}}
+Limpieza Profunda en {{custom_values.business__county_name}} · Ilatek
+Equipo%20de%20Ilatek%20realizando%20una%20limpieza%20profunda%20en%20una%20casa%20%E2%80%94%20renovaci%C3%B3n%20%C3%A1rea%20por%20%C3%A1rea%20de%20hogares%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Limpieza%20Profunda%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%C2%B7%20Ilatek
+Limpieza profunda de Ilatek — renovación a fondo de habitaciones, enseres y juntas en {{custom_values.business__county_name}}
+Limpieza%20profunda%20de%20Ilatek%20%E2%80%94%20renovaci%C3%B3n%20a%20fondo%20de%20habitaciones%2C%20enseres%20y%20juntas%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Cobertura de limpieza de Ilatek en Puerto Rico
+Busca tu pueblo
+Buscar un municipio de Puerto Rico
+Limpiar búsqueda
+Municipios de Puerto Rico con servicio de Ilatek
+Pie de página de Ilatek
+Facebook
+Facebook — servicio en {{custom_values.business__county_name}}
+Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Instagram
+Instagram — servicio en {{custom_values.business__county_name}}
+Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Youtube
+Youtube — servicio en {{custom_values.business__county_name}}
+Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+TikTok
+TikTok — servicio en {{custom_values.business__county_name}}
+TikTok%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+X — servicio en {{custom_values.business__county_name}}
+X%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+LinkedIn
+LinkedIn — servicio en {{custom_values.business__county_name}}
+LinkedIn%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Pinterest
+Pinterest — servicio en {{custom_values.business__county_name}}
+Pinterest%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D

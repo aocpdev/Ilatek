@@ -3,11 +3,11 @@
   "language": "es",
   "status": "plantilla-local-delta-system",
   "metaTagTitle": "Sellado Acrílico para Techos en {{custom_values.business__county_name}} | Ilatek Techos",
-  "metaTagDescription": "Sellado acrílico para techos en {{custom_values.business__county_name}} desde $2.00 por pie². Opción económica y reflectiva para mantenimiento periódico. Inspección gratis y garantía escrita.",
-  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac72671d5f4a8af439f5cce.jpg",
+  "metaTagDescription": "Sellado acrílico para techos en {{custom_values.business__county_name}} desde $250. Opción económica y reflectiva para mantenimiento periódico. Agenda con $50 descontables del total y garantía escrita.",
+  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/9f8a1bf7-4c3f-452e-8e26-22b7901979b8.webp",
   "locationCustomValue": "{{custom_values.business__county_name}}",
   "metaTagImageAlt": "Sellado Acrílico para Techos en {{custom_values.business__county_name}} | Ilatek Techos",
   "canonical": "https://{{custom_values.website_url}}/sellado-acrilico",
-  "socialImageFile": "assets/respaldo/6ac72671d5f4a8af439f5cce.webp",
+  "socialImageFile": "assets/meta-image.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."
 }

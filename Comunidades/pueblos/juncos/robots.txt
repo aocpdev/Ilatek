@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://juncos.ilatekpr.com/sitemap.xml

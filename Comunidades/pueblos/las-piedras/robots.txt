@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://las-piedras.ilatekpr.com/sitemap.xml

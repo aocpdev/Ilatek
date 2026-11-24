@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Reparacion De Goteras (EN)
+Slug: en/reparacion-de-goteras
+URL: https://ilatekpr.com/en/reparacion-de-goteras
+Acción: CREAR PÁGINA
+Estado hoy: HTTP 404
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (244 KB, sha256 2fa22a55ab1a)
+Origen en el repo: servicios/reparacion-de-goteras/en/landing-pages/reparacion-de-goteras.en.html
+Sección de clima: no
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

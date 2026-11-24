@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Empleos Techos (EN)
+Slug: en/reclutamiento-empleo-techos
+URL: https://ilatekpr.com/en/reclutamiento-empleo-techos
+Acción: CREAR
+Estado hoy: HTTP 404
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (205 KB, sha256 cbe6e6a22909)
+Origen en el repo: reclutamiento-empleo-techos/en/landing-pages/reclutamiento-empleo-techos.en.html
+Sección de clima: no
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

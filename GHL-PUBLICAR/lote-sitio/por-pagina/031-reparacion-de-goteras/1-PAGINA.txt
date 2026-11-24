@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Reparacion De Goteras
+Slug: reparacion-de-goteras
+URL: https://ilatekpr.com/reparacion-de-goteras
+Acción: REPUBLICAR
+Estado hoy: HTTP 200
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (245 KB, sha256 068286ee041d)
+Origen en el repo: servicios/reparacion-de-goteras/es/landing-pages/ghl-reparacion-de-goteras-landing.html
+Sección de clima: no
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

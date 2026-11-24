@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- patillas.ilatekpr.com — landings de las comunidades de este municipio.
+     Generado por scripts/genera-pueblos.mjs; una URL por comunidad y servicio. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://patillas.ilatekpr.com/solymar/limpieza</loc></url>
+  <url><loc>https://patillas.ilatekpr.com/solymar/sellado-de-techo</loc></url>
+  <url><loc>https://patillas.ilatekpr.com/villa-real/limpieza</loc></url>
+  <url><loc>https://patillas.ilatekpr.com/villa-real/sellado-de-techo</loc></url>
+  <url><loc>https://patillas.ilatekpr.com/villas-del-caribe/limpieza</loc></url>
+  <url><loc>https://patillas.ilatekpr.com/villas-del-caribe/sellado-de-techo</loc></url>
+</urlset>

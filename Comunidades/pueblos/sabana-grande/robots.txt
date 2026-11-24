@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sabana-grande.ilatekpr.com/sitemap.xml

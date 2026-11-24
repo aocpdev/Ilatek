@@ -1,0 +1,497 @@
+{
+  "version": 1,
+  "generatedAt": "2026-11-07",
+  "scope": "sellado de techos en Puerto Rico",
+  "nota": "Ningun embed, schema o meta description debe publicar un dato con estado pendiente o conflicto. Los valores verificados salen del HTML publico de ilatekpr.com o del repositorio. Los pendientes requieren confirmacion del propietario.",
+  "hechos": [
+    {
+      "id": "precio-sellado-desde",
+      "dato": "Precio de entrada del sellado de techos",
+      "valor": "desde $250 por servicio",
+      "estado": "verificado",
+      "fuente": "llms.txt; home publicada",
+      "url": "https://ilatekpr.com/sellado-de-techos",
+      "nota": "Aparece en llms.txt y en la home; la pagina /sellado-de-techos no muestra la cifra."
+    },
+    {
+      "id": "precio-impermeabilizacion",
+      "dato": "Precio base de impermeabilizacion",
+      "valor": "desde $250 por servicio",
+      "estado": "verificado",
+      "fuente": "HTML publico de /impermeabilizacion-de-techos",
+      "url": "https://ilatekpr.com/impermeabilizacion-de-techos"
+    },
+    {
+      "id": "precio-silicona",
+      "dato": "Precio base de sellado con silicona 100%",
+      "valor": "desde $250 por servicio",
+      "estado": "verificado",
+      "fuente": "HTML publico de /sellado-de-silicona y schema Service",
+      "url": "https://ilatekpr.com/sellado-de-silicona"
+    },
+    {
+      "id": "rango-publicado",
+      "dato": "Rango de precios publicado entre paginas de techos",
+      "valor": "$250 por servicio, según el sistema",
+      "estado": "verificado",
+      "fuente": "Conteo de menciones en categorias/ y servicios/ (37 x $2.50; 28 x $3.00; 15 x $6.00; 14 x $4.50; 14 x $2.00; 13 x $4.00; 13 x $3.50)",
+      "url": "https://ilatekpr.com/sellado-de-techos",
+      "nota": "El rango es consistente como envolvente, pero no existe una tabla unica que lo explique."
+    },
+    {
+      "id": "inspeccion-y-deposito",
+      "dato": "Inspeccion y deposito para agendar",
+      "valor": "Agenda con $50 descontables del total; depósito de $50 descontable",
+      "estado": "verificado",
+      "fuente": "FAQ de /sellado-de-techos; llms.txt",
+      "url": "https://ilatekpr.com/sellado-de-techos"
+    },
+    {
+      "id": "cobertura",
+      "dato": "Cobertura geografica",
+      "valor": "78 municipios de Puerto Rico",
+      "estado": "verificado",
+      "fuente": "FAQ de /sellado-de-techos; llms.txt; Comunidades/cobertura-report.md",
+      "url": "https://ilatekpr.com/sellado-de-techos"
+    },
+    {
+      "id": "sistemas",
+      "dato": "Sistemas de sellado ofrecidos",
+      "valor": "Silicona 100%, membrana asfaltica, recubrimiento elastomerico, poliuretano y acrilico",
+      "estado": "verificado",
+      "fuente": "Seccion 'Cinco maneras de sellar un techo' de /sellado-de-techos",
+      "url": "https://ilatekpr.com/sellado-de-techos"
+    },
+    {
+      "id": "duracion-silicona",
+      "dato": "Duracion esperada de la silicona 100%",
+      "valor": "20 a 25 años",
+      "estado": "verificado",
+      "fuente": "H1, cuerpo, FAQ y schema de /sellado-de-silicona, alineados por el generador techos/build-techos.mjs",
+      "url": "https://ilatekpr.com/sellado-de-silicona",
+      "nota": "H1, cuerpo y schema deben decir 20 a 25 años. Verificado en el HTML generado por tools/verify-seo-integrity.mjs."
+    },
+    {
+      "id": "precio-membrana",
+      "dato": "Precio base de membrana asfaltica",
+      "valor": "desde $250 por servicio",
+      "estado": "verificado",
+      "fuente": "HTML publico de /membrana-asfaltica y schema Service",
+      "url": "https://ilatekpr.com/membrana-asfaltica"
+    },
+    {
+      "id": "precio-elastomerico",
+      "dato": "Precio base de recubrimiento elastomerico",
+      "valor": "desde $250 por servicio",
+      "estado": "verificado",
+      "fuente": "HTML publico de /recubrimiento-elastomerico y schema Service",
+      "url": "https://ilatekpr.com/recubrimiento-elastomerico"
+    },
+    {
+      "id": "precio-poliuretano",
+      "dato": "Precio base de sellado con poliuretano",
+      "valor": "desde $250 por servicio",
+      "estado": "verificado",
+      "fuente": "HTML publico de /sellado-de-poliuretano y schema Service",
+      "url": "https://ilatekpr.com/sellado-de-poliuretano"
+    },
+    {
+      "id": "precio-acrilico",
+      "dato": "Precio base de sellado acrilico",
+      "valor": "desde $250 por servicio",
+      "estado": "verificado",
+      "fuente": "HTML publico de /sellado-acrilico y schema Service",
+      "url": "https://ilatekpr.com/sellado-acrilico"
+    },
+    {
+      "id": "duracion-membrana",
+      "dato": "Duracion publicada de la membrana asfaltica",
+      "valor": "10 a 15 años",
+      "estado": "verificado",
+      "fuente": "FAQ visible de /sellado-de-techos",
+      "url": "https://ilatekpr.com/sellado-de-techos"
+    },
+    {
+      "id": "duracion-poliuretano",
+      "dato": "Duracion publicada del poliuretano",
+      "valor": "10 a 15 años",
+      "estado": "verificado",
+      "fuente": "FAQ visible de /sellado-de-techos",
+      "url": "https://ilatekpr.com/sellado-de-techos"
+    },
+    {
+      "id": "duracion-acrilico",
+      "dato": "Duracion publicada del acrilico",
+      "valor": "7 a 10 años",
+      "estado": "verificado",
+      "fuente": "FAQ visible de /sellado-de-techos",
+      "url": "https://ilatekpr.com/sellado-de-techos"
+    },
+    {
+      "id": "duracion-elastomerico",
+      "dato": "Duracion publicada del recubrimiento elastomerico",
+      "valor": null,
+      "estado": "pendiente",
+      "fuente": "No se encontro un plazo publicado y verificable para este sistema",
+      "nota": "No publicar una cifra hasta que el propietario o el fabricante la confirmen."
+    },
+    {
+      "id": "garantia-escrita",
+      "dato": "Tipo de garantia ofrecida",
+      "valor": "Garantia escrita de mano de obra con materiales certificados",
+      "estado": "verificado",
+      "fuente": "FAQ visible de /sellado-de-techos",
+      "url": "https://ilatekpr.com/sellado-de-techos",
+      "nota": "El plazo en anos sigue pendiente; no confundir tipo de garantia con duracion."
+    },
+    {
+      "id": "garantia",
+      "dato": "Garantia ofrecida",
+      "valor": "Garantia escrita de mano de obra con materiales certificados; plazo no publicado",
+      "estado": "pendiente",
+      "fuente": "FAQ de /sellado-de-techos",
+      "url": "https://ilatekpr.com/garantia",
+      "nota": "Confirmar anos exactos, cobertura y exclusiones. No publicar 'de por vida' sin respaldo del fabricante."
+    },
+    {
+      "id": "anos-operando",
+      "dato": "Anos de operacion",
+      "valor": null,
+      "estado": "pendiente",
+      "fuente": "No aparece en el HTML auditado",
+      "nota": "Dato obligatorio para competir con WindMar (24), Star Roofing (30+) y La Familia (24)."
+    },
+    {
+      "id": "licencia-daco",
+      "dato": "Licencia DACO",
+      "valor": null,
+      "estado": "pendiente",
+      "fuente": "0 menciones de DACO en 2,954 archivos HTML auditados",
+      "nota": "Star Roofing y La Familia publican DACO; es una senal de confianza de la categoria."
+    },
+    {
+      "id": "seguro-responsabilidad",
+      "dato": "Poliza de responsabilidad publica",
+      "valor": null,
+      "estado": "pendiente",
+      "fuente": "No publicado",
+      "nota": "Star Roofing publica $1 millon; confirmar el monto de Ilatek."
+    },
+    {
+      "id": "certificaciones-fabricante",
+      "dato": "Certificaciones de fabricante",
+      "valor": null,
+      "estado": "pendiente",
+      "fuente": "Solo se afirma 'materiales certificados' de forma generica",
+      "nota": "Confirmar Danosa, Gardner-Gibson, Sika, Lanco u otras, con numero o diploma verificable."
+    },
+    {
+      "id": "techos-sellados",
+      "dato": "Cantidad de techos sellados",
+      "valor": null,
+      "estado": "pendiente",
+      "fuente": "No publicado",
+      "nota": "WindMar publica +8,000. Solo publicar una cifra si es demostrable."
+    },
+    {
+      "id": "resenas",
+      "dato": "Numero y calificacion de resenas",
+      "valor": null,
+      "estado": "pendiente",
+      "fuente": "/resenas existe, pero su canonical apunta a la home",
+      "url": "https://ilatekpr.com/resenas",
+      "nota": "Confirmar conteo real por plataforma. No usar AggregateRating sin resenas verificables."
+    },
+    {
+      "id": "permisos",
+      "dato": "Permiso requerido para sellar un techo",
+      "valor": null,
+      "estado": "pendiente",
+      "fuente": "No publicado",
+      "nota": "Validar con OGPe/DACO o asesor legal antes de afirmar que no requiere permiso."
+    },
+    {
+      "id": "fundadores",
+      "dato": "Fundadores",
+      "valor": "Luis A. Cardec y Aida Cintron",
+      "estado": "verificado",
+      "fuente": "llms.txt",
+      "url": "https://ilatekpr.com/llms.txt"
+    },
+    {
+      "id": "horario",
+      "dato": "Horario de atencion",
+      "valor": "Lunes a sabado, 8:00 a.m. a 6:00 p.m.",
+      "estado": "verificado",
+      "fuente": "llms.txt; footer y datos de negocio del sitio",
+      "url": "https://ilatekpr.com/llms.txt"
+    },
+    {
+      "id": "servicios-techos",
+      "dato": "Paginas de techos publicadas",
+      "valor": "10 paginas de categoria/servicio de techos; 37 paginas de servicios en total",
+      "estado": "verificado",
+      "fuente": "categorias/ y servicios/ del repositorio",
+      "nota": "Inventario local; validar contra el sitemap vivo."
+    },
+    {
+      "id": "blog-publicado",
+      "dato": "Estado del blog",
+      "valor": "118 paginas escritas; https://ilatekpr.com/blog devuelve 404",
+      "estado": "conflicto",
+      "fuente": "blog/INVENTARIO.md; curl a /blog y /sitemap-blog.xml",
+      "nota": "El contenido existe pero no es accesible ni indexable."
+    },
+    {
+      "id": "comunidades",
+      "dato": "Cobertura programatica de comunidades",
+      "valor": "564 comunidades registradas en 78 municipios; 1,112 archivos HTML",
+      "estado": "verificado",
+      "fuente": "Comunidades/master-database.json; cobertura-report.md; conteo de archivos",
+      "nota": "La muestra auditada tiene 406 palabras y 1 enlace al servicio principal."
+    },
+    {
+      "id": "cobertura-municipios",
+      "dato": "Cobertura geografica del servicio",
+      "valor": "78 municipios de Puerto Rico",
+      "estado": "verificado",
+      "fuente": "Bloque de cobertura visible en /sellado-de-techos y en el home",
+      "url": "https://ilatekpr.com/sellado-de-techos"
+    },
+    {
+      "id": "deposito-reserva",
+      "dato": "Deposito para reservar el servicio",
+      "valor": "$50, descontable del total",
+      "estado": "verificado",
+      "fuente": "Proceso de reserva visible en /sellado-de-techos",
+      "url": "https://ilatekpr.com/sellado-de-techos"
+    },
+    {
+      "id": "inspeccion",
+      "dato": "Inspeccion y cotizacion",
+      "valor": "Inspeccion y cotizacion sin compromiso",
+      "estado": "verificado",
+      "fuente": "CTA y proceso visible en /sellado-de-techos",
+      "url": "https://ilatekpr.com/sellado-de-techos"
+    }
+  ],
+  "sistemas": [
+    {
+      "id": "silicona-100",
+      "nombre": "Silicona 100%",
+      "precioFact": "precio-silicona",
+      "duracionFact": "duracion-silicona",
+      "mejorPara": "Losas, techos planos y concreto expuesto",
+      "criterios": {
+        "uv": {
+          "valor": "Soporta radiación UV, lluvia torrencial y brisa salina sin degradarse",
+          "estado": "verificado",
+          "fuente": "https://ilatekpr.com/sellado-de-silicona"
+        },
+        "tiempo": {
+          "valor": "2 a 3 días en un techo residencial típico, con preparación incluida",
+          "estado": "verificado",
+          "fuente": "https://ilatekpr.com/sellado-de-silicona"
+        },
+        "mantenimiento": {
+          "valor": "Inspección anual recomendada",
+          "estado": "verificado",
+          "fuente": "https://ilatekpr.com/sellado-de-techos"
+        },
+        "cuando": {
+          "valor": "Techos planos y zonas costeras donde se busca la mayor vida útil",
+          "estado": "verificado",
+          "fuente": "https://ilatekpr.com/sellado-de-silicona"
+        },
+        "limitacion": {
+          "valor": "No se aplica sobre sellador vencido sin removerlo primero",
+          "estado": "verificado",
+          "fuente": "https://ilatekpr.com/sellado-de-silicona"
+        }
+      }
+    },
+    {
+      "id": "membrana-asfaltica",
+      "nombre": "Membrana asfaltica",
+      "precioFact": "precio-membrana",
+      "duracionFact": "duracion-membrana",
+      "mejorPara": "Techos planos y losas de gran espesor",
+      "criterios": {
+        "uv": {
+          "valor": "Resistente al tránsito y al sol; capa más gruesa que un coating",
+          "estado": "verificado",
+          "fuente": "https://ilatekpr.com/membrana-asfaltica"
+        },
+        "tiempo": {
+          "valor": "2 a 4 días en una azotea residencial; superficies grandes requieren más",
+          "estado": "verificado",
+          "fuente": "https://ilatekpr.com/membrana-asfaltica"
+        },
+        "mantenimiento": {
+          "valor": "Inspección anual recomendada",
+          "estado": "verificado",
+          "fuente": "https://ilatekpr.com/sellado-de-techos"
+        },
+        "cuando": {
+          "valor": "Cuando el techo recibe tránsito o está muy deteriorado",
+          "estado": "verificado",
+          "fuente": "https://ilatekpr.com/membrana-asfaltica"
+        }
+      }
+    },
+    {
+      "id": "elastomerico",
+      "nombre": "Recubrimiento elastomerico",
+      "precioFact": "precio-elastomerico",
+      "duracionFact": "duracion-elastomerico",
+      "mejorPara": "Concreto con microfisuras y techos que acumulan calor",
+      "criterios": {
+        "uv": {
+          "valor": "Acabado blanco que refleja la radiación solar y baja la temperatura del techo",
+          "estado": "verificado",
+          "fuente": "https://ilatekpr.com/recubrimiento-elastomerico"
+        },
+        "mantenimiento": {
+          "valor": "Inspección anual recomendada",
+          "estado": "verificado",
+          "fuente": "https://ilatekpr.com/sellado-de-techos"
+        },
+        "cuando": {
+          "valor": "Mantenimiento periódico y techos que acumulan calor",
+          "estado": "verificado",
+          "fuente": "https://ilatekpr.com/recubrimiento-elastomerico"
+        },
+        "limitacion": {
+          "valor": "Rinde sobre superficie limpia; requiere preparación previa",
+          "estado": "verificado",
+          "fuente": "https://ilatekpr.com/recubrimiento-elastomerico"
+        }
+      }
+    },
+    {
+      "id": "poliuretano",
+      "nombre": "Poliuretano",
+      "precioFact": "precio-poliuretano",
+      "duracionFact": "duracion-poliuretano",
+      "mejorPara": "Azoteas con equipos y trafico",
+      "criterios": {
+        "mantenimiento": {
+          "valor": "Inspección anual recomendada",
+          "estado": "verificado",
+          "fuente": "https://ilatekpr.com/sellado-de-techos"
+        },
+        "cuando": {
+          "valor": "Azoteas con equipos, mantenimiento o paso frecuente",
+          "estado": "verificado",
+          "fuente": "https://ilatekpr.com/sellado-de-poliuretano"
+        },
+        "limitacion": {
+          "valor": "Requiere inspección periódica para retocar antes de que la capa se degrade",
+          "estado": "verificado",
+          "fuente": "https://ilatekpr.com/sellado-de-poliuretano"
+        }
+      }
+    },
+    {
+      "id": "acrilico",
+      "nombre": "Acrilico",
+      "precioFact": "precio-acrilico",
+      "duracionFact": "duracion-acrilico",
+      "mejorPara": "Mantenimiento economico de techos ya sellados",
+      "criterios": {
+        "uv": {
+          "valor": "Acabado blanco que refleja el sol; la radiación UV y la humedad pueden acortar su vida",
+          "estado": "verificado",
+          "fuente": "https://ilatekpr.com/sellado-acrilico"
+        },
+        "tiempo": {
+          "valor": "1 a 2 días en un techo residencial, incluyendo lavado y capas",
+          "estado": "verificado",
+          "fuente": "https://ilatekpr.com/sellado-acrilico"
+        },
+        "mantenimiento": {
+          "valor": "Inspección anual recomendada",
+          "estado": "verificado",
+          "fuente": "https://ilatekpr.com/sellado-de-techos"
+        },
+        "cuando": {
+          "valor": "Renovar un techo que ya tiene acrílico y reflejar el sol",
+          "estado": "verificado",
+          "fuente": "https://ilatekpr.com/sellado-acrilico"
+        },
+        "limitacion": {
+          "valor": "Su vida útil es menor que la silicona; conviene recubrirlo periódicamente",
+          "estado": "verificado",
+          "fuente": "https://ilatekpr.com/sellado-acrilico"
+        }
+      }
+    }
+  ],
+  "benchmark": [
+    {
+      "competidor": "WindMar Home",
+      "url": "https://windmar.com/sellado-techos",
+      "palabras": 3895,
+      "faqs": 10,
+      "enlaces_internos": 127,
+      "tablas": 3,
+      "precio": "$3.50-$6.50/pie cuadrado; 1,200 pie cuadrado = $4,200-$7,800",
+      "duracion": "Silicona 20-25 anos; acrilico 7-10; poliuretano 10-15; pintura 1-2",
+      "confianza": "24 anos, +8,000 techos, brigadas propias, Gardner-Gibson, garantia de por vida en material, planes Silver/Gold/Platinum, 4.9 con 127 resenas, prensa",
+      "schema": [
+        "Article",
+        "FAQPage",
+        "HowTo",
+        "ItemList",
+        "MonetaryAmount",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "competidor": "Star Roofing Corporation",
+      "url": "https://starroofingcorp.com",
+      "palabras": 921,
+      "faqs": 7,
+      "enlaces_internos": 7,
+      "tablas": 0,
+      "precio": "No publica",
+      "confianza": "30+ anos, direccion en San Juan, DACO/CFSE, poliza de $1M, garantia hasta 10 anos, clientes CEM/ESCO/MAPR",
+      "schema": [
+        "Organization",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "competidor": "Sellado de Techo La Familia",
+      "url": "https://selladodetecholafamilia.com",
+      "palabras": 486,
+      "faqs": 0,
+      "enlaces_internos": 19,
+      "tablas": 0,
+      "precio": "No publica",
+      "confianza": "24 anos, DACO #144779, certificado Danosa, areas Oeste y Metro, 4 testimonios",
+      "schema": [
+        "Organization",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "competidor": "Tu Techo Sellado",
+      "url": "https://tutechosellado.com/servicios/sellado-de-techos",
+      "palabras": 567,
+      "faqs": 0,
+      "enlaces_internos": 40,
+      "tablas": 0,
+      "precio": "No publica",
+      "confianza": "Danosa, acrilico y silicon; cotizacion telefonica",
+      "schema": [
+        "Article",
+        "Person",
+        "Organization"
+      ]
+    }
+  ],
+  "criteriosNota": "Cada criterio exige valor + estado verificado + fuente publicada. Si un criterio no aparece, el modulo lo muestra como pendiente de confirmar en la inspeccion; nunca se rellena con una suposicion."
+}

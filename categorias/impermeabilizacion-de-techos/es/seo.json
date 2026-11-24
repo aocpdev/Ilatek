@@ -3,11 +3,11 @@
   "language": "es",
   "status": "plantilla-local-delta-system",
   "metaTagTitle": "Impermeabilización de Techos en {{custom_values.business__county_name}} | Ilatek Techos",
-  "metaTagDescription": "Impermeabilización de techos en {{custom_values.business__county_name}} desde $3.00 por pie². Sellado de concreto, techos planos, zinc, asfalto, teja y madera. Inspección gratis y garantía escrita.",
-  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f5849322987426393b.jpg",
+  "metaTagDescription": "Impermeabilización de techos en {{custom_values.business__county_name}} desde $250. Sellado de concreto, techos planos, zinc, asfalto, teja y madera. Agenda con $50 descontables del total y garantía escrita.",
+  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/3395797e-ca0e-4233-b12d-612295ccfa90.webp",
   "locationCustomValue": "{{custom_values.business__county_name}}",
   "metaTagImageAlt": "Impermeabilización de Techos en {{custom_values.business__county_name}} | Ilatek Techos",
   "canonical": "https://{{custom_values.website_url}}/impermeabilizacion-de-techos",
-  "socialImageFile": "assets/respaldo/6ac046f5849322987426393b.webp",
+  "socialImageFile": "assets/meta-image.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."
 }

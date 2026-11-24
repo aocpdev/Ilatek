@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vega-baja.ilatekpr.com/sitemap.xml

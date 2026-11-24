@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Terminos (EN)
+Slug: en/terminos
+URL: https://ilatekpr.com/en/terminos
+Acción: CREAR PÁGINA
+Estado hoy: HTTP 404
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (215 KB, sha256 c0bcd246844e)
+Origen en el repo: terminos-y-condiciones/en/landing-pages/ghl-terminos-embed.en.html
+Sección de clima: no
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

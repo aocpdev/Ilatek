@@ -1,0 +1,128 @@
+/og:title/ og:description ("… en Juncos, Puerto Rico"): el título sale de {{custom_values.county_name_and_state}}, así que es el mismo custom value, sin depender de que el builder expanda el Custom Code; 3. el subdominio del sitio (juncos.ilatekpr.com → Juncos); 4. los valores de marca del contrato (custom-values.json → brand). El portador que viaja en el embed se oculta siempre (nunca es contenido). Estado en
+{{custom_values.county_name_and_state}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}
+/og:title/ og:description ("… en Juncos, Puerto Rico"): el título sale de {{custom_values.business__county_name}}, así que es el mismo custom value, sin depender de que el builder expanda el Custom Code; 3. el subdominio del sitio (juncos.ilatekpr.com → Juncos); 4. los valores de marca del contrato (custom-values.json → brand). El portador que viaja en el embed se oculta siempre (nunca es contenido). Estado en
+{{custom_values.business__county_name}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}
+Login
+Estimado(a) cliente,
+En ILATEK Property Solutions LLC el trabajo termina cuando usted queda satisfecho(a). Esta pagina reune nuestras garantias: la
+Garantia del Servicio de Limpieza
+Politica de Garantias de Servicios de Techos
+. Puede tocar cada seccion para expandirla.
+Fecha de entrada en vigor:
+6 de octubre de 2026.
+Ultima actualizacion:
+14 de noviembre de 2026
+Garantía del Servicio de Limpieza
+Aplica a los servicios de limpieza contratados con ILATEK
+(1) Compromiso de Calidad
+En ILATEK nuestro compromiso es brindar un servicio de calidad, responsable y confiable. Por eso, nuestros servicios de limpieza cuentan con los siguientes beneficios.
+Además de la limpieza, durante cada visita realizamos una evaluación visual general de la propiedad y preparamos un reporte digital de mantenimiento preventivo. En ese reporte documentamos situaciones visibles como humedad, hongos, pintura deteriorada, condiciones de las paredes y otros detalles que puedan requerir mantenimiento.
+El propósito es doble: mantenerle informado sobre el estado de su propiedad y, al mismo tiempo, identificar necesidades que puedan atenderse a tiempo antes de convertirse en problemas mayores. Este reporte es adicional al checklist de limpieza y también nos permite llevar un historial de la propiedad y recomendar servicios adicionales cuando realmente sean necesarios. En resumen: no solamente limpiamos; documentamos, informamos y ayudamos al cliente a cuidar mejor su propiedad.
+(2) Garantía de Limpieza de 24 Horas
+Si luego de completar el servicio el cliente identifica algún área o detalle incluido en el alcance contratado que no quedó correctamente limpio, deberá notificarnos dentro de las primeras 24 horas. ILATEK coordinará el regreso para corregir el área reportada sin costo adicional.
+Nuestro objetivo es sencillo:
+si algo incluido en nuestro servicio no quedó como debía, regresamos y lo atendemos.
+(3) Prioridad de Agenda Recurrentes
+Nuestros clientes recurrentes tendran prioridad al momento de coordinar y reservar sus proximas fechas de servicio, sujeto a disponibilidad operacional. Esto permite mantener la continuidad y la consistencia del mantenimiento de su propiedad.
+(4) Condiciones de la Garantía
+La garantía aplica exclusivamente a áreas y tareas incluidas en el servicio originalmente contratado. No incluye:
+Suciedad, daños o situaciones ocurridas después de finalizar el servicio.
+Trabajos adicionales no incluidos en la cotización.
+Condiciones preexistentes de la propiedad.
+Política de Garantías — Servicios de Techos
+Aplica a los proyectos de impermeabilización y sellado de techos de ILATEK
+(5) Garantía del Producto
+La garantía del producto o sistema de impermeabilización utilizado es la establecida por el fabricante para el producto instalado. Cuando aplique una garantía de diez (10) años, estará sujeta a los términos, condiciones, mantenimiento y exclusiones establecidos por el fabricante.
+(6) Garantía de Mano de Obra ILATEK
+ILATEK ofrece un (1) año de garantía sobre la mano de obra realizada, contado desde la fecha de culminación del proyecto. Esta garantía cubre defectos directamente atribuibles a la ejecución o aplicación realizada por ILATEK dentro del alcance contratado.
+(7) Resumen de Coberturas
+Servicio / Alcance
+Cobertura
+Impermeabilización (Poliuretano / Silicona 100%)
+Garantía del fabricante (hasta 10 años)
+Mano de obra ILATEK
+1 año
+Sistemas Elastoméricos
+6 Meses
+Pintura Estructural Exterior
+Limpieza Industrial y Comercial
+24 Horas
+Mantenimiento Preventivo de Techos
+90 Días
+Paisajismo y Poda
+30 Días
+(8) Inspección antes de Determinar Garantía
+Toda reclamación estará sujeta a una inspección por parte de ILATEK. La existencia de una filtración o daño posterior al trabajo no implica automáticamente que exista una falla del sistema instalado o de la mano de obra. ILATEK evaluará el origen antes de determinar si corresponde una reparación bajo garantía.
+Importante:
+una filtración o daño reportado durante el periodo de garantía no constituye por sí solo evidencia de una falla atribuible a ILATEK. Toda reclamación requiere evaluación del origen y de las condiciones del área antes de determinar la cobertura aplicable.
+(9) Vicios Ocultos
+La garantía no cubrirá condiciones preexistentes u ocultas que no hayan sido razonablemente detectables durante el diagnóstico inicial, incluyendo humedad atrapada, deterioro interno, daños estructurales u otras condiciones subyacentes.
+(10) Intervención de Terceros
+La garantía podrá quedar sin efecto en el área afectada cuando otra persona o contratista altere, perfore, remueva, repare o modifique el sistema instalado por ILATEK sin autorización previa.
+(11) Daños Externos
+No estarán cubiertos por la garantía daños ocasionados por equipos instalados posteriormente, perforaciones, trabajos de plomería o electricidad, placas solares, unidades de aire acondicionado, antenas, tuberías u otras intervenciones ajenas al trabajo contratado.
+(12) Eventos Extraordinarios
+La garantía no cubrirá daños provocados por eventos de fuerza mayor o aquellos eventos climatológicos expresamente excluidos en el acuerdo particular. Cuando el acuerdo correspondiente así lo establezca, se excluyen daños causados por huracanes categoría 3 o superior.
+(13) Mantenimiento Preventivo
+El cliente deberá cumplir con los mantenimientos preventivos requeridos o recomendados para el sistema instalado. Cuando el proyecto incluya una visita de mantenimiento preventivo, esta quedará identificada expresamente en la cotización o acuerdo.
+(14) Alcance de la Garantía
+La garantía de ILATEK aplica exclusivamente a las áreas y trabajos incluidos en el alcance contratado. Áreas de la propiedad que no hayan sido tratadas, reparadas o intervenidas por ILATEK no estarán cubiertas. La garantía no aplica si existe balance de pago pendiente.
+(15) Reclamación de Garantía
+El cliente deberá notificar a ILATEK cuando identifique una posible situación cubierta por garantía y permitir acceso razonable para inspeccionar el área. Luego de la evaluación, ILATEK determinará si la situación corresponde a mano de obra, producto, una condición externa o un trabajo adicional no cubierto.
+Esta política complementa la cotización y/o acuerdo de servicios correspondiente. Las garantías específicas de cada proyecto serán las expresamente indicadas en dichos documentos.
+(16) Contacto y Relación con otros Documentos
+Responsable:
+ILATEK Property Solutions LLC
+Correo electrónico:
+{{custom_values.business__email}}
+Teléfono:
+{{custom_values.business__phone}}
+Sitio web:
+{{custom_values.website_url}}
+Relación con los Términos y Condiciones:
+Esta política de garantías complementa los Términos y Condiciones de Servicio y las cotizaciones de ILATEK. En caso de conflicto entre documentos, prevalecerá la disposición más protectora para el cliente, conforme a la ley aplicable en {{custom_values.county_name_and_state}}.
+Preguntas frecuentes sobre la garantía
+¿Cuánto dura la garantía de un servicio de limpieza?
+La garantía de limpieza es de 24 horas: si un área incluida en el alcance contratado no quedó correctamente limpia, notifícalo dentro de las primeras 24 horas y coordinamos el regreso para corregirla sin costo adicional.
+¿Cuánto dura la garantía de mano de obra en techos?
+ILATEK ofrece un (1) año de garantía sobre la mano de obra de los proyectos de impermeabilización y sellado de techos, contado desde la fecha de culminación del proyecto. Cubre defectos directamente atribuibles a la ejecución o aplicación dentro del alcance contratado.
+¿Qué cubre la garantía del producto en techos?
+La garantía del producto o sistema de impermeabilización es la que establece el fabricante para el producto instalado y puede llegar hasta diez (10) años, sujeta a sus términos, mantenimiento y exclusiones. Los sistemas elastoméricos y la pintura estructural exterior tienen 6 meses; el mantenimiento preventivo de techos, 90 días; y el paisajismo y la poda, 30 días.
+¿Qué no cubre la garantía?
+No cubre condiciones preexistentes o vicios ocultos, daños ocurridos después del servicio, trabajos adicionales fuera de la cotización, intervenciones de terceros, perforaciones o equipos instalados luego, daños por huracanes categoría 3 o superior cuando el acuerdo lo establezca, ni áreas que no fueron tratadas por ILATEK. La garantía tampoco aplica si existe balance de pago pendiente.
+¿Cómo se reclama una garantía?
+Notifica a ILATEK cuando identifiques una posible situación cubierta y permite el acceso razonable para inspeccionar el área. Toda reclamación está sujeta a una inspección que determina el origen antes de establecer si corresponde una reparación bajo garantía.
+Devasks
+Navegación de Ilatek
+Ilatek, inicio
+Logo de Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Logo%20de%20Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Navegación principal
+Idioma / Language
+Español
+English
+Abrir o cerrar el menú
+Garantías de Servicio de ILATEK
+Pie de página de Ilatek
+Facebook
+Facebook — servicio en {{custom_values.business__county_name}}
+Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Instagram
+Instagram — servicio en {{custom_values.business__county_name}}
+Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Youtube
+Youtube — servicio en {{custom_values.business__county_name}}
+Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+TikTok
+TikTok — servicio en {{custom_values.business__county_name}}
+TikTok%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+X — servicio en {{custom_values.business__county_name}}
+X%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+LinkedIn
+LinkedIn — servicio en {{custom_values.business__county_name}}
+LinkedIn%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Pinterest
+Pinterest — servicio en {{custom_values.business__county_name}}
+Pinterest%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D

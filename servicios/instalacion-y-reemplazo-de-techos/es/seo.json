@@ -3,11 +3,11 @@
   "language": "es",
   "status": "plantilla-local-delta-system",
   "metaTagTitle": "Instalación y Reemplazo de Techos en {{custom_values.business__county_name}} | Ilatek Techos",
-  "metaTagDescription": "Instalación y reemplazo de techos en {{custom_values.business__county_name}} desde $6.00 por pie². Techos nuevos de zinc, concreto y membrana con garantía escrita. Inspección gratis.",
-  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f00edabbe5a4a763a0.jpg",
+  "metaTagDescription": "Instalación y reemplazo de techos en {{custom_values.business__county_name}} desde $250. Techos nuevos de zinc, concreto y membrana con garantía escrita. Agenda con $50 descontables del total.",
+  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/bb8f2a8c-afdc-487f-8f74-5af71e0502c8.webp",
   "locationCustomValue": "{{custom_values.business__county_name}}",
   "metaTagImageAlt": "Instalación y Reemplazo de Techos en {{custom_values.business__county_name}} | Ilatek Techos",
   "canonical": "https://{{custom_values.website_url}}/instalacion-y-reemplazo-de-techos",
-  "socialImageFile": "assets/respaldo/6ac046f00edabbe5a4a763a0.webp",
+  "socialImageFile": "assets/meta-image.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."
 }

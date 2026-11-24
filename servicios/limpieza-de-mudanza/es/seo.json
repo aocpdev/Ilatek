@@ -4,10 +4,10 @@
   "status": "plantilla-local-delta-system",
   "metaTagTitle": "Limpieza de Mudanza en {{custom_values.business__county_name}} | Ilatek",
   "metaTagDescription": "Limpieza de mudanza move-in / move-out en {{custom_values.business__county_name}}: deja el espacio listo para entregar o habitar. Cotizador online con precio real y cobertura en los 78 municipios.",
-  "metaTagImage": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/limpieza-de-mudanza.jpg",
+  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6a373d24-46a8-4a0b-a36b-d203c2b515c1.webp",
   "locationCustomValue": "{{custom_values.business__county_name}}",
-  "metaTagImageAlt": "Limpieza de Mudanza en {{custom_values.business__county_name}} | Ilatek",
+  "metaTagImageAlt": "Limpieza de Mudanza en {{custom_values.business__county_name}} — Ilatek",
   "canonical": "https://{{custom_values.website_url}}/limpieza-de-mudanza",
-  "socialImageFile": "assets/meta-image.jpg",
+  "socialImageFile": "assets/meta-image.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."
 }

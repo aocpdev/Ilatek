@@ -1,0 +1,263 @@
+{
+  "ventanas1280": {
+    "estado": "ok",
+    "familia": "limpieza",
+    "servicio": "Limpieza de Ventanas",
+    "municipio": "Puerto Rico",
+    "lugar": "Puerto Rico",
+    "h2": "Puerto Rico",
+    "temp": "81°",
+    "sensacion": "88°F",
+    "rec": "Con esta probabilidad de lluvia, mejor el trabajo interior hoy; el exterior lo movemos a la ventana más seca de la semana.",
+    "dias": [
+      "Hoy89°78°91%",
+      "vie88°80°37%",
+      "sáb89°81°74%",
+      "dom87°79°9%",
+      "lun84°76°76%",
+      "mar85°77°79%"
+    ],
+    "iconos": 6,
+    "overflowX": 0
+  },
+  "ventanasMayaguez": {
+    "estado": "ok",
+    "familia": "limpieza",
+    "servicio": "Limpieza de Ventanas",
+    "municipio": "Mayagüez",
+    "lugar": "Mayagüez",
+    "h2": "Mayagüez",
+    "temp": "80°",
+    "sensacion": "85°F",
+    "rec": "Con esta probabilidad de lluvia, mejor el trabajo interior hoy; el exterior lo movemos a la ventana más seca de la semana.",
+    "dias": [
+      "Hoy89°74°91%",
+      "vie88°79°12%",
+      "sáb88°78°57%",
+      "dom90°74°41%",
+      "lun87°71°92%",
+      "mar90°74°97%"
+    ],
+    "iconos": 6,
+    "overflowX": 0
+  },
+  "ventanasTechos": {
+    "estado": "ok",
+    "familia": "techos",
+    "servicio": "Sellado de Techos",
+    "municipio": "Mayagüez",
+    "lugar": "Mayagüez",
+    "h2": "Mayagüez",
+    "temp": "80°",
+    "sensacion": "85°F",
+    "rec": "Hoy no es día para sellar: el techo tiene que estar seco. Aprovecha para la inspección gratis y separar la fecha.",
+    "dias": [
+      "Hoy89°74°91%",
+      "vie88°79°12%",
+      "sáb88°78°57%",
+      "dom90°74°41%",
+      "lun87°71°92%",
+      "mar90°74°97%"
+    ],
+    "iconos": 6,
+    "overflowX": 0
+  },
+  "ventanasFallback": {
+    "estado": "ok",
+    "familia": "techos",
+    "servicio": "Sellado de Techos",
+    "municipio": "Puerto Rico",
+    "lugar": "Puerto Rico",
+    "h2": "Puerto Rico",
+    "temp": "74°",
+    "sensacion": "79°F",
+    "rec": "Hoy no es día para sellar: el techo tiene que estar seco. Aprovecha para la inspección gratis y separar la fecha.",
+    "dias": [
+      "Hoy84°70°92%",
+      "vie83°73°51%",
+      "sáb81°73°84%",
+      "dom85°70°18%",
+      "lun82°66°82%",
+      "mar84°70°92%"
+    ],
+    "iconos": 6,
+    "overflowX": 0
+  },
+  "ventanasIngles": {
+    "estado": "ok",
+    "familia": "techos",
+    "servicio": "Sellado de Techos",
+    "municipio": "Puerto Rico",
+    "lugar": "Puerto Rico",
+    "h2": "Puerto Rico",
+    "temp": "74°",
+    "sensacion": "79°F",
+    "rec": "Not a sealing day: the roof has to be dry. Use it for the free inspection and to hold your date.",
+    "dias": [
+      "Today84°70°92%",
+      "Fri83°73°51%",
+      "Sat81°73°84%",
+      "Sun85°70°18%",
+      "Mon82°66°82%",
+      "Tue84°70°92%"
+    ],
+    "iconos": 6,
+    "overflowX": 0
+  },
+  "ventanas390": {
+    "estado": "ok",
+    "familia": "limpieza",
+    "servicio": "Limpieza de Ventanas",
+    "municipio": "Puerto Rico",
+    "lugar": "Puerto Rico",
+    "h2": "Puerto Rico",
+    "temp": "81°",
+    "sensacion": "88°F",
+    "rec": "Con esta probabilidad de lluvia, mejor el trabajo interior hoy; el exterior lo movemos a la ventana más seca de la semana.",
+    "dias": [
+      "Hoy89°78°91%",
+      "vie88°80°37%",
+      "sáb89°81°74%",
+      "dom87°79°9%",
+      "lun84°76°76%",
+      "mar85°77°79%"
+    ],
+    "iconos": 6,
+    "overflowX": 0
+  },
+  "ventanas390Mayaguez": {
+    "estado": "ok",
+    "familia": "limpieza",
+    "servicio": "Limpieza de Ventanas",
+    "municipio": "Mayagüez",
+    "lugar": "Mayagüez",
+    "h2": "Mayagüez",
+    "temp": "80°",
+    "sensacion": "85°F",
+    "rec": "Con esta probabilidad de lluvia, mejor el trabajo interior hoy; el exterior lo movemos a la ventana más seca de la semana.",
+    "dias": [
+      "Hoy89°74°91%",
+      "vie88°79°12%",
+      "sáb88°78°57%",
+      "dom90°74°41%",
+      "lun87°71°92%",
+      "mar90°74°97%"
+    ],
+    "iconos": 6,
+    "overflowX": 0
+  },
+  "ventanas390Fallback": {
+    "estado": "ok",
+    "familia": "limpieza",
+    "servicio": "Limpieza de Ventanas",
+    "municipio": "Puerto Rico",
+    "lugar": "Puerto Rico",
+    "h2": "Puerto Rico",
+    "temp": "74°",
+    "sensacion": "79°F",
+    "rec": "Con esta probabilidad de lluvia, mejor el trabajo interior hoy; el exterior lo movemos a la ventana más seca de la semana.",
+    "dias": [
+      "Hoy84°70°92%",
+      "vie83°73°51%",
+      "sáb81°73°84%",
+      "dom85°70°18%",
+      "lun82°66°82%",
+      "mar84°70°92%"
+    ],
+    "iconos": 6,
+    "overflowX": 0
+  },
+  "techos1280": {
+    "estado": "ok",
+    "familia": "techos",
+    "servicio": "Sellado de Techos",
+    "municipio": "Puerto Rico",
+    "lugar": "Puerto Rico",
+    "h2": "Puerto Rico",
+    "temp": "81°",
+    "sensacion": "88°F",
+    "rec": "Hoy no es día para sellar: el techo tiene que estar seco. Aprovecha para la inspección gratis y separar la fecha.",
+    "dias": [
+      "Hoy89°78°91%",
+      "vie88°80°37%",
+      "sáb89°81°74%",
+      "dom87°79°9%",
+      "lun84°76°76%",
+      "mar85°77°79%"
+    ],
+    "iconos": 6,
+    "overflowX": 0
+  },
+  "techosPonce": {
+    "estado": "ok",
+    "familia": "techos",
+    "servicio": "Sellado de Techos",
+    "municipio": "Ponce",
+    "lugar": "Ponce",
+    "h2": "Ponce",
+    "temp": "78°",
+    "sensacion": "85°F",
+    "rec": "Hoy no es día para sellar: el techo tiene que estar seco. Aprovecha para la inspección gratis y separar la fecha.",
+    "dias": [
+      "Hoy90°78°97%",
+      "vie87°77°94%",
+      "sáb85°77°98%",
+      "dom87°77°45%",
+      "lun86°69°78%",
+      "mar90°73°87%"
+    ],
+    "iconos": 6,
+    "overflowX": 0
+  },
+  "techosLimpieza": {
+    "estado": "ok",
+    "familia": "limpieza",
+    "servicio": "Limpieza Estándar",
+    "municipio": "Ponce",
+    "lugar": "Ponce",
+    "h2": "Ponce",
+    "temp": "78°",
+    "sensacion": "85°F",
+    "rec": "Con esta probabilidad de lluvia, mejor el trabajo interior hoy; el exterior lo movemos a la ventana más seca de la semana.",
+    "dias": [
+      "Hoy90°78°97%",
+      "vie87°77°94%",
+      "sáb85°77°98%",
+      "dom87°77°45%",
+      "lun86°69°78%",
+      "mar90°73°87%"
+    ],
+    "iconos": 6,
+    "overflowX": 0
+  },
+  "techos390": {
+    "estado": "ok",
+    "familia": "techos",
+    "servicio": "Sellado de Techos",
+    "municipio": "Puerto Rico",
+    "lugar": "Puerto Rico",
+    "h2": "Puerto Rico",
+    "temp": "81°",
+    "sensacion": "88°F",
+    "rec": "Hoy no es día para sellar: el techo tiene que estar seco. Aprovecha para la inspección gratis y separar la fecha.",
+    "dias": [
+      "Hoy89°78°91%",
+      "vie88°80°37%",
+      "sáb89°81°74%",
+      "dom87°79°9%",
+      "lun84°76°76%",
+      "mar85°77°79%"
+    ],
+    "iconos": 6,
+    "overflowX": 0
+  },
+  "fallo": {
+    "estado": null,
+    "display": "block",
+    "alto": 1305,
+    "huecoHastaReviews": 0,
+    "reviewsTop": 5903,
+    "overflowX": 0
+  },
+  "consoleErrorsUltimoNavegacion": []
+}

@@ -1,0 +1,161 @@
+/og:title/ og:description ("… en Juncos, Puerto Rico"): el título sale de {{custom_values.business__county_name}}, así que es el mismo custom value, sin depender de que el builder expanda el Custom Code; 3. el subdominio del sitio (juncos.ilatekpr.com → Juncos); 4. los valores de marca del contrato (custom-values.json → brand). El portador que viaja en el embed se oculta siempre (nunca es contenido). Estado en
+{{custom_values.business__county_name}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}
+Login
+Sellado residencial
+Sellado de Techos Residencial en
+Puerto Rico
+para tu hogar.
+Tu casa merece un techo que no gotee. Ilatek sella techos residenciales en {{custom_values.business__county_name}}: protegemos tu hogar de las filtraciones sin complicarte, con agenda con $50 descontables del total y garantía escrita.
+Solicita tu cotización
+Qué incluye el servicio ↓
+por servicio
+Precio base
+municipios
+Cobertura en PR
+al agendar
+Se descuenta del total
+Para tu hogar
+undefined
+El techo de tu casa protegido sin complicarte.
+Trato cuidado
+Protegemos tu espacio, trabajamos ordenados y dejamos la casa limpia: el servicio pensado para hogares.
+Protege tu inversión
+El techo es la primera defensa de tu casa: sellarlo a tiempo evita daños caros en el interior.
+Precio por servicio
+Pagas por lo que mide tu techo, con cotización clara y por escrito, sin sorpresas.
+Qué incluye
+Qué incluye el sellado de tu casa.
+Un buen sellado residencial se prepara antes de aplicarse.
+Ilatek limpia el techo, corrige grietas y empozamientos, aplica primer y coloca el sellador adecuado para el material de tu casa.
+Inspección del techo de tu casa
+Lavado a presión del techo
+Sellado de grietas y filtraciones
+Corrección de empozamientos
+Aplicación del sistema de sellado
+Garantía por escrito del trabajo
+Cotiza el sellado de tu casa
+Tu casa protegida · Trato cuidado
+Ideal para
+Cuándo sellar el techo de tu casa.
+Señales
+Notas manchas o humedad
+Si aparecen manchas o humedad en el techo interior, el techo necesita sellado y reparación ya.
+Tiempo
+Tiene más de 5 años sellado
+Si no recuerdas cuándo se selló, probablemente ya cumplió su ciclo y conviene revisarlo.
+Prevención
+Antes del huracán
+Sellar antes de la temporada de lluvias te deja tranquilo cuando llegue la tormenta.
+Cómo funciona
+Cómo sellamos el techo de tu casa.
+Coordinamos la visita, protegemos tu espacio y dejamos la casa limpia al terminar el sellado.
+PASO 1
+Cotiza tu sellado de techos residencial
+Usa el cotizador de Ilatek o escríbenos: evaluamos tu techo y te damos el precio de sellado de techos residencial por escrito en minutos — sin compromiso.
+PASO 2
+Inspección y agenda
+Confirmamos el alcance de sellado de techos residencial con una inspección del techo, defines la fecha y reservas con el depósito de $50, que se descuenta del total.
+PASO 3
+Trabajo terminado
+Ejecutamos sellado de techos residencial con materiales certificados, protegemos el área y te entregamos la garantía por escrito.
+Cobertura de
+sellado residencial
+en toda la isla.
+Ilatek Techos brinda sellado de techos residencial en los
+78 municipios de Puerto Rico
+. Atendemos tu área en
+{{custom_values.business__county_name}}
+y toda la isla: busca tu pueblo en el directorio y visita su página.
+No encontramos ese pueblo. Verifica el nombre e intenta nuevamente.
+Página 1 de 1
+Reseñas de clientes de Ilatek.
+Reseñas de personas que confiaron en Ilatek para mantenimiento y sellado de techos en Puerto Rico. Cambia de pestaña para ver cada fuente.
+Preguntas frecuentes
+Preguntas frecuentes sobre sellado de techos residencial.
+¿Cuánto cuesta sellar un techo residencial?
+El sellado de techos residencial de Ilatek
+comienza desde $250
+. Un techo típico de 1,200 pies² se cotiza en minutos. El precio final depende del sistema y la condición del techo.
+¿Cada cuánto se sella el techo de una casa?
+En Puerto Rico recomendamos revisar el techo
+una vez al año
+y sellar cada 5 a 10 años, según el sistema. La silicona 100% dura de 20 a 25 años; el acrílico, de 7 a 10.
+¿Tengo que estar en la casa durante el trabajo?
+No es obligatorio, pero
+te recomendamos estar para la inspección y para recibir el trabajo
+. Coordinamos la visita según tu disponibilidad.
+¿Protegen las plantas y muebles del patio?
+cubrimos y protegemos
+lo que esté en el área de trabajo y dejamos el patio como estaba.
+¿Qué sistema de sellado conviene para mi casa?
+Depende del techo: para
+losas de concreto
+suele ir silicona o membrana; para
+techos planos
+, silicona o membrana; para techos de zinc, tratamiento anticorrosivo. Lo definimos en la inspección.
+¿Cuánto tarda el sellado de una casa?
+Un techo residencial típico se sella en
+1 a 3 días
+, según el área y el sistema. Te damos el estimado en la cotización.
+¿El sellado residencial tiene garantía?
+Entregamos garantía de mano de obra por escrito; si el sellado falla en el periodo cubierto, regresamos.
+¿Por qué elegir Ilatek Techos para el techo de tu casa?
+Sellamos el techo de tu casa con el sistema correcto para su material, protegemos tus plantas y muebles durante el trabajo y entregamos garantía por escrito desde $250.
+Visita o inspección por $50
+Protege tu techo antes de la próxima lluvia.
+Solicita tu cotización por $50 descontables del total de sellado de techos residencial en {{custom_values.business__county_name}} y recibe precio claro y por escrito — cotización por $50 descontables del total y cobertura en los 78 municipios de Puerto Rico.
+Solicita tu cotización por $50 descontables del total
+Respuesta en minutos · Sin compromiso
+Precio claro por escrito
+desde $250, confirmado después de la inspección.
+Inspección sin compromiso
+Subimos, diagnosticamos y te explicamos las opciones.
+Garantía de mano de obra
+Respaldada por escrito en cada trabajo que hacemos.
+Devasks
+Navegación de Ilatek
+Ilatek, inicio
+Logo de Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Logo%20de%20Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Navegación principal
+Idioma / Language
+Español
+English
+Abrir o cerrar el menú
+Ilatek Sellado residencial {{custom_values.business__county_name}}
+Sellado de techo residencial — {{custom_values.business__county_name}}
+Sellado de techos residencial · Ilatek Techos — servicio en {{custom_values.business__county_name}}
+Sellado%20de%20techo%20residencial%20%E2%80%94%20%7B%7Bcustom_values.business__county_name%7D%7D
+Sellado%20de%20techos%20residencial%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Sellado de techo de residencia por Ilatek Techos en {{custom_values.business__county_name}} — protección de hogar
+Sellado residencial · Ilatek Techos — servicio en {{custom_values.business__county_name}}
+Sellado%20de%20techo%20de%20residencia%20por%20Ilatek%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%E2%80%94%20protecci%C3%B3n%20de%20hogar
+Sellado%20residencial%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Cobertura de sellado de techos residencial de Ilatek Techos en Puerto Rico
+Busca tu pueblo
+Buscar un municipio de Puerto Rico
+Limpiar búsqueda
+Municipios de Puerto Rico con servicio de sellado de techos residencial
+Pie de página de Ilatek
+Facebook
+Facebook — servicio en {{custom_values.business__county_name}}
+Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Instagram
+Instagram — servicio en {{custom_values.business__county_name}}
+Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Youtube
+Youtube — servicio en {{custom_values.business__county_name}}
+Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+TikTok
+TikTok — servicio en {{custom_values.business__county_name}}
+TikTok%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+X — servicio en {{custom_values.business__county_name}}
+X%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+LinkedIn
+LinkedIn — servicio en {{custom_values.business__county_name}}
+LinkedIn%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Pinterest
+Pinterest — servicio en {{custom_values.business__county_name}}
+Pinterest%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D

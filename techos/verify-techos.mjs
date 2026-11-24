@@ -13,6 +13,7 @@ import { fileURLToPath } from 'node:url';
 import { buildTree } from './lib/model.mjs';
 import { cleanGuard, readSchema, stripTags, imgAltErrors } from './lib/audit.mjs';
 import { pageFile } from '../tools/site-paths.mjs';
+import { schemaPriceFor } from './lib/facts.mjs';
 
 const OUT = path.dirname(fileURLToPath(import.meta.url));
 const ILATEK = path.resolve(OUT, '..');
@@ -53,12 +54,19 @@ for (const p of pages) {
   if (schemaErrs.length) fail(p.slug, `schema: ${schemaErrs.join('; ')}`);
   else schemaOk++;
 
-  // precio schema == "desde $X" visible
+  // Precio visible siempre; precio en schema SOLO si el registro lo verifica.
+  // Si no hay hecho verificado, el Offer debe ir sin price/priceSpecification.
+  const expectedPrice = schemaPriceFor(p.slug);
   const visible = stripTags(html).toLowerCase();
   const priceInText = visible.includes(p.price.text.toLowerCase());
-  const priceInSchema = svc && String(svc.offers.price) === String(p.price.amount)
-    && String(biz.makesOffer[0].price) === String(p.price.amount);
-  if (!priceInText || !priceInSchema) fail(p.slug, `precio: visible=${priceInText} schema=${priceInSchema}`);
+  const offerHasPrice = !!(svc && svc.offers && ('price' in svc.offers || 'priceSpecification' in svc.offers));
+  const bizOffer = biz && biz.makesOffer && biz.makesOffer[0];
+  const bizHasPrice = !!(bizOffer && ('price' in bizOffer || 'priceSpecification' in bizOffer));
+  const priceInSchema = expectedPrice === null
+    ? !offerHasPrice && !bizHasPrice
+    : !!(svc && String(svc.offers.price) === String(expectedPrice)
+      && bizOffer && String(bizOffer.price) === String(expectedPrice));
+  if (!priceInText || !priceInSchema) fail(p.slug, `precio: visible=${priceInText} schema=${priceInSchema} (verificado=${expectedPrice})`);
   else priceOk++;
 
   // FAQPage 1:1 con el FAQ visible
@@ -128,7 +136,7 @@ if (llmsMissing.length) fail('llms-techos.txt', `faltan ${llmsMissing.join(', ')
 const n = pages.length;
 console.log(`\nIlatek Techos · verificación de artefactos (${n} páginas, ${problems} problemas)`);
 console.log(`  schema Service+Breadcrumb+Offer : ${schemaOk}/${n}`);
-console.log(`  precio schema == visible        : ${priceOk}/${n}`);
+console.log(`  precio schema == visible/verif. : ${priceOk}/${n}`);
 console.log(`  FAQPage 1:1 con FAQ visible     : ${faqParityOk}/${n}`);
 console.log(`  sin copy de limpieza            : ${cleanOk}/${n}`);
 console.log(`  alt presente en imagenes        : ${altOk}/${n}`);

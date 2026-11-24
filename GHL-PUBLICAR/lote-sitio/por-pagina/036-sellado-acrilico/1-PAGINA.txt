@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Sellado Acrilico
+Slug: sellado-acrilico
+URL: https://ilatekpr.com/sellado-acrilico
+Acción: REPUBLICAR
+Estado hoy: HTTP 200
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (243 KB, sha256 69301f2fa2c2)
+Origen en el repo: servicios/sellado-acrilico/es/landing-pages/ghl-sellado-acrilico-landing.html
+Sección de clima: no
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

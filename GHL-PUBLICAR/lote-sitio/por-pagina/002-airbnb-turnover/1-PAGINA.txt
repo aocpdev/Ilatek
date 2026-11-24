@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Airbnb Turnover
+Slug: airbnb-turnover
+URL: https://ilatekpr.com/airbnb-turnover
+Acción: REPUBLICAR
+Estado hoy: HTTP 200
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (236 KB, sha256 a9e2593aa96b)
+Origen en el repo: servicios/airbnb-turnover/es/landing-pages/ghl-airbnb-turnover-landing.html
+Sección de clima: sí
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

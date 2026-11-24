@@ -1,0 +1,159 @@
+/og:title/ og:description ("… en Juncos, Puerto Rico"): el título sale de {{custom_values.business__county_name}}, así que es el mismo custom value, sin depender de que el builder expanda el Custom Code; 3. el subdominio del sitio (juncos.ilatekpr.com → Juncos); 4. los valores de marca del contrato (custom-values.json → brand). El portador que viaja en el embed se oculta siempre (nunca es contenido). Estado en
+{{custom_values.business__county_name}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}
+Login
+Inspección y mantenimiento
+Inspección y Mantenimiento de Techos en
+Puerto Rico
+El mejor momento para tu techo es antes de que falle. Ilatek inspecciona tu techo por
+descontables del total y da mantenimiento preventivo en {{custom_values.business__county_name}}
+desde $250
+, con limpieza, canaletas, lavado y garantía escrita.
+Solicita tu cotización
+Qué incluye el servicio ↓
+Mantenimiento
+al agendar
+Se descuenta del total
+municipios
+Cobertura en PR
+Agenda con $50 descontables del total
+undefined
+Mantener el techo cuesta menos que repararlo.
+Prevenir cuesta menos
+Mantener el techo evita goteras y reparaciones caras. Actuar en la inspección anual sale mucho más barato que reparar el daño.
+Plan a tu medida
+Definimos un plan de mantenimiento según tu techo y su exposición, con visitas programadas.
+Todo el techo cuidado
+Limpieza, canaletas, desagües, lavado y sellado preventivo: un solo responsable para el cuidado de tu techo.
+Qué incluye
+Qué incluye el cuidado de tu techo.
+La visita o inspección cuesta $50 y se descuenta del total, y el mantenimiento es a la medida.
+Ilatek revisa el techo, limpia, despeja desagües y canaletas, lava a presión y aplica el sellado preventivo que tu techo necesita.
+Limpieza de escombros y hojas del techo
+Limpieza de canaletas y bajantes
+Lavado a presión de la superficie
+Sellado preventivo de fallas menores
+Informe con fotos y garantía escrita
+Agenda tu visita o inspección
+Inspección · Limpieza del techo · Prevención
+Todo lo que necesita tu techo.
+Evaluación completa de tu techo, con informe fotográfico y recomendaciones.
+Ver servicio
+Plan de visitas periódicas desde $250 para mantener tu techo protegido.
+Removemos hojas, arena y escombros que obstruyen el drenaje de tu techo.
+Limpieza, reparación e instalación de canaletas y bajantes para que el agua corra.
+Limpieza profunda a presión que prepara y alarga la vida del techo.
+Tragaluces / Skylights
+Sellado e instalación de tragaluces sin filtraciones ni humedad.
+Techos nuevos y reemplazo completo cuando reparar ya no es suficiente.
+Solicita tu cotización por $50 descontables del total
+Cómo funciona
+Cómo cuidamos tu techo durante el año.
+Agenda con $50 descontables del total, plan de visitas programadas y limpieza del techo: detectamos la falla cuando todavía es barata.
+PASO 1
+Cotiza tu inspección y mantenimiento de techos
+Usa el cotizador de Ilatek o escríbenos: evaluamos tu techo y te damos el precio de inspección y mantenimiento de techos por escrito en minutos — sin compromiso.
+PASO 2
+Inspección y agenda
+Confirmamos el alcance de inspección y mantenimiento de techos con una inspección del techo, defines la fecha y reservas con el depósito de $50, que se descuenta del total.
+PASO 3
+Trabajo terminado
+Ejecutamos inspección y mantenimiento de techos con materiales certificados, protegemos el área y te entregamos la garantía por escrito.
+Cobertura de
+inspección y mantenimiento
+en toda la isla.
+Ilatek Techos brinda inspección y mantenimiento de techos en los
+78 municipios de Puerto Rico
+. Atendemos tu área en
+{{custom_values.business__county_name}}
+y toda la isla: busca tu pueblo en el directorio y visita su página.
+No encontramos ese pueblo. Verifica el nombre e intenta nuevamente.
+Página 1 de 1
+Reseñas de clientes de Ilatek.
+Reseñas de personas que confiaron en Ilatek para mantenimiento y sellado de techos en Puerto Rico. Cambia de pestaña para ver cada fuente.
+Preguntas frecuentes
+Preguntas frecuentes sobre inspección y mantenimiento de techos.
+¿Cuánto cuesta inspeccionar y dar mantenimiento a un techo?
+visita o inspección de Ilatek cuesta $50, descontables del total
+. El mantenimiento preventivo comienza
+y varía según el tamaño del techo y el trabajo necesario. Cotiza para tu plan.
+¿Cuántas veces al año debo darle mantenimiento al techo?
+Recomendamos
+al menos una inspección anual
+y limpieza de canaletas dos veces al año. Techos en zonas costeras o con árboles cerca pueden necesitar más frecuencia.
+¿Por qué dar mantenimiento si mi techo está bien?
+Porque
+prevenir cuesta mucho menos que reparar
+. El mantenimiento detecta fallas tempranas, cuando aún son baratas, y evita goteras y daños estructurales.
+¿El plan de mantenimiento incluye reparaciones?
+El plan incluye
+inspección, limpieza, desagües y sellado preventivo
+. Las reparaciones mayores se cotizan por separado, pero como cliente del plan tienes prioridad y visitas programadas.
+¿Qué revisan en la inspección de techos?
+Revisamos
+grietas, selladores vencidos, empozamientos, desagües, canaletas, uniones y remates
+. Te entregamos un informe con fotos y las recomendaciones por prioridad.
+¿La inspección tiene algún costo o compromiso?
+La visita o inspección cuesta $50, descontables del total, y sin compromiso: te explicamos el estado de tu techo y las opciones, y decides con calma.
+¿Ofrecen mantenimiento a negocios y comercios?
+Sí: planes de mantenimiento para
+techos comerciales e industriales
+, con visitas programadas y documentación para tu expediente.
+¿Por qué elegir Ilatek Techos para mantenimiento?
+Reunimos inspección, limpieza, canaletas y lavado en un solo proveedor, con informe fotográfico y mantenimiento desde $250: prevenir siempre sale más barato que reparar.
+Visita o inspección por $50
+Protege tu techo antes de la próxima lluvia.
+Solicita tu cotización por $50 descontables del total de inspección y mantenimiento de techos en {{custom_values.business__county_name}} y recibe precio claro y por escrito — cotización $0 y $50 descontable del total para agendar, con cobertura en los 78 municipios de Puerto Rico.
+Respuesta en minutos · Sin compromiso
+Precio claro por escrito
+desde $250, confirmado después de la inspección.
+Inspección sin compromiso
+Subimos, diagnosticamos y te explicamos las opciones.
+Garantía de mano de obra
+Respaldada por escrito en cada trabajo que hacemos.
+Devasks
+Navegación de Ilatek
+Ilatek, inicio
+Logo de Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Logo%20de%20Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Navegación principal
+Idioma / Language
+Español
+English
+Abrir o cerrar el menú
+Ilatek Inspección y mantenimiento {{custom_values.business__county_name}}
+Inspección y mantenimiento de techos de Ilatek Techos — {{custom_values.business__county_name}}
+Inspección y mantenimiento de techos · Ilatek Techos — servicio en {{custom_values.business__county_name}}
+Inspecci%C3%B3n%20y%20mantenimiento%20de%20techos%20de%20Ilatek%20Techos%20%E2%80%94%20%7B%7Bcustom_values.business__county_name%7D%7D
+Inspecci%C3%B3n%20y%20mantenimiento%20de%20techos%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Mantenimiento preventivo de techos por Ilatek Techos en {{custom_values.business__county_name}} — limpieza y revisión
+Mantenimiento de techos · Ilatek Techos — servicio en {{custom_values.business__county_name}}
+Mantenimiento%20preventivo%20de%20techos%20por%20Ilatek%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%E2%80%94%20limpieza%20y%20revisi%C3%B3n
+Mantenimiento%20de%20techos%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Cobertura de inspección y mantenimiento de techos de Ilatek Techos en Puerto Rico
+Busca tu pueblo
+Buscar un municipio de Puerto Rico
+Limpiar búsqueda
+Municipios de Puerto Rico con servicio de inspección y mantenimiento de techos
+Pie de página de Ilatek
+Facebook
+Facebook — servicio en {{custom_values.business__county_name}}
+Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Instagram
+Instagram — servicio en {{custom_values.business__county_name}}
+Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Youtube
+Youtube — servicio en {{custom_values.business__county_name}}
+Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+TikTok
+TikTok — servicio en {{custom_values.business__county_name}}
+TikTok%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+X — servicio en {{custom_values.business__county_name}}
+X%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+LinkedIn
+LinkedIn — servicio en {{custom_values.business__county_name}}
+LinkedIn%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Pinterest
+Pinterest — servicio en {{custom_values.business__county_name}}
+Pinterest%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D

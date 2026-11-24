@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- cidra.ilatekpr.com — landings de las comunidades de este municipio.
+     Generado por scripts/genera-pueblos.mjs; una URL por comunidad y servicio. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://cidra.ilatekpr.com/bosque-real/limpieza</loc></url>
+  <url><loc>https://cidra.ilatekpr.com/bosque-real/sellado-de-techo</loc></url>
+  <url><loc>https://cidra.ilatekpr.com/estancias-del-bosque/limpieza</loc></url>
+  <url><loc>https://cidra.ilatekpr.com/estancias-del-bosque/sellado-de-techo</loc></url>
+  <url><loc>https://cidra.ilatekpr.com/hacienda-la-paloma/limpieza</loc></url>
+  <url><loc>https://cidra.ilatekpr.com/hacienda-la-paloma/sellado-de-techo</loc></url>
+  <url><loc>https://cidra.ilatekpr.com/jardines-de-cidra/limpieza</loc></url>
+  <url><loc>https://cidra.ilatekpr.com/jardines-de-cidra/sellado-de-techo</loc></url>
+  <url><loc>https://cidra.ilatekpr.com/jardines-de-rabanal/limpieza</loc></url>
+  <url><loc>https://cidra.ilatekpr.com/jardines-de-rabanal/sellado-de-techo</loc></url>
+  <url><loc>https://cidra.ilatekpr.com/jardines-de-villa-del-carmen/limpieza</loc></url>
+  <url><loc>https://cidra.ilatekpr.com/jardines-de-villa-del-carmen/sellado-de-techo</loc></url>
+  <url><loc>https://cidra.ilatekpr.com/sabanaera/limpieza</loc></url>
+  <url><loc>https://cidra.ilatekpr.com/sabanaera/sellado-de-techo</loc></url>
+  <url><loc>https://cidra.ilatekpr.com/treasure-valley/limpieza</loc></url>
+  <url><loc>https://cidra.ilatekpr.com/treasure-valley/sellado-de-techo</loc></url>
+  <url><loc>https://cidra.ilatekpr.com/villas-del-bosque/limpieza</loc></url>
+  <url><loc>https://cidra.ilatekpr.com/villas-del-bosque/sellado-de-techo</loc></url>
+</urlset>

@@ -1,0 +1,13 @@
+PÁGINA EN GHL
+Nombre: Blog - Lavado a presión de techos: precio y por qué antes de sellar
+Slug: blog/lavado-a-presion-de-techos-antes-de-sellar
+URL final: https://ilatekpr.com/blog/lavado-a-presion-de-techos-antes-de-sellar
+Carpeta: por-pagina/127-lavado-a-presion-de-techos-antes-de-sellar
+
+Orden dentro de la página:
+  1) Crear/clonar la página con ese nombre y ese slug.
+  2) Elemento Custom HTML/JavaScript → Custom Code → Open Code Editor →
+     borrar todo y pegar el contenido de 2-CODIGO-CUSTOM-HTML.html.
+  3) SEO de la página: campos de 4-SEO-CAMPOS.txt.
+  4) Settings → Tracking Code → HEADER: contenido de 3-HEAD-SEO.html.
+  5) Publicar y comprobar la URL.

@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Servicios
+Slug: servicios
+URL: https://ilatekpr.com/servicios
+Acción: REPUBLICAR
+Estado hoy: HTTP 200
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (294 KB, sha256 a0944cb7b6a6)
+Origen en el repo: categorias/limpieza/es/landing-pages/ghl-servicios-landing.html
+Sección de clima: sí
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

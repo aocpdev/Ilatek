@@ -3,11 +3,11 @@
   "language": "es",
   "status": "plantilla-local-delta-system",
   "metaTagTitle": "Sellado de Techos en {{custom_values.business__county_name}} | Ilatek Techos",
-  "metaTagDescription": "Sellado de techos en {{custom_values.business__county_name}} desde $2.50 por pie²: silicona 100%, membrana asfáltica, elastomérico, poliuretano y acrílico. Inspección gratis y garantía escrita.",
-  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f8849322987426396f.jpg",
+  "metaTagDescription": "Sellado de techos en {{custom_values.business__county_name}} labor desde $250: silicona 100%, membrana asfáltica, elastomérico, poliuretano y acrílico. Agenda con $50 descontables del total y garantía escrita.",
+  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/21f72252-0bba-45b7-af71-3a4e0b827261.webp",
   "locationCustomValue": "{{custom_values.business__county_name}}",
   "metaTagImageAlt": "Sellado de Techos en {{custom_values.business__county_name}} | Ilatek Techos",
   "canonical": "https://{{custom_values.website_url}}/sellado-de-techos",
-  "socialImageFile": "assets/respaldo/6ac046f8849322987426396f.webp",
+  "socialImageFile": "assets/meta-image.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."
 }

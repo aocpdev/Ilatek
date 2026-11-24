@@ -11,18 +11,18 @@ Lavado a Presión de Techos en {{custom_values.business__county_name}} | Ilatek 
 ## Meta Tag Description
 
 ```text
-Lavado a presión de techos en {{custom_values.business__county_name}} desde $250. Limpieza profunda que prepara y alarga la vida del techo. Cotización $0 agendada con $50 reembolsables y garantía escrita.
+Lavado a presión de techos en {{custom_values.business__county_name}} desde $250. Limpieza profunda que prepara y alarga la vida del techo. Agenda con $50 descontables del total y garantía escrita.
 ```
 
 ## Meta Tag Image
 
-[Imagen social — URL pública](https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac72674c478ac55353c2708.jpg)
+[Imagen social — URL pública](https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/social/lavado-a-presion-techos-1200.webp)
 
 ```text
-https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac72674c478ac55353c2708.jpg
+https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/social/lavado-a-presion-techos-1200.webp
 ```
 
-Copia local: [assets/respaldo/6ac72674c478ac55353c2708.webp](assets/respaldo/6ac72674c478ac55353c2708.webp). No usar una ruta local en GHL.
+Copia local: [assets/meta-image.webp](assets/meta-image.webp). No usar una ruta local en GHL.
 
 ## Canonical existente
 
@@ -55,9 +55,3 @@ Antes de publicar cada snapshot, comprobar el HTML servido por GHL: Title, Descr
 ## Dominio y enlaces internos
 
 Configurar `website_url` como dominio sin protocolo ni barra final, por ejemplo `ilatekpr.com`. Los enlaces y canonical usan `https://{{custom_values.website_url}}/ruta`. Validar que GHL entregue estos valores resueltos en el HEAD público; no confiar en JavaScript para los metadatos sociales.
-
-## Aviso sobre la imagen social original
-
-La URL original del CDN no está disponible. La copia local es la variante WebP del mismo ID, no el JPG original.
-
-Alternativa existente en el repositorio: [imagen WebP](https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac72674c478ac55353c2708.webp). Antes de instalar el SEO, comprobar esta URL pública y usarla como Social Image si continúa disponible. El embed y el HEAD de referencia no se modificaron automáticamente.

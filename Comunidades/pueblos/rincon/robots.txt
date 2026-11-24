@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rincon.ilatekpr.com/sitemap.xml

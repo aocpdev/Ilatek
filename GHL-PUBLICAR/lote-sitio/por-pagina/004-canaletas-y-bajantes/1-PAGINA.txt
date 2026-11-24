@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Canaletas y Bajantes
+Slug: canaletas-y-bajantes
+URL: https://ilatekpr.com/canaletas-y-bajantes
+Acción: REPUBLICAR
+Estado hoy: HTTP 200
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (243 KB, sha256 17247d1a15b1)
+Origen en el repo: servicios/canaletas-y-bajantes/es/landing-pages/ghl-canaletas-y-bajantes-landing.html
+Sección de clima: sí
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

@@ -66,7 +66,7 @@
 - [Inspección y mantenimiento de techos]({{custom_values.website_url}}/inspeccion-y-mantenimiento-de-techos): cuidado preventivo y limpieza.
 - [Inspección de techos]({{custom_values.website_url}}/inspeccion-de-techos): diagnóstico con informe fotográfico. **Gratis**.
 - [Mantenimiento preventivo]({{custom_values.website_url}}/mantenimiento-de-techos): visitas programadas. **Desde $58 al mes**.
-- [Limpieza de techos y canaletas]({{custom_values.website_url}}/limpieza-de-techos-y-canaletas): removemos hojas y escombros. **Desde $150**.
+- [Limpieza de techos y canaletas]({{custom_values.website_url}}/limpieza-de-techos-y-canaletas): removemos hojas y escombros. **Desde $250**.
 - [Canaletas y bajantes]({{custom_values.website_url}}/canaletas-y-bajantes): limpieza, reparación e instalación. **Desde $200**.
 - [Lavado a presión de techos]({{custom_values.website_url}}/lavado-a-presion-techos). **Desde $0.15 por pie²**.
 - [Tragaluces (skylights)]({{custom_values.website_url}}/tragaluces): sellado e instalación sin filtraciones. **Desde $450**.

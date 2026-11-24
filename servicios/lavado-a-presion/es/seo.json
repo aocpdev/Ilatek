@@ -4,10 +4,10 @@
   "status": "plantilla-local-delta-system",
   "metaTagTitle": "Lavado a Presión en {{custom_values.business__county_name}} | Ilatek",
   "metaTagDescription": "Lavado a presión en {{custom_values.business__county_name}}: terrazas, verjas, paredes exteriores y pisos. Equipo profesional y cobertura en los 78 municipios. Cotiza online en minutos.",
-  "metaTagImage": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/lavado-a-presion.jpg",
+  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/9f1c63e4-7d4a-4c48-882b-2d64aca66399.webp",
   "locationCustomValue": "{{custom_values.business__county_name}}",
-  "metaTagImageAlt": "Lavado a Presión en {{custom_values.business__county_name}} | Ilatek",
+  "metaTagImageAlt": "Lavado a Presión en {{custom_values.business__county_name}} — Ilatek",
   "canonical": "https://{{custom_values.website_url}}/lavado-a-presion",
-  "socialImageFile": "assets/meta-image.jpg",
+  "socialImageFile": "assets/meta-image.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."
 }

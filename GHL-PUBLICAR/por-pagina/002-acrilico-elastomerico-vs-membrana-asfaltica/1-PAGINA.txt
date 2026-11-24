@@ -1,0 +1,13 @@
+PÁGINA EN GHL
+Nombre: Blog - Acrílico elastomérico vs. membrana asfáltica
+Slug: blog/acrilico-elastomerico-vs-membrana-asfaltica
+URL final: https://ilatekpr.com/blog/acrilico-elastomerico-vs-membrana-asfaltica
+Carpeta: por-pagina/002-acrilico-elastomerico-vs-membrana-asfaltica
+
+Orden dentro de la página:
+  1) Crear/clonar la página con ese nombre y ese slug.
+  2) Elemento Custom HTML/JavaScript → Custom Code → Open Code Editor →
+     borrar todo y pegar el contenido de 2-CODIGO-CUSTOM-HTML.html.
+  3) SEO de la página: campos de 4-SEO-CAMPOS.txt.
+  4) Settings → Tracking Code → HEADER: contenido de 3-HEAD-SEO.html.
+  5) Publicar y comprobar la URL.

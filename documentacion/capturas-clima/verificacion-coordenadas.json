@@ -1,0 +1,23 @@
+{
+  "carga": {
+    "estado": "ok",
+    "lugar": "Puerto Rico",
+    "temp": "81°",
+    "dias": 6,
+    "municipio": ""
+  },
+  "reqsCarga": [
+    "api.open-meteo.com"
+  ],
+  "trasCambio": {
+    "estado": "ok",
+    "lugar": "Mayagüez",
+    "temp": "79°",
+    "dias": 6,
+    "municipio": "Mayagüez"
+  },
+  "reqsCambio": [
+    "api.open-meteo.com"
+  ],
+  "errores": []
+}

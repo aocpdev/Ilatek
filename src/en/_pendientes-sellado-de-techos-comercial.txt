@@ -1,0 +1,153 @@
+/og:title/ og:description ("… en Juncos, Puerto Rico"): el título sale de {{custom_values.business__county_name}}, así que es el mismo custom value, sin depender de que el builder expanda el Custom Code; 3. el subdominio del sitio (juncos.ilatekpr.com → Juncos); 4. los valores de marca del contrato (custom-values.json → brand). El portador que viaja en el embed se oculta siempre (nunca es contenido). Estado en
+{{custom_values.business__county_name}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}
+Login
+Sellado comercial
+Sellado de Techos Comercial en
+Puerto Rico
+sin cerrar tu negocio.
+Una filtración en tu negocio cuesta ventas y clientes. Ilatek sella techos comerciales en {{custom_values.business__county_name}}, planificando el trabajo para que no tengas que cerrar, con agenda con $50 descontables del total y garantía escrita.
+Solicita tu cotización
+Qué incluye el servicio ↓
+por servicio
+Precio base
+turnos
+Horarios flexibles
+municipios
+Cobertura en PR
+Sin cerrar tu negocio
+undefined
+Sellamos tu techo comercial sin cerrar el negocio.
+Opera sin cerrar
+Planificamos por fases y en horarios que no afecten tus horas pico, para que tu negocio siga abierto.
+Protege tu inventario
+Una filtración puede dañar mercancía y equipos. Sellamos para que el agua no amenace tu operación.
+Menos interrupción
+Trabajamos eficiente y coordinado con tu equipo, reduciendo el tiempo de trabajo sobre el techo.
+Qué incluye
+Qué incluye el sellado comercial.
+En un techo comercial, la logística es tan importante como el material.
+Ilatek evalúa la superficie, define el sistema resistente al uso y planifica fases y horarios para no interrumpir la operación.
+Evaluación del techo y del uso comercial
+Sistema resistente al tránsito de equipos
+Planificación por fases y horarios
+Protección de equipos y áreas
+Ejecución con membranas certificadas
+Garantía por escrito y documentación
+Cotiza tu techo comercial
+Por fases · Horarios flexibles
+Ideal para
+Negocios que protegemos.
+Retail
+Tiendas y comercios
+Donde el techo cubre inventario sensible a la humedad y las filtraciones dañan mercancía.
+Oficinas
+Oficinas y edificios
+Techos con equipos de aire y cableado que no pueden mojarse.
+Restaurantes y clínicas
+Espacios donde una filtración afecta la operación y la experiencia del cliente.
+Cómo funciona
+Cómo sellamos un techo comercial.
+Planificamos por fases y en horarios que no afecten tu operación, protegiendo equipos e inventario.
+PASO 1
+Cotiza tu sellado de techos comercial
+Usa el cotizador de Ilatek o escríbenos: evaluamos tu techo y te damos el precio de sellado de techos comercial por escrito en minutos — sin compromiso.
+PASO 2
+Inspección y agenda
+Confirmamos el alcance de sellado de techos comercial con una inspección del techo, defines la fecha y reservas con el depósito de $50, que se descuenta del total.
+PASO 3
+Trabajo terminado
+Ejecutamos sellado de techos comercial con materiales certificados, protegemos el área y te entregamos la garantía por escrito.
+Cobertura de
+sellado comercial
+en toda la isla.
+Ilatek Techos brinda sellado de techos comercial en los
+78 municipios de Puerto Rico
+. Atendemos tu área en
+{{custom_values.business__county_name}}
+y toda la isla: busca tu pueblo en el directorio y visita su página.
+No encontramos ese pueblo. Verifica el nombre e intenta nuevamente.
+Página 1 de 1
+Reseñas de clientes de Ilatek.
+Reseñas de personas que confiaron en Ilatek para mantenimiento y sellado de techos en Puerto Rico. Cambia de pestaña para ver cada fuente.
+Preguntas frecuentes
+Preguntas frecuentes sobre sellado de techos comercial.
+¿Cuánto cuesta sellar un techo comercial?
+El sellado de techos comercial de Ilatek
+comienza desde $250
+, con descuentos por escala en superficies grandes. El precio depende del área, el sistema y el acceso. Cotizamos por proyecto.
+¿Tengo que cerrar mi negocio para el trabajo?
+No es necesario.
+Planificamos por fases y en horarios que no afecten tu operación; en la mayoría de los casos el negocio sigue abierto durante el sellado.
+¿Trabajan de noche o en fin de semana?
+Podemos coordinar horarios fuera de tu hora pico
+, incluyendo noches o fines de semana si el negocio lo requiere. Se define al cotizar.
+¿Qué sistema usan en techos comerciales?
+Normalmente
+membranas (TPO, EPDM o asfáltica) y poliuretano
+, porque resisten el tránsito y los equipos sobre la azotea. Elegimos según el uso del techo.
+¿Protegen los equipos de la azotea?
+Cubrimos y protegemos aires acondicionados, ductos y cableado antes de aplicar el sellador, y los dejamos limpios al terminar.
+¿Dan factura y documentación?
+Emitimos factura e informamos el alcance por escrito; también documentamos con fotos el antes y el después cuando se solicita.
+¿El sellado comercial tiene garantía?
+Entregamos garantía de mano de obra por escrito, con membranas y materiales certificados.
+¿Por qué elegir Ilatek Techos para tu techo comercial?
+Una filtración en tu negocio daña inventario y equipos: sellamos por fases para no interrumpir tu operación, protegemos los aires de la azotea y facturamos con documentación, desde $250.
+Visita o inspección por $50
+Protege tu techo antes de la próxima lluvia.
+Solicita tu cotización por $50 descontables del total de sellado de techos comercial en {{custom_values.business__county_name}} y recibe precio claro y por escrito — cotización por $50 descontables del total y cobertura en los 78 municipios de Puerto Rico.
+Solicita tu cotización por $50 descontables del total
+Respuesta en minutos · Sin compromiso
+Precio claro por escrito
+desde $250, confirmado después de la inspección.
+Inspección sin compromiso
+Subimos, diagnosticamos y te explicamos las opciones.
+Garantía de mano de obra
+Respaldada por escrito en cada trabajo que hacemos.
+Devasks
+Navegación de Ilatek
+Ilatek, inicio
+Logo de Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Logo%20de%20Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Navegación principal
+Idioma / Language
+Español
+English
+Abrir o cerrar el menú
+Ilatek Sellado comercial {{custom_values.business__county_name}}
+Sellado de techo comercial — {{custom_values.business__county_name}}
+Sellado de techos comercial · Ilatek Techos — servicio en {{custom_values.business__county_name}}
+Sellado%20de%20techo%20comercial%20%E2%80%94%20%7B%7Bcustom_values.business__county_name%7D%7D
+Sellado%20de%20techos%20comercial%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Sellado de techo comercial por Ilatek Techos en {{custom_values.business__county_name}} — edificios y oficinas
+Sellado comercial · Ilatek Techos — servicio en {{custom_values.business__county_name}}
+Sellado%20de%20techo%20comercial%20por%20Ilatek%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%E2%80%94%20edificios%20y%20oficinas
+Sellado%20comercial%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Cobertura de sellado de techos comercial de Ilatek Techos en Puerto Rico
+Busca tu pueblo
+Buscar un municipio de Puerto Rico
+Limpiar búsqueda
+Municipios de Puerto Rico con servicio de sellado de techos comercial
+Pie de página de Ilatek
+Facebook
+Facebook — servicio en {{custom_values.business__county_name}}
+Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Instagram
+Instagram — servicio en {{custom_values.business__county_name}}
+Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Youtube
+Youtube — servicio en {{custom_values.business__county_name}}
+Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+TikTok
+TikTok — servicio en {{custom_values.business__county_name}}
+TikTok%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+X — servicio en {{custom_values.business__county_name}}
+X%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+LinkedIn
+LinkedIn — servicio en {{custom_values.business__county_name}}
+LinkedIn%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Pinterest
+Pinterest — servicio en {{custom_values.business__county_name}}
+Pinterest%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D

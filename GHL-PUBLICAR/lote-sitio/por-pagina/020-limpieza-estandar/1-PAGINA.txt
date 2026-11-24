@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Limpieza Estandar
+Slug: limpieza-estandar
+URL: https://ilatekpr.com/limpieza-estandar
+Acción: REPUBLICAR
+Estado hoy: HTTP 200
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (237 KB, sha256 47d1b4213264)
+Origen en el repo: servicios/limpieza-estandar/es/landing-pages/ghl-limpieza-estandar-landing.html
+Sección de clima: sí
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

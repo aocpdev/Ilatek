@@ -1,0 +1,8 @@
+# URLs fuera de la cola · probadas con HTTP real el 2026-11-07
+# formato: url <TAB> estado <TAB> título realmente servido
+https://comunidades.ilatekpr.com/quebradillas/santa-marina/sellado-de-techo	200-otra-pagina	Sellado de techo en Isla Verde, Carolina | Ilatek Property Solution
+https://comunidades.ilatekpr.com/san-juan/monte-verde-real/limpieza	200-otra-pagina	Sellado de techo en Isla Verde, Carolina | Ilatek Property Solution
+https://comunidades.ilatekpr.com/santa-isabel/playita-cortada/sellado-de-techo	200-otra-pagina	Sellado de techo en Isla Verde, Carolina | Ilatek Property Solution
+https://comunidades.ilatekpr.com/utuado/comunidad-rural-el-guano/sellado-de-techo	200-otra-pagina	Sellado de techo en Isla Verde, Carolina | Ilatek Property Solution
+https://comunidades.ilatekpr.com/vieques/jardines-de-vieques/limpieza	200-otra-pagina	Sellado de techo en Isla Verde, Carolina | Ilatek Property Solution
+https://comunidades.ilatekpr.com/yauco/santa-catalina/limpieza	200-otra-pagina	Sellado de techo en Isla Verde, Carolina | Ilatek Property Solution

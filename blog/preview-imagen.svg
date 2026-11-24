@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" width="1200" height="660" role="img" aria-labelledby="ilbfig-t">
+  <title id="ilbfig-t">Silicona 100% y poliuretano</title>
+  <defs>
+    <linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b103d"/><stop offset="1" stop-color="#1a2a6c"/>
+    </linearGradient>
+    <pattern id="malla" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#ffffff" stroke-opacity=".05"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="660" fill="url(#fondo)"/>
+  <rect width="1200" height="660" fill="url(#malla)"/>
+  <text x="80" y="104" fill="#7fe3a6" font-family="Manrope,Arial,sans-serif" font-size="15" font-weight="800" letter-spacing="3">CORTE DEL SISTEMA</text>
+  <text x="80" y="158" fill="#ffffff" font-family="Outfit,Manrope,Arial,sans-serif" font-size="42" font-weight="700">Silicona 100% y poliuretano</text>
+  <line x1="80" y1="196" x2="1120" y2="196" stroke="#ffffff" stroke-opacity=".14"/>
+  <g>
+    <rect x="80" y="250.0" width="488" height="113.5" fill="#00b94f" rx="3"/><rect x="80" y="250.0" width="488" height="113.5" fill="none" stroke="#0b103d" stroke-opacity=".18" rx="3"/><rect x="80" y="363.5" width="488" height="35.1" fill="#8bdcae" rx="3"/><rect x="80" y="363.5" width="488" height="35.1" fill="none" stroke="#0b103d" stroke-opacity=".18" rx="3"/><rect x="80" y="398.6" width="488" height="151.4" fill="#c9d3ee" rx="0"/><rect x="80" y="398.6" width="488" height="151.4" fill="none" stroke="#0b103d" stroke-opacity=".18" rx="3"/>
+    <text x="80" y="234" fill="#ffffff" font-family="Manrope,Arial,sans-serif" font-size="21" font-weight="800">Silicona 100%</text>
+  </g>
+<g>
+    <rect x="632" y="250.0" width="488" height="42.1" fill="#f2c14e" rx="3"/><rect x="632" y="250.0" width="488" height="42.1" fill="none" stroke="#0b103d" stroke-opacity=".18" rx="3"/><rect x="632" y="292.1" width="488" height="89.5" fill="#df8f00" rx="3"/><rect x="632" y="292.1" width="488" height="89.5" fill="none" stroke="#0b103d" stroke-opacity=".18" rx="3"/><rect x="632" y="381.6" width="488" height="31.6" fill="#f6d79b" rx="3"/><rect x="632" y="381.6" width="488" height="31.6" fill="none" stroke="#0b103d" stroke-opacity=".18" rx="3"/><rect x="632" y="413.2" width="488" height="136.8" fill="#c9d3ee" rx="0"/><rect x="632" y="413.2" width="488" height="136.8" fill="none" stroke="#0b103d" stroke-opacity=".18" rx="3"/>
+    <text x="632" y="234" fill="#ffffff" font-family="Manrope,Arial,sans-serif" font-size="21" font-weight="800">Poliuretano</text>
+  </g>
+  <g>
+    <circle cx="600" cy="400" r="30" fill="#ffffff" fill-opacity=".08" stroke="#ffffff" stroke-opacity=".22"/>
+    <text x="600" y="408" text-anchor="middle" fill="#ffffff" font-family="Manrope,Arial,sans-serif" font-size="17" font-weight="800" letter-spacing="1">vs</text>
+  </g>
+  <text x="80" y="616" fill="#93a0c4" font-family="Manrope,Arial,sans-serif" font-size="15" font-weight="600">Ilatek Property Solution · Puerto Rico · precios publicados por cada empresa, con fuente</text>
+</svg>

@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Servicios Techos
+Slug: servicios-techos
+URL: https://ilatekpr.com/servicios-techos
+Acción: REPUBLICAR
+Estado hoy: HTTP 200
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (398 KB, sha256 88e69bcd9a24)
+Origen en el repo: categorias/techos/es/landing-pages/servicios-techos.html
+Sección de clima: sí
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

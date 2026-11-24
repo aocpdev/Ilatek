@@ -1,0 +1,159 @@
+/og:title/ og:description ("… en Juncos, Puerto Rico"): el título sale de {{custom_values.business__county_name}}, así que es el mismo custom value, sin depender de que el builder expanda el Custom Code; 3. el subdominio del sitio (juncos.ilatekpr.com → Juncos); 4. los valores de marca del contrato (custom-values.json → brand). El portador que viaja en el embed se oculta siempre (nunca es contenido). Estado en
+{{custom_values.business__county_name}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}
+Login
+Impermeabilización de Techos en
+Puerto Rico
+para cada tipo de techo.
+Cada tipo de techo pide un sistema distinto de impermeabilización. Ilatek sella concreto, techos planos, zinc, asfalto, teja y madera en {{custom_values.business__county_name}}, con agenda con $50 descontables del total y garantía escrita.
+Solicita tu cotización
+Qué incluye el servicio ↓
+por servicio
+Precio base
+tipos de techo
+Cubiertos
+municipios
+Cobertura en PR
+Concreto · Zinc · Asfalto · Teja
+undefined
+Cada techo pide su propio sistema de impermeabilización.
+Sistema por material
+No es lo mismo impermeabilizar una losa de concreto que un techo de zinc: usamos el producto correcto para cada superficie.
+Barrera continua
+Sellamos grietas, uniones y penetraciones para que el agua no tenga por dónde entrar, en vez de parches aislados.
+Protección que dura
+Con preparación correcta y el sistema adecuado, la impermeabilización protege tu techo por años, no meses.
+Qué incluye
+Qué incluye impermeabilizar tu techo.
+Impermeabilizar es crear una barrera que el agua no atraviesa.
+Ilatek prepara la superficie, corrige las fallas y aplica el sistema (membrana, silicona, coating o tratamiento específico) según el material de tu techo.
+Inspección y diagnóstico del tipo de techo
+Preparación de la superficie del techo
+Sellado de grietas, uniones y remates
+Corrección de empozamientos y drenaje
+Aplicación del sistema impermeabilizante
+Garantía por escrito del trabajo
+Cotiza tu impermeabilización
+Cada techo, su sistema
+Por tipo de techo
+Impermeabilizamos todo tipo de techo en Puerto Rico.
+Techos de Concreto / Losas
+Las losas son el techo más común de la isla: sellamos grietas y filtraciones para que el agua no penetre.
+Ver servicio
+Techos Planos y Membranas
+Techos planos con membrana EPDM, TPO o asfáltica: impermeabilización para superficies de poca pendiente.
+Techos de Zinc y Metal
+Tratamos la oxidación, sellamos traslapes y tornillos, y protegemos el metal contra la corrosión.
+Techos de Asfalto (Shingles)
+Sellado y sustitución de shingles sueltos o dañados para que el agua no se cuele por debajo.
+Tratamiento cuidadoso de tejas: sellamos traslapes y remates sin dañar la pieza.
+Sellado y protección de techos de madera contra la humedad, el comején y la filtración.
+Solicita tu cotización por $50 descontables del total
+Cómo funciona
+Cómo impermeabilizamos tu tipo de techo.
+Elegimos el sistema según la superficie —concreto, membrana, zinc o teja— para que la barrera de agua sea continua.
+PASO 1
+Cotiza tu impermeabilización de techos
+Usa el cotizador de Ilatek o escríbenos: evaluamos tu techo y te damos el precio de impermeabilización de techos por escrito en minutos — sin compromiso.
+PASO 2
+Inspección y agenda
+Confirmamos el alcance de impermeabilización de techos con una inspección del techo, defines la fecha y reservas con el depósito de $50, que se descuenta del total.
+PASO 3
+Trabajo terminado
+Ejecutamos impermeabilización de techos con materiales certificados, protegemos el área y te entregamos la garantía por escrito.
+Cobertura de
+impermeabilización
+en toda la isla.
+Ilatek Techos brinda impermeabilización de techos en los
+78 municipios de Puerto Rico
+. Atendemos tu área en
+{{custom_values.business__county_name}}
+y toda la isla: busca tu pueblo en el directorio y visita su página.
+No encontramos ese pueblo. Verifica el nombre e intenta nuevamente.
+Página 1 de 1
+Reseñas de clientes de Ilatek.
+Reseñas de personas que confiaron en Ilatek para mantenimiento y sellado de techos en Puerto Rico. Cambia de pestaña para ver cada fuente.
+Preguntas frecuentes
+Preguntas frecuentes sobre impermeabilización de techos.
+¿Cuánto cuesta impermeabilizar un techo?
+La impermeabilización de techos de Ilatek
+comienza desde $250
+instalada. El precio depende del tipo de techo, el sistema necesario y el área. Cotiza para tu número exacto.
+¿Qué es la impermeabilización de un techo?
+Es el proceso de
+crear una barrera que impide el paso del agua
+por la superficie del techo, sellando grietas, uniones y poros con membranas, silicona o coatings según el material.
+¿Cuánto dura la impermeabilización?
+Depende del sistema:
+silicona 100% de 20 a 25 años, poliuretano 10 a 15, membrana asfáltica 10 a 15 y acrílico 7 a 10
+. Con mantenimiento periódico la protección se extiende.
+¿Cada cuánto se impermeabiliza un techo?
+Según el sistema y la exposición, entre
+5 y 10 años
+para la mayoría de techos. En Puerto Rico, por el sol y la lluvia, recomendamos una inspección anual para detectar fallas temprano.
+¿Impermeabilizar sella las goteras existentes?
+La impermeabilización
+sella el agua que aún no ha entrado y las microfisuras
+. Las goteras activas se reparan primero en su punto de origen; después se impermeabiliza la superficie completa.
+¿Trabajan techos comerciales e industriales?
+Sí: impermeabilizamos
+techos residenciales, comerciales e industriales
+, incluidos losas grandes, techos planos con membrana y naves industriales.
+¿La impermeabilización incluye garantía?
+Entregamos garantía de mano de obra por escrito con materiales certificados. Si el sistema falla en el periodo cubierto, regresamos.
+¿Por qué elegir Ilatek Techos para impermeabilizar?
+No todos los techos llevan el mismo sellador: aplicamos el sistema correcto para cada superficie, con barrera continua que corta el agua por años, desde $250 con agenda con $50 descontables del total.
+Visita o inspección por $50
+Protege tu techo antes de la próxima lluvia.
+Solicita tu cotización por $50 descontables del total de impermeabilización de techos en {{custom_values.business__county_name}} y recibe precio claro y por escrito — cotización por $50 descontables del total y cobertura en los 78 municipios de Puerto Rico.
+Respuesta en minutos · Sin compromiso
+Precio claro por escrito
+desde $250, confirmado después de la inspección.
+Inspección sin compromiso
+Subimos, diagnosticamos y te explicamos las opciones.
+Garantía de mano de obra
+Respaldada por escrito en cada trabajo que hacemos.
+Devasks
+Navegación de Ilatek
+Ilatek, inicio
+Logo de Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Logo%20de%20Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Navegación principal
+Idioma / Language
+Español
+English
+Abrir o cerrar el menú
+Ilatek Impermeabilización {{custom_values.business__county_name}}
+Impermeabilización de techos de Ilatek Techos — {{custom_values.business__county_name}}
+Impermeabilización de techos · Ilatek Techos — servicio en {{custom_values.business__county_name}}
+Impermeabilizaci%C3%B3n%20de%20techos%20de%20Ilatek%20Techos%20%E2%80%94%20%7B%7Bcustom_values.business__county_name%7D%7D
+Impermeabilizaci%C3%B3n%20de%20techos%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Impermeabilización de losa y techo plano de Ilatek Techos en {{custom_values.business__county_name}}
+Impermeabilizaci%C3%B3n%20de%20losa%20y%20techo%20plano%20de%20Ilatek%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Cobertura de impermeabilización de techos de Ilatek Techos en Puerto Rico
+Busca tu pueblo
+Buscar un municipio de Puerto Rico
+Limpiar búsqueda
+Municipios de Puerto Rico con servicio de impermeabilización de techos
+Pie de página de Ilatek
+Facebook
+Facebook — servicio en {{custom_values.business__county_name}}
+Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Instagram
+Instagram — servicio en {{custom_values.business__county_name}}
+Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Youtube
+Youtube — servicio en {{custom_values.business__county_name}}
+Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+TikTok
+TikTok — servicio en {{custom_values.business__county_name}}
+TikTok%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+X — servicio en {{custom_values.business__county_name}}
+X%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+LinkedIn
+LinkedIn — servicio en {{custom_values.business__county_name}}
+LinkedIn%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Pinterest
+Pinterest — servicio en {{custom_values.business__county_name}}
+Pinterest%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D

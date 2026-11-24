@@ -1,0 +1,1595 @@
+{
+  "verificado": "2026-11-04",
+  "nota": "Catálogo de los 100 posts. Cada entrada define intención, familias y marcas citadas, título, H1, metadatos y el ángulo editorial que abre la página. Los 20 posts con cuerpo escrito a mano viven en editoriales.json.",
+  "posts": [
+    {
+      "slug": "silicona-100-vs-poliuretano",
+      "grupo": "familia",
+      "familias": [
+        "silicona-100",
+        "poliuretano"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Silicona 100% vs. poliuretano para techos en Puerto Rico",
+      "h1": "¿Qué es mejor para tu techo, silicona 100% o poliuretano?",
+      "meta": "Silicona 100% o poliuretano para tu techo en Puerto Rico: diferencias reales, precio publicado por paila, duración y en qué techo conviene cada uno.",
+      "kw": "silicona vs poliuretano techo",
+      "angulo": "La silicona 100% rinde mejor en losas donde el agua se queda parada; el poliuretano, donde hay equipos o alguien camina encima."
+    },
+    {
+      "slug": "silicona-100-vs-acrilico-elastomerico",
+      "grupo": "familia",
+      "familias": [
+        "silicona-100",
+        "acrilico-elastomerico"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Silicona 100% vs. acrílico elastomérico: ¿cuál elegir?",
+      "h1": "¿Silicona 100% o acrílico elastomérico para sellar tu techo?",
+      "meta": "Compara silicona 100% y acrílico elastomérico para sellar techos en Puerto Rico: precio por pie cuadrado publicado, años de vida y cuándo el acrílico sí conviene.",
+      "kw": "silicona vs acrilico para techo",
+      "angulo": "El acrílico cuesta menos por pie cuadrado y dura menos; la silicona cuesta más y aguanta el agua empozada."
+    },
+    {
+      "slug": "silicona-100-vs-membrana-asfaltica",
+      "grupo": "familia",
+      "familias": [
+        "silicona-100",
+        "membrana-asfaltica"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Silicona 100% vs. membrana asfáltica para techo",
+      "h1": "¿Silicona líquida o membrana asfáltica para tu techo?",
+      "meta": "Silicona líquida o membrana asfáltica en rollo: compara años, garantía de fabricante, precio por pie cuadrado publicado y cuál pide tu losa en Puerto Rico.",
+      "kw": "silicona vs membrana asfaltica",
+      "angulo": "La silicona se aplica líquida en una visita; la membrana asfáltica llega en rollo, con certificación de viento y garantía de fábrica."
+    },
+    {
+      "slug": "silicona-100-vs-membrana-liquida",
+      "grupo": "familia",
+      "familias": [
+        "silicona-100",
+        "membrana-liquida"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Silicona 100% vs. membrana líquida de tres capas",
+      "h1": "¿Silicona de una capa o membrana líquida de tres capas?",
+      "meta": "Silicona en una capa o sistema líquido de primer, base y acabado: coberturas reales, precio por paila, duración declarada y qué techo pide cada uno.",
+      "kw": "silicona vs membrana liquida",
+      "angulo": "La membrana líquida se aplica en tres pasos; la silicona cubre con una capa más gruesa. Cambia el tiempo de obra y la forma de reparar."
+    },
+    {
+      "slug": "silicona-100-vs-tpo-pvc",
+      "grupo": "familia",
+      "familias": [
+        "silicona-100",
+        "tpo-pvc"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Silicona 100% vs. membrana TPO o PVC",
+      "h1": "¿Silicona o membrana TPO/PVC para un techo plano?",
+      "meta": "Silicona líquida o membrana termoplástica soldada: cuándo la losa residencial no necesita TPO y cuándo el techo comercial no admite silicona.",
+      "kw": "silicona vs tpo pvc techo",
+      "angulo": "El TPO se especifica para techos comerciales y lo instala personal certificado; la silicona es para losa residencial."
+    },
+    {
+      "slug": "silicona-100-vs-sistema-multicapa",
+      "grupo": "familia",
+      "familias": [
+        "silicona-100",
+        "sistema-multicapa"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Silicona suelta vs. sistema multicapa con garantía",
+      "h1": "¿Comprar silicona o pagar un sistema multicapa con garantía?",
+      "meta": "Comprar silicona y aplicarla, o contratar un sistema de cuatro pasos con garantía de fabricante: qué cubre cada uno y qué pasa si algo falla.",
+      "kw": "sistema multicapa vs silicona",
+      "angulo": "El sistema multicapa suma capas y años de garantía; la silicona se elige cuando la losa todavía está sana."
+    },
+    {
+      "slug": "poliuretano-vs-acrilico-elastomerico",
+      "grupo": "familia",
+      "familias": [
+        "poliuretano",
+        "acrilico-elastomerico"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Poliuretano vs. acrílico elastomérico para techos",
+      "h1": "¿Poliuretano o acrílico elastomérico para tu techo?",
+      "meta": "Poliuretano o acrílico para sellar tu techo en Puerto Rico: resistencia al tránsito, precio publicado, olor, curado y años de vida de cada sistema.",
+      "kw": "poliuretano vs acrilico techo",
+      "angulo": "El poliuretano resiste el tránsito de equipos y sillas; el acrílico solo resiste sol y lluvia."
+    },
+    {
+      "slug": "poliuretano-vs-membrana-asfaltica",
+      "grupo": "familia",
+      "familias": [
+        "poliuretano",
+        "membrana-asfaltica"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Poliuretano vs. membrana asfáltica: precio y duración",
+      "h1": "¿Poliuretano líquido o membrana asfáltica?",
+      "meta": "Poliuretano o membrana asfáltica en rollo para tu techo: precio por pie cuadrado publicado, espesor verificable, garantía y proceso de instalación.",
+      "kw": "poliuretano vs membrana asfaltica",
+      "angulo": "La membrana asfáltica se mide por rollo y espesor; el poliuretano se mide por galón y manos, y se aplica en áreas pequeñas."
+    },
+    {
+      "slug": "poliuretano-vs-membrana-liquida",
+      "grupo": "familia",
+      "familias": [
+        "poliuretano",
+        "membrana-liquida"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Poliuretano vs. membrana líquida para losa",
+      "h1": "¿Poliuretano o membrana líquida para sellar un techo?",
+      "meta": "Dos sistemas líquidos, dos lógicas. Compara poliuretano mono o bicomponente con un sistema de tres capas: curado, tránsito, cobertura y precio.",
+      "kw": "poliuretano vs membrana liquida",
+      "angulo": "Los dos son líquidos, pero curan distinto: el poliuretano reacciona al aplicarse y la membrana líquida se arma por capas."
+    },
+    {
+      "slug": "poliuretano-vs-tpo-pvc",
+      "grupo": "familia",
+      "familias": [
+        "poliuretano",
+        "tpo-pvc"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Poliuretano vs. TPO: techo comercial en Puerto Rico",
+      "h1": "¿Poliuretano o TPO en un techo comercial?",
+      "meta": "Recubrimiento de poliuretano o membrana TPO en un techo comercial: cuándo conviene rehabilitar y cuándo hay que reemplazar la cubierta.",
+      "kw": "poliuretano vs tpo comercial",
+      "angulo": "Antes de elegir entre poliuretano y TPO hay que saber si la cubierta existente todavía sirve como base."
+    },
+    {
+      "slug": "poliuretano-vs-sistema-multicapa",
+      "grupo": "familia",
+      "familias": [
+        "poliuretano",
+        "sistema-multicapa"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Poliuretano suelto vs. sistema multicapa completo",
+      "h1": "¿Poliuretano suelto o sistema multicapa completo?",
+      "meta": "Aplicar poliuretano como producto o contratar el sistema completo con imprimador, base y acabado: qué cambia en precio, garantía y resultado.",
+      "kw": "poliuretano vs sistema multicapa",
+      "angulo": "El poliuretano falla cuando se salta el imprimador o cuando las grietas no se corrigen antes de aplicar."
+    },
+    {
+      "slug": "acrilico-elastomerico-vs-membrana-asfaltica",
+      "grupo": "familia",
+      "familias": [
+        "acrilico-elastomerico",
+        "membrana-asfaltica"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Acrílico elastomérico vs. membrana asfáltica",
+      "h1": "¿Acrílico elastomérico o membrana asfáltica?",
+      "meta": "El sistema más barato por pie cuadrado frente al más documentado: precio, años, garantía y en qué techo cada uno tiene sentido.",
+      "kw": "acrilico vs membrana asfaltica",
+      "angulo": "El acrílico es mantenimiento preventivo y la membrana asfáltica es obra de reemplazo. Aplicar acrílico donde hacía falta membrana es el error más caro."
+    },
+    {
+      "slug": "acrilico-elastomerico-vs-membrana-liquida",
+      "grupo": "familia",
+      "familias": [
+        "acrilico-elastomerico",
+        "membrana-liquida"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Acrílico elastomérico vs. membrana líquida",
+      "h1": "¿Acrílico elastomérico o membrana líquida?",
+      "meta": "Uno o tres pasos, misma familia química en parte: compara respiración, elasticidad, cobertura por paila y precio publicado en Puerto Rico.",
+      "kw": "acrilico vs membrana liquida",
+      "angulo": "El acrílico deja respirar el concreto joven; la membrana líquida sella por capas y no permite esa salida de humedad."
+    },
+    {
+      "slug": "acrilico-elastomerico-vs-tpo-pvc",
+      "grupo": "familia",
+      "familias": [
+        "acrilico-elastomerico",
+        "tpo-pvc"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Acrílico elastomérico vs. TPO o PVC",
+      "h1": "¿Acrílico o membrana termoplástica para un techo grande?",
+      "meta": "Recubrimiento acrílico o membrana soldada para un techo grande: reflectividad, soldadura verificable, costo y quién puede instalarlo.",
+      "kw": "acrilico vs tpo",
+      "angulo": "El acrílico lo aplica cualquier contratista; el TPO solo un instalador certificado por fábrica."
+    },
+    {
+      "slug": "acrilico-elastomerico-vs-sistema-multicapa",
+      "grupo": "familia",
+      "familias": [
+        "acrilico-elastomerico",
+        "sistema-multicapa"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Acrílico vs. sistema multicapa con garantía",
+      "h1": "¿Acrílico suelto o sistema multicapa con garantía?",
+      "meta": "Acrílico aplicado por tu cuenta o un sistema de cuatro pasos con garantía de fabricante: qué cubre cada uno y cuánto dura de verdad.",
+      "kw": "acrilico vs sistema multicapa",
+      "angulo": "El acrílico es el producto más vendido en ferretería y el que más se aplica mal; el sistema multicapa existe para cubrir ese error."
+    },
+    {
+      "slug": "membrana-asfaltica-vs-membrana-liquida",
+      "grupo": "familia",
+      "familias": [
+        "membrana-asfaltica",
+        "membrana-liquida"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Membrana asfáltica vs. membrana líquida",
+      "h1": "¿Membrana asfáltica en rollo o membrana líquida?",
+      "meta": "Rollo soldado o sistema líquido de tres capas: espesor verificable, adaptación a detalles, precio por pie cuadrado y garantía de cada opción.",
+      "kw": "membrana asfaltica vs liquida",
+      "angulo": "La asfáltica conviene en losas grandes y lisas; la líquida, en techos con muchos detalles y penetraciones."
+    },
+    {
+      "slug": "membrana-asfaltica-vs-tpo-pvc",
+      "grupo": "familia",
+      "familias": [
+        "membrana-asfaltica",
+        "tpo-pvc"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Membrana asfáltica vs. TPO o PVC",
+      "h1": "¿Membrana asfáltica o termoplástica para techo comercial?",
+      "meta": "Dos sistemas comerciales con garantías largas: compara certificaciones de viento, reflectividad, soldadura, mantenimiento y disponibilidad en la isla.",
+      "kw": "membrana asfaltica vs tpo",
+      "angulo": "Las dos se especifican por proyecto y exigen instalador aprobado; la diferencia está en la reflectividad y en quién tiene la certificación."
+    },
+    {
+      "slug": "membrana-asfaltica-vs-sistema-multicapa",
+      "grupo": "familia",
+      "familias": [
+        "membrana-asfaltica",
+        "sistema-multicapa"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Membrana asfáltica vs. sistema multicapa líquido",
+      "h1": "¿Membrana asfáltica nueva o sistema multicapa?",
+      "meta": "Reemplazo con rollo o rehabilitación con sistema líquido de marca: cuál dura más, cuál cuesta menos y cuándo la losa ya no aguanta otra capa.",
+      "kw": "membrana vs sistema multicapa",
+      "angulo": "Cada capa suma peso. Cuando la losa llega a su límite, la asfáltica deja de ser opción y hay que remover el sistema viejo."
+    },
+    {
+      "slug": "membrana-liquida-vs-tpo-pvc",
+      "grupo": "familia",
+      "familias": [
+        "membrana-liquida",
+        "tpo-pvc"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Membrana líquida vs. TPO para techo plano",
+      "h1": "¿Membrana líquida o TPO para techo plano?",
+      "meta": "Sistema líquido por capas o membrana termoplástica soldada en techo plano: acceso, certificación, reparación y costo real por proyecto.",
+      "kw": "membrana liquida vs tpo",
+      "angulo": "La membrana líquida la aplica un contratista local; el TPO exige un instalador certificado por el fabricante."
+    },
+    {
+      "slug": "membrana-liquida-vs-sistema-multicapa",
+      "grupo": "familia",
+      "familias": [
+        "membrana-liquida",
+        "sistema-multicapa"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Membrana líquida vs. sistema multicapa de marca",
+      "h1": "¿Membrana líquida o sistema multicapa de marca?",
+      "meta": "Los dos son sistemas por capas. Compara protocolo escrito, garantía, documentación técnica y precio por paila de las marcas que se venden en la isla.",
+      "kw": "membrana liquida vs sistema multicapa",
+      "angulo": "El sistema multicapa trae ficha técnica y garantía descargable; en la membrana líquida manda lo que diga el contrato."
+    },
+    {
+      "slug": "tpo-pvc-vs-sistema-multicapa",
+      "grupo": "familia",
+      "familias": [
+        "tpo-pvc",
+        "sistema-multicapa"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "TPO vs. sistema multicapa líquido",
+      "h1": "¿TPO nuevo o rehabilitación con sistema multicapa?",
+      "meta": "Cuándo un techo comercial necesita membrana nueva y cuándo una rehabilitación con sistema líquido es la decisión correcta.",
+      "kw": "tpo vs sistema multicapa",
+      "angulo": "Rehabilitar cuesta menos cuando la cubierta existente está sana; si hay humedad atrapada, el TPO resuelve el problema de raíz."
+    },
+    {
+      "slug": "conspro-bullbond-vs-cintron",
+      "grupo": "marca",
+      "familias": [
+        "sistema-multicapa"
+      ],
+      "marcas": [
+        "conspro",
+        "cintron"
+      ],
+      "sustrato": null,
+      "titulo": "Conspro Bull-Bond vs. Sistema Cintrón: comparación",
+      "h1": "¿Bull-Bond o Sistema Cintrón? Dos sistemas de Puerto Rico",
+      "meta": "Dos sistemas puertorriqueños multicapa frente a frente: precios publicados por paila, garantía real de cada uno y qué incluye su protocolo.",
+      "kw": "bullbond vs cintron",
+      "angulo": "Los dos venden sistema por capas y publican precio por paila. La garantía de Bull-Bond es renovable; la de Cintrón depende del contrato."
+    },
+    {
+      "slug": "conspro-bullbond-vs-marin-membrana",
+      "grupo": "marca",
+      "familias": [
+        "sistema-multicapa",
+        "membrana-liquida"
+      ],
+      "marcas": [
+        "conspro",
+        "marin"
+      ],
+      "sustrato": null,
+      "titulo": "Bull-Bond vs. Marín Membrana: precios y garantía",
+      "h1": "¿Bull-Bond o Marín Membrana?",
+      "meta": "Bull-Bond con garantía de fabricante renovable frente a Marín Membrana y su sistema líquido: precios por paila, puntos de venta y documentación.",
+      "kw": "bullbond vs marin membrana",
+      "angulo": "Bull-Bond publica ficha técnica y garantía escrita; Marín vende por red de contratistas y publica menos documentación."
+    },
+    {
+      "slug": "cintron-vs-marin-membrana",
+      "grupo": "marca",
+      "familias": [
+        "sistema-multicapa",
+        "membrana-liquida"
+      ],
+      "marcas": [
+        "cintron",
+        "marin"
+      ],
+      "sustrato": null,
+      "titulo": "Sistema Cintrón vs. Marín Membrana",
+      "h1": "¿Sistema Cintrón o Marín Membrana?",
+      "meta": "King of Silicone frente al sistema líquido de Marín: coberturas declaradas, precio por paila, garantía anunciada y dónde se compra cada uno.",
+      "kw": "cintron vs marin membrana",
+      "angulo": "Las dos marcas son puertorriqueñas y venden a contratistas. La diferencia está en la documentación y en la garantía que entregan por escrito."
+    },
+    {
+      "slug": "conspro-bullbond-vs-danosa",
+      "grupo": "marca",
+      "familias": [
+        "sistema-multicapa",
+        "membrana-asfaltica"
+      ],
+      "marcas": [
+        "conspro",
+        "danosa"
+      ],
+      "sustrato": null,
+      "titulo": "Bull-Bond vs. Danosa: líquido contra membrana",
+      "h1": "¿Bull-Bond o Danosa para tu techo?",
+      "meta": "Sistema líquido multicapa o membrana asfáltica certificada: compara garantía, certificaciones de viento, precio por pie cuadrado y proceso.",
+      "kw": "bullbond vs danosa",
+      "angulo": "Bull-Bond rehabilita la losa que ya existe; Danosa instala cubierta nueva. Resuelven techos en estado distinto."
+    },
+    {
+      "slug": "cintron-vs-danosa",
+      "grupo": "marca",
+      "familias": [
+        "sistema-multicapa",
+        "membrana-asfaltica"
+      ],
+      "marcas": [
+        "cintron",
+        "danosa"
+      ],
+      "sustrato": null,
+      "titulo": "Sistema Cintrón vs. Danosa: ¿cuál te conviene?",
+      "h1": "¿Sistema Cintrón o Danosa?",
+      "meta": "Cintrón vende su propio sistema y lo instala; Danosa fabrica membranas con garantía de hasta 20 años. Diferencias de alcance, precio y respaldo.",
+      "kw": "cintron vs danosa",
+      "angulo": "Cintrón vende producto e instalación; Danosa vende sistema y certifica al instalador. Eso cambia a quién se le reclama."
+    },
+    {
+      "slug": "marin-membrana-vs-danosa",
+      "grupo": "marca",
+      "familias": [
+        "membrana-liquida",
+        "membrana-asfaltica"
+      ],
+      "marcas": [
+        "marin",
+        "danosa"
+      ],
+      "sustrato": null,
+      "titulo": "Marín Membrana vs. Danosa: líquido o rollo",
+      "h1": "¿Marín Membrana o Danosa?",
+      "meta": "Sistema líquido puertorriqueño frente a membrana asfáltica certificada: documentación técnica, garantía publicada, precio y disponibilidad.",
+      "kw": "marin membrana vs danosa",
+      "angulo": "Marín tiene 40 años en la isla y poca documentación pública; Danosa publica fichas y garantías de fábrica."
+    },
+    {
+      "slug": "conspro-bullbond-vs-windmar",
+      "grupo": "marca",
+      "familias": [
+        "sistema-multicapa",
+        "silicona-100"
+      ],
+      "marcas": [
+        "conspro",
+        "windmar"
+      ],
+      "sustrato": null,
+      "titulo": "Bull-Bond vs. WindMar: producto contra servicio",
+      "h1": "¿Comprar Bull-Bond o contratar a WindMar?",
+      "meta": "Comprar el sistema y contratar aparte, o contratar todo con un instalador que publica precio por pie cuadrado: compara garantías y alcance.",
+      "kw": "bullbond vs windmar",
+      "angulo": "Conspro vende el sistema al contratista; WindMar vende el techo terminado. El precio de cada uno no cubre lo mismo."
+    },
+    {
+      "slug": "cintron-vs-windmar",
+      "grupo": "marca",
+      "familias": [
+        "sistema-multicapa",
+        "silicona-100"
+      ],
+      "marcas": [
+        "cintron",
+        "windmar"
+      ],
+      "sustrato": null,
+      "titulo": "Sistema Cintrón vs. WindMar Roofing",
+      "h1": "¿Sistema Cintrón o WindMar Roofing?",
+      "meta": "Dos instaladores con marca propia frente a frente: precio publicado por pie cuadrado, garantía por escrito y qué incluye la instalación.",
+      "kw": "cintron vs windmar",
+      "angulo": "Los dos instalan. La diferencia es cuánto del precio está publicado y cuánto aparece solo en la cotización."
+    },
+    {
+      "slug": "marin-membrana-vs-windmar",
+      "grupo": "marca",
+      "familias": [
+        "membrana-liquida",
+        "silicona-100"
+      ],
+      "marcas": [
+        "marin",
+        "windmar"
+      ],
+      "sustrato": null,
+      "titulo": "Marín Membrana vs. WindMar: líquido o silicona",
+      "h1": "¿Marín Membrana o WindMar?",
+      "meta": "Sistema líquido de tres capas o silicona de una sola: duración anunciada, precio por pie cuadrado publicado y garantía de cada propuesta.",
+      "kw": "marin vs windmar",
+      "angulo": "Marín compite por precio de material; WindMar por precio instalado con años de garantía."
+    },
+    {
+      "slug": "danosa-vs-windmar",
+      "grupo": "marca",
+      "familias": [
+        "membrana-asfaltica",
+        "silicona-100"
+      ],
+      "marcas": [
+        "danosa",
+        "windmar"
+      ],
+      "sustrato": null,
+      "titulo": "Danosa vs. WindMar: membrana o silicona",
+      "h1": "¿Danosa o WindMar para sellar tu techo?",
+      "meta": "Membrana asfáltica con certificaciones de fábrica o silicona de 20 a 25 años: compara precio por pie cuadrado, garantía y mantenimiento.",
+      "kw": "danosa vs windmar",
+      "angulo": "Las dos publican información técnica y aun así no coinciden en cuánto dura la silicona."
+    },
+    {
+      "slug": "conspro-bullbond-vs-soprema",
+      "grupo": "marca",
+      "familias": [
+        "sistema-multicapa",
+        "membrana-asfaltica"
+      ],
+      "marcas": [
+        "conspro",
+        "soprema"
+      ],
+      "sustrato": null,
+      "titulo": "Bull-Bond vs. Soprema para techo industrial",
+      "h1": "¿Bull-Bond o Soprema para techo comercial?",
+      "meta": "Rehabilitación líquida residencial frente a especificación industrial Soprema: cuándo cada sistema entra en un techo comercial o industrial.",
+      "kw": "bullbond vs soprema",
+      "angulo": "Bull-Bond resuelve una losa residencial; Soprema especifica techos industriales completos."
+    },
+    {
+      "slug": "danosa-vs-soprema",
+      "grupo": "marca",
+      "familias": [
+        "membrana-asfaltica"
+      ],
+      "marcas": [
+        "danosa",
+        "soprema"
+      ],
+      "sustrato": null,
+      "titulo": "Danosa vs. Soprema: membranas asfálticas",
+      "h1": "¿Danosa o Soprema? Dos membranas para techo comercial",
+      "meta": "Dos fabricantes de membrana con presencia en Puerto Rico: sistemas SBS y APP, certificaciones, garantías y cómo se especifica cada uno.",
+      "kw": "danosa vs soprema",
+      "angulo": "Danosa tiene sitio y blog en Puerto Rico; Soprema trabaja por especificación y representante."
+    },
+    {
+      "slug": "danosa-vs-polyglass",
+      "grupo": "marca",
+      "familias": [
+        "membrana-asfaltica"
+      ],
+      "marcas": [
+        "danosa",
+        "polyglass"
+      ],
+      "sustrato": null,
+      "titulo": "Danosa vs. Polyglass: membrana asfáltica en PR",
+      "h1": "¿Danosa o Polyglass? Membranas asfálticas comparadas",
+      "meta": "Compara las dos membranas asfálticas más usadas en techo comercial en Puerto Rico: autoadhesivas, soplete, garantía y disponibilidad local.",
+      "kw": "danosa vs polyglass",
+      "angulo": "Polyglass llega por suplidor; Danosa llega directo al contratista."
+    },
+    {
+      "slug": "soprema-vs-polyglass",
+      "grupo": "marca",
+      "familias": [
+        "membrana-asfaltica",
+        "membrana-liquida"
+      ],
+      "marcas": [
+        "soprema",
+        "polyglass"
+      ],
+      "sustrato": null,
+      "titulo": "Soprema vs. Polyglass: sistemas y líneas líquidas",
+      "h1": "¿Soprema o Polyglass para un techo comercial?",
+      "meta": "Dos fabricantes internacionales con canal en la isla: membranas SBS, APP, autoadhesivas y líneas líquidas para techo comercial.",
+      "kw": "soprema vs polyglass",
+      "angulo": "Los dos tienen membrana y línea líquida. Cambia quién firma la garantía y qué instalador certificado está disponible."
+    },
+    {
+      "slug": "danosa-vs-sika",
+      "grupo": "marca",
+      "familias": [
+        "membrana-asfaltica",
+        "tpo-pvc"
+      ],
+      "marcas": [
+        "danosa",
+        "sika"
+      ],
+      "sustrato": null,
+      "titulo": "Danosa vs. Sika: asfáltica o PVC",
+      "h1": "¿Danosa o Sika? Asfáltica o PVC",
+      "meta": "Membrana asfáltica o sistema Sarnafil y Sikaplan de PVC: compara familia, certificaciones, reflectividad y aplicación en techo comercial.",
+      "kw": "danosa vs sika",
+      "angulo": "Sika abre la puerta al PVC en la isla; Danosa, al asfalto certificado. La decisión pasa por reflectividad e instalador."
+    },
+    {
+      "slug": "sika-vs-polyglass",
+      "grupo": "marca",
+      "familias": [
+        "tpo-pvc",
+        "membrana-asfaltica"
+      ],
+      "marcas": [
+        "sika",
+        "polyglass"
+      ],
+      "sustrato": null,
+      "titulo": "Sika vs. Polyglass: PVC contra autoadhesiva",
+      "h1": "¿Sika o Polyglass para techo comercial?",
+      "meta": "Membrana termoplástica soldada o asfáltica autoadhesiva: cuándo conviene cada una en un techo comercial puertorriqueño.",
+      "kw": "sika vs polyglass",
+      "angulo": "Sika se suelda con calor y Polyglass se pega. Eso cambia el tiempo de obra y quién puede instalarlo."
+    },
+    {
+      "slug": "cintron-vs-lanco",
+      "grupo": "marca",
+      "familias": [
+        "sistema-multicapa",
+        "acrilico-elastomerico"
+      ],
+      "marcas": [
+        "cintron",
+        "lanco"
+      ],
+      "sustrato": null,
+      "titulo": "Sistema Cintrón vs. Lanco: marca propia o ferretería",
+      "h1": "¿Sistema Cintrón o Lanco?",
+      "meta": "Sistema propietario con protocolo o recubrimiento de ferretería como Dry-Coat: precio, aplicación, garantía y para quién es cada uno.",
+      "kw": "cintron vs lanco",
+      "angulo": "Lanco se compra en Home Depot y se aplica en un sábado; Cintrón vende un sistema por pasos con garantía."
+    },
+    {
+      "slug": "marin-membrana-vs-lanco",
+      "grupo": "marca",
+      "familias": [
+        "membrana-liquida",
+        "acrilico-elastomerico"
+      ],
+      "marcas": [
+        "marin",
+        "lanco"
+      ],
+      "sustrato": null,
+      "titulo": "Marín Membrana vs. Lanco para techo residencial",
+      "h1": "¿Marín Membrana o Lanco?",
+      "meta": "Sistema líquido de tres capas o recubrimiento acrílico de ferretería: cuánto dura cada uno, qué cuesta y cuándo el DIY es suficiente.",
+      "kw": "marin vs lanco",
+      "angulo": "Lanco sirve para un techo pequeño y sano que el dueño aplica; Marín es sistema instalado por contratista."
+    },
+    {
+      "slug": "conspro-bullbond-vs-lanco",
+      "grupo": "marca",
+      "familias": [
+        "sistema-multicapa",
+        "acrilico-elastomerico"
+      ],
+      "marcas": [
+        "conspro",
+        "lanco"
+      ],
+      "sustrato": null,
+      "titulo": "Bull-Bond vs. Lanco: sistema o mantenimiento",
+      "h1": "¿Bull-Bond o Lanco?",
+      "meta": "Sistema multicapa con garantía de fabricante o recubrimiento acrílico de mantenimiento: qué obtienes por la diferencia de precio.",
+      "kw": "bullbond vs lanco",
+      "angulo": "Bull-Bond vende años con garantía; Lanco vende mantenimiento accesible, sin garantía de fábrica."
+    },
+    {
+      "slug": "windmar-vs-lanco",
+      "grupo": "marca",
+      "familias": [
+        "silicona-100",
+        "acrilico-elastomerico"
+      ],
+      "marcas": [
+        "windmar",
+        "lanco"
+      ],
+      "sustrato": null,
+      "titulo": "WindMar vs. Lanco: silicona instalada o acrílico DIY",
+      "h1": "¿WindMar o Lanco?",
+      "meta": "Silicona instalada con garantía o acrílico de ferretería aplicado por ti: compara precio por pie cuadrado, duración y riesgo real.",
+      "kw": "windmar vs lanco",
+      "angulo": "La diferencia de precio es grande y la de años también. Conviene comparar qué cubre cada uno."
+    },
+    {
+      "slug": "sil-hs-vs-king-of-silicone",
+      "grupo": "marca",
+      "familias": [
+        "silicona-100"
+      ],
+      "marcas": [
+        "conspro",
+        "cintron"
+      ],
+      "sustrato": null,
+      "titulo": "SIL HS vs. King of Silicone: siliconas 100%",
+      "h1": "¿SIL HS o King of Silicone?",
+      "meta": "Dos siliconas 100% de marcas puertorriqueñas: precio por paila, cobertura declarada, sólidos y en qué tipo de techo rinde cada una.",
+      "kw": "sil hs vs king of silicone",
+      "angulo": "$220 contra $269 por paila, misma familia química y coberturas distintas que hay que comparar por pie cuadrado."
+    },
+    {
+      "slug": "maravilla-vs-top-seal",
+      "grupo": "marca",
+      "familias": [
+        "acrilico-elastomerico"
+      ],
+      "marcas": [
+        "cintron",
+        "conspro"
+      ],
+      "sustrato": null,
+      "titulo": "La Maravilla vs. TOP SEAL: acrílicos y elastoméricos",
+      "h1": "¿La Maravilla o TOP SEAL?",
+      "meta": "Dos recubrimientos para detalle y mantenimiento: precio publicado, uso previsto, aplicación y en qué se diferencian realmente.",
+      "kw": "maravilla vs top seal",
+      "angulo": "Maravilla se vende para juntas y detalles; Top Seal, como acabado elastomérico. No son intercambiables."
+    },
+    {
+      "slug": "cintronator-vs-duroseal",
+      "grupo": "marca",
+      "familias": [
+        "poliuretano",
+        "membrana-liquida"
+      ],
+      "marcas": [
+        "cintron",
+        "conspro"
+      ],
+      "sustrato": null,
+      "titulo": "Cintronator vs. DUROSEAL: sistemas de poliuretano",
+      "h1": "¿Cintronator o DUROSEAL?",
+      "meta": "Dos sistemas de base poliuretano con imprimador y acabado: precio por componente, número de pasos y qué techo pide cada protocolo.",
+      "kw": "cintronator vs duroseal",
+      "angulo": "Cintronator es un juego de tres componentes; DUROSEAL es membrana de caucho con imprimador propio."
+    },
+    {
+      "slug": "primer-bullbond-vs-primer-cintron",
+      "grupo": "marca",
+      "familias": [
+        "sistema-multicapa"
+      ],
+      "marcas": [
+        "conspro",
+        "cintron"
+      ],
+      "sustrato": null,
+      "titulo": "Imprimador Bull-Bond vs. imprimador Cintrón",
+      "h1": "¿Imprimador Bull-Bond o de Cintrón?",
+      "meta": "El paso que más se salta y el que más garantías anula: compara imprimadores, precio, base química y cuándo cada uno aplica.",
+      "kw": "primer bullbond vs cintron",
+      "angulo": "El imprimador es lo que sostiene la garantía. Saltarlo es la causa más común de rechazo de un reclamo."
+    },
+    {
+      "slug": "top-coat-marin-vs-top-coat-cintron",
+      "grupo": "marca",
+      "familias": [
+        "membrana-liquida",
+        "sistema-multicapa"
+      ],
+      "marcas": [
+        "marin",
+        "cintron"
+      ],
+      "sustrato": null,
+      "titulo": "Top Coat Marín vs. acabado Cintrón",
+      "h1": "¿Top Coat de Marín o acabado de Cintrón?",
+      "meta": "La última capa es la que ves y la que envejece: compara cobertura declarada, resistencia UV y función dentro de cada sistema.",
+      "kw": "top coat marin vs cintron",
+      "angulo": "El acabado define color, resistencia UV y cada cuánto hay que dar mantenimiento."
+    },
+    {
+      "slug": "sellado-de-techo-de-zinc",
+      "grupo": "sustrato",
+      "familias": [
+        "metal-zinc",
+        "poliuretano"
+      ],
+      "marcas": [],
+      "sustrato": "zinc",
+      "titulo": "Sellado de techo de zinc en Puerto Rico: cómo se hace",
+      "h1": "¿Cómo se sella un techo de zinc?",
+      "meta": "Cómo se sella un techo de zinc en Puerto Rico paso a paso: reponer tornillos, sellar traslapes con poliuretano y malla, y el error que rompe todo en un año.",
+      "kw": "sellado de techo de zinc",
+      "angulo": "El zinc filtra por tornillos y traslapes, no por el panel. Pintar encima sin corregir eso dura una temporada."
+    },
+    {
+      "slug": "sellado-de-techo-de-zinc-vs-silicona",
+      "grupo": "sustrato",
+      "familias": [
+        "metal-zinc",
+        "silicona-100"
+      ],
+      "marcas": [],
+      "sustrato": "zinc",
+      "titulo": "¿Silicona en techo de zinc? Qué aguanta el metal",
+      "h1": "¿Silicona o poliuretano para un techo de zinc?",
+      "meta": "La silicona es excelente en losa y problemática en zinc. Aquí está lo que hay que saber sobre dilatación, adherencia y sellado de traslapes metálicos.",
+      "kw": "silicona para techo de zinc",
+      "angulo": "La silicona se estira, pero el zinc se mueve más con el calor. En metal pesa más la preparación y el refuerzo que la marca."
+    },
+    {
+      "slug": "sellado-de-techo-de-concreto",
+      "grupo": "sustrato",
+      "familias": [
+        "losa-cementicia",
+        "silicona-100",
+        "acrilico-elastomerico"
+      ],
+      "marcas": [],
+      "sustrato": "concreto",
+      "titulo": "Sellado de techo de concreto: guía para losas en PR",
+      "h1": "¿Cómo se sella un techo de concreto en Puerto Rico?",
+      "meta": "Grietas, remates y pendiente: lo que hay que corregir en una losa de concreto antes de sellar, y qué sistema pide cada caso según el agua que empoza.",
+      "kw": "sellado de techo de concreto",
+      "angulo": "En concreto, el sellador va al final y casi todas las fallas vienen de grietas que nadie abrió antes."
+    },
+    {
+      "slug": "sellado-de-techo-de-concreto-vs-membrana-asfaltica",
+      "grupo": "sustrato",
+      "familias": [
+        "losa-cementicia",
+        "membrana-asfaltica"
+      ],
+      "marcas": [],
+      "sustrato": "concreto",
+      "titulo": "Losa de concreto: sellar o poner membrana asfáltica",
+      "h1": "¿Sellado líquido o membrana asfáltica para una losa de concreto?",
+      "meta": "Cuándo una losa de concreto se puede rehabilitar con sellado y cuándo necesita membrana asfáltica nueva, con precio publicado y criterios verificables.",
+      "kw": "losa concreto membrana asfaltica",
+      "angulo": "Si la losa ya no agarra ningún producto, la membrana asfáltica es la salida; el sellador no."
+    },
+    {
+      "slug": "sellado-de-techo-de-madera",
+      "grupo": "sustrato",
+      "familias": [
+        "acrilico-elastomerico",
+        "poliuretano"
+      ],
+      "marcas": [],
+      "sustrato": "madera",
+      "titulo": "Sellado de techo de madera: qué funciona y qué no",
+      "h1": "¿Cómo se sella un techo de madera?",
+      "meta": "Sellar un techo de madera en Puerto Rico exige productos flexibles y ventilación. Qué revisar antes de aplicar y cuándo el problema es la pieza, no el sello.",
+      "kw": "sellado techo de madera",
+      "angulo": "En madera el problema es el movimiento y la humedad atrapada. Ningún sellador arregla una pieza podrida."
+    },
+    {
+      "slug": "sellado-de-techo-de-teja",
+      "grupo": "sustrato",
+      "familias": [
+        "poliuretano",
+        "silicona-100"
+      ],
+      "marcas": [],
+      "sustrato": "teja",
+      "titulo": "Sellado de techo de teja: juntas, remates y calor",
+      "h1": "¿Cómo se sella un techo de teja?",
+      "meta": "En teja no se busca una capa continua sino sellar uniones y remates con productos flexibles. Qué usar, qué evitar y cuándo hay que reponer piezas.",
+      "kw": "sellado techo de teja",
+      "angulo": "La teja se mueve con el calor y un sellador rígido se agrieta en el primer cambio de temperatura."
+    },
+    {
+      "slug": "sellado-de-techo-de-asfalto",
+      "grupo": "sustrato",
+      "familias": [
+        "membrana-asfaltica",
+        "silicona-100",
+        "acrilico-elastomerico"
+      ],
+      "marcas": [],
+      "sustrato": "asfalto",
+      "titulo": "Sellado de techo de asfalto: compatibilidad primero",
+      "h1": "¿Cómo se sella un techo de asfalto?",
+      "meta": "Qué se puede aplicar sobre un techo de asfalto y qué reacciona mal. Compatibilidad, imprimador, capa nueva y cuándo el parche ya no sirve.",
+      "kw": "sellado techo de asfalto",
+      "angulo": "En asfalto manda la compatibilidad química: el producto equivocado obliga a remover."
+    },
+    {
+      "slug": "sellado-de-techo-plano",
+      "grupo": "sustrato",
+      "familias": [
+        "silicona-100",
+        "membrana-asfaltica"
+      ],
+      "marcas": [],
+      "sustrato": "plano",
+      "titulo": "Sellado de techo plano en Puerto Rico: guía práctica",
+      "h1": "¿Cómo se sella un techo plano?",
+      "meta": "Por qué casi todo techo en Puerto Rico es plano, qué sistema rinde en una losa sin pendiente y cómo se decide entre sellado e impermeabilización.",
+      "kw": "sellado de techo plano",
+      "angulo": "El techo plano combina sol, lluvia y poca pendiente; el sistema se elige por agua empozada."
+    },
+    {
+      "slug": "sellado-de-techo-plano-con-empozamiento",
+      "grupo": "sustrato",
+      "familias": [
+        "silicona-100",
+        "membrana-asfaltica",
+        "losa-cementicia"
+      ],
+      "marcas": [],
+      "sustrato": "plano",
+      "titulo": "Empozamiento de agua en el techo: qué hacer",
+      "h1": "¿Qué hacer con el agua empozada en el techo?",
+      "meta": "El agua que se queda en la losa no se arregla con más sellador. Cómo se corrige la pendiente, qué pide el código y qué sistema aguanta el estancamiento.",
+      "kw": "empozamiento de agua techo",
+      "angulo": "Si el agua sigue parada 48 horas después de llover, el problema es la pendiente, no el sellador."
+    },
+    {
+      "slug": "sellado-de-techo-con-equipos-de-aire",
+      "grupo": "sustrato",
+      "familias": [
+        "poliuretano",
+        "silicona-100"
+      ],
+      "marcas": [],
+      "sustrato": "plano",
+      "titulo": "Sellar el techo alrededor de equipos de aire",
+      "h1": "¿Cómo se sella el techo alrededor de los equipos de aire?",
+      "meta": "Las unidades de aire son la causa más común de filtración puntual en la losa. Cómo se sellan anclajes y bases sin anular la garantía del sistema.",
+      "kw": "sellado techo equipos de aire",
+      "angulo": "Cada anclaje de equipo es un punto por donde entra agua; una casa con cuatro equipos tiene dieciséis."
+    },
+    {
+      "slug": "sellado-de-techo-con-paneles-solares",
+      "grupo": "sustrato",
+      "familias": [
+        "silicona-100",
+        "poliuretano"
+      ],
+      "marcas": [],
+      "sustrato": "plano",
+      "titulo": "Sellado de techo con paneles solares",
+      "h1": "¿Cómo se sella un techo con paneles solares?",
+      "meta": "Orden correcto, anclajes, coordinación con el instalador solar y el detalle de garantía que casi nadie revisa antes de perforar la losa.",
+      "kw": "sellado techo con paneles solares",
+      "angulo": "Lo recomendable es sellar antes de instalar los paneles; después, cada perforación nueva afecta dos garantías."
+    },
+    {
+      "slug": "sellado-de-techo-de-condominio",
+      "grupo": "sustrato",
+      "familias": [
+        "membrana-asfaltica",
+        "silicona-100"
+      ],
+      "marcas": [],
+      "sustrato": "plano",
+      "titulo": "Sellado de techo en condominios: cómo se organiza",
+      "h1": "¿Cómo se sella el techo de un condominio?",
+      "meta": "Área común, junta de directores, cotización y garantía a nombre de la asociación. Cómo se aprueba y se ejecuta un sellado de techo en un condominio.",
+      "kw": "sellado techo condominio",
+      "angulo": "En condominio, la mitad del trabajo es técnico y la otra mitad es acta, junta y documento firmado."
+    },
+    {
+      "slug": "sellado-de-techo-comercial",
+      "grupo": "sustrato",
+      "familias": [
+        "membrana-asfaltica",
+        "tpo-pvc"
+      ],
+      "marcas": [],
+      "sustrato": "comercial",
+      "titulo": "Sellado de techo comercial: sistemas y garantías",
+      "h1": "¿Cómo se sella un techo comercial?",
+      "meta": "En techo comercial manda la garantía de fabricante y la certificación de viento. Compara membranas, recubrimientos y qué documentación exigir.",
+      "kw": "sellado de techo comercial",
+      "angulo": "Un techo comercial se juzga por la carpeta de garantía que se puede entregar cinco años después."
+    },
+    {
+      "slug": "sellado-de-techo-industrial",
+      "grupo": "sustrato",
+      "familias": [
+        "tpo-pvc",
+        "membrana-asfaltica"
+      ],
+      "marcas": [],
+      "sustrato": "industrial",
+      "titulo": "Sellado de techo industrial: especificación y viento",
+      "h1": "¿Cómo se sella un techo industrial?",
+      "meta": "Galpones, naves y plantas: sistemas especificados, cargas, certificaciones de viento y mantenimiento programado en un techo industrial.",
+      "kw": "sellado techo industrial",
+      "angulo": "En industrial se especifica un sistema: ficha, carga y certificación por escrito."
+    },
+    {
+      "slug": "sellado-de-techo-residencial",
+      "grupo": "sustrato",
+      "familias": [
+        "silicona-100",
+        "acrilico-elastomerico",
+        "membrana-liquida"
+      ],
+      "marcas": [],
+      "sustrato": "residencial",
+      "titulo": "Sellado de techo residencial: qué pide una casa",
+      "h1": "¿Cómo se sella el techo de una casa?",
+      "meta": "Presupuesto, sistema y expectativas reales para el techo de una casa en Puerto Rico: qué se puede resolver y qué hay que reemplazar.",
+      "kw": "sellado techo residencial",
+      "angulo": "En una casa pesan el presupuesto, el tiempo de curado y los años de garantía, no solo el precio."
+    },
+    {
+      "slug": "sellado-de-techo-de-aluminio",
+      "grupo": "sustrato",
+      "familias": [
+        "metal-zinc",
+        "poliuretano"
+      ],
+      "marcas": [],
+      "sustrato": "aluminio",
+      "titulo": "Sellado de techo de aluminio: juntas y oxidación",
+      "h1": "¿Cómo se sella un techo de aluminio?",
+      "meta": "El aluminio no se oxida como el zinc, pero sus juntas también se abren. Qué sellador usar, cómo preparar la superficie y qué revisar en cada panel.",
+      "kw": "sellado techo de aluminio",
+      "angulo": "El aluminio no se ve oxidado, pero la junta se abre igual y el agua aparece adentro."
+    },
+    {
+      "slug": "sellado-de-techo-de-shingle",
+      "grupo": "sustrato",
+      "familias": [
+        "acrilico-elastomerico",
+        "membrana-asfaltica"
+      ],
+      "marcas": [],
+      "sustrato": "shingle",
+      "titulo": "Sellado de techo de shingle: límites reales",
+      "h1": "¿Se puede sellar un techo de shingle?",
+      "meta": "El shingle tiene vida útil y no siempre admite sellado. Cuándo se puede prolongar, cuándo hay que reemplazar y qué pasa con las tejas levantadas.",
+      "kw": "sellado techo de shingle",
+      "angulo": "El shingle es el techo que menos aguanta el abandono: cuando se va el granulado, ningún recubrimiento lo recupera."
+    },
+    {
+      "slug": "sellado-de-techo-en-zonas-costeras",
+      "grupo": "sustrato",
+      "familias": [
+        "silicona-100",
+        "poliuretano"
+      ],
+      "marcas": [],
+      "sustrato": "costero",
+      "titulo": "Sellado de techos en zonas costeras de Puerto Rico",
+      "h1": "¿Cómo se sella un techo cerca del mar?",
+      "meta": "Salitre, viento con arena y corrosión acelerada: qué cambia al sellar un techo cerca del mar y por qué el metal sufre más que la losa.",
+      "kw": "sellado techo zona costera",
+      "angulo": "A menos de un kilómetro del mar el techo envejece más rápido; cambia la frecuencia de inspección más que el sistema."
+    },
+    {
+      "slug": "sellado-de-techo-de-hormigon-poroso",
+      "grupo": "sustrato",
+      "familias": [
+        "losa-cementicia",
+        "silicona-100",
+        "acrilico-elastomerico"
+      ],
+      "marcas": [],
+      "sustrato": "concreto",
+      "titulo": "Hormigón poroso: sellar o rellenar primero",
+      "h1": "¿Cómo se sella un techo de hormigón poroso?",
+      "meta": "Un hormigón poroso absorbe el sellador y pierde espesor. Cómo se prepara, qué imprimador pide y por qué hay que corregir antes de cubrir.",
+      "kw": "hormigon poroso techo sellado",
+      "angulo": "El concreto poroso absorbe la primera mano; si no se sella la superficie antes, el producto se queda adentro."
+    },
+    {
+      "slug": "sellado-de-techos-escolares",
+      "grupo": "sustrato",
+      "familias": [
+        "membrana-asfaltica",
+        "silicona-100"
+      ],
+      "marcas": [],
+      "sustrato": "institucional",
+      "titulo": "Sellado de techos escolares e institucionales",
+      "h1": "¿Cómo se sellan los techos de escuelas y edificios públicos?",
+      "meta": "Escuelas y edificios públicos tienen calendario, licitación y garantía de varios años. Qué documentación exige una institución antes de contratar.",
+      "kw": "sellado techo escuela puerto rico",
+      "angulo": "En una escuela manda el calendario: hay que trabajar sin el edificio lleno y con garantía que pase el próximo verano."
+    },
+    {
+      "slug": "cuanto-cuesta-sellar-un-techo-en-puerto-rico",
+      "grupo": "intencion",
+      "familias": [
+        "silicona-100",
+        "acrilico-elastomerico",
+        "membrana-asfaltica"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "¿Cuánto cuesta sellar un techo en Puerto Rico?",
+      "h1": "¿Cuánto cuesta sellar un techo en Puerto Rico?",
+      "meta": "Precios publicados por empresas de Puerto Rico: de $1.80 a $6.50 por pie cuadrado según el sistema, y de $3 a $10 en membrana asfáltica. Con fuentes y fecha.",
+      "kw": "cuanto cuesta sellar un techo puerto rico",
+      "angulo": "Entre $1.80 y $10 por pie cuadrado; la diferencia está en los pasos que incluye el trabajo, no en el precio del producto."
+    },
+    {
+      "slug": "precio-por-pie-cuadrado-sellado-de-techo",
+      "grupo": "intencion",
+      "familias": [
+        "silicona-100",
+        "poliuretano",
+        "acrilico-elastomerico",
+        "membrana-asfaltica"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Precio por pie cuadrado del sellado de techo en PR",
+      "h1": "¿Cuánto cuesta el pie cuadrado de sellado de techo?",
+      "meta": "Tabla de precios por pie cuadrado publicados en Puerto Rico para acrílico, poliuretano, silicona y membrana asfáltica, con la fuente de cada cifra.",
+      "kw": "precio por pie cuadrado sellado de techo",
+      "angulo": "Hay al menos cuatro rangos vigentes y cada uno corresponde a un sistema distinto; aquí están los cuatro con fuente."
+    },
+    {
+      "slug": "sellado-de-techo-precio-mano-de-obra",
+      "grupo": "intencion",
+      "familias": [
+        "membrana-liquida",
+        "sistema-multicapa"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Sellado de techo: cuánto se cobra solo de mano de obra",
+      "h1": "¿Cuánto cuesta la mano de obra de un sellado de techo?",
+      "meta": "Nadie publica la mano de obra separada del material, y por eso las cotizaciones no se pueden comparar. Cómo desglosarla y qué peso real tiene.",
+      "kw": "mano de obra sellado de techo",
+      "angulo": "La mano de obra es la mitad o más del total y casi nunca aparece desglosada; pedirla por escrito es la única forma de comparar."
+    },
+    {
+      "slug": "cuanto-cuesta-sellar-un-techo-de-1200-pies",
+      "grupo": "intencion",
+      "familias": [
+        "silicona-100",
+        "membrana-asfaltica"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Sellar un techo de 1,200 pies cuadrados: costo real",
+      "h1": "¿Cuánto cuesta sellar un techo de 1,200 pies cuadrados?",
+      "meta": "Ejemplo completo con precios publicados en Puerto Rico: de $4,200 a $7,800 en silicona y de $3,600 a $12,000 en membrana asfáltica para 1,200 pies cuadrados.",
+      "kw": "costo sellar techo 1200 pies",
+      "angulo": "1,200 pies cuadrados es la medida de una casa de una planta; con las tarifas publicadas, el rango es bastante estrecho."
+    },
+    {
+      "slug": "por-que-varia-el-precio-del-sellado-de-techo",
+      "grupo": "intencion",
+      "familias": [
+        "sistema-multicapa",
+        "acrilico-elastomerico",
+        "silicona-100"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Por qué varía tanto el precio del sellado de techo",
+      "h1": "¿Por qué varía tanto el precio de sellar un techo?",
+      "meta": "De $1.75 a $6.50 por pie cuadrado por el mismo techo. Las cinco variables que explican la diferencia y las preguntas que separan una oferta de otra.",
+      "kw": "por que varia precio sellado techo",
+      "angulo": "Cuando dos cotizaciones difieren al triple, una incluye preparación, imprimador y garantía, y la otra no."
+    },
+    {
+      "slug": "cuanto-dura-el-sellado-de-un-techo",
+      "grupo": "intencion",
+      "familias": [
+        "acrilico-elastomerico",
+        "poliuretano",
+        "silicona-100",
+        "membrana-asfaltica"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "¿Cuánto dura el sellado de un techo en Puerto Rico?",
+      "h1": "¿Cuánto dura el sellado de un techo?",
+      "meta": "De 1 a 25 años según el sistema. Tabla de duración declarada por fabricantes, qué la acorta en el clima de la isla y cómo prolongarla con mantenimiento.",
+      "kw": "cuanto dura sellado de techo",
+      "angulo": "Lo que más acorta la vida de un sellado es la preparación deficiente, antes que el sol o la lluvia."
+    },
+    {
+      "slug": "que-sistema-de-sellado-dura-mas-anos",
+      "grupo": "intencion",
+      "familias": [
+        "membrana-asfaltica",
+        "tpo-pvc",
+        "silicona-100"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Qué sistema de sellado de techo dura más años",
+      "h1": "¿Qué sistema de sellado dura más años?",
+      "meta": "Membrana asfáltica, TPO o silicona: cuál documenta más años, qué garantía respalda cada una y por qué la duración depende de tu techo.",
+      "kw": "sistema sellado techo mas duradero",
+      "angulo": "En techo comercial gana la membrana por documentación; en losa residencial gana la silicona por agua estancada."
+    },
+    {
+      "slug": "sellado-de-techo-vs-impermeabilizacion",
+      "grupo": "intencion",
+      "familias": [
+        "membrana-liquida",
+        "membrana-asfaltica",
+        "losa-cementicia"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Sellado vs. impermeabilización de techo: diferencia",
+      "h1": "¿Cuál es la diferencia entre sellado e impermeabilización?",
+      "meta": "Sellar puntos concretos no es lo mismo que cubrir toda la losa. Cómo saber cuál necesita tu techo y qué pasa si aplicas el tratamiento equivocado.",
+      "kw": "sellado vs impermeabilizacion",
+      "angulo": "Sellar trata un punto; impermeabilizar cubre toda la superficie. Si filtra por tres lados, sellar puntos gasta dos veces."
+    },
+    {
+      "slug": "puedo-sellar-mi-techo-sobre-el-sellado-viejo",
+      "grupo": "intencion",
+      "familias": [
+        "silicona-100",
+        "acrilico-elastomerico",
+        "membrana-asfaltica"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "¿Puedo sellar sobre el sellado viejo de mi techo?",
+      "h1": "¿Se puede sellar encima del sellado viejo?",
+      "meta": "A veces sí y a veces es el error más caro. La prueba de la cuadrada, los casos donde no se puede y qué sistemas exigen remover la capa anterior.",
+      "kw": "sellar sobre sellado viejo",
+      "angulo": "Depende de si la capa vieja está adherida; si se pela, nada de lo que se aplique encima va a durar."
+    },
+    {
+      "slug": "se-puede-sellar-un-techo-mojado",
+      "grupo": "intencion",
+      "familias": [
+        "silicona-100",
+        "acrilico-elastomerico",
+        "membrana-asfaltica"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "¿Se puede sellar un techo mojado o con lluvia?",
+      "h1": "¿Se puede sellar un techo mojado?",
+      "meta": "Ningún sistema serio sella sobre agua. Qué pasa cuando se aplica en húmedo, cuánto hay que esperar y cómo se prueba si la losa está lista.",
+      "kw": "sellar techo mojado",
+      "angulo": "Aplicar sobre humedad encierra el agua adentro: el sellado aguanta un año y vuelve a filtrar por el mismo punto."
+    },
+    {
+      "slug": "cuando-sellar-el-techo-en-puerto-rico",
+      "grupo": "intencion",
+      "familias": [
+        "silicona-100",
+        "membrana-liquida",
+        "acrilico-elastomerico"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Cuándo sellar el techo en Puerto Rico: calendario",
+      "h1": "¿Cuándo se debe sellar un techo en Puerto Rico?",
+      "meta": "Ventanas secas por región, tiempo de curado y por qué empezar un sistema de tres capas con una onda tropical a 48 horas es tirar el dinero.",
+      "kw": "cuando sellar techo puerto rico",
+      "angulo": "La misma silicona dura años si se aplica en enero y falla si llueve tres días después de aplicarla."
+    },
+    {
+      "slug": "sellado-de-techo-antes-de-la-temporada-de-huracanes",
+      "grupo": "intencion",
+      "familias": [
+        "membrana-asfaltica",
+        "tpo-pvc",
+        "silicona-100"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Sellado de techo antes de la temporada de huracanes",
+      "h1": "¿Cuándo sellar el techo antes de la temporada de huracanes?",
+      "meta": "Qué revisar en mayo, qué certificaciones de viento existen y por qué el sellado no sustituye un techo estructuralmente suelto.",
+      "kw": "sellado techo temporada huracanes",
+      "angulo": "Sellar antes de junio evita la emergencia de septiembre; el sellado protege la superficie, no sostiene un techo despegado."
+    },
+    {
+      "slug": "garantia-de-sellado-de-techo",
+      "grupo": "intencion",
+      "familias": [
+        "sistema-multicapa",
+        "membrana-asfaltica",
+        "silicona-100"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Garantía de sellado de techo: qué exigir por escrito",
+      "h1": "¿Qué cubre la garantía de un sellado de techo?",
+      "meta": "De 4 a 20 años según el sistema. Qué debe decir el documento, qué anula la garantía y cómo se reclama una filtración sin perder el derecho.",
+      "kw": "garantia sellado de techo",
+      "angulo": "Una garantía sin área, sistema y responsable legal no se puede ejecutar; esto es lo que debe decir el papel."
+    },
+    {
+      "slug": "como-elegir-contratista-de-sellado-en-puerto-rico",
+      "grupo": "intencion",
+      "familias": [
+        "sistema-multicapa"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Cómo elegir un contratista de sellado en Puerto Rico",
+      "h1": "¿Cómo elegir un contratista de sellado de techos?",
+      "meta": "Licencia, seguros, referencias y cotización desglosada. Las siete preguntas que separan a un contratista de un vendedor de pailas.",
+      "kw": "contratista sellado techo puerto rico",
+      "angulo": "La queja más común no es el precio: es no poder reclamar después. Cinco documentos antes de firmar lo evitan."
+    },
+    {
+      "slug": "licencia-y-permisos-para-sellado-de-techo-en-puerto-rico",
+      "grupo": "intencion",
+      "familias": [
+        "sistema-multicapa",
+        "membrana-asfaltica"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Licencia y permisos para sellar techos en Puerto Rico",
+      "h1": "¿Qué licencia y permisos necesita un sellador de techos?",
+      "meta": "Qué exige la Ley 281-2000, qué cambió con la Ley 93-2023 y cuándo un sellado necesita permiso de la Oficina de Gerencia de Permisos.",
+      "kw": "licencia sellado de techo puerto rico",
+      "angulo": "Sin licencia vigente y sin permiso cuando aplica, la garantía y el seguro pueden quedar sin efecto."
+    },
+    {
+      "slug": "junta-de-impermeabilizacion-de-techos-de-puerto-rico",
+      "grupo": "intencion",
+      "familias": [
+        "sistema-multicapa"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Junta de Impermeabilización de Techos de Puerto Rico",
+      "h1": "¿Qué es la Junta de Impermeabilización de Techos?",
+      "meta": "Qué es, qué ley la creó, por qué dejó de operar según la Ley 93-2023 y cómo verificar la licencia de quien va a subir a tu techo.",
+      "kw": "junta impermeabilizacion techos puerto rico",
+      "angulo": "Hay un organismo que licencia a quien sella techos en Puerto Rico; revisar ese registro explica muchas garantías incumplidas."
+    },
+    {
+      "slug": "sellado-de-techo-por-mi-cuenta-o-contratista",
+      "grupo": "intencion",
+      "familias": [
+        "acrilico-elastomerico",
+        "silicona-100"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "¿Sellado de techo por mi cuenta o con contratista?",
+      "h1": "¿Sellado por mi cuenta o con contratista?",
+      "meta": "Cuándo el DIY tiene sentido en Puerto Rico, cuándo es un riesgo físico y cuándo sale más caro corregirlo que haberlo contratado bien.",
+      "kw": "sellado techo por mi cuenta",
+      "angulo": "El trabajo propio funciona en un techo pequeño, de un nivel y sin filtración activa; en el resto, el ahorro se paga en la segunda intervención."
+    },
+    {
+      "slug": "errores-comunes-al-sellar-un-techo",
+      "grupo": "intencion",
+      "familias": [
+        "silicona-100",
+        "acrilico-elastomerico",
+        "sistema-multicapa"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Errores comunes al sellar un techo (y cómo evitarlos)",
+      "h1": "¿Cuáles son los errores más comunes al sellar un techo?",
+      "meta": "No limpiar, no dejar secar, sellar sin abrir la grieta y dar una sola mano. Los cinco errores que explican casi todas las filtraciones que vuelven.",
+      "kw": "errores sellado de techo",
+      "angulo": "Casi ningún techo falla por el producto: falla porque se saltó la preparación."
+    },
+    {
+      "slug": "cuantas-canas-de-sellador-necesito",
+      "grupo": "intencion",
+      "familias": [
+        "silicona-100",
+        "membrana-liquida",
+        "sistema-multicapa"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "¿Cuántas pailas de sellador necesito para mi techo?",
+      "h1": "¿Cuántas pailas de sellador necesito?",
+      "meta": "Fórmula con coberturas declaradas: 170 a 200 pies cuadrados por paila de silicona, 300 en base líquida y hasta 600 en acabado. Con 10% de margen.",
+      "kw": "cuantas pailas de sellador necesito",
+      "angulo": "La cuenta se hace con la cobertura más conservadora del fabricante, más un diez por ciento para remates."
+    },
+    {
+      "slug": "cuanto-tarda-el-sellado-de-un-techo",
+      "grupo": "intencion",
+      "familias": [
+        "membrana-liquida",
+        "membrana-asfaltica",
+        "silicona-100"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "¿Cuánto tarda el sellado de un techo?",
+      "h1": "¿Cuánto tarda sellar un techo?",
+      "meta": "De uno a tres días en una casa de 1,000 a 1,500 pies cuadrados, contando limpieza, grietas, imprimador y acabado. Qué alarga el trabajo.",
+      "kw": "cuanto tarda sellar un techo",
+      "angulo": "El tiempo lo marca el secado, no el área; un techo con empozamiento suma dos días entre capas."
+    },
+    {
+      "slug": "se-puede-sellar-un-techo-con-filtracion-activa",
+      "grupo": "intencion",
+      "familias": [
+        "silicona-100",
+        "poliuretano",
+        "losa-cementicia"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Sellar un techo con filtración activa: ¿se puede?",
+      "h1": "¿Se puede sellar un techo con una filtración activa?",
+      "meta": "Sellar encima de una fuga activa garantiza que vuelva. Qué se hace primero, cómo se seca la losa y cuándo hay que esperar a que pare la lluvia.",
+      "kw": "sellar techo con filtracion activa",
+      "angulo": "Una filtración activa no se tapa: se detiene. La diferencia es una reparación o un gasto repetido."
+    },
+    {
+      "slug": "sellado-de-techo-y-seguro-del-hogar",
+      "grupo": "intencion",
+      "familias": [
+        "sistema-multicapa"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "¿El seguro cubre el sellado del techo?",
+      "h1": "¿Cubre el seguro del hogar el sellado del techo?",
+      "meta": "El seguro cubre el daño súbito, no el mantenimiento atrasado. Cómo documentar antes y después y qué guardar para que el reclamo no se caiga.",
+      "kw": "seguro cubre sellado techo",
+      "angulo": "La aseguradora paga el evento, no el mantenimiento atrasado; la factura del sellado demuestra que hubo mantenimiento."
+    },
+    {
+      "slug": "sellado-de-techo-en-condominio-quien-paga",
+      "grupo": "intencion",
+      "familias": [
+        "membrana-asfaltica",
+        "sistema-multicapa"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Condominio: quién paga el sellado del techo",
+      "h1": "¿Quién paga el sellado del techo en un condominio?",
+      "meta": "El techo es área común en la mayoría de los condominios, pero hay excepciones. Qué revisar en el reglamento y cómo se aprueba el trabajo.",
+      "kw": "condominio quien paga sellado techo",
+      "angulo": "Casi siempre paga la asociación, y el reglamento y el acta resuelven la discusión."
+    },
+    {
+      "slug": "sellado-de-techo-despues-de-un-huracan",
+      "grupo": "intencion",
+      "familias": [
+        "membrana-asfaltica",
+        "silicona-100"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Sellado de techo después de un huracán: orden correcto",
+      "h1": "¿Qué hacer con el techo después de un huracán?",
+      "meta": "Documenta, cubre, seca y después sella. Por qué sellar antes del ajuste del seguro puede costarte el reclamo y qué fotos hay que tomar.",
+      "kw": "sellado techo despues huracan",
+      "angulo": "Después de un huracán, primero se documenta y después se sella; al revés se pierde la evidencia."
+    },
+    {
+      "slug": "sellado-de-techo-con-garantia-escrita",
+      "grupo": "intencion",
+      "familias": [
+        "sistema-multicapa",
+        "membrana-asfaltica"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Sellado de techo con garantía escrita: qué debe decir",
+      "h1": "¿Qué debe decir una garantía de sellado de techo?",
+      "meta": "Área, sistema, años, exclusiones y responsable legal. Las siete cláusulas que convierten una promesa verbal en un documento que sirve para reclamar.",
+      "kw": "garantia escrita sellado techo",
+      "angulo": "Una garantía sin área ni nombre legal no se puede ejecutar; es lo primero que hay que revisar del papel."
+    },
+    {
+      "slug": "preguntas-para-hacerle-a-un-sellador-de-techos",
+      "grupo": "intencion",
+      "familias": [
+        "sistema-multicapa"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "9 preguntas que debes hacerle a un sellador de techos",
+      "h1": "¿Qué preguntarle a un sellador de techos?",
+      "meta": "Preguntas concretas sobre sistema, preparación, garantía y licencia que separan una propuesta técnica de una venta de pailas. Llévalas impresas.",
+      "kw": "preguntas sellador de techos",
+      "angulo": "Si el contratista no dice cuántas manos va a dar y qué imprimador usa, tiene un producto, no un sistema."
+    },
+    {
+      "slug": "sellado-de-techo-que-no-dure-un-ano",
+      "grupo": "intencion",
+      "familias": [
+        "acrilico-elastomerico",
+        "sistema-multicapa"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Por qué tu sellado de techo no duró ni un año",
+      "h1": "¿Por qué el sellado no duró ni un año?",
+      "meta": "Las cuatro causas reales de un sellado que falla en meses, cómo se diagnostican y qué se puede exigir al instalador según la garantía.",
+      "kw": "sellado de techo no dura",
+      "angulo": "Un sellado que falla en menos de un año suele ser humedad atrapada, una sola mano o un producto que no era para ese techo."
+    },
+    {
+      "slug": "sellado-de-techo-olor-y-tiempo-de-curado",
+      "grupo": "intencion",
+      "familias": [
+        "poliuretano",
+        "silicona-100",
+        "acrilico-elastomerico"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Olor y curado del sellador de techo: qué esperar",
+      "h1": "¿Cuánto tarda en secar y dejar olor el sellador?",
+      "meta": "El acrílico cura en horas, el poliuretano necesita 12 a 24 y la silicona depende de la humedad del aire. Cómo planificar sin arruinar el trabajo.",
+      "kw": "olor curado sellador techo",
+      "angulo": "El olor indica que el producto todavía está curando; si llueve antes de tiempo, se lleva el trabajo."
+    },
+    {
+      "slug": "sellado-de-techo-en-epoca-de-lluvia",
+      "grupo": "intencion",
+      "familias": [
+        "silicona-100",
+        "membrana-liquida"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "¿Se puede sellar un techo en época de lluvia?",
+      "h1": "¿Se puede sellar un techo en época de lluvia?",
+      "meta": "Qué sistemas toleran mejor la humedad ambiental, cuántas horas secas necesitas y por qué el problema no es la lluvia sino el agua que ya está adentro.",
+      "kw": "sellar techo en lluvia",
+      "angulo": "En la isla siempre llueve; lo que cambia es cuántas horas de sol hay para que cure antes de la próxima onda."
+    },
+    {
+      "slug": "sellado-de-techo-reflectivo-y-consumo-de-energia",
+      "grupo": "intencion",
+      "familias": [
+        "silicona-100",
+        "acrilico-elastomerico"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Techo blanco reflectivo: ¿baja el aire acondicionado?",
+      "h1": "¿Un techo blanco baja el consumo de energía?",
+      "meta": "Qué hace realmente un acabado blanco en la losa, cuánto ayuda al aire acondicionado y por qué la cifra de ahorro depende de tu aislamiento.",
+      "kw": "techo blanco reflectivo ahorro energia",
+      "angulo": "El blanco refleja y la losa se calienta menos; cuánto baja la factura depende del aislamiento y del equipo."
+    },
+    {
+      "slug": "sellado-de-techo-y-moho-en-el-techo",
+      "grupo": "intencion",
+      "familias": [
+        "silicona-100",
+        "acrilico-elastomerico"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Moho en el techo: por qué sale y cómo se evita",
+      "h1": "¿Cómo quitar el moho del techo?",
+      "meta": "El moho aparece donde hay humedad constante y un recubrimiento que le sirve de alimento. Por qué la silicona inorgánica no lo alimenta y qué hacer antes.",
+      "kw": "moho en el techo",
+      "angulo": "Lavar con cloro cada año no resuelve nada si la humedad sigue ahí y el recubrimiento viejo le sirve de alimento."
+    },
+    {
+      "slug": "sellado-de-techo-de-terraza-transitable",
+      "grupo": "sustrato",
+      "familias": [
+        "poliuretano",
+        "membrana-liquida"
+      ],
+      "marcas": [],
+      "sustrato": "plano",
+      "titulo": "Sellado de terraza transitable: qué sistema aguanta",
+      "h1": "¿Cómo se sella una terraza transitable?",
+      "meta": "Una terraza se sella distinto que un techo: resistencia al tránsito, agarre, drenaje y por qué el acrílico solo no sirve para caminar encima.",
+      "kw": "sellado terraza transitable",
+      "angulo": "En una terraza el acabado tiene que aguantar sillas, macetas y tránsito, además del agua."
+    },
+    {
+      "slug": "sellado-de-techo-para-airbnb-o-alquiler-corto",
+      "grupo": "intencion",
+      "familias": [
+        "silicona-100",
+        "membrana-liquida"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Sellado de techo para Airbnb y alquiler a corto plazo",
+      "h1": "¿Cómo sellar el techo de un alquiler a corto plazo?",
+      "meta": "En una propiedad de alquiler una filtración no es una reparación: es una cancelación. Qué sistema reduce interrupciones y cuándo programar el trabajo.",
+      "kw": "sellado techo airbnb",
+      "angulo": "En alquiler corto, una filtración cuesta la reserva cancelada y la reseña, y eso cambia el cálculo del sistema."
+    },
+    {
+      "slug": "mantenimiento-del-sellado-cada-cuantos-anos",
+      "grupo": "intencion",
+      "familias": [
+        "membrana-asfaltica",
+        "silicona-100",
+        "acrilico-elastomerico"
+      ],
+      "marcas": [],
+      "sustrato": null,
+      "titulo": "Cada cuántos años dar mantenimiento al sellado",
+      "h1": "¿Cada cuántos años se le da mantenimiento al sellado?",
+      "meta": "Inspección anual y repaso del acabado cada tres a cinco años. El calendario que convierte un sellado de 5 años en uno de 15, según el sistema.",
+      "kw": "mantenimiento sellado de techo",
+      "angulo": "El mantenimiento separa un sellado de cinco años de uno de quince con la misma inversión inicial."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- coamo.ilatekpr.com — landings de las comunidades de este municipio.
+     Generado por scripts/genera-pueblos.mjs; una URL por comunidad y servicio. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://coamo.ilatekpr.com/coamo-housing/limpieza</loc></url>
+  <url><loc>https://coamo.ilatekpr.com/coamo-housing/sellado-de-techo</loc></url>
+  <url><loc>https://coamo.ilatekpr.com/jardines-del-eden/limpieza</loc></url>
+  <url><loc>https://coamo.ilatekpr.com/jardines-del-eden/sellado-de-techo</loc></url>
+  <url><loc>https://coamo.ilatekpr.com/las-fuentes-de-coamo/limpieza</loc></url>
+  <url><loc>https://coamo.ilatekpr.com/las-fuentes-de-coamo/sellado-de-techo</loc></url>
+  <url><loc>https://coamo.ilatekpr.com/las-palmas/limpieza</loc></url>
+  <url><loc>https://coamo.ilatekpr.com/las-palmas/sellado-de-techo</loc></url>
+  <url><loc>https://coamo.ilatekpr.com/reparto-del-carmen/limpieza</loc></url>
+  <url><loc>https://coamo.ilatekpr.com/reparto-del-carmen/sellado-de-techo</loc></url>
+  <url><loc>https://coamo.ilatekpr.com/urbanizacion-el-eden/limpieza</loc></url>
+  <url><loc>https://coamo.ilatekpr.com/urbanizacion-el-eden/sellado-de-techo</loc></url>
+  <url><loc>https://coamo.ilatekpr.com/villa-madrid/limpieza</loc></url>
+  <url><loc>https://coamo.ilatekpr.com/villa-madrid/sellado-de-techo</loc></url>
+</urlset>

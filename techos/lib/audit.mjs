@@ -6,6 +6,7 @@
 
 // Copy de limpieza de propiedades: NUNCA puede aparecer en una landing de techos.
 import { hasGeo, hasRating } from './data/business.mjs';
+import { schemaPriceFor, ratingVerified } from './facts.mjs';
 
 export const FORBIDDEN = [
   /impecable/i,
@@ -136,9 +137,27 @@ export function auditHtml(page, html) {
 
   const node = (t) => (graph || []).find((n) => n['@type'] === t);
   const svc = node('Service');
-  if (svc && (!svc.offers || String(svc.offers.price) !== String(page.price.amount))) errs.push('Service.offers.price != precio visible');
+  const expectedPrice = schemaPriceFor(page.slug);
+  if (svc) {
+    if (expectedPrice === null) {
+      if (svc.offers && ('price' in svc.offers || 'priceSpecification' in svc.offers)) {
+        errs.push('Service.offers publica precio sin hecho verificado');
+      }
+    } else if (String(svc.offers.price) !== String(expectedPrice)) {
+      errs.push(`Service.offers.price ${svc.offers.price} != precio verificado ${expectedPrice}`);
+    }
+  }
   const biz = node('RoofingContractor');
-  if (biz && (!biz.makesOffer || !biz.makesOffer[0] || String(biz.makesOffer[0].price) !== String(page.price.amount))) errs.push('makesOffer.price != precio visible');
+  if (biz && (!biz.makesOffer || !biz.makesOffer[0])) {
+    errs.push('RoofingContractor sin makesOffer');
+  } else if (biz) {
+    const offer = biz.makesOffer[0];
+    if (expectedPrice === null) {
+      if ('price' in offer || 'priceSpecification' in offer) errs.push('makesOffer publica precio sin hecho verificado');
+    } else if (String(offer.price) !== String(expectedPrice)) {
+      errs.push(`makesOffer.price ${offer.price} != precio verificado ${expectedPrice}`);
+    }
+  }
   const bc = node('BreadcrumbList');
   if (bc && (!bc.itemListElement || bc.itemListElement.length !== page.breadcrumb.length)) errs.push('BreadcrumbList no coincide con la jerarquía');
   if (faq && faq.length !== page.faq.length) errs.push(`FAQPage ${faq.length} != FAQ visible ${page.faq.length}`);
@@ -153,7 +172,7 @@ export function auditHtml(page, html) {
   if (hasGeo() && (!biz.address || !biz.geo)) errs.push('business con geo pero schema sin address/geo');
   if (!hasGeo() && biz && biz.geo) errs.push('GeoCoordinates publicado sin datos reales');
   if (hasRating() && !biz.aggregateRating) errs.push('business con rating pero schema sin aggregateRating');
-  if (!hasRating() && biz && biz.aggregateRating) errs.push('AggregateRating publicado sin datos reales');
+  if ((!hasRating() || !ratingVerified()) && biz && biz.aggregateRating) errs.push('AggregateRating publicado sin datos reales');
 
   const scripts = [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)];
   scripts.forEach((m, i) => {

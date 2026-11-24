@@ -1,0 +1,252 @@
+/og:title/ og:description ("… en Juncos, Puerto Rico"): el título sale de {{custom_values.county_name_and_state}}, así que es el mismo custom value, sin depender de que el builder expanda el Custom Code; 3. el subdominio del sitio (juncos.ilatekpr.com → Juncos); 4. los valores de marca del contrato (custom-values.json → brand). El portador que viaja en el embed se oculta siempre (nunca es contenido). Estado en
+{{custom_values.county_name_and_state}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}
+/og:title/ og:description ("… en Juncos, Puerto Rico"): el título sale de {{custom_values.business__county_name}}, así que es el mismo custom value, sin depender de que el builder expanda el Custom Code; 3. el subdominio del sitio (juncos.ilatekpr.com → Juncos); 4. los valores de marca del contrato (custom-values.json → brand). El portador que viaja en el embed se oculta siempre (nunca es contenido). Estado en
+{{custom_values.business__county_name}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}
+Login
+Estimado(a) cliente,
+En ILATEK Property Solutions LLC la confianza es parte de nuestro servicio. Esta Política de Privacidad explica cómo recopilamos, usamos, protegemos y compartimos su información cuando solicita, aprueba o programa servicios con nosotros. Puede tocar cada sección para expandirla.
+Fecha de entrada en vigor:
+19 de septiembre de 2026.
+Última actualización:
+19 de septiembre de 2026
+(1) Responsable del Tratamiento y Alcance
+ILATEK Property Solutions LLC (“ILATEK”, “la Empresa”) es responsable del tratamiento de los datos personales que recopila a través de su sitio web {{custom_values.website_url}}, su cotizador, sus formularios de reservación, sus canales de contacto y la prestación de sus servicios de limpieza, mantenimiento, conservación y cuidado de propiedades en {{custom_values.county_name_and_state}}.
+Esta Política aplica a todos los visitantes, clientes actuales y potenciales que interactúan con ILATEK. No cubre las prácticas de privacidad de terceros fuera del control de la Empresa, aunque estos colaboren en la prestación de servicios (ver sección 9).
+(2) Información que Recopilamos
+Recopilamos únicamente la información necesaria para cotizar, programar, prestar y facturar nuestros servicios:
+Categoría
+Ejemplos
+Finalidad principal
+Identificación y contacto
+Nombre, teléfono, correo electrónico
+Cotizar, coordinar y comunicar el servicio
+Propiedad y dirección
+Dirección del servicio, tipo de propiedad, condiciones informadas, fotografías del sitio
+Evaluar el alcance, cotizar y programar
+Acceso a la propiedad
+Llaves, códigos de acceso, controles de garaje, instrucciones de entrada
+Ingresar al sitio el día del servicio
+Pago y facturación
+Datos de facturación, método de pago, historial de transacciones
+Procesar pagos, depósitos y cobros
+Preferencias y comunicaciones
+Mensajes por texto, WhatsApp, teléfono o correo; historial de citas
+Atender solicitudes y dar seguimiento
+Datos de pago:
+Los pagos se procesan mediante ATH Móvil, Zelle, transferencia ACH, efectivo o cheque certificado. Cuando un pago se procesa a través de una plataforma de terceros, la información de la tarjeta o cuenta es tratada directamente por esa plataforma conforme a su propia política de privacidad; ILATEK no almacena números completos de tarjeta.
+(3) Finalidades del Tratamiento
+Utilizamos su información para:
+Responder solicitudes de cotización y preparar propuestas, facturas y órdenes de servicio.
+Programar, reprogramar y coordinar servicios, incluido el acceso a la propiedad.
+Comunicar cambios, confirmaciones, recordatorios y requerimientos de pago.
+Facturar, procesar depósitos y pagos, y gestionar cobros conforme a los Términos y Condiciones.
+Documentar condiciones antes, durante y después del servicio para control de calidad.
+Atender inconformidades, reclamaciones y garantías dentro de los plazos establecidos.
+Cumplir obligaciones legales, fiscales y contables aplicables en {{custom_values.county_name_and_state}}.
+Mejorar nuestros procesos, servicios y atención al cliente.
+No vendemos ni alquilamos sus datos personales.
+(4) Base Legal del Tratamiento
+Este tratamiento se realiza conforme a la Ley Núm. 172-2022, conocida como la Ley para la Protección de Datos Personales del Estado Libre Asociado de Puerto Rico, con fundamento en:
+Ejecución de contrato:
+el tratamiento es necesario para prestar el servicio solicitado y cumplir los Términos y Condiciones aceptados.
+Consentimiento:
+cuando usted nos proporciona voluntariamente sus datos o autoriza comunicaciones (ver sección 7).
+Interés legítimo:
+documentación del servicio, control de calidad, seguridad del personal y protección frente a reclamaciones.
+Obligación legal:
+retención de registros fiscales y contables conforme a las leyes de {{custom_values.county_name_and_state}}.
+(5) Llaves, Códigos y Acceso a la Propiedad
+Cuando el Cliente entrega llaves, códigos o controles de acceso para poder prestar el servicio:
+Se utilizan exclusivamente para los fines del servicio contratado, en la fecha y horario programados.
+Solo el personal asignado al servicio tiene acceso a esta información.
+Se solicita al Cliente comunicar oportunamente cualquier cambio en cerraduras o sistemas de seguridad, y eliminar códigos temporales al finalizar la relación de servicio.
+Recomendación:
+si es posible, utilice códigos temporales o llaves designadas exclusivamente para el servicio. El Cliente es responsable de asegurar o retirar objetos de valor antes del servicio, conforme a los Términos y Condiciones.
+(6) Fotografías y Documentación del Servicio
+ILATEK podrá tomar fotografías o videos antes, durante o después de los servicios para documentar condiciones, controlar calidad y responder a reclamaciones o garantías.
+Esta documentación se trata como información confidencial del Cliente.
+El uso publicitario que identifique al Cliente o su propiedad requerirá su autorización previa y expresa.
+Puede solicitar la eliminación de este material en cualquier momento escribiendo al correo de contacto.
+(7) Comunicaciones y Mensajes de Texto
+Al suministrar su información de contacto, el Cliente autoriza a ILATEK a usarla para comunicaciones de cotización, programación, facturación y cobro, por teléfono, correo electrónico, mensaje de texto o WhatsApp.
+Los mensajes de texto y WhatsApp se envían desde sistemas de mensajería de terceros (incluida la plataforma GoHighLevel), que actúan como encargados del tratamiento.
+Los cargos por mensajes y datos que apliquen según su plan móvil son responsabilidad de su proveedor.
+Puede optar por no recibir comunicaciones promocionales en cualquier momento respondiendo STOP o escribiendo al correo de contacto; las comunicaciones esenciales del servicio (confirmaciones, cambios, cobros) continuarán mientras exista una relación de servicio activa.
+(8) Cómo Protegemos su Información
+ILATEK mantiene medidas de seguridad administrativas, técnicas y físicas razonables y proporcionadas al riesgo, incluyendo:
+Acceso a la información limitado al personal que lo necesita para prestar el servicio.
+Uso de plataformas comerciales con cifrado en tránsito para formularios, mensajería y almacenamiento.
+Disposición segura de registros físicos y digitales cuando dejan de ser necesarios.
+Notificación de incidentes:
+En caso de un acceso no autorizado a información de identificación personal, ILATEK notificará a las personas afectadas y a las autoridades correspondientes dentro de los plazos requeridos por la Ley Núm. 25-2014 de Puerto Rico y la legislación aplicable.
+(9) Terceros y Encargados del Tratamiento
+Compartimos información únicamente cuando es necesario para operar el negocio, con las siguientes categorías de terceros:
+Plataforma de marketing y operaciones (GoHighLevel):
+formularios, cotizador, calendario de reservas, mensajería y CRM.
+Procesadores de pago:
+ATH Móvil, Zelle, bancos para transferencias ACH y plataformas de pago aplicables.
+Widget de reseñas:
+el sitio incorpora un widget de reseñas de terceros que puede recopilar información técnica de su navegador conforme a su propia política de privacidad.
+Profesionales y autoridades:
+contadores, aseguradoras, abogados o autoridades públicas cuando exista obligación legal o sea necesario para ejercer o defender derechos.
+Estos terceros tratan la información en nombre de ILATEK y conforme a instrucciones contractuales, o de manera independiente como responsables de sus propios datos.
+(10) Conservación de Datos
+Datos de contacto y de servicio: mientras dure la relación comercial y durante el plazo necesario para atender garantías, reclamaciones o requerimientos de cobro.
+Registros de facturación y pago: durante el término requerido por las leyes fiscales y contables de {{custom_values.county_name_and_state}}.
+Fotografías y documentación del servicio: durante el plazo de garantía aplicable o hasta que solicite su eliminación.
+Llaves y códigos de acceso: solo durante el período necesario para completar los servicios programados.
+Cuando la información deja de ser necesaria, se elimina o anonimiza de forma segura.
+(11) Sus Derechos como Titular de Datos
+Conforme a la Ley Núm. 172-2022, usted tiene derecho a:
+Acceder:
+solicitar confirmación de si tratamos sus datos y obtener una copia de ellos.
+Rectificar y actualizar:
+corregir datos inexactos o incompletos.
+Cancelar o eliminar:
+solicitar la eliminación de datos que ya no sean necesarios o cuya base legal haya desaparecido.
+Oponerse:
+oponerse a tratamientos basados en interés legítimo o a comunicaciones promocionales.
+Revocar el consentimiento:
+retirar autorizaciones otorgadas, sin efectos retroactivos.
+Presentar una queja:
+ante la Agencia de Protección de Datos de Puerto Rico.
+(12) Cómo Ejercer sus Derechos
+Para ejercer sus derechos, envíe una solicitud al correo
+{{custom_values.business__email}}
+o comuníquese al
+{{custom_values.business__phone}}
+indicando:
+Su nombre completo y un medio de contacto para responderle.
+El derecho que desea ejercer y una descripción clara de su solicitud.
+Podremos solicitarle información adicional para verificar su identidad y proteger sus datos. Responderemos dentro de un plazo razonable conforme a la ley aplicable. Ciertos datos podrán conservarse cuando exista una obligación legal o un derecho legítimo de ILATEK (por ejemplo, registros de facturación o reclamaciones en curso).
+Sin costo:
+El ejercicio de sus derechos es gratuito. Solo podrá cobrarse una tarifa razonable cuando las solicitudes sean manifiestamente repetitivas o excesivas, previa notificación.
+(13) Menores de Edad
+Los servicios de ILATEK están dirigidos a adultos. No recopilamos deliberadamente datos personales de menores de 14 años. Si un padre, madre o tutor considera que un menor nos ha proporcionado datos, puede contactarnos para solicitar su eliminación.
+(14) Cookies y Tecnologías Similares
+Esta sección explica qué son las cookies y otras tecnologías similares, qué categorías pueden utilizarse en nuestro sitio, qué información puede recopilarse a través de ellas y cómo puede usted controlarlas. Forma parte de la divulgación de nuestras prácticas de privacidad conforme a la Ley Núm. 39-2012 (Ley de Notificación de Política de Privacidad de Puerto Rico), el Reglamento Núm. 8568, la Ley Núm. 172-2022, las disposiciones de la Comisión Federal de Comercio (FTC) sobre prácticas engañosas y, cuando resulte aplicable, la Ley de Protección de la Privacidad Infantil en Línea (COPPA).
+1. Qué son las cookies y tecnologías similares
+Las cookies son pequeños archivos de texto que un sitio web guarda en su navegador o dispositivo cuando usted lo visita. Junto con ellas pueden utilizarse tecnologías similares, como píxeles o etiquetas de seguimiento, almacenamiento local del navegador, scripts y balizas web, que cumplen funciones parecidas.
+Estas tecnologías permiten que el sitio recuerde información entre una página y otra o entre visitas, reconozca el navegador utilizado y registre determinadas interacciones. Algunas las establece el propio sitio y otras pueden ser establecidas por servicios de terceros que el sitio utiliza.
+2. Categorías de cookies y tecnologías similares
+Qué hace y para qué se utiliza
+Estrictamente necesarias y funcionales
+Permiten que el sitio cargue, se muestre correctamente y opere de forma segura. Incluyen, por ejemplo, el mantenimiento de la sesión, la protección de los formularios, la carga de contenido y el registro de preferencias básicas. Sin ellas, algunas partes del sitio no pueden funcionar.
+Rendimiento y analítica
+Recopilan información estadística sobre cómo se utiliza el sitio: páginas visitadas, tiempo de permanencia, origen del tráfico y errores técnicos. Sirven para medir el rendimiento y mejorar el contenido y la experiencia de navegación.
+Publicidad y marketing
+Permiten medir la eficacia de nuestras campañas, atribuir una solicitud o conversión a la campaña que la originó y, cuando está habilitado, mostrar anuncios a personas que ya interactuaron con el sitio (remarketing o retargeting).
+Cookies de terceros y tecnologías similares
+Se refieren al origen de la tecnología más que a su finalidad: son establecidas por proveedores externos cuyos servicios utilizamos, como la plataforma del sitio, herramientas de analítica, píxeles publicitarios o widgets incrustados. Pueden cumplir funciones necesarias, de medición o de marketing.
+3. Información que puede recopilarse
+Según la tecnología utilizada y la configuración del sitio, estas herramientas pueden recopilar o registrar, cuando corresponda:
+Dirección IP y datos técnicos aproximados de ubicación derivados de ella.
+Información del navegador y del dispositivo: tipo y versión del navegador, idioma, resolución de pantalla, tipo de dispositivo y agente de usuario.
+Sistema operativo.
+Páginas visitadas, rutas de navegación, enlaces utilizados y actividad dentro del sitio.
+Fecha, hora y duración de la visita.
+Interacción con el contenido del sitio, como desplazamientos, clics, reproducción de videos o uso de formularios y del cotizador.
+Identificadores seudónimos generados por las herramientas de analítica, publicidad y atribución, incluidos identificadores de cookie o de dispositivo.
+Esta información puede ser estadística y no identificarlo directamente, o puede asociarse con los datos que usted nos proporciona voluntariamente en un formulario, en cuyo caso se trata conforme a las secciones 2, 3 y 10 de esta Política.
+4. Para qué se utilizan estas tecnologías
+Mantener la funcionalidad y la seguridad del sitio, incluida la protección de los formularios frente a envíos automatizados y abusos.
+Analizar el tráfico y el rendimiento del sitio.
+Comprender el comportamiento de los visitantes para mejorar la estructura, el contenido y la claridad de la información.
+Medir la eficacia de nuestras campañas publicitarias.
+Mejorar la funcionalidad del sitio y la experiencia de uso.
+Apoyar la atribución de marketing y, cuando esté habilitado, la publicidad de remarketing dirigida a personas que ya visitaron el sitio.
+5. Terceros que pueden recopilar información
+Algunos proveedores pueden establecer cookies, píxeles o tecnologías similares, o recibir información técnica, cuando usted visita el sitio. Al cierre de esta actualización, las siguientes tecnologías están instaladas o habilitadas en el sitio:
+GoHighLevel:
+plataforma sobre la que se publica el sitio y que opera los formularios, el cotizador, el chat, el calendario de reservas y el sistema de gestión de clientes (CRM).
+Google Analytics 4 (Google):
+herramienta de analítica que registra el uso del sitio y el rendimiento de sus páginas.
+Google Tag Manager (Google):
+administrador de etiquetas mediante el cual se cargan y controlan las etiquetas del sitio; puede entregar etiquetas de medición o publicidad configuradas en el contenedor de ILATEK.
+Microsoft Clarity (Microsoft):
+herramienta de análisis de comportamiento que registra mapas de calor, grabaciones de sesión e interacciones con las páginas.
+Meta Pixel (Meta):
+píxel de medición que registra visitas a las páginas y permite medir y atribuir campañas en las plataformas de Meta.
+Widget de reseñas de terceros:
+componente incrustado que puede recopilar información técnica del navegador conforme a la política de privacidad de su proveedor.
+Estos proveedores pueden tratar la información conforme a sus propias políticas de privacidad, como responsables independientes o como encargados, según la naturaleza del servicio. Algunas de estas tecnologías, en particular los píxeles y las cookies de terceros, pueden permitir que la información se asocie con su actividad en otros sitios web o servicios, dentro de las capacidades del proveedor y de la configuración aplicada.
+Alcance de esta lista:
+ILATEK no afirma utilizar tecnologías distintas de las indicadas. Si en el futuro se instalan o habilitan otras herramientas de medición o publicidad, esta sección se actualizará conforme al punto 10 y a la sección 15.
+6. Señales de No Rastrear (DNT) y preferencias del navegador
+Algunos navegadores permiten activar una señal de “No Rastrear” (Do Not Track o DNT), y existen señales adicionales de preferencia de privacidad, como Global Privacy Control (GPC). Estas señales no cuentan con una interpretación técnica uniforme y su tratamiento depende de cada navegador y de cada proveedor.
+Al día de esta actualización, ILATEK no mantiene implementado un mecanismo propio que detecte y responda de forma automática a las señales DNT o GPC, por lo que no afirmamos que el sitio las reconozca ni que las respete. La vía más directa para limitar estas tecnologías es la configuración del navegador descrita en el punto 7, junto con los controles que ofrezcan los propios proveedores.
+7. Cómo puede controlar las cookies
+Puede administrar, restringir o eliminar las cookies desde la configuración de su navegador o dispositivo. La mayoría de los navegadores permite bloquear cookies de terceros, eliminar las cookies almacenadas y configurar alertas antes de aceptarlas. También puede usar la navegación privada para limitar el almacenamiento al finalizar la sesión.
+Si bloquea o elimina cookies necesarias, es posible que algunas funciones del sitio no estén disponibles o no operen correctamente, como el envío de formularios, el cotizador, el chat o el guardado de preferencias.
+La configuración del navegador no desactiva automáticamente todas las tecnologías de terceros. Algunos píxeles, scripts o mediciones del lado del servidor pueden seguir operando, y su bloqueo puede requerir los controles del propio proveedor.
+Si elimina las cookies, es posible que deba volver a configurar sus preferencias en visitas posteriores.
+8. Consentimiento y derechos aplicables
+Las cookies y tecnologías estrictamente necesarias para operar el sitio y protegerlo pueden utilizarse sin una autorización adicional, porque sin ellas el servicio no puede prestarse. Para las tecnologías no esenciales, las opciones disponibles y los derechos de exclusión (opt-out) dependen de la herramienta utilizada y de la ley aplicable a cada visitante.
+Esta divulgación se ofrece en el marco de la Ley Núm. 39-2012 (Ley de Notificación de Política de Privacidad de Puerto Rico) y su Reglamento Núm. 8568, así como de la Ley Núm. 172-2022 de Protección de Datos Personales de Puerto Rico. Procuramos que las descripciones sobre el uso de estas tecnologías sean claras y no induzcan a error, conforme a las disposiciones de la Comisión Federal de Comercio (FTC) sobre prácticas engañosas. El sitio no está dirigido a niños menores de 13 años y no recopilamos deliberadamente su información mediante estas tecnologías; cuando resulte aplicable la COPPA, se atenderá lo dispuesto en la sección 13.
+Esta sección no sustituye otros mecanismos:
+la información aquí presentada no reemplaza los avisos, consentimientos o derechos de exclusión que puedan corresponder por una herramienta específica, por la configuración de la plataforma o por una norma distinta a las mencionadas.
+9. Duración y conservación
+Las cookies pueden ser de sesión o persistentes. Las de sesión se eliminan cuando cierra el navegador; las persistentes permanecen en su dispositivo durante el período definido por quien las establece, hasta su fecha de expiración o hasta que usted las elimine.
+La duración concreta depende de la finalidad de cada cookie y del proveedor responsable. ILATEK no define ni controla los períodos de expiración de las cookies establecidas por terceros; esos plazos se describen en las políticas de cada proveedor. La información asociada a estas tecnologías se conserva conforme a la sección 10 de esta Política y a las prácticas de retención de cada proveedor.
+10. Actualizaciones de esta sección
+ILATEK actualizará esta sección cuando cambien las tecnologías utilizadas en el sitio, los proveedores habilitados o las prácticas aquí descritas. La versión vigente se publica junto con esta Política, y su fecha de entrada en vigor y de última actualización aparece en el encabezado. Los cambios sustanciales se comunicarán conforme al procedimiento descrito en la sección 15.
+Si tiene preguntas sobre esta sección o desea ejercer sus derechos, puede escribir a
+o llamar al
+, conforme a la sección 12.
+(15) Cambios a esta Política
+ILATEK podrá actualizar esta Política de Privacidad para reflejar cambios en sus servicios, operaciones o en la legislación aplicable. La versión publicada en {{custom_values.website_url}} indica la fecha de última actualización en el encabezado. Los cambios sustanciales se comunicarán por los medios de contacto que tengamos registrados cuando sea requerido por la ley.
+(16) Ley Aplicable y Contacto
+Esta Política se rige por las leyes del Estado Libre Asociado de Puerto Rico, incluyendo la Ley Núm. 172-2022 para la Protección de Datos Personales y la Ley Núm. 25-2014 de notificación de brechas de información.
+Responsable del tratamiento:
+ILATEK Property Solutions LLC
+Correo electrónico:
+Teléfono:
+Sitio web:
+{{custom_values.website_url}}
+Relación con los Términos y Condiciones:
+Esta Política complementa los Términos y Condiciones de Servicio de ILATEK. En caso de conflicto entre ambos documentos respecto al tratamiento de datos personales, prevalecerá la disposición más protectora para el titular de los datos, conforme a la ley aplicable.
+Preguntas frecuentes sobre privacidad
+¿Qué datos personales recopila ILATEK?
+Recopilamos únicamente la información necesaria para cotizar, programar, prestar y facturar: nombre, teléfono y correo; dirección y tipo de propiedad; condiciones informadas y fotografías del sitio; llaves o códigos de acceso; datos de facturación y método de pago; y el historial de comunicaciones y citas.
+¿Para qué usa ILATEK mis datos?
+Para responder solicitudes de cotización, programar servicios, comunicar confirmaciones y cobros, facturar, documentar la calidad del trabajo, atender inconformidades y garantías, y cumplir obligaciones legales, fiscales y contables en {{custom_values.county_name_and_state}}. No vendemos ni alquilamos datos personales.
+¿Con quién se comparte mi información?
+Solo con terceros que colaboran en la prestación del servicio, como plataformas de pago y sistemas de mensajería (incluida la plataforma GoHighLevel), que actúan como encargados del tratamiento conforme a su propia política. ILATEK no almacena números completos de tarjeta.
+¿Cómo se protegen las llaves y los códigos de acceso?
+Se usan exclusivamente para el servicio contratado, en la fecha y horario programados, y solo el personal asignado tiene acceso. Recomendamos códigos temporales o llaves designadas y eliminar los códigos temporales al terminar la relación de servicio.
+¿Qué derechos tengo sobre mis datos?
+Puedes solicitar acceso, corrección o eliminación de tu información escribiendo al correo de contacto de ILATEK. También puedes optar por no recibir comunicaciones promocionales respondiendo STOP; las comunicaciones esenciales del servicio continúan mientras exista una relación activa.
+Devasks
+Navegación de Ilatek
+Ilatek, inicio
+Logo de Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Logo%20de%20Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Navegación principal
+Idioma / Language
+Español
+English
+Abrir o cerrar el menú
+Política de Privacidad de ILATEK
+Pie de página de Ilatek
+Facebook
+Facebook — servicio en {{custom_values.business__county_name}}
+Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Instagram
+Instagram — servicio en {{custom_values.business__county_name}}
+Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Youtube
+Youtube — servicio en {{custom_values.business__county_name}}
+Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+TikTok
+TikTok — servicio en {{custom_values.business__county_name}}
+TikTok%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+X — servicio en {{custom_values.business__county_name}}
+X%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+LinkedIn
+LinkedIn — servicio en {{custom_values.business__county_name}}
+LinkedIn%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Pinterest
+Pinterest — servicio en {{custom_values.business__county_name}}
+Pinterest%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D

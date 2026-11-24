@@ -1,0 +1,142 @@
+{{custom_values.business__county_name}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}
+Organización del Hogar en {{custom_values.business__county_name}} | Ilatek
+/og:title/ og:description ("… en Juncos, Puerto Rico"): el título sale de {{custom_values.business__county_name}}, así que es el mismo custom value, sin depender de que el builder expanda el Custom Code; 3. el subdominio del sitio (juncos.ilatekpr.com → Juncos); 4. los valores de marca del contrato (custom-values.json → brand). El portador que viaja en el embed se oculta siempre (nunca es contenido). Estado en
+Login
+Organización del hogar
+Organización del Hogar en
+{{custom_values.business__county_name}}
+donde el orden por fin permanece.
+Ilatek organiza despensas, clósets y garaje en {{custom_values.business__county_name}}: despensas y clósets a $50 c/u, garaje desde $250 — categorización, doblado y etiquetado con sistemas de orden que permanecen. Precio real en minutos y reserva con $50 descontable.
+Solicita tu cotización
+Qué incluye el servicio ↓
+clóset o despensa
+Garaje desde $250
+municipios
+Cobertura en PR
+depósito
+Descontable al reservar
+Por qué Ilatek
+Orden que permanece, espacio por espacio.
+Orden que permanece
+No solo acomodamos: creamos sistemas por zonas con etiquetas — cada cosa con un lugar lógico que tu familia puede sostener después de la visita.
+Precio por espacio, publicado
+Despensas y clósets
+cada uno, garaje
+desde $250
+por trabajo: eliges los espacios a organizar y sabes el precio antes de reservar.
+Tus cosas, con respeto
+Trabajamos espacio por espacio en {{custom_values.business__county_name}}, sin sacar todo a la calle: categorizamos, doblamos y etiquetamos con cuidado — y nada se bota sin tu aprobación.
+Qué incluye
+Cada espacio, con su sistema.
+La organización del hogar de Ilatek cubre despensas, clósets y garaje — vaciado por zonas, categorización, doblado y etiquetado, con un sistema que tu familia puede mantener. El alcance exacto queda definido en tu cotización.
+Despensa: por categorías y contenedores ($50)
+Clósets: doblado, colgado y por temporada ($50)
+Garaje: zonas de uso y estantería (desde $250)
+Categorización de lo que se queda y lo que se dona
+Etiquetado para que el orden se mantenga
+Coordinación de donación de lo que ya no usas
+Cotiza tu organización
+Precio por espacio · etiquetado incluido
+Espacios
+Organizamos los espacios que más se desordenan.
+Despensa y cocina
+Categorías claras, contenedores y etiquetas: encuentras lo que buscas de un vistazo, evitas comprar repetido y la despensa vuelve a ser funcional.
+Clósets y armarios
+Doblado, colgado por tipo y por temporada: cada prenda visible y accesible — menos tiempo decidiendo qué ponerte cada mañana.
+Garaje y almacenaje
+Zonas por uso — herramientas, deporte, limpieza — a la altura correcta y etiquetadas: el garaje vuelve a caber el carro.
+Frecuencia
+El orden que se mantiene en el tiempo.
+Primera visita
+De cero a orden
+Empezamos por el espacio que más te estresa, despensa o clóset: el cambio se ve y se siente el mismo día, con sistema y etiquetas listas.
+Estacional
+Cambio de temporada
+Rota el clóset y la despensa 1–2 veces al año: guardamos lo de la otra temporada y renovamos etiquetas — el orden no se pierde.
+Como add-on
+Con tu limpieza del hogar
+Combínalo con tu limpieza estándar, profunda o de mudanza: espacios limpios y organizados en la misma visita — un solo agendamiento.
+Cotiza tu organización hoy
+Cobertura local
+Limpieza impecable,
+Cobertura en Toda la Isla
+Explora los servicios de limpieza de
+Ilatek
+disponibles en los
+78 municipios de Puerto Rico
+y visita la página de tu pueblo. Atendemos hogares en
+y toda la isla.
+No encontramos ese pueblo. Verifica el nombre e intenta nuevamente.
+Página 1 de 1
+Preguntas frecuentes
+Todo lo que preguntas antes de contratar.
+¿Cuánto cuesta la organización del hogar en {{custom_values.business__county_name}}?
+Precios publicados por espacio:
+despensas y clósets $50 c/u, garaje desde $250
+. Elige los espacios y recibe tu total en minutos en el cotizador — precio claro y por escrito, sin compromiso.
+¿Qué incluye un servicio de organización?
+Incluye vaciado por zonas, categorización, doblado y colgado, etiquetado y un sistema de orden para cada espacio — despensa, clósets y garaje. El alcance exacto queda definido en tu cotización.
+¿Tengo que botar mis cosas?
+Decides tú: categorizamos lo que se queda y apartamos lo que ya no usas para donar o descartar. Nunca botamos nada sin tu aprobación — tus cosas se tratan con respeto.
+¿Debo comprar contenedores o cajas?
+No son requisito
+: trabajamos con lo que tienes y el etiquetado hace que el sistema funcione. Si quieres contenedores nuevos, te recomendamos medidas y opciones en la cotización.
+¿Cuánto tarda la organización?
+Referencia profesional:
+2 a 4 horas
+por clóset o despensa, medio día para un garaje estándar. Coordinamos la visita y entregamos cada espacio listo para usarse el mismo día.
+¿El orden se mantiene después?
+Ese es el objetivo: cada categoría queda
+etiquetada
+y con un sistema lógico que tu familia puede sostener. Con el cambio de temporada, una visita de rotación lo renueva.
+¿Organizan solo un espacio o toda la casa?
+Eliges los espacios: despensas y clósets a $50 c/u y garaje desde $250. Empieza por el que más te estresa y suma los demás en la misma visita o en otra coordinada.
+¿Por qué elegir Ilatek para organizar tu hogar?
+Precios por espacio publicados (desde $50), sistemas de orden que permanecen, etiquetado incluido, precio real en minutos, depósito de $50 descontable y cobertura en los 78 municipios. Orden que permanece en {{custom_values.business__county_name}}.
+¿Clóset que no cierra? Déjanos el orden.
+Solicita tu cotización ↗
+Devasks
+Navegación de Ilatek
+Ilatek, inicio
+Logo de Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Logo%20de%20Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Navegación principal
+Idioma / Language
+Español
+English
+Abrir o cerrar el menú
+Ilatek Organización del Hogar {{custom_values.business__county_name}}
+Organización del hogar por Ilatek — despensas, clósets y garaje con orden funcional en {{custom_values.business__county_name}}
+Organización del Hogar en {{custom_values.business__county_name}} · Ilatek
+Organizaci%C3%B3n%20del%20hogar%20por%20Ilatek%20%E2%80%94%20despensas%2C%20cl%C3%B3sets%20y%20garaje%20con%20orden%20funcional%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Organizaci%C3%B3n%20del%20Hogar%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%C2%B7%20Ilatek
+Organización de espacios de Ilatek — despensa, clósets y garaje con sistema y etiquetas en {{custom_values.business__county_name}}
+Organizaci%C3%B3n%20de%20espacios%20de%20Ilatek%20%E2%80%94%20despensa%2C%20cl%C3%B3sets%20y%20garaje%20con%20sistema%20y%20etiquetas%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Cobertura de limpieza de Ilatek en Puerto Rico
+Busca tu pueblo
+Buscar un municipio de Puerto Rico
+Limpiar búsqueda
+Municipios de Puerto Rico con servicio de Ilatek
+Pie de página de Ilatek
+Facebook
+Facebook — servicio en {{custom_values.business__county_name}}
+Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Instagram
+Instagram — servicio en {{custom_values.business__county_name}}
+Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Youtube
+Youtube — servicio en {{custom_values.business__county_name}}
+Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+TikTok
+TikTok — servicio en {{custom_values.business__county_name}}
+TikTok%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+X — servicio en {{custom_values.business__county_name}}
+X%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+LinkedIn
+LinkedIn — servicio en {{custom_values.business__county_name}}
+LinkedIn%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Pinterest
+Pinterest — servicio en {{custom_values.business__county_name}}
+Pinterest%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D

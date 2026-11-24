@@ -1,0 +1,72 @@
+Comunidades en {{custom_values.business__county_name}} | Ilatek
+/og:title/ og:description ("… en Juncos, Puerto Rico"): el título sale de {{custom_values.business__county_name}}, así que es el mismo custom value, sin depender de que el builder expanda el Custom Code; 3. el subdominio del sitio (juncos.ilatekpr.com → Juncos); 4. los valores de marca del contrato (custom-values.json → brand). El portador que viaja en el embed se oculta siempre (nunca es contenido). Estado en
+{{custom_values.business__county_name}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}
+Login
+Encuentra tu
+comunidad
+en el mapa.
+Techos y limpieza,
+comunidad por comunidad
+: elige la tuya y cotiza.
+Zonas
+Clima
+Sellado de Techo
+Satélite
+Cargando mapa…
+{{custom_values.county_name_and_state}}
+Preguntas frecuentes sobre comunidades
+¿Qué comunidades cubre Ilatek?
+Ilatek tiene página propia para las 556 comunidades de {{custom_values.county_name_and_state}}, con 1.112 páginas de sellado de techo y limpieza en los 78 municipios de Puerto Rico.
+¿Cómo encuentro mi comunidad en el mapa?
+Usa el mapa de comunidades y filtra por región —Metropolitana, Norte, Este, Sur, Oeste o Central— o busca el nombre de tu comunidad. Cada comunidad tiene su página con servicios, clima y reseñas.
+¿Qué servicios puedo solicitar en mi comunidad?
+Sellado de techo y limpieza: impermeabilización, reparación, mantenimiento preventivo, limpieza residencial, comercial y profunda, entre otros. El alcance y el precio se confirman por escrito antes del servicio, con visita o inspección de $50 descontables del total.
+¿Atienden mi municipio aunque mi comunidad no aparezca?
+Sí. Cubrimos los 78 municipios de Puerto Rico; si tu comunidad no aparece en el mapa, agenda una visita o una inspección: $50 descontables del total del servicio y confirmamos la cobertura.
+¿Cómo cotizo para mi comunidad?
+El precio se calcula por trabajo y se confirma por escrito: la limpieza se cotiza desde $250 según el tamaño y la condición del espacio, y los trabajos de techo se cotizan tras evaluar el área. Puedes empezar en el
+cotizador de limpieza
+cotizador de techos
+Devasks
+Navegación de Ilatek
+Ilatek, inicio
+Logo de Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Logo%20de%20Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Navegación principal
+Idioma / Language
+Español
+English
+Abrir o cerrar el menú
+Buscar una comunidad de Puerto Rico
+Capa del mapa
+Categorías de comunidades
+Servicio del mapa
+Ver comunidades con sellado de techo
+Ver comunidades con limpieza
+Leyenda del mapa
+Unidad de temperatura
+Gráfico de temperatura y probabilidad de lluvia por hora
+Pronóstico por día
+Pie de página de Ilatek
+Facebook
+Facebook — servicio en {{custom_values.business__county_name}}
+Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Instagram
+Instagram — servicio en {{custom_values.business__county_name}}
+Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Youtube
+Youtube — servicio en {{custom_values.business__county_name}}
+Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+TikTok
+TikTok — servicio en {{custom_values.business__county_name}}
+TikTok%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+X — servicio en {{custom_values.business__county_name}}
+X%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+LinkedIn
+LinkedIn — servicio en {{custom_values.business__county_name}}
+LinkedIn%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Pinterest
+Pinterest — servicio en {{custom_values.business__county_name}}
+Pinterest%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D

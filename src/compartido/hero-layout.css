@@ -1,0 +1,69 @@
+/* ILATEK · Héroe canónico (referencia: /inspeccion-de-techos).
+   Solo presentación: la tarjeta de imagen se muestra en 16:9, como la
+   referencia, y los tres datos del héroe quedan en una sola fila bajo el CTA.
+   No cambia marcado, copy, enlaces ni el resto del diseño. */
+
+:is(.ilt-hero,.ilr-hero,.ilc2-hero,.ilsx-hero) :is(.ilt-hero-card,.ilr-hero-card,.ilc2-hero-card,.ilsx-hero-card){
+  height:auto!important;
+}
+
+:is(.ilt-hero,.ilr-hero,.ilc2-hero,.ilsx-hero) :is(.ilt-hero-card,.ilr-hero-card,.ilc2-hero-card,.ilsx-hero-card) img{
+  width:100%!important;
+  height:auto!important;
+  aspect-ratio:16/9;
+  object-fit:cover;
+}
+
+:is(.ilt-hero-facts,.ilr-hero-facts,.ilc2-hero-facts){
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:14px 22px;
+  align-items:start;
+}
+
+@media (max-width:700px){
+  :is(.ilt-hero-facts,.ilr-hero-facts,.ilc2-hero-facts){
+    grid-template-columns:1fr!important;
+    gap:14px;
+  }
+}
+
+/* Héroe canónico reutilizable: mismas piezas y orden que la referencia
+   (kicker → H1 → párrafo → CTA + enlace → 3 datos → tarjeta 16:9). */
+.ilh-hero{padding:clamp(96px,8vw,118px) 0 clamp(52px,6vw,80px);background:linear-gradient(180deg,#f2f5fa,#fff 82%)}
+.ilh-shell{width:min(100% - 48px,1210px);margin:0 auto}
+.ilh-hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+.ilh-hero-copy{min-width:0}
+.ilh-kicker{display:inline-flex;align-items:center;gap:8px;font:700 12.5px/1 Manrope,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#1f3a6e}
+.ilh-kicker::before{content:"";width:8px;height:8px;border-radius:50%;background:#00b94f;flex:0 0 auto}
+.ilh-hero h1{margin:18px 0 0;font-family:Outfit,Manrope,Arial,sans-serif;font-size:clamp(38px,4.7vw,70px);line-height:1.02;letter-spacing:-.03em;color:#11164b}
+.ilh-hero h1 em{font-style:normal;color:#009640}
+.ilh-sub{margin:22px 0 0;max-width:570px;color:#5b6273;font-size:17.5px;line-height:1.7}
+.ilh-sub b{color:#11164b}
+.ilh-actions{display:flex;align-items:center;gap:26px;margin-top:34px;flex-wrap:wrap}
+.ilh-btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:10px;background:#00b94f;color:#fff!important;font:800 14.5px/1.25 Manrope,Arial,sans-serif;letter-spacing:.02em;text-decoration:none;box-shadow:0 14px 30px rgba(0,185,79,.24)}
+.ilh-btn:hover,.ilh-btn:focus-visible{background:#009640}
+.ilh-link{font-weight:800;color:#1f3a6e;border-bottom:2px solid #00b94f;text-decoration:none}
+.ilh-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px 22px;margin:38px 0 0;padding:26px 0 0;border-top:1px solid #e3e7f0}
+.ilh-facts b{display:block;font-family:Outfit,Manrope,Arial,sans-serif;font-size:26px;font-weight:800;letter-spacing:-.03em;color:#11164b}
+.ilh-facts b i{color:#00b94f;font-style:normal}
+.ilh-facts span{display:block;margin-top:4px;color:#6a7180;font-size:12.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.ilh-card{position:relative;margin:0;border-radius:24px;overflow:hidden;box-shadow:0 30px 70px rgba(17,22,75,.18)}
+.ilh-card img,.ilh-card video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:24px}
+.ilh-badge{position:absolute;left:18px;bottom:18px;display:inline-flex;align-items:center;gap:8px;padding:9px 15px;border-radius:14px;background:rgba(13,18,70,.62);border:1px solid rgba(255,255,255,.28);color:#fff;font:800 12.5px/1 Manrope,Arial,sans-serif;letter-spacing:.04em}
+.ilh-badge i{width:8px;height:8px;border-radius:50%;background:#00b94f;font-style:normal}
+
+@media (max-width:1100px){
+  .ilh-hero h1{font-size:clamp(26px,5vw,55px)!important}
+}
+@media (max-width:900px){
+  .ilh-hero-grid{grid-template-columns:1fr;gap:36px}
+}
+@media (max-width:700px){
+  .ilh-facts{grid-template-columns:1fr;gap:14px}
+  .ilh-hero{padding-top:clamp(88px,14vw,104px)}
+}
+
+/* Guard móvil: el drawer del nav no debe crear scroll horizontal en páginas con héroe canónico. */
+html:has(.ilh-hero), html:has(.ilt-hero), html:has(.ilr-hero), html:has(.ilc2-hero),
+body:has(.ilh-hero), body:has(.ilt-hero), body:has(.ilr-hero), body:has(.ilc2-hero){overflow-x:clip}

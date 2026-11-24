@@ -1,0 +1,56 @@
+# robots.txt · Ilatek Property Solution · https://ilatekpr.com
+# Revisión: 2026-11-21
+#
+# Regla general: todo el contenido público es rastreable.
+# Quedan permitidas por "Allow: /" las 106 páginas del lote programático,
+# /home, /en/home, /cotizacion, /cotizacion-techos, /sitemap.xml y el blog.
+# No se anuncia /dnf/: hoy responde 404 y no es una ruta del sitio.
+
+User-agent: *
+Allow: /
+
+# Buscadores con IA (AEO/GEO): permitir rastreo, cita y enlace.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+Sitemap: https://ilatekpr.com/sitemap.xml
+# Índice para modelos de lenguaje: https://ilatekpr.com/llms.txt

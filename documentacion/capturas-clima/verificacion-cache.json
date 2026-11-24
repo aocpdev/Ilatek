@@ -1,0 +1,35 @@
+{
+  "primera": {
+    "estado": "ok",
+    "familia": "limpieza",
+    "lugar": "Puerto Rico",
+    "temp": "81°",
+    "dias": 6,
+    "iconos": 6,
+    "servicios": 45,
+    "municipios": 78,
+    "municipio": "",
+    "formulario": true,
+    "overflowX": 0
+  },
+  "peticionesPrimeraVisita": 1,
+  "urlsPrimera": [
+    "/v1/forecast?latitude=18.4655&longitude=-66.1057&current=temperature_2m,relative_humidity_2m,apparent_temperature,dew_point_2m,precipitation,weather_code,cloud_cover,wind_speed_10m,wind_gusts_10m,wind_direction_10m,uv_index,is_day&hourly=temperature_2m,precipitation_probability,precipitation,weather_code,wind_speed_10m,wind_gusts_10m,uv_index&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,precipitation_sum,precipitation_hours,uv_index_max,wind_gusts_10m_max,sunrise,sunset&timezone=America%2FPuerto_Rico&temperature_unit=fahrenheit&wind_speed_unit=mph&forecast_days=7&forecast_hours=24"
+  ],
+  "segunda": {
+    "estado": "ok",
+    "familia": "limpieza",
+    "lugar": "Puerto Rico",
+    "temp": "81°",
+    "dias": 6,
+    "iconos": 6,
+    "servicios": 45,
+    "municipios": 78,
+    "municipio": "",
+    "formulario": true,
+    "overflowX": 0
+  },
+  "peticionesRecarga": 0,
+  "urlsSegunda": [],
+  "erroresConsola": []
+}

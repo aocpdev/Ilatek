@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Limpieza Comercial
+Slug: limpieza-comercial
+URL: https://ilatekpr.com/limpieza-comercial
+Acción: REPUBLICAR
+Estado hoy: HTTP 200
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (237 KB, sha256 91f7e54166e6)
+Origen en el repo: categorias/limpieza-comercial/es/landing-pages/ghl-limpieza-comercial-landing.html
+Sección de clima: sí
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

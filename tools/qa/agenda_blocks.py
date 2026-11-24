@@ -1,27 +1,23 @@
 #!/usr/bin/env python3
-"""Agenda de GHL: un solo dueño del bloque de calendario en las canónicas.
+"""Agenda de GHL: el calendario no vive dentro de ninguna landing.
 
-Antes: la agenda eran 28 líneas copiadas a mano en 46 landings. Ningún gate
-miraba widgets (`audit_tokens_global.py` audita tokens, `qa_tokenized_headings`
-audita titulares), así que la landing siguiente se publicaba sin calendario —o
-con el del vertical equivocado— y nada fallaba.
+Política vigente (2026-11-16): ninguna landing de servicios embebe el calendario
+de GHL. El último container de cada página es su propio CTA de cierre, que lleva
+a la ruta de cotización del vertical (`/cotizacion` en limpieza,
+`/cotizacion-techos` en techos); la cita se agenda en esa página aparte.
 
-Ahora, todo sale de aquí:
+Historia: este módulo fue el dueño del bloque de calendario (28 líneas copiadas
+a mano en 46 landings, con el widget del vertical equivocado cuando nadie
+miraba). Hoy se conserva como gate de la política contraria:
 
-  - VERTICALS     el calendario de cada vertical (widget + id del iframe).
-  - agenda/*.html la plantilla del bloque, una sola copia por vertical.
-  - LIMPIEZA      slug -> etiqueta del servicio: la única tabla de copy.
-  - NO_AGENDA     las canónicas que se quedan sin agenda, con su razón.
-  - audit()       las reglas: un solo `widget/booking`, el del vertical que
-                  toca, un solo `form_embed.js`, ids únicos en el documento y
-                  (donde el bloque es de este módulo) byte a byte la plantilla.
-  - --check       recorre el corpus canónico y falla si algo se sale de la regla.
-  - sin --check   reescribe el bloque propio desde la plantilla (idempotente).
+  - --check   falla si una canónica vuelve a traer un `widget/booking`, un
+              `form_embed.js` o un enlace a `#ilt-agenda` / `#ilcal-agenda`.
+  - sin --check no escribe nada: no hay bloque que re-renderizar.
 
-Techos se valida pero no se reescribe: su bloque vive dentro del wrapper de la
-página y usa la paleta de esa página (`var(--blue)`, `var(--muted)`), así que
-moverlo o re-renderizarlo cambiaría el layout. Limpieza sí es de este módulo: su
-bloque es hermano del wrapper, con su propio prefijo `ilcal`.
+Con `AGENDA_ENABLED = True` recupera el comportamiento anterior: VERTICALS (el
+calendario de cada vertical), `agenda/*.html` como plantilla y LIMPIEZA como la
+única tabla de copy; NO_AGENDA deja por escrito las canónicas que se quedaban
+sin agenda a propósito.
 """
 from __future__ import annotations
 
@@ -75,9 +71,15 @@ NO_AGENDA: dict[str, str] = {
         "hub mixto techos+limpieza: cualquier calendario sería el del vertical equivocado",
 }
 
+# Política del propietario: las landings de servicios no embeben el calendario.
+AGENDA_ENABLED = False
+POLICY = "sin calendario embebido: el último container es el CTA de la página"
+
 CALENDAR_RE = re.compile(r"widget/booking/([A-Za-z0-9]+)")
 IFRAME_RE = re.compile(r"<iframe[^>]*widget/booking/([A-Za-z0-9]+)")
 EMBED_RE = re.compile(r"js/form_embed\.js")
+# Anclas del bloque retirado: un enlace vivo a ellas sería un salto muerto.
+ANCHOR_RE = re.compile(r"#il(?:t|cal)-agenda")
 ID_RE = re.compile(r'\bid="([^"]+)"')
 
 # Marcas del bloque propio (limpieza): apertura y cierre del tramo reemplazable.
@@ -123,7 +125,7 @@ def slug(relpath: str) -> str:
 
 def vertical_of(relpath: str) -> str | None:
     """Vertical de una canónica; None = sin agenda por política."""
-    if relpath in NO_AGENDA:
+    if not AGENDA_ENABLED or relpath in NO_AGENDA:
         return None
     return "limpieza" if slug(relpath) in LIMPIEZA else "techos"
 
@@ -175,8 +177,13 @@ def audit(relpath: str, text: str) -> list[str]:
     """Problemas de agenda de una canónica (vacío = cumple)."""
     vertical = vertical_of(relpath)
     if vertical is None:
+        problems: list[str] = []
         embeds = len(IFRAME_RE.findall(text))
-        return [f"{embeds} calendario(s) embebido(s) en una página sin agenda por política"] if embeds else []
+        if embeds:
+            problems.append(f"{embeds} calendario(s) embebido(s) en una landing sin agenda por política")
+        if ANCHOR_RE.search(text):
+            problems.append("enlaces vivos al ancla del calendario retirado")
+        return problems
 
     want = VERTICALS[vertical]
     problems: list[str] = []
@@ -262,16 +269,19 @@ def main() -> None:
             unchanged += 1
 
     covered = sum(per_vertical.values())
-    detail = " · ".join(f"{n} {v}" for v, n in sorted(per_vertical.items()))
-    print(f"\nagenda: {covered}/{len(pages)} canónicas ({detail})")
-    for relpath in excluded:
-        print(f"  sin agenda por política: {relpath} — {NO_AGENDA[relpath]}")
+    if not AGENDA_ENABLED:
+        print(f"\nagenda: sin calendario embebido en ninguna de las {len(pages)} canónicas ({POLICY})")
+    else:
+        detail = " · ".join(f"{n} {v}" for v, n in sorted(per_vertical.items()))
+        print(f"\nagenda: {covered}/{len(pages)} canónicas ({detail})")
+        for relpath in excluded:
+            print(f"  sin agenda por política: {relpath} — {NO_AGENDA[relpath]}")
 
     for relpath, problems in failed:
         print(f"FAIL {relpath}: {'; '.join(problems)}")
 
     if dry:
-        print(f"\ncheck: {len(pages) - len(failed) - len(excluded)}/{covered} conformes, {len(failed)} con drift")
+        print(f"\ncheck: {len(pages) - len(failed)}/{len(pages)} conformes, {len(failed)} con drift")
         sys.exit(1 if failed else 0)
 
     print(f"\nresumen: actualizados={touched} sin-cambios={unchanged} fallidos={len(failed)}")

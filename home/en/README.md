@@ -1,9 +1,8 @@
 # English — home
 
-**Status: no standalone English landing page exists in the source project.**
+**Status: standalone English page exists at `/en/home`.**
 
-El HTML existente contiene traducciones propias mediante su selector ES/EN.
-
-Use the [existing embed](../es/landing-pages/ghl-home-multiservicios.html) and its current language controls where present. Shared page media are inventoried in [ASSETS.json](../es/ASSETS.json) and stored in [es/assets](../es/assets/).
-
-This folder intentionally contains no duplicate Spanish HTML presented as English, no invented /en/ public URL, and no English metadata presented as published. A separate EN landing requires a translation and URL decision; once approved, use the same landing-pages/assets/SEO-GHL.md structure as ES.
+- Source: `landing-pages/home.en.html`.
+- HEAD: `HEAD-TEMPLATE.html` (title, description, canonical, hreflang es/en/x-default, OG/Twitter).
+- The page must be served with `lang="en"`. The shared nav/footer still use `data-es`/`data-en`; the EN copy is applied at runtime, so the static nav/footer fallback remains Spanish until the parity contract is changed. This is documented as PENDIENTE in `GHL-PUBLICAR/REVISION-2026-11-21/`.
+- Do not publish the English page with the Spanish title or with `lang="es"`. Verify the served HTML, not only the browser tab.

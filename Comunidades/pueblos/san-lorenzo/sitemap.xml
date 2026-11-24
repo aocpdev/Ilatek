@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- san-lorenzo.ilatekpr.com — landings de las comunidades de este municipio.
+     Generado por scripts/genera-pueblos.mjs; una URL por comunidad y servicio. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://san-lorenzo.ilatekpr.com/bosque-llano/limpieza</loc></url>
+  <url><loc>https://san-lorenzo.ilatekpr.com/bosque-llano/sellado-de-techo</loc></url>
+  <url><loc>https://san-lorenzo.ilatekpr.com/ciudad-masso/limpieza</loc></url>
+  <url><loc>https://san-lorenzo.ilatekpr.com/ciudad-masso/sellado-de-techo</loc></url>
+  <url><loc>https://san-lorenzo.ilatekpr.com/jardines-de-san-lorenzo/limpieza</loc></url>
+  <url><loc>https://san-lorenzo.ilatekpr.com/jardines-de-san-lorenzo/sellado-de-techo</loc></url>
+  <url><loc>https://san-lorenzo.ilatekpr.com/portal-del-sol/limpieza</loc></url>
+  <url><loc>https://san-lorenzo.ilatekpr.com/portal-del-sol/sellado-de-techo</loc></url>
+  <url><loc>https://san-lorenzo.ilatekpr.com/savannah-real/limpieza</loc></url>
+  <url><loc>https://san-lorenzo.ilatekpr.com/savannah-real/sellado-de-techo</loc></url>
+</urlset>

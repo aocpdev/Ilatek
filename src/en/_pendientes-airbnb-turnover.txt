@@ -1,0 +1,141 @@
+{{custom_values.business__county_name}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}
+Limpieza Airbnb y Rentals en {{custom_values.business__county_name}} | Ilatek
+/og:title/ og:description ("… en Juncos, Puerto Rico"): el título sale de {{custom_values.business__county_name}}, así que es el mismo custom value, sin depender de que el builder expanda el Custom Code; 3. el subdominio del sitio (juncos.ilatekpr.com → Juncos); 4. los valores de marca del contrato (custom-values.json → brand). El portador que viaja en el embed se oculta siempre (nunca es contenido). Estado en
+Login
+Airbnb turnover
+Airbnb Turnover en
+{{custom_values.business__county_name}}
+guest-ready para tus reseñas de 5 estrellas.
+Ilatek deja tu unidad guest-ready en {{custom_values.business__county_name}} entre checkout y check-in: baños impecables, cocina lista, camas hechas y consumibles repuestos — la limpieza que protege tus 5 estrellas. Precio real en minutos y reserva con $50 descontable.
+Solicita tu cotización
+Qué incluye el servicio ↓
+minutos
+Precio por escrito
+municipios
+Cobertura en PR
+depósito
+Descontable al reservar
+Por qué Ilatek
+Cada huésped llega a una unidad impecable.
+Reseñas de 5 estrellas protegidas
+La limpieza es el factor #1 en los comentarios de huéspedes: cada turnover se entrega con el estándar hotel que sostiene tu Superhost y tu posición en el buscador.
+Sincronizado con tu calendario
+Limpiamos dentro de tu ventana entre el checkout y el check-in, una vez por reserva: tu unidad vuelve a estar lista sin que gestiones nada.
+Guest-ready de verdad
+Camas hechas, toallas dobladas y consumibles repuestos donde los guardas: el huésped entra a una unidad de foto — en {{custom_values.business__county_name}}.
+Qué incluye
+Guest-ready, de baño a cocina.
+El turnover de Ilatek resetea la unidad completa entre huéspedes: baños desinfectados, cocina lista, camas hechas y presentación final — con el alcance definido en tu cotización.
+Baños desinfectados como hotel
+Cocina: superficies, enseres y fregadero listos
+Camas hechas con tu ropa de cama fresca
+Toallas y consumibles repuestos (papel, jabón)
+Pisos aspirados y trapeados en toda la unidad
+Presentación final lista para fotos y check-in
+Cotiza tu turnover
+Guest-ready · listo para el próximo check-in
+Espacios
+Perfecta en estos momentos.
+Estudios y apartamentos
+El turnover más común: 60–90 minutos de limpieza guest-ready coordinados con tu calendario de reservas.
+Casas y villas
+¿Administras varias propiedades o eres cohost? Coordinamos todos tus turnovers bajo un mismo estándar y un solo contacto.
+Múltiples unidades y managers
+Frecuencia
+Siempre listos antes del próximo check-in.
+Por cada reserva
+Del checkout al check-in
+El flujo estándar: huésped sale, limpiamos y la unidad queda guest-ready para el siguiente check-in — sin fricción para ti ni para el huésped.
+Back-to-back
+Mismo día
+¿Reservas seguidas sin hueco entre huéspedes? Coordinamos el turnover dentro de la ventana disponible — incluso el mismo día.
+Temporada
+Altas y eventos
+Temporada alta, festivales y cruceros: capacity extra para que ninguna reserva te quede sin limpieza en {{custom_values.business__county_name}}.
+Cotiza tu turnover hoy
+Cobertura local
+Limpieza impecable,
+Cobertura en Toda la Isla
+Explora los servicios de limpieza de
+Ilatek
+disponibles en los
+78 municipios de Puerto Rico
+y visita la página de tu pueblo. Atendemos hogares en
+y toda la isla.
+No encontramos ese pueblo. Verifica el nombre e intenta nuevamente.
+Página 1 de 1
+Preguntas frecuentes
+Todo lo que preguntas antes de contratar.
+¿Cuánto se cobra por la limpieza de un Airbnb en {{custom_values.business__county_name}}?
+El precio depende del tamaño de la unidad y el alcance del turnover. Usa el cotizador y recibe tu número real en minutos — la
+tarifa de limpieza
+que cobras al huésped puede cubrirlo. Precio claro y por escrito, sin compromiso.
+¿Qué incluye un turnover guest-ready?
+Incluye baños desinfectados como hotel, cocina lista (superficies, enseres y fregadero),
+camas hechas
+con tu ropa fresca, toallas y consumibles repuestos (papel, jabón), pisos de toda la unidad y presentación final. El alcance exacto queda definido en tu cotización.
+¿Cuánto tarda un turnover de Airbnb?
+Referencia profesional:
+estudio 60–90 minutos
+; 1–2 cuartos 90–120; casas 2–4 horas. Lo coordinamos dentro de tu ventana entre el checkout y el check-in para que nunca bloquee una reserva.
+¿Hacen las camas y reponen los consumibles?
+Camas hechas con tus juegos de ropa frescos, toallas dobladas y reposición de papel, jabón y demás consumibles donde los guardes — el huésped llega a una unidad de foto.
+¿Pueden limpiar entre huéspedes el mismo día?
+, trabajamos back-to-back: coordinamos el turnover dentro de la ventana disponible entre checkout y check-in — compártenos tu calendario de reservas al cotizar y lo sincronizamos.
+¿Trabajan con property managers y cohosts?
+— un solo contacto para todas tus unidades, mismo estándar en cada turnover y reporte de cada visita. Reservas con un depósito de
+$50 descontable
+, sin letra pequeña.
+¿Qué productos y equipos utilizan?
+Llegamos con
+productos y equipos profesionales de limpieza residencial
+, seguros para tu familia y tus mascotas. Si prefieres algo específico (eco-amigable, sin fragancia), coordínalo en la cotización.
+¿Por qué elegir Ilatek para tu Airbnb?
+Reseñas protegidas con limpieza guest-ready, sincronización con tu calendario de reservas, precio real en minutos, depósito de $50 descontable y cobertura en los 78 municipios. Tus huéspedes llegan a una unidad impecable en {{custom_values.business__county_name}}.
+¿Reserva tras reserva? Nosotros dejamos cada unidad lista.
+Solicita tu cotización ↗
+Devasks
+Navegación de Ilatek
+Ilatek, inicio
+Logo de Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Logo%20de%20Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Navegación principal
+Idioma / Language
+Español
+English
+Abrir o cerrar el menú
+Ilatek Airbnb Turnover {{custom_values.business__county_name}}
+Equipo de Ilatek preparando un Airbnb guest-ready — turnover de alquiler a corto plazo entre huéspedes en {{custom_values.business__county_name}}
+Airbnb Turnover en {{custom_values.business__county_name}} · Ilatek
+Equipo%20de%20Ilatek%20preparando%20un%20Airbnb%20guest-ready%20%E2%80%94%20turnover%20de%20alquiler%20a%20corto%20plazo%20entre%20hu%C3%A9spedes%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Airbnb%20Turnover%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%C2%B7%20Ilatek
+Turnover de Airbnb de Ilatek — camas hechas, toallas y consumibles listos para el huésped en {{custom_values.business__county_name}}
+Turnover%20de%20Airbnb%20de%20Ilatek%20%E2%80%94%20camas%20hechas%2C%20toallas%20y%20consumibles%20listos%20para%20el%20hu%C3%A9sped%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Cobertura de limpieza de Ilatek en Puerto Rico
+Busca tu pueblo
+Buscar un municipio de Puerto Rico
+Limpiar búsqueda
+Municipios de Puerto Rico con servicio de Ilatek
+Pie de página de Ilatek
+Facebook
+Facebook — servicio en {{custom_values.business__county_name}}
+Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Instagram
+Instagram — servicio en {{custom_values.business__county_name}}
+Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Youtube
+Youtube — servicio en {{custom_values.business__county_name}}
+Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+TikTok
+TikTok — servicio en {{custom_values.business__county_name}}
+TikTok%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+X — servicio en {{custom_values.business__county_name}}
+X%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+LinkedIn
+LinkedIn — servicio en {{custom_values.business__county_name}}
+LinkedIn%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Pinterest
+Pinterest — servicio en {{custom_values.business__county_name}}
+Pinterest%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D

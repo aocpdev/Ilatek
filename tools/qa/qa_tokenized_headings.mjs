@@ -254,9 +254,16 @@ report('[borde] helper embebido localizable en el canónico', !!edgeHelper, 'sin
 //    el pixel debe encenderse al quedar el DOM listo, no al parsear el script.
 {
   const { r, pageErrors } = await load(edgeRaw, OK_BRIDGE, 1500, { where: 'after' });
-  // Los resolvers de titular corren al parsear (comportamiento previo): con el
-  // párrafo después caen al literal seguro. El pixel ya no depende de ese orden.
-  report('[borde] párrafo después del Custom Code: titular al literal, no token crudo', /Puerto Rico/.test(r.h1) && !r.h1.includes('{{'), r.h1.slice(0, 80));
+  // El helper reintenta cuando el párrafo nativo aparece después del Custom Code
+  // ("Diario del barrido con fallback" en ILATEK_BRIDGE), así que el titular
+  // tokenizado resuelve el pueblo en vez de quedarse en el literal.
+  // La expectativa anterior (/Puerto Rico/) describía el barrido de una sola
+  // pasada, que ya no existe: se cumplía porque este H1 era texto estático, no
+  // porque el resolver funcionara. El caso que sí debe caer al literal es "sin
+  // párrafo ni título", comprobado más abajo ([title] sin pueblo...).
+  // Aquí se exige más, no menos: municipio resuelto, sin literal y sin token.
+  report('[borde] párrafo después del Custom Code: titular resuelto, no literal ni token crudo',
+    r.h1.includes('TestCounty') && !/Puerto Rico/.test(r.h1) && !r.h1.includes('{{'), r.h1.slice(0, 80));
   report('[borde] párrafo después del Custom Code enciende el pixel', r.pixel.id === PIXEL_ID && r.pixel.pageViews === 1, `id=${r.pixel.id} pageView=${r.pixel.pageViews}`);
   report('[borde] párrafo después del Custom Code no deja tokens crudos', r.rawVisible.length === 0, JSON.stringify(r.rawVisible).slice(0, 120));
   report('[borde] párrafo después del Custom Code sin pageErrors', pageErrors.length === 0, pageErrors.join(' | ').slice(0, 160));

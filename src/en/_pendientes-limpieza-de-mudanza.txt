@@ -1,0 +1,143 @@
+{{custom_values.business__county_name}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}
+Limpieza de Mudanza en {{custom_values.business__county_name}} | Ilatek
+/og:title/ og:description ("… en Juncos, Puerto Rico"): el título sale de {{custom_values.business__county_name}}, así que es el mismo custom value, sin depender de que el builder expanda el Custom Code; 3. el subdominio del sitio (juncos.ilatekpr.com → Juncos); 4. los valores de marca del contrato (custom-values.json → brand). El portador que viaja en el embed se oculta siempre (nunca es contenido). Estado en
+Login
+Limpieza de mudanza
+Limpieza de Mudanza en
+{{custom_values.business__county_name}}
+para entregar o estrenar tu espacio impecable.
+Ilatek deja tu casa o apartamento
+vacío
+impecable en {{custom_values.business__county_name}} para que lo entregues o lo recibas sin pendientes: move-out para recuperar tu depósito, move-in para estrenar limpio. Precio real en minutos y reserva con $50 descontable.
+Solicita tu cotización
+Qué incluye el servicio ↓
+minutos
+Precio por escrito
+municipios
+Cobertura en PR
+depósito
+Descontable al reservar
+Por qué Ilatek
+Entrega o estrena tu espacio impecable.
+Recuperas tu depósito
+Una limpieza de mudanza de arriba a abajo es lo que los administradores revisan al devolver el depósito: pisos, baños, cocina y detalles impecables — sin descuentos sorpresa.
+Para mudanzas sin estrés
+Coordinamos la limpieza en el momento exacto: después de sacar tus cajas y antes de entregar llaves — o justo antes de mudarte a tu nuevo hogar.
+Unidad vacía, a fondo
+Sin muebles ni obstáculos limpiamos lo que normalmente queda escondido: interiores de gabinetes y closet, paredes, zócalos, ventanas y cada rincón en {{custom_values.business__county_name}}.
+Qué incluye
+De arriba a abajo, lista para entregar o estrenar.
+La limpieza de mudanza de Ilatek cubre la unidad
+vacía
+de arriba a abajo: cocina, baños, cuartos, closet y gabinetes por dentro, paredes, ventanas y pisos — con el alcance definido en tu cotización.
+Cocina: gabinetes, nevera y horno por dentro
+Baños: desincrustación y desinfección completa
+Cuartos y closet: por dentro y sin obstáculos
+Paredes, puertas, marcos y zócalos
+Ventanas y ventanales: cristales y marcos
+Pisos: aspirado y trapeado de toda la unidad
+Cotiza tu mudanza
+Unidad vacía · hasta el último rincón
+Espacios
+Perfecta en estos momentos.
+Move-out: entrega tu alquiler
+Recupera tu depósito: entregas el apartamento o casa impecable de arriba a abajo, exactamente como lo revisa el administrador.
+Move-in: estrena limpio
+¿Vendes o administras propiedades? Deja cada unidad impecable entre inquilinos o para las fotos de la listing — coordinamos varias unidades según tu calendario.
+Venta o cambio de propiedad
+Frecuencia
+El momento perfecto para una mudanza.
+Move-out
+Al entregar tu espacio
+Después de sacar tus cajas y antes de devolver las llaves: la limpieza se hace con la unidad vacía para llegar a cada rincón.
+Move-in
+Antes de mudarte
+Firmaste y recibes las llaves: limpiamos antes de que entre un solo mueble — llegas a un hogar verdaderamente tuyo y fresco.
+Según tu calendario
+Entre inquilinos o propiedades
+Airbnb, administradores y agentes: coordinamos limpiezas recurrentes entre huéspedes o unidades, según tu calendario de ocupación.
+Cotiza tu mudanza hoy
+Cobertura local
+Limpieza impecable,
+Cobertura en Toda la Isla
+Explora los servicios de limpieza de
+Ilatek
+disponibles en los
+78 municipios de Puerto Rico
+y visita la página de tu pueblo. Atendemos hogares en
+y toda la isla.
+No encontramos ese pueblo. Verifica el nombre e intenta nuevamente.
+Página 1 de 1
+Preguntas frecuentes
+Todo lo que preguntas antes de contratar.
+¿Cuánto cuesta la limpieza de mudanza en {{custom_values.business__county_name}}?
+Ilatek cobra
+precio real en minutos
+para la limpieza de mudanza: el precio depende del tamaño de tu hogar. Usa el cotizador y recibe tu número real en minutos — precio claro y por escrito, sin compromiso.
+¿Qué incluye una limpieza de mudanza?
+Incluye la unidad vacía de arriba a abajo: cocina con gabinetes, nevera y horno por dentro, baños con desincrustación completa, cuartos y closet por dentro, paredes, puertas, zócalos, ventanas y pisos de toda la unidad. El alcance exacto queda definido en tu cotización.
+¿Cuál es la diferencia entre limpieza de mudanza y estándar?
+La de mudanza se hace con la unidad
+y de arriba a abajo —incluye interiores de gabinetes y closet, paredes y ventanas— para entregar o recibir el espacio. La estándar mantiene tu hogar habitado al día con visitas recurrentes.
+¿La casa debe estar vacía para la limpieza?
+Idealmente sí: con la unidad vacía llegamos a gabinetes, closet, paredes y cada rincón. Si aún quedan cosas, las agrupamos en una zona y limpiamos alrededor — coordínalo al reservar y lo definimos en tu cotización.
+¿Cubren mi área en {{custom_values.business__county_name}}?
+Sí. Ilatek atiende hogares en los
+, incluyendo {{custom_values.business__county_name}} — urbanizaciones, condominios y apartamentos. Cotiza tu hogar y confirma tu plan en minutos.
+¿Hay contrato o compromiso mínimo?
+Definimos juntos el plan y la frecuencia — sin letra pequeña. Reservas con un depósito de
+$50 descontable
+y ajustamos el servicio cuando tu hogar lo necesite.
+¿Qué productos y equipos utilizan?
+Llegamos con
+productos y equipos profesionales de limpieza residencial
+, seguros para tu familia y tus mascotas. Si prefieres algo específico (eco-amigable, sin fragancia), coordínalo en la cotización.
+¿Por qué elegir Ilatek para la limpieza de tu hogar?
+Precio real en minutos con el cotizador, limpieza de unidad vacía de arriba a abajo, coordinación exacta con tu fecha de mudanza, depósito de $50 descontable y cobertura en los 78 municipios. Tu entrega sin pendientes en {{custom_values.business__county_name}}.
+¿Mudas en camino? Déjanos la limpieza.
+Solicita tu cotización ↗
+Devasks
+Navegación de Ilatek
+Ilatek, inicio
+Logo de Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Logo%20de%20Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Navegación principal
+Idioma / Language
+Español
+English
+Abrir o cerrar el menú
+Ilatek Limpieza de Mudanza {{custom_values.business__county_name}}
+Equipo de Ilatek realizando una limpieza de mudanza move out en un apartamento vacío en {{custom_values.business__county_name}}
+Limpieza de Mudanza en {{custom_values.business__county_name}} · Ilatek
+Equipo%20de%20Ilatek%20realizando%20una%20limpieza%20de%20mudanza%20move%20out%20en%20un%20apartamento%20vac%C3%ADo%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Limpieza%20de%20Mudanza%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%C2%B7%20Ilatek
+Limpieza de mudanza move out de Ilatek — unidad vacía de arriba a abajo en {{custom_values.business__county_name}}
+Limpieza%20de%20mudanza%20move%20out%20de%20Ilatek%20%E2%80%94%20unidad%20vac%C3%ADa%20de%20arriba%20a%20abajo%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Cobertura de limpieza de Ilatek en Puerto Rico
+Busca tu pueblo
+Buscar un municipio de Puerto Rico
+Limpiar búsqueda
+Municipios de Puerto Rico con servicio de Ilatek
+Pie de página de Ilatek
+Facebook
+Facebook — servicio en {{custom_values.business__county_name}}
+Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Instagram
+Instagram — servicio en {{custom_values.business__county_name}}
+Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Youtube
+Youtube — servicio en {{custom_values.business__county_name}}
+Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+TikTok
+TikTok — servicio en {{custom_values.business__county_name}}
+TikTok%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+X — servicio en {{custom_values.business__county_name}}
+X%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+LinkedIn
+LinkedIn — servicio en {{custom_values.business__county_name}}
+LinkedIn%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Pinterest
+Pinterest — servicio en {{custom_values.business__county_name}}
+Pinterest%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D

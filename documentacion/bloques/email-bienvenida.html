@@ -1,0 +1,193 @@
+<!-- ILATEK · Email de bienvenida — "Bienvenido a Ilatek Property Solution".
+
+     Se pega en GHL: Marketing → Emails → Templates → New (código HTML), o dentro
+     del workflow con la acción "Send Email" apuntando a esta plantilla.
+
+     ── Qué lo hace saber a qué equipo pertenece ──────────────────────────────
+     La frase del equipo usa DOS custom values de la subcuenta:
+       {{custom_values.equipo_lider}}       → "Aida Cintron" | "Luis Cardec"
+       {{custom_values.equipo_lider_email}} → correo de esa persona
+
+     ⚠️ Dos formas de rellenarlos, elige UNA:
+       a) Rama en el workflow: Send Email (Aida) → Update Custom Value
+          `equipo_lider` = Aida…  y lo mismo en la rama de Cardec.
+          Riesgo: los custom values son de toda la location; dos altas simultáneas
+          pueden cruzarse. Con volumen bajo es aceptable.
+       b) (recomendada, cero carreras) Duplica esta plantilla en dos archivos y
+          reemplaza los dos tokens por el nombre y el correo fijos de cada admin.
+          No se crea ningún custom value nuevo.
+
+     ⚠️ `equipo_lider` y `equipo_lider_email` serían custom values NUEVOS.
+     AGENTS.md exige aprobación antes de sumar valores, y
+     `scripts/audit_tokens_global.py` corre contra la lista de 14 canónicos:
+     agregarlos haría fallar esa auditoría hasta que el owner amplíe la lista.
+     Por eso la opción (b) existe y es la que no toca el contrato.
+
+     Los datos de contacto del pie SÍ son custom values existentes
+     (`business__email`, `business__phone`, `website_url`).
+
+     Responsive: tablas fluidas + media query a 620px. Sin imágenes de fondo
+     (muchos clientes las bloquean): el logo es <img> con texto alternativo. -->
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="supported-color-schemes" content="light">
+  <title>Bienvenido a Ilatek Property Solution</title>
+  <style>
+    /* Reset mínimo: Outlook ignora muchas de estas reglas, por eso los estilos
+       críticos van inline en cada tabla/celda. */
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode: bicubic; border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+    body { margin: 0; padding: 0; width: 100% !important; background: #eef3ff; }
+    a { color: #213d8e; }
+    @media screen and (max-width: 620px) {
+      .il-wrap { width: 100% !important; }
+      .il-pad { padding-left: 20px !important; padding-right: 20px !important; }
+      .il-h1 { font-size: 22px !important; line-height: 28px !important; }
+      .il-btn a { display: block !important; width: 100% !important; box-sizing: border-box !important; }
+      .il-hide { display: none !important; }
+      .il-stack { display: block !important; width: 100% !important; }
+    }
+  </style>
+</head>
+<body style="margin:0;padding:0;background:#eef3ff;">
+  <!-- Preheader: lo que se ve en la bandeja antes de abrir. -->
+  <div style="display:none;max-height:0;overflow:hidden;opacity:0;color:transparent;font-size:1px;line-height:1px;">
+    Tu acceso a Ilatek Property Solution está listo. Te contamos cómo entrar.
+  </div>
+
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#eef3ff;">
+    <tr>
+      <td align="center" style="padding:24px 12px;">
+
+        <table role="presentation" class="il-wrap" width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px;max-width:600px;background:#ffffff;border-radius:16px;overflow:hidden;box-shadow:0 8px 24px rgba(17,22,75,0.10);">
+
+          <!-- Encabezado -->
+          <tr>
+            <td align="center" class="il-pad" style="background:#213d8e;padding:32px 32px 26px;">
+              <img src="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/ilatek-logo-256.webp"
+                   alt="Ilatek Property Solution" width="76" height="76"
+                   style="display:block;width:76px;height:76px;border-radius:50%;background:#ffffff;padding:6px;">
+              <h1 class="il-h1" style="margin:18px 0 0;font-family:Inter,Arial,Helvetica,sans-serif;font-size:26px;line-height:32px;font-weight:800;color:#ffffff;letter-spacing:-0.2px;">
+                Bienvenido a Ilatek Property Solution
+              </h1>
+              <p style="margin:8px 0 0;font-family:Inter,Arial,Helvetica,sans-serif;font-size:15px;line-height:22px;color:#c9d6f5;">
+                Tu acceso ya está creado
+              </p>
+            </td>
+          </tr>
+
+          <!-- Barra verde de marca -->
+          <tr><td style="height:6px;background:#00b94f;font-size:0;line-height:0;">&nbsp;</td></tr>
+
+          <!-- Cuerpo -->
+          <tr>
+            <td class="il-pad" style="padding:30px 32px 8px;">
+              <p style="margin:0 0 14px;font-family:Inter,Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;color:#11164b;">
+                Hola {{contact.first_name}},
+              </p>
+              <p style="margin:0 0 14px;font-family:Inter,Arial,Helvetica,sans-serif;font-size:15px;line-height:24px;color:#3c4468;">
+                Nos alegra tenerte en el equipo. Tu usuario de Ilatek Property Solution
+                ya está activo y desde hoy formas parte del
+                <strong style="color:#11164b;">equipo de {{custom_values.equipo_lider}}</strong>.
+              </p>
+              <p style="margin:0 0 20px;font-family:Inter,Arial,Helvetica,sans-serif;font-size:15px;line-height:24px;color:#3c4468;">
+                Tu agenda ya quedó enlazada a los calendarios de tu líder, y los municipios
+                que indicaste son los que verás en tu operación diaria.
+              </p>
+            </td>
+          </tr>
+
+          <!-- Caja "cómo entrar" -->
+          <tr>
+            <td class="il-pad" style="padding:0 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f6f9ff;border:1px solid #dbe2f1;border-radius:12px;">
+                <tr>
+                  <td style="padding:18px 20px;">
+                    <p style="margin:0 0 10px;font-family:Inter,Arial,Helvetica,sans-serif;font-size:13px;line-height:18px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#213d8e;">
+                      Cómo entrar
+                    </p>
+                    <p style="margin:0 0 6px;font-family:Inter,Arial,Helvetica,sans-serif;font-size:14px;line-height:21px;color:#3c4468;">
+                      <strong style="color:#11164b;">Usuario:</strong> {{contact.email}}
+                    </p>
+                    <p style="margin:0;font-family:Inter,Arial,Helvetica,sans-serif;font-size:14px;line-height:21px;color:#3c4468;">
+                      <strong style="color:#11164b;">Contraseña:</strong> la temporal que te compartió tu líder.
+                      Si no la tienes a mano, usa «¿Olvidaste tu contraseña?» en la pantalla de acceso.
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- CTA -->
+          <tr>
+            <td class="il-pad il-btn" align="center" style="padding:24px 32px 10px;">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td align="center" style="border-radius:10px;background:#00b94f;">
+                    <a href="https://app.gohighlevel.com" target="_blank"
+                       style="display:inline-block;padding:15px 26px;font-family:Inter,Arial,Helvetica,sans-serif;font-size:15px;font-weight:800;color:#0b103d;text-decoration:none;border-radius:10px;">
+                      Entrar a mi cuenta
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Qué sigue -->
+          <tr>
+            <td class="il-pad" style="padding:10px 32px 26px;">
+              <p style="margin:0 0 10px;font-family:Inter,Arial,Helvetica,sans-serif;font-size:15px;line-height:24px;font-weight:800;color:#11164b;">
+                Tus primeros pasos
+              </p>
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td width="26" valign="top" style="padding:0 0 8px;font-family:Inter,Arial,Helvetica,sans-serif;font-size:15px;line-height:24px;color:#00b94f;font-weight:800;">1.</td>
+                  <td style="padding:0 0 8px;font-family:Inter,Arial,Helvetica,sans-serif;font-size:14px;line-height:22px;color:#3c4468;">Confirma tu correo y cambia la contraseña temporal.</td>
+                </tr>
+                <tr>
+                  <td width="26" valign="top" style="padding:0 0 8px;font-family:Inter,Arial,Helvetica,sans-serif;font-size:15px;line-height:24px;color:#00b94f;font-weight:800;">2.</td>
+                  <td style="padding:0 0 8px;font-family:Inter,Arial,Helvetica,sans-serif;font-size:14px;line-height:22px;color:#3c4468;">Revisa tus calendarios: deben aparecer los de tu equipo.</td>
+                </tr>
+                <tr>
+                  <td width="26" valign="top" style="padding:0;font-family:Inter,Arial,Helvetica,sans-serif;font-size:15px;line-height:24px;color:#00b94f;font-weight:800;">3.</td>
+                  <td style="padding:0;font-family:Inter,Arial,Helvetica,sans-serif;font-size:14px;line-height:22px;color:#3c4468;">Si algo no cuadra, escribe a tu líder: {{custom_values.equipo_lider_email}}.</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Pie -->
+          <tr>
+            <td class="il-pad" style="background:#f6f9ff;border-top:1px solid #dbe2f1;padding:22px 32px;">
+              <p style="margin:0 0 6px;font-family:Inter,Arial,Helvetica,sans-serif;font-size:14px;line-height:21px;font-weight:800;color:#11164b;">
+                Ilatek Property Solution
+              </p>
+              <p style="margin:0 0 10px;font-family:Inter,Arial,Helvetica,sans-serif;font-size:13px;line-height:20px;color:#5b6380;">
+                Limpieza y techos en Puerto Rico.
+              </p>
+              <p style="margin:0;font-family:Inter,Arial,Helvetica,sans-serif;font-size:13px;line-height:20px;color:#5b6380;">
+                <a href="mailto:{{custom_values.business__email}}" style="color:#213d8e;text-decoration:none;">{{custom_values.business__email}}</a>
+                &nbsp;·&nbsp;
+                <a href="tel:{{custom_values.business__phone}}" style="color:#213d8e;text-decoration:none;">{{custom_values.business__phone}}</a>
+                &nbsp;·&nbsp;
+                <a href="https://{{custom_values.website_url}}" style="color:#213d8e;text-decoration:none;">{{custom_values.website_url}}</a>
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <p style="margin:16px 0 0;font-family:Inter,Arial,Helvetica,sans-serif;font-size:11px;line-height:17px;color:#8d95ad;text-align:center;">
+          Recibes este correo porque te registraste como parte del equipo de Ilatek Property Solution.
+        </p>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

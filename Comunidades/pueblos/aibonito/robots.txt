@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aibonito.ilatekpr.com/sitemap.xml

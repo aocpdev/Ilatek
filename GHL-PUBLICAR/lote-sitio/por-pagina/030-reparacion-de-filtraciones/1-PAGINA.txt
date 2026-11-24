@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Reparacion De Filtraciones
+Slug: reparacion-de-filtraciones
+URL: https://ilatekpr.com/reparacion-de-filtraciones
+Acción: REPUBLICAR
+Estado hoy: HTTP 200
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (245 KB, sha256 db360bbf708b)
+Origen en el repo: servicios/reparacion-de-filtraciones/es/landing-pages/ghl-reparacion-de-filtraciones-landing.html
+Sección de clima: sí
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

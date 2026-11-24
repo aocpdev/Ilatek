@@ -1,0 +1,285 @@
+/og:title/ og:description ("… en Juncos, Puerto Rico"): el título sale de {{custom_values.business__county_name}}, así que es el mismo custom value, sin depender de que el builder expanda el Custom Code; 3. el subdominio del sitio (juncos.ilatekpr.com → Juncos); 4. los valores de marca del contrato (custom-values.json → brand). El portador que viaja en el embed se oculta siempre (nunca es contenido). Estado en
+{{custom_values.business__county_name}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}
+Login
+Sellado de techos
+Sellado de Techos en Puerto Rico que
+impermeabiliza de verdad
+tu propiedad.
+Ilatek sella techos residenciales, comerciales e industriales en {{custom_values.business__county_name}}
+labor desde $250
+: removemos el material vencido, corregimos empozamientos y aplicamos el sistema de sellado correcto para tu techo — con garantía por escrito.
+Solicita tu cotización
+Qué incluye el servicio ↓
+labor desde
+Precio base
+sistemas
+De sellado
+municipios
+Cobertura en PR
+Sistemas certificados · Garantía escrita
+Respuesta directa
+Sellado de techos en Puerto Rico: precio, duración y tiempo de obra
+El sellado de techos en Puerto Rico publica
+desde $250 por servicio
+, según el sistema. La silicona 100% publica
+20 a 25 años
+y se aplica en
+2 a 3 días
+. Agenda una visita o una inspección: $50 descontables del total del servicio, y el precio se confirma por escrito.
+Precio publicado
+Duración (silicona 100%)
+Tiempo de obra
+Losas, techos planos y concreto expuesto
+Sistema según techo
+Fuente: registro de hechos de Ilatek Techos, verificado el 7 de noviembre de 2026.
+Calcula el precio de tu techo
+undefined
+Sellado de 5 pasos, no una capa de pintura.
+Sistema de 5 pasos
+Remoción, lavado a presión, corrección de empozamientos, primer y membrana: el proceso completo que hace que el sellado dure años, no meses.
+Producto correcto por techo
+No todo techo lleva el mismo sellador. Recomendamos silicona, membrana, elastomérico, poliuretano o acrílico según tu superficie.
+Precio por labor, sin sorpresas
+Pagas por lo que mide tu techo: cotización clara por metro cuadrado, con el alcance y el sistema definidos por escrito.
+Qué incluye
+Qué incluye un sellado de techo completo.
+Un sellado serio se prepara antes de aplicarse.
+Ilatek remueve el material vencido, lava a presión, corrige empozamientos, aplica primer de adherencia y coloca la membrana impermeabilizante que corresponde a tu superficie.
+Remoción de selladores y pinturas vencidas
+Lavado a presión del techo
+Corrección de empozamientos y pendiente
+Aplicación de primer de adherencia
+Membrana impermeabilizante certificada
+Garantía por escrito del sellado
+Cotiza tu sellado
+Primer · Membrana · Sellado final
+¿Cuánto cuesta sellar un techo en Puerto Rico?
+El precio base publicado por Ilatek es
+, según el sistema. El precio final depende del trabajo y la condición del techo, y se confirma por escrito después de la visita o inspección de $50 descontables del total.
+Precio base publicado por sistema, con la página que lo publica y la fecha de verificación.
+Sistema
+Fuente
+Verificado
+Silicona 100%
+Publicado en /sellado-de-silicona
+7 nov 2026
+Membrana asfaltica
+Publicado en /membrana-asfaltica
+Recubrimiento elastomerico
+Publicado en /recubrimiento-elastomerico
+Poliuretano
+Publicado en /sellado-de-poliuretano
+Acrilico
+Publicado en /sellado-acrilico
+Fuente: precios base publicados por Ilatek Techos (noviembre 2026), por servicio. No incluyen reparaciones estructurales ni trabajos adicionales.
+Calcula el precio de tu techo con el cotizador de Ilatek
+¿Qué sistema de sellado de techo conviene más?
+No hay un solo sistema: la silicona 100% es la de mayor duración publicada (
+), membrana y poliuretano rondan
+10 a 15 años
+, y el acrílico
+7 a 10 años
+. La elección depende del sustrato, el tránsito y el presupuesto, no de la marca.
+Comparación de los 5 sistemas de sellado de Ilatek
+Precio desde
+Duración publicada
+Sustrato recomendado
+UV y lluvia
+Mantenimiento
+Cuándo elegirlo
+Limitación declarada
+Soporta radiación UV, lluvia torrencial y brisa salina sin degradarse
+2 a 3 días en un techo residencial típico, con preparación incluida
+Inspección anual recomendada
+Techos planos y zonas costeras donde se busca la mayor vida útil
+No se aplica sobre sellador vencido sin removerlo primero
+Techos planos y losas de gran espesor
+Resistente al tránsito y al sol; capa más gruesa que un coating
+2 a 4 días en una azotea residencial; superficies grandes requieren más
+Cuando el techo recibe tránsito o está muy deteriorado
+Se confirma en la inspección
+Concreto con microfisuras y techos que acumulan calor
+Acabado blanco que refleja la radiación solar y baja la temperatura del techo
+Mantenimiento periódico y techos que acumulan calor
+Rinde sobre superficie limpia; requiere preparación previa
+Azoteas con equipos y trafico
+Azoteas con equipos, mantenimiento o paso frecuente
+Requiere inspección periódica para retocar antes de que la capa se degrade
+Mantenimiento economico de techos ya sellados
+Acabado blanco que refleja el sol; la radiación UV y la humedad pueden acortar su vida
+1 a 2 días en un techo residencial, incluyendo lavado y capas
+Renovar un techo que ya tiene acrílico y reflejar el sol
+Su vida útil es menor que la silicona; conviene recubrirlo periódicamente
+Fuente: registro de hechos de Ilatek Techos (noviembre 2026). Duraciones y tiempos publicados para Puerto Rico; la vida útil real depende del mantenimiento y la exposición. Los criterios sin dato publicado se confirman en la inspección.
+Compara sellado e impermeabilización de techos en Puerto Rico
+¿Cuánto cuesta sellar un techo?
+El sellado de techos publica
+precios desde $250
+por servicio, según el sistema y la condición del techo. Agenda una visita o una inspección: $50 descontables del total del servicio, y el precio final se confirma por escrito antes de comenzar.
+Precio publicado por servicio. Incluye preparación y aplicación del sistema; no incluye reparaciones estructurales, remoción de escombros ni trabajos adicionales.
+Agenda tu visita o inspección con el cotizador de Ilatek
+Guías del blog
+Las preguntas que resuelven la decisión, respondidas por escrito
+Preguntas frecuentes de precio de sellado en Puerto Rico
+Dudas de materiales: silicona, membrana, poliuretano y acrílico
+Cómo se aplica un sellado de techo, paso a paso
+Garantías, licencias y quién responde por el trabajo
+Cada guía responde una duda concreta y enlaza al sistema o al método que la resuelve. Precios y duraciones verificados el 7 nov 2026.
+Sistemas de sellado
+Elige el sistema correcto para tu techo.
+Sellado con Silicona 100%
+El sistema de mayor durabilidad: silicona pura que mantiene su elasticidad y sella techos planos y concreto.
+Ver servicio
+Membrana modificada de gran espesor para techos sometidos a tráfico y a sol intenso.
+Coating elástico blanco que refleja el calor y sella microfisuras del concreto.
+Sellador de alta resistencia mecánica y química para superficies exigentes.
+Opción económica y reflectiva para mantenimiento periódico de techos ya sellados.
+Solicita tu cotización por $50 descontables del total
+Cómo funciona
+El sistema de 5 pasos que sella tu techo.
+Remoción, limpieza, corrección de empozamientos, primer y membrana: el proceso completo que hace durar el sellado.
+PASO 1
+Cotiza tu sellado de techos
+Usa el cotizador de Ilatek o escríbenos: evaluamos tu techo y te damos el precio de sellado de techos por escrito en minutos — sin compromiso.
+PASO 2
+Inspección y agenda
+Confirmamos el alcance de sellado de techos con una inspección del techo, defines la fecha y reservas con el depósito de $50, que se descuenta del total.
+PASO 3
+Trabajo terminado
+Ejecutamos sellado de techos con materiales certificados, protegemos el área y te entregamos la garantía por escrito.
+Cobertura de
+sellado de techos
+en toda la isla.
+Ilatek Techos brinda sellado de techos en los
+78 municipios de Puerto Rico
+. Atendemos tu área en
+{{custom_values.business__county_name}}
+y toda la isla: busca tu pueblo en el directorio y visita su página.
+No encontramos ese pueblo. Verifica el nombre e intenta nuevamente.
+Página 1 de 1
+Reseñas de clientes de Ilatek.
+Reseñas de personas que confiaron en Ilatek para mantenimiento y sellado de techos en Puerto Rico. Cambia de pestaña para ver cada fuente.
+Preguntas frecuentes
+Preguntas frecuentes sobre sellado de techos.
+¿Cuánto cuesta sellar un techo por servicio?
+El precio publicado va desde $250 instalado, según el sistema. Cada sistema se cotiza por trabajo desde $250, según el tamaño y la condición del techo. El estimado final depende del área y la condición del techo.
+Calcula tu precio en el cotizador
+¿Cuánto cuesta sellar un techo mediano?
+Con el precio publicado desde $250 por trabajo, el total se cierra después de la visita o inspección, porque el acceso, las juntas y la preparación cambian el alcance del trabajo.
+Cotiza con las medidas reales de tu techo
+¿Por qué varía el precio del sellado?
+Varía por cuatro factores verificables: el sistema elegido, el área en pies cuadrados, la condición de la superficie y la preparación necesaria. La silicona cuesta más por servicio que el acrílico, pero publica 20 a 25 años de duración frente a 7 a 10 del acrílico.
+Compara los cinco sistemas y sus precios
+¿Cuánto cuesta el sellado de silicona 100%?
+La silicona 100% se publica desde $250 instalada, el precio de entrada más alto de los cinco sistemas. Incluye preparación, primer y aplicación; el estimado final se confirma después de la inspección.
+Ver el detalle del sellado de silicona
+¿Cuánto cuesta la membrana asfáltica?
+La membrana asfáltica se publica desde $250 instalada, por trabajo. Es el sistema de mayor espesor y resistencia al tránsito, por eso cuesta más que un coating líquido como el elastomérico o el acrílico.
+Ver membrana asfáltica para techos
+¿Cuánto cuesta el sellado de poliuretano?
+El poliuretano se publica desde $250 instalado, el precio de entrada más alto entre los cinco sistemas. Se justifica en azoteas con equipos o paso frecuente, donde la resistencia mecánica pesa más que el precio por servicio.
+Ver sellado de poliuretano
+¿Cuánto cuesta el sellado acrílico?
+El acrílico se publica desde $250 instalado, el precio de entrada más bajo de los cinco sistemas. Rinde de 7 a 10 años, así que se plantea como mantenimiento periódico y no como solución definitiva para un techo deteriorado.
+Ver sellado acrílico
+¿Cuánto cuesta el recubrimiento elastomérico?
+El recubrimiento elastomérico se publica desde $250 instalado. Su acabado blanco refleja la radiación solar y baja la temperatura de la superficie, lo que ayuda en techos que acumulan calor y en el consumo de aire acondicionado.
+Ver recubrimiento elastomérico
+¿Cuánto dura un techo sellado con silicona?
+La silicona 100% publica una duración de 20 a 25 años sobre superficie preparada. Es la mayor vida útil entre los cinco sistemas: el poliuretano y la membrana publican 10 a 15 años, y el acrílico 7 a 10. El mantenimiento y la exposición costera ajustan ese plazo.
+Ver duración y proceso de la silicona
+¿Cuánto dura la membrana asfáltica?
+La membrana asfáltica publica una duración de 10 a 15 años. Su ventaja no es la longevidad máxima, sino el espesor y la resistencia al tránsito: por eso se recomienda en techos que se pisan, que tienen equipos o que están muy deteriorados.
+Ver membrana asfáltica
+¿Cuánto dura el poliuretano en un techo?
+El poliuretano publica una duración de 10 a 15 años. Requiere inspección periódica para retocar antes de que la capa empiece a degradarse, sobre todo en azoteas con equipos y paso frecuente, donde el roce desgasta primero las zonas de tránsito.
+Ver inspección y mantenimiento de techos
+¿Cuánto dura el sellado acrílico?
+El acrílico publica una duración de 7 a 10 años. En Puerto Rico la radiación UV y la humedad pueden acortar ese plazo, así que conviene revisarlo y recubrirlo periódicamente. Es el sistema más económico por servicio y el que antes pide mantenimiento.
+¿Cuánto dura el recubrimiento elastomérico?
+Ilatek no publica un plazo de duración para el elastomérico. Se confirma en la inspección según la exposición y el mantenimiento del techo. Lo que sí está publicado es su función: refleja la radiación solar, baja la temperatura de la superficie y sella microfisuras del concreto.
+Consulta el sistema en la inspección
+¿Qué sistema conviene para un techo plano?
+En techos planos la silicona 100% es la opción de mayor duración publicada, 20 a 25 años, y mantiene elasticidad frente al empozamiento. La membrana asfáltica compite cuando hay tránsito. La elección depende del sustrato y del uso, no de la marca.
+Ver sellado para techos planos
+¿Silicona o acrílico para mi techo?
+La silicona publica 20 a 25 años desde $250; el acrílico, 7 a 10 años desde $250. Si el techo ya tiene acrílico y solo necesita mantenimiento, el acrílico es más económico. Si buscas la mayor vida útil sin volver a sellar pronto, la silicona gana.
+Compara los cinco sistemas
+¿Silicona o membrana asfáltica?
+La silicona gana en elasticidad y duración publicada, 20 a 25 años; la membrana gana en espesor y resistencia al tránsito, con 10 a 15 años. Si el techo se pisa o tiene equipos, la membrana sostiene mejor. Si es una losa expuesta al sol, la silicona.
+¿Se puede sellar sobre un sellado viejo?
+No directamente. El sellador vencido debe removerse porque impide la adherencia, y aplicar una capa nueva encima de material suelto provoca desprendimientos. El proceso de Ilatek incluye remoción, lavado a presión, corrección de empozamientos, primer y membrana impermeabilizante.
+Ver el proceso de sellado
+¿Cuánto tarda el trabajo de sellado?
+Depende del sistema y del área. El acrílico publica 1 a 2 días en un techo residencial; la silicona y el poliuretano, 2 a 3 días; la membrana, 2 a 4. Las superficies comerciales grandes requieren más jornadas, y el curado depende del clima.
+Agenda tu inspección y recibe el estimado
+¿La inspección tiene algún costo?
+La visita o inspección cuesta $50 y se descuenta del total del servicio, sin compromiso. Ilatek sube al techo, diagnostica la condición de la superficie y entrega el precio por escrito. El alcance queda definido antes de comenzar.
+Reserva tu agenda con $50 descontables del total
+¿Qué depósito piden para agendar el trabajo?
+Se reserva la fecha con un depósito de $50, que se descuenta del total del trabajo. No es un cargo adicional: es la forma de separar la fecha y confirmar el alcance acordado en la cotización, con cobertura en los 78 municipios.
+Agenda tu inspección
+¿Cada cuánto se le da mantenimiento a un techo sellado?
+Ilatek recomienda inspección anual. En Puerto Rico el sol, la lluvia y la brisa salina aceleran el desgaste, y una revisión a tiempo evita que una microfisura se convierta en filtración. El sistema aplicado define cuándo toca retocar la superficie.
+¿Qué cubre la garantía del sellado?
+Ilatek entrega garantía escrita de mano de obra con materiales certificados. El plazo exacto y las exclusiones se documentan antes de comenzar; no se promete una duración de garantía que no esté respaldada por el fabricante o por el contrato firmado.
+Lee las condiciones de garantía
+¿Por qué elegir Ilatek Techos para sellar tu techo?
+Aplicamos el sistema completo de 5 pasos —remoción, limpieza, empozamientos, primer y membrana— y recomendamos el sellador correcto para tu superficie, con labor desde $250 y garantía escrita. Así evitas pagar dos veces por el mismo techo.
+Visita o inspección por $50
+Protege tu techo antes de la próxima lluvia.
+Solicita tu cotización por $50 descontables del total de sellado de techos en {{custom_values.business__county_name}} y recibe precio claro y por escrito — cotización por $50 descontables del total y cobertura en los 78 municipios de Puerto Rico.
+Respuesta en minutos · Sin compromiso
+Precio claro por escrito
+labor desde $250, confirmado después de la inspección.
+Inspección sin compromiso
+Subimos, diagnosticamos y te explicamos las opciones.
+Garantía de mano de obra
+Respaldada por escrito en cada trabajo que hacemos.
+Devasks
+Navegación de Ilatek
+Ilatek, inicio
+Logo de Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Logo%20de%20Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Navegación principal
+Idioma / Language
+Español
+English
+Abrir o cerrar el menú
+Ilatek Sellado de techos {{custom_values.business__county_name}}
+Sellado de techos de Ilatek Techos — impermeabilización en {{custom_values.business__county_name}}
+Sellado de Techos en {{custom_values.business__county_name}} · Ilatek Techos
+Sellado%20de%20techos%20de%20Ilatek%20Techos%20%E2%80%94%20impermeabilizaci%C3%B3n%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Sellado%20de%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%C2%B7%20Ilatek%20Techos
+Aplicación de membrana impermeabilizante en techo en {{custom_values.business__county_name}} — sellado de techos Ilatek
+Sellado de techos en {{custom_values.business__county_name}} · Ilatek Techos
+Aplicaci%C3%B3n%20de%20membrana%20impermeabilizante%20en%20techo%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%E2%80%94%20sellado%20de%20techos%20Ilatek
+Sellado%20de%20techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%C2%B7%20Ilatek%20Techos
+Cobertura de sellado de techos de Ilatek Techos en Puerto Rico
+Busca tu pueblo
+Buscar un municipio de Puerto Rico
+Limpiar búsqueda
+Municipios de Puerto Rico con servicio de sellado de techos
+Pie de página de Ilatek
+Facebook
+Facebook — servicio en {{custom_values.business__county_name}}
+Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Instagram
+Instagram — servicio en {{custom_values.business__county_name}}
+Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Youtube
+Youtube — servicio en {{custom_values.business__county_name}}
+Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+TikTok
+TikTok — servicio en {{custom_values.business__county_name}}
+TikTok%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+X — servicio en {{custom_values.business__county_name}}
+X%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+LinkedIn
+LinkedIn — servicio en {{custom_values.business__county_name}}
+LinkedIn%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Pinterest
+Pinterest — servicio en {{custom_values.business__county_name}}
+Pinterest%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D

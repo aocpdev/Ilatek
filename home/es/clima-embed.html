@@ -1,0 +1,940 @@
+    <!-- ILATEK:CLIMA:START -->
+<section id="ilatek-clima" class="ilcl" aria-labelledby="ilcl-h"
+  data-clima-county="{{custom_values.county_name_and_state}}"
+  data-clima-family="limpieza"
+  data-clima-service="Limpieza y Techos"
+  data-clima-dest="/cotizacion"
+  data-clima-base="https://{{custom_values.website_url}}"
+  data-clima-webhook="https://services.leadconnectorhq.com/hooks/8OxUENFVM60EKzqsTcoD/webhook-trigger/58Mcw8HwICP6Mjo2Wchf">
+    <style>
+    #ilatek-clima{--aw-blue:#0A84FF;--aw-sky:#4A9ADE;--aw-deep:#1C5AA6;--aw-ink:#ffffff;--aw-soft:rgba(255,255,255,.74);--aw-line:rgba(255,255,255,.18);--aw-glass:rgba(255,255,255,.12);
+      --uv-0:#34C759;--uv-1:#FFD60A;--uv-2:#FF9F0A;--uv-3:#FF3B30;--uv-4:#BF5AF2;
+      --rn-0:#64D2FF;--rn-1:#32ADE6;--rn-2:#0A84FF;--rn-3:#BF5AF2;
+      --wd-0:#30D158;--wd-1:#FFD60A;--wd-2:#FF9F0A;--wd-3:#FF453A;
+      width:100%;padding:56px 20px;box-sizing:border-box;color:var(--aw-ink);
+      background:linear-gradient(180deg,#4A9ADE 0%,#2A72C4 52%,#1C5AA6 100%);
+      font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Segoe UI",Manrope,system-ui,sans-serif;
+      -webkit-font-smoothing:antialiased}
+    #ilatek-clima *{box-sizing:border-box}
+    #ilatek-clima .ilcl-shell{max-width:1080px;margin:0 auto}
+    #ilatek-clima .ilcl-head{max-width:640px;margin:0 0 18px}
+    #ilatek-clima .ilcl-eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:inherit;font-weight:600;font-size:10px;line-height:1;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:rgba(255,255,255,.14);border:1px solid var(--aw-line);border-radius:999px;padding:6px 11px;-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+    #ilatek-clima h2{margin:10px 0 6px;font-family:inherit;font-size:clamp(22px,2.5vw,31px);line-height:1.12;letter-spacing:-.02em;font-weight:600}
+    #ilatek-clima .ilcl-sub{margin:0;color:var(--aw-soft);font-size:15px;line-height:1.55}
+    #ilatek-clima .ilcl-body{display:grid;grid-template-columns:minmax(0,330px) minmax(0,1fr);gap:14px;min-height:352px}
+    #ilatek-clima.ilcl-loading .ilcl-body{opacity:.55;transition:opacity .3s ease}
+
+    /* tarjeta principal */
+    #ilatek-clima .ilcl-now{position:relative;overflow:hidden;border-radius:26px;padding:22px;display:flex;flex-direction:column;gap:12px;min-height:352px;
+      background:linear-gradient(165deg,rgba(255,255,255,.22),rgba(255,255,255,.06));
+      border:1px solid rgba(255,255,255,.26);
+      -webkit-backdrop-filter:blur(24px) saturate(150%);backdrop-filter:blur(24px) saturate(150%);
+      box-shadow:0 18px 40px -22px rgba(0,20,40,.55), inset 0 1px 0 rgba(255,255,255,.35);
+      transition:background .5s ease}
+    #ilatek-clima .ilcl-now::after{content:"";position:absolute;inset:auto -28% -52% auto;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.22),transparent 66%);pointer-events:none}
+    #ilatek-clima .ilcl-now[data-sky="clear-night"]{background:linear-gradient(165deg,rgba(70,110,190,.5),rgba(10,24,52,.72))}
+    #ilatek-clima .ilcl-now[data-sky="rain"]{background:linear-gradient(165deg,rgba(90,140,180,.42),rgba(12,32,54,.72))}
+    #ilatek-clima .ilcl-now[data-sky="storm"]{background:linear-gradient(165deg,rgba(70,80,110,.45),rgba(10,14,26,.8))}
+    #ilatek-clima .ilcl-now[data-sky="cloud"]{background:linear-gradient(165deg,rgba(140,160,180,.4),rgba(30,44,60,.7))}
+    #ilatek-clima .ilcl-now[data-sky="fog"]{background:linear-gradient(165deg,rgba(150,165,175,.38),rgba(40,50,58,.7))}
+    #ilatek-clima .ilcl-now[data-sky="partly"]{background:linear-gradient(165deg,rgba(120,180,235,.45),rgba(18,58,104,.72))}
+    #ilatek-clima .ilcl-now-top{display:flex;align-items:center;gap:14px;position:relative;z-index:1}
+    #ilatek-clima .ilcl-now svg{width:58px;height:58px;flex:0 0 58px;filter:drop-shadow(0 4px 10px rgba(0,0,0,.22))}
+    #ilatek-clima .ilcl-temp{font-size:62px;font-weight:300;line-height:.98;letter-spacing:-.04em}
+    #ilatek-clima .ilcl-cond{font-size:14.5px;color:rgba(255,255,255,.92);margin-top:4px;font-weight:500}
+    #ilatek-clima .ilcl-place{font-size:11.5px;text-transform:uppercase;letter-spacing:.14em;color:rgba(255,255,255,.82);min-height:14px;display:flex;align-items:center;gap:5px}
+    #ilatek-clima .ilcl-place::before{content:"";width:7px;height:7px;border-radius:50%;background:#fff;opacity:.85;box-shadow:0 0 0 4px rgba(255,255,255,.18)}
+    #ilatek-clima .ilcl-upd{font-size:11px;color:rgba(255,255,255,.66);min-height:13px;display:flex;align-items:center;gap:6px;margin-top:auto}
+    #ilatek-clima .ilcl-upd::before{content:"";width:6px;height:6px;border-radius:50%;background:#30D158;animation:awPulse 2.6s ease-in-out infinite}
+    #ilatek-clima .ilcl-chips{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;position:relative;z-index:1}
+    #ilatek-clima .ilcl-chip{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.16);border-radius:14px;padding:9px 10px;display:flex;flex-direction:column;gap:3px;min-height:56px;justify-content:center}
+    #ilatek-clima .ilcl-chip span{font-size:10px;letter-spacing:.04em;text-transform:uppercase;color:rgba(255,255,255,.72)}
+    #ilatek-clima .ilcl-chip b{font-size:14.5px;font-weight:600;display:flex;align-items:center;gap:4px}
+    #ilatek-clima .ilcl-chip .ilcl-dot{display:inline-block;width:7px;height:7px;border-radius:50%;flex:0 0 7px}
+
+    /* panel */
+    #ilatek-clima .ilcl-panel{display:flex;flex-direction:column;gap:12px;min-width:0}
+    #ilatek-clima .ilcl-window{display:flex;align-items:center;gap:10px;min-height:45px;padding:11px 14px;border-radius:16px;
+      background:rgba(255,255,255,.12);border:1px solid var(--aw-line);border-left:3px solid #30D158;font-size:13.5px;line-height:1.4;color:#fff}
+    #ilatek-clima .ilcl-window.is-wet{border-left-color:#FF9F0A}
+    #ilatek-clima .ilcl-win-ico{opacity:.85}
+    /* gráfico */
+    #ilatek-clima .ilcl-chart{position:relative;background:#ffffff;border:1px solid rgba(17,22,75,.10);border-radius:20px;padding:12px 12px 4px;min-height:239px;box-shadow:0 8px 20px rgba(9,32,63,.12);
+      -webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px)}
+    #ilatek-clima .ilcl-chart-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:4px}
+    #ilatek-clima .ilcl-chart-head h3{margin:0;font-size:13px;font-weight:600;letter-spacing:.01em;color:#11164b}
+    #ilatek-clima .ilcl-legend{display:flex;gap:12px;font-size:10.5px;color:#5B6B7C}
+    #ilatek-clima .ilcl-legend i{display:inline-block;width:10px;height:3px;border-radius:2px;margin-right:4px;vertical-align:2px}
+    #ilatek-clima .ilcl-chart svg{display:block;width:100%;height:auto;cursor:crosshair;touch-action:pan-y}
+    #ilatek-clima .ilcl-chart svg:focus-visible{outline:2px solid #0A84FF;outline-offset:3px;border-radius:10px}
+    #ilatek-clima .ilcl-svg polyline{stroke-dasharray:1600;stroke-dashoffset:1600;animation:awDraw 1.2s cubic-bezier(.4,0,.2,1) .1s forwards}
+    #ilatek-clima .ilcl-svg rect{transform-box:fill-box;transform-origin:center bottom;animation:awBar .55s cubic-bezier(.2,.8,.2,1) both}
+    #ilatek-clima .ilcl-svg text{fill:#5B6B7C!important}
+    #ilatek-clima .ilcl-svg text[font-weight="700"]{fill:#11164b!important}
+    #ilatek-clima .ilcl-tip{position:absolute;transform:translate(-50%,-100%);background:rgba(10,22,38,.92);color:#fff;border-radius:11px;padding:7px 10px;font-size:11.5px;line-height:1.4;pointer-events:none;opacity:0;transition:opacity .16s ease;white-space:nowrap;z-index:3;max-width:240px;border:1px solid rgba(255,255,255,.14)}
+    #ilatek-clima .ilcl-tip.is-on{opacity:1}
+    #ilatek-clima .ilcl-tip b{font-size:12.5px}
+    /* días */
+    #ilatek-clima .ilcl-days{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;min-height:130px}
+    #ilatek-clima .ilcl-day{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);border-radius:16px;padding:10px 6px;text-align:center;display:flex;flex-direction:column;gap:4px;align-items:center;cursor:pointer;font:inherit;color:inherit;
+      transition:background .18s ease,transform .18s ease,border-color .18s ease}
+    #ilatek-clima .ilcl-day:hover{background:rgba(255,255,255,.2);transform:translateY(-2px)}
+    #ilatek-clima .ilcl-day[aria-selected="true"]{background:rgba(255,255,255,.26);border-color:rgba(255,255,255,.5)}
+    #ilatek-clima .ilcl-day b{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:rgba(255,255,255,.82)}
+    #ilatek-clima .ilcl-day svg{width:24px;height:24px}
+    #ilatek-clima .ilcl-hi{font-size:16px;font-weight:600}
+    #ilatek-clima .ilcl-lo{font-size:12px;color:rgba(255,255,255,.7)}
+    #ilatek-clima .ilcl-pop{display:inline-flex;align-items:center;gap:4px;font-size:10.5px;font-weight:700;padding:1px 6px;border-radius:7px;background:rgba(6,20,36,.42);color:#fff}
+    #ilatek-clima .ilcl-pop::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--pop-dot,#fff);flex:0 0 5px}
+    /* detalle */
+    #ilatek-clima .ilcl-detail{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);border-radius:18px;padding:12px 14px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;font-size:12.5px;min-height:120px}
+    #ilatek-clima .ilcl-detail div{display:flex;flex-direction:column;gap:3px}
+    #ilatek-clima .ilcl-detail span{font-size:10px;text-transform:uppercase;letter-spacing:.05em;color:rgba(255,255,255,.68)}
+    #ilatek-clima .ilcl-detail b{font-size:14px;font-weight:600;display:flex;align-items:center;gap:5px}
+    #ilatek-clima .ilcl-detail .ilcl-wide{display:block;grid-column:1/-1;border-top:1px solid rgba(255,255,255,.16);padding-top:9px;font-size:12.6px;color:rgba(255,255,255,.82);line-height:1.5}
+    #ilatek-clima .ilcl-insight{margin:0;padding:0;font-size:14px;line-height:1.55;min-height:64px;color:rgba(255,255,255,.9)}
+    #ilatek-clima .ilcl-insight:empty{visibility:hidden}
+    #ilatek-clima .ilcl-insight b{color:#fff}
+    
+    
+    
+    #ilatek-clima .ilcl-fields{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    #ilatek-clima label{display:flex;flex-direction:column;gap:5px;font-size:12px;font-weight:600;color:#5B6B7C;letter-spacing:.01em}
+    #ilatek-clima input,#ilatek-clima select{font:15px inherit;color:#0B1B2B;background:#F2F5F9;border:1px solid #E1E7EF;border-radius:12px;padding:12px 13px;width:100%;transition:border-color .15s,background .15s}
+    #ilatek-clima input[readonly]{background:#EDF1F6;color:#5B6B7C}
+    #ilatek-clima input:focus,#ilatek-clima select:focus,#ilatek-clima button:focus-visible{outline:none;border-color:var(--aw-blue);box-shadow:0 0 0 3px rgba(10,132,255,.18)}
+    #ilatek-clima .ilcl-actions{display:flex;align-items:center;gap:14px;margin-top:16px;flex-wrap:wrap}
+    #ilatek-clima button[type="submit"]{font:600 15px inherit;color:#fff;background:var(--aw-blue);border:0;border-radius:14px;padding:14px 24px;cursor:pointer;
+      transition:transform .15s ease,filter .15s ease,box-shadow .15s ease;box-shadow:0 10px 24px -12px rgba(10,132,255,.9)}
+    #ilatek-clima button[type="submit"]:hover{filter:brightness(1.06);transform:translateY(-1px)}
+    #ilatek-clima button[type="submit"]:active{transform:translateY(0) scale(.99)}
+    #ilatek-clima button[type="submit"][disabled]{opacity:.55;cursor:progress;box-shadow:none}
+    #ilatek-clima .ilcl-note{font-size:12px;color:#5B6B7C;margin:0}
+    #ilatek-clima .ilcl-err{color:#D70015;font-size:13px;margin:10px 0 0;min-height:0}
+    #ilatek-clima .ilcl-unit{position:absolute;top:16px;right:16px;z-index:2;display:flex;padding:2px;border-radius:10px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.22)}
+    #ilatek-clima .ilcl-unit button{font:600 11px inherit;padding:4px 9px;background:transparent;color:#fff;border:0;border-radius:8px;cursor:pointer;opacity:.72;transition:background .15s,opacity .15s}
+    #ilatek-clima .ilcl-unit button[aria-pressed="true"]{background:rgba(255,255,255,.9);color:#0B1B2B;opacity:1}
+
+    @keyframes awPulse{0%,100%{opacity:1}50%{opacity:.35}}
+    @keyframes awDraw{to{stroke-dashoffset:0}}
+    @keyframes awBar{from{transform:scaleY(.05);opacity:.2}to{transform:scaleY(1);opacity:1}}
+    @keyframes awFade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+    #ilatek-clima .ilcl-body.is-in .ilcl-now{animation:awFade .55s cubic-bezier(.2,.8,.2,1) both}
+    #ilatek-clima .ilcl-body.is-in .ilcl-panel>*{animation:awFade .55s cubic-bezier(.2,.8,.2,1) both}
+    #ilatek-clima .ilcl-body.is-in .ilcl-panel>*:nth-child(1){animation-delay:.04s}
+    #ilatek-clima .ilcl-body.is-in .ilcl-panel>*:nth-child(2){animation-delay:.1s}
+    #ilatek-clima .ilcl-body.is-in .ilcl-panel>*:nth-child(3){animation-delay:.16s}
+    #ilatek-clima .ilcl-body.is-in .ilcl-panel>*:nth-child(4){animation-delay:.22s}
+    #ilatek-clima .ilcl-body.is-in .ilcl-insight{animation:awFade .5s ease .28s both}
+
+    @media(min-width:901px){#ilatek-clima .ilcl-now{align-self:start}}
+    @media(max-width:900px){
+      #ilatek-clima .ilcl-body{grid-template-columns:1fr}
+      #ilatek-clima .ilcl-days{grid-template-columns:repeat(3,minmax(0,1fr))}
+      #ilatek-clima .ilcl-detail{grid-template-columns:1fr 1fr;min-height:204px}}
+    @media(max-width:560px){
+      #ilatek-clima{padding:44px 16px}
+      #ilatek-clima .ilcl-fields{grid-template-columns:1fr}
+      #ilatek-clima .ilcl-days{grid-template-columns:repeat(3,minmax(0,1fr))}
+      #ilatek-clima .ilcl-temp{font-size:54px}
+      #ilatek-clima .ilcl-chips{grid-template-columns:1fr 1fr}}
+    @media(prefers-reduced-motion:reduce){
+      #ilatek-clima *{animation:none!important;transition:none!important}}</style>
+<style>
+  /* Balance: la tarjeta de hoy iguala la altura de la columna derecha */
+  #ilatek-clima .ilcl-body{align-items:stretch}
+  #ilatek-clima .ilcl-now{height:100%;min-height:0}
+  /* Texto dinámico entre el widget y el formulario */
+  #ilatek-clima .ilcl-insight{padding-top:20px}
+  #ilatek-clima .ilcl-cal{margin:20px 0 0}
+  #ilatek-clima .ilcl-cal h3{margin:0 0 12px;font-size:1.15rem;color:#fff}
+  #ilatek-clima .ilcl-cal iframe{width:100%;border:0;height:min(780px,88vh);border-radius:18px;background:#fff}
+  @media(min-width:901px){
+    /* Los tres paneles con gráficas y datos caben en una pantalla, con aire arriba y abajo */
+    #ilatek-clima .ilcl-body{min-height:min(496px,66vh)}
+    #ilatek-clima .ilcl-chart{min-height:196px}
+    #ilatek-clima .ilcl-chart .ilcl-svg{height:148px}
+    #ilatek-clima .ilcl-days{min-height:112px}
+    #ilatek-clima .ilcl-detail{min-height:100px}}</style>
+
+  <div class="ilcl-shell">
+    <header class="ilcl-head">
+      <span class="ilcl-eyebrow"><span aria-hidden="true">☀</span><span data-es="Clima y decisión de servicio" data-en="Weather & service timing">Clima y decisión de servicio</span></span>
+      <h2 id="ilcl-h"><span data-es="El tiempo en" data-en="The weather in">El tiempo en</span> <span class="ilcl-county">{{custom_values.county_name_and_state}}</span></h2>
+      <p class="ilcl-sub" data-es="Datos de Open-Meteo para tu municipio: lluvia por hora, UV, viento y la ventana del día en que conviene trabajar." data-en="Open-Meteo data for your town: hourly rain, UV, wind and the window of the day when the work makes sense.">Datos de Open-Meteo para tu municipio: lluvia por hora, UV, viento y la ventana del día en que conviene trabajar.</p>
+    </header>
+
+    <div class="ilcl-body ilcl-loading" aria-busy="true">
+      <div class="ilcl-now" data-sky="clear-day">
+        <div class="ilcl-unit" role="group" aria-label="Unidad de temperatura">
+          <button type="button" data-unit="F" aria-pressed="true">°F</button><button type="button" data-unit="C" aria-pressed="false">°C</button>
+        </div>
+        <span class="ilcl-place"></span>
+        <div class="ilcl-now-top">
+          <span class="ilcl-icon" aria-hidden="true"></span>
+          <div>
+            <div class="ilcl-temp">—</div>
+            <div class="ilcl-cond"></div>
+          </div>
+        </div>
+        <div class="ilcl-chips">
+          <div class="ilcl-chip"><span data-es="Sensación" data-en="Feels like">Sensación</span><b class="ilcl-feels">—</b></div>
+          <div class="ilcl-chip"><span data-es="Humedad" data-en="Humidity">Humedad</span><b class="ilcl-hum">—</b></div>
+          <div class="ilcl-chip"><span data-es="Punto de rocío" data-en="Dew point">Punto de rocío</span><b class="ilcl-dew">—</b></div>
+          <div class="ilcl-chip"><span data-es="Viento" data-en="Wind">Viento</span><b class="ilcl-wind">—</b></div>
+          <div class="ilcl-chip"><span data-es="Índice UV" data-en="UV index">Índice UV</span><b class="ilcl-uv">—</b></div>
+          <div class="ilcl-chip"><span data-es="Nubosidad" data-en="Cloud cover">Nubosidad</span><b class="ilcl-cloudc">—</b></div>
+        </div>
+        <div class="ilcl-rec">
+          <span class="ilcl-rec-k" data-es="Recomendación" data-en="Recommendation">Recomendación</span>
+          <p class="ilcl-rec-t">—</p>
+        </div>
+        <span class="ilcl-upd"></span>
+      </div>
+
+      <div class="ilcl-panel">
+        <div class="ilcl-window"><span class="ilcl-win-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" focusable="false"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 1.8"/></svg></span><span class="ilcl-win-txt">—</span></div>
+
+        <div class="ilcl-chart">
+          <div class="ilcl-chart-head">
+            <h3 data-es="Próximas 18 horas" data-en="Next 18 hours">Próximas 18 horas</h3>
+            <div class="ilcl-legend">
+              <span><i style="background:#E53210"></i><span data-es="Temperatura" data-en="Temperature">Temperatura</span></span>
+              <span><i style="background:#4A9BE6"></i><span data-es="Prob. de lluvia" data-en="Rain chance">Prob. de lluvia</span></span>
+            </div>
+          </div>
+          <svg class="ilcl-svg" viewBox="0 0 720 190" role="img" tabindex="0" aria-label="Gráfico de temperatura y probabilidad de lluvia por hora"></svg>
+          <div class="ilcl-tip" aria-hidden="true"></div>
+        </div>
+
+        <div class="ilcl-days" role="tablist" aria-label="Pronóstico por día"></div>
+
+        <div class="ilcl-detail" role="tabpanel" aria-live="polite"></div>
+      </div>
+    </div>
+
+    <p class="ilcl-insight"></p>
+
+    <div class="ilcl-cal" hidden></div>
+  </div>
+
+  <script>
+  (function(){
+    var root=document.getElementById('ilatek-clima');
+    if(!root||root.getAttribute('data-ilcl-ready'))return;
+    root.setAttribute('data-ilcl-ready','1');
+
+    var RAW=(root.getAttribute('data-clima-county')||'').trim();
+    var FAMILY=root.getAttribute('data-clima-family')||'limpieza';
+    var SERVICE=root.getAttribute('data-clima-service')||'';
+    var DEST=root.getAttribute('data-clima-dest')||'/cotizacion';
+    var BASE=(root.getAttribute('data-clima-base')||'').replace(/\/+$/,'').replace(/\{\{|\}\}/g,'');
+    if(!/^https?:\/\/[^\s]/i.test(BASE))BASE=location.origin;
+    var HOOK=root.getAttribute('data-clima-webhook')||'https://services.leadconnectorhq.com/hooks/8OxUENFVM60EKzqsTcoD/webhook-trigger/58Mcw8HwICP6Mjo2Wchf';
+    /* Catálogo completo: el usuario puede cambiar de servicio y de municipio */
+    var CAL={"techos":"wM8KQhsYjEQAo0HbNGIh","limpieza":"i5HZobZjuSZcDl43qgOG"};
+    var SERVICES=[["techos","Sellado de Techos"],["techos","Sellado de Techos Residencial"],["techos","Sellado de Techos Comercial"],["techos","Sellado de Techos Industrial"],["techos","Sellado Acrílico para Techos"],["techos","Sellado de Poliuretano para Techos"],["techos","Sellado de Techos con Silicona 100%"],["techos","Sellado y Protección de Techos de Madera"],["techos","Reparación de Techos"],["techos","Reparación de Goteras"],["techos","Reparación de Filtraciones de Agua"],["techos","Reparación de Grietas"],["techos","Reparación de Techos Post-Huracán"],["techos","Reparación y Sellado de Techos"],["techos","Reparación de Techos de Asfalto (Shingles)"],["techos","Reparación de Techos de Concreto (Losas)"],["techos","Reparación y Sellado de Techos de Teja"],["techos","Impermeabilización de Techos"],["techos","Membrana Asfáltica para Techos"],["techos","Recubrimiento Elastomérico para Techos"],["techos","Inspección de Techos"],["techos","Inspección y Mantenimiento de Techos"],["techos","Mantenimiento Preventivo de Techos"],["techos","Limpieza de Techos y Canaletas"],["techos","Canales, Canaletas y Bajantes para Techos"],["techos","Corrección de Empozamientos de Agua"],["techos","Lavado a Presión de Techos"],["techos","Tragaluces y Skylights para Techos"],["techos","Techos Planos"],["techos","Techos De Zinc"],["techos","Techos Por Segmento"],["techos","Instalación y Reemplazo de Techos"],["limpieza","Limpieza de Ventanas"],["limpieza","Limpieza Profunda"],["limpieza","Limpieza Estándar"],["limpieza","Limpieza Residencial"],["limpieza","Limpieza Comercial"],["limpieza","Limpieza Industrial"],["limpieza","Limpieza Post-Construcción"],["limpieza","Limpieza de Mudanza"],["limpieza","Limpieza Airbnb y Rentals"],["limpieza","Limpieza de Alfombras"],["limpieza","Limpieza de Electrodomésticos"],["limpieza","Lavado a Presión"],["limpieza","Organización del Hogar"]];
+    var TOWNS=["Adjuntas","Aguada","Aguadilla","Aguas Buenas","Aibonito","Añasco","Arecibo","Arroyo","Barceloneta","Barranquitas","Bayamón","Cabo Rojo","Caguas","Camuy","Canóvanas","Carolina","Cataño","Cayey","Ceiba","Ciales","Cidra","Coamo","Comerío","Corozal","Culebra","Dorado","Fajardo","Florida","Guánica","Guayama","Guayanilla","Guaynabo","Gurabo","Hatillo","Hormigueros","Humacao","Isabela","Jayuya","Juana Díaz","Juncos","Lajas","Lares","Las Marías","Las Piedras","Loíza","Luquillo","Manatí","Maricao","Maunabo","Mayagüez","Moca","Morovis","Naguabo","Naranjito","Orocovis","Patillas","Peñuelas","Ponce","Quebradillas","Rincón","Río Grande","Sabana Grande","Salinas","San Germán","San Juan","San Lorenzo","San Sebastián","Santa Isabel","Toa Alta","Toa Baja","Trujillo Alto","Utuado","Vega Alta","Vega Baja","Vieques","Villalba","Yabucoa","Yauco"];
+    var COORDS={"Adjuntas":[18.1627,-66.7221],"Aguada":[18.3794,-67.1882],"Aguadilla":[18.4275,-67.1541],"Aguas Buenas":[18.2569,-66.1029],"Aibonito":[18.14,-66.266],"Añasco":[18.2827,-67.1396],"Arecibo":[18.4724,-66.7157],"Arroyo":[17.9658,-66.0613],"Barceloneta":[18.4505,-66.5385],"Barranquitas":[18.1866,-66.3063],"Bayamón":[18.3986,-66.1557],"Cabo Rojo":[18.0866,-67.1457],"Caguas":[18.2341,-66.0485],"Camuy":[18.4838,-66.8449],"Canóvanas":[18.3751,-65.8993],"Carolina":[18.3808,-65.9574],"Cataño":[18.4413,-66.1182],"Cayey":[18.1119,-66.166],"Ceiba":[18.2641,-65.6485],"Ciales":[18.3361,-66.4688],"Cidra":[18.1758,-66.1613],"Coamo":[18.08,-66.3579],"Comerío":[18.218,-66.226],"Corozal":[18.3411,-66.3168],"Culebra":[18.303,-65.301],"Dorado":[18.4588,-66.2677],"Fajardo":[18.3258,-65.6524],"Florida":[18.3625,-66.5613],"Guánica":[17.9716,-66.9079],"Guayama":[17.9841,-66.1138],"Guayanilla":[18.0191,-66.7918],"Guaynabo":[18.3575,-66.111],"Gurabo":[18.2544,-65.9729],"Hatillo":[18.4863,-66.8254],"Hormigueros":[18.1397,-67.1274],"Humacao":[18.1497,-65.8274],"Isabela":[18.5008,-67.0243],"Jayuya":[18.2186,-66.5916],"Juana Díaz":[18.0525,-66.5066],"Juncos":[18.2275,-65.921],"Lajas":[18.05,-67.0593],"Lares":[18.2947,-66.8771],"Las Marías":[18.2519,-66.9921],"Las Piedras":[18.183,-65.8663],"Loíza":[18.4313,-65.8802],"Luquillo":[18.3725,-65.7165],"Manatí":[18.4275,-66.4921],"Maricao":[18.1808,-66.9799],"Maunabo":[18.0072,-65.8993],"Mayagüez":[18.2011,-67.1396],"Moca":[18.3947,-67.1132],"Morovis":[18.3258,-66.4066],"Naguabo":[18.2116,-65.7349],"Naranjito":[18.3008,-66.2449],"Orocovis":[18.2269,-66.391],"Patillas":[18.0064,-66.0157],"Peñuelas":[18.0563,-66.7216],"Ponce":[18.0103,-66.624],"Quebradillas":[18.4738,-66.9385],"Rincón":[18.3402,-67.2499],"Río Grande":[18.3802,-65.8313],"Sabana Grande":[18.0777,-66.9604],"Salinas":[17.9775,-66.2979],"San Germán":[18.0816,-67.0449],"San Juan":[18.4663,-66.1057],"San Lorenzo":[18.1894,-65.961],"San Sebastián":[18.3366,-66.9902],"Santa Isabel":[17.9661,-66.4049],"Toa Alta":[18.3883,-66.2482],"Toa Baja":[18.4438,-66.2596],"Trujillo Alto":[18.3547,-66.0074],"Utuado":[18.2655,-66.7004],"Vega Alta":[18.4122,-66.3313],"Vega Baja":[18.4444,-66.3877],"Vieques":[18.425,-65.8329],"Villalba":[18.1272,-66.4921],"Yabucoa":[18.0505,-65.8793],"Yauco":[18.035,-66.8499]}; // coordenadas fijas de los 78 municipios: sin geocoding en tiempo de ejecución
+    function svcFamily(name){for(var i=0;i<SERVICES.length;i++)if(SERVICES[i][1]===name)return SERVICES[i][0];return FAMILY;}
+    function setDest(){
+      DEST=(FAMILY==='techos')?'/cotizacion-techos':'/cotizacion';
+    }
+    function fillServices(){
+      var sel=root.querySelector('select[name="service"]');
+      if(!sel)return;
+      if(SERVICE&&!SERVICES.some(function(s){return s[1]===SERVICE;}))SERVICES.unshift([FAMILY,SERVICE]);
+      sel.innerHTML='';
+      [['techos','Techos'],['limpieza','Limpieza']].forEach(function(g){
+        var og=document.createElement('optgroup');og.label=g[1];
+        SERVICES.filter(function(s){return s[0]===g[0];}).forEach(function(s){
+          var o=document.createElement('option');
+          o.value=s[1];o.textContent=s[1];o.setAttribute('data-family',s[0]);
+          if(s[1]===SERVICE)o.selected=true;
+          og.appendChild(o);
+        });
+        if(og.children.length)sel.appendChild(og);
+      });
+      sel.value=SERVICE;
+      sel.addEventListener('change',function(){
+        var o=sel.options[sel.selectedIndex];
+        FAMILY=o.getAttribute('data-family')||FAMILY;
+        SERVICE=sel.value;
+        setDest();
+        root.setAttribute('data-clima-family',FAMILY);
+        if(DATA){renderInsight();renderWindow();}
+      });
+    }
+    function fillCounties(){
+      var sel=root.querySelector('[name="county"]');
+      if(!sel||sel.tagName!=='SELECT')return;
+      if(!sel.options.length){
+        TOWNS.forEach(function(n){
+          var o=document.createElement('option');o.value=n;o.textContent=n;sel.appendChild(o);
+        });
+        sel.addEventListener('change',function(){
+          var v=sel.value;if(!v)return;
+          TOWN=v;setLabel(v);
+          if(!document.hidden)run(true);
+        });
+      }
+      var has=Array.prototype.some.call(sel.options,function(o){return o.value===LABEL;});
+      if(has)sel.value=LABEL;else sel.selectedIndex=-1;
+    }
+    var CACHE='ilatek-clima:v2:';
+    var TTL=30*60*1000; // caché por municipio: 30 min sin volver a pedir nada
+    var REFRESH=10*60*1000; // con la página abierta, refresco cada 10 min
+    var UNIT='F';
+    try{var su=localStorage.getItem('ilatek-clima:unit');if(su==='C'||su==='F')UNIT=su;}catch(e){}
+
+    var L={
+      es:{today:'Hoy',feels:'Sensación',rain:'Lluvia',wind:'Viento',hum:'Humedad',pop:'lluvia',uv:'UV',
+        now:'Ahora mismo',updated:'Actualizado',gusts:'rachas',dew:'Rocío',clouds:'nubes',
+        best:'Mejor ventana hoy',window:'%s · %d%% de lluvia',noWindow:'Hoy no hay ventana seca clara: el trabajo exterior conviene moverlo.',
+        sunrise:'Sale el sol',sunset:'Se pone el sol',rainSum:'Lluvia del día',rainHours:'Horas con lluvia',gustMax:'Rachas máx.',uvMax:'UV máx.',
+        uv0:'Bajo',uv1:'Moderado',uv2:'Alto',uv3:'Muy alto',uv4:'Extremo',
+        wd0:'Flojo',wd1:'Moderado',wd2:'Fuerte',wd3:'Muy fuerte',
+        dayAdvice:'%s: %d%% de lluvia y %s de UV. %s',
+        dry:'Ventana buena: sin lluvia alta a la vista, ideal para inspección y trabajo en el techo.',
+        wet:'Hoy no es día para sellar: el techo tiene que estar seco. Aprovecha para la agenda con $50 descontables del total y separar la fecha.',
+        wetClean:'Con esta probabilidad de lluvia, mejor el trabajo interior hoy; el exterior lo movemos a la ventana más seca de la semana.',
+        dryClean:'Buen día para el exterior: ventanas, canaletas y lavado a presión rinden más sin lluvia.',
+        uvHi:'El índice UV está alto: conviene trabajar temprano y proteger la superficie.',
+        bad:'No pudimos cargar el pronóstico. Puedes cotizar igual: te confirmamos la fecha con el clima a la vista.',
+        needName:'Escribe tu nombre.',needPhone:'Escribe un teléfono válido.',sending:'Enviando…',err:'No pudimos enviar el formulario. Intenta de nuevo o llámanos.'},
+      en:{today:'Today',feels:'Feels',rain:'Rain',wind:'Wind',hum:'Humidity',pop:'rain',uv:'UV',
+        now:'Right now',updated:'Updated',gusts:'gusts',dew:'Dew',clouds:'clouds',
+        best:'Best window today',window:'%s · %d%% rain',noWindow:'No clear dry window today: move exterior work.',
+        sunrise:'Sunrise',sunset:'Sunset',rainSum:'Rain today',rainHours:'Rain hours',gustMax:'Max gusts',uvMax:'UV max',
+        uv0:'Low',uv1:'Moderate',uv2:'High',uv3:'Very high',uv4:'Extreme',
+        wd0:'Light',wd1:'Moderate',wd2:'Strong',wd3:'Very strong',
+        dayAdvice:'%s: %d%% rain and %s UV. %s',
+        dry:'Good window: no high rain risk, ideal for inspection and roof work.',
+        wet:'Not a sealing day: the roof has to be dry. Use it for the $50 inspection (deducted from the total) and to hold your date.',
+        wetClean:'With this rain chance, keep it indoors today; we move the exterior to the driest window of the week.',
+        dryClean:'Good day outside: windows, gutters and pressure washing perform better without rain.',
+        uvHi:'UV is high: start early and protect the surface.',
+        bad:'We could not load the forecast. You can still get a quote: we confirm the date with the weather in hand.',
+        needName:'Enter your name.',needPhone:'Enter a valid phone.',sending:'Sending…',err:'We could not send the form. Try again or call us.'}
+    };
+    var CODES={0:['Despejado','Clear'],1:['Mayormente despejado','Mostly clear'],2:['Parcialmente nublado','Partly cloudy'],3:['Nublado','Overcast'],45:['Niebla','Fog'],48:['Niebla','Fog'],51:['Llovizna','Drizzle'],53:['Llovizna','Drizzle'],55:['Llovizna','Drizzle'],56:['Llovizna helada','Freezing drizzle'],57:['Llovizna helada','Freezing drizzle'],61:['Lluvia','Rain'],63:['Lluvia','Rain'],65:['Lluvia fuerte','Heavy rain'],66:['Lluvia helada','Freezing rain'],67:['Lluvia helada','Freezing rain'],71:['Nieve','Snow'],73:['Nieve','Snow'],75:['Nieve','Snow'],77:['Nieve','Snow'],80:['Aguaceros','Showers'],81:['Aguaceros','Showers'],82:['Aguaceros fuertes','Heavy showers'],85:['Nieve','Snow'],86:['Nieve','Snow'],95:['Tormenta','Thunderstorm'],96:['Tormenta','Thunderstorm'],99:['Tormenta fuerte','Severe storm']};
+
+    var ICONS={
+      sun:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"/></svg>',
+      partly:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="8.5" cy="8.5" r="3.2"/><path d="M8.5 2.6v1.6M2.6 8.5h1.6M3.9 3.9l1.1 1.1"/><path d="M8 17.5h9.5a3 3 0 0 0 .2-6 4 4 0 0 0-7.6-1.2A3.4 3.4 0 0 0 8 17.5z"/></svg>',
+      cloud:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M6.5 18.5h11a3.2 3.2 0 0 0 .2-6.4 4.6 4.6 0 0 0-8.7-1.4A3.7 3.7 0 0 0 6.5 18.5z"/></svg>',
+      fog:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M6 15h12M4 11h16M7 7h10"/><path d="M6 19h12"/></svg>',
+      drizzle:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M6.5 14.5h11a3.2 3.2 0 0 0 .2-6.4A4.6 4.6 0 0 0 9 6.7a3.7 3.7 0 0 0-2.5 7.8z"/><path d="M9 18v1.6M13 18v1.6M17 18v1.6"/></svg>',
+      rain:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M6.5 13.5h11a3.2 3.2 0 0 0 .2-6.4A4.6 4.6 0 0 0 9 5.7a3.7 3.7 0 0 0-2.5 7.8z"/><path d="M8.5 17l-1 3.5M13 17l-1 3.5M17.5 17l-1 3.5"/></svg>',
+      storm:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M6.5 13h11a3.2 3.2 0 0 0 .2-6.4A4.6 4.6 0 0 0 9 5.2a3.7 3.7 0 0 0-2.5 7.8z"/><path d="M13 15l-2.6 4h3.2l-1.4 3"/></svg>',
+      snow:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M12 4v16M5 8l14 8M19 8L5 16"/></svg>'
+    };
+    /* Fase real de la luna para el icono nocturno. Sólo UI: el mes sinódico se
+       cuenta desde la luna nueva del 2000-01-06 18:14 UTC, sin datos externos. */
+    var SYNODIC=29.530588853, LUNA_NUEVA=Date.UTC(2000,0,6,18,14);
+    function moonPhase(d){
+      d=d||new Date();
+      var dias=(d.getTime()-LUNA_NUEVA)/86400000;
+      return ((dias/SYNODIC)%1+1)%1;
+    }
+    function moonLabel(p){
+      var i=(p<0.02||p>0.98)?0:(p<0.23?1:(p<0.27?2:(p<0.48?3:(p<=0.52?4:(p<0.73?5:(p<0.77?6:7))))));
+      var es=['Luna nueva','Luna creciente','Cuarto creciente','Gibosa creciente','Luna llena','Gibosa menguante','Cuarto menguante','Luna menguante'];
+      var en=['New moon','Waxing crescent','First quarter','Waxing gibbous','Full moon','Waning gibbous','Last quarter','Waning crescent'];
+      return (lang()==='en'?en:es)[i];
+    }
+    function moonFace(p){
+      var r=9,k=Math.cos(2*Math.PI*p),rx=(Math.abs(k)*r).toFixed(2),cara='';
+      if(p>0.02&&p<0.48){cara='<path d="M12 3 A'+r+' '+r+' 0 0 1 12 21 A'+rx+' '+r+' 0 0 '+(p<0.25?0:1)+' 12 3 Z" fill="currentColor" stroke="none"/>';}
+      else if(p>0.52&&p<0.98){cara='<path d="M12 3 A'+r+' '+r+' 0 0 0 12 21 A'+rx+' '+r+' 0 0 '+(p<0.75?0:1)+' 12 3 Z" fill="currentColor" stroke="none"/>';}
+      else if(p>=0.48&&p<=0.52){cara='<circle cx="12" cy="12" r="'+r+'" fill="currentColor" stroke="none"/>';}
+      return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="'+r+'" fill="rgba(255,255,255,.16)" stroke="currentColor" stroke-width="1.3"/>'+cara+'</svg>';
+    }
+    function moonPartly(){
+      return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true" focusable="false">'
+        +'<path d="M9.1 4.2a3.9 3.9 0 1 0 3 6.6 4.8 4.8 0 0 1-3-6.6z" fill="currentColor" stroke="none"/>'
+        +'<path d="M8 17.5h9.5a3 3 0 0 0 .2-6 4 4 0 0 0-7.6-1.2A3.4 3.4 0 0 0 8 17.5z"/></svg>';
+    }
+    function iconFor(code){
+      if(code==null)return ICONS.cloud;
+      if(code<=1)return ICONS.sun;
+      if(code===2)return ICONS.partly;
+      if(code===3)return ICONS.cloud;
+      if(code===45||code===48)return ICONS.fog;
+      if(code>=51&&code<=57)return ICONS.drizzle;
+      if(code>=61&&code<=67)return ICONS.rain;
+      if(code>=71&&code<=77)return ICONS.snow;
+      if(code>=80&&code<=82)return ICONS.rain;
+      if(code>=85&&code<=86)return ICONS.snow;
+      if(code>=95)return ICONS.storm;
+      return ICONS.cloud;
+    }
+    function skyFor(code,isDay){
+      if(code==null)return 'cloud';
+      if(code>=95)return 'storm';
+      if(code>=51&&code<=67)return 'rain';
+      if(code>=80&&code<=82)return 'rain';
+      if(code===45||code===48)return 'fog';
+      if(code===3||code>=71)return 'cloud';
+      if(code===2)return 'partly';
+      return isDay?'clear-day':'clear-night';
+    }
+    function lang(){var l=null;try{l=window.__ilatekLang||localStorage.getItem('ilatek-lang')}catch(e){}l=l||'es';return /^en/i.test(l)?'en':'es';}
+    function t(k){return (L[lang()]||L.es)[k];}
+    function cond(code){var c=CODES[code]||['—','—'];return lang()==='en'?c[1]:c[0];}
+    function fmt(n){return Math.round(n);}
+    function tempC(v){return UNIT==='C'?(v-32)*5/9:v;}
+    function tempTxt(v){return fmt(v==null?NaN:tempC(v))+'°';}
+    function uvIdx(uv){if(uv==null||isNaN(uv))return 0;if(uv<3)return 0;if(uv<6)return 1;if(uv<8)return 2;if(uv<11)return 3;return 4;}
+    var UVCOL=['var(--uv-0)','var(--uv-1)','var(--uv-2)','var(--uv-3)','var(--uv-4)'];
+    function rainIdx(p){if(p==null)return 0;if(p<20)return 0;if(p<50)return 1;if(p<75)return 2;return 3;}
+    var RNCOL=['var(--rn-0)','var(--rn-1)','var(--rn-2)','var(--rn-3)'];
+    function windIdx(m){if(m==null)return 0;if(m<10)return 0;if(m<20)return 1;if(m<30)return 2;return 3;}
+    var WDCOL=['var(--wd-0)','var(--wd-1)','var(--wd-2)','var(--wd-3)'];
+
+    var countyInput=root.querySelector('[name="county"]');
+    var placeEl=root.querySelector('.ilcl-place');
+    var countyEl=root.querySelector('.ilcl-county');
+    var svg=root.querySelector('.ilcl-svg');
+    var tip=root.querySelector('.ilcl-tip');
+    var daysEl=root.querySelector('.ilcl-days');
+    var detailEl=root.querySelector('.ilcl-detail');
+    var chartWrap=root.querySelector('.ilcl-chart');
+
+    function cleanCounty(v){
+      v=String(v||'').trim();
+      if(!v||/\{\{|\}\}/.test(v))return '';
+      return v.replace(/\s*,\s*(Puerto Rico|PR|USA|US)\s*$/i,'').trim();
+    }
+    var TOWN=cleanCounty(RAW);
+    var LABEL=TOWN||'Puerto Rico';
+    fillServices();
+    fillCounties();
+    if(countyInput)countyInput.value=LABEL;
+    if(placeEl)placeEl.textContent=LABEL;
+    if(countyEl)countyEl.textContent=LABEL;
+
+    function cacheGet(k){try{var raw=sessionStorage.getItem(CACHE+k);if(!raw)return null;var o=JSON.parse(raw);if(!o||Date.now()-o.t>TTL)return null;return o.v;}catch(e){return null;}}
+    function cacheSet(k,v){try{sessionStorage.setItem(CACHE+k,JSON.stringify({t:Date.now(),v:v}));}catch(e){}}
+
+    async function geo(town){
+      if(!town)return {name:'Puerto Rico',lat:18.4655,lon:-66.1057};
+      var c=COORDS[town];
+      if(c)return {name:town,lat:c[0],lon:c[1]};
+      var tries=[town];
+      var first=town.split(/[\s,]+/)[0];
+      if(first&&first!==town)tries.push(first);
+      for(var i=0;i<tries.length;i++){
+        try{
+          var u='https://geocoding-api.open-meteo.com/v1/search?name='+encodeURIComponent(tries[i])+'&count=1&language=es&format=json&countryCode=PR';
+          var _gc=new AbortController(),_gt=setTimeout(function(){_gc.abort();},8000),r=await fetch(u,{mode:'cors',credentials:'omit',signal:_gc.signal});clearTimeout(_gt);
+          if(!r.ok)continue;
+          var j=await r.json();
+          var hit=j&&j.results&&j.results[0];
+          if(hit)return {name:hit.name||town,lat:hit.latitude,lon:hit.longitude};
+        }catch(e){}
+      }
+      return {name:'Puerto Rico',lat:18.4655,lon:-66.1057};
+    }
+
+    async function forecast(lat,lon){
+      var u='https://api.open-meteo.com/v1/forecast?latitude='+lat+'&longitude='+lon
+        +'&current=temperature_2m,relative_humidity_2m,apparent_temperature,dew_point_2m,precipitation,weather_code,cloud_cover,wind_speed_10m,wind_gusts_10m,wind_direction_10m,uv_index,is_day'
+        +'&hourly=temperature_2m,precipitation_probability,precipitation,weather_code,wind_speed_10m,wind_gusts_10m,uv_index'
+        +'&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,precipitation_sum,precipitation_hours,uv_index_max,wind_gusts_10m_max,sunrise,sunset'
+        +'&timezone=America%2FPuerto_Rico&temperature_unit=fahrenheit&wind_speed_unit=mph&forecast_days=7&forecast_hours=24';
+      var ctl=new AbortController();
+      var to=setTimeout(function(){ctl.abort();},8000);
+      try{
+        var r=await fetch(u,{signal:ctl.signal,mode:'cors',credentials:'omit'});
+        if(!r.ok)throw new Error('http '+r.status);
+        return await r.json();
+      }finally{clearTimeout(to);}
+    }
+
+    var DATA=null, PLACE=null, DAY=0;
+
+    function compass(deg){
+      if(deg==null)return '';
+      var p=['N','NE','E','SE','S','SO','O','NO'];
+      return p[Math.round(((deg%360)/45))%8];
+    }
+    function hourLabel(iso){
+      var d=new Date(iso);
+      return new Intl.DateTimeFormat(lang()==='en'?'en-US':'es-PR',{hour:'numeric'}).format(d);
+    }
+    function dayName(iso,opt){
+      var d=new Date(iso+'T12:00:00');
+      return new Intl.DateTimeFormat(lang()==='en'?'en-US':'es-PR',opt).format(d).replace('.','');
+    }
+
+    function chip(el,html){el.innerHTML=html;}
+
+    function renderNow(){
+      var cur=DATA.current||{}, day=DATA.daily||{};
+      var uv=cur.uv_index, isDay=cur.is_day!==0;
+      var now=root.querySelector('.ilcl-now');
+      now.setAttribute('data-sky',skyFor(cur.weather_code,isDay));
+      root.setAttribute('data-sky',skyFor(cur.weather_code,isDay));
+      root.querySelector('.ilcl-temp').textContent=tempTxt(cur.temperature_2m);
+      root.querySelector('.ilcl-cond').textContent=cond(cur.weather_code);
+      var lunaP=moonPhase(), iconoHtml=iconFor(cur.weather_code);
+      if(!isDay){
+        if(cur.weather_code<=1)iconoHtml=moonFace(lunaP);
+        else if(cur.weather_code===2)iconoHtml=moonPartly();
+      }
+      root.querySelector('.ilcl-icon').innerHTML=iconoHtml;
+      var iconoEl=root.querySelector('.ilcl-icon');
+      if(!isDay&&cur.weather_code<=2){
+        iconoEl.setAttribute('title',moonLabel(lunaP));
+        var eyebrowIcon=root.querySelector('.ilcl-eyebrow span[aria-hidden="true"]');
+        if(eyebrowIcon)eyebrowIcon.textContent='☾';
+      }
+      placeEl.textContent=PLACE.name;
+      chip(root.querySelector('.ilcl-feels'),tempTxt(cur.apparent_temperature)+'<span style="font-size:10px;opacity:.7">'+UNIT+'</span>');
+      root.querySelector('.ilcl-hum').textContent=fmt(cur.relative_humidity_2m)+'%';
+      chip(root.querySelector('.ilcl-dew'),tempTxt(cur.dew_point_2m)+'<span style="font-size:10px;opacity:.7">'+UNIT+'</span>');
+      chip(root.querySelector('.ilcl-wind'),
+        '<span class="ilcl-dot" style="background:'+WDCOL[windIdx(cur.wind_speed_10m)]+'"></span>'+fmt(cur.wind_speed_10m)+' mph '+compass(cur.wind_direction_10m));
+      var ui=uvIdx(uv);
+      chip(root.querySelector('.ilcl-uv'),
+        '<span class="ilcl-dot" style="background:'+UVCOL[ui]+'"></span>'+(uv==null?'—':fmt(uv))+' · '+(lang()==='en'?['Low','Moderate','High','Very high','Extreme'][ui]:['Bajo','Moderado','Alto','Muy alto','Extremo'][ui]));
+      root.querySelector('.ilcl-cloudc').textContent=fmt(cur.cloud_cover)+'%';
+      var upd=root.querySelector('.ilcl-upd');
+      upd.textContent=t('updated')+' '+new Intl.DateTimeFormat(lang()==='en'?'en-US':'es-PR',{hour:'numeric',minute:'2-digit'}).format(new Date());
+    }
+
+    var lastNarrow=null;
+    function drawChart(){
+      var hr=DATA.hourly||{}, times=hr.time||[];
+      if(!times.length){svg.innerHTML='';return;}
+      var now=new Date();
+      var start=0;
+      for(var i=0;i<times.length;i++){if(new Date(times[i])>=new Date(now.getTime()-3600000)){start=i;break;}}
+      var W=720,H=190,PADL=8,PADR=8,TOPY=26,BOTY=140,CHARTW;
+      var narrow=chartWrap.clientWidth<560;
+      lastNarrow=narrow;
+      if(narrow)W=380;
+      var N=Math.min(narrow?12:18,times.length-start);
+      CHARTW=W-PADL-PADR;
+      svg.setAttribute('viewBox','0 0 '+W+' 190');
+      var temps=[],pops=[],labels=[];
+      for(var k=0;k<N;k++){
+        var j=start+k;
+        temps.push(hr.temperature_2m[j]);
+        pops.push(hr.precipitation_probability[j]==null?0:hr.precipitation_probability[j]);
+        labels.push(times[j]);
+      }
+      var tmin=Math.min.apply(null,temps),tmax=Math.max.apply(null,temps);
+      if(tmax-tmin<4){tmin-=2;tmax+=2;}
+      var step=CHARTW/(N-1);
+      var x=function(i){return PADL+i*step;};
+      var y=function(v){return BOTY-((v-tmin)/(tmax-tmin))*(BOTY-TOPY);};
+
+      var bars='';
+      for(var b=0;b<N;b++){
+        var h=Math.max(2,(pops[b]/100)*38);
+        bars+='<rect x="'+(x(b)-step*0.28)+'" y="'+(BOTY+8-h)+'" width="'+(step*0.56)+'" height="'+h+'" rx="2.5" fill="'+RNCOL[rainIdx(pops[b])]+'" opacity="'+(pops[b]<10?0.4:0.9)+'"/>';
+      }
+      var pts=[];
+      for(var p=0;p<N;p++)pts.push(x(p).toFixed(1)+','+y(temps[p]).toFixed(1));
+      var area='M'+pts.join(' L')+' L'+x(N-1).toFixed(1)+','+(BOTY+6)+' L'+x(0).toFixed(1)+','+(BOTY+6)+' Z';
+      var grid='';
+      for(var g=0;g<=3;g++){
+        var gy=TOPY+((BOTY-TOPY)/3)*g;
+        grid+='<line x1="'+PADL+'" y1="'+gy.toFixed(1)+'" x2="'+(W-PADR)+'" y2="'+gy.toFixed(1)+'" stroke="#E1E6EE" stroke-width="1"/>';
+      }
+      var labelsSvg='';
+      for(var l=0;l<N;l+=narrow?2:3){
+        labelsSvg+='<text x="'+x(l).toFixed(1)+'" y="'+(H-8)+'" text-anchor="'+(l===0?'start':'middle')+'" font-size="11" fill="#5b6380" font-family="Manrope,sans-serif">'+hourLabel(labels[l])+'</text>';
+      }
+      var hi='';
+      for(var q=0;q<N;q+=3){
+        hi+='<text x="'+x(q).toFixed(1)+'" y="'+(y(temps[q])-9).toFixed(1)+'" text-anchor="'+(q===0?'start':'middle')+'" font-size="11.5" font-weight="700" fill="#11164b" font-family="Outfit,sans-serif">'+tempTxt(temps[q])+'</text>';
+      }
+      svg.innerHTML=
+        '<defs><linearGradient id="ilclTg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#E53210" stop-opacity=".20"/><stop offset="100%" stop-color="#E53210" stop-opacity="0"/></linearGradient></defs>'
+        +grid+bars
+        +'<path d="'+area+'" fill="url(#ilclTg)"/>'
+        +'<polyline points="'+pts.join(' ')+'" fill="none" stroke="#E53210" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>'
+        +hi+labelsSvg
+        +'<circle class="ilcl-cursor" cx="-99" cy="-99" r="5" fill="#fff" stroke="#E53210" stroke-width="2.6" opacity="0"/>';
+
+      svg.setAttribute('aria-label',(lang()==='en'?'Hourly temperature and rain chance from ':'Temperatura y probabilidad de lluvia desde ')+hourLabel(labels[0]));
+
+      function showAt(idx){
+        if(idx<0||idx>=N)return;
+        var cur=svg.querySelector('.ilcl-cursor');
+        cur.setAttribute('cx',x(idx));cur.setAttribute('cy',y(temps[idx]));cur.setAttribute('opacity','1');
+        var w=svg.getBoundingClientRect().width;
+        var px=(x(idx)/W)*w;
+        var py=(y(temps[idx])/H)*svg.getBoundingClientRect().height;
+        tip.innerHTML='<b>'+hourLabel(labels[idx])+'</b><br>'+tempTxt(temps[idx])+' · '+pops[idx]+'% '+t('pop')+(hr.wind_speed_10m?' · '+fmt(hr.wind_speed_10m[start+idx])+' mph':'');
+        var half=tip.offsetWidth/2;
+        tip.style.left=Math.max(half+4,Math.min(w-half-4,px))+'px';
+        tip.style.top=Math.max(34,py-6+ (chartWrap.querySelector('.ilcl-chart-head').offsetHeight))+'px';
+        tip.classList.add('is-on');
+      }
+      function hide(){var c=svg.querySelector('.ilcl-cursor');if(c)c.setAttribute('opacity','0');tip.classList.remove('is-on');}
+      function idxFromEvent(ev){
+        var r=svg.getBoundingClientRect();
+        var px=(ev.clientX-r.left)/r.width*W;
+        var i=Math.round((px-PADL)/step);
+        return Math.max(0,Math.min(N-1,i));
+      }
+      svg.onpointermove=function(ev){showAt(idxFromEvent(ev));};
+      svg.onpointerleave=hide;
+      svg.onfocus=function(){showAt(0);};
+      svg.onblur=hide;
+      svg.onkeydown=function(ev){
+        var cur=Number(svg.getAttribute('data-i')||0);
+        if(ev.key==='ArrowRight'){cur=Math.min(N-1,cur+1);}
+        else if(ev.key==='ArrowLeft'){cur=Math.max(0,cur-1);}
+        else return;
+        ev.preventDefault();svg.setAttribute('data-i',cur);showAt(cur);
+      };
+      svg.onclick=function(ev){showAt(idxFromEvent(ev));};
+      hide();
+    }
+
+    function renderDays(){
+      var day=DATA.daily||{}, dates=day.time||[];
+      daysEl.innerHTML='';
+      for(var i=0;i<Math.min(dates.length,6);i++){
+        var d=new Date(dates[i]+'T12:00:00');
+        var lbl=i===0?t('today'):dayName(dates[i],{weekday:'short'});
+        var pop=Math.round((day.precipitation_probability_max||[])[i]||0);
+        var b=document.createElement('button');
+        b.type='button';b.className='ilcl-day';b.setAttribute('role','tab');
+        b.setAttribute('aria-selected',i===DAY?'true':'false');
+        b.setAttribute('aria-label',lbl+' '+Math.round(tempC(day.temperature_2m_max[i]))+'° '+pop+'% '+t('pop'));
+        b.innerHTML='<b>'+lbl+'</b>'+iconFor(day.weather_code[i])
+          +'<span class="ilcl-hi">'+tempTxt(day.temperature_2m_max[i])+'</span>'
+          +'<span class="ilcl-lo">'+tempTxt(day.temperature_2m_min[i])+'</span>'
+          +'<span class="ilcl-pop" style="--pop-dot:'+RNCOL[rainIdx(pop)]+'">'+pop+'%</span>';
+        b.onclick=(function(idx){return function(){DAY=idx;try{sessionStorage.setItem('ilatek-clima:day:'+LABEL,String(idx));}catch(e){}renderDays();renderDetail();};})(i);
+        daysEl.appendChild(b);
+      }
+    }
+
+    function renderDetail(){
+      var day=DATA.daily||{}, i=DAY;
+      var uv=(day.uv_index_max||[])[i], gust=(day.wind_gusts_10m_max||[])[i];
+      var rsum=(day.precipitation_sum||[])[i], rhours=(day.precipitation_hours||[])[i];
+      var pop=(day.precipitation_probability_max||[])[i];
+      var ui=uvIdx(uv), wi=windIdx(gust);
+      var advise = FAMILY==='techos'
+        ? ((pop||0)>=50?t('wet'):t('dry'))
+        : ((pop||0)>=60?t('wetClean'):t('dryClean'));
+      var sunrise=(day.sunrise||[])[i], sunset=(day.sunset||[])[i];
+      detailEl.innerHTML=
+        '<div><span>'+t('sunrise')+'</span><b><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align:-2px;margin-right:3px"><path d="M3 17h18"/><path d="M7 17a5 5 0 0 1 10 0"/><path d="M12 7.2V3"/><path d="M9.8 5.2 12 3l2.2 2.2"/></svg>'+hourLabel(sunrise||'')+'</b></div>'
+        +'<div><span>'+t('sunset')+'</span><b><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align:-2px;margin-right:3px"><path d="M3 17h18"/><path d="M7 17a5 5 0 0 1 10 0"/><path d="M12 3v4.2"/><path d="M9.8 5.2 12 7.4l2.2-2.2"/></svg>'+hourLabel(sunset||'')+'</b></div>'
+        +'<div><span>'+t('uvMax')+'</span><b><span class="ilcl-dot" style="background:'+UVCOL[ui]+';width:8px;height:8px;border-radius:50%;display:inline-block"></span>'+(uv==null?'—':fmt(uv))+'</b></div>'
+        +'<div><span>'+t('gustMax')+'</span><b><span class="ilcl-dot" style="background:'+WDCOL[wi]+';width:8px;height:8px;border-radius:50%;display:inline-block"></span>'+fmt(gust)+' mph</b></div>'
+        +'<div class="ilcl-wide"><span style="display:inline">'+t('rainSum')+': </span><b style="display:inline">'+(rsum==null?'—':(rsum*0.0393701).toFixed(2)+' in')+'</b> · <span style="display:inline">'+t('rainHours')+': </span><b style="display:inline">'+fmt(rhours)+'</b><br>'+advise+'</div>';
+    }
+
+    function bestWindow(){
+      var hr=DATA.hourly||{}, times=hr.time||[], pops=hr.precipitation_probability||[];
+      if(!times.length)return null;
+      var best=null;
+      for(var i=0;i<times.length-2;i++){
+        var h=new Date(times[i]).getHours();
+        if(h<7||h>16)continue;
+        var avg=(pops[i]+pops[i+1]+pops[i+2])/3;
+        if(!best||avg<best.avg)best={i:i,avg:avg,h:h};
+      }
+      if(!best)return null;
+      var end=(best.h+3)%24;
+      var fmtH=function(n){return new Intl.DateTimeFormat(lang()==='en'?'en-US':'es-PR',{hour:'numeric'}).format(new Date(2020,0,1,n));};
+      return {label:fmtH(best.h)+'–'+fmtH(end),pop:Math.round(best.avg)};
+    }
+
+    function renderWindow(){
+      var w=bestWindow();
+      var el=root.querySelector('.ilcl-window');
+      var txt=root.querySelector('.ilcl-win-txt');
+      var pop=(DATA.daily&&DATA.daily.precipitation_probability_max&&DATA.daily.precipitation_probability_max[0])||0;
+      if(!w||w.pop>=55){
+        el.classList.add('is-wet');
+        txt.innerHTML='<b>'+t('best')+':</b> '+t('noWindow');
+      }else{
+        el.classList.remove('is-wet');
+        txt.innerHTML='<b>'+t('best')+':</b> '+w.label+' · '+w.pop+'% '+t('pop');
+      }
+    }
+
+    function renderInsight(){
+      var cur=DATA.current||{}, day=DATA.daily||{};
+      var popToday=(day.precipitation_probability_max||[])[0];
+      var uvToday=(day.uv_index_max||[])[0];
+      var wet=(popToday||0)>=50||(cur.precipitation||0)>0.4;
+      var msg=(FAMILY==='techos')?(wet?t('wet'):t('dry')):((popToday||0)>=60?t('wetClean'):t('dryClean'));
+      if((uvToday||0)>=9)msg+=' '+t('uvHi');
+      var ins=root.querySelector('.ilcl-insight');
+      ins.innerHTML='<b>'+LABEL+':</b> '+msg;
+      var rec=root.querySelector('.ilcl-rec-t');
+      if(rec)rec.textContent=msg;
+      ins.hidden=false;
+    }
+
+    var dayInit=false;
+    function render(place,data){
+      PLACE=place;DATA=data;
+      if(place&&place.name)setLabel(place.name);
+      if(!dayInit){DAY=storedDay();dayInit=true;}
+      renderNow();drawChart();renderDays();renderDetail();renderWindow();renderInsight();
+      root.querySelector('.ilcl-body').classList.remove('ilcl-loading');
+      root.querySelector('.ilcl-body').classList.add('is-in');
+      root.querySelector('.ilcl-body').setAttribute('aria-busy','false');
+      root.setAttribute('data-ilcl-state','ok');
+    }
+
+    function fail(){
+      var ins=root.querySelector('.ilcl-insight');
+      ins.innerHTML='<b>'+LABEL+':</b> '+t('bad');
+      ins.hidden=false;
+      root.querySelector('.ilcl-body').style.display='none';
+      root.setAttribute('data-ilcl-state','fallback');
+    }
+
+    var refreshing=false,lastLoad=0;
+    async function run(force){
+      var cached=cacheGet(LABEL);
+      if(cached&&!force){lastLoad=Date.now();render({name:cached.name||LABEL},cached.data);syncCounties(cached.name);return;}
+      if(refreshing)return;
+      refreshing=true;
+      try{
+        var g=await geo(TOWN);
+        var f=await forecast(g.lat,g.lon);
+        cacheSet(LABEL,{name:g.name,data:f});
+        lastLoad=Date.now();
+        render(g,f);
+        syncCounties(g.name);
+      }catch(e){ if(!cached)fail(); }
+      finally{refreshing=false;}
+    }
+
+    function setLabel(name){
+      if(!name)return;
+      LABEL=name;
+      if(countyEl)countyEl.textContent=name;
+      if(countyInput){
+        if(countyInput.tagName==='SELECT'){
+          if(Array.prototype.some.call(countyInput.options,function(o){return o.value===name;}))countyInput.value=name;
+        }else{
+          countyInput.value=name;
+        }
+      }
+      if(placeEl)placeEl.textContent=name;
+      root.setAttribute('data-ilcl-town',name);
+    }
+    function syncCounties(name){ setLabel(name); }
+    function storedDay(){
+      try{var v=parseInt(sessionStorage.getItem('ilatek-clima:day:'+LABEL),10);return (isNaN(v)||v<0||v>5)?0:v;}catch(e){return 0;}
+    }
+
+    var rzT=null;
+    window.addEventListener('resize',function(){
+      clearTimeout(rzT);
+      rzT=setTimeout(function(){
+        if(!DATA)return;
+        drawChart();
+      },180);
+    });
+
+    // --- unidad ---
+    root.querySelectorAll('.ilcl-unit button').forEach(function(b){
+      if(b.getAttribute('data-unit')===UNIT)b.setAttribute('aria-pressed','true');
+      else b.setAttribute('aria-pressed','false');
+      b.addEventListener('click',function(){
+        UNIT=b.getAttribute('data-unit');
+        try{localStorage.setItem('ilatek-clima:unit',UNIT);}catch(e){}
+        root.querySelectorAll('.ilcl-unit button').forEach(function(x){
+          x.setAttribute('aria-pressed',x.getAttribute('data-unit')===UNIT?'true':'false');
+        });
+        if(DATA){renderNow();drawChart();renderDays();renderDetail();}
+      });
+    });
+
+    function startClima(){
+      if('requestIdleCallback' in window)requestIdleCallback(function(){run();},{timeout:1500});
+      else setTimeout(run,0);
+    }
+    if(document.readyState==='complete')startClima();
+    else window.addEventListener('load',startClima,{once:true});
+    // datos siempre frescos, sin intervención manual
+    setInterval(function(){ if(!document.hidden)run(true); },REFRESH);
+    document.addEventListener('visibilitychange',function(){
+      if(document.hidden)return;
+      if(Date.now()-lastLoad>TTL)run(true);
+    });
+
+
+    function showCalendar(name,phone,email,last){
+      var box=root.querySelector('.ilcl-cal');
+      if(!box)return false;
+      var id=CAL[FAMILY]||CAL.limpieza;
+      var parts=String(name).trim().split(/\s+/);
+      var p=new URLSearchParams();
+      p.set('first_name',name);
+      p.set('last_name',last||parts.slice(1).join(' '));
+      if(email)p.set('email',email);
+      if(phone)p.set('phone',phone);
+      p.set('contact.tipo_de_servicio',SERVICE);
+      p.set('contact.municipio',LABEL);
+      p.set('contact.deposito_requerido','50');
+      box.innerHTML='<h3>'+(lang()==='en'?'Pick your date and time':'Elige tu fecha y hora')+'</h3>'+
+        '<iframe src="https://link.msgsndr.com/widget/booking/'+id+'?'+p.toString()+'" '+
+        'title="'+(lang()==='en'?'Book your service | ILATEK':'Reserva tu servicio | ILATEK')+'" '+
+        'style="width:100%;border:0;height:min(780px,88vh)" allow="payment" loading="lazy"></iframe>';
+      box.hidden=false;
+      form.hidden=true;
+      if(!document.getElementById('ilcl-embed-js')){
+        var s=document.createElement('script');s.id='ilcl-embed-js';s.async=true;
+        s.src='https://link.msgsndr.com/js/form_embed.js';document.body.appendChild(s);
+      }
+      try{box.scrollIntoView({behavior:'smooth',block:'start'});}catch(e){}
+      return true;
+    }
+
+    // --- formulario ---
+    var form=root.querySelector('form');
+    var err=root.querySelector('.ilcl-err');
+    if(form)form.addEventListener('submit',function(ev){
+      ev.preventDefault();
+      var name=(form.name.value||'').trim();
+      var phone=(form.phone.value||'').trim().replace(/[^\d+]/g,'');
+      var email=(form.email.value||'').trim();
+      var last=(form.last&&form.last.value?form.last.value:'').trim();
+      var county=(form.county.value||LABEL).trim();
+      var serviceLabel=(form.service.value||SERVICE).trim();
+      err.textContent='';
+      if(name.length<2){err.textContent=t('needName');form.name.focus();return;}
+      if(phone.length<7){err.textContent=t('needPhone');form.phone.focus();return;}
+
+      var btn=form.querySelector('button[type="submit"]');
+      btn.disabled=true;var prev=btn.textContent;btn.textContent=t('sending');
+
+      var parts=name.split(/\s+/).filter(Boolean);
+      var payload={
+        nombre:name,
+        apellido:last||parts.slice(1).join(' '),
+        email:email,
+        telefono:phone,
+        servicio:serviceLabel,
+        municipio:county,
+        zona:'',
+        areas:'',
+        extras:'',
+        valor:50,
+        valor_oportunidad:50,
+        deposito:50,
+        deposito_requerido:50,
+        origen:'Landing clima — '+(FAMILY==='techos'?'Techos':'Limpieza'),
+        pagina:location.href,
+        intencion:'cotizacion',
+        urgencia:'media',
+        mensaje:'Solicitud desde el bloque de clima ('+LABEL+')',
+        consentimiento:'si',
+        lead_score:60,
+        id_solicitud:'clima-'+Date.now().toString(36),
+        resumen:'Servicio: '+serviceLabel+' · Municipio: '+county+(DATA?(' · '+Math.round(DATA.current.temperature_2m)+'° · lluvia '+Math.round((DATA.daily.precipitation_probability_max||[0])[0]||0)+'%'):'')+' · Depósito $50 (total pendiente de cotización)',
+        fecha:new Date().toISOString(),
+        firstName:name,
+        lastName:last||parts.slice(1).join(' '),
+        full_name:(name+' '+(last||parts.slice(1).join(' '))).trim(),
+        phone:phone,
+        city:county,
+        source:'Clima · '+(FAMILY==='techos'?'Techos':'Limpieza'),
+        tipo_de_servicio:serviceLabel,
+        opportunity_name:(name+' '+(last||parts.slice(1).join(' '))).trim()+' — '+serviceLabel+' — '+county
+      };
+
+      var go=function(){
+        try{window.dispatchEvent(new CustomEvent('ilatek:clima-lead',{detail:payload}));}catch(e){}
+        if(showCalendar(name,phone,email,last))return;
+        var q=new URLSearchParams({name:name,last:last,phone:phone,email:email,county:county,service:serviceLabel});
+        location.href=BASE+DEST+'?'+q.toString();
+      };
+
+      if(!HOOK){go();return;}
+      fetch(HOOK,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload),keepalive:true})
+        .then(function(r){if(!r.ok)throw new Error('http '+r.status);go();})
+        .catch(function(){btn.disabled=false;btn.textContent=prev;err.textContent=t('err');});
+    });
+
+    // --- idioma ---
+    function applyLang(){
+      root.querySelectorAll('[data-es][data-en]').forEach(function(el){
+        el.textContent=lang()==='en'?el.getAttribute('data-en'):el.getAttribute('data-es');
+      });
+      var svc=root.querySelector('.ilcl-svc');
+      if(svc&&SERVICE)svc.textContent=SERVICE;
+    }
+    window.addEventListener('ilatek:lang',function(){
+      applyLang();
+      if(root.getAttribute('data-ilcl-state')==='ok'&&DATA){renderNow();drawChart();renderDays();renderDetail();renderWindow();renderInsight();}
+    });
+    /* fallback: si el nav no emite ilatek:lang, re-sincronizamos al pulsar el toggle */
+    (function(){
+      function resync(){
+        applyLang();
+        if(root.getAttribute('data-ilcl-state')==='ok'&&DATA){renderNow();drawChart();renderDays();renderDetail();renderWindow();renderInsight();}
+      }
+      var tb=document.querySelector('.iln-lang');
+      if(tb)tb.addEventListener('click',function(){setTimeout(resync,80)});
+      window.addEventListener('pageshow',function(){setTimeout(resync,80)});
+    })();
+    applyLang();
+  })();
+  </script>
+<style>
+  /* --- UI nativa iOS: cielo despejado, panel blanco de recomendación, formulario inset grouped --- */
+  /* El color de la sección sigue al clima (paleta de cielo de iOS) */
+  #ilatek-clima{transition:background .55s ease}
+  #ilatek-clima[data-sky="clear-day"]{background:linear-gradient(180deg,#4A9ADE 0%,#2A72C4 52%,#1C5AA6 100%)}
+  #ilatek-clima[data-sky="partly"]{background:linear-gradient(180deg,#79A9DA 0%,#4A82BB 52%,#2F5F92 100%)}
+  #ilatek-clima[data-sky="cloud"]{background:linear-gradient(180deg,#9AAEC2 0%,#6F8497 52%,#4C5F72 100%)}
+  #ilatek-clima[data-sky="rain"]{background:linear-gradient(180deg,#6D8CA6 0%,#446A87 52%,#294A63 100%)}
+  #ilatek-clima[data-sky="storm"]{background:linear-gradient(180deg,#55617A 0%,#39465C 52%,#1E2838 100%)}
+  #ilatek-clima[data-sky="fog"]{background:linear-gradient(180deg,#B0BCC6 0%,#8394A1 52%,#5C6B77 100%)}
+  #ilatek-clima[data-sky="clear-night"]{background:linear-gradient(180deg,#22355A 0%,#152643 52%,#0A1526 100%)}
+  #ilatek-clima .ilcl-now[data-sky]{background:linear-gradient(165deg,rgba(255,255,255,.26),rgba(255,255,255,.09))}
+  /* ajustes móviles al final del bloque, más abajo */
+  #ilatek-clima .ilcl-upd{margin-top:10px}
+  #ilatek-clima .ilcl-insight{display:none}
+  #ilatek-clima[data-ilcl-state="fallback"] .ilcl-insight{display:block;padding-top:20px}
+  #ilatek-clima .ilcl-rec{margin-top:auto;background:#fff;border-radius:20px;padding:14px 16px;min-height:133px;
+    display:flex;flex-direction:column;gap:6px;box-shadow:0 10px 24px rgba(9,32,63,.18);position:relative;z-index:1}
+  #ilatek-clima .ilcl-cond{min-height:20px}
+  #ilatek-clima .ilcl-chip b{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-height:18px}
+  /* Municipio: el visitante elige su pueblo y el bloque se adapta (clima, recomendación y calendario) */
+  #ilatek-clima .ilcl-fields select[name="county"]{cursor:pointer;font-weight:500;color:#1D1D1F}
+  #ilatek-clima .ilcl-rec-k{font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#6E6E73}
+  #ilatek-clima .ilcl-rec-t{margin:0;font-size:14.5px;line-height:1.45;color:#1D1D1F;min-height:42px}
+  
+  #ilatek-clima .ilcl-fields{grid-template-columns:1fr 1fr;gap:14px}
+  #ilatek-clima .ilcl-fields label{display:flex;flex-direction:column;gap:6px;min-width:0}
+  #ilatek-clima .ilcl-fields label>span{font-size:12.5px;font-weight:600;color:#3A3A3C;line-height:1.25;white-space:normal}
+  #ilatek-clima .ilcl-fields input,#ilatek-clima .ilcl-fields select{width:100%;min-height:48px;height:48px;
+    font-size:16px;line-height:1.2;color:#1D1D1F;background:#fff;border:1px solid #D1D1D6;border-radius:12px;
+    padding:0 14px;font-family:inherit;-webkit-appearance:none;appearance:none}
+  #ilatek-clima .ilcl-fields select{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%238E8E93' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;background-size:12px 8px;padding-right:38px}
+  #ilatek-clima .ilcl-fields input:focus,#ilatek-clima .ilcl-fields select:focus{outline:none;border-color:#0A84FF;box-shadow:0 0 0 4px rgba(10,132,255,.16)}
+  #ilatek-clima .ilcl-actions button{min-height:50px;height:50px;border-radius:14px;background:#0A84FF;color:#fff;
+    font-size:16px;font-weight:600;font-family:inherit;line-height:1;padding:0 26px;border:0}
+  #ilatek-clima .ilcl-actions button:disabled{opacity:.6}
+  @media(max-width:600px){
+    #ilatek-clima .ilcl-fields{grid-template-columns:1fr}
+    #ilatek-clima .ilcl-fields label[style]{grid-column:auto!important}
+    #ilatek-clima .ilcl-actions button{width:100%}
+    #ilatek-clima{padding:36px 14px}
+    #ilatek-clima .ilcl-body{gap:12px}
+    
+    #ilatek-clima .ilcl-fields{gap:12px}
+    #ilatek-clima .ilcl-actions{gap:10px}
+    #ilatek-clima .ilcl-temp{font-size:48px}}</style>
+  </section>
+<!-- ILATEK:CLIMA:END -->

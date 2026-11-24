@@ -1,0 +1,145 @@
+{{custom_values.business__county_name}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}
+Limpieza de Ventanas en {{custom_values.business__county_name}} | Ilatek
+/og:title/ og:description ("… en Juncos, Puerto Rico"): el título sale de {{custom_values.business__county_name}}, así que es el mismo custom value, sin depender de que el builder expanda el Custom Code; 3. el subdominio del sitio (juncos.ilatekpr.com → Juncos); 4. los valores de marca del contrato (custom-values.json → brand). El portador que viaja en el embed se oculta siempre (nunca es contenido). Estado en
+Login
+Limpieza de ventanas
+Limpieza de Ventanas en
+{{custom_values.business__county_name}}
+impecables por dentro y por fuera.
+Ilatek deja tus cristales impecables por dentro y por fuera en {{custom_values.business__county_name}}: técnica profesional sin rayas, con marcos, rieles y screens incluidos. Interiores $10 y exteriores $25 por ventana — reserva con $50 descontable.
+Solicita tu cotización
+Qué incluye el servicio ↓
+por ventana
+Interior · exterior $25
+municipios
+Cobertura en PR
+depósito
+Descontable al reservar
+Por qué Ilatek
+Brillo de exhibición, de marco a marco.
+Sin rayas, estilo profesional
+Técnica profesional con squeegee y microfibra de grado profesional: cristales con acabado de exhibición, sin marcas, pelusa ni residuos de producto.
+Por dentro y por fuera
+Interiores a
+y exteriores a
+por ventana: pagas solo lo que necesitas, con precio claro por escrito antes de reservar.
+Marcos, rieles y screens
+El detalle que otros dejan: marcos, bordes, rieles y screens limpios — la ventana completa, no solo el cristal, en {{custom_values.business__county_name}}.
+Qué incluye
+Cristales impecables, de marco a marco.
+La limpieza de ventanas de Ilatek cubre cristales por dentro y por fuera sin rayas, marcos, rieles y screens — la ventana completa, con el alcance definido en tu cotización.
+Cristales interiores: sin rayas ($10/ventana)
+Cristales exteriores: polvo, sal y manchas fuera ($25/ventana)
+Marcos y bordes: sin polvo acumulado
+Rieles y umbrales: aspirados y limpios
+Screens (mosquiteros): lavados si aplica
+Alféizares y repisas de ventana
+Cotiza tus ventanas
+Técnica sin rayas · seguros para cristales tintados
+Espacios
+Limpiamos todo tipo de ventana.
+Casas y apartamentos
+Ventanas alcanzables con equipo estándar y extensión: cristales, marcos y rieles de toda la casa impecables en una sola visita.
+Condominios y segundos pisos
+Ventanas altas o de acceso complicado: coordinamos el acceso seguro con equipo de extensión y lo definimos contigo en la cotización.
+Comercios y vitrinas
+Vitrinas y cristales de negocio que venden por lo que se ve: limpieza programada para que siempre luzcan de exhibición.
+Frecuencia
+El ritmo que tus cristales necesitan.
+2 veces al año
+El estándar recomendado
+La recomendación profesional: dos limpiezas al año mantienen tus ventanas claras — en la costa, donde la brisa marina deja residuo salino, cada 3–4 meses funciona mejor.
+Antes de eventos
+Eventos y temporada
+Fiestas, visitas o las fotos de tu casa: limpiamos justo antes y recibes con vista clara — también antes de la temporada de huracanes.
+Como add-on
+Con tu limpieza profunda
+Combínala con tu limpieza profunda o post-construcción: las ventanas quedan listas en la misma visita — un solo agendamiento.
+Cotiza tus ventanas hoy
+Cobertura local
+Limpieza impecable,
+Cobertura en Toda la Isla
+Explora los servicios de limpieza de
+Ilatek
+disponibles en los
+78 municipios de Puerto Rico
+y visita la página de tu pueblo. Atendemos hogares en
+y toda la isla.
+No encontramos ese pueblo. Verifica el nombre e intenta nuevamente.
+Página 1 de 1
+Preguntas frecuentes
+Todo lo que preguntas antes de contratar.
+¿Cuánto cuesta la limpieza de ventanas en {{custom_values.business__county_name}}?
+Ilatek cobra
+$10 por ventana interior
+$25 por ventana exterior
+: el total depende de la cantidad y el tipo de ventana. Usa el cotizador y recibe tu número real en minutos — precio claro y por escrito, sin compromiso.
+¿Qué incluye una limpieza de ventanas?
+Incluye cristales por dentro y por fuera con técnica sin rayas,
+marcos, rieles, umbrales y screens
+limpios, y alféizares — la ventana completa, no solo el cristal. El alcance exacto queda definido en tu cotización.
+¿La lluvia ensucia las ventanas recién limpiadas?
+Es el mito #1: la lluvia no ensucia — el agua de lluvia es limpia. Lo que mancha es el
+polvo y el viento
+que ya estaban en el cristal. Con el cristal limpio, la lluvia no deja las manchas típicas.
+¿Cada cuánto se deben limpiar los cristales?
+La recomendación profesional es
+dos veces al año
+; en la costa, donde la brisa marina deja residuo salino, cada 3–4 meses funciona mejor. En la cotización te recomendamos el ritmo según tu ubicación.
+¿Limpian ventanas altas o de difícil acceso?
+, con equipo de extensión y coordinamos el acceso seguro contigo — lo definimos en la cotización antes de reservar. Sin riesgos y sin sorpresas en el precio.
+¿Usan productos seguros para cristales tintados?
+: productos y técnicas seguros para cristales tintados, templados y Low-E — sin amoníaco agresivo ni herramientas que rayen. Dinos qué tipo de cristal tienes al cotizar.
+¿Qué productos y equipos utilizan?
+Llegamos con
+productos y equipos profesionales de limpieza residencial
+, seguros para tu familia y tus mascotas. Si prefieres algo específico (eco-amigable, sin fragancia), coordínalo en la cotización.
+¿Por qué elegir Ilatek para tus ventanas?
+Precio claro por ventana ($10 interior / $25 exterior), técnica sin rayas, marcos y rieles incluidos, productos seguros para cualquier cristal, depósito de $50 descontable y cobertura en los 78 municipios. Tu vista clara en {{custom_values.business__county_name}}.
+¿Vista empañada? Déjanos el brillo.
+Solicita tu cotización ↗
+Devasks
+Navegación de Ilatek
+Ilatek, inicio
+Logo de Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Logo%20de%20Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Navegación principal
+Idioma / Language
+Español
+English
+Abrir o cerrar el menú
+Ilatek Limpieza de Ventanas {{custom_values.business__county_name}}
+Equipo de Ilatek limpiando los cristales de una casa — ventanas impecables por dentro y por fuera en {{custom_values.business__county_name}}
+Limpieza de Ventanas en {{custom_values.business__county_name}} · Ilatek
+Equipo%20de%20Ilatek%20limpiando%20los%20cristales%20de%20una%20casa%20%E2%80%94%20ventanas%20impecables%20por%20dentro%20y%20por%20fuera%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Limpieza%20de%20Ventanas%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%C2%B7%20Ilatek
+Limpieza de ventanas exteriores de Ilatek — cristales, marcos y rieles sin manchas en {{custom_values.business__county_name}}
+Limpieza%20de%20ventanas%20exteriores%20de%20Ilatek%20%E2%80%94%20cristales%2C%20marcos%20y%20rieles%20sin%20manchas%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Cobertura de limpieza de Ilatek en Puerto Rico
+Busca tu pueblo
+Buscar un municipio de Puerto Rico
+Limpiar búsqueda
+Municipios de Puerto Rico con servicio de Ilatek
+Pie de página de Ilatek
+Facebook
+Facebook — servicio en {{custom_values.business__county_name}}
+Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Instagram
+Instagram — servicio en {{custom_values.business__county_name}}
+Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Youtube
+Youtube — servicio en {{custom_values.business__county_name}}
+Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+TikTok
+TikTok — servicio en {{custom_values.business__county_name}}
+TikTok%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+X — servicio en {{custom_values.business__county_name}}
+X%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+LinkedIn
+LinkedIn — servicio en {{custom_values.business__county_name}}
+LinkedIn%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Pinterest
+Pinterest — servicio en {{custom_values.business__county_name}}
+Pinterest%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D

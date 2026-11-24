@@ -1,0 +1,76 @@
+{
+  "slug": "techos",
+  "eyebrow": "ILATEK · Todos los servicios de techos",
+  "titulo": "Servicios de Techos en {{custom_values.business__county_name}}",
+  "intro": "Ilatek reúne sellado, impermeabilización y reparación de techos en {{custom_values.business__county_name}}. Elige la categoría que necesitas y solicita tu cotización: te respondemos con un precio claro y los próximos pasos.",
+  "etiqueta": "Categorías de techos de Ilatek (la tarjeta frontal rota en bucle; haz clic en una lateral para traerla al frente)",
+  "ctaFinal": {
+    "titulo": "¿Listo para proteger tu <em>techo</em>?",
+    "parrafo": "Solicita tu inspección de techos en minutos: cuéntanos qué está pasando y te daremos un precio real, sin compromiso.",
+    "texto": "Solicita tu Inspección de Techos",
+    "aria": "Solicita tu Inspección de Techos con Ilatek",
+    "path": "/cotizacion-techos"
+  },
+  "tarjetas": [
+    {
+      "imagen": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac8583f195f9172ed03ad7b.webp",
+      "imagenFallback": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8583f195f9172ed03ad7b.jpg",
+      "alt": "Sellado de techos de Ilatek — cierre de juntas, grietas y penetraciones en {{custom_values.business__county_name}}",
+      "title": "Sellado de Techos en {{custom_values.business__county_name}} · Ilatek",
+      "kicker": "Contra filtraciones",
+      "h5": "Sellado de Techos en {{custom_values.business__county_name}}",
+      "parrafo": "Sellado profesional de techos en {{custom_values.business__county_name}}: cerramos juntas, grietas y penetraciones para que el agua no encuentre por dónde entrar.",
+      "items": [
+        "Sellado de juntas y uniones",
+        "Sellado de grietas y fisuras",
+        "Sellado de tragaluces y chimeneas",
+        "Sellado de canaletas y bajantes",
+        "Sellado de poliuretano y silicona"
+      ],
+      "cta": "Solicitar Sellado de Techos",
+      "aria": "Solicitar Sellado de Techos con Ilatek",
+      "path": "/sellado-de-techos",
+      "icono": "gotas"
+    },
+    {
+      "imagen": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/servicios/impermeabilizacion.webp",
+      "imagenFallback": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/servicios/impermeabilizacion.webp",
+      "alt": "Impermeabilización de techos de Ilatek — membranas y recubrimientos en {{custom_values.business__county_name}}",
+      "title": "Impermeabilización de Techos en {{custom_values.business__county_name}} · Ilatek",
+      "kicker": "Protección a largo plazo",
+      "h5": "Impermeabilización de Techos en {{custom_values.business__county_name}}",
+      "parrafo": "Membranas y recubrimientos impermeabilizantes en {{custom_values.business__county_name}} que frenan la filtración y alargan la vida del techo.",
+      "items": [
+        "Membranas impermeabilizantes",
+        "Recubrimientos elastoméricos",
+        "Impermeabilización de techos planos",
+        "Tratamiento de techos de concreto",
+        "Acabado y sellado de superficie"
+      ],
+      "cta": "Solicitar Impermeabilización",
+      "aria": "Solicitar Impermeabilización de Techos con Ilatek",
+      "path": "/impermeabilizacion-de-techos",
+      "icono": "escudo"
+    },
+    {
+      "imagen": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/servicios/reparacion.webp",
+      "imagenFallback": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/servicios/reparacion.webp",
+      "alt": "Reparación de techos de Ilatek — filtraciones, humedad y daño estructural en {{custom_values.business__county_name}}",
+      "title": "Reparación de Techos en {{custom_values.business__county_name}} · Ilatek",
+      "kicker": "Cuando ya hay daño",
+      "h5": "Reparación de Techos en {{custom_values.business__county_name}}",
+      "parrafo": "Reparamos filtraciones activas, humedad y daño estructural en techos de {{custom_values.business__county_name}}, con inspección previa y presupuesto claro.",
+      "items": [
+        "Reparación de filtraciones activas",
+        "Cambio de tejas y láminas dañadas",
+        "Reparación de techos de zinc y asfalto",
+        "Corrección de empozamiento",
+        "Inspección y mantenimiento preventivo"
+      ],
+      "cta": "Solicitar Reparación",
+      "aria": "Solicitar Reparación de Techos con Ilatek",
+      "path": "/reparacion-de-techos",
+      "icono": "herramienta"
+    }
+  ]
+}

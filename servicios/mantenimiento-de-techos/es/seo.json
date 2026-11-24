@@ -3,11 +3,11 @@
   "language": "es",
   "status": "plantilla-local-delta-system",
   "metaTagTitle": "Mantenimiento Preventivo de Techos en {{custom_values.business__county_name}} | Ilatek Techos",
-  "metaTagDescription": "Mantenimiento preventivo de techos en {{custom_values.business__county_name}} desde $250 por labor. Visitas programadas de inspección, limpieza y sellado preventivo. Garantía escrita. 78 municipios.",
-  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f98493229874263987.jpg",
+  "metaTagDescription": "Mantenimiento preventivo de techos en {{custom_values.business__county_name}} desde $250. Visitas programadas de inspección, limpieza y sellado preventivo. Garantía escrita. 78 municipios.",
+  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/5aab3553-ce5c-4b25-82a9-f8c08084147f.webp",
   "locationCustomValue": "{{custom_values.business__county_name}}",
   "metaTagImageAlt": "Mantenimiento Preventivo de Techos en {{custom_values.business__county_name}} | Ilatek Techos",
   "canonical": "https://{{custom_values.website_url}}/mantenimiento-de-techos",
-  "socialImageFile": "assets/respaldo/6ac046f98493229874263987.webp",
+  "socialImageFile": "assets/meta-image.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."
 }

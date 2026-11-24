@@ -4,10 +4,10 @@
   "status": "plantilla-local-delta-system",
   "metaTagTitle": "Limpieza de Electrodomésticos en {{custom_values.business__county_name}} | Ilatek",
   "metaTagDescription": "Limpieza de electrodomésticos en {{custom_values.business__county_name}}: nevera, horno, lavadora y más por dentro y por fuera. Cotizador online con precio real y cobertura en los 78 municipios.",
-  "metaTagImage": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/electrodomesticos.jpg",
+  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/f4c32f44-a8b2-434a-bcda-512c6255d834.webp",
   "locationCustomValue": "{{custom_values.business__county_name}}",
-  "metaTagImageAlt": "Limpieza de Electrodomésticos en {{custom_values.business__county_name}} | Ilatek",
+  "metaTagImageAlt": "Limpieza de Electrodomésticos en {{custom_values.business__county_name}} — Ilatek",
   "canonical": "https://{{custom_values.website_url}}/electrodomesticos",
-  "socialImageFile": "assets/meta-image.jpg",
+  "socialImageFile": "assets/meta-image.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."
 }

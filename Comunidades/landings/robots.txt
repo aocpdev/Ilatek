@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# Este host no publica sitemap: cada landing canonicaliza a su copia en
+# https://<municipio>.ilatekpr.com/<comunidad>/<servicio>, que es la que se anuncia
+# en el sitemap de cada municipio.

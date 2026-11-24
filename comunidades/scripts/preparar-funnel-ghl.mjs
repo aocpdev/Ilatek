@@ -204,28 +204,42 @@ async function uploadAsset(key, manifest, pit) {
   const prev = manifest[key];
   if (prev?.sha256 === hash && prev?.url) return prev;
 
-  const form = new FormData();
-  form.append('file', new Blob([new Uint8Array(buf)], { type: mimeFor(file) }), path.basename(file));
-  form.append('locationId', LOCATION);
-
-  const res = await fetch(MEDIA_ENDPOINT, {
-    method: 'POST',
-    headers: { Authorization: `Bearer ${pit}`, Version: '2021-07-28' },
-    body: form,
-  });
-  const json = await res.json().catch(() => ({}));
-  if (!res.ok || !json.url) {
-    throw new Error(`No se pudo subir ${key} (${res.status}): ${JSON.stringify(json).slice(0, 300)}`);
-  }
-  manifest[key] = {
-    url: json.url,
-    fileId: json.fileId || '',
-    sha256: hash,
-    uploadedAt: new Date().toISOString(),
+  // El CDN corta sockets en tandas largas (UND_ERR_SOCKET). Reintentar con
+  // backoff evita abortar el lote de 354 imágenes por un corte puntual.
+  const cuerpo = () => {
+    const form = new FormData();
+    form.append('file', new Blob([new Uint8Array(buf)], { type: mimeFor(file) }), path.basename(file));
+    form.append('locationId', LOCATION);
+    return form;
   };
-  // Se guarda tras cada subida: si el lote se corta, no se repiten archivos.
-  writeJson(assetsFile, manifest);
-  return manifest[key];
+
+  let ultimoError = '';
+  for (let intento = 1; intento <= 4; intento++) {
+    try {
+      const res = await fetch(MEDIA_ENDPOINT, {
+        method: 'POST',
+        headers: { Authorization: `Bearer ${pit}`, Version: '2021-07-28' },
+        body: cuerpo(),
+      });
+      const json = await res.json().catch(() => ({}));
+      if (!res.ok || !json.url) {
+        throw new Error(`HTTP ${res.status}: ${JSON.stringify(json).slice(0, 200)}`);
+      }
+      manifest[key] = {
+        url: json.url,
+        fileId: json.fileId || '',
+        sha256: hash,
+        uploadedAt: new Date().toISOString(),
+      };
+      // Se guarda tras cada subida: si el lote se corta, no se repiten archivos.
+      writeJson(assetsFile, manifest);
+      return manifest[key];
+    } catch (err) {
+      ultimoError = err?.message || String(err);
+      if (intento < 4) await new Promise(r => setTimeout(r, 1500 * intento));
+    }
+  }
+  throw new Error(`No se pudo subir ${key} tras 4 intentos: ${ultimoError}`);
 }
 
 // --- principal -----------------------------------------------------------
@@ -313,6 +327,11 @@ ${page.html}
     fs.writeFileSync(preview, doc, 'utf8');
   }
 
+  // Rehacer un payload no puede despublicar la comunidad: el índice conserva
+  // el estado del ledger si ya estaba publicada (antes lo pisaba con
+  // 'pendiente' y la página desaparecía del recuento).
+  const prev = byKey.get(key);
+  const yaPublicada = prev?.status === 'publicado';
   byKey.set(key, {
     municipality: record.municipality,
     community: record.name,
@@ -323,7 +342,8 @@ ${page.html}
     funnelPath: key,
     rootRedirect: payload.rootRedirect,
     pages: pages.map(p => ({ kind: p.kind, name: p.name, path: p.path, url: p.url })),
-    status: payload.status,
+    status: yaPublicada ? 'publicado' : payload.status,
+    ...(yaPublicada && prev?.publishedAt ? { publishedAt: prev.publishedAt } : {}),
     generatedAt: payload.generatedAt,
   });
   console.log(`ok ${key} · ${pages.length} páginas${keys.length ? ` · ${keys.length} assets` : ''}`);

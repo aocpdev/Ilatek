@@ -41,11 +41,42 @@
     var root = base(value);
     return out.split('https://' + TOKEN).join(root).split('http://' + TOKEN).join(root).split(TOKEN).join(root);
   }
-  w.ILATEK_LINKS = { normalize: normalize, base: base, join: join, replace: replace };
+  // Language of the page decides the language of every shared menu/footer link:
+  // /en/... -> English twin, everything else -> Spanish. Two real slug changes
+  // exist today (home root and comunidades/communities).
+  var EN_SLUG = { comunidades: 'communities', 'politica-de-privacidad': 'politica', 'terminos-y-condiciones': 'terminos' };
+  var ES_SLUG = { communities: 'comunidades' };
+  function swapSlug(path, map) {
+    var parts = path.split('/'), i = parts.length - 1;
+    if (parts[i] && map[parts[i]]) parts[i] = map[parts[i]];
+    return parts.join('/') || '/';
+  }
+  function splitAnchor(value) {
+    var i = String(value || '').indexOf('#');
+    return i < 0 ? [String(value || ''), ''] : [value.slice(0, i) || '/', value.slice(i)];
+  }
+  function toEnglish(pathname) {
+    if (!pathname || pathname.charAt(0) !== '/') return pathname;
+    var parts = splitAnchor(pathname), path = parts[0].replace(/\/+$/, '') || '/';
+    if (/^\/en(?:\/|$)/.test(path)) return pathname;
+    path = swapSlug(path, EN_SLUG);
+    return (path === '/' ? '/en/home' : '/en' + path) + parts[1];
+  }
+  function toSpanish(pathname) {
+    if (!pathname || pathname.charAt(0) !== '/') return pathname;
+    var parts = splitAnchor(pathname), path = parts[0].replace(/\/+$/, '') || '/';
+    if (!/^\/en(?:\/|$)/.test(path)) return pathname;
+    path = path.replace(/^\/en(?=\/|$)/, '') || '/';
+    path = swapSlug(path, ES_SLUG);
+    if (path === '/home') path = '/';
+    return path + parts[1];
+  }
+  w.ILATEK_LINKS = { normalize: normalize, base: base, join: join, replace: replace, toEnglish: toEnglish, toSpanish: toSpanish };
   if (!w.document) return;
   var doc = w.document, queued = false;
   function refresh() {
     queued = false;
+    var isEn = /^\/en(?:\/|$)/.test(w.location.pathname);
     var nodes = doc.querySelectorAll('a[data-ilatek-path]');
     for (var i = 0; i < nodes.length; i++) {
       var a = nodes[i], root = a.closest('[data-website-url]');
@@ -58,7 +89,8 @@
       if (!normalize(value)) {
         try { value = new URL(a.getAttribute('href')).origin; } catch (e) {}
       }
-      var url = join(value, a.getAttribute('data-ilatek-path'));
+      var path = a.getAttribute('data-ilatek-path');
+      var url = join(value, isEn ? toEnglish(path) : toSpanish(path));
       if (a.getAttribute('href') !== url) a.setAttribute('href', url);
     }
   }

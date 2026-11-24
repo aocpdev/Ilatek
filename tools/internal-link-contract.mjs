@@ -7,7 +7,7 @@ export const TOKEN = '{{custom_values.website_url}}';
 export const PREFIX = 'https://' + TOKEN;
 const runtime = ['internal-links.js','location-values.js','responsive-layout.js'].map(file=>fs.readFileSync(path.join(ROOT,'src/compartido',file),'utf8')).join('\n');
 // Shared CSS in cascade order: layout/navigation fixes, then the fluid headline scale.
-const css=['responsive-layout.css','fluid-type.css'].map(f=>fs.readFileSync(path.join(ROOT,'src/compartido',f),'utf8')).join('\n');
+const css=['responsive-layout.css','fluid-type.css','hero-layout.css'].map(f=>fs.readFileSync(path.join(ROOT,'src/compartido',f),'utf8')).join('\n');
 const block = '<!-- ILATEK:INTERNAL-LINKS:START -->\n<style>\n'+css+'\n</style>\n<script>\n'+runtime+'\n</script>\n<!-- ILATEK:INTERNAL-LINKS:END -->\n';
 const blockRE = /<!-- ILATEK:INTERNAL-LINKS:START -->[\s\S]*?<!-- ILATEK:INTERNAL-LINKS:END -->\s*/g;
 export function publicPath(file) {
@@ -55,7 +55,14 @@ function scriptFix(code) {
   return out;
 }
 export function formatPage(source, pagePath='/home', {headOnly=false}={}) {
-  let text=responsiveHtml(localizeHtml(normalizeTemplates(source.replace(blockRE,''))));
+  const raw=String(source).replace(/\r\n?/g,'\n');
+  const leadingCharset=raw.match(/^<meta\s+charset=[^>]*>\s*/i);
+  source=leadingCharset ? raw.slice(leadingCharset[0].length) : raw;
+  // El blog no se localiza por municipio: sus páginas no llevan el token del
+  // condado en alt ni en metadatos (verify-blog lo prohíbe y no habría landing
+  // por pueblo a la que apuntar).
+  const base=normalizeTemplates(source.replace(blockRE,''));
+  let text=responsiveHtml(pagePath.startsWith('/blog')?base:localizeHtml(base)).replace(/\/limpieza\/#ilatek-conocenos/g,'/#ilatek-conocenos');
   text=text.replace(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi,(all,attrs,code)=>{
     if(/application\/ld\+json/.test(attrs)) {
       code=code.replace(/"\{\{custom_values\.website_url\}\}"/g,JSON.stringify(PREFIX+'/'));
@@ -67,9 +74,17 @@ export function formatPage(source, pagePath='/home', {headOnly=false}={}) {
   // Only literal HTML attributes. Hardcoded fallback constants and external media stay intact.
   text=text.replace(/<a\b[^>]*>/gi,tag=>anchor(tag,pagePath));
   text=text.replace(/<(?:link|meta)\b[^>]*>/gi,tag=>tag.replace(/((?:href|content)=["'])https?:\/\/(?:www\.)?ilatekpr\.com(?=[/"'])/gi,'$1'+PREFIX));
-  if(headOnly || (!/data-ilatek-path=|data-ilatek-local-/.test(text) && !text.includes('window.ILATEK_LINKS'))) return text;
+  if(headOnly || (!/data-ilatek-path=|data-ilatek-local-/.test(text) && !text.includes('window.ILATEK_LINKS'))) return (leadingCharset?leadingCharset[0]:'')+text;
   // Full legal documents keep their DOCTYPE first; fragments get an inline, self-contained helper.
-  return /<head\b[^>]*>/i.test(text) ? text.replace(/<head\b[^>]*>/i,m=>m+'\n'+block) : block+text;
+  // The test must look at the document head, not at a "<head>" mentioned inside the
+  // shared scripts: inserting the block there would split the script and leak its code.
+  const headAt=text.search(/<head\b[^>]*>/i), scriptAt=text.search(/<script\b/i);
+  const isDocument=headAt>=0 && (scriptAt<0 || headAt<scriptAt);
+  if (isDocument) return text.replace(/<head\b[^>]*>\s*/i,m=>m.trimEnd()+'\n'+block);
+  // A fragment may declare its own encoding. Keep that declaration before the
+  // generated internal-link block so applying the contract stays idempotent.
+  const charset = leadingCharset ? leadingCharset[0] : '';
+  return charset+block+text;
 }
 export function deliveryFiles() {
   const dirs=['home','categorias','servicios','componentes','archivo','resenas','politica-de-privacidad','terminos-y-condiciones','techos'];

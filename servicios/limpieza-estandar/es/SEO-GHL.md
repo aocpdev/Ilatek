@@ -11,18 +11,18 @@ Limpieza Estándar en {{custom_values.business__county_name}} | Ilatek
 ## Meta Tag Description
 
 ```text
-Limpieza estándar en {{custom_values.business__county_name}} desde $0.07 por pie²: mantenimiento regular del hogar, cocina, baños y dormitorios. Cotizador online con precio real y depósito de $50 que se descuenta.
+Limpieza estándar en {{custom_values.business__county_name}} desde $250: mantenimiento regular del hogar, cocina, baños y dormitorios. Cotizador online con precio real y depósito de $50 que se descuenta.
 ```
 
 ## Meta Tag Image
 
-[Imagen social — URL pública](https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/limpieza-estandar.jpg)
+[Imagen social — URL pública](https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/social/limpieza-estandar-1200.webp)
 
 ```text
-https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/limpieza-estandar.jpg
+https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/social/limpieza-estandar-1200.webp
 ```
 
-Copia local: [assets/meta-image.jpg](assets/meta-image.jpg). No usar una ruta local en GHL.
+Copia local: [assets/meta-image.webp](assets/meta-image.webp). No usar una ruta local en GHL.
 
 ## Canonical existente
 
@@ -45,7 +45,7 @@ Custom Value obligatorio: `{{custom_values.business__county_name}}`. Usar la eti
 ### Meta Tag Image Alt
 
 ```text
-Limpieza Estándar en {{custom_values.business__county_name}} | Ilatek
+Limpieza Estándar en {{custom_values.business__county_name}} — Ilatek
 ```
 
 El HEAD incluye `og:image:alt` y `twitter:image:alt`. Los atributos `alt` y `title` descriptivos de las imágenes usan la misma localidad, conservando lo que representa cada imagen. Las imágenes decorativas mantienen `alt=""` por accesibilidad. Las URLs de medios no son texto SEO y se conservan.

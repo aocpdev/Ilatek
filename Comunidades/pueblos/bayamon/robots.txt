@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bayamon.ilatekpr.com/sitemap.xml

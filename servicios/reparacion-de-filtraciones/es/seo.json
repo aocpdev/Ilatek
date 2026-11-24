@@ -3,11 +3,11 @@
   "language": "es",
   "status": "plantilla-local-delta-system",
   "metaTagTitle": "Reparación de Filtraciones de Agua en Techos en {{custom_values.business__county_name}} | Ilatek Techos",
-  "metaTagDescription": "Reparación de filtraciones de agua en techos en {{custom_values.business__county_name}} desde $300. Sellado profundo de humedad y filtraciones en concreto, zinc y asfalto con garantía escrita.",
-  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046fc8493229874263a03.jpg",
+  "metaTagDescription": "Reparación de filtraciones de agua en techos en {{custom_values.business__county_name}} desde $250. Sellado profundo de humedad y filtraciones en concreto, zinc y asfalto con garantía escrita.",
+  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/fee87f71-51f1-4106-8f18-03cb95317493.webp",
   "locationCustomValue": "{{custom_values.business__county_name}}",
   "metaTagImageAlt": "Reparación de Filtraciones de Agua en Techos en {{custom_values.business__county_name}} | Ilatek Techos",
   "canonical": "https://{{custom_values.website_url}}/reparacion-de-filtraciones",
-  "socialImageFile": "assets/respaldo/6ac046fc8493229874263a03.webp",
+  "socialImageFile": "assets/meta-image.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."
 }

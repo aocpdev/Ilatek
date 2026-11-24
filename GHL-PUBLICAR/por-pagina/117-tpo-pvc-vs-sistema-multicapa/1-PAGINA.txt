@@ -1,0 +1,13 @@
+PÁGINA EN GHL
+Nombre: Blog - TPO vs. sistema multicapa líquido
+Slug: blog/tpo-pvc-vs-sistema-multicapa
+URL final: https://ilatekpr.com/blog/tpo-pvc-vs-sistema-multicapa
+Carpeta: por-pagina/117-tpo-pvc-vs-sistema-multicapa
+
+Orden dentro de la página:
+  1) Crear/clonar la página con ese nombre y ese slug.
+  2) Elemento Custom HTML/JavaScript → Custom Code → Open Code Editor →
+     borrar todo y pegar el contenido de 2-CODIGO-CUSTOM-HTML.html.
+  3) SEO de la página: campos de 4-SEO-CAMPOS.txt.
+  4) Settings → Tracking Code → HEADER: contenido de 3-HEAD-SEO.html.
+  5) Publicar y comprobar la URL.

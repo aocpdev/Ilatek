@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hatillo.ilatekpr.com/sitemap.xml

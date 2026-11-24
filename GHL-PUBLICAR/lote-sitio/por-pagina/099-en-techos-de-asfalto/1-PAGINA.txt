@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Techos De Asfalto (EN)
+Slug: en/techos-de-asfalto
+URL: https://ilatekpr.com/en/techos-de-asfalto
+Acción: CREAR PÁGINA
+Estado hoy: HTTP 404
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (241 KB, sha256 8f61793cf65e)
+Origen en el repo: servicios/techos-de-asfalto/en/landing-pages/techos-de-asfalto.en.html
+Sección de clima: no
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://luquillo.ilatekpr.com/sitemap.xml

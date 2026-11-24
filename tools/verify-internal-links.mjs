@@ -26,7 +26,8 @@ function audit(html,label) {
     assert.ok(!/^(?:\{\{custom_values\.website_url\}\}|https?:\/\/(?:www\.)?ilatekpr\.com(?:\/|$)|\/(?!\/)|#[^#])/.test(m[2]),`${label}: nonstandard href ${m[2]}`);
     if(m[2].includes(TOKEN)) assert.ok(m[2].startsWith(PREFIX+'/'),`${label}: missing HTTPS/path ${m[2]}`);
   }
-  assert.ok(!html.includes('https://https://'),`${label}: duplicate protocol`);
+  const linkUrls=[...html.matchAll(/\b(?:href|src)\s*=\s*["']([^"']*)["']/gi)].map(m=>m[1]);
+  assert.ok(linkUrls.every(u=>!u.includes('https://https://')),`${label}: duplicate protocol in href/src`);
   assert.ok(!html.includes("var url=website.replace"),`${label}: old dynamic carousel URL`);
   for(const s of html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)) {
     if(!s[2].trim() || /\bsrc=/.test(s[1])) continue;
@@ -47,8 +48,20 @@ let aboutMenuPages=0;
 for(const file of files){
   const html=fs.readFileSync(ROOT+'/'+file,'utf8');
   assert.ok(!html.includes('/limpieza/#ilatek-conocenos'),`${file}: "Acerca de Nosotros" still targets a page that does not exist`);
-  if(!html.includes('Acerca de Nosotros')) continue;
-  assert.equal((html.match(/data-ilatek-path="\/#ilatek-conocenos"/g)||[]).length,2,`${file}: both About links must target /#ilatek-conocenos`);
+  // En una copia EN el destino correcto es la sección equivalente del Home inglés.
+  const isEnglish = html.includes('ILATEK:EN-COPY');
+  if(!html.includes('Acerca de Nosotros')&&!html.includes('About Us')) continue;
+  // Mientras no exista el Home inglés, una copia EN enlaza al Home español:
+  // /en/#... sería un 404. Al crear el Home EN la regla se endurece sola.
+  const enHome=fs.existsSync(ROOT+'/home/en/landing-pages/home.en.html');
+  // El nav es una sola fuente: todas las copias comparten `/#ilatek-conocenos`.
+  // En una copia EN el runtime lo reescribe a la sección del Home inglés
+  // (`/en/home#ilatek-conocenos`), así que el destino efectivo es el correcto.
+  const aboutPath = '/#ilatek-conocenos';
+  if(isEnglish && enHome){
+    assert.ok(html.includes("path === '/' ? '/en/home' : '/en' + path"),`${file}: el runtime EN no traduce el Home a /en/home`);
+  }
+  assert.equal((html.match(new RegExp('data-ilatek-path="'+aboutPath.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'"','g'))||[]).length,2,`${file}: both About links must target ${aboutPath}`);
   aboutMenuPages++;
 }
 assert.ok(aboutMenuPages>=50,`About menu present on too few pages: ${aboutMenuPages}`);

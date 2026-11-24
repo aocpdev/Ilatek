@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- isabela.ilatekpr.com — landings de las comunidades de este municipio.
+     Generado por scripts/genera-pueblos.mjs; una URL por comunidad y servicio. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://isabela.ilatekpr.com/llanos-de-isabela/limpieza</loc></url>
+  <url><loc>https://isabela.ilatekpr.com/llanos-de-isabela/sellado-de-techo</loc></url>
+  <url><loc>https://isabela.ilatekpr.com/medina-isabela/limpieza</loc></url>
+  <url><loc>https://isabela.ilatekpr.com/medina-isabela/sellado-de-techo</loc></url>
+  <url><loc>https://isabela.ilatekpr.com/mirador-del-cielo/limpieza</loc></url>
+  <url><loc>https://isabela.ilatekpr.com/mirador-del-cielo/sellado-de-techo</loc></url>
+  <url><loc>https://isabela.ilatekpr.com/praderas-de-isabela/limpieza</loc></url>
+  <url><loc>https://isabela.ilatekpr.com/praderas-de-isabela/sellado-de-techo</loc></url>
+  <url><loc>https://isabela.ilatekpr.com/vistas-de-isabela/limpieza</loc></url>
+  <url><loc>https://isabela.ilatekpr.com/vistas-de-isabela/sellado-de-techo</loc></url>
+</urlset>

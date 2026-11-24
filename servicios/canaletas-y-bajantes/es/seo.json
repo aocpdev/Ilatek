@@ -3,11 +3,11 @@
   "language": "es",
   "status": "plantilla-local-delta-system",
   "metaTagTitle": "Canaletas y Bajantes para Techos en {{custom_values.business__county_name}} | Ilatek Techos",
-  "metaTagDescription": "Limpieza, reparación e instalación de canaletas y bajantes en {{custom_values.business__county_name}} desde $200. Drenaje que funciona para proteger tu techo. Inspección gratis.",
-  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8583a195f9172ed03ac5f.jpg",
+  "metaTagDescription": "Limpieza, reparación e instalación de canaletas y bajantes en {{custom_values.business__county_name}} desde $250. Drenaje que funciona para proteger tu techo. Agenda con $50 descontables del total.",
+  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/9e169d65-a99b-424a-84f9-2d956b617f31.webp",
   "locationCustomValue": "{{custom_values.business__county_name}}",
   "metaTagImageAlt": "Canaletas y Bajantes para Techos en {{custom_values.business__county_name}} | Ilatek Techos",
   "canonical": "https://{{custom_values.website_url}}/canaletas-y-bajantes",
-  "socialImageFile": "assets/respaldo/6ac8583a195f9172ed03ac5f.webp",
+  "socialImageFile": "assets/meta-image.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."
 }

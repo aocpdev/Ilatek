@@ -1,0 +1,207 @@
+ILATEK · Servicios para Google Business Profile (Google My Business)
+Ruta en el panel: Editar perfil → Servicios → "Agregar más servicios".
+Para cada entrada: escribe el NOMBRE tal cual y pega la DESCRIPCIÓN (límite de Google: 300 caracteres).
+Estructura: nombre en la línea 1 y descripción en la línea 2; un bloque por servicio.
+Total: 46 entradas.
+
+
+=== LIMPIEZA RESIDENCIAL ===
+
+1) Limpieza regular
+Limpieza recurrente semanal, quincenal o mensual del hogar: cocina, baños y dormitorios. Desde $0.07 por pie². Cotizador online con precio real y cobertura en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/limpieza-estandar · 192 caracteres
+
+2) Limpieza profunda
+Limpieza a fondo área por área: desengrase de cocina, detalles de baños y bases. Renovación completa del hogar desde $0.15 por pie². Cotizador online y cobertura en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/limpieza-profunda · 198 caracteres
+
+3) Limpieza de mudanza (move-in / move-out)
+Limpieza de mudanza move-in y move-out: entregamos o recibimos el espacio impecable antes o después de la mudanza. Cotizador online con precio real y cobertura en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/limpieza-de-mudanza · 196 caracteres
+
+4) Limpieza para Airbnb y alquileres a corto plazo
+Turnover entre huéspedes: limpieza, reposición de amenities y preparación para check-in en alquileres a corto plazo y Airbnb. Cobertura en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/airbnb-turnover · 172 caracteres
+
+5) Limpieza post-construcción
+Remoción de polvo fino, restos de obra, pegamentos y detalles finales para entregar la obra impecable. Cotizador online con precio real y cobertura en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/post-construccion · 184 caracteres
+
+6) Limpieza de ventanas
+Ventanas interiores a $10 y exteriores a $25 por ventana: cristales y marcos sin marcas. Cotizador online con precio real y cobertura en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/ventanas · 170 caracteres
+
+7) Lavado a presión
+Lavado a presión de terrazas, verjas, fachadas, aceras y paredes exteriores con equipo profesional. Cotiza online en minutos y cobertura en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/lavado-a-presion · 173 caracteres
+
+8) Limpieza de alfombras
+Lavado de alfombras y tapetes desde $0.75 por pie²: extracción de suciedad profunda, manchas, olores y alérgenos. Cotizador online y cobertura en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/alfombras · 179 caracteres
+
+9) Limpieza de electrodomésticos
+Nevera ($40), horno ($30), lavaplatos ($10) y lavadora/secadora ($10), por dentro y por fuera. Cotizador online con precio real y cobertura en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/electrodomesticos · 176 caracteres
+
+10) Organización del hogar
+Organización de despensas y clósets ($50 cada uno) y garaje ($0.50 por pie²): orden funcional por zonas. Cotizador online y cobertura en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/organizacion · 170 caracteres
+
+11) Limpieza residencial
+Limpieza regular ($0.07 por pie²) y profunda ($0.15 por pie²) para casas y apartamentos en los 78 municipios de Puerto Rico. Cotización instantánea y depósito de $50 que se descuenta.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/limpieza-residencial · 183 caracteres
+
+
+=== LIMPIEZA COMERCIAL E INDUSTRIAL ===
+
+12) Limpieza comercial
+Limpieza de oficinas, tiendas y áreas comunes con checklists por espacio y frecuencias flexibles. Cobertura en los 78 municipios de Puerto Rico. Cotiza tu espacio en minutos.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/limpieza-comercial · 174 caracteres
+
+13) Limpieza industrial
+Limpieza de almacenes, naves y plantas: desengrase, pisos de alto tráfico y equipos industriales, con trabajo planificado para no detener la producción. Cobertura en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/limpieza-industrial · 199 caracteres
+
+
+=== TECHOS: SELLADO E IMPERMEABILIZACIÓN ===
+
+14) Sellado de techos
+Sellado con silicona 100%, membrana asfáltica, elastomérico, poliuretano y acrílico. Labor desde $250, inspección gratis y garantía escrita en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/sellado-de-techos · 176 caracteres
+
+15) Sellado de silicona 100%
+Sellado de techo con silicona 100% desde $3.50 por pie²: máxima elasticidad y durabilidad de 20 a 25 años. Inspección gratis y garantía escrita en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/sellado-de-silicona · 180 caracteres
+
+16) Membrana asfáltica
+Instalación de membrana asfáltica desde $4.00 por pie²: sellado de gran espesor y resistencia al tránsito. Inspección gratis y garantía escrita en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/membrana-asfaltica · 180 caracteres
+
+17) Recubrimiento elastomérico
+Coating elástico blanco desde $3.00 por pie² que refleja el calor y sella microfisuras. Inspección gratis y garantía escrita en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/recubrimiento-elastomerico · 161 caracteres
+
+18) Sellado acrílico
+Sellado acrílico desde $2.00 por pie²: opción económica y reflectiva para mantenimiento periódico del techo. Inspección gratis y garantía escrita en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/sellado-acrilico · 182 caracteres
+
+19) Sellado de poliuretano
+Sellado de poliuretano desde $4.50 por pie²: alta resistencia mecánica y química para superficies exigentes. Inspección gratis y garantía escrita en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/sellado-de-poliuretano · 182 caracteres
+
+20) Sellado de techos residencial
+Sellado de techos residencial desde $2.50 por pie²: protege tu hogar de filtraciones con inspección gratis y garantía escrita. Cobertura en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/sellado-de-techos-residencial · 173 caracteres
+
+21) Sellado de techos comercial
+Sellado de techos comercial desde $2.50 por pie², con trabajo planificado para operar sin cerrar. Inspección gratis y garantía escrita en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/sellado-de-techos-comercial · 171 caracteres
+
+22) Sellado de techos industrial
+Sistemas de sellado de alta resistencia para naves y plantas industriales. Cotización por pie² con inspección gratis y garantía escrita en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/sellado-de-techos-industrial · 172 caracteres
+
+23) Impermeabilización de techos
+Impermeabilización desde $3.00 por pie² en concreto, techos planos, zinc, asfalto, teja y madera. Inspección gratis y garantía escrita en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/impermeabilizacion-de-techos · 171 caracteres
+
+24) Impermeabilización de techos planos (EPDM, TPO)
+Impermeabilización de techos planos desde $250: membranas EPDM, TPO y asfálticas selladas. Inspección gratis y garantía escrita en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/techos-planos · 164 caracteres
+
+
+=== TECHOS: REPARACIÓN Y EMERGENCIAS ===
+
+25) Reparación de techos
+Reparación desde $250 de goteras, filtraciones y grietas en techos de concreto, zinc y asfalto. Inspección gratis, garantía escrita y cobertura en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/reparacion-de-techos · 180 caracteres
+
+26) Reparación de goteras
+Localizamos y sellamos el punto exacto de la gotera en techos de concreto, zinc y asfalto desde $250. Inspección gratis y garantía escrita en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/reparacion-de-goteras · 175 caracteres
+
+27) Reparación de filtraciones de agua
+Sellado profundo de humedad y filtraciones en concreto, zinc y asfalto desde $300. Inspección gratis y garantía escrita en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/reparacion-de-filtraciones · 156 caracteres
+
+28) Reparación de grietas en techos de concreto
+Sellado estructural de grietas en techos de concreto y losas desde $275 para detener la entrada de agua, con garantía por escrito. Inspección gratis en los 78 municipios.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/reparacion-de-grietas-techos · 170 caracteres
+
+29) Reparación de techos de concreto (losas)
+Reparación de techos de concreto y losas desde $250: sellado de grietas y filtraciones, cotización gratis y garantía escrita en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/techos-de-concreto · 161 caracteres
+
+30) Reparación de techos de zinc y metal
+Tratamiento de óxido, sellado de traslapes y protección anticorrosiva desde $250. Cotización gratis y garantía escrita en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/techos-de-zinc · 155 caracteres
+
+31) Reparación de techos de asfalto (shingles)
+Sustitución de tejas dañadas y sellado de filtraciones desde $350, con garantía escrita e inspección gratis en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/techos-de-asfalto · 144 caracteres
+
+32) Reparación de techos de teja
+Sellado de traslapes y remates sin dañar la pieza desde $250. Inspección gratis y garantía escrita en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/techos-de-teja · 135 caracteres
+
+33) Sellado y protección de techos de madera
+Tratamiento contra humedad, comején y filtración desde $250, con cotización gratis y garantía escrita en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/techos-de-madera · 138 caracteres
+
+34) Reparación de techos post-huracán
+Estabilización, tarping, reparación y documentación para el seguro desde $350, con atención prioritaria y cobertura en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/reparacion-post-huracan · 152 caracteres
+
+35) Corrección de empozamiento de agua en techos
+Corregimos pendiente y drenaje en techos planos y losas desde $350 para evitar filtraciones. Inspección gratis y garantía escrita en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/empozamiento-de-techos · 166 caracteres
+
+
+=== TECHOS: MANTENIMIENTO, INSTALACIÓN Y ACCESORIOS ===
+
+36) Canaletas y bajantes
+Limpieza, reparación e instalación de canaletas y bajantes desde $200: drenaje que funciona para proteger tu techo. Inspección gratis en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/canaletas-y-bajantes · 170 caracteres
+
+37) Limpieza de techos y canaletas
+Remoción de hojas, arena y escombros que obstruyen el drenaje desde $250. Inspección gratis y garantía escrita en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/limpieza-de-techos-y-canaletas · 147 caracteres
+
+38) Lavado a presión de techos
+Lavado a presión de techos desde $250: limpieza profunda que prepara y alarga la vida del techo, con cotización agendada y garantía escrita. Cobertura en los 78 municipios.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/lavado-a-presion-techos · 172 caracteres
+
+39) Mantenimiento preventivo de techos
+Visitas programadas de inspección, limpieza y sellado preventivo desde $250 por labor, con garantía escrita en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/mantenimiento-de-techos · 144 caracteres
+
+40) Inspección de techos
+Inspección gratis con diagnóstico completo e informe fotográfico, sin compromiso. Detectamos filtraciones y daños a tiempo en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/inspeccion-de-techos · 159 caracteres
+
+41) Instalación y reemplazo de techos
+Techos nuevos de zinc, concreto y membrana desde $6.00 por pie², con garantía escrita e inspección gratis en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/instalacion-y-reemplazo-de-techos · 142 caracteres
+
+42) Tragaluces y skylights
+Sellado e instalación de tragaluces y skylights desde $250: ilumina tu espacio sin filtraciones ni humedad, con garantía escrita. Cobertura en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/tragaluces · 176 caracteres
+
+
+=== PÁGINAS DE CATEGORÍA (OPCIONALES, COMO SERVICIO PARAGUAS) ===
+
+43) Servicios de limpieza
+Limpieza residencial, comercial e industrial: estándar y profunda, mudanzas, Airbnb, post-construcción, ventanas, lavado a presión, alfombras, electrodomésticos y organización. Precio transparente en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/limpieza · 233 caracteres
+
+44) Inspección y mantenimiento de techos
+Inspección gratis y mantenimiento preventivo desde $250 por labor, con cotización sin costo y $50 descontable del total para agendar. Cobertura en los 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/inspeccion-y-mantenimiento-de-techos · 180 caracteres
+
+45) Reparación y sellado de techos
+Reparación y sellado de techos: goteras, filtraciones, impermeabilización y mantenimiento. Precios desde $2.50 por pie², inspección gratis y 78 municipios de Puerto Rico.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/techos · 170 caracteres
+
+46) Sellado de techos por segmento
+Sellado y reparación de techos residencial, comercial e industrial desde $250. Sistemas por segmento, cotización agendada con $50 reembolsables y garantía escrita en los 78 municipios.
+   Precio: Desde $250 por labor, sujeto a cotización · Página: https://ilatekpr.com/techos-por-segmento · 184 caracteres

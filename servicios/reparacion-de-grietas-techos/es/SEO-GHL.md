@@ -11,18 +11,18 @@ Reparación de Grietas en Techos de Concreto en {{custom_values.business__county
 ## Meta Tag Description
 
 ```text
-Reparación de grietas en techos de concreto y losas en {{custom_values.business__county_name}} desde $275. Sellado estructural que detiene la entrada de agua con garantía por escrito.
+Reparación de grietas en techos de concreto y losas en {{custom_values.business__county_name}} desde $250. Sellado estructural que detiene la entrada de agua con garantía por escrito.
 ```
 
 ## Meta Tag Image
 
-[Imagen social — URL pública](https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac72673bbad531ac82477a4.jpg)
+[Imagen social — URL pública](https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/social/reparacion-de-grietas-techos-1200.webp)
 
 ```text
-https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac72673bbad531ac82477a4.jpg
+https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/social/reparacion-de-grietas-techos-1200.webp
 ```
 
-Copia local: [assets/meta-image.jpg](assets/meta-image.jpg). No usar una ruta local en GHL.
+Copia local: [assets/meta-image.webp](assets/meta-image.webp). No usar una ruta local en GHL.
 
 ## Canonical existente
 

@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Mantenimiento De Techos (EN)
+Slug: en/mantenimiento-de-techos
+URL: https://ilatekpr.com/en/mantenimiento-de-techos
+Acción: CREAR PÁGINA
+Estado hoy: HTTP 404
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (242 KB, sha256 6e7a9cf5183c)
+Origen en el repo: servicios/mantenimiento-de-techos/en/landing-pages/mantenimiento-de-techos.en.html
+Sección de clima: no
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

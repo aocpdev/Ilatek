@@ -1,0 +1,149 @@
+{{custom_values.business__county_name}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}
+Limpieza Estándar en {{custom_values.business__county_name}} | Ilatek
+/og:title/ og:description ("… en Juncos, Puerto Rico"): el título sale de {{custom_values.business__county_name}}, así que es el mismo custom value, sin depender de que el builder expanda el Custom Code; 3. el subdominio del sitio (juncos.ilatekpr.com → Juncos); 4. los valores de marca del contrato (custom-values.json → brand). El portador que viaja en el embed se oculta siempre (nunca es contenido). Estado en
+Login
+Limpieza estándar
+Limpieza Estándar en
+{{custom_values.business__county_name}}
+que mantiene tu hogar siempre fresco.
+Ilatek mantiene hogares impecables en {{custom_values.business__county_name}} con limpieza recurrente semanal, quincenal o mensual desde $250. Precio real en minutos con el cotizador y reserva con $50 descontable.
+Solicita tu cotización
+Qué incluye el servicio ↓
+por servicio
+Precio claro y por escrito
+municipios
+Cobertura en PR
+depósito
+Descontable al reservar
+Por qué Ilatek
+Tu hogar siempre impecable, sin esfuerzo.
+El servicio más solicitado
+Limpieza recurrente semanal, quincenal o mensual: regresas a un hogar fresco y ordenado sin sacrificar tus fines de semana.
+Precio claro por servicio
+Pagas exactamente por el espacio de tu hogar: desde $250 con precio real en minutos en el cotizador — sin sorpresas ni letra pequeña.
+Equipo confiable
+Personal entrenado, productos profesionales y horario coordinado contigo: limpiamos mientras trabajas o descansas, en {{custom_values.business__county_name}}.
+Qué incluye
+Tu casa impecable, habitación por habitación.
+La limpieza estándar de Ilatek cubre cocina, baños, cuartos, sala y pisos de toda la casa — el mantenimiento regular que mantiene tu hogar listo para vivir, con el alcance definido en tu cotización.
+Cocina: encimeras, exteriores de enseres y fregadero
+Baños: lavamanos, inodoro, ducha y espejos
+Cuartos: camas hechas y superficies desempolvadas
+Sala y comedor: orden, desempolvo y superficies
+Pisos: barrido, aspirado y trapeado en toda la casa
+Detalles finales: basuras fuera y toques finales
+Cotiza tu hogar
+Productos profesionales · seguros para tu familia y mascotas
+Espacios
+Para todo tipo de hogar.
+Casas y apartamentos
+Del estudio a la casa familiar: cocina, baños, cuartos y pisos siempre al día con la frecuencia que elijas.
+Airbnb y alquileres cortos
+Limpieza entre huéspedes coordinada con tu calendario: tus reseñas de limpieza se mantienen impecables.
+¿Primera vez? Empieza con profunda
+Si tu casa no recibe mantenimiento hace tiempo, empezamos con una limpieza profunda y la estándar la mantiene al día.
+Frecuencia
+El ritmo que tu hogar necesita.
+Semanal
+Hogares con movimiento diario
+Niños, mascotas o trabajo desde casa: cada semana tu hogar vuelve a estar impecable sin que muevas un dedo.
+Quincenal
+La favorita de nuestros clientes
+El equilibrio perfecto entre limpieza y presupuesto: tu hogar siempre listo al mejor precio por visita.
+Mensual
+Mantenimiento ligero
+Para hogares pequeños o de ritmo tranquilo: una visita al mes que mantiene el orden — con profunda opcional.
+Cotiza tu precio exacto
+Cobertura local
+Limpieza impecable,
+Cobertura en Toda la Isla
+Explora los servicios de limpieza de
+Ilatek
+disponibles en los
+78 municipios de Puerto Rico
+y visita la página de tu pueblo. Atendemos hogares en
+y toda la isla.
+No encontramos ese pueblo. Verifica el nombre e intenta nuevamente.
+Página 1 de 1
+Preguntas frecuentes
+Todo lo que preguntas antes de contratar.
+¿Cuánto cuesta la limpieza estándar en {{custom_values.business__county_name}}?
+Ilatek cobra
+desde $250
+: el precio depende solo del tamaño de tu hogar y la frecuencia que elijas. Usa el cotizador y recibe tu número real en minutos — precio claro y por escrito, sin compromiso.
+¿Qué incluye una limpieza estándar?
+Incluye cocina (encimeras, exteriores de enseres y fregadero), baños completos, cuartos con camas hechas, sala y comedor, y pisos barridos, aspirados y trapeados de toda la casa. El alcance exacto queda definido en tu cotización.
+¿Cuál es la diferencia entre limpieza estándar y profunda?
+La estándar es el
+mantenimiento regular
+: superficies, baños, cocina y pisos. La profunda va más a fondo —interiores de enseres, detalles y acumulación— y se recomienda como primera visita; luego la estándar mantiene tu hogar al día.
+¿Cada cuánto debo limpiar mi casa?
+Depende del ritmo de tu hogar: con niños o mascotas funciona
+semanal
+; la mayoría de nuestros clientes elige
+quincenal
+; y hogares pequeños o tranquilos,
+mensual
+. En la cotización te recomendamos la frecuencia ideal según tu caso.
+¿Cubren mi área en {{custom_values.business__county_name}}?
+Sí. Ilatek atiende hogares en los
+, incluyendo {{custom_values.business__county_name}} — urbanizaciones, condominios y apartamentos. Cotiza tu hogar y confirma tu plan en minutos.
+¿Hay contrato o compromiso mínimo?
+Definimos juntos el plan y la frecuencia — sin letra pequeña. Reservas con un depósito de
+$50 descontable
+y ajustamos el servicio cuando tu hogar lo necesite.
+¿Qué productos y equipos utilizan?
+Llegamos con
+productos y equipos profesionales de limpieza residencial
+, seguros para tu familia y tus mascotas. Si prefieres algo específico (eco-amigable, sin fragancia), coordínalo en la cotización.
+¿Por qué elegir Ilatek para la limpieza de tu hogar?
+Precio claro por trabajo desde $250, cotizador con precio real en minutos, equipo puntual y confiable, depósito de $50 descontable y cobertura en los 78 municipios. Tu hogar siempre fresco en {{custom_values.business__county_name}}.
+¿Tu hogar merece el estándar Ilatek?
+Solicita tu cotización ↗
+Devasks
+Navegación de Ilatek
+Ilatek, inicio
+Logo de Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Logo%20de%20Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Navegación principal
+Idioma / Language
+Español
+English
+Abrir o cerrar el menú
+Ilatek Limpieza Estándar {{custom_values.business__county_name}}
+Equipo de Ilatek limpiando una casa — limpieza estándar recurrente de hogares en {{custom_values.business__county_name}}
+Limpieza Estándar en {{custom_values.business__county_name}} · Ilatek
+Equipo%20de%20Ilatek%20limpiando%20una%20casa%20%E2%80%94%20limpieza%20est%C3%A1ndar%20recurrente%20de%20hogares%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Limpieza%20Est%C3%A1ndar%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%C2%B7%20Ilatek
+Limpieza estándar de Ilatek — cocina, baños, cuartos y pisos de tu casa en {{custom_values.business__county_name}}
+Limpieza Estándar de Casas en {{custom_values.business__county_name}} · Ilatek
+Limpieza%20est%C3%A1ndar%20de%20Ilatek%20%E2%80%94%20cocina%2C%20ba%C3%B1os%2C%20cuartos%20y%20pisos%20de%20tu%20casa%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Limpieza%20Est%C3%A1ndar%20de%20Casas%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%C2%B7%20Ilatek
+Cobertura de limpieza de Ilatek en Puerto Rico
+Busca tu pueblo
+Buscar un municipio de Puerto Rico
+Limpiar búsqueda
+Municipios de Puerto Rico con servicio de Ilatek
+Pie de página de Ilatek
+Facebook
+Facebook — servicio en {{custom_values.business__county_name}}
+Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Instagram
+Instagram — servicio en {{custom_values.business__county_name}}
+Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Youtube
+Youtube — servicio en {{custom_values.business__county_name}}
+Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+TikTok
+TikTok — servicio en {{custom_values.business__county_name}}
+TikTok%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+X — servicio en {{custom_values.business__county_name}}
+X%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+LinkedIn
+LinkedIn — servicio en {{custom_values.business__county_name}}
+LinkedIn%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Pinterest
+Pinterest — servicio en {{custom_values.business__county_name}}
+Pinterest%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D

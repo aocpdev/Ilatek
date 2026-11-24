@@ -4,10 +4,10 @@
   "status": "plantilla-local-delta-system",
   "metaTagTitle": "Limpieza Post-Construcción en {{custom_values.business__county_name}} | Ilatek",
   "metaTagDescription": "Limpieza post-construcción en {{custom_values.business__county_name}}: polvo fino, restos de obra, pegamentos y detalles finales para entregar la obra impecable. Cotizador online y cobertura en los 78 municipios.",
-  "metaTagImage": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/post-construccion.jpg",
+  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/920f564d-1a89-43c7-a28d-42b2c65d80d9.webp",
   "locationCustomValue": "{{custom_values.business__county_name}}",
-  "metaTagImageAlt": "Limpieza Post-Construcción en {{custom_values.business__county_name}} | Ilatek",
+  "metaTagImageAlt": "Post-Construcción en {{custom_values.business__county_name}} — Ilatek",
   "canonical": "https://{{custom_values.website_url}}/post-construccion",
-  "socialImageFile": "assets/meta-image.jpg",
+  "socialImageFile": "assets/meta-image.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."
 }

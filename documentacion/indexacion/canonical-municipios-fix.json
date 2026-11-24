@@ -1,0 +1,2186 @@
+[
+ {
+  "host": "adjuntas.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://adjuntas.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "adjuntas.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://adjuntas.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "adjuntas.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://adjuntas.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "adjuntas.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://adjuntas.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "aguada.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://aguada.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "aguada.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://aguada.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "aguada.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://aguada.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "aguada.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://aguada.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "aguadilla.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://aguadilla.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "aguadilla.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://aguadilla.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "aguadilla.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://aguadilla.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "aguadilla.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://aguadilla.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "aguas-buenas.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://aguas-buenas.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "aguas-buenas.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://aguas-buenas.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "aguas-buenas.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://aguas-buenas.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "aguas-buenas.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://aguas-buenas.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "aibonito.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://aibonito.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "aibonito.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://aibonito.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "aibonito.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://aibonito.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "aibonito.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://aibonito.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "anasco.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://anasco.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "anasco.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://anasco.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "anasco.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://anasco.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "anasco.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://anasco.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "arecibo.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://arecibo.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "arecibo.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://arecibo.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "arecibo.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://arecibo.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "arecibo.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://arecibo.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "arroyo.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://arroyo.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "arroyo.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://arroyo.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "arroyo.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://arroyo.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "arroyo.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://arroyo.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "barceloneta.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://barceloneta.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "barceloneta.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://barceloneta.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "barceloneta.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://barceloneta.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "barceloneta.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://barceloneta.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "barranquitas.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://barranquitas.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "barranquitas.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://barranquitas.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "barranquitas.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://barranquitas.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "barranquitas.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://barranquitas.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "bayamon.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://bayamon.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "bayamon.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://bayamon.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "bayamon.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://bayamon.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "bayamon.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://bayamon.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "cabo-rojo.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://cabo-rojo.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "cabo-rojo.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://cabo-rojo.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "cabo-rojo.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://cabo-rojo.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "cabo-rojo.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://cabo-rojo.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "caguas.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://caguas.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "caguas.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://caguas.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "caguas.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://caguas.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "caguas.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://caguas.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "camuy.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://camuy.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "camuy.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://camuy.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "camuy.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://camuy.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "camuy.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://camuy.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "canovanas.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://canovanas.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "canovanas.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://canovanas.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "canovanas.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://canovanas.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "canovanas.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://canovanas.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "carolina.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://carolina.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "carolina.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://carolina.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "carolina.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://carolina.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "carolina.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://carolina.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "catano.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://catano.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "catano.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://catano.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "catano.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://catano.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "catano.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://catano.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "cayey.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://cayey.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "cayey.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://cayey.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "cayey.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://cayey.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "cayey.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://cayey.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "ceiba.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://ceiba.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "ceiba.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://ceiba.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "ceiba.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://ceiba.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "ceiba.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://ceiba.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "ciales.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://ciales.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "ciales.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://ciales.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "ciales.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://ciales.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "ciales.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://ciales.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "cidra.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://cidra.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "cidra.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://cidra.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "cidra.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://cidra.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "cidra.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://cidra.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "coamo.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://coamo.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "coamo.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://coamo.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "coamo.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://coamo.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "coamo.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://coamo.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "comerio.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://comerio.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "comerio.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://comerio.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "comerio.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://comerio.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "comerio.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://comerio.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "corozal.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://corozal.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "corozal.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://corozal.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "corozal.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://corozal.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "corozal.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://corozal.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "culebra.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://culebra.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "culebra.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://culebra.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "culebra.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://culebra.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "culebra.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://culebra.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "dorado.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://dorado.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "dorado.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://dorado.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "dorado.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://dorado.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "dorado.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://dorado.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "fajardo.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://fajardo.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "fajardo.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://fajardo.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "fajardo.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://fajardo.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "fajardo.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://fajardo.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "florida.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://florida.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "florida.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://florida.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "florida.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://florida.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "florida.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://florida.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "guanica.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://guanica.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "guanica.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://guanica.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "guanica.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://guanica.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "guanica.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://guanica.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "guayama.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://guayama.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "guayama.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://guayama.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "guayama.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://guayama.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "guayama.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://guayama.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "guayanilla.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://guayanilla.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "guayanilla.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://guayanilla.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "guayanilla.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://guayanilla.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "guayanilla.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://guayanilla.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "guaynabo.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://guaynabo.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "guaynabo.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://guaynabo.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "guaynabo.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://guaynabo.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "guaynabo.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://guaynabo.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "gurabo.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://gurabo.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "gurabo.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://gurabo.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "gurabo.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://gurabo.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "gurabo.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://gurabo.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "hatillo.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://hatillo.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "hatillo.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://hatillo.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "hatillo.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://hatillo.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "hatillo.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://hatillo.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "hormigueros.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://hormigueros.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "hormigueros.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://hormigueros.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "hormigueros.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://hormigueros.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "hormigueros.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://hormigueros.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "humacao.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://humacao.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "humacao.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://humacao.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "humacao.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://humacao.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "humacao.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://humacao.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "isabela.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://isabela.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "isabela.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://isabela.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "isabela.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://isabela.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "isabela.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://isabela.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "jayuya.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://jayuya.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "jayuya.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://jayuya.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "jayuya.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://jayuya.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "jayuya.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://jayuya.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "juana-diaz.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://juana-diaz.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "juana-diaz.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://juana-diaz.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "juana-diaz.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://juana-diaz.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "juana-diaz.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://juana-diaz.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "juncos.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://juncos.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "juncos.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://juncos.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "juncos.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://juncos.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "juncos.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://juncos.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "lajas.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://lajas.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "lajas.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://lajas.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "lajas.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://lajas.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "lajas.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://lajas.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "lares.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://lares.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "lares.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://lares.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "lares.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://lares.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "lares.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://lares.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "las-marias.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://las-marias.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "las-marias.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://las-marias.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "las-marias.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://las-marias.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "las-marias.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://las-marias.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "las-piedras.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://las-piedras.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "las-piedras.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://las-piedras.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "las-piedras.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://las-piedras.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "las-piedras.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://las-piedras.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "loiza.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://loiza.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "loiza.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://loiza.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "loiza.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://loiza.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "loiza.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://loiza.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "luquillo.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://luquillo.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "luquillo.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://luquillo.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "luquillo.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://luquillo.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "luquillo.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://luquillo.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "manati.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://manati.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "manati.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://manati.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "manati.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://manati.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "manati.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://manati.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "maricao.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://maricao.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "maricao.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://maricao.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "maricao.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://maricao.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "maricao.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://maricao.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "maunabo.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://maunabo.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "maunabo.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://maunabo.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "maunabo.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://maunabo.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "maunabo.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://maunabo.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "mayaguez.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://mayaguez.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "mayaguez.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://mayaguez.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "mayaguez.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://mayaguez.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "mayaguez.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://mayaguez.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "moca.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://moca.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "moca.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://moca.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "moca.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://moca.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "moca.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://moca.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "morovis.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://morovis.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "morovis.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://morovis.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "morovis.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://morovis.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "morovis.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://morovis.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "naguabo.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://naguabo.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "naguabo.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://naguabo.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "naguabo.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://naguabo.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "naguabo.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://naguabo.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "naranjito.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://naranjito.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "naranjito.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://naranjito.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "naranjito.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://naranjito.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "naranjito.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://naranjito.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "orocovis.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://orocovis.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "orocovis.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://orocovis.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "orocovis.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://orocovis.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "orocovis.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://orocovis.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "patillas.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://patillas.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "patillas.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://patillas.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "patillas.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://patillas.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "patillas.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://patillas.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "penuelas.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://penuelas.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "penuelas.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://penuelas.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "penuelas.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://penuelas.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "penuelas.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://penuelas.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "ponce.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://ponce.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "ponce.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://ponce.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "ponce.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://ponce.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "ponce.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://ponce.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "quebradillas.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://quebradillas.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "quebradillas.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://quebradillas.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "quebradillas.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://quebradillas.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "quebradillas.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://quebradillas.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "rincon.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://rincon.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "rincon.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://rincon.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "rincon.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://rincon.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "rincon.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://rincon.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "rio-grande.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://rio-grande.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "rio-grande.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://rio-grande.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "rio-grande.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://rio-grande.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "rio-grande.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://rio-grande.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "sabana-grande.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://sabana-grande.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "sabana-grande.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://sabana-grande.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "sabana-grande.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://sabana-grande.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "sabana-grande.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://sabana-grande.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "salinas.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://salinas.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "salinas.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://salinas.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "salinas.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://salinas.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "salinas.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://salinas.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "san-german.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://san-german.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "san-german.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://san-german.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "san-german.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://san-german.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "san-german.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://san-german.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "san-juan.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://san-juan.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "san-juan.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://san-juan.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "san-juan.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://san-juan.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "san-juan.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://san-juan.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "san-lorenzo.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://san-lorenzo.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "san-lorenzo.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://san-lorenzo.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "san-lorenzo.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://san-lorenzo.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "san-lorenzo.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://san-lorenzo.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "san-sebastian.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://san-sebastian.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "san-sebastian.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://san-sebastian.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "san-sebastian.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://san-sebastian.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "san-sebastian.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://san-sebastian.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "santa-isabel.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://santa-isabel.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "santa-isabel.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://santa-isabel.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "santa-isabel.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://santa-isabel.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "santa-isabel.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://santa-isabel.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "toa-alta.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://toa-alta.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "toa-alta.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://toa-alta.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "toa-alta.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://toa-alta.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "toa-alta.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://toa-alta.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "toa-baja.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://toa-baja.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "toa-baja.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://toa-baja.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "toa-baja.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://toa-baja.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "toa-baja.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://toa-baja.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "trujillo-alto.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://trujillo-alto.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "trujillo-alto.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://trujillo-alto.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "trujillo-alto.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://trujillo-alto.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "trujillo-alto.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://trujillo-alto.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "utuado.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://utuado.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "utuado.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://utuado.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "utuado.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://utuado.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "utuado.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://utuado.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "vega-alta.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://vega-alta.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "vega-alta.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://vega-alta.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "vega-alta.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://vega-alta.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "vega-alta.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://vega-alta.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "vega-baja.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://vega-baja.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "vega-baja.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://vega-baja.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "vega-baja.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://vega-baja.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "vega-baja.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://vega-baja.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "vieques.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://vieques.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "vieques.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://vieques.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "vieques.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://vieques.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "vieques.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://vieques.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "villalba.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://villalba.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "villalba.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://villalba.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "villalba.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://villalba.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "villalba.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://villalba.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "yabucoa.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://yabucoa.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "yabucoa.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://yabucoa.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "yabucoa.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://yabucoa.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "yabucoa.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://yabucoa.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ },
+ {
+  "host": "yauco.ilatekpr.com",
+  "path": "/",
+  "canonicalEsperada": "https://yauco.ilatekpr.com/",
+  "canonicalActual": "https://ilatekpr.com",
+  "estado": "home"
+ },
+ {
+  "host": "yauco.ilatekpr.com",
+  "path": "/limpieza-estandar",
+  "canonicalEsperada": "https://yauco.ilatekpr.com/limpieza-estandar",
+  "canonicalActual": "https://ilatekpr.com/limpieza-estandar",
+  "estado": "cruzado"
+ },
+ {
+  "host": "yauco.ilatekpr.com",
+  "path": "/canaletas-y-bajantes",
+  "canonicalEsperada": "https://yauco.ilatekpr.com/canaletas-y-bajantes",
+  "canonicalActual": "https://ilatekpr.com/canaletas-y-bajantes",
+  "estado": "cruzado"
+ },
+ {
+  "host": "yauco.ilatekpr.com",
+  "path": "/sellado-de-poliuretano",
+  "canonicalEsperada": "https://yauco.ilatekpr.com/sellado-de-poliuretano",
+  "canonicalActual": "https://ilatekpr.com/sellado-de-poliuretano",
+  "estado": "cruzado"
+ }
+]

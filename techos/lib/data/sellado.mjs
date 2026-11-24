@@ -1,5 +1,6 @@
 // Ilatek · Techos · Clúster B — Sellado de Techos (madre + sistemas).
 import { mk, pic } from '../kit.mjs';
+import { moneyFaq } from './money-faq.mjs';
 
 export const sellado = [
   mk({
@@ -12,7 +13,7 @@ export const sellado = [
     h1after: 'tu propiedad.',
     metaTitle: 'Sellado de Techos en Puerto Rico | Ilatek Techos',
     metaDescription:
-      'Sellado de techos en Puerto Rico labor desde $250: silicona 100%, membrana asfáltica, elastomérico, poliuretano y acrílico. Inspección gratis y garantía escrita.',
+      'Sellado de techos en Puerto Rico labor desde $250: silicona 100%, membrana asfáltica, elastomérico, poliuretano y acrílico. Agenda con $50 descontables del total y garantía escrita.',
     hero: pic('industrial', {
       alt: 'Sellado de techos de Ilatek Techos en Puerto Rico — impermeabilización en {{custom_values.business__county_name}}',
       title: 'Sellado de Techos en Puerto Rico · Ilatek Techos',
@@ -60,18 +61,9 @@ export const sellado = [
         { slug: 'sellado-de-poliuretano', name: 'Sellado de Poliuretano', desc: 'Sellador de alta resistencia mecánica y química para superficies exigentes.' },
         { slug: 'sellado-acrilico', name: 'Sellado Acrílico', desc: 'Opción económica y reflectiva para mantenimiento periódico de techos ya sellados.' },
       ],
-      cta: { slug: 'cotizacion', label: 'Solicita tu cotización gratis' },
+      cta: { slug: 'cotizacion', label: 'Solicita tu cotización por $50 descontables del total' },
     },
-    faq: [
-      { q: '¿Cuánto cuesta sellar un techo en Puerto Rico?', a: 'El sellado de techos de Ilatek <b>comienza con labor desde $250</b> instalado. El precio final varía según el sistema (silicona, membrana, poliuretano o acrílico), el tamaño del techo y su condición. Un techo típico de 1,200 pies² se cotiza en minutos.' },
-      { q: '¿Cada cuánto se debe sellar un techo?', a: 'La mayoría de los techos necesitan sellado <b>cada 5 a 10 años</b>, dependiendo del sistema. La silicona 100% dura de 20 a 25 años; el acrílico, de 7 a 10. En Puerto Rico, el sol y la lluvia aceleran el desgaste, por eso recomendamos inspección anual.' },
-      { q: '¿Qué sistema de sellado es mejor?', a: 'Depende de tu techo: la <b>silicona 100%</b> ofrece la mayor vida útil; la <b>membrana asfáltica</b>, gran resistencia; el <b>elastomérico</b>, reflejo del calor; el <b>poliuretano</b>, dureza mecánica. Lo definimos según superficie y uso.' },
-      { q: '¿Qué incluye el sellado de techo?', a: 'El <b>sistema de 5 pasos</b>: remoción de material vencido, lavado a presión, corrección de empozamientos, aplicación de primer y colocación de la membrana asfáltica o sellador final.' },
-      { q: '¿Sellan techos comerciales e industriales?', a: 'Sí: sellamos <b>techos residenciales, comerciales e industriales</b>, incluyendo losas grandes, techos planos con membrana y naves industriales. El sistema y el precio se ajustan al tamaño y tránsito de la superficie.' },
-      { q: '¿Cuánto dura un sellado de techo?', a: 'La silicona 100% bien aplicada dura <b>20 a 25 años</b>; el poliuretano, 10 a 15; la membrana asfáltica, 10 a 15; y el acrílico, 7 a 10 años. La duración depende del sistema y del mantenimiento.' },
-      { q: '¿Ofrecen garantía en el sellado?', a: '<b>Sí.</b> Entregamos garantía de mano de obra por escrito. Utilizamos materiales certificados y procesos comprobados para que el techo quede protegido de verdad.' },
-      { q: '¿Por qué elegir Ilatek Techos para sellar?', a: 'Proceso de 5 pasos, materiales certificados, <b>labor desde $250</b>, inspección gratis, garantía escrita y cobertura en los 78 municipios de Puerto Rico.' },
-    ],
+    faq: moneyFaq,
   }),
 
   mk({
@@ -80,16 +72,16 @@ export const sellado = [
     noun: 'sellado de silicona',
     h1before: 'Sellado de Techos con Silicona 100% en',
     h1em: 'Puerto Rico',
-    h1after: 'que dura 20 años o más.',
+    h1after: 'que dura 20 a 25 años.',
     metaTitle: 'Sellado de Silicona 100% para Techos | Ilatek Techos',
     metaDescription:
-      'Sellado de techo con silicona 100% en Puerto Rico desde $3.50 por pie². Máxima elasticidad y durabilidad de 20 a 25 años. Inspección gratis y garantía escrita.',
+      'Sellado de techo con silicona 100% en Puerto Rico desde $250. Máxima elasticidad y durabilidad de 20 a 25 años. Agenda con $50 descontables del total y garantía escrita.',
     hero: pic('industrial', { alt: 'Sellado de techo con silicona 100% en Puerto Rico — {{custom_values.business__county_name}}', title: 'Sellado de silicona 100% · Ilatek Techos', badge: '20–25 años de durabilidad' }),
     incl: pic('comercial', { alt: 'Aplicación de silicona 100% en techo de Ilatek Techos en Puerto Rico — sellado impermeable', title: 'Sellado de silicona en Puerto Rico · Ilatek Techos', caption: 'Elasticidad permanente · Resistente al UV' }),
     heroSub:
-      'La silicona 100% es el sistema de sellado más duradero para techos en Puerto Rico: mantiene su elasticidad por décadas frente al sol y la lluvia. Ilatek lo aplica en {{custom_values.business__county_name}} <b>desde $3.50 por pie²</b>, con garantía escrita.',
+      'La silicona 100% es el sistema de sellado más duradero para techos en Puerto Rico: mantiene su elasticidad por décadas frente al sol y la lluvia. Ilatek lo aplica en {{custom_values.business__county_name}} <b>desde $250</b>, con garantía escrita.',
     facts: [
-      { b: '$3.50', s: 'por pie²', label: 'Sistema completo' },
+      { b: '$250', s: 'por servicio', label: 'Sistema completo' },
       { b: '20–25', s: 'años', label: 'Durabilidad' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
     ],
@@ -122,14 +114,14 @@ export const sellado = [
       ],
     },
     faq: [
-      { q: '¿Cuánto cuesta sellar un techo con silicona?', a: 'El sellado con silicona 100% de Ilatek <b>comienza desde $3.50 por pie²</b> instalado, con rango de mercado entre $3.50 y $6.50 según la condición. Un techo de 1,200 pies² se cotiza en minutos.' },
+      { q: '¿Cuánto cuesta sellar un techo con silicona?', a: 'El sellado con silicona 100% de Ilatek <b>comienza desde $250</b> instalado, con precio por servicio desde $250 según la condición. Un techo de 1,200 pies² se cotiza en minutos.' },
       { q: '¿Cuánto dura la silicona en un techo?', a: 'La silicona 100% bien aplicada dura <b>de 20 a 25 años</b>, siempre que se aplique sobre superficie preparada. Es la mayor durabilidad entre los sistemas de sellado comunes.' },
       { q: '¿La silicona es mejor que la membrana asfáltica?', a: '<b>Depende del techo.</b> La silicona gana en durabilidad y elasticidad; la membrana asfáltica gana en resistencia al tránsito. Si tu techo se pisa, recomendamos membrana; si es una losa, silicona.' },
       { q: '¿Pueden aplicar silicona sobre el sellador viejo?', a: '<b>No directamente.</b> El sellador vencido debe removerse porque impide la adherencia; aplicar silicona encima de una capa suelta es un error que causa desprendimientos.' },
       { q: '¿La silicona blanca o la gris, cuál conviene?', a: 'Ambas sellan igual: <b>la blanca refleja el calor</b> y baja la temperatura del techo (ayuda a la factura de aire); la gris se usa más por estética. Te asesoramos según tu caso.' },
       { q: '¿Cuánto tarda aplicar la silicona?', a: 'Un techo residencial típico toma <b>2 a 3 días</b>, incluyendo remoción, lavado, primer y aplicación. El curado depende del clima; con sol caribeño es relativamente rápido.' },
       { q: '¿El sellado de silicona tiene garantía?', a: '<b>Sí.</b> Entregamos garantía de mano de obra por escrito sobre el sistema aplicado, con materiales certificados.' },
-      { q: '¿Por qué elegir Ilatek Techos?', a: 'Silicona 100% real (no mezclas), preparación completa de 5 pasos, <b>desde $3.50 por pie²</b>, inspección gratis y garantía escrita en los 78 municipios de Puerto Rico.' },
+      { q: '¿Por qué elegir Ilatek Techos?', a: 'Silicona 100% real (no mezclas), preparación completa de 5 pasos, <b>desde $250</b>, agenda con $50 descontables del total y garantía escrita en los 78 municipios de Puerto Rico.' },
     ],
   }),
 
@@ -142,13 +134,13 @@ export const sellado = [
     h1after: ': sellado de alta resistencia.',
     metaTitle: 'Membrana Asfáltica para Techos | Ilatek Techos',
     metaDescription:
-      'Instalación de membrana asfáltica en techos en Puerto Rico desde $4.00 por pie². Sellado de gran espesor y resistencia al tránsito. Inspección gratis y garantía escrita.',
+      'Instalación de membrana asfáltica en techos en Puerto Rico desde $250. Sellado de gran espesor y resistencia al tránsito. Agenda con $50 descontables del total y garantía escrita.',
     hero: pic('comercial', { alt: 'Instalación de membrana asfáltica en techo en Puerto Rico — {{custom_values.business__county_name}}', title: 'Membrana asfáltica para techos · Ilatek Techos', badge: 'Alta resistencia al tránsito' }),
     incl: pic('industrial', { alt: 'Membrana asfáltica aplicada en techo por Ilatek Techos en Puerto Rico — sellado impermeable', title: 'Membrana asfáltica en Puerto Rico · Ilatek Techos', caption: 'Membrana modificada · Resiste el sol' }),
     heroSub:
-      'La membrana asfáltica da a tu techo un sellado grueso y resistente al tránsito y al sol. Ilatek la instala en {{custom_values.business__county_name}} <b>desde $4.00 por pie²</b>, con preparación completa y garantía por escrito.',
+      'La membrana asfáltica da a tu techo un sellado grueso y resistente al tránsito y al sol. Ilatek la instala en {{custom_values.business__county_name}} <b>desde $250</b>, con preparación completa y garantía por escrito.',
     facts: [
-      { b: '$4.00', s: 'por pie²', label: 'Sistema completo' },
+      { b: '$250', s: 'por servicio', label: 'Sistema completo' },
       { b: '10–15', s: 'años', label: 'Durabilidad' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
     ],
@@ -181,14 +173,14 @@ export const sellado = [
       ],
     },
     faq: [
-      { q: '¿Cuánto cuesta instalar membrana asfáltica?', a: 'La membrana asfáltica de Ilatek <b>comienza desde $4.00 por pie²</b> instalada. El precio depende del área, la condición del techo y el espesor de la membrana. Cotiza para tu número exacto.' },
+      { q: '¿Cuánto cuesta instalar membrana asfáltica?', a: 'La membrana asfáltica de Ilatek <b>comienza desde $250</b> instalada. El precio depende del área, la condición del techo y el espesor de la membrana. Cotiza para tu número exacto.' },
       { q: '¿Cuánto dura una membrana asfáltica?', a: 'Una membrana modificada bien instalada dura <b>de 10 a 15 años</b>, con inspecciones periódicas que permitan retocarla antes de que falle.' },
       { q: '¿Qué diferencia hay entre membrana y coating?', a: 'El <b>coating</b> es una capa líquida; la <b>membrana</b> es una lámina de mayor espesor y resistencia. Si tu techo recibe tránsito o está muy deteriorado, la membrana sostiene mejor.' },
       { q: '¿La membrana asfáltica se instala en caliente?', a: 'Existen sistemas aplicados <b>con calor (soplete) y sistemas autoadhesivos</b>. Elegimos el método según la superficie y las condiciones, buscando la mejor adherencia.' },
       { q: '¿Se puede instalar membrana sobre techo de concreto?', a: '<b>Sí</b>, es uno de sus usos más comunes: sobre la losa de concreto, con primer y corrección previa de empozamientos, forma una barrera impermeable duradera.' },
       { q: '¿Cuánto tarda el trabajo?', a: 'Depende del área: una azotea residencial puede tomar <b>2 a 4 días</b>; superficies comerciales grandes requieren más tiempo. Te damos el estimado en la cotización.' },
       { q: '¿La membrana asfáltica tiene garantía?', a: '<b>Sí.</b> Entregamos garantía de mano de obra por escrito, con materiales certificados y proceso comprobado.' },
-      { q: '¿Por qué elegir Ilatek Techos?', a: 'Membrana de calidad, preparación completa con primer, <b>desde $4.00 por pie²</b>, inspección gratis y garantía escrita en los 78 municipios de Puerto Rico.' },
+      { q: '¿Por qué elegir Ilatek Techos?', a: 'Membrana de calidad, preparación completa con primer, <b>desde $250</b>, agenda con $50 descontables del total y garantía escrita en los 78 municipios de Puerto Rico.' },
     ],
   }),
 
@@ -201,13 +193,13 @@ export const sellado = [
     h1after: ': sella y refresca.',
     metaTitle: 'Recubrimiento Elastomérico para Techos | Ilatek Techos',
     metaDescription:
-      'Recubrimiento elastomérico para techos en Puerto Rico desde $3.00 por pie². Coating elástico blanco que refleja el calor y sella microfisuras. Inspección gratis.',
+      'Recubrimiento elastomérico para techos en Puerto Rico desde $250. Coating elástico blanco que refleja el calor y sella microfisuras. Agenda con $50 descontables del total.',
     hero: pic('industrial', { alt: 'Recubrimiento elastomérico blanco en techo en Puerto Rico — {{custom_values.business__county_name}}', title: 'Recubrimiento elastomérico · Ilatek Techos', badge: 'Refleja el calor' }),
     incl: pic('comercial', { alt: 'Coating elastomérico aplicado en techo por Ilatek Techos en Puerto Rico — sellado reflectivo', title: 'Recubrimiento elastomérico · Ilatek Techos', caption: 'Elástico · Reflectivo · Sellador' }),
     heroSub:
-      'El recubrimiento elastomérico blanco sella microgrietas y refleja el calor del sol, bajando la temperatura del techo. Ilatek lo aplica en {{custom_values.business__county_name}} <b>desde $3.00 por pie²</b>, con garantía escrita.',
+      'El recubrimiento elastomérico blanco sella microgrietas y refleja el calor del sol, bajando la temperatura del techo. Ilatek lo aplica en {{custom_values.business__county_name}} <b>desde $250</b>, con garantía escrita.',
     facts: [
-      { b: '$3.00', s: 'por pie²', label: 'Sistema completo' },
+      { b: '$250', s: 'por servicio', label: 'Sistema completo' },
       { b: '5–10', s: 'años', label: 'Durabilidad' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
     ],
@@ -240,14 +232,14 @@ export const sellado = [
       ],
     },
     faq: [
-      { q: '¿Cuánto cuesta el recubrimiento elastomérico?', a: 'El recubrimiento elastomérico de Ilatek <b>comienza desde $3.00 por pie²</b> instalado. El precio depende del área y del estado del techo. Cotiza para tu número exacto.' },
+      { q: '¿Cuánto cuesta el recubrimiento elastomérico?', a: 'El recubrimiento elastomérico de Ilatek <b>comienza desde $250</b> instalado. El precio depende del área y del estado del techo. Cotiza para tu número exacto.' },
       { q: '¿El elastomérico baja la temperatura del techo?', a: '<b>Sí.</b> Su acabado blanco refleja la radiación solar y reduce la temperatura de la superficie, lo que se nota en el calor interior y en el consumo de aire acondicionado.' },
       { q: '¿Cuánto dura un recubrimiento elastomérico?', a: 'Dura <b>de 5 a 10 años</b> según la exposición y el mantenimiento. Es menor que la silicona (20–25) pero mucho más económico, ideal para renovar cada cierto tiempo.' },
       { q: '¿Sella filtraciones el elastomérico?', a: 'Sella <b>microfisuras y superficies porosas</b>. Si el techo tiene goteras activas o grietas profundas, primero hay que reparar esa entrada y después aplicar el coating.' },
       { q: '¿Se puede aplicar sobre techo de zinc?', a: 'Sí, con preparación previa: <b>tratamos la oxidación y aplicamos primer</b> para que el elastomérico adhiera bien al metal y proteja contra la corrosión.' },
       { q: '¿Cuánto tarda la aplicación?', a: 'Un techo residencial típico se cubre en <b>1 a 2 días</b>, incluyendo lavado a presión, sellado de grietas y capas de coating. El secado depende del clima.' },
       { q: '¿El recubrimiento elastomérico tiene garantía?', a: '<b>Sí.</b> Entregamos garantía de mano de obra por escrito sobre el sistema aplicado, con materiales certificados.' },
-      { q: '¿Por qué elegir Ilatek Techos?', a: 'Coating reflectivo aplicado con preparación completa, <b>desde $3.00 por pie²</b>, inspección gratis, garantía escrita y cobertura en los 78 municipios de Puerto Rico.' },
+      { q: '¿Por qué elegir Ilatek Techos?', a: 'Coating reflectivo aplicado con preparación completa, <b>desde $250</b>, agenda con $50 descontables del total, garantía escrita y cobertura en los 78 municipios de Puerto Rico.' },
     ],
   }),
 
@@ -260,13 +252,13 @@ export const sellado = [
     h1after: ': alta resistencia.',
     metaTitle: 'Sellado de Poliuretano para Techos | Ilatek Techos',
     metaDescription:
-      'Sellado de poliuretano para techos en Puerto Rico desde $4.50 por pie². Alta resistencia mecánica y química para superficies exigentes. Inspección gratis.',
+      'Sellado de poliuretano para techos en Puerto Rico desde $250. Alta resistencia mecánica y química para superficies exigentes. Agenda con $50 descontables del total.',
     hero: pic('comercial', { alt: 'Sellado de poliuretano en techo en Puerto Rico — {{custom_values.business__county_name}}', title: 'Sellado de poliuretano · Ilatek Techos', badge: 'Alta resistencia' }),
     incl: pic('industrial', { alt: 'Aplicación de sellador de poliuretano en techo por Ilatek Techos en Puerto Rico', title: 'Sellado de poliuretano · Ilatek Techos', caption: 'Dureza mecánica · Adherencia fuerte' }),
     heroSub:
-      'El poliuretano forma un sellado de gran dureza y adherencia para los techos más exigidos. Ilatek lo aplica en {{custom_values.business__county_name}} <b>desde $4.50 por pie²</b>, preparando la superficie y con garantía escrita.',
+      'El poliuretano forma un sellado de gran dureza y adherencia para los techos más exigidos. Ilatek lo aplica en {{custom_values.business__county_name}} <b>desde $250</b>, preparando la superficie y con garantía escrita.',
     facts: [
-      { b: '$4.50', s: 'por pie²', label: 'Sistema completo' },
+      { b: '$250', s: 'por servicio', label: 'Sistema completo' },
       { b: '10–15', s: 'años', label: 'Durabilidad' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
     ],
@@ -299,14 +291,14 @@ export const sellado = [
       ],
     },
     faq: [
-      { q: '¿Cuánto cuesta el sellado de poliuretano?', a: 'El sellado de poliuretano de Ilatek <b>comienza desde $4.50 por pie²</b> instalado. El precio varía según el área y la condición del techo. Cotiza y recibe tu número en minutos.' },
+      { q: '¿Cuánto cuesta el sellado de poliuretano?', a: 'El sellado de poliuretano de Ilatek <b>comienza desde $250</b> instalado. El precio varía según el área y la condición del techo. Cotiza y recibe tu número en minutos.' },
       { q: '¿Cuánto dura el poliuretano en un techo?', a: 'El poliuretano bien aplicado dura <b>de 10 a 15 años</b>. Requiere inspección periódica para retocar antes de que la capa empiece a degradarse.' },
       { q: '¿El poliuretano es mejor que la silicona?', a: '<b>Depende del uso.</b> El poliuretano gana en dureza mecánica y resistencia al tránsito; la silicona gana en elasticidad y vida útil (20–25 años). Elegimos según tu techo.' },
       { q: '¿Se puede aplicar poliuretano sobre concreto?', a: '<b>Sí</b>, con primer de adherencia y corrección previa de grietas y empozamientos. Es una de las superficies más comunes para este sistema.' },
       { q: '¿El poliuretano sella goteras activas?', a: 'Primero hay que <b>reparar la entrada de agua</b>; el poliuretano luego impermeabiliza la superficie. Aplicarlo sobre una gotera activa no resuelve el problema de raíz.' },
       { q: '¿Cuánto tarda la aplicación?', a: 'Un techo residencial toma <b>2 a 3 días</b> con la preparación incluida. Superficies comerciales grandes requieren más jornadas; te lo indicamos en la cotización.' },
       { q: '¿Ofrecen garantía en el poliuretano?', a: '<b>Sí.</b> Entregamos garantía de mano de obra por escrito con materiales certificados y proceso comprobado.' },
-      { q: '¿Por qué elegir Ilatek Techos?', a: 'Poliuretano de alta resistencia, preparación completa, <b>desde $4.50 por pie²</b>, inspección gratis y garantía escrita en los 78 municipios de Puerto Rico.' },
+      { q: '¿Por qué elegir Ilatek Techos?', a: 'Poliuretano de alta resistencia, preparación completa, <b>desde $250</b>, agenda con $50 descontables del total y garantía escrita en los 78 municipios de Puerto Rico.' },
     ],
   }),
 
@@ -319,18 +311,18 @@ export const sellado = [
     h1after: ': la opción reflectiva económica.',
     metaTitle: 'Sellado Acrílico para Techos | Ilatek Techos',
     metaDescription:
-      'Sellado acrílico para techos en Puerto Rico desde $2.00 por pie². Opción económica y reflectiva para mantenimiento periódico. Inspección gratis y garantía escrita.',
+      'Sellado acrílico para techos en Puerto Rico desde $250. Opción económica y reflectiva para mantenimiento periódico. Agenda con $50 descontables del total y garantía escrita.',
     hero: pic('industrial', { alt: 'Sellado acrílico blanco en techo en Puerto Rico — {{custom_values.business__county_name}}', title: 'Sellado acrílico · Ilatek Techos', badge: 'Económico y reflectivo' }),
     incl: pic('comercial', { alt: 'Aplicación de sellador acrílico en techo por Ilatek Techos en Puerto Rico', title: 'Sellado acrílico · Ilatek Techos', caption: 'Reflectivo · Mantenimiento periódico' }),
     heroSub:
-      'El sellado acrílico es la opción más económica para mantener tu techo sellado y reflejando calor. Ilatek lo aplica en {{custom_values.business__county_name}} <b>desde $2.00 por pie²</b>, con preparación y garantía escrita.',
+      'El sellado acrílico es la opción más económica para mantener tu techo sellado y reflejando calor. Ilatek lo aplica en {{custom_values.business__county_name}} <b>desde $250</b>, con preparación y garantía escrita.',
     facts: [
-      { b: '$2.00', s: 'por pie²', label: 'Opción económica' },
+      { b: '$250', s: 'por servicio', label: 'Opción económica' },
       { b: '7–10', s: 'años', label: 'Durabilidad' },
-      { b: '$0', s: 'cotización', label: 'Gratis, se agenda con $50 reembolsables' },
+      { b: '$50', s: 'visita', label: 'Descontables del total' },
     ],
     benefits: [
-      { icon: 'tag', h: 'El más económico', p: 'Buen sellado a menor precio por pie²: ideal cuando buscas mantener el techo protegido con presupuesto ajustado.' },
+      { icon: 'tag', h: 'El más económico', p: 'Buen sellado a menor precio por servicio: ideal cuando buscas mantener el techo protegido con presupuesto ajustado.' },
       { icon: 'bolt', h: 'Reflectivo blanco', p: 'Su acabado blanco refleja el sol y ayuda a bajar la temperatura del techo y del interior.' },
       { icon: 'clock', h: 'Fácil de renovar', p: 'Se puede recoating cada ciertos años para prolongar la protección sin rehacer todo el sistema.' },
     ],
@@ -358,15 +350,15 @@ export const sellado = [
       ],
     },
     faq: [
-      { q: '¿Cuánto cuesta el sellado acrílico?', a: 'El sellado acrílico de Ilatek <b>comienza desde $2.00 por pie²</b>, la opción más económica. El precio depende del área y del estado del techo. Cotiza para tu número exacto.' },
+      { q: '¿Cuánto cuesta el sellado acrílico?', a: 'El sellado acrílico de Ilatek <b>comienza desde $250</b>, la opción más económica. El precio depende del área y del estado del techo. Cotiza para tu número exacto.' },
       { q: '¿Cuánto dura el sellado acrílico?', a: 'El acrílico dura <b>de 7 a 10 años</b>, aunque en Puerto Rico la radiación UV y la humedad pueden acortar su vida. Por eso conviene revisarlo y recoatarlo periódicamente.' },
       { q: '¿El acrílico es tan bueno como la silicona?', a: '<b>No en durabilidad:</b> la silicona dura 20–25 años y el acrílico 7–10. Pero el acrílico cuesta menos y sirve muy bien para mantenimiento periódico.' },
       { q: '¿El acrílico sella filtraciones?', a: 'Sella <b>superficies porosas y microfisuras</b>. Si hay goteras o grietas profundas, primero se repara la entrada de agua y luego se aplica el acrílico.' },
       { q: '¿Se puede aplicar acrílico sobre otro sellador?', a: '<b>Depende del estado del sellador anterior.</b> Si está firme y limpio, se prepara y se recubre; si está suelto o vencido, hay que removerlo primero. Lo evaluamos en la inspección.' },
       { q: '¿Cuánto tarda la aplicación?', a: 'Un techo residencial se cubre en <b>1 a 2 días</b>, incluyendo lavado a presión, sellado de grietas y capas. El secado depende del clima.' },
       { q: '¿El sellado acrílico tiene garantía?', a: '<b>Sí.</b> Entregamos garantía de mano de obra por escrito sobre el sistema aplicado, con materiales certificados.' },
-      { q: '¿Cuánto cuesta la inspección para el sellado acrílico?', a: '<b>Nada.</b> La cotización es $0 y se agenda con $50 reembolsables. Evaluamos el estado del techo y del coating previo, y te damos el precio por escrito sin compromiso.' },
-      { q: '¿Por qué elegir Ilatek Techos?', a: 'La opción más económica con preparación correcta, <b>desde $2.00 por pie²</b>, inspección gratis, garantía escrita y cobertura en los 78 municipios de Puerto Rico.' },
+      { q: '¿Cuánto cuesta la inspección para el sellado acrílico?', a: '<b>Nada.</b> La visita o inspección cuesta $50 y se descuenta del total del servicio. Evaluamos el estado del techo y del coating previo, y te damos el precio por escrito sin compromiso.' },
+      { q: '¿Por qué elegir Ilatek Techos?', a: 'La opción más económica con preparación correcta, <b>desde $250</b>, agenda con $50 descontables del total, garantía escrita y cobertura en los 78 municipios de Puerto Rico.' },
     ],
   }),
 ];

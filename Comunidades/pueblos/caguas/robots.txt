@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://caguas.ilatekpr.com/sitemap.xml

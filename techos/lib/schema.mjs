@@ -7,6 +7,7 @@
 // Todas las URLs/ids usan {{custom_values.website_url}} — cero hardcode.
 import { BUSINESS, hasGeo, hasRating } from './data/business.mjs';
 import { UPDATED } from './data/build.mjs';
+import { schemaPriceFor, ratingVerified } from './facts.mjs';
 
 const URL_TOKEN = 'https://{{custom_values.website_url}}';
 
@@ -92,22 +93,30 @@ export function bizSchema(page) {
   const webId = URL_TOKEN + '/#website';
   const pageId = base + '/#webpage';
 
+  // Precio SOLO desde un hecho verificado del registro. Si el slug no tiene
+  // precio verificado (p. ej. la página money, cuyo price.text es "labor desde
+  // $250"), el Offer se publica sin price ni priceSpecification.
+  const verifiedPrice = schemaPriceFor(page.slug);
   const offer = {
     '@type': 'Offer',
     '@id': base + '/#offer',
     name: page.serviceName,
-    description: page.price.text,
-    price: page.price.amount,
-    priceCurrency: 'USD',
+    description: page.slug === 'sellado-de-techos' ? page.serviceName : page.price.text,
     availability: 'https://schema.org/InStock',
     url: URL_TOKEN + '/cotizacion',
     itemOffered: { '@id': svcId },
-    priceSpecification: {
-      '@type': 'PriceSpecification',
-      price: page.price.amount,
-      priceCurrency: 'USD',
-      valueAddedTaxIncluded: false,
-    },
+    ...(verifiedPrice !== null
+      ? {
+          price: verifiedPrice,
+          priceCurrency: 'USD',
+          priceSpecification: {
+            '@type': 'PriceSpecification',
+            price: verifiedPrice,
+            priceCurrency: 'USD',
+            valueAddedTaxIncluded: false,
+          },
+        }
+      : {}),
   };
 
   const service = {
@@ -200,7 +209,7 @@ export function bizSchema(page) {
         itemListElement: [{ '@type': 'Offer', itemOffered: { '@id': svcId } }],
       },
       ...(hasGeo() ? { address: postalAddress(), geo: geoCoordinates() } : {}),
-      ...(hasRating() ? { aggregateRating: aggregateRating() } : {}),
+      ...(hasRating() && ratingVerified() ? { aggregateRating: aggregateRating() } : {}),
       openingHoursSpecification: [
         {
           '@type': 'OpeningHoursSpecification',
@@ -225,8 +234,8 @@ export function bizSchema(page) {
   ];
 
   // Marca explícita cuando los nodos GEO/AEO opcionales están apagados.
-  const todo = !hasGeo() || !hasRating()
-    ? '<!-- Schema GEO/AEO opcional APAGADO: rellena lib/data/business.mjs y corre build-techos.mjs para activar PostalAddress + GeoCoordinates + AggregateRating. No se publican valores inventados. -->'
+  const todo = !hasGeo() || !hasRating() || !ratingVerified()
+    ? '<!-- Schema GEO/AEO opcional APAGADO: PostalAddress/GeoCoordinates y AggregateRating solo se emiten con datos reales verificados. El precio del Offer solo sale del registro de hechos verificado. No se publican valores inventados. -->'
     : '';
 
   const script = '<script type="application/ld+json">\n' + j({

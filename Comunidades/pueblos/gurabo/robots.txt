@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gurabo.ilatekpr.com/sitemap.xml

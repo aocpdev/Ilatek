@@ -1,0 +1,162 @@
+<!-- ILATEK:ANTISPAM:START -->
+<!-- Guard de spam/bots para los formularios personalizados (clima y cotizador).
+     Se ANEXA al final del head tracking; no modifica ni reordena nada existente.
+     Alcance estricto: #ilatek-clima form y el botón del cotizador (#ilag-enviar).
+     Los formularios nativos de GHL, el chat y el calendario no se tocan.
+     Para activar reCAPTCHA v3: crear la clave pública en
+     https://www.google.com/recaptcha/admin y pegar la site key en siteKey:''.
+     Sin site key el guard funciona igual (trampa + interacción); no carga nada externo. -->
+<script>
+(function(){
+  if(window.ILATEK_GUARD&&window.ILATEK_GUARD.ready)return;
+  var G=window.ILATEK_GUARD={ready:true,siteKey:'',action:'ilatek_lead',token:'',blocked:0};
+  var HP='website_url_confirm',HUMAN=false,T0=Date.now(),SEEN=new WeakSet();
+  try{
+    function mark(){HUMAN=true}
+    ['pointerdown','keydown','touchstart','input','change','focusin'].forEach(function(t){
+      document.addEventListener(t,mark,{capture:true,passive:true});
+    });
+
+    function guarded(f){
+      try{
+        if(!f||f.nodeType!==1)return false;
+        if(typeof f.hasAttribute==='function'&&f.hasAttribute('data-il-guard'))return true;
+        if(f.matches&&f.matches('#ilatek-clima form, #ilatek-clima form *'))return true;
+        if(f.closest&&f.closest('#ilatek-clima'))return true;
+        return false;
+      }catch(e){return false}
+    }
+
+    function bodyTrap(){return document.getElementById('ilatek-guard-hp')}
+
+    function arm(){
+      try{
+        Array.prototype.forEach.call(document.querySelectorAll('#ilatek-clima form, form[data-il-guard]'),function(f){
+          if(f.querySelector('input[name="'+HP+'"]'))return;
+          var w=document.createElement('div');
+          w.setAttribute('aria-hidden','true');
+          w.style.cssText='position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden';
+          var i=document.createElement('input');
+          i.type='text';i.name=HP;i.tabIndex=-1;i.setAttribute('autocomplete','off');
+          i.setAttribute('aria-hidden','true');i.setAttribute('data-il-trap','1');
+          w.appendChild(i);f.appendChild(w);
+        });
+        if(!bodyTrap()&&document.getElementById('ilag-enviar')&&document.body){
+          var w2=document.createElement('div');
+          w2.id='ilatek-guard-hp-wrap';w2.setAttribute('aria-hidden','true');
+          w2.style.cssText='position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden';
+          var i2=document.createElement('input');
+          i2.type='text';i2.id='ilatek-guard-hp';i2.name=HP;i2.tabIndex=-1;
+          i2.setAttribute('autocomplete','off');i2.setAttribute('aria-hidden','true');
+          w2.appendChild(i2);document.body.appendChild(w2);
+        }
+      }catch(e){}
+    }
+
+    function filled(el){
+      try{return !!(el&&String(el.value||'').replace(/\s+/g,'')!=='')}catch(e){return false}
+    }
+
+    function reason(f){
+      try{
+        var hp=(f&&f.querySelector('input[name="'+HP+'"]'))||bodyTrap();
+        if(filled(hp))return 'trap';
+        if(!HUMAN&&Date.now()-T0<5000)return 'fast';
+        if(f&&SEEN.has(f))return 'dup';
+        return '';
+      }catch(e){return ''}
+    }
+
+    function fake(ev,btn){
+      try{ev.preventDefault()}catch(e){}
+      try{if(ev.stopImmediatePropagation)ev.stopImmediatePropagation()}catch(e){}
+      G.blocked++;
+      try{
+        if(btn&&!btn.disabled){
+          var t=btn.textContent;
+          btn.disabled=true;
+          setTimeout(function(){btn.disabled=false;try{btn.textContent=t}catch(e){}},1400);
+        }
+      }catch(e){}
+    }
+
+    document.addEventListener('submit',function(ev){
+      try{
+        var f=ev.target;
+        if(!f||!guarded(f))return;
+        arm();
+        var r=reason(f);
+        if(!r)return;
+        if(r==='dup'){try{ev.preventDefault()}catch(e){};try{ev.stopImmediatePropagation()}catch(e){};return}
+        fake(ev,f.querySelector('button[type="submit"],button'));
+      }catch(e){}
+    },true);
+
+    document.addEventListener('click',function(ev){
+      try{
+        var t=ev.target;
+        var b=(t&&t.closest)?t.closest('#ilag-enviar'):null;
+        if(!b)return;
+        arm();
+        if(!reason(null))return;
+        fake(ev,b);
+      }catch(e){}
+    },true);
+
+    if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',arm)}else{arm()}
+    setTimeout(arm,600);setTimeout(arm,2000);setTimeout(arm,5000);
+    /* El contenido de las páginas de GHL se hidrata después del DOMContentLoaded:
+       observamos el árbol para inyectar la trampa en cuanto aparezca el formulario. */
+    try{
+      if(window.MutationObserver){
+        var pendiente=false;
+        new MutationObserver(function(){
+          if(pendiente)return;pendiente=true;
+          setTimeout(function(){pendiente=false;arm()},250);
+        }).observe(document.documentElement,{childList:true,subtree:true});
+      }
+    }catch(e){}
+    ['pointerdown','keydown','touchstart'].forEach(function(t){
+      document.addEventListener(t,arm,{capture:true,passive:true});
+    });
+
+    if(G.siteKey){
+      var s=document.createElement('script');
+      s.src='https://www.google.com/recaptcha/api.js?render='+encodeURIComponent(G.siteKey);
+      s.async=true;s.defer=true;document.head.appendChild(s);
+      var started=false;
+      function token(){
+        try{
+          if(!window.grecaptcha||!grecaptcha.execute)return;
+          grecaptcha.ready(function(){
+            grecaptcha.execute(G.siteKey,{action:G.action})
+              .then(function(t){G.token=t}).catch(function(){});
+          });
+        }catch(e){}
+      }
+      document.addEventListener('pointerdown',function(){
+        if(started)return;started=true;token();setInterval(token,60000);
+      },{once:true,capture:true,passive:true});
+      var of=window.fetch;
+      if(typeof of==='function'){
+        window.fetch=function(){
+          var a=Array.prototype.slice.call(arguments);
+          try{
+            var u=typeof a[0]==='string'?a[0]:((a[0]&&a[0].url)||'');
+            var o=a[1];
+            if(G.token&&/leadconnectorhq\.com\/hooks\//.test(u)&&o&&typeof o.body==='string'){
+              var d=JSON.parse(o.body);
+              if(d&&typeof d==='object'&&!Array.isArray(d)&&!d.recaptcha_token){
+                d.recaptcha_token=G.token;
+                a[1]=Object.assign({},o,{body:JSON.stringify(d)});
+              }
+            }
+          }catch(e){}
+          return of.apply(this,a);
+        };
+      }
+    }
+  }catch(e){}
+})();
+</script>
+<!-- ILATEK:ANTISPAM:END -->

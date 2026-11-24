@@ -1,0 +1,162 @@
+/og:title/ og:description ("… en Juncos, Puerto Rico"): el título sale de {{custom_values.business__county_name}}, así que es el mismo custom value, sin depender de que el builder expanda el Custom Code; 3. el subdominio del sitio (juncos.ilatekpr.com → Juncos); 4. los valores de marca del contrato (custom-values.json → brand). El portador que viaja en el embed se oculta siempre (nunca es contenido). Estado en
+{{custom_values.business__county_name}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}
+Login
+Techos de madera
+Sellado y Protección de Techos de Madera en
+Puerto Rico
+desde $250.
+La madera del techo sufre con la humedad, el sol y el comején. Ilatek la sella y protege en {{custom_values.business__county_name}}
+desde $250
+, cortando la filtración y prolongando la vida de la estructura, con cotización por $50 descontables del total y garantía escrita.
+Solicita tu cotización
+Qué incluye el servicio ↓
+por sellado
+Precio de entrada
+municipios
+Cobertura en PR
+al agendar
+Se descuenta del total
+Contra humedad y comején
+undefined
+La madera del techo se defiende de la humedad.
+Corta la humedad
+Sellamos las entradas de agua que mantienen la madera húmeda, la causa del deterioro y del comején.
+Protector de madera
+Aplicamos selladores y protectores que repelen el agua y frenan el envejecimiento del material.
+Alarga la estructura
+Proteger la madera a tiempo evita tener que sustituir vigas y tablones de un techo estructural.
+Qué incluye
+Cómo sellamos y protegemos un techo de madera.
+En la madera, la humedad es el enemigo principal.
+Ilatek identifica y sella las filtraciones, aplica protector repelente y trata las zonas afectadas por humedad u hongos.
+Inspección de humedad y estado de la madera
+Sellado de filtraciones del techo
+Aplicación de protector repelente
+Tratamiento de zonas con hongos
+Revisión de fijaciones y estructura
+Garantía por escrito del trabajo
+Cotiza tu techo de madera
+Humedad tratada · Madera protegida
+Riesgos
+Qué daña un techo de madera.
+Humedad
+Filtraciones constantes
+El agua que se filtra mantiene la madera húmeda y acelera su deterioro y pudrición.
+Plagas
+Comején
+La madera húmeda atrae comején, que devora la estructura desde adentro sin que se note.
+Sol
+Resecamiento y grietas
+La exposición directa al sol reseca y agrieta la madera, abriendo nuevas entradas de agua.
+Cómo funciona
+Cómo protegemos tu techo de madera.
+Cortamos las filtraciones, tratamos la humedad y aplicamos protector repelente que frena el comején.
+PASO 1
+Cotiza tu sellado de techos de madera
+Usa el cotizador de Ilatek o escríbenos: evaluamos tu techo y te damos el precio de sellado de techos de madera por escrito en minutos — sin compromiso.
+PASO 2
+Inspección y agenda
+Confirmamos el alcance de sellado de techos de madera con una inspección del techo, defines la fecha y reservas con el depósito de $50, que se descuenta del total.
+PASO 3
+Trabajo terminado
+Ejecutamos sellado de techos de madera con materiales certificados, protegemos el área y te entregamos la garantía por escrito.
+Cobertura de
+techos de madera
+en toda la isla.
+Ilatek Techos brinda sellado de techos de madera en los
+78 municipios de Puerto Rico
+. Atendemos tu área en
+{{custom_values.business__county_name}}
+y toda la isla: busca tu pueblo en el directorio y visita su página.
+No encontramos ese pueblo. Verifica el nombre e intenta nuevamente.
+Página 1 de 1
+Reseñas de clientes de Ilatek.
+Reseñas de personas que confiaron en Ilatek para mantenimiento y sellado de techos en Puerto Rico. Cambia de pestaña para ver cada fuente.
+Preguntas frecuentes
+Preguntas frecuentes sobre sellado de techos de madera.
+¿Cuánto cuesta sellar un techo de madera?
+El sellado y protección de techos de madera de Ilatek
+comienza desde $250
+. El precio depende del área, el estado de la madera y el tratamiento necesario. La visita o inspección cuesta $50 y se descuenta del total del servicio.
+¿Por qué se daña la madera del techo?
+Por
+humedad constante, sol intenso y comején
+. El agua que se filtra mantiene la madera húmeda y la vuelve vulnerable a hongos, pudrición y plagas.
+¿Se puede salvar un techo de madera con humedad?
+Si el daño no es avanzado, sí
+: sellamos la filtración, tratamos la humedad y aplicamos protector. Si hay pudrición estructural, te informamos qué partes hay que sustituir.
+¿Qué protector usan para la madera?
+Aplicamos
+protectores repelentes de agua
+específicos para madera, que reducen la absorción de humedad y frenan el envejecimiento del material.
+¿El tratamiento contra comején está incluido?
+El sellado previene la humedad que atrae al comején, pero
+el tratamiento de plagas es un servicio aparte
+. En la inspección te indicamos si hace falta.
+¿Cuánto tarda el trabajo?
+Un techo de madera residencial se sella y protege en
+uno a dos días
+, dependiendo del área y del tratamiento necesario.
+¿La cotización de mi techo de madera tiene costo?
+La visita o inspección es
+y se descuenta del total del servicio: si aceptas el trabajo, ese monto se acredita al total. Así confirmamos tu fecha y el monto se descuenta del total.
+¿La protección del techo de madera tiene garantía?
+Entregamos garantía de mano de obra por escrito sobre el sellado y la protección aplicada.
+¿Por qué elegir Ilatek Techos para tu techo de madera?
+La humedad es el enemigo de la madera: sellamos la filtración, tratamos la zona afectada y aplicamos protector repelente que frena el comején y el deterioro, desde $250 con cotización por $50 descontables del total y garantía escrita.
+Visita o inspección por $50
+Protege tu techo antes de la próxima lluvia.
+Solicita tu cotización por $50 descontables del total de sellado de techos de madera en {{custom_values.business__county_name}} y recibe precio claro y por escrito — cotización por $50 descontables del total y cobertura en los 78 municipios de Puerto Rico.
+Solicita tu cotización por $50 descontables del total
+Respuesta en minutos · Sin compromiso
+Precio claro por escrito
+desde $250, confirmado después de la inspección.
+Inspección sin compromiso
+Subimos, diagnosticamos y te explicamos las opciones.
+Garantía de mano de obra
+Respaldada por escrito en cada trabajo que hacemos.
+Devasks
+Navegación de Ilatek
+Ilatek, inicio
+Logo de Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Logo%20de%20Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Navegación principal
+Idioma / Language
+Español
+English
+Abrir o cerrar el menú
+Ilatek Techos de madera {{custom_values.business__county_name}}
+Sellado y protección de techo de madera — {{custom_values.business__county_name}}
+Techos de madera · Ilatek Techos — servicio en {{custom_values.business__county_name}}
+Sellado%20y%20protecci%C3%B3n%20de%20techo%20de%20madera%20%E2%80%94%20%7B%7Bcustom_values.business__county_name%7D%7D
+Techos%20de%20madera%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Protección de techo de madera por Ilatek Techos en {{custom_values.business__county_name}} — tratamiento antihumedad
+Protecci%C3%B3n%20de%20techo%20de%20madera%20por%20Ilatek%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%E2%80%94%20tratamiento%20antihumedad
+Cobertura de sellado de techos de madera de Ilatek Techos en Puerto Rico
+Busca tu pueblo
+Buscar un municipio de Puerto Rico
+Limpiar búsqueda
+Municipios de Puerto Rico con servicio de sellado de techos de madera
+Pie de página de Ilatek
+Facebook
+Facebook — servicio en {{custom_values.business__county_name}}
+Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Instagram
+Instagram — servicio en {{custom_values.business__county_name}}
+Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Youtube
+Youtube — servicio en {{custom_values.business__county_name}}
+Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+TikTok
+TikTok — servicio en {{custom_values.business__county_name}}
+TikTok%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+X — servicio en {{custom_values.business__county_name}}
+X%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+LinkedIn
+LinkedIn — servicio en {{custom_values.business__county_name}}
+LinkedIn%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Pinterest
+Pinterest — servicio en {{custom_values.business__county_name}}
+Pinterest%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D

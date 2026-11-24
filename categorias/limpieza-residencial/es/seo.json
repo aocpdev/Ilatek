@@ -3,11 +3,11 @@
   "language": "es",
   "status": "plantilla-local-delta-system",
   "metaTagTitle": "Limpieza Residencial en {{custom_values.business__county_name}} | Ilatek",
-  "metaTagDescription": "Limpieza residencial de Ilatek en {{custom_values.business__county_name}}: limpieza regular ($0.07/pie²) y profunda ($0.15/pie²) para casas y apartamentos en los 78 municipios. Cotización instantánea y depósito de $50 que se descuenta.",
-  "metaTagImage": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/limpieza-residencial.jpg",
+  "metaTagDescription": "Limpieza residencial de Ilatek en {{custom_values.business__county_name}}: limpieza regular (desde $250) y profunda (desde $250) para casas y apartamentos en los 78 municipios. Cotización instantánea y depósito de $50 que se descuenta.",
+  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/8ec83300-f709-47c2-8629-3a2f13f45dfa.webp",
   "locationCustomValue": "{{custom_values.business__county_name}}",
-  "metaTagImageAlt": "Limpieza Residencial en {{custom_values.business__county_name}} | Ilatek",
+  "metaTagImageAlt": "Limpieza Residencial en {{custom_values.business__county_name}} — Ilatek",
   "canonical": "https://{{custom_values.website_url}}/limpieza-residencial",
-  "socialImageFile": "assets/meta-image.jpg",
+  "socialImageFile": "assets/meta-image.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."
 }

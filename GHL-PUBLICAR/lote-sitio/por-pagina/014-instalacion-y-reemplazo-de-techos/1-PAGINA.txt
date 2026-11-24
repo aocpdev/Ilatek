@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Instalacion y Reemplazo De Techos
+Slug: instalacion-y-reemplazo-de-techos
+URL: https://ilatekpr.com/instalacion-y-reemplazo-de-techos
+Acción: REPUBLICAR
+Estado hoy: HTTP 200
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (246 KB, sha256 5d1b36e29f61)
+Origen en el repo: servicios/instalacion-y-reemplazo-de-techos/es/landing-pages/ghl-instalacion-y-reemplazo-de-techos-landing.html
+Sección de clima: no
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

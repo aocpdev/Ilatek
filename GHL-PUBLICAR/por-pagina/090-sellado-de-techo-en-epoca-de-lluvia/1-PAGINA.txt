@@ -1,0 +1,13 @@
+PÁGINA EN GHL
+Nombre: Blog - ¿Se puede sellar un techo en época de lluvia?
+Slug: blog/sellado-de-techo-en-epoca-de-lluvia
+URL final: https://ilatekpr.com/blog/sellado-de-techo-en-epoca-de-lluvia
+Carpeta: por-pagina/090-sellado-de-techo-en-epoca-de-lluvia
+
+Orden dentro de la página:
+  1) Crear/clonar la página con ese nombre y ese slug.
+  2) Elemento Custom HTML/JavaScript → Custom Code → Open Code Editor →
+     borrar todo y pegar el contenido de 2-CODIGO-CUSTOM-HTML.html.
+  3) SEO de la página: campos de 4-SEO-CAMPOS.txt.
+  4) Settings → Tracking Code → HEADER: contenido de 3-HEAD-SEO.html.
+  5) Publicar y comprobar la URL.

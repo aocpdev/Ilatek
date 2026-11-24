@@ -1,0 +1,161 @@
+/og:title/ og:description ("… en Juncos, Puerto Rico"): el título sale de {{custom_values.business__county_name}}, así que es el mismo custom value, sin depender de que el builder expanda el Custom Code; 3. el subdominio del sitio (juncos.ilatekpr.com → Juncos); 4. los valores de marca del contrato (custom-values.json → brand). El portador que viaja en el embed se oculta siempre (nunca es contenido). Estado en
+{{custom_values.business__county_name}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}
+Login
+Lavado a presión
+Lavado a Presión de Techos en
+Puerto Rico
+desde $250.
+La suciedad y el moho pegado se comen el sellado de tu techo y aceleran su deterioro. Ilatek lava a presión en {{custom_values.business__county_name}}: deja la superficie limpia y lista, con cotización por $50 descontables del total y garantía escrita.
+Solicita tu cotización
+Qué incluye el servicio ↓
+por lavado
+Precio de entrada
+municipios
+Cobertura en PR
+al agendar
+Se descuenta del total
+Limpieza profunda
+undefined
+Un techo limpio sella mejor y dura más.
+Limpieza profunda del techo
+Removemos suciedad, hongos y residuos pegados que el barrido no quita, devolviendo el color a la superficie.
+Prepara para sellar
+Un techo limpio es indispensable para que el sellador o membrana adhiera bien: es el paso previo de todo buen sellado.
+Alarga la vida del techo
+Quitar la suciedad que retiene humedad frena el deterioro y prolonga la vida de la superficie.
+Qué incluye
+Qué incluye el lavado a presión.
+El lavado a presión no es solo estética: es preparación.
+Ilatek lava la superficie con presión controlada, remueve suciedad y hongos, y revisa el estado del techo para el sellado que siga.
+Lavado con presión controlada según superficie
+Remoción de suciedad, moho y residuos
+Limpieza de desagües tras el lavado
+Revisión del estado del techo
+Preparación para sellado o impermeabilización
+Informe del estado del techo
+Cotiza tu lavado a presión
+Superficie limpia · Lista para sellar
+Ideal para
+Cuándo conviene el lavado a presión.
+Previo
+Antes de sellar
+Siempre conviene lavar antes de aplicar sellador: la adherencia depende de una superficie limpia.
+Estética
+Techos sucios o con moho
+Si el techo se ve manchado o con hongos, el lavado a presión recupera su apariencia.
+Mantenimiento
+Como parte del plan
+El lavado se integra al mantenimiento periódico para mantener el techo en buen estado.
+Cómo funciona
+Cómo lavamos tu techo a presión.
+Ajustamos la presión al material, retiramos suciedad y hongos, y dejamos la superficie lista para sellar.
+PASO 1
+Cotiza tu lavado a presión de techos
+Usa el cotizador de Ilatek o escríbenos: evaluamos tu techo y te damos el precio de lavado a presión de techos por escrito en minutos — sin compromiso.
+PASO 2
+Inspección y agenda
+Confirmamos el alcance de lavado a presión de techos con una inspección del techo, defines la fecha y reservas con el depósito de $50, que se descuenta del total.
+PASO 3
+Trabajo terminado
+Ejecutamos lavado a presión de techos con materiales certificados, protegemos el área y te entregamos la garantía por escrito.
+Cobertura de
+lavado a presión
+en toda la isla.
+Ilatek Techos brinda lavado a presión de techos en los
+78 municipios de Puerto Rico
+. Atendemos tu área en
+{{custom_values.business__county_name}}
+y toda la isla: busca tu pueblo en el directorio y visita su página.
+No encontramos ese pueblo. Verifica el nombre e intenta nuevamente.
+Página 1 de 1
+Reseñas de clientes de Ilatek.
+Reseñas de personas que confiaron en Ilatek para mantenimiento y sellado de techos en Puerto Rico. Cambia de pestaña para ver cada fuente.
+Preguntas frecuentes
+Preguntas frecuentes sobre lavado a presión de techos.
+¿Cuánto cuesta lavar un techo a presión?
+El lavado a presión de techos de Ilatek
+comienza desde $250
+. El precio depende del área y del grado de suciedad. La visita o inspección cuesta $50 y se descuenta del total del servicio.
+¿El lavado a presión puede dañar mi techo?
+No si se hace con
+presión y boquilla adecuadas a cada superficie
+. Ajustamos la presión según el material para limpiar sin dañar el techo.
+¿Cada cuánto se debe lavar un techo?
+Normalmente
+una vez al año
+, o dos si hay mucho moho, árboles cerca o brisa salina. Se puede integrar al plan de mantenimiento.
+¿El lavado a presión sella las filtraciones?
+No por sí solo: el lavado
+limpia y prepara
+. Si hay filtraciones, el lavado se combina con reparación y sellado.
+¿Lavan techos de cualquier material?
+concreto, zinc, asfalto y membranas
+, ajustando la presión y el método a cada superficie para no dañarla.
+¿El lavado incluye limpiar los desagües?
+Después de lavar,
+verificamos y despejamos los desagües
+para que la suciedad removida no obstruya el drenaje del techo.
+¿Cuánto tarda el lavado?
+Un techo residencial típico se lava en
+unas horas
+; los techos grandes pueden tomar el día completo, según el área y la suciedad.
+¿Por qué elegir Ilatek Techos para el lavado a presión?
+El lavado a presión no es solo estético: la suciedad y el moho retienen humedad y arruinan el sellado; lavamos con presión ajustada al material desde $250, con cotización por $50 descontables del total, dejando el techo listo para sellar.
+Visita o inspección por $50
+Protege tu techo antes de la próxima lluvia.
+Solicita tu cotización por $50 descontables del total de lavado a presión de techos en {{custom_values.business__county_name}} y recibe precio claro y por escrito — cotización por $50 descontables del total y cobertura en los 78 municipios de Puerto Rico.
+Solicita tu cotización por $50 descontables del total
+Respuesta en minutos · Sin compromiso
+Precio claro por escrito
+desde $250, confirmado después de la inspección.
+Inspección sin compromiso
+Subimos, diagnosticamos y te explicamos las opciones.
+Garantía de mano de obra
+Respaldada por escrito en cada trabajo que hacemos.
+Devasks
+Navegación de Ilatek
+Ilatek, inicio
+Logo de Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Logo%20de%20Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Navegación principal
+Idioma / Language
+Español
+English
+Abrir o cerrar el menú
+Ilatek Lavado a presión {{custom_values.business__county_name}}
+Lavado a presión de techos — {{custom_values.business__county_name}}
+Lavado a presión de techos · Ilatek Techos — servicio en {{custom_values.business__county_name}}
+Lavado%20a%20presi%C3%B3n%20de%20techos%20%E2%80%94%20%7B%7Bcustom_values.business__county_name%7D%7D
+Lavado%20a%20presi%C3%B3n%20de%20techos%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Lavado a presión de techo por Ilatek Techos en {{custom_values.business__county_name}} — limpieza profunda
+Lavado a presión · Ilatek Techos — servicio en {{custom_values.business__county_name}}
+Lavado%20a%20presi%C3%B3n%20de%20techo%20por%20Ilatek%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%E2%80%94%20limpieza%20profunda
+Lavado%20a%20presi%C3%B3n%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Cobertura de lavado a presión de techos de Ilatek Techos en Puerto Rico
+Busca tu pueblo
+Buscar un municipio de Puerto Rico
+Limpiar búsqueda
+Municipios de Puerto Rico con servicio de lavado a presión de techos
+Pie de página de Ilatek
+Facebook
+Facebook — servicio en {{custom_values.business__county_name}}
+Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Instagram
+Instagram — servicio en {{custom_values.business__county_name}}
+Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Youtube
+Youtube — servicio en {{custom_values.business__county_name}}
+Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+TikTok
+TikTok — servicio en {{custom_values.business__county_name}}
+TikTok%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+X — servicio en {{custom_values.business__county_name}}
+X%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+LinkedIn
+LinkedIn — servicio en {{custom_values.business__county_name}}
+LinkedIn%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Pinterest
+Pinterest — servicio en {{custom_values.business__county_name}}
+Pinterest%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D

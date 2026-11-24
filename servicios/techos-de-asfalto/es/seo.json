@@ -3,11 +3,11 @@
   "language": "es",
   "status": "plantilla-local-delta-system",
   "metaTagTitle": "Reparación de Techos de Asfalto (Shingles) en {{custom_values.business__county_name}} | Ilatek Techos",
-  "metaTagDescription": "Reparación de techos de asfalto y shingles en {{custom_values.business__county_name}} desde $350. Sustitución de tejas dañadas y sellado de filtraciones con garantía escrita. Inspección gratis.",
-  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f82c503e697d5ff24e.jpg",
+  "metaTagDescription": "Reparación de techos de asfalto y shingles en {{custom_values.business__county_name}} desde $250. Sustitución de tejas dañadas y sellado de filtraciones con garantía escrita. Agenda con $50 descontables del total.",
+  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/715bd506-5b44-4114-98b0-60095f2f66b0.webp",
   "locationCustomValue": "{{custom_values.business__county_name}}",
   "metaTagImageAlt": "Reparación de Techos de Asfalto (Shingles) en {{custom_values.business__county_name}} | Ilatek Techos",
   "canonical": "https://{{custom_values.website_url}}/techos-de-asfalto",
-  "socialImageFile": "assets/respaldo/6ac046f82c503e697d5ff24e.webp",
+  "socialImageFile": "assets/meta-image.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."
 }

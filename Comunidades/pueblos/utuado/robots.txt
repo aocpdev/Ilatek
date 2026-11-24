@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://utuado.ilatekpr.com/sitemap.xml

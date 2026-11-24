@@ -4,10 +4,10 @@
   "status": "plantilla-local-delta-system",
   "metaTagTitle": "Limpieza Industrial en {{custom_values.business__county_name}} | Ilatek",
   "metaTagDescription": "Limpieza industrial de Ilatek en {{custom_values.business__county_name}}: almacenes, naves y plantas con equipos industriales, desengrase, pisos de alto tráfico, trabajo sin detener la producción y cobertura en los 78 municipios.",
-  "metaTagImage": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/limpieza-industrial.jpg",
+  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/9832f66e-c5a0-4780-9939-c88ec03c4e1a.webp",
   "locationCustomValue": "{{custom_values.business__county_name}}",
-  "metaTagImageAlt": "Limpieza Industrial en {{custom_values.business__county_name}} | Ilatek",
+  "metaTagImageAlt": "Limpieza Industrial en {{custom_values.business__county_name}} — Ilatek",
   "canonical": "https://{{custom_values.website_url}}/limpieza-industrial",
-  "socialImageFile": "assets/meta-image.jpg",
+  "socialImageFile": "assets/meta-image.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."
 }

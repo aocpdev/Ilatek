@@ -3,11 +3,11 @@
   "language": "es",
   "status": "plantilla-local-delta-system",
   "metaTagTitle": "Empozamiento de Agua en Techos en {{custom_values.business__county_name}} | Ilatek Techos",
-  "metaTagDescription": "Corrección de empozamientos de agua en techos planos y losas en {{custom_values.business__county_name}} desde $350. Corregimos pendiente y drenaje para evitar filtraciones. Inspección gratis.",
-  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046fb3b8e61adf5632061.jpg",
+  "metaTagDescription": "Corrección de empozamientos de agua en techos planos y losas en {{custom_values.business__county_name}} desde $250. Corregimos pendiente y drenaje para evitar filtraciones. Agenda con $50 descontables del total.",
+  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/ecbc5f14-a31b-4af6-a0f4-8864f471a15b.webp",
   "locationCustomValue": "{{custom_values.business__county_name}}",
   "metaTagImageAlt": "Empozamiento de Agua en Techos en {{custom_values.business__county_name}} | Ilatek Techos",
   "canonical": "https://{{custom_values.website_url}}/empozamiento-de-techos",
-  "socialImageFile": "assets/respaldo/6ac046fb3b8e61adf5632061.webp",
+  "socialImageFile": "assets/meta-image.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."
 }

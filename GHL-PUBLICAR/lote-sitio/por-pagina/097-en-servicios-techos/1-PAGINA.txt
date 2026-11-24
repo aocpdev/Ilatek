@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Servicios Techos (EN)
+Slug: en/servicios-techos
+URL: https://ilatekpr.com/en/servicios-techos
+Acción: CREAR PÁGINA
+Estado hoy: HTTP 404
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (393 KB, sha256 5db7322386be)
+Origen en el repo: categorias/techos/en/landing-pages/servicios-techos.en.html
+Sección de clima: sí
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

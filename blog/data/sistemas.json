@@ -1,0 +1,674 @@
+{
+  "verificado": "2026-11-04",
+  "notaLegal": "Precios tomados de la tienda o página pública de cada empresa el 4 de noviembre de 2026. Son precios de producto (paila, galón o rollo), no precios instalados por pie cuadrado, salvo donde se indica expresamente. Ilatek no es afiliado, distribuidor ni representante de estas marcas.",
+  "familias": [
+    {
+      "id": "silicona-100",
+      "nombre": "Silicona 100%",
+      "nombreCorto": "silicona",
+      "material": "Silicona pura de curado por humedad, de un solo componente y sin solventes.",
+      "capas": "Una o dos manos sobre imprimador. En juntas y remates se refuerza con malla de poliéster.",
+      "cobertura": "Bull-Bond SIL HS se vende por paila. El King of Silicone de Cintrón declara 170 a 200 pies cuadrados por paila de 5 galones.",
+      "duracion": "WindMar publica 20 a 25 años. Danosa sostiene que no existe un estudio independiente que lo respalde, así que ese dato es el máximo del rango publicado, no una garantía.",
+      "garantia": "Bull-Bond ofrece garantía anti-filtración de 4, 5, 7 o 10 años, renovable si se solicita a tiempo. Cintrón promete garantía extendida según contrato cuando ellos instalan.",
+      "precioPublicado": "SIL HS de Bull-Bond a $220 la paila en Conspro. King of Silicone de Cintrón a $269 los 5 galones. Instalado, WindMar publica $3.50 a $6.50 por pie cuadrado.",
+      "fuerte": [
+        "Forma una sola capa continua, sin costuras ni traslapes",
+        "Resiste agua empozada mejor que cualquier acrílico",
+        "No alimenta moho ni hongos, porque no tiene material orgánico",
+        "Aguanta muy bien la expansión y contracción térmica de la losa"
+      ],
+      "debil": [
+        "No respira: si la losa no está seca, atrapa humedad adentro",
+        "Exige una limpieza y un secado que casi nadie hace completo",
+        "No se puede aplicar sobre techo mojado ni con lluvia cerca",
+        "Es el sistema con el precio por pie cuadrado más alto"
+      ],
+      "mejorPara": "Losas planas, techos donde se empoza el agua, juntas, remates y uniones con pared.",
+      "sustratos": [
+        "concreto",
+        "asfalto",
+        "poliuretano",
+        "metal",
+        "madera"
+      ],
+      "landing": "/sellado-de-silicona"
+    },
+    {
+      "id": "acrilico-elastomerico",
+      "nombre": "Acrílico elastomérico",
+      "nombreCorto": "acrílico",
+      "material": "Recubrimiento acrílico elastomérico en emulsión de agua, con pigmento blanco reflectivo.",
+      "capas": "Dos manos como mínimo: una de base y una de acabado. Las grietas se refuerzan con malla.",
+      "cobertura": "Varía por marca. Cintrón vende La Maravilla desde el galón. El acrílico de 100% sólidos de Marín Membrana se ha anunciado a $140 por 250 pies cuadrados a dos manos.",
+      "duracion": "WindMar publica 7 a 10 años. La llamada pintura de cubeta, que no es un elastomérico, rinde 1 a 2 años.",
+      "garantia": "Depende del fabricante y del instalador. No hay una garantía única de la familia.",
+      "precioPublicado": "TOP SEAL a $175, PRO ONE entre $32 y $125 y PRO FLEX a $99 en Conspro. La Maravilla desde $99 en Cintrón. Instalado, WindMar publica $1.80 a $3.50 por pie cuadrado.",
+      "fuerte": [
+        "Respira y deja salir la humedad de la losa",
+        "Se aplica rápido con bomba o rodillo",
+        "Acabado blanco que baja la temperatura del techo",
+        "El costo inicial más bajo de los sistemas con garantía"
+      ],
+      "debil": [
+        "Menos elástico que la silicona ante el movimiento de la losa",
+        "La adhesión cae en picada si la superficie está húmeda",
+        "Necesita mantenimiento más seguido",
+        "No sella juntas estructurales ni grietas activas"
+      ],
+      "mejorPara": "Concreto y superficies porosas, mantenimiento preventivo y techos con presupuesto ajustado.",
+      "sustratos": [
+        "concreto",
+        "madera",
+        "teja",
+        "metal"
+      ],
+      "landing": "/sellado-acrilico"
+    },
+    {
+      "id": "poliuretano",
+      "nombre": "Poliuretano",
+      "nombreCorto": "poliuretano",
+      "material": "Poliuretano monocomponente o bicomponente, con base, imprimador y acabado.",
+      "capas": "Tres pasos típicos: imprimador, base y acabado. En juntas se intercala malla.",
+      "cobertura": "Depende del producto. El Cintronator de Cintrón se vende por componente, no por área declarada.",
+      "duracion": "WindMar publica 10 a 15 años.",
+      "garantia": "Según el sistema y el instalador. Cintrón la estipula en el contrato de servicio.",
+      "precioPublicado": "Cintronator Primer desde $74, Base Coat a $237 y Top Coat a $325 en Cintrón. Instalado, WindMar publica $2.50 a $5.00 por pie cuadrado.",
+      "fuerte": [
+        "Alta resistencia al tránsito y al roce",
+        "Buena adherencia sobre concreto, metal y madera",
+        "Resiste químicos y rayos UV con el acabado correcto",
+        "Es el sistema natural alrededor de equipos y anclajes"
+      ],
+      "debil": [
+        "Olor fuerte y curado más lento que el acrílico",
+        "Sensible a la humedad mientras cura",
+        "Más caro que el acrílico",
+        "La preparación de superficie no admite atajos"
+      ],
+      "mejorPara": "Techos con tránsito, equipos de aire, terrazas y áreas técnicas.",
+      "sustratos": [
+        "concreto",
+        "metal",
+        "madera",
+        "asfalto"
+      ],
+      "landing": "/sellado-de-poliuretano"
+    },
+    {
+      "id": "membrana-asfaltica",
+      "nombre": "Membrana asfáltica",
+      "nombreCorto": "membrana asfáltica",
+      "material": "Membrana asfáltica modificada en rollo, SBS o APP, con refuerzo de poliéster o fibra de vidrio.",
+      "capas": "Una base y una capa de acabado, o una sola capa si el producto lo permite. Se instala con soplete o autoadhesiva.",
+      "cobertura": "Se calcula por rollo y por traslape. No se aplica a mano ni por galón.",
+      "duracion": "Danosa publica 16 a 21 años citando literatura técnica, y 25 o más con mantenimiento.",
+      "garantia": "5, 10 o hasta 20 años según la configuración, siempre con instalador certificado, registro dentro de 30 días e inspección anual.",
+      "precioPublicado": "Danosa publica de $3 a $10 por pie cuadrado instalado como promedio de la industria en Puerto Rico.",
+      "fuerte": [
+        "Es el sistema con más respaldo técnico y certificaciones de viento",
+        "El espesor es verificable, no depende de cuántas manos dio el aplicador",
+        "Muy duradero en losas grandes",
+        "Tiene garantías de fabricante de hasta 20 años"
+      ],
+      "debil": [
+        "Exige instalador certificado o la garantía no aplica",
+        "Es invasivo: normalmente hay que remover el material viejo",
+        "No se instala sobre superficie húmeda",
+        "El costo inicial es de los más altos"
+      ],
+      "mejorPara": "Losas planas grandes, techos comerciales, industriales e institucionales.",
+      "sustratos": [
+        "concreto",
+        "asfalto",
+        "madera"
+      ],
+      "landing": "/membrana-asfaltica"
+    },
+    {
+      "id": "membrana-liquida",
+      "nombre": "Membrana líquida",
+      "nombreCorto": "membrana líquida",
+      "material": "Sistema líquido multicapa: imprimador, capa base y capa de acabado, que vulcanizan y se entrelazan entre sí.",
+      "capas": "Tres capas típicas, aplicadas con mopa o rodillo y con tiempos de curado entre una y otra.",
+      "cobertura": "Marín Membrana ha publicado por paila: alrededor de 1,500 pies cuadrados el imprimador, 300 la base y hasta 600 el acabado.",
+      "duracion": "Marín declara 10 años en sus redes sociales. No hay documento técnico público que lo detalle.",
+      "garantia": "10 años anunciados por Marín. El texto completo de la garantía no está publicado en su web.",
+      "precioPublicado": "Base Coat a $247 la paila y acrílico de 100% sólidos a $140 por 250 pies cuadrados, según publicaciones de 2024 y 2025. No hay lista oficial de precios en marinmembrana.com.",
+      "fuerte": [
+        "No tiene costuras",
+        "Se refuerza capa por capa donde hace falta",
+        "Se repara por zonas sin rehacer todo el techo",
+        "Buen comportamiento en losa residencial"
+      ],
+      "debil": [
+        "El resultado depende mucho de la mano del aplicador",
+        "Las coberturas declaradas varían entre marcas",
+        "Hay poca documentación técnica pública",
+        "Requiere respetar los tiempos de curado entre capas"
+      ],
+      "mejorPara": "Losas residenciales y techos con muchos detalles, remates y penetraciones.",
+      "sustratos": [
+        "concreto",
+        "asfalto",
+        "metal"
+      ],
+      "landing": "/impermeabilizacion-de-techos"
+    },
+    {
+      "id": "sistema-multicapa",
+      "nombre": "Sistema multicapa de marca",
+      "nombreCorto": "sistema multicapa",
+      "material": "Protocolo propietario de cuatro o cinco pasos: preparación, corrección de grietas, imprimador, membrana y acabado.",
+      "capas": "Cuatro o cinco, definidas por el fabricante y no por el aplicador.",
+      "cobertura": "Se calcula por paila y por mano, según la tabla del fabricante.",
+      "duracion": "Los fabricantes declaran entre 10 y 20 años, sujeto a su protocolo.",
+      "garantia": "Bull-Bond emite de 4 a 10 años, renovable. Cintrón estipula la extendida en el contrato cuando ellos instalan.",
+      "precioPublicado": "Se publica por producto, no por pie cuadrado: SIL HS $220, TOP SEAL $175, DUROSEAL $110, King of Silicone $269, Cintronator Base $237.",
+      "fuerte": [
+        "Un solo responsable del sistema completo",
+        "El fabricante capacita y da soporte técnico",
+        "La garantía la emite quien fabrica, no solo quien aplica",
+        "El protocolo está escrito y se puede auditar"
+      ],
+      "debil": [
+        "Te ata a una sola marca de por vida",
+        "El total por producto suele subir el costo",
+        "Si se salta un paso, la garantía se cae",
+        "No todos los techos califican para la garantía"
+      ],
+      "mejorPara": "Quien quiere una garantía de fabricante y un solo protocolo verificable.",
+      "sustratos": [
+        "concreto",
+        "asfalto",
+        "poliuretano",
+        "metal",
+        "madera"
+      ],
+      "landing": "/sellado-de-techos"
+    },
+    {
+      "id": "tpo-pvc",
+      "nombre": "Membrana TPO o PVC",
+      "nombreCorto": "TPO o PVC",
+      "material": "Membrana termoplástica en rollo, soldada por calor o con adhesivo, con fijación mecánica o lastre.",
+      "capas": "Una sola capa, con las juntas soldadas y verificables.",
+      "cobertura": "Se calcula por rollo y por traslape.",
+      "duracion": "Especificación típica de 20 años o más.",
+      "garantia": "Del fabricante, y solo con instalador certificado por ese fabricante.",
+      "precioPublicado": "No hay precio publicado para Puerto Rico. Se especifica por proyecto.",
+      "fuerte": [
+        "Reflectividad alta, que reduce la carga de aire acondicionado",
+        "La soldadura por calor se puede probar en obra",
+        "Es liviana y no carga la estructura",
+        "Resiste bien químicos y estanques"
+      ],
+      "debil": [
+        "Requiere contratista certificado, no se improvisa",
+        "En áreas pequeñas el costo por pie cuadrado se dispara",
+        "Poca oferta residencial en la isla",
+        "Las reparaciones también las tiene que hacer un certificado"
+      ],
+      "mejorPara": "Techos comerciales, institucionales y losas grandes.",
+      "sustratos": [
+        "concreto",
+        "metal"
+      ],
+      "landing": "/sellado-de-techos-comercial"
+    },
+    {
+      "id": "metal-zinc",
+      "nombre": "Sellado de metal y zinc",
+      "nombreCorto": "metal y zinc",
+      "material": "Sellador de juntas y tornillos sobre metal, con poliuretano o silicona y refuerzo de malla en los traslapes.",
+      "capas": "Corrección de tornillos, sellado de juntas y recubrimiento general.",
+      "cobertura": "Se mide por pie lineal de junta y por cantidad de tornillos, no solo por área.",
+      "duracion": "Depende del recubrimiento que se use encima del sellador.",
+      "garantia": "Según el instalador. Es la familia donde más se promete sin papel.",
+      "precioPublicado": "No hay precio publicado por ninguna de las marcas revisadas.",
+      "fuerte": [
+        "Ataca el problema real del zinc: tornillos flojos y traslapes",
+        "Reduce ruido y frena la oxidación",
+        "Cuesta mucho menos que reemplazar el techo",
+        "Se puede hacer por etapas"
+      ],
+      "debil": [
+        "La dilatación del metal rompe los selladores rígidos",
+        "Hay que reponer tornillos y arandelas, no solo taparlos",
+        "Exige limpieza profunda antes de sellar",
+        "No corrige la corrosión interna de los paneles"
+      ],
+      "mejorPara": "Techos de zinc, aluminio y galvalume.",
+      "sustratos": [
+        "metal"
+      ],
+      "landing": "/techos-de-zinc"
+    },
+    {
+      "id": "losa-cementicia",
+      "nombre": "Reparación cementicia de losa",
+      "nombreCorto": "reparación cementicia",
+      "material": "Mortero, relleno de pendiente, zarpas y remates antes de cualquier impermeabilizante.",
+      "capas": "Preparación estructural, corrección de pendiente y luego el sistema de sellado que se elija.",
+      "cobertura": "Se mide por área y por espesor de relleno.",
+      "duracion": "La de la corrección misma: décadas si se hizo bien.",
+      "garantia": "Según el contratista. Es trabajo estructural, no un recubrimiento.",
+      "precioPublicado": "No publicado. Bull-Bond menciona de $1.00 a $2.00 por pie cuadrado solo para rehacer una reparación de masonería mal hecha.",
+      "fuerte": [
+        "Corrige la causa: grietas, pendiente y remates",
+        "Es la base sólida que cualquier membrana necesita",
+        "Incluye zarpa y encuentros con pared",
+        "Evita que el empozamiento vuelva"
+      ],
+      "debil": [
+        "No es un sellado de un día",
+        "Requiere curado antes de impermeabilizar",
+        "Si no se corrige la pendiente, todo lo demás falla",
+        "Añade peso a la estructura"
+      ],
+      "mejorPara": "Losas con grietas, empozamiento, hormigón poroso o remates abiertos.",
+      "sustratos": [
+        "concreto"
+      ],
+      "landing": "/techos-de-concreto"
+    }
+  ],
+  "marcas": [
+    {
+      "id": "conspro",
+      "nombre": "Conspro",
+      "nombreLargo": "Conspro Corp. (distribuidor de Bull-Bond)",
+      "sitio": "https://conspro.com/",
+      "tipo": "Distribuidor y soporte técnico",
+      "familiaPrincipal": "sistema-multicapa",
+      "familias": [
+        "sistema-multicapa",
+        "silicona-100",
+        "acrilico-elastomerico",
+        "poliuretano",
+        "membrana-liquida"
+      ],
+      "garantia": "Garantía anti-filtración de 4, 5, 7 o 10 años de Bull-Bond, renovable de por vida si se solicita dentro de los 60 días de la compra y se cumple el protocolo.",
+      "precios": [
+        {
+          "producto": "SIL HS (silicona 100%)",
+          "precio": "$220.00",
+          "unidad": "paila",
+          "url": "https://conspro.com/"
+        },
+        {
+          "producto": "TOP SEAL (elastomérico)",
+          "precio": "$175.00",
+          "unidad": "paila",
+          "url": "https://conspro.com/"
+        },
+        {
+          "producto": "DUROSEAL Membrana",
+          "precio": "$110.00",
+          "unidad": "paila",
+          "url": "https://conspro.com/"
+        },
+        {
+          "producto": "DUROSEAL Yellow Primer",
+          "precio": "$70.00",
+          "unidad": "paila",
+          "url": "https://conspro.com/"
+        },
+        {
+          "producto": "PRO FLEX",
+          "precio": "$99.00",
+          "unidad": "paila",
+          "url": "https://conspro.com/"
+        },
+        {
+          "producto": "PRO ONE",
+          "precio": "$32.00 a $125.00",
+          "unidad": "según tamaño",
+          "url": "https://conspro.com/"
+        },
+        {
+          "producto": "PRO-SIL Primer",
+          "precio": "$80.00 a $325.00",
+          "unidad": "según tamaño",
+          "url": "https://conspro.com/"
+        },
+        {
+          "producto": "BLUE PRIME",
+          "precio": "$60.00",
+          "unidad": "paila",
+          "url": "https://conspro.com/"
+        }
+      ],
+      "precioInstalado": null,
+      "notas": [
+        "Opera tienda en Caguas y en San Juan y declara servicio a toda la isla.",
+        "No publica precio instalado por pie cuadrado. El precio es de producto, más IVU.",
+        "El protocolo Bull-Bond de cinco pasos incluye lavado a presión, corrección de grietas con poliuretano, corrección de empozamiento, imprimador y membrana."
+      ],
+      "fuentes": [
+        "https://conspro.com/",
+        "https://conspro.com/contacto-2/",
+        "https://bullbond.com/garantia-de-los-selladores/"
+      ]
+    },
+    {
+      "id": "cintron",
+      "nombre": "Cintrón Enterprise",
+      "nombreLargo": "Cintron Enterprise Professional Contractors (Sistema Cintrón)",
+      "sitio": "https://cintronenterprisepr.com/",
+      "tipo": "Fabricante de marca propia e instalador",
+      "familiaPrincipal": "sistema-multicapa",
+      "familias": [
+        "sistema-multicapa",
+        "silicona-100",
+        "poliuretano",
+        "acrilico-elastomerico"
+      ],
+      "garantia": "Su web solo promete garantía extendida cuando la instalación la hace Cintrón Enterprise, estipulada en el contrato de servicio. Los 20 años que circulan en redes sociales no aparecen en ninguna página de su web.",
+      "precios": [
+        {
+          "producto": "The King of Silicone (5 galones)",
+          "precio": "$269.00",
+          "unidad": "paila",
+          "url": "https://cintronenterprisepr.com/products/the-king-of-silicone"
+        },
+        {
+          "producto": "Sistema Cintrón La Maravilla",
+          "precio": "desde $99.00",
+          "unidad": "galón o paila",
+          "url": "https://cintronenterprisepr.com/products/maravilla"
+        },
+        {
+          "producto": "Cintronator Base Coat",
+          "precio": "$237.00",
+          "unidad": "paila",
+          "url": "https://cintronenterprisepr.com/"
+        },
+        {
+          "producto": "Cintronator Top Coat",
+          "precio": "$325.00",
+          "unidad": "paila",
+          "url": "https://cintronenterprisepr.com/"
+        },
+        {
+          "producto": "Cintronator Primer Coat",
+          "precio": "desde $74.00",
+          "unidad": "paila",
+          "url": "https://cintronenterprisepr.com/"
+        },
+        {
+          "producto": "Sistema Cintrón S20 High Performance",
+          "precio": "$395.00",
+          "unidad": "kit",
+          "url": "https://cintronenterprisepr.com/"
+        },
+        {
+          "producto": "Sistema Cintrón Wonderful",
+          "precio": "$170.00",
+          "unidad": "paila",
+          "url": "https://cintronenterprisepr.com/"
+        }
+      ],
+      "precioInstalado": null,
+      "notas": [
+        "El King of Silicone declara 170 a 200 pies cuadrados por paila de 5 galones y está formulado para concreto, membrana asfáltica, poliuretano, metal y madera.",
+        "Su tienda está en Canóvanas y entrega a toda la isla. No publica precio instalado por pie cuadrado.",
+        "El domicilio y el número de teléfono que circulan en redes no están verificados en su web."
+      ],
+      "fuentes": [
+        "https://cintronenterprisepr.com/",
+        "https://cintronenterprisepr.com/collections/all",
+        "https://cintronenterprisepr.com/pages/politica-de-devolucion"
+      ]
+    },
+    {
+      "id": "marin",
+      "nombre": "Marín Membrana",
+      "nombreLargo": "Marín Membrana (sistema líquido puertorriqueño)",
+      "sitio": "https://marinmembrana.com/",
+      "tipo": "Marca propia, sistema líquido y red de puntos de venta",
+      "familiaPrincipal": "membrana-liquida",
+      "familias": [
+        "membrana-liquida",
+        "poliuretano",
+        "acrilico-elastomerico"
+      ],
+      "garantia": "10 años anunciados en sus redes sociales. El documento de garantía, sus exclusiones y si cubre mano de obra no están publicados.",
+      "precios": [
+        {
+          "producto": "Base Coat",
+          "precio": "$247.00",
+          "unidad": "paila (referencia de redes, no de su web)",
+          "url": "https://www.instagram.com/marinmembrana/"
+        },
+        {
+          "producto": "Acrílico 100% sólidos",
+          "precio": "$140.00",
+          "unidad": "250 pies cuadrados a dos manos (referencia de redes)",
+          "url": "https://www.instagram.com/marinmembrana/"
+        }
+      ],
+      "precioInstalado": null,
+      "notas": [
+        "No hay lista de precios ni hojas técnicas descargables en marinmembrana.com; el dominio no entrega texto legible al rastreo.",
+        "Puntos de venta reportados: Bayamón (avenida Main, Santa Rosa), Quebradillas, Hormigueros y Vega Baja. La red rota, así que conviene confirmar por teléfono.",
+        "Se vende a contratistas y a dueños que aplican por su cuenta, y ofrecen seminarios para selladores."
+      ],
+      "fuentes": [
+        "https://www.instagram.com/marinmembrana/",
+        "https://www.facebook.com/marinmembrana"
+      ]
+    },
+    {
+      "id": "danosa",
+      "nombre": "Danosa Caribbean",
+      "nombreLargo": "Danosa Caribbean (membranas asfálticas)",
+      "sitio": "https://www.danosapr.com/es-pr/",
+      "tipo": "Fabricante con presencia directa en la isla",
+      "familiaPrincipal": "membrana-asfaltica",
+      "familias": [
+        "membrana-asfaltica"
+      ],
+      "garantia": "5 años con Glasdan AL-80-4 de una capa, alrededor de 10 con Esterdan R-36 más capa de acabado, y hasta 20 en configuraciones premium. Exige instalador certificado, registro dentro de 30 días e inspecciones anuales.",
+      "precios": [],
+      "precioInstalado": "Publica de $3 a $10 por pie cuadrado instalado como promedio de la industria en Puerto Rico.",
+      "notas": [
+        "Es la marca con más documentación técnica pública en Puerto Rico: fichas, certificaciones de viento y guías de garantía.",
+        "Su blog cubre tipos de sellado, financiamiento y cotización, y es uno de los pocos que cita el código de pendiente.",
+        "Sostiene que la membrana asfáltica es la única familia con estudios revisados por pares sobre durabilidad."
+      ],
+      "fuentes": [
+        "https://www.danosapr.com/es-pr/sellado-de-techo",
+        "https://www.danosapr.com/es-pr/blog/garantia-sellado-de-techo-danosa",
+        "https://www.danosapr.com/es-pr/blog/tipos-de-sellado-de-techo-segun-proyectos-con-membranas-asfalticas"
+      ]
+    },
+    {
+      "id": "soprema",
+      "nombre": "Soprema",
+      "nombreLargo": "Soprema (impermeabilización industrial)",
+      "sitio": "https://www.soprema.us/",
+      "tipo": "Fabricante con representación de ventas en la isla",
+      "familiaPrincipal": "membrana-asfaltica",
+      "familias": [
+        "membrana-asfaltica",
+        "tpo-pvc",
+        "membrana-liquida"
+      ],
+      "garantia": "Del fabricante, sujeta a instalador aprobado y especificación de proyecto.",
+      "precios": [],
+      "precioInstalado": null,
+      "notas": [
+        "Aparece listada como suplidor con servicio a toda la isla en el directorio de Construcción Puerto Rico.",
+        "Su portafolio incluye asfalto modificado SBS y APP, líquidos PMMA, PVC, TPO y barreras de vapor.",
+        "No publica precios. Se especifica por proyecto."
+      ],
+      "fuentes": [
+        "https://construccionpr.org/listing/soprema-3/"
+      ]
+    },
+    {
+      "id": "polyglass",
+      "nombre": "Polyglass",
+      "nombreLargo": "Polyglass (membranas autoadhesivas y línea líquida Tecnocoat)",
+      "sitio": "https://www.specspr.com/",
+      "tipo": "Fabricante distribuido en la isla",
+      "familiaPrincipal": "membrana-asfaltica",
+      "familias": [
+        "membrana-asfaltica",
+        "membrana-liquida"
+      ],
+      "garantia": "Del fabricante, con instalador aprobado y especificación.",
+      "precios": [],
+      "precioInstalado": null,
+      "notas": [
+        "Se consigue a través de SPECS Roofing & Building Supplies, con sucursales en Caguas y Toa Baja.",
+        "Su línea Elastoflex SA V se ha demostrado en la isla en jornadas para techadores.",
+        "Tecnocoat, su línea líquida, se promueve en Puerto Rico por contratistas comerciales."
+      ],
+      "fuentes": [
+        "https://www.specspr.com/",
+        "https://forroofingpr.com/"
+      ]
+    },
+    {
+      "id": "tremco",
+      "nombre": "Tremco",
+      "nombreLargo": "Tremco (selladores y recubrimientos)",
+      "sitio": "https://www.specspr.com/",
+      "tipo": "Fabricante distribuido en la isla",
+      "familiaPrincipal": "poliuretano",
+      "familias": [
+        "poliuretano",
+        "silicona-100",
+        "membrana-liquida"
+      ],
+      "garantia": "Del fabricante, con aplicación según ficha técnica.",
+      "precios": [],
+      "precioInstalado": null,
+      "notas": [
+        "Se consigue en SPECS, junto a Polyglass, Atlas y Dow.",
+        "Su fuerte son las juntas y los selladores de construcción más que el techo completo residencial."
+      ],
+      "fuentes": [
+        "https://www.specspr.com/"
+      ]
+    },
+    {
+      "id": "carlisle",
+      "nombre": "Carlisle",
+      "nombreLargo": "Carlisle SynTec (TPO y EPDM)",
+      "sitio": "https://forroofingpr.com/",
+      "tipo": "Fabricante usado por contratistas comerciales",
+      "familiaPrincipal": "tpo-pvc",
+      "familias": [
+        "tpo-pvc"
+      ],
+      "garantia": "Del fabricante, solo con contratista autorizado.",
+      "precios": [],
+      "precioInstalado": null,
+      "notas": [
+        "F.O.R. Roofing Contractors, en San Juan, lo lista entre los sistemas que instala, junto a Polyglass y American Weatherstar.",
+        "Es una vía comercial e institucional, no residencial."
+      ],
+      "fuentes": [
+        "https://forroofingpr.com/"
+      ]
+    },
+    {
+      "id": "sika",
+      "nombre": "Sika",
+      "nombreLargo": "Sika Puerto Rico (Sarnafil, Sikaplan y líquidos)",
+      "sitio": "https://pri.sika.com/es/construccion/impermeabilizantes.html",
+      "tipo": "Fabricante con sitio y canal local",
+      "familiaPrincipal": "tpo-pvc",
+      "familias": [
+        "tpo-pvc",
+        "membrana-liquida",
+        "losa-cementicia"
+      ],
+      "garantia": "Del fabricante, con aplicador aprobado.",
+      "precios": [],
+      "precioInstalado": null,
+      "notas": [
+        "Mantiene un catálogo de impermeabilizantes para Puerto Rico que cubre acrílicos, asfálticos, cementicios, membranas prefabricadas y PVC.",
+        "Sus sistemas Sarnafil y Sikaplan son de los más especificados en techo comercial.",
+        "No publica precios en el sitio local."
+      ],
+      "fuentes": [
+        "https://pri.sika.com/es/construccion/impermeabilizantes.html"
+      ]
+    },
+    {
+      "id": "windmar",
+      "nombre": "WindMar Roofing",
+      "nombreLargo": "WindMar Roofing (silicona Gardner-Gibson)",
+      "sitio": "https://windmar.com/sellado-techos",
+      "tipo": "Contratista con contenido propio y precio publicado",
+      "familiaPrincipal": "silicona-100",
+      "familias": [
+        "silicona-100",
+        "poliuretano",
+        "acrilico-elastomerico"
+      ],
+      "garantia": "Escalonada: Silver, Gold y Platinum, con mantenimiento e inspecciones. La de 10 años se anuncia desde $7,500 instalada.",
+      "precios": [],
+      "precioInstalado": "Publica $3.50 a $6.50 por pie cuadrado en silicona, $2.50 a $5.00 en poliuretano y $1.80 a $3.50 en acrílico, con ejemplos de $4,200 a $7,800 para 1,200 pies cuadrados.",
+      "notas": [
+        "Es el competidor con más información publicada: guía de precios, páginas por municipio y preguntas frecuentes.",
+        "Trabaja con silicona de Gardner-Gibson, no con marca propia.",
+        "Sus cifras son marketing propio: úsalas como referencia publicada, no como promedio independiente."
+      ],
+      "fuentes": [
+        "https://windmar.com/cuanto-cuesta-sellar-techo-puerto-rico",
+        "https://windmar.com/sellado-techos"
+      ]
+    },
+    {
+      "id": "lanco",
+      "nombre": "Lanco",
+      "nombreLargo": "Lanco Paints (recubrimientos)",
+      "sitio": "https://www.lancopaints.com/puerto-rico/es/",
+      "tipo": "Fabricante de recubrimientos con canal de ferretería",
+      "familiaPrincipal": "acrilico-elastomerico",
+      "familias": [
+        "acrilico-elastomerico"
+      ],
+      "garantia": "Del fabricante, según ficha del producto.",
+      "precios": [],
+      "precioInstalado": null,
+      "notas": [
+        "Sus líneas Dry-Coat, Ultra Dry-Coat, Coolguard e Impermeabilizante Ultra Reforzado G-3 se venden en ferreterías y en Home Depot Puerto Rico.",
+        "Es la vía de quien quiere resolver por su cuenta con un producto de marca conocida.",
+        "No publica precio instalado."
+      ],
+      "fuentes": [
+        "https://www.lancopaints.com/puerto-rico/es/"
+      ]
+    },
+    {
+      "id": "specs",
+      "nombre": "SPECS Roofing & Building Supplies",
+      "nombreLargo": "SPECS (suplidor de techos)",
+      "sitio": "https://www.specspr.com/",
+      "tipo": "Suplidor y centro de materiales",
+      "familiaPrincipal": "membrana-asfaltica",
+      "familias": [
+        "membrana-asfaltica",
+        "poliuretano",
+        "tpo-pvc"
+      ],
+      "garantia": "No emite garantía de instalación: suple materiales.",
+      "precios": [],
+      "precioInstalado": null,
+      "notas": [
+        "Sucursales en Caguas y Toa Baja. Distribuye Tremco, Polyglass, Atlas y Dow, entre otras marcas.",
+        "Es el punto de compra de muchos contratistas que después instalan con su propia garantía."
+      ],
+      "fuentes": [
+        "https://www.specspr.com/"
+      ]
+    }
+  ]
+}

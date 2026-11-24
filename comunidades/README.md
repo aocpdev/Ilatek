@@ -75,9 +75,15 @@ Landing Page Generation" (en `C:\Users\Omele\Downloads\research comunidades ilat
 
 ## Publicación en el subdominio
 
-- Un **funnel de GHL por comunidad** con dos páginas hermanas:
+- **Dos funnels por comunidad, uno por servicio, con una página cada uno**:
   `/<municipio>/<comunidad>/sellado-de-techo` y `/<municipio>/<comunidad>/limpieza`.
   No hay página hub en `/<municipio>/<comunidad>`: la raíz redirige 301 a techos.
+  La URL publicada es el **path del step** (completo); el path del funnel es
+  administrativo y no se antepone.
+- Plantillas de revisión publicadas: `/plantilla/techos` y `/plantilla/limpieza`
+  (`scripts/publicar-plantillas.py`). **Una pestaña por carril, reutilizada entre
+  corridas** (`.tmp-carril-N.pestana`) y nunca cerrada desde los scripts: lo exige
+  `AGENTS.md` y evita la acumulación de pestañas que satura el CDP.
 - El contenido sale de `landings/<municipio>/<comunidad>/<servicio>/index.html` y se
   inyecta en GHL con `scripts/preparar-funnel-ghl.mjs`; los assets se suben a la
   Media Library y se referencian por URL absoluta.
@@ -119,6 +125,7 @@ python scripts/qc-pass.py                    # QC de los HTML + inventory/roadma
 python scripts/geocodificar-nominatim.py     # punto de los 78 municipios (Wikipedia)
 python scripts/coincidir-comunidades-osm.py  # punto de las comunidades LUXURY (OSM, exacto)
 node scripts/generar-mapa-comunidades.mjs   # data/mapa-comunidades.json
+node scripts/generar-sitemap.mjs            # landings/sitemap.xml (1.112 URLs limpias)
 node scripts/inyectar-mapa-home.mjs         # inyecta la sección del mapa en el Home
 python scripts/verificar-fuentes.py research/metro research/norte research/este \
        research/sur research/oeste research/central   # comprueba que las fuentes respondan

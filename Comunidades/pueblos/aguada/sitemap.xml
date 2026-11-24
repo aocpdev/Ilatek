@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- aguada.ilatekpr.com — landings de las comunidades de este municipio.
+     Generado por scripts/genera-pueblos.mjs; una URL por comunidad y servicio. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://aguada.ilatekpr.com/colinas-del-lago/limpieza</loc></url>
+  <url><loc>https://aguada.ilatekpr.com/colinas-del-lago/sellado-de-techo</loc></url>
+  <url><loc>https://aguada.ilatekpr.com/reparto-gonzalez/limpieza</loc></url>
+  <url><loc>https://aguada.ilatekpr.com/reparto-gonzalez/sellado-de-techo</loc></url>
+  <url><loc>https://aguada.ilatekpr.com/table-rock/limpieza</loc></url>
+  <url><loc>https://aguada.ilatekpr.com/table-rock/sellado-de-techo</loc></url>
+</urlset>

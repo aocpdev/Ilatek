@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Sellado De Techos Comercial (EN)
+Slug: en/sellado-de-techos-comercial
+URL: https://ilatekpr.com/en/sellado-de-techos-comercial
+Acción: CREAR PÁGINA
+Estado hoy: HTTP 404
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (243 KB, sha256 2f3e33537ed6)
+Origen en el repo: servicios/sellado-de-techos-comercial/en/landing-pages/sellado-de-techos-comercial.en.html
+Sección de clima: no
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

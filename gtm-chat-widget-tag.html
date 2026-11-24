@@ -1,0 +1,37 @@
+<!--
+  Etiqueta Custom HTML para GTM-PQMR2TDB (contenedor de ilatekpr.com)
+  Chat widget de Ilatek - PR (location 8OxUENFVM60EKzqsTcoD, widget 6aed360c3c83530a427c6eb9)
+
+  Motivo: si el snippet se inyecta al inicio del parseo, el componente <chat-widget>
+  se hidrata pero queda inerte (visibility:hidden, data-active=false) en este sitio
+  (Nuxt reescribe el DOM al hidratar). Montandolo despues del evento load funciona.
+  Disparador: All Pages.
+-->
+<script>
+(function () {
+  var WIDGET_ID = '6aed360c3c83530a427c6eb9';
+  var LOCATION_ID = '8OxUENFVM60EKzqsTcoD';
+
+  function montarWidget() {
+    if (document.querySelector('chat-widget') || document.querySelector('[data-chat-widget]')) return;
+    if (!document.body) return;
+    var contenedor = document.createElement('div');
+    contenedor.setAttribute('data-chat-widget', '');
+    contenedor.setAttribute('data-widget-id', WIDGET_ID);
+    contenedor.setAttribute('data-location-id', LOCATION_ID);
+    document.body.appendChild(contenedor);
+
+    var loader = document.createElement('script');
+    loader.src = 'https://widgets.leadconnectorhq.com/loader.js';
+    loader.setAttribute('data-resources-url', 'https://widgets.leadconnectorhq.com/chat-widget/loader.js');
+    loader.setAttribute('data-widget-id', WIDGET_ID);
+    loader.async = true;
+    document.body.appendChild(loader);
+  }
+
+  function arrancar() { setTimeout(montarWidget, 1200); }
+
+  if (document.readyState === 'complete') { arrancar(); }
+  else { window.addEventListener('load', arrancar, { once: true }); }
+})();
+</script>

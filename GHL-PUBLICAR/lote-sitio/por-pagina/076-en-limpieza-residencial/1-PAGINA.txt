@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Limpieza Residencial (EN)
+Slug: en/limpieza-residencial
+URL: https://ilatekpr.com/en/limpieza-residencial
+Acción: CREAR PÁGINA
+Estado hoy: HTTP 404
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (239 KB, sha256 f70c33396d8f)
+Origen en el repo: categorias/limpieza-residencial/en/landing-pages/limpieza-residencial.en.html
+Sección de clima: no
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

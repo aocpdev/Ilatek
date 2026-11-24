@@ -42,6 +42,8 @@ export const ASSETS = {
 // silicona, membrana, poliuretano, acrílico, teja, limpieza, canaletas, lavado,
 // tragaluces). Ver el informe para las páginas que la librería no cubre del todo.
 export const CDN = 'https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/';
+// Archivos del propio repo publicados por GitHub (no pasan por GHL Media).
+export const RAWREPO = 'https://raw.githubusercontent.com/aocpdev/Ilatek/main/';
 // Imagen social dedicada por slug (og:image / twitter:image). Por defecto el
 // HEAD usa el raw del hero; si el slug tiene `social` en TECHOS_IMG se usa esa foto.
 export const TECHOS_IMG_SOCIAL = {
@@ -57,17 +59,17 @@ export const TECHOS_IMG_SOCIAL = {
   'sellado-acrilico': CDN + '6ac72671d5f4a8af439f5cce.jpg',
 };
 export const TECHOS_IMG = {
-  techos: { hero: CDN + '6ac046fe8493229874263a27.jpg', incl: CDN + '6ac046fef30b488137bfa568.jpg' },
+  techos: { hero: CDN + '6ac046fe8493229874263a27.jpg', incl: CDN + '6ac046ecf30b488137bfa41c.jpg' },
   'reparacion-de-techos': { hero: CDN + '6ac046f30edabbe5a4a763bc.jpg', incl: CDN + '6ac046fd02569bee7cbccca0.jpg' },
   'reparacion-de-goteras': { hero: CDN + '6ac8583bbbad531ac844963f.jpg', incl: CDN + '6ac8583b195f9172ed03ac8b.jpg', heroDims: { width: 1200, height: 675 }, inclDims: { width: 1200, height: 675 } },
   'reparacion-de-filtraciones': { hero: CDN + '6ac046fc8493229874263a03.jpg', incl: CDN + '6ac046fb84932298742639df.jpg' },
   'reparacion-de-grietas-techos': { hero: CDN + '6ac8583bbbad531ac844964a.jpg', incl: CDN + '6ac8583bcc7a5a2b73475f28.jpg', heroDims: { width: 1200, height: 675 }, inclDims: { width: 1200, height: 675 } },
   'empozamiento-de-techos': { hero: CDN + '6ac046fb3b8e61adf5632061.jpg', incl: CDN + '6ac046fb7bca8cd20c402253.jpg' },
-  'reparacion-post-huracan': { hero: CDN + '6ac046f83b8e61adf5632035.jpg', incl: CDN + '6ac046f57bca8cd20c4021df.jpg' },
+  'reparacion-post-huracan': { hero: CDN + '6ac046f83b8e61adf5632035.jpg', incl: CDN + '6ac046f83b8e61adf5632035.jpg' },
   'sellado-de-techos': { hero: CDN + '6ac8583f195f9172ed03ad7b.jpg', incl: CDN + '6ac8583d89da6e6f9bc73cb9.jpg' },
   'sellado-de-silicona': { hero: CDN + '6ac046f585f560d1666999aa.jpg', incl: CDN + '6ac046f585f560d1666999aa.jpg' },
   'membrana-asfaltica': { hero: CDN + '6ac046f82c503e697d5ff24e.jpg', incl: CDN + '6ac046f82c503e697d5ff24e.jpg' },
-  'recubrimiento-elastomerico': { hero: CDN + '6ac046f302569bee7cbccbf4.jpg', incl: CDN + '6ac046f32c503e697d5ff1fa.jpg' },
+  'recubrimiento-elastomerico': { hero: '6ac046f302569bee7cbccbf4.webp', incl: '6ac046f302569bee7cbccbf4.webp' },
   'sellado-de-poliuretano': { hero: CDN + '6ac046f28493229874263903.jpg', incl: CDN + '6ac046f28493229874263903.jpg' },
   'sellado-acrilico': { hero: CDN + '6ac8583c195f9172ed03acbf.jpg', incl: CDN + '6ac8583ccc7a5a2b73475f64.jpg', heroDims: { width: 1200, height: 675 }, inclDims: { width: 1200, height: 675 } },
   'impermeabilizacion-de-techos': { hero: CDN + '6ac046f5849322987426393b.jpg', incl: CDN + '6ac046f802569bee7cbccc2c.jpg' },
@@ -75,16 +77,16 @@ export const TECHOS_IMG = {
   'techos-planos': { hero: CDN + '6ac85834bbad531ac8449522.jpg', incl: CDN + '6ac85834cc7a5a2b73475e01.jpg', heroDims: { width: 1200, height: 675 }, inclDims: { width: 1200, height: 675 } },
   'techos-por-segmento': { hero: CDN + '6acbf7e5bbad531ac89598d2.png', incl: CDN + '6acbf9494770fb500bf7712f.png', heroDims: { width: 1200, height: 675 }, inclDims: { width: 1200, height: 675 } },
   'techos-de-zinc': { hero: CDN + '6acbf29abbad531ac8950f9b.png', incl: CDN + '6acbf2dd195f9172ed53ce9a.png', heroDims: { width: 1200, height: 675 }, inclDims: { width: 1200, height: 675 } },
-  'techos-de-asfalto': { hero: CDN + '6ac046f82c503e697d5ff24e.jpg', incl: CDN + '6ac046f57bca8cd20c4021df.jpg' },
+  'techos-de-asfalto': { hero: '6ac046f82c503e697d5ff24e.webp', incl: '6ac046ecf30b488137bfa41c.webp' },
   'techos-de-teja': { hero: CDN + '6acbee8cc478ac5535ac053c.png', incl: CDN + '6acbee8c195f9172ed536a77.png', heroDims: { width: 1200, height: 675 }, inclDims: { width: 1200, height: 675 } },
   'techos-de-madera': { hero: CDN + '6acbe8c9bd6bb710ca4fc13e.png', incl: CDN + '6acbe8c9195f9172ed52d037.png', heroDims: { width: 1200, height: 675 }, inclDims: { width: 1200, height: 675 } },
-  'sellado-de-techos-residencial': { hero: CDN + '6ac046f07bca8cd20c4021a3.jpg', incl: CDN + '6ac0427e0edabbe5a4a724d7.jpg' },
+  'sellado-de-techos-residencial': { hero: '6ac0427e0edabbe5a4a724d7.webp', incl: '6ac0427e0edabbe5a4a724d7.webp' },
   'sellado-de-techos-comercial': { hero: CDN + '6ac046ee85f560d1666998eb.jpg', incl: CDN + '6ac046f00edabbe5a4a763a0.jpg' },
   'sellado-de-techos-industrial': { hero: CDN + '6ac046ee0edabbe5a4a76380.jpg', incl: CDN + '6ac046ee849322987426388b.jpg' },
   'inspeccion-y-mantenimiento-de-techos': { hero: CDN + '6ac85838195f9172ed03ac13.jpg', incl: CDN + '6ac85838c478ac55355c46f2.jpg', heroDims: { width: 1200, height: 675 }, inclDims: { width: 1200, height: 675 } },
   'inspeccion-de-techos': { hero: CDN + '6ac046ec0edabbe5a4a76342.jpg', incl: CDN + '6ac046ecf30b488137bfa41c.jpg' },
   'mantenimiento-de-techos': { hero: CDN + '6ac046f98493229874263987.jpg', incl: CDN + '6ac046f8f30b488137bfa4ee.jpg' },
-  'limpieza-de-techos-y-canaletas': { hero: CDN + '6ac046ee150d6ea53dbd5044.jpg', incl: CDN + '6ac046ee150d6ea53dbd5044.jpg' },
+  'limpieza-de-techos-y-canaletas': { hero: '6ac046ee150d6ea53dbd5044.webp', incl: '6ac046ee150d6ea53dbd5044.webp' },
   'canaletas-y-bajantes': { hero: CDN + '6ac8583a195f9172ed03ac5f.jpg', incl: CDN + '6ac8583abbad531ac84495e2.jpg', heroDims: { width: 1200, height: 675 }, inclDims: { width: 1200, height: 675 } },
   'lavado-a-presion-techos': { hero: CDN + '6acb112abd6bb710ca3fd406.png', incl: CDN + '6ac85839c478ac55355c4729.jpg', heroDims: { width: 1200, height: 675 }, inclDims: { width: 1200, height: 675 } },
   tragaluces: { hero: CDN + '6ac85839195f9172ed03ac3f.jpg', incl: CDN + '6ac85838cc7a5a2b73475e82.jpg', heroDims: { width: 1200, height: 675 }, inclDims: { width: 1200, height: 675 } },
@@ -149,6 +151,6 @@ export function mk(p) {
     ctaTitle: p.ctaTitle || 'Protege tu techo antes de la próxima lluvia.',
     ctaText:
       p.ctaText ||
-      `Solicita tu cotización gratis de ${noun} en {{custom_values.business__county_name}} y recibe precio claro y por escrito — cotización $0 agendada con $50 reembolsables y cobertura en los 78 municipios de Puerto Rico.`,
+      `Solicita tu cotización por $50 descontables del total de ${noun} en {{custom_values.business__county_name}} y recibe precio claro y por escrito — cotización por $50 descontables del total y cobertura en los 78 municipios de Puerto Rico.`,
   };
 }

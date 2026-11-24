@@ -1,0 +1,107 @@
+n;carpeta;url;accion;bytes;kb;sha256;sha_1pagina;coincide;se_pega
+1;001-inicio;https://ilatekpr.com/;REPUBLICAR;457819;447;e088bea8c31c69220a34192ecda02d0b638a3955d14cb404a5d2c47b97845292;e088bea8c31c;sí;2-CODIGO-CUSTOM-HTML.html + HEAD-home-es.html
+2;002-airbnb-turnover;https://ilatekpr.com/airbnb-turnover;REPUBLICAR;234292;229;e3435ead2f90d9137a853f9c4636a12988d5d307d689edc557ae97af385cfc4c;e3435ead2f90;sí;2-CODIGO-CUSTOM-HTML.html
+3;003-alfombras;https://ilatekpr.com/alfombras;REPUBLICAR;234114;229;c1a561d8ba98be7bed51e2640234395e2c7346c042372cbc534f7255bb5aeb9c;c1a561d8ba98;sí;2-CODIGO-CUSTOM-HTML.html
+4;004-canaletas-y-bajantes;https://ilatekpr.com/canaletas-y-bajantes;REPUBLICAR;240272;235;61e2ca39ecf265a46eac73eebaa82f6cf003c5b712eff0eb034607576d752e51;61e2ca39ecf2;sí;2-CODIGO-CUSTOM-HTML.html
+5;005-comunidades;https://ilatekpr.com/comunidades;CREAR PÁGINA;632400;618;ac11c234e461515b10943b2a46d9fa3fdba622c93099b4049968bb286d71ee25;ac11c234e461;sí;2-CODIGO-CUSTOM-HTML.html
+8;008-electrodomesticos;https://ilatekpr.com/electrodomesticos;REPUBLICAR;234532;229;2dd332821eab3d973ed874682775e9ef5a8c3f1441d6a1012af26c0cba598680;2dd332821eab;sí;2-CODIGO-CUSTOM-HTML.html
+9;009-empozamiento-de-techos;https://ilatekpr.com/empozamiento-de-techos;REPUBLICAR;241338;236;b7a60de45f85e5f933a7f7079e6f9b9b8e4c0ccf98ca42d09de2552908db3760;b7a60de45f85;sí;2-CODIGO-CUSTOM-HTML.html
+10;010-garantia;https://ilatekpr.com/garantia;REPUBLICAR;205689;201;7d7c83313d0e91cd3470b172ecb12f6024089f970d6255f3cd64c43ff5952c1c;7d7c83313d0e;sí;2-CODIGO-CUSTOM-HTML.html
+11;011-impermeabilizacion-de-techos;https://ilatekpr.com/impermeabilizacion-de-techos;REPUBLICAR;244186;238;16c66b6edbb8b7824a9a329a4b79fa4a31faab11e79bf424da845dda3e415cad;16c66b6edbb8;sí;2-CODIGO-CUSTOM-HTML.html
+12;012-inspeccion-de-techos;https://ilatekpr.com/inspeccion-de-techos;REPUBLICAR;240584;235;15f89d46236e33ac7d0fcaaf1ce1e535610ae5606267a22f5ddf851f6413889a;15f89d46236e;sí;2-CODIGO-CUSTOM-HTML.html
+13;013-inspeccion-y-mantenimiento-de-techos;https://ilatekpr.com/inspeccion-y-mantenimiento-de-techos;REPUBLICAR;246986;241;5dd4fbdddccc5cddf2e6fbb2b4d2cd3965a8572a4f1922dace05baaea3c29c9e;5dd4fbdddccc;sí;2-CODIGO-CUSTOM-HTML.html
+14;014-instalacion-y-reemplazo-de-techos;https://ilatekpr.com/instalacion-y-reemplazo-de-techos;REPUBLICAR;243821;238;22a3188a3c139e1b8b0d91be8ca9d6258b56d3b3ee40ad610c3ff76632f4553d;22a3188a3c13;sí;2-CODIGO-CUSTOM-HTML.html
+15;015-lavado-a-presion;https://ilatekpr.com/lavado-a-presion;REPUBLICAR;234188;229;5e6460bc30d7b7aa523871c93d19742d9524ee984f6ef35e9db25af6d5ee0437;5e6460bc30d7;sí;2-CODIGO-CUSTOM-HTML.html
+16;016-lavado-a-presion-techos;https://ilatekpr.com/lavado-a-presion-techos;REPUBLICAR;240771;235;4e6671fe536b4f968c8695275b034c155307d9011bc1883e591577a7710affb6;4e6671fe536b;sí;2-CODIGO-CUSTOM-HTML.html
+17;017-limpieza-comercial;https://ilatekpr.com/limpieza-comercial;REPUBLICAR;234044;229;8e0db9906cea42e8a95271c86011e9d0fc91cc609cd1f16814bceb91ff0a8f37;8e0db9906cea;sí;2-CODIGO-CUSTOM-HTML.html
+18;018-limpieza-de-mudanza;https://ilatekpr.com/limpieza-de-mudanza;REPUBLICAR;234508;229;9968128e3037e301799eef825e81f902e8991c2a2a1558d2efb1546917fb6af8;9968128e3037;sí;2-CODIGO-CUSTOM-HTML.html
+19;019-limpieza-de-techos-y-canaletas;https://ilatekpr.com/limpieza-de-techos-y-canaletas;REPUBLICAR;243340;238;fe9cbbb6ba4e381cce988cae6e2ec8f89203c4cf9b8383d6717e2c3c9873ccdd;fe9cbbb6ba4e;sí;2-CODIGO-CUSTOM-HTML.html
+20;020-limpieza-estandar;https://ilatekpr.com/limpieza-estandar;REPUBLICAR;234104;229;8f7a411d16fe8b70b755fd716c6bd09c167bd6a7ff948d59195cc08ff257d85a;8f7a411d16fe;sí;2-CODIGO-CUSTOM-HTML.html
+21;021-limpieza-industrial;https://ilatekpr.com/limpieza-industrial;REPUBLICAR;234662;229;ba4a9973ff26a16f6e2c0f14a8b0c4734c5e34e0982f46fbb38ed483c92560a8;ba4a9973ff26;sí;2-CODIGO-CUSTOM-HTML.html
+22;022-limpieza-profunda;https://ilatekpr.com/limpieza-profunda;REPUBLICAR;234591;229;14debd49745a2f66662d06ef8de0c2553ced2a911c22a727ed0030381b48354c;14debd49745a;sí;2-CODIGO-CUSTOM-HTML.html
+23;023-limpieza-residencial;https://ilatekpr.com/limpieza-residencial;REPUBLICAR;235459;230;a77fa2d41cbf24002ded143751257987eb9cfa3f3b464398135b7020674c4642;a77fa2d41cbf;sí;2-CODIGO-CUSTOM-HTML.html
+24;024-mantenimiento-de-techos;https://ilatekpr.com/mantenimiento-de-techos;REPUBLICAR;240853;235;a6925ea94d5c45bc3fa7d9d518d0cbc9238af7c2e93554c1cd208b494d10e780;a6925ea94d5c;sí;2-CODIGO-CUSTOM-HTML.html
+25;025-membrana-asfaltica;https://ilatekpr.com/membrana-asfaltica;REPUBLICAR;240089;234;b2187df441713dd4aba5087bd3300feaf3bd48e65e4c2134af9ea53d0f8d2ffa;b2187df44171;sí;2-CODIGO-CUSTOM-HTML.html
+26;026-organizacion;https://ilatekpr.com/organizacion;REPUBLICAR;233693;228;6728c43ad5ccd6ea55f75df7bcc3d5203f8cfe0e5369b5315d6b615fc64f8fc0;6728c43ad5cc;sí;2-CODIGO-CUSTOM-HTML.html
+27;027-politica;https://ilatekpr.com/politica;CREAR PÁGINA;221887;216;5d65d595e3af6ddc3d6959bf784b40499d5326415b0bff5a6268926a691d6dff;5d65d595e3af;sí;2-CODIGO-CUSTOM-HTML.html
+28;028-post-construccion;https://ilatekpr.com/post-construccion;REPUBLICAR;234666;229;2c5880b9943d27666cf334ad136e6517ac1c546fbdad405adbf6f70ae2cd9fbe;2c5880b9943d;sí;2-CODIGO-CUSTOM-HTML.html
+29;029-recubrimiento-elastomerico;https://ilatekpr.com/recubrimiento-elastomerico;REPUBLICAR;242506;237;0e3629b653d3e0b09114a53e4bde7c831361c4bef5f852ecab6333402e5c54a5;0e3629b653d3;sí;2-CODIGO-CUSTOM-HTML.html
+30;030-reparacion-de-filtraciones;https://ilatekpr.com/reparacion-de-filtraciones;REPUBLICAR;242877;237;fc54f80be6792431994dee63c9ccdc49502fe08fedeeaddcf45164f33131dee1;fc54f80be679;sí;2-CODIGO-CUSTOM-HTML.html
+31;031-reparacion-de-goteras;https://ilatekpr.com/reparacion-de-goteras;REPUBLICAR;242504;237;5cdcf4459fbb67c62d48436395263509e534620319423590525848f3979dbe06;5cdcf4459fbb;sí;2-CODIGO-CUSTOM-HTML.html
+32;032-reparacion-de-grietas-techos;https://ilatekpr.com/reparacion-de-grietas-techos;REPUBLICAR;244367;239;b069dccd378d3db19d8fe69f890cbe45c6f9717d3d4644f1341004ec0a146a0e;b069dccd378d;sí;2-CODIGO-CUSTOM-HTML.html
+33;033-reparacion-de-techos;https://ilatekpr.com/reparacion-de-techos;REPUBLICAR;243528;238;d3796b0a9ec9cff0870e08a9f9ed3f1b406ed10e2ede0705f4ab7a5fa03155fe;d3796b0a9ec9;sí;2-CODIGO-CUSTOM-HTML.html
+34;034-reparacion-post-huracan;https://ilatekpr.com/reparacion-post-huracan;REPUBLICAR;241898;236;deb06f706fffd6587079ef827da3631ef060ba5241549843086308a8e161f48c;deb06f706fff;sí;2-CODIGO-CUSTOM-HTML.html
+35;035-resenas;https://ilatekpr.com/resenas;REPUBLICAR;221153;216;ae9d21283fca5ea76c7e9e347fc8f10bf5b2fb56d82f1c8a23a525a61c72c469;ae9d21283fca;sí;2-CODIGO-CUSTOM-HTML.html
+36;036-sellado-acrilico;https://ilatekpr.com/sellado-acrilico;REPUBLICAR;240174;235;8656d421f1aed5aba37c4959b5b53d43f29620b5584933ab7bfa9bf95b54e6b1;8656d421f1ae;sí;2-CODIGO-CUSTOM-HTML.html
+37;037-sellado-de-poliuretano;https://ilatekpr.com/sellado-de-poliuretano;REPUBLICAR;240853;235;7fd6049606ee5e621470088c46216f06aa924ad749e43e0096bd4f9459d9d3a5;7fd6049606ee;sí;2-CODIGO-CUSTOM-HTML.html
+38;038-sellado-de-silicona;https://ilatekpr.com/sellado-de-silicona;REPUBLICAR;240577;235;f49ebe1ccf08d6978f987db2f9dc5400de824c9bef53e86578fa8bc0d0b21763;f49ebe1ccf08;sí;2-CODIGO-CUSTOM-HTML.html
+39;039-sellado-de-techos;https://ilatekpr.com/sellado-de-techos;REPUBLICAR;281199;275;ce895a193393e08576a860a12b8aefd051f1a2a319a55574ede138c439534911;ce895a193393;sí;2-CODIGO-CUSTOM-HTML.html
+40;040-sellado-de-techos-comercial;https://ilatekpr.com/sellado-de-techos-comercial;REPUBLICAR;241601;236;6b737bdc41a269d5ab4e391e2229bbef9073b5417c0ea1984464cb8f608911c8;6b737bdc41a2;sí;2-CODIGO-CUSTOM-HTML.html
+41;041-sellado-de-techos-industrial;https://ilatekpr.com/sellado-de-techos-industrial;REPUBLICAR;242192;237;c558062a5177b543dd5f1a1715373290a2edd41afaaace6aed30e31afedb6e71;c558062a5177;sí;2-CODIGO-CUSTOM-HTML.html
+42;042-sellado-de-techos-residencial;https://ilatekpr.com/sellado-de-techos-residencial;REPUBLICAR;242432;237;ffe83eb7a34a7f3820d451f94dd8f066d22feb62fe1d9ed67d4e848428f99308;ffe83eb7a34a;sí;2-CODIGO-CUSTOM-HTML.html
+43;043-servicios;https://ilatekpr.com/servicios;REPUBLICAR;291726;285;f5e5c0a247aa4d7c938fc8c3bd4c15e7ac7bc19c991b628ec22321cd4fe2a6ac;f5e5c0a247aa;sí;2-CODIGO-CUSTOM-HTML.html
+44;044-servicios-techos;https://ilatekpr.com/servicios-techos;REPUBLICAR;391314;382;db6a61ad0a1feb3ff6741c1ebd1a4f6d93d020db817d232023e574dcdefaa67a;db6a61ad0a1f;sí;2-CODIGO-CUSTOM-HTML.html
+45;045-techos;https://ilatekpr.com/techos;CREAR PÁGINA;295725;289;520687330c75d9cf8f295ccbd10856724b7c1b59abfdbc705cdbb2332506e4bd;520687330c75;sí;2-CODIGO-CUSTOM-HTML.html
+46;046-techos-de-asfalto;https://ilatekpr.com/techos-de-asfalto;REPUBLICAR;239766;234;ccff245be0d61bdecebfdccdfdd0d30e1068de5150e8597b25980ca43632e7b3;ccff245be0d6;sí;2-CODIGO-CUSTOM-HTML.html
+47;047-techos-de-concreto;https://ilatekpr.com/techos-de-concreto;REPUBLICAR;240468;235;12c3c030df1d38e4d5d2e61bee94570ee7f961b1ae4c151d669c1be312017361;12c3c030df1d;sí;2-CODIGO-CUSTOM-HTML.html
+48;048-techos-de-madera;https://ilatekpr.com/techos-de-madera;REPUBLICAR;240046;234;612b9a69faf3d9d6f725b174ca2258b67f26dd51959af48096b8a21f99c69b7b;612b9a69faf3;sí;2-CODIGO-CUSTOM-HTML.html
+49;049-techos-de-teja;https://ilatekpr.com/techos-de-teja;REPUBLICAR;239380;234;bcd0a62094feba32d106b8cf3b3a5d0ce280e9657effce9cf07d17c67634b0ac;bcd0a62094fe;sí;2-CODIGO-CUSTOM-HTML.html
+50;050-techos-de-zinc;https://ilatekpr.com/techos-de-zinc;REPUBLICAR;239704;234;ca5fa85f3d264221f03e4b2b48e2f33afa2ae953c68f296188d8e048af8e421d;ca5fa85f3d26;sí;2-CODIGO-CUSTOM-HTML.html
+51;051-techos-planos;https://ilatekpr.com/techos-planos;REPUBLICAR;239461;234;0f5055097fe2f2b8434c029b5a92e8dcb788fc97d802c5cb87d03393d019107f;0f5055097fe2;sí;2-CODIGO-CUSTOM-HTML.html
+52;052-techos-por-segmento;https://ilatekpr.com/techos-por-segmento;REPUBLICAR;241013;235;a18fb74ddc40ac5e2c65db3a298f6acbc4b1be2739b83516a49a3887cbf0ac52;a18fb74ddc40;sí;2-CODIGO-CUSTOM-HTML.html
+53;053-terminos;https://ilatekpr.com/terminos;CREAR PÁGINA;215395;210;3d567039fac826b8db7886e88cee85c02e648241c9e033ed4b0f4b4d4d9b5548;3d567039fac8;sí;2-CODIGO-CUSTOM-HTML.html
+54;054-tragaluces;https://ilatekpr.com/tragaluces;REPUBLICAR;237833;232;40a48b640e7453cd7bb29281e1708c2ad9abef84d892193eafbcfb83f8be8f2b;40a48b640e74;sí;2-CODIGO-CUSTOM-HTML.html
+55;055-ventanas;https://ilatekpr.com/ventanas;REPUBLICAR;234049;229;5834f57814902742a890e5551e24365bd56fbe0d12357d473eaa5d75a94fbd9b;5834f5781490;sí;2-CODIGO-CUSTOM-HTML.html
+56;056-en-airbnb-turnover;https://ilatekpr.com/en/airbnb-turnover;CREAR PÁGINA;234490;229;d30acffd12bd2d27cfc94a63a53e93e7d3ff595dd56340b4845f4cff131ec0c6;d30acffd12bd;sí;2-CODIGO-CUSTOM-HTML.html
+57;057-en-alfombras;https://ilatekpr.com/en/alfombras;CREAR PÁGINA;233723;228;f8c97e4b9ca636f7aedbd1c925b05297eda3b3a1f39e4b8ba236ae6aa8e46e97;f8c97e4b9ca6;sí;2-CODIGO-CUSTOM-HTML.html
+58;058-en-canaletas-y-bajantes;https://ilatekpr.com/en/canaletas-y-bajantes;CREAR PÁGINA;239002;233;1408bb4fd306956e2a10d133da363d7da280f536f4964d1384b2a5b8b71d2982;1408bb4fd306;sí;2-CODIGO-CUSTOM-HTML.html
+59;059-en-communities;https://ilatekpr.com/en/communities;CREAR PÁGINA;631412;617;d12c8c9cdaed239ef8a274f9ac63d45290b301274a6000155eb58021dce08f3a;d12c8c9cdaed;sí;2-CODIGO-CUSTOM-HTML.html
+60;060-en-electrodomesticos;https://ilatekpr.com/en/electrodomesticos;CREAR PÁGINA;234500;229;b7c62dfa61bd5b68dde4b3f6faedece512923592721287090e4149e02f06aab2;b7c62dfa61bd;sí;2-CODIGO-CUSTOM-HTML.html
+61;061-en-empozamiento-de-techos;https://ilatekpr.com/en/empozamiento-de-techos;CREAR PÁGINA;239596;234;3c03f598335d953e4cd967dead1cfdaf9e26e81ac02e7942e9762b1501e19f12;3c03f598335d;sí;2-CODIGO-CUSTOM-HTML.html
+62;062-en-garantia;https://ilatekpr.com/en/garantia;CREAR PÁGINA;203365;199;a9ce1e744579b524faeb03ae785e975d291c2b334b372e800a69d9adcc2e6af9;a9ce1e744579;sí;2-CODIGO-CUSTOM-HTML.html
+63;063-en-home;https://ilatekpr.com/en/home;CREAR PÁGINA;445857;435;6ebbe53a08eeb0ac0d581078ad19984d016abbe707aabe034ae4daf1ce468006;6ebbe53a08ee;sí;2-CODIGO-CUSTOM-HTML.html + HEAD-home-en.html
+64;064-en-impermeabilizacion-de-techos;https://ilatekpr.com/en/impermeabilizacion-de-techos;CREAR PÁGINA;242493;237;c0f52f2eaa16302b62a867f220da5b2d5ca096d4a29f61a104faa372ef5b578e;c0f52f2eaa16;sí;2-CODIGO-CUSTOM-HTML.html
+65;065-en-inspeccion-de-techos;https://ilatekpr.com/en/inspeccion-de-techos;CREAR PÁGINA;238986;233;bac566f7e07de45313cc9b7f725d088885bb5e345b31e62778a0431147007a5e;bac566f7e07d;sí;2-CODIGO-CUSTOM-HTML.html
+66;066-en-inspeccion-y-mantenimiento-de-techos;https://ilatekpr.com/en/inspeccion-y-mantenimiento-de-techos;CREAR PÁGINA;245597;240;47e64c3958d1d92c18b9e9661882a90b6333871782dca620ac054129019808ab;47e64c3958d1;sí;2-CODIGO-CUSTOM-HTML.html
+67;067-en-instalacion-y-reemplazo-de-techos;https://ilatekpr.com/en/instalacion-y-reemplazo-de-techos;CREAR PÁGINA;242605;237;08c62107e9848cf75796841208e105a264b18dc13b1cf907035773ef8720fa31;08c62107e984;sí;2-CODIGO-CUSTOM-HTML.html
+68;068-en-lavado-a-presion;https://ilatekpr.com/en/lavado-a-presion;CREAR PÁGINA;234243;229;77fccb0074ef15cc2e7a0dbd2a33537c886ef86cb4984dda0ab62214318c181e;77fccb0074ef;sí;2-CODIGO-CUSTOM-HTML.html
+69;069-en-lavado-a-presion-techos;https://ilatekpr.com/en/lavado-a-presion-techos;CREAR PÁGINA;239260;234;570df0416506baba555eb85991233d070d7eff955bbc1a00982c15a80ecb1df8;570df0416506;sí;2-CODIGO-CUSTOM-HTML.html
+70;070-en-limpieza-comercial;https://ilatekpr.com/en/limpieza-comercial;CREAR PÁGINA;234072;229;08e63e4c8970115fa5af216ff035152127f29a6c640a5058cab3f0e88607dd08;08e63e4c8970;sí;2-CODIGO-CUSTOM-HTML.html
+71;071-en-limpieza-de-mudanza;https://ilatekpr.com/en/limpieza-de-mudanza;CREAR PÁGINA;234500;229;d6f4daadb041078fe18729994fee933d643c19e47e702980403c33a6511a91f2;d6f4daadb041;sí;2-CODIGO-CUSTOM-HTML.html
+72;072-en-limpieza-de-techos-y-canaletas;https://ilatekpr.com/en/limpieza-de-techos-y-canaletas;CREAR PÁGINA;241750;236;ec5f8c17847c0c669240fadceb62ab66793767c783808c2210fe48d0369875f0;ec5f8c17847c;sí;2-CODIGO-CUSTOM-HTML.html
+73;073-en-limpieza-estandar;https://ilatekpr.com/en/limpieza-estandar;CREAR PÁGINA;234256;229;1423d0610ad4b6632cbdd2764b744aefab00b9164203a959e4c2a19fed93bb66;1423d0610ad4;sí;2-CODIGO-CUSTOM-HTML.html
+74;074-en-limpieza-industrial;https://ilatekpr.com/en/limpieza-industrial;CREAR PÁGINA;234753;229;e7ab22f96803be52f5ce4638be92e3edab70b3301e1439d485e13887c79bfb50;e7ab22f96803;sí;2-CODIGO-CUSTOM-HTML.html
+75;075-en-limpieza-profunda;https://ilatekpr.com/en/limpieza-profunda;CREAR PÁGINA;234568;229;03434e4e168e3d775098fb1856b84ddef7de41fddff859598de7f64b48b8b9c7;03434e4e168e;sí;2-CODIGO-CUSTOM-HTML.html
+76;076-en-limpieza-residencial;https://ilatekpr.com/en/limpieza-residencial;CREAR PÁGINA;235549;230;2c7c04a6b78088913afe86d55e7281f29267a04f5f0f07a9d765fee8c83fd355;2c7c04a6b780;sí;2-CODIGO-CUSTOM-HTML.html
+77;077-en-mantenimiento-de-techos;https://ilatekpr.com/en/mantenimiento-de-techos;CREAR PÁGINA;239380;234;a93d85272c13e411f7e5912962056bc0059ef69d0d4b698f5ad04e496f940d98;a93d85272c13;sí;2-CODIGO-CUSTOM-HTML.html
+78;078-en-membrana-asfaltica;https://ilatekpr.com/en/membrana-asfaltica;CREAR PÁGINA;238583;233;d8d7c9af62f2a174c0de99fd869602abf99c4fe8f0df71604cc22efd93e639a9;d8d7c9af62f2;sí;2-CODIGO-CUSTOM-HTML.html
+79;079-en-organizacion;https://ilatekpr.com/en/organizacion;CREAR PÁGINA;233776;228;94e21f0e1639a3f92e02e5cc95b48da8182813164d2a42cea24c7f4c39d303ab;94e21f0e1639;sí;2-CODIGO-CUSTOM-HTML.html
+80;080-en-politica;https://ilatekpr.com/en/politica;CREAR PÁGINA;220383;215;57aa421cb91c622a678cdde5259e9eb318f46616d8b27af7fc0da9fef54ba33e;57aa421cb91c;sí;2-CODIGO-CUSTOM-HTML.html
+81;081-en-post-construccion;https://ilatekpr.com/en/post-construccion;CREAR PÁGINA;234736;229;bb84bc1af86757f297748adbdbb26edebd6b4e2f1fba72c5aa29426742097bbf;bb84bc1af867;sí;2-CODIGO-CUSTOM-HTML.html
+82;082-en-recubrimiento-elastomerico;https://ilatekpr.com/en/recubrimiento-elastomerico;CREAR PÁGINA;240702;235;1c69d350e726c0dc1ef160432a2299385502988d56403a83ff8493a6f89d13bd;1c69d350e726;sí;2-CODIGO-CUSTOM-HTML.html
+83;083-en-reparacion-de-filtraciones;https://ilatekpr.com/en/reparacion-de-filtraciones;CREAR PÁGINA;240776;235;f538e773aef9c411c6454327d7343d6d5781a9b4d2a30525ba9ace40a4c7ec0b;f538e773aef9;sí;2-CODIGO-CUSTOM-HTML.html
+84;084-en-reparacion-de-goteras;https://ilatekpr.com/en/reparacion-de-goteras;CREAR PÁGINA;240780;235;9335422f6d212dd7f352aacf1b087beccdd1a6c8829efd385f170606d1426d0b;9335422f6d21;sí;2-CODIGO-CUSTOM-HTML.html
+85;085-en-reparacion-de-grietas-techos;https://ilatekpr.com/en/reparacion-de-grietas-techos;CREAR PÁGINA;242580;237;1b105e05d7dd8d88a6188d6f7bf187d851fa170c0b4886c6b3ae4d79766cb928;1b105e05d7dd;sí;2-CODIGO-CUSTOM-HTML.html
+86;086-en-reparacion-de-techos;https://ilatekpr.com/en/reparacion-de-techos;CREAR PÁGINA;241625;236;180d7a5cbe61f7b07789280d1ee75fbf270441ca4e416d990ede22d7ebd43a27;180d7a5cbe61;sí;2-CODIGO-CUSTOM-HTML.html
+87;087-en-reparacion-post-huracan;https://ilatekpr.com/en/reparacion-post-huracan;CREAR PÁGINA;240158;235;ed83253ab329feba155a9c3a3755461b95879eeda095eaee0619217b6ab77201;ed83253ab329;sí;2-CODIGO-CUSTOM-HTML.html
+88;088-en-resenas;https://ilatekpr.com/en/resenas;CREAR PÁGINA;221227;216;825ccd3d1473f14763201c4f2c7b80315f2e16548d7158a8d41eadade64682c5;825ccd3d1473;sí;2-CODIGO-CUSTOM-HTML.html
+89;089-en-sellado-acrilico;https://ilatekpr.com/en/sellado-acrilico;CREAR PÁGINA;238637;233;78a157cb6c771496755a388238de2e30e50036bfca24962219c78ce62940cb7b;78a157cb6c77;sí;2-CODIGO-CUSTOM-HTML.html
+90;090-en-sellado-de-poliuretano;https://ilatekpr.com/en/sellado-de-poliuretano;CREAR PÁGINA;239216;234;264ea99dd969f3d7205feec32c36fdb219ae88cfade728d894152f49d8de0b03;264ea99dd969;sí;2-CODIGO-CUSTOM-HTML.html
+91;091-en-sellado-de-silicona;https://ilatekpr.com/en/sellado-de-silicona;CREAR PÁGINA;239027;233;588da4390e41960ecf153d469c27faa951d9d819d09ffedaaebdf6a00902d1c1;588da4390e41;sí;2-CODIGO-CUSTOM-HTML.html
+92;092-en-sellado-de-techos;https://ilatekpr.com/en/sellado-de-techos;CREAR PÁGINA;278301;272;b166540f380e1ef7e9a9d45c9c280f103f234157e55be36e77581f8b38b02c2d;b166540f380e;sí;2-CODIGO-CUSTOM-HTML.html
+93;093-en-sellado-de-techos-comercial;https://ilatekpr.com/en/sellado-de-techos-comercial;CREAR PÁGINA;240202;235;48d42a7e07920296b6ad19b4532cbec20312ba033af21317253686fcfe726ce7;48d42a7e0792;sí;2-CODIGO-CUSTOM-HTML.html
+94;094-en-sellado-de-techos-industrial;https://ilatekpr.com/en/sellado-de-techos-industrial;CREAR PÁGINA;240649;235;b6d4548326d67eafab7c76bafa13b49535d64ca43804b07f7284458ed4eecf6b;b6d4548326d6;sí;2-CODIGO-CUSTOM-HTML.html
+95;095-en-sellado-de-techos-residencial;https://ilatekpr.com/en/sellado-de-techos-residencial;CREAR PÁGINA;241159;236;aefaa64ba26c759703e2e4aacd4c03e6ee0f648685eb0a60d31348881696d1c5;aefaa64ba26c;sí;2-CODIGO-CUSTOM-HTML.html
+96;096-en-servicios;https://ilatekpr.com/en/servicios;CREAR PÁGINA;290569;284;1f2f90adb263456259a6cf58629494662b628cb384d1d5d8d8bcb54f991bfe2b;1f2f90adb263;sí;2-CODIGO-CUSTOM-HTML.html
+97;097-en-servicios-techos;https://ilatekpr.com/en/servicios-techos;CREAR PÁGINA;385317;376;a8161ab9d3de9d29780b5c1d0fe8170a2b4f27847f61dc864b75392cdb994a4b;a8161ab9d3de;sí;2-CODIGO-CUSTOM-HTML.html
+98;098-en-techos;https://ilatekpr.com/en/techos;CREAR PÁGINA;292451;286;cd3ac288c39c45bc46229d7c8b7b883938d4fa97f5306980a8654836aca1b458;cd3ac288c39c;sí;2-CODIGO-CUSTOM-HTML.html
+99;099-en-techos-de-asfalto;https://ilatekpr.com/en/techos-de-asfalto;CREAR PÁGINA;237881;232;8f92ccd9e28b339e46787aa437cbc6d14a9e0743ec4d135d6eacd4c4e476049d;8f92ccd9e28b;sí;2-CODIGO-CUSTOM-HTML.html
+100;100-en-techos-de-concreto;https://ilatekpr.com/en/techos-de-concreto;CREAR PÁGINA;238657;233;5eaadddd75a9957142eefcdb43e52dd27719837083f80c7e7633ade43b9fbc24;5eaadddd75a9;sí;2-CODIGO-CUSTOM-HTML.html
+101;101-en-techos-de-madera;https://ilatekpr.com/en/techos-de-madera;CREAR PÁGINA;238345;233;0995984711197f3328abe94e9c6839a74e4e703feeaf19adb1f831e367194f9b;099598471119;sí;2-CODIGO-CUSTOM-HTML.html
+102;102-en-techos-de-teja;https://ilatekpr.com/en/techos-de-teja;CREAR PÁGINA;237751;232;6d91f90ecbd0d729763b669e13637f6e29ebcc82d76816ac189cf76e78845b52;6d91f90ecbd0;sí;2-CODIGO-CUSTOM-HTML.html
+103;103-en-techos-de-zinc;https://ilatekpr.com/en/techos-de-zinc;CREAR PÁGINA;237984;232;41e6e8267ffa5127c1be16606b14c50040cc8493ded5f452a94fce3427bad288;41e6e8267ffa;sí;2-CODIGO-CUSTOM-HTML.html
+104;104-en-techos-planos;https://ilatekpr.com/en/techos-planos;CREAR PÁGINA;237814;232;7442579a7fd7cba8ae867909944972538a0ccc226b79238339c983e1f5b526cc;7442579a7fd7;sí;2-CODIGO-CUSTOM-HTML.html
+105;105-en-techos-por-segmento;https://ilatekpr.com/en/techos-por-segmento;CREAR PÁGINA;239662;234;d854cdeca04660283682e9a28281f71c91f86b025fa1637d614fd0222614afb1;d854cdeca046;sí;2-CODIGO-CUSTOM-HTML.html
+106;106-en-terminos;https://ilatekpr.com/en/terminos;CREAR PÁGINA;211790;207;b138734c6965d325da8a8ea84e12e75c65dc623adca0640a0944eeaec2f9f0e3;b138734c6965;sí;2-CODIGO-CUSTOM-HTML.html
+107;107-en-tragaluces;https://ilatekpr.com/en/tragaluces;CREAR PÁGINA;236654;231;0d6284cb0caf0ae3b0c3994e89bc1e1d6a472507d3f85bf9ac200217a85e2b79;0d6284cb0caf;sí;2-CODIGO-CUSTOM-HTML.html
+108;108-en-ventanas;https://ilatekpr.com/en/ventanas;CREAR PÁGINA;233902;228;d29c34818a28e251ff94124d5dc01462174b7317c12ecaed1674ae4262c389d9;d29c34818a28;sí;2-CODIGO-CUSTOM-HTML.html

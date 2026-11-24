@@ -1,0 +1,1142 @@
+{
+  "generated": "2026-11-22T13:53:36.216Z",
+  "urls": 98,
+  "orphans": [
+    "https://ilatekpr.com/comunidades",
+    "https://ilatekpr.com/en/communities",
+    "https://ilatekpr.com/en/home"
+  ],
+  "rows": [
+    {
+      "url": "https://ilatekpr.com/comunidades",
+      "file": "",
+      "inbound": 0,
+      "outbound": 0,
+      "sources": []
+    },
+    {
+      "url": "https://ilatekpr.com/en/communities",
+      "file": "",
+      "inbound": 0,
+      "outbound": 0,
+      "sources": []
+    },
+    {
+      "url": "https://ilatekpr.com/en/home",
+      "file": "",
+      "inbound": 0,
+      "outbound": 0,
+      "sources": []
+    },
+    {
+      "url": "https://ilatekpr.com/en/servicios-techos",
+      "file": "",
+      "inbound": 1,
+      "outbound": 0,
+      "sources": [
+        "home/en/landing-pages/home.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/garantia",
+      "file": "garantia/ILATEK-Garantias.html",
+      "inbound": 1,
+      "outbound": 0,
+      "sources": [
+        "categorias/sellado-de-techos/es/landing-pages/ghl-sellado-de-techos-landing.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/alfombras",
+      "file": "",
+      "inbound": 2,
+      "outbound": 0,
+      "sources": [
+        "categorias/servicios/en/landing-pages/servicios.en.html",
+        "servicios/alfombras/en/landing-pages/alfombras.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/electrodomesticos",
+      "file": "",
+      "inbound": 2,
+      "outbound": 0,
+      "sources": [
+        "categorias/servicios/en/landing-pages/servicios.en.html",
+        "servicios/electrodomesticos/en/landing-pages/electrodomesticos.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/lavado-a-presion",
+      "file": "",
+      "inbound": 2,
+      "outbound": 0,
+      "sources": [
+        "categorias/servicios/en/landing-pages/servicios.en.html",
+        "servicios/lavado-a-presion/en/landing-pages/lavado-a-presion.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/limpieza-de-mudanza",
+      "file": "",
+      "inbound": 2,
+      "outbound": 0,
+      "sources": [
+        "categorias/servicios/en/landing-pages/servicios.en.html",
+        "servicios/limpieza-de-mudanza/en/landing-pages/limpieza-de-mudanza.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/organizacion",
+      "file": "",
+      "inbound": 2,
+      "outbound": 0,
+      "sources": [
+        "categorias/servicios/en/landing-pages/servicios.en.html",
+        "servicios/organizacion/en/landing-pages/organizacion.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/post-construccion",
+      "file": "",
+      "inbound": 2,
+      "outbound": 0,
+      "sources": [
+        "categorias/servicios/en/landing-pages/servicios.en.html",
+        "servicios/post-construccion/en/landing-pages/post-construccion.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/servicios",
+      "file": "",
+      "inbound": 2,
+      "outbound": 0,
+      "sources": [
+        "categorias/servicios/en/landing-pages/servicios.en.html",
+        "home/en/landing-pages/home.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/ventanas",
+      "file": "",
+      "inbound": 2,
+      "outbound": 0,
+      "sources": [
+        "categorias/servicios/en/landing-pages/servicios.en.html",
+        "servicios/ventanas/en/landing-pages/ventanas.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/servicios-techos",
+      "file": "",
+      "inbound": 2,
+      "outbound": 0,
+      "sources": [
+        "home/es/landing-pages/ghl-home-multiservicios.html",
+        "home/es/landing-pages/home.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/airbnb-turnover",
+      "file": "",
+      "inbound": 3,
+      "outbound": 0,
+      "sources": [
+        "categorias/servicios/en/landing-pages/servicios.en.html",
+        "servicios/airbnb-turnover/en/landing-pages/airbnb-turnover.en.html",
+        "home/en/landing-pages/home.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/limpieza-comercial",
+      "file": "",
+      "inbound": 3,
+      "outbound": 0,
+      "sources": [
+        "categorias/limpieza-comercial/en/landing-pages/limpieza-comercial.en.html",
+        "categorias/servicios/en/landing-pages/servicios.en.html",
+        "home/en/landing-pages/home.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/limpieza-estandar",
+      "file": "",
+      "inbound": 3,
+      "outbound": 0,
+      "sources": [
+        "categorias/servicios/en/landing-pages/servicios.en.html",
+        "servicios/limpieza-estandar/en/landing-pages/limpieza-estandar.en.html",
+        "home/en/landing-pages/home.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/limpieza-industrial",
+      "file": "",
+      "inbound": 3,
+      "outbound": 0,
+      "sources": [
+        "categorias/limpieza-industrial/en/landing-pages/limpieza-industrial.en.html",
+        "categorias/servicios/en/landing-pages/servicios.en.html",
+        "home/en/landing-pages/home.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/limpieza-profunda",
+      "file": "",
+      "inbound": 3,
+      "outbound": 0,
+      "sources": [
+        "categorias/servicios/en/landing-pages/servicios.en.html",
+        "servicios/limpieza-profunda/en/landing-pages/limpieza-profunda.en.html",
+        "home/en/landing-pages/home.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/limpieza-residencial",
+      "file": "",
+      "inbound": 3,
+      "outbound": 0,
+      "sources": [
+        "categorias/limpieza-residencial/en/landing-pages/limpieza-residencial.en.html",
+        "categorias/servicios/en/landing-pages/servicios.en.html",
+        "home/en/landing-pages/home.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/reparacion-de-techos",
+      "file": "",
+      "inbound": 4,
+      "outbound": 0,
+      "sources": [
+        "categorias/reparacion-de-techos/en/landing-pages/reparacion-de-techos.en.html",
+        "categorias/techos/en/landing-pages/servicios-techos.en.html",
+        "categorias/techos/en/landing-pages/techos.en.html",
+        "home/en/landing-pages/home.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/sellado-de-techos",
+      "file": "",
+      "inbound": 4,
+      "outbound": 0,
+      "sources": [
+        "categorias/sellado-de-techos/en/landing-pages/sellado-de-techos.en.html",
+        "categorias/techos/en/landing-pages/servicios-techos.en.html",
+        "categorias/techos/en/landing-pages/techos.en.html",
+        "home/en/landing-pages/home.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/techos-por-segmento",
+      "file": "",
+      "inbound": 4,
+      "outbound": 0,
+      "sources": [
+        "categorias/techos/en/landing-pages/servicios-techos.en.html",
+        "categorias/techos/en/landing-pages/techos.en.html",
+        "categorias/techos-por-segmento/en/landing-pages/techos-por-segmento.en.html",
+        "home/en/landing-pages/home.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/alfombras",
+      "file": "servicios/alfombras/es/landing-pages/ghl-alfombras-landing.html",
+      "inbound": 5,
+      "outbound": 0,
+      "sources": [
+        "categorias/limpieza/es/landing-pages/ghl-servicios-landing.html",
+        "categorias/limpieza/es/landing-pages/home-698854.html",
+        "categorias/servicios/es/landing-pages/ghl-servicios-landing.html",
+        "categorias/servicios/es/landing-pages/servicios.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/canaletas-y-bajantes",
+      "file": "",
+      "inbound": 5,
+      "outbound": 0,
+      "sources": [
+        "categorias/inspeccion-y-mantenimiento-de-techos/en/landing-pages/inspeccion-y-mantenimiento-de-techos.en.html",
+        "categorias/techos/en/landing-pages/servicios-techos.en.html",
+        "categorias/techos/en/landing-pages/techos.en.html",
+        "servicios/canaletas-y-bajantes/en/landing-pages/canaletas-y-bajantes.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/empozamiento-de-techos",
+      "file": "",
+      "inbound": 5,
+      "outbound": 0,
+      "sources": [
+        "categorias/reparacion-de-techos/en/landing-pages/reparacion-de-techos.en.html",
+        "categorias/techos/en/landing-pages/servicios-techos.en.html",
+        "categorias/techos/en/landing-pages/techos.en.html",
+        "servicios/empozamiento-de-techos/en/landing-pages/empozamiento-de-techos.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/impermeabilizacion-de-techos",
+      "file": "",
+      "inbound": 5,
+      "outbound": 0,
+      "sources": [
+        "categorias/impermeabilizacion-de-techos/en/landing-pages/impermeabilizacion-de-techos.en.html",
+        "categorias/sellado-de-techos/en/landing-pages/sellado-de-techos.en.html",
+        "categorias/techos/en/landing-pages/servicios-techos.en.html",
+        "categorias/techos/en/landing-pages/techos.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/inspeccion-de-techos",
+      "file": "",
+      "inbound": 5,
+      "outbound": 0,
+      "sources": [
+        "categorias/inspeccion-y-mantenimiento-de-techos/en/landing-pages/inspeccion-y-mantenimiento-de-techos.en.html",
+        "categorias/techos/en/landing-pages/servicios-techos.en.html",
+        "categorias/techos/en/landing-pages/techos.en.html",
+        "servicios/inspeccion-de-techos/en/landing-pages/inspeccion-de-techos.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/inspeccion-y-mantenimiento-de-techos",
+      "file": "",
+      "inbound": 5,
+      "outbound": 0,
+      "sources": [
+        "categorias/inspeccion-y-mantenimiento-de-techos/en/landing-pages/inspeccion-y-mantenimiento-de-techos.en.html",
+        "categorias/sellado-de-techos/en/landing-pages/sellado-de-techos.en.html",
+        "categorias/techos/en/landing-pages/servicios-techos.en.html",
+        "categorias/techos/en/landing-pages/techos.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/instalacion-y-reemplazo-de-techos",
+      "file": "",
+      "inbound": 5,
+      "outbound": 0,
+      "sources": [
+        "categorias/inspeccion-y-mantenimiento-de-techos/en/landing-pages/inspeccion-y-mantenimiento-de-techos.en.html",
+        "categorias/techos/en/landing-pages/servicios-techos.en.html",
+        "categorias/techos/en/landing-pages/techos.en.html",
+        "servicios/instalacion-y-reemplazo-de-techos/en/landing-pages/instalacion-y-reemplazo-de-techos.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/lavado-a-presion-techos",
+      "file": "",
+      "inbound": 5,
+      "outbound": 0,
+      "sources": [
+        "categorias/inspeccion-y-mantenimiento-de-techos/en/landing-pages/inspeccion-y-mantenimiento-de-techos.en.html",
+        "categorias/techos/en/landing-pages/servicios-techos.en.html",
+        "categorias/techos/en/landing-pages/techos.en.html",
+        "servicios/lavado-a-presion-techos/en/landing-pages/lavado-a-presion-techos.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/limpieza-de-techos-y-canaletas",
+      "file": "",
+      "inbound": 5,
+      "outbound": 0,
+      "sources": [
+        "categorias/inspeccion-y-mantenimiento-de-techos/en/landing-pages/inspeccion-y-mantenimiento-de-techos.en.html",
+        "categorias/techos/en/landing-pages/servicios-techos.en.html",
+        "categorias/techos/en/landing-pages/techos.en.html",
+        "servicios/limpieza-de-techos-y-canaletas/en/landing-pages/limpieza-de-techos-y-canaletas.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/mantenimiento-de-techos",
+      "file": "",
+      "inbound": 5,
+      "outbound": 0,
+      "sources": [
+        "categorias/inspeccion-y-mantenimiento-de-techos/en/landing-pages/inspeccion-y-mantenimiento-de-techos.en.html",
+        "categorias/techos/en/landing-pages/servicios-techos.en.html",
+        "categorias/techos/en/landing-pages/techos.en.html",
+        "servicios/mantenimiento-de-techos/en/landing-pages/mantenimiento-de-techos.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/membrana-asfaltica",
+      "file": "",
+      "inbound": 5,
+      "outbound": 0,
+      "sources": [
+        "categorias/sellado-de-techos/en/landing-pages/sellado-de-techos.en.html",
+        "categorias/techos/en/landing-pages/servicios-techos.en.html",
+        "categorias/techos/en/landing-pages/techos.en.html",
+        "servicios/membrana-asfaltica/en/landing-pages/membrana-asfaltica.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/recubrimiento-elastomerico",
+      "file": "",
+      "inbound": 5,
+      "outbound": 0,
+      "sources": [
+        "categorias/sellado-de-techos/en/landing-pages/sellado-de-techos.en.html",
+        "categorias/techos/en/landing-pages/servicios-techos.en.html",
+        "categorias/techos/en/landing-pages/techos.en.html",
+        "servicios/recubrimiento-elastomerico/en/landing-pages/recubrimiento-elastomerico.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/reparacion-de-filtraciones",
+      "file": "",
+      "inbound": 5,
+      "outbound": 0,
+      "sources": [
+        "categorias/reparacion-de-techos/en/landing-pages/reparacion-de-techos.en.html",
+        "categorias/techos/en/landing-pages/servicios-techos.en.html",
+        "categorias/techos/en/landing-pages/techos.en.html",
+        "servicios/reparacion-de-filtraciones/en/landing-pages/reparacion-de-filtraciones.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/reparacion-de-goteras",
+      "file": "",
+      "inbound": 5,
+      "outbound": 0,
+      "sources": [
+        "categorias/reparacion-de-techos/en/landing-pages/reparacion-de-techos.en.html",
+        "categorias/techos/en/landing-pages/servicios-techos.en.html",
+        "categorias/techos/en/landing-pages/techos.en.html",
+        "servicios/reparacion-de-goteras/en/landing-pages/reparacion-de-goteras.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/reparacion-de-grietas-techos",
+      "file": "",
+      "inbound": 5,
+      "outbound": 0,
+      "sources": [
+        "categorias/reparacion-de-techos/en/landing-pages/reparacion-de-techos.en.html",
+        "categorias/techos/en/landing-pages/servicios-techos.en.html",
+        "categorias/techos/en/landing-pages/techos.en.html",
+        "servicios/reparacion-de-grietas-techos/en/landing-pages/reparacion-de-grietas-techos.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/reparacion-post-huracan",
+      "file": "",
+      "inbound": 5,
+      "outbound": 0,
+      "sources": [
+        "categorias/reparacion-de-techos/en/landing-pages/reparacion-de-techos.en.html",
+        "categorias/techos/en/landing-pages/servicios-techos.en.html",
+        "categorias/techos/en/landing-pages/techos.en.html",
+        "servicios/reparacion-post-huracan/en/landing-pages/reparacion-post-huracan.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/sellado-acrilico",
+      "file": "",
+      "inbound": 5,
+      "outbound": 0,
+      "sources": [
+        "categorias/sellado-de-techos/en/landing-pages/sellado-de-techos.en.html",
+        "categorias/techos/en/landing-pages/servicios-techos.en.html",
+        "categorias/techos/en/landing-pages/techos.en.html",
+        "servicios/sellado-acrilico/en/landing-pages/sellado-acrilico.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/sellado-de-poliuretano",
+      "file": "",
+      "inbound": 5,
+      "outbound": 0,
+      "sources": [
+        "categorias/sellado-de-techos/en/landing-pages/sellado-de-techos.en.html",
+        "categorias/techos/en/landing-pages/servicios-techos.en.html",
+        "categorias/techos/en/landing-pages/techos.en.html",
+        "servicios/sellado-de-poliuretano/en/landing-pages/sellado-de-poliuretano.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/sellado-de-silicona",
+      "file": "",
+      "inbound": 5,
+      "outbound": 0,
+      "sources": [
+        "categorias/sellado-de-techos/en/landing-pages/sellado-de-techos.en.html",
+        "categorias/techos/en/landing-pages/servicios-techos.en.html",
+        "categorias/techos/en/landing-pages/techos.en.html",
+        "servicios/sellado-de-silicona/en/landing-pages/sellado-de-silicona.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/sellado-de-techos-comercial",
+      "file": "",
+      "inbound": 5,
+      "outbound": 0,
+      "sources": [
+        "categorias/techos/en/landing-pages/servicios-techos.en.html",
+        "categorias/techos/en/landing-pages/techos.en.html",
+        "categorias/techos-por-segmento/en/landing-pages/techos-por-segmento.en.html",
+        "servicios/sellado-de-techos-comercial/en/landing-pages/sellado-de-techos-comercial.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/sellado-de-techos-industrial",
+      "file": "",
+      "inbound": 5,
+      "outbound": 0,
+      "sources": [
+        "categorias/techos/en/landing-pages/servicios-techos.en.html",
+        "categorias/techos/en/landing-pages/techos.en.html",
+        "categorias/techos-por-segmento/en/landing-pages/techos-por-segmento.en.html",
+        "servicios/sellado-de-techos-industrial/en/landing-pages/sellado-de-techos-industrial.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/sellado-de-techos-residencial",
+      "file": "",
+      "inbound": 5,
+      "outbound": 0,
+      "sources": [
+        "categorias/techos/en/landing-pages/servicios-techos.en.html",
+        "categorias/techos/en/landing-pages/techos.en.html",
+        "categorias/techos-por-segmento/en/landing-pages/techos-por-segmento.en.html",
+        "servicios/sellado-de-techos-residencial/en/landing-pages/sellado-de-techos-residencial.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/techos-de-asfalto",
+      "file": "",
+      "inbound": 5,
+      "outbound": 0,
+      "sources": [
+        "categorias/impermeabilizacion-de-techos/en/landing-pages/impermeabilizacion-de-techos.en.html",
+        "categorias/techos/en/landing-pages/servicios-techos.en.html",
+        "categorias/techos/en/landing-pages/techos.en.html",
+        "servicios/techos-de-asfalto/en/landing-pages/techos-de-asfalto.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/techos-de-concreto",
+      "file": "",
+      "inbound": 5,
+      "outbound": 0,
+      "sources": [
+        "categorias/impermeabilizacion-de-techos/en/landing-pages/impermeabilizacion-de-techos.en.html",
+        "categorias/techos/en/landing-pages/servicios-techos.en.html",
+        "categorias/techos/en/landing-pages/techos.en.html",
+        "servicios/techos-de-concreto/en/landing-pages/techos-de-concreto.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/techos-de-madera",
+      "file": "",
+      "inbound": 5,
+      "outbound": 0,
+      "sources": [
+        "categorias/impermeabilizacion-de-techos/en/landing-pages/impermeabilizacion-de-techos.en.html",
+        "categorias/techos/en/landing-pages/servicios-techos.en.html",
+        "categorias/techos/en/landing-pages/techos.en.html",
+        "servicios/techos-de-madera/en/landing-pages/techos-de-madera.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/techos-de-teja",
+      "file": "",
+      "inbound": 5,
+      "outbound": 0,
+      "sources": [
+        "categorias/impermeabilizacion-de-techos/en/landing-pages/impermeabilizacion-de-techos.en.html",
+        "categorias/techos/en/landing-pages/servicios-techos.en.html",
+        "categorias/techos/en/landing-pages/techos.en.html",
+        "servicios/techos-de-teja/en/landing-pages/techos-de-teja.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/techos-de-zinc",
+      "file": "",
+      "inbound": 5,
+      "outbound": 0,
+      "sources": [
+        "categorias/impermeabilizacion-de-techos/en/landing-pages/impermeabilizacion-de-techos.en.html",
+        "categorias/techos/en/landing-pages/servicios-techos.en.html",
+        "categorias/techos/en/landing-pages/techos.en.html",
+        "servicios/techos-de-zinc/en/landing-pages/techos-de-zinc.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/tragaluces",
+      "file": "",
+      "inbound": 5,
+      "outbound": 0,
+      "sources": [
+        "categorias/inspeccion-y-mantenimiento-de-techos/en/landing-pages/inspeccion-y-mantenimiento-de-techos.en.html",
+        "categorias/techos/en/landing-pages/servicios-techos.en.html",
+        "categorias/techos/en/landing-pages/techos.en.html",
+        "servicios/tragaluces/en/landing-pages/tragaluces.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/organizacion",
+      "file": "servicios/organizacion/es/landing-pages/ghl-organizacion-landing.html",
+      "inbound": 5,
+      "outbound": 0,
+      "sources": [
+        "categorias/limpieza/es/landing-pages/ghl-servicios-landing.html",
+        "categorias/limpieza/es/landing-pages/home-698854.html",
+        "categorias/servicios/es/landing-pages/ghl-servicios-landing.html",
+        "categorias/servicios/es/landing-pages/servicios.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/post-construccion",
+      "file": "servicios/post-construccion/es/landing-pages/ghl-post-construccion-landing.html",
+      "inbound": 5,
+      "outbound": 0,
+      "sources": [
+        "categorias/limpieza/es/landing-pages/ghl-servicios-landing.html",
+        "categorias/limpieza/es/landing-pages/home-698854.html",
+        "categorias/servicios/es/landing-pages/ghl-servicios-landing.html",
+        "categorias/servicios/es/landing-pages/servicios.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/servicios",
+      "file": "categorias/servicios/es/landing-pages/ghl-servicios-landing.html",
+      "inbound": 5,
+      "outbound": 13,
+      "sources": [
+        "categorias/limpieza/es/landing-pages/ghl-servicios-landing.html",
+        "categorias/limpieza/es/landing-pages/home-698854.html",
+        "categorias/servicios/es/landing-pages/servicios.html",
+        "home/es/landing-pages/ghl-home-multiservicios.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/ventanas",
+      "file": "servicios/ventanas/es/landing-pages/ghl-ventanas-landing.html",
+      "inbound": 5,
+      "outbound": 0,
+      "sources": [
+        "categorias/limpieza/es/landing-pages/ghl-servicios-landing.html",
+        "categorias/limpieza/es/landing-pages/home-698854.html",
+        "categorias/servicios/es/landing-pages/ghl-servicios-landing.html",
+        "categorias/servicios/es/landing-pages/servicios.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/electrodomesticos",
+      "file": "servicios/electrodomesticos/es/landing-pages/ghl-electrodomesticos-landing.html",
+      "inbound": 6,
+      "outbound": 0,
+      "sources": [
+        "categorias/limpieza/es/landing-pages/ghl-servicios-landing.html",
+        "categorias/limpieza/es/landing-pages/home-698854.html",
+        "categorias/servicios/es/landing-pages/ghl-servicios-landing.html",
+        "categorias/servicios/es/landing-pages/servicios.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/en/techos-planos",
+      "file": "",
+      "inbound": 6,
+      "outbound": 0,
+      "sources": [
+        "categorias/impermeabilizacion-de-techos/en/landing-pages/impermeabilizacion-de-techos.en.html",
+        "categorias/sellado-de-techos/en/landing-pages/sellado-de-techos.en.html",
+        "categorias/techos/en/landing-pages/servicios-techos.en.html",
+        "categorias/techos/en/landing-pages/techos.en.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/reparacion-de-techos",
+      "file": "categorias/reparacion-de-techos/es/landing-pages/ghl-reparacion-de-techos-landing.html",
+      "inbound": 6,
+      "outbound": 5,
+      "sources": [
+        "categorias/reparacion-de-techos/es/landing-pages/reparacion-de-techos.html",
+        "categorias/techos/es/landing-pages/ghl-techos-landing.html",
+        "categorias/techos/es/landing-pages/servicios-techos.html",
+        "home/es/landing-pages/ghl-home-multiservicios.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/techos-por-segmento",
+      "file": "categorias/techos-por-segmento/es/landing-pages/ghl-techos-por-segmento-landing.html",
+      "inbound": 6,
+      "outbound": 3,
+      "sources": [
+        "categorias/techos/es/landing-pages/ghl-techos-landing.html",
+        "categorias/techos/es/landing-pages/servicios-techos.html",
+        "categorias/techos-por-segmento/es/landing-pages/techos-por-segmento.html",
+        "home/es/landing-pages/ghl-home-multiservicios.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/inspeccion-y-mantenimiento-de-techos",
+      "file": "categorias/inspeccion-y-mantenimiento-de-techos/es/landing-pages/ghl-inspeccion-y-mantenimiento-de-techos-landing.html",
+      "inbound": 7,
+      "outbound": 7,
+      "sources": [
+        "categorias/inspeccion-y-mantenimiento-de-techos/es/landing-pages/inspeccion-y-mantenimiento-de-techos-162462.html",
+        "categorias/sellado-de-techos/es/landing-pages/ghl-sellado-de-techos-landing.html",
+        "categorias/techos/es/landing-pages/ghl-techos-landing.html",
+        "categorias/techos/es/landing-pages/servicios-techos.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/canaletas-y-bajantes",
+      "file": "servicios/canaletas-y-bajantes/es/landing-pages/ghl-canaletas-y-bajantes-landing.html",
+      "inbound": 8,
+      "outbound": 0,
+      "sources": [
+        "categorias/inspeccion-y-mantenimiento-de-techos/es/landing-pages/ghl-inspeccion-y-mantenimiento-de-techos-landing.html",
+        "categorias/inspeccion-y-mantenimiento-de-techos/es/landing-pages/inspeccion-y-mantenimiento-de-techos-162462.html",
+        "categorias/techos/es/landing-pages/ghl-techos-landing.html",
+        "categorias/techos/es/landing-pages/servicios-techos.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/lavado-a-presion",
+      "file": "servicios/lavado-a-presion/es/landing-pages/ghl-lavado-a-presion-landing.html",
+      "inbound": 11,
+      "outbound": 0,
+      "sources": [
+        "categorias/limpieza/es/landing-pages/ghl-servicios-landing.html",
+        "categorias/limpieza/es/landing-pages/home-698854.html",
+        "categorias/servicios/es/landing-pages/ghl-servicios-landing.html",
+        "categorias/servicios/es/landing-pages/servicios.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/limpieza-de-mudanza",
+      "file": "servicios/limpieza-de-mudanza/es/landing-pages/ghl-limpieza-de-mudanza-landing.html",
+      "inbound": 11,
+      "outbound": 0,
+      "sources": [
+        "categorias/limpieza/es/landing-pages/ghl-servicios-landing.html",
+        "categorias/limpieza/es/landing-pages/home-698854.html",
+        "categorias/servicios/es/landing-pages/ghl-servicios-landing.html",
+        "categorias/servicios/es/landing-pages/servicios.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/reparacion-de-goteras",
+      "file": "servicios/reparacion-de-goteras/es/landing-pages/ghl-reparacion-de-goteras-landing.html",
+      "inbound": 12,
+      "outbound": 0,
+      "sources": [
+        "categorias/reparacion-de-techos/es/landing-pages/ghl-reparacion-de-techos-landing.html",
+        "categorias/reparacion-de-techos/es/landing-pages/reparacion-de-techos.html",
+        "categorias/techos/es/landing-pages/ghl-techos-landing.html",
+        "categorias/techos/es/landing-pages/servicios-techos.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/reparacion-de-filtraciones",
+      "file": "servicios/reparacion-de-filtraciones/es/landing-pages/ghl-reparacion-de-filtraciones-landing.html",
+      "inbound": 12,
+      "outbound": 0,
+      "sources": [
+        "categorias/reparacion-de-techos/es/landing-pages/ghl-reparacion-de-techos-landing.html",
+        "categorias/reparacion-de-techos/es/landing-pages/reparacion-de-techos.html",
+        "categorias/techos/es/landing-pages/ghl-techos-landing.html",
+        "categorias/techos/es/landing-pages/servicios-techos.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/reparacion-de-grietas-techos",
+      "file": "servicios/reparacion-de-grietas-techos/es/landing-pages/ghl-reparacion-de-grietas-techos-landing.html",
+      "inbound": 12,
+      "outbound": 0,
+      "sources": [
+        "categorias/reparacion-de-techos/es/landing-pages/ghl-reparacion-de-techos-landing.html",
+        "categorias/reparacion-de-techos/es/landing-pages/reparacion-de-techos.html",
+        "categorias/techos/es/landing-pages/ghl-techos-landing.html",
+        "categorias/techos/es/landing-pages/servicios-techos.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/sellado-de-techos-residencial",
+      "file": "servicios/sellado-de-techos-residencial/es/landing-pages/ghl-sellado-de-techos-residencial-landing.html",
+      "inbound": 12,
+      "outbound": 0,
+      "sources": [
+        "categorias/techos/es/landing-pages/ghl-techos-landing.html",
+        "categorias/techos/es/landing-pages/servicios-techos.html",
+        "categorias/techos-por-segmento/es/landing-pages/ghl-techos-por-segmento-landing.html",
+        "categorias/techos-por-segmento/es/landing-pages/techos-por-segmento.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/sellado-de-techos-industrial",
+      "file": "servicios/sellado-de-techos-industrial/es/landing-pages/ghl-sellado-de-techos-industrial-landing.html",
+      "inbound": 12,
+      "outbound": 0,
+      "sources": [
+        "categorias/techos/es/landing-pages/ghl-techos-landing.html",
+        "categorias/techos/es/landing-pages/servicios-techos.html",
+        "categorias/techos-por-segmento/es/landing-pages/ghl-techos-por-segmento-landing.html",
+        "categorias/techos-por-segmento/es/landing-pages/techos-por-segmento.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/inspeccion-de-techos",
+      "file": "servicios/inspeccion-de-techos/es/landing-pages/ghl-inspeccion-de-techos-landing.html",
+      "inbound": 12,
+      "outbound": 0,
+      "sources": [
+        "categorias/inspeccion-y-mantenimiento-de-techos/es/landing-pages/ghl-inspeccion-y-mantenimiento-de-techos-landing.html",
+        "categorias/inspeccion-y-mantenimiento-de-techos/es/landing-pages/inspeccion-y-mantenimiento-de-techos-162462.html",
+        "categorias/techos/es/landing-pages/ghl-techos-landing.html",
+        "categorias/techos/es/landing-pages/servicios-techos.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/mantenimiento-de-techos",
+      "file": "servicios/mantenimiento-de-techos/es/landing-pages/ghl-mantenimiento-de-techos-landing.html",
+      "inbound": 12,
+      "outbound": 0,
+      "sources": [
+        "categorias/inspeccion-y-mantenimiento-de-techos/es/landing-pages/ghl-inspeccion-y-mantenimiento-de-techos-landing.html",
+        "categorias/inspeccion-y-mantenimiento-de-techos/es/landing-pages/inspeccion-y-mantenimiento-de-techos-162462.html",
+        "categorias/techos/es/landing-pages/ghl-techos-landing.html",
+        "categorias/techos/es/landing-pages/servicios-techos.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/tragaluces",
+      "file": "servicios/tragaluces/es/landing-pages/ghl-tragaluces-landing.html",
+      "inbound": 12,
+      "outbound": 0,
+      "sources": [
+        "categorias/inspeccion-y-mantenimiento-de-techos/es/landing-pages/ghl-inspeccion-y-mantenimiento-de-techos-landing.html",
+        "categorias/inspeccion-y-mantenimiento-de-techos/es/landing-pages/inspeccion-y-mantenimiento-de-techos-162462.html",
+        "categorias/techos/es/landing-pages/ghl-techos-landing.html",
+        "categorias/techos/es/landing-pages/servicios-techos.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/instalacion-y-reemplazo-de-techos",
+      "file": "servicios/instalacion-y-reemplazo-de-techos/es/landing-pages/ghl-instalacion-y-reemplazo-de-techos-landing.html",
+      "inbound": 12,
+      "outbound": 0,
+      "sources": [
+        "categorias/inspeccion-y-mantenimiento-de-techos/es/landing-pages/ghl-inspeccion-y-mantenimiento-de-techos-landing.html",
+        "categorias/inspeccion-y-mantenimiento-de-techos/es/landing-pages/inspeccion-y-mantenimiento-de-techos-162462.html",
+        "categorias/techos/es/landing-pages/ghl-techos-landing.html",
+        "categorias/techos/es/landing-pages/servicios-techos.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/limpieza-estandar",
+      "file": "servicios/limpieza-estandar/es/landing-pages/ghl-limpieza-estandar-landing.html",
+      "inbound": 14,
+      "outbound": 0,
+      "sources": [
+        "categorias/limpieza/es/landing-pages/ghl-servicios-landing.html",
+        "categorias/limpieza/es/landing-pages/home-698854.html",
+        "categorias/servicios/es/landing-pages/ghl-servicios-landing.html",
+        "categorias/servicios/es/landing-pages/servicios.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/limpieza-industrial",
+      "file": "categorias/limpieza-industrial/es/landing-pages/ghl-limpieza-industrial-landing.html",
+      "inbound": 14,
+      "outbound": 0,
+      "sources": [
+        "categorias/limpieza/es/landing-pages/ghl-servicios-landing.html",
+        "categorias/limpieza/es/landing-pages/home-698854.html",
+        "categorias/limpieza-industrial/es/landing-pages/limpieza-industrial.html",
+        "categorias/servicios/es/landing-pages/ghl-servicios-landing.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/techos-planos",
+      "file": "servicios/techos-planos/es/landing-pages/ghl-techos-planos-landing.html",
+      "inbound": 17,
+      "outbound": 0,
+      "sources": [
+        "categorias/impermeabilizacion-de-techos/es/landing-pages/ghl-impermeabilizacion-de-techos-landing.html",
+        "categorias/impermeabilizacion-de-techos/es/landing-pages/impermeabilizacion-de-techos.html",
+        "categorias/sellado-de-techos/es/landing-pages/ghl-sellado-de-techos-landing.html",
+        "categorias/techos/es/landing-pages/ghl-techos-landing.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/limpieza-comercial",
+      "file": "categorias/limpieza-comercial/es/landing-pages/ghl-limpieza-comercial-landing.html",
+      "inbound": 20,
+      "outbound": 0,
+      "sources": [
+        "categorias/limpieza/es/landing-pages/ghl-servicios-landing.html",
+        "categorias/limpieza/es/landing-pages/home-698854.html",
+        "categorias/limpieza-comercial/es/landing-pages/limpieza-comercial.html",
+        "categorias/servicios/es/landing-pages/ghl-servicios-landing.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/limpieza-profunda",
+      "file": "servicios/limpieza-profunda/es/landing-pages/ghl-limpieza-profunda-landing.html",
+      "inbound": 20,
+      "outbound": 0,
+      "sources": [
+        "categorias/limpieza/es/landing-pages/ghl-servicios-landing.html",
+        "categorias/limpieza/es/landing-pages/home-698854.html",
+        "categorias/servicios/es/landing-pages/ghl-servicios-landing.html",
+        "categorias/servicios/es/landing-pages/servicios.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/techos-de-zinc",
+      "file": "servicios/techos-de-zinc/es/landing-pages/ghl-techos-de-zinc-landing.html",
+      "inbound": 28,
+      "outbound": 0,
+      "sources": [
+        "categorias/impermeabilizacion-de-techos/es/landing-pages/ghl-impermeabilizacion-de-techos-landing.html",
+        "categorias/impermeabilizacion-de-techos/es/landing-pages/impermeabilizacion-de-techos.html",
+        "categorias/techos/es/landing-pages/ghl-techos-landing.html",
+        "categorias/techos/es/landing-pages/servicios-techos.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/airbnb-turnover",
+      "file": "servicios/airbnb-turnover/es/landing-pages/ghl-airbnb-turnover-landing.html",
+      "inbound": 32,
+      "outbound": 0,
+      "sources": [
+        "categorias/limpieza/es/landing-pages/ghl-servicios-landing.html",
+        "categorias/limpieza/es/landing-pages/home-698854.html",
+        "categorias/servicios/es/landing-pages/ghl-servicios-landing.html",
+        "categorias/servicios/es/landing-pages/servicios.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/limpieza-residencial",
+      "file": "categorias/limpieza-residencial/es/landing-pages/ghl-limpieza-residencial-landing.html",
+      "inbound": 38,
+      "outbound": 0,
+      "sources": [
+        "categorias/limpieza/es/landing-pages/ghl-servicios-landing.html",
+        "categorias/limpieza/es/landing-pages/home-698854.html",
+        "categorias/limpieza-residencial/es/landing-pages/limpieza-residencial.html",
+        "categorias/servicios/es/landing-pages/ghl-servicios-landing.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/techos-de-teja",
+      "file": "servicios/techos-de-teja/es/landing-pages/ghl-techos-de-teja-landing.html",
+      "inbound": 40,
+      "outbound": 0,
+      "sources": [
+        "categorias/impermeabilizacion-de-techos/es/landing-pages/ghl-impermeabilizacion-de-techos-landing.html",
+        "categorias/impermeabilizacion-de-techos/es/landing-pages/impermeabilizacion-de-techos.html",
+        "categorias/techos/es/landing-pages/ghl-techos-landing.html",
+        "categorias/techos/es/landing-pages/servicios-techos.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/techos-de-madera",
+      "file": "servicios/techos-de-madera/es/landing-pages/ghl-techos-de-madera-landing.html",
+      "inbound": 44,
+      "outbound": 0,
+      "sources": [
+        "categorias/impermeabilizacion-de-techos/es/landing-pages/ghl-impermeabilizacion-de-techos-landing.html",
+        "categorias/impermeabilizacion-de-techos/es/landing-pages/impermeabilizacion-de-techos.html",
+        "categorias/techos/es/landing-pages/ghl-techos-landing.html",
+        "categorias/techos/es/landing-pages/servicios-techos.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/reparacion-post-huracan",
+      "file": "servicios/reparacion-post-huracan/es/landing-pages/ghl-reparacion-post-huracan-landing.html",
+      "inbound": 52,
+      "outbound": 0,
+      "sources": [
+        "categorias/reparacion-de-techos/es/landing-pages/ghl-reparacion-de-techos-landing.html",
+        "categorias/reparacion-de-techos/es/landing-pages/reparacion-de-techos.html",
+        "categorias/techos/es/landing-pages/ghl-techos-landing.html",
+        "categorias/techos/es/landing-pages/servicios-techos.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/lavado-a-presion-techos",
+      "file": "servicios/lavado-a-presion-techos/es/landing-pages/ghl-lavado-a-presion-techos-landing.html",
+      "inbound": 54,
+      "outbound": 0,
+      "sources": [
+        "categorias/inspeccion-y-mantenimiento-de-techos/es/landing-pages/ghl-inspeccion-y-mantenimiento-de-techos-landing.html",
+        "categorias/inspeccion-y-mantenimiento-de-techos/es/landing-pages/inspeccion-y-mantenimiento-de-techos-162462.html",
+        "categorias/techos/es/landing-pages/ghl-techos-landing.html",
+        "categorias/techos/es/landing-pages/servicios-techos.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/techos-de-asfalto",
+      "file": "servicios/techos-de-asfalto/es/landing-pages/ghl-techos-de-asfalto-landing.html",
+      "inbound": 60,
+      "outbound": 0,
+      "sources": [
+        "categorias/impermeabilizacion-de-techos/es/landing-pages/ghl-impermeabilizacion-de-techos-landing.html",
+        "categorias/impermeabilizacion-de-techos/es/landing-pages/impermeabilizacion-de-techos.html",
+        "categorias/techos/es/landing-pages/ghl-techos-landing.html",
+        "categorias/techos/es/landing-pages/servicios-techos.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/sellado-de-techos-comercial",
+      "file": "servicios/sellado-de-techos-comercial/es/landing-pages/ghl-sellado-de-techos-comercial-landing.html",
+      "inbound": 72,
+      "outbound": 0,
+      "sources": [
+        "categorias/techos/es/landing-pages/ghl-techos-landing.html",
+        "categorias/techos/es/landing-pages/servicios-techos.html",
+        "categorias/techos-por-segmento/es/landing-pages/ghl-techos-por-segmento-landing.html",
+        "categorias/techos-por-segmento/es/landing-pages/techos-por-segmento.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/techos-de-concreto",
+      "file": "servicios/techos-de-concreto/es/landing-pages/ghl-techos-de-concreto-landing.html",
+      "inbound": 84,
+      "outbound": 0,
+      "sources": [
+        "categorias/impermeabilizacion-de-techos/es/landing-pages/ghl-impermeabilizacion-de-techos-landing.html",
+        "categorias/impermeabilizacion-de-techos/es/landing-pages/impermeabilizacion-de-techos.html",
+        "categorias/techos/es/landing-pages/ghl-techos-landing.html",
+        "categorias/techos/es/landing-pages/servicios-techos.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/recubrimiento-elastomerico",
+      "file": "servicios/recubrimiento-elastomerico/es/landing-pages/ghl-recubrimiento-elastomerico-landing.html",
+      "inbound": 123,
+      "outbound": 0,
+      "sources": [
+        "categorias/sellado-de-techos/es/landing-pages/ghl-sellado-de-techos-landing.html",
+        "categorias/techos/es/landing-pages/ghl-techos-landing.html",
+        "categorias/techos/es/landing-pages/servicios-techos.html",
+        "servicios/recubrimiento-elastomerico/es/landing-pages/recubrimiento-elastomerico.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/impermeabilizacion-de-techos",
+      "file": "categorias/impermeabilizacion-de-techos/es/landing-pages/ghl-impermeabilizacion-de-techos-landing.html",
+      "inbound": 175,
+      "outbound": 6,
+      "sources": [
+        "categorias/impermeabilizacion-de-techos/es/landing-pages/impermeabilizacion-de-techos.html",
+        "categorias/sellado-de-techos/es/landing-pages/ghl-sellado-de-techos-landing.html",
+        "categorias/techos/es/landing-pages/ghl-techos-landing.html",
+        "categorias/techos/es/landing-pages/servicios-techos.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/limpieza-de-techos-y-canaletas",
+      "file": "servicios/limpieza-de-techos-y-canaletas/es/landing-pages/ghl-limpieza-de-techos-y-canaletas-landing.html",
+      "inbound": 252,
+      "outbound": 0,
+      "sources": [
+        "categorias/inspeccion-y-mantenimiento-de-techos/es/landing-pages/ghl-inspeccion-y-mantenimiento-de-techos-landing.html",
+        "categorias/inspeccion-y-mantenimiento-de-techos/es/landing-pages/inspeccion-y-mantenimiento-de-techos-162462.html",
+        "categorias/techos/es/landing-pages/ghl-techos-landing.html",
+        "categorias/techos/es/landing-pages/servicios-techos.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/sellado-de-poliuretano",
+      "file": "servicios/sellado-de-poliuretano/es/landing-pages/ghl-sellado-de-poliuretano-landing.html",
+      "inbound": 259,
+      "outbound": 0,
+      "sources": [
+        "categorias/sellado-de-techos/es/landing-pages/ghl-sellado-de-techos-landing.html",
+        "categorias/techos/es/landing-pages/ghl-techos-landing.html",
+        "categorias/techos/es/landing-pages/servicios-techos.html",
+        "servicios/sellado-de-poliuretano/es/landing-pages/sellado-de-poliuretano.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/membrana-asfaltica",
+      "file": "servicios/membrana-asfaltica/es/landing-pages/ghl-membrana-asfaltica-landing.html",
+      "inbound": 271,
+      "outbound": 0,
+      "sources": [
+        "categorias/sellado-de-techos/es/landing-pages/ghl-sellado-de-techos-landing.html",
+        "categorias/techos/es/landing-pages/ghl-techos-landing.html",
+        "categorias/techos/es/landing-pages/servicios-techos.html",
+        "servicios/membrana-asfaltica/es/landing-pages/membrana-asfaltica.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/sellado-acrilico",
+      "file": "servicios/sellado-acrilico/es/landing-pages/ghl-sellado-acrilico-landing.html",
+      "inbound": 291,
+      "outbound": 0,
+      "sources": [
+        "categorias/sellado-de-techos/es/landing-pages/ghl-sellado-de-techos-landing.html",
+        "categorias/techos/es/landing-pages/ghl-techos-landing.html",
+        "categorias/techos/es/landing-pages/servicios-techos.html",
+        "servicios/sellado-acrilico/es/landing-pages/sellado-de-poliuretano-950943.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/sellado-de-silicona",
+      "file": "servicios/sellado-de-silicona/es/landing-pages/ghl-sellado-de-silicona-landing.html",
+      "inbound": 351,
+      "outbound": 0,
+      "sources": [
+        "categorias/sellado-de-techos/es/landing-pages/ghl-sellado-de-techos-landing.html",
+        "categorias/techos/es/landing-pages/ghl-techos-landing.html",
+        "categorias/techos/es/landing-pages/servicios-techos.html",
+        "servicios/sellado-de-silicona/es/landing-pages/sellado-de-silicona.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/sellado-de-techos",
+      "file": "categorias/sellado-de-techos/es/landing-pages/ghl-sellado-de-techos-landing.html",
+      "inbound": 417,
+      "outbound": 9,
+      "sources": [
+        "categorias/techos/es/landing-pages/ghl-techos-landing.html",
+        "categorias/techos/es/landing-pages/servicios-techos.html",
+        "home/es/landing-pages/ghl-home-multiservicios.html",
+        "home/es/landing-pages/home-multiservicios-backup.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/empozamiento-de-techos",
+      "file": "servicios/empozamiento-de-techos/es/landing-pages/ghl-empozamiento-de-techos-landing.html",
+      "inbound": 424,
+      "outbound": 0,
+      "sources": [
+        "categorias/reparacion-de-techos/es/landing-pages/ghl-reparacion-de-techos-landing.html",
+        "categorias/reparacion-de-techos/es/landing-pages/reparacion-de-techos.html",
+        "categorias/techos/es/landing-pages/ghl-techos-landing.html",
+        "categorias/techos/es/landing-pages/servicios-techos.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/",
+      "file": "home/es/landing-pages/ghl-home-multiservicios.html",
+      "inbound": 533,
+      "outbound": 40,
+      "sources": [
+        "blog/01-preguntas-frecuentes/index.html",
+        "blog/01-preguntas-frecuentes/preguntas-frecuentes-sellado-de-techos-clima-y-huracanes.html",
+        "blog/01-preguntas-frecuentes/preguntas-frecuentes-sellado-de-techos-garantia-y-leyes.html",
+        "blog/01-preguntas-frecuentes/preguntas-frecuentes-sellado-de-techos-materiales.html"
+      ]
+    },
+    {
+      "url": "https://ilatekpr.com/resenas",
+      "file": "resenas/ghl-resenas-landing.html",
+      "inbound": 536,
+      "outbound": 0,
+      "sources": [
+        "home/es/landing-pages/ghl-home-multiservicios.html",
+        "home/es/landing-pages/home-118878.html",
+        "home/es/landing-pages/home-multiservicios-backup.html",
+        "blog/01-preguntas-frecuentes/index.html"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Lavado A Presion Techos
+Slug: lavado-a-presion-techos
+URL: https://ilatekpr.com/lavado-a-presion-techos
+Acción: REPUBLICAR
+Estado hoy: HTTP 200
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (244 KB, sha256 073358bf1f96)
+Origen en el repo: servicios/lavado-a-presion-techos/es/landing-pages/ghl-lavado-a-presion-techos-landing.html
+Sección de clima: sí
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

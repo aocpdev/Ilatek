@@ -1,0 +1,157 @@
+/og:title/ og:description ("… en Juncos, Puerto Rico"): el título sale de {{custom_values.business__county_name}}, así que es el mismo custom value, sin depender de que el builder expanda el Custom Code; 3. el subdominio del sitio (juncos.ilatekpr.com → Juncos); 4. los valores de marca del contrato (custom-values.json → brand). El portador que viaja en el embed se oculta siempre (nunca es contenido). Estado en
+{{custom_values.business__county_name}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}
+Login
+Instalación y reemplazo
+Instalación y Reemplazo de Techos en
+Puerto Rico
+desde $250.
+Cuando reparar ya no es suficiente, instalar un techo nuevo es la solución definitiva. Ilatek reemplaza e instala techos en {{custom_values.business__county_name}}, con agenda con $50 descontables del total y garantía escrita.
+Solicita tu cotización
+Qué incluye el servicio ↓
+por servicio
+Instalación
+municipios
+Cobertura en PR
+al agendar
+Se descuenta del total
+Desde $250
+undefined
+Cuando reparar ya no basta, un techo nuevo resuelve.
+Solución definitiva
+Un techo nuevo resuelve de raíz las filtraciones recurrentes y te da tranquilidad por muchos años.
+Instalación correcta
+Instalamos con el sistema y las fijaciones adecuadas al viento y la lluvia de Puerto Rico, no improvisamos.
+Garantía de instalación
+Respaldamos la instalación por escrito, con materiales certificados y mano de obra especializada.
+Qué incluye
+Qué incluye la instalación de un techo.
+Un techo nuevo se juzga por cómo se instala, no solo por el material.
+Ilatek evalúa la estructura, retira el techo viejo, prepara la base e instala el sistema nuevo con fijaciones y sellado correctos para el clima.
+Evaluación de la estructura existente
+Remoción del techo viejo
+Preparación y refuerzo de la base
+Instalación con materiales certificados
+Sellado de uniones y penetraciones
+Garantía por escrito de la instalación
+Cotiza tu techo nuevo
+Techos nuevos · Garantía de instalación
+Cuándo reemplazar
+Señales de que toca techo nuevo.
+Recurrencia
+Filtraciones que vuelven
+Si ya reparaste varias veces y sigue filtrando, el techo cumplió su vida útil.
+Estado
+Deterioro generalizado
+Óxido extendido, láminas perforadas o shingles destruidos: reparar ya no es rentable.
+Estructura
+Daño estructural
+Cuando la base o la estructura está comprometida, hay que reemplazar, no solo sellar.
+Cómo funciona
+Cómo instalamos tu techo nuevo.
+Evaluamos la estructura, retiramos el techo viejo, preparamos la base e instalamos con fijaciones correctas.
+PASO 1
+Cotiza tu instalación y reemplazo de techos
+Usa el cotizador de Ilatek o escríbenos: evaluamos tu techo y te damos el precio de instalación y reemplazo de techos por escrito en minutos — sin compromiso.
+PASO 2
+Inspección y agenda
+Confirmamos el alcance de instalación y reemplazo de techos con una inspección del techo, defines la fecha y reservas con el depósito de $50, que se descuenta del total.
+PASO 3
+Trabajo terminado
+Ejecutamos instalación y reemplazo de techos con materiales certificados, protegemos el área y te entregamos la garantía por escrito.
+Cobertura de
+instalación y reemplazo
+en toda la isla.
+Ilatek Techos brinda instalación y reemplazo de techos en los
+78 municipios de Puerto Rico
+. Atendemos tu área en
+{{custom_values.business__county_name}}
+y toda la isla: busca tu pueblo en el directorio y visita su página.
+No encontramos ese pueblo. Verifica el nombre e intenta nuevamente.
+Página 1 de 1
+Reseñas de clientes de Ilatek.
+Reseñas de personas que confiaron en Ilatek para mantenimiento y sellado de techos en Puerto Rico. Cambia de pestaña para ver cada fuente.
+Preguntas frecuentes
+Preguntas frecuentes sobre instalación y reemplazo de techos.
+¿Cuánto cuesta instalar o reemplazar un techo?
+La instalación y reemplazo de techos de Ilatek
+comienza desde $250
+instalado. El precio depende del material, el área y si hay que reparar la estructura. Cotizamos tu proyecto con visita técnica.
+¿Cuándo conviene reemplazar el techo en vez de repararlo?
+Cuando hay
+filtraciones recurrentes, deterioro generalizado o daño estructural
+. Si ya reparaste varias veces sin éxito, un techo nuevo es más rentable a largo plazo.
+¿Qué materiales de techo instalan?
+Instalamos
+techos de zinc y metal, membranas para techos planos, sistemas de concreto y asfalto
+, según el diseño de tu propiedad y tus necesidades.
+¿Cuánto tarda instalar un techo?
+Un techo residencial puede tomar
+de varios días a un par de semanas
+, según el tamaño y el material. Proyectos comerciales o industriales requieren más tiempo; te damos un cronograma.
+¿Retiran el techo viejo?
+removemos el techo existente
+, preparamos la base y retiramos los escombros, dejando el área lista para la instalación nueva.
+¿La instalación incluye garantía?
+Entregamos garantía de mano de obra por escrito sobre la instalación, con materiales certificados y proceso correcto.
+¿Trabajan techos comerciales e industriales?
+Instalamos y reemplazamos techos residenciales, comerciales e industriales, con planificación por fases para no interrumpir tu operación.
+¿Por qué elegir Ilatek Techos para tu techo nuevo?
+Un techo nuevo se juzga por cómo se instala: evaluamos la estructura, retiramos el techo viejo, preparamos la base e instalamos con fijaciones para viento y lluvia del Caribe, desde $250.
+Visita o inspección por $50
+Protege tu techo antes de la próxima lluvia.
+Solicita tu cotización por $50 descontables del total de instalación y reemplazo de techos en {{custom_values.business__county_name}} y recibe precio claro y por escrito — cotización por $50 descontables del total y cobertura en los 78 municipios de Puerto Rico.
+Solicita tu cotización por $50 descontables del total
+Respuesta en minutos · Sin compromiso
+Precio claro por escrito
+desde $250, confirmado después de la inspección.
+Inspección sin compromiso
+Subimos, diagnosticamos y te explicamos las opciones.
+Garantía de mano de obra
+Respaldada por escrito en cada trabajo que hacemos.
+Devasks
+Navegación de Ilatek
+Ilatek, inicio
+Logo de Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Logo%20de%20Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Navegación principal
+Idioma / Language
+Español
+English
+Abrir o cerrar el menú
+Ilatek Instalación y reemplazo {{custom_values.business__county_name}}
+Instalación y reemplazo de techos — {{custom_values.business__county_name}}
+Instalación y reemplazo de techos · Ilatek Techos — servicio en {{custom_values.business__county_name}}
+Instalaci%C3%B3n%20y%20reemplazo%20de%20techos%20%E2%80%94%20%7B%7Bcustom_values.business__county_name%7D%7D
+Instalaci%C3%B3n%20y%20reemplazo%20de%20techos%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Reemplazo e instalación de techo por Ilatek Techos en {{custom_values.business__county_name}} — techo nuevo
+Instalación de techos · Ilatek Techos — servicio en {{custom_values.business__county_name}}
+Reemplazo%20e%20instalaci%C3%B3n%20de%20techo%20por%20Ilatek%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%E2%80%94%20techo%20nuevo
+Instalaci%C3%B3n%20de%20techos%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Cobertura de instalación y reemplazo de techos de Ilatek Techos en Puerto Rico
+Busca tu pueblo
+Buscar un municipio de Puerto Rico
+Limpiar búsqueda
+Municipios de Puerto Rico con servicio de instalación y reemplazo de techos
+Pie de página de Ilatek
+Facebook
+Facebook — servicio en {{custom_values.business__county_name}}
+Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Instagram
+Instagram — servicio en {{custom_values.business__county_name}}
+Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Youtube
+Youtube — servicio en {{custom_values.business__county_name}}
+Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+TikTok
+TikTok — servicio en {{custom_values.business__county_name}}
+TikTok%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+X — servicio en {{custom_values.business__county_name}}
+X%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+LinkedIn
+LinkedIn — servicio en {{custom_values.business__county_name}}
+LinkedIn%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Pinterest
+Pinterest — servicio en {{custom_values.business__county_name}}
+Pinterest%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D

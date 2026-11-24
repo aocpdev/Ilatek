@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://guayama.ilatekpr.com/sitemap.xml

@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Alfombras
+Slug: alfombras
+URL: https://ilatekpr.com/alfombras
+Acción: REPUBLICAR
+Estado hoy: HTTP 200
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (237 KB, sha256 c847383ba6d3)
+Origen en el repo: servicios/alfombras/es/landing-pages/ghl-alfombras-landing.html
+Sección de clima: sí
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

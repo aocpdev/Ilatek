@@ -1,0 +1,161 @@
+/og:title/ og:description ("… en Juncos, Puerto Rico"): el título sale de {{custom_values.business__county_name}}, así que es el mismo custom value, sin depender de que el builder expanda el Custom Code; 3. el subdominio del sitio (juncos.ilatekpr.com → Juncos); 4. los valores de marca del contrato (custom-values.json → brand). El portador que viaja en el embed se oculta siempre (nunca es contenido). Estado en
+{{custom_values.business__county_name}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}
+Login
+Techos de concreto
+Reparación de Techos de Concreto
+(Losas) en Puerto Rico
+desde $250.
+La losa de concreto es el techo más común en Puerto Rico: resistente, pero propensa a grietas y filtraciones con el tiempo. Ilatek repara techos de concreto en {{custom_values.business__county_name}}
+desde $250
+, con cotización por $50 descontables del total y garantía escrita.
+Solicita tu cotización
+Qué incluye el servicio ↓
+por reparación
+Precio de entrada
+municipios
+Cobertura en PR
+al agendar
+Se descuenta del total
+Reparación de losas
+undefined
+La losa de concreto necesita reparación, no reemplazo.
+Sella las grietas del concreto
+Rellenamos las grietas con sellador flexible y sellamos la superficie para que el agua no penetre la losa.
+Frena el óxido de varillas
+Al cerrar las entradas de agua, protegemos el acero de refuerzo que se oxida dentro del concreto.
+Aguanta huracanes
+Una losa bien reparada resiste vientos de categoría 5 y la lluvia intensa del Caribe sin filtrar.
+Qué incluye
+Cómo reparamos una losa de concreto.
+Una losa no se repara con pintura.
+Ilatek limpia la superficie, detecta la falla, sella grietas y filtraciones en su punto de origen y protege la losa para que el agua no vuelva a entrar.
+Lavado a presión de la losa
+Sellado de grietas y juntas de colado
+Reparación de filtraciones en su origen
+Corrección de empozamientos
+Sellador flexible o membrana según la falla
+Garantía por escrito del trabajo
+Cotiza tu losa
+Grietas selladas · Filtraciones corregidas
+Problemas típicos
+Qué le pasa al concreto con los años.
+Grietas
+Retracción y calor
+El sol y las variaciones de temperatura abren grietas por donde entra el agua.
+Óxido
+Varillas oxidadas
+El agua que penetra oxida el acero interno hasta reventar el concreto desde adentro.
+Agua
+Empozamiento
+La losa pierde pendiente con el tiempo y el agua se estanca, filtrándose lentamente.
+Cómo funciona
+Cómo reparamos tu techo de concreto.
+Detectamos la falla en la losa, sellamos grietas y filtraciones, y protegemos la superficie para que el agua no vuelva a entrar.
+PASO 1
+Cotiza tu reparación de techos de concreto
+Usa el cotizador de Ilatek o escríbenos: evaluamos tu techo y te damos el precio de reparación de techos de concreto por escrito en minutos — sin compromiso.
+PASO 2
+Inspección y agenda
+Confirmamos el alcance de reparación de techos de concreto con una inspección del techo, defines la fecha y reservas con el depósito de $50, que se descuenta del total.
+PASO 3
+Trabajo terminado
+Ejecutamos reparación de techos de concreto con materiales certificados, protegemos el área y te entregamos la garantía por escrito.
+Cobertura de
+techos de concreto
+en toda la isla.
+Ilatek Techos brinda reparación de techos de concreto en los
+78 municipios de Puerto Rico
+. Atendemos tu área en
+{{custom_values.business__county_name}}
+y toda la isla: busca tu pueblo en el directorio y visita su página.
+No encontramos ese pueblo. Verifica el nombre e intenta nuevamente.
+Página 1 de 1
+Reseñas de clientes de Ilatek.
+Reseñas de personas que confiaron en Ilatek para mantenimiento y sellado de techos en Puerto Rico. Cambia de pestaña para ver cada fuente.
+Preguntas frecuentes
+Preguntas frecuentes sobre reparación de techos de concreto.
+¿Cuánto cuesta reparar un techo de concreto?
+La reparación de techos de concreto de Ilatek
+comienza desde $250
+. El precio depende del área y del estado de la losa. La visita o inspección cuesta $50 y se descuenta del total del servicio. Cotiza para tu número exacto.
+¿Por qué se filtra una losa de concreto?
+Por
+grietas de retracción, juntas abiertas, empozamientos y pérdida de pendiente
+. El agua encuentra esas fallas y penetra la losa, apareciendo como manchas o goteras.
+¿Cómo sellan las grietas de una losa?
+Perfilamos la grieta, la rellenamos con
+sellador polimérico flexible
+y la protegemos con el sellador o membrana correctos para que no vuelva a abrirse con el movimiento del concreto.
+¿Las varillas oxidadas del techo se pueden reparar?
+Si el óxido es incipiente,
+tratamos el acero, restauramos el recubrimiento y sellamos
+. Si ya hay daño estructural mayor, te lo informamos y recomendamos el refuerzo necesario.
+¿La cotización de mi techo de concreto tiene costo?
+La visita o inspección es
+y se descuenta del total del servicio: si aceptas el trabajo, ese monto se acredita al total. Así confirmamos tu fecha y el monto se descuenta del total.
+¿Cuánto dura la reparación de una losa?
+Un trabajo típico toma
+1 a 3 días
+según el área y el número de grietas. Te damos el estimado de tiempo en la cotización.
+¿La reparación de la losa tiene garantía?
+Entregamos garantía de mano de obra por escrito; si la filtración reaparece dentro del periodo cubierto, regresamos a corregirla.
+¿Por qué elegir Ilatek Techos para el techo de concreto?
+La losa de concreto es el techo más común de la isla y se filtra por grietas y juntas: las sellamos con sellador flexible y membrana, frenamos el óxido de las varillas desde $250, con cotización por $50 descontables del total.
+Visita o inspección por $50
+Protege tu techo antes de la próxima lluvia.
+Solicita tu cotización por $50 descontables del total de reparación de techos de concreto en {{custom_values.business__county_name}} y recibe precio claro y por escrito — cotización por $50 descontables del total y cobertura en los 78 municipios de Puerto Rico.
+Solicita tu cotización por $50 descontables del total
+Respuesta en minutos · Sin compromiso
+Precio claro por escrito
+desde $250, confirmado después de la inspección.
+Inspección sin compromiso
+Subimos, diagnosticamos y te explicamos las opciones.
+Garantía de mano de obra
+Respaldada por escrito en cada trabajo que hacemos.
+Devasks
+Navegación de Ilatek
+Ilatek, inicio
+Logo de Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Logo%20de%20Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Navegación principal
+Idioma / Language
+Español
+English
+Abrir o cerrar el menú
+Ilatek Techos de concreto {{custom_values.business__county_name}}
+Reparación de techo de concreto y losa — {{custom_values.business__county_name}}
+Reparación de techos de concreto · Ilatek Techos — servicio en {{custom_values.business__county_name}}
+Reparaci%C3%B3n%20de%20techo%20de%20concreto%20y%20losa%20%E2%80%94%20%7B%7Bcustom_values.business__county_name%7D%7D
+Reparaci%C3%B3n%20de%20techos%20de%20concreto%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Sellado de grietas de losa de concreto por Ilatek Techos en {{custom_values.business__county_name}} — reparación de techos de concreto
+Reparación de losas de concreto · Ilatek Techos — servicio en {{custom_values.business__county_name}}
+Sellado%20de%20grietas%20de%20losa%20de%20concreto%20por%20Ilatek%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%E2%80%94%20reparaci%C3%B3n%20de%20techos%20de%20concreto
+Reparaci%C3%B3n%20de%20losas%20de%20concreto%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Cobertura de reparación de techos de concreto de Ilatek Techos en Puerto Rico
+Busca tu pueblo
+Buscar un municipio de Puerto Rico
+Limpiar búsqueda
+Municipios de Puerto Rico con servicio de reparación de techos de concreto
+Pie de página de Ilatek
+Facebook
+Facebook — servicio en {{custom_values.business__county_name}}
+Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Instagram
+Instagram — servicio en {{custom_values.business__county_name}}
+Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Youtube
+Youtube — servicio en {{custom_values.business__county_name}}
+Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+TikTok
+TikTok — servicio en {{custom_values.business__county_name}}
+TikTok%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+X — servicio en {{custom_values.business__county_name}}
+X%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+LinkedIn
+LinkedIn — servicio en {{custom_values.business__county_name}}
+LinkedIn%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Pinterest
+Pinterest — servicio en {{custom_values.business__county_name}}
+Pinterest%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D

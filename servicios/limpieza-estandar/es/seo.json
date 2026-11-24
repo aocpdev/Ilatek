@@ -3,11 +3,11 @@
   "language": "es",
   "status": "plantilla-local-delta-system",
   "metaTagTitle": "Limpieza Estándar en {{custom_values.business__county_name}} | Ilatek",
-  "metaTagDescription": "Limpieza estándar en {{custom_values.business__county_name}} desde $0.07 por pie²: mantenimiento regular del hogar, cocina, baños y dormitorios. Cotizador online con precio real y depósito de $50 que se descuenta.",
-  "metaTagImage": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/limpieza-estandar.jpg",
+  "metaTagDescription": "Limpieza estándar en {{custom_values.business__county_name}} desde $250: mantenimiento regular del hogar, cocina, baños y dormitorios. Cotizador online con precio real y depósito de $50 que se descuenta.",
+  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/30b96aa6-d966-402d-8220-addedda56fca.webp",
   "locationCustomValue": "{{custom_values.business__county_name}}",
-  "metaTagImageAlt": "Limpieza Estándar en {{custom_values.business__county_name}} | Ilatek",
+  "metaTagImageAlt": "Limpieza Estándar en {{custom_values.business__county_name}} — Ilatek",
   "canonical": "https://{{custom_values.website_url}}/limpieza-estandar",
-  "socialImageFile": "assets/meta-image.jpg",
+  "socialImageFile": "assets/meta-image.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."
 }

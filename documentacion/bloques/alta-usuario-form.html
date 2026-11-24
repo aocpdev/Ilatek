@@ -1,0 +1,694 @@
+<!-- ILATEK · New Team Member — alta de un miembro del equipo en 5 pasos.
+     Se pega como Custom Code en la página de alta (gracias / formulario interno).
+
+     Flujo completo (sin workflow ni acciones de pago por ejecución):
+       1. El operador llena este bloque y pulsa «Crear usuario».
+       2. El bloque hace POST al endpoint tools/ghl/worker/create-user-worker.mjs
+          (data-webhook), con el código interno en la cabecera x-ilatel-token.
+       3. El endpoint crea el usuario, le pone la foto, lo enlaza a los calendarios
+          del equipo elegido, deja el contacto con sus campos, etiquetas y una nota
+          con TODO lo que marcó el operador, y manda la bienvenida al colaborador.
+
+     El navegador NUNCA ve el token de GHL: el único secreto que viaja es el código
+     interno del alta, que lo pone el operador y se recuerda en su navegador.
+
+     Mapa de admins (ids reales de la subcuenta Ilatek - PR 8OxUENFVM60EKzqsTcoD):
+       luis → lrgREN7IQe6y2iRW4Epe → wM8KQhsYjEQAo0HbNGIh (mantenimiento de techos)
+       aida → BXfQdgMBK0OJCXSbWxcj → i5HZobZjuSZcDl43qgOG (Reserva tu limpieza)
+                                     vMU898LXrUCkSROqGuLv (Copy of Reserva tu limpieza)
+
+     Los 78 municipios vienen de tools/ghl/municipios.json (dueño único de los nombres).
+
+     Modo operador: quien llena el formulario es la oficina, no el colaborador.
+     Por eso no hay compuerta de etiqueta `team`: el alta crea el contacto,
+     le pone la etiqueta y el resto de datos. La protección es el código interno
+     que exige el endpoint antes de tocar GHL.
+
+     Prueba local: mientras data-webhook esté vacío el formulario valida y NO envía nada. -->
+<section id="ilau-alta"
+         data-webhook="https://site-8d8067c6633841d388bbc85f5b916b26.freebuff.page/ghl/alta"
+         data-location="8OxUENFVM60EKzqsTcoD"
+         data-eligibility=""
+         data-logo="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/ilatek-logo-256.webp"
+         data-logo-fallback="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab044d04091fa65e69921f6.png">
+
+  <header class="ilau-head">
+    <img id="ilau-logo" class="ilau-logo" alt="Ilatek Property Solution" width="72" height="72" decoding="async">
+    <h1 class="ilau-title">New Team Member</h1>
+    <p class="ilau-lead">Formulario interno para integrar nuevos miembros del equipo.</p>
+    <ol class="ilau-track" aria-hidden="true">
+      <li data-dot="1" class="is-on">Datos</li>
+      <li data-dot="2">Equipo</li>
+      <li data-dot="3">Cobertura</li>
+      <li data-dot="4">Horario</li>
+      <li data-dot="5">Listo</li>
+    </ol>
+    <div class="ilau-bar"><span id="ilau-bar-fill"></span></div>
+  </header>
+
+  <form id="ilau-form" novalidate>
+    <!-- 1 · datos personales + foto -->
+    <section class="ilau-step is-active" data-step="1" aria-labelledby="ilau-h1">
+      <h2 class="ilau-h" id="ilau-h1">Datos del colaborador</h2>
+      <div class="ilau-photo">
+        <div class="ilau-photo-frame"><img id="ilau-photo-preview" alt="" hidden><span id="ilau-photo-initials">—</span></div>
+        <div class="ilau-photo-copy">
+          <label class="ilau-file" for="ilau-photo">Subir foto de perfil
+            <input id="ilau-photo" type="file" accept="image/png,image/jpeg,image/webp" capture="user">
+          </label>
+          <p class="ilau-hint">Se asigna al usuario creado. JPG, PNG o WebP.</p>
+          <p id="ilau-photo-msg" class="ilau-hint"></p>
+        </div>
+      </div>
+      <div class="ilau-grid">
+        <label>Nombre<input id="ilau-nombre" type="text" autocomplete="off" placeholder="Nombre del colaborador" required></label>
+        <label>Apellido<input id="ilau-apellido" type="text" autocomplete="off" placeholder="Apellido" required></label>
+        <label>Correo electrónico<input id="ilau-email" type="email" autocomplete="off" inputmode="email" placeholder="colaborador@correo.com" required></label>
+        <label>Teléfono<input id="ilau-telefono" type="tel" autocomplete="off" inputmode="tel" placeholder="(787) 000-0000" required></label>
+      </div>
+      <div class="ilau-grid">
+        <label>Registrado por
+          <select id="ilau-operador">
+            <option value="oficina">Oficina Ilatek</option>
+            <option value="luis">Luis Cardec</option>
+            <option value="aida">Aida Cintron</option>
+          </select>
+        </label>
+      </div>
+    </section>
+
+    <!-- 2 · equipo -->
+    <section class="ilau-step" data-step="2" aria-labelledby="ilau-h2">
+      <h2 class="ilau-h" id="ilau-h2">Equipo al que entra</h2>
+      <div class="ilau-radios">
+        <label class="ilau-card">
+          <input type="radio" name="ilau-admin" value="luis" data-user="lrgREN7IQe6y2iRW4Epe" data-calendars="wM8KQhsYjEQAo0HbNGIh" data-team="Cardec">
+          <span><b>Luis Cardec</b><small>Equipo de techos</small></span>
+        </label>
+        <label class="ilau-card">
+          <input type="radio" name="ilau-admin" value="aida" data-user="BXfQdgMBK0OJCXSbWxcj" data-calendars="i5HZobZjuSZcDl43qgOG,vMU898LXrUCkSROqGuLv" data-team="Aida">
+          <span><b>Aida Cintron</b><small>Equipo de limpieza</small></span>
+        </label>
+      </div>
+      <p class="ilau-hint">La agenda del usuario queda enlazada a los calendarios de esa persona.</p>
+    </section>
+
+    <!-- 3 · cobertura -->
+    <section class="ilau-step" data-step="3" aria-labelledby="ilau-h3">
+      <h2 class="ilau-h" id="ilau-h3">Pueblos que puede cubrir</h2>
+      <div class="ilau-tools">
+        <label class="ilau-check"><input id="ilau-all" type="checkbox"> <span>Toda la isla (78 municipios)</span></label>
+        <input id="ilau-town-search" type="search" placeholder="Buscar municipio…" autocomplete="off" aria-label="Buscar municipio">
+      </div>
+      <p class="ilau-count"><b id="ilau-town-count">0</b> seleccionados</p>
+      <div id="ilau-towns" class="ilau-towns" role="group" aria-label="Municipios"></div>
+    </section>
+
+    <!-- 4 · disponibilidad -->
+    <section class="ilau-step" data-step="4" aria-labelledby="ilau-h4">
+      <h2 class="ilau-h" id="ilau-h4">Horario disponible</h2>
+      <p class="ilau-hint">Marca los días y las horas. Puedes copiar el horario de un día al resto.</p>
+
+      <div class="ilau-clone">
+        <label>Copiar horario de
+          <select id="ilau-clone-src">
+            <option value="lunes">Lunes</option>
+            <option value="martes">Martes</option>
+            <option value="miercoles">Miércoles</option>
+            <option value="jueves">Jueves</option>
+            <option value="viernes">Viernes</option>
+            <option value="sabado">Sábado</option>
+            <option value="domingo">Domingo</option>
+          </select>
+        </label>
+        <button type="button" class="ilau-ghost" id="ilau-clone-week">a lunes–viernes</button>
+        <button type="button" class="ilau-ghost" id="ilau-clone-all">a todos los días</button>
+        <button type="button" class="ilau-ghost" id="ilau-clear-all">limpiar todo</button>
+      </div>
+
+      <div class="ilau-dias">
+        <div class="ilau-dia"><label><input type="checkbox" data-dia="lunes"> Lunes</label><input type="time" data-desde="lunes" aria-label="Lunes desde"> <span>a</span> <input type="time" data-hasta="lunes" aria-label="Lunes hasta"></div>
+        <div class="ilau-dia"><label><input type="checkbox" data-dia="martes"> Martes</label><input type="time" data-desde="martes" aria-label="Martes desde"> <span>a</span> <input type="time" data-hasta="martes" aria-label="Martes hasta"></div>
+        <div class="ilau-dia"><label><input type="checkbox" data-dia="miercoles"> Miércoles</label><input type="time" data-desde="miercoles" aria-label="Miércoles desde"> <span>a</span> <input type="time" data-hasta="miercoles" aria-label="Miércoles hasta"></div>
+        <div class="ilau-dia"><label><input type="checkbox" data-dia="jueves"> Jueves</label><input type="time" data-desde="jueves" aria-label="Jueves desde"> <span>a</span> <input type="time" data-hasta="jueves" aria-label="Jueves hasta"></div>
+        <div class="ilau-dia"><label><input type="checkbox" data-dia="viernes"> Viernes</label><input type="time" data-desde="viernes" aria-label="Viernes desde"> <span>a</span> <input type="time" data-hasta="viernes" aria-label="Viernes hasta"></div>
+        <div class="ilau-dia"><label><input type="checkbox" data-dia="sabado"> Sábado</label><input type="time" data-desde="sabado" aria-label="Sábado desde"> <span>a</span> <input type="time" data-hasta="sabado" aria-label="Sábado hasta"></div>
+        <div class="ilau-dia"><label><input type="checkbox" data-dia="domingo"> Domingo</label><input type="time" data-desde="domingo" aria-label="Domingo desde"> <span>a</span> <input type="time" data-hasta="domingo" aria-label="Domingo hasta"></div>
+      </div>
+    </section>
+
+    <!-- 5 · emergencia + resumen -->
+    <section class="ilau-step" data-step="5" aria-labelledby="ilau-h5">
+      <h2 class="ilau-h" id="ilau-h5">Emergencias y alta</h2>
+      <div class="ilau-radios">
+        <label class="ilau-card"><input type="radio" name="ilau-emergencia" value="si"><span><b>Sí</b><small>Pueden contactarme para un servicio de emergencia el mismo día</small></span></label>
+        <label class="ilau-card"><input type="radio" name="ilau-emergencia" value="no" checked><span><b>No</b><small>Solo servicios agendados con anticipación</small></span></label>
+      </div>
+      <label class="ilau-full">Notas para tu equipo
+        <textarea id="ilau-notas" rows="3" maxlength="500" placeholder="Zonas, restricciones, transporte, disponibilidad especial…"></textarea>
+      </label>
+      <div id="ilau-summary" class="ilau-summary" aria-live="polite"></div>
+    </section>
+
+    <div class="ilau-nav">
+      <button type="button" class="ilau-ghost" id="ilau-prev" hidden>Atrás</button>
+      <button type="button" class="ilau-next" id="ilau-next">Continuar</button>
+      <button type="submit" class="ilau-submit" id="ilau-enviar" hidden>Crear usuario</button>
+    </div>
+    <p id="ilau-msg" class="ilau-msg" role="alert" aria-live="polite"></p>
+  </form>
+</section>
+
+<style>
+  #ilau-alta{
+    --ilau-blue:#213d8e; --ilau-green:#00b94f; --ilau-ink:#11164b; --ilau-muted:#5b6380;
+    --ilau-line:#dbe2f1; --ilau-soft:#eef3ff; --ilau-bg:#ffffff; --ilau-danger:#b33b39;
+    max-width:780px;margin:28px auto;padding:0 16px 8px;color:var(--ilau-ink);
+    font-family:Inter,Arial,sans-serif;-webkit-text-size-adjust:100%
+  }
+  #ilau-alta *{box-sizing:border-box}
+  #ilau-alta .ilau-head{text-align:center;padding:24px 20px 18px;border:1px solid var(--ilau-line);border-radius:16px;background:linear-gradient(180deg,var(--ilau-soft),var(--ilau-bg))}
+  #ilau-alta .ilau-logo{width:72px;height:72px;border-radius:50%;object-fit:cover;background:#fff;box-shadow:0 4px 14px rgba(17,22,75,.12)}
+  #ilau-alta .ilau-title{margin:14px 0 6px;font-size:1.55rem;line-height:1.25;color:var(--ilau-ink);font-weight:800;letter-spacing:-.01em}
+  #ilau-alta .ilau-lead{margin:0 auto 16px;max-width:52ch;color:var(--ilau-muted);font-size:.95rem;line-height:1.5}
+  #ilau-alta .ilau-track{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin:0 0 12px;padding:0;list-style:none}
+  #ilau-alta .ilau-track li{font-size:.72rem;font-weight:700;letter-spacing:.02em;text-transform:uppercase;color:var(--ilau-muted);padding:4px 10px;border-radius:999px;background:#fff;border:1px solid var(--ilau-line)}
+  #ilau-alta .ilau-track li.is-on{background:var(--ilau-blue);border-color:var(--ilau-blue);color:#fff}
+  #ilau-alta .ilau-track li.is-done{background:#e7f8ee;border-color:#b7e6c9;color:#04663a}
+  #ilau-alta .ilau-bar{height:6px;border-radius:999px;background:#e7ecf7;overflow:hidden}
+  #ilau-alta .ilau-bar span{display:block;height:100%;width:20%;background:var(--ilau-green);transition:width .25s ease}
+  #ilau-alta .ilau-step{display:none;margin-top:18px;padding:22px;border:1px solid var(--ilau-line);border-radius:16px;background:var(--ilau-bg)}
+  #ilau-alta .ilau-step.is-active{display:block;animation:ilau-in .22s ease}
+  @keyframes ilau-in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+  @media (prefers-reduced-motion:reduce){#ilau-alta .ilau-step.is-active{animation:none}}
+  #ilau-alta .ilau-h{margin:0 0 14px;font-size:1.1rem;color:var(--ilau-ink)}
+  #ilau-alta .ilau-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  #ilau-alta label{display:flex;flex-direction:column;gap:6px;font-size:.88rem;font-weight:700;color:var(--ilau-ink)}
+  #ilau-alta input[type=text],#ilau-alta input[type=email],#ilau-alta input[type=tel],#ilau-alta input[type=time],#ilau-alta input[type=search],#ilau-alta select,#ilau-alta textarea{
+    min-height:46px;padding:8px 12px;border:1px solid var(--ilau-line);border-radius:10px;font:400 .95rem Inter,Arial,sans-serif;color:var(--ilau-ink);background:#fff;outline:none
+  }
+  #ilau-alta input:focus,#ilau-alta select:focus,#ilau-alta textarea:focus{border-color:var(--ilau-blue);box-shadow:0 0 0 3px rgba(33,61,142,.15)}
+  #ilau-alta .ilau-error{border-color:var(--ilau-danger) !important}
+  #ilau-alta .ilau-hint{margin:8px 0 0;color:var(--ilau-muted);font-size:.82rem;font-weight:400;line-height:1.45}
+  #ilau-alta .ilau-radios{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  #ilau-alta .ilau-card{flex-direction:row;align-items:flex-start;gap:10px;padding:14px;border:1px solid var(--ilau-line);border-radius:12px;cursor:pointer;font-weight:400;background:#fff}
+  #ilau-alta .ilau-card:hover{border-color:var(--ilau-blue);background:#f8faff}
+  #ilau-alta .ilau-card:has(input:checked){border-color:var(--ilau-blue);box-shadow:0 0 0 3px rgba(33,61,142,.12)}
+  #ilau-alta .ilau-card input{margin-top:3px;accent-color:var(--ilau-blue)}
+  #ilau-alta .ilau-card b{display:block;color:var(--ilau-ink);font-size:.95rem}
+  #ilau-alta .ilau-card small{display:block;color:var(--ilau-muted);font-size:.8rem;font-weight:400}
+  /* foto */
+  #ilau-alta .ilau-photo{display:flex;gap:16px;align-items:center;margin-bottom:18px;padding:14px;border:1px dashed var(--ilau-line);border-radius:14px;background:#fbfcff}
+  #ilau-alta .ilau-photo-frame{position:relative;flex:0 0 78px;width:78px;height:78px;border-radius:50%;overflow:hidden;background:var(--ilau-soft);display:grid;place-items:center;border:1px solid var(--ilau-line)}
+  #ilau-alta .ilau-photo-frame img{width:100%;height:100%;object-fit:cover}
+  #ilau-alta #ilau-photo-initials{font-weight:800;color:var(--ilau-blue);font-size:1.35rem}
+  #ilau-alta .ilau-photo-copy{flex:1 1 auto;min-width:0}
+  #ilau-alta .ilau-file{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 16px;border-radius:10px;background:var(--ilau-blue);color:#fff;font-weight:700;font-size:.9rem;cursor:pointer}
+  #ilau-alta .ilau-file input{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+  /* cobertura */
+  #ilau-alta .ilau-tools{display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between;margin-bottom:8px}
+  #ilau-alta .ilau-check{flex-direction:row;align-items:center;gap:8px;font-size:.9rem}
+  #ilau-alta .ilau-check input{width:20px;height:20px;accent-color:var(--ilau-green)}
+  #ilau-alta #ilau-town-search{flex:1 1 200px;max-width:260px}
+  #ilau-alta .ilau-count{margin:0 0 10px;color:var(--ilau-muted);font-size:.82rem}
+  #ilau-alta .ilau-towns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;max-height:290px;overflow:auto;padding:10px;border:1px solid var(--ilau-line);border-radius:12px;background:#fbfcff}
+  #ilau-alta .ilau-town{flex-direction:row;align-items:center;gap:8px;padding:6px 8px;border-radius:8px;font-size:.86rem;font-weight:600;cursor:pointer}
+  #ilau-alta .ilau-town:hover{background:var(--ilau-soft)}
+  #ilau-alta .ilau-town input{width:18px;height:18px;accent-color:var(--ilau-blue)}
+  #ilau-alta .ilau-town[hidden]{display:none}
+  /* horario */
+  #ilau-alta .ilau-clone{display:flex;gap:8px;flex-wrap:wrap;align-items:flex-end;margin:0 0 14px;padding:12px;border:1px solid var(--ilau-line);border-radius:12px;background:#fbfcff}
+  #ilau-alta .ilau-clone label{font-size:.8rem}
+  #ilau-alta .ilau-dias{display:grid;gap:8px}
+  #ilau-alta .ilau-dia{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  #ilau-alta .ilau-dia label{flex-direction:row;align-items:center;gap:8px;min-width:112px;font-size:.88rem}
+  #ilau-alta .ilau-dia input[type=checkbox]{width:19px;height:19px;accent-color:var(--ilau-green)}
+  #ilau-alta .ilau-dia input[type=time]{width:126px;min-height:42px}
+  #ilau-alta .ilau-dia span{color:var(--ilau-muted);font-size:.82rem}
+  /* resumen */
+  #ilau-alta .ilau-summary{margin-top:16px;padding:14px;border:1px solid var(--ilau-line);border-radius:12px;background:var(--ilau-soft);font-size:.86rem;line-height:1.55}
+  #ilau-alta .ilau-summary b{color:var(--ilau-ink)}
+  #ilau-alta .ilau-summary p{margin:0 0 4px}
+  /* navegación */
+  #ilau-alta .ilau-nav{display:flex;gap:10px;margin-top:16px}
+  #ilau-alta .ilau-ghost,#ilau-alta .ilau-next,#ilau-alta .ilau-submit{
+    min-height:50px;border-radius:12px;font:700 .95rem Inter,Arial,sans-serif;cursor:pointer;border:1px solid var(--ilau-line);background:#fff;color:var(--ilau-ink)}
+  #ilau-alta .ilau-ghost{padding:0 16px;flex:0 0 auto}
+  #ilau-alta .ilau-ghost:hover{border-color:var(--ilau-blue);color:var(--ilau-blue)}
+  #ilau-alta .ilau-next,#ilau-alta .ilau-submit{flex:1 1 auto;border:0;background:var(--ilau-green);color:#08240f}
+  #ilau-alta .ilau-next:hover,#ilau-alta .ilau-submit:hover{background:#009640;color:#fff}
+  #ilau-alta .ilau-submit{background:var(--ilau-blue);color:#fff}
+  #ilau-alta .ilau-submit:hover{background:#1b317a;color:#fff}
+  #ilau-alta button[disabled]{opacity:.6;cursor:progress}
+  #ilau-alta .ilau-msg{min-height:20px;margin:10px 0 0;color:var(--ilau-danger);font-size:.88rem}
+  #ilau-alta .ilau-msg.ok{color:#04663a}
+  /* Encaje en una pantalla (100dvh): el bloque no crece más allá del alto
+     visible; solo el paso activo desplaza su contenido y el botón Continuar
+     queda siempre a la vista. */
+  #ilau-alta{
+    box-sizing:border-box;height:100vh;height:100dvh;max-height:100dvh;margin:0 auto;
+    display:flex;flex-direction:column;overflow:hidden;padding:12px 16px 8px
+  }
+  #ilau-alta .ilau-head{flex:0 0 auto}
+  #ilau-alta form{flex:1 1 auto;min-height:0;display:flex;flex-direction:column}
+  #ilau-alta .ilau-step{margin-top:14px}
+  #ilau-alta .ilau-step.is-active{flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+  #ilau-alta .ilau-nav{flex:0 0 auto;margin-top:12px}
+  #ilau-alta .ilau-msg{flex:0 0 auto;margin:8px 0 0}
+  /* Cuando el bloque es lo único de la página (vista suelta), quita el margen
+     del body para que el 100dvh sea exacto; en una página con más contenido
+     la regla no aplica. */
+  body:has(> #ilau-alta){margin:0}
+  /* En pantallas bajas la cabecera se recorta para no robar altura al formulario. */
+  @media (max-height:820px){
+    #ilau-alta .ilau-head{padding:14px 18px 12px}
+    #ilau-alta .ilau-logo{width:52px;height:52px}
+    #ilau-alta .ilau-title{margin:8px 0 4px;font-size:1.3rem}
+    #ilau-alta .ilau-lead{margin-bottom:10px;font-size:.88rem;line-height:1.4}
+    #ilau-alta .ilau-track li{font-size:.66rem;padding:3px 8px}
+    #ilau-alta .ilau-step{padding:16px;margin-top:12px}
+  }
+  @media (max-height:640px){
+    #ilau-alta .ilau-lead{display:none}
+    #ilau-alta .ilau-logo{width:44px;height:44px}
+  }
+  @media (max-width:640px){
+    #ilau-alta .ilau-grid,#ilau-alta .ilau-radios{grid-template-columns:1fr}
+    #ilau-alta .ilau-towns{grid-template-columns:repeat(2,minmax(0,1fr));max-height:250px}
+    #ilau-alta .ilau-title{font-size:1.3rem}
+    #ilau-alta .ilau-step{padding:16px}
+    #ilau-alta .ilau-photo{flex-direction:column;text-align:center;gap:10px}
+    #ilau-alta .ilau-dia{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+    #ilau-alta .ilau-dia label{grid-column:1 / -1;min-width:0}
+    #ilau-alta .ilau-dia input[type=time]{width:100%}
+    #ilau-alta .ilau-dia span{display:none}
+    #ilau-alta .ilau-nav{position:sticky;bottom:0;padding:10px 0 calc(10px + env(safe-area-inset-bottom));background:linear-gradient(180deg,rgba(255,255,255,0),#fff 40%)}
+    #ilau-alta .ilau-next,#ilau-alta .ilau-submit{min-height:52px}
+  }
+  /* Cabecera compacta en móvil: con el 100dvh, cada píxel de cabecera se le
+     quita al formulario. Va después del bloque móvil de arriba para ganar. */
+  @media (max-width:640px){
+    #ilau-alta{padding:8px 12px 6px}
+    #ilau-alta .ilau-head{padding:12px 14px 10px}
+    #ilau-alta .ilau-logo{width:46px;height:46px}
+    #ilau-alta .ilau-title{margin:8px 0 4px;font-size:1.12rem}
+    #ilau-alta .ilau-lead{margin-bottom:8px;font-size:.84rem;line-height:1.4}
+    #ilau-alta .ilau-track{gap:4px;margin-bottom:8px}
+    #ilau-alta .ilau-track li{font-size:.62rem;padding:3px 7px}
+    #ilau-alta .ilau-step{margin-top:10px;padding:14px}
+  }
+  @media (max-width:380px){#ilau-alta .ilau-towns{grid-template-columns:1fr}}
+</style>
+
+<script>
+(function () {
+  var root = document.getElementById('ilau-alta');
+  if (!root || root.dataset.ready === '1') return;
+  root.dataset.ready = '1';
+  root.dataset.team = '';
+  root.dataset.photo = '';
+  root.dataset.photoUrl = '';
+
+  var DIAS = ['lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'sabado', 'domingo'];
+  var ETIQUETA = { lunes: 'Lunes', martes: 'Martes', miercoles: 'Miércoles', jueves: 'Jueves', viernes: 'Viernes', sabado: 'Sábado', domingo: 'Domingo' };
+  var LABORABLES = ['lunes', 'martes', 'miercoles', 'jueves', 'viernes'];
+  // Dueño único de los nombres: tools/ghl/municipios.json (78 municipios).
+  var PUEBLOS = ['Adjuntas','Aguada','Aguadilla','Aguas Buenas','Aibonito','Añasco','Arecibo','Arroyo','Barceloneta','Barranquitas','Bayamón','Cabo Rojo','Caguas','Camuy','Canóvanas','Carolina','Cataño','Cayey','Ceiba','Ciales','Cidra','Coamo','Comerío','Corozal','Culebra','Dorado','Fajardo','Florida','Guánica','Guayama','Guayanilla','Guaynabo','Gurabo','Hatillo','Hormigueros','Humacao','Isabela','Jayuya','Juana Díaz','Juncos','Lajas','Lares','Las Marías','Las Piedras','Loíza','Luquillo','Manatí','Maricao','Maunabo','Mayagüez','Moca','Morovis','Naguabo','Naranjito','Orocovis','Patillas','Peñuelas','Ponce','Quebradillas','Rincón','Río Grande','Sabana Grande','Salinas','San Germán','San Juan','San Lorenzo','San Sebastián','Santa Isabel','Toa Alta','Toa Baja','Trujillo Alto','Utuado','Vega Alta','Vega Baja','Vieques','Villalba','Yabucoa','Yauco'];
+
+  var logo = document.getElementById('ilau-logo');
+  logo.src = root.dataset.logo || '';
+  logo.onerror = function () { this.onerror = null; this.src = root.dataset.logoFallback || root.dataset.logoFallback; };
+
+  var form = document.getElementById('ilau-form');
+  var pasos = [].slice.call(root.querySelectorAll('.ilau-step'));
+  var puntos = [].slice.call(root.querySelectorAll('[data-dot]'));
+  var barra = document.getElementById('ilau-bar-fill');
+  var prev = document.getElementById('ilau-prev');
+  var next = document.getElementById('ilau-next');
+  var enviarBtn = document.getElementById('ilau-enviar');
+  var msg = document.getElementById('ilau-msg');
+  var TOTAL = pasos.length;
+  var paso = 1;
+
+  var nombre = document.getElementById('ilau-nombre');
+  var apellido = document.getElementById('ilau-apellido');
+  var email = document.getElementById('ilau-email');
+  var telefono = document.getElementById('ilau-telefono');
+  var operador = document.getElementById('ilau-operador');
+  var notas = document.getElementById('ilau-notas');
+  var fotoInput = document.getElementById('ilau-photo');
+  var fotoPreview = document.getElementById('ilau-photo-preview');
+  var fotoIniciales = document.getElementById('ilau-photo-initials');
+  var fotoMsg = document.getElementById('ilau-photo-msg');
+  var todos = document.getElementById('ilau-all');
+  var buscar = document.getElementById('ilau-town-search');
+  var contador = document.getElementById('ilau-town-count');
+  var contenedorPueblos = document.getElementById('ilau-towns');
+  var resumen = document.getElementById('ilau-summary');
+
+  function val(el) { return el ? String(el.value || '').trim() : ''; }
+  function hijos(sel) { return [].slice.call(root.querySelectorAll(sel)); }
+
+  // ---------- navegación ----------
+  function pintarPaso() {
+    pasos.forEach(function (s) { s.classList.toggle('is-active', Number(s.dataset.step) === paso); });
+    puntos.forEach(function (p) {
+      var n = Number(p.dataset.dot);
+      p.classList.toggle('is-on', n === paso);
+      p.classList.toggle('is-done', n < paso);
+    });
+    barra.style.width = Math.round((paso / TOTAL) * 100) + '%';
+    prev.hidden = paso === 1;
+    next.hidden = paso === TOTAL;
+    enviarBtn.hidden = paso !== TOTAL;
+    if (paso === TOTAL) pintarResumen();
+    msg.textContent = '';
+    msg.className = 'ilau-msg';
+  }
+
+  function ir(n) {
+    paso = Math.min(TOTAL, Math.max(1, n));
+    pintarPaso();
+    var y = root.getBoundingClientRect().top + window.pageYOffset - 12;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  }
+
+  function errar(campo, texto) {
+    msg.textContent = texto;
+    msg.className = 'ilau-msg';
+    if (campo && campo.focus) { campo.classList.add('ilau-error'); campo.focus(); }
+    return false;
+  }
+
+  function limpiarErrores() { hijos('.ilau-error').forEach(function (c) { c.classList.remove('ilau-error'); }); }
+
+  function validarPaso(n) {
+    limpiarErrores();
+    if (n === 1) {
+      if (!val(nombre)) return errar(nombre, 'Escribe el nombre del colaborador.');
+      if (!val(apellido)) return errar(apellido, 'Escribe el apellido del colaborador.');
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(val(email))) return errar(email, 'Escribe un correo electrónico válido.');
+      if (val(telefono).replace(/\D/g, '').length < 10) return errar(telefono, 'Escribe un teléfono válido de 10 dígitos.');
+    }
+    if (n === 2 && !admin()) return errar(null, 'Elige el equipo al que entra: Luis o Aida.');
+    if (n === 3 && !pueblos().length) return errar(null, 'Marca al menos un municipio o «Toda la isla».');
+    if (n === 4) {
+      var disp = disponibilidad();
+      if (disp.errores.length) return errar(root.querySelector('[data-dia]'), disp.errores[0]);
+      if (!disp.filas.length) return errar(root.querySelector('[data-dia]'), 'Marca al menos un día con el horario disponible.');
+    }
+    return true;
+  }
+
+  // Modo operador: no hay compuerta de etiqueta `team`. Quien llena el
+  // formulario es la oficina y el alta crea el contacto con su etiqueta. La
+  // única credencial es el código interno, que el endpoint valida antes de
+  // tocar GHL (cabecera x-ilatek-token).
+  next.addEventListener('click', function () {
+    if (!validarPaso(paso)) return;
+    ir(paso + 1);
+  });
+  prev.addEventListener('click', function () { ir(paso - 1); });
+  form.addEventListener('submit', function (e) { e.preventDefault(); });
+
+  // ---------- foto ----------
+  function iniciales() {
+    var a = val(nombre).charAt(0), b = val(apellido).charAt(0);
+    return ((a + b) || '—').toUpperCase();
+  }
+  function pintarIniciales() { fotoIniciales.textContent = iniciales(); }
+
+  // Redimensiona en el cliente: el payload no debe llevar una foto de 6 MB.
+  function comprimir(file) {
+    return new Promise(function (resolve, reject) {
+      var url = URL.createObjectURL(file);
+      var img = new Image();
+      img.onload = function () {
+        var max = 512;
+        var escala = Math.min(1, max / Math.max(img.width, img.height));
+        var w = Math.round(img.width * escala), h = Math.round(img.height * escala);
+        var canvas = document.createElement('canvas');
+        canvas.width = w; canvas.height = h;
+        canvas.getContext('2d').drawImage(img, 0, 0, w, h);
+        URL.revokeObjectURL(url);
+        try { resolve(canvas.toDataURL('image/jpeg', 0.82)); } catch (err) { reject(err); }
+      };
+      img.onerror = function () { URL.revokeObjectURL(url); reject(new Error('No pudimos leer la imagen.')); };
+      img.src = url;
+    });
+  }
+
+  fotoInput.addEventListener('change', function () {
+    var file = fotoInput.files && fotoInput.files[0];
+    if (!file) return;
+    if (!/^image\/(jpeg|png|webp)$/.test(file.type)) { fotoMsg.textContent = 'Usa JPG, PNG o WebP.'; return; }
+    fotoMsg.textContent = 'Preparando la foto…';
+    comprimir(file).then(function (dataUrl) {
+      root.dataset.photo = dataUrl;
+      fotoPreview.src = dataUrl;
+      fotoPreview.hidden = false;
+      fotoIniciales.hidden = true;
+      fotoMsg.textContent = 'Lista. Se asignará a tu usuario.';
+    }).catch(function () {
+      root.dataset.photo = '';
+      fotoMsg.textContent = 'No pudimos procesar la imagen. Prueba con otra.';
+    });
+  });
+  nombre.addEventListener('input', pintarIniciales);
+  apellido.addEventListener('input', pintarIniciales);
+
+  // ---------- pueblos ----------
+  PUEBLOS.forEach(function (p) {
+    var label = document.createElement('label');
+    label.className = 'ilau-town';
+    label.dataset.name = p.toLowerCase();
+    var input = document.createElement('input');
+    input.type = 'checkbox';
+    input.value = p;
+    input.addEventListener('change', function () {
+      todos.checked = pueblos().length === PUEBLOS.length;
+      contar();
+    });
+    var span = document.createElement('span');
+    span.textContent = p;
+    label.appendChild(input);
+    label.appendChild(span);
+    contenedorPueblos.appendChild(label);
+  });
+
+  function pueblos() { return hijos('#ilau-towns input:checked').map(function (i) { return i.value; }); }
+  function contar() { contador.textContent = String(pueblos().length); }
+
+  todos.addEventListener('change', function () {
+    hijos('#ilau-towns input').forEach(function (i) {
+      if (i.closest('.ilau-town') && i.closest('.ilau-town').hidden) return; // respeta el filtro activo
+      i.checked = todos.checked;
+    });
+    contar();
+  });
+
+  buscar.addEventListener('input', function () {
+    var q = val(buscar).toLowerCase();
+    hijos('.ilau-town').forEach(function (l) { l.hidden = q ? l.dataset.name.indexOf(q) === -1 : false; });
+  });
+
+  // ---------- horarios ----------
+  function admin() {
+    var elegido = root.querySelector('input[name="ilau-admin"]:checked');
+    if (!elegido) return null;
+    root.dataset.team = elegido.dataset.team || '';
+    return {
+      clave: elegido.value,
+      userId: elegido.dataset.user,
+      team: elegido.dataset.team || '',
+      calendars: String(elegido.dataset.calendars || '').split(',').filter(Boolean)
+    };
+  }
+
+  root.querySelectorAll('input[name="ilau-admin"]').forEach(function (r) {
+    r.addEventListener('change', function () { root.dataset.team = r.dataset.team || ''; });
+  });
+
+  function emergencia() {
+    var e = root.querySelector('input[name="ilau-emergencia"]:checked');
+    return !!e && e.value === 'si';
+  }
+
+  function disponibilidad() {
+    var filas = [], errores = [];
+    DIAS.forEach(function (dia) {
+      var check = root.querySelector('[data-dia="' + dia + '"]');
+      if (!check || !check.checked) return;
+      var desde = val(root.querySelector('[data-desde="' + dia + '"]'));
+      var hasta = val(root.querySelector('[data-hasta="' + dia + '"]'));
+      if (!desde || !hasta) { errores.push('Indica entrada y salida del ' + ETIQUETA[dia].toLowerCase() + '.'); return; }
+      if (hasta <= desde) { errores.push('El ' + ETIQUETA[dia].toLowerCase() + ': la salida debe ser después de la entrada.'); return; }
+      filas.push({ dia: dia, dia_label: ETIQUETA[dia], desde: desde, hasta: hasta });
+    });
+    return { filas: filas, errores: errores };
+  }
+
+  // Clonar horario: toma el día de origen y lo replica en los destinos.
+  function clonar(destinos) {
+    var origen = document.getElementById('ilau-clone-src').value;
+    var desde = val(root.querySelector('[data-desde="' + origen + '"]'));
+    var hasta = val(root.querySelector('[data-hasta="' + origen + '"]'));
+    if (!desde || !hasta) return errar(root.querySelector('[data-desde="' + origen + '"]'), 'Primero pon el horario del ' + ETIQUETA[origen].toLowerCase() + ' que quieres copiar.');
+    limpiarErrores();
+    destinos.forEach(function (dia) {
+      if (dia === origen) return;
+      root.querySelector('[data-dia="' + dia + '"]').checked = true;
+      root.querySelector('[data-desde="' + dia + '"]').value = desde;
+      root.querySelector('[data-hasta="' + dia + '"]').value = hasta;
+    });
+    msg.textContent = 'Horario del ' + ETIQUETA[origen].toLowerCase() + ' copiado a ' + destinos.filter(function (d) { return d !== origen; }).length + ' día(s).';
+    msg.className = 'ilau-msg ok';
+  }
+
+  document.getElementById('ilau-clone-week').addEventListener('click', function () { clonar(LABORABLES); });
+  document.getElementById('ilau-clone-all').addEventListener('click', function () { clonar(DIAS); });
+  document.getElementById('ilau-clear-all').addEventListener('click', function () {
+    DIAS.forEach(function (dia) {
+      root.querySelector('[data-dia="' + dia + '"]').checked = false;
+      root.querySelector('[data-desde="' + dia + '"]').value = '';
+      root.querySelector('[data-hasta="' + dia + '"]').value = '';
+    });
+    msg.textContent = '';
+    msg.className = 'ilau-msg';
+  });
+
+  // ---------- resumen ----------
+  function pintarResumen() {
+    if (!resumen) return;
+    var a = admin(), disp = disponibilidad(), ps = pueblos();
+    var filas = [
+      ['Nombre', (val(nombre) + ' ' + val(apellido)).trim() || '—'],
+      ['Correo', val(email) || '—'],
+      ['Teléfono', val(telefono) || '—'],
+      ['Equipo', a ? (a.team ? 'Equipo de ' + a.team : a.clave) : '—'],
+      ['Cobertura', ps.length === PUEBLOS.length ? 'Toda la isla (' + ps.length + ' municipios)' : ps.length + ' municipio(s): ' + (ps.slice(0, 6).join(', ') || '—') + (ps.length > 6 ? '…' : '')],
+      ['Horario', disp.filas.length ? disp.filas.map(function (f) { return f.dia_label + ' ' + f.desde + '-' + f.hasta; }).join(' · ') : '—'],
+      ['Emergencias mismo día', emergencia() ? 'Sí' : 'No'],
+      ['Foto', root.dataset.photo ? 'Cargada' : 'Sin foto']
+    ];
+    resumen.innerHTML = filas.map(function (f) {
+      return '<p><b>' + f[0] + ':</b> ' + String(f[1]).replace(/[&<>]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]; }) + '</p>';
+    }).join('');
+  }
+
+  // ---------- payload ----------
+  // Texto plano con TODO el submit (incluidas las notas) para que el workflow
+  // pueda meterlo en un email interno o en una tarea sin re-mapear 10 campos.
+  function resumenTexto() {
+    var a = admin(), disp = disponibilidad(), ps = pueblos();
+    return [
+      'ALTA DE USUARIO — ILATEK PROPERTY SOLUTION',
+      'Nombre: ' + (val(nombre) + ' ' + val(apellido)).trim(),
+      'Correo: ' + val(email),
+      'Teléfono: ' + val(telefono),
+      'Equipo: ' + (a ? (a.team ? 'Equipo de ' + a.team : a.clave) : '—'),
+      'Cobertura: ' + (ps.length === PUEBLOS.length ? 'Toda la isla (78 municipios)' : (ps.join(', ') || '—')),
+      'Horario: ' + (disp.filas.map(function (f) { return f.dia_label + ' ' + f.desde + '-' + f.hasta; }).join(' | ') || '—'),
+      'Emergencias mismo día: ' + (emergencia() ? 'Sí' : 'No'),
+      'Notas: ' + (val(notas) || '—'),
+      'Foto: ' + (root.dataset.photo ? 'sí' : 'no')
+    ].join('\n');
+  }
+
+  function armarPayload() {
+    var a = admin(), disp = disponibilidad(), ps = pueblos();
+    var nom = val(nombre), ape = val(apellido), mail = val(email), tel = val(telefono);
+    return {
+      event: 'new_team_member',
+      source: 'Alta de usuario ILATEK',
+      operator: val(operador),
+      operator_name: operador && operador.options ? operador.options[operador.selectedIndex].text : '',
+      submitted_at: new Date().toISOString(),
+      page_url: location.href,
+      location_id: root.dataset.location || '8OxUENFVM60EKzqsTcoD',
+      firstName: nom,
+      lastName: ape,
+      full_name: (nom + ' ' + ape).trim(),
+      email: mail,
+      phone: tel,
+      contact: { firstName: nom, lastName: ape, email: mail, phone: tel },
+      role: 'user',
+      admin: a ? a.clave : '',
+      admin_user_id: a ? a.userId : '',
+      admin_team: a ? a.team : '',
+      admin_calendars: a ? a.calendars : [],
+      towns: ps,
+      towns_text: ps.join(', '),
+      coverage_all_island: ps.length === PUEBLOS.length,
+      availability: disp.filas,
+      availability_text: disp.filas.map(function (f) { return f.dia_label + ' ' + f.desde + '-' + f.hasta; }).join(' | '),
+      availability_json: JSON.stringify(disp.filas),
+      emergency_same_day: emergencia(),
+      emergency_same_day_text: emergencia() ? 'Sí' : 'No',
+      notes: val(notas),
+      summary_text: resumenTexto(),
+      photo_base64: root.dataset.photo || '',
+      photo_name: fotoInput.files && fotoInput.files[0] ? fotoInput.files[0].name : ''
+    };
+  }
+
+  function enviar(datos, intento) {
+    var n = intento || 0;
+    fetch(root.dataset.webhook, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'x-ilatek-token': window.ILATEK_ADMIN_TOKEN || '' },
+      body: JSON.stringify(datos),
+      keepalive: true
+    }).then(function (r) {
+      return r.json().catch(function () { return {}; }).then(function (j) { return { ok: r.ok, j: j || {} }; });
+    }).then(function (res) {
+      if (!res.ok && n < 2) return setTimeout(function () { enviar(datos, n + 1); }, 700 * (n + 1));
+      if (!res.ok) {
+        errar(null, res.j.message || 'No pudimos crear el usuario. Intenta de nuevo.');
+        enviarBtn.disabled = false;
+        return;
+      }
+      if (res.j.deduplicated) {
+        msg.textContent = res.j.message || 'Ese email ya se dio de alta hace unos minutos. Revisa el contacto antes de repetirlo.';
+        msg.className = 'ilau-msg ok';
+        enviarBtn.disabled = false;
+        window.dispatchEvent(new CustomEvent('ilatek:alta-usuario-enviada', { detail: { payload: datos, resultado: res.j } }));
+        return;
+      }
+      var extra = res.j.temporaryPassword ? ' Contraseña temporal: ' + res.j.temporaryPassword : '';
+      msg.textContent = 'Usuario creado' + (res.j.userId ? ' (' + res.j.userId + ')' : '') + '.' + extra;
+      msg.className = 'ilau-msg ok';
+      enviarBtn.disabled = false;
+      window.dispatchEvent(new CustomEvent('ilatek:alta-usuario-enviada', { detail: { payload: datos, resultado: res.j } }));
+    }).catch(function () {
+      if (n < 2) return setTimeout(function () { enviar(datos, n + 1); }, 700 * (n + 1));
+      errar(null, 'No pudimos crear el usuario. Revisa la conexión o el código interno.');
+      enviarBtn.disabled = false;
+    });
+  }
+
+  enviarBtn.addEventListener('click', function () {
+    if (!validarPaso(1) || !validarPaso(2) || !validarPaso(3) || !validarPaso(4)) return;
+    if (!window.ILATEK_ADMIN_TOKEN) {
+      errar(null, 'Entra al portal con la clave antes de crear usuarios.');
+      return;
+    }
+    if (!root.dataset.webhook) {
+      errar(null, 'Falta configurar la URL del alta (data-webhook). No se envió nada.');
+      return;
+    }
+    var datos = armarPayload();
+    msg.textContent = 'Enviando…';
+    msg.className = 'ilau-msg';
+    enviarBtn.disabled = true;
+    enviar(datos, 0);
+  });
+
+  pintarIniciales();
+  contar();
+  pintarPaso();
+
+  // Enganche de QA: inspeccionar el payload desde la consola sin enviar.
+  window.ILATEK_ALTA_USUARIO = { payload: armarPayload, admin: admin, disponibilidad: disponibilidad, pueblos: pueblos, clonar: clonar, ir: ir };
+})();
+</script>

@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Sellado De Techos Residencial
+Slug: sellado-de-techos-residencial
+URL: https://ilatekpr.com/sellado-de-techos-residencial
+Acción: REPUBLICAR
+Estado hoy: HTTP 200
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (245 KB, sha256 073f5fb12775)
+Origen en el repo: servicios/sellado-de-techos-residencial/es/landing-pages/ghl-sellado-de-techos-residencial-landing.html
+Sección de clima: sí
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

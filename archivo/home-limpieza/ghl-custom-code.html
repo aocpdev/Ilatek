@@ -85,7 +85,7 @@ body:has(#ilatek-nav) .mshero-inner{
    1) Titular de marca (Home) = UNA SOLA LÍNEA en cualquier ancho. El tamaño se
       deriva del ancho disponible, no de un valor fijo, así que encoge en el
       teléfono en vez de partirse en dos líneas.
-   2) Titulares de oración (héroes de categoría/servicio y la landing de reseñas)
+   2) Titulares de oración (héroes de categoría/servicio y la página de reseñas)
       = tamaño proporcional al ancho del dispositivo con piso legible de 24px.
       Nunca producen más líneas que el diseño actual, solo menos.
    3) Desde 1101px no se altera ningún tamaño: manda el diseño aprobado. Cada
@@ -113,7 +113,7 @@ body:has(#ilatek-nav) .mshero-inner{
   .ilt-hero h1,.ilc2-hero h1{
     font-size:clamp(24px,5vw,55px) !important;
   }
-  /* Las páginas de categoría usan .ilr-hero con 5vw. La landing de reseñas ya es
+  /* Las páginas de categoría usan .ilr-hero con 5vw. La página de reseñas ya es
      fluida por su cuenta (3.5vw sobre un piso de 32px, 8vw en el teléfono), así
      que se excluye: forzarla a 5vw le añadía una línea entre 700px y 1100px. */
   .ilr-hero h1:not(#ilatek-resenas-lp *){
@@ -129,6 +129,76 @@ body:has(#ilatek-nav) .mshero-inner{
     font-size:clamp(24px,4.6vw,50.6px) !important;
   }
 }
+
+/* ILATEK · Héroe canónico (referencia: /inspeccion-de-techos).
+   Solo presentación: la tarjeta de imagen se muestra en 16:9, como la
+   referencia, y los tres datos del héroe quedan en una sola fila bajo el CTA.
+   No cambia marcado, copy, enlaces ni el resto del diseño. */
+
+:is(.ilt-hero,.ilr-hero,.ilc2-hero,.ilsx-hero) :is(.ilt-hero-card,.ilr-hero-card,.ilc2-hero-card,.ilsx-hero-card){
+  height:auto!important;
+}
+
+:is(.ilt-hero,.ilr-hero,.ilc2-hero,.ilsx-hero) :is(.ilt-hero-card,.ilr-hero-card,.ilc2-hero-card,.ilsx-hero-card) img{
+  width:100%!important;
+  height:auto!important;
+  aspect-ratio:16/9;
+  object-fit:cover;
+}
+
+:is(.ilt-hero-facts,.ilr-hero-facts,.ilc2-hero-facts){
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:14px 22px;
+  align-items:start;
+}
+
+@media (max-width:700px){
+  :is(.ilt-hero-facts,.ilr-hero-facts,.ilc2-hero-facts){
+    grid-template-columns:1fr!important;
+    gap:14px;
+  }
+}
+
+/* Héroe canónico reutilizable: mismas piezas y orden que la referencia
+   (kicker → H1 → párrafo → CTA + enlace → 3 datos → tarjeta 16:9). */
+.ilh-hero{padding:clamp(96px,8vw,118px) 0 clamp(52px,6vw,80px);background:linear-gradient(180deg,#f2f5fa,#fff 82%)}
+.ilh-shell{width:min(100% - 48px,1210px);margin:0 auto}
+.ilh-hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+.ilh-hero-copy{min-width:0}
+.ilh-kicker{display:inline-flex;align-items:center;gap:8px;font:700 12.5px/1 Manrope,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#1f3a6e}
+.ilh-kicker::before{content:"";width:8px;height:8px;border-radius:50%;background:#00b94f;flex:0 0 auto}
+.ilh-hero h1{margin:18px 0 0;font-family:Outfit,Manrope,Arial,sans-serif;font-size:clamp(38px,4.7vw,70px);line-height:1.02;letter-spacing:-.03em;color:#11164b}
+.ilh-hero h1 em{font-style:normal;color:#009640}
+.ilh-sub{margin:22px 0 0;max-width:570px;color:#5b6273;font-size:17.5px;line-height:1.7}
+.ilh-sub b{color:#11164b}
+.ilh-actions{display:flex;align-items:center;gap:26px;margin-top:34px;flex-wrap:wrap}
+.ilh-btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:10px;background:#00b94f;color:#fff!important;font:800 14.5px/1.25 Manrope,Arial,sans-serif;letter-spacing:.02em;text-decoration:none;box-shadow:0 14px 30px rgba(0,185,79,.24)}
+.ilh-btn:hover,.ilh-btn:focus-visible{background:#009640}
+.ilh-link{font-weight:800;color:#1f3a6e;border-bottom:2px solid #00b94f;text-decoration:none}
+.ilh-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px 22px;margin:38px 0 0;padding:26px 0 0;border-top:1px solid #e3e7f0}
+.ilh-facts b{display:block;font-family:Outfit,Manrope,Arial,sans-serif;font-size:26px;font-weight:800;letter-spacing:-.03em;color:#11164b}
+.ilh-facts b i{color:#00b94f;font-style:normal}
+.ilh-facts span{display:block;margin-top:4px;color:#6a7180;font-size:12.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.ilh-card{position:relative;margin:0;border-radius:24px;overflow:hidden;box-shadow:0 30px 70px rgba(17,22,75,.18)}
+.ilh-card img,.ilh-card video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:24px}
+.ilh-badge{position:absolute;left:18px;bottom:18px;display:inline-flex;align-items:center;gap:8px;padding:9px 15px;border-radius:14px;background:rgba(13,18,70,.62);border:1px solid rgba(255,255,255,.28);color:#fff;font:800 12.5px/1 Manrope,Arial,sans-serif;letter-spacing:.04em}
+.ilh-badge i{width:8px;height:8px;border-radius:50%;background:#00b94f;font-style:normal}
+
+@media (max-width:1100px){
+  .ilh-hero h1{font-size:clamp(26px,5vw,55px)!important}
+}
+@media (max-width:900px){
+  .ilh-hero-grid{grid-template-columns:1fr;gap:36px}
+}
+@media (max-width:700px){
+  .ilh-facts{grid-template-columns:1fr;gap:14px}
+  .ilh-hero{padding-top:clamp(88px,14vw,104px)}
+}
+
+/* Guard móvil: el drawer del nav no debe crear scroll horizontal en páginas con héroe canónico. */
+html:has(.ilh-hero), html:has(.ilt-hero), html:has(.ilr-hero), html:has(.ilc2-hero),
+body:has(.ilh-hero), body:has(.ilt-hero), body:has(.ilr-hero), body:has(.ilc2-hero){overflow-x:clip}
 
 </style>
 <script>
@@ -175,11 +245,42 @@ body:has(#ilatek-nav) .mshero-inner{
     var root = base(value);
     return out.split('https://' + TOKEN).join(root).split('http://' + TOKEN).join(root).split(TOKEN).join(root);
   }
-  w.ILATEK_LINKS = { normalize: normalize, base: base, join: join, replace: replace };
+  // Language of the page decides the language of every shared menu/footer link:
+  // /en/... -> English twin, everything else -> Spanish. Two real slug changes
+  // exist today (home root and comunidades/communities).
+  var EN_SLUG = { comunidades: 'communities', 'politica-de-privacidad': 'politica', 'terminos-y-condiciones': 'terminos' };
+  var ES_SLUG = { communities: 'comunidades' };
+  function swapSlug(path, map) {
+    var parts = path.split('/'), i = parts.length - 1;
+    if (parts[i] && map[parts[i]]) parts[i] = map[parts[i]];
+    return parts.join('/') || '/';
+  }
+  function splitAnchor(value) {
+    var i = String(value || '').indexOf('#');
+    return i < 0 ? [String(value || ''), ''] : [value.slice(0, i) || '/', value.slice(i)];
+  }
+  function toEnglish(pathname) {
+    if (!pathname || pathname.charAt(0) !== '/') return pathname;
+    var parts = splitAnchor(pathname), path = parts[0].replace(/\/+$/, '') || '/';
+    if (/^\/en(?:\/|$)/.test(path)) return pathname;
+    path = swapSlug(path, EN_SLUG);
+    return (path === '/' ? '/en/home' : '/en' + path) + parts[1];
+  }
+  function toSpanish(pathname) {
+    if (!pathname || pathname.charAt(0) !== '/') return pathname;
+    var parts = splitAnchor(pathname), path = parts[0].replace(/\/+$/, '') || '/';
+    if (!/^\/en(?:\/|$)/.test(path)) return pathname;
+    path = path.replace(/^\/en(?=\/|$)/, '') || '/';
+    path = swapSlug(path, ES_SLUG);
+    if (path === '/home') path = '/';
+    return path + parts[1];
+  }
+  w.ILATEK_LINKS = { normalize: normalize, base: base, join: join, replace: replace, toEnglish: toEnglish, toSpanish: toSpanish };
   if (!w.document) return;
   var doc = w.document, queued = false;
   function refresh() {
     queued = false;
+    var isEn = /^\/en(?:\/|$)/.test(w.location.pathname);
     var nodes = doc.querySelectorAll('a[data-ilatek-path]');
     for (var i = 0; i < nodes.length; i++) {
       var a = nodes[i], root = a.closest('[data-website-url]');
@@ -192,7 +293,8 @@ body:has(#ilatek-nav) .mshero-inner{
       if (!normalize(value)) {
         try { value = new URL(a.getAttribute('href')).origin; } catch (e) {}
       }
-      var url = join(value, a.getAttribute('data-ilatek-path'));
+      var path = a.getAttribute('data-ilatek-path');
+      var url = join(value, isEn ? toEnglish(path) : toSpanish(path));
       if (a.getAttribute('href') !== url) a.setAttribute('href', url);
     }
   }
@@ -221,7 +323,7 @@ body:has(#ilatek-nav) .mshero-inner{
 (function(w){
   'use strict';
   if(w.ILATEK_GEO)return;
-  var token='{'+'{custom_values.county_name_and_state}'+'}',doc=w.document;
+  var token='{'+'{custom_values.business__county_name}'+'}',doc=w.document;
   function clean(v){v=String(v||'').replace(/\u00a0/g,' ').trim();return /\{\{|\}\}/.test(v)?'':v}
   function county(){
     var declared=doc.querySelectorAll('.dv-ghl-values,#dv-ghl-values'),nodes=declared.length?declared:doc.querySelectorAll('p'),values=[];
@@ -363,7 +465,7 @@ body:has(#ilatek-nav) .mshero-inner{
       </div>
     </section>
 
-    <section id="ilatek-servicio" class="il-service"><div class="il-shell"><header class="il-section-head il-reveal"><div><span class="il-eyebrow">Nuestro servicio</span><h2 class="il-display">Limpieza profunda para sentirte mejor en casa.</h2></div><p>Un servicio pensado para espacios que necesitan atención minuciosa. Trabajamos área por área para dejar tu hogar fresco, ordenado y renovado.</p></header><article class="il-service-card il-reveal"><div class="il-service-visual"><img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aac6cd7254a2c54081fa165.png" alt="En ILATEK no solo limpiamos: utilizamos productos ecológicos, no tóxicos para la salud, la familia y tus mascotas — servicio en {{custom_values.county_name_and_state}}" title="Productos ecológicos de Ilatek - Limpieza Profunda — servicio en {{custom_values.county_name_and_state}}" width="1145" height="1374" loading="lazy" data-ilatek-local-alt="En%20ILATEK%20no%20solo%20limpiamos%3A%20utilizamos%20productos%20ecol%C3%B3gicos%2C%20no%20t%C3%B3xicos%20para%20la%20salud%2C%20la%20familia%20y%20tus%20mascotas%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D" data-ilatek-local-title="Productos%20ecol%C3%B3gicos%20de%20Ilatek%20-%20Limpieza%20Profunda%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D"></div><div class="il-service-detail"><span class="il-service-number">01 · SERVICIO PRINCIPAL</span><h3 class="il-display">Limpieza Profunda</h3><p>Ideal para renovar tu hogar antes o después de una ocasión importante, cuando necesitas una limpieza más completa o simplemente quieres comenzar de nuevo con un espacio bien cuidado.</p><ul class="il-checks"><li><i>✓</i> Atención a los detalles de cada espacio</li><li><i>✓</i> Enfoque residencial personalizado</li><li><i>✓</i> Coordinación clara antes del servicio</li></ul><a class="il-button" href="https://{{custom_values.website_url}}/cotizacion" data-ilatek-path="/cotizacion"><span>Solicita una cotización</span><span aria-hidden="true">↗</span></a></div></article></div></section>
+    <section id="ilatek-servicio" class="il-service"><div class="il-shell"><header class="il-section-head il-reveal"><div><span class="il-eyebrow">Nuestro servicio</span><h2 class="il-display">Limpieza profunda para sentirte mejor en casa.</h2></div><p>Un servicio pensado para espacios que necesitan atención minuciosa. Trabajamos área por área para dejar tu hogar fresco, ordenado y renovado.</p></header><article class="il-service-card il-reveal"><div class="il-service-visual"><img src="https://raw.githubusercontent.com/aocpdev/Ilatek/main/assets/services-images/limpieza/Limpieza%20Profunda%20-%20Ilatek%20Property%20Solution%20-%201.jpg" alt="En ILATEK no solo limpiamos: utilizamos productos ecológicos, no tóxicos para la salud, la familia y tus mascotas — servicio en {{custom_values.county_name_and_state}} — servicio en {{custom_values.business__county_name}}" title="Productos ecológicos de Ilatek - Limpieza Profunda — servicio en {{custom_values.county_name_and_state}} — servicio en {{custom_values.business__county_name}}" width="1145" height="1374" loading="lazy" data-ilatek-local-alt="En%20ILATEK%20no%20solo%20limpiamos%3A%20utilizamos%20productos%20ecol%C3%B3gicos%2C%20no%20t%C3%B3xicos%20para%20la%20salud%2C%20la%20familia%20y%20tus%20mascotas%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D" data-ilatek-local-title="Productos%20ecol%C3%B3gicos%20de%20Ilatek%20-%20Limpieza%20Profunda%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D"></div><div class="il-service-detail"><span class="il-service-number">01 · SERVICIO PRINCIPAL</span><h3 class="il-display">Limpieza Profunda</h3><p>Ideal para renovar tu hogar antes o después de una ocasión importante, cuando necesitas una limpieza más completa o simplemente quieres comenzar de nuevo con un espacio bien cuidado.</p><ul class="il-checks"><li><i>✓</i> Atención a los detalles de cada espacio</li><li><i>✓</i> Enfoque residencial personalizado</li><li><i>✓</i> Coordinación clara antes del servicio</li></ul><a class="il-button" href="https://{{custom_values.website_url}}/cotizacion" data-ilatek-path="/cotizacion"><span>Solicita una cotización</span><span aria-hidden="true">↗</span></a></div></article></div></section>
 
     <section class="il-benefits"><div class="il-shell il-benefit-grid il-reveal"><article class="il-benefit"><i>✓</i><h3>Atención detallada</h3><p>Un proceso enfocado en las áreas que más importan para que tu hogar se sienta realmente renovado.</p></article><article class="il-benefit"><i>⌂</i><h3>Para tu hogar</h3><p>Servicio diseñado alrededor de las necesidades reales de espacios residenciales.</p></article><article class="il-benefit"><i>↗</i><h3>Proceso claro</h3><p>Desde tu solicitud hasta la coordinación del servicio, sabrás cuál es el próximo paso.</p></article></div></section>
 

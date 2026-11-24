@@ -62,7 +62,8 @@ const headSeo = [
     const url = 'https://{{custom_values.website_url}}/' + (p.slug === 'techos' ? 'home' : p.slug);
     const t = esc(p.metaTitle);
     const d = esc(p.metaDescription);
-    const im = esc(p.socialRaw || p.hero.raw);
+    // Imagen social dedicada: tarjeta 1200×630 generada por tools/build-social-cards.py.
+    const im = esc('https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/social/' + p.slug + '-1200.webp');
     return [
       '<!-- ▼▼ /' + p.slug + ' ▼▼ -->',
       '<title>' + t + '</title>',
@@ -75,10 +76,14 @@ const headSeo = [
       '<meta property="og:description" content="' + d + '">',
       '<meta property="og:url" content="' + url + '">',
       '<meta property="og:image" content="' + im + '">',
+      '<meta property="og:image:width" content="1200">',
+      '<meta property="og:image:height" content="630">',
+      '<meta property="og:image:alt" content="' + t + '">',
       '<meta name="twitter:card" content="summary_large_image">',
       '<meta name="twitter:title" content="' + t + '">',
       '<meta name="twitter:description" content="' + d + '">',
       '<meta name="twitter:image" content="' + im + '">',
+      '<meta name="twitter:image:alt" content="' + t + '">',
       '<meta name="geo.region" content="US-PR">',
       '<meta name="geo.placename" content="Puerto Rico">',
       '<!-- ▲▲ fin /' + p.slug + ' ▲▲ -->',

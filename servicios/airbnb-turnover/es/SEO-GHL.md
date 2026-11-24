@@ -16,13 +16,13 @@ Turnovers de Airbnb y alquileres a corto plazo en {{custom_values.business__coun
 
 ## Meta Tag Image
 
-[Imagen social — URL pública](https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/airbnb-turnover.jpg)
+[Imagen social — URL pública](https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/social/airbnb-turnover-1200.webp)
 
 ```text
-https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/airbnb-turnover.jpg
+https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/social/airbnb-turnover-1200.webp
 ```
 
-Copia local: [assets/meta-image.jpg](assets/meta-image.jpg). No usar una ruta local en GHL.
+Copia local: [assets/meta-image.webp](assets/meta-image.webp). No usar una ruta local en GHL.
 
 ## Canonical existente
 
@@ -45,7 +45,7 @@ Custom Value obligatorio: `{{custom_values.business__county_name}}`. Usar la eti
 ### Meta Tag Image Alt
 
 ```text
-Limpieza Airbnb y Rentals en {{custom_values.business__county_name}} | Ilatek
+Airbnb Turnover en {{custom_values.business__county_name}} guest-ready — Ilatek
 ```
 
 El HEAD incluye `og:image:alt` y `twitter:image:alt`. Los atributos `alt` y `title` descriptivos de las imágenes usan la misma localidad, conservando lo que representa cada imagen. Las imágenes decorativas mantienen `alt=""` por accesibilidad. Las URLs de medios no son texto SEO y se conservan.

@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Inspeccion y Mantenimiento De Techos (EN)
+Slug: en/inspeccion-y-mantenimiento-de-techos
+URL: https://ilatekpr.com/en/inspeccion-y-mantenimiento-de-techos
+Acción: CREAR PÁGINA
+Estado hoy: HTTP 404
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (248 KB, sha256 60be15dc770f)
+Origen en el repo: categorias/inspeccion-y-mantenimiento-de-techos/en/landing-pages/inspeccion-y-mantenimiento-de-techos.en.html
+Sección de clima: no
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

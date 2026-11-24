@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- naranjito.ilatekpr.com — landings de las comunidades de este municipio.
+     Generado por scripts/genera-pueblos.mjs; una URL por comunidad y servicio. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://naranjito.ilatekpr.com/achiote/limpieza</loc></url>
+  <url><loc>https://naranjito.ilatekpr.com/achiote/sellado-de-techo</loc></url>
+  <url><loc>https://naranjito.ilatekpr.com/barrio-pueblo-de-naranjito/limpieza</loc></url>
+  <url><loc>https://naranjito.ilatekpr.com/barrio-pueblo-de-naranjito/sellado-de-techo</loc></url>
+  <url><loc>https://naranjito.ilatekpr.com/candelario-torres/limpieza</loc></url>
+  <url><loc>https://naranjito.ilatekpr.com/candelario-torres/sellado-de-techo</loc></url>
+  <url><loc>https://naranjito.ilatekpr.com/jardines-de-naranjito/limpieza</loc></url>
+  <url><loc>https://naranjito.ilatekpr.com/jardines-de-naranjito/sellado-de-techo</loc></url>
+  <url><loc>https://naranjito.ilatekpr.com/lomas/limpieza</loc></url>
+  <url><loc>https://naranjito.ilatekpr.com/lomas/sellado-de-techo</loc></url>
+</urlset>

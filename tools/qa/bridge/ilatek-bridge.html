@@ -312,8 +312,13 @@
       if(settle()||++ticks>80){clearInterval(poll);poll=null}
     },250);
     if(window.MutationObserver){
-      var obs=new MutationObserver(function(){if(settle())obs.disconnect()});
-      obs.observe(root,{childList:true,subtree:true,characterData:true});
+      /* Sin disconnect y con atributos: GHL expande data-location-label y los
+         data-* de contacto DESPUÉS del parseo, sin tocar texto. Antes solo se
+         miraban childList/characterData, así que el value llegaba en el
+         siguiente tick de 250 ms (o nunca, si solo cambiaba el atributo).
+         settle() es idempotente por firma, así que re-entrar no cuesta. */
+      new MutationObserver(function(){settle()}).observe(root,{childList:true,subtree:true,characterData:true,
+        attributes:true,attributeFilter:['data-location-label','data-primary-location','data-website-url','data-business-email','data-business-phone','data-facebook-url','data-instagram-url']});
     }
   }
 

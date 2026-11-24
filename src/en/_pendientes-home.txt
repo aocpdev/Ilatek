@@ -1,0 +1,327 @@
+/og:title/ og:description ("… en Juncos, Puerto Rico"): el título sale de {{custom_values.business__county_name}}, así que es el mismo custom value, sin depender de que el builder expanda el Custom Code; 3. el subdominio del sitio (juncos.ilatekpr.com → Juncos); 4. los valores de marca del contrato (custom-values.json → brand). El portador que viaja en el embed se oculta siempre (nunca es contenido). Estado en
+{{custom_values.business__county_name}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}
+Login
+Ilatek Property Solution
+El video no está disponible en este momento.
+Verlo en YouTube
+Todos los servicios de techos en {{custom_values.county_name_and_state}}.
+Ilatek Techos repara, sella e impermeabiliza techos en toda la isla. Elige una categoría y entra directo al servicio que necesitas en {{custom_values.county_name_and_state}}.
+Lo más solicitado
+Mantenimiento y tratamiento
+El servicio que más piden en {{custom_values.county_name_and_state}}: inspección, limpieza y tratamiento preventivo para que tu techo dure y no vuelva a gotear.
+Agenda con $50 descontables del total
+Moho y oxidación
+Plan desde $58/mes
+Informe con fotos
+Inspección de techos
+Limpieza de techos
+Canaletas y bajantes
+Lavado a presión
+Tragaluces
+Instalación y reemplazo
+Ver servicio
+Reparación
+Goteras, filtraciones, grietas, empozamientos, oxidación y reparación post-huracán con garantía escrita.
+Goteras desde $250
+Grietas y empozamientos
+Post-huracán
+Garantía escrita
+Reparación de goteras
+Reparación de filtraciones
+Reparación de grietas
+Empozamientos de agua
+Reparación post-huracán
+Ver categoría
+Sellado
+Silicona 100%, membrana asfáltica, elastomérico, poliuretano y acrílico: el sistema correcto para cada superficie.
+Silicona y poliuretano
+Membrana y elastomérico
+Desde $250
+Sellado con silicona 100%
+Membrana asfáltica
+Recubrimiento elastomérico
+Sellado de poliuretano
+Sellado acrílico
+Impermeabilización y Tipos de Techo
+Concreto, techos planos, zinc, asfalto, teja y madera, cada uno impermeabilizado con el sistema que le corresponde.
+Concreto, zinc y teja
+Techos planos
+Sistema por tipo
+Techos de concreto
+Techos de zinc
+Techos de asfalto
+Techos de teja
+Techos de madera
+Por segmento
+Soluciones para propiedades residenciales, comerciales e industriales, con logística adaptada a cada espacio.
+Residencial y comercial
+Industrial
+Sin cerrar tu operación
+Sellado residencial
+Sellado comercial
+Sellado industrial
+Inspección
+Agenda con $50 descontables del total, planes desde $58/mes, despeje de techos, canaletas y lavado a presión programado.
+Limpieza y canaletas
+Mantenimiento preventivo
+Haz clic en una tarjeta lateral para traerla al frente, usa las flechas o desliza
+Tu propiedad
+impecable
+para el próximo huésped.
+Turnos coordinados con tu calendario de reservas: limpieza completa, reposición de amenities y checklist entre check-out y check-in, para mantener tus reseñas de superhost.
+Servicios de Limpieza en {{custom_values.county_name_and_state}}
+Limpieza Residencial en {{custom_values.county_name_and_state}}
+Solicitar Limpieza Residencial
+Limpieza Comercial en {{custom_values.county_name_and_state}}
+Solicitar Limpieza Comercial
+Limpieza Industrial en {{custom_values.county_name_and_state}}
+Solicitar Limpieza Industrial
+Cotiza tus techos o limpieza en
+tres pasos
+Nuestro formulario de cotización te da un
+precio real en minutos
+, sin llamadas ni esperas. Son tres pasos:
+Dinos qué necesita tu propiedad: reparación o sellado de techo, impermeabilización o limpieza residencial, comercial o industrial.
+Selecciona tu servicio de techos o limpieza y agrega extras como ventanas, alfombras o electrodomésticos. Verás tu precio total al instante.
+Confirma tu cotización, asegura tu cita con el depósito de $50 y elige en el calendario el día que mejor te convenga.
+Los servicios que tu propiedad necesita,
+todos con precio claro
+Los 10 servicios de limpieza más solicitados en {{custom_values.county_name_and_state}}, disponibles en los 78 municipios de Puerto Rico. Cotiza el tuyo en minutos.
+Cobertura local
+Techos y limpieza,
+cobertura en toda la isla
+Explora los servicios de
+techos y limpieza
+Ilatek
+disponibles en los
+78 municipios de Puerto Rico
+y visita la página de tu pueblo. Atendemos propiedades en
+{{custom_values.county_name_and_state}}
+y toda la isla.
+Página 1 de 1
+Ver todas las reseñas de Ilatek
+Todo lo que necesitas saber antes de tu servicio.
+Respuestas claras sobre
+techos
+limpieza
+, precios, cobertura y reservas de Ilatek en {{custom_values.county_name_and_state}}.
+Ilatek cubre todo el ciclo de vida de tu techo:
+reparación de techos
+(goteras, filtraciones, grietas y empozamientos),
+sellado de techos
+con el sistema correcto para cada superficie,
+impermeabilización
+inspección y mantenimiento preventivo
+. También trabajamos por tipo de propiedad en
+techos por segmento
+(residencial, comercial e industrial).
+Por el clima tropical de {{custom_values.county_name_and_state}} —sol, sal, lluvia y huracanes— recomendamos una
+inspección al menos una vez al año
+y mantenimiento preventivo programado. Con el plan de
+inspección y mantenimiento de techos
+(desde $58 al mes) revisamos sellos, canaletas y cubiertas antes de que un detalle menor se convierta en una filtración.
+visita o inspección cuesta $50, descontables del total
+en {{custom_values.county_name_and_state}} y toda la isla. Agenda directamente en el
+calendario de techos
+o solicita tu
+cotización de techos
+y te orientamos exactamente lo que tu techo necesita.
+Depende de la superficie y el daño:
+silicona 100%
+para elasticidad extrema,
+membrana asfáltica
+para refuerzo en zonas críticas,
+recubrimiento elastomérico
+para reflectividad y
+sellado acrílico
+como opción económica. En
+te explicamos las opciones con precio claro; agenda una visita o una inspección por $50 descontables del total del servicio y define el sistema correcto.
+En Ilatek el precio se calcula por trabajo: la
+limpieza estándar
+limpieza profunda
+se cotizan desde $250 según el tamaño y la condición de tu espacio, con el precio por escrito antes del servicio. Los extras (ventanas, refrigerador, alfombras) se suman con precio fijo. Con nuestro cotizador online ves el
+, sin llamadas ni estimados al azar.
+mantiene tu hogar fresco y ordenado con atención a cada espacio; es ideal de forma recurrente. La
+renueva el hogar área por área, ideal antes o después de una ocasión importante. Ambas son servicios personalizados: compartes el tamaño de tu propiedad y coordinamos el alcance antes del servicio.
+Sí. Ilatek atiende propiedades en los
+, incluyendo {{custom_values.county_name_and_state}} y toda la isla — tanto
+como
+. Cada servicio se coordina según las necesidades de tu espacio. Visita la página de tu pueblo en el directorio de cobertura o solicita tu cotización para confirmar disponibilidad en tu zona.
+Con nuestro
+cotizador online
+en 4 pasos: indicas el tamaño del espacio, eliges el tipo de limpieza, agregas servicios y extras, y ves el
+precio total y la duración estimada
+al momento. Para techos, solicita tu
+con agenda con $50 descontables del total del servicio.
+Atendemos de
+lunes a sábado, de 8:00 a.m. a 6:00 p.m.
+Al completar tu cotización eliges directamente la fecha y hora en el calendario de reserva, según la disponibilidad real del equipo. La reserva de limpieza se asegura con un
+depósito de $50
+que se descuenta del valor total del servicio. Para techos, agenda tu agenda con $50 descontables del total en el
+Porque un solo equipo se encarga de tu propiedad de arriba abajo:
+mantenimiento de techos
+(reparación, sellado e impermeabilización) y
+limpieza profesional
+residencial, comercial e industrial. Combinamos precios transparentes por servicio, cotizador online con precio real inmediato, cobertura en los 78 municipios y coordinación clara antes de cada servicio.
+Conócenos
+Más que una empresa: una razón para servir.
+Conoce quiénes somos, en qué creemos y el propósito que guía cada servicio de Ilatek en {{custom_values.county_name_and_state}}.
+Conoce a los Fundadores
+El ADN de Ilatek
+Propósito
+Luis A. Cardec
+Fundador
+Aida Cintron
+Fundadora
+Cuando cuidamos un espacio,
+cuidamos una vida
+Luis A. Cardec y Aida Cintron fundaron Ilatek con una convicción sencilla y poderosa: detrás de cada puerta hay una historia que merece ser protegida. Un hogar guarda familia y recuerdos; una propiedad representa años de esfuerzo; un negocio sostiene sueños. Por eso Ilatek no nació para "limpiar espacios", sino para
+devolver tranquilidad
+: servir a cada cliente con el mismo respeto y compromiso con el que cuidarían lo propio. Cada servicio es una promesa — dejar cada espacio mejor de como lo encontraron y a cada persona más tranquila después de confiar en ellos. Porque cuando servimos con propósito, no solo transformamos propiedades:
+transformamos vidas
+El ADN de ILATEK Property Solutions
+Nuestra creencia fundamental:
+cada espacio refleja una parte de la vida de quienes lo habitan. Un hogar protege una familia. Un negocio sostiene sueños. Una propiedad representa años de esfuerzo, recuerdos y esperanza.
+Por eso, cuando una persona nos entrega las llaves de su hogar, de su negocio o de su propiedad, no solo nos está contratando para realizar un servicio.
+Nos está confiando una parte de su vida.
+Esa confianza es un privilegio y una responsabilidad que honramos en cada decisión, en cada detalle y en cada acción.
+No somos simplemente una empresa de limpieza y mantenimiento.
+Somos custodios de la tranquilidad de nuestros clientes.
+Nuestro trabajo consiste en proteger aquello que les permite vivir con paz: sus espacios, su patrimonio y la confianza de saber que están siendo cuidados con excelencia, respeto y responsabilidad.
+Servir es un acto noble
+Creemos que servir es uno de los actos más nobles que puede realizar una persona. Servir es aliviar cargas. Es prevenir problemas antes de que ocurran. Es devolver tiempo a las familias. Es preservar el valor de una propiedad. Es tratar cada espacio con el mismo cuidado con el que trataríamos el nuestro.
+Inspirados por la naturaleza, entendemos que ningún bosque prospera por la fuerza de un solo árbol: su equilibrio nace de la cooperación entre todos sus elementos. De la misma manera, creemos que una comunidad florece cuando las personas se sirven unas a otras con respeto, integridad y generosidad.
+Construimos confianza. Construimos comunidad. Construimos bienestar.
+Por eso, en ILATEK buscamos construir mucho más que relaciones comerciales. Cada colaborador forma parte de un propósito que trasciende una tarea específica: su trabajo contribuye a que una familia descanse con tranquilidad, a que un adulto mayor viva con mayor seguridad, a que un negocio funcione mejor y a que una comunidad sea más fuerte.
+Nuestro compromiso no termina cuando finaliza un servicio. Nuestro compromiso es
+dejar cada espacio mejor de como lo encontramos
+y procurar que cada persona se sienta más tranquila después de haber confiado en nosotros.
+Cuando servimos con propósito, no solo transformamos propiedades.
+Transformamos vidas.
+Propósito de ILATEK Property Solutions
+En ILATEK Property Solutions existimos para
+cuidar y proteger los espacios donde las personas construyen su vida
+Creemos que un hogar, una propiedad o un negocio representan mucho más que una estructura física. Son lugares donde nacen familias, se construyen sueños, se preservan recuerdos, se levantan proyectos y se encuentra refugio en los momentos más importantes de la vida.
+Por eso, nuestro trabajo nunca ha sido simplemente limpiar, mantener o reparar propiedades. Nuestra verdadera misión es
+devolver tranquilidad, generar confianza
+y brindar la paz de saber que aquello que más valoran está siendo cuidado con el mismo respeto y compromiso con el que nosotros cuidaríamos lo nuestro.
+Nuestros principios
+Servimos con
+excelencia
+porque entendemos que detrás de cada puerta existe una historia que merece ser protegida.
+Actuamos con
+responsabilidad
+porque sabemos que la confianza de un cliente es un privilegio, no un derecho.
+Trabajamos con
+empatía
+porque reconocemos que cada persona vive circunstancias distintas y merece ser tratada con dignidad, honestidad y respeto.
+Al mismo tiempo, creemos que quienes forman parte de ILATEK no solo realizan un trabajo: contribuyen a mejorar la calidad de vida de otras personas. Cada servicio representa una oportunidad para generar bienestar, prevenir problemas, proteger el patrimonio de una familia y fortalecer la confianza de nuestra comunidad.
+Inspirados por la naturaleza
+Inspirados por la naturaleza, entendemos que un bosque prospera cuando cada elemento cumple su función para beneficio del conjunto. Esa misma filosofía guía nuestra empresa: cuando cada colaborador sirve con integridad, cada cliente recibe tranquilidad y toda la comunidad crece.
+Porque creemos que cuando cuidamos un espacio con respeto, también cuidamos la vida de quienes lo habitan.
+Y cuando servimos con propósito, no solo transformamos propiedades.
+¿Listo para tu próximo servicio?
+Agenda techos o limpieza en minutos. Visita o inspección de techos por $50 descontables, cotización clara y calendario abierto en {{custom_values.county_name_and_state}}.
+78 municipios de Puerto Rico. Pagos seguros desde el calendario. Garantía por escrito
+Devasks
+Navegación de Ilatek
+Ilatek, inicio
+Logo de Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Logo%20de%20Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Navegación principal
+Idioma / Language
+Español
+English
+Abrir o cerrar el menú
+Equipo de Ilatek Property Solution: técnicos de techos y profesionales de limpieza frente a las camionetas de Ilatek — servicio en {{custom_values.county_name_and_state}} — servicio en {{custom_values.business__county_name}}
+Ilatek Property Solution — servicio en {{custom_values.county_name_and_state}} — servicio en {{custom_values.business__county_name}}
+Equipo%20de%20Ilatek%20Property%20Solution%3A%20t%C3%A9cnicos%20de%20techos%20y%20profesionales%20de%20limpieza%20frente%20a%20las%20camionetas%20de%20Ilatek%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ilatek%20Property%20Solution%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ilatek%20Property%20Solution%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D
+Reproducir el video de Ilatek Property Solution
+Categorías de techos de Ilatek
+Mantenimiento y tratamiento de Ilatek Techos en {{custom_values.county_name_and_state}} — servicio en {{custom_values.business__county_name}}
+Mantenimiento y tratamiento · Ilatek Techos — servicio en {{custom_values.county_name_and_state}} — servicio en {{custom_values.business__county_name}}
+Mantenimiento%20y%20tratamiento%20de%20Ilatek%20Techos%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Mantenimiento%20y%20tratamiento%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Reparación de Techos de Ilatek Techos en {{custom_values.county_name_and_state}} — servicio en {{custom_values.business__county_name}}
+Reparación de Techos · Ilatek Techos — servicio en {{custom_values.county_name_and_state}} — servicio en {{custom_values.business__county_name}}
+Reparaci%C3%B3n%20de%20Techos%20de%20Ilatek%20Techos%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Reparaci%C3%B3n%20de%20Techos%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Sellado de Techos de Ilatek Techos en {{custom_values.county_name_and_state}} — servicio en {{custom_values.business__county_name}}
+Sellado de Techos · Ilatek Techos — servicio en {{custom_values.county_name_and_state}} — servicio en {{custom_values.business__county_name}}
+Sellado%20de%20Techos%20de%20Ilatek%20Techos%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Sellado%20de%20Techos%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Impermeabilización y Tipos de Techo de Ilatek Techos en {{custom_values.county_name_and_state}} — servicio en {{custom_values.business__county_name}}
+Impermeabilización y Tipos de Techo · Ilatek Techos — servicio en {{custom_values.county_name_and_state}} — servicio en {{custom_values.business__county_name}}
+Impermeabilizaci%C3%B3n%20y%20Tipos%20de%20Techo%20de%20Ilatek%20Techos%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Impermeabilizaci%C3%B3n%20y%20Tipos%20de%20Techo%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Techos por Segmento de Ilatek Techos en {{custom_values.county_name_and_state}} — servicio en {{custom_values.business__county_name}}
+Techos por Segmento · Ilatek Techos — servicio en {{custom_values.county_name_and_state}} — servicio en {{custom_values.business__county_name}}
+Techos%20por%20Segmento%20de%20Ilatek%20Techos%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Techos%20por%20Segmento%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Inspección y Mantenimiento de Ilatek Techos en {{custom_values.county_name_and_state}} — servicio en {{custom_values.business__county_name}}
+Inspección y Mantenimiento · Ilatek Techos — servicio en {{custom_values.county_name_and_state}} — servicio en {{custom_values.business__county_name}}
+Inspecci%C3%B3n%20y%20Mantenimiento%20de%20Ilatek%20Techos%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Inspecci%C3%B3n%20y%20Mantenimiento%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ver Mantenimiento y tratamiento
+Ver Reparación de Techos
+Ver Sellado de Techos
+Ver Impermeabilización y Tipos de Techo
+Ver Techos por Segmento
+Ver Inspección y Mantenimiento
+Limpieza residencial de Ilatek — servicio de limpieza de casas y apartamentos en {{custom_values.county_name_and_state}} — servicio en {{custom_values.business__county_name}}
+Limpieza Residencial en {{custom_values.county_name_and_state}} · Ilatek — servicio en {{custom_values.business__county_name}}
+Limpieza%20residencial%20de%20Ilatek%20%E2%80%94%20servicio%20de%20limpieza%20de%20casas%20y%20apartamentos%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Limpieza%20Residencial%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D%20%C2%B7%20Ilatek%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Limpieza comercial de Ilatek — limpieza de oficinas, tiendas y negocios en {{custom_values.county_name_and_state}} — servicio en {{custom_values.business__county_name}}
+Limpieza Comercial en {{custom_values.county_name_and_state}} · Ilatek — servicio en {{custom_values.business__county_name}}
+Limpieza%20comercial%20de%20Ilatek%20%E2%80%94%20limpieza%20de%20oficinas%2C%20tiendas%20y%20negocios%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Limpieza%20Comercial%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D%20%C2%B7%20Ilatek%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Limpieza industrial de Ilatek — limpieza de almacenes e instalaciones en {{custom_values.county_name_and_state}} — servicio en {{custom_values.business__county_name}}
+Limpieza Industrial en {{custom_values.county_name_and_state}} · Ilatek — servicio en {{custom_values.business__county_name}}
+Limpieza%20industrial%20de%20Ilatek%20%E2%80%94%20limpieza%20de%20almacenes%20e%20instalaciones%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Limpieza%20Industrial%20en%20%7B%7Bcustom_values.county_name_and_state%7D%7D%20%C2%B7%20Ilatek%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Video: equipo de Ilatek limpiando propiedades en {{custom_values.county_name_and_state}}
+Carrusel de servicios de limpieza de Ilatek
+Cobertura de Ilatek en Puerto Rico — techos y limpieza
+Buscar un municipio de Puerto Rico
+Limpiar búsqueda
+Municipios de Puerto Rico con servicio de Ilatek
+Unidad de temperatura
+Gráfico de temperatura y probabilidad de lluvia por hora
+Pronóstico por día
+Secciones de Conócenos
+Facebook de Luis A. Cardec, fundador de Ilatek
+Luis A. Cardec, fundador de Ilatek — empresa de limpieza en {{custom_values.business__county_name}}, Puerto Rico
+Luis A. Cardec · Fundador de Ilatek — servicio en {{custom_values.business__county_name}}
+Luis%20A.%20Cardec%2C%20fundador%20de%20Ilatek%20%E2%80%94%20empresa%20de%20limpieza%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%2C%20Puerto%20Rico
+Luis%20A.%20Cardec%20%C2%B7%20Fundador%20de%20Ilatek%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Facebook de Aida Cintron, fundadora de Ilatek
+Aida Cintron, fundadora de Ilatek — limpieza residencial en {{custom_values.business__county_name}}, Puerto Rico
+Aida Cintron · Fundadora de Ilatek — servicio en {{custom_values.business__county_name}}
+Aida%20Cintron%2C%20fundadora%20de%20Ilatek%20%E2%80%94%20limpieza%20residencial%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%2C%20Puerto%20Rico
+Aida%20Cintron%20%C2%B7%20Fundadora%20de%20Ilatek%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Pie de página de Ilatek
+Facebook
+Facebook — servicio en {{custom_values.business__county_name}}
+Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Instagram
+Instagram — servicio en {{custom_values.business__county_name}}
+Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Youtube
+Youtube — servicio en {{custom_values.business__county_name}}
+Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+TikTok
+TikTok — servicio en {{custom_values.business__county_name}}
+TikTok%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+X — servicio en {{custom_values.business__county_name}}
+X%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+LinkedIn
+LinkedIn — servicio en {{custom_values.business__county_name}}
+LinkedIn%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Pinterest
+Pinterest — servicio en {{custom_values.business__county_name}}
+Pinterest%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D

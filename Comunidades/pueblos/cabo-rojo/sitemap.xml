@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- cabo-rojo.ilatekpr.com — landings de las comunidades de este municipio.
+     Generado por scripts/genera-pueblos.mjs; una URL por comunidad y servicio. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://cabo-rojo.ilatekpr.com/combate-del-mar/limpieza</loc></url>
+  <url><loc>https://cabo-rojo.ilatekpr.com/combate-del-mar/sellado-de-techo</loc></url>
+  <url><loc>https://cabo-rojo.ilatekpr.com/golf-y-playa/limpieza</loc></url>
+  <url><loc>https://cabo-rojo.ilatekpr.com/golf-y-playa/sellado-de-techo</loc></url>
+  <url><loc>https://cabo-rojo.ilatekpr.com/paraiso-de-boqueron/limpieza</loc></url>
+  <url><loc>https://cabo-rojo.ilatekpr.com/paraiso-de-boqueron/sellado-de-techo</loc></url>
+  <url><loc>https://cabo-rojo.ilatekpr.com/santa-rita-de-casia/limpieza</loc></url>
+  <url><loc>https://cabo-rojo.ilatekpr.com/santa-rita-de-casia/sellado-de-techo</loc></url>
+  <url><loc>https://cabo-rojo.ilatekpr.com/veredas-del-mar/limpieza</loc></url>
+  <url><loc>https://cabo-rojo.ilatekpr.com/veredas-del-mar/sellado-de-techo</loc></url>
+  <url><loc>https://cabo-rojo.ilatekpr.com/villa-taina/limpieza</loc></url>
+  <url><loc>https://cabo-rojo.ilatekpr.com/villa-taina/sellado-de-techo</loc></url>
+</urlset>

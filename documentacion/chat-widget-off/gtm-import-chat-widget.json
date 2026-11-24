@@ -1,0 +1,53 @@
+{
+  "exportFormatVersion": 2,
+  "exportTime": "2026-11-05 21:24:18",
+  "containerVersion": {
+    "path": "accounts/6399284064/containers/283178201/versions/0",
+    "accountId": "6399284064",
+    "containerId": "283178201",
+    "containerVersionId": "0",
+    "container": {
+      "path": "accounts/6399284064/containers/283178201",
+      "accountId": "6399284064",
+      "containerId": "283178201",
+      "name": "ilatekpr.com",
+      "publicId": "GTM-PQMR2TDB",
+      "usageContext": [
+        "WEB"
+      ],
+      "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6399284064/containers/283178201/workspaces"
+    },
+    "tag": [
+      {
+        "accountId": "6399284064",
+        "containerId": "283178201",
+        "tagId": "1",
+        "name": "Chat widget Ilatek (LeadConnector)",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<div data-chat-widget data-widget-id=\"6aed360c3c83530a427c6eb9\" data-location-id=\"8OxUENFVM60EKzqsTcoD\"></div>\n<script src=\"https://widgets.leadconnectorhq.com/loader.js\" data-resources-url=\"https://widgets.leadconnectorhq.com/chat-widget/loader.js\" data-widget-id=\"6aed360c3c83530a427c6eb9\"></script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "firingTriggerId": [
+          "2147479553"
+        ],
+        "tagFiringOption": "oncePerPage",
+        "monitoringMetadata": {
+          "type": "MAP"
+        },
+        "consentSettings": {
+          "consentStatus": "NOT_SET"
+        }
+      }
+    ],
+    "builtInVariable": []
+  }
+}

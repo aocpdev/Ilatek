@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Techos Planos
+Slug: techos-planos
+URL: https://ilatekpr.com/techos-planos
+Acción: REPUBLICAR
+Estado hoy: HTTP 200
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (242 KB, sha256 c3de0214a3ea)
+Origen en el repo: servicios/techos-planos/es/landing-pages/ghl-techos-planos-landing.html
+Sección de clima: sí
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

@@ -1,0 +1,159 @@
+/og:title/ og:description ("… en Juncos, Puerto Rico"): el título sale de {{custom_values.business__county_name}}, así que es el mismo custom value, sin depender de que el builder expanda el Custom Code; 3. el subdominio del sitio (juncos.ilatekpr.com → Juncos); 4. los valores de marca del contrato (custom-values.json → brand). El portador que viaja en el embed se oculta siempre (nunca es contenido). Estado en
+{{custom_values.business__county_name}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}
+Login
+Limpieza de techos
+Limpieza de Techos y Canaletas en
+Puerto Rico
+desde $250.
+Hojas, arena y escombros tapan tu techo y obstruyen el drenaje, causando empozamientos y filtraciones. Ilatek limpia techos y canaletas en {{custom_values.business__county_name}}, con agenda con $50 descontables del total y garantía escrita.
+Solicita tu cotización
+Qué incluye el servicio ↓
+por servicio
+Limpieza completa
+municipios
+Cobertura en PR
+al agendar
+Se descuenta del total
+Desde $250
+undefined
+El drenaje despejado es la primera defensa del techo.
+Drenaje despejado
+Al remover la obstrucción, el agua corre y deja de empozarse sobre tu techo, cortando la causa de filtraciones.
+Menos peso y daño
+La suciedad acumulada pesa y retiene humedad: limpiarla protege la superficie y la estructura.
+Preparación para sellar
+Un techo limpio es la base para cualquier sellado o impermeabilización que necesites después.
+Qué incluye
+Qué incluye la limpieza de tu techo.
+Un techo limpio drena y dura más.
+Ilatek remueve hojas, arena, escombros y residuos de la superficie, despeja canaletas y bajantes, y verifica que el agua corra libremente hacia las salidas.
+Remoción de hojas y escombros
+Barrido y limpieza de la superficie
+Despeje de canaletas y bajantes
+Revisión de desagües del techo
+Retiro de residuos del área
+Informe del estado del techo
+Cotiza tu limpieza
+Hojas fuera · Agua corriendo
+Cuándo hacerlo
+Momentos para limpiar tu techo.
+Temporada
+Antes de las lluvias
+Limpiar el techo antes de la temporada de lluvias deja el drenaje listo para la lluvia intensa.
+Árboles
+Si hay árboles cerca
+Las hojas caen en el techo y las canaletas: conviene limpiarlas con más frecuencia.
+Señal
+Si el agua se empoza
+Si notas agua estancada o el techo se ve sucio, es momento de limpiar y revisar el drenaje.
+Cómo funciona
+Cómo limpiamos tu techo y canaletas.
+Removemos hojas, arena y escombros, despejamos canaletas y bajantes y verificamos que el agua corra libre.
+PASO 1
+Cotiza tu limpieza de techos y canaletas
+Usa el cotizador de Ilatek o escríbenos: evaluamos tu techo y te damos el precio de limpieza de techos y canaletas por escrito en minutos — sin compromiso.
+PASO 2
+Inspección y agenda
+Confirmamos el alcance de limpieza de techos y canaletas con una inspección del techo, defines la fecha y reservas con el depósito de $50, que se descuenta del total.
+PASO 3
+Trabajo terminado
+Ejecutamos limpieza de techos y canaletas con materiales certificados, protegemos el área y te entregamos la garantía por escrito.
+Cobertura de
+limpieza de techos
+en toda la isla.
+Ilatek Techos brinda limpieza de techos y canaletas en los
+78 municipios de Puerto Rico
+. Atendemos tu área en
+{{custom_values.business__county_name}}
+y toda la isla: busca tu pueblo en el directorio y visita su página.
+No encontramos ese pueblo. Verifica el nombre e intenta nuevamente.
+Página 1 de 1
+Reseñas de clientes de Ilatek.
+Reseñas de personas que confiaron en Ilatek para mantenimiento y sellado de techos en Puerto Rico. Cambia de pestaña para ver cada fuente.
+Preguntas frecuentes
+Preguntas frecuentes sobre limpieza de techos y canaletas.
+¿Cuánto cuesta limpiar un techo y las canaletas?
+La limpieza de techos y canaletas de Ilatek
+comienza desde $250
+. El precio depende del tamaño del techo y del grado de acumulación. Cotiza para tu número exacto.
+¿Cada cuánto debo limpiar el techo y las canaletas?
+Recomendamos limpiar el techo
+al menos dos veces al año
+, y siempre tras la temporada de lluvias o una tormenta. Con árboles cerca, puede requerir más frecuencia.
+¿Por qué es importante limpiar las canaletas?
+Porque las canaletas tapadas
+rebosan y mandan el agua al techo o a la pared
+, causando empozamientos, filtraciones y daño a la fachada.
+¿La limpieza del techo incluye retirar los escombros?
+removemos toda la suciedad y los residuos
+del techo y los retiramos, dejando el área limpia. No dejamos los desechos en tu patio.
+¿La limpieza puede dañar el techo?
+No: usamos
+herramientas y métodos adecuados a cada superficie
+. En tejas o materiales delicados trabajamos con especial cuidado.
+¿Ofrecen solo limpieza de canaletas?
+Sí, también ofrecemos
+limpieza específica de canaletas y bajantes
+como servicio aparte, si es lo único que tu techo necesita.
+¿Cuánto tarda la limpieza del techo?
+Un techo residencial típico se limpia en
+unas pocas horas
+; los techos grandes o muy obstruidos pueden requerir el día completo.
+¿Por qué elegir Ilatek Techos para limpiar tu techo?
+Despejamos el drenaje que causa empozamientos y filtraciones en el techo, retiramos los residuos y te informamos el estado de la superficie — desde $250, con agenda con $50 descontables del total.
+Visita o inspección por $50
+Protege tu techo antes de la próxima lluvia.
+Solicita tu cotización por $50 descontables del total de limpieza de techos y canaletas en {{custom_values.business__county_name}} y recibe precio claro y por escrito — cotización por $50 descontables del total y cobertura en los 78 municipios de Puerto Rico.
+Solicita tu cotización por $50 descontables del total
+Respuesta en minutos · Sin compromiso
+Precio claro por escrito
+desde $250, confirmado después de la inspección.
+Inspección sin compromiso
+Subimos, diagnosticamos y te explicamos las opciones.
+Garantía de mano de obra
+Respaldada por escrito en cada trabajo que hacemos.
+Devasks
+Navegación de Ilatek
+Ilatek, inicio
+Logo de Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Logo%20de%20Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Navegación principal
+Idioma / Language
+Español
+English
+Abrir o cerrar el menú
+Ilatek Limpieza de techos {{custom_values.business__county_name}}
+Limpieza de techos y canaletas — {{custom_values.business__county_name}}
+Limpieza de techos y canaletas · Ilatek Techos — servicio en {{custom_values.business__county_name}}
+Limpieza%20de%20techos%20y%20canaletas%20%E2%80%94%20%7B%7Bcustom_values.business__county_name%7D%7D
+Limpieza%20de%20techos%20y%20canaletas%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Limpieza de techos y canaletas por Ilatek Techos en {{custom_values.business__county_name}} — drenaje despejado
+Limpieza%20de%20techos%20y%20canaletas%20por%20Ilatek%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%E2%80%94%20drenaje%20despejado
+Cobertura de limpieza de techos y canaletas de Ilatek Techos en Puerto Rico
+Busca tu pueblo
+Buscar un municipio de Puerto Rico
+Limpiar búsqueda
+Municipios de Puerto Rico con servicio de limpieza de techos y canaletas
+Pie de página de Ilatek
+Facebook
+Facebook — servicio en {{custom_values.business__county_name}}
+Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Instagram
+Instagram — servicio en {{custom_values.business__county_name}}
+Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Youtube
+Youtube — servicio en {{custom_values.business__county_name}}
+Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+TikTok
+TikTok — servicio en {{custom_values.business__county_name}}
+TikTok%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+X — servicio en {{custom_values.business__county_name}}
+X%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+LinkedIn
+LinkedIn — servicio en {{custom_values.business__county_name}}
+LinkedIn%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Pinterest
+Pinterest — servicio en {{custom_values.business__county_name}}
+Pinterest%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D

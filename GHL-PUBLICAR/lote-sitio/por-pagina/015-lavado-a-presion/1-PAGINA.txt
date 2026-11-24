@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Lavado A Presion
+Slug: lavado-a-presion
+URL: https://ilatekpr.com/lavado-a-presion
+Acción: REPUBLICAR
+Estado hoy: HTTP 200
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (237 KB, sha256 dff95532d83d)
+Origen en el repo: servicios/lavado-a-presion/es/landing-pages/ghl-lavado-a-presion-landing.html
+Sección de clima: sí
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

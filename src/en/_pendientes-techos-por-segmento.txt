@@ -1,0 +1,148 @@
+/og:title/ og:description ("… en Juncos, Puerto Rico"): el título sale de {{custom_values.business__county_name}}, así que es el mismo custom value, sin depender de que el builder expanda el Custom Code; 3. el subdominio del sitio (juncos.ilatekpr.com → Juncos); 4. los valores de marca del contrato (custom-values.json → brand). El portador que viaja en el embed se oculta siempre (nunca es contenido). Estado en
+{{custom_values.business__county_name}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}
+Login
+Por segmento
+Sellado de Techos Residencial, Comercial e Industrial en
+Puerto Rico
+No es lo mismo el techo de una casa que el de un edificio comercial: el tránsito, el tamaño y el horario cambian el sistema. Ilatek sella los tres segmentos en {{custom_values.business__county_name}}, con cotización por $50 descontables del total y garantía escrita.
+Solicita tu cotización
+Qué incluye el servicio ↓
+por sellado
+Precio de entrada
+segmentos
+Cubiertos
+al agendar
+Se descuenta del total
+Residencial · Comercial · Industrial
+undefined
+El sistema se elige según el uso de la propiedad.
+Residencial sin complicarte
+Coordinamos la visita, protegemos tu espacio y trabajamos sin interrumpir la rutina de tu familia.
+Comercial sin cerrar
+Planificamos el trabajo por fases y horarios para que tu negocio siga operando mientras sellamos el techo.
+Industrial a escala
+Manejo de superficies grandes y exigentes con materiales de alta resistencia y documentación del trabajo.
+Qué incluye
+Qué incluye el sellado según tu segmento.
+El segmento define el sistema y la logística.
+Ilatek evalúa tu techo, define el sellador adecuado y planifica el trabajo — horarios, fases y accesos — según sea residencial, comercial o industrial.
+Evaluación del techo según el segmento
+Sistema de sellado adecuado al uso
+Planificación de horarios y fases
+Protección del área y equipos
+Ejecución con materiales certificados
+Garantía por escrito del trabajo
+Cotiza tu segmento
+Sistema según el uso del techo
+Segmentos
+Elige el servicio de tu tipo de propiedad.
+Casas y hogares: sellado e impermeabilización de techos residenciales con trato cuidado.
+Ver servicio
+Edificios, tiendas y oficinas: sellado planificado para operar sin cerrar el negocio.
+Naves y plantas: sistemas de alta resistencia para techos de gran superficie.
+Solicita tu cotización por $50 descontables del total
+Cómo funciona
+Cómo sellamos según tu segmento.
+El segmento define el sistema y la logística: horarios, fases y producto cambian entre casa, comercio e industria.
+PASO 1
+Cotiza tu sellado de techos por segmento
+Usa el cotizador de Ilatek o escríbenos: evaluamos tu techo y te damos el precio de sellado de techos por segmento por escrito en minutos — sin compromiso.
+PASO 2
+Inspección y agenda
+Confirmamos el alcance de sellado de techos por segmento con una inspección del techo, defines la fecha y reservas con el depósito de $50, que se descuenta del total.
+PASO 3
+Trabajo terminado
+Ejecutamos sellado de techos por segmento con materiales certificados, protegemos el área y te entregamos la garantía por escrito.
+Cobertura de
+por segmento
+en toda la isla.
+Ilatek Techos brinda sellado de techos por segmento en los
+78 municipios de Puerto Rico
+. Atendemos tu área en
+{{custom_values.business__county_name}}
+y toda la isla: busca tu pueblo en el directorio y visita su página.
+No encontramos ese pueblo. Verifica el nombre e intenta nuevamente.
+Página 1 de 1
+Reseñas de clientes de Ilatek.
+Reseñas de personas que confiaron en Ilatek para mantenimiento y sellado de techos en Puerto Rico. Cambia de pestaña para ver cada fuente.
+Preguntas frecuentes
+Preguntas frecuentes sobre sellado de techos por segmento.
+¿Cuánto cuesta sellar un techo residencial, comercial o industrial?
+El sellado de techos de Ilatek
+comienza desde $250
+en todos los segmentos. El precio varía según el sistema, el área y el tipo de superficie. Para proyectos grandes cotizamos por servicio con descuento de escala. La visita o inspección cuesta $50 y se descuenta del total del servicio.
+¿Qué diferencia hay entre sellado residencial, comercial e industrial?
+Cambia el
+sistema y la logística
+: el residencial prioriza el trato y el cuidado del espacio; el comercial, la continuidad del negocio; el industrial, la escala y la resistencia de los materiales.
+¿Trabajan en edificios comerciales sin cerrar el negocio?
+Planificamos por fases y horarios para que tu negocio siga operando mientras sellamos el techo, minimizando interrupciones.
+¿Sellan techos industriales de gran superficie?
+Sí: manejamos
+naves, plantas y galpones
+de gran tamaño con membranas y sistemas de alta resistencia, y documentamos el trabajo para tu expediente.
+¿Usan el mismo producto para todos los segmentos?
+El producto depende de la superficie, el tránsito y la exposición. Un techo residencial suele llevar silicona; uno comercial con equipos, membrana o poliuretano.
+¿Ofrecen factura para negocios?
+Emitimos factura e informamos el alcance del trabajo por escrito, útil para gastos operativos y para reclamos si aplica.
+¿El sellado comercial e industrial tiene garantía?
+Entregamos garantía de mano de obra por escrito en todos los segmentos, con materiales certificados.
+¿Por qué elegir Ilatek Techos por segmento?
+Adaptamos sistema y logística a tu tipo de propiedad: trato cuidado en casas, trabajo por fases sin cerrar comercios y membranas de alta resistencia en industria, desde $250 con cotización por $50 descontables del total.
+Visita o inspección por $50
+Protege tu techo antes de la próxima lluvia.
+Solicita tu cotización por $50 descontables del total de sellado de techos por segmento en {{custom_values.business__county_name}} y recibe precio claro y por escrito — cotización por $50 descontables del total y cobertura en los 78 municipios de Puerto Rico.
+Respuesta en minutos · Sin compromiso
+Precio claro por escrito
+desde $250, confirmado después de la inspección.
+Inspección sin compromiso
+Subimos, diagnosticamos y te explicamos las opciones.
+Garantía de mano de obra
+Respaldada por escrito en cada trabajo que hacemos.
+Devasks
+Navegación de Ilatek
+Ilatek, inicio
+Logo de Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Logo%20de%20Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Navegación principal
+Idioma / Language
+Español
+English
+Abrir o cerrar el menú
+Ilatek Por segmento {{custom_values.business__county_name}}
+Sellado de techos residencial, comercial e industrial de Ilatek Techos en {{custom_values.business__county_name}}
+Techos por segmento · Ilatek Techos — servicio en {{custom_values.business__county_name}}
+Sellado%20de%20techos%20residencial%2C%20comercial%20e%20industrial%20de%20Ilatek%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Techos%20por%20segmento%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Sellado de techo comercial e industrial por Ilatek Techos — {{custom_values.business__county_name}}
+Sellado por segmento · Ilatek Techos — servicio en {{custom_values.business__county_name}}
+Sellado%20de%20techo%20comercial%20e%20industrial%20por%20Ilatek%20Techos%20%E2%80%94%20%7B%7Bcustom_values.business__county_name%7D%7D
+Sellado%20por%20segmento%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Cobertura de sellado de techos por segmento de Ilatek Techos en Puerto Rico
+Busca tu pueblo
+Buscar un municipio de Puerto Rico
+Limpiar búsqueda
+Municipios de Puerto Rico con servicio de sellado de techos por segmento
+Pie de página de Ilatek
+Facebook
+Facebook — servicio en {{custom_values.business__county_name}}
+Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Instagram
+Instagram — servicio en {{custom_values.business__county_name}}
+Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Youtube
+Youtube — servicio en {{custom_values.business__county_name}}
+Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+TikTok
+TikTok — servicio en {{custom_values.business__county_name}}
+TikTok%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+X — servicio en {{custom_values.business__county_name}}
+X%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+LinkedIn
+LinkedIn — servicio en {{custom_values.business__county_name}}
+LinkedIn%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Pinterest
+Pinterest — servicio en {{custom_values.business__county_name}}
+Pinterest%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D

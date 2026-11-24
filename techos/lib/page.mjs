@@ -4,6 +4,7 @@ import { pageCss } from './css.mjs';
 import { shots } from './kit.mjs';
 import { coberturaSection, reviewsParts, imgAltTitlePatch } from './parts.mjs';
 import { bizSchema, faqSchema } from './schema.mjs';
+import { answerModule, hubMoneyModules, moneyModules } from './embeds.mjs';
 import { formatPage } from '../../tools/internal-link-contract.mjs';
 import { composeShell } from '../../tools/page-shell.mjs';
 
@@ -23,9 +24,15 @@ function svg(name) {
   return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true">${ICONS[name] || ICONS.check}</svg>`;
 }
 
-// Ancla de la sección de agenda: los CTA de cotización de la landing bajan al
-// calendario embebido en vez de salir a /cotizacion (una sola ruta de conversión).
-const AGENDA_ANCHOR = '#ilt-agenda';
+// Cotización del vertical: los CTA de la landing (hero, qué incluye, cierre) llevan
+// a /cotizacion-techos, la ruta de cotización de esta página. Ninguna landing de
+// servicios embebe calendario: el último container es el CTA de cierre de la página.
+const QUOTE_HREF = 'https://{{custom_values.website_url}}/cotizacion-techos';
+
+// Landings money del cluster de sellado: /sellado-de-techos (consulta en plural y
+// singular) y el hub /techos, que también compite por "sellado de techo en
+// Puerto Rico". En el repo no existe una URL separada para el singular.
+const MONEY_SLUGS = new Set(['sellado-de-techos', 'techos']);
 
 // El respaldo onerror cae en el poster del sitio (jsDelivr, siempre vivo): las
 // fotos del CDN de GHL devuelven 404 para varias tarjetas y el fallback anterior
@@ -77,8 +84,12 @@ export function buildPage(page) {
   parts.push(`  <main>
     <script>(function(){document.documentElement.classList.add('ilt-anim');setTimeout(function(){if(!window.__iltReady)document.documentElement.classList.remove('ilt-anim')},2500)})();</script>`);
   parts.push(heroSection(page));
+  // Apertura answer-first solo en las dos landings money del cluster de sellado.
+  if (MONEY_SLUGS.has(page.slug)) parts.push(answerModule());
   parts.push(benefitsSection(page));
   parts.push(incluyeSection(page));
+  if (page.slug === 'sellado-de-techos') parts.push(moneyModules());
+  else if (page.slug === 'techos') parts.push(hubMoneyModules());
   parts.push(page.directory ? directorySection(page) : extraSection(page));
   parts.push(processSection(page));
   parts.push('    <!-- 6. COBERTURA: sección idéntica al home (78 municipios, verbatim) -->');
@@ -88,7 +99,6 @@ export function buildPage(page) {
   parts.push(rev.markup);
   parts.push(faqSection(page));
   parts.push(ctaSection(page));
-  parts.push(calendarSection(page));
   parts.push('  </main>');
   parts.push(resolverScript(rootId));
   parts.push(bizSchema(page));
@@ -112,7 +122,7 @@ function heroSection(page) {
           <h1 class="ilt-display">${(page.h1before + ' <em>' + page.h1em + '</em> ' + page.h1after).replace(/\s+([.,;:!?])/g, '$1')}</h1>
           <p class="ilt-hero-sub">${page.heroSub}</p>
           <div class="ilt-hero-actions">
-            <a class="ilt-button" href="${AGENDA_ANCHOR}"><span>Solicita tu cotización</span><span aria-hidden="true">↗</span></a>
+            <a class="ilt-button" href="${QUOTE_HREF}"><span>Solicita tu cotización</span><span aria-hidden="true">↗</span></a>
             <a class="ilt-text-link" href="#${page.slug === 'techos' ? 'ilatek-techos' : 'ilatek-techos-' + page.slug}-incluye">Qué incluye el servicio ↓</a>
           </div>
           <div class="ilt-hero-facts">
@@ -161,7 +171,7 @@ function incluyeSection(page) {
 ${checks}
           </ul>
           <div class="ilt-hero-actions">
-            <a class="ilt-button" href="${AGENDA_ANCHOR}"><span>${page.incluye.cta}</span><span aria-hidden="true">↗</span></a>
+            <a class="ilt-button" href="${QUOTE_HREF}"><span>${page.incluye.cta}</span><span aria-hidden="true">↗</span></a>
           </div>
         </div>
         <figure class="ilt-media ilt-reveal">
@@ -185,9 +195,10 @@ function extraSection(page) {
           </a>`
       )
       .join('\n');
-    // El CTA de cotización baja al calendario; los demás conservan su slug.
+    // El CTA de cotización va a la ruta de cotización del vertical; los demás
+    // conservan su slug.
     const ctaHref = page.extra.cta && page.extra.cta.slug === 'cotizacion'
-      ? AGENDA_ANCHOR
+      ? QUOTE_HREF
       : `https://{{custom_values.website_url}}/${page.extra.cta ? page.extra.cta.slug : ''}`;
     const cta = page.extra.cta
       ? `\n        <div class="ilt-xcta ilt-reveal"><a class="ilt-button" href="${ctaHref}"><span>${page.extra.cta.label}</span><span aria-hidden="true">↗</span></a></div>`
@@ -309,7 +320,7 @@ ${steps}
 
 function defaultProcess(page) {
   return [
-    { h: `Cotiza tu ${page.noun} gratis`, p: `Usa el cotizador de Ilatek o escríbenos: evaluamos tu techo y te damos el precio de ${page.noun} por escrito en minutos — sin compromiso.` },
+    { h: `Cotiza tu ${page.noun}`, p: `Usa el cotizador de Ilatek o escríbenos: evaluamos tu techo y te damos el precio de ${page.noun} por escrito en minutos — sin compromiso.` },
     { h: 'Inspección y agenda', p: `Confirmamos el alcance de ${page.noun} con una inspección del techo, defines la fecha y reservas con el depósito de $50, que se descuenta del total.` },
     { h: 'Trabajo terminado', p: `Ejecutamos ${page.noun} con materiales certificados, protegemos el área y te entregamos la garantía por escrito.` },
   ];
@@ -333,9 +344,9 @@ function coberturaCfg(page) {
 function reviewsCfg(page) {
   return {
     title: 'Reseñas de clientes de Ilatek.',
-    subtitle: 'Reseñas de personas que confiaron en Ilatek para limpieza, mantenimiento y sellado de techos en Puerto Rico. Cambia de pestaña para ver cada fuente.',
+    subtitle: 'Reseñas de personas que confiaron en Ilatek para mantenimiento y sellado de techos en Puerto Rico. Cambia de pestaña para ver cada fuente.',
     googleTitle: 'Reseñas de Google de clientes de Ilatek',
-    selfieTitle: 'Reseñas de Limpieza de Ilatek',
+    selfieTitle: 'Reseñas de Servicios de Ilatek',
   };
 }
 
@@ -372,11 +383,11 @@ function ctaSection(page) {
       <div class="ilt-shell">
         <div class="ilt-cta-box ilt-reveal">
           <div class="ilt-cta-copy">
-            <span class="ilt-cta-eyebrow">Cotización gratis</span>
+            <span class="ilt-cta-eyebrow">Visita o inspección por $50</span>
             <h2 id="ilt-cta-title" class="ilt-display">${page.ctaTitle}</h2>
             <p>${page.ctaText}</p>
             <div class="ilt-cta-actions">
-              <a class="ilt-button" href="${AGENDA_ANCHOR}"><span>Solicita tu cotización gratis</span><span aria-hidden="true">↗</span></a>
+              <a class="ilt-button" href="${QUOTE_HREF}"><span>Solicita tu cotización por $50 descontables del total</span><span aria-hidden="true">↗</span></a>
               <small>Respuesta en minutos · Sin compromiso</small>
             </div>
           </div>
@@ -385,33 +396,6 @@ ${facts}
           </ul>
         </div>
       </div>
-    </section>`;
-}
-
-// Sección 10: calendario de reservas de GoHighLevel embebido. El iframe lo
-// reconoce el iframe-resizer de GHL (form_embed.js) porque su src incluye
-// "/booking"; el script es externo, así que no lo audita el guard de <script>
-// inline. Mismo bloque en las 34 landings, con las custom values resueltas en
-// runtime por el resolver.
-function calendarSection() {
-  return `    <!-- 10. AGENDA: calendario de reservas de GHL embebido -->
-    <section class="ilt-cal" id="ilt-agenda" aria-labelledby="ilt-cal-title">
-      <div class="ilt-shell">
-        <header class="ilt-cal-head ilt-reveal">
-          <span class="ilt-eyebrow">Agenda tu inspección</span>
-          <h2 id="ilt-cal-title" class="ilt-display">Reserva tu inspección gratis en minutos.</h2>
-          <p>Elige el día y la hora que te convengan. Atendemos {{custom_values.business__county_name}} y los 78 municipios de Puerto Rico.</p>
-        </header>
-        <div class="ilt-cal-box ilt-reveal">
-          <div class="ilt-cal-embed">
-            <iframe src="https://link.msgsndr.com/widget/booking/wM8KQhsYjEQAo0HbNGIh" allow="payment" scrolling="no" title="Agenda tu inspección de techos — Ilatek Techos" id="wM8KQhsYjEQAo0HbNGIh_1791075788803"></iframe>
-          </div>
-          <p class="ilt-cal-fallback">¿No carga el calendario? <a href="https://{{custom_values.website_url}}/cotizacion">Solicita tu cotización aquí</a>.</p>
-        </div>
-      </div>
-      <script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
-      <!-- Los CTA de cotización bajan aquí con scroll suave (respeta reduce-motion) -->
-      <script>(function(){var t=document.getElementById('ilt-agenda');if(!t)return;var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion:reduce)').matches;document.addEventListener('click',function(e){var el=e.target;while(el&&el!==document){if(el.tagName==='A'&&el.getAttribute('href')==='#ilt-agenda'){e.preventDefault();t.scrollIntoView({behavior:rm?'auto':'smooth',block:'start'});return}el=el.parentNode}},false)})();</script>
     </section>`;
 }
 

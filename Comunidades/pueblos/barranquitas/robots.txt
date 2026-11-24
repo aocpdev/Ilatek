@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://barranquitas.ilatekpr.com/sitemap.xml

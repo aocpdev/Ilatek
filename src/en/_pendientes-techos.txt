@@ -1,0 +1,311 @@
+/og:title/ og:description ("… en Juncos, Puerto Rico"): el título sale de {{custom_values.business__county_name}}, así que es el mismo custom value, sin depender de que el builder expanda el Custom Code; 3. el subdominio del sitio (juncos.ilatekpr.com → Juncos); 4. los valores de marca del contrato (custom-values.json → brand). El portador que viaja en el embed se oculta siempre (nunca es contenido). Estado en
+{{custom_values.business__county_name}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}
+Login
+Ilatek Techos
+Reparación y Sellado de Techos en
+Puerto Rico
+Ilatek Techos repara, sella e impermeabiliza techos en {{custom_values.business__county_name}}:
+reparación de goteras, filtraciones y sellado
+. Agenda con $50 descontables del total, garantía por escrito y cobertura en los 78 municipios de Puerto Rico.
+Solicita tu cotización
+Qué incluye el servicio ↓
+por servicio
+Sellado de techos
+Garantía
+Por escrito
+municipios
+Cobertura en PR
+Agenda con $50 descontables del total · Garantía escrita
+Respuesta directa
+Sellado de techos en Puerto Rico: precio, duración y tiempo de obra
+El sellado de techos en Puerto Rico publica
+desde $250 por servicio
+, según el sistema. La silicona 100% publica
+20 a 25 años
+y se aplica en
+2 a 3 días
+. Agenda una visita o una inspección: $50 descontables del total del servicio, y el precio se confirma por escrito.
+Precio publicado
+Duración (silicona 100%)
+Tiempo de obra
+Losas, techos planos y concreto expuesto
+Sistema según techo
+Fuente: registro de hechos de Ilatek Techos, verificado el 7 de noviembre de 2026.
+Calcula el precio de tu techo
+undefined
+Reparamos, sellamos e impermeabilizamos tu techo de una sola vez.
+Reparación y sellado
+Cubrimos todo el ciclo: desde una gotera puntual hasta el sellado completo de tu techo, con garantía por escrito.
+Todo tipo de techo
+Concreto, losas, techos planos, zinc, asfalto, teja y madera: cada superficie con el sistema que le corresponde.
+Precio claro por servicio
+Cotización transparente por servicio o por servicio, con agenda con $50 descontables del total y sin sorpresas al final.
+Qué incluye
+Todo lo que hacemos en tu techo.
+Ilatek Techos es la división de techos de Ilatek.
+Reparamos filtraciones y goteras, sellamos e impermeabilizamos superficies, damos mantenimiento preventivo e instalamos techos nuevos — con agenda con $50 descontables del total y garantía escrita.
+Reparación de goteras y filtraciones
+Sellado e impermeabilización de techos
+Tratamiento por tipo de techo
+Mantenimiento preventivo programado
+Despeje de techos, canaletas y lavado a presión
+Instalación y reemplazo de techos
+Reparación · Sellado · Mantenimiento
+¿Cuánto cuesta sellar un techo en Puerto Rico?
+El precio base publicado por Ilatek es
+, según el sistema. El precio final depende del trabajo y la condición del techo, y se confirma por escrito después de la visita o inspección de $50 descontables del total.
+Precio base publicado por sistema, con la página que lo publica y la fecha de verificación.
+Sistema
+Precio base
+Fuente
+Verificado
+Silicona 100%
+Publicado en /sellado-de-silicona
+7 nov 2026
+Membrana asfaltica
+Publicado en /membrana-asfaltica
+Recubrimiento elastomerico
+Publicado en /recubrimiento-elastomerico
+Poliuretano
+Publicado en /sellado-de-poliuretano
+Acrilico
+Publicado en /sellado-acrilico
+Fuente: precios base publicados por Ilatek Techos (noviembre 2026), por servicio. No incluyen reparaciones estructurales ni trabajos adicionales.
+Calcula el precio de tu techo con el cotizador de Ilatek
+¿Qué sistema de sellado de techo conviene más?
+No hay un solo sistema: la silicona 100% es la de mayor duración publicada (
+), membrana y poliuretano rondan
+10 a 15 años
+, y el acrílico
+7 a 10 años
+. La elección depende del sustrato, el tránsito y el presupuesto, no de la marca.
+Comparación de los 5 sistemas de sellado de Ilatek
+Precio desde
+Duración publicada
+Sustrato recomendado
+UV y lluvia
+Mantenimiento
+Cuándo elegirlo
+Limitación declarada
+Soporta radiación UV, lluvia torrencial y brisa salina sin degradarse
+2 a 3 días en un techo residencial típico, con preparación incluida
+Inspección anual recomendada
+Techos planos y zonas costeras donde se busca la mayor vida útil
+No se aplica sobre sellador vencido sin removerlo primero
+Techos planos y losas de gran espesor
+Resistente al tránsito y al sol; capa más gruesa que un coating
+2 a 4 días en una azotea residencial; superficies grandes requieren más
+Cuando el techo recibe tránsito o está muy deteriorado
+Se confirma en la inspección
+Concreto con microfisuras y techos que acumulan calor
+Acabado blanco que refleja la radiación solar y baja la temperatura del techo
+Mantenimiento periódico y techos que acumulan calor
+Rinde sobre superficie limpia; requiere preparación previa
+Azoteas con equipos y trafico
+Azoteas con equipos, mantenimiento o paso frecuente
+Requiere inspección periódica para retocar antes de que la capa se degrade
+Mantenimiento economico de techos ya sellados
+Acabado blanco que refleja el sol; la radiación UV y la humedad pueden acortar su vida
+1 a 2 días en un techo residencial, incluyendo lavado y capas
+Renovar un techo que ya tiene acrílico y reflejar el sol
+Su vida útil es menor que la silicona; conviene recubrirlo periódicamente
+Fuente: registro de hechos de Ilatek Techos (noviembre 2026). Duraciones y tiempos publicados para Puerto Rico; la vida útil real depende del mantenimiento y la exposición. Los criterios sin dato publicado se confirman en la inspección.
+Compara sellado e impermeabilización de techos en Puerto Rico
+Guías del blog
+Las preguntas que resuelven la decisión, respondidas por escrito
+Preguntas frecuentes de precio de sellado en Puerto Rico
+Dudas de materiales: silicona, membrana, poliuretano y acrílico
+Cómo se aplica un sellado de techo, paso a paso
+Garantías, licencias y quién responde por el trabajo
+Cada guía responde una duda concreta y enlaza al sistema o al método que la resuelve. Precios y duraciones verificados el 7 nov 2026.
+Todos los servicios de techos en {{custom_values.business__county_name}}.
+Ilatek Techos repara, sella e impermeabiliza techos en toda la isla. Elige una categoría y entra directo al servicio que necesitas en {{custom_values.business__county_name}}.
+Lo más solicitado
+Mantenimiento y tratamiento
+El servicio que más piden en Puerto Rico: inspección, limpieza y tratamiento preventivo para que tu techo dure y no vuelva a gotear.
+Agenda con $50 descontables del total
+Moho y oxidación
+Desde $250
+Informe con fotos
+Inspección de techos
+Limpieza de techos
+Canaletas y bajantes
+Lavado a presión
+Tragaluces
+Instalación y reemplazo
+Ver servicio
+Reparación
+Goteras, filtraciones, grietas, empozamientos, oxidación y reparación post-huracán con garantía escrita.
+Goteras desde $250
+Grietas y empozamientos
+Post-huracán
+Garantía escrita
+Reparación de goteras
+Reparación de filtraciones
+Reparación de grietas
+Empozamientos de agua
+Reparación post-huracán
+Ver categoría
+Sellado
+Silicona 100%, membrana asfáltica, elastomérico, poliuretano y acrílico: el sistema correcto para cada superficie.
+Silicona y poliuretano
+Membrana y elastomérico
+Sellado con silicona 100%
+Membrana asfáltica
+Recubrimiento elastomérico
+Sellado de poliuretano
+Sellado acrílico
+Impermeabilización y Tipos de Techo
+Concreto, techos planos, zinc, asfalto, teja y madera, cada uno impermeabilizado con el sistema que le corresponde.
+Concreto, zinc y teja
+Techos planos
+Sistema por tipo
+Techos de concreto
+Techos de zinc
+Techos de asfalto
+Techos de teja
+Techos de madera
+Por segmento
+Soluciones para propiedades residenciales, comerciales e industriales, con logística adaptada a cada espacio.
+Residencial y comercial
+Industrial
+Sin cerrar tu operación
+Sellado residencial
+Sellado comercial
+Sellado industrial
+Inspección
+Agenda con $50 descontables del total, mantenimiento desde $250, despeje de techos, canaletas y lavado a presión programado.
+Limpieza y canaletas
+Mantenimiento preventivo
+Haz clic en una tarjeta lateral para traerla al frente · usa ← → o desliza
+Cómo funciona
+Cómo protegemos tu techo paso a paso.
+Un solo equipo cubre diagnóstico, sellado y garantía: sabes el alcance y el precio antes de que subamos.
+PASO 1
+Cotiza tu reparación y sellado de techos
+Usa el cotizador de Ilatek o escríbenos: evaluamos tu techo y te damos el precio de reparación y sellado de techos por escrito en minutos — sin compromiso.
+PASO 2
+Inspección y agenda
+Confirmamos el alcance de reparación y sellado de techos con una inspección del techo, defines la fecha y reservas con el depósito de $50, que se descuenta del total.
+PASO 3
+Trabajo terminado
+Ejecutamos reparación y sellado de techos con materiales certificados, protegemos el área y te entregamos la garantía por escrito.
+Cobertura de
+ilatek techos
+en toda la isla.
+Ilatek Techos brinda reparación y sellado de techos en los
+78 municipios de Puerto Rico
+. Atendemos tu área en
+{{custom_values.business__county_name}}
+y toda la isla: busca tu pueblo en el directorio y visita su página.
+No encontramos ese pueblo. Verifica el nombre e intenta nuevamente.
+Página 1 de 1
+Reseñas de clientes de Ilatek.
+Reseñas de personas que confiaron en Ilatek para mantenimiento y sellado de techos en Puerto Rico. Cambia de pestaña para ver cada fuente.
+Preguntas frecuentes
+Preguntas frecuentes sobre techos.
+¿Qué hace Ilatek Techos en Puerto Rico?
+Ilatek Techos es la división de techos de Ilatek: repara goteras y filtraciones desde $250, sella desde $250, impermeabiliza concreto, zinc, asfalto, teja, madera y techos planos, y da mantenimiento e instalación en los 78 municipios.
+¿Cuánto cuesta reparar o sellar un techo?
+Las reparaciones comienzan desde $250 y el sellado desde $250; el rango publicado llega a $6.00 según el sistema. Un techo promedio arranca en $2,400 y el estimado final se confirma después de la agenda con $50 descontables del total.
+¿Cuánto cuesta la inspección del techo?
+Sí. La inspección y el diagnóstico no tienen costo ni compromiso: subimos al techo, revisamos superficie, juntas y desagüe, y entregamos el alcance por escrito. El trabajo se reserva con un depósito de $50 que se descuenta del total.
+¿Qué tipos de techo cubren?
+Cubrimos concreto y losas, techos planos, zinc y metal, asfalto (shingles), teja y madera. Cada superficie pide un sistema distinto: silicona en losas expuestas, membrana asfáltica donde hay tránsito y acrílico en mantenimiento de techos ya sellados.
+¿Trabajan residencial, comercial e industrial?
+Sí. Atendemos hogares, comercios y plantas industriales con el mismo proceso de inspección, preparación y membrana, y con logística adaptada para no interrumpir tu operación. La cobertura es de 78 municipios y el plazo se define por área y sistema.
+¿Los trabajos tienen garantía?
+Cada trabajo se entrega con garantía escrita de mano de obra sobre materiales certificados. El plazo exacto y las exclusiones se documentan antes de comenzar; no prometemos una duración que no esté respaldada por el fabricante o por el contrato firmado.
+¿En qué municipios brindan servicio?
+Servimos los 78 municipios de Puerto Rico, incluido {{custom_values.business__county_name}}. La visita o inspección cuesta $50, descontables del total, y la fecha se reserva con $50 descontables del total. El tiempo de obra va de 1 a 2 días en acrílico y de 2 a 4 en membrana.
+¿Por qué elegir Ilatek Techos para tu techo?
+Porque cubrimos todo el techo en un solo proveedor: reparación de goteras y filtraciones, sellado e impermeabilización, mantenimiento e instalación — con agenda con $50 descontables del total, garantía de mano de obra por escrito y cobertura en los 78 municipios de Puerto Rico.
+Visita o inspección por $50
+Protege tu techo antes de la próxima lluvia.
+Solicita tu cotización por $50 descontables del total de reparación y sellado de techos en {{custom_values.business__county_name}} y recibe precio claro y por escrito — cotización por $50 descontables del total y cobertura en los 78 municipios de Puerto Rico.
+Solicita tu cotización por $50 descontables del total
+Respuesta en minutos · Sin compromiso
+Precio claro por escrito
+desde $250, confirmado después de la inspección.
+Inspección sin compromiso
+Subimos, diagnosticamos y te explicamos las opciones.
+Garantía de mano de obra
+Respaldada por escrito en cada trabajo que hacemos.
+Devasks
+Navegación de Ilatek
+Ilatek, inicio
+Logo de Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Logo%20de%20Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Navegación principal
+Idioma / Language
+Español
+English
+Abrir o cerrar el menú
+Ilatek Ilatek Techos {{custom_values.business__county_name}}
+Reparación y sellado de techos de Ilatek Techos — {{custom_values.business__county_name}}
+Reparación y Sellado de Techos en {{custom_values.business__county_name}} · Ilatek Techos
+Reparaci%C3%B3n%20y%20sellado%20de%20techos%20de%20Ilatek%20Techos%20%E2%80%94%20%7B%7Bcustom_values.business__county_name%7D%7D
+Reparaci%C3%B3n%20y%20Sellado%20de%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%C2%B7%20Ilatek%20Techos
+Equipo de Ilatek Techos reparando y sellando techos en {{custom_values.business__county_name}}
+Ilatek Techos · {{custom_values.business__county_name}}
+Equipo%20de%20Ilatek%20Techos%20reparando%20y%20sellando%20techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ilatek%20Techos%20%C2%B7%20%7B%7Bcustom_values.business__county_name%7D%7D
+Categorías de techos de Ilatek
+Mantenimiento y tratamiento de Ilatek Techos en {{custom_values.business__county_name}}
+Mantenimiento y tratamiento · Ilatek Techos — servicio en {{custom_values.business__county_name}}
+Mantenimiento%20y%20tratamiento%20de%20Ilatek%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Mantenimiento%20y%20tratamiento%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Reparación de Techos de Ilatek Techos en {{custom_values.business__county_name}}
+Reparación de Techos · Ilatek Techos — servicio en {{custom_values.business__county_name}}
+Reparaci%C3%B3n%20de%20Techos%20de%20Ilatek%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Reparaci%C3%B3n%20de%20Techos%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Sellado de Techos de Ilatek Techos en {{custom_values.business__county_name}}
+Sellado de Techos · Ilatek Techos — servicio en {{custom_values.business__county_name}}
+Sellado%20de%20Techos%20de%20Ilatek%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Sellado%20de%20Techos%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Impermeabilización y Tipos de Techo de Ilatek Techos en {{custom_values.business__county_name}}
+Impermeabilización y Tipos de Techo · Ilatek Techos — servicio en {{custom_values.business__county_name}}
+Impermeabilizaci%C3%B3n%20y%20Tipos%20de%20Techo%20de%20Ilatek%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Impermeabilizaci%C3%B3n%20y%20Tipos%20de%20Techo%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Techos por Segmento de Ilatek Techos en {{custom_values.business__county_name}}
+Techos por Segmento · Ilatek Techos — servicio en {{custom_values.business__county_name}}
+Techos%20por%20Segmento%20de%20Ilatek%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Techos%20por%20Segmento%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Inspección y Mantenimiento de Ilatek Techos en {{custom_values.business__county_name}}
+Inspección y Mantenimiento · Ilatek Techos — servicio en {{custom_values.business__county_name}}
+Inspecci%C3%B3n%20y%20Mantenimiento%20de%20Ilatek%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Inspecci%C3%B3n%20y%20Mantenimiento%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ver Mantenimiento y tratamiento
+Ver Reparación de Techos
+Ver Sellado de Techos
+Ver Impermeabilización y Tipos de Techo
+Ver Techos por Segmento
+Ver Inspección y Mantenimiento
+Cobertura de reparación y sellado de techos de Ilatek Techos en Puerto Rico
+Busca tu pueblo
+Buscar un municipio de Puerto Rico
+Limpiar búsqueda
+Municipios de Puerto Rico con servicio de reparación y sellado de techos
+Pie de página de Ilatek
+Facebook
+Facebook — servicio en {{custom_values.business__county_name}}
+Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Instagram
+Instagram — servicio en {{custom_values.business__county_name}}
+Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Youtube
+Youtube — servicio en {{custom_values.business__county_name}}
+Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+TikTok
+TikTok — servicio en {{custom_values.business__county_name}}
+TikTok%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+X — servicio en {{custom_values.business__county_name}}
+X%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+LinkedIn
+LinkedIn — servicio en {{custom_values.business__county_name}}
+LinkedIn%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Pinterest
+Pinterest — servicio en {{custom_values.business__county_name}}
+Pinterest%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D

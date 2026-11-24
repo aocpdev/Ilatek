@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- guayanilla.ilatekpr.com — landings de las comunidades de este municipio.
+     Generado por scripts/genera-pueblos.mjs; una URL por comunidad y servicio. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://guayanilla.ilatekpr.com/bahia/limpieza</loc></url>
+  <url><loc>https://guayanilla.ilatekpr.com/bahia/sellado-de-techo</loc></url>
+  <url><loc>https://guayanilla.ilatekpr.com/padre-nazario/limpieza</loc></url>
+  <url><loc>https://guayanilla.ilatekpr.com/padre-nazario/sellado-de-techo</loc></url>
+  <url><loc>https://guayanilla.ilatekpr.com/santa-elena/limpieza</loc></url>
+  <url><loc>https://guayanilla.ilatekpr.com/santa-elena/sellado-de-techo</loc></url>
+  <url><loc>https://guayanilla.ilatekpr.com/urbanizacion-la-concepcion/limpieza</loc></url>
+  <url><loc>https://guayanilla.ilatekpr.com/urbanizacion-la-concepcion/sellado-de-techo</loc></url>
+  <url><loc>https://guayanilla.ilatekpr.com/urbanizacion-stella/limpieza</loc></url>
+  <url><loc>https://guayanilla.ilatekpr.com/urbanizacion-stella/sellado-de-techo</loc></url>
+</urlset>

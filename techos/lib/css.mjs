@@ -12,7 +12,6 @@ export function pageCss(rootId) {
     processCss(),
     faqCss(),
     ctaCss(),
-    calendarCss(),
     responsiveCss(),
   ].join('\n');
   return css.split('__ROOT__').join(R);
@@ -222,18 +221,6 @@ __ROOT__ .ilt-cta-facts b{display:block;font-family:Outfit,Manrope,sans-serif;fo
 __ROOT__ .ilt-cta-facts span{display:block;margin-top:3px;color:rgba(255,255,255,.86);font-size:13.5px;line-height:1.5}`;
 }
 
-function calendarCss() {
-  return `
-__ROOT__ .ilt-cal{padding:0 0 112px;scroll-margin-top:96px}
-__ROOT__ .ilt-cal-head{max-width:690px;margin:0 auto 40px;text-align:center}
-__ROOT__ .ilt-cal-head h2{margin:16px 0 0;font-size:clamp(32px,3.6vw,48px);line-height:1.06}
-__ROOT__ .ilt-cal-head p{margin:16px 0 0;color:var(--muted);font-size:16px;line-height:1.65}
-__ROOT__ .ilt-cal-box{padding:22px;border:1px solid var(--line);border-radius:24px;background:#fff;box-shadow:0 24px 60px rgba(17,22,75,.07)}
-__ROOT__ .ilt-cal-embed{position:relative;min-height:760px;border-radius:16px;overflow:hidden}
-__ROOT__ .ilt-cal-embed iframe{display:block;width:100%;border:0;overflow:hidden}
-__ROOT__ .ilt-cal-fallback{margin:16px 0 0;text-align:center;color:var(--muted);font-size:13.5px}
-__ROOT__ .ilt-cal-fallback a{color:var(--blue);font-weight:700;text-decoration:underline}`;
-}
 
 function responsiveCss() {
   return `
@@ -244,7 +231,6 @@ __ROOT__ .ilt-incl-grid{grid-template-columns:1fr;gap:44px}
 __ROOT__ .ilt-ben-grid,__ROOT__ .ilt-xgrid,__ROOT__ .ilt-proc-grid,__ROOT__ .ilt-kids{grid-template-columns:1fr 1fr}
 __ROOT__ .ilt-checks{grid-template-columns:1fr}
 __ROOT__ .ilt-cta-box{grid-template-columns:1fr;gap:34px;padding:56px 44px}
-__ROOT__ .ilt-cal-embed{min-height:800px}
 }
 /* ── MOBILE / TABLET ANGOSTA (<=820px): el carrusel se vuelve una LISTA VERTICAL ──
    Un carrusel esconde servicios detras de un gesto, y en telefono eso cuesta
@@ -285,9 +271,6 @@ __ROOT__ .ilt-cta-box{padding:46px 22px;border-radius:17px;gap:28px}
 __ROOT__ .ilt-cta-actions{gap:12px 14px}
 __ROOT__ .ilt-cta-actions .ilt-button{width:100%;justify-content:center}
 __ROOT__ .ilt-cta-facts li{padding:15px 16px;border-radius:14px}
-__ROOT__ .ilt-cal{padding:0 0 78px}
-__ROOT__ .ilt-cal-box{padding:16px 12px;border-radius:18px}
-__ROOT__ .ilt-cal-embed{min-height:780px;border-radius:12px}
 __ROOT__ .ilt-hero-card img{aspect-ratio:16/9}
 }
 @media(prefers-reduced-motion:reduce){

@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Inicio
+Slug: (raíz)
+URL: https://ilatekpr.com/
+Acción: REPUBLICAR
+Estado hoy: HTTP 200
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (458 KB, sha256 160ccfb5eb1a)
+Origen en el repo: home/es/landing-pages/home.html
+Sección de clima: sí
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- anasco.ilatekpr.com — landings de las comunidades de este municipio.
+     Generado por scripts/genera-pueblos.mjs; una URL por comunidad y servicio. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://anasco.ilatekpr.com/brisas-de-anasco/limpieza</loc></url>
+  <url><loc>https://anasco.ilatekpr.com/brisas-de-anasco/sellado-de-techo</loc></url>
+  <url><loc>https://anasco.ilatekpr.com/paseo-del-valle/limpieza</loc></url>
+  <url><loc>https://anasco.ilatekpr.com/paseo-del-valle/sellado-de-techo</loc></url>
+  <url><loc>https://anasco.ilatekpr.com/the-francis-villages/limpieza</loc></url>
+  <url><loc>https://anasco.ilatekpr.com/the-francis-villages/sellado-de-techo</loc></url>
+</urlset>

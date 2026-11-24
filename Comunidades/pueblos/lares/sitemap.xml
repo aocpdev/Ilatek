@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- lares.ilatekpr.com — landings de las comunidades de este municipio.
+     Generado por scripts/genera-pueblos.mjs; una URL por comunidad y servicio. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://lares.ilatekpr.com/altamira/limpieza</loc></url>
+  <url><loc>https://lares.ilatekpr.com/altamira/sellado-de-techo</loc></url>
+  <url><loc>https://lares.ilatekpr.com/buenos-aires/limpieza</loc></url>
+  <url><loc>https://lares.ilatekpr.com/buenos-aires/sellado-de-techo</loc></url>
+  <url><loc>https://lares.ilatekpr.com/colinas-del-expreso/limpieza</loc></url>
+  <url><loc>https://lares.ilatekpr.com/colinas-del-expreso/sellado-de-techo</loc></url>
+  <url><loc>https://lares.ilatekpr.com/montebello/limpieza</loc></url>
+  <url><loc>https://lares.ilatekpr.com/montebello/sellado-de-techo</loc></url>
+  <url><loc>https://lares.ilatekpr.com/palmas-del-sol/limpieza</loc></url>
+  <url><loc>https://lares.ilatekpr.com/palmas-del-sol/sellado-de-techo</loc></url>
+  <url><loc>https://lares.ilatekpr.com/villa-seral/limpieza</loc></url>
+  <url><loc>https://lares.ilatekpr.com/villa-seral/sellado-de-techo</loc></url>
+</urlset>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://villalba.ilatekpr.com/sitemap.xml

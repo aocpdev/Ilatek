@@ -1,0 +1,140 @@
+{{custom_values.business__county_name}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}
+Limpieza Post-Construcción en {{custom_values.business__county_name}} | Ilatek
+/og:title/ og:description ("… en Juncos, Puerto Rico"): el título sale de {{custom_values.business__county_name}}, así que es el mismo custom value, sin depender de que el builder expanda el Custom Code; 3. el subdominio del sitio (juncos.ilatekpr.com → Juncos); 4. los valores de marca del contrato (custom-values.json → brand). El portador que viaja en el embed se oculta siempre (nunca es contenido). Estado en
+Login
+Post-construcción
+Post-Construcción en
+{{custom_values.business__county_name}}
+que deja tu obra lista para habitar.
+Ilatek elimina el polvo fino, residuos de pintura, adhesivos y escombros ligeros que deja la obra en {{custom_values.business__county_name}} — limpieza fina de detalles para entregar o habitar. Precio real en minutos y reserva con $50 descontable.
+Solicita tu cotización
+Qué incluye el servicio ↓
+minutos
+Precio por escrito
+municipios
+Cobertura en PR
+depósito
+Descontable al reservar
+Por qué Ilatek
+Tu obra termina impecable, lista para entregar.
+Polvo fino, el enemigo #1
+El polvo de construcción se asienta en techos, paredes, marcos y ductos: lo removemos de arriba a abajo con aspirado industrial y microfibra — no solo barrer lo visible.
+Coordina con tu contratista
+Trabajamos después del retiro de escombros mayores y antes de la entrega: coordinamos con tu contratista para entrar en el momento exacto del cronograma.
+Detalle de entrega
+Adhesivos, salpicaduras de pintura, etiquetas de enseres nuevos y vidrios: el detalle final que hace la diferencia entre "obra terminada" y "lista para habitar" en {{custom_values.business__county_name}}.
+Qué incluye
+De techo a piso, sin rastro de obra.
+La limpieza post-construcción de Ilatek cubre la remoción de polvo fino en todas las superficies, residuos de pintura y adhesivos, y la limpieza fina final — con el alcance definido en tu cotización.
+Polvo fino: techos, paredes, marcos y repisas
+Ventanas y cristales: pintura y etiquetas fuera
+Cocina y baños: instalan limpios, los entregamos impecables
+Adhesivos, salpicaduras y residuos de obra
+Pisos: aspirado industrial y trapeado final
+Contactos, apagadores y luminarias
+Cotiza tu obra
+Polvo fino fuera · lista para habitar
+Espacios
+Limpiamos todo tipo de obra.
+Obra nueva residencial
+Casas y apartamentos recién construidos: entregamos el espacio libre de polvo y residuos, listo para la entrega al propietario o inquilino.
+Remodelaciones
+Cocinas, baños y expansiones: removemos el polvo de demolición y dejamos solo lo nuevo brillando — la vieja área no se nota.
+Contratistas y desarrolladores
+¿Cierras proyectos continuamente? Coordinamos la limpieza fina de cada entrega bajo un mismo estándar y un solo contacto para todo tu pipeline.
+Frecuencia
+En la fase exacta de tu proyecto.
+Fase final
+Limpieza fina final
+La más solicitada: después de retirar los escombros mayores, entra Ilatek — polvo fino, vidrios y detalles para la entrega o el move-in.
+Pre-entrega
+Antes de la entrega oficial
+Inspección, fotos de listing o walk-through con el cliente: pasamos justo antes para que cada superficie luzca impecable en cámara.
+Retoque
+Touch-up después de la final
+¿El polvo volvió a asentarse entre la limpieza y la entrega? Un touch-up rápido deja el espacio en condiciones de entrega en {{custom_values.business__county_name}}.
+Cotiza tu limpieza de obra
+Cobertura local
+Limpieza impecable,
+Cobertura en Toda la Isla
+Explora los servicios de limpieza de
+Ilatek
+disponibles en los
+78 municipios de Puerto Rico
+y visita la página de tu pueblo. Atendemos hogares en
+y toda la isla.
+No encontramos ese pueblo. Verifica el nombre e intenta nuevamente.
+Página 1 de 1
+Preguntas frecuentes
+Todo lo que preguntas antes de contratar.
+¿Cuánto cuesta una limpieza post-construcción en {{custom_values.business__county_name}}?
+Depende del tamaño del espacio, el nivel de polvo y residuos, y la fase en que entramos. Usa el cotizador y recibe tu número real en minutos — precio claro y por escrito, sin compromiso.
+¿Qué incluye una limpieza post-construcción?
+Incluye remoción de
+polvo fino
+(techos, paredes, marcos, repisas), ventanas y cristales con pintura y etiquetas fuera, adhesivos y salpicaduras, cocina y baños, contactos y apagadores, y pisos con aspirado industrial y trapeado final. El alcance exacto queda definido en tu cotización.
+¿Retiran los escombros de la obra?
+La limpieza post-construcción cubre
+escombros ligeros y residuos de obra
+(virutas, restos de materiales, empaques). Para escombros pesados de demolición, tu contratista debe retirarlos primero — luego entramos nosotros.
+¿En qué fase de la obra deben entrar?
+Ideal después de retirar escombros mayores y con los instaladores terminados (cocina, baños, pisos). Así limpiamos una sola vez y la entrega queda impecable — coordinamos el momento con tu contratista.
+¿Trabajan con contratistas y desarrolladores?
+— un solo contacto para todos tus proyectos, mismo estándar en cada entrega y coordinación con tu cronograma. Llevamos la limpieza fina de obra nueva y remodelaciones en los 78 municipios.
+¿El polvo vuelve después de la limpieza?
+El polvo fino puede reasentarse desde ductos o zonas altas en los días siguientes. Por eso ofrecemos un
+touch-up
+antes de la entrega: pasamos de nuevo y el espacio queda en condiciones de entrega.
+¿Qué productos y equipos utilizan?
+Llegamos con
+productos y equipos profesionales de limpieza residencial
+, seguros para tu familia y tus mascotas. Si prefieres algo específico (eco-amigable, sin fragancia), coordínalo en la cotización.
+¿Por qué elegir Ilatek para tu post-construcción?
+Remoción real de polvo fino (no solo lo visible), detalle de adhesivos y vidrios, coordinación con tu contratista, precio real en minutos, depósito de $50 descontable y cobertura en los 78 municipios. Tu obra lista para habitar en {{custom_values.business__county_name}}.
+¿Obra por entregar? Déjanos el detalle final.
+Solicita tu cotización ↗
+Devasks
+Navegación de Ilatek
+Ilatek, inicio
+Logo de Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Logo%20de%20Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Navegación principal
+Idioma / Language
+Español
+English
+Abrir o cerrar el menú
+Ilatek Post-Construcción {{custom_values.business__county_name}}
+Equipo de Ilatek realizando limpieza post-construcción — remoción de polvo fino y residuos de obra en {{custom_values.business__county_name}}
+Post-Construcción en {{custom_values.business__county_name}} · Ilatek
+Equipo%20de%20Ilatek%20realizando%20limpieza%20post-construcci%C3%B3n%20%E2%80%94%20remoci%C3%B3n%20de%20polvo%20fino%20y%20residuos%20de%20obra%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Post-Construcci%C3%B3n%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%C2%B7%20Ilatek
+Limpieza fina post-construcción de Ilatek — espacios libres de polvo de obra listos para habitar en {{custom_values.business__county_name}}
+Limpieza%20fina%20post-construcci%C3%B3n%20de%20Ilatek%20%E2%80%94%20espacios%20libres%20de%20polvo%20de%20obra%20listos%20para%20habitar%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Cobertura de limpieza de Ilatek en Puerto Rico
+Busca tu pueblo
+Buscar un municipio de Puerto Rico
+Limpiar búsqueda
+Municipios de Puerto Rico con servicio de Ilatek
+Pie de página de Ilatek
+Facebook
+Facebook — servicio en {{custom_values.business__county_name}}
+Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Instagram
+Instagram — servicio en {{custom_values.business__county_name}}
+Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Youtube
+Youtube — servicio en {{custom_values.business__county_name}}
+Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+TikTok
+TikTok — servicio en {{custom_values.business__county_name}}
+TikTok%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+X — servicio en {{custom_values.business__county_name}}
+X%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+LinkedIn
+LinkedIn — servicio en {{custom_values.business__county_name}}
+LinkedIn%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Pinterest
+Pinterest — servicio en {{custom_values.business__county_name}}
+Pinterest%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D

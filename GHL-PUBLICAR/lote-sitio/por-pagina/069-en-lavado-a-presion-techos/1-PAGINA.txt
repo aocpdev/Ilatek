@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Lavado A Presion Techos (EN)
+Slug: en/lavado-a-presion-techos
+URL: https://ilatekpr.com/en/lavado-a-presion-techos
+Acción: CREAR PÁGINA
+Estado hoy: HTTP 404
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (242 KB, sha256 9d62573852cc)
+Origen en el repo: servicios/lavado-a-presion-techos/en/landing-pages/lavado-a-presion-techos.en.html
+Sección de clima: no
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

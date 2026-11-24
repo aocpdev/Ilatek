@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Canaletas y Bajantes (EN)
+Slug: en/canaletas-y-bajantes
+URL: https://ilatekpr.com/en/canaletas-y-bajantes
+Acción: CREAR PÁGINA
+Estado hoy: HTTP 404
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (242 KB, sha256 d68bb2636a5c)
+Origen en el repo: servicios/canaletas-y-bajantes/en/landing-pages/canaletas-y-bajantes.en.html
+Sección de clima: no
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

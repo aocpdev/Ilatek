@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ponce.ilatekpr.com/sitemap.xml

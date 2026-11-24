@@ -31,7 +31,7 @@ export function faqItems(html) {
   const out = [];
   for (const it of html.matchAll(/<details\b[^>]*>([\s\S]*?)<\/details>/g)) {
     const h = it[1].match(/<h3>([\s\S]*?)<\/h3>/);
-    const p = it[1].match(/<p>([\s\S]*?)<\/p>/);
+    const p = it[1].match(/<p\b[^>]*>([\s\S]*?)<\/p>/);
     if (!p) continue;
     out.push({ q: h ? question(h[1]) : null, a: text(p[1]) });
   }
@@ -70,7 +70,7 @@ export function extractFaqs(html, gridRe) {
   const out = [];
   for (const it of scope.matchAll(/<details class="[^"]*faq-item"[^>]*>([\s\S]*?)<\/details>/g)) {
     const h = it[1].match(/<h3>([\s\S]*?)<\/h3>/);
-    const p = it[1].match(/<p>([\s\S]*?)<\/p>/);
+    const p = it[1].match(/<p\b[^>]*>([\s\S]*?)<\/p>/);
     if (!h || !p) continue;
     out.push({ q: question(h[1]), a: p[1].trim() });
   }

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://camuy.ilatekpr.com/sitemap.xml

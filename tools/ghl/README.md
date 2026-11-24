@@ -1,7 +1,7 @@
 # tools/ghl — alta de subcuentas por municipio
 
 Un municipio, una subcuenta (location) de GHL, con sus custom values ya puestos
-para que `{{custom_values.business__county_name}}` pinte el pueblo desde el
+para que `{{custom_values.county_name_and_state}}` pinte el pueblo desde el
 primer día.
 
 ## Piezas
@@ -95,6 +95,11 @@ la carpeta correctos pero **el valor vacío**. Por eso el script, tras crear la
 location, **espera** a que el snapshot termine de importarlos y después los
 rellena.
 
+Las páginas consumen `{{custom_values.county_name_and_state}}`; el script escribe ese
+nombre **y** `Business - County Name` con el mismo valor (`<Municipio>, Puerto Rico`),
+así que ambos resuelven. Verificado en el live el 2026-11-12
+(`juncos.ilatekpr.com/home`: `<title>` = «… en Juncos, Puerto Rico» y 0 tokens crudos).
+
 La API los identifica por **nombre visible** (`Business - County Name`), no por
 la clave: mandar `business__county_name` como nombre crea un valor aparte y deja
 el del snapshot vacío.
@@ -107,7 +112,7 @@ Los **13** que se escriben, con su valor:
 | `Business - County Domain` | `<slug>.ilatekpr.com` |
 | `Business - Email` | `info@ilatekpr.com` |
 | `Business - Phone` | `939-357-7351` |
-| `Website Url` | `ilatekpr.com` (sin protocolo, como exige el contrato de enlaces) |
+| `Website Url` | `<slug>.ilatekpr.com` (sin protocolo) — **idéntico** a `Business - County Domain`, para que los enlaces internos no salten al dominio principal |
 | `Facebook Url` / `Instagram Url` | los perfiles de marca |
 | `County Name And State` | `<Municipio>, Puerto Rico` |
 | `Website Favicon` | el favicon de marca |

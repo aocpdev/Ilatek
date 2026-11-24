@@ -1,13 +1,13 @@
 {
-  "source": "home/es/landing-pages/ghl-home-multiservicios.html",
+  "source": "documentacion/seo/limpieza-head-original.html",
   "language": "es",
   "status": "plantilla-local-delta-system",
-  "metaTagTitle": "Limpieza y Mantenimiento de Propiedades en {{custom_values.business__county_name}} | Ilatek",
-  "metaTagDescription": "Limpieza residencial, comercial e industrial + mantenimiento de techos en {{custom_values.business__county_name}}. Precios transparentes por pie², cotizador online y cobertura en los 78 municipios.",
-  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/bfa88816-50eb-45da-8e03-ea3b9e3beffd.jpg",
+  "metaTagTitle": "Sellado y Mantenimiento de Techos en {{custom_values.business__county_name}} | Ilatek",
+  "metaTagDescription": "Sellado, impermeabilización y mantenimiento de techos en {{custom_values.business__county_name}}. Inspección por $50 descontable, garantía escrita y limpieza residencial y comercial.",
+  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/befb03bd-a721-4b0d-916e-5f25a59f8cd8.webp",
   "locationCustomValue": "{{custom_values.business__county_name}}",
-  "metaTagImageAlt": "Limpieza y Mantenimiento de Propiedades en {{custom_values.business__county_name}} | Ilatek",
-  "canonical": "https://{{custom_values.website_url}}/home",
-  "socialImageFile": "assets/meta-image.jpg",
+  "metaTagImageAlt": "Ilatek Property Solution — {{custom_values.business__county_name}}",
+  "canonical": "https://{{custom_values.website_url}}/",
+  "socialImageFile": "assets/meta-image.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."
 }

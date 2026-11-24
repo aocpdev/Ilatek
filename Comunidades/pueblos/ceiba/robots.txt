@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ceiba.ilatekpr.com/sitemap.xml

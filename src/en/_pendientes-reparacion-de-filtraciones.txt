@@ -1,0 +1,159 @@
+/og:title/ og:description ("… en Juncos, Puerto Rico"): el título sale de {{custom_values.business__county_name}}, así que es el mismo custom value, sin depender de que el builder expanda el Custom Code; 3. el subdominio del sitio (juncos.ilatekpr.com → Juncos); 4. los valores de marca del contrato (custom-values.json → brand). El portador que viaja en el embed se oculta siempre (nunca es contenido). Estado en
+{{custom_values.business__county_name}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}
+Login
+Reparación de filtraciones
+Reparación de Filtraciones de Agua en Techos de
+Puerto Rico
+que protege tu hogar.
+Una filtración silenciosa daña vigas, varillas y cielo raso antes de que la notes. Ilatek sella filtraciones y humedad en techos de {{custom_values.business__county_name}}, con agenda con $50 descontables del total y garantía por escrito.
+Solicita tu cotización
+Qué incluye el servicio ↓
+por filtración
+Sellado profundo
+municipios
+Cobertura en PR
+al agendar
+Se descuenta del total
+Sellado profundo · Garantía escrita
+undefined
+Sellamos la filtración que aún no ves.
+Protege la estructura
+El agua que se filtra oxida las varillas del techo y debilita la losa. Sellarla a tiempo evita reparaciones estructurales costosas.
+Sellado multicapa
+Removemos el sellador vencido, preparamos la superficie y aplicamos membrana para un sellado profundo, no una capa superficial.
+Menos daño, menos costo
+Ignorar una filtración sale el doble de caro después. Actuar en la primera señal detiene el daño y el gasto.
+Qué incluye
+Cómo sellamos una filtración de raíz.
+Una filtración es agua que ya entró a las capas del techo.
+Ilatek remueve el material vencido, corrige el punto de entrada y aplica un sistema de sellado que impermeabiliza la superficie completa — no un parche aislado.
+Remoción de sellador y material dañado
+Lavado a presión del área del techo
+Corrección de empozamientos y pendientes
+Aplicación de primer de adherencia
+Membrana impermeabilizante certificada
+Garantía por escrito del sellado
+Cotiza tu filtración
+Humedad tratada · Estructura protegida
+Daños que evitas
+Lo que una filtración hace si la ignoras.
+Estructura
+Varillas oxidadas
+El agua dentro de la losa oxida el acero de refuerzo hasta que se expande y revienta el concreto.
+Interior
+Cielo raso y pintura
+Manchas, desprendimiento de pintura y cielo raso hinchado que hay que sustituir completo.
+Salud
+Moho y humedad
+Un ambiente húmedo crónico cría hongos perjudiciales para las vías respiratorias de tu familia.
+Cómo funciona
+Así impermeabilizamos tu filtración de raíz.
+Removemos el sellador vencido, corregimos la entrada y aplicamos membrana: barrera continua, no un parche.
+PASO 1
+Cotiza tu reparación de filtraciones
+Usa el cotizador de Ilatek o escríbenos: evaluamos tu techo y te damos el precio de reparación de filtraciones por escrito en minutos — sin compromiso.
+PASO 2
+Inspección y agenda
+Confirmamos el alcance de reparación de filtraciones con una inspección del techo, defines la fecha y reservas con el depósito de $50, que se descuenta del total.
+PASO 3
+Trabajo terminado
+Ejecutamos reparación de filtraciones con materiales certificados, protegemos el área y te entregamos la garantía por escrito.
+Cobertura de
+reparación de filtraciones
+en toda la isla.
+Ilatek Techos brinda reparación de filtraciones en los
+78 municipios de Puerto Rico
+. Atendemos tu área en
+{{custom_values.business__county_name}}
+y toda la isla: busca tu pueblo en el directorio y visita su página.
+No encontramos ese pueblo. Verifica el nombre e intenta nuevamente.
+Página 1 de 1
+Reseñas de clientes de Ilatek.
+Reseñas de personas que confiaron en Ilatek para mantenimiento y sellado de techos en Puerto Rico. Cambia de pestaña para ver cada fuente.
+Preguntas frecuentes
+Preguntas frecuentes sobre reparación de filtraciones.
+¿Cuánto cuesta reparar una filtración de techo?
+El sellado de filtraciones de Ilatek
+comienza desde $300
+. El precio final depende del área afectada y del sistema de sellado necesario para tu tipo de techo. Cotiza y recibe tu propuesta por escrito en minutos.
+¿Cómo distingo una filtración de una gotera?
+gotera
+es agua visible que cae; la
+filtración
+es penetración de humedad que no siempre gotea — se nota por manchas, olor a humedad, pintura que se despega o cielo raso hinchado. Ambas son agua entrando al techo.
+¿Qué tipo de sellado utilizan?
+Usamos
+membranas impermeabilizantes certificadas
+(asfálticas, elastoméricas y de silicona) según el material del techo, siempre sobre primer de adherencia y tras remover el material vencido.
+¿Cuánto dura el sellado de una filtración?
+Un sellado bien aplicado con silicona 100% dura
+de 20 a 25 años
+; las membranas asfálticas y los acrílicos duran entre 7 y 15 años. La duración depende del sistema y del mantenimiento.
+¿Pueden sellar solo la parte que filtra?
+Sí, sellamos el área afectada; pero si el sellador del resto del techo ya está vencido, recomendamos el sistema completo para que no aparezcan nuevas filtraciones al lado. Te explicamos ambas opciones con precio.
+¿Cuánto tarda el trabajo?
+Depende del área: una filtración puntual se resuelve en
+uno o dos días
+, incluyendo remoción, lavado a presión, primer y membrana. El tiempo de curado varía por el clima de Puerto Rico; te lo indicamos al terminar.
+¿La reparación de filtración tiene garantía?
+Entregamos garantía de mano de obra por escrito. Si la filtración reaparece dentro del periodo cubierto, regresamos a corregirla.
+¿Por qué elegir Ilatek Techos para las filtraciones de tu techo?
+Una filtración silenciosa oxida las varillas de la losa antes de gotear: nosotros encontramos el punto húmedo, removemos el material vencido y aplicamos membrana certificada desde $300 por escrito.
+Visita o inspección por $50
+Protege tu techo antes de la próxima lluvia.
+Solicita tu cotización por $50 descontables del total de reparación de filtraciones en {{custom_values.business__county_name}} y recibe precio claro y por escrito — cotización por $50 descontables del total y cobertura en los 78 municipios de Puerto Rico.
+Solicita tu cotización por $50 descontables del total
+Respuesta en minutos · Sin compromiso
+Precio claro por escrito
+desde $300, confirmado después de la inspección.
+Inspección sin compromiso
+Subimos, diagnosticamos y te explicamos las opciones.
+Garantía de mano de obra
+Respaldada por escrito en cada trabajo que hacemos.
+Devasks
+Navegación de Ilatek
+Ilatek, inicio
+Logo de Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Logo%20de%20Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Navegación principal
+Idioma / Language
+Español
+English
+Abrir o cerrar el menú
+Ilatek Reparación de filtraciones {{custom_values.business__county_name}}
+Reparación de filtraciones de agua en techo — sellado profundo en {{custom_values.business__county_name}}
+Reparación de Filtraciones en Techos · Ilatek Techos — servicio en {{custom_values.business__county_name}}
+Reparaci%C3%B3n%20de%20filtraciones%20de%20agua%20en%20techo%20%E2%80%94%20sellado%20profundo%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Reparaci%C3%B3n%20de%20Filtraciones%20en%20Techos%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Impermeabilización de filtraciones de techo de Ilatek Techos en {{custom_values.business__county_name}} — tratamiento de humedad
+Reparación de filtraciones en {{custom_values.business__county_name}} · Ilatek Techos
+Impermeabilizaci%C3%B3n%20de%20filtraciones%20de%20techo%20de%20Ilatek%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%E2%80%94%20tratamiento%20de%20humedad
+Reparaci%C3%B3n%20de%20filtraciones%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%C2%B7%20Ilatek%20Techos
+Cobertura de reparación de filtraciones de Ilatek Techos en Puerto Rico
+Busca tu pueblo
+Buscar un municipio de Puerto Rico
+Limpiar búsqueda
+Municipios de Puerto Rico con servicio de reparación de filtraciones
+Pie de página de Ilatek
+Facebook
+Facebook — servicio en {{custom_values.business__county_name}}
+Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Instagram
+Instagram — servicio en {{custom_values.business__county_name}}
+Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Youtube
+Youtube — servicio en {{custom_values.business__county_name}}
+Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+TikTok
+TikTok — servicio en {{custom_values.business__county_name}}
+TikTok%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+X — servicio en {{custom_values.business__county_name}}
+X%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+LinkedIn
+LinkedIn — servicio en {{custom_values.business__county_name}}
+LinkedIn%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Pinterest
+Pinterest — servicio en {{custom_values.business__county_name}}
+Pinterest%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D

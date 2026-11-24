@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- vieques.ilatekpr.com — landings de las comunidades de este municipio.
+     Generado por scripts/genera-pueblos.mjs; una URL por comunidad y servicio. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://vieques.ilatekpr.com/bravos-de-boston/limpieza</loc></url>
+  <url><loc>https://vieques.ilatekpr.com/bravos-de-boston/sellado-de-techo</loc></url>
+  <url><loc>https://vieques.ilatekpr.com/cesar-coca-gonzalez/limpieza</loc></url>
+  <url><loc>https://vieques.ilatekpr.com/cesar-coca-gonzalez/sellado-de-techo</loc></url>
+  <url><loc>https://vieques.ilatekpr.com/jardines-de-vieques/limpieza</loc></url>
+  <url><loc>https://vieques.ilatekpr.com/jardines-de-vieques/sellado-de-techo</loc></url>
+  <url><loc>https://vieques.ilatekpr.com/villa-borinquen/limpieza</loc></url>
+  <url><loc>https://vieques.ilatekpr.com/villa-borinquen/sellado-de-techo</loc></url>
+</urlset>

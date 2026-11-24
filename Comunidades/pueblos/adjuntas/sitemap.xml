@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- adjuntas.ilatekpr.com — landings de las comunidades de este municipio.
+     Generado por scripts/genera-pueblos.mjs; una URL por comunidad y servicio. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://adjuntas.ilatekpr.com/alturas-de-adjuntas/limpieza</loc></url>
+  <url><loc>https://adjuntas.ilatekpr.com/alturas-de-adjuntas/sellado-de-techo</loc></url>
+  <url><loc>https://adjuntas.ilatekpr.com/jardines-de-adjuntas/limpieza</loc></url>
+  <url><loc>https://adjuntas.ilatekpr.com/jardines-de-adjuntas/sellado-de-techo</loc></url>
+  <url><loc>https://adjuntas.ilatekpr.com/la-granja/limpieza</loc></url>
+  <url><loc>https://adjuntas.ilatekpr.com/la-granja/sellado-de-techo</loc></url>
+  <url><loc>https://adjuntas.ilatekpr.com/los-maestros/limpieza</loc></url>
+  <url><loc>https://adjuntas.ilatekpr.com/los-maestros/sellado-de-techo</loc></url>
+  <url><loc>https://adjuntas.ilatekpr.com/villa-valle-verde/limpieza</loc></url>
+  <url><loc>https://adjuntas.ilatekpr.com/villa-valle-verde/sellado-de-techo</loc></url>
+</urlset>

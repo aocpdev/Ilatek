@@ -1,0 +1,5 @@
+{
+  "version": 1,
+  "descripcion": "Facts locales verificados por comunidad y servicio. Clave: municipioSlug/comunidadSlug/servicio. Una landing solo pasa a index,follow con al menos 2 facts con estado=verificado y valor no vacio. Vacio a proposito: no hay facts locales confirmados por el propietario; no se inventan.",
+  "communities": {}
+}

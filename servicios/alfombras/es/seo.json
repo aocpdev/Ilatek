@@ -3,11 +3,11 @@
   "language": "es",
   "status": "plantilla-local-delta-system",
   "metaTagTitle": "Limpieza de Alfombras en {{custom_values.business__county_name}} | Ilatek",
-  "metaTagDescription": "Limpieza de alfombras en {{custom_values.business__county_name}} desde $0.75 por pie²: extracción de suciedad profunda, manchas y olores. Cotizador online y cobertura en los 78 municipios.",
-  "metaTagImage": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/alfombras.jpg",
+  "metaTagDescription": "Limpieza de alfombras en {{custom_values.business__county_name}} desde $250: extracción de suciedad profunda, manchas y olores. Cotizador online y cobertura en los 78 municipios.",
+  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/53d31ac8-0070-4333-bbd0-9230be73a330.webp",
   "locationCustomValue": "{{custom_values.business__county_name}}",
-  "metaTagImageAlt": "Limpieza de Alfombras en {{custom_values.business__county_name}} | Ilatek",
+  "metaTagImageAlt": "Limpieza de Alfombras en {{custom_values.business__county_name}} — Ilatek",
   "canonical": "https://{{custom_values.website_url}}/alfombras",
-  "socialImageFile": "assets/meta-image.jpg",
+  "socialImageFile": "assets/meta-image.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."
 }

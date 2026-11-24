@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Limpieza De Techos y Canaletas
+Slug: limpieza-de-techos-y-canaletas
+URL: https://ilatekpr.com/limpieza-de-techos-y-canaletas
+Acción: REPUBLICAR
+Estado hoy: HTTP 200
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (245 KB, sha256 612fbcc7a2c6)
+Origen en el repo: servicios/limpieza-de-techos-y-canaletas/es/landing-pages/ghl-limpieza-de-techos-y-canaletas-landing.html
+Sección de clima: sí
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

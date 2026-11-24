@@ -1,0 +1,13 @@
+PÁGINA EN GHL
+Nombre: Blog - Sellado de techos proceso
+Slug: blog/preguntas-frecuentes-sellado-de-techos-proceso
+URL final: https://ilatekpr.com/blog/preguntas-frecuentes-sellado-de-techos-proceso
+Carpeta: por-pagina/063-preguntas-frecuentes-sellado-de-techos-proceso
+
+Orden dentro de la página:
+  1) Crear/clonar la página con ese nombre y ese slug.
+  2) Elemento Custom HTML/JavaScript → Custom Code → Open Code Editor →
+     borrar todo y pegar el contenido de 2-CODIGO-CUSTOM-HTML.html.
+  3) SEO de la página: campos de 4-SEO-CAMPOS.txt.
+  4) Settings → Tracking Code → HEADER: contenido de 3-HEAD-SEO.html.
+  5) Publicar y comprobar la URL.

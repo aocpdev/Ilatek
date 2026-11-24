@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Limpieza Residencial
+Slug: limpieza-residencial
+URL: https://ilatekpr.com/limpieza-residencial
+Acción: REPUBLICAR
+Estado hoy: HTTP 200
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (238 KB, sha256 130e55b98b0e)
+Origen en el repo: categorias/limpieza-residencial/es/landing-pages/ghl-limpieza-residencial-landing.html
+Sección de clima: sí
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

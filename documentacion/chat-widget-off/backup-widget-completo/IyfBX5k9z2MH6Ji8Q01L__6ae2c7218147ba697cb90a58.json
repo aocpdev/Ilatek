@@ -1,0 +1,265 @@
+{
+  "_id": "6ae2c7218147ba697cb90a58",
+  "version": 2,
+  "chatType": "allInOneChat",
+  "name": "Ilatek",
+  "locationId": "IyfBX5k9z2MH6Ji8Q01L",
+  "deleted": false,
+  "default": true,
+  "settings": {
+    "acknowledgementDetails": {
+      "icon": "CheckCircle",
+      "placeholderColor": "#273830",
+      "liveChatIcon": "MessageDotsCircle",
+      "liveChatPlaceholderColor": "#12b76a"
+    },
+    "agencyName": "Devasks",
+    "agencyWebsite": "https://www.devasks.com",
+    "allowAvatarImage": true,
+    "chatType": "allInOneChat",
+    "promptType": "avatar",
+    "chatIcon": "messageWhatsApp",
+    "dimensions": {
+      "position": "bottom-right",
+      "sizes": {
+        "width": null,
+        "height": null
+      }
+    },
+    "enableRevisitMessage": true,
+    "heading": "¿Tienes una Pregunta?",
+    "complianceEnabled": true,
+    "showLegalNotice": true,
+    "legalNoticeText": "Al marcar esta casilla acepto que he leído y estoy de acuerdo con La Política de Garantías, La Política de Privacidad y Términos y Condiciones",
+    "consentRequired": true,
+    "legalMsg": "Al marcar esta casilla, doy mi consentimiento para recibir mensajes de texto no relacionados con mercadeo de ILATEK sobre oportunidades de empleo, solicitudes, entrevistas y comunicaciones relacionadas con el proceso de contratación. La frecuencia de los mensajes puede variar. Pueden aplicarse cargos por mensajes y datos. Envíe AYUDA (HELP) para recibir asistencia o responda SALIR (STOP) para cancelar la suscripción.",
+    "liveChatAckMsg": "Esta conversacion ha terminado.",
+    "liveChatEndedMsg": "Empezar un nuevo chat.",
+    "liveChatFeedbackMsg": "¿Como fue tu experiencia?",
+    "liveChatFeedbackNote": "Gracias por permitirnos servirle",
+    "liveChatIntroMsg": "Permiteme unos 5 minutos y te contacto con un agente de servicio al cliente.",
+    "liveChatUserInactiveMsg": "Ups.... parace que no hay nadie disponible por el momento, pero  no te preocupes muy pronto nos comunicaremos contigo.",
+    "liveChatUserInactiveTime": "5",
+    "liveChatVisitorInactiveMsg": "Voy a cerrar el chat por que no veo a nadie por aqui.",
+    "liveChatVisitorInactiveTime": "5",
+    "locale": "auto",
+    "promptAvatar": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acd6648883b04e619173104.png",
+    "promptAvatarAltText": "Avatar",
+    "isPromptAvatarImageOptimize": true,
+    "promptMsg": "¡Hola! ¿En que podemos ayudarle?",
+    "revisitPromptMsg": "Volviste {{name}}, ¿En que puedo ayudarte?",
+    "sendActionText": "Enviar",
+    "showAgencyBranding": true,
+    "showConsentCheckbox": true,
+    "showLiveChatWelcomeMsg": true,
+    "showPrompt": true,
+    "subHeading": "Escribenos en que podemos ayudarte y muy pronto estaremos contigo",
+    "successMsg": "Uno de nuestros agentes de servicio al cliente se pondra en contacto contigo muy pronto.",
+    "supportContact": "+19393357351",
+    "thankYouMsg": "Gracias",
+    "theme": {
+      "name": "custom",
+      "value": "custom",
+      "colors": {
+        "chatBubbleColor": "#00B94F",
+        "backgroundColor": "#ffffff",
+        "headerColor": "#00B94F",
+        "buttonColor": "#00B94F",
+        "avatarBackgroundColor": "#E8E8E8",
+        "avatarBorderColor": "#FFFFFF",
+        "senderMessageColor": "#00B94F",
+        "receivedMessageColor": "#F2F4F7"
+      },
+      "typography": {
+        "fontFamily": "Roboto",
+        "colors": {
+          "senderMessageTextColor": "#ffffff",
+          "receivedMessageTextColor": "#111828",
+          "headerMessageTextColor": "#ffffff",
+          "welcomeMessageTextColor": "#344054",
+          "systemMessageTextColor": "#344054"
+        }
+      }
+    },
+    "advanceSettings": {
+      "redirect": {
+        "redirectAction": false,
+        "redirectText": "For more details, please visit our website"
+      },
+      "brandingTitle": "Powered by",
+      "contactFormOptions": [
+        {
+          "id": "1",
+          "value": "name",
+          "label": "Name",
+          "disabled": true,
+          "dataType": "TEXT",
+          "fieldKey": "contact.name",
+          "placeholder": "Name",
+          "required": true
+        },
+        {
+          "id": "2",
+          "value": "phone",
+          "label": "Phone",
+          "dataType": "PHONE",
+          "fieldKey": "contact.phone",
+          "placeholder": "Phone",
+          "required": true
+        },
+        {
+          "id": "3",
+          "value": "email",
+          "label": "Email",
+          "dataType": "EMAIL",
+          "fieldKey": "contact.email",
+          "placeholder": "Email",
+          "required": true
+        },
+        {
+          "id": "4",
+          "value": "message",
+          "label": "Message",
+          "dataType": "LARGE_TEXT",
+          "fieldKey": "contact.message",
+          "placeholder": "Message",
+          "required": true
+        }
+      ],
+      "enableContactForm": true,
+      "defaultConsentCheck": true,
+      "businessOfficeHours": {
+        "enableBusinessHours": true,
+        "openHours": [
+          {
+            "daysOfTheWeek": [
+              1
+            ],
+            "hours": [
+              {
+                "openHour": "8",
+                "openMinute": "0",
+                "closeHour": "17",
+                "closeMinute": "0"
+              }
+            ]
+          },
+          {
+            "daysOfTheWeek": [
+              2
+            ],
+            "hours": [
+              {
+                "openHour": "8",
+                "openMinute": "0",
+                "closeHour": "17",
+                "closeMinute": "0"
+              }
+            ]
+          },
+          {
+            "daysOfTheWeek": [
+              3
+            ],
+            "hours": [
+              {
+                "openHour": "8",
+                "openMinute": "0",
+                "closeHour": "17",
+                "closeMinute": "0"
+              }
+            ]
+          },
+          {
+            "daysOfTheWeek": [
+              4
+            ],
+            "hours": [
+              {
+                "openHour": "8",
+                "openMinute": "0",
+                "closeHour": "17",
+                "closeMinute": "0"
+              }
+            ]
+          },
+          {
+            "daysOfTheWeek": [
+              5
+            ],
+            "hours": [
+              {
+                "openHour": "8",
+                "openMinute": "0",
+                "closeHour": "17",
+                "closeMinute": "0"
+              }
+            ]
+          },
+          {
+            "daysOfTheWeek": [
+              6
+            ],
+            "hours": [
+              {
+                "openHour": "8",
+                "openMinute": "0",
+                "closeHour": "17",
+                "closeMinute": "0"
+              }
+            ]
+          }
+        ],
+        "timezone": "America/Santo_Domingo",
+        "outsideOfficeHoursWelcomeMsg": "Estamos descansando pero dejanos un mensaje y nos comunicaremos muy pronto contigo."
+      },
+      "allInOneChatTypes": [
+        "liveChat",
+        "emailChat"
+      ],
+      "allInOneInitialMsg": "Choose a chat option to get started.",
+      "contactFormIntroMessage": "Pasame tu info por favor...",
+      "contactFormSystemMessage": "Please share contact details",
+      "fbPage": {
+        "facebookPageId": "1230828613443086",
+        "facebookPageName": "Ilatek Property Solution "
+      },
+      "instagramPage": {
+        "instagramPageId": "17841443104235049",
+        "instagramUsername": "ilatek.pr",
+        "facebookPageId": "1230828613443086",
+        "facebookPageName": "Ilatek Property Solution "
+      },
+      "prefilledMessageText": "",
+      "playNotificationSound": true,
+      "allowVoiceNotes": true,
+      "allowAttachments": true,
+      "voiceAiAnimation": null,
+      "voiceAiAnimationColor": "#155EEF",
+      "voiceAiAnimationSize": "md",
+      "voiceAiDisplayMode": "avatar",
+      "aTwoPCompliance": {
+        "enableA2PCompliance": true,
+        "a2pOptInForm1": "By checking this box, I consent to receive non-marketing text messages from [BUSINESS NAME] about [USE_CASE_FROM_WIDGET]. Message frequency varies, message & data rates may apply. Text HELP for assistance, reply STOP to opt out.",
+        "isA2POptInForm2": false,
+        "a2pOptInForm2": "By checking this box, I consent to receive marketing and promotional messages including special offers, discounts, new product updates among others.from [BUSINESS NAME] at the phone number provided. Frequency may vary. Message & data rates may apply. Text HELP for assistance, reply STOP to opt out.",
+        "privacyPolicyLink": "",
+        "termsOfServiceLink": ""
+      },
+      "spamProtection": {
+        "enabled": true,
+        "action": "pause_both"
+      }
+    },
+    "locationCountryCode": "PR",
+    "widgetPlacement": "sticky",
+    "loadStrategy": "interaction"
+  },
+  "updatedBy": "FdiFZJxlQk9CzJcLmxVH",
+  "originId": "6acd30f2114cfe74b0732225",
+  "creationSource": "chat-widget",
+  "createdAt": "2026-10-29T04:10:09.919Z",
+  "updatedAt": "2026-11-01T22:50:16.499Z",
+  "__v": 0,
+  "traceId": "81b67484-c646-4828-a8b5-c29bf2d3a061"
+}

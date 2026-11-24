@@ -12,7 +12,7 @@ export const impermeabilizacion = [
     h1after: 'para cada tipo de techo.',
     metaTitle: 'Impermeabilización de Techos en Puerto Rico | Ilatek Techos',
     metaDescription:
-      'Impermeabilización de techos en Puerto Rico desde $3.00 por pie². Sellado de concreto, techos planos, zinc, asfalto, teja y madera. Inspección gratis y garantía escrita.',
+      'Impermeabilización de techos en Puerto Rico desde $250. Sellado de concreto, techos planos, zinc, asfalto, teja y madera. Agenda con $50 descontables del total y garantía escrita.',
     hero: pic('industrial', {
       alt: 'Impermeabilización de techos de Ilatek Techos en Puerto Rico — {{custom_values.business__county_name}}',
       title: 'Impermeabilización de techos · Ilatek Techos',
@@ -24,9 +24,9 @@ export const impermeabilizacion = [
       caption: 'Cada techo, su sistema',
     }),
     heroSub:
-      'Cada tipo de techo pide un sistema distinto de impermeabilización. Ilatek sella concreto, techos planos, zinc, asfalto, teja y madera en {{custom_values.business__county_name}} <b>desde $3.00 por pie²</b>, con inspección gratis y garantía escrita.',
+      'Cada tipo de techo pide un sistema distinto de impermeabilización. Ilatek sella concreto, techos planos, zinc, asfalto, teja y madera en {{custom_values.business__county_name}}, con agenda con $50 descontables del total y garantía escrita.',
     facts: [
-      { b: '$3.00', s: 'por pie²', label: 'Precio base' },
+      { b: '$250', s: 'por servicio', label: 'Precio base' },
       { b: '6', s: 'tipos de techo', label: 'Cubiertos' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
     ],
@@ -61,17 +61,17 @@ export const impermeabilizacion = [
         { slug: 'techos-de-teja', name: 'Techos de Teja', desc: 'Tratamiento cuidadoso de tejas: sellamos traslapes y remates sin dañar la pieza.' },
         { slug: 'techos-de-madera', name: 'Techos de Madera', desc: 'Sellado y protección de techos de madera contra la humedad, el comején y la filtración.' },
       ],
-      cta: { slug: 'cotizacion', label: 'Solicita tu cotización gratis' },
+      cta: { slug: 'cotizacion', label: 'Solicita tu cotización por $50 descontables del total' },
     },
     faq: [
-      { q: '¿Cuánto cuesta impermeabilizar un techo?', a: 'La impermeabilización de techos de Ilatek <b>comienza desde $3.00 por pie²</b> instalada. El precio depende del tipo de techo, el sistema necesario y el área. Cotiza para tu número exacto.' },
+      { q: '¿Cuánto cuesta impermeabilizar un techo?', a: 'La impermeabilización de techos de Ilatek <b>comienza desde $250</b> instalada. El precio depende del tipo de techo, el sistema necesario y el área. Cotiza para tu número exacto.' },
       { q: '¿Qué es la impermeabilización de un techo?', a: 'Es el proceso de <b>crear una barrera que impide el paso del agua</b> por la superficie del techo, sellando grietas, uniones y poros con membranas, silicona o coatings según el material.' },
       { q: '¿Cuánto dura la impermeabilización?', a: 'Depende del sistema: <b>silicona 100% de 20 a 25 años, poliuretano 10 a 15, membrana asfáltica 10 a 15 y acrílico 7 a 10</b>. Con mantenimiento periódico la protección se extiende.' },
       { q: '¿Cada cuánto se impermeabiliza un techo?', a: 'Según el sistema y la exposición, entre <b>5 y 10 años</b> para la mayoría de techos. En Puerto Rico, por el sol y la lluvia, recomendamos una inspección anual para detectar fallas temprano.' },
       { q: '¿Impermeabilizar sella las goteras existentes?', a: 'La impermeabilización <b>sella el agua que aún no ha entrado y las microfisuras</b>. Las goteras activas se reparan primero en su punto de origen; después se impermeabiliza la superficie completa.' },
       { q: '¿Trabajan techos comerciales e industriales?', a: 'Sí: impermeabilizamos <b>techos residenciales, comerciales e industriales</b>, incluidos losas grandes, techos planos con membrana y naves industriales.' },
       { q: '¿La impermeabilización incluye garantía?', a: '<b>Sí.</b> Entregamos garantía de mano de obra por escrito con materiales certificados. Si el sistema falla en el periodo cubierto, regresamos.' },
-      { q: '¿Por qué elegir Ilatek Techos?', a: 'Usamos el sistema correcto para cada tipo de techo, <b>desde $3.00 por pie²</b>, con inspección gratis, garantía escrita y cobertura en los 78 municipios de Puerto Rico.' },
+      { q: '¿Por qué elegir Ilatek Techos?', a: 'Usamos el sistema correcto para cada tipo de techo, <b>desde $250</b>, con agenda con $50 descontables del total, garantía escrita y cobertura en los 78 municipios de Puerto Rico.' },
     ],
   }),
 
@@ -84,17 +84,17 @@ export const impermeabilizacion = [
     h1after: ' desde $250.',
     metaTitle: 'Reparación de Techos de Concreto (Losas) desde $250 | Ilatek Techos',
     metaDescription:
-      'Reparación de techos de concreto y losas en Puerto Rico desde $250. Sellado de grietas y filtraciones, cotización gratis y garantía escrita.',
+      'Reparación de techos de concreto y losas en Puerto Rico desde $250. Sellado de grietas y filtraciones, cotización por $50 descontables del total y garantía escrita.',
     hero: pic('comercial', {
       alt: 'Reparación de techo de concreto y losa en Puerto Rico — {{custom_values.business__county_name}}', title: 'Reparación de techos de concreto · Ilatek Techos', badge: 'Reparación de losas'
     }),
     incl: pic('industrial', { alt: 'Sellado de grietas de losa de concreto por Ilatek Techos en Puerto Rico — reparación de techos de concreto', title: 'Reparación de losas de concreto · Ilatek Techos', caption: 'Grietas selladas · Filtraciones corregidas' }),
     heroSub:
-      'La losa de concreto es el techo más común en Puerto Rico: resistente, pero propensa a grietas y filtraciones con el tiempo. Ilatek repara techos de concreto en {{custom_values.business__county_name}} <b>desde $250</b>, con cotización gratis y garantía escrita.',
+      'La losa de concreto es el techo más común en Puerto Rico: resistente, pero propensa a grietas y filtraciones con el tiempo. Ilatek repara techos de concreto en {{custom_values.business__county_name}} <b>desde $250</b>, con cotización por $50 descontables del total y garantía escrita.',
     facts: [
       { b: '$250', s: 'por reparación', label: 'Precio de entrada' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
-      { b: '$50', s: 'cotización', label: 'Gratis, se agenda con $50 reembolsables' },
+      { b: '$50', s: 'visita', label: 'Descontables del total' },
     ],
     benefits: [
       { icon: 'shield', h: 'Sella las grietas del concreto', p: 'Rellenamos las grietas con sellador flexible y sellamos la superficie para que el agua no penetre la losa.' },
@@ -125,14 +125,14 @@ export const impermeabilizacion = [
       ],
     },
     faq: [
-      { q: '¿Cuánto cuesta reparar un techo de concreto?', a: 'La reparación de techos de concreto de Ilatek <b>comienza desde $250</b>. El precio depende del área y del estado de la losa. La cotización es gratis y se agenda con $50 reembolsables. Cotiza para tu número exacto.' },
+      { q: '¿Cuánto cuesta reparar un techo de concreto?', a: 'La reparación de techos de concreto de Ilatek <b>comienza desde $250</b>. El precio depende del área y del estado de la losa. La visita o inspección cuesta $50 y se descuenta del total del servicio. Cotiza para tu número exacto.' },
       { q: '¿Por qué se filtra una losa de concreto?', a: 'Por <b>grietas de retracción, juntas abiertas, empozamientos y pérdida de pendiente</b>. El agua encuentra esas fallas y penetra la losa, apareciendo como manchas o goteras.' },
       { q: '¿Cómo sellan las grietas de una losa?', a: 'Perfilamos la grieta, la rellenamos con <b>sellador polimérico flexible</b> y la protegemos con el sellador o membrana correctos para que no vuelva a abrirse con el movimiento del concreto.' },
       { q: '¿Las varillas oxidadas del techo se pueden reparar?', a: 'Si el óxido es incipiente, <b>tratamos el acero, restauramos el recubrimiento y sellamos</b>. Si ya hay daño estructural mayor, te lo informamos y recomendamos el refuerzo necesario.' },
-      { q: '¿La cotización de mi techo de concreto tiene costo?', a: 'La cotización es <b>gratis</b> y se agenda con $50 reembolsables: si aceptas el trabajo, ese monto se acredita al total. Así confirmamos tu fecha sin costo real.' },
+      { q: '¿La cotización de mi techo de concreto tiene costo?', a: 'La visita o inspección es <b>$50</b> y se descuenta del total del servicio: si aceptas el trabajo, ese monto se acredita al total. Así confirmamos tu fecha y el monto se descuenta del total.' },
       { q: '¿Cuánto dura la reparación de una losa?', a: 'Un trabajo típico toma <b>1 a 3 días</b> según el área y el número de grietas. Te damos el estimado de tiempo en la cotización.' },
       { q: '¿La reparación de la losa tiene garantía?', a: '<b>Sí.</b> Entregamos garantía de mano de obra por escrito; si la filtración reaparece dentro del periodo cubierto, regresamos a corregirla.' },
-      { q: '¿Por qué elegir Ilatek Techos?', a: 'Sellamos grietas y filtraciones de losas desde <b>$250</b>, con cotización gratis agendada con $50 reembolsables, garantía escrita y cobertura en los 78 municipios de Puerto Rico.' },
+      { q: '¿Por qué elegir Ilatek Techos?', a: 'Sellamos grietas y filtraciones de losas desde <b>$250</b>, con cotización por $50 descontables del total descontables del total, garantía escrita y cobertura en los 78 municipios de Puerto Rico.' },
     ],
   }),
 
@@ -145,15 +145,15 @@ export const impermeabilizacion = [
     h1after: ' (EPDM, TPO y asfáltica).',
     metaTitle: 'Impermeabilización de Techos Planos (EPDM, TPO) | Ilatek Techos',
     metaDescription:
-      'Impermeabilización de techos planos en Puerto Rico desde $250. Membranas EPDM, TPO y asfálticas selladas, cotización $0 agendada con $50 reembolsables y garantía escrita.',
+      'Impermeabilización de techos planos en Puerto Rico desde $250. Membranas EPDM, TPO y asfálticas selladas, cotización por $50 descontables del total y garantía escrita.',
     hero: pic('comercial', { alt: 'Impermeabilización de techo plano en Puerto Rico — {{custom_values.business__county_name}}', title: 'Techos planos · Ilatek Techos', badge: 'EPDM · TPO · Asfáltica' }),
     incl: pic('industrial', { alt: 'Membrana impermeabilizante en techo plano por Ilatek Techos en Puerto Rico', title: 'Techos planos y membranas · Ilatek Techos', caption: 'Membrana continua · Drenaje correcto' }),
     heroSub:
-      'Los techos planos acumulan agua y exigen una membrana que cubra toda la superficie sin fallas. Ilatek impermeabiliza techos planos en {{custom_values.business__county_name}} <b>desde $250</b>, corrigiendo drenaje, con cotización $0 y garantía escrita.',
+      'Los techos planos acumulan agua y exigen una membrana que cubra toda la superficie sin fallas. Ilatek impermeabiliza techos planos en {{custom_values.business__county_name}}, corrigiendo drenaje, con cotización por $50 descontables del total y garantía escrita.',
     facts: [
       { b: '$250', s: 'por trabajo', label: 'Precio de entrada' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
-      { b: '$0', s: 'cotización', label: 'Gratis, se agenda con $50 reembolsables' },
+      { b: '$50', s: 'visita', label: 'Descontables del total' },
     ],
     benefits: [
       { icon: 'shield', h: 'Membrana continua', p: 'Cubrimos toda la superficie sin uniones débiles, la causa número uno de filtraciones en techos planos.' },
@@ -184,15 +184,15 @@ export const impermeabilizacion = [
       ],
     },
     faq: [
-      { q: '¿Cuánto cuesta impermeabilizar un techo plano?', a: 'La impermeabilización de techos planos de Ilatek <b>comienza desde $250</b>. El precio depende del área, el tipo de membrana y el estado del drenaje. La cotización es $0 y se agenda con $50 reembolsables.' },
+      { q: '¿Cuánto cuesta impermeabilizar un techo plano?', a: 'La impermeabilización de techos planos de Ilatek <b>comienza desde $250</b>. El precio depende del área, el tipo de membrana y el estado del drenaje. La visita o inspección cuesta $50 y se descuenta del total del servicio.' },
       { q: '¿Por qué se filtra un techo plano?', a: 'Por <b>membranas vencidas, juntas mal selladas, desagües tapados y empozamientos</b>. Al no tener pendiente pronunciada, el agua se queda más tiempo y encuentra cualquier falla.' },
       { q: '¿Qué membrana es mejor, EPDM o TPO?', a: '<b>Depende del uso.</b> El TPO blanco refleja el calor y se suelda por calor; el EPDM es más elástico y tolera el movimiento. Elegimos según tránsito, exposición y presupuesto.' },
       { q: '¿Cuánto dura una membrana en techo plano?', a: 'Con buena instalación, <b>de 10 a 20 años</b> según el tipo. Las inspecciones periódicas permiten reparar puntos antes de que falle toda la superficie.' },
       { q: '¿Pueden impermeabilizar sobre la membrana vieja?', a: 'En algunos casos sí, si la membrana existente está firme; si está suelta o con humedad atrapada, <b>hay que removerla</b>. Lo determinamos en la inspección con una prueba de humedad.' },
       { q: '¿Cuánto tarda el trabajo?', a: 'Un techo plano residencial toma <b>2 a 4 días</b>; superficies comerciales grandes requieren más tiempo. Te damos el estimado en la cotización.' },
-      { q: '¿La cotización de mi techo plano tiene costo?', a: 'La cotización es <b>$0</b> y se agenda con $50 reembolsables: si aceptas el trabajo, ese monto se acredita al total. Así confirmamos tu fecha sin costo real.' },
+      { q: '¿La cotización de mi techo plano tiene costo?', a: 'La visita o inspección es <b>$50</b> y se descuenta del total del servicio: si aceptas el trabajo, ese monto se acredita al total. Así confirmamos tu fecha y el monto se descuenta del total.' },
       { q: '¿La impermeabilización del techo plano tiene garantía?', a: '<b>Sí.</b> Entregamos garantía de mano de obra por escrito sobre el sistema aplicado, con membranas certificadas.' },
-      { q: '¿Por qué elegir Ilatek Techos?', a: 'Corregimos drenaje y colocamos la membrana correcta, <b>desde $250</b>, con cotización $0, garantía escrita y cobertura en los 78 municipios de Puerto Rico.' },
+      { q: '¿Por qué elegir Ilatek Techos?', a: 'Corregimos drenaje y colocamos la membrana correcta, <b>desde $250</b>, con cotización gratis, garantía escrita y cobertura en los 78 municipios de Puerto Rico.' },
     ],
   }),
 
@@ -205,15 +205,15 @@ export const impermeabilizacion = [
     h1after: ' desde $250.',
     metaTitle: 'Reparación de Techos de Zinc y Metal desde $250 | Ilatek Techos',
     metaDescription:
-      'Reparación y sellado de techos de zinc y metal en Puerto Rico desde $250. Tratamiento de óxido, sellado de traslapes y protección anticorrosiva, cotización gratis y garantía escrita.',
+      'Reparación y sellado de techos de zinc y metal en Puerto Rico desde $250. Tratamiento de óxido, sellado de traslapes y protección anticorrosiva, cotización por $50 descontables del total y garantía escrita.',
     hero: pic('presion', { alt: 'Techos de metal y zinc en Puerto Rico — instalación, sellado y protección en {{custom_values.business__county_name}}', title: 'Techos de metal y zinc · Ilatek Techos', badge: 'Metal y zinc · Sellado' }),
     incl: pic('postconstruccion', { alt: 'Sellado y tratamiento anticorrosivo de techo de zinc por Ilatek Techos en Puerto Rico', title: 'Techos de zinc · Ilatek Techos', caption: 'Traslapes · Tornillos · Anticorrosivo' }),
     heroSub:
-      'Los techos de zinc son comunes en anexos, garajes y quioscos, pero el óxido y el viento los castigan. Ilatek repara y sella techos de zinc en {{custom_values.business__county_name}} <b>desde $250</b>, con tratamiento anticorrosivo, cotización gratis y garantía escrita.',
+      'Los techos de zinc son comunes en anexos, garajes y quioscos, pero el óxido y el viento los castigan. Ilatek repara y sella techos de zinc en {{custom_values.business__county_name}} <b>desde $250</b>, con tratamiento anticorrosivo, cotización por $50 descontables del total y garantía escrita.',
     facts: [
       { b: '$250', s: 'por reparación', label: 'Tratamiento incluido' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
-      { b: '$50', s: 'cotización', label: 'Gratis, se agenda con $50 reembolsables' },
+      { b: '$50', s: 'visita', label: 'Descontables del total' },
     ],
     benefits: [
       { icon: 'shield', h: 'Frena el óxido', p: 'Tratamos la corrosión activa y aplicamos recubrimiento que protege el metal por más tiempo.' },
@@ -244,15 +244,15 @@ export const impermeabilizacion = [
       ],
     },
     faq: [
-      { q: '¿Cuánto cuesta reparar un techo de zinc?', a: 'La reparación y sellado de techos de zinc de Ilatek <b>comienza desde $250</b>, incluyendo tratamiento anticorrosivo y sellado de uniones. La cotización es gratis y se agenda con $50 reembolsables.' },
+      { q: '¿Cuánto cuesta reparar un techo de zinc?', a: 'La reparación y sellado de techos de zinc de Ilatek <b>comienza desde $250</b>, incluyendo tratamiento anticorrosivo y sellado de uniones. La visita o inspección cuesta $50 y se descuenta del total del servicio.' },
       { q: '¿Por qué se oxida tan rápido el zinc en Puerto Rico?', a: 'Por el <b>aire salino de la costa, la humedad y la lluvia constante</b>. Sin recubrimiento protector, el zinc se perfora en pocos años y comienza a gotear.' },
       { q: '¿Se puede reparar un techo de zinc oxidado?', a: '<b>Si el óxido es superficial o puntual, sí</b>: se trata y se protege. Si ya perforó grandes áreas, evaluamos sustituir las láminas dañadas. Te lo decimos claro.' },
       { q: '¿Qué sellador se usa en techos de zinc?', a: 'Usamos <b>selladores y recubrimientos específicos para metal</b>, con tratamiento anticorrosivo previo, porque un sellador para concreto no adhiere bien al zinc.' },
       { q: '¿Cómo sellan las uniones entre láminas?', a: 'Aplicamos <b>sellador flexible en los traslapes</b> y reponemos tornillos y arandelas de sellado para que el agua no pase por las uniones ni por las fijaciones.' },
       { q: '¿Cuánto tarda el trabajo?', a: 'Un techo de zinc de anexo o garaje se completa normalmente en <b>uno a dos días</b>, según el área y el grado de oxidación.' },
-      { q: '¿La cotización de mi techo de zinc tiene costo?', a: 'La cotización es <b>gratis</b> y se agenda con $50 reembolsables: si aceptas el trabajo, ese monto se acredita al total. Así confirmamos tu fecha sin costo real.' },
+      { q: '¿La cotización de mi techo de zinc tiene costo?', a: 'La visita o inspección es <b>$50</b> y se descuenta del total del servicio: si aceptas el trabajo, ese monto se acredita al total. Así confirmamos tu fecha y el monto se descuenta del total.' },
       { q: '¿La reparación del techo de zinc tiene garantía?', a: '<b>Sí.</b> Entregamos garantía de mano de obra por escrito sobre el tratamiento y sellado aplicado.' },
-      { q: '¿Por qué elegir Ilatek Techos?', a: 'Tratamos el óxido de raíz, sellamos uniones y protegemos el metal, <b>desde $250</b>, con cotización gratis, garantía escrita y cobertura en los 78 municipios de Puerto Rico.' },
+      { q: '¿Por qué elegir Ilatek Techos?', a: 'Tratamos el óxido de raíz, sellamos uniones y protegemos el metal, <b>desde $250</b>, con cotización por $50 descontables del total, garantía escrita y cobertura en los 78 municipios de Puerto Rico.' },
     ],
   }),
 
@@ -265,15 +265,15 @@ export const impermeabilizacion = [
     h1after: '.',
     metaTitle: 'Reparación de Techos de Asfalto (Shingles) | Ilatek Techos',
     metaDescription:
-      'Reparación de techos de asfalto y shingles en Puerto Rico desde $350. Sustitución de tejas dañadas y sellado de filtraciones con garantía escrita. Inspección gratis.',
+      'Reparación de techos de asfalto y shingles en Puerto Rico desde $250. Sustitución de tejas dañadas y sellado de filtraciones con garantía escrita. Agenda con $50 descontables del total.',
     hero: pic('residencial', { alt: 'Reparación de techo de asfalto y shingles en Puerto Rico — {{custom_values.business__county_name}}', title: 'Techos de asfalto · Ilatek Techos', badge: 'Shingles reparados' }),
     incl: pic('postconstruccion', { alt: 'Reparación de shingles de techo por Ilatek Techos en Puerto Rico — filtraciones selladas', title: 'Techos de asfalto · Ilatek Techos', caption: 'Shingles sustituidos · Sellado de filtraciones' }),
     heroSub:
-      'Los shingles de asfalto se levantan, se parten y dejan pasar el agua por debajo. Ilatek repara techos de asfalto en {{custom_values.business__county_name}} <b>desde $350</b>, sustituyendo piezas dañadas y sellando filtraciones, con garantía escrita.',
+      'Los shingles de asfalto se levantan, se parten y dejan pasar el agua por debajo. Ilatek repara techos de asfalto en {{custom_values.business__county_name}} <b>desde $250</b>, sustituyendo piezas dañadas y sellando filtraciones, con garantía escrita.',
     facts: [
-      { b: '$350', s: 'por reparación', label: 'Piezas incluidas' },
+      { b: '$250', s: 'por reparación', label: 'Piezas incluidas' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
-      { b: '$0', s: 'inspección', label: 'Evaluación gratis' },
+      { b: '$50', s: 'visita', label: 'Descontables del total' },
     ],
     benefits: [
       { icon: 'bolt', h: 'Reponemos shingles dañados', p: 'Sustituimos las tejas sueltas, partidas o faltantes para reconstruir la barrera donde el agua se cuela.' },
@@ -304,14 +304,14 @@ export const impermeabilizacion = [
       ],
     },
     faq: [
-      { q: '¿Cuánto cuesta reparar un techo de asfalto?', a: 'La reparación de techos de asfalto de Ilatek <b>comienza desde $350</b>, incluyendo sustitución de shingles dañados y sellado. El precio depende del área y del alcance. Cotiza para tu número exacto.' },
+      { q: '¿Cuánto cuesta reparar un techo de asfalto?', a: 'La reparación de techos de asfalto de Ilatek <b>comienza desde $250</b>, incluyendo sustitución de shingles dañados y sellado. El precio depende del área y del alcance. Cotiza para tu número exacto.' },
       { q: '¿Qué son los shingles y por qué fallan?', a: 'Los shingles son tejas de asfalto que forman la cubierta del techo. Fallan por <b>sol intenso, viento, humedad y envejecimiento</b>: se secan, se agrietan y se levantan, dejando pasar el agua.' },
       { q: '¿Se pueden reparar solo algunas tejas?', a: '<b>Sí</b>, si el daño es localizado reponemos solo las piezas afectadas y sellamos la zona. Si el techo está deteriorado en general, te explicamos las opciones.' },
       { q: '¿Cuánto dura un techo de asfalto?', a: 'Un techo de asfalto dura <b>de 15 a 25 años</b> según la calidad del shingle y el mantenimiento. En Puerto Rico, el sol y la lluvia pueden acortar su vida, por eso conviene revisarlo cada año.' },
       { q: '¿Es mejor reparar o reemplazar el techo de asfalto?', a: 'Si el daño es puntual, <b>reparar</b> es lo rentable; si más del 30% del techo está deteriorado o tiene filtraciones generalizadas, suele convenir <b>reemplazar</b>. Te damos ambas cotizaciones.' },
       { q: '¿Cuánto tarda la reparación?', a: 'Una reparación puntual de shingles se completa normalmente <b>el mismo día</b>. Áreas mayores o remates extensos pueden requerir dos jornadas.' },
       { q: '¿La reparación del techo de asfalto tiene garantía?', a: '<b>Sí.</b> Entregamos garantía de mano de obra por escrito sobre el trabajo de sustitución y sellado.' },
-      { q: '¿Por qué elegir Ilatek Techos?', a: 'Sustituimos las piezas correctas y sellamos la entrada real del agua, <b>desde $350</b>, con inspección gratis, garantía escrita y cobertura en los 78 municipios de Puerto Rico.' },
+      { q: '¿Por qué elegir Ilatek Techos?', a: 'Sustituimos las piezas correctas y sellamos la entrada real del agua, <b>desde $250</b>, con agenda con $50 descontables del total, garantía escrita y cobertura en los 78 municipios de Puerto Rico.' },
     ],
   }),
 
@@ -324,15 +324,15 @@ export const impermeabilizacion = [
     h1after: ' desde $250.',
     metaTitle: 'Reparación de Techos de Teja desde $250 | Ilatek Techos',
     metaDescription:
-      'Reparación y sellado de techos de teja en Puerto Rico desde $250. Sellado de traslapes y remates sin dañar la pieza, cotización gratis y garantía escrita.',
+      'Reparación y sellado de techos de teja en Puerto Rico desde $250. Sellado de traslapes y remates sin dañar la pieza, cotización por $50 descontables del total y garantía escrita.',
     hero: pic('residencial', { alt: 'Reparación de techo de teja en Puerto Rico — {{custom_values.business__county_name}}', title: 'Techos de teja · Ilatek Techos', badge: 'Trato cuidadoso de la teja' }),
     incl: pic('postconstruccion', { alt: 'Sellado de techo de teja por Ilatek Techos en Puerto Rico — traslapes y remates', title: 'Techos de teja · Ilatek Techos', caption: 'Traslapes sellados · Remates firmes' }),
     heroSub:
-      'Las tejas son hermosas pero delicadas: una pieza suelta o un traslape abierto deja pasar el agua. Ilatek repara y sella techos de teja en {{custom_values.business__county_name}} <b>desde $250</b>, con cuidado de la pieza, cotización gratis y garantía escrita.',
+      'Las tejas son hermosas pero delicadas: una pieza suelta o un traslape abierto deja pasar el agua. Ilatek repara y sella techos de teja en {{custom_values.business__county_name}} <b>desde $250</b>, con cuidado de la pieza, cotización por $50 descontables del total y garantía escrita.',
     facts: [
       { b: '$250', s: 'por reparación', label: 'Precio de entrada' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
-      { b: '$50', s: 'cotización', label: 'Gratis, se agenda con $50 reembolsables' },
+      { b: '$50', s: 'visita', label: 'Descontables del total' },
     ],
     benefits: [
       { icon: 'shield', h: 'Sin dañar la teja', p: 'Trabajamos con cuidado para sellar y reparar sin romper piezas que son costosas de reponer.' },
@@ -363,15 +363,15 @@ export const impermeabilizacion = [
       ],
     },
     faq: [
-      { q: '¿Cuánto cuesta reparar un techo de teja?', a: 'La reparación y sellado de techos de teja de Ilatek <b>comienza desde $250</b>. El precio depende del número de piezas a reponer y del área a sellar. La cotización es gratis y se agenda con $50 reembolsables.' },
+      { q: '¿Cuánto cuesta reparar un techo de teja?', a: 'La reparación y sellado de techos de teja de Ilatek <b>comienza desde $250</b>. El precio depende del número de piezas a reponer y del área a sellar. La visita o inspección cuesta $50 y se descuenta del total del servicio.' },
       { q: '¿Por qué se filtra un techo de teja?', a: 'Por <b>piezas quebradas o movidas, traslapes abiertos y remates sueltos</b>. La teja es la cubierta, pero la impermeabilidad real está en la capa inferior; si la teja falla, el agua pasa.' },
       { q: '¿Se puede sellar una teja sin quitarla?', a: '<b>En muchos casos sí</b>: sellamos traslapes y fijaciones sin desmontar la pieza. Si está quebrada, se repone con cuidado para no dañar las vecinas.' },
       { q: '¿Con qué sellan los techos de teja?', a: 'Usamos <b>selladores compatibles con teja</b> y de alta adherencia, evitando productos que manchen o dañen la pieza. El objetivo es sellar sin alterar la estética.' },
       { q: '¿Cuánto dura la reparación de un techo de teja?', a: 'Una reparación puntual se completa en <b>uno o dos días</b>; el sellado de toda la superficie puede tomar más según el área y el acceso al techo.' },
       { q: '¿Se pueden reponer tejas quebradas?', a: '<b>Sí.</b> Reponemos las piezas dañadas cuando están disponibles, o sellamos de forma impermeable si la pieza no se consigue, cuidando siempre la apariencia.' },
-      { q: '¿La cotización de mi techo de teja tiene costo?', a: 'La cotización es <b>gratis</b> y se agenda con $50 reembolsables: si aceptas el trabajo, ese monto se acredita al total. Así confirmamos tu fecha sin costo real.' },
+      { q: '¿La cotización de mi techo de teja tiene costo?', a: 'La visita o inspección es <b>$50</b> y se descuenta del total del servicio: si aceptas el trabajo, ese monto se acredita al total. Así confirmamos tu fecha y el monto se descuenta del total.' },
       { q: '¿La reparación de la teja tiene garantía?', a: '<b>Sí.</b> Entregamos garantía de mano de obra por escrito sobre la reparación y el sellado realizado.' },
-      { q: '¿Por qué elegir Ilatek Techos?', a: 'Trabajamos la teja con cuidado, sellamos sin dañarla y conservamos su estética, <b>desde $250</b>, con cotización gratis y garantía escrita en los 78 municipios de Puerto Rico.' },
+      { q: '¿Por qué elegir Ilatek Techos?', a: 'Trabajamos la teja con cuidado, sellamos sin dañarla y conservamos su estética, <b>desde $250</b>, con cotización por $50 descontables del total y garantía escrita en los 78 municipios de Puerto Rico.' },
     ],
   }),
 
@@ -384,15 +384,15 @@ export const impermeabilizacion = [
     h1after: ' desde $250.',
     metaTitle: 'Sellado y Protección de Techos de Madera desde $250 | Ilatek Techos',
     metaDescription:
-      'Sellado y protección de techos de madera en Puerto Rico desde $250. Tratamiento contra humedad, comején y filtración, cotización gratis y garantía escrita.',
+      'Sellado y protección de techos de madera en Puerto Rico desde $250. Tratamiento contra humedad, comején y filtración, cotización por $50 descontables del total y garantía escrita.',
     hero: pic('residencial', { alt: 'Sellado y protección de techo de madera en Puerto Rico — {{custom_values.business__county_name}}', title: 'Techos de madera · Ilatek Techos', badge: 'Contra humedad y comején' }),
     incl: pic('postconstruccion', { alt: 'Protección de techo de madera por Ilatek Techos en Puerto Rico — tratamiento antihumedad', title: 'Techos de madera · Ilatek Techos', caption: 'Humedad tratada · Madera protegida' }),
     heroSub:
-      'La madera del techo sufre con la humedad, el sol y el comején. Ilatek la sella y protege en {{custom_values.business__county_name}} <b>desde $250</b>, cortando la filtración y prolongando la vida de la estructura, con cotización gratis y garantía escrita.',
+      'La madera del techo sufre con la humedad, el sol y el comején. Ilatek la sella y protege en {{custom_values.business__county_name}} <b>desde $250</b>, cortando la filtración y prolongando la vida de la estructura, con cotización por $50 descontables del total y garantía escrita.',
     facts: [
       { b: '$250', s: 'por sellado', label: 'Precio de entrada' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
-      { b: '$50', s: 'cotización', label: 'Gratis, se agenda con $50 reembolsables' },
+      { b: '$50', s: 'visita', label: 'Descontables del total' },
     ],
     benefits: [
       { icon: 'drop', h: 'Corta la humedad', p: 'Sellamos las entradas de agua que mantienen la madera húmeda, la causa del deterioro y del comején.' },
@@ -423,15 +423,15 @@ export const impermeabilizacion = [
       ],
     },
     faq: [
-      { q: '¿Cuánto cuesta sellar un techo de madera?', a: 'El sellado y protección de techos de madera de Ilatek <b>comienza desde $250</b>. El precio depende del área, el estado de la madera y el tratamiento necesario. La cotización es gratis y se agenda con $50 reembolsables.' },
+      { q: '¿Cuánto cuesta sellar un techo de madera?', a: 'El sellado y protección de techos de madera de Ilatek <b>comienza desde $250</b>. El precio depende del área, el estado de la madera y el tratamiento necesario. La visita o inspección cuesta $50 y se descuenta del total del servicio.' },
       { q: '¿Por qué se daña la madera del techo?', a: 'Por <b>humedad constante, sol intenso y comején</b>. El agua que se filtra mantiene la madera húmeda y la vuelve vulnerable a hongos, pudrición y plagas.' },
       { q: '¿Se puede salvar un techo de madera con humedad?', a: '<b>Si el daño no es avanzado, sí</b>: sellamos la filtración, tratamos la humedad y aplicamos protector. Si hay pudrición estructural, te informamos qué partes hay que sustituir.' },
       { q: '¿Qué protector usan para la madera?', a: 'Aplicamos <b>protectores repelentes de agua</b> específicos para madera, que reducen la absorción de humedad y frenan el envejecimiento del material.' },
       { q: '¿El tratamiento contra comején está incluido?', a: 'El sellado previene la humedad que atrae al comején, pero <b>el tratamiento de plagas es un servicio aparte</b>. En la inspección te indicamos si hace falta.' },
       { q: '¿Cuánto tarda el trabajo?', a: 'Un techo de madera residencial se sella y protege en <b>uno a dos días</b>, dependiendo del área y del tratamiento necesario.' },
-      { q: '¿La cotización de mi techo de madera tiene costo?', a: 'La cotización es <b>gratis</b> y se agenda con $50 reembolsables: si aceptas el trabajo, ese monto se acredita al total. Así confirmamos tu fecha sin costo real.' },
+      { q: '¿La cotización de mi techo de madera tiene costo?', a: 'La visita o inspección es <b>$50</b> y se descuenta del total del servicio: si aceptas el trabajo, ese monto se acredita al total. Así confirmamos tu fecha y el monto se descuenta del total.' },
       { q: '¿La protección del techo de madera tiene garantía?', a: '<b>Sí.</b> Entregamos garantía de mano de obra por escrito sobre el sellado y la protección aplicada.' },
-      { q: '¿Por qué elegir Ilatek Techos?', a: 'Cortamos la humedad y protegemos la madera con productos correctos, <b>desde $250</b>, con cotización gratis, garantía escrita y cobertura en los 78 municipios de Puerto Rico.' },
+      { q: '¿Por qué elegir Ilatek Techos?', a: 'Cortamos la humedad y protegemos la madera con productos correctos, <b>desde $250</b>, con cotización por $50 descontables del total, garantía escrita y cobertura en los 78 municipios de Puerto Rico.' },
     ],
   }),
 ];

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://toa-alta.ilatekpr.com/sitemap.xml

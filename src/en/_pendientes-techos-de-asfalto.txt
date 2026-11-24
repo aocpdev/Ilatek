@@ -1,0 +1,159 @@
+/og:title/ og:description ("… en Juncos, Puerto Rico"): el título sale de {{custom_values.business__county_name}}, así que es el mismo custom value, sin depender de que el builder expanda el Custom Code; 3. el subdominio del sitio (juncos.ilatekpr.com → Juncos); 4. los valores de marca del contrato (custom-values.json → brand). El portador que viaja en el embed se oculta siempre (nunca es contenido). Estado en
+{{custom_values.business__county_name}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}
+Login
+Techos de asfalto
+Reparación de Techos de Asfalto (Shingles) en
+Puerto Rico
+Los shingles de asfalto se levantan, se parten y dejan pasar el agua por debajo. Ilatek repara techos de asfalto en {{custom_values.business__county_name}}
+desde $350
+, sustituyendo piezas dañadas y sellando filtraciones, con garantía escrita.
+Solicita tu cotización
+Qué incluye el servicio ↓
+por reparación
+Piezas incluidas
+municipios
+Cobertura en PR
+al agendar
+Se descuenta del total
+Shingles reparados
+undefined
+Cada shingle suelto es una entrada de agua.
+Reponemos shingles dañados
+Sustituimos las tejas sueltas, partidas o faltantes para reconstruir la barrera donde el agua se cuela.
+Sellamos por debajo
+El agua en un techo de asfalto entra por las capas inferiores: sellamos la entrada, no solo la teja visible.
+Prolonga la vida del techo
+Reparar a tiempo las piezas dañadas evita tener que reemplazar todo el techo de asfalto antes de tiempo.
+Qué incluye
+Cómo reparamos un techo de asfalto.
+En un techo de asfalto, una teja rota es una entrada de agua.
+Ilatek identifica las piezas dañadas, repone los shingles y sella las capas inferiores y los remates para cortar la filtración.
+Inspección de shingles sueltos o faltantes
+Sustitución de piezas dañadas
+Sellado de tapajuntas y remates
+Tratamiento de las capas inferiores
+Sellado de penetraciones y canales
+Garantía por escrito del trabajo
+Cotiza tu techo de asfalto
+Shingles sustituidos · Sellado de filtraciones
+Señales
+Cuándo tu techo de asfalto necesita reparación.
+Piezas
+Shingles sueltos
+Tejas levantadas o volando tras el viento: cada una es un punto por donde entra el agua.
+Superficie
+Grietas y decoloración
+Shingles secos y agrietados por el sol pierden su capacidad de impermeabilizar.
+Interior
+Manchas en el techo interior
+Manchas y humedad debajo indican que el agua ya pasó las capas del asfalto.
+Cómo funciona
+Cómo reparamos tu techo de asfalto.
+Reponemos los shingles dañados y sellamos las capas inferiores y los remates para cortar la filtración.
+PASO 1
+Cotiza tu reparación de techos de asfalto
+Usa el cotizador de Ilatek o escríbenos: evaluamos tu techo y te damos el precio de reparación de techos de asfalto por escrito en minutos — sin compromiso.
+PASO 2
+Inspección y agenda
+Confirmamos el alcance de reparación de techos de asfalto con una inspección del techo, defines la fecha y reservas con el depósito de $50, que se descuenta del total.
+PASO 3
+Trabajo terminado
+Ejecutamos reparación de techos de asfalto con materiales certificados, protegemos el área y te entregamos la garantía por escrito.
+Cobertura de
+techos de asfalto
+en toda la isla.
+Ilatek Techos brinda reparación de techos de asfalto en los
+78 municipios de Puerto Rico
+. Atendemos tu área en
+{{custom_values.business__county_name}}
+y toda la isla: busca tu pueblo en el directorio y visita su página.
+No encontramos ese pueblo. Verifica el nombre e intenta nuevamente.
+Página 1 de 1
+Reseñas de clientes de Ilatek.
+Reseñas de personas que confiaron en Ilatek para mantenimiento y sellado de techos en Puerto Rico. Cambia de pestaña para ver cada fuente.
+Preguntas frecuentes
+Preguntas frecuentes sobre reparación de techos de asfalto.
+¿Cuánto cuesta reparar un techo de asfalto?
+La reparación de techos de asfalto de Ilatek
+comienza desde $350
+, incluyendo sustitución de shingles dañados y sellado. El precio depende del área y del alcance. Cotiza para tu número exacto.
+¿Qué son los shingles y por qué fallan?
+Los shingles son tejas de asfalto que forman la cubierta del techo. Fallan por
+sol intenso, viento, humedad y envejecimiento
+: se secan, se agrietan y se levantan, dejando pasar el agua.
+¿Se pueden reparar solo algunas tejas?
+, si el daño es localizado reponemos solo las piezas afectadas y sellamos la zona. Si el techo está deteriorado en general, te explicamos las opciones.
+¿Cuánto dura un techo de asfalto?
+Un techo de asfalto dura
+de 15 a 25 años
+según la calidad del shingle y el mantenimiento. En Puerto Rico, el sol y la lluvia pueden acortar su vida, por eso conviene revisarlo cada año.
+¿Es mejor reparar o reemplazar el techo de asfalto?
+Si el daño es puntual,
+reparar
+es lo rentable; si más del 30% del techo está deteriorado o tiene filtraciones generalizadas, suele convenir
+reemplazar
+. Te damos ambas cotizaciones.
+¿Cuánto tarda la reparación?
+Una reparación puntual de shingles se completa normalmente
+el mismo día
+. Áreas mayores o remates extensos pueden requerir dos jornadas.
+¿La reparación del techo de asfalto tiene garantía?
+Entregamos garantía de mano de obra por escrito sobre el trabajo de sustitución y sellado.
+¿Por qué elegir Ilatek Techos para tu techo de asfalto?
+En un techo de shingles el agua entra por debajo de la teja visible: reponemos las piezas dañadas y sellamos las capas inferiores y los remates desde $350, con garantía escrita.
+Visita o inspección por $50
+Protege tu techo antes de la próxima lluvia.
+Solicita tu cotización por $50 descontables del total de reparación de techos de asfalto en {{custom_values.business__county_name}} y recibe precio claro y por escrito — cotización por $50 descontables del total y cobertura en los 78 municipios de Puerto Rico.
+Solicita tu cotización por $50 descontables del total
+Respuesta en minutos · Sin compromiso
+Precio claro por escrito
+desde $350, confirmado después de la inspección.
+Inspección sin compromiso
+Subimos, diagnosticamos y te explicamos las opciones.
+Garantía de mano de obra
+Respaldada por escrito en cada trabajo que hacemos.
+Devasks
+Navegación de Ilatek
+Ilatek, inicio
+Logo de Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Logo%20de%20Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Navegación principal
+Idioma / Language
+Español
+English
+Abrir o cerrar el menú
+Ilatek Techos de asfalto {{custom_values.business__county_name}}
+Reparación de techo de asfalto y shingles — {{custom_values.business__county_name}}
+Techos de asfalto · Ilatek Techos — servicio en {{custom_values.business__county_name}}
+Reparaci%C3%B3n%20de%20techo%20de%20asfalto%20y%20shingles%20%E2%80%94%20%7B%7Bcustom_values.business__county_name%7D%7D
+Techos%20de%20asfalto%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Reparación de shingles de techo por Ilatek Techos en {{custom_values.business__county_name}} — filtraciones selladas
+Reparaci%C3%B3n%20de%20shingles%20de%20techo%20por%20Ilatek%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%E2%80%94%20filtraciones%20selladas
+Cobertura de reparación de techos de asfalto de Ilatek Techos en Puerto Rico
+Busca tu pueblo
+Buscar un municipio de Puerto Rico
+Limpiar búsqueda
+Municipios de Puerto Rico con servicio de reparación de techos de asfalto
+Pie de página de Ilatek
+Facebook
+Facebook — servicio en {{custom_values.business__county_name}}
+Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Instagram
+Instagram — servicio en {{custom_values.business__county_name}}
+Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Youtube
+Youtube — servicio en {{custom_values.business__county_name}}
+Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+TikTok
+TikTok — servicio en {{custom_values.business__county_name}}
+TikTok%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+X — servicio en {{custom_values.business__county_name}}
+X%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+LinkedIn
+LinkedIn — servicio en {{custom_values.business__county_name}}
+LinkedIn%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Pinterest
+Pinterest — servicio en {{custom_values.business__county_name}}
+Pinterest%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D

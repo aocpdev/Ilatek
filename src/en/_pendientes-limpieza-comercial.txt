@@ -1,0 +1,149 @@
+{{custom_values.business__county_name}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}
+Limpieza Comercial en {{custom_values.business__county_name}} | Ilatek
+/og:title/ og:description ("… en Juncos, Puerto Rico"): el título sale de {{custom_values.business__county_name}}, así que es el mismo custom value, sin depender de que el builder expanda el Custom Code; 3. el subdominio del sitio (juncos.ilatekpr.com → Juncos); 4. los valores de marca del contrato (custom-values.json → brand). El portador que viaja en el embed se oculta siempre (nunca es contenido). Estado en
+Login
+Limpieza comercial
+Limpieza Comercial en
+{{custom_values.business__county_name}}
+que trabaja fuera de tu horario.
+Ilatek limpia oficinas, comercios y espacios de trabajo en {{custom_values.business__county_name}} con un plan que se ajusta a tu operación: antes de abrir, después de cerrar o en tu frecuencia ideal. Cotiza en minutos y reserva con $50.
+Solicita tu cotización
+Qué incluye el servicio ↓
+Flex
+horario
+Antes de abrir o tras cerrar
+municipios
+Cobertura en PR
+depósito
+Descontable al reservar
+Por qué Ilatek
+Tu negocio presentable, todos los días.
+Cero interrupciones
+Limpiamos antes de que abra tu negocio o después de cerrar: tus clientes y tu equipo nunca ven el proceso, solo el resultado.
+Plan según tu operación
+Oficina, tienda o clínica: definimos juntos el alcance y la frecuencia. Un precio claro por cotización, sin contratos con letra pequeña.
+Equipo confiable
+Personal profesional y supervisado que llega con todos los productos y equipos. El mismo estándar en cada visita en {{custom_values.business__county_name}}.
+Qué incluye
+Tu espacio de trabajo, impecable de punta a punta.
+La limpieza comercial de Ilatek cubre áreas de trabajo, baños, áreas comunes, pisos y cristales — con el alcance exacto que tu espacio necesita, definido en la cotización.
+Oficinas: escritorios, superficies y equipo visible
+Baños: desinfección completa y reabasto
+Áreas comunes: recepción, pasillos y sala de reuniones
+Pisos: barrido, trapeado y aspirado según superficie
+Cristales y vidrios de acceso al cliente
+Puntos de contacto: manijas, interruptores, elevadores
+Cotiza tu espacio
+Productos profesionales · seguros para tu equipo
+Espacios
+Limpiamos todo tipo de negocio.
+Oficinas y coworking
+Áreas de trabajo, salas de reuniones, baños y cocina compartida — listas para arrancar cada jornada.
+Tiendas y comercios
+Pisos impecables, vidrios brillantes y áreas de venta presentables para recibir clientes todos los días.
+Clínicas y espacios profesionales
+Desinfección cuidadosa de consultorios, salas de espera y puntos de contacto de alta rotación.
+Frecuencia
+El ritmo que tu negocio necesita.
+Diaria / entre semana
+Operación de alto tráfico
+Locales con clientes a diario: limpieza antes de abrir o al cerrar, de lunes a viernes, sin que lo notes.
+2–3 veces por semana
+El estándar de oficinas
+Mantenimiento perfecto para oficinas y comercios con tráfico moderado: siempre presentable, presupuesto controlado.
+Semanal / quincenal
+Espacios ligeros
+Oficinas pequeñas o espacios con poco tráfico: apoyo profesional puntual con el mismo estándar de calidad.
+Cotiza tu precio exacto
+Cobertura local
+Limpieza impecable,
+Cobertura en Toda la Isla
+Explora los servicios de limpieza de
+Ilatek
+disponibles en los
+78 municipios de Puerto Rico
+y visita la página de tu pueblo. Atendemos hogares en
+y toda la isla.
+No encontramos ese pueblo. Verifica el nombre e intenta nuevamente.
+Página 1 de 1
+Preguntas frecuentes
+Todo lo que preguntas antes de contratar.
+¿Cuánto se cobra por limpiar oficinas en {{custom_values.business__county_name}}?
+Depende del tamaño del espacio, la cantidad de baños, la condición y la frecuencia. Ilatek cotiza tu oficina con
+precio claro y por escrito
+— usa el cotizador o solicita tu cotización y recibe tu número real en minutos, sin compromiso.
+¿Qué incluye una limpieza de oficina?
+Incluye áreas de trabajo (escritorios y superficies), desinfección de baños y reabasto, áreas comunes y recepción, pisos según superficie y cristales de acceso al cliente. El alcance exacto queda definido en tu cotización.
+¿Pueden limpiar fuera del horario de mi negocio?
+Sí — es lo más común. Trabajamos
+antes de abrir o después de cerrar
+y coordinamos el acceso contigo. Tus operaciones nunca se detienen: tus clientes solo ven el resultado.
+¿Cada cuánto deben limpiar mi local?
+Depende del tráfico: locales con clientes diarios piden limpieza
+entre semana
+; la mayoría de oficinas funciona perfecto con
+; espacios pequeños con
+semanal o quincenal
+. En la cotización te recomendamos la frecuencia según tu operación.
+¿Cubren mi área en {{custom_values.business__county_name}}?
+Sí. Ilatek atiende negocios en los
+, incluyendo {{custom_values.business__county_name}} y el área metropolitana. Cotiza tu espacio y confirma tu plan en minutos.
+¿Hay contrato o compromiso mínimo?
+Definimos juntos el plan y la frecuencia — sin letra pequeña. Reservas con un depósito de
+$50 descontable
+y ajustamos el servicio cuando tu operación lo necesite.
+¿Traen sus propios productos y equipos?
+Sí. El equipo llega con
+todos los productos y equipos profesionales
+, seguros para tu personal y tus clientes. Si tu espacio requiere algo específico (grado hospitalario, eco-amigable), coordínalo en la cotización.
+¿Por qué elegir Ilatek para la limpieza de mi negocio?
+Horario flexible que no interrumpe tu operación, precio claro por escrito, cobertura en los 78 municipios y un equipo profesional supervisado. Tu negocio siempre presentable en {{custom_values.business__county_name}}.
+¿Tu negocio merece el estándar Ilatek?
+Solicita tu cotización ↗
+Devasks
+Navegación de Ilatek
+Ilatek, inicio
+Logo de Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Logo%20de%20Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Navegación principal
+Idioma / Language
+Español
+English
+Abrir o cerrar el menú
+Ilatek Limpieza Comercial {{custom_values.business__county_name}}
+Equipo de Ilatek limpiando una oficina — limpieza comercial de espacios de trabajo en {{custom_values.business__county_name}}
+Limpieza Comercial en {{custom_values.business__county_name}} · Ilatek
+Equipo%20de%20Ilatek%20limpiando%20una%20oficina%20%E2%80%94%20limpieza%20comercial%20de%20espacios%20de%20trabajo%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Limpieza%20Comercial%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%C2%B7%20Ilatek
+Detalles de limpieza comercial de Ilatek — desinfección de áreas de trabajo en {{custom_values.business__county_name}}
+Limpieza de Oficinas en {{custom_values.business__county_name}} · Ilatek
+Detalles%20de%20limpieza%20comercial%20de%20Ilatek%20%E2%80%94%20desinfecci%C3%B3n%20de%20%C3%A1reas%20de%20trabajo%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Limpieza%20de%20Oficinas%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%C2%B7%20Ilatek
+Cobertura de limpieza de Ilatek en Puerto Rico
+Busca tu pueblo
+Buscar un municipio de Puerto Rico
+Limpiar búsqueda
+Municipios de Puerto Rico con servicio de Ilatek
+Pie de página de Ilatek
+Facebook
+Facebook — servicio en {{custom_values.business__county_name}}
+Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Instagram
+Instagram — servicio en {{custom_values.business__county_name}}
+Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Youtube
+Youtube — servicio en {{custom_values.business__county_name}}
+Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+TikTok
+TikTok — servicio en {{custom_values.business__county_name}}
+TikTok%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+X — servicio en {{custom_values.business__county_name}}
+X%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+LinkedIn
+LinkedIn — servicio en {{custom_values.business__county_name}}
+LinkedIn%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Pinterest
+Pinterest — servicio en {{custom_values.business__county_name}}
+Pinterest%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D

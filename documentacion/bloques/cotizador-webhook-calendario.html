@@ -1,0 +1,224 @@
+<!-- ILATEK · captura de datos + webhook del cotizador + calendario de limpieza.
+     Se anexa al final del Custom Code del calculador. No cambia tarifas ni el
+     diseño existente: añade nombre/correo/teléfono, envía el payload completo al
+     workflow "Agendó Limpieza" y abre el calendario con los datos ya cargados. -->
+<section id="ilag-agendar">
+  <h2>Agenda tu limpieza</h2>
+  <p class="ilag-sub">Déjanos tus datos para reservar la fecha. Te enviaremos el resumen de tu cotización por correo.</p>
+
+  <div class="ilag-grid">
+    <label>Nombre<input id="ilag-nombre" type="text" autocomplete="given-name" placeholder="Nombre"></label>
+    <label>Apellido<input id="ilag-apellido" type="text" autocomplete="family-name" placeholder="Apellido"></label>
+    <label>Teléfono<input id="ilag-telefono" type="tel" autocomplete="tel" inputmode="tel" placeholder="(787) 000-0000"></label>
+    <label>Correo electrónico<input id="ilag-email" type="email" autocomplete="email" placeholder="tu@correo.com"></label>
+  </div>
+
+  <div class="ilag-total">Total estimado: <b id="ilag-total">$0.00</b></div>
+  <button id="ilag-enviar" type="button">Continuar a agendar</button>
+  <p id="ilag-msg" class="ilag-msg" role="alert"></p>
+
+  <div id="ilag-calendario" hidden>
+    <h3>Elige tu fecha y hora</h3>
+    <iframe id="ilag-iframe" title="Reserva tu limpieza | ILATEK" style="width:100%;border:0;height:850px" allow="payment"></iframe>
+  </div>
+</section>
+
+<style>
+  #ilag-agendar{max-width:850px;margin:32px auto 0;padding:26px 22px;border:1px solid #dbe2f1;border-radius:12px;background:#fff;font-family:Arial,sans-serif;color:#172033}
+  #ilag-agendar h2{margin:0 0 6px;font-size:1.35rem;color:#11164b}
+  #ilag-agendar h3{margin:0 0 12px;font-size:1.1rem;color:#11164b}
+  #ilag-agendar .ilag-sub{margin:0 0 18px;color:#5b6380;font-size:.95rem}
+  #ilag-agendar .ilag-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media(max-width:600px){#ilag-agendar .ilag-grid{grid-template-columns:1fr}}
+  #ilag-agendar label{display:flex;flex-direction:column;gap:6px;font-size:.9rem;font-weight:600;color:#172033}
+  #ilag-agendar input{height:46px;padding:0 12px;border:1px solid #dbe2f1;border-radius:8px;font:inherit;font-weight:400;color:#172033;outline:none}
+  #ilag-agendar input:focus{border-color:#213d8e;box-shadow:0 0 0 3px rgba(33,61,142,.15)}
+  #ilag-agendar input.ilag-error{border-color:#b33b39}
+  #ilag-agendar .ilag-total{margin:16px 0 14px;font-size:1rem;color:#11164b}
+  #ilag-agendar .ilag-total b{color:#009640;font-size:1.15rem}
+  #ilag-agendar button{width:100%;min-height:50px;border:0;border-radius:10px;background:#00b94f;color:#0b103d;font:700 1rem Arial,sans-serif;cursor:pointer}
+  #ilag-agendar button:hover{background:#009640;color:#fff}
+  #ilag-agendar button[disabled]{opacity:.6;cursor:progress}
+  #ilag-agendar .ilag-msg{min-height:20px;margin:10px 0 0;color:#b33b39;font-size:.9rem}
+  #ilag-agendar .ilag-msg.ok{color:#009640}
+  #ilag-calendario{margin-top:24px}
+</style>
+
+<script>
+(function () {
+  var root = document.getElementById('ilag-agendar');
+  if (!root || root.dataset.ready === '1') return;
+  root.dataset.ready = '1';
+
+  var WEBHOOK = 'https://services.leadconnectorhq.com/hooks/8OxUENFVM60EKzqsTcoD/webhook-trigger/59a8eede-f640-4746-88f2-2a912a128203';
+  var CALENDARIO = 'https://link.msgsndr.com/widget/booking/i5HZobZjuSZcDl43qgOG';
+  var PIPELINE = 'koKZMpsg4GfYKzPkVcHb';
+  var ETAPA = 'bb571230-5385-4d2e-aa20-04bd1bd7cff0';
+  var AREAS = { habitacion: 'Habitaciones', sala: 'Sala', comedor: 'Comedor', family: 'Family', cocina: 'Cocina', bano: 'Baños completos', medio: 'Medios baños' };
+  var EXTRAS = { laundry_area: 'Laundry', garage: 'Garage', mascotas: 'Mascotas', ventana_interior: 'Ventanas interiores', ventana_ie: 'Ventanas interior + exterior', horno: 'Horno', refrigerador: 'Refrigerador', lavanderia_ropa: 'Lavandería de ropa', gabinetes: 'Gabinetes por dentro' };
+  var SERVICIO = { general: 'Limpieza Estándar', profunda: 'Limpieza Profunda', comercial: 'Limpieza Estándar', mudanza: 'Move In/Move Out', post: 'Post-Construcción' };
+
+  var nombre = document.getElementById('ilag-nombre');
+  var apellido = document.getElementById('ilag-apellido');
+  var telefono = document.getElementById('ilag-telefono');
+  var email = document.getElementById('ilag-email');
+  var boton = document.getElementById('ilag-enviar');
+  var msg = document.getElementById('ilag-msg');
+  var totalOut = document.getElementById('ilag-total');
+  var calendario = document.getElementById('ilag-calendario');
+  var iframe = document.getElementById('ilag-iframe');
+
+  function id() {
+    try {
+      var v = sessionStorage.getItem('ilatek_cotizacion_id');
+      if (!v) {
+        v = 'cot-' + Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 8);
+        sessionStorage.setItem('ilatek_cotizacion_id', v);
+      }
+      return v;
+    } catch (e) { return 'cot-' + Date.now().toString(36); }
+  }
+
+  function numero(texto) {
+    var n = parseFloat(String(texto || '').replace(/[^0-9.]/g, ''));
+    return isFinite(n) ? n : 0;
+  }
+
+  function leer() {
+    var tipo = document.querySelector('#il-tipo');
+    var municipio = document.querySelector('#il-municipio');
+    var total = numero((document.getElementById('total') || {}).textContent);
+    if (totalOut) totalOut.textContent = '$' + total.toFixed(2);
+    var areas = [], extras = [];
+    [].forEach.call(document.querySelectorAll('.il-qty'), function (input) {
+      var cantidad = parseInt(input.value, 10) || 0;
+      if (!cantidad) return;
+      var lista = input.dataset.group === 'area' ? areas : extras;
+      var nombres = input.dataset.group === 'area' ? AREAS : EXTRAS;
+      lista.push((nombres[input.dataset.key] || input.dataset.key) + ': ' + cantidad);
+    });
+    return {
+      total: Math.round(total * 100) / 100,
+      tipo: tipo ? tipo.value : '',
+      tipoTexto: (document.getElementById('tipoLabel') || {}).textContent || (tipo && tipo.options[tipo.selectedIndex] ? tipo.options[tipo.selectedIndex].textContent : ''),
+      municipio: municipio ? municipio.value : '',
+      areas: areas,
+      extras: extras
+    };
+  }
+
+  function resumen(datos, nombreCompleto, tel, correo) {
+    return [
+      'COTIZACIÓN DE LIMPIEZA — ILATEK',
+      'Cliente: ' + nombreCompleto,
+      'Teléfono: ' + tel,
+      'Correo: ' + correo,
+      'Tipo de servicio: ' + datos.tipoTexto,
+      'Municipio: ' + (datos.municipio || '—'),
+      'Áreas: ' + (datos.areas.join(', ') || '—'),
+      'Extras: ' + (datos.extras.join(', ') || '—'),
+      'Total estimado: $' + datos.total.toFixed(2),
+      'Depósito requerido: $50.00'
+    ].join('\n');
+  }
+
+  function payload() {
+    var datos = leer();
+    var nom = String(nombre.value || '').trim();
+    var ape = String(apellido.value || '').trim();
+    var tel = String(telefono.value || '').trim();
+    var correo = String(email.value || '').trim();
+    var completo = (nom + ' ' + ape).trim();
+    var valores = {
+      valor_oportunidad: datos.total,
+      deposito_requerido: 50,
+      tipo_de_servicio: SERVICIO[datos.tipo] || 'Limpieza Estándar',
+      municipio: datos.municipio,
+      areas: datos.areas.join(' | '),
+      extras: datos.extras.join(' | ')
+    };
+    var base = {
+      event: 'cotizacion_limpieza',
+      event_label: 'Cotización de limpieza enviada',
+      submission_id: id(),
+      submitted_at: new Date().toISOString(),
+      source: 'Cotizador de limpieza ILATEK',
+      page_url: location.href,
+      calendario_url: CALENDARIO,
+      pipeline_id: PIPELINE,
+      pipeline_stage_id: ETAPA,
+      opportunity_name: completo + ' — ' + (SERVICIO[datos.tipo] || 'Limpieza') + ' — ' + (datos.municipio || 'PR'),
+      firstName: nom,
+      lastName: ape,
+      full_name: completo,
+      phone: tel,
+      email: correo,
+      tipo_de_servicio_texto: datos.tipoTexto,
+      resumen: resumen(datos, completo, tel, correo)
+    };
+    var contacto = {}, oportunidad = {};
+    Object.keys(valores).forEach(function (k) { contacto['contact.' + k] = valores[k]; oportunidad['opportunity.' + k] = valores[k]; });
+    return Object.assign(base, valores, contacto, oportunidad);
+  }
+
+  function enviar(datos, intento) {
+    var n = intento || 0;
+    try {
+      fetch(WEBHOOK, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(datos), keepalive: true })
+        .then(function (r) {
+          if (!r.ok && n < 2) return setTimeout(function () { enviar(datos, n + 1); }, 700 * (n + 1));
+          if (!r.ok) { msg.textContent = 'No pudimos enviar tu cotización. Intenta de nuevo o llámanos al 787-561-7333.'; msg.className = 'ilag-msg'; boton.disabled = false; return; }
+          window.dispatchEvent(new CustomEvent('ilatek:quote-sent', { detail: { payload: datos } }));
+        })
+        .catch(function () { if (n < 2) setTimeout(function () { enviar(datos, n + 1); }, 700 * (n + 1)); });
+    } catch (e) {}
+  }
+
+  function abrirCalendario(datos) {
+    var p = new URLSearchParams();
+    p.set('email', datos.email); p.set('phone', datos.phone);
+    p.set('first_name', datos.firstName); p.set('last_name', datos.lastName);
+    p.set('contact.valor_oportunidad', datos.valor_oportunidad);
+    p.set('contact.tipo_de_servicio', datos.tipo_de_servicio);
+    p.set('contact.deposito_requerido', datos.deposito_requerido);
+    iframe.src = CALENDARIO + '?' + p.toString();
+    calendario.hidden = false;
+    iframe.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function error(campo, texto) {
+    msg.textContent = texto; msg.className = 'ilag-msg';
+    campo.classList.add('ilag-error'); campo.focus();
+  }
+
+  boton.addEventListener('click', function () {
+    [nombre, apellido, telefono, email].forEach(function (c) { c.classList.remove('ilag-error'); });
+    if (!String(nombre.value || '').trim()) return error(nombre, 'Escribe tu nombre para continuar.');
+    if (!String(apellido.value || '').trim()) return error(apellido, 'Escribe tu apellido para continuar.');
+    if (String(telefono.value || '').replace(/\D/g, '').length < 10) return error(telefono, 'Escribe un teléfono válido de 10 dígitos.');
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(String(email.value || '').trim())) return error(email, 'Escribe un correo electrónico válido.');
+
+    var datos = payload();
+    if (!datos.valor_oportunidad) { msg.textContent = 'Primero completa tu cotización arriba.'; msg.className = 'ilag-msg'; return; }
+
+    msg.textContent = 'Enviando tu cotización…'; msg.className = 'ilag-msg';
+    boton.disabled = true;
+    enviar(datos, 0);
+    abrirCalendario(datos);
+    setTimeout(function () {
+      msg.textContent = 'Listo, elige tu fecha y hora en el calendario.';
+      msg.className = 'ilag-msg ok';
+      boton.disabled = false;
+    }, 900);
+  });
+
+  document.addEventListener('input', function (e) {
+    if (e.target && (e.target.id === 'il-tipo' || e.target.id === 'il-municipio' || (e.target.classList && e.target.classList.contains('il-qty')))) leer();
+  });
+  document.addEventListener('change', function (e) {
+    if (e.target && (e.target.id === 'il-tipo' || e.target.id === 'il-municipio' || (e.target.classList && e.target.classList.contains('il-qty')))) leer();
+  });
+
+  leer();
+})();
+</script>

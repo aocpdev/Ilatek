@@ -1,0 +1,157 @@
+/og:title/ og:description ("… en Juncos, Puerto Rico"): el título sale de {{custom_values.business__county_name}}, así que es el mismo custom value, sin depender de que el builder expanda el Custom Code; 3. el subdominio del sitio (juncos.ilatekpr.com → Juncos); 4. los valores de marca del contrato (custom-values.json → brand). El portador que viaja en el embed se oculta siempre (nunca es contenido). Estado en
+{{custom_values.business__county_name}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}
+Login
+Reparación post-huracán
+Reparación de Techos Post-Huracán en
+Puerto Rico
+: estabilizamos y reparamos.
+Después de una tormenta, cada hora que pasa con el techo abierto multiplica el daño. Ilatek estabiliza, documenta y repara techos dañados por huracán en {{custom_values.business__county_name}}
+desde $350
+— con atención prioritaria y garantía escrita.
+Solicita tu cotización
+Qué incluye el servicio ↓
+emergencia
+Estabilización
+respuesta
+Visita prioritaria
+municipios
+Cobertura en PR
+Atención prioritaria
+undefined
+Después del huracán, cerrar el techo es lo urgente.
+Estabilizamos primero
+Lo urgente es cerrar la entrada de agua: cubrimos y aseguramos el área dañada antes de la reparación definitiva.
+Documentamos para tu seguro
+Levantamos evidencia fotográfica del daño y del alcance para que tu reclamación al seguro sea sólida.
+Reparación seria
+Sustituimos láminas, sellamos y reforzamos lo que el viento y la lluvia dañaron, con materiales y garantía de mano de obra.
+Qué incluye
+Cómo atendemos un techo dañado por huracán.
+Primero se estabiliza, después se repara.
+Ilatek asegura el techo para detener el agua, documenta el daño para tu seguro y ejecuta la reparación definitiva con el material correcto.
+Inspección de daños y evaluación de riesgo
+Estabilización y cubrimiento del área
+Documentación fotográfica para el seguro
+Sustitución de láminas y piezas perdidas
+Sellado de juntas, remates y penetraciones
+Garantía por escrito del trabajo
+Solicita atención post-huracán
+Estabilizar · Documentar · Reparar
+Daños típicos
+Qué deja un huracán en los techos de Puerto Rico.
+Zinc
+Láminas levantadas o voladas
+El viento arranca láminas y deja el techo abierto a la lluvia: hay que cubrir y reponer.
+Losas
+Grietas y remates rotos
+La fuerza del viento y los escombros vuelan remates y abren grietas nuevas en las losas.
+Agua
+Filtraciones generalizadas
+La lluvia intensa se abre paso por donde el techo quedó debilitado, filtrándose al interior.
+Cómo funciona
+Primero estabilizamos y documentamos, después reparamos: cada hora con el techo abierto multiplica el daño.
+PASO 1
+Cotiza tu reparación de techo post-huracán
+Usa el cotizador de Ilatek o escríbenos: evaluamos tu techo y te damos el precio de reparación de techo post-huracán por escrito en minutos — sin compromiso.
+PASO 2
+Inspección y agenda
+Confirmamos el alcance de reparación de techo post-huracán con una inspección del techo, defines la fecha y reservas con el depósito de $50, que se descuenta del total.
+PASO 3
+Trabajo terminado
+Ejecutamos reparación de techo post-huracán con materiales certificados, protegemos el área y te entregamos la garantía por escrito.
+Cobertura de
+reparación post-huracán
+en toda la isla.
+Ilatek Techos brinda reparación de techo post-huracán en los
+78 municipios de Puerto Rico
+. Atendemos tu área en
+{{custom_values.business__county_name}}
+y toda la isla: busca tu pueblo en el directorio y visita su página.
+No encontramos ese pueblo. Verifica el nombre e intenta nuevamente.
+Página 1 de 1
+Reseñas de clientes de Ilatek.
+Reseñas de personas que confiaron en Ilatek para mantenimiento y sellado de techos en Puerto Rico. Cambia de pestaña para ver cada fuente.
+Preguntas frecuentes
+Preguntas frecuentes sobre reparación de techo post-huracán.
+¿Cuánto cuesta reparar un techo después de un huracán?
+La atención post-huracán de Ilatek
+comienza desde $350
+para la estabilización y evaluación, con la reparación definitiva cotizada por separado. Atendemos con visita prioritaria.
+¿Atienden emergencias inmediatamente?
+Sí: damos
+atención prioritaria
+a techos dañados con riesgo de filtración activa. Coordinamos la visita junto a ti y reservas con el depósito descontable de $50.
+¿Qué hacen primero en un techo dañado?
+Estabilizar el techo
+para detener la entrada de agua — cubrir, asegurar y sellar provisionalmente — antes de la reparación definitiva. Así se evita que el daño interior siga creciendo.
+¿Documentan el daño para el seguro?
+levantamos evidencia fotográfica del daño
+y del alcance para respaldar tu reclamación. Es un servicio que muchos propietarios desconocen y que marca la diferencia con la aseguradora.
+¿Qué pasa si el techo está muy dañado para reparar?
+Si el daño hace la reparación inviable,
+te lo decimos de frente
+y trabajamos la estabilización y el diagnóstico para que puedas planificar el reemplazo con información clara.
+¿Puedo pedir la reparación sin reclamar al seguro?
+Reparamos con o sin reclamación. Si decides no usar el seguro, te damos el precio de la reparación por escrito igual.
+¿La reparación post-huracán tiene garantía?
+El trabajo definitivo se entrega con garantía de mano de obra por escrito, igual que cualquier otra reparación de techo de Ilatek.
+¿Por qué elegir Ilatek Techos tras un huracán?
+Estabilizamos el techo para detener el agua, levantamos evidencia fotográfica para tu reclamación al seguro y luego reparamos láminas, grietas y remates — con atención prioritaria desde $350 y garantía escrita.
+Visita o inspección por $50
+Protege tu techo antes de la próxima lluvia.
+Solicita tu cotización por $50 descontables del total de reparación de techo post-huracán en {{custom_values.business__county_name}} y recibe precio claro y por escrito — cotización por $50 descontables del total y cobertura en los 78 municipios de Puerto Rico.
+Solicita tu cotización por $50 descontables del total
+Respuesta en minutos · Sin compromiso
+Precio claro por escrito
+desde $350, confirmado después de la inspección.
+Inspección sin compromiso
+Subimos, diagnosticamos y te explicamos las opciones.
+Garantía de mano de obra
+Respaldada por escrito en cada trabajo que hacemos.
+Devasks
+Navegación de Ilatek
+Ilatek, inicio
+Logo de Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Logo%20de%20Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Navegación principal
+Idioma / Language
+Español
+English
+Abrir o cerrar el menú
+Ilatek Reparación post-huracán {{custom_values.business__county_name}}
+Reparación de techo dañado por huracán — estabilización y sellado en {{custom_values.business__county_name}}
+Reparación de techos post-huracán · Ilatek Techos — servicio en {{custom_values.business__county_name}}
+Reparaci%C3%B3n%20de%20techo%20da%C3%B1ado%20por%20hurac%C3%A1n%20%E2%80%94%20estabilizaci%C3%B3n%20y%20sellado%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Reparaci%C3%B3n%20de%20techos%20post-hurac%C3%A1n%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Reparación post-huracán de techos de Ilatek Techos en {{custom_values.business__county_name}} — láminas y sellado de emergencia
+Reparación post-huracán · Ilatek Techos — servicio en {{custom_values.business__county_name}}
+Reparaci%C3%B3n%20post-hurac%C3%A1n%20de%20techos%20de%20Ilatek%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%E2%80%94%20l%C3%A1minas%20y%20sellado%20de%20emergencia
+Reparaci%C3%B3n%20post-hurac%C3%A1n%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Cobertura de reparación de techo post-huracán de Ilatek Techos en Puerto Rico
+Busca tu pueblo
+Buscar un municipio de Puerto Rico
+Limpiar búsqueda
+Municipios de Puerto Rico con servicio de reparación de techo post-huracán
+Pie de página de Ilatek
+Facebook
+Facebook — servicio en {{custom_values.business__county_name}}
+Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Instagram
+Instagram — servicio en {{custom_values.business__county_name}}
+Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Youtube
+Youtube — servicio en {{custom_values.business__county_name}}
+Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+TikTok
+TikTok — servicio en {{custom_values.business__county_name}}
+TikTok%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+X — servicio en {{custom_values.business__county_name}}
+X%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+LinkedIn
+LinkedIn — servicio en {{custom_values.business__county_name}}
+LinkedIn%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Pinterest
+Pinterest — servicio en {{custom_values.business__county_name}}
+Pinterest%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D

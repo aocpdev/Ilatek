@@ -1,0 +1,211 @@
+<!-- Ilatek · pie publicado en el home (incluye el ajuste móvil de dos columnas). -->
+<footer id="ilatek-footer" class="ilf-bleed" role="contentinfo" aria-label="Pie de página de Ilatek">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+
+  <style>
+    #ilatek-footer{
+      --ilf-bg:#0b103d;--ilf-bg-m:#0b103d;--ilf-navy:#11164b;--ilf-ink:#000321;
+      --ilf-blue:#000d4d;--ilf-green:#00b94f;--ilf-green-dk:#009640;
+      --ilf-line:#1c2452;--ilf-gray:#cbd5e0;--ilf-muted:#5b6380;--ilf-white:#fff;
+      background:var(--ilf-bg);color:var(--ilf-white);
+      font-family:Inter,Arial,sans-serif;padding:40px 0 10px;
+      -webkit-font-smoothing:antialiased;overflow-x:clip;
+    }
+    #ilatek-footer *{box-sizing:border-box}
+    /* ILATEK · Footer full-width + responsive (overlay global) */
+    #ilatek-footer,
+    #ilatek-footer *{min-width:0}
+    #ilatek-footer{width:100%;max-width:none;padding-left:0;padding-right:0}
+    #ilatek-footer .ilf-inner{width:100%;max-width:none}    #ilatek-footer .ilf-top{width:min(100% - 32px,900px);margin:0 auto;padding:clamp(36px,5vw,56px) 0;display:grid;grid-template-columns:max-content max-content;column-gap:clamp(28px,6vw,110px);align-items:start;justify-content:center;justify-items:start;background:none;border-radius:0}    #ilatek-footer .ilf-bottom{padding:10px clamp(14px,2vw,20px)}
+    @supports (width:100vw){
+      #ilatek-footer.ilf-bleed{width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw)}}
+    #ilatek-footer img{max-width:100%;height:auto}
+    @media (max-width:600px){
+      #ilatek-footer{padding:26px 0 8px}
+      #ilatek-footer .ilf-top{display:grid;grid-template-columns:1fr;row-gap:28px;padding:32px 20px;justify-items:center;border-radius:0}
+      
+      /* Dos columnas que caben en el ancho del teléfono: antes eran max-content
+         (341px + 148px) y se salían del viewport, recortadas por overflow-x:clip. */
+      #ilatek-footer .ilf-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));justify-content:stretch;gap:24px 18px;text-align:left;padding:0;width:100%;max-width:100%}
+      #ilatek-footer .ilf-nav a,#ilatek-footer .ilf-nav span{overflow-wrap:break-word}
+      #ilatek-footer .ilf-services{display:grid;grid-template-columns:1fr;gap:14px;padding:0 16px}
+      #ilatek-footer .ilf-card{padding:24px 16px;border-radius:18px}
+      
+      #ilatek-footer .ilf-links a{font-size:13px;padding:5px 0;display:inline-block}      #ilatek-footer .ilf-btn{padding:14px 34px;width:auto;max-width:100%}      #ilatek-footer .ilf-bottom{display:flex;flex-direction:column;gap:10px;text-align:center}
+      #ilatek-footer .ilf-credit{margin-top:0;line-height:1.5;overflow-wrap:break-word}}    #ilatek-footer p,#ilatek-footer h2,#ilatek-footer h3,#ilatek-footer ul{margin:0;padding:0}
+    #ilatek-footer ul{list-style:none}
+    #ilatek-footer a{text-decoration:none}
+    #ilatek-footer a:focus-visible{outline:2px solid var(--ilf-green);outline-offset:3px;border-radius:4px}
+    .ilf-inner{width:100%}
+    /* franja superior: imagen de GHL como primer elemento del footer */
+    .ilf-top{width:90%;margin:20px auto;padding:40px;display:grid;grid-template-columns:1fr 1fr;column-gap:40px;align-items:start;background:linear-gradient(0deg,var(--ilf-white) 0%,var(--ilf-gray) 100%);border-radius:20px}
+    
+    
+    /* iconos de los títulos */
+    .ilf-ico{width:15px;height:15px;display:inline-block;vertical-align:-2px;margin-right:6px;flex:none;color:var(--ilf-green)}
+    .ilf-kicker .ilf-ico{color:var(--ilf-green)}
+
+    /* columnas de navegación */
+    .ilf-nav{display:contents}
+    #ilatek-footer .ilf-kicker{font-size:14px;font-weight:700;letter-spacing:.02em;color:#fff;padding:0;margin:0 0 20px}
+    .ilf-list li{margin-bottom:9px}
+    .ilf-list a,.ilf-list span{font-size:13px;line-height:1.5;color:rgba(255,255,255,.78)}
+    .ilf-list a:hover{color:var(--ilf-green)}
+    .ilf-list span{opacity:.72}
+
+    /* fila de servicios */
+    .ilf-services{
+      display:grid;grid-template-columns:31.6% 33.4% 30%;column-gap:20px;justify-content:center;align-items:center;
+      width:90%;margin:0 auto 40px;padding:0;
+      /* contenedor sin borde: cada columna lleva su propio borde redondeado */
+    }
+    
+    .ilf-card{padding:40px 0;background:rgba(0,0,0,.5);border:2px solid var(--ilf-blue);border-radius:25px}
+    #ilatek-footer .ilf-h{font-size:14px;font-weight:700;color:var(--ilf-white);padding:0;margin:0 0 20px;line-height:1.35}
+    
+    .ilf-links li{margin-bottom:10px;line-height:1.35}
+    .ilf-links a{font-size:12px;font-weight:700;color:var(--ilf-gray)}
+    .ilf-links a:hover{color:var(--ilf-green);text-decoration:underline}
+    #ilatek-footer .ilf-strong{font-size:12px;font-weight:700;color:var(--ilf-gray);padding:0;margin:0 0 20px}    .ilf-btn{
+      display:block;width:fit-content;margin:0 auto;padding:16px 60px;border-radius:10px;
+      background:var(--ilf-green);color:var(--ilf-white);font-weight:700;font-size:14px;
+      transition:background .2s ease;
+    }
+    .ilf-btn:hover{background:var(--ilf-green-dk)}    /* barra inferior */
+    .ilf-bottom{
+      display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:12px 28px;
+      width:min(100% - 32px,900px);margin:0 auto;padding:16px 0 18px;
+    }
+    .ilf-social{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 16px}
+    .ilf-social img{width:18px;height:18px;filter:brightness(0) invert(1);opacity:.8;transition:opacity .2s ease}
+    .ilf-social a:hover img{opacity:1}
+    .ilf-credit{text-align:center;font-size:12px;letter-spacing:.02em;color:var(--ilf-muted)}
+    .ilf-credit a{color:var(--ilf-white)}
+    .ilf-credit a:hover{color:var(--ilf-green)}
+
+    @media (max-width:900px){
+      .ilf-services{grid-template-columns:1fr 1fr;width:min(100% - 24px,720px)}      .ilf-card{padding:32px 20px}      .ilf-top{grid-template-columns:1fr;row-gap:26px;padding:30px 26px;width:min(100% - 24px,760px)}
+      }
+    @media (max-width:600px){
+      #ilatek-footer{background:var(--ilf-bg-m);padding-left:10px;padding-right:10px}
+      
+      .ilf-services{grid-template-columns:1fr;gap:16px}
+      
+      .ilf-card{padding:28px 20px}
+      .ilf-bottom{gap:12px}
+      .ilf-credit{margin-top:6px}}</style>
+
+  <!-- Franja superior: imagen de GHL + navegación en el mismo contenedor -->
+  <div class="ilf-top">
+
+    <!-- Navegación -->
+    <div class="ilf-nav">
+      <nav aria-labelledby="ilf-menu-t">
+        <h2 id="ilf-menu-t" class="ilf-kicker"><svg class="ilf-ico" aria-hidden="true"><use href="#ilf-i-menu"></use></svg><span class="iln-t" data-es="Explora" data-en="Explore">Explora</span></h2>
+        <ul class="ilf-list">
+          <li><a href="https://{{custom_values.website_url}}/" data-ilatek-path="/"><span class="iln-t" data-es="Home" data-en="Home">Home</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/cotizacion" data-ilatek-path="/cotizacion"><span class="iln-t" data-es="Agenda tu Limpieza" data-en="Book Your Cleaning">Agenda tu Limpieza</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/cotizacion-techos" data-ilatek-path="/cotizacion-techos"><span class="iln-t" data-es="Agenda tu Servicio de Techos" data-en="Book Your Roof Service">Agenda tu Servicio de Techos</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/servicios" data-ilatek-path="/servicios"><span class="iln-t" data-es="Conoce nuestros servicios de limpieza" data-en="See our cleaning services">Conoce nuestros servicios de limpieza</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/techos" data-ilatek-path="/techos"><span class="iln-t" data-es="Conoce nuestros servicios de mantenimiento de techos" data-en="See our roof maintenance services">Conoce nuestros servicios de mantenimiento de techos</span></a></li>
+        </ul>
+      </nav>
+      <nav aria-labelledby="ilf-legal-t">
+        <h2 id="ilf-legal-t" class="ilf-kicker"><svg class="ilf-ico" aria-hidden="true"><use href="#ilf-i-legal"></use></svg><span class="iln-t" data-es="Legal" data-en="Legal">Legal</span></h2>
+        <ul class="ilf-list">
+          <li><a href="https://{{custom_values.website_url}}/politica-de-privacidad" data-ilatek-path="/politica-de-privacidad"><span class="iln-t" data-es="Política de Privacidad" data-en="Privacy Policy">Política de Privacidad</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/terminos-y-condiciones" data-ilatek-path="/terminos-y-condiciones"><span class="iln-t" data-es="Términos y Condiciones" data-en="Terms &amp; Conditions">Términos y Condiciones</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/garantia" data-ilatek-path="/garantia"><span class="iln-t" data-es="Garantía de Servicio" data-en="Service Warranty">Garantía de Servicio</span></a></li>
+          <li><a href="https://{{custom_values.website_url}}/resenas" data-ilatek-path="/resenas"><span class="iln-t" data-es="Reseñas de clientes" data-en="Customer reviews">Reseñas de clientes</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="ilf-inner">
+
+    <!-- Barra inferior -->
+    <div class="ilf-bottom">
+      <div class="ilf-social">
+        <a href="{{custom_values.facebook_url}}" aria-label="Facebook" target="_blank" rel="noopener nofollow"><img src="https://stcdn.leadconnectorhq.com/funnel/icons/dark/facebook-dark.svg" alt="Facebook — servicio en {{custom_values.business__county_name}}" loading="lazy" decoding="async" data-ilatek-local-alt="Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D" title="Facebook — servicio en {{custom_values.business__county_name}}" data-ilatek-local-title="Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D"></a>
+        <a href="{{custom_values.instagram_url}}" aria-label="Instagram" target="_blank" rel="noopener nofollow"><img src="https://stcdn.leadconnectorhq.com/funnel/icons/dark/instagram-dark.svg" alt="Instagram — servicio en {{custom_values.business__county_name}}" loading="lazy" decoding="async" data-ilatek-local-alt="Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D" title="Instagram — servicio en {{custom_values.business__county_name}}" data-ilatek-local-title="Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D"></a>
+        <a href="https://www.youtube.com/@Ilatekpr" aria-label="Youtube" target="_blank" rel="noopener noreferrer"><img src="https://stcdn.leadconnectorhq.com/funnel/icons/dark/youtube-dark.svg" alt="Youtube — servicio en {{custom_values.business__county_name}}" loading="lazy" decoding="async" data-ilatek-local-alt="Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D" title="Youtube — servicio en {{custom_values.business__county_name}}" data-ilatek-local-title="Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D"></a>
+        <a href="https://www.tiktok.com/@ilatekpr" aria-label="TikTok" target="_blank" rel="noopener noreferrer"><img src="https://stcdn.leadconnectorhq.com/funnel/icons/dark/tiktok-dark.svg" alt="TikTok — servicio en {{custom_values.business__county_name}}" title="TikTok — servicio en {{custom_values.business__county_name}}" loading="lazy" decoding="async" data-ilatek-local-alt="TikTok%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D" data-ilatek-local-title="TikTok%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D"></a>
+        <a href="https://x.com/ilatekpr" aria-label="X" target="_blank" rel="noopener noreferrer"><img src="https://stcdn.leadconnectorhq.com/funnel/icons/dark/x-dark.svg" alt="X — servicio en {{custom_values.business__county_name}}" title="X — servicio en {{custom_values.business__county_name}}" loading="lazy" decoding="async" data-ilatek-local-alt="X%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D" data-ilatek-local-title="X%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D"></a>
+        <a href="https://www.linkedin.com/in/ilatekpr" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="https://stcdn.leadconnectorhq.com/funnel/icons/dark/linkedin-dark.svg" alt="LinkedIn — servicio en {{custom_values.business__county_name}}" title="LinkedIn — servicio en {{custom_values.business__county_name}}" loading="lazy" decoding="async" data-ilatek-local-alt="LinkedIn%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D" data-ilatek-local-title="LinkedIn%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D"></a>
+        <a href="https://www.pinterest.com/ilatekpr/" aria-label="Pinterest" target="_blank" rel="noopener noreferrer"><img src="https://stcdn.leadconnectorhq.com/funnel/icons/dark/pinterest-dark.svg" alt="Pinterest — servicio en {{custom_values.business__county_name}}" title="Pinterest — servicio en {{custom_values.business__county_name}}" loading="lazy" decoding="async" data-ilatek-local-alt="Pinterest%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D" data-ilatek-local-title="Pinterest%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D"></a>
+      </div>
+      <p class="ilf-credit">© 2026. <span class="iln-t" data-es="Made with ❤️ by" data-en="Made with ❤️ by">Made with ❤️ by</span> <a href="https://devasks.com/" target="_blank" rel="noopener noreferrer">Devasks</a></p>
+    </div>
+
+  </div>
+  <!-- Motor i18n (misma interfaz que el nav): solo actua si la pagina declara [data-es]
+       fuera de nav/footer; resuelve tokens GHL en data-es/data-en y aplica variantes. -->
+  <script>
+  (function(){
+    var root=document.getElementById('ilatek-footer'); if(!root||root.dataset.ilfLang)return; root.dataset.ilfLang='true';
+    var LANG_KEY='ilatek-lang';
+    function token(name){return '{'+'{custom_values.'+name+'}'+'}'}
+    function clean(v){v=String(v||'').replace(/ /g,' ').trim();return /^\s*\{\{[^}]+\}\}\s*$/.test(v)?'':v}
+    function resolve(text){
+      var out=String(text||'').split(token('business__county_name')).join(county);
+      out=window.ILATEK_LINKS.replace(out,token('website_url'),website);
+      return out;
+    }
+    var ilBV=window.ILATEK_BRIDGE||{slot:function(){return ''},attr:function(v){return String(v==null?'':v)}};
+    var website=ilBV.attr(root.getAttribute('data-website-url')||'')||ilBV.slot(3)||'https://ilatekpr.com';
+    var county=(function(){try{var b=window.ILATEK_BRIDGE;if(b&&b.county)return b.county()||'Puerto Rico'}catch(e){}return 'Puerto Rico'})();
+    if(document&&document.addEventListener&&!window.__ilnCountyHook){window.__ilnCountyHook=1;document.addEventListener('ilatek:values',function(){try{applyLang(window.__ilatekLang||document.documentElement.lang||'es')}catch(e){}});}
+    function readCounty(){
+      var candidates=[],nodes=document.querySelectorAll('.dv-ghl-values,#dv-ghl-values');
+      for(var i=0;i<nodes.length;i++){
+        var parts=nodes[i].textContent.split('|||DV|||');
+        if(parts.length>=6){var value=clean(parts[0]);if(value&&candidates.indexOf(value)<0)candidates.push(value)}
+      }
+      if(candidates.length===1)return candidates[0];
+      var content=document.querySelector('[data-location-label]');
+      return clean(content&&content.getAttribute('data-location-label'))||(function(){try{var b=window.ILATEK_BRIDGE;if(b&&b.county)return b.county()||'Puerto Rico'}catch(e){}return 'Puerto Rico'})();
+    }
+    function applyLang(lang){
+      county=readCounty();
+      var nodes=root.querySelectorAll('[data-en]');
+      for(var i=0;i<nodes.length;i++){
+        var el=nodes[i],attr=el.getAttribute('data-attr'),en=el.getAttribute('data-en'),es=el.getAttribute('data-es');
+        var val=resolve(lang==='en'?en:(es||(el.firstChild&&el.firstChild.nodeValue)||''));
+        if(attr){el.setAttribute(attr,val)}
+        else if(lang==='en'&&el.hasAttribute('data-en-html')){el.innerHTML=resolve(el.getAttribute('data-en-html'))}
+        else{el.textContent=val}
+      }
+    }
+    window.__ilatekFooterLang=applyLang;
+    var saved='es';try{saved=localStorage.getItem(LANG_KEY)||'es'}catch(e){}
+    saved='es';
+    applyLang(saved==='en'?'en':'es');
+    window.addEventListener('ilatek:lang',function(e){applyLang(e.detail)});
+    // Late native GHL values: only update when the location actually changes.
+    var pending=false;
+    if(window.MutationObserver)new MutationObserver(function(){
+      if(pending)return;pending=true;
+      requestAnimationFrame(function(){pending=false;if(readCounty()!==county)applyLang(document.documentElement.lang==='en'?'en':'es')});
+    }).observe(document.documentElement,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:['data-location-label']});
+  })();
+  </script>
+
+  <!-- Sprite de iconos de los títulos -->
+  <svg width="0" height="0" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="ilf-i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"></path></symbol>
+      <symbol id="ilf-i-legal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="M9 12l2 2 4-4"></path></symbol>
+      <symbol id="ilf-i-opp" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"></rect><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></symbol>
+      <symbol id="ilf-i-clean" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"></path><circle cx="12" cy="12" r="3.5"></circle></symbol>
+      <symbol id="ilf-i-roof" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"></path><path d="M5 10v10h14V10"></path><path d="M10 20v-6h4v6"></path></symbol>
+      <symbol id="ilf-i-product" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8v8l9 5 9-5z"></path><path d="M3 8l9 5 9-5"></path><path d="M12 13v8"></path></symbol>
+      <symbol id="ilf-i-portal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></symbol>
+      <symbol id="ilf-i-dash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"></rect><path d="M8 11V7a4 4 0 0 1 8 0v4"></path></symbol>
+      <symbol id="ilf-i-brand" viewBox="0 0 24 24" fill="currentColor"><rect x="4" y="4" width="16" height="16" rx="4"></rect></symbol>
+    </defs>
+  </svg>
+</footer>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- rincon.ilatekpr.com — landings de las comunidades de este municipio.
+     Generado por scripts/genera-pueblos.mjs; una URL por comunidad y servicio. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://rincon.ilatekpr.com/costa-corcega/limpieza</loc></url>
+  <url><loc>https://rincon.ilatekpr.com/costa-corcega/sellado-de-techo</loc></url>
+  <url><loc>https://rincon.ilatekpr.com/punta-del-mar-beach-village/limpieza</loc></url>
+  <url><loc>https://rincon.ilatekpr.com/punta-del-mar-beach-village/sellado-de-techo</loc></url>
+  <url><loc>https://rincon.ilatekpr.com/santa-rosa-elderly/limpieza</loc></url>
+  <url><loc>https://rincon.ilatekpr.com/santa-rosa-elderly/sellado-de-techo</loc></url>
+  <url><loc>https://rincon.ilatekpr.com/victoria-del-mar/limpieza</loc></url>
+  <url><loc>https://rincon.ilatekpr.com/victoria-del-mar/sellado-de-techo</loc></url>
+</urlset>

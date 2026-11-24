@@ -1,0 +1,1248 @@
+{
+ "generado": "2026-11-14",
+ "total": 138,
+ "paginas": [
+  {
+   "path": "/blog",
+   "file": "index.html",
+   "title": "Blog de sellado de techos en Puerto Rico | Ilatek",
+   "description": "Comparativas de sistemas de sellado, precios publicados y preguntas frecuentes de Puerto Rico. Todo con fuente, fecha de verificación y sin afiliación de marcas.",
+   "keyword": "blog sellado de techos puerto rico",
+   "cluster": "indice",
+   "grupo": "indice"
+  },
+  {
+   "path": "/blog/acrilico-elastomerico-vs-membrana-asfaltica",
+   "file": "02-comparativas/posts/acrilico-elastomerico-vs-membrana-asfaltica.html",
+   "title": "Acrílico elastomérico vs. membrana asfáltica",
+   "description": "El sistema más barato por pie cuadrado frente al más documentado: precio, años, garantía y en qué techo cada uno tiene sentido.",
+   "keyword": "acrilico vs membrana asfaltica",
+   "cluster": "materiales",
+   "grupo": "familia"
+  },
+  {
+   "path": "/blog/acrilico-elastomerico-vs-membrana-liquida",
+   "file": "02-comparativas/posts/acrilico-elastomerico-vs-membrana-liquida.html",
+   "title": "Acrílico elastomérico vs. membrana líquida",
+   "description": "Uno o tres pasos, misma familia química en parte: compara respiración, elasticidad, cobertura por paila y precio publicado en Puerto Rico.",
+   "keyword": "acrilico vs membrana liquida",
+   "cluster": "proceso",
+   "grupo": "familia"
+  },
+  {
+   "path": "/blog/acrilico-elastomerico-vs-sistema-multicapa",
+   "file": "02-comparativas/posts/acrilico-elastomerico-vs-sistema-multicapa.html",
+   "title": "Acrílico vs. sistema multicapa con garantía",
+   "description": "Acrílico aplicado por tu cuenta o un sistema de cuatro pasos con garantía de fabricante: qué cubre cada uno y cuánto dura de verdad.",
+   "keyword": "acrilico vs sistema multicapa",
+   "cluster": "garantia-leyes",
+   "grupo": "familia"
+  },
+  {
+   "path": "/blog/acrilico-elastomerico-vs-tpo-pvc",
+   "file": "02-comparativas/posts/acrilico-elastomerico-vs-tpo-pvc.html",
+   "title": "Acrílico elastomérico vs. TPO o PVC",
+   "description": "Recubrimiento acrílico o membrana soldada para un techo grande: reflectividad, soldadura verificable, costo y quién puede instalarlo.",
+   "keyword": "acrilico vs tpo",
+   "cluster": "materiales",
+   "grupo": "familia"
+  },
+  {
+   "path": "/blog/cintron-vs-danosa",
+   "file": "02-comparativas/posts/cintron-vs-danosa.html",
+   "title": "Sistema Cintrón vs. Danosa: ¿cuál te conviene?",
+   "description": "Cintrón vende su propio sistema y lo instala; Danosa fabrica membranas con garantía de hasta 20 años. Diferencias de alcance, precio y respaldo.",
+   "keyword": "cintron vs danosa",
+   "cluster": "garantia-leyes",
+   "grupo": "marca"
+  },
+  {
+   "path": "/blog/cintron-vs-lanco",
+   "file": "02-comparativas/posts/cintron-vs-lanco.html",
+   "title": "Sistema Cintrón vs. Lanco: marca propia o ferretería",
+   "description": "Sistema propietario con protocolo o recubrimiento de ferretería como Dry-Coat: precio, aplicación, garantía y para quién es cada uno.",
+   "keyword": "cintron vs lanco",
+   "cluster": "garantia-leyes",
+   "grupo": "marca"
+  },
+  {
+   "path": "/blog/cintron-vs-marin-membrana",
+   "file": "02-comparativas/posts/cintron-vs-marin-membrana.html",
+   "title": "Sistema Cintrón vs. Marín Membrana",
+   "description": "King of Silicone frente al sistema líquido de Marín: coberturas declaradas, precio por paila, garantía anunciada y dónde se compra cada uno.",
+   "keyword": "cintron vs marin membrana",
+   "cluster": "garantia-leyes",
+   "grupo": "marca"
+  },
+  {
+   "path": "/blog/cintron-vs-windmar",
+   "file": "02-comparativas/posts/cintron-vs-windmar.html",
+   "title": "Sistema Cintrón vs. WindMar Roofing",
+   "description": "Dos instaladores con marca propia frente a frente: precio publicado por pie cuadrado, garantía por escrito y qué incluye la instalación.",
+   "keyword": "cintron vs windmar",
+   "cluster": "proceso",
+   "grupo": "marca"
+  },
+  {
+   "path": "/blog/cintronator-vs-duroseal",
+   "file": "02-comparativas/posts/cintronator-vs-duroseal.html",
+   "title": "Cintronator vs. DUROSEAL: sistemas de poliuretano",
+   "description": "Dos sistemas de base poliuretano con imprimador y acabado: precio por componente, número de pasos y qué techo pide cada protocolo.",
+   "keyword": "cintronator vs duroseal",
+   "cluster": "proceso",
+   "grupo": "marca"
+  },
+  {
+   "path": "/blog/como-elegir-contratista-de-sellado-en-puerto-rico",
+   "file": "02-comparativas/posts/como-elegir-contratista-de-sellado-en-puerto-rico.html",
+   "title": "Cómo elegir un contratista de sellado en Puerto Rico",
+   "description": "Licencia, seguros, referencias y cotización desglosada. Las siete preguntas que separan a un contratista de un vendedor de pailas.",
+   "keyword": "contratista sellado techo puerto rico",
+   "cluster": "garantia-leyes",
+   "grupo": "intencion"
+  },
+  {
+   "path": "/blog/comparativas",
+   "file": "02-comparativas/index.html",
+   "title": "Comparativas de sistemas de sellado de techos en Puerto Rico",
+   "description": "Las 100 comparativas de sellado de techos: sistema contra sistema, marca contra marca, por tipo de techo y por duda de precio o garantía.",
+   "keyword": "comparativas sellado de techos puerto rico",
+   "cluster": "indice",
+   "grupo": "indice"
+  },
+  {
+   "path": "/blog/comunidades-ilatekpr-como-funciona",
+   "file": "03-comunidades-servicios/comunidades-ilatekpr-como-funciona.html",
+   "title": "Sellado de techos en tu comunidad en Puerto Rico",
+   "description": "Ilatek tiene una página por comunidad en Puerto Rico, con el sellado de techos y la limpieza como servicios separados. Aquí ves cómo encontrar la tuya.",
+   "keyword": "comunidades ilatek",
+   "cluster": "puente",
+   "grupo": "puente"
+  },
+  {
+   "path": "/blog/comunidades-y-servicios",
+   "file": "03-comunidades-servicios/index.html",
+   "title": "Comunidades y servicios de Ilatek en Puerto Rico",
+   "description": "Qué servicios de techos ofrece Ilatek, cómo están organizadas las páginas por comunidad en Puerto Rico y cómo trabaja cada sistema de sellado.",
+   "keyword": "comunidades y servicios ilatek",
+   "cluster": "indice",
+   "grupo": "indice"
+  },
+  {
+   "path": "/blog/conspro-bullbond-vs-cintron",
+   "file": "02-comparativas/posts/conspro-bullbond-vs-cintron.html",
+   "title": "Conspro Bull-Bond vs. Sistema Cintrón: comparación",
+   "description": "Dos sistemas puertorriqueños multicapa frente a frente: precios publicados por paila, garantía real de cada uno y qué incluye su protocolo.",
+   "keyword": "bullbond vs cintron",
+   "cluster": "garantia-leyes",
+   "grupo": "marca"
+  },
+  {
+   "path": "/blog/conspro-bullbond-vs-danosa",
+   "file": "02-comparativas/posts/conspro-bullbond-vs-danosa.html",
+   "title": "Bull-Bond vs. Danosa: líquido contra membrana",
+   "description": "Sistema líquido multicapa o membrana asfáltica certificada: compara garantía, certificaciones de viento, precio por pie cuadrado y proceso.",
+   "keyword": "bullbond vs danosa",
+   "cluster": "garantia-leyes",
+   "grupo": "marca"
+  },
+  {
+   "path": "/blog/conspro-bullbond-vs-lanco",
+   "file": "02-comparativas/posts/conspro-bullbond-vs-lanco.html",
+   "title": "Bull-Bond vs. Lanco: sistema o mantenimiento",
+   "description": "Sistema multicapa con garantía de fabricante o recubrimiento acrílico de mantenimiento: qué obtienes por la diferencia de precio.",
+   "keyword": "bullbond vs lanco",
+   "cluster": "garantia-leyes",
+   "grupo": "marca"
+  },
+  {
+   "path": "/blog/conspro-bullbond-vs-marin-membrana",
+   "file": "02-comparativas/posts/conspro-bullbond-vs-marin-membrana.html",
+   "title": "Bull-Bond vs. Marín Membrana: precios y garantía",
+   "description": "Bull-Bond con garantía de fabricante renovable frente a Marín Membrana y su sistema líquido: precios por paila, puntos de venta y documentación.",
+   "keyword": "bullbond vs marin membrana",
+   "cluster": "garantia-leyes",
+   "grupo": "marca"
+  },
+  {
+   "path": "/blog/conspro-bullbond-vs-soprema",
+   "file": "02-comparativas/posts/conspro-bullbond-vs-soprema.html",
+   "title": "Bull-Bond vs. Soprema para techo industrial",
+   "description": "Rehabilitación líquida residencial frente a especificación industrial Soprema: cuándo cada sistema entra en un techo comercial o industrial.",
+   "keyword": "bullbond vs soprema",
+   "cluster": "garantia-leyes",
+   "grupo": "marca"
+  },
+  {
+   "path": "/blog/conspro-bullbond-vs-windmar",
+   "file": "02-comparativas/posts/conspro-bullbond-vs-windmar.html",
+   "title": "Bull-Bond vs. WindMar: producto contra servicio",
+   "description": "Comprar el sistema y contratar aparte, o contratar todo con un instalador que publica precio por pie cuadrado: compara garantías y alcance.",
+   "keyword": "bullbond vs windmar",
+   "cluster": "proceso",
+   "grupo": "marca"
+  },
+  {
+   "path": "/blog/cuando-sellar-el-techo-en-puerto-rico",
+   "file": "02-comparativas/posts/cuando-sellar-el-techo-en-puerto-rico.html",
+   "title": "Cuándo sellar el techo en Puerto Rico: calendario",
+   "description": "Ventanas secas por región, tiempo de curado y por qué empezar un sistema de tres capas con una onda tropical a 48 horas es tirar el dinero.",
+   "keyword": "cuando sellar techo puerto rico",
+   "cluster": "proceso",
+   "grupo": "intencion"
+  },
+  {
+   "path": "/blog/cuantas-canas-de-sellador-necesito",
+   "file": "02-comparativas/posts/cuantas-canas-de-sellador-necesito.html",
+   "title": "¿Cuántas pailas de sellador necesito para mi techo?",
+   "description": "Fórmula con coberturas declaradas: 170 a 200 pies cuadrados por paila de silicona, 300 en base líquida y hasta 600 en acabado. Con 10% de margen.",
+   "keyword": "cuantas pailas de sellador necesito",
+   "cluster": "proceso",
+   "grupo": "intencion"
+  },
+  {
+   "path": "/blog/cuanto-cuesta-sellar-un-techo-de-1200-pies",
+   "file": "02-comparativas/posts/cuanto-cuesta-sellar-un-techo-de-1200-pies.html",
+   "title": "Sellar un techo de 1,200 pies cuadrados: costo real",
+   "description": "Ejemplo completo con precios publicados en Puerto Rico: de $4,200 a $7,800 en silicona y de $3,600 a $12,000 en membrana asfáltica para 1,200 pies cuadrados.",
+   "keyword": "costo sellar techo 1200 pies",
+   "cluster": "proceso",
+   "grupo": "intencion"
+  },
+  {
+   "path": "/blog/cuanto-cuesta-sellar-un-techo-en-puerto-rico",
+   "file": "02-comparativas/posts/cuanto-cuesta-sellar-un-techo-en-puerto-rico.html",
+   "title": "¿Cuánto cuesta sellar un techo en Puerto Rico?",
+   "description": "Precios publicados por empresas de Puerto Rico: de $1.80 a $6.50 por pie cuadrado según el sistema, y de $3 a $10 en membrana asfáltica. Con fuentes y fecha.",
+   "keyword": "cuanto cuesta sellar un techo puerto rico",
+   "cluster": "proceso",
+   "grupo": "intencion"
+  },
+  {
+   "path": "/blog/cuanto-dura-el-sellado-de-un-techo",
+   "file": "02-comparativas/posts/cuanto-dura-el-sellado-de-un-techo.html",
+   "title": "¿Cuánto dura el sellado de un techo en Puerto Rico?",
+   "description": "De 1 a 25 años según el sistema. Tabla de duración declarada por fabricantes, qué la acorta en el clima de la isla y cómo prolongarla con mantenimiento.",
+   "keyword": "cuanto dura sellado de techo",
+   "cluster": "proceso",
+   "grupo": "intencion"
+  },
+  {
+   "path": "/blog/cuanto-tarda-el-sellado-de-un-techo",
+   "file": "02-comparativas/posts/cuanto-tarda-el-sellado-de-un-techo.html",
+   "title": "¿Cuánto tarda el sellado de un techo?",
+   "description": "De uno a tres días en una casa de 1,000 a 1,500 pies cuadrados, contando limpieza, grietas, imprimador y acabado. Qué alarga el trabajo.",
+   "keyword": "cuanto tarda sellar un techo",
+   "cluster": "proceso",
+   "grupo": "intencion"
+  },
+  {
+   "path": "/blog/danosa-vs-polyglass",
+   "file": "02-comparativas/posts/danosa-vs-polyglass.html",
+   "title": "Danosa vs. Polyglass: membrana asfáltica en PR",
+   "description": "Compara las dos membranas asfálticas más usadas en techo comercial en Puerto Rico: autoadhesivas, soplete, garantía y disponibilidad local.",
+   "keyword": "danosa vs polyglass",
+   "cluster": "garantia-leyes",
+   "grupo": "marca"
+  },
+  {
+   "path": "/blog/danosa-vs-sika",
+   "file": "02-comparativas/posts/danosa-vs-sika.html",
+   "title": "Danosa vs. Sika: asfáltica o PVC",
+   "description": "Membrana asfáltica o sistema Sarnafil y Sikaplan de PVC: compara familia, certificaciones, reflectividad y aplicación en techo comercial.",
+   "keyword": "danosa vs sika",
+   "cluster": "garantia-leyes",
+   "grupo": "marca"
+  },
+  {
+   "path": "/blog/danosa-vs-soprema",
+   "file": "02-comparativas/posts/danosa-vs-soprema.html",
+   "title": "Danosa vs. Soprema: membranas asfálticas",
+   "description": "Dos fabricantes de membrana con presencia en Puerto Rico: sistemas SBS y APP, certificaciones, garantías y cómo se especifica cada uno.",
+   "keyword": "danosa vs soprema",
+   "cluster": "garantia-leyes",
+   "grupo": "marca"
+  },
+  {
+   "path": "/blog/danosa-vs-windmar",
+   "file": "02-comparativas/posts/danosa-vs-windmar.html",
+   "title": "Danosa vs. WindMar: membrana o silicona",
+   "description": "Membrana asfáltica con certificaciones de fábrica o silicona de 20 a 25 años: compara precio por pie cuadrado, garantía y mantenimiento.",
+   "keyword": "danosa vs windmar",
+   "cluster": "proceso",
+   "grupo": "marca"
+  },
+  {
+   "path": "/blog/errores-comunes-al-sellar-un-techo",
+   "file": "02-comparativas/posts/errores-comunes-al-sellar-un-techo.html",
+   "title": "Errores comunes al sellar un techo (y cómo evitarlos)",
+   "description": "No limpiar, no dejar secar, sellar sin abrir la grieta y dar una sola mano. Los cinco errores que explican casi todas las filtraciones que vuelven.",
+   "keyword": "errores sellado de techo",
+   "cluster": "proceso",
+   "grupo": "intencion"
+  },
+  {
+   "path": "/blog/garantia-de-sellado-de-techo",
+   "file": "02-comparativas/posts/garantia-de-sellado-de-techo.html",
+   "title": "Garantía de sellado de techo: qué exigir por escrito",
+   "description": "De 4 a 20 años según el sistema. Qué debe decir el documento, qué anula la garantía y cómo se reclama una filtración sin perder el derecho.",
+   "keyword": "garantia sellado de techo",
+   "cluster": "proceso",
+   "grupo": "intencion"
+  },
+  {
+   "path": "/blog/guia-de-servicios-de-techos-de-ilatek",
+   "file": "03-comunidades-servicios/guia-de-servicios-de-techos-de-ilatek.html",
+   "title": "Guía de servicios de techos de Ilatek",
+   "description": "Todos los servicios de techos que Ilatek tiene publicados, agrupados por lo que resuelven, para que llegues al que necesitas sin dar vueltas.",
+   "keyword": "servicios ilatek",
+   "cluster": "puente",
+   "grupo": "puente"
+  },
+  {
+   "path": "/blog/ilatek-y-el-recubrimiento-elastomerico",
+   "file": "03-comunidades-servicios/ilatek-y-el-recubrimiento-elastomerico.html",
+   "title": "Ilatek y el recubrimiento elastomérico",
+   "description": "El sistema de mantenimiento con mejor relación precio-año en concreto sano. También el que más se aplica mal por ahorrar una mano.",
+   "keyword": "sistema: elastomérico ilatek",
+   "cluster": "puente",
+   "grupo": "puente"
+  },
+  {
+   "path": "/blog/ilatek-y-el-sellado-acrilico",
+   "file": "03-comunidades-servicios/ilatek-y-el-sellado-acrilico.html",
+   "title": "Ilatek y el sellado acrílico",
+   "description": "La opción de mantenimiento preventivo cuando el concreto está sano. Con expectativas claras: no es un sistema de veinte años.",
+   "keyword": "sistema: acrílico ilatek",
+   "cluster": "puente",
+   "grupo": "puente"
+  },
+  {
+   "path": "/blog/ilatek-y-el-sellado-de-poliuretano",
+   "file": "03-comunidades-servicios/ilatek-y-el-sellado-de-poliuretano.html",
+   "title": "Ilatek y el sellado de poliuretano",
+   "description": "Para techos con equipos, tránsito y terrazas. Es el sistema que aguanta que alguien camine, y el que peor tolera la humedad al aplicar.",
+   "keyword": "sistema: poliuretano ilatek",
+   "cluster": "puente",
+   "grupo": "puente"
+  },
+  {
+   "path": "/blog/ilatek-y-el-sellado-de-silicona",
+   "file": "03-comunidades-servicios/ilatek-y-el-sellado-de-silicona.html",
+   "title": "Ilatek y el sellado de silicona 100%",
+   "description": "La silicona es el sistema que mejor aguanta el agua empozada en una losa. También es el que más exige preparación. Así lo aplicamos.",
+   "keyword": "sistema: silicona ilatek",
+   "cluster": "puente",
+   "grupo": "puente"
+  },
+  {
+   "path": "/blog/ilatek-y-la-membrana-asfaltica",
+   "file": "03-comunidades-servicios/ilatek-y-la-membrana-asfaltica.html",
+   "title": "Ilatek y la membrana asfáltica",
+   "description": "Cuando la losa ya no da para otra capa, la membrana asfáltica es la salida con garantía de fabricante. Así se especifica y se instala.",
+   "keyword": "sistema: membrana asfáltica ilatek",
+   "cluster": "puente",
+   "grupo": "puente"
+  },
+  {
+   "path": "/blog/junta-de-impermeabilizacion-de-techos-de-puerto-rico",
+   "file": "02-comparativas/posts/junta-de-impermeabilizacion-de-techos-de-puerto-rico.html",
+   "title": "Junta de Impermeabilización de Techos de Puerto Rico",
+   "description": "Qué es, qué ley la creó, por qué dejó de operar según la Ley 93-2023 y cómo verificar la licencia de quien va a subir a tu techo.",
+   "keyword": "junta impermeabilizacion techos puerto rico",
+   "cluster": "garantia-leyes",
+   "grupo": "intencion"
+  },
+  {
+   "path": "/blog/licencia-y-permisos-para-sellado-de-techo-en-puerto-rico",
+   "file": "02-comparativas/posts/licencia-y-permisos-para-sellado-de-techo-en-puerto-rico.html",
+   "title": "Licencia y permisos para sellar techos en Puerto Rico",
+   "description": "Qué exige la Ley 281-2000, qué cambió con la Ley 93-2023 y cuándo un sellado necesita permiso de la Oficina de Gerencia de Permisos.",
+   "keyword": "licencia sellado de techo puerto rico",
+   "cluster": "garantia-leyes",
+   "grupo": "intencion"
+  },
+  {
+   "path": "/blog/mantenimiento-del-sellado-cada-cuantos-anos",
+   "file": "02-comparativas/posts/mantenimiento-del-sellado-cada-cuantos-anos.html",
+   "title": "Cada cuántos años dar mantenimiento al sellado",
+   "description": "Inspección anual y repaso del acabado cada tres a cinco años. El calendario que convierte un sellado de 5 años en uno de 15, según el sistema.",
+   "keyword": "mantenimiento sellado de techo",
+   "cluster": "proceso",
+   "grupo": "intencion"
+  },
+  {
+   "path": "/blog/maravilla-vs-top-seal",
+   "file": "02-comparativas/posts/maravilla-vs-top-seal.html",
+   "title": "La Maravilla vs. TOP SEAL: acrílicos y elastoméricos",
+   "description": "Dos recubrimientos para detalle y mantenimiento: precio publicado, uso previsto, aplicación y en qué se diferencian realmente.",
+   "keyword": "maravilla vs top seal",
+   "cluster": "proceso",
+   "grupo": "marca"
+  },
+  {
+   "path": "/blog/marin-membrana-vs-danosa",
+   "file": "02-comparativas/posts/marin-membrana-vs-danosa.html",
+   "title": "Marín Membrana vs. Danosa: líquido o rollo",
+   "description": "Sistema líquido puertorriqueño frente a membrana asfáltica certificada: documentación técnica, garantía publicada, precio y disponibilidad.",
+   "keyword": "marin membrana vs danosa",
+   "cluster": "proceso",
+   "grupo": "marca"
+  },
+  {
+   "path": "/blog/marin-membrana-vs-lanco",
+   "file": "02-comparativas/posts/marin-membrana-vs-lanco.html",
+   "title": "Marín Membrana vs. Lanco para techo residencial",
+   "description": "Sistema líquido de tres capas o recubrimiento acrílico de ferretería: cuánto dura cada uno, qué cuesta y cuándo el DIY es suficiente.",
+   "keyword": "marin vs lanco",
+   "cluster": "proceso",
+   "grupo": "marca"
+  },
+  {
+   "path": "/blog/marin-membrana-vs-windmar",
+   "file": "02-comparativas/posts/marin-membrana-vs-windmar.html",
+   "title": "Marín Membrana vs. WindMar: líquido o silicona",
+   "description": "Sistema líquido de tres capas o silicona de una sola: duración anunciada, precio por pie cuadrado publicado y garantía de cada propuesta.",
+   "keyword": "marin vs windmar",
+   "cluster": "proceso",
+   "grupo": "marca"
+  },
+  {
+   "path": "/blog/membrana-asfaltica-vs-membrana-liquida",
+   "file": "02-comparativas/posts/membrana-asfaltica-vs-membrana-liquida.html",
+   "title": "Membrana asfáltica vs. membrana líquida",
+   "description": "Rollo soldado o sistema líquido de tres capas: espesor verificable, adaptación a detalles, precio por pie cuadrado y garantía de cada opción.",
+   "keyword": "membrana asfaltica vs liquida",
+   "cluster": "proceso",
+   "grupo": "familia"
+  },
+  {
+   "path": "/blog/membrana-asfaltica-vs-sistema-multicapa",
+   "file": "02-comparativas/posts/membrana-asfaltica-vs-sistema-multicapa.html",
+   "title": "Membrana asfáltica vs. sistema multicapa líquido",
+   "description": "Reemplazo con rollo o rehabilitación con sistema líquido de marca: cuál dura más, cuál cuesta menos y cuándo la losa ya no aguanta otra capa.",
+   "keyword": "membrana vs sistema multicapa",
+   "cluster": "garantia-leyes",
+   "grupo": "familia"
+  },
+  {
+   "path": "/blog/membrana-asfaltica-vs-tpo-pvc",
+   "file": "02-comparativas/posts/membrana-asfaltica-vs-tpo-pvc.html",
+   "title": "Membrana asfáltica vs. TPO o PVC",
+   "description": "Dos sistemas comerciales con garantías largas: compara certificaciones de viento, reflectividad, soldadura, mantenimiento y disponibilidad en la isla.",
+   "keyword": "membrana asfaltica vs tpo",
+   "cluster": "garantia-leyes",
+   "grupo": "familia"
+  },
+  {
+   "path": "/blog/membrana-liquida-vs-sistema-multicapa",
+   "file": "02-comparativas/posts/membrana-liquida-vs-sistema-multicapa.html",
+   "title": "Membrana líquida vs. sistema multicapa de marca",
+   "description": "Los dos son sistemas por capas. Compara protocolo escrito, garantía, documentación técnica y precio por paila de las marcas que se venden en la isla.",
+   "keyword": "membrana liquida vs sistema multicapa",
+   "cluster": "garantia-leyes",
+   "grupo": "familia"
+  },
+  {
+   "path": "/blog/membrana-liquida-vs-tpo-pvc",
+   "file": "02-comparativas/posts/membrana-liquida-vs-tpo-pvc.html",
+   "title": "Membrana líquida vs. TPO para techo plano",
+   "description": "Sistema líquido por capas o membrana termoplástica soldada en techo plano: acceso, certificación, reparación y costo real por proyecto.",
+   "keyword": "membrana liquida vs tpo",
+   "cluster": "materiales",
+   "grupo": "familia"
+  },
+  {
+   "path": "/blog/poliuretano-vs-acrilico-elastomerico",
+   "file": "02-comparativas/posts/poliuretano-vs-acrilico-elastomerico.html",
+   "title": "Poliuretano vs. acrílico elastomérico para techos",
+   "description": "Poliuretano o acrílico para sellar tu techo en Puerto Rico: resistencia al tránsito, precio publicado, olor, curado y años de vida de cada sistema.",
+   "keyword": "poliuretano vs acrilico techo",
+   "cluster": "proceso",
+   "grupo": "familia"
+  },
+  {
+   "path": "/blog/poliuretano-vs-membrana-asfaltica",
+   "file": "02-comparativas/posts/poliuretano-vs-membrana-asfaltica.html",
+   "title": "Poliuretano vs. membrana asfáltica: precio y duración",
+   "description": "Poliuretano o membrana asfáltica en rollo para tu techo: precio por pie cuadrado publicado, espesor verificable, garantía y proceso de instalación.",
+   "keyword": "poliuretano vs membrana asfaltica",
+   "cluster": "proceso",
+   "grupo": "familia"
+  },
+  {
+   "path": "/blog/poliuretano-vs-membrana-liquida",
+   "file": "02-comparativas/posts/poliuretano-vs-membrana-liquida.html",
+   "title": "Poliuretano vs. membrana líquida para losa",
+   "description": "Dos sistemas líquidos, dos lógicas. Compara poliuretano mono o bicomponente con un sistema de tres capas: curado, tránsito, cobertura y precio.",
+   "keyword": "poliuretano vs membrana liquida",
+   "cluster": "proceso",
+   "grupo": "familia"
+  },
+  {
+   "path": "/blog/poliuretano-vs-sistema-multicapa",
+   "file": "02-comparativas/posts/poliuretano-vs-sistema-multicapa.html",
+   "title": "Poliuretano suelto vs. sistema multicapa completo",
+   "description": "Aplicar poliuretano como producto o contratar el sistema completo con imprimador, base y acabado: qué cambia en precio, garantía y resultado.",
+   "keyword": "poliuretano vs sistema multicapa",
+   "cluster": "garantia-leyes",
+   "grupo": "familia"
+  },
+  {
+   "path": "/blog/poliuretano-vs-tpo-pvc",
+   "file": "02-comparativas/posts/poliuretano-vs-tpo-pvc.html",
+   "title": "Poliuretano vs. TPO: techo comercial en Puerto Rico",
+   "description": "Recubrimiento de poliuretano o membrana TPO en un techo comercial: cuándo conviene rehabilitar y cuándo hay que reemplazar la cubierta.",
+   "keyword": "poliuretano vs tpo comercial",
+   "cluster": "sustratos",
+   "grupo": "familia"
+  },
+  {
+   "path": "/blog/por-que-varia-el-precio-del-sellado-de-techo",
+   "file": "02-comparativas/posts/por-que-varia-el-precio-del-sellado-de-techo.html",
+   "title": "Por qué varía tanto el precio del sellado de techo",
+   "description": "De $1.75 a $6.50 por pie cuadrado por el mismo techo. Las cinco variables que explican la diferencia y las preguntas que separan una oferta de otra.",
+   "keyword": "por que varia precio sellado techo",
+   "cluster": "proceso",
+   "grupo": "intencion"
+  },
+  {
+   "path": "/blog/precio-por-pie-cuadrado-sellado-de-techo",
+   "file": "02-comparativas/posts/precio-por-pie-cuadrado-sellado-de-techo.html",
+   "title": "Precio por pie cuadrado del sellado de techo en PR",
+   "description": "Tabla de precios por pie cuadrado publicados en Puerto Rico para acrílico, poliuretano, silicona y membrana asfáltica, con la fuente de cada cifra.",
+   "keyword": "precio por pie cuadrado sellado de techo",
+   "cluster": "proceso",
+   "grupo": "intencion"
+  },
+  {
+   "path": "/blog/preguntas-frecuentes",
+   "file": "01-preguntas-frecuentes/index.html",
+   "title": "Preguntas frecuentes sobre sellado de techos en Puerto Rico",
+   "description": "Precio, materiales, proceso, garantía, licencias y clima: las preguntas más frecuentes sobre sellado de techos en Puerto Rico, con respuesta y fuente.",
+   "keyword": "preguntas frecuentes sellado de techos puerto rico",
+   "cluster": "indice",
+   "grupo": "indice"
+  },
+  {
+   "path": "/blog/preguntas-frecuentes-sellado-de-techos-clima-y-huracanes",
+   "file": "01-preguntas-frecuentes/preguntas-frecuentes-sellado-de-techos-clima-y-huracanes.html",
+   "title": "Clima y temporada de huracanes en Puerto Rico",
+   "description": "Preguntas frecuentes sobre clima y temporada de huracanes del sellado de techos en Puerto Rico: respuestas cortas, precios publicados y guías completas de cada tema.",
+   "keyword": "preguntas frecuentes sellado de techos clima y temporada de huracanes",
+   "cluster": "clima",
+   "grupo": "faq"
+  },
+  {
+   "path": "/blog/preguntas-frecuentes-sellado-de-techos-garantia-y-leyes",
+   "file": "01-preguntas-frecuentes/preguntas-frecuentes-sellado-de-techos-garantia-y-leyes.html",
+   "title": "Garantía, licencias y leyes en Puerto Rico",
+   "description": "Preguntas frecuentes sobre garantía, licencias y leyes del sellado de techos en Puerto Rico: respuestas cortas, precios publicados y guías completas de cada tema.",
+   "keyword": "preguntas frecuentes sellado de techos garantía, licencias y leyes",
+   "cluster": "garantia-leyes",
+   "grupo": "faq"
+  },
+  {
+   "path": "/blog/preguntas-frecuentes-sellado-de-techos-materiales",
+   "file": "01-preguntas-frecuentes/preguntas-frecuentes-sellado-de-techos-materiales.html",
+   "title": "Materiales y sistemas en Puerto Rico",
+   "description": "Preguntas frecuentes sobre materiales y sistemas del sellado de techos en Puerto Rico: respuestas cortas, precios publicados y guías completas de cada tema.",
+   "keyword": "preguntas frecuentes sellado de techos materiales y sistemas",
+   "cluster": "materiales",
+   "grupo": "faq"
+  },
+  {
+   "path": "/blog/preguntas-frecuentes-sellado-de-techos-precio",
+   "file": "01-preguntas-frecuentes/preguntas-frecuentes-sellado-de-techos-precio.html",
+   "title": "Precio y presupuesto en Puerto Rico",
+   "description": "Preguntas frecuentes sobre precio y presupuesto del sellado de techos en Puerto Rico: respuestas cortas, precios publicados y guías completas de cada tema.",
+   "keyword": "preguntas frecuentes sellado de techos precio y presupuesto",
+   "cluster": "precio",
+   "grupo": "faq"
+  },
+  {
+   "path": "/blog/preguntas-frecuentes-sellado-de-techos-proceso",
+   "file": "01-preguntas-frecuentes/preguntas-frecuentes-sellado-de-techos-proceso.html",
+   "title": "Proceso y aplicación en Puerto Rico",
+   "description": "Preguntas frecuentes sobre proceso y aplicación del sellado de techos en Puerto Rico: respuestas cortas, precios publicados y guías completas de cada tema.",
+   "keyword": "preguntas frecuentes sellado de techos proceso y aplicación",
+   "cluster": "proceso",
+   "grupo": "faq"
+  },
+  {
+   "path": "/blog/preguntas-frecuentes-sellado-de-techos-tipos-de-techo",
+   "file": "01-preguntas-frecuentes/preguntas-frecuentes-sellado-de-techos-tipos-de-techo.html",
+   "title": "Tipos de techo en Puerto Rico",
+   "description": "Preguntas frecuentes sobre tipos de techo del sellado de techos en Puerto Rico: respuestas cortas, precios publicados y guías completas de cada tema.",
+   "keyword": "preguntas frecuentes sellado de techos tipos de techo",
+   "cluster": "sustratos",
+   "grupo": "faq"
+  },
+  {
+   "path": "/blog/preguntas-para-hacerle-a-un-sellador-de-techos",
+   "file": "02-comparativas/posts/preguntas-para-hacerle-a-un-sellador-de-techos.html",
+   "title": "9 preguntas que debes hacerle a un sellador de techos",
+   "description": "Preguntas concretas sobre sistema, preparación, garantía y licencia que separan una propuesta técnica de una venta de pailas. Llévalas impresas.",
+   "keyword": "preguntas sellador de techos",
+   "cluster": "garantia-leyes",
+   "grupo": "intencion"
+  },
+  {
+   "path": "/blog/primer-bullbond-vs-primer-cintron",
+   "file": "02-comparativas/posts/primer-bullbond-vs-primer-cintron.html",
+   "title": "Imprimador Bull-Bond vs. imprimador Cintrón",
+   "description": "El paso que más se salta y el que más garantías anula: compara imprimadores, precio, base química y cuándo cada uno aplica.",
+   "keyword": "primer bullbond vs cintron",
+   "cluster": "garantia-leyes",
+   "grupo": "marca"
+  },
+  {
+   "path": "/blog/puedo-sellar-mi-techo-sobre-el-sellado-viejo",
+   "file": "02-comparativas/posts/puedo-sellar-mi-techo-sobre-el-sellado-viejo.html",
+   "title": "¿Puedo sellar sobre el sellado viejo de mi techo?",
+   "description": "A veces sí y a veces es el error más caro. La prueba de la cuadrada, los casos donde no se puede y qué sistemas exigen remover la capa anterior.",
+   "keyword": "sellar sobre sellado viejo",
+   "cluster": "proceso",
+   "grupo": "intencion"
+  },
+  {
+   "path": "/blog/que-sistema-de-sellado-dura-mas-anos",
+   "file": "02-comparativas/posts/que-sistema-de-sellado-dura-mas-anos.html",
+   "title": "Qué sistema de sellado de techo dura más años",
+   "description": "Membrana asfáltica, TPO o silicona: cuál documenta más años, qué garantía respalda cada una y por qué la duración depende de tu techo.",
+   "keyword": "sistema sellado techo mas duradero",
+   "cluster": "proceso",
+   "grupo": "intencion"
+  },
+  {
+   "path": "/blog/se-puede-sellar-un-techo-con-filtracion-activa",
+   "file": "02-comparativas/posts/se-puede-sellar-un-techo-con-filtracion-activa.html",
+   "title": "Sellar un techo con filtración activa: ¿se puede?",
+   "description": "Sellar encima de una fuga activa garantiza que vuelva. Qué se hace primero, cómo se seca la losa y cuándo hay que esperar a que pare la lluvia.",
+   "keyword": "sellar techo con filtracion activa",
+   "cluster": "proceso",
+   "grupo": "intencion"
+  },
+  {
+   "path": "/blog/se-puede-sellar-un-techo-mojado",
+   "file": "02-comparativas/posts/se-puede-sellar-un-techo-mojado.html",
+   "title": "¿Se puede sellar un techo mojado o con lluvia?",
+   "description": "Ningún sistema serio sella sobre agua. Qué pasa cuando se aplica en húmedo, cuánto hay que esperar y cómo se prueba si la losa está lista.",
+   "keyword": "sellar techo mojado",
+   "cluster": "proceso",
+   "grupo": "intencion"
+  },
+  {
+   "path": "/blog/sellado-de-techo-antes-de-la-temporada-de-huracanes",
+   "file": "02-comparativas/posts/sellado-de-techo-antes-de-la-temporada-de-huracanes.html",
+   "title": "Sellado de techo antes de la temporada de huracanes",
+   "description": "Qué revisar en mayo, qué certificaciones de viento existen y por qué el sellado no sustituye un techo estructuralmente suelto.",
+   "keyword": "sellado techo temporada huracanes",
+   "cluster": "proceso",
+   "grupo": "intencion"
+  },
+  {
+   "path": "/blog/sellado-de-techo-comercial",
+   "file": "02-comparativas/posts/sellado-de-techo-comercial.html",
+   "title": "Sellado de techo comercial: sistemas y garantías",
+   "description": "En techo comercial manda la garantía de fabricante y la certificación de viento. Compara membranas, recubrimientos y qué documentación exigir.",
+   "keyword": "sellado de techo comercial",
+   "cluster": "garantia-leyes",
+   "grupo": "sustrato"
+  },
+  {
+   "path": "/blog/sellado-de-techo-con-equipos-de-aire",
+   "file": "02-comparativas/posts/sellado-de-techo-con-equipos-de-aire.html",
+   "title": "Sellar el techo alrededor de equipos de aire",
+   "description": "Las unidades de aire son la causa más común de filtración puntual en la losa. Cómo se sellan anclajes y bases sin anular la garantía del sistema.",
+   "keyword": "sellado techo equipos de aire",
+   "cluster": "proceso",
+   "grupo": "sustrato"
+  },
+  {
+   "path": "/blog/sellado-de-techo-con-garantia-escrita",
+   "file": "02-comparativas/posts/sellado-de-techo-con-garantia-escrita.html",
+   "title": "Sellado de techo con garantía escrita: qué debe decir",
+   "description": "Área, sistema, años, exclusiones y responsable legal. Las siete cláusulas que convierten una promesa verbal en un documento que sirve para reclamar.",
+   "keyword": "garantia escrita sellado techo",
+   "cluster": "garantia-leyes",
+   "grupo": "intencion"
+  },
+  {
+   "path": "/blog/sellado-de-techo-con-paneles-solares",
+   "file": "02-comparativas/posts/sellado-de-techo-con-paneles-solares.html",
+   "title": "Sellado de techo con paneles solares",
+   "description": "Orden correcto, anclajes, coordinación con el instalador solar y el detalle de garantía que casi nadie revisa antes de perforar la losa.",
+   "keyword": "sellado techo con paneles solares",
+   "cluster": "proceso",
+   "grupo": "sustrato"
+  },
+  {
+   "path": "/blog/sellado-de-techo-de-aluminio",
+   "file": "02-comparativas/posts/sellado-de-techo-de-aluminio.html",
+   "title": "Sellado de techo de aluminio: juntas y oxidación",
+   "description": "El aluminio no se oxida como el zinc, pero sus juntas también se abren. Qué sellador usar, cómo preparar la superficie y qué revisar en cada panel.",
+   "keyword": "sellado techo de aluminio",
+   "cluster": "sustratos",
+   "grupo": "sustrato"
+  },
+  {
+   "path": "/blog/sellado-de-techo-de-asfalto",
+   "file": "02-comparativas/posts/sellado-de-techo-de-asfalto.html",
+   "title": "Sellado de techo de asfalto: compatibilidad primero",
+   "description": "Qué se puede aplicar sobre un techo de asfalto y qué reacciona mal. Compatibilidad, imprimador, capa nueva y cuándo el parche ya no sirve.",
+   "keyword": "sellado techo de asfalto",
+   "cluster": "proceso",
+   "grupo": "sustrato"
+  },
+  {
+   "path": "/blog/sellado-de-techo-de-concreto",
+   "file": "02-comparativas/posts/sellado-de-techo-de-concreto.html",
+   "title": "Sellado de techo de concreto: guía para losas en PR",
+   "description": "Grietas, remates y pendiente: lo que hay que corregir en una losa de concreto antes de sellar, y qué sistema pide cada caso según el agua que empoza.",
+   "keyword": "sellado de techo de concreto",
+   "cluster": "proceso",
+   "grupo": "sustrato"
+  },
+  {
+   "path": "/blog/sellado-de-techo-de-concreto-vs-membrana-asfaltica",
+   "file": "02-comparativas/posts/sellado-de-techo-de-concreto-vs-membrana-asfaltica.html",
+   "title": "Losa de concreto: sellar o poner membrana asfáltica",
+   "description": "Cuándo una losa de concreto se puede rehabilitar con sellado y cuándo necesita membrana asfáltica nueva, con precio publicado y criterios verificables.",
+   "keyword": "losa concreto membrana asfaltica",
+   "cluster": "garantia-leyes",
+   "grupo": "sustrato"
+  },
+  {
+   "path": "/blog/sellado-de-techo-de-condominio",
+   "file": "02-comparativas/posts/sellado-de-techo-de-condominio.html",
+   "title": "Sellado de techo en condominios: cómo se organiza",
+   "description": "Área común, junta de directores, cotización y garantía a nombre de la asociación. Cómo se aprueba y se ejecuta un sellado de techo en un condominio.",
+   "keyword": "sellado techo condominio",
+   "cluster": "proceso",
+   "grupo": "sustrato"
+  },
+  {
+   "path": "/blog/sellado-de-techo-de-hormigon-poroso",
+   "file": "02-comparativas/posts/sellado-de-techo-de-hormigon-poroso.html",
+   "title": "Hormigón poroso: sellar o rellenar primero",
+   "description": "Un hormigón poroso absorbe el sellador y pierde espesor. Cómo se prepara, qué imprimador pide y por qué hay que corregir antes de cubrir.",
+   "keyword": "hormigon poroso techo sellado",
+   "cluster": "proceso",
+   "grupo": "sustrato"
+  },
+  {
+   "path": "/blog/sellado-de-techo-de-madera",
+   "file": "02-comparativas/posts/sellado-de-techo-de-madera.html",
+   "title": "Sellado de techo de madera: qué funciona y qué no",
+   "description": "Sellar un techo de madera en Puerto Rico exige productos flexibles y ventilación. Qué revisar antes de aplicar y cuándo el problema es la pieza, no el sello.",
+   "keyword": "sellado techo de madera",
+   "cluster": "proceso",
+   "grupo": "sustrato"
+  },
+  {
+   "path": "/blog/sellado-de-techo-de-shingle",
+   "file": "02-comparativas/posts/sellado-de-techo-de-shingle.html",
+   "title": "Sellado de techo de shingle: límites reales",
+   "description": "El shingle tiene vida útil y no siempre admite sellado. Cuándo se puede prolongar, cuándo hay que reemplazar y qué pasa con las tejas levantadas.",
+   "keyword": "sellado techo de shingle",
+   "cluster": "materiales",
+   "grupo": "sustrato"
+  },
+  {
+   "path": "/blog/sellado-de-techo-de-teja",
+   "file": "02-comparativas/posts/sellado-de-techo-de-teja.html",
+   "title": "Sellado de techo de teja: juntas, remates y calor",
+   "description": "En teja no se busca una capa continua sino sellar uniones y remates con productos flexibles. Qué usar, qué evitar y cuándo hay que reponer piezas.",
+   "keyword": "sellado techo de teja",
+   "cluster": "proceso",
+   "grupo": "sustrato"
+  },
+  {
+   "path": "/blog/sellado-de-techo-de-terraza-transitable",
+   "file": "02-comparativas/posts/sellado-de-techo-de-terraza-transitable.html",
+   "title": "Sellado de terraza transitable: qué sistema aguanta",
+   "description": "Una terraza se sella distinto que un techo: resistencia al tránsito, agarre, drenaje y por qué el acrílico solo no sirve para caminar encima.",
+   "keyword": "sellado terraza transitable",
+   "cluster": "proceso",
+   "grupo": "sustrato"
+  },
+  {
+   "path": "/blog/sellado-de-techo-de-zinc",
+   "file": "02-comparativas/posts/sellado-de-techo-de-zinc.html",
+   "title": "Sellado de techo de zinc en Puerto Rico: cómo se hace",
+   "description": "Cómo se sella un techo de zinc en Puerto Rico paso a paso: reponer tornillos, sellar traslapes con poliuretano y malla, y el error que rompe todo en un año.",
+   "keyword": "sellado de techo de zinc",
+   "cluster": "sustratos",
+   "grupo": "sustrato"
+  },
+  {
+   "path": "/blog/sellado-de-techo-de-zinc-vs-silicona",
+   "file": "02-comparativas/posts/sellado-de-techo-de-zinc-vs-silicona.html",
+   "title": "¿Silicona en techo de zinc? Qué aguanta el metal",
+   "description": "La silicona es excelente en losa y problemática en zinc. Aquí está lo que hay que saber sobre dilatación, adherencia y sellado de traslapes metálicos.",
+   "keyword": "silicona para techo de zinc",
+   "cluster": "proceso",
+   "grupo": "sustrato"
+  },
+  {
+   "path": "/blog/sellado-de-techo-despues-de-un-huracan",
+   "file": "02-comparativas/posts/sellado-de-techo-despues-de-un-huracan.html",
+   "title": "Sellado de techo después de un huracán: orden correcto",
+   "description": "Documenta, cubre, seca y después sella. Por qué sellar antes del ajuste del seguro puede costarte el reclamo y qué fotos hay que tomar.",
+   "keyword": "sellado techo despues huracan",
+   "cluster": "proceso",
+   "grupo": "intencion"
+  },
+  {
+   "path": "/blog/sellado-de-techo-en-condominio-quien-paga",
+   "file": "02-comparativas/posts/sellado-de-techo-en-condominio-quien-paga.html",
+   "title": "Condominio: quién paga el sellado del techo",
+   "description": "El techo es área común en la mayoría de los condominios, pero hay excepciones. Qué revisar en el reglamento y cómo se aprueba el trabajo.",
+   "keyword": "condominio quien paga sellado techo",
+   "cluster": "garantia-leyes",
+   "grupo": "intencion"
+  },
+  {
+   "path": "/blog/sellado-de-techo-en-epoca-de-lluvia",
+   "file": "02-comparativas/posts/sellado-de-techo-en-epoca-de-lluvia.html",
+   "title": "¿Se puede sellar un techo en época de lluvia?",
+   "description": "Qué sistemas toleran mejor la humedad ambiental, cuántas horas secas necesitas y por qué el problema no es la lluvia sino el agua que ya está adentro.",
+   "keyword": "sellar techo en lluvia",
+   "cluster": "proceso",
+   "grupo": "intencion"
+  },
+  {
+   "path": "/blog/sellado-de-techo-en-zonas-costeras",
+   "file": "02-comparativas/posts/sellado-de-techo-en-zonas-costeras.html",
+   "title": "Sellado de techos en zonas costeras de Puerto Rico",
+   "description": "Salitre, viento con arena y corrosión acelerada: qué cambia al sellar un techo cerca del mar y por qué el metal sufre más que la losa.",
+   "keyword": "sellado techo zona costera",
+   "cluster": "proceso",
+   "grupo": "sustrato"
+  },
+  {
+   "path": "/blog/sellado-de-techo-industrial",
+   "file": "02-comparativas/posts/sellado-de-techo-industrial.html",
+   "title": "Sellado de techo industrial: especificación y viento",
+   "description": "Galpones, naves y plantas: sistemas especificados, cargas, certificaciones de viento y mantenimiento programado en un techo industrial.",
+   "keyword": "sellado techo industrial",
+   "cluster": "garantia-leyes",
+   "grupo": "sustrato"
+  },
+  {
+   "path": "/blog/sellado-de-techo-olor-y-tiempo-de-curado",
+   "file": "02-comparativas/posts/sellado-de-techo-olor-y-tiempo-de-curado.html",
+   "title": "Olor y curado del sellador de techo: qué esperar",
+   "description": "El acrílico cura en horas, el poliuretano necesita 12 a 24 y la silicona depende de la humedad del aire. Cómo planificar sin arruinar el trabajo.",
+   "keyword": "olor curado sellador techo",
+   "cluster": "proceso",
+   "grupo": "intencion"
+  },
+  {
+   "path": "/blog/sellado-de-techo-para-airbnb-o-alquiler-corto",
+   "file": "02-comparativas/posts/sellado-de-techo-para-airbnb-o-alquiler-corto.html",
+   "title": "Sellado de techo para Airbnb y alquiler a corto plazo",
+   "description": "En una propiedad de alquiler una filtración no es una reparación: es una cancelación. Qué sistema reduce interrupciones y cuándo programar el trabajo.",
+   "keyword": "sellado techo airbnb",
+   "cluster": "proceso",
+   "grupo": "intencion"
+  },
+  {
+   "path": "/blog/sellado-de-techo-plano",
+   "file": "02-comparativas/posts/sellado-de-techo-plano.html",
+   "title": "Sellado de techo plano en Puerto Rico: guía práctica",
+   "description": "Por qué casi todo techo en Puerto Rico es plano, qué sistema rinde en una losa sin pendiente y cómo se decide entre sellado e impermeabilización.",
+   "keyword": "sellado de techo plano",
+   "cluster": "proceso",
+   "grupo": "sustrato"
+  },
+  {
+   "path": "/blog/sellado-de-techo-plano-con-empozamiento",
+   "file": "02-comparativas/posts/sellado-de-techo-plano-con-empozamiento.html",
+   "title": "Empozamiento de agua en el techo: qué hacer",
+   "description": "El agua que se queda en la losa no se arregla con más sellador. Cómo se corrige la pendiente, qué pide el código y qué sistema aguanta el estancamiento.",
+   "keyword": "empozamiento de agua techo",
+   "cluster": "proceso",
+   "grupo": "sustrato"
+  },
+  {
+   "path": "/blog/sellado-de-techo-por-mi-cuenta-o-contratista",
+   "file": "02-comparativas/posts/sellado-de-techo-por-mi-cuenta-o-contratista.html",
+   "title": "¿Sellado de techo por mi cuenta o con contratista?",
+   "description": "Cuándo el DIY tiene sentido en Puerto Rico, cuándo es un riesgo físico y cuándo sale más caro corregirlo que haberlo contratado bien.",
+   "keyword": "sellado techo por mi cuenta",
+   "cluster": "proceso",
+   "grupo": "intencion"
+  },
+  {
+   "path": "/blog/sellado-de-techo-precio-mano-de-obra",
+   "file": "02-comparativas/posts/sellado-de-techo-precio-mano-de-obra.html",
+   "title": "Sellado de techo: cuánto se cobra solo de mano de obra",
+   "description": "Nadie publica la mano de obra separada del material, y por eso las cotizaciones no se pueden comparar. Cómo desglosarla y qué peso real tiene.",
+   "keyword": "mano de obra sellado de techo",
+   "cluster": "garantia-leyes",
+   "grupo": "intencion"
+  },
+  {
+   "path": "/blog/sellado-de-techo-que-no-dure-un-ano",
+   "file": "02-comparativas/posts/sellado-de-techo-que-no-dure-un-ano.html",
+   "title": "Por qué tu sellado de techo no duró ni un año",
+   "description": "Las cuatro causas reales de un sellado que falla en meses, cómo se diagnostican y qué se puede exigir al instalador según la garantía.",
+   "keyword": "sellado de techo no dura",
+   "cluster": "garantia-leyes",
+   "grupo": "intencion"
+  },
+  {
+   "path": "/blog/sellado-de-techo-reflectivo-y-consumo-de-energia",
+   "file": "02-comparativas/posts/sellado-de-techo-reflectivo-y-consumo-de-energia.html",
+   "title": "Techo blanco reflectivo: ¿baja el aire acondicionado?",
+   "description": "Qué hace realmente un acabado blanco en la losa, cuánto ayuda al aire acondicionado y por qué la cifra de ahorro depende de tu aislamiento.",
+   "keyword": "techo blanco reflectivo ahorro energia",
+   "cluster": "proceso",
+   "grupo": "intencion"
+  },
+  {
+   "path": "/blog/sellado-de-techo-residencial",
+   "file": "02-comparativas/posts/sellado-de-techo-residencial.html",
+   "title": "Sellado de techo residencial: qué pide una casa",
+   "description": "Presupuesto, sistema y expectativas reales para el techo de una casa en Puerto Rico: qué se puede resolver y qué hay que reemplazar.",
+   "keyword": "sellado techo residencial",
+   "cluster": "proceso",
+   "grupo": "sustrato"
+  },
+  {
+   "path": "/blog/sellado-de-techo-vs-impermeabilizacion",
+   "file": "02-comparativas/posts/sellado-de-techo-vs-impermeabilizacion.html",
+   "title": "Sellado vs. impermeabilización de techo: diferencia",
+   "description": "Sellar puntos concretos no es lo mismo que cubrir toda la losa. Cómo saber cuál necesita tu techo y qué pasa si aplicas el tratamiento equivocado.",
+   "keyword": "sellado vs impermeabilizacion",
+   "cluster": "proceso",
+   "grupo": "intencion"
+  },
+  {
+   "path": "/blog/sellado-de-techo-y-moho-en-el-techo",
+   "file": "02-comparativas/posts/sellado-de-techo-y-moho-en-el-techo.html",
+   "title": "Moho en el techo: por qué sale y cómo se evita",
+   "description": "El moho aparece donde hay humedad constante y un recubrimiento que le sirve de alimento. Por qué la silicona inorgánica no lo alimenta y qué hacer antes.",
+   "keyword": "moho en el techo",
+   "cluster": "proceso",
+   "grupo": "intencion"
+  },
+  {
+   "path": "/blog/sellado-de-techo-y-seguro-del-hogar",
+   "file": "02-comparativas/posts/sellado-de-techo-y-seguro-del-hogar.html",
+   "title": "¿El seguro cubre el sellado del techo?",
+   "description": "El seguro cubre el daño súbito, no el mantenimiento atrasado. Cómo documentar antes y después y qué guardar para que el reclamo no se caiga.",
+   "keyword": "seguro cubre sellado techo",
+   "cluster": "garantia-leyes",
+   "grupo": "intencion"
+  },
+  {
+   "path": "/blog/sellado-de-techos-con-ilatek-property-solution",
+   "file": "03-comunidades-servicios/sellado-de-techos-con-ilatek-property-solution.html",
+   "title": "Sellado de techos con Ilatek Property Solution",
+   "description": "Trabajamos con todos los sistemas de sellado que se venden en Puerto Rico y no somos afiliados de ninguna marca. La necesidad de tu techo va primero; después ",
+   "keyword": "quiénes somos ilatek",
+   "cluster": "puente",
+   "grupo": "puente"
+  },
+  {
+   "path": "/blog/sellado-de-techos-escolares",
+   "file": "02-comparativas/posts/sellado-de-techos-escolares.html",
+   "title": "Sellado de techos escolares e institucionales",
+   "description": "Escuelas y edificios públicos tienen calendario, licitación y garantía de varios años. Qué documentación exige una institución antes de contratar.",
+   "keyword": "sellado techo escuela puerto rico",
+   "cluster": "proceso",
+   "grupo": "sustrato"
+  },
+  {
+   "path": "/blog/sika-vs-polyglass",
+   "file": "02-comparativas/posts/sika-vs-polyglass.html",
+   "title": "Sika vs. Polyglass: PVC contra autoadhesiva",
+   "description": "Membrana termoplástica soldada o asfáltica autoadhesiva: cuándo conviene cada una en un techo comercial puertorriqueño.",
+   "keyword": "sika vs polyglass",
+   "cluster": "garantia-leyes",
+   "grupo": "marca"
+  },
+  {
+   "path": "/blog/sil-hs-vs-king-of-silicone",
+   "file": "02-comparativas/posts/sil-hs-vs-king-of-silicone.html",
+   "title": "SIL HS vs. King of Silicone: siliconas 100%",
+   "description": "Dos siliconas 100% de marcas puertorriqueñas: precio por paila, cobertura declarada, sólidos y en qué tipo de techo rinde cada una.",
+   "keyword": "sil hs vs king of silicone",
+   "cluster": "proceso",
+   "grupo": "marca"
+  },
+  {
+   "path": "/blog/silicona-100-vs-acrilico-elastomerico",
+   "file": "02-comparativas/posts/silicona-100-vs-acrilico-elastomerico.html",
+   "title": "Silicona 100% vs. acrílico elastomérico: ¿cuál elegir?",
+   "description": "Compara silicona 100% y acrílico elastomérico para sellar techos en Puerto Rico: precio por pie cuadrado publicado, años de vida y cuándo el acrílico sí conviene.",
+   "keyword": "silicona vs acrilico para techo",
+   "cluster": "proceso",
+   "grupo": "familia"
+  },
+  {
+   "path": "/blog/silicona-100-vs-membrana-asfaltica",
+   "file": "02-comparativas/posts/silicona-100-vs-membrana-asfaltica.html",
+   "title": "Silicona 100% vs. membrana asfáltica para techo",
+   "description": "Silicona líquida o membrana asfáltica en rollo: compara años, garantía de fabricante, precio por pie cuadrado publicado y cuál pide tu losa en Puerto Rico.",
+   "keyword": "silicona vs membrana asfaltica",
+   "cluster": "proceso",
+   "grupo": "familia"
+  },
+  {
+   "path": "/blog/silicona-100-vs-membrana-liquida",
+   "file": "02-comparativas/posts/silicona-100-vs-membrana-liquida.html",
+   "title": "Silicona 100% vs. membrana líquida de tres capas",
+   "description": "Silicona en una capa o sistema líquido de primer, base y acabado: coberturas reales, precio por paila, duración declarada y qué techo pide cada uno.",
+   "keyword": "silicona vs membrana liquida",
+   "cluster": "proceso",
+   "grupo": "familia"
+  },
+  {
+   "path": "/blog/silicona-100-vs-poliuretano",
+   "file": "02-comparativas/posts/silicona-100-vs-poliuretano.html",
+   "title": "Silicona 100% vs. poliuretano para techos en Puerto Rico",
+   "description": "Silicona 100% o poliuretano para tu techo en Puerto Rico: diferencias reales, precio publicado por paila, duración y en qué techo conviene cada uno.",
+   "keyword": "silicona vs poliuretano techo",
+   "cluster": "proceso",
+   "grupo": "familia"
+  },
+  {
+   "path": "/blog/silicona-100-vs-sistema-multicapa",
+   "file": "02-comparativas/posts/silicona-100-vs-sistema-multicapa.html",
+   "title": "Silicona suelta vs. sistema multicapa con garantía",
+   "description": "Comprar silicona y aplicarla, o contratar un sistema de cuatro pasos con garantía de fabricante: qué cubre cada uno y qué pasa si algo falla.",
+   "keyword": "sistema multicapa vs silicona",
+   "cluster": "proceso",
+   "grupo": "familia"
+  },
+  {
+   "path": "/blog/silicona-100-vs-tpo-pvc",
+   "file": "02-comparativas/posts/silicona-100-vs-tpo-pvc.html",
+   "title": "Silicona 100% vs. membrana TPO o PVC",
+   "description": "Silicona líquida o membrana termoplástica soldada: cuándo la losa residencial no necesita TPO y cuándo el techo comercial no admite silicona.",
+   "keyword": "silicona vs tpo pvc techo",
+   "cluster": "proceso",
+   "grupo": "familia"
+  },
+  {
+   "path": "/blog/soprema-vs-polyglass",
+   "file": "02-comparativas/posts/soprema-vs-polyglass.html",
+   "title": "Soprema vs. Polyglass: sistemas y líneas líquidas",
+   "description": "Dos fabricantes internacionales con canal en la isla: membranas SBS, APP, autoadhesivas y líneas líquidas para techo comercial.",
+   "keyword": "soprema vs polyglass",
+   "cluster": "proceso",
+   "grupo": "marca"
+  },
+  {
+   "path": "/blog/top-coat-marin-vs-top-coat-cintron",
+   "file": "02-comparativas/posts/top-coat-marin-vs-top-coat-cintron.html",
+   "title": "Top Coat Marín vs. acabado Cintrón",
+   "description": "La última capa es la que ves y la que envejece: compara cobertura declarada, resistencia UV y función dentro de cada sistema.",
+   "keyword": "top coat marin vs cintron",
+   "cluster": "garantia-leyes",
+   "grupo": "marca"
+  },
+  {
+   "path": "/blog/tpo-pvc-vs-sistema-multicapa",
+   "file": "02-comparativas/posts/tpo-pvc-vs-sistema-multicapa.html",
+   "title": "TPO vs. sistema multicapa líquido",
+   "description": "Cuándo un techo comercial necesita membrana nueva y cuándo una rehabilitación con sistema líquido es la decisión correcta.",
+   "keyword": "tpo vs sistema multicapa",
+   "cluster": "garantia-leyes",
+   "grupo": "familia"
+  },
+  {
+   "path": "/blog/windmar-vs-lanco",
+   "file": "02-comparativas/posts/windmar-vs-lanco.html",
+   "title": "WindMar vs. Lanco: silicona instalada o acrílico DIY",
+   "description": "Silicona instalada con garantía o acrílico de ferretería aplicado por ti: compara precio por pie cuadrado, duración y riesgo real.",
+   "keyword": "windmar vs lanco",
+   "cluster": "proceso",
+   "grupo": "marca"
+  },
+  {
+   "path": "/blog/limpieza-de-casas-en-puerto-rico",
+   "file": "03-comunidades-servicios/limpieza-de-casas-en-puerto-rico.html",
+   "title": "Limpieza de casas en Puerto Rico: precio y qué incluye",
+   "description": "Desde $250 y $0.07 por pie cuadrado: qué incluye la limpieza residencial de Ilatek, cada cuánto conviene, qué se cobra extra y cómo se pide el precio por escrito.",
+   "keyword": "limpieza de casas puerto rico",
+   "cluster": "servicios",
+   "grupo": "limpieza"
+  },
+  {
+   "path": "/blog/limpieza-profunda-de-casas",
+   "file": "03-comunidades-servicios/limpieza-profunda-de-casas.html",
+   "title": "Limpieza profunda de casas: qué incluye y cuánto cuesta",
+   "description": "Qué saca una limpieza profunda que la regular no alcanza: interiores de nevera y horno, juntas, zócalos y marcos. Precio a $0.15 por pie cuadrado desde $250.",
+   "keyword": "limpieza profunda de casas",
+   "cluster": "servicios",
+   "grupo": "limpieza"
+  },
+  {
+   "path": "/blog/limpieza-estandar-de-casas",
+   "file": "03-comunidades-servicios/limpieza-estandar-de-casas.html",
+   "title": "Limpieza estándar de casas: precio y cada cuánto hacerla",
+   "description": "La limpieza estándar mantiene la casa al día a $0.07 por pie cuadrado desde $250. Qué incluye, cada cuánto conviene y cuándo hay que pasar a una profunda.",
+   "keyword": "limpieza estandar de casas",
+   "cluster": "servicios",
+   "grupo": "limpieza"
+  },
+  {
+   "path": "/blog/limpieza-de-mudanza-en-puerto-rico",
+   "file": "03-comunidades-servicios/limpieza-de-mudanza-en-puerto-rico.html",
+   "title": "Limpieza de mudanza en Puerto Rico: qué incluye y precio",
+   "description": "Limpieza de mudanza con la unidad vacía, de arriba a abajo: gabinetes, closet y nevera por dentro, paredes y ventanas. Desde $250, para entregar o estrenar.",
+   "keyword": "limpieza de mudanza puerto rico",
+   "cluster": "servicios",
+   "grupo": "limpieza"
+  },
+  {
+   "path": "/blog/limpieza-comercial-de-oficinas-en-puerto-rico",
+   "file": "03-comunidades-servicios/limpieza-comercial-de-oficinas-en-puerto-rico.html",
+   "title": "Limpieza comercial de oficinas en Puerto Rico: precio",
+   "description": "Limpieza de oficinas antes de abrir o después de cerrar: áreas de trabajo, baños con reabasto, áreas comunes y cristales. Desde $250, sin contrato.",
+   "keyword": "limpieza comercial oficinas puerto rico",
+   "cluster": "servicios",
+   "grupo": "limpieza"
+  },
+  {
+   "path": "/blog/limpieza-industrial-de-almacenes-y-plantas",
+   "file": "03-comunidades-servicios/limpieza-industrial-de-almacenes-y-plantas.html",
+   "title": "Limpieza industrial en Puerto Rico: almacenes y plantas",
+   "description": "Pisos industriales con desengrase, estanterías, áreas operativas, baños y vestuarios, oficinas de planta y patios. Desde $250, sin frenar la operación.",
+   "keyword": "limpieza industrial puerto rico",
+   "cluster": "servicios",
+   "grupo": "limpieza"
+  },
+  {
+   "path": "/blog/limpieza-de-techos-y-canaletas",
+   "file": "03-comunidades-servicios/limpieza-de-techos-y-canaletas.html",
+   "title": "Limpieza de techos y canaletas en Puerto Rico: precio",
+   "description": "Desde $250: hojas, arena y escombros fuera del techo, canaletas y bajantes despejadas y desagües verificados. Cada cuánto limpiar y por qué el rebose filtra.",
+   "keyword": "limpieza de techos y canaletas puerto rico",
+   "cluster": "servicios",
+   "grupo": "limpieza"
+  },
+  {
+   "path": "/blog/lavado-a-presion-de-casas-en-puerto-rico",
+   "file": "03-comunidades-servicios/lavado-a-presion-de-casas-en-puerto-rico.html",
+   "title": "Lavado a presión de casas en Puerto Rico: precio y cuándo",
+   "description": "Fachadas, terrazas, driveway, aceras y verjas: presión calibrada por superficie y soft wash para lo delicado. Desde $250, una o dos veces al año.",
+   "keyword": "lavado a presion de casas puerto rico",
+   "cluster": "servicios",
+   "grupo": "limpieza"
+  },
+  {
+   "path": "/blog/lavado-a-presion-de-techos-antes-de-sellar",
+   "file": "03-comunidades-servicios/lavado-a-presion-de-techos-antes-de-sellar.html",
+   "title": "Lavado a presión de techos: precio y por qué antes de sellar",
+   "description": "Desde $250: presión controlada, moho y suciedad fuera, desagües limpios y techo listo para sellar. Por qué la adherencia depende de una superficie limpia.",
+   "keyword": "lavado a presion de techos puerto rico",
+   "cluster": "servicios",
+   "grupo": "limpieza"
+  },
+  {
+   "path": "/blog/preguntas-frecuentes-de-limpieza-en-puerto-rico",
+   "file": "03-comunidades-servicios/preguntas-frecuentes-de-limpieza-en-puerto-rico.html",
+   "title": "Preguntas frecuentes de limpieza en Puerto Rico",
+   "description": "Precio, frecuencia, garantía, depósito y cobertura: las 17 preguntas que más se hacen sobre limpieza en Puerto Rico, con respuesta corta.",
+   "keyword": "preguntas frecuentes limpieza puerto rico",
+   "cluster": "servicios",
+   "grupo": "limpieza"
+  },
+  {
+   "path": "/blog/en/house-cleaning-in-puerto-rico",
+   "file": "03-comunidades-servicios/en/house-cleaning-in-puerto-rico.html",
+   "title": "House Cleaning in Puerto Rico: Price and What Is Included",
+   "description": "From $250 and $0.07 per square foot: what Ilatek house cleaning includes, how often to book it, what costs extra and how you get a written price.",
+   "keyword": "house cleaning puerto rico",
+   "cluster": "servicios-en",
+   "grupo": "limpieza-en"
+  },
+  {
+   "path": "/blog/en/deep-cleaning-for-homes",
+   "file": "03-comunidades-servicios/en/deep-cleaning-for-homes.html",
+   "title": "Deep Cleaning for Homes: Scope and Cost",
+   "description": "What a deep clean reaches that a regular visit does not: fridge and oven interiors, grout, baseboards and frames. $0.15 per square foot from $250.",
+   "keyword": "deep cleaning homes puerto rico",
+   "cluster": "servicios-en",
+   "grupo": "limpieza-en"
+  },
+  {
+   "path": "/blog/en/standard-house-cleaning",
+   "file": "03-comunidades-servicios/en/standard-house-cleaning.html",
+   "title": "Standard House Cleaning: Price and How Often",
+   "description": "Standard cleaning keeps a home up to date at $0.07 per square foot from $250. What it covers, how often to book it and when to switch to a deep clean.",
+   "keyword": "standard house cleaning puerto rico",
+   "cluster": "servicios-en",
+   "grupo": "limpieza-en"
+  },
+  {
+   "path": "/blog/en/move-in-move-out-cleaning",
+   "file": "03-comunidades-servicios/en/move-in-move-out-cleaning.html",
+   "title": "Move-In and Move-Out Cleaning in Puerto Rico",
+   "description": "Move-out cleaning of an empty unit, top to bottom: cabinets, closets and fridge inside, walls and windows. From $250, to hand back keys or start fresh.",
+   "keyword": "move out cleaning puerto rico",
+   "cluster": "servicios-en",
+   "grupo": "limpieza-en"
+  },
+  {
+   "path": "/blog/en/commercial-office-cleaning",
+   "file": "03-comunidades-servicios/en/commercial-office-cleaning.html",
+   "title": "Commercial Office Cleaning in Puerto Rico",
+   "description": "Office cleaning before opening or after closing: work areas, bathrooms with restocking, common areas and glass. From $250, with no contract.",
+   "keyword": "commercial office cleaning puerto rico",
+   "cluster": "servicios-en",
+   "grupo": "limpieza-en"
+  },
+  {
+   "path": "/blog/en/industrial-cleaning-warehouses",
+   "file": "03-comunidades-servicios/en/industrial-cleaning-warehouses.html",
+   "title": "Industrial Cleaning in Puerto Rico: Warehouses and Plants",
+   "description": "Industrial floors with degreasing, shelving, operating areas, bathrooms and locker rooms, plant offices and yards. From $250, without stopping operations.",
+   "keyword": "industrial cleaning puerto rico",
+   "cluster": "servicios-en",
+   "grupo": "limpieza-en"
+  },
+  {
+   "path": "/blog/en/roof-and-gutter-cleaning",
+   "file": "03-comunidades-servicios/en/roof-and-gutter-cleaning.html",
+   "title": "Roof and Gutter Cleaning in Puerto Rico: Price",
+   "description": "From $150: leaves, sand and debris off the roof, gutters and downspouts cleared, drains checked. How often to clean and why an overflowing gutter leaks.",
+   "keyword": "roof and gutter cleaning puerto rico",
+   "cluster": "servicios-en",
+   "grupo": "limpieza-en"
+  },
+  {
+   "path": "/blog/en/pressure-washing-exteriors",
+   "file": "03-comunidades-servicios/en/pressure-washing-exteriors.html",
+   "title": "Pressure Washing Exteriors in Puerto Rico: Price",
+   "description": "Facades, terraces, driveways, sidewalks and fences: pressure calibrated per surface and soft washing for delicate materials. From $250, once or twice a year.",
+   "keyword": "pressure washing houses puerto rico",
+   "cluster": "servicios-en",
+   "grupo": "limpieza-en"
+  },
+  {
+   "path": "/blog/en/roof-pressure-washing-before-sealing",
+   "file": "03-comunidades-servicios/en/roof-pressure-washing-before-sealing.html",
+   "title": "Roof Pressure Washing: Price and Why Before Sealing",
+   "description": "From $250: controlled pressure, mold and dirt removed, drains cleared and the roof ready to seal. Why adhesion depends on a clean surface.",
+   "keyword": "roof pressure washing puerto rico",
+   "cluster": "servicios-en",
+   "grupo": "limpieza-en"
+  },
+  {
+   "path": "/blog/en/cleaning-faq-puerto-rico",
+   "file": "03-comunidades-servicios/en/cleaning-faq-puerto-rico.html",
+   "title": "Cleaning FAQ for Puerto Rico",
+   "description": "Price, frequency, warranty, deposit and coverage: the 17 questions people ask most about cleaning in Puerto Rico, each with a short answer.",
+   "keyword": "cleaning faq puerto rico",
+   "cluster": "servicios-en",
+   "grupo": "limpieza-en"
+  }
+ ]
+}

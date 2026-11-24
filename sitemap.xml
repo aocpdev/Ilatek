@@ -1,118 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- ilatekpr.com — sitemap.xml
-     Nota: elimina cualquier URL de página que aún no exista en el sitio
-     (Google penaliza 404s listados en el sitemap). -->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- Home (canonical según auditoría: /home) -->
-  <url>
-    <loc>https://ilatekpr.com/home</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-
-  <!-- Cotizador -->
-  <url>
-    <loc>https://ilatekpr.com/cotizacion</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Hub: la madre de todos los servicios -->
-  <url>
-    <loc>https://ilatekpr.com/servicios</loc>
-    <lastmod>2026-09-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Categorías (tarjetas 3D / schema OfferCatalog) -->
-  <url>
-    <loc>https://ilatekpr.com/limpieza-residencial</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ilatekpr.com/limpieza-comercial</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ilatekpr.com/limpieza-industrial</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Los 10 servicios del carrusel (mismos slugs que los enlaces del home) -->
-  <url>
-    <loc>https://ilatekpr.com/limpieza-estandar</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ilatekpr.com/limpieza-profunda</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ilatekpr.com/limpieza-de-mudanza</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ilatekpr.com/airbnb-turnover</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ilatekpr.com/post-construccion</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ilatekpr.com/ventanas</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ilatekpr.com/lavado-a-presion</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ilatekpr.com/alfombras</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ilatekpr.com/electrodomesticos</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ilatekpr.com/organizacion</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- ═══ Sección de Techos (Ilatek Techos) ═══
-       Publica estas URLs SOLO cuando cada página exista en GHL (evita 404s).
-       Este bloque lo REGENERA Ilatek/techos/build-techos.mjs: no editar a mano. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://ilatekpr.com/</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/home"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://ilatekpr.com/airbnb-turnover</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/airbnb-turnover"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/airbnb-turnover"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/airbnb-turnover"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ilatekpr.com/alfombras</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/alfombras"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/alfombras"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/alfombras"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ilatekpr.com/comunidades</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/comunidades"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/communities"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/comunidades"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://ilatekpr.com/electrodomesticos</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/electrodomesticos"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/electrodomesticos"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/electrodomesticos"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ilatekpr.com/en/airbnb-turnover</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/airbnb-turnover"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/airbnb-turnover"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/airbnb-turnover"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/alfombras</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/alfombras"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/alfombras"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/alfombras"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/canaletas-y-bajantes</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/canaletas-y-bajantes"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/canaletas-y-bajantes"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/canaletas-y-bajantes"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/communities</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/comunidades"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/communities"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/comunidades"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/electrodomesticos</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/electrodomesticos"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/electrodomesticos"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/electrodomesticos"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/empozamiento-de-techos</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/empozamiento-de-techos"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/empozamiento-de-techos"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/empozamiento-de-techos"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/home</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/home"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/impermeabilizacion-de-techos</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/impermeabilizacion-de-techos"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/impermeabilizacion-de-techos"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/impermeabilizacion-de-techos"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/inspeccion-de-techos</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/inspeccion-de-techos"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/inspeccion-de-techos"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/inspeccion-de-techos"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/inspeccion-y-mantenimiento-de-techos</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/inspeccion-y-mantenimiento-de-techos"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/inspeccion-y-mantenimiento-de-techos"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/inspeccion-y-mantenimiento-de-techos"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/instalacion-y-reemplazo-de-techos</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/instalacion-y-reemplazo-de-techos"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/instalacion-y-reemplazo-de-techos"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/instalacion-y-reemplazo-de-techos"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/lavado-a-presion</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/lavado-a-presion"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/lavado-a-presion"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/lavado-a-presion"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/lavado-a-presion-techos</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/lavado-a-presion-techos"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/lavado-a-presion-techos"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/lavado-a-presion-techos"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/limpieza-comercial</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/limpieza-comercial"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/limpieza-comercial"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/limpieza-comercial"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/limpieza-de-mudanza</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/limpieza-de-mudanza"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/limpieza-de-mudanza"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/limpieza-de-mudanza"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/limpieza-de-techos-y-canaletas</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/limpieza-de-techos-y-canaletas"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/limpieza-de-techos-y-canaletas"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/limpieza-de-techos-y-canaletas"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/limpieza-estandar</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/limpieza-estandar"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/limpieza-estandar"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/limpieza-estandar"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/limpieza-industrial</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/limpieza-industrial"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/limpieza-industrial"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/limpieza-industrial"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/limpieza-profunda</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/limpieza-profunda"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/limpieza-profunda"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/limpieza-profunda"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/limpieza-residencial</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/limpieza-residencial"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/limpieza-residencial"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/limpieza-residencial"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/mantenimiento-de-techos</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/mantenimiento-de-techos"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/mantenimiento-de-techos"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/mantenimiento-de-techos"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/membrana-asfaltica</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/membrana-asfaltica"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/membrana-asfaltica"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/membrana-asfaltica"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/organizacion</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/organizacion"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/organizacion"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/organizacion"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/post-construccion</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/post-construccion"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/post-construccion"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/post-construccion"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/recubrimiento-elastomerico</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/recubrimiento-elastomerico"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/recubrimiento-elastomerico"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/recubrimiento-elastomerico"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/reparacion-de-filtraciones</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/reparacion-de-filtraciones"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/reparacion-de-filtraciones"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/reparacion-de-filtraciones"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/reparacion-de-goteras</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/reparacion-de-goteras"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/reparacion-de-goteras"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/reparacion-de-goteras"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/reparacion-de-grietas-techos</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/reparacion-de-grietas-techos"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/reparacion-de-grietas-techos"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/reparacion-de-grietas-techos"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/reparacion-de-techos</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/reparacion-de-techos"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/reparacion-de-techos"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/reparacion-de-techos"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/reparacion-post-huracan</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/reparacion-post-huracan"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/reparacion-post-huracan"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/reparacion-post-huracan"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/sellado-acrilico</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/sellado-acrilico"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/sellado-acrilico"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/sellado-acrilico"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/sellado-de-poliuretano</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/sellado-de-poliuretano"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/sellado-de-poliuretano"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/sellado-de-poliuretano"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/sellado-de-silicona</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/sellado-de-silicona"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/sellado-de-silicona"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/sellado-de-silicona"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/sellado-de-techos</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/sellado-de-techos"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/sellado-de-techos"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/sellado-de-techos"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/sellado-de-techos-comercial</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/sellado-de-techos-comercial"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/sellado-de-techos-comercial"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/sellado-de-techos-comercial"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/sellado-de-techos-industrial</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/sellado-de-techos-industrial"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/sellado-de-techos-industrial"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/sellado-de-techos-industrial"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/sellado-de-techos-residencial</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/sellado-de-techos-residencial"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/sellado-de-techos-residencial"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/sellado-de-techos-residencial"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/servicios</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/servicios"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/servicios"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/servicios"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/servicios-techos</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/servicios-techos"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/servicios-techos"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/servicios-techos"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/techos-de-asfalto</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/techos-de-asfalto"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/techos-de-asfalto"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/techos-de-asfalto"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/techos-de-concreto</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/techos-de-concreto"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/techos-de-concreto"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/techos-de-concreto"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/techos-de-madera</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/techos-de-madera"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/techos-de-madera"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/techos-de-madera"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/techos-de-teja</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/techos-de-teja"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/techos-de-teja"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/techos-de-teja"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/techos-de-zinc</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/techos-de-zinc"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/techos-de-zinc"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/techos-de-zinc"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/techos-planos</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/techos-planos"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/techos-planos"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/techos-planos"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/techos-por-segmento</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/techos-por-segmento"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/techos-por-segmento"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/techos-por-segmento"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/tragaluces</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/tragaluces"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/tragaluces"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/tragaluces"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/en/ventanas</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/ventanas"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/ventanas"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/ventanas"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ilatekpr.com/garantia</loc><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://ilatekpr.com/lavado-a-presion</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/lavado-a-presion"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/lavado-a-presion"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/lavado-a-presion"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ilatekpr.com/limpieza-comercial</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/limpieza-comercial"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/limpieza-comercial"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/limpieza-comercial"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ilatekpr.com/limpieza-de-mudanza</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/limpieza-de-mudanza"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/limpieza-de-mudanza"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/limpieza-de-mudanza"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ilatekpr.com/limpieza-estandar</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/limpieza-estandar"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/limpieza-estandar"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/limpieza-estandar"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ilatekpr.com/limpieza-industrial</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/limpieza-industrial"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/limpieza-industrial"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/limpieza-industrial"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ilatekpr.com/limpieza-profunda</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/limpieza-profunda"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/limpieza-profunda"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/limpieza-profunda"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ilatekpr.com/limpieza-residencial</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/limpieza-residencial"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/limpieza-residencial"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/limpieza-residencial"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ilatekpr.com/organizacion</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/organizacion"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/organizacion"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/organizacion"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ilatekpr.com/post-construccion</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/post-construccion"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/post-construccion"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/post-construccion"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ilatekpr.com/resenas</loc><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://ilatekpr.com/servicios</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/servicios"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/servicios"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/servicios"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ilatekpr.com/servicios-techos</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/servicios-techos"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/servicios-techos"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/servicios-techos"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://ilatekpr.com/ventanas</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://ilatekpr.com/ventanas"/><xhtml:link rel="alternate" hreflang="en-US" href="https://ilatekpr.com/en/ventanas"/><xhtml:link rel="alternate" hreflang="x-default" href="https://ilatekpr.com/ventanas"/><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <!-- TECHOS:START -->
   <url><loc>https://ilatekpr.com/reparacion-de-techos</loc><lastmod>2026-10-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ilatekpr.com/reparacion-de-goteras</loc><lastmod>2026-10-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -146,5 +100,4 @@
   <url><loc>https://ilatekpr.com/tragaluces</loc><lastmod>2026-10-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://ilatekpr.com/instalacion-y-reemplazo-de-techos</loc><lastmod>2026-10-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <!-- TECHOS:END -->
-
 </urlset>

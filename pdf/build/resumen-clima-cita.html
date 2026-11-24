@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><title>Resumen de tu cita — Ilatek</title>
+<style>
+  @page { size: A4; margin: 12mm; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; color:#1d1d1f; background:#fff; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .sheet { width:186mm; }
+  .brand { background:#213d8e; color:#fff; border-radius:6mm; padding:7mm 8mm 6mm; }
+  .brand-row { display:flex; align-items:center; gap:5mm; }
+  .brand img { width:16mm; height:16mm; background:#fff; border-radius:3.5mm; padding:1.6mm; }
+  .brand .co { font-size:8.4pt; line-height:1.35; color:#c9d5f3; }
+  .brand .co b { display:block; color:#fff; font-size:10pt; letter-spacing:.2pt; }
+  h1 { font-size:20pt; margin:6mm 0 1.5mm; letter-spacing:-.3pt; }
+  .sub { margin:0; font-size:9.6pt; color:#cdd7f3; }
+  .grid { display:flex; gap:4mm; margin-top:5mm; }
+  .card { border:0.4mm solid #e5e5ea; border-radius:5mm; padding:4.5mm 5mm; }
+  .card h2 { font-size:7.6pt; letter-spacing:.7pt; text-transform:uppercase; color:#6e6e73; margin:0 0 2.5mm; font-weight:700; }
+  .cita { width:100%; border-collapse:collapse; font-size:9.2pt; }
+  .cita td { padding:1.1mm 0; vertical-align:top; }
+  .cita td.k { color:#6e6e73; width:42%; }
+  .cita td.v { font-weight:700; }
+  .hero { background:linear-gradient(180deg,#4a9ade 0%,#2a72c4 55%,#1c5aa6 100%); color:#fff; border-radius:5mm; padding:5mm 6mm; margin-top:4mm; }
+  .hero-row { display:flex; align-items:center; gap:5mm; }
+  .temp { font-size:34pt; font-weight:700; letter-spacing:-1pt; line-height:1; }
+  .cond { font-size:10pt; color:#e8f2ff; }
+  .place { font-size:8.4pt; letter-spacing:.5pt; text-transform:uppercase; color:#d6e6f7; margin-bottom:1mm; }
+  .metrics { display:flex; gap:3mm; margin-top:4mm; }
+  .metric { flex:1; background:rgba(255,255,255,.16); border-radius:3mm; padding:2.6mm 3mm; }
+  .metric span { display:block; font-size:6.8pt; letter-spacing:.5pt; text-transform:uppercase; color:#d9e8f8; }
+  .metric b { font-size:11pt; }
+  .days { width:100%; border-collapse:separate; border-spacing:2.6mm 0; margin-top:3mm; }
+  .day { width:20%; text-align:center; border:0.4mm solid #e5e5ea; border-radius:3.5mm; padding:3mm 1mm 2.6mm; }
+  .day-n { font-size:7.4pt; text-transform:uppercase; letter-spacing:.5pt; color:#6e6e73; font-weight:700; }
+  .day-t { font-size:11pt; font-weight:700; margin-top:1mm; }
+  .day-t span { font-weight:400; color:#6e6e73; }
+  .day-r { font-size:7.6pt; color:#0a84ff; margin-top:.6mm; }
+  .rec { margin-top:4mm; background:#f2f2f7; border-radius:4mm; padding:4mm 5mm; }
+  .rec .k { font-size:7.4pt; letter-spacing:.7pt; text-transform:uppercase; color:#6e6e73; font-weight:700; }
+  .rec p { margin:1.5mm 0 0; font-size:9.6pt; line-height:1.5; }
+  .check { margin-top:4mm; font-size:9.2pt; line-height:1.65; }
+  .check div { padding-left:5mm; position:relative; }
+  .check div:before { content:"•"; position:absolute; left:0; color:#00b94f; font-weight:700; font-size:12pt; line-height:1; top:.4mm; }
+  .foot { margin-top:5mm; border-top:0.4mm solid #e5e5ea; padding-top:3mm; font-size:7.8pt; color:#8e8e93; display:flex; justify-content:space-between; }
+  .foot b { color:#213d8e; }
+</style></head>
+<body><div class="sheet">
+
+  <div class="brand">
+    <div class="brand-row">
+      <img src="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/ilatek-logo-256.webp" alt="Ilatek">
+      <div class="co"><b>Ilatek</b>Limpieza Profunda<br>Puerto Rico</div>
+    </div>
+    <h1>Resumen de tu cita</h1>
+    <p class="sub">Preparado para Mar Soler · viernes, 20 de noviembre de 2026</p>
+  </div>
+
+  <div class="card" style="margin-top:4mm">
+    <h2>Tu cita</h2>
+    <table class="cita">
+      <tr><td class="k">Servicio</td><td class="v">Limpieza Profunda</td></tr>
+      <tr><td class="k">Municipio</td><td class="v">Dorado</td></tr>
+      <tr><td class="k">Fecha y hora</td><td class="v">viernes, 20 de noviembre de 2026 · 9:00 a.m.</td></tr>
+      <tr><td class="k">Depósito</td><td class="v">$50 (se descuenta del total)</td></tr>
+    </table>
+  </div>
+
+  <div class="hero">
+    <div class="place">Dorado, Puerto Rico · hoy</div>
+    <div class="hero-row">
+      <svg width="52" height="52" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="9" r="3.6" fill="#FDB515"/><path d="M13 18.4h5.1a2.9 2.9 0 0 0 .2-5.8 4.1 4.1 0 0 0-7.8-.6 3.2 3.2 0 0 0 2.5 6.4Z" fill="#DCE6F2" stroke="#B9C8DA" stroke-width=".7"/></svg>
+      <div>
+        <div class="temp">80°<span style="font-size:16pt;font-weight:400">F</span></div>
+        <div class="cond">Parcialmente nublado · sensación 87°F</div>
+      </div>
+    </div>
+    <div class="metrics">
+      <div class="metric"><span>Prob. de lluvia</span><b>73%</b></div>
+      <div class="metric"><span>Viento</span><b>8 mph SE</b></div>
+      <div class="metric"><span>Índice UV</span><b>7</b></div>
+      <div class="metric"><span>Humedad</span><b>84%</b></div>
+    </div>
+  </div>
+
+  <table class="days"><tr><td class="day"><div class="day-n">Hoy</div><svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.4 14.2h9.2a3.4 3.4 0 0 0 .3-6.8 4.8 4.8 0 0 0-9.1-.7 3.7 3.7 0 0 0-.4 7.5Z" fill="#DCE6F2" stroke="#B9C8DA" stroke-width=".8"/><g stroke="#4A9ADE" stroke-width="1.8" stroke-linecap="round"><path d="M9 17v2.6M12.4 17v3.4M15.8 17v2.4"/></g></svg><div class="day-t">92°<span>/72°</span></div><div class="day-r">73% lluvia</div></td><td class="day"><div class="day-n">vie</div><svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="9" r="3.6" fill="#FDB515"/><path d="M13 18.4h5.1a2.9 2.9 0 0 0 .2-5.8 4.1 4.1 0 0 0-7.8-.6 3.2 3.2 0 0 0 2.5 6.4Z" fill="#DCE6F2" stroke="#B9C8DA" stroke-width=".7"/></svg><div class="day-t">92°<span>/78°</span></div><div class="day-r">6% lluvia</div></td><td class="day"><div class="day-n">sáb</div><svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.4 18.2h9.2a3.4 3.4 0 0 0 .3-6.8 4.8 4.8 0 0 0-9.1-.7 3.7 3.7 0 0 0-.4 7.5Z" fill="#DCE6F2" stroke="#B9C8DA" stroke-width=".8"/></svg><div class="day-t">93°<span>/77°</span></div><div class="day-r">61% lluvia</div></td><td class="day"><div class="day-n">dom</div><svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.4 14.2h9.2a3.4 3.4 0 0 0 .3-6.8 4.8 4.8 0 0 0-9.1-.7 3.7 3.7 0 0 0-.4 7.5Z" fill="#DCE6F2" stroke="#B9C8DA" stroke-width=".8"/><g stroke="#4A9ADE" stroke-width="1.8" stroke-linecap="round"><path d="M9 17v2.6M12.4 17v3.4M15.8 17v2.4"/></g></svg><div class="day-t">89°<span>/76°</span></div><div class="day-r">4% lluvia</div></td><td class="day"><div class="day-n">lun</div><svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.4 14.2h9.2a3.4 3.4 0 0 0 .3-6.8 4.8 4.8 0 0 0-9.1-.7 3.7 3.7 0 0 0-.4 7.5Z" fill="#DCE6F2" stroke="#B9C8DA" stroke-width=".8"/><g stroke="#4A9ADE" stroke-width="1.8" stroke-linecap="round"><path d="M9 17v2.6M12.4 17v3.4M15.8 17v2.4"/></g></svg><div class="day-t">86°<span>/71°</span></div><div class="day-r">47% lluvia</div></td></tr></table>
+
+  <div class="rec">
+    <div class="k">Recomendación del día</div>
+    <p>Con esta probabilidad de lluvia, mejor el trabajo interior hoy; el exterior lo movemos a la ventana más seca de la semana.</p>
+  </div>
+
+  <div class="check">
+    <div>Acceso al área de trabajo y estacionamiento libre el día de la visita.</div>
+    <div>Agua y electricidad disponibles si el servicio lo requiere.</div>
+    <div>Retira objetos frágiles de las superficies a tratar.</div>
+    <div>Si necesitas mover la cita, avísanos con 24 horas de anticipación.</div>
+  </div>
+
+  <div class="foot">
+    <div><b>ilatekpr.com</b> · <a href="tel:7875617333" style="color:#8e8e93;text-decoration:none">787-561-7333</a> · lunes a sábado, 8:00 a.m. – 6:00 p.m.</div>
+    <div>Datos: Open-Meteo · 11/12/2026</div>
+  </div>
+
+</div></body></html>

@@ -1,0 +1,162 @@
+/og:title/ og:description ("… en Juncos, Puerto Rico"): el título sale de {{custom_values.business__county_name}}, así que es el mismo custom value, sin depender de que el builder expanda el Custom Code; 3. el subdominio del sitio (juncos.ilatekpr.com → Juncos); 4. los valores de marca del contrato (custom-values.json → brand). El portador que viaja en el embed se oculta siempre (nunca es contenido). Estado en
+{{custom_values.business__county_name}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}
+Login
+Reparación de goteras
+Reparación de Goteras en Puerto Rico que
+detiene el agua
+hoy mismo.
+Una gotera que gotea hoy dañará tu cielo raso, tu pintura y tu instalación eléctrica mañana. Ilatek localiza el punto real de la filtración y lo sella en {{custom_values.business__county_name}}, con agenda con $50 descontables del total y garantía escrita.
+Solicita tu cotización
+Qué incluye el servicio ↓
+al agendar
+Se descuenta del total
+día típico
+Trabajo completado
+municipios
+Cobertura en PR
+Goteras activas · Visita prioritaria
+undefined
+Tu gotera deja de gotear el mismo día.
+Punto exacto, no manchas
+La gotera aparece lejos de su origen. Rastreamos la entrada real del agua por la pendiente del techo y sellamos ahí, no donde gotea.
+Protege tu electricidad
+El agua que baja junto a cables y cajas eléctricas es un riesgo de incendio. Detener la gotera rápido protege tu familia.
+Garantía de mano de obra
+Sellamos con materiales adecuados al material del techo y respaldamos el trabajo por escrito — si reaparece, volvemos.
+Qué incluye
+Así detenemos tu gotera paso a paso.
+Una gotera se repara en el punto de entrada, no donde gotea.
+Inspeccionamos el techo completo, rastreamos el agua por pendientes y uniones, y sellamos la causa con el producto correcto para concreto, zinc o asfalto.
+Rastreo del punto real de entrada de agua
+Sellado de uniones, traslapes y remates
+Sellado de tornillos y clavos expuestos
+Refuerzo de los bordes y la cumbrera
+Despeje de canaletas que causan rebose
+Prueba de agua y garantía por escrito
+Repara tu gotera hoy
+Detección de causa · Sellado exacto
+Señales
+Cómo saber que tu gotera viene del techo.
+Interior
+Mancha que crece
+Una mancha café o amarilla que aumenta tras cada lluvia es señal de entrada activa de agua en el techo.
+Goteo durante la lluvia
+Si gotea mientras llueve y para al secarse, el agua está entrando por el techo, no por plomería.
+Exterior
+Burbujas o desprendimiento
+El sellador viejo que se infla o despega deja pasar agua por debajo: hay que removerlo y resellar.
+Cómo funciona
+Cómo localizamos y sellamos tu gotera.
+La gotera cae lejos de su origen: rastreamos el agua por la pendiente del techo y la cerramos donde entra.
+PASO 1
+Cotiza tu reparación de goteras
+Usa el cotizador de Ilatek o escríbenos: evaluamos tu techo y te damos el precio de reparación de goteras por escrito en minutos — sin compromiso.
+PASO 2
+Inspección y agenda
+Confirmamos el alcance de reparación de goteras con una inspección del techo, defines la fecha y reservas con el depósito de $50, que se descuenta del total.
+PASO 3
+Trabajo terminado
+Ejecutamos reparación de goteras con materiales certificados, protegemos el área y te entregamos la garantía por escrito.
+Cobertura de
+reparación de goteras
+en toda la isla.
+Ilatek Techos brinda reparación de goteras en los
+78 municipios de Puerto Rico
+. Atendemos tu área en
+{{custom_values.business__county_name}}
+y toda la isla: busca tu pueblo en el directorio y visita su página.
+No encontramos ese pueblo. Verifica el nombre e intenta nuevamente.
+Página 1 de 1
+Reseñas de clientes de Ilatek.
+Reseñas de personas que confiaron en Ilatek para mantenimiento y sellado de techos en Puerto Rico. Cambia de pestaña para ver cada fuente.
+Preguntas frecuentes
+Preguntas frecuentes sobre reparación de goteras.
+¿Cuánto cuesta reparar una gotera en Puerto Rico?
+La reparación de goteras de Ilatek
+comienza desde $250
+, incluyendo diagnóstico y sellado del punto de entrada. El precio depende del tamaño del área y del tipo de techo. Recibe tu número exacto con el cotizador.
+¿Por qué gotea mi techo si no veo ningún hueco?
+El agua viaja por la pendiente y las capas del techo antes de caer:
+el origen suele estar a metros de la mancha visible
+. Por eso inspeccionamos toda la superficie, las uniones y los remates antes de sellar.
+¿Pueden reparar la gotera mientras llueve?
+Podemos
+estabilizar
+y detener el agua con sellador de emergencia durante la lluvia, pero el sellado definitivo requiere superficie seca para adherir bien. Coordinamos la visita definitiva al despejar.
+¿La gotera en techo de zinc se repara igual que en concreto?
+cada material usa distinto sellador y preparación
+. En zinc tratamos corrosión y sellamos uniones metálicas; en concreto rellenamos grietas y aplicamos impermeabilizante. Usamos el producto correcto para cada techo.
+¿Cuánto tarda en repararse una gotera?
+Una gotera puntual se repara normalmente en
+un solo día
+. Casos con varias entradas o daño estructural pueden requerir 2 a 3 visitas, lo cual te informamos antes de empezar.
+¿Reparar la gotera detiene el moho?
+Detener la filtración es el primer paso:
+sin agua no hay moho nuevo
+. Si ya hay hongos en el interior, recomendamos tratar la zona después de sellar el techo para eliminar la humedad acumulada.
+¿Cuánto cuesta una inspección por goteras?
+$50 descontables del total.
+La visita para localizar tu gotera cuesta $50 y se descuenta del total del servicio. Subimos al techo, identificamos la causa y te damos el precio por escrito sin compromiso.
+¿Por qué elegir Ilatek para reparar goteras?
+Encontramos la causa real, no tapamos a ciegas:
+precio desde $250
+, agenda con $50 descontables del total, garantía de mano de obra, visita prioritaria para goteras activas y cobertura en los 78 municipios de Puerto Rico.
+¿Por qué elegir Ilatek Techos para reparar goteras?
+Rastreamos el punto real de entrada del agua en vez de sellar donde gotea, protegemos tu cielo raso y tu instalación eléctrica, y damos visita prioritaria a goteras activas con garantía escrita desde $250.
+Visita o inspección por $50
+Protege tu techo antes de la próxima lluvia.
+Solicita tu cotización por $50 descontables del total de reparación de goteras en {{custom_values.business__county_name}} y recibe precio claro y por escrito — cotización por $50 descontables del total y cobertura en los 78 municipios de Puerto Rico.
+Solicita tu cotización por $50 descontables del total
+Respuesta en minutos · Sin compromiso
+Precio claro por escrito
+desde $250, confirmado después de la inspección.
+Inspección sin compromiso
+Subimos, diagnosticamos y te explicamos las opciones.
+Respaldada por escrito en cada trabajo que hacemos.
+Devasks
+Navegación de Ilatek
+Ilatek, inicio
+Logo de Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Logo%20de%20Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Navegación principal
+Idioma / Language
+Español
+English
+Abrir o cerrar el menú
+Ilatek Reparación de goteras {{custom_values.business__county_name}}
+Reparación de goteras en el techo — sellado del punto de filtración en {{custom_values.business__county_name}}
+Reparación de Goteras en {{custom_values.business__county_name}} · Ilatek Techos
+Reparaci%C3%B3n%20de%20goteras%20en%20el%20techo%20%E2%80%94%20sellado%20del%20punto%20de%20filtraci%C3%B3n%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Reparaci%C3%B3n%20de%20Goteras%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%C2%B7%20Ilatek%20Techos
+Sellado de goteras de techo de Ilatek Techos en {{custom_values.business__county_name}} — reparación de láminas y filtraciones
+Reparación de goteras en {{custom_values.business__county_name}} · Ilatek Techos
+Sellado%20de%20goteras%20de%20techo%20de%20Ilatek%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%E2%80%94%20reparaci%C3%B3n%20de%20l%C3%A1minas%20y%20filtraciones
+Reparaci%C3%B3n%20de%20goteras%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%C2%B7%20Ilatek%20Techos
+Cobertura de reparación de goteras de Ilatek Techos en Puerto Rico
+Busca tu pueblo
+Buscar un municipio de Puerto Rico
+Limpiar búsqueda
+Municipios de Puerto Rico con servicio de reparación de goteras
+Pie de página de Ilatek
+Facebook
+Facebook — servicio en {{custom_values.business__county_name}}
+Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Instagram
+Instagram — servicio en {{custom_values.business__county_name}}
+Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Youtube
+Youtube — servicio en {{custom_values.business__county_name}}
+Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+TikTok
+TikTok — servicio en {{custom_values.business__county_name}}
+TikTok%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+X — servicio en {{custom_values.business__county_name}}
+X%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+LinkedIn
+LinkedIn — servicio en {{custom_values.business__county_name}}
+LinkedIn%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Pinterest
+Pinterest — servicio en {{custom_values.business__county_name}}
+Pinterest%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D

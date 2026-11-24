@@ -1,0 +1,543 @@
+{
+  "verificado": "2026-11-04",
+  "metodo": "Preguntas recogidas de los bloques de 'Otras preguntas' de Google para las consultas de sellado e impermeabilización en Puerto Rico, de títulos de hilos de Reddit y de publicaciones de grupos de contratistas en Facebook. Cada respuesta se limita a lo que se puede sostener con una fuente pública o con el contenido ya publicado por Ilatek.",
+  "clusters": [
+    {
+      "id": "precio",
+      "nombre": "Precio y presupuesto",
+      "slug": "preguntas-frecuentes-sellado-de-techos-precio"
+    },
+    {
+      "id": "materiales",
+      "nombre": "Materiales y sistemas",
+      "slug": "preguntas-frecuentes-sellado-de-techos-materiales"
+    },
+    {
+      "id": "proceso",
+      "nombre": "Proceso y aplicación",
+      "slug": "preguntas-frecuentes-sellado-de-techos-proceso"
+    },
+    {
+      "id": "garantia-leyes",
+      "nombre": "Garantía, licencias y leyes",
+      "slug": "preguntas-frecuentes-sellado-de-techos-garantia-y-leyes"
+    },
+    {
+      "id": "clima",
+      "nombre": "Clima y temporada de huracanes",
+      "slug": "preguntas-frecuentes-sellado-de-techos-clima-y-huracanes"
+    },
+    {
+      "id": "sustratos",
+      "nombre": "Tipos de techo",
+      "slug": "preguntas-frecuentes-sellado-de-techos-tipos-de-techo"
+    }
+  ],
+  "preguntas": [
+    {
+      "id": "cuanto-cuesta-sellar",
+      "pregunta": "¿Cuánto cuesta sellar un techo en Puerto Rico?",
+      "cluster": "precio",
+      "respuesta": "Depende del área, del material del techo y del sistema. Las cifras publicadas por empresas de la isla van de $3 a $10 por pie cuadrado instalado para membrana asfáltica, según Danosa, y de $1.80 a $6.50 para recubrimientos, según WindMar. Un techo de 1,200 pies cuadrados suele caer entre $4,200 y $7,800. Los trabajos de $1.75 a $2.75 por pie cuadrado que se ven en grupos de contratistas casi nunca incluyen garantía escrita.",
+      "fuente": "https://www.danosapr.com/es-pr/blog/cotizar-impermeabilizacion-techo-sellado",
+      "post": "cuanto-cuesta-sellar-un-techo-en-puerto-rico",
+      "familias": [
+        "silicona-100",
+        "acrilico-elastomerico",
+        "membrana-asfaltica",
+        "sistema-multicapa"
+      ]
+    },
+    {
+      "id": "precio-pie-cuadrado",
+      "pregunta": "¿Cuál es el precio por pie cuadrado del sellado de techo?",
+      "cluster": "precio",
+      "respuesta": "En Puerto Rico se publican tres órdenes de magnitud: $1.80 a $3.50 en acrílico, $2.50 a $5.00 en poliuretano y $3.50 a $6.50 en silicona, según WindMar; y $3 a $10 para membrana asfáltica instalada, según Danosa. La diferencia no es capricho: cambia el material, el número de capas, la preparación y la garantía. Pide siempre el precio por pie cuadrado con el sistema y la garantía escritos.",
+      "fuente": "https://windmar.com/cuanto-cuesta-sellar-techo-puerto-rico",
+      "post": "precio-por-pie-cuadrado-sellado-de-techo",
+      "familias": [
+        "silicona-100",
+        "poliuretano",
+        "acrilico-elastomerico",
+        "membrana-asfaltica"
+      ]
+    },
+    {
+      "id": "precio-mano-de-obra",
+      "pregunta": "¿Cuánto se cobra solo por la mano de obra del sellado?",
+      "cluster": "precio",
+      "respuesta": "Casi ninguna empresa publica la mano de obra separada del material, y por eso la pregunta se repite en grupos de contratistas sin una respuesta clara. Como referencia, si el material ronda $1.35 a $1.45 por pie cuadrado en un sistema líquido de tres capas, la mano de obra suele ser la mitad o más del total. Pídela desglosada: así sabes qué pagas por preparación y qué por producto.",
+      "fuente": "https://www.youtube.com/watch?v=FXXowQk_sok",
+      "post": "sellado-de-techo-precio-mano-de-obra",
+      "familias": [
+        "membrana-liquida",
+        "sistema-multicapa"
+      ]
+    },
+    {
+      "id": "techo-1200",
+      "pregunta": "¿Cuánto cuesta sellar un techo de 1,200 pies cuadrados?",
+      "cluster": "precio",
+      "respuesta": "Con las tarifas publicadas en la isla, un techo de 1,200 pies cuadrados cae entre $4,200 y $7,800, que es justo el ejemplo que publica WindMar para silicona. En membrana asfáltica, a $3 a $10 por pie cuadrado, el rango sube de $3,600 a $12,000. La cifra real depende de cuántas penetraciones tenga el techo y de si hay que corregir pendiente.",
+      "fuente": "https://windmar.com/sellado-techos",
+      "post": "cuanto-cuesta-sellar-un-techo-de-1200-pies",
+      "familias": [
+        "silicona-100",
+        "membrana-asfaltica"
+      ]
+    },
+    {
+      "id": "por-que-varia",
+      "pregunta": "¿Por qué varía tanto el precio del sellado de techo?",
+      "cluster": "precio",
+      "respuesta": "Porque se están comparando cosas distintas con el mismo nombre. Un trabajo de $1.75 por pie cuadrado suele ser una mano de pintura de cubeta sobre un techo lavado a medias. Un sistema de $6.50 incluye lavado a presión, corrección de grietas, imprimador, membrana y garantía de fabricante. Pregunta qué pasos incluye antes de comparar números.",
+      "fuente": "https://bullbond.com/tag/impermeabilizacion/",
+      "post": "por-que-varia-el-precio-del-sellado-de-techo",
+      "familias": [
+        "sistema-multicapa",
+        "acrilico-elastomerico",
+        "silicona-100"
+      ]
+    },
+    {
+      "id": "cuanto-dura",
+      "pregunta": "¿Cuánto dura el sellado de un techo?",
+      "cluster": "materiales",
+      "respuesta": "Entre 1 y 25 años, según el sistema. La pintura de cubeta rinde 1 a 2 años, el acrílico 7 a 10, el poliuretano 10 a 15 y la silicona 20 a 25 según WindMar. La membrana asfáltica se documenta en 16 a 21 años y llega a 25 con mantenimiento, según Danosa. La duración real depende más de la preparación que del producto.",
+      "fuente": "https://www.danosapr.com/es-pr/blog/garantia-sellado-de-techo-danosa",
+      "post": "cuanto-dura-el-sellado-de-un-techo",
+      "familias": [
+        "acrilico-elastomerico",
+        "poliuretano",
+        "silicona-100",
+        "membrana-asfaltica"
+      ]
+    },
+    {
+      "id": "sistema-mas-duradero",
+      "pregunta": "¿Qué sistema de sellado dura más años?",
+      "cluster": "materiales",
+      "respuesta": "En techo comercial, la membrana asfáltica y las termoplásticas TPO o PVC son las que más años documentan, con garantías de fabricante de hasta 20 años. En losa residencial, la silicona es la que más aguanta el sol y el agua empozada. Ninguna dura si la losa no está seca y limpia al momento de aplicar.",
+      "fuente": "https://www.danosapr.com/es-pr/blog/tipos-de-sellado-de-techo-segun-proyectos-con-membranas-asfalticas",
+      "post": "que-sistema-de-sellado-dura-mas-anos",
+      "familias": [
+        "membrana-asfaltica",
+        "tpo-pvc",
+        "silicona-100"
+      ]
+    },
+    {
+      "id": "mejor-sellador",
+      "pregunta": "¿Cuál es el mejor sellador para techos en Puerto Rico?",
+      "cluster": "materiales",
+      "respuesta": "No hay uno solo. En losa plana con agua empozada, silicona 100%. En techo de zinc, poliuretano con malla en cada traslape. En concreto poroso con presupuesto limitado, acrílico elastomérico. En techo comercial grande, membrana asfáltica o TPO. El mejor sellador es el que corresponde a tu techo, no el que tiene el anuncio más fuerte.",
+      "fuente": "https://conspro.com/",
+      "post": "que-sistema-de-sellado-dura-mas-anos",
+      "familias": [
+        "silicona-100",
+        "poliuretano",
+        "acrilico-elastomerico",
+        "membrana-asfaltica",
+        "tpo-pvc"
+      ]
+    },
+    {
+      "id": "impermeabilizar-vs-sellar",
+      "pregunta": "¿Qué diferencia hay entre sellar e impermeabilizar un techo?",
+      "cluster": "materiales",
+      "respuesta": "El sellado ataca puntos concretos: juntas, grietas, remates y uniones. La impermeabilización cubre toda la superficie con una capa continua. Si tu techo filtra por un solo punto, es sellado. Si filtra por varias áreas o el agua se empoza, es impermeabilización, y muchas veces hay que corregir la pendiente antes.",
+      "fuente": "https://ilatekpr.com/impermeabilizacion-de-techos",
+      "post": "sellado-de-techo-vs-impermeabilizacion",
+      "familias": [
+        "membrana-liquida",
+        "membrana-asfaltica",
+        "losa-cementicia"
+      ]
+    },
+    {
+      "id": "sobre-sellado-viejo",
+      "pregunta": "¿Puedo sellar mi techo sobre el sellado viejo?",
+      "cluster": "proceso",
+      "respuesta": "A veces sí y a veces es el error más caro. Se puede si la capa vieja está bien adherida, no se pela y es compatible con el producto nuevo. No se puede si hay burbujas, humedad atrapada o un recubrimiento de base distinta. La prueba es simple: corta una cuadrada, levanta la orilla y mira si el sustrato está seco.",
+      "fuente": "https://bullbond.com/tag/impermeabilizacion/",
+      "post": "puedo-sellar-mi-techo-sobre-el-sellado-viejo",
+      "familias": [
+        "silicona-100",
+        "acrilico-elastomerico",
+        "membrana-asfaltica"
+      ]
+    },
+    {
+      "id": "techo-mojado",
+      "pregunta": "¿Se puede sellar un techo mojado o con lluvia?",
+      "cluster": "proceso",
+      "respuesta": "No con garantía. La silicona exige superficie seca para adherirse, el acrílico pierde adhesión en húmedo y la membrana asfáltica no se instala sobre agua. Aplicar sobre humedad atrapa el agua adentro y el problema vuelve en meses. Si el techo no seca, primero hay que encontrar de dónde viene el agua.",
+      "fuente": "https://www.danosapr.com/es-pr/blog/garantia-sellado-de-techo-danosa",
+      "post": "se-puede-sellar-un-techo-mojado",
+      "familias": [
+        "silicona-100",
+        "acrilico-elastomerico",
+        "membrana-asfaltica"
+      ]
+    },
+    {
+      "id": "cuando-sellar",
+      "pregunta": "¿Cuándo es la mejor época para sellar un techo en Puerto Rico?",
+      "cluster": "clima",
+      "respuesta": "Antes de la temporada de lluvias y con dos o tres días secos por delante para el curado. En la zona norte y el área metropolitana conviene moverse entre diciembre y abril. En la zona sur y suroeste hay más ventana en verano. Lo que no se hace es empezar un sistema de tres capas con una onda tropical a 48 horas.",
+      "fuente": "https://windmar.com/frequently-questions",
+      "post": "cuando-sellar-el-techo-en-puerto-rico",
+      "familias": [
+        "silicona-100",
+        "membrana-liquida",
+        "acrilico-elastomerico"
+      ]
+    },
+    {
+      "id": "huracanes",
+      "pregunta": "¿El sellado de techo resiste un huracán?",
+      "cluster": "clima",
+      "respuesta": "El sellado no es una cubierta estructural: resiste viento y lluvia si está bien adherido, pero no sostiene un techo que ya está suelto. Las membranas asfálticas y termoplásticas tienen certificaciones de viento que se pueden verificar en la ficha del producto. Pregunta por la certificación específica antes de creer en una promesa verbal.",
+      "fuente": "https://www.danosapr.com/es-pr/sellado-de-techo",
+      "post": "sellado-de-techo-antes-de-la-temporada-de-huracanes",
+      "familias": [
+        "membrana-asfaltica",
+        "tpo-pvc",
+        "silicona-100"
+      ]
+    },
+    {
+      "id": "empozamiento",
+      "pregunta": "¿Qué hago si el agua se empoza en mi techo?",
+      "cluster": "clima",
+      "respuesta": "Primero, corregir la pendiente. El código de edificación que se aplica en Puerto Rico pide un cuarto de pulgada por pie como mínimo, y ningún sellador arregla una losa que no drena. Después de corregir, el sistema adecuado es silicona o membrana, porque son los que aguantan agua estancada. El acrílico no es opción ahí.",
+      "fuente": "https://www.danosapr.com/es-pr/blog/tipos-de-sellado-de-techo-segun-proyectos-con-membranas-asfalticas",
+      "post": "sellado-de-techo-plano-con-empozamiento",
+      "familias": [
+        "silicona-100",
+        "membrana-asfaltica",
+        "losa-cementicia"
+      ]
+    },
+    {
+      "id": "garantia",
+      "pregunta": "¿El sellado de techo tiene garantía?",
+      "cluster": "garantia-leyes",
+      "respuesta": "Debe tenerla por escrito, y no todas son iguales. Bull-Bond emite de 4 a 10 años, renovables. Danosa llega a 20 en configuraciones premium, pero exige instalador certificado, registro dentro de 30 días e inspecciones anuales. Cintrón solo promete garantía extendida si ellos instalan. Pide el documento antes de firmar, no la palabra del vendedor.",
+      "fuente": "https://bullbond.com/garantia-de-los-selladores/",
+      "post": "garantia-de-sellado-de-techo",
+      "familias": [
+        "sistema-multicapa",
+        "membrana-asfaltica",
+        "silicona-100"
+      ]
+    },
+    {
+      "id": "garantia-escrita",
+      "pregunta": "¿Qué debe decir una garantía de sellado de techo?",
+      "cluster": "garantia-leyes",
+      "respuesta": "Área exacta cubierta, sistema y productos usados, años, qué anula la garantía, quién la respalda, si cubre mano de obra o solo material y cómo se reclama. Si el documento no dice el área y no nombra al responsable legal, no es una garantía: es una promesa. Guárdalo junto a las fotos del antes y el después.",
+      "fuente": "https://www.danosapr.com/es-pr/blog/garantia-sellado-de-techo-danosa",
+      "post": "sellado-de-techo-con-garantia-escrita",
+      "familias": [
+        "sistema-multicapa",
+        "membrana-asfaltica"
+      ]
+    },
+    {
+      "id": "licencia",
+      "pregunta": "¿Necesito un contratista con licencia para sellar mi techo?",
+      "cluster": "garantia-leyes",
+      "respuesta": "Sí, y conviene verificarla. Puerto Rico tiene una Junta de Contratistas de Impermeabilización, Sellado y Reparación de Techos bajo la Ley 281-2000, adscrita al Departamento de Estado. La Ley 93-2023 documentó que la Junta no estaba operando y que no había contratistas con licencia vigente, y abrió un periodo para regularizarla. Pide el número y verifícalo.",
+      "fuente": "https://www.estado.pr.gov/juntas-examinadoras/impermeabilizacion-de-techos",
+      "post": "licencia-y-permisos-para-sellado-de-techo-en-puerto-rico",
+      "familias": [
+        "sistema-multicapa",
+        "membrana-asfaltica",
+        "silicona-100"
+      ]
+    },
+    {
+      "id": "junta",
+      "pregunta": "¿Qué es la Junta de Impermeabilización de Techos de Puerto Rico?",
+      "cluster": "garantia-leyes",
+      "respuesta": "Es el organismo que debe examinar y licenciar a quienes sellan e impermeabilizan techos, creado por la Ley 281-2000 y adscrito al Departamento de Estado. La Ley 93-2023 reconoció que la Junta dejó de operar y que no había licencias vigentes, y ordenó reconstituirla. Hoy sigue siendo el marco legal que te protege al contratar.",
+      "fuente": "https://www.lexjuris.com/lexlex/leyes2023/lexl2023093.htm",
+      "post": "junta-de-impermeabilizacion-de-techos-de-puerto-rico",
+      "familias": [
+        "sistema-multicapa"
+      ]
+    },
+    {
+      "id": "permiso",
+      "pregunta": "¿Sellar un techo requiere permiso?",
+      "cluster": "garantia-leyes",
+      "respuesta": "Un sellado de mantenimiento normalmente no. Una corrección de pendiente, un cambio de membrana o cualquier trabajo que altere la estructura sí puede requerir permiso de la Oficina de Gerencia de Permisos. Si tu techo está en un condominio, además necesitas la autorización de la junta. Pregúntalo antes de que llegue el camión.",
+      "fuente": "https://www.danosapr.com/es-pr/blog/cotizar-impermeabilizacion-techo-sellado",
+      "post": "licencia-y-permisos-para-sellado-de-techo-en-puerto-rico",
+      "familias": [
+        "membrana-asfaltica",
+        "losa-cementicia"
+      ]
+    },
+    {
+      "id": "contratista-confiable",
+      "pregunta": "¿Cómo elijo un contratista de sellado confiable?",
+      "cluster": "garantia-leyes",
+      "respuesta": "Pide número de licencia, certificado de seguros, tres referencias con dirección, la cotización por escrito con sistema y área, y la garantía antes de pagar. Desconfía de quien cobra todo por adelantado, de quien no sube al techo a inspeccionar y de quien te enseña fotos sin fecha. En los foros de Puerto Rico la queja constante no es el precio: es no poder reclamar después.",
+      "fuente": "https://www.reddit.com/r/PuertoRico/",
+      "post": "como-elegir-contratista-de-sellado-en-puerto-rico",
+      "familias": [
+        "sistema-multicapa"
+      ]
+    },
+    {
+      "id": "diy",
+      "pregunta": "¿Puedo sellar mi techo yo mismo?",
+      "cluster": "proceso",
+      "respuesta": "Puedes hacerlo en un techo pequeño, de un solo nivel y sin filtraciones activas, con productos de ferretería como Dry-Coat de Lanco. No es buena idea en losa con empozamiento, en zinc con traslapes abiertos ni en nada de más de un piso sin protección contra caídas. Un sellado mal aplicado cuesta más de corregir que uno profesional.",
+      "fuente": "https://www.lancopaints.com/puerto-rico/es/",
+      "post": "sellado-de-techo-por-mi-cuenta-o-contratista",
+      "familias": [
+        "acrilico-elastomerico",
+        "silicona-100"
+      ]
+    },
+    {
+      "id": "cuantas-canas",
+      "pregunta": "¿Cuántas pailas de sellador necesito?",
+      "cluster": "proceso",
+      "respuesta": "Se calcula por cobertura declarada y por número de manos. El King of Silicone de Cintrón declara 170 a 200 pies cuadrados por paila de 5 galones; la base de Marín Membrana rinde unos 300 y su acabado hasta 600. Divide el área entre la cobertura y añade un 10% por desperdicio, detalles y remates. Nunca calcules con la cobertura más optimista.",
+      "fuente": "https://cintronenterprisepr.com/products/the-king-of-silicone",
+      "post": "cuantas-canas-de-sellador-necesito",
+      "familias": [
+        "silicona-100",
+        "membrana-liquida",
+        "sistema-multicapa"
+      ]
+    },
+    {
+      "id": "cuanto-tarda",
+      "pregunta": "¿Cuánto tarda el sellado de un techo?",
+      "cluster": "proceso",
+      "respuesta": "Un techo residencial de 1,000 a 1,500 pies cuadrados toma de uno a tres días con un sistema de tres capas, contando limpieza, corrección de grietas, imprimador y acabado. La membrana asfáltica suma días de instalación. Si te prometen un techo completo en cuatro horas, están omitiendo pasos.",
+      "fuente": "https://www.varoofinginc.com/",
+      "post": "cuanto-tarda-el-sellado-de-un-techo",
+      "familias": [
+        "membrana-liquida",
+        "membrana-asfaltica",
+        "silicona-100"
+      ]
+    },
+    {
+      "id": "filtracion-activa",
+      "pregunta": "¿Se puede sellar un techo que está filtrando ahora mismo?",
+      "cluster": "proceso",
+      "respuesta": "Se puede intervenir, pero no se sella encima. Primero se detiene la entrada de agua, se seca el área y se corrige la causa: una grieta, un remate abierto, un tornillo suelto. Sellar sobre una fuga activa es garantizar que vuelva. Si hay agua atrapada en la losa, hay que dejarla salir antes de aplicar.",
+      "fuente": "https://superiorroofingpr.com/",
+      "post": "se-puede-sellar-un-techo-con-filtracion-activa",
+      "familias": [
+        "silicona-100",
+        "poliuretano",
+        "losa-cementicia"
+      ]
+    },
+    {
+      "id": "errores",
+      "pregunta": "¿Cuáles son los errores más comunes al sellar un techo?",
+      "cluster": "proceso",
+      "respuesta": "No limpiar, no dejar secar, sellar grietas sin abrirlas, usar acrílico donde se empoza el agua y aplicar una sola mano para ahorrar producto. El quinto es el más caro: el espesor es lo que da la vida útil, y una mano fina se agrieta en un año. El fabricante calcula por paila y por área justamente para controlar eso.",
+      "fuente": "https://bullbond.com/tag/impermeabilizacion/",
+      "post": "errores-comunes-al-sellar-un-techo",
+      "familias": [
+        "silicona-100",
+        "acrilico-elastomerico",
+        "sistema-multicapa"
+      ]
+    },
+    {
+      "id": "olor-curado",
+      "pregunta": "¿Cuánto dura el olor y el tiempo de curado del sellador?",
+      "cluster": "proceso",
+      "respuesta": "El acrílico casi no huele y cura en horas. El poliuretano huele fuerte y necesita de 12 a 24 horas antes de caminar encima. La silicona tiene poco olor pero cura con la humedad del aire, así que la lluvia antes de tiempo la arruina. Programa el trabajo con una ventana seca de al menos 48 horas.",
+      "fuente": "https://conspro.com/",
+      "post": "sellado-de-techo-olor-y-tiempo-de-curado",
+      "familias": [
+        "poliuretano",
+        "silicona-100",
+        "acrilico-elastomerico"
+      ]
+    },
+    {
+      "id": "zinc",
+      "pregunta": "¿Cómo se sella un techo de zinc?",
+      "cluster": "sustratos",
+      "respuesta": "No se pinta por encima: se reponen los tornillos, se limpia a presión, se sella cada traslape y cada tornillo con poliuretano y malla de poliéster, se refuerzan los encuentros con pared y se aplica un acabado. El error típico es usar un sellador rígido que la dilatación del metal rompe en una temporada.",
+      "fuente": "https://assapr.com/sellador-de-techos-de-zinc/",
+      "post": "sellado-de-techo-de-zinc",
+      "familias": [
+        "metal-zinc",
+        "poliuretano"
+      ]
+    },
+    {
+      "id": "concreto",
+      "pregunta": "¿Cuál es el mejor sellador para un techo de concreto?",
+      "cluster": "sustratos",
+      "respuesta": "En losa de concreto, silicona 100% si hay agua empozada, acrílico elastomérico si el concreto está sano y solo buscas protección, y membrana asfáltica si el techo es grande y necesitas garantía de fabricante. Antes de cualquiera, hay que reparar grietas y remates: el concreto que se sigue moviendo rompe cualquier recubrimiento.",
+      "fuente": "https://ilatekpr.com/techos-de-concreto",
+      "post": "sellado-de-techo-de-concreto",
+      "familias": [
+        "silicona-100",
+        "acrilico-elastomerico",
+        "membrana-asfaltica",
+        "losa-cementicia"
+      ]
+    },
+    {
+      "id": "madera",
+      "pregunta": "¿Se puede sellar un techo de madera?",
+      "cluster": "sustratos",
+      "respuesta": "Sí, con sistemas elastoméricos o de poliuretano que toleren el movimiento, y siempre sobre una superficie limpia y firme. En techo de madera el problema no es la lluvia sino la junta que se abre y la ventilación. Si hay podredumbre, ningún sellador la corrige: hay que reponer la pieza.",
+      "fuente": "https://ilatekpr.com/techos-de-madera",
+      "post": "sellado-de-techo-de-madera",
+      "familias": [
+        "acrilico-elastomerico",
+        "poliuretano"
+      ]
+    },
+    {
+      "id": "teja",
+      "pregunta": "¿Cómo se sella un techo de teja?",
+      "cluster": "sustratos",
+      "respuesta": "En teja no se busca una capa continua sino sellar las uniones y los remates donde entra el agua, con selladores flexibles y refuerzo. La teja trabaja con el calor, así que un producto rígido se agrieta. Si la teja está quebrada, el sellado no sustituye el reemplazo de las piezas.",
+      "fuente": "https://ilatekpr.com/techos-de-teja",
+      "post": "sellado-de-techo-de-teja",
+      "familias": [
+        "poliuretano",
+        "silicona-100"
+      ]
+    },
+    {
+      "id": "asfalto",
+      "pregunta": "¿Qué se usa para sellar un techo de asfalto?",
+      "cluster": "sustratos",
+      "respuesta": "Recubrimientos compatibles con asfalto: elastoméricos, silicona o una membrana asfáltica nueva encima si la vieja ya cumplió. La regla es no poner acrílico sobre asfalto caliente ni selladores de base distinta sin imprimador. Si el asfalto está agrietado en toda la superficie, la solución es capa nueva, no parche.",
+      "fuente": "https://ilatekpr.com/techos-de-asfalto",
+      "post": "sellado-de-techo-de-asfalto",
+      "familias": [
+        "membrana-asfaltica",
+        "silicona-100",
+        "acrilico-elastomerico"
+      ]
+    },
+    {
+      "id": "condominio",
+      "pregunta": "En un condominio, ¿quién paga el sellado del techo?",
+      "cluster": "garantia-leyes",
+      "respuesta": "En la mayoría de los condominios el techo es área común, así que lo paga la asociación con las cuotas de mantenimiento, y la junta de directores aprueba el trabajo. Si el daño es causado por una unidad específica, la responsabilidad puede cambiar. Revisa el reglamento y el acta de la junta antes de contratar por tu cuenta.",
+      "fuente": "https://www.danosapr.com/es-pr/blog/cotizar-impermeabilizacion-techo-sellado",
+      "post": "sellado-de-techo-en-condominio-quien-paga",
+      "familias": [
+        "membrana-asfaltica",
+        "sistema-multicapa"
+      ]
+    },
+    {
+      "id": "solar",
+      "pregunta": "¿Se puede sellar un techo que tiene paneles solares?",
+      "cluster": "proceso",
+      "respuesta": "Sí, pero hay que coordinar con quien instaló los paneles y con la garantía del sistema. Bull-Bond advierte que perforar para paneles o equipos antes de instalar el sellador puede anular la garantía salvo que se sigan sus instrucciones. Lo correcto es sellar antes de la instalación, o desmontar y volver a montar con los anclajes sellados.",
+      "fuente": "https://bullbond.com/garantia-de-los-selladores/",
+      "post": "sellado-de-techo-con-paneles-solares",
+      "familias": [
+        "silicona-100",
+        "poliuretano"
+      ]
+    },
+    {
+      "id": "seguro",
+      "pregunta": "¿El seguro de hogar cubre el sellado del techo?",
+      "cluster": "garantia-leyes",
+      "respuesta": "Cubre el daño súbito por un evento, como viento o impacto, no el mantenimiento atrasado. Si la filtración viene de falta de sellado por años, la aseguradora normalmente lo trata como mantenimiento y no paga. Documenta con fotos fechadas antes y después del evento, y guarda la factura del sellado: es tu evidencia de mantenimiento.",
+      "fuente": "https://superiorroofingpr.com/",
+      "post": "sellado-de-techo-y-seguro-del-hogar",
+      "familias": [
+        "sistema-multicapa"
+      ]
+    },
+    {
+      "id": "post-huracan",
+      "pregunta": "¿Qué hago con el techo después de un huracán?",
+      "cluster": "clima",
+      "respuesta": "Primero documenta: fotos y video con fecha de todo el techo, no solo del área dañada. Después cubre la entrada de agua con una lona si es urgente, y no selles hasta que la estructura esté seca y revisada. Si vas a reclamar al seguro, el sellado definitivo se hace después del ajuste, no antes.",
+      "fuente": "https://ilatekpr.com/reparacion-post-huracan",
+      "post": "sellado-de-techo-despues-de-un-huracan",
+      "familias": [
+        "membrana-asfaltica",
+        "silicona-100"
+      ]
+    },
+    {
+      "id": "moho",
+      "pregunta": "¿Por qué sale moho en el techo y cómo se evita?",
+      "cluster": "materiales",
+      "respuesta": "Sale donde hay humedad constante y sombra, y se alimenta de recubrimientos orgánicos. La silicona no lo alimenta porque es inorgánica, y por eso se usa bajo paneles solares y en áreas que nunca secan. La solución no es lavar con cloro cada año: es corregir la fuente de humedad y usar un acabado que no le sirva de comida.",
+      "fuente": "https://cintronenterprisepr.com/products/the-king-of-silicone",
+      "post": "sellado-de-techo-y-moho-en-el-techo",
+      "familias": [
+        "silicona-100",
+        "acrilico-elastomerico"
+      ]
+    },
+    {
+      "id": "terraza",
+      "pregunta": "¿Se puede sellar una terraza transitable?",
+      "cluster": "sustratos",
+      "respuesta": "Sí, con un sistema que resista tránsito, normalmente poliuretano o una membrana líquida con arena de sílice en la última capa para dar agarre. Un acrílico o una silicona sola no aguantan el uso diario. Si la terraza es de un condominio, hay que revisar la pendiente hacia los desagües antes de sellar.",
+      "fuente": "https://www.instagram.com/marinmembrana/",
+      "post": "sellado-de-techo-de-terraza-transitable",
+      "familias": [
+        "poliuretano",
+        "membrana-liquida"
+      ]
+    },
+    {
+      "id": "mantenimiento",
+      "pregunta": "¿Cada cuántos años hay que dar mantenimiento al sellado?",
+      "cluster": "clima",
+      "respuesta": "Una inspección anual y un repaso de la capa de acabado cada tres a cinco años es lo habitual en Puerto Rico. Con membrana asfáltica la garantía de fábrica exige inspecciones anuales. El mantenimiento no es un gasto extra: es lo que convierte un sellado de 5 años en uno de 15.",
+      "fuente": "https://www.danosapr.com/es-pr/blog/garantia-sellado-de-techo-danosa",
+      "post": "mantenimiento-del-sellado-cada-cuantos-anos",
+      "familias": [
+        "membrana-asfaltica",
+        "silicona-100",
+        "acrilico-elastomerico"
+      ]
+    },
+    {
+      "id": "reflectivo",
+      "pregunta": "¿Un techo blanco baja el consumo de aire acondicionado?",
+      "cluster": "materiales",
+      "respuesta": "Ayuda, y la diferencia se siente en un techo de losa expuesto todo el día. Los fabricantes de silicona y de recubrimientos reflectivos lo promocionan como reducción del calor y del consumo, aunque la cifra exacta depende del aislamiento, del ángulo del sol y del equipo. Trátalo como un beneficio real pero no garantizado en pesos.",
+      "fuente": "https://bullbond.com/tag/impermeabilizacion/",
+      "post": "sellado-de-techo-reflectivo-y-consumo-de-energia",
+      "familias": [
+        "silicona-100",
+        "acrilico-elastomerico"
+      ]
+    },
+    {
+      "id": "airbnb",
+      "pregunta": "¿Qué sellado conviene para una propiedad de alquiler corto?",
+      "cluster": "proceso",
+      "respuesta": "El que reduzca interrupciones: silicona o membrana líquida en la losa, con inspección antes y después de cada temporada alta. En una propiedad de alquiler una filtración no es solo una reparación, es una cancelación y una reseña mala. Programa el mantenimiento en temporada baja y documenta con fotos.",
+      "fuente": "https://ilatekpr.com/airbnb-turnover",
+      "post": "sellado-de-techo-para-airbnb-o-alquiler-corto",
+      "familias": [
+        "silicona-100",
+        "membrana-liquida"
+      ]
+    }
+  ]
+}

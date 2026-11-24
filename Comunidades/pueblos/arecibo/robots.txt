@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://arecibo.ilatekpr.com/sitemap.xml

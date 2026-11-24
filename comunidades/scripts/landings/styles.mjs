@@ -1,34 +1,759 @@
-// Hoja de estilo de las landings de comunidad. Colores y tipografía de la marca Ilatek.
-export const STYLES = `:root{--ink:#11164b;--blue:#213d8e;--green:#00b94f;--mist:#f4f7fc;--line:#dbe2f1;--muted:#5b6380}
-*{box-sizing:border-box}
-body{margin:0;font-family:Manrope,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
-main{max-width:920px;margin:0 auto;padding:24px 20px 56px}
-main,main *{min-width:0;overflow-wrap:anywhere}
-.hero{position:relative;width:100vw;margin-left:calc(50% - 50vw);min-height:560px;overflow:hidden;display:flex;align-items:flex-end;color:#fff;background:var(--ink)}
-.hero-media{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(17,22,75,.15),rgba(17,22,75,.85))}
-.hero-copy{position:relative;z-index:1;padding:32px;max-width:680px}
-h1{font-family:Outfit,Arial,sans-serif;font-size:clamp(30px,5vw,46px);line-height:1.1;margin:8px 0 12px}
-h2{font-family:Outfit,Arial,sans-serif;font-size:24px;margin:40px 0 12px}
-.card{background:var(--mist);border:1px solid var(--line);border-radius:16px;padding:22px}
-.svc{list-style:none;padding:0;display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
-.svc a{display:block;text-decoration:none;color:var(--ink);border:1px solid var(--line);border-radius:14px;padding:16px;height:100%}
-.svc span{display:block;color:var(--muted);font-size:14px;margin-top:4px}
-.svc a:hover{border-color:var(--green)}
-.cta{display:inline-block;margin-top:24px;background:var(--green);color:var(--ink);font-weight:700;text-decoration:none;padding:14px 24px;border-radius:999px}
-.final-cta{text-align:center;margin-top:40px}
-.final-cta .cta{margin-top:0}
-.hero-copy .lead{margin:0 0 4px;font-size:16px;line-height:1.6;color:rgba(255,255,255,.88)}
-.crumbs{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 0 18px;font-size:14px;color:var(--muted)}
-.crumbs a{color:var(--blue);font-weight:600;text-decoration:none}
-.crumbs a:hover,.crumbs a:focus-visible{text-decoration:underline}
-.crumbs [aria-current]{color:var(--ink);font-weight:700}
-.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
-.cta-row .cta{margin-top:0}
-.cta--alt{background:#fff;color:var(--ink)!important;border:2px solid var(--green)}
-.cta--alt:hover,.cta--alt:focus-visible{background:var(--mist)}
-section>p.lead{max-width:760px;color:var(--muted);font-size:16px;line-height:1.7}
-details{border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-bottom:10px}
-summary{font-weight:700;cursor:pointer}
-details p{color:var(--muted);margin:8px 0 0}
-.note{color:var(--muted);font-size:13px;margin-top:32px}`;
+// Hoja de estilo de las landings de comunidad. Colores y tipografía son los
+// tokens de marca que ya usa el sitio principal (src/compartido, #ilatek-nav):
+// ink #11164b, deep #0b103d, blue #213d8e, green #00b94f, green-dark #009640;
+// Manrope para texto y Outfit para titulares.
+//
+// Las tarjetas son de vidrio: son traslúcidas con backdrop-filter y el fondo del
+// documento (body::before) les pone manchas de color detrás. Sin soporte de
+// backdrop-filter el relleno sube de opacidad (ver @supports al final).
+// Todo el movimiento vive dentro de prefers-reduced-motion: no-preference.
+export const STYLES = `
+/* ---------- Tokens ---------- */
+:root {
+  --ink: #11164b;
+  --deep: #0b103d;
+  --blue: #213d8e;
+  --green: #00b94f;
+  --green-dark: #009640;
+  --muted: #5b6380;
+  --r-lg: 26px;
+  --r-md: 20px;
+  --r-sm: 14px;
+  --glass: linear-gradient(155deg, rgba(255, 255, 255, .80), rgba(255, 255, 255, .46));
+  --glass-line: rgba(255, 255, 255, .78);
+  --shadow: 0 24px 48px -30px rgba(11, 16, 61, .55);
+  --spring: cubic-bezier(.34, 1.56, .64, 1);
+  --ease: cubic-bezier(.22, .7, .2, 1);
+  --pad: 20px;
+}
+
+/* ---------- Base ---------- */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #f2f5fc;
+  scroll-behavior: smooth;
+  overflow-x: clip;
+}
+
+body {
+  margin: 0;
+  font-family: Manrope, Arial, sans-serif;
+  color: var(--ink);
+  line-height: 1.65;
+  background: transparent;
+  overflow-x: clip;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(44vmax 44vmax at 6% 4%, rgba(0, 185, 79, .20), transparent 70%),
+    radial-gradient(50vmax 50vmax at 98% 20%, rgba(33, 61, 142, .22), transparent 72%),
+    radial-gradient(38vmax 38vmax at 50% 98%, rgba(0, 185, 79, .13), transparent 70%);
+}
+
+/* main ocupa el ancho visible completo (el que ya descuenta la barra de scroll)
+   y cada bloque se centra a 1000 px. Así el hero va de borde a borde con
+   width:100%: no hay 100vw, que sumaba la barra clásica y recortaba el hero
+   justo por su ancho (15-17 px). */
+main {
+  padding: 0 0 64px;
+}
+
+main > :not(.hero) {
+  width: 1000px;
+  max-width: calc(100% - 2 * var(--pad));
+  margin-inline: auto;
+}
+
+main,
+main * {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+h1,
+h2 {
+  font-family: Outfit, Arial, sans-serif;
+  letter-spacing: -.02em;
+  line-height: 1.12;
+}
+
+h1 {
+  font-size: clamp(30px, 4.4vw, 47px);
+  margin: 10px 0 14px;
+}
+
+h2 {
+  font-size: clamp(22px, 3vw, 30px);
+  margin: 0 0 6px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, .82);
+}
+
+.eyebrow::before {
+  content: "";
+  width: 26px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--green);
+}
+
+.section-head {
+  margin: 56px 0 18px;
+  max-width: 720px;
+}
+
+.section-head p {
+  margin: 6px 0 0;
+  color: var(--muted);
+}
+
+/* ---------- Hero ---------- */
+/* La foto ocupa el hero entero (cover) y el texto va encima, centrado, sin
+   tarjeta. El scrim de ::after es lo que garantiza la legibilidad.
+   min-height y no height: si el titular es largo el hero crece y el CTA nunca se
+   recorta. svh evita que la barra del móvil se coma el alto; vh es el respaldo. */
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100svh;
+  padding: clamp(96px, 13vh, 150px) 0;
+  overflow: hidden;
+  color: #fff;
+  background: var(--deep);
+}
+
+.hero-media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 42%;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg,
+    rgba(11, 16, 61, .55) 0%,
+    rgba(11, 16, 61, .70) 28%,
+    rgba(11, 16, 61, .80) 62%,
+    rgba(11, 16, 61, .92) 100%);
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-copy {
+  width: 100%;
+  max-width: 840px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-copy h1 {
+  margin: 0 auto;
+  color: #fff;
+  text-wrap: balance;
+  text-shadow: 0 2px 30px rgba(6, 9, 30, .6), 0 1px 3px rgba(6, 9, 30, .5);
+}
+
+.hero-copy .lead {
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 17px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, .95);
+  text-shadow: 0 1px 18px rgba(6, 9, 30, .6);
+}
+
+.hero-copy .cta-row {
+  justify-content: center;
+  margin-top: 28px;
+}
+
+/* ---------- Botones ---------- */
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 52px;
+  padding: 14px 26px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--green), var(--green-dark));
+  color: #fff !important;
+  font: 800 15px/1 Manrope, Arial, sans-serif;
+  letter-spacing: .01em;
+  text-decoration: none;
+  box-shadow: 0 16px 30px -16px rgba(0, 185, 79, .75);
+  transition: transform .3s var(--spring), box-shadow .3s var(--ease), filter .3s var(--ease);
+}
+
+.cta span[aria-hidden] {
+  font-size: 17px;
+  transition: transform .3s var(--spring);
+}
+
+.cta:hover,
+.cta:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 22px 38px -18px rgba(0, 185, 79, .8);
+  filter: saturate(112%);
+}
+
+.cta:hover span[aria-hidden],
+.cta:focus-visible span[aria-hidden] {
+  transform: translateX(4px);
+}
+
+.cta:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+/* ---------- Rejilla de servicios ---------- */
+/* Cuatro servicios, cuatro columnas: en una rejilla automática la cuarta
+   tarjeta quedaba sola en una fila. El ancho es explícito en cada tramo. */
+.grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid > li {
+  display: flex;
+  min-width: 0;
+}
+
+/* La tarjeta no es un enlace: la foto va arriba y el texto debajo, y solo la
+   foto enlaza al servicio. El hover usa la propiedad translate, no transform: el
+   revelado termina en transform:none con más especificidad y, si ambos
+   compartieran transform, el hover quedaría anulado. */
+.tile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: var(--r-md);
+  color: var(--ink);
+  border: 1px solid var(--glass-line);
+  background: var(--glass);
+  -webkit-backdrop-filter: blur(18px) saturate(150%);
+  backdrop-filter: blur(18px) saturate(150%);
+  box-shadow: var(--shadow), inset 0 1px 0 rgba(255, 255, 255, .9);
+  transition: translate .32s var(--spring), box-shadow .32s var(--ease), border-color .32s var(--ease);
+}
+
+/* El enlace vive detrás de la imagen (backlink en el markup para los crawlers)
+   pero la card no navega: pointer-events:none neutraliza el clic y el cursor sin
+   reestilizar nada. Solo aplica a la interacción con puntero: el ancla sigue
+   siendo tabulable y el focus-visible conservado sigue marcando la foto para
+   quien navega con teclado. */
+.tile-media {
+  display: block;
+  aspect-ratio: 16/10;
+  overflow: hidden;
+  background: #dbe2f1;
+  pointer-events: none;
+}
+
+.tile-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: scale .5s var(--ease);
+}
+
+.tile-media:focus-visible {
+  outline: 3px solid var(--green-dark);
+  outline-offset: -3px;
+}
+
+.tile-body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 16px 18px 18px;
+}
+
+.tile strong {
+  font: 800 17px/1.3 Outfit, Arial, sans-serif;
+  letter-spacing: -.01em;
+}
+
+.tile span {
+  color: var(--muted);
+  font-size: 14.5px;
+}
+
+.tile:hover {
+  translate: 0 -4px;
+  border-color: rgba(0, 185, 79, .55);
+  box-shadow: 0 30px 54px -30px rgba(11, 16, 61, .6), inset 0 1px 0 rgba(255, 255, 255, .95);
+}
+
+.tile:hover .tile-media img {
+  scale: 1.04;
+}
+
+/* ---------- Banda de CTA ---------- */
+.band {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 52px 0;
+  padding: clamp(22px, 3vw, 34px);
+  border-radius: var(--r-lg);
+  border: 1px solid rgba(255, 255, 255, .16);
+  background: linear-gradient(135deg, rgba(17, 22, 75, .96), rgba(33, 61, 142, .92));
+  color: #fff;
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 30px 60px -34px rgba(11, 16, 61, .8);
+}
+
+.band h2 {
+  color: #fff;
+  margin: 0;
+  max-width: 520px;
+}
+
+.band p {
+  margin: 6px 0 0;
+  color: rgba(255, 255, 255, .82);
+  max-width: 520px;
+}
+
+.band .cta {
+  flex: none;
+}
+
+/* ---------- FAQ ---------- */
+.faq details {
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  border-radius: var(--r-sm);
+  border: 1px solid var(--glass-line);
+  background: var(--glass);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 16px 34px -28px rgba(11, 16, 61, .55);
+}
+
+.faq summary h3{margin:0;font:inherit;font-weight:inherit}
+
+.faq summary {
+  font-weight: 800;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: center;
+  min-height: 32px;
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq summary::after {
+  content: "+";
+  font: 800 20px/1 Outfit, Arial, sans-serif;
+  color: var(--green-dark);
+  transition: transform .28s var(--spring);
+}
+
+.faq details[open] summary::after {
+  transform: rotate(45deg);
+}
+
+.faq p {
+  color: var(--muted);
+  margin: 10px 0 0;
+}
+
+/* ---------- Cierre ---------- */
+.final {
+  margin-top: 56px;
+  text-align: center;
+  padding: clamp(28px, 4vw, 46px);
+  border-radius: var(--r-lg);
+  border: 1px solid var(--glass-line);
+  background: var(--glass);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  backdrop-filter: blur(18px) saturate(140%);
+  box-shadow: var(--shadow), inset 0 1px 0 rgba(255, 255, 255, .9);
+}
+
+.final h2 {
+  margin: 0 auto 10px;
+  max-width: 620px;
+}
+
+.final p {
+  margin: 0 auto;
+  max-width: 560px;
+  color: var(--muted);
+}
+
+.final .cta-row {
+  justify-content: center;
+}
+
+/* ---------- Pie ---------- */
+.site-footer {
+  margin-top: 8px;
+  background: linear-gradient(150deg, rgba(11, 16, 61, .97), rgba(33, 61, 142, .94));
+  color: #fff;
+  border-top: 1px solid rgba(255, 255, 255, .14);
+}
+
+/* Tres columnas iguales y cada bloque centrado dentro de la suya: el logo, las
+   redes y el crédito quedan en el centro de su propio contenedor. */
+.sf-inner {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 50px var(--pad);
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 22px;
+}
+
+/* El logo vive solo dentro de su círculo: la imagen entra recortada al redondo
+   y no deja un segundo recuadro blanco adentro. */
+.sf-brand {
+  grid-column: 1;
+  display: block;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  box-shadow: 0 16px 30px -20px rgba(0, 0, 0, .8);
+  transition: transform .32s var(--spring), box-shadow .32s var(--ease);
+}
+
+.sf-brand img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.sf-brand:hover,
+.sf-brand:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 22px 36px -20px rgba(0, 0, 0, .85);
+}
+
+.sf-social {
+  grid-column: 2;
+  display: flex;
+  gap: 10px;
+}
+
+.sf-social a {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, .3);
+  background: rgba(255, 255, 255, .1);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  transition: transform .3s var(--spring), background .3s var(--ease), border-color .3s var(--ease);
+}
+
+.sf-social svg {
+  width: 17px;
+  height: 17px;
+}
+
+.sf-social a:hover,
+.sf-social a:focus-visible {
+  transform: translateY(-3px);
+  background: var(--green);
+  border-color: var(--green);
+}
+
+.sf-social a:focus-visible,
+.sf-brand:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+.sf-credit {
+  grid-column: 3;
+  margin: 0;
+  font-size: 13.5px;
+  color: rgba(255, 255, 255, .72);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.sf-credit a {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, .4);
+}
+
+.sf-credit a:hover,
+.sf-credit a:focus-visible {
+  border-bottom-color: var(--green);
+}
+
+.sf-heart {
+  width: 14px;
+  height: 14px;
+  color: #ff5f7d;
+}
+
+/* ---------- Utilidades ---------- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.note {
+  margin-top: 36px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 3px;
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .tile,
+  .final,
+  .faq details {
+    background: rgba(255, 255, 255, .96);
+  }
+}
+
+/* ---------- Movimiento y tramos ---------- */
+@media (prefers-reduced-motion: no-preference) {
+  html.js .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  html.js .reveal.in {
+    opacity: 1;
+    transform: none;
+    transition: opacity .55s var(--ease), transform .55s var(--ease);
+    transition-delay: calc(var(--i, 0) * 70ms);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  * {
+    transition-duration: .001ms !important;
+    animation-duration: .001ms !important;
+  }
+}
+
+@media (min-width: 1000px) {
+  .grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1150px) {
+  .hero-media {
+    object-position: center 46%;
+  }
+}
+
+@media (max-width: 639px) {
+  .grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  /* --ghl-movil: GHL mete 10 px de padding en .c-row y una barra de scroll de
+     15 px que descuadran el gate. El contenido se lleva al ancho real de la
+     pantalla y el aire pasa a ser padding interno (--pad: 18px). */
+  :root {
+    --pad: 18px;
+  }
+
+  html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  html::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    overscroll-behavior-y: none;
+  }
+
+  main {
+    width: 100vw;
+    max-width: 100vw;
+    margin-inline: calc(50% - 50vw);
+  }
+
+  main > :not(.hero) {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  :root {
+    --pad: 16px;
+  }
+
+  main {
+    padding: 0 0 52px;
+  }
+
+  .hero {
+    padding: clamp(72px, 10vh, 104px) 0;
+  }
+
+  .hero-media {
+    object-position: center 38%;
+  }
+
+  .hero-inner {
+    padding: 0 16px;
+  }
+
+  .cta {
+    width: 100%;
+  }
+
+  .cta-row .cta {
+    width: 100%;
+  }
+
+  .band {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .band .cta-row {
+    width: 100%;
+  }
+
+  .band .cta {
+    width: 100%;
+  }
+
+  .sf-inner {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    gap: 18px;
+  }
+
+  .sf-brand,
+  .sf-social,
+  .sf-credit {
+    grid-column: 1;
+    justify-self: center;
+  }
+
+  .sf-credit {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* --gate-movil: cierre del CSS movil. Va al final para mandar sobre el bloque de
+   640px, que fija --pad: 16px y deja el mosaico a sangre. El aire del texto y
+   del mosaico tiene que quedar entre 14 y 24 px, y el hero pegado a los cantos. */
+@media (max-width: 640px) {
+  :root {
+    --pad: 18px;
+  }
+
+  .grid {
+    margin-inline: 0;
+    padding-inline: 0;
+  }
+
+  .tile {
+    margin-inline: var(--pad);
+  }
+}
+`;

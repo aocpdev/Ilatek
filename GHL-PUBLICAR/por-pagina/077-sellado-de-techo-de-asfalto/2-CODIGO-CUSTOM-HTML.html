@@ -1,0 +1,1194 @@
+<meta charset="utf-8">
+<!-- ILATEK:INTERNAL-LINKS:START -->
+<style>
+/* A single, unframed logo. Keep its 52px slot inside the existing 64px bar.
+   The uniform white bar integrates the original white-backed asset without redrawing it. */
+#ilatek-nav .iln-shell{background:#fff}
+#ilatek-nav .iln-brand{flex:0 0 52px;width:52px;height:52px;gap:0;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none}
+#ilatek-nav .iln-brand img{width:52px;height:52px;max-width:none;padding:0;border:0;border-radius:0;background:none;box-shadow:none;object-fit:contain}
+#ilatek-nav .iln-brand:focus-visible{outline:2px solid #009640;outline-offset:3px}
+/* Scroll-only glass button: same small footprint, with an edge on white surfaces. */
+#ilatek-nav.iln-compact>div.iln-shell{
+  width:64px;min-height:64px;height:64px;padding:0;gap:0;border-radius:20px;
+  border:1px solid rgba(17,22,75,.18);
+  background:linear-gradient(145deg,rgba(255,255,255,.88),rgba(244,247,252,.68));
+  -webkit-backdrop-filter:blur(14px) saturate(130%);backdrop-filter:blur(14px) saturate(130%);
+  box-shadow:0 4px 14px rgba(11,16,61,.10),inset 0 1px 0 rgba(255,255,255,.85);
+}
+#ilatek-nav.iln-compact>div.iln-shell:hover,#ilatek-nav.iln-compact>div.iln-shell:focus-within{
+  border-color:rgba(33,61,142,.68);box-shadow:0 5px 16px rgba(11,16,61,.13),inset 0 1px 0 rgba(255,255,255,.9);
+}
+#ilatek-nav.iln-compact .iln-shell .iln-brand{flex:1;width:100%;height:62px;justify-content:center;border-radius:19px;cursor:pointer}
+#ilatek-nav.iln-compact .iln-brand img{border-radius:13px}
+#ilatek-nav.iln-compact .iln-brand:focus-visible{outline:2px solid var(--iln-blue);outline-offset:3px}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
+  #ilatek-nav.iln-compact>div.iln-shell{background:rgba(255,255,255,.96)}
+}
+#ilatek-nav .iln-login{display:none}
+@media(min-width:1101px){
+  #ilatek-nav{--iln-item-gap:clamp(16px,1.6vw,24px)}
+  #ilatek-nav:not(.iln-compact) .iln-shell{gap:var(--iln-item-gap)}
+  #ilatek-nav .iln-shell .iln-links{position:static;left:auto;transform:none;margin:0 0 0 auto;gap:var(--iln-item-gap)}
+  #ilatek-nav .iln-shell .iln-links>a,#ilatek-nav .iln-links .iln-trigger{padding:10px 0;min-height:44px}
+  #ilatek-nav .iln-shell .iln-langwrap{margin:0;flex:none}
+  #ilatek-nav .iln-shell .iln-lang{min-height:44px;padding:10px 0;gap:8px;border:0;background:transparent;border-radius:8px;font-size:14px}
+  #ilatek-nav .iln-shell .iln-lang span{padding:0;border-radius:0;background:none;box-shadow:none;color:var(--iln-ink);opacity:.65}
+  #ilatek-nav .iln-shell .iln-lang span[aria-pressed="true"]{opacity:1;text-decoration:underline;text-decoration-color:var(--iln-green);text-underline-offset:6px;text-decoration-thickness:2px}
+  #ilatek-nav .iln-shell .iln-login{display:inline-flex;align-items:center;flex:none;min-height:44px;padding:10px 0;font-size:14px;font-weight:700;white-space:nowrap}
+  #ilatek-nav .iln-login:hover{color:var(--iln-blue)}
+  #ilatek-nav .iln-shell .iln-ctawrap,#ilatek-nav .iln-shell>.iln-cta{margin-left:0;flex:none}
+  #ilatek-nav.iln-compact .iln-links,#ilatek-nav.iln-compact .iln-shell .iln-login{display:none}
+}
+/* Both menu glyphs occupy the same grid cell. The close SVG lives inside a span;
+   positioning that SVG absolutely used to offset it outside the button center. */
+#ilatek-nav .iln-burger{flex:0 0 44px;min-width:44px;min-height:44px;padding:0;line-height:1;appearance:none}
+#ilatek-nav .iln-burger svg{position:static;display:block;width:22px;height:22px;grid-area:1 / 1;pointer-events:none}
+#ilatek-nav .iln-burger>.iln-ic-x{display:grid;place-items:center;grid-area:1 / 1;width:22px;height:22px;pointer-events:none;transition:opacity .22s ease,transform .26s ease}
+@media(max-width:1100px){
+  #ilatek-nav .iln-shell{gap:8px}
+  #ilatek-nav .iln-langwrap{margin-left:auto;align-items:center}
+  #ilatek-nav .iln-burger{margin-left:0}
+  #ilatek-nav:not(.iln-lang-on) .iln-burger{margin-left:auto}
+  /* Minimal visual pills, with a full 44px-high touch target. */
+  #ilatek-nav .iln-lang{min-height:44px;min-width:64px;justify-content:center;padding:0;gap:2px;border:0;background:transparent;font-size:12px}
+  #ilatek-nav .iln-lang span{padding:6px 8px;box-shadow:none}
+}
+@media(prefers-reduced-motion:reduce){#ilatek-nav .iln-burger>.iln-ic-x{transition:none}}
+/* Fixed navigation occupies no document flow. Reserve its real height once,
+   then leave 32 / 48 / 64px of breathing room above service-hero content. */
+body:has(#ilatek-nav) :is(.il-hero,.ilr-hero,.ilc2-hero,.ilsx-hero,.ilt-hero){
+  padding-top:calc(var(--ilatek-menu-bottom,78px) + 64px) !important;
+}
+/* The cinematic Home keeps its centered composition and a safe top inset. */
+body:has(#ilatek-nav) .mshero-inner{
+  padding-top:max(clamp(96px,11vw,160px),calc(var(--ilatek-menu-bottom,78px) + 64px)) !important;
+}
+@media(max-width:1100px){
+  body:has(#ilatek-nav) :is(.il-hero,.ilr-hero,.ilc2-hero,.ilsx-hero,.ilt-hero){padding-top:calc(var(--ilatek-menu-bottom,78px) + 48px) !important}
+  body:has(#ilatek-nav) .mshero-inner{padding-top:max(96px,calc(var(--ilatek-menu-bottom,78px) + 48px)) !important}
+}
+@media(max-width:560px){
+  body:has(#ilatek-nav) :is(.il-hero,.ilr-hero,.ilc2-hero,.ilsx-hero,.ilt-hero){padding-top:calc(var(--ilatek-menu-bottom,78px) + 32px) !important}
+  body:has(#ilatek-nav) .mshero-inner{padding-top:max(96px,calc(var(--ilatek-menu-bottom,78px) + 32px)) !important}
+}
+/* Inline vectors survive font loading, language changes and generic GHL SVG rules. */
+#ilatek-cobertura-dir .icd-nav{min-width:44px;min-height:44px;flex-shrink:0;line-height:1}
+#ilatek-cobertura-dir .icd-nav svg{display:block !important;width:22px !important;height:22px !important;max-width:none;fill:none !important;stroke:currentColor !important;pointer-events:none}
+#ilatek-cobertura-dir .icd-nav:focus-visible{outline:2px solid #00b94f;outline-offset:4px}
+#ilatek-cobertura-dir [hidden]{display:none !important}
+@media(prefers-reduced-motion:reduce){html:has(#ilatek-nav){scroll-behavior:auto !important}}
+
+/* ILATEK · Escala tipográfica fluida para titulares.
+   SOLO presentación: no cambia texto, contenido, descripciones, jerarquía ni
+   distribución. Se inyecta con el resto del bloque compartido (links/runtime).
+
+   Reglas:
+   1) Titular de marca (Home) = UNA SOLA LÍNEA en cualquier ancho. El tamaño se
+      deriva del ancho disponible, no de un valor fijo, así que encoge en el
+      teléfono en vez de partirse en dos líneas.
+   2) Titulares de oración (héroes de categoría/servicio y la página de reseñas)
+      = tamaño proporcional al ancho del dispositivo con piso legible de 24px.
+      Nunca producen más líneas que el diseño actual, solo menos.
+   3) Desde 1101px no se altera ningún tamaño: manda el diseño aprobado. Cada
+      curva termina exactamente en el valor que la página ya usa a 1100px, de
+      modo que no hay salto al cruzar el punto de quiebre.
+
+   Divisor 11.2 = medida real del titular más largo en una línea
+   ("Ilatek Property Solution", Outfit 800, letter-spacing -0.045em: 10.86em a
+   280px) más 3% de margen. Al cargar sin la fuente web el respaldo Arial mide
+   12.7em, así que durante esos milisegundos el titular corto puede partirse en
+   dos líneas, pero nunca desborda el ancho de pantalla. */
+
+/* 1 · Titular de marca: una línea garantizada de 280px a 1920px.
+   min( <diseño actual>, <ancho disponible / medida del texto> ) — nunca agranda. */
+.mshero h1{
+  font-size:min(clamp(40px,6.2vw,82px),calc((100vw - 40px)/11.2)) !important;
+}
+
+/* 2 · Titulares de oración: misma curva que ya usa cada familia, con el piso
+   bajado a 24px. Al conservar el coeficiente vw y el tope (el valor de la
+   página a 1100px) el resultado nunca es mayor que el diseño aprobado: solo
+   encoge en los anchos donde antes el piso fijo ganaba. La transición a
+   ≥1101px es continua porque cada tope es el valor exacto de 1100px. */
+@media (max-width:1100px){
+  .ilt-hero h1,.ilc2-hero h1{
+    font-size:clamp(24px,5vw,55px) !important;
+  }
+  /* Las páginas de categoría usan .ilr-hero con 5vw. La página de reseñas ya es
+     fluida por su cuenta (3.5vw sobre un piso de 32px, 8vw en el teléfono), así
+     que se excluye: forzarla a 5vw le añadía una línea entre 700px y 1100px. */
+  .ilr-hero h1:not(#ilatek-resenas-lp *){
+    font-size:clamp(24px,5vw,55px) !important;
+  }
+  .il-hero h1{
+    font-size:clamp(24px,5.6vw,61.6px) !important;
+  }
+  .ilsx-hero h1{
+    font-size:clamp(24px,5.4vw,59.4px) !important;
+  }
+  .il-reviews-head h1,#ilatek-reviews-title{
+    font-size:clamp(24px,4.6vw,50.6px) !important;
+  }
+}
+
+</style>
+<script>
+/* ILATEK: one shared URL contract; inlined into standalone GHL embeds. */
+(function (w) {
+  'use strict';
+  if (w.ILATEK_LINKS) return;
+  var TOKEN = '{' + '{custom_values.website_url}' + '}';
+  var FALLBACK = 'https://ilatekpr.com';
+  function normalize(value) {
+    var raw = String(value || '').trim();
+    if (!raw || raw.startsWith('/') || /[{}\s<>"'\\]/.test(raw)) return '';
+    if (/^[a-z][a-z\d+.-]*:/i.test(raw) && !/^https?:\/\//i.test(raw)) return '';
+    try {
+      var u = new URL(/^https?:\/\//i.test(raw) ? raw : 'https://' + raw);
+      if (u.username || u.password || u.search || u.hash || !u.hostname.includes('.')) return '';
+      return 'https://' + u.host + u.pathname.replace(/\/+$/, '');
+    } catch (e) { return ''; }
+  }
+  function bridge() {
+    if (!w.document) return '';
+    var nodes = w.document.querySelectorAll('.dv-ghl-values, #dv-ghl-values');
+    var values = [];
+    for (var i = 0; i < nodes.length; i++) {
+      var parts = nodes[i].textContent.split('|||DV|||');
+      if (parts.length !== 6) continue;
+      var value = normalize(parts[3]);
+      if (value && values.indexOf(value) < 0) values.push(value);
+    }
+    return values.length === 1 ? values[0] : '';
+  }
+  function base(value) { return bridge() || normalize(value) || FALLBACK; }
+  function join(value, pathname) {
+    var root = base(value), suffix = String(pathname || '/');
+    if (!suffix.startsWith('/') || suffix.startsWith('//')) return root + '/';
+    // Support an existing base-path once without changing the service path.
+    var prefix = new URL(root).pathname.replace(/\/$/, '');
+    if (prefix && (suffix === prefix || suffix.startsWith(prefix + '/'))) return new URL(root).origin + suffix;
+    return root + suffix;
+  }
+  function replace(text, key, value) {
+    var out = String(text || '');
+    if (key !== TOKEN) return out.split(key).join(value);
+    var root = base(value);
+    return out.split('https://' + TOKEN).join(root).split('http://' + TOKEN).join(root).split(TOKEN).join(root);
+  }
+  w.ILATEK_LINKS = { normalize: normalize, base: base, join: join, replace: replace };
+  if (!w.document) return;
+  var doc = w.document, queued = false;
+  function refresh() {
+    queued = false;
+    var nodes = doc.querySelectorAll('a[data-ilatek-path]');
+    for (var i = 0; i < nodes.length; i++) {
+      var a = nodes[i], root = a.closest('[data-website-url]');
+      var value = root && root.getAttribute('data-website-url');
+      if (!normalize(value)) {
+        var declared = doc.querySelector('[data-website-url]');
+        value = declared && declared.getAttribute('data-website-url');
+      }
+      // GHL may resolve the href even when the surrounding data attribute is absent.
+      if (!normalize(value)) {
+        try { value = new URL(a.getAttribute('href')).origin; } catch (e) {}
+      }
+      var url = join(value, a.getAttribute('data-ilatek-path'));
+      if (a.getAttribute('href') !== url) a.setAttribute('href', url);
+    }
+  }
+  function schedule() {
+    if (!queued) { queued = true; (w.requestAnimationFrame || w.setTimeout)(refresh); }
+  }
+  if (doc.readyState === 'loading') doc.addEventListener('DOMContentLoaded', refresh, { once: true });
+  else schedule();
+  // One observer shared across menu/footer/page, including late GHL bridge values.
+  if (w.MutationObserver) new w.MutationObserver(schedule).observe(doc.documentElement, {
+    childList: true, subtree: true, characterData: true,
+    attributes: true, attributeFilter: ['data-website-url', 'data-ilatek-path']
+  });
+  doc.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[data-ilatek-anchor]');
+    if (!a || e.button !== 0 || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey || a.target === '_blank') return;
+    var id = a.getAttribute('data-ilatek-anchor');
+    var target = id && doc.getElementById(id);
+    if (!target) return;
+    e.preventDefault();
+    target.scrollIntoView({ behavior: w.matchMedia && w.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+  });
+})(window);
+
+/* Delta System image/metadata binder. Templates survive existing page resolvers. */
+(function(w){
+  'use strict';
+  if(w.ILATEK_GEO)return;
+  var token='{'+'{custom_values.business__county_name}'+'}',doc=w.document;
+  function clean(v){v=String(v||'').replace(/\u00a0/g,' ').trim();return /\{\{|\}\}/.test(v)?'':v}
+  function county(){
+    var declared=doc.querySelectorAll('.dv-ghl-values,#dv-ghl-values'),nodes=declared.length?declared:doc.querySelectorAll('p'),values=[];
+    for(var i=0;i<nodes.length;i++){
+      var parts=nodes[i].textContent.split('|||DV|||');
+      if(parts.length!==6)continue;
+      nodes[i].style.display='none';nodes[i].setAttribute('aria-hidden','true');
+      var value=clean(parts[0]);if(value&&values.indexOf(value)<0)values.push(value);
+    }
+    if(values.length===1)return values[0];
+    // Conflicting bridges are not selected arbitrarily; use the known generic fallback.
+    if(values.length>1)return 'Puerto Rico';
+    var roots=doc.querySelectorAll('[data-location-label]');
+    for(var j=0;j<roots.length;j++){var v=clean(roots[j].getAttribute('data-location-label'));if(v)return v}
+    return 'Puerto Rico';
+  }
+  function enc(s){return encodeURIComponent(s).replace(/'/g,'%27')}
+  function esc(s){return String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+  function image(src,alt,title){
+    // No resolved locality is interpolated into innerHTML. Resolution uses setAttribute below.
+    return '<img src="'+esc(src)+'" alt="'+esc(alt)+'" title="'+esc(title)+'" data-ilatek-local-alt="'+enc(alt)+'" data-ilatek-local-title="'+enc(title)+'" loading="lazy" decoding="async">';
+  }
+  w.ILATEK_GEO={county:county,image:image};
+  var queued=false,titleTemplates=new WeakMap();
+  function refresh(){
+    queued=false;
+    var location=county(),lang=doc.documentElement.lang==='en'?'en':'es';
+    var els=doc.querySelectorAll('[data-ilatek-local-alt],[data-ilatek-local-title],[data-ilatek-local-content]');
+    for(var i=0;i<els.length;i++){
+      var el=els[i];
+      ['alt','title','content'].forEach(function(name){
+        var encoded=el.getAttribute('data-ilatek-local-'+name+'-'+lang)||el.getAttribute('data-ilatek-local-'+name);
+        if(!encoded)return;
+        var template;try{template=decodeURIComponent(encoded)}catch(e){return}
+        var value=template.split(token).join(location);
+        if(el.getAttribute(name)!==value)el.setAttribute(name,value);
+      });
+    }
+    var titles=doc.querySelectorAll('title');
+    for(var t=0;t<titles.length;t++){
+      var node=titles[t];if(node.closest('svg'))continue;
+      if(!titleTemplates.has(node)&&node.textContent.indexOf(token)>=0)titleTemplates.set(node,node.textContent);
+      if(titleTemplates.has(node)){var text=titleTemplates.get(node).split(token).join(location);if(node.textContent!==text)node.textContent=text}
+    }
+  }
+  function schedule(){if(!queued){queued=true;w.requestAnimationFrame(refresh)}}
+  if(doc.readyState==='loading')doc.addEventListener('DOMContentLoaded',refresh,{once:true});else schedule();
+  w.addEventListener('ilatek:lang',schedule);
+  if(w.MutationObserver)new w.MutationObserver(schedule).observe(doc.documentElement,{childList:true,subtree:true,characterData:true,
+    attributes:true,attributeFilter:['alt','title','content','lang','data-location-label']});
+})(window);
+
+/* Measure only the fixed bar, not its expanded drawer. No scroll-driven spacing. */
+(function(w,d){
+  if(w.ILATEK_LAYOUT)return;
+  w.ILATEK_LAYOUT=true;
+  var bar,frame,observer;
+  function measure(){
+    frame=0;
+    if(!bar||!bar.isConnected)return;
+    var bottom=Math.ceil(bar.getBoundingClientRect().bottom);
+    if(bottom>0&&bottom<300)d.documentElement.style.setProperty('--ilatek-menu-bottom',bottom+'px');
+  }
+  function queue(){if(!frame)frame=w.requestAnimationFrame(measure)}
+  function start(){
+    bar=d.querySelector('#ilatek-nav .iln-shell');
+    if(!bar)return;
+    if(observer)observer.disconnect();
+    measure();
+    if(w.ResizeObserver)new ResizeObserver(queue).observe(bar);
+    w.addEventListener('resize',queue,{passive:true});
+    if(d.fonts&&d.fonts.ready)d.fonts.ready.then(queue);
+  }
+  function boot(){
+    if(d.querySelector('#ilatek-nav .iln-shell'))start();
+    else{observer=new MutationObserver(start);observer.observe(d.documentElement,{childList:true,subtree:true})}
+  }
+  if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',boot,{once:true});else boot();
+})(window,document);
+
+</script>
+<!-- ILATEK:INTERNAL-LINKS:END -->
+<!-- ILATEK · Blog · /blog/sellado-de-techo-de-asfalto · generado por blog/build/build-blog.mjs
+     Metadatos: configurar en el panel SEO nativo (ver blog/seo/seo-blog.csv).
+     No pegar esta página con un header o footer global adicional. -->
+<div id="ilbj" class="ilb">
+<style>
+/* ILATEK · Blog · hoja de estilo del lote.
+   Mobile-first. Solo presentación: no cambia textos ni jerarquía.
+   Paleta y tipografía tomadas del sistema ya usado en las páginas. */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Outfit:wght@600;800&display=swap');
+
+#ilbj{
+  --ink:#11164b;--deep:#0b103d;--blue:#213d8e;--blue-soft:#eef3ff;
+  --green:#00b94f;--green-dark:#009640;--mist:#f4f7fc;--paper:#fff;
+  --line:#dbe2f1;--muted:#5b6380;--warn:#8a5a00;--warn-bg:#fff8e8;
+  --font-body:Manrope,Arial,sans-serif;--font-display:Outfit,Arial,sans-serif;
+  --r-lg:26px;--r-md:20px;--r-sm:14px;
+  --space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;
+  --space-5:24px;--space-6:32px;--space-7:40px;--space-8:56px;--space-9:72px;
+  --spring:cubic-bezier(.34,1.56,.64,1);--ease:cubic-bezier(.22,.7,.2,1);
+  width:100%;max-width:100%;margin-inline:0;
+  background:var(--paper);color:var(--ink);
+  font-family:var(--font-body);isolation:isolate;
+  -webkit-font-smoothing:antialiased;
+}
+body{margin:0}
+#ilbj *{box-sizing:border-box}
+:where(#ilbj) :where(p,ul,ol,h1,h2,h3,h4,figure,table){margin:0}
+#ilbj img{max-width:100%;height:auto}
+#ilbj a{color:var(--blue);text-underline-offset:3px}
+#ilbj a:hover{color:var(--green-dark)}
+#ilbj :focus-visible{outline:2px solid var(--green);outline-offset:3px;border-radius:6px}
+
+.ilb-wrap{width:min(100% - 36px,1140px);margin-inline:auto}
+.ilb-narrow{width:min(100% - 36px,760px);margin-inline:auto}
+
+/* ——— Hero ——— */
+.ilb-hero{
+  position:relative;overflow:hidden;
+  background:linear-gradient(158deg,#213d8e 0%,#11164b 52%,#0b103d 100%);
+  color:#fff;padding:38px 0 44px;
+}
+.ilb-hero::after{
+  content:"";position:absolute;inset:auto -12% -55% -12%;height:70%;
+  background:radial-gradient(60% 100% at 50% 0%,rgba(0,185,79,.22),transparent 70%);
+  pointer-events:none;
+}
+.ilb-hero .ilb-wrap{position:relative;z-index:1}
+/* Selector con #ilbj para ganarle a la regla global #ilbj a (azul sobre azul). */
+#ilbj .ilb-crumbs{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font:600 12.5px/1.5 Manrope,Arial,sans-serif;color:rgba(255,255,255,.9)}
+#ilbj .ilb-crumbs a{color:#fff;text-decoration:underline;text-decoration-color:rgba(255,255,255,.45);text-underline-offset:2px}
+#ilbj .ilb-crumbs a:hover{color:#9dffc6;text-decoration-color:currentColor}
+#ilbj .ilb-crumbs span[aria-current]{color:rgba(255,255,255,.82)}
+#ilbj .ilb-crumbs>span[aria-hidden="true"]{color:rgba(255,255,255,.6)}
+.ilb-eyebrow{
+  margin:22px 0 0;display:inline-flex;align-items:center;gap:8px;
+  padding:7px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.2);
+  background:rgba(255,255,255,.08);
+  font:800 11px/1 Manrope,Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase;
+  color:#9dffc6;
+  width:fit-content;max-width:100%;justify-self:start;
+}
+.ilb-hero h1{
+  margin:16px 0 0;max-width:22ch;
+  font-family:var(--font-display);font-weight:800;
+  font-size:clamp(29px,5.4vw,52px);line-height:1.06;letter-spacing:-.045em;
+  text-wrap:balance;
+}
+.ilb-dek{margin:16px 0 0;max-width:60ch;color:rgba(255,255,255,.8);font-size:16.5px;line-height:1.62}
+.ilb-tags{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 0;padding:0;list-style:none}
+.ilb-tags li{
+  padding:6px 11px;border-radius:999px;background:rgba(255,255,255,.1);
+  border:1px solid rgba(255,255,255,.14);
+  font:700 11.5px/1.2 Manrope,Arial,sans-serif;color:rgba(255,255,255,.82);
+}
+
+/* ——— Cuerpo ——— */
+.ilb-body{padding:var(--space-7) 0 var(--space-9)}
+.ilb-grid{display:grid;gap:38px}
+.ilb-article{min-width:0;max-width:72ch}
+.ilb-article p{font-size:17px;line-height:1.74;color:#232a52}
+.ilb-article p + p{margin-top:var(--space-4)}
+.ilb-article h2{
+  margin:var(--space-7) 0 var(--space-3);padding-top:var(--space-5);border-top:1px solid var(--line);
+  font-family:var(--font-display);font-weight:800;
+  font-size:clamp(22px,3.1vw,30px);line-height:1.14;letter-spacing:-.035em;scroll-margin-top:110px;
+}
+.ilb-article > h2:first-of-type,.ilb-article section:first-of-type > h2:first-of-type{border-top:0;padding-top:0}
+.ilb-article h3{
+  margin:var(--space-5) 0 var(--space-2);font-family:var(--font-display);font-weight:800;
+  font-size:18.5px;line-height:1.25;letter-spacing:-.02em;scroll-margin-top:110px;
+}
+.ilb-article ul,.ilb-article ol{margin:var(--space-4) 0 0;padding-left:22px}
+.ilb-article li{font-size:16.5px;line-height:1.68;color:#232a52}
+.ilb-article li + li{margin-top:var(--space-2)}
+.ilb-article strong{font-weight:800;color:var(--ink)}
+.ilb-article time{font-variant-numeric:tabular-nums}
+
+/* Respuesta corta: el bloque que se lleva la vista del lector y del asistente. */
+.ilb-quick{
+  margin:0 0 8px;padding:20px 20px 18px;border-radius:16px;
+  background:var(--mist);border:1px solid var(--line);border-left:4px solid var(--green);
+}
+.ilb-quick h2,.ilb-quick h3{
+  margin:0 0 8px!important;padding:0!important;border:0!important;
+  font:800 11.5px/1 Manrope,Arial,sans-serif!important;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--green-dark);
+}
+.ilb-quick p{font-size:16.5px!important;line-height:1.66!important;margin:0!important;color:#1d2450!important}
+.ilb-quick .ilb-quick-q{margin:0 0 8px!important;font:800 clamp(17px,2vw,20px)/1.32 var(--font-display)!important;letter-spacing:-.02em!important;text-transform:none!important;color:var(--ink)!important}
+
+.ilb-verdict{
+  margin:22px 0 6px;padding:18px 20px;border-radius:16px;
+  background:linear-gradient(150deg,#f2fff8,#eaf8f0);border:1px solid #c7ecd6;
+}
+.ilb-verdict h3{margin:0 0 6px;font:800 11.5px/1 Manrope,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--green-dark)}
+.ilb-verdict p{margin:0;font-size:16.5px;line-height:1.62;color:#123c2a}
+
+/* Índice: nativo, plegable, sin JavaScript. */
+.ilb-toc{margin:26px 0 0;border:1px solid var(--line);border-radius:14px;background:#fff}
+.ilb-toc summary{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:14px 16px;cursor:pointer;list-style:none;
+  font:800 13px/1.2 Manrope,Arial,sans-serif;color:var(--ink);
+}
+.ilb-toc summary::-webkit-details-marker{display:none}
+.ilb-toc summary::after{content:"+";font-size:18px;color:var(--muted)}
+.ilb-toc[open] summary::after{content:"–"}
+.ilb-toc ol{margin:0;padding:0 16px 14px 34px}
+.ilb-toc li{font-size:14.5px;line-height:1.6}
+.ilb-toc a{text-decoration:none}
+.ilb-toc a:hover{text-decoration:underline}
+
+/* ——— Tablas ——— */
+.ilb-scroll{margin:18px 0 0;overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:#fff}
+.ilb-table{width:100%;border-collapse:collapse;font-size:16.5px;min-width:520px}
+.ilb-table caption{
+  caption-side:top;padding:12px 14px;text-align:left;
+  font:700 13px/1.4 Manrope,Arial,sans-serif;color:var(--muted);border-bottom:1px solid var(--line);
+}
+.ilb-table th,.ilb-table td{padding:11px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+.ilb-table thead th{
+  background:var(--mist);font:800 12px/1.3 Manrope,Arial,sans-serif;
+  letter-spacing:.09em;text-transform:uppercase;color:var(--muted);white-space:nowrap;
+}
+.ilb-table tbody tr:last-child td{border-bottom:0}
+.ilb-table tbody th{font-weight:800;color:var(--ink);white-space:nowrap}
+.ilb-table tbody tr:nth-child(even) td{background:#fbfcff}
+.ilb-table .ilb-yes{color:var(--green-dark);font-weight:800}
+.ilb-table .ilb-no{color:#a33;font-weight:700}
+.ilb-table small{display:block;margin-top:3px;color:var(--muted);font-size:12px;line-height:1.4}
+
+/* ——— Bloques destacados ——— */
+.ilb-panel{
+  margin:30px 0 0;padding:24px;border-radius:18px;
+  background:linear-gradient(158deg,#11164b,#0b103d);color:#fff;
+}
+.ilb-panel h2,.ilb-panel h3{
+  margin:0 0 10px!important;padding:0!important;border:0!important;
+  font-family:var(--font-display);font-size:clamp(20px,2.6vw,26px);font-weight:800;
+  letter-spacing:-.03em;color:#fff;
+}
+.ilb-panel p{color:rgba(255,255,255,.78)!important;font-size:16px!important;line-height:1.68!important}
+.ilb-panel p + p{margin-top:12px}
+.ilb-panel ul{margin:14px 0 0;padding-left:20px}
+.ilb-panel li{color:rgba(255,255,255,.84);font-size:15.5px;line-height:1.62}
+.ilb-panel a{color:#9dffc6}
+
+.ilb-note{
+  margin:22px 0 0;padding:16px 18px;border-radius:14px;
+  background:var(--warn-bg);border:1px solid #f0dcae;color:var(--warn);
+  font-size:15px;line-height:1.6;
+}
+.ilb-note strong{color:#6b4600}
+
+.ilb-steps{margin:18px 0 0;padding:0;list-style:none;counter-reset:ilbs}
+.ilb-steps li{
+  position:relative;padding:14px 0 14px 46px;border-bottom:1px solid var(--line);
+  font-size:16px;line-height:1.62;color:#232a52;
+}
+.ilb-steps li:last-child{border-bottom:0}
+.ilb-steps li::before{
+  counter-increment:ilbs;content:counter(ilbs);
+  position:absolute;left:0;top:12px;display:grid;place-items:center;
+  width:30px;height:30px;border-radius:10px;background:var(--blue-soft);
+  color:var(--blue);font:800 13px/1 Manrope,Arial,sans-serif;
+}
+.ilb-steps strong{display:block;color:var(--ink);margin-bottom:2px}
+
+/* ——— FAQ ——— */
+.ilb-faq{margin:18px 0 0;border-top:1px solid var(--line)}
+.ilb-faq details{border-bottom:1px solid var(--line)}
+.ilb-faq summary{
+  display:flex;align-items:flex-start;justify-content:space-between;gap:14px;
+  padding:16px 0;cursor:pointer;list-style:none;
+  font:800 16px/1.4 Manrope,Arial,sans-serif;color:var(--ink);
+}
+.ilb-faq summary::-webkit-details-marker{display:none}
+.ilb-faq summary .ilb-faq-q{flex:1;margin:0;font:inherit;color:inherit;letter-spacing:inherit;line-height:inherit;text-transform:none}
+.ilb-faq summary::after{content:"+";flex:none;font-size:20px;line-height:1;color:var(--green-dark)}
+.ilb-faq details[open] summary::after{content:"–"}
+.ilb-faq p{margin:0 0 16px;font-size:16px;line-height:1.68;color:#232a52}
+
+/* ——— CTA ——— */
+.ilb-cta{
+  margin:36px 0 0;padding:28px 24px;border-radius:20px;
+  background:linear-gradient(152deg,#00b94f,#009640 70%,#007a34);color:#fff;
+}
+.ilb-cta h2{
+  margin:0!important;padding:0!important;border:0!important;
+  font-family:var(--font-display);font-size:clamp(21px,3vw,28px);
+  font-weight:800;letter-spacing:-.035em;line-height:1.14;color:#fff;
+}
+.ilb-cta p{margin:10px 0 0!important;color:rgba(255,255,255,.9)!important;font-size:15.5px!important;line-height:1.6!important}
+.ilb-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  min-height:52px;margin-top:18px;padding:14px 24px;border-radius:14px;
+  background:#fff;color:#007a34!important;text-decoration:none!important;
+  font:800 15px/1 Manrope,Arial,sans-serif;
+  box-shadow:0 12px 26px rgba(0,60,26,.28);transition:transform .18s ease,box-shadow .18s ease;
+}
+.ilb-btn:hover{transform:translateY(-2px);box-shadow:0 16px 32px rgba(0,60,26,.34)}
+.ilb-btn-ghost{
+  display:inline-flex;align-items:center;min-height:48px;margin-top:14px;padding:12px 20px;
+  border-radius:12px;border:1px solid var(--line);background:#fff;color:var(--ink)!important;
+  text-decoration:none!important;font:800 14px/1 Manrope,Arial,sans-serif;
+}
+
+/* ——— Legal y fuentes ——— */
+.ilb-legal{
+  margin:30px 0 0;padding:16px 18px;border:1px solid var(--line);border-radius:14px;
+  background:#fcfdff;color:var(--muted);font-size:13px;line-height:1.62;
+}
+.ilb-legal strong{color:#3b4266}
+.ilb-sources{margin:26px 0 0}
+.ilb-sources h2{
+  margin:0 0 10px!important;padding:0!important;border:0!important;
+  font:800 11.5px/1 Manrope,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
+}
+.ilb-sources ul{margin:0;padding-left:20px}
+.ilb-sources li{font-size:13.5px;line-height:1.62;color:var(--muted);overflow-wrap:anywhere}
+.ilb-sources a{color:var(--blue)}
+
+/* ——— Columna lateral ——— */
+.ilb-aside{display:grid;gap:18px;align-content:start}
+.ilb-card{border:1px solid var(--line);border-radius:16px;padding:18px;background:#fff}
+.ilb-card h2,.ilb-card h3{margin:0 0 10px;font:800 13px/1.3 Manrope,Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.ilb-card ul{margin:0;padding:0;list-style:none}
+.ilb-card li + li{margin-top:12px;padding-top:12px;border-top:1px solid var(--line)}
+.ilb-card a{display:block;font:700 14.5px/1.42 Manrope,Arial,sans-serif;text-decoration:none;color:var(--ink)}
+.ilb-card a:hover{color:var(--green-dark)}
+.ilb-card small{display:block;margin-top:4px;font-size:12px;line-height:1.45;color:var(--muted)}
+.ilb-card .ilb-card-cta{display:flex;align-items:center;justify-content:center;min-height:46px;margin-top:14px;border-radius:12px;background:var(--ink);color:#fff!important;font-weight:800;text-decoration:none!important}
+.ilb-card .ilb-card-cta:hover{background:var(--blue)}
+.ilb-card-visit,.ilb-card-social,.ilb-card-reviews{text-align:center}
+.ilb-card-social .ilb-social{justify-content:center}
+.ilb-card-visit h2{margin:0 0 8px;font:800 18px/1.25 var(--font-display);letter-spacing:-.01em;text-transform:none;color:var(--ink)}
+.ilb-card-visit .ilb-card-lead{margin:0;font-size:14.5px;line-height:1.58;color:var(--muted)}
+.ilb-card-visit .ilb-card-deposit{margin:10px 0 0;text-align:center;font:700 12.5px/1.4 Manrope,Arial,sans-serif;color:var(--green-dark)}
+.ilb-social{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.ilb-card .ilb-social li{margin:0!important;padding:0!important;border:0!important}
+.ilb-card .ilb-social a{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;border:0;color:#fff;box-shadow:0 2px 8px rgba(11,16,61,.14);transition:transform .2s ease,filter .2s ease}
+.ilb-card .ilb-social a:hover{color:#fff;transform:translateY(-2px);filter:brightness(1.08)}
+.ilb-social .ilb-soc-facebook{background:#1877F2}
+/* ——— tarjeta de clima del blog ——— */
+#ilbj .ilb-card-clima{padding:16px 16px 18px}
+#ilbj .ilb-card-clima h2{margin:0 0 12px}
+#ilbj .ilbc-now{display:flex;align-items:baseline;gap:8px}
+#ilbj .ilbc-ico{font-size:26px;line-height:1}
+#ilbj .ilbc-temp{font:800 30px/1 Outfit,Manrope,Arial,sans-serif;color:var(--ink)}
+#ilbj .ilbc-desc{font:700 12.5px/1.3 Manrope,Arial,sans-serif;color:var(--muted)}
+#ilbj .ilbc-grid{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:8px}
+#ilbj .ilbc-grid li{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:7px 0;border-top:1px solid var(--line)}
+#ilbj .ilbc-grid small{font:700 11px/1 Manrope,Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+#ilbj .ilbc-grid b{font:800 13px/1.2 Manrope,Arial,sans-serif;color:var(--ink);text-align:right}
+#ilbj .ilbc-note{margin:10px 0 12px;font:600 11.5px/1.4 Manrope,Arial,sans-serif;color:var(--muted)}
+#ilbj .ilb-card-clima .ilb-card-cta{display:inline-flex;align-items:center;justify-content:center;width:100%;min-height:40px;border-radius:10px;background:var(--green);color:#04240f;font:800 13.5px/1 Manrope,Arial,sans-serif;text-decoration:none}
+.ilb-social .ilb-soc-instagram{background:radial-gradient(circle at 30% 107%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285AEB 90%)}
+.ilb-social .ilb-soc-linkedin{background:#0A66C2}
+.ilb-social .ilb-soc-pinterest{background:#E60023}
+.ilb-social .ilb-soc-tiktok{background:#010101}
+.ilb-social .ilb-soc-x{background:#000}
+.ilb-social .ilb-soc-youtube{background:#FF0000}
+.ilb-social svg{display:block;width:18px;height:18px;fill:#fff}
+.ilb-reviews{height:360px;overflow-y:auto;overflow-x:hidden;scrollbar-width:none;-ms-overflow-style:none;overscroll-behavior:contain;border-radius:10px;background:#fff}
+.ilb-reviews::-webkit-scrollbar{display:none;width:0;height:0}
+.ilb-card-reviews iframe{display:block;width:100%;height:2180px;border:0;border-radius:10px;background:#fff}
+@media (min-width:601px) and (max-width:1023px){.ilb-card-reviews iframe{height:1520px}}
+@media (min-width:421px) and (max-width:600px){.ilb-card-reviews iframe{height:1720px}}
+.ilb-reviews-note{margin:8px 0 0!important;font-size:12px!important;text-align:center;color:var(--muted)!important}
+
+/* ——— Rejillas de índice ——— */
+.ilb-hero-side{display:grid;gap:14px}
+.ilb-hero-fig{margin:22px 0 0;max-width:620px;border-radius:16px;overflow:hidden;box-shadow:0 18px 40px rgba(11,16,61,.35)}
+.ilb-hero-fig img{display:block;width:100%;height:auto}
+.ilb-hero-fig svg{display:block;width:100%;height:auto}
+.ilb-hero-fig figcaption{padding:10px 14px;background:#0b103d;color:#a9b5d6;font:600 12.5px/1.5 Manrope,Arial,sans-serif;border-top:1px solid rgba(255,255,255,.08)}
+.ilb-hero-lite{background:linear-gradient(158deg,#213d8e,#11164b 60%,#0b103d);color:#fff;padding:34px 0 40px}
+.ilb-hero-hub .ilb-quick{margin:20px 0 0;max-width:680px;padding:16px 18px;background:rgba(255,255,255,.97);border:0;border-left:4px solid var(--green);text-align:center;box-shadow:0 20px 44px -30px rgba(0,0,0,.55)}
+.ilb-hero-hub .ilb-quick .ilb-quick-q{font-size:18px!important}
+.ilb-hero-hub .ilb-quick p{font-size:15.5px!important;line-height:1.6!important}
+.ilb-interlude{margin:40px 0 0;padding:22px;border:1px solid var(--line);border-radius:18px;background:var(--mist)}
+.ilb-interlude p{font-size:16.5px;line-height:1.7;color:#232a52}
+.ilb-interlude .ilb-scroll{margin-top:16px;background:#fff;border-radius:12px}
+.ilb-hero-lite h1{margin:14px 0 0;font-family:var(--font-display);font-weight:800;font-size:clamp(27px,4.6vw,44px);line-height:1.08;letter-spacing:-.04em;max-width:26ch}
+.ilb-hero-lite p{margin:14px 0 0;max-width:62ch;color:rgba(255,255,255,.8);font-size:16px;line-height:1.62}
+.ilb-cards{display:grid;gap:14px;margin-top:26px}
+.ilb-gridcards{display:grid;gap:var(--space-4);margin:var(--space-4) 0 0;padding:0;list-style:none}
+.ilb-gridcard{
+  position:relative;display:flex;flex-direction:column;gap:0;
+  padding:0;border-radius:var(--r-md);overflow:hidden;
+  border:1px solid var(--line);background:#fff;
+  box-shadow:0 20px 40px -32px rgba(11,16,61,.35),inset 0 1px 0 #fff;
+  text-decoration:none;color:inherit;
+  transition:translate .32s var(--spring),border-color .32s var(--ease),box-shadow .32s var(--ease);
+}
+/* La foto del servicio ocupa su propio bloque: el texto va debajo, nunca encima. */
+.ilb-gridcard-media{margin:0;aspect-ratio:16/10;overflow:hidden;background:#eef2f8;border-bottom:1px solid var(--line)}
+.ilb-gridcard-media img{display:block;width:100%;height:100%;object-fit:cover}
+.ilb-gridcard-body{display:flex;flex-direction:column;gap:6px;padding:15px 18px 18px;text-align:center}
+.ilb-gridcard:hover{translate:0 -4px;border-color:rgba(0,185,79,.55);box-shadow:0 30px 54px -30px rgba(11,16,61,.32),inset 0 1px 0 #fff}
+.ilb-gridcard h2,.ilb-gridcard h3{margin:0;font:800 17px/1.3 var(--font-display);letter-spacing:-.01em;color:var(--ink)}
+.ilb-gridcard p{margin:0;font-size:14.5px;line-height:1.55;color:var(--muted)}
+.ilb-gridcard-kicker{font:800 11px/1 var(--font-body);letter-spacing:.14em;text-transform:uppercase;color:var(--green-dark)}
+.ilb-section{padding:0}
+.ilb-section h2{margin:var(--space-8) 0 6px;font-family:var(--font-display);font-weight:800;font-size:clamp(21px,2.8vw,27px);letter-spacing:-.03em}
+.ilb-section > p{margin:0;color:var(--muted);font-size:15.5px;line-height:1.6}
+.ilb-count{font:800 12px/1 Manrope,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+
+/* ——— Responsive ——— */
+@media (min-width:760px){
+  .ilb-cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ilb-gridcards{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (min-width:1024px){
+  /* Desktop a todo lo ancho, con 40 px de margen lateral. */
+  .ilb-wrap{width:auto;max-width:none;margin-inline:0;padding-inline:55px}
+  #ilbj .ilb-hero-hub .ilb-wrap{padding-inline:55px}
+  #ilbj .ilbn-in{width:auto;max-width:none;margin-inline:0;padding-inline:55px}
+  #ilbj .ilbf-in,#ilbj .ilbf-bottom{width:auto;max-width:none;margin-inline:0;padding-inline:55px}
+  .ilb-grid{grid-template-columns:minmax(0,1fr) 340px;gap:48px;align-items:start}
+  .ilb-article{max-width:none}
+  .ilb-article :is(p,li){max-width:84ch}
+  .ilb-aside{position:sticky;top:96px}
+  .ilb-gridcards{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .ilb-hero{padding:46px 0 52px}
+}
+@media (max-width:600px){
+  .ilb-wrap{width:min(100% - 28px,1140px)}
+  .ilb-body{padding:var(--space-5) 0 var(--space-8)}
+  .ilb-article p{font-size:16.5px}
+  .ilb-table{min-width:0}
+  .ilb-table thead{display:none}
+  .ilb-table,.ilb-table tbody,.ilb-table tr,.ilb-table td,.ilb-table th{display:block;width:100%}
+  .ilb-table tr{padding:12px 14px;border-bottom:1px solid var(--line)}
+  .ilb-table tr:last-child{border-bottom:0}
+  .ilb-table td,.ilb-table tbody th{border:0;padding:5px 0;white-space:normal;font-size:16px;line-height:1.55}
+  .ilb-table caption{display:block;width:100%;padding:12px 14px;font-size:13px;line-height:1.5}
+  .ilb-table td::before{
+    content:attr(data-label);display:block;
+    font:800 11.5px/1.4 Manrope,Arial,sans-serif;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--muted);margin-bottom:2px;
+  }
+  .ilb-table tbody th::before{content:none}
+  .ilb-panel{padding:20px}
+  .ilb-cta{padding:22px 18px}
+}
+@media (prefers-reduced-motion:reduce){
+  .ilb-btn:hover,.ilb-gridcard:hover{transform:none;translate:none}
+}
+
+/* ——— Portada del blog: sin padding lateral y bloque centrado ——— */
+.ilb-hero-hub{padding-left:0;padding-right:0;text-align:center}
+.ilb-hero-hub .ilb-wrap{padding-left:0;padding-right:0}
+.ilb-hero-hub .ilb-crumbs{justify-content:center}
+.ilb-hero-hub .ilb-eyebrow{margin-left:auto;margin-right:auto}
+.ilb-hero-hub h1,.ilb-hero-hub p{margin-left:auto;margin-right:auto}
+.ilb-hero-hub .ilb-hero-fig{margin:24px auto 0;max-width:980px;width:100%}
+
+/* La foto del hero acompaña al texto a la derecha en pantallas anchas. */
+@media (min-width:960px){
+  .ilb-hero-hub{text-align:left;min-height:calc(100vh - 64px);min-height:calc(100svh - 64px);display:flex;align-items:center}
+  .ilb-hero-hub .ilb-wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,470px);gap:20px 48px;align-items:center;width:100%}
+  .ilb-hero-copy{grid-column:1;min-width:0;align-self:center;padding:clamp(20px,3vh,32px) clamp(20px,2.2vw,34px)}
+  .ilb-hero-copy .ilb-dek{padding-block:2px}
+  .ilb-hero-copy .ilb-tags{padding-block:2px 0}
+  .ilb-hero-hub .ilb-crumbs{justify-content:flex-start}
+  .ilb-hero-hub .ilb-eyebrow{margin-left:0;margin-right:0}
+  .ilb-hero-hub h1,.ilb-hero-hub p{margin-left:0;margin-right:0}
+  .ilb-hero-side{grid-column:2;align-self:center;width:100%;display:grid;gap:16px}
+  .ilb-hero-side .ilb-hero-fig{grid-column:auto;grid-row:auto;margin:0;max-width:none;width:100%;border-radius:18px;box-shadow:0 26px 60px -30px rgba(0,0,0,.7)}
+  .ilb-hero-side .ilb-hero-fig img{width:100%;height:auto}
+  .ilb-hero-side .ilb-card-visit{box-shadow:0 24px 46px -26px rgba(0,0,0,.55)}
+}
+
+/* Hub de comparativas: una sección por grupo, a pantalla completa y centrada. */
+.ilb-hubsec{min-height:calc(100vh - 64px);min-height:calc(100svh - 64px);display:flex;flex-direction:column;justify-content:center}
+.ilb-hubsec>.ilb-count{margin-top:0}
+/* Carril horizontal: sin barra visible, arrastrable y con autoscroll. */
+.ilb-hubsec .ilb-gridcards{
+  display:flex;flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;gap:18px;
+  padding:16px 2px 20px;margin-inline:-2px;
+  scrollbar-width:none;-ms-overflow-style:none;
+  -webkit-overflow-scrolling:touch;touch-action:pan-x pan-y;
+  cursor:grab;overscroll-behavior-x:contain;
+}
+.ilb-hubsec .ilb-gridcards::-webkit-scrollbar{display:none;width:0;height:0}
+/* Los dos bordes del carril se funden con el fondo blanco. */
+.ilb-hubsec .ilb-gridcards{
+  -webkit-mask-image:linear-gradient(to right,transparent 0,#000 44px,#000 calc(100% - 44px),transparent 100%);
+  mask-image:linear-gradient(to right,transparent 0,#000 44px,#000 calc(100% - 44px),transparent 100%);
+}
+.ilb-hubsec .ilb-gridcards:focus-visible{outline:2px solid var(--green);outline-offset:4px}
+.ilb-hubsec .ilb-gridcards.is-dragging{cursor:grabbing;user-select:none}
+.ilb-hubsec .ilb-gridcards.is-dragging .ilb-gridcard{pointer-events:none}
+.ilb-hubsec .ilb-gridcards>li{flex:0 0 clamp(260px,30vw,330px)}
+.ilb-hubsec .ilb-gridcards img{aspect-ratio:8/5;object-fit:cover}
+/* La tarjeta crece al pasar el mouse, sin empujar a las demás. */
+.ilb-hubsec .ilb-gridcard{
+  transform-origin:center bottom;
+  transition:transform .34s var(--spring),translate .32s var(--spring),border-color .32s var(--ease),box-shadow .32s var(--ease);
+  will-change:transform;
+}
+.ilb-hubsec .ilb-gridcard:hover,.ilb-hubsec .ilb-gridcard:focus-visible{
+  transform:scale(1.045);z-index:2;
+  border-color:rgba(0,185,79,.55);
+  box-shadow:0 34px 60px -30px rgba(11,16,61,.38),inset 0 1px 0 #fff;
+}
+@media (prefers-reduced-motion:reduce){
+  .ilb-hubsec .ilb-gridcard:hover,.ilb-hubsec .ilb-gridcard:focus-visible{transform:none}
+}
+
+/* ——— menú del blog ——— */
+#ilbj .ilbn{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line)}
+#ilbj .ilbn-in{width:min(100% - 24px,1140px);margin-inline:auto;display:flex;align-items:center;flex-wrap:nowrap;gap:clamp(6px,1.2vw,12px);min-height:64px;padding:8px 0;min-width:0} /* ILATEK:NAV-ONE-LINE */
+#ilbj .ilbn-brand{display:inline-flex;align-items:center;gap:9px;flex:0 0 auto;text-decoration:none;color:var(--ink);font:800 15px/1.1 Outfit,Manrope,Arial,sans-serif}
+#ilbj .ilbn-brand img{width:34px;height:34px;border-radius:9px;object-fit:cover}
+#ilbj .ilbn-brand small{display:block;margin-top:2px;font:700 10px/1.2 Manrope,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+#ilbj .ilbn-links{display:flex;flex-wrap:nowrap;gap:2px;margin-left:auto;min-width:0;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
+#ilbj .ilbn-links::-webkit-scrollbar{display:none}
+#ilbj .ilbn-links a{flex:0 0 auto;padding:clamp(6px,1.1vw,9px) clamp(7px,1.4vw,12px);border-radius:10px;font:700 clamp(11.5px,2.9vw,13.5px)/1 Manrope,Arial,sans-serif;color:var(--muted);text-decoration:none;white-space:nowrap}
+#ilbj .ilbn-links a:hover{background:var(--mist);color:var(--ink)}
+#ilbj .ilbn-links a[aria-current]{background:var(--blue-soft);color:var(--blue)}
+#ilbj .ilbn-cta{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;min-height:40px;padding:0 clamp(10px,2.4vw,15px);border-radius:10px;background:var(--green);color:#04240f;font:800 13.5px/1 Manrope,Arial,sans-serif;text-decoration:none}
+#ilbj .ilbn-cta:hover{background:var(--green-dark);color:#fff}
+@media (max-width:660px){
+  #ilbj .ilbn-brand span{display:none}
+  #ilbj .ilbn-in{gap:8px}
+  #ilbj .ilbn-cta{padding:0 12px}
+}
+/* ——— pie del blog ——— */
+#ilbj .ilbf{margin-top:56px;background:var(--deep);color:#c9d3ee}
+#ilbj .ilbf-in{width:min(100% - 36px,1140px);margin-inline:auto;display:grid;gap:26px;padding:40px 0 0;grid-template-columns:1fr}
+@media (min-width:780px){#ilbj .ilbf-in{grid-template-columns:1.6fr 1fr 1fr}}
+#ilbj .ilbf img{width:46px;height:46px;border-radius:12px;object-fit:cover}
+#ilbj .ilbf p{margin:10px 0 0;max-width:36ch;font:400 13.5px/1.65 Manrope,Arial,sans-serif;color:#a9b5d6}
+#ilbj .ilbf h2{margin:0 0 10px;font:800 11px/1 Manrope,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#fff}
+#ilbj .ilbf ul{list-style:none;margin:0;padding:0;display:grid;gap:7px}
+#ilbj .ilbf a{color:#c9d3ee;text-decoration:none;font:600 13.5px/1.5 Manrope,Arial,sans-serif}
+#ilbj .ilbf a:hover{color:#fff;text-decoration:underline}
+#ilbj .ilbf-web a{color:#7fe3a6;font-weight:800}
+#ilbj .ilbf-tel{margin-top:8px}
+#ilbj .ilbf-tel a{font:800 15px/1.4 Manrope,Arial,sans-serif;color:#fff}
+#ilbj .ilbf-bottom{width:min(100% - 36px,1140px);margin:26px auto 0;padding:16px 0 30px;border-top:1px solid rgba(255,255,255,.12);display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;justify-content:space-between;font:600 12.5px/1.5 Manrope,Arial,sans-serif;color:#93a0c4}
+#ilbj .ilbf-bottom a{color:#c9d3ee}
+/* ——— ilustración del artículo ——— */
+#ilbj .ilb-fig{margin:24px 0 0;border-radius:16px;overflow:hidden;background:#0b103d;box-shadow:0 18px 40px rgba(11,16,61,.28)}
+#ilbj .ilb-fig svg{display:block;width:100%;height:auto}
+#ilbj .ilb-fig figcaption{padding:10px 14px;background:#0b103d;color:#a9b5d6;font:600 12.5px/1.5 Manrope,Arial,sans-serif}
+/* ——— header compacto en móvil: envuelve enlaces y deja margen al CTA ——— */
+@media (max-width:700px){ #ilbj .ilbn-in{width:min(100% - 20px,1140px);flex-wrap:nowrap;gap:6px;padding:8px 0;min-height:56px} #ilbj .ilbn-brand span{display:none} #ilbj .ilbn-links{order:0;flex:1 1 auto;width:auto;min-width:0;margin:0 0 0 auto;padding-top:0;border-top:0;overflow-x:auto;overflow-y:hidden;flex-wrap:nowrap;gap:2px} #ilbj .ilbn-links a{flex:0 0 auto;display:inline-flex;align-items:center;min-height:36px;padding:7px 8px;white-space:nowrap;text-align:left} #ilbj .ilbn-cta{margin-left:0;padding:0 11px;min-height:36px} #ilbj .ilb-article h2,#ilbj .ilb-article h3{scroll-margin-top:120px}}
+@media (max-width:420px){ #ilbj .ilbn-links{gap:0} #ilbj .ilbn-links a{font-size:11.5px;padding:7px 5px} #ilbj .ilbn-brand img{width:30px;height:30px} #ilbj .ilbn-cta{padding:0 9px;font-size:11.5px}}
+
+</style>
+<style id="ilbc-form-css">
+#ilbj .ilbc-form{margin:12px 0 0;display:grid;gap:8px}
+#ilbj .ilbc-form p{margin:0;font:600 12.5px/1.4 Manrope,Arial,sans-serif;color:#5a6480}
+#ilbj .ilbc-form input{width:100%;min-height:42px;padding:10px 12px;border-radius:10px;border:1px solid #dbe2f1;background:#fff;font:500 14px/1.2 Manrope,Arial,sans-serif;color:#11164b}
+#ilbj .ilbc-form input:focus{outline:2px solid #009640;outline-offset:1px}
+#ilbj .ilbc-form button{min-height:44px;border:0;border-radius:10px;background:#009640;color:#fff;font:700 14px/1 Manrope,Arial,sans-serif;cursor:pointer}
+#ilbj .ilbc-form button[disabled]{opacity:.6;cursor:progress}
+#ilbj .ilbc-form .ilbc-msg{font-size:12.5px;color:#b33b39;min-height:16px}
+#ilbj .ilbc-form .ilbc-msg.ok{color:#009640}
+#ilbj .ilbc-ok{padding:12px;border-radius:10px;background:#eef9f1;box-shadow:inset 0 0 0 1px #b9e6c8;font:600 13px/1.45 Manrope,Arial,sans-serif;color:#0d5c2c}
+</style>
+<style id="ilbn-v2">
+#ilatek-nav .ilbn-login{display:inline-flex;align-items:center;min-height:40px;padding:0 4px;font:600 14px/1 Manrope,Arial,sans-serif;color:#213d8e}
+#ilatek-nav .ilbn-ctas{display:flex;align-items:center;gap:8px;margin-left:auto}
+#ilatek-nav .ilbn-cta-alt{background:#fff;color:#11164b;box-shadow:inset 0 0 0 1.5px #dbe2f1}
+#ilatek-nav .ilbn-lang{display:inline-flex;align-items:center;gap:2px;min-height:36px;padding:0 10px;border-radius:999px;background:#f4f7fc;box-shadow:inset 0 0 0 1px #dbe2f1;font:700 12px/1 Manrope,Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#11164b;text-decoration:none}
+#ilatek-nav .ilbn-lang b{color:#009640}
+#ilatek-nav .ilbn-lang[aria-disabled="true"]{opacity:.55;cursor:not-allowed}
+@media(max-width:900px){
+ #ilatek-nav .ilbn-login{display:none}
+ #ilatek-nav .ilbn-ctas{gap:6px}
+ #ilatek-nav .ilbn-cta{padding:0 12px;font-size:13px}
+}
+</style>
+<section id="ilatek-nav" class="ilbn" aria-label="Menú del blog">
+  <div class="ilbn-in">
+    <a class="ilbn-brand" href="https://{{custom_values.website_url}}/blog" data-ilatek-path="/blog" aria-label="Blog de Ilatek, inicio"><img fetchpriority="high" loading="eager" src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aa1c05dd953a0128b5348c2.jpg" alt="Ilatek Property Solution" width="34" height="34" decoding="async"><span>Blog<small>Ilatek</small></span></a>
+    <nav class="ilbn-links" aria-label="Secciones del blog">
+      <a href="https://{{custom_values.website_url}}/blog" data-ilatek-path="/blog">Blog</a>
+      <a href="https://{{custom_values.website_url}}/blog/comparativas" data-ilatek-path="/blog/comparativas">Comparativas</a>
+      <a href="https://{{custom_values.website_url}}/blog/preguntas-frecuentes" data-ilatek-path="/blog/preguntas-frecuentes">Preguntas frecuentes</a>
+      <a href="https://{{custom_values.website_url}}/blog/comunidades-y-servicios" data-ilatek-path="/blog/comunidades-y-servicios">Comunidades y servicios</a>
+    </nav>
+    <a class="ilbn-login" href="https://portal.ilatekpr.com" target="_blank" rel="noopener">Login</a>
+    <div class="ilbn-ctas"><a class="ilbn-cta" href="https://{{custom_values.website_url}}/cotizacion-techos" data-ilatek-path="/cotizacion-techos">Techos</a><a class="ilbn-cta ilbn-cta-alt" href="https://{{custom_values.website_url}}/cotizacion" data-ilatek-path="/cotizacion">Limpieza</a></div>
+    <span class="ilbn-lang" aria-disabled="true" title="Versión en inglés en preparación" lang="en">EN</span>
+  </div>
+</section>
+<main id="ilb-main">
+<header class="ilb-hero-lite ilb-hero-hub">
+  <div class="ilb-wrap">
+    <div class="ilb-hero-copy">
+      <nav class="ilb-crumbs" aria-label="Ruta de navegación"><a href="https://{{custom_values.website_url}}/home" data-ilatek-path="/home">Ilatek</a><span aria-hidden="true">›</span><a href="https://{{custom_values.website_url}}/blog" data-ilatek-path="/blog">Blog</a><span aria-hidden="true">›</span><a href="https://{{custom_values.website_url}}/blog/comparativas" data-ilatek-path="/blog/comparativas">Comparativas</a><span aria-hidden="true">›</span><span aria-current="page">¿Cómo se sella un techo de asfalto?</span></nav>
+      <p class="ilb-eyebrow">Por tipo de techo</p>
+      <h1>¿Cómo se sella un techo de asfalto?</h1>
+      <p class="ilb-dek">Qué sistema pide un techo de asfalto en Puerto Rico, qué se revisa antes de aplicar y qué errores convierten un buen trabajo en una filtración al año.</p>
+      <ul class="ilb-tags"><li>Membrana asfáltica</li><li>Silicona 100%</li><li>Acrílico elastomérico</li><li>Puerto Rico</li><li>Precio publicado</li></ul>
+      
+    </div>
+    <div class="ilb-hero-side"><figure class="ilb-hero-fig ilb-hero-fig-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" width="1200" height="660" role="img" aria-labelledby="ilbfig-t">
+  <title id="ilbfig-t">Membrana asfáltica y Silicona 100%</title>
+  <defs>
+    <linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b103d"/><stop offset="1" stop-color="#1a2a6c"/>
+    </linearGradient>
+    <pattern id="malla" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#ffffff" stroke-opacity=".05"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="660" fill="url(#fondo)"/>
+  <rect width="1200" height="660" fill="url(#malla)"/>
+  <text x="80" y="104" fill="#7fe3a6" font-family="Manrope,Arial,sans-serif" font-size="15" font-weight="800" letter-spacing="3">CORTE DEL SISTEMA</text>
+  <text x="80" y="158" fill="#ffffff" font-family="Outfit,Manrope,Arial,sans-serif" font-size="42" font-weight="700">Membrana asfáltica y Silicona 100%</text>
+  <line x1="80" y1="196" x2="1120" y2="196" stroke="#ffffff" stroke-opacity=".14"/>
+  <g>
+    <rect x="80" y="250.0" width="488" height="34.6" fill="#5a5f72" rx="3"/><rect x="80" y="250.0" width="488" height="34.6" fill="none" stroke="#0b103d" stroke-opacity=".18" rx="3"/><circle cx="88.0" cy="254.0" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="125.0" cy="267.0" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="162.0" cy="280.0" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="199.0" cy="266.4" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="236.0" cy="279.4" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="273.0" cy="265.8" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="310.0" cy="278.8" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="347.0" cy="265.2" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="384.0" cy="278.2" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="421.0" cy="264.5" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="458.0" cy="277.5" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="495.0" cy="263.9" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="532.0" cy="276.9" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="97.0" cy="263.3" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="134.0" cy="276.3" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="171.0" cy="262.7" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="208.0" cy="275.7" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="245.0" cy="262.1" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="282.0" cy="275.1" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="319.0" cy="261.5" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="356.0" cy="274.5" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="393.0" cy="260.8" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="430.0" cy="273.8" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="467.0" cy="260.2" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="504.0" cy="273.2" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="541.0" cy="259.6" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="106.0" cy="272.6" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="143.0" cy="259.0" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="180.0" cy="272.0" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="217.0" cy="258.4" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="254.0" cy="271.4" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="291.0" cy="257.8" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="328.0" cy="270.8" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="365.0" cy="257.2" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="402.0" cy="270.2" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="439.0" cy="256.5" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="476.0" cy="269.5" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="513.0" cy="255.9" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="550.0" cy="268.9" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="115.0" cy="255.3" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="152.0" cy="268.3" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="189.0" cy="254.7" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="226.0" cy="267.7" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="263.0" cy="254.1" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="300.0" cy="267.1" r="1.6" fill="#8d93a8" opacity=".7"/><circle cx="337.0" cy="280.1" r="1.6" fill="#8d93a8" opacity=".7"/><rect x="80" y="284.6" width="488" height="86.5" fill="#20263a" rx="3"/><rect x="80" y="284.6" width="488" height="86.5" fill="none" stroke="#0b103d" stroke-opacity=".18" rx="3"/><rect x="80" y="371.2" width="488" height="34.6" fill="#3a4157" rx="3"/><rect x="80" y="371.2" width="488" height="34.6" fill="none" stroke="#0b103d" stroke-opacity=".18" rx="3"/><rect x="80" y="405.8" width="488" height="144.2" fill="#c9d3ee" rx="0"/><rect x="80" y="405.8" width="488" height="144.2" fill="none" stroke="#0b103d" stroke-opacity=".18" rx="3"/>
+    <text x="80" y="234" fill="#ffffff" font-family="Manrope,Arial,sans-serif" font-size="21" font-weight="800">Membrana asfáltica</text>
+  </g>
+<g>
+    <rect x="632" y="250.0" width="488" height="113.5" fill="#00b94f" rx="3"/><rect x="632" y="250.0" width="488" height="113.5" fill="none" stroke="#0b103d" stroke-opacity=".18" rx="3"/><rect x="632" y="363.5" width="488" height="35.1" fill="#8bdcae" rx="3"/><rect x="632" y="363.5" width="488" height="35.1" fill="none" stroke="#0b103d" stroke-opacity=".18" rx="3"/><rect x="632" y="398.6" width="488" height="151.4" fill="#c9d3ee" rx="0"/><rect x="632" y="398.6" width="488" height="151.4" fill="none" stroke="#0b103d" stroke-opacity=".18" rx="3"/>
+    <text x="632" y="234" fill="#ffffff" font-family="Manrope,Arial,sans-serif" font-size="21" font-weight="800">Silicona 100%</text>
+  </g>
+  <g>
+    <circle cx="600" cy="400" r="30" fill="#ffffff" fill-opacity=".08" stroke="#ffffff" stroke-opacity=".22"/>
+    <text x="600" y="408" text-anchor="middle" fill="#ffffff" font-family="Manrope,Arial,sans-serif" font-size="17" font-weight="800" letter-spacing="1">vs</text>
+  </g>
+  <text x="80" y="616" fill="#93a0c4" font-family="Manrope,Arial,sans-serif" font-size="15" font-weight="600">Ilatek Property Solution · Puerto Rico · precios publicados por cada empresa, con fuente</text>
+</svg><figcaption>Corte del sistema, de la superficie a la losa.</figcaption></figure><div class="ilb-card ilb-card-visit">
+  <h2>Revisión de tu techo</h2>
+  <p class="ilb-card-lead">Un técnico sube al techo, revisa de dónde viene el agua y te dice qué necesita.</p>
+  <a class="ilb-card-cta" href="https://{{custom_values.website_url}}/cotizacion-techos" data-ilatek-path="/cotizacion-techos">Pedir revisión</a>
+  <p class="ilb-card-deposit">$50 de depósito descontable</p>
+</div></div>
+  </div>
+</header>
+<div class="ilb-body">
+<div class="ilb-wrap ilb-grid">
+<article class="ilb-article">
+<div class="ilb-quick"><h2>Respuesta corta</h2><p>En asfalto manda la compatibilidad química: el producto equivocado obliga a remover.</p></div>
+<details class="ilb-toc"><summary>En esta página</summary>
+  <ol><li><a href="https://{{custom_values.website_url}}/blog/sellado-de-techo-de-asfalto#comparacion" data-ilatek-path="/blog/sellado-de-techo-de-asfalto#comparacion" data-ilatek-anchor="comparacion">Comparación de un vistazo</a></li><li><a href="https://{{custom_values.website_url}}/blog/sellado-de-techo-de-asfalto#que-es-cada-sistema" data-ilatek-path="/blog/sellado-de-techo-de-asfalto#que-es-cada-sistema" data-ilatek-anchor="que-es-cada-sistema">Qué es cada sistema</a></li><li><a href="https://{{custom_values.website_url}}/blog/sellado-de-techo-de-asfalto#ventajas-y-desventajas" data-ilatek-path="/blog/sellado-de-techo-de-asfalto#ventajas-y-desventajas" data-ilatek-anchor="ventajas-y-desventajas">Ventajas y desventajas</a></li><li><a href="https://{{custom_values.website_url}}/blog/sellado-de-techo-de-asfalto#precio-publicado" data-ilatek-path="/blog/sellado-de-techo-de-asfalto#precio-publicado" data-ilatek-anchor="precio-publicado">Precio publicado</a></li><li><a href="https://{{custom_values.website_url}}/blog/sellado-de-techo-de-asfalto#como-se-aplica" data-ilatek-path="/blog/sellado-de-techo-de-asfalto#como-se-aplica" data-ilatek-anchor="como-se-aplica">Cómo se aplica</a></li><li><a href="https://{{custom_values.website_url}}/blog/sellado-de-techo-de-asfalto#preguntas" data-ilatek-path="/blog/sellado-de-techo-de-asfalto#preguntas" data-ilatek-anchor="preguntas">Preguntas frecuentes</a></li><li><a href="https://{{custom_values.website_url}}/blog/sellado-de-techo-de-asfalto#preguntas-longtail" data-ilatek-path="/blog/sellado-de-techo-de-asfalto#preguntas-longtail" data-ilatek-anchor="preguntas-longtail">Preguntas y tabla</a></li></ol>
+</details>
+<section aria-labelledby="comparacion">
+<h2 id="comparacion">Comparación de un vistazo</h2>
+<div class="ilb-scroll"><table class="ilb-table">
+<caption>Datos publicados por los fabricantes y distribuidores el 2026-11-04.</caption><thead><tr><th scope="col">Sistema</th><th scope="col">Qué es</th><th scope="col">Duración publicada</th><th scope="col">Precio publicado</th></tr></thead><tbody><tr><th scope="row" data-label="Sistema"><strong>Membrana asfáltica</strong></th><td data-label="Qué es">Membrana asfáltica modificada en rollo, SBS o APP, con refuerzo de poliéster o fibra de vidrio.</td><td data-label="Duración publicada">Danosa publica 16 a 21 años citando literatura técnica, y 25 o más con mantenimiento.</td><td data-label="Precio publicado">Danosa publica de $3 a $10 por pie cuadrado instalado como promedio de la industria en Puerto Rico.</td></tr><tr><th scope="row" data-label="Sistema"><strong>Silicona 100%</strong></th><td data-label="Qué es">Silicona pura de curado por humedad, de un solo componente y sin solventes.</td><td data-label="Duración publicada">WindMar publica 20 a 25 años. Danosa sostiene que no existe un estudio independiente que lo respalde, así que ese dato es el máximo del rango publicado, no una garantía.</td><td data-label="Precio publicado">SIL HS de Bull-Bond a $220 la paila en Conspro. King of Silicone de Cintrón a $269 los 5 galones. Instalado, WindMar publica $3.50 a $6.50 por pie cuadrado.</td></tr><tr><th scope="row" data-label="Sistema"><strong>Acrílico elastomérico</strong></th><td data-label="Qué es">Recubrimiento acrílico elastomérico en emulsión de agua, con pigmento blanco reflectivo.</td><td data-label="Duración publicada">WindMar publica 7 a 10 años. La llamada pintura de cubeta, que no es un elastomérico, rinde 1 a 2 años.</td><td data-label="Precio publicado">TOP SEAL a $175, PRO ONE entre $32 y $125 y PRO FLEX a $99 en Conspro. La Maravilla desde $99 en Cintrón. Instalado, WindMar publica $1.80 a $3.50 por pie cuadrado.</td></tr></tbody></table></div>
+</section>
+<section aria-labelledby="que-es-cada-sistema">
+<h2 id="que-es-cada-sistema">Qué es cada sistema</h2>
+
+<h3>Membrana asfáltica</h3>
+<p>Membrana asfáltica modificada en rollo, SBS o APP, con refuerzo de poliéster o fibra de vidrio. Se aplica en una base y una capa de acabado, o una sola capa si el producto lo permite. Se instala con soplete o autoadhesiva.</p><p><strong>Cobertura:</strong> Se calcula por rollo y por traslape. No se aplica a mano ni por galón. <strong>Duración publicada:</strong> Danosa publica 16 a 21 años citando literatura técnica, y 25 o más con mantenimiento.</p><p><strong>Garantía:</strong> 5, 10 o hasta 20 años según la configuración, siempre con instalador certificado, registro dentro de 30 días e inspección anual.</p>
+
+<h3>Silicona 100%</h3>
+<p>Silicona pura de curado por humedad, de un solo componente y sin solventes. Se aplica en una o dos manos sobre imprimador. En juntas y remates se refuerza con malla de poliéster.</p><p><strong>Cobertura:</strong> Bull-Bond SIL HS se vende por paila. El King of Silicone de Cintrón declara 170 a 200 pies cuadrados por paila de 5 galones. <strong>Duración publicada:</strong> WindMar publica 20 a 25 años. Danosa sostiene que no existe un estudio independiente que lo respalde, así que ese dato es el máximo del rango publicado, no una garantía.</p><p><strong>Garantía:</strong> Bull-Bond ofrece garantía anti-filtración de 4, 5, 7 o 10 años, renovable si se solicita a tiempo. Cintrón promete garantía extendida según contrato cuando ellos instalan.</p>
+
+<h3>Acrílico elastomérico</h3>
+<p>Recubrimiento acrílico elastomérico en emulsión de agua, con pigmento blanco reflectivo. Se aplica en dos manos como mínimo: una de base y una de acabado. Las grietas se refuerzan con malla.</p><p><strong>Cobertura:</strong> Varía por marca. Cintrón vende La Maravilla desde el galón. El acrílico de 100% sólidos de Marín Membrana se ha anunciado a $140 por 250 pies cuadrados a dos manos. <strong>Duración publicada:</strong> WindMar publica 7 a 10 años. La llamada pintura de cubeta, que no es un elastomérico, rinde 1 a 2 años.</p><p><strong>Garantía:</strong> Depende del fabricante y del instalador. No hay una garantía única de la familia.</p>
+
+</section>
+<section aria-labelledby="ventajas-y-desventajas">
+<h2 id="ventajas-y-desventajas">Ventajas y desventajas reales</h2>
+
+<div class="ilb-scroll"><table class="ilb-table">
+<caption>Resumen de lo que cada sistema resuelve y de lo que no.</caption><thead><tr><th scope="col">Sistema</th><th scope="col">A favor</th><th scope="col">En contra</th></tr></thead><tbody><tr><th scope="row" data-label="Sistema"><strong>Membrana asfáltica</strong></th><td data-label="A favor"><ul style="margin:0;padding-left:18px"><li>Es el sistema con más respaldo técnico y certificaciones de viento</li><li>El espesor es verificable, no depende de cuántas manos dio el aplicador</li><li>Muy duradero en losas grandes</li><li>Tiene garantías de fabricante de hasta 20 años</li></ul></td><td data-label="En contra"><ul style="margin:0;padding-left:18px"><li>Exige instalador certificado o la garantía no aplica</li><li>Es invasivo: normalmente hay que remover el material viejo</li><li>No se instala sobre superficie húmeda</li><li>El costo inicial es de los más altos</li></ul></td></tr><tr><th scope="row" data-label="Sistema"><strong>Silicona 100%</strong></th><td data-label="A favor"><ul style="margin:0;padding-left:18px"><li>Forma una sola capa continua, sin costuras ni traslapes</li><li>Resiste agua empozada mejor que cualquier acrílico</li><li>No alimenta moho ni hongos, porque no tiene material orgánico</li><li>Aguanta muy bien la expansión y contracción térmica de la losa</li></ul></td><td data-label="En contra"><ul style="margin:0;padding-left:18px"><li>No respira: si la losa no está seca, atrapa humedad adentro</li><li>Exige una limpieza y un secado que casi nadie hace completo</li><li>No se puede aplicar sobre techo mojado ni con lluvia cerca</li><li>Es el sistema con el precio por pie cuadrado más alto</li></ul></td></tr><tr><th scope="row" data-label="Sistema"><strong>Acrílico elastomérico</strong></th><td data-label="A favor"><ul style="margin:0;padding-left:18px"><li>Respira y deja salir la humedad de la losa</li><li>Se aplica rápido con bomba o rodillo</li><li>Acabado blanco que baja la temperatura del techo</li><li>El costo inicial más bajo de los sistemas con garantía</li></ul></td><td data-label="En contra"><ul style="margin:0;padding-left:18px"><li>Menos elástico que la silicona ante el movimiento de la losa</li><li>La adhesión cae en picada si la superficie está húmeda</li><li>Necesita mantenimiento más seguido</li><li>No sella juntas estructurales ni grietas activas</li></ul></td></tr></tbody></table></div>
+
+</section>
+<section aria-labelledby="precio-publicado">
+<h2 id="precio-publicado">Precio publicado y qué incluye</h2>
+
+<p>Estos son los precios que cada empresa publica en su propia tienda o página, verificados el <time datetime="2026-11-04">4 de noviembre de 2026</time>. Son precios de producto por paila o galón, no precios instalados por pie cuadrado, salvo donde la columna lo indique.</p>
+<div class="ilb-scroll"><table class="ilb-table">
+<caption>Precio de lista publicado por cada marca. No incluye mano de obra ni preparación.</caption><thead><tr><th scope="col">Marca y producto</th><th scope="col">Precio publicado</th><th scope="col">Unidad</th><th scope="col">Precio instalado publicado</th></tr></thead><tbody><tr><th scope="row" data-label="Marca y producto"><strong>Conspro</strong><small>SIL HS (silicona 100%)</small></th><td data-label="Precio publicado">$220.00</td><td data-label="Unidad">paila</td><td data-label="Precio instalado publicado">No publicado</td></tr><tr><th scope="row" data-label="Marca y producto"><strong>Conspro</strong><small>TOP SEAL (elastomérico)</small></th><td data-label="Precio publicado">$175.00</td><td data-label="Unidad">paila</td><td data-label="Precio instalado publicado">No publicado</td></tr><tr><th scope="row" data-label="Marca y producto"><strong>Conspro</strong><small>DUROSEAL Membrana</small></th><td data-label="Precio publicado">$110.00</td><td data-label="Unidad">paila</td><td data-label="Precio instalado publicado">No publicado</td></tr><tr><th scope="row" data-label="Marca y producto"><strong>Conspro</strong><small>DUROSEAL Yellow Primer</small></th><td data-label="Precio publicado">$70.00</td><td data-label="Unidad">paila</td><td data-label="Precio instalado publicado">No publicado</td></tr><tr><th scope="row" data-label="Marca y producto"><strong>Cintrón Enterprise</strong><small>The King of Silicone (5 galones)</small></th><td data-label="Precio publicado">$269.00</td><td data-label="Unidad">paila</td><td data-label="Precio instalado publicado">No publicado</td></tr><tr><th scope="row" data-label="Marca y producto"><strong>Cintrón Enterprise</strong><small>Sistema Cintrón La Maravilla</small></th><td data-label="Precio publicado">desde $99.00</td><td data-label="Unidad">galón o paila</td><td data-label="Precio instalado publicado">No publicado</td></tr><tr><th scope="row" data-label="Marca y producto"><strong>Cintrón Enterprise</strong><small>Cintronator Base Coat</small></th><td data-label="Precio publicado">$237.00</td><td data-label="Unidad">paila</td><td data-label="Precio instalado publicado">No publicado</td></tr><tr><th scope="row" data-label="Marca y producto"><strong>Cintrón Enterprise</strong><small>Cintronator Top Coat</small></th><td data-label="Precio publicado">$325.00</td><td data-label="Unidad">paila</td><td data-label="Precio instalado publicado">No publicado</td></tr><tr><th scope="row" data-label="Marca y producto"><strong>Marín Membrana</strong><small>Base Coat</small></th><td data-label="Precio publicado">$247.00</td><td data-label="Unidad">paila (referencia de redes, no de su web)</td><td data-label="Precio instalado publicado">No publicado</td></tr><tr><th scope="row" data-label="Marca y producto"><strong>Marín Membrana</strong><small>Acrílico 100% sólidos</small></th><td data-label="Precio publicado">$140.00</td><td data-label="Unidad">250 pies cuadrados a dos manos (referencia de redes)</td><td data-label="Precio instalado publicado">No publicado</td></tr></tbody></table></div>
+<div class="ilb-note"><strong>Cómo leer esto:</strong> una paila más barata no es un techo más barato. Lo que decide el costo final es cuántas pailas consume el área, cuántas manos pide el sistema y cuánto cuesta la preparación. Si una marca no publica cobertura por área, pide la ficha técnica antes de comparar.</div>
+</section>
+<section aria-labelledby="cual-conviene">
+<h2 id="cual-conviene">Cuál conviene en tu techo</h2>
+
+<p><strong>Membrana asfáltica</strong> se justifica cuando losas planas grandes, techos comerciales, industriales e institucionales.. <strong>Silicona 100%</strong>, cuando losas planas, techos donde se empoza el agua, juntas, remates y uniones con pared..</p>
+<div class="ilb-note">Si tu techo tiene <a class="ilb-puente" href="https://{{custom_values.website_url}}/empozamiento-de-techos" data-ilatek-path="/empozamiento-de-techos">agua empozada</a>, remates abiertos o más de diez años sin mantenimiento, ninguno de los dos sistemas se elige por precio: primero se corrige la causa.</div>
+
+</section>
+<div class="ilb-panel">
+<h2>Ilatek Property Solution y la membrana asfáltica, silicona 100% y acrílico elastomérico</h2>
+<p>Trabajamos con membrana asfáltica, silicona 100% y acrílico elastomérico y con los demás sistemas que se venden en Puerto Rico. No somos afiliados de ninguna marca: la necesidad de tu techo va por encima de la etiqueta del producto.</p><p>Antes de cotizar subimos al techo, revisamos la causa y te decimos si de verdad necesitas reemplazar o si el problema se corrige con menos. Si el sistema que pides no le conviene a tu losa, se avisa antes de empezar el trabajo.</p>
+<ul><li>Inspección en el techo, no por teléfono ni por foto.</li><li>Corrección de la causa: grietas, pendiente, remates y anclajes.</li><li>Cotización por escrito con área, sistema, número de manos y garantía.</li><li>Garantía escrita y documentación fotográfica del antes y el después.</li></ul>
+<p style="margin-top:18px"><a href="https://{{custom_values.website_url}}/cotizacion-techos" data-ilatek-path="/cotizacion-techos" style="display:inline-flex;align-items:center;min-height:48px;padding:12px 20px;border-radius:12px;background:#00b94f;color:#04240f;font-weight:800;text-decoration:none">Agendar inspección de techos</a></p>
+</div>
+<section aria-labelledby="como-se-aplica">
+<h2 id="como-se-aplica">Cómo se aplica en un techo de Puerto Rico</h2>
+
+<p>El orden importa más que la marca. Este es el proceso que exige el sistema, no el que se puede acortar para cerrar el trabajo en un día.</p>
+<ol class="ilb-steps"><li><strong>Evaluación de la cubierta existente</strong>Se decide si hay que remover o si se puede recibir una capa nueva.</li><li><strong>Retiro y limpieza</strong>Se levanta el material suelto y se limpia la losa hasta el sustrato.</li><li><strong>Imprimador asfáltico</strong>Se aplica el imprimador y se deja curar según ficha.</li><li><strong>Base y capa de acabado</strong>Se instala la base con el traslape especificado y luego la capa de acabado.</li><li><strong>Registro de garantía</strong>Se documenta y se registra con el fabricante dentro del plazo que exige.</li></ol>
+
+</section>
+<section aria-labelledby="errores">
+<h2 id="errores">Los errores que arruinan este trabajo</h2>
+
+<ul><li>Exige instalador certificado o la garantía no aplica</li><li>Es invasivo: normalmente hay que remover el material viejo</li><li>No se instala sobre superficie húmeda</li><li>El costo inicial es de los más altos</li></ul>
+<div class="ilb-note">El error más caro de todos es aplicar sobre una superficie que no está seca. Si el pronóstico no da una ventana seca, se pospone: rehacer cuesta más que esperar.</div>
+
+</section>
+<section aria-labelledby="preguntas">
+<h3 id="preguntas">Preguntas frecuentes</h3>
+<div class="ilb-faq"><details>
+<summary><h4 class="ilb-faq-q">¿Cuánto cuesta sellar un techo en Puerto Rico?</h4></summary>
+<p>Depende del área, del material del techo y del sistema. Las cifras publicadas por empresas de la isla van de $3 a $10 por pie cuadrado instalado para membrana asfáltica, según Danosa, y de $1.80 a $6.50 para recubrimientos, según WindMar. Un techo de 1,200 pies cuadrados suele caer entre $4,200 y $7,800. Los trabajos de $1.75 a $2.75 por pie cuadrado que se ven en grupos de contratistas casi nunca incluyen garantía escrita.</p>
+</details><details>
+<summary><h4 class="ilb-faq-q">¿Qué diferencia hay entre sellar e impermeabilizar un techo?</h4></summary>
+<p>El sellado ataca puntos concretos: juntas, grietas, remates y uniones. La impermeabilización cubre toda la superficie con una capa continua. Si tu techo filtra por un solo punto, es sellado. Si filtra por varias áreas o el agua se empoza, es impermeabilización, y muchas veces hay que corregir la pendiente antes.</p>
+</details><details>
+<summary><h4 class="ilb-faq-q">¿Qué debe decir una garantía de sellado de techo?</h4></summary>
+<p>Área exacta cubierta, sistema y productos usados, años, qué anula la garantía, quién la respalda, si cubre mano de obra o solo material y cómo se reclama. Si el documento no dice el área y no nombra al responsable legal, no es una garantía: es una promesa. Guárdalo junto a las fotos del antes y el después.</p>
+</details></div>
+</section>
+<section aria-labelledby="preguntas-longtail">
+<h3 id="preguntas-longtail">Preguntas y tabla de esta página</h3>
+
+<div class="ilb-faq"><details>
+<summary><h4 class="ilb-faq-q">¿Qué se usa para sellar un techo de asfalto?</h4></summary>
+<p>Recubrimientos compatibles con asfalto: elastoméricos, silicona o una membrana asfáltica nueva encima si la vieja ya cumplió. La regla es no poner acrílico sobre asfalto caliente ni selladores de base distinta sin imprimador. Si el asfalto está agrietado en toda la superficie, la solución es capa nueva, no parche.</p>
+</details><details>
+<summary><h4 class="ilb-faq-q">¿Cuánto dura el sellado de techo de asfalto?</h4></summary>
+<p>Depende del sistema: silicona 100% 20 a 25 años, membrana asfaltica 10 a 15 años, poliuretano 10 a 15 años, acrilico 7 a 10 años. La duración real depende más de la preparación que del producto, y por eso la inspección previa define si el techo admite un recubrimiento o necesita corrección de pendiente y remates antes de aplicar.</p>
+</details></div>
+<div class="ilb-scroll"><table class="ilb-table">
+<caption>Qué debe decir la garantía antes de firmar.</caption><thead><tr><th scope="col">Documento</th><th scope="col">Qué debe incluir</th></tr></thead><tbody><tr><th scope="row" data-label="Documento">Área tratada</th><td data-label="Qué debe incluir">La superficie exacta y los pies cuadrados cubiertos.</td></tr><tr><th scope="row" data-label="Documento">Sistema aplicado</th><td data-label="Qué debe incluir">Nombre del sistema, productos y número de manos.</td></tr><tr><th scope="row" data-label="Documento">Plazo</th><td data-label="Qué debe incluir">Años por escrito; si no hay plazo, no es una garantía completa.</td></tr><tr><th scope="row" data-label="Documento">Exclusiones</th><td data-label="Qué debe incluir">Qué anula la garantía y qué daños no cubre.</td></tr><tr><th scope="row" data-label="Documento">Responsable</th><td data-label="Qué debe incluir">Quién firma y si cubre mano de obra o solo material.</td></tr><tr><th scope="row" data-label="Documento">Reclamo</th><td data-label="Qué debe incluir">Cómo se reporta una filtración y en cuánto tiempo se responde.</td></tr></tbody></table></div>
+
+</section>
+<section aria-labelledby="red">
+<h2 id="red">Guías relacionadas dentro de Ilatek</h2>
+
+<ul><li><a href="https://{{custom_values.website_url}}/blog/preguntas-frecuentes-sellado-de-techos-proceso" data-ilatek-path="/blog/preguntas-frecuentes-sellado-de-techos-proceso">Preguntas frecuentes: Proceso y aplicación</a></li><li><a href="https://{{custom_values.website_url}}/blog/comparativas" data-ilatek-path="/blog/comparativas">Todas las comparativas de sistemas de sellado</a></li><li><a href="https://{{custom_values.website_url}}/blog/comunidades-y-servicios" data-ilatek-path="/blog/comunidades-y-servicios">Comunidades y servicios de Ilatek en Puerto Rico</a></li><li><a href="https://{{custom_values.website_url}}/membrana-asfaltica" data-ilatek-path="/membrana-asfaltica">Servicio de membrana asfáltica con Ilatek</a></li><li><a href="https://{{custom_values.website_url}}/sellado-de-silicona" data-ilatek-path="/sellado-de-silicona">Servicio de silicona 100% con Ilatek</a></li></ul>
+
+</section>
+<div class="ilb-cta">
+<h2>Sella tu techo con membrana asfáltica, con garantía escrita</h2>
+<p>Cuéntanos qué techo tienes y qué está pasando. La inspección se hace en el techo y la cotización va por escrito, con el sistema, el número de manos y la garantía. Si tu techo no necesita lo que crees, te lo decimos.</p>
+<a class="ilb-btn" href="https://{{custom_values.website_url}}/cotizacion-techos" data-ilatek-path="/cotizacion-techos">Cotiza tu sellado con Ilatek</a>
+</div>
+<div class="ilb-legal">
+<p>Ilatek Property Solution no es afiliado, distribuidor ni representante de <strong>Conspro</strong>, <strong>Cintrón Enterprise</strong>, <strong>Marín Membrana</strong>. Los nombres comerciales y marcas citadas pertenecen a sus respectivos dueños y se mencionan solo con fines informativos y comparativos. Los precios son los publicados por cada empresa en su tienda o página pública el <time datetime="2026-11-04">4 de noviembre de 2026</time>, más IVU cuando así se indica, y pueden cambiar sin aviso. Este contenido no constituye una oferta de venta de esos productos ni una recomendación de compra.</p>
+
+</div>
+<div class="ilb-sources"><h2>Fuentes consultadas</h2>
+<ul><li><a href="https://{{custom_values.website_url}}/membrana-asfaltica" data-ilatek-path="/membrana-asfaltica" target="_blank" rel="noopener noreferrer nofollow">membrana asfáltica en Ilatek</a></li><li><a href="https://{{custom_values.website_url}}/sellado-de-silicona" data-ilatek-path="/sellado-de-silicona" target="_blank" rel="noopener noreferrer nofollow">Cómo trabajamos sellado de silicona</a></li><li><a href="https://{{custom_values.website_url}}/sellado-acrilico" data-ilatek-path="/sellado-acrilico" target="_blank" rel="noopener noreferrer nofollow">Cómo trabajamos sellado acrílico</a></li><li>Precios y fichas de cada marca seg&uacute;n su tienda o p&aacute;gina p&uacute;blica (sin enlace).</li><li><a href="https://{{custom_values.website_url}}/impermeabilizacion-de-techos" data-ilatek-path="/impermeabilizacion-de-techos" target="_blank" rel="noopener noreferrer nofollow">impermeabilización de techos en Ilatek</a></li><li><a href="https://{{custom_values.website_url}}/techos-de-asfalto" data-ilatek-path="/techos-de-asfalto" target="_blank" rel="noopener noreferrer nofollow">Cómo trabajamos techos de asfalto</a></li><li><a href="https://{{custom_values.website_url}}/sellado-de-techos" data-ilatek-path="/sellado-de-techos" target="_blank" rel="noopener noreferrer nofollow">Cómo trabajamos sellado de techos</a></li></ul>
+<p style="margin-top:8px;font-size:12.5px">Verificación de precios y fichas: <time datetime="2026-11-04">4 de noviembre de 2026</time>.</p>
+</div>
+</article>
+<aside class="ilb-aside" aria-label="Recursos del artículo">
+<div class="ilb-card ilb-card-clima" data-ilb-clima>
+  <h2>Clima para trabajar en el techo</h2>
+  <div class="ilbc-now"><span class="ilbc-ico" aria-hidden="true">⛅</span><b class="ilbc-temp">—</b><span class="ilbc-desc">Cargando…</span></div>
+  <ul class="ilbc-grid">
+    <li><small>Lluvia ahora</small><b class="ilbc-rain">—</b></li>
+    <li><small>Mejor ventana</small><b class="ilbc-win">—</b></li>
+    <li><small>Viento</small><b class="ilbc-wind">—</b></li>
+  </ul>
+  <p class="ilbc-note"><span class="ilbc-upd">Datos de Open-Meteo</span></p>
+  
+  <form class="ilbc-form" novalidate>
+    <p>Deja tu teléfono y te decimos cuándo conviene subir.</p>
+    <input name="name" type="text" placeholder="Tu nombre" autocomplete="given-name" required maxlength="60" aria-label="Tu nombre">
+    <input name="phone" type="tel" inputmode="tel" placeholder="(787) 000-0000" autocomplete="tel" required aria-label="Tu teléfono">
+    <input name="city" type="text" placeholder="Municipio" autocomplete="address-level2" maxlength="40" aria-label="Municipio">
+    <button type="submit">Que me llamen</button>
+    <p class="ilbc-msg" role="alert"></p>
+  </form>
+  <a class="ilb-card-cta" href="https://{{custom_values.website_url}}/cotizacion-techos" data-ilatek-path="/cotizacion-techos">Agendar inspección</a>
+  <script>
+  /* ILATEK:BLOG-CLIMA — tarjeta de clima del blog (Open-Meteo, San Juan) */
+  (function(){
+    if(window.__ilbClima) return; window.__ilbClima=1;
+    var W=[['clear','Despejado','☀️'],['partly','Parcialmente nublado','⛅'],['cloud','Nublado','☁️'],['fog','Neblina','🌫️'],['drizzle','Llovizna','🌦️'],['rain','Lluvia','🌧️'],['storm','Tormenta','⛈️']];
+    function code(c){ if(c===0) return W[0]; if(c<=2) return W[1]; if(c===3) return W[2]; if(c<=48) return W[3]; if(c<=57) return W[4]; if(c<=67) return W[5]; if(c<=82) return W[5]; if(c<=86) return W[5]; return W[6]; }
+    function cards(){ return [].slice.call(document.querySelectorAll('[data-ilb-clima]')); }
+    function paint(d){
+      var cur=d.current, h=d.hourly, now=new Date(), h0=Math.max(0, now.getHours());
+      var rain=(h.precipitation_probability&&h.precipitation_probability[h0])||0;
+      var temp=Math.round(cur.temperature_2m), wind=Math.round(cur.wind_speed_10m*0.621);
+      var w=code(cur.weather_code);
+      var hi=-1, best=101;
+      for(var i=8;i<=15;i++){ var m=Math.max(h.precipitation_probability[i]||0, h.precipitation_probability[i+1]||0, h.precipitation_probability[i+2]||0); if(m<best){best=m; hi=i;} }
+      var win = hi>=0 && best<60 ? (hi+':00–'+(hi+3)+':00 · '+best+'%') : 'sin ventana clara hoy';
+      cards().forEach(function(c){
+        var q=function(s){return c.querySelector(s)};
+        q('.ilbc-temp').textContent=temp+'°C';
+        q('.ilbc-desc').textContent=w[1];
+        q('.ilbc-ico').textContent=w[2];
+        q('.ilbc-rain').textContent=rain+'%';
+        q('.ilbc-win').textContent=win;
+        q('.ilbc-wind').textContent=wind+' mph';
+        var t=new Date(); q('.ilbc-upd').textContent='Open-Meteo · '+t.toLocaleTimeString('es-PR',{hour:'numeric',minute:'2-digit'});
+      });
+    }
+    if(!cards().length) return;
+    fetch('https://api.open-meteo.com/v1/forecast?latitude=18.4655&longitude=-66.1057&current=temperature_2m,relative_humidity_2m,weather_code,wind_speed_10m&hourly=precipitation_probability&timezone=America%2FPuerto_Rico&forecast_days=1')
+      .then(function(r){ return r.json(); }).then(paint).catch(function(){});
+  })();
+  </script>
+</div>
+<div class="ilb-card ilb-card-social">
+  <h2>Visita nuestras redes sociales</h2>
+  <ul class="ilb-social"><li><a class="ilb-soc-facebook" href="https://www.facebook.com/ilatek.pr/" target="_blank" rel="noopener" aria-label="Facebook de Ilatek Property Solution"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg></a></li>
+    <li><a class="ilb-soc-instagram" href="https://www.instagram.com/ilatek.pr/" target="_blank" rel="noopener" aria-label="Instagram de Ilatek Property Solution"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793 0 1.44.645 1.44 1.439z"/></svg></a></li>
+    <li><a class="ilb-soc-linkedin" href="https://www.linkedin.com/in/ilatekpr" target="_blank" rel="noopener" aria-label="LinkedIn de Ilatek Property Solution"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></li>
+    <li><a class="ilb-soc-pinterest" href="https://www.pinterest.com/ilatekpr/" target="_blank" rel="noopener" aria-label="Pinterest de Ilatek Property Solution"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z"/></svg></a></li>
+    <li><a class="ilb-soc-tiktok" href="https://www.tiktok.com/@ilatekpr" target="_blank" rel="noopener" aria-label="TikTok de Ilatek Property Solution"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a></li>
+    <li><a class="ilb-soc-x" href="https://x.com/ilatekpr" target="_blank" rel="noopener" aria-label="X de Ilatek Property Solution"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg></a></li>
+    <li><a class="ilb-soc-youtube" href="https://www.youtube.com/@ilatekpr" target="_blank" rel="noopener" aria-label="YouTube de Ilatek Property Solution"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a></li></ul>
+</div>
+<div class="ilb-card ilb-card-reviews">
+  <h2>Reseñas de Google</h2>
+  <div class="ilb-reviews"><iframe src="https://reputationhub.site/reputation/widgets/review_widget/8OxUENFVM60EKzqsTcoD" title="Reseñas de Google de Ilatek Property Solution" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  <p class="ilb-reviews-note"><a href="https://{{custom_values.website_url}}/resenas" data-ilatek-path="/resenas">Ver todas las reseñas</a></p>
+</div><script>
+/* ILATEK:REVIEWS-ADAPTIVE — caja fija; el loop recorre toda la altura real del widget. */
+(function(){
+  [].slice.call(document.querySelectorAll('.ilb-reviews')).forEach(function(box){
+    var ifr = box.querySelector('iframe');
+    if (!ifr) return;
+    var dir = 1, paused = false, last = 0, resume = null, pos = box.scrollTop, hActual = 0;
+    function max(){ return box.scrollHeight - box.clientHeight; }
+    function speed(m){ return Math.min(0.15, Math.max(0.03, m / 60000)); }
+    function setH(h){
+      h = Math.round(parseFloat(h));
+      if (!(h > 0) || h === hActual) return;
+      hActual = h;
+      ifr.style.setProperty('height', h + 'px', 'important');
+      var tries = 0;
+      (function check(){
+        if (tries++ > 4) return;
+        if (Math.abs(ifr.getBoundingClientRect().height - h) > 2) {
+          ifr.style.setProperty('height', h + 'px', 'important');
+          setTimeout(check, 150);
+        }
+      })();
+      var m = max();
+      if (pos > m) { pos = m; box.scrollTop = m; }
+    }
+    window.addEventListener('message', function(e){
+      var d = e.data;
+      var name = Array.isArray(d) ? d[0] : (d && (d.event || d.type));
+      var pay = Array.isArray(d) ? d[1] : d;
+      if (name === 'lc.setHeight' && pay && pay.id === 'lc_reviews_widget') setH(pay.height);
+    });
+    var cs = window.getComputedStyle ? parseFloat(window.getComputedStyle(ifr).height) : 0;
+    setH(cs || ifr.getBoundingClientRect().height || 2180);
+    if (window.MutationObserver) {
+      new MutationObserver(function(){ var h = parseFloat(ifr.getAttribute('height')); if (h > 0) setH(h); })
+        .observe(ifr, { attributes: true, attributeFilter: ['height'] });
+    }
+    box.addEventListener('pointerenter', function(){ paused = true; });
+    box.addEventListener('pointerleave', function(){ paused = false; pos = box.scrollTop; });
+    box.addEventListener('touchstart', function(){ paused = true; clearTimeout(resume); resume = setTimeout(function(){ paused = false; pos = box.scrollTop; }, 2200); }, { passive: true });
+    function tick(now){
+      if (!paused && !document.hidden) {
+        var m = max();
+        if (m > 4) {
+          if (!last) last = now;
+          var dt = Math.min(64, now - last);
+          pos += dir * dt * speed(m);
+          if (pos >= m - 0.5) { pos = m; dir = -1; } else if (pos <= 0.5) { pos = 0; dir = 1; }
+          box.scrollTop = pos;
+        }
+      }
+      last = now; requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  });
+})();
+</script>
+<div class="ilb-card"><h2>Preguntas frecuentes</h2><ul>
+<li><a href="https://{{custom_values.website_url}}/blog/preguntas-frecuentes-sellado-de-techos-proceso" data-ilatek-path="/blog/preguntas-frecuentes-sellado-de-techos-proceso">Proceso y aplicación</a><small>Respuestas cortas con precio, garantía y tipo de techo</small></li>
+</ul></div>
+<div class="ilb-card"><h2>Sigue leyendo</h2><ul>
+<li><a href="https://{{custom_values.website_url}}/blog/cuanto-cuesta-sellar-un-techo-en-puerto-rico" data-ilatek-path="/blog/cuanto-cuesta-sellar-un-techo-en-puerto-rico">¿Cuánto cuesta sellar un techo en Puerto Rico?</a><small>Guía práctica</small></li><li><a href="https://{{custom_values.website_url}}/blog/acrilico-elastomerico-vs-membrana-asfaltica" data-ilatek-path="/blog/acrilico-elastomerico-vs-membrana-asfaltica">¿Acrílico elastomérico o membrana asfáltica?</a><small>Comparativa de sistemas</small></li><li><a href="https://{{custom_values.website_url}}/blog/danosa-vs-windmar" data-ilatek-path="/blog/danosa-vs-windmar">¿Danosa o WindMar para sellar tu techo?</a><small>Comparativa de marcas</small></li><li><a href="https://{{custom_values.website_url}}/blog/cuanto-dura-el-sellado-de-un-techo" data-ilatek-path="/blog/cuanto-dura-el-sellado-de-un-techo">¿Cuánto dura el sellado de un techo?</a><small>Guía práctica</small></li>
+</ul></div>
+</aside>
+</div>
+</div>
+</main>
+<footer id="ilatek-footer" class="ilbf" aria-label="Pie del blog">
+  <div class="ilbf-in">
+    <div>
+      <a href="https://{{custom_values.website_url}}/" data-ilatek-path="/" aria-label="Ilatek Property Solution, ilatekpr.com"><img fetchpriority="high" src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aa1c05dd953a0128b5348c2.jpg" alt="Ilatek Property Solution" width="46" height="46" loading="eager" decoding="async"></a>
+      <p>Sellado e impermeabilización de techos en Puerto Rico. Comparamos sistemas y marcas con precios publicados y fuente. No somos afiliados de ninguna marca.</p>
+      <p class="ilbf-web"><a href="https://{{custom_values.website_url}}/" data-ilatek-path="/">ilatekpr.com</a></p>
+      <p class="ilbf-tel"><a href="tel:{{custom_values.business__phone}}">{{custom_values.business__phone}}</a></p>
+    </div>
+    <nav aria-label="Blog">
+      <h2>Blog</h2>
+      <ul>
+        <li><a href="https://{{custom_values.website_url}}/blog" data-ilatek-path="/blog">Blog</a></li>
+        <li><a href="https://{{custom_values.website_url}}/blog/comparativas" data-ilatek-path="/blog/comparativas">Comparativas</a></li>
+        <li><a href="https://{{custom_values.website_url}}/blog/preguntas-frecuentes" data-ilatek-path="/blog/preguntas-frecuentes">Preguntas frecuentes</a></li>
+        <li><a href="https://{{custom_values.website_url}}/blog/comunidades-y-servicios" data-ilatek-path="/blog/comunidades-y-servicios">Comunidades y servicios</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Servicios">
+      <h2>Servicios</h2>
+      <ul>
+        <li><a href="https://{{custom_values.website_url}}/sellado-de-techos" data-ilatek-path="/sellado-de-techos">Sellado de techos</a></li>
+        <li><a href="https://{{custom_values.website_url}}/impermeabilizacion-de-techos" data-ilatek-path="/impermeabilizacion-de-techos">Impermeabilización</a></li>
+        <li><a href="https://{{custom_values.website_url}}/reparacion-de-goteras" data-ilatek-path="/reparacion-de-goteras">Reparación de goteras</a></li>
+        <li><a href="https://{{custom_values.website_url}}/inspeccion-de-techos" data-ilatek-path="/inspeccion-de-techos">Inspección de techos</a></li>
+        <li><a href="https://{{custom_values.website_url}}/cotizacion-techos" data-ilatek-path="/cotizacion-techos">Cotización</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="ilbf-bottom">
+    <span>© 2026 Ilatek Property Solution · Hecho con 🤍 por <a href="https://devasks.com" target="_blank" rel="noopener">Devasks</a></span>
+    <span>Precios publicados por cada empresa, con fuente y fecha de verificación.</span>
+  </div>
+</footer>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://{{custom_values.website_url}}/home#organization","name":"Ilatek Property Solution","alternateName":"Ilatek Techos","url":"https://{{custom_values.website_url}}/home","logo":{"@type":"ImageObject","url":"https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aa1c05dd953a0128b5348c2.jpg"},"areaServed":{"@type":"State","name":"Puerto Rico"},"sameAs":["https://www.facebook.com/ilatek.pr/","https://www.instagram.com/ilatek.pr/","https://www.linkedin.com/in/ilatekpr","https://www.pinterest.com/ilatekpr/","https://www.tiktok.com/@ilatekpr","https://x.com/ilatekpr","https://www.youtube.com/@ilatekpr"],"contactPoint":[{"@type":"ContactPoint","telephone":"+1-787-561-7333","contactType":"customer service","areaServed":"PR","availableLanguage":["es","en"]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://{{custom_values.website_url}}/home#website","url":"https://{{custom_values.website_url}}/home","name":"Ilatek Property Solution","inLanguage":"es-PR","publisher":{"@id":"https://{{custom_values.website_url}}/home#organization"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://{{custom_values.website_url}}/blog/sellado-de-techo-de-asfalto#article","headline":"¿Cómo se sella un techo de asfalto?","description":"Qué se puede aplicar sobre un techo de asfalto y qué reacciona mal. Compatibilidad, imprimador, capa nueva y cuándo el parche ya no sirve.","url":"https://{{custom_values.website_url}}/blog/sellado-de-techo-de-asfalto","inLanguage":"es-PR","datePublished":"2026-11-04","dateModified":"2026-11-09","wordCount":2070,"articleSection":"Por tipo de techo","keywords":["sellado techo de asfalto","Membrana asfáltica","Silicona 100%","Acrílico elastomérico"],"image":{"@type":"ImageObject","@id":"https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/3d409818-9eea-4a75-9717-6da5cdfa69b5.webp#primaryimage","url":"https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/3d409818-9eea-4a75-9717-6da5cdfa69b5.webp","contentUrl":"https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/3d409818-9eea-4a75-9717-6da5cdfa69b5.webp","width":1200,"height":630,"caption":"Sellado de techo de asfalto: compatibilidad primero — Ilatek","name":"Sellado de techo de asfalto: compatibilidad primero — Ilatek"},"thumbnailUrl":"https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/3d409818-9eea-4a75-9717-6da5cdfa69b5.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://{{custom_values.website_url}}/blog/sellado-de-techo-de-asfalto"},"breadcrumb":{"@id":"https://{{custom_values.website_url}}/blog/sellado-de-techo-de-asfalto#breadcrumb"},"isPartOf":{"@id":"https://{{custom_values.website_url}}/blog#blog"},"author":{"@id":"https://{{custom_values.website_url}}/home#organization"},"publisher":{"@id":"https://{{custom_values.website_url}}/home#organization"},"about":[{"@type":"Thing","name":"Membrana asfáltica"},{"@type":"Thing","name":"Silicona 100%"},{"@type":"Thing","name":"Acrílico elastomérico"}],"mentions":[],"isAccessibleForFree":true}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Ilatek","item":"https://{{custom_values.website_url}}/home"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://{{custom_values.website_url}}/blog"},{"@type":"ListItem","position":3,"name":"Comparativas","item":"https://{{custom_values.website_url}}/blog/comparativas"},{"@type":"ListItem","position":4,"name":"¿Cómo se sella un techo de asfalto?","item":"https://{{custom_values.website_url}}/blog/sellado-de-techo-de-asfalto"}],"@id":"https://{{custom_values.website_url}}/blog/sellado-de-techo-de-asfalto#breadcrumb"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cuánto cuesta sellar un techo en Puerto Rico?","acceptedAnswer":{"@type":"Answer","text":"Depende del área, del material del techo y del sistema. Las cifras publicadas por empresas de la isla van de $3 a $10 por pie cuadrado instalado para membrana asfáltica, según Danosa, y de $1.80 a $6.50 para recubrimientos, según WindMar. Un techo de 1,200 pies cuadrados suele caer entre $4,200 y $7,800. Los trabajos de $1.75 a $2.75 por pie cuadrado que se ven en grupos de contratistas casi nunca incluyen garantía escrita."}},{"@type":"Question","name":"¿Qué diferencia hay entre sellar e impermeabilizar un techo?","acceptedAnswer":{"@type":"Answer","text":"El sellado ataca puntos concretos: juntas, grietas, remates y uniones. La impermeabilización cubre toda la superficie con una capa continua. Si tu techo filtra por un solo punto, es sellado. Si filtra por varias áreas o el agua se empoza, es impermeabilización, y muchas veces hay que corregir la pendiente antes."}},{"@type":"Question","name":"¿Qué debe decir una garantía de sellado de techo?","acceptedAnswer":{"@type":"Answer","text":"Área exacta cubierta, sistema y productos usados, años, qué anula la garantía, quién la respalda, si cubre mano de obra o solo material y cómo se reclama. Si el documento no dice el área y no nombra al responsable legal, no es una garantía: es una promesa. Guárdalo junto a las fotos del antes y el después."}},{"@type":"Question","name":"¿Qué se usa para sellar un techo de asfalto?","acceptedAnswer":{"@type":"Answer","text":"Recubrimientos compatibles con asfalto: elastoméricos, silicona o una membrana asfáltica nueva encima si la vieja ya cumplió. La regla es no poner acrílico sobre asfalto caliente ni selladores de base distinta sin imprimador. Si el asfalto está agrietado en toda la superficie, la solución es capa nueva, no parche."}},{"@type":"Question","name":"¿Cuánto dura el sellado de techo de asfalto?","acceptedAnswer":{"@type":"Answer","text":"Depende del sistema: silicona 100% 20 a 25 años, membrana asfaltica 10 a 15 años, poliuretano 10 a 15 años, acrilico 7 a 10 años. La duración real depende más de la preparación que del producto, y por eso la inspección previa define si el techo admite un recubrimiento o necesita corrección de pendiente y remates antes de aplicar."}}],"@id":"https://{{custom_values.website_url}}/blog/sellado-de-techo-de-asfalto#faq"}</script>
+
+<!-- ILATEK:NAV-SCHEMA:START -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","@id":"https://{{custom_values.website_url}}/blog#nav","name":"Menú del blog de Ilatek","numberOfItems":4,"itemListOrder":"https://schema.org/ItemListOrderAscending","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"SiteNavigationElement","name":"Blog","url":"https://{{custom_values.website_url}}/blog"}},{"@type":"ListItem","position":2,"item":{"@type":"SiteNavigationElement","name":"Comparativas","url":"https://{{custom_values.website_url}}/blog/comparativas"}},{"@type":"ListItem","position":3,"item":{"@type":"SiteNavigationElement","name":"Preguntas frecuentes","url":"https://{{custom_values.website_url}}/blog/preguntas-frecuentes"}},{"@type":"ListItem","position":4,"item":{"@type":"SiteNavigationElement","name":"Comunidades y servicios","url":"https://{{custom_values.website_url}}/blog/comunidades-y-servicios"}}]}</script>
+<!-- ILATEK:NAV-SCHEMA:END -->
+</div>
+<script>
+  /* ILATEK:BLOG-CLIMA-CONTACTO — crea el contacto desde la tarjeta de clima */
+  (function(){
+    var HOOK='https://services.leadconnectorhq.com/hooks/8OxUENFVM60EKzqsTcoD/webhook-trigger/58Mcw8HwICP6Mjo2Wchf';
+    var forms=[].slice.call(document.querySelectorAll('.ilbc-form'));
+    forms.forEach(function(f){
+      if(f.dataset.ready==='1') return; f.dataset.ready='1';
+      var msg=f.querySelector('.ilbc-msg'), btn=f.querySelector('button[type="submit"]');
+      f.addEventListener('submit',function(ev){
+        ev.preventDefault();
+        var name=(f.name.value||'').trim(), phone=(f.phone.value||'').trim().replace(/[^\d+]/g,'');
+        var city=(f.city.value||'').trim()||'Puerto Rico';
+        msg.className='ilbc-msg'; msg.textContent='';
+        if(name.length<2){ msg.textContent='Escribe tu nombre.'; f.name.focus(); return; }
+        if(phone.length<7){ msg.textContent='Escribe un teléfono válido.'; f.phone.focus(); return; }
+        btn.disabled=true; var prev=btn.textContent; btn.textContent='Enviando…';
+        var payload={nombre:name,apellido:'',email:'',telefono:phone,servicio:'Inspección de techo',municipio:city,zona:'',areas:'',extras:'',
+          valor:50,valor_oportunidad:50,deposito:50,deposito_requerido:50,
+          origen:'Blog clima',pagina:location.href,intencion:'inspeccion',urgencia:'media',
+          mensaje:'Solicitud desde la tarjeta de clima del blog',consentimiento:'si',lead_score:60,
+          id_solicitud:'blog-clima-'+Date.now().toString(36),
+          resumen:'Servicio: Inspección de techo · Municipio: '+city,
+          fecha:new Date().toISOString(),
+          firstName:name,lastName:'',full_name:name,phone:phone,city:city,
+          source:'Blog · Clima',tipo_de_servicio:'Inspección de techo',
+          opportunity_name:name+' — Inspección de techo — '+city};
+        fetch(HOOK,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload),keepalive:true})
+          .then(function(r){ if(!r.ok) throw new Error('http '+r.status);
+            try{ window.dispatchEvent(new CustomEvent('ilatek:clima-lead',{detail:payload})); }catch(e){}
+            var ok=document.createElement('p'); ok.className='ilbc-ok';
+            ok.textContent='Listo, '+name.split(' ')[0]+'. Recibimos tu teléfono y te llamamos para coordinar la revisión.';
+            f.replaceWith(ok);
+          })
+          .catch(function(){ btn.disabled=false; btn.textContent=prev; msg.textContent='No pudimos enviar. Intenta otra vez o llama al número del pie de página.'; });
+      });
+    });
+  })();
+  </script>

@@ -4,10 +4,10 @@
   "status": "plantilla-local-delta-system",
   "metaTagTitle": "Limpieza Comercial en {{custom_values.business__county_name}} | Ilatek",
   "metaTagDescription": "Limpieza comercial de Ilatek en {{custom_values.business__county_name}}: oficinas, tiendas y áreas comunes con checklists por espacio, frecuencias flexibles y cobertura en los 78 municipios. Cotiza tu espacio en minutos.",
-  "metaTagImage": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/limpieza-comercial.jpg",
+  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/054918b4-0f69-4220-8a82-262d1a539d3e.webp",
   "locationCustomValue": "{{custom_values.business__county_name}}",
-  "metaTagImageAlt": "Limpieza Comercial en {{custom_values.business__county_name}} | Ilatek",
+  "metaTagImageAlt": "Limpieza Comercial en {{custom_values.business__county_name}} — Ilatek",
   "canonical": "https://{{custom_values.website_url}}/limpieza-comercial",
-  "socialImageFile": "assets/meta-image.jpg",
+  "socialImageFile": "assets/meta-image.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."
 }

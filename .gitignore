@@ -23,3 +23,11 @@ archivo/
 
 # Perfil de Chrome para automatizar GHL (no publicar, no versionar)
 .chrome-*
+
+# claves locales (cuenta de servicio GSC, Bing, IndexNow) — nunca al repo
+.tmp-keys/
+
+# Artefactos del runner de indexación: logs y temporales de depuración
+documentacion/indexacion/.tmp*
+scripts/indexacion/.tmp*
+documentacion/indexacion/*.log

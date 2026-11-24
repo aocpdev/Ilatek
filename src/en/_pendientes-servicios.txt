@@ -1,0 +1,292 @@
+{{custom_values.business__county_name}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}
+Servicios de Limpieza en {{custom_values.business__county_name}} | Ilatek
+/og:title/ og:description ("… en Juncos, Puerto Rico"): el título sale de {{custom_values.business__county_name}}, así que es el mismo custom value, sin depender de que el builder expanda el Custom Code; 3. el subdominio del sitio (juncos.ilatekpr.com → Juncos); 4. los valores de marca del contrato (custom-values.json → brand). El portador que viaja en el embed se oculta siempre (nunca es contenido). Estado en
+Login
+Servicios de limpieza
+Todos los servicios de limpieza que tu espacio necesita en
+{{custom_values.business__county_name}}
+En Ilatek reunimos todos nuestros servicios de limpieza en un solo lugar: limpieza residencial, comercial e industrial, limpiezas estándar y profundas, y los extras que tu hogar o negocio necesita — con
+precio real en minutos
+y cobertura en los 78 municipios de {{custom_values.business__county_name}}.
+Solicita tu cotización
+Ver todos los servicios
+Servicios disponibles
+Municipios cubiertos
+Depósito descontable
+Catálogo completo
+Un solo equipo para cada rincón de tu propiedad.
+Aquí tienes el listado completo de servicios de limpieza de Ilatek en {{custom_values.business__county_name}}: desde el mantenimiento regular de tu hogar hasta pisos industriales. Toca cualquier servicio para ver su página detallada, o cotiza todo junto en minutos.
+Limpieza regular
+El mantenimiento recurrente de tu hogar: semanal, quincenal o mensual, con atención a cada espacio.
+Servicio a tu medida
+Ver servicio →
+Limpieza profunda
+Renovación completa área por área: ideal antes o después de una ocasión importante.
+Mudanza
+Move-in / move-out: entrega o recibe tu espacio impecable, listo para el siguiente capítulo.
+Resultado garantizado
+Airbnb &amp; rentals
+Airbnb &amp; Rentals
+Turnover profesional entre huéspedes: limpieza rápida y detallada para reseñas de 5 estrellas.
+Post-construcción
+Eliminamos residuos de obra, polvo fino y escombros para estrenar tu espacio como nuevo.
+Cristales impecables por dentro y por fuera para dejar entrar más luz a tu hogar.
+Desde $10 c/u
+Lavado a presión
+Fachadas, terrazas, verjas y aceras: el poder del agua a presión contra años de suciedad.
+Elimina manchas, olores y alérgenos acumulados en alfombras y tapetes.
+Refrigerador, horno, lavaplatos y lavadora/secadora limpios por dentro y por fuera.
+Desde $10
+Despensas, clósets y garaje: orden funcional que te devuelve tiempo cada día.
+Desde $50
+Por tipo de propiedad
+Residencial, comercial e industrial.
+Cada tipo de espacio necesita un enfoque distinto. Ilatek ajusta equipos, frecuencia y alcance según tu propiedad en {{custom_values.business__county_name}}.
+Casas y apartamentos: regular, profunda, mudanzas, alquileres a corto plazo y post-construcción.
+Ver limpieza residencial →
+Oficinas, tiendas, áreas comunes y condominios, con frecuencia ajustada a tu operación.
+Ver limpieza comercial →
+Almacenes e instalaciones, pisos industriales, desengrase y mantenimiento de áreas operacionales.
+Ver limpieza industrial →
+Precios claros
+Resultados claros, sin sorpresas.
+En Ilatek cotizas por resultado: tu espacio impecable, con extras a precio fijo. Sabes exactamente qué recibes antes de reservar — y el depósito de $50 se descuenta del total.
+Limpieza base
+Tu casa, siempre lista
+Mantenimiento regular del hogar
+Frecuencia semanal, quincenal o mensual
+Cada espacio impecable, visita tras visita
+Reserva tu resultado
+Tu espacio como nuevo
+Renovación completa área por área
+Ideal para primeras limpiezas u ocasiones especiales
+Resultado visible en la primera visita
+Extras a tu medida
+Servicios adicionales
+Todo en una sola visita
+Ventanas: interiores y exteriores
+Refrigerador, horno y lavaplatos
+Alfombras, despensas, clósets y garaje
+Los extras (ventanas, electrodomésticos, muebles, alfombras, organización) se suman al precio base de la limpieza. Usa el cotizador online para ver el precio total exacto de tu servicio en minutos.
+Cotiza tu precio exacto
+Cómo trabajamos
+De la cotización a tu espacio impecable, en 3 pasos.
+Contratar cualquier servicio de Ilatek toma minutos: precio real online, depósito descontable y tu fecha asegurada en el calendario.
+PASO 1
+Cotiza en minutos
+Ingresa las medidas de tu espacio, elige el tipo de limpieza y agrega los extras que necesites. El cotizador online te muestra el precio total al instante.
+PASO 2
+Reserva con $50
+Asegura tu cita con el depósito de $50 en el calendario. Se descuenta del valor total de tu servicio — no es un costo adicional.
+PASO 3
+Nosotros hacemos el resto
+Nuestro equipo llega a tu propiedad en {{custom_values.business__county_name}} con productos y equipos profesionales. Tú solo disfrutas el resultado.
+Cobertura local
+Limpieza impecable,
+Cobertura en Toda la Isla
+Explora los servicios de limpieza de
+Ilatek
+disponibles en los
+78 municipios de Puerto Rico
+y visita la página de tu pueblo. Atendemos hogares en
+y toda la isla.
+No encontramos ese pueblo. Verifica el nombre e intenta nuevamente.
+Página 1 de 1
+Preguntas frecuentes
+Todo sobre nuestros servicios de limpieza.
+Respuestas sobre precios, alcance, cobertura y reservas de los servicios de Ilatek en {{custom_values.business__county_name}}.
+¿Cuánto cuesta un servicio de limpieza en {{custom_values.business__county_name}}?
+En Ilatek cada servicio se cotiza según tu espacio y tus extras: el
+cotizador online
+te muestra el total exacto en minutos, sin llamadas ni estimados al azar. Los extras (ventanas, refrigerador, alfombras) tienen precio fijo y todo incluye
+productos y equipos profesionales
+¿Qué tipos de servicios de limpieza ofrece Ilatek?
+Tres líneas de servicio:
+residencial
+(limpieza estándar, profunda, mudanzas, Airbnb y post-construcción),
+comercial
+(oficinas, tiendas, áreas comunes y condominios) e
+industrial
+(almacenes, pisos industriales y desengrase). Además, extras como ventanas, electrodomésticos, alfombras, lavado a presión y organización.
+¿Qué incluye la limpieza comercial de Ilatek?
+La limpieza comercial cubre oficinas, tiendas, áreas comunes y condominios: pisos, baños, superficies de trabajo, cristales y basura. La frecuencia se ajusta a tu operación — desde visitas puntuales hasta planes recurrentes. Solicita tu cotización y ajustamos el alcance a tu negocio.
+¿Atienden mi área de Puerto Rico?
+Sí. Ilatek brinda todos sus servicios en los
+, incluyendo {{custom_values.business__county_name}}. Busca tu pueblo en la sección de cobertura de esta página o solicita tu cotización para confirmar disponibilidad en tu zona.
+¿Cómo obtengo el precio de mi servicio al instante?
+Con nuestro
+en 4 pasos: ingresas las medidas de tu espacio, eliges el tipo de limpieza, agregas servicios y extras, y ves el
+precio total y la duración estimada
+al momento. Sin llamadas ni estimados al azar.
+¿Puedo combinar varios servicios en una sola visita?
+Sí. La mayoría de nuestros clientes combinan una limpieza base con extras como ventanas, refrigerador, alfombras u organización. En el cotizador agregas cada servicio y el precio total se actualiza al momento — todo se realiza en la misma visita coordinada.
+¿Qué horarios manejan y cómo reservo mi fecha?
+Atendemos de
+lunes a sábado, de 8:00 a.m. a 6:00 p.m.
+Después de cotizar, eliges directamente la fecha y hora de tu limpieza en el calendario de reserva, según la disponibilidad real de nuestro equipo.
+¿Necesito un depósito para reservar?
+Sí, la reserva se asegura con un
+depósito de $50
+que se paga en el calendario al completar tu cita. El depósito
+se descuenta del valor total
+de tu servicio. Elegir tu fecha solo toma un minuto después de tu cotización.
+¿Traen los productos y equipos de limpieza?
+Sí. El equipo de Ilatek llega con
+para cada área: cocina, baños, pisos, ventanas y tapicería. Tú solo necesitas darnos acceso al espacio y contarnos tus prioridades.
+¿Por qué elegir Ilatek para los servicios de limpieza de mi propiedad?
+Ilatek combina
+precios transparentes
+(sin sorpresas),
+cotizador online con precio real inmediato
+, cobertura en
+los 78 municipios
+, un solo equipo para todos los servicios y coordinación clara antes de cada visita. Limpieza que se nota, atención que se siente.
+¿Lista tu pregunta? Obtén tu precio real ahora.
+Cotiza tu limpieza en minutos y reserva tu fecha con el depósito de $50.
+Solicita tu cotización ↗
+Conócenos
+Más que una empresa: una razón para servir.
+Conoce quiénes somos, en qué creemos y el propósito que guía cada servicio de Ilatek en {{custom_values.business__county_name}}.
+Conoce a los Fundadores
+El ADN de Ilatek
+Propósito
+Cuando cuidamos un espacio,
+cuidamos una vida
+Luis A. Cardec
+Fundador
+Aida Cintron
+Fundadora
+Luis A. Cardec y Aida Cintron fundaron Ilatek con una convicción sencilla y poderosa: detrás de cada puerta hay una historia que merece ser protegida. Un hogar guarda familia y recuerdos; una propiedad representa años de esfuerzo; un negocio sostiene sueños. Por eso Ilatek no nació para "limpiar espacios", sino para
+devolver tranquilidad
+: servir a cada cliente con el mismo respeto y compromiso con el que cuidarían lo propio. Cada servicio es una promesa — dejar cada espacio mejor de como lo encontraron y a cada persona más tranquila después de confiar en ellos. Porque cuando servimos con propósito, no solo transformamos propiedades:
+transformamos vidas
+El ADN de ILATEK Property Solutions
+Nuestra creencia fundamental:
+cada espacio refleja una parte de la vida de quienes lo habitan. Un hogar protege una familia. Un negocio sostiene sueños. Una propiedad representa años de esfuerzo, recuerdos y esperanza.
+Por eso, cuando una persona nos entrega las llaves de su hogar, de su negocio o de su propiedad, no solo nos está contratando para realizar un servicio. Nos está confiando una parte de su vida. Esa confianza es un privilegio y una responsabilidad que honramos en cada decisión, en cada detalle y en cada acción.
+No somos simplemente una empresa de limpieza y mantenimiento. Somos custodios de la tranquilidad de nuestros clientes. Nuestro trabajo consiste en proteger aquello que les permite vivir con paz: sus espacios, su patrimonio y la confianza de saber que están siendo cuidados con excelencia, respeto y responsabilidad.
+Creemos que servir es uno de los actos más nobles que puede realizar una persona.
+Servir es aliviar cargas. Es prevenir problemas antes de que ocurran. Es devolver tiempo a las familias. Es preservar el valor de una propiedad. Es tratar cada espacio con el mismo cuidado con el que trataríamos el nuestro.
+Inspirados por la naturaleza, entendemos que ningún bosque prospera por la fuerza de un solo árbol. Su equilibrio nace de la cooperación entre todos sus elementos. De la misma manera, creemos que una comunidad florece cuando las personas se sirven unas a otras con respeto, integridad y generosidad.
+Por eso, en ILATEK buscamos construir mucho más que relaciones comerciales.
+Construimos confianza. Construimos comunidad. Construimos bienestar.
+Cada colaborador forma parte de un propósito que trasciende una tarea específica. Su trabajo contribuye a que una familia descanse con tranquilidad, a que un adulto mayor viva con mayor seguridad, a que un negocio funcione mejor y a que una comunidad sea más fuerte.
+Nuestro compromiso no termina cuando finaliza un servicio. Nuestro compromiso es dejar cada espacio mejor de como lo encontramos y procurar que cada persona se sienta más tranquila después de haber confiado en nosotros.
+Porque creemos que cuando cuidamos un espacio con respeto, también cuidamos la vida de quienes lo habitan. Y cuando servimos con propósito, no solo transformamos propiedades.
+Transformamos vidas.
+Propósito de ILATEK Property Solutions
+En ILATEK Property Solutions existimos para cuidar y proteger los espacios donde las personas construyen su vida.
+Creemos que un hogar, una propiedad o un negocio representan mucho más que una estructura física. Son lugares donde nacen familias, se construyen sueños, se preservan recuerdos, se levantan proyectos y se encuentra refugio en los momentos más importantes de la vida.
+Por eso, nuestro trabajo nunca ha sido simplemente limpiar, mantener o reparar propiedades.
+Nuestra verdadera misión es devolver tranquilidad, generar confianza y brindar la paz de saber que aquello que más valoran está siendo cuidado con el mismo respeto y compromiso con el que nosotros cuidaríamos lo nuestro.
+Servimos con excelencia porque entendemos que detrás de cada puerta existe una historia que merece ser protegida.
+Actuamos con responsabilidad porque sabemos que la confianza de un cliente es un privilegio, no un derecho.
+Trabajamos con empatía porque reconocemos que cada persona vive circunstancias distintas y merece ser tratada con dignidad, honestidad y respeto.
+Al mismo tiempo, creemos que quienes forman parte de ILATEK no solo realizan un trabajo: contribuyen a mejorar la calidad de vida de otras personas. Cada servicio representa una oportunidad para generar bienestar, prevenir problemas, proteger el patrimonio de una familia y fortalecer la confianza de nuestra comunidad.
+Inspirados por la naturaleza, entendemos que un bosque prospera cuando cada elemento cumple su función para beneficio del conjunto. Esa misma filosofía guía nuestra empresa. Cuando cada colaborador sirve con integridad, cada cliente recibe tranquilidad y toda la comunidad crece.
+Devasks
+Navegación de Ilatek
+Ilatek, inicio
+Logo de Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Logo%20de%20Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Navegación principal
+Idioma / Language
+Español
+English
+Abrir o cerrar el menú
+Ilatek Servicios de Limpieza {{custom_values.business__county_name}}
+Equipo de Ilatek brindando servicios de limpieza residencial y comercial en {{custom_values.business__county_name}}
+Servicios de Limpieza en {{custom_values.business__county_name}} - Ilatek
+Equipo%20de%20Ilatek%20brindando%20servicios%20de%20limpieza%20residencial%20y%20comercial%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Servicios%20de%20Limpieza%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20-%20Ilatek
+Limpieza regular de casas en {{custom_values.business__county_name}} - servicio de limpieza estándar de Ilatek
+Limpieza Estándar en {{custom_values.business__county_name}} · Ilatek
+Limpieza%20regular%20de%20casas%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20-%20servicio%20de%20limpieza%20est%C3%A1ndar%20de%20Ilatek
+Limpieza%20Est%C3%A1ndar%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%C2%B7%20Ilatek
+Limpieza profunda de hogares en {{custom_values.business__county_name}} - renovación área por área de Ilatek
+Limpieza Profunda en {{custom_values.business__county_name}} · Ilatek
+Limpieza%20profunda%20de%20hogares%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20-%20renovaci%C3%B3n%20%C3%A1rea%20por%20%C3%A1rea%20de%20Ilatek
+Limpieza%20Profunda%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%C2%B7%20Ilatek
+Limpieza de mudanza move in move out en {{custom_values.business__county_name}} - Ilatek
+Limpieza de Mudanza en {{custom_values.business__county_name}} · Ilatek
+Limpieza%20de%20mudanza%20move%20in%20move%20out%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20-%20Ilatek
+Limpieza%20de%20Mudanza%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%C2%B7%20Ilatek
+Limpieza para Airbnb y rentals a corto plazo en {{custom_values.business__county_name}} - turnovers de Ilatek
+Limpieza Airbnb en {{custom_values.business__county_name}} · Ilatek
+Limpieza%20para%20Airbnb%20y%20rentals%20a%20corto%20plazo%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20-%20turnovers%20de%20Ilatek
+Limpieza%20Airbnb%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%C2%B7%20Ilatek
+Limpieza post construcción en {{custom_values.business__county_name}} - eliminación de polvo de obra y escombros de Ilatek
+Limpieza Post-Construcción en {{custom_values.business__county_name}} · Ilatek
+Limpieza%20post%20construcci%C3%B3n%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20-%20eliminaci%C3%B3n%20de%20polvo%20de%20obra%20y%20escombros%20de%20Ilatek
+Limpieza%20Post-Construcci%C3%B3n%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%C2%B7%20Ilatek
+Limpieza de ventanas y cristales en {{custom_values.business__county_name}} - interiores y exteriores de Ilatek
+Limpieza de Ventanas en {{custom_values.business__county_name}} · Ilatek
+Limpieza%20de%20ventanas%20y%20cristales%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20-%20interiores%20y%20exteriores%20de%20Ilatek
+Limpieza%20de%20Ventanas%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%C2%B7%20Ilatek
+Lavado a presión de fachadas y terrazas en {{custom_values.business__county_name}} - Ilatek
+Lavado a Presión en {{custom_values.business__county_name}} · Ilatek
+Lavado%20a%20presi%C3%B3n%20de%20fachadas%20y%20terrazas%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20-%20Ilatek
+Lavado%20a%20Presi%C3%B3n%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%C2%B7%20Ilatek
+Lavado de alfombras y tapetes en {{custom_values.business__county_name}} - Ilatek
+Lavado de Alfombras en {{custom_values.business__county_name}} · Ilatek
+Lavado%20de%20alfombras%20y%20tapetes%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20-%20Ilatek
+Lavado%20de%20Alfombras%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%C2%B7%20Ilatek
+Limpieza de electrodomésticos en {{custom_values.business__county_name}} - refrigerador, horno y más de Ilatek
+Limpieza de Electrodomésticos en {{custom_values.business__county_name}} · Ilatek
+Limpieza%20de%20electrodom%C3%A9sticos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20-%20refrigerador%2C%20horno%20y%20m%C3%A1s%20de%20Ilatek
+Limpieza%20de%20Electrodom%C3%A9sticos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%C2%B7%20Ilatek
+Organización del hogar en {{custom_values.business__county_name}} - despensas, clósets y garaje de Ilatek
+Organización del Hogar en {{custom_values.business__county_name}} · Ilatek
+Organizaci%C3%B3n%20del%20hogar%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20-%20despensas%2C%20cl%C3%B3sets%20y%20garaje%20de%20Ilatek
+Organizaci%C3%B3n%20del%20Hogar%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%C2%B7%20Ilatek
+Limpieza residencial de casas y apartamentos en {{custom_values.business__county_name}} - Ilatek
+Limpieza Residencial en {{custom_values.business__county_name}} · Ilatek
+Limpieza%20residencial%20de%20casas%20y%20apartamentos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20-%20Ilatek
+Limpieza%20Residencial%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%C2%B7%20Ilatek
+Limpieza comercial de oficinas y tiendas en {{custom_values.business__county_name}} - Ilatek
+Limpieza Comercial en {{custom_values.business__county_name}} · Ilatek
+Limpieza%20comercial%20de%20oficinas%20y%20tiendas%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20-%20Ilatek
+Limpieza%20Comercial%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%C2%B7%20Ilatek
+Limpieza industrial de almacenes en {{custom_values.business__county_name}} - Ilatek
+Limpieza Industrial en {{custom_values.business__county_name}} · Ilatek
+Limpieza%20industrial%20de%20almacenes%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20-%20Ilatek
+Limpieza%20Industrial%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%C2%B7%20Ilatek
+Cobertura de limpieza de Ilatek en Puerto Rico
+Busca tu pueblo
+Buscar un municipio de Puerto Rico
+Limpiar búsqueda
+Municipios de Puerto Rico con servicio de Ilatek
+Secciones de Conócenos
+Facebook de Luis A. Cardec, fundador de Ilatek
+Luis A. Cardec, fundador de Ilatek — empresa de limpieza en {{custom_values.business__county_name}}, Puerto Rico
+Luis A. Cardec · Fundador de Ilatek — servicio en {{custom_values.business__county_name}}
+Luis%20A.%20Cardec%2C%20fundador%20de%20Ilatek%20%E2%80%94%20empresa%20de%20limpieza%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%2C%20Puerto%20Rico
+Luis%20A.%20Cardec%20%C2%B7%20Fundador%20de%20Ilatek%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Facebook de Aida Cintron, fundadora de Ilatek
+Aida Cintron, fundadora de Ilatek — limpieza residencial en {{custom_values.business__county_name}}, Puerto Rico
+Aida Cintron · Fundadora de Ilatek — servicio en {{custom_values.business__county_name}}
+Aida%20Cintron%2C%20fundadora%20de%20Ilatek%20%E2%80%94%20limpieza%20residencial%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%2C%20Puerto%20Rico
+Aida%20Cintron%20%C2%B7%20Fundadora%20de%20Ilatek%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Pie de página de Ilatek
+Facebook
+Facebook — servicio en {{custom_values.business__county_name}}
+Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Instagram
+Instagram — servicio en {{custom_values.business__county_name}}
+Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Youtube
+Youtube — servicio en {{custom_values.business__county_name}}
+Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+TikTok
+TikTok — servicio en {{custom_values.business__county_name}}
+TikTok%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+X — servicio en {{custom_values.business__county_name}}
+X%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+LinkedIn
+LinkedIn — servicio en {{custom_values.business__county_name}}
+LinkedIn%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Pinterest
+Pinterest — servicio en {{custom_values.business__county_name}}
+Pinterest%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D

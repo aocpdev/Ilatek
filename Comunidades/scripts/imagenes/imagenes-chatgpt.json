@@ -1,0 +1,22 @@
+{
+ "alturas-de-adjuntas": {
+  "error": "no apareció ninguna imagen generada"
+ },
+ "la-granja": {
+  "error": "no apareció ninguna imagen generada"
+ },
+ "the-isles": {
+  "error": "la imagen es un blob local; no descargable por URL"
+ },
+ "senderos-de-montehiedra-limpieza": {
+  "name": "Senderos de Montehiedra",
+  "archivo": "Senderos de Montehiedra - limpieza.png",
+  "via": "chatgpt-ui",
+  "tamano": [
+   1672,
+   940
+  ],
+  "url": "blob:https://chatgpt.com/8cfb1aa0-f037-401e-9ae9-786740a493c1",
+  "fecha": "2026-10-31T17:03:00"
+ }
+}

@@ -1,0 +1,160 @@
+/og:title/ og:description ("… en Juncos, Puerto Rico"): el título sale de {{custom_values.business__county_name}}, así que es el mismo custom value, sin depender de que el builder expanda el Custom Code; 3. el subdominio del sitio (juncos.ilatekpr.com → Juncos); 4. los valores de marca del contrato (custom-values.json → brand). El portador que viaja en el embed se oculta siempre (nunca es contenido). Estado en
+{{custom_values.business__county_name}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}
+Login
+Empozamientos de agua
+Corrección de Empozamientos de Agua en Techos de
+Puerto Rico
+que evita filtraciones.
+El agua estancada en tu techo es la causa silenciosa de las filtraciones: pesa, penetra y oxida. Ilatek corrige empozamientos en techos de {{custom_values.business__county_name}}
+desde $350
+, arreglando drenaje y pendiente con garantía escrita.
+Solicita tu cotización
+Qué incluye el servicio ↓
+por corrección
+Drenaje incluido
+municipios
+Cobertura en PR
+al agendar
+Se descuenta del total
+Drenaje corregido
+undefined
+El agua estancada nunca debería quedarse en tu techo.
+Sin agua estancada
+Corregimos la pendiente y los desagües para que el agua salga del techo en vez de quedarse empozada penetrando la losa.
+Menos peso en la estructura
+Cada pulgada de agua empozada pesa y castiga la estructura. Eliminarla alarga la vida de tu techo.
+Evita la filtración futura
+Resolvemos el empozamiento antes de que el agua se abra paso: es la prevención más efectiva de filtraciones.
+Qué incluye
+Cómo eliminamos el empozamiento de tu techo.
+Un empozamiento se corrige corrigiendo el agua, no solo el charco.
+Evaluamos la pendiente, despejamos y reparamos desagües, y aplicamos el material que restablece el flujo de agua hacia las salidas.
+Evaluación de pendiente y puntos bajos
+Despeje y reparación de desagües del techo
+Sellado de grietas de la zona empozada
+Nivelación con material de relleno
+Aplicación de membrana impermeabilizante
+Garantía por escrito del trabajo
+Corrige tu empozamiento
+Pendiente · Drenaje · Membrana
+Causas
+Por qué se empoza el agua en tu techo.
+Drenaje
+Desagües tapados
+Hojas, arena y escombros obstruyen las salidas y el agua no tiene por dónde ir.
+Pendiente
+Pendiente perdida
+Con los años la losa se asienta y pierde su inclinación: el agua se queda quieta donde ya no fluye.
+Superficie
+Superficie hundida
+Áreas dañadas o selladores vencidos crean concavidades donde el agua se acumula.
+Cómo funciona
+Corregimos pendiente y desagües para que el agua salga del techo en vez de quedarse quieta sobre la losa.
+PASO 1
+Cotiza tu corrección de empozamientos
+Usa el cotizador de Ilatek o escríbenos: evaluamos tu techo y te damos el precio de corrección de empozamientos por escrito en minutos — sin compromiso.
+PASO 2
+Inspección y agenda
+Confirmamos el alcance de corrección de empozamientos con una inspección del techo, defines la fecha y reservas con el depósito de $50, que se descuenta del total.
+PASO 3
+Trabajo terminado
+Ejecutamos corrección de empozamientos con materiales certificados, protegemos el área y te entregamos la garantía por escrito.
+Cobertura de
+empozamientos de agua
+en toda la isla.
+Ilatek Techos brinda corrección de empozamientos en los
+78 municipios de Puerto Rico
+. Atendemos tu área en
+{{custom_values.business__county_name}}
+y toda la isla: busca tu pueblo en el directorio y visita su página.
+No encontramos ese pueblo. Verifica el nombre e intenta nuevamente.
+Página 1 de 1
+Reseñas de clientes de Ilatek.
+Reseñas de personas que confiaron en Ilatek para mantenimiento y sellado de techos en Puerto Rico. Cambia de pestaña para ver cada fuente.
+Preguntas frecuentes
+Preguntas frecuentes sobre corrección de empozamientos.
+¿Cuánto cuesta corregir un empozamiento de techo?
+La corrección de empozamientos de Ilatek
+comienza desde $350
+, incluyendo evaluación de pendiente y drenaje. El precio depende del área afectada y del estado de los desagües. Cotiza para tu número exacto.
+¿Por qué es malo que se empoze el agua en el techo?
+El agua estancada
+pesa sobre la estructura, se filtra por la losa y oxida las varillas de refuerzo
+. Con el tiempo se convierte en goteras y daños mucho más costosos de reparar.
+¿Un empozamiento siempre causa filtración?
+No de inmediato, pero
+es la causa más común
+: el agua quieta presiona la superficie hasta que encuentra un paso. Corregirlo temprano evita la filtración futura.
+¿Cómo corrigen la pendiente del techo?
+Evaluamos los puntos bajos y aplicamos
+material de relleno y membranas que restablecen el flujo
+hacia los desagües. No demolimos la losa: reparamos la superficie para recuperar la pendiente.
+¿Pueden arreglar solo el desagüe tapado?
+Si el empozamiento se debe únicamente a un drenaje obstruido,
+. Si además falta pendiente, te lo explicamos con ambas opciones y precio para que decidas.
+¿Cada cuánto debo despejar los desagües del techo?
+Recomendamos revisar y despejar los desagües del techo
+al menos dos veces al año
+, y siempre tras la temporada de lluvias o una tormenta, para que el agua no se estanque.
+¿La corrección de empozamiento tiene garantía?
+, cada corrección se entrega con garantía de mano de obra por escrito. Si el empozamiento reaparece dentro del periodo cubierto, regresamos.
+¿Por qué elegir Ilatek Techos para el empozamiento de tu techo?
+Atacamos la causa —pendiente y drenaje— en vez de solo secar el charco; el agua estancada pesa sobre la estructura y se filtra con el tiempo, y nosotros la sacamos del techo desde $350 con garantía escrita.
+Visita o inspección por $50
+Protege tu techo antes de la próxima lluvia.
+Solicita tu cotización por $50 descontables del total de corrección de empozamientos en {{custom_values.business__county_name}} y recibe precio claro y por escrito — cotización por $50 descontables del total y cobertura en los 78 municipios de Puerto Rico.
+Solicita tu cotización por $50 descontables del total
+Respuesta en minutos · Sin compromiso
+Precio claro por escrito
+desde $350, confirmado después de la inspección.
+Inspección sin compromiso
+Subimos, diagnosticamos y te explicamos las opciones.
+Garantía de mano de obra
+Respaldada por escrito en cada trabajo que hacemos.
+Devasks
+Navegación de Ilatek
+Ilatek, inicio
+Logo de Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Logo%20de%20Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Navegación principal
+Idioma / Language
+Español
+English
+Abrir o cerrar el menú
+Ilatek Empozamientos de agua {{custom_values.business__county_name}}
+Corrección de empozamiento de agua en techo — drenaje y pendiente en {{custom_values.business__county_name}}
+Empozamiento de agua en techos · Ilatek Techos — servicio en {{custom_values.business__county_name}}
+Correcci%C3%B3n%20de%20empozamiento%20de%20agua%20en%20techo%20%E2%80%94%20drenaje%20y%20pendiente%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Empozamiento%20de%20agua%20en%20techos%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Corrección de pendiente y drenaje de techo de Ilatek Techos en {{custom_values.business__county_name}} — empozamiento
+Empozamiento de techos en {{custom_values.business__county_name}} · Ilatek Techos
+Correcci%C3%B3n%20de%20pendiente%20y%20drenaje%20de%20techo%20de%20Ilatek%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%E2%80%94%20empozamiento
+Empozamiento%20de%20techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%C2%B7%20Ilatek%20Techos
+Cobertura de corrección de empozamientos de Ilatek Techos en Puerto Rico
+Busca tu pueblo
+Buscar un municipio de Puerto Rico
+Limpiar búsqueda
+Municipios de Puerto Rico con servicio de corrección de empozamientos
+Pie de página de Ilatek
+Facebook
+Facebook — servicio en {{custom_values.business__county_name}}
+Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Instagram
+Instagram — servicio en {{custom_values.business__county_name}}
+Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Youtube
+Youtube — servicio en {{custom_values.business__county_name}}
+Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+TikTok
+TikTok — servicio en {{custom_values.business__county_name}}
+TikTok%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+X — servicio en {{custom_values.business__county_name}}
+X%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+LinkedIn
+LinkedIn — servicio en {{custom_values.business__county_name}}
+LinkedIn%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Pinterest
+Pinterest — servicio en {{custom_values.business__county_name}}
+Pinterest%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D

@@ -1,0 +1,132 @@
+// Ilatek · Blog · verifica que cada embed pegado en GHL sea indexable y seguro:
+// un solo H1, sin <html>/<head> ni metadatos duplicados, canonical correcto,
+// title/description en rango, imagen con alt, JSON-LD parseable y enlaces
+// internos con el contrato del proyecto.
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const HERE = path.dirname(fileURLToPath(import.meta.url));
+const BLOG = path.resolve(HERE, '..');
+const SITE = 'https://ilatekpr.com';
+const manifest = JSON.parse(fs.readFileSync(path.join(BLOG, 'embeds/paginas.json'), 'utf8'));
+const headSeo = fs.readFileSync(path.join(BLOG, 'embeds/head-seo.html'), 'utf8');
+
+const stripRuntime = (html) =>
+  html.replace(/<script[\s\S]*?<\/script>/gi, ' ').replace(/<style[\s\S]*?<\/style>/gi, ' ');
+const words = (s) => String(s).trim().split(/\s+/).filter(Boolean).length;
+
+let failures = 0;
+const fail = (slug, msg) => {
+  failures++;
+  console.error(`✗ ${slug}: ${msg}`);
+};
+const stats = { fragment: 0, h1: 0, canonical: 0, img: 0, jsonld: 0, links: 0 };
+
+for (const p of manifest.paginas) {
+  const file = path.resolve(BLOG, '..', p.embed);
+  if (!fs.existsSync(file)) {
+    fail(p.path, 'embed inexistente');
+    continue;
+  }
+  const html = fs.readFileSync(file, 'utf8');
+  const bare = stripRuntime(html);
+
+  // 1. Es un fragmento, no un documento.
+  if (/<html\b|<head\b|<body\b/i.test(bare)) fail(p.path, 'contiene html/head/body');
+  else stats.fragment++;
+
+  if (/<title\b/i.test(bare.replace(/<svg[\s\S]*?<\/svg>/gi, ''))) fail(p.path, 'contiene <title> de documento');
+  if (/<meta\s+name=["']description/i.test(bare)) fail(p.path, 'contiene meta description duplicada');
+  if (/<link\s+rel=["']canonical/i.test(bare)) fail(p.path, 'canonical dentro del cuerpo (va en el HEAD)');
+
+  // 2. Un solo H1 y contenido real.
+  const h1 = (bare.match(/<h1\b/g) || []).length;
+  if (h1 !== 1) fail(p.path, `${h1} H1 (debe ser 1)`);
+  else stats.h1++;
+  if (words(bare.replace(/<[^>]+>/g, ' ')) < 250) fail(p.path, 'contenido visible insuficiente (<250 palabras)');
+
+  // 3. Imagen visible con alt y dimensiones (una al menos).
+  const imgs = [...bare.matchAll(/<img\b[^>]*>/gi)].map((m) => m[0]);
+  const content = imgs.filter((t) => /\balt="[^"]+"/.test(t));
+  // Una figura con role="img" y aria-label también da nombre accesible a la foto.
+  const namedFigure = /<figure\b[^>]*aria-label="[^"]+"/i.test(bare);
+  if (!content.length && !namedFigure) fail(p.path, 'sin imagen con nombre accesible');
+  else stats.img++;
+  content.forEach((t) => {
+    if (!/\bwidth="\d+"/.test(t) || !/\bheight="\d+"/.test(t)) fail(p.path, 'imagen con alt sin width/height');
+  });
+
+  // 4. JSON-LD parseable y con BreadcrumbList.
+  const blocks = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map((m) => m[1]);
+  if (!blocks.length) fail(p.path, 'sin JSON-LD');
+  const types = [];
+  for (const b of blocks) {
+    try {
+      const o = JSON.parse(b);
+      (Array.isArray(o) ? o : [o]).forEach((n) => types.push(n['@type']));
+    } catch {
+      fail(p.path, 'JSON-LD no parseable');
+    }
+  }
+  if (!types.includes('BreadcrumbList')) fail(p.path, 'JSON-LD sin BreadcrumbList');
+  else stats.jsonld++;
+
+  // 5. Enlaces internos con el contrato (tag completo, no solo hasta href) y sin rutas relativas.
+  let linkErrors = 0;
+  for (const m of bare.matchAll(/<a\b[^>]*>/gi)) {
+    const tag = m[0];
+    const hm = tag.match(/\bhref="([^"]+)"/i);
+    if (!hm) continue;
+    const href = hm[1].replace(/&amp;/g, '&');
+    if (href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:')) continue;
+    if (href.startsWith('https://{{custom_values.website_url}}')) {
+      if (!/data-ilatek-path=/.test(tag)) {
+        fail(p.path, `enlace interno sin data-ilatek-path: ${href}`);
+        linkErrors++;
+      }
+      continue;
+    }
+    if (href.startsWith('/')) {
+      fail(p.path, `ruta relativa (rompe en /blog y en municipios): ${href}`);
+      linkErrors++;
+    }
+  }
+  if (!linkErrors) stats.links++;
+
+  // 6. HEAD SEO: bloque propio, canonical correcto, title/description en rango.
+  if (!headSeo.includes(`<!-- ▼▼ ${p.path} · ${p.builder} ▼▼ -->`)) fail(p.path, 'falta su bloque en head-seo.html');
+  if (p.canonical !== SITE + p.path) fail(p.path, `canonical ${p.canonical} != ${SITE + p.path}`);
+  else stats.canonical++;
+  if (p.url !== p.canonical) fail(p.path, 'url y canonical difieren');
+  if (p.title.length < 25 || p.title.length > 65) fail(p.path, `title ${p.title.length} car. (25–65)`);
+  const dl = p.description.length;
+  if (dl < 110 || dl > 165) fail(p.path, `description ${dl} car. (110–165)`);
+  if (!/^https:\/\/(?:cdn\.jsdelivr\.net|assets\.cdn\.filesafe\.space|images\.leadconnectorhq\.com)\//.test(p.ogImage)) {
+    fail(p.path, 'og:image no absoluta o no permitida');
+  }
+  if (!p.builder.startsWith('Blog - ')) fail(p.path, `nombre de builder "${p.builder}" no sigue "Blog - …"`);
+}
+
+// Un solo bloque por página y ninguno duplicado.
+const blocksInHead = [...headSeo.matchAll(/<!-- ▼▼ (\/blog[^ ]*) · [^▼]*▼▼ -->/g)].map((m) => m[1]);
+const dup = blocksInHead.filter((p, i) => blocksInHead.indexOf(p) !== i);
+if (dup.length) {
+  failures++;
+  console.error('✗ head-seo duplicado:', dup.slice(0, 3).join(', '));
+}
+if (blocksInHead.length !== manifest.total) {
+  failures++;
+  console.error(`✗ head-seo: ${blocksInHead.length} bloques != ${manifest.total} páginas`);
+}
+
+console.log(`\nEmbeds verificados: ${manifest.paginas.length} · fallos: ${failures}`);
+console.log(` fragmento (sin html/head/body) : ${stats.fragment}/${manifest.total}`);
+console.log(` un solo H1 : ${stats.h1}/${manifest.total}`);
+console.log(` imagen visible con alt : ${stats.img}/${manifest.total}`);
+console.log(` JSON-LD con BreadcrumbList : ${stats.jsonld}/${manifest.total}`);
+console.log(` enlaces con data-ilatek-path : ${stats.links}/${manifest.total}`);
+console.log(` canonical = dominio + ruta : ${stats.canonical}/${manifest.total}`);
+console.log(` bloques HEAD únicos : ${blocksInHead.length}/${manifest.total}`);
+if (failures) process.exitCode = 1;
+else console.log('✓ OK: cada embed es un fragmento indexable con canonical, imagen y schema.');

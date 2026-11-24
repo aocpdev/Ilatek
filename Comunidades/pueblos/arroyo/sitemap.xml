@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- arroyo.ilatekpr.com — landings de las comunidades de este municipio.
+     Generado por scripts/genera-pueblos.mjs; una URL por comunidad y servicio. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://arroyo.ilatekpr.com/extension-valles-de-arroyo/limpieza</loc></url>
+  <url><loc>https://arroyo.ilatekpr.com/extension-valles-de-arroyo/sellado-de-techo</loc></url>
+  <url><loc>https://arroyo.ilatekpr.com/isidro-cora/limpieza</loc></url>
+  <url><loc>https://arroyo.ilatekpr.com/isidro-cora/sellado-de-techo</loc></url>
+  <url><loc>https://arroyo.ilatekpr.com/jardines-de-lafayette/limpieza</loc></url>
+  <url><loc>https://arroyo.ilatekpr.com/jardines-de-lafayette/sellado-de-techo</loc></url>
+  <url><loc>https://arroyo.ilatekpr.com/san-antonio/limpieza</loc></url>
+  <url><loc>https://arroyo.ilatekpr.com/san-antonio/sellado-de-techo</loc></url>
+  <url><loc>https://arroyo.ilatekpr.com/valles-de-arroyo/limpieza</loc></url>
+  <url><loc>https://arroyo.ilatekpr.com/valles-de-arroyo/sellado-de-techo</loc></url>
+</urlset>

@@ -1,0 +1,160 @@
+/og:title/ og:description ("… en Juncos, Puerto Rico"): el título sale de {{custom_values.business__county_name}}, así que es el mismo custom value, sin depender de que el builder expanda el Custom Code; 3. el subdominio del sitio (juncos.ilatekpr.com → Juncos); 4. los valores de marca del contrato (custom-values.json → brand). El portador que viaja en el embed se oculta siempre (nunca es contenido). Estado en
+{{custom_values.business__county_name}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}
+Login
+Techos de teja
+Reparación y Sellado de Techos de Teja en
+Puerto Rico
+desde $250.
+Las tejas son hermosas pero delicadas: una pieza suelta o un traslape abierto deja pasar el agua. Ilatek repara y sella techos de teja en {{custom_values.business__county_name}}
+desde $250
+, con cuidado de la pieza, cotización por $50 descontables del total y garantía escrita.
+Solicita tu cotización
+Qué incluye el servicio ↓
+por reparación
+Precio de entrada
+municipios
+Cobertura en PR
+al agendar
+Se descuenta del total
+Trato cuidadoso de la teja
+undefined
+La teja se repara con método, no con fuerza.
+Sin dañar la teja
+Trabajamos con cuidado para sellar y reparar sin romper piezas que son costosas de reponer.
+Sellamos traslapes
+El agua entra por los traslapes y remates: los sellamos con producto compatible para que no se filtre.
+Conservamos la estética
+Reparamos de forma que el techo mantenga su apariencia original, sin parches visibles.
+Qué incluye
+Cómo reparamos un techo de teja.
+La teja no se pisa ni se fuerza: se trabaja con método.
+Ilatek inspecciona las piezas, repone las quebradas, sella traslapes y remates, y verifica la capa impermeable debajo de la teja.
+Inspección de piezas quebradas o movidas
+Reposición cuidadosa de tejas
+Sellado de traslapes y cumbrera
+Revisión de la capa impermeable inferior
+Sellado de remates y penetraciones
+Garantía por escrito del trabajo
+Cotiza tu techo de teja
+Traslapes sellados · Remates firmes
+Señales
+Qué revisar en un techo de teja.
+Piezas
+Tejas rotas o movidas
+Una pieza quebrada o deslizada expone la capa de abajo y deja pasar el agua.
+Uniones
+Traslapes abiertos
+Con el tiempo los sellos de los traslapes se abren: por ahí se filtra la lluvia.
+Cumbrera
+Remates sueltos
+La cumbrera y los bordes son los puntos más vulnerables: si están sueltos, entra el agua.
+Cómo funciona
+Cómo reparamos tu techo de teja.
+Trabajamos con cuidado las piezas, sellamos traslapes y cumbrera y verificamos la capa impermeable inferior.
+PASO 1
+Cotiza tu reparación de techos de teja
+Usa el cotizador de Ilatek o escríbenos: evaluamos tu techo y te damos el precio de reparación de techos de teja por escrito en minutos — sin compromiso.
+PASO 2
+Inspección y agenda
+Confirmamos el alcance de reparación de techos de teja con una inspección del techo, defines la fecha y reservas con el depósito de $50, que se descuenta del total.
+PASO 3
+Trabajo terminado
+Ejecutamos reparación de techos de teja con materiales certificados, protegemos el área y te entregamos la garantía por escrito.
+Cobertura de
+techos de teja
+en toda la isla.
+Ilatek Techos brinda reparación de techos de teja en los
+78 municipios de Puerto Rico
+. Atendemos tu área en
+{{custom_values.business__county_name}}
+y toda la isla: busca tu pueblo en el directorio y visita su página.
+No encontramos ese pueblo. Verifica el nombre e intenta nuevamente.
+Página 1 de 1
+Reseñas de clientes de Ilatek.
+Reseñas de personas que confiaron en Ilatek para mantenimiento y sellado de techos en Puerto Rico. Cambia de pestaña para ver cada fuente.
+Preguntas frecuentes
+Preguntas frecuentes sobre reparación de techos de teja.
+¿Cuánto cuesta reparar un techo de teja?
+La reparación y sellado de techos de teja de Ilatek
+comienza desde $250
+. El precio depende del número de piezas a reponer y del área a sellar. La visita o inspección cuesta $50 y se descuenta del total del servicio.
+¿Por qué se filtra un techo de teja?
+Por
+piezas quebradas o movidas, traslapes abiertos y remates sueltos
+. La teja es la cubierta, pero la impermeabilidad real está en la capa inferior; si la teja falla, el agua pasa.
+¿Se puede sellar una teja sin quitarla?
+En muchos casos sí
+: sellamos traslapes y fijaciones sin desmontar la pieza. Si está quebrada, se repone con cuidado para no dañar las vecinas.
+¿Con qué sellan los techos de teja?
+Usamos
+selladores compatibles con teja
+y de alta adherencia, evitando productos que manchen o dañen la pieza. El objetivo es sellar sin alterar la estética.
+¿Cuánto dura la reparación de un techo de teja?
+Una reparación puntual se completa en
+uno o dos días
+; el sellado de toda la superficie puede tomar más según el área y el acceso al techo.
+¿Se pueden reponer tejas quebradas?
+Reponemos las piezas dañadas cuando están disponibles, o sellamos de forma impermeable si la pieza no se consigue, cuidando siempre la apariencia.
+¿La cotización de mi techo de teja tiene costo?
+La visita o inspección es
+y se descuenta del total del servicio: si aceptas el trabajo, ese monto se acredita al total. Así confirmamos tu fecha y el monto se descuenta del total.
+¿La reparación de la teja tiene garantía?
+Entregamos garantía de mano de obra por escrito sobre la reparación y el sellado realizado.
+¿Por qué elegir Ilatek Techos para tu techo de teja?
+La teja es costosa y delicada: la manipulamos con método para sellar traslapes y cumbrera sin quebrar piezas, conservando la estética del techo, desde $250 con cotización por $50 descontables del total y garantía escrita.
+Visita o inspección por $50
+Protege tu techo antes de la próxima lluvia.
+Solicita tu cotización por $50 descontables del total de reparación de techos de teja en {{custom_values.business__county_name}} y recibe precio claro y por escrito — cotización por $50 descontables del total y cobertura en los 78 municipios de Puerto Rico.
+Solicita tu cotización por $50 descontables del total
+Respuesta en minutos · Sin compromiso
+Precio claro por escrito
+desde $250, confirmado después de la inspección.
+Inspección sin compromiso
+Subimos, diagnosticamos y te explicamos las opciones.
+Garantía de mano de obra
+Respaldada por escrito en cada trabajo que hacemos.
+Devasks
+Navegación de Ilatek
+Ilatek, inicio
+Logo de Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Logo%20de%20Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Navegación principal
+Idioma / Language
+Español
+English
+Abrir o cerrar el menú
+Ilatek Techos de teja {{custom_values.business__county_name}}
+Reparación de techo de teja — {{custom_values.business__county_name}}
+Techos de teja · Ilatek Techos — servicio en {{custom_values.business__county_name}}
+Reparaci%C3%B3n%20de%20techo%20de%20teja%20%E2%80%94%20%7B%7Bcustom_values.business__county_name%7D%7D
+Techos%20de%20teja%20%C2%B7%20Ilatek%20Techos%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Sellado de techo de teja por Ilatek Techos en {{custom_values.business__county_name}} — traslapes y remates
+Sellado%20de%20techo%20de%20teja%20por%20Ilatek%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%E2%80%94%20traslapes%20y%20remates
+Cobertura de reparación de techos de teja de Ilatek Techos en Puerto Rico
+Busca tu pueblo
+Buscar un municipio de Puerto Rico
+Limpiar búsqueda
+Municipios de Puerto Rico con servicio de reparación de techos de teja
+Pie de página de Ilatek
+Facebook
+Facebook — servicio en {{custom_values.business__county_name}}
+Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Instagram
+Instagram — servicio en {{custom_values.business__county_name}}
+Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Youtube
+Youtube — servicio en {{custom_values.business__county_name}}
+Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+TikTok
+TikTok — servicio en {{custom_values.business__county_name}}
+TikTok%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+X — servicio en {{custom_values.business__county_name}}
+X%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+LinkedIn
+LinkedIn — servicio en {{custom_values.business__county_name}}
+LinkedIn%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Pinterest
+Pinterest — servicio en {{custom_values.business__county_name}}
+Pinterest%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D

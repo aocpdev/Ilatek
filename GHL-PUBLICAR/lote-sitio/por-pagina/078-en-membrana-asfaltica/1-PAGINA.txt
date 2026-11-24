@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Membrana Asfaltica (EN)
+Slug: en/membrana-asfaltica
+URL: https://ilatekpr.com/en/membrana-asfaltica
+Acción: CREAR PÁGINA
+Estado hoy: HTTP 404
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (242 KB, sha256 d9aa86767eb2)
+Origen en el repo: servicios/membrana-asfaltica/en/landing-pages/membrana-asfaltica.en.html
+Sección de clima: no
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

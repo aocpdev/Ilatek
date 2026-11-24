@@ -12,7 +12,7 @@ Las versiones publicadas en GHL incluyen ediciones más recientes que algunas pl
 
 El panel SEO nativo de GHL es la fuente de los metadatos publicados. Los bloques preparados no deben recibir otro HEAD SEO al pegarlos. Las plantillas autónomas de las carpetas `landing-pages/` y `HEAD-TEMPLATE.html` siguen siendo referencias de desarrollo; no reemplazar con ellas una página publicada sin reconciliar primero sus ediciones actuales.
 
-Delta System: las fichas SEO y los textos descriptivos de imágenes usan `{{custom_values.business__county_name}}`. Ver [localización SEO e instalación por pueblo](documentacion/LOCALIZACION-SEO.md).
+Delta System: las fichas SEO y los textos descriptivos de imágenes usan `{{custom_values.county_name_and_state}}`. Ver [localización SEO e instalación por pueblo](documentacion/LOCALIZACION-SEO.md).
 
 La organización sigue el patrón de entrega GHL de Aires Inverters y la estructura local verificada de Guz Plumbing: página → idioma → landing-pages, assets y ficha SEO. Se conserva el contenido existente de ILATEK y sus URLs de producción.
 
@@ -21,6 +21,8 @@ La organización sigue el patrón de entrega GHL de Aires Inverters y la estruct
 - [Home Page](home/README.md) · [SEO del Home](home/es/SEO-GHL.md)
 - [Categorías](categorias/README.md) · [Servicios](servicios/README.md)
 - [Mapa completo de las 47 páginas](documentacion/MAPA-DE-PAGINAS.md)
+- [Activación de dominio y fields por municipio](documentacion/ACTIVACION-DOMINIOS-Y-FIELDS.md): subdominio, favicon, head/body tracking, chat, `robots.txt` y `llms.txt`
+- [Activación del sitemap por municipio](documentacion/ACTIVACION-SITEMAPS.md): el `sitemap.xml` no se genera solo; procedimiento en la UI y por API, con verificación
 - [Estructura, idiomas y mantenimiento](documentacion/ESTRUCTURA.md)
 - [Incidencias previas y verificación](documentacion/VERIFICACION.md)
 - [Formato obligatorio de enlaces internos](documentacion/ENLACES-INTERNOS.md): `https://{{custom_values.website_url}}/ruta`; configurar `website_url` sin protocolo.
@@ -61,6 +63,8 @@ Las carpetas `en/` documentan el selector o la ausencia de una landing independi
 El cotizador permanece en [ghl-custom-code-embedded.html](ghl-custom-code-embedded.html). Tiene resumen, calendario y aviso del depósito de $50. El pago se gestiona en el calendario de GHL, no en el cotizador.
 
 Para el estilo del calendario, pegar [ilatek-calendar-custom-code.html](ilatek-calendar-custom-code.html) completo, incluidas las etiquetas `<style>`, en Widget appearance → Insert custom code.
+
+La página en vivo `https://ilatekpr.com/cotizacion` envía el webhook con todos los valores de la cotización y abre el calendario. Ese webhook es el trigger **Inbound Webhook** del workflow **Hook Cotizo** (`ab2fa196-4d71-4b80-9e68-bdad248baa9c`, v23), que deja una nota con el origen y los datos del cliente, crea la oportunidad con nombre completo y 7 custom fields, notifica al equipo en la app y envía el correo "Estimado {nombre}" al cliente. **Agendó Limpieza** (`b5f42a19-d107-4a52-864b-5fb992fb9482`, v74) hace lo mismo cuando el cliente reserva la cita. El correo al equipo está pendiente: la acción Email de GHL por API entrega siempre al contacto y se retiró para no filtrar contenido interno (ver documentación, sección 8). Ambos están publicados y probados. El bloque publicado vive en `documentacion/bloques/cotizador-webhook-calendario.html` y se despliega con `node tools/ghl-publish-custom-code.mjs`. Payload, mapeos, método de escritura de workflows y las pruebas reales están en [agendar limpieza: cotizador → webhook → oportunidad → avisos](documentacion/WORKFLOW-AGENDAR-LIMPIEZA.md). Los campos de oportunidad se crean con `node tools/ghl-create-oportunidad-fields.mjs`.
 
 ## Mantenimiento
 

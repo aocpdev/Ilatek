@@ -1,40 +1,40 @@
-# SEO — Limpieza y Mantenimiento de Propiedades en {{custom_values.business__county_name}} | Ilatek
+# SEO — Sellado y Mantenimiento de Techos en {{custom_values.business__county_name}} | Ilatek
 
 Plantilla local Delta System para {{custom_values.business__county_name}}. Título, descripción y textos de imágenes sincronizados con los entregables.
 
 ## Meta Tag Title
 
 ```text
-Limpieza y Mantenimiento de Propiedades en {{custom_values.business__county_name}} | Ilatek
+Sellado y Mantenimiento de Techos en {{custom_values.business__county_name}} | Ilatek
 ```
 
 ## Meta Tag Description
 
 ```text
-Limpieza residencial, comercial e industrial + mantenimiento de techos en {{custom_values.business__county_name}}. Precios transparentes por pie², cotizador online y cobertura en los 78 municipios.
+Sellado, impermeabilización y mantenimiento de techos en {{custom_values.business__county_name}}. Inspección por $50 descontable, garantía escrita y limpieza residencial y comercial.
 ```
 
 ## Meta Tag Image
 
-[Imagen social — URL pública](https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/bfa88816-50eb-45da-8e03-ea3b9e3beffd.jpg)
+[Imagen social — URL pública](https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/social/home-1200.webp)
 
 ```text
-https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/bfa88816-50eb-45da-8e03-ea3b9e3beffd.jpg
+https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/social/home-1200.webp
 ```
 
-Copia local: [assets/meta-image.jpg](assets/meta-image.jpg). No usar una ruta local en GHL.
+Copia local: [assets/meta-image.webp](assets/meta-image.webp). No usar una ruta local en GHL.
 
 ## Canonical existente
 
-https://{{custom_values.website_url}}/home
+https://{{custom_values.website_url}}/
 
 ## Instalación y comprobación
 
 1. En SEO Meta Data de GHL, usar Title, Description y Social Image de esta ficha.
-2. El embed incluye sus metadatos localizados para Delta System. Si se utiliza [HEAD-TEMPLATE.html](HEAD-TEMPLATE.html), revisar que el HEAD servido no termine con títulos, descriptions o canonicals duplicados. No pegar el conjunto de metadatos de otras páginas.
+2. Este embed no incluye el bloque HEAD: los metadatos localizados están separados en HEAD-TEMPLATE.html. Si se utiliza [HEAD-TEMPLATE.html](HEAD-TEMPLATE.html), revisar que el HEAD servido no termine con títulos, descriptions o canonicals duplicados. No pegar el conjunto de metadatos de otras páginas.
 3. Las URLs de medios se mantienen: mover carpetas locales no publica ni modifica archivos en GHL.
 4. Validar el HTML público final, la imagen social y los Custom Values resueltos. No depender del selector de idioma para metadatos de una ruta EN independiente.
-5. El HTML existente contiene traducciones propias mediante su selector ES/EN. No se creó ni se anunció una URL /en/ ni hreflang hacia páginas inexistentes.
+5. La versión EN ya existe en una URL separada (`/en/home`) con su propio HEAD-TEMPLATE. El selector de la misma URL no es la solución final: cada versión debe servirse con su `lang`, canonical y hreflang. No anunciar hreflang hacia URLs que no respondan 200.
 
 Inventario: [ASSETS.json](ASSETS.json). Datos reutilizables: [seo.json](seo.json).
 
@@ -45,7 +45,7 @@ Custom Value obligatorio: `{{custom_values.business__county_name}}`. Usar la eti
 ### Meta Tag Image Alt
 
 ```text
-Limpieza y Mantenimiento de Propiedades en {{custom_values.business__county_name}} | Ilatek
+Ilatek Property Solution — {{custom_values.business__county_name}}
 ```
 
 El HEAD incluye `og:image:alt` y `twitter:image:alt`. Los atributos `alt` y `title` descriptivos de las imágenes usan la misma localidad, conservando lo que representa cada imagen. Las imágenes decorativas mantienen `alt=""` por accesibilidad. Las URLs de medios no son texto SEO y se conservan.

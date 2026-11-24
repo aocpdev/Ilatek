@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- penuelas.ilatekpr.com — landings de las comunidades de este municipio.
+     Generado por scripts/genera-pueblos.mjs; una URL por comunidad y servicio. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://penuelas.ilatekpr.com/alturas-de-penuelas/limpieza</loc></url>
+  <url><loc>https://penuelas.ilatekpr.com/alturas-de-penuelas/sellado-de-techo</loc></url>
+  <url><loc>https://penuelas.ilatekpr.com/comunidad-caracoles/limpieza</loc></url>
+  <url><loc>https://penuelas.ilatekpr.com/comunidad-caracoles/sellado-de-techo</loc></url>
+  <url><loc>https://penuelas.ilatekpr.com/los-flamboyanes/limpieza</loc></url>
+  <url><loc>https://penuelas.ilatekpr.com/los-flamboyanes/sellado-de-techo</loc></url>
+</urlset>

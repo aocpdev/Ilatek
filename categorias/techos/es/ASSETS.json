@@ -6,23 +6,19 @@
     "https://fonts.googleapis.com",
     "https://fonts.gstatic.com",
     "https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&family=Outfit:wght@500..800&display=swap",
+    "https://reputationhub.site/reputation/widgets/review_widget/8OxUENFVM60EKzqsTcoD?widgetId=6ac3eb680432b6ce3f30b035",
     "https://reputationhub.site/reputation/assets/review-widget.js",
     "https://reputationhub.site/reputation/widgets/review_widget/8OxUENFVM60EKzqsTcoD",
     "https://reputationhub.site/reputation/widgets/review_widget/8OxUENFVM60EKzqsTcoD?widgetId=6ab060ce32d0d3c755f9fd73",
-    "https://reputationhub.site/reputation/widgets/review_widget/8OxUENFVM60EKzqsTcoD?widgetId=6ac3eb680432b6ce3f30b035",
-    "https://link.msgsndr.com/widget/booking/wM8KQhsYjEQAo0HbNGIh",
-    "https://link.msgsndr.com/js/form_embed.js",
     "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
   ],
   "socialImage": {
     "role": "social-image",
-    "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046fe8493229874263a27.jpg",
-    "file": "assets/respaldo/6ac046fe8493229874263a27.webp",
-    "status": "local-optimized-backup",
-    "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046fe8493229874263a27.webp",
-    "note": "Original CDN no disponible; se conserva la variante WebP del mismo ID existente en el repositorio. No se modificó el embed.",
-    "bytes": 50006,
-    "sha256": "7810fc095f257dd39b802613c031b52210ec9a87ee2809512f1e606e56933f59"
+    "publicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/social/techos-1200.webp",
+    "file": "assets/meta-image.webp",
+    "status": "local-copy",
+    "bytes": 71046,
+    "sha256": "3f3da85f35e2916cd568ed77ce7a4d03881ffc875224e39e6e9d5a31a4f8c78b"
   },
   "assets": [
     {
@@ -43,11 +39,67 @@
     },
     {
       "role": "media-or-fallback",
-      "publicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046fe8493229874263a27.webp",
-      "file": "assets/media/6ac046fe8493229874263a27.webp",
+      "publicUrl": "https://raw.githubusercontent.com/aocpdev/Ilatek/main/assets/services-images/techos/Servicio%20de%20Reparaci%C3%B3n%20de%20Filtraciones%20-%20Ilatek%20Property%20Solution%20-%201.jpg",
+      "file": "../../../assets/services-images/techos/Servicio de Reparación de Filtraciones - Ilatek Property Solution - 1.jpg",
       "status": "local-copy",
-      "bytes": 153180,
-      "sha256": "a138182ef6fb3f63056f36e3573e22020faf31f7405267a86244780140ad3736"
+      "bytes": 720135,
+      "sha256": "9fdad4194b4c1d7c22fffbdbef5de30473d09d0ff4137776f3e27c247d8b9a53"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://raw.githubusercontent.com/aocpdev/Ilatek/main/assets/services-images/techos/Todos%20los%20Servicios%20de%20Mantenimiento%20de%20Techos%20en%20Puerto%20Rico%20-%20Ilatek.jpg",
+      "file": "../../../assets/services-images/techos/Todos los Servicios de Mantenimiento de Techos en Puerto Rico - Ilatek.jpg",
+      "status": "local-copy",
+      "bytes": 734673,
+      "sha256": "9347edf583be9874a378fa8ac64b894ce62aeae03768be172807aab40b371300"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://raw.githubusercontent.com/aocpdev/Ilatek/main/assets/services-images/techos/Servicio%20de%20Mantenimiento%20Preventivo%20de%20Techos%20-%20Ilatek%20Property%20Solution%20-%201.jpg",
+      "file": "../../../assets/services-images/techos/Servicio de Mantenimiento Preventivo de Techos - Ilatek Property Solution - 1.jpg",
+      "status": "local-copy",
+      "bytes": 742381,
+      "sha256": "aaf724f4a271e3a37c570b27e05530d432bac351bd5053739217765623db4103"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://raw.githubusercontent.com/aocpdev/Ilatek/main/assets/services-images/techos/Servicio%20de%20Reparaci%C3%B3n%20de%20Techos%20-%20Ilatek%20Property%20Solution%20-%201.jpg",
+      "file": "../../../assets/services-images/techos/Servicio de Reparación de Techos - Ilatek Property Solution - 1.jpg",
+      "status": "local-copy",
+      "bytes": 787466,
+      "sha256": "5aa20c3575472c4f915082f24f59ddc098c68e01b0d47c9f2fb0b7c1ca0394af"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://raw.githubusercontent.com/aocpdev/Ilatek/main/assets/services-images/techos/Servicio%20de%20Sellado%20de%20Techos%20-%20Ilatek%20Property%20Solution%20-%201.jpg",
+      "file": "../../../assets/services-images/techos/Servicio de Sellado de Techos - Ilatek Property Solution - 1.jpg",
+      "status": "local-copy",
+      "bytes": 751412,
+      "sha256": "2eb4884ccc3f4bf8a3f7ee907292ba1aabea5d389b12941c5f5680ba2e5c3a12"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://raw.githubusercontent.com/aocpdev/Ilatek/main/assets/services-images/techos/Servicio%20de%20Impermeabilizacion%20-%20Ilatek%20Property%20Solution%20-%201.jpg",
+      "file": "../../../assets/services-images/techos/Servicio de Impermeabilizacion - Ilatek Property Solution - 1.jpg",
+      "status": "local-copy",
+      "bytes": 786099,
+      "sha256": "9d101c0f2fcc15976c86ebfdf5b5958d3edc9c3c34f6c1968c556f9c665d00f9"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://raw.githubusercontent.com/aocpdev/Ilatek/main/assets/services-images/techos/Servicio%20de%20Mantenimiento%20de%20Techos%20por%20segmento%20-%20Ilatek%20Property%20Solution%20-%201.jpg",
+      "file": "../../../assets/services-images/techos/Servicio de Mantenimiento de Techos por segmento - Ilatek Property Solution - 1.jpg",
+      "status": "local-copy",
+      "bytes": 834292,
+      "sha256": "09ed6bb0299cd380b5d9c88b367ecafd0cf9bfa804066a9b35936f2697a3df6a"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acbf9494770fb500bf7712f.png",
+      "file": "assets/media/6acbf9494770fb500bf7712f.png",
+      "status": "local-copy",
+      "bytes": 9082664,
+      "sha256": "c7a17134da8302c6415164a2071602d4ca48a98b075a4db63a9e029a4a68bfbc"
     },
     {
       "role": "media-or-fallback",
@@ -59,11 +111,131 @@
     },
     {
       "role": "media-or-fallback",
-      "publicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046fef30b488137bfa568.webp",
-      "file": "assets/media/6ac046fef30b488137bfa568.webp",
+      "publicUrl": "https://raw.githubusercontent.com/aocpdev/Ilatek/main/assets/services-images/techos/Servicio%20de%20Inspecci%C3%B3n%20y%20Mantenimiento%20de%20Techos%20-%20Ilatek%20Property%20Solution%20-%201.jpg",
+      "file": "../../../assets/services-images/techos/Servicio de Inspección y Mantenimiento de Techos - Ilatek Property Solution - 1.jpg",
       "status": "local-copy",
-      "bytes": 204304,
-      "sha256": "193ed5e284bfa08072314c23e7d15dfc89ee6a7c96cd1c10355dabc1d2fb1887"
+      "bytes": 235532,
+      "sha256": "1d6c9b6f7738ab23e07bce7a25318bf7ec7cb7ef6fdf74abe85819afff726e1c"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046fe8493229874263a27.webp",
+      "file": "assets/media/6ac046fe8493229874263a27.webp",
+      "status": "local-copy",
+      "bytes": 153180,
+      "sha256": "a138182ef6fb3f63056f36e3573e22020faf31f7405267a86244780140ad3736"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046ecf30b488137bfa41c.webp",
+      "file": "assets/media/6ac046ecf30b488137bfa41c.webp",
+      "status": "local-copy",
+      "bytes": 87510,
+      "sha256": "b62564bf27d79c190d50f46426ecbc05ee63da8118bddc91937ff73695593791"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aa1c05dd953a0128b5348c2.jpg",
+      "file": "assets/media/6aa1c05dd953a0128b5348c2.jpg",
+      "status": "local-copy",
+      "bytes": 47405,
+      "sha256": "ef08a502c10ce3e19c444e9e24de0589310f57605eca4970d571b84960f15d5f"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://stcdn.leadconnectorhq.com/funnel/icons/dark/facebook-dark.svg",
+      "file": "assets/media/facebook-dark.svg",
+      "status": "local-copy",
+      "bytes": 644,
+      "sha256": "d67203dca5e696a2d9bcaf83844988165915d3c1370fd36f2f134c36ddd1b863"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://stcdn.leadconnectorhq.com/funnel/icons/dark/instagram-dark.svg",
+      "file": "assets/media/instagram-dark.svg",
+      "status": "local-copy",
+      "bytes": 3168,
+      "sha256": "8ef7e9a8436742bfe57825bee517fe582ec04973df68bd8779ffdc11f85e9465"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://stcdn.leadconnectorhq.com/funnel/icons/dark/youtube-dark.svg",
+      "file": "assets/media/youtube-dark.svg",
+      "status": "local-copy",
+      "bytes": 941,
+      "sha256": "4bebe72147bfd89f46554899dc5228e3436d48bac1ce52da439c14ff7f62d7ba"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://stcdn.leadconnectorhq.com/funnel/icons/dark/tiktok-dark.svg",
+      "file": "assets/media/tiktok-dark.svg",
+      "status": "local-copy",
+      "bytes": 540,
+      "sha256": "e78b0bf421b7fd09098cf116d730fdce901325671567a826aacfdd2a45718283"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://stcdn.leadconnectorhq.com/funnel/icons/dark/x-dark.svg",
+      "file": "assets/media/x-dark.svg",
+      "status": "local-copy",
+      "bytes": 304,
+      "sha256": "e14af0e3efa09e9f60f9d0e61e9fd22d78d5ea48462b84f915d80c1d40595103"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://stcdn.leadconnectorhq.com/funnel/icons/dark/linkedin-dark.svg",
+      "file": "assets/media/linkedin-dark.svg",
+      "status": "local-copy",
+      "bytes": 991,
+      "sha256": "fcb0be50b1029bb4a00d11cfe830b96dd3e35db800437843be0d5cd87a1e1c28"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://stcdn.leadconnectorhq.com/funnel/icons/dark/pinterest-dark.svg",
+      "file": "assets/media/pinterest-dark.svg",
+      "status": "local-copy",
+      "bytes": 1434,
+      "sha256": "e9029f16cce6f21c8f4ac5dda991ca1167b201e2b2aa578bb250c686e7e4e0f9"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046fe8493229874263a27.jpg",
+      "file": "assets/respaldo/6ac046fe8493229874263a27.webp",
+      "status": "local-optimized-backup",
+      "bytes": 50006,
+      "sha256": "7810fc095f257dd39b802613c031b52210ec9a87ee2809512f1e606e56933f59"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046ecf30b488137bfa41c.jpg",
+      "file": "assets/respaldo/6ac046ecf30b488137bfa41c.webp",
+      "status": "local-optimized-backup",
+      "bytes": 87510,
+      "sha256": "b62564bf27d79c190d50f46426ecbc05ee63da8118bddc91937ff73695593791"
+    },
+    {
+      "role": "social-image",
+      "publicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/social/techos-1200.webp",
+      "file": "assets/meta-image.webp",
+      "status": "local-copy",
+      "bytes": 71046,
+      "sha256": "3f3da85f35e2916cd568ed77ce7a4d03881ffc875224e39e6e9d5a31a4f8c78b"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8583d89da6e6f9bc73cb9.jpg",
+      "file": "assets/media/6ac8583d89da6e6f9bc73cb9.jpg",
+      "status": "local-copy",
+      "bytes": 706981,
+      "sha256": "a32237b0310bceb44d8457e777a3703674a8eeec8ac5dd4d86ecd0f6120acb7f"
+    },
+    {
+      "role": "media-or-fallback",
+      "publicUrl": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac85838c478ac55355c46f2.jpg",
+      "file": "assets/media/6ac85838c478ac55355c46f2.jpg",
+      "status": "local-copy",
+      "bytes": 235532,
+      "sha256": "1d6c9b6f7738ab23e07bce7a25318bf7ec7cb7ef6fdf74abe85819afff726e1c"
     },
     {
       "role": "media-or-fallback",
@@ -99,14 +271,6 @@
     },
     {
       "role": "media-or-fallback",
-      "publicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f57bca8cd20c4021df.webp",
-      "file": "assets/media/6ac046f57bca8cd20c4021df.webp",
-      "status": "local-copy",
-      "bytes": 154930,
-      "sha256": "99f729ba699998c9355603f519cba7ff6a4819e0708e639154e134c62f2dafda"
-    },
-    {
-      "role": "media-or-fallback",
       "publicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046fd02569bee7cbccca0.webp",
       "file": "assets/media/6ac046fd02569bee7cbccca0.webp",
       "status": "local-copy",
@@ -128,14 +292,6 @@
       "status": "local-copy",
       "bytes": 148522,
       "sha256": "5d9fdbff86d63d6b5557e6b8c01da2faa3f0bb54480507bf31504a36e8920cd9"
-    },
-    {
-      "role": "media-or-fallback",
-      "publicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac0427e0edabbe5a4a724d7.webp",
-      "file": "assets/media/6ac0427e0edabbe5a4a724d7.webp",
-      "status": "local-copy",
-      "bytes": 153606,
-      "sha256": "b405d72b22145f94bf9f9d93f1efabde06529e9a47b6813e0c889946c627c334"
     },
     {
       "role": "media-or-fallback",
@@ -163,14 +319,6 @@
     },
     {
       "role": "media-or-fallback",
-      "publicUrl": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acbf9494770fb500bf7712f.png",
-      "file": "assets/media/6acbf9494770fb500bf7712f.png",
-      "status": "local-copy",
-      "bytes": 9082664,
-      "sha256": "c7a17134da8302c6415164a2071602d4ca48a98b075a4db63a9e029a4a68bfbc"
-    },
-    {
-      "role": "media-or-fallback",
       "publicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/hub/inspeccion.webp",
       "file": "assets/media/inspeccion.webp",
       "status": "local-copy",
@@ -187,127 +335,35 @@
     },
     {
       "role": "media-or-fallback",
-      "publicUrl": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac85838c478ac55355c46f2.jpg",
-      "file": "assets/media/6ac85838c478ac55355c46f2.jpg",
+      "publicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/ilatek-logo-circle-512.png",
+      "file": "assets/media/ilatek-logo-circle-512.png",
       "status": "local-copy",
-      "bytes": 235532,
-      "sha256": "1d6c9b6f7738ab23e07bce7a25318bf7ec7cb7ef6fdf74abe85819afff726e1c"
+      "bytes": 88101,
+      "sha256": "71ed3a6c5b2af4dc07ffcca13d0534652a821cc15dd7fea9113b03626c7b6317"
     },
     {
-      "role": "social-image",
-      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046fe8493229874263a27.jpg",
-      "file": "assets/respaldo/6ac046fe8493229874263a27.webp",
-      "status": "local-optimized-backup",
-      "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046fe8493229874263a27.webp",
-      "note": "Original CDN no disponible; se conserva la variante WebP del mismo ID existente en el repositorio. No se modificó el embed.",
-      "bytes": 50006,
-      "sha256": "7810fc095f257dd39b802613c031b52210ec9a87ee2809512f1e606e56933f59"
+      "role": "social-card",
+      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/554267b6-9687-4eb4-8e24-c4b605a0e95a.webp",
+      "file": "../../../assets/social/techos-1200.webp",
+      "status": "local-copy",
+      "bytes": 70468,
+      "sha256": "601770e5a2364a733d8be59a82d017330306b018d6284e6ce95ff722a381e1ae"
     },
     {
       "role": "media-or-fallback",
-      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046fef30b488137bfa568.jpg",
-      "file": "assets/respaldo/6ac046fef30b488137bfa568.webp",
-      "status": "local-optimized-backup",
-      "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046fef30b488137bfa568.webp",
-      "note": "Original CDN no disponible; se conserva la variante WebP del mismo ID existente en el repositorio. No se modificó el embed.",
-      "bytes": 123650,
-      "sha256": "697dfe53a85460093073c5d38038bc2be043986e82ffaeb918ec39e8dbd4e193"
+      "publicUrl": "https://raw.githubusercontent.com/aocpdev/Ilatek/main/assets/services-images/techos/Servicio%20de%20Inspecci%C3%B3n%20de%20Techos%20-%20Ilatek%20Property%20Solution%20-%201.jpg",
+      "file": "../../../assets/services-images/techos/Servicio de Inspección de Techos - Ilatek Property Solution - 1.jpg",
+      "status": "local-copy",
+      "bytes": 764576,
+      "sha256": "0bf9473bd799493cc7c6fd2c6f7e531b93710ff0abb15f8eafaef57be740ab79"
     },
     {
       "role": "media-or-fallback",
-      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aa1c05dd953a0128b5348c2.jpg",
-      "file": "assets/media/6aa1c05dd953a0128b5348c2.jpg",
+      "publicUrl": "https://raw.githubusercontent.com/aocpdev/Ilatek/main/assets/services-images/techos/Servicio%20de%20Reparaci%C3%B3n%20de%20Grietas%20-%20Ilatek%20Property%20Solution%20-%201.jpg",
+      "file": "../../../assets/services-images/techos/Servicio de Reparación de Grietas - Ilatek Property Solution - 1.jpg",
       "status": "local-copy",
-      "bytes": 47405,
-      "sha256": "ef08a502c10ce3e19c444e9e24de0589310f57605eca4970d571b84960f15d5f"
-    },
-    {
-      "role": "media-or-fallback",
-      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac02015f30b488137bce134.jpg",
-      "file": "assets/media/6ac02015f30b488137bce134.jpg",
-      "status": "local-copy",
-      "bytes": 166212,
-      "sha256": "cfee1b492891ee8814aca6384847ce912e310493b1da20947f902a6609985734"
-    },
-    {
-      "role": "media-or-fallback",
-      "publicUrl": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8582fcc7a5a2b73475d89.jpg",
-      "file": "assets/media/6ac8582fcc7a5a2b73475d89.jpg",
-      "status": "local-copy",
-      "bytes": 737629,
-      "sha256": "a90c371ab1e475b03d546f871fffd053ed05725f346fbb9008faf2169379d0d2"
-    },
-    {
-      "role": "media-or-fallback",
-      "publicUrl": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac04fe4f30b488137c005b1.jpeg",
-      "file": "assets/media/6ac04fe4f30b488137c005b1.jpeg",
-      "status": "local-copy",
-      "bytes": 92708,
-      "sha256": "56115e32c2c343300c578f35e1708335c5187d5d928e19f704726543a274cfe0"
-    },
-    {
-      "role": "media-or-fallback",
-      "publicUrl": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac134617d735ea2a1fdc078.jpg",
-      "file": "assets/media/6ac134617d735ea2a1fdc078.jpg",
-      "status": "local-copy",
-      "bytes": 493670,
-      "sha256": "7ff26b3525882dbf92d9d4b7335d3a8316073d25a44cc96b54dc247dcfec5f1a"
-    },
-    {
-      "role": "media-or-fallback",
-      "publicUrl": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac1a365195f9172ed559106.jpeg",
-      "file": "assets/media/6ac1a365195f9172ed559106.jpeg",
-      "status": "local-copy",
-      "bytes": 71060,
-      "sha256": "1833a08bbd8c486aceb062abb36a7af5289c3f1fccf60a607c74c745d8dd0eed"
-    },
-    {
-      "role": "media-or-fallback",
-      "publicUrl": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aadf131bdaa5e26a92e2c6f.png",
-      "file": "assets/media/6aadf131bdaa5e26a92e2c6f.png",
-      "status": "local-copy",
-      "bytes": 133190,
-      "sha256": "4370968a74dc2d8c5ed2f0875b51f9d080c0ed5ecbb9c565f0c1f689060b4486"
-    },
-    {
-      "role": "media-or-fallback",
-      "publicUrl": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aadfd7cbdaa5e26a92efd33.png",
-      "file": "assets/media/6aadfd7cbdaa5e26a92efd33.png",
-      "status": "local-copy",
-      "bytes": 50650,
-      "sha256": "5b4f5531518d1494536ffa626435f3fda8b48e5d07644441e68d71f6425c6e5c"
-    },
-    {
-      "role": "media-or-fallback",
-      "publicUrl": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ab044d04091fa65e69921f6.png",
-      "file": "assets/media/6ab044d04091fa65e69921f6.png",
-      "status": "local-copy",
-      "bytes": 285753,
-      "sha256": "07483408d81cc25288d6f1d2a2b589bacb9d8e0f82031fbfc948df6ea2cdea89"
-    },
-    {
-      "role": "media-or-fallback",
-      "publicUrl": "https://stcdn.leadconnectorhq.com/funnel/icons/dark/facebook-dark.svg",
-      "file": "assets/media/facebook-dark.svg",
-      "status": "local-copy",
-      "bytes": 644,
-      "sha256": "d67203dca5e696a2d9bcaf83844988165915d3c1370fd36f2f134c36ddd1b863"
-    },
-    {
-      "role": "media-or-fallback",
-      "publicUrl": "https://stcdn.leadconnectorhq.com/funnel/icons/dark/instagram-dark.svg",
-      "file": "assets/media/instagram-dark.svg",
-      "status": "local-copy",
-      "bytes": 3168,
-      "sha256": "8ef7e9a8436742bfe57825bee517fe582ec04973df68bd8779ffdc11f85e9465"
-    },
-    {
-      "role": "media-or-fallback",
-      "publicUrl": "https://stcdn.leadconnectorhq.com/funnel/icons/dark/youtube-dark.svg",
-      "file": "assets/media/youtube-dark.svg",
-      "status": "local-copy",
-      "bytes": 941,
-      "sha256": "4bebe72147bfd89f46554899dc5228e3436d48bac1ce52da439c14ff7f62d7ba"
+      "bytes": 850872,
+      "sha256": "6fabd54f32c625126bbc0ea2d39df0555e24af1a6042972f921f52b86f4401f2"
     }
   ]
 }

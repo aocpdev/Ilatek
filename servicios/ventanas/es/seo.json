@@ -3,11 +3,11 @@
   "language": "es",
   "status": "plantilla-local-delta-system",
   "metaTagTitle": "Limpieza de Ventanas en {{custom_values.business__county_name}} | Ilatek",
-  "metaTagDescription": "Limpieza de ventanas en {{custom_values.business__county_name}}: interiores $10 y exteriores $25 por ventana, marcos y cristales sin marcas. Cotizador online y cobertura en los 78 municipios.",
-  "metaTagImage": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/ventanas.jpg",
+  "metaTagDescription": "Limpieza de ventanas en {{custom_values.business__county_name}}: interiores y exteriores desde $250 por servicio, marcos y cristales sin marcas. Cotizador online y cobertura en los 78 municipios.",
+  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/2528bf21-19b9-45a2-8cdb-9c861ca4569b.webp",
   "locationCustomValue": "{{custom_values.business__county_name}}",
-  "metaTagImageAlt": "Limpieza de Ventanas en {{custom_values.business__county_name}} | Ilatek",
+  "metaTagImageAlt": "Limpieza de Ventanas en {{custom_values.business__county_name}} impecables por dentro y por — Ilatek",
   "canonical": "https://{{custom_values.website_url}}/ventanas",
-  "socialImageFile": "assets/meta-image.jpg",
+  "socialImageFile": "assets/meta-image.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."
 }

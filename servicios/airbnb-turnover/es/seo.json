@@ -4,10 +4,10 @@
   "status": "plantilla-local-delta-system",
   "metaTagTitle": "Limpieza Airbnb y Rentals en {{custom_values.business__county_name}} | Ilatek",
   "metaTagDescription": "Turnovers de Airbnb y alquileres a corto plazo en {{custom_values.business__county_name}}: limpieza entre huéspedes, reposición de amenities y preparación para check-in. Cobertura en los 78 municipios.",
-  "metaTagImage": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/airbnb-turnover.jpg",
+  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/382b9f73-438b-432b-a38d-f00c150169f0.webp",
   "locationCustomValue": "{{custom_values.business__county_name}}",
-  "metaTagImageAlt": "Limpieza Airbnb y Rentals en {{custom_values.business__county_name}} | Ilatek",
+  "metaTagImageAlt": "Airbnb Turnover en {{custom_values.business__county_name}} guest-ready — Ilatek",
   "canonical": "https://{{custom_values.website_url}}/airbnb-turnover",
-  "socialImageFile": "assets/meta-image.jpg",
+  "socialImageFile": "assets/meta-image.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."
 }

@@ -3,11 +3,11 @@
   "language": "es",
   "status": "plantilla-local-delta-system",
   "metaTagTitle": "Sellado de Techos Comercial en {{custom_values.business__county_name}} | Ilatek Techos",
-  "metaTagDescription": "Sellado de techos comercial en {{custom_values.business__county_name}} desde $2.50 por pie². Trabajo planificado para operar sin cerrar. Inspección gratis y garantía escrita. 78 municipios.",
-  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046ee85f560d1666998eb.jpg",
+  "metaTagDescription": "Sellado de techos comercial en {{custom_values.business__county_name}} desde $250. Trabajo planificado para operar sin cerrar. Agenda con $50 descontables del total y garantía escrita. 78 municipios.",
+  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/75c61f37-89a3-4f1d-8e8a-896e7ff19864.webp",
   "locationCustomValue": "{{custom_values.business__county_name}}",
   "metaTagImageAlt": "Sellado de Techos Comercial en {{custom_values.business__county_name}} | Ilatek Techos",
   "canonical": "https://{{custom_values.website_url}}/sellado-de-techos-comercial",
-  "socialImageFile": "assets/respaldo/6ac046ee85f560d1666998eb.webp",
+  "socialImageFile": "assets/meta-image.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."
 }

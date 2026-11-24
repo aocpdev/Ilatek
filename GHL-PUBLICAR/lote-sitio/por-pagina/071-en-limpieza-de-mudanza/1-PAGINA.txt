@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Limpieza De Mudanza (EN)
+Slug: en/limpieza-de-mudanza
+URL: https://ilatekpr.com/en/limpieza-de-mudanza
+Acción: CREAR PÁGINA
+Estado hoy: HTTP 404
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (238 KB, sha256 7a12ce8add60)
+Origen en el repo: servicios/limpieza-de-mudanza/en/landing-pages/limpieza-de-mudanza.en.html
+Sección de clima: no
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

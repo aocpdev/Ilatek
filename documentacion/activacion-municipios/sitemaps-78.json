@@ -1,0 +1,551 @@
+{
+ "generado": "2026-10-30T15:23:46.999Z",
+ "salida": [
+  {
+   "slug": "adjuntas",
+   "urls": 61,
+   "bytes": 6255,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "aguada",
+   "urls": 61,
+   "bytes": 6133,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "aguadilla",
+   "urls": 61,
+   "bytes": 6316,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "aguas-buenas",
+   "urls": 61,
+   "bytes": 6499,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "aibonito",
+   "urls": 61,
+   "bytes": 6255,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "anasco",
+   "urls": 61,
+   "bytes": 6133,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "arecibo",
+   "urls": 61,
+   "bytes": 6194,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "arroyo",
+   "urls": 61,
+   "bytes": 6133,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "barceloneta",
+   "urls": 61,
+   "bytes": 6438,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "barranquitas",
+   "urls": 61,
+   "bytes": 6499,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "bayamon",
+   "urls": 61,
+   "bytes": 6194,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "cabo-rojo",
+   "urls": 61,
+   "bytes": 6316,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "caguas",
+   "urls": 61,
+   "bytes": 6133,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "camuy",
+   "urls": 61,
+   "bytes": 6072,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "canovanas",
+   "urls": 61,
+   "bytes": 6316,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "carolina",
+   "urls": 61,
+   "bytes": 6255,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "catano",
+   "urls": 61,
+   "bytes": 6133,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "cayey",
+   "urls": 61,
+   "bytes": 6072,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "ceiba",
+   "urls": 61,
+   "bytes": 6072,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "ciales",
+   "urls": 61,
+   "bytes": 6133,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "cidra",
+   "urls": 61,
+   "bytes": 6072,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "coamo",
+   "urls": 61,
+   "bytes": 6072,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "comerio",
+   "urls": 61,
+   "bytes": 6194,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "corozal",
+   "urls": 61,
+   "bytes": 6194,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "culebra",
+   "urls": 61,
+   "bytes": 6194,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "dorado",
+   "urls": 61,
+   "bytes": 6133,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "fajardo",
+   "urls": 61,
+   "bytes": 6194,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "florida",
+   "urls": 61,
+   "bytes": 6194,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "guanica",
+   "urls": 61,
+   "bytes": 6194,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "guayama",
+   "urls": 61,
+   "bytes": 6194,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "guayanilla",
+   "urls": 61,
+   "bytes": 6377,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "guaynabo",
+   "urls": 61,
+   "bytes": 6255,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "gurabo",
+   "urls": 61,
+   "bytes": 6133,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "hatillo",
+   "urls": 61,
+   "bytes": 6194,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "hormigueros",
+   "urls": 61,
+   "bytes": 6438,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "humacao",
+   "urls": 61,
+   "bytes": 6194,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "isabela",
+   "urls": 61,
+   "bytes": 6194,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "jayuya",
+   "urls": 61,
+   "bytes": 6133,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "juana-diaz",
+   "urls": 61,
+   "bytes": 6377,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "juncos",
+   "urls": 61,
+   "bytes": 6133,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "lajas",
+   "urls": 61,
+   "bytes": 6072,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "lares",
+   "urls": 61,
+   "bytes": 6072,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "las-marias",
+   "urls": 61,
+   "bytes": 6377,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "las-piedras",
+   "urls": 61,
+   "bytes": 6438,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "loiza",
+   "urls": 61,
+   "bytes": 6072,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "luquillo",
+   "urls": 61,
+   "bytes": 6255,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "manati",
+   "urls": 61,
+   "bytes": 6133,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "maricao",
+   "urls": 61,
+   "bytes": 6194,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "maunabo",
+   "urls": 61,
+   "bytes": 6194,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "mayaguez",
+   "urls": 61,
+   "bytes": 6255,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "moca",
+   "urls": 61,
+   "bytes": 6011,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "morovis",
+   "urls": 61,
+   "bytes": 6194,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "naguabo",
+   "urls": 61,
+   "bytes": 6194,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "naranjito",
+   "urls": 61,
+   "bytes": 6316,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "orocovis",
+   "urls": 61,
+   "bytes": 6255,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "patillas",
+   "urls": 61,
+   "bytes": 6255,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "penuelas",
+   "urls": 61,
+   "bytes": 6255,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "ponce",
+   "urls": 61,
+   "bytes": 6072,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "quebradillas",
+   "urls": 61,
+   "bytes": 6499,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "rincon",
+   "urls": 61,
+   "bytes": 6133,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "rio-grande",
+   "urls": 61,
+   "bytes": 6377,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "sabana-grande",
+   "urls": 61,
+   "bytes": 6560,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "salinas",
+   "urls": 61,
+   "bytes": 6194,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "san-german",
+   "urls": 61,
+   "bytes": 6377,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "san-juan",
+   "urls": 61,
+   "bytes": 6255,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "san-lorenzo",
+   "urls": 61,
+   "bytes": 6438,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "san-sebastian",
+   "urls": 61,
+   "bytes": 6560,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "santa-isabel",
+   "urls": 61,
+   "bytes": 6499,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "toa-alta",
+   "urls": 61,
+   "bytes": 6255,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "toa-baja",
+   "urls": 61,
+   "bytes": 6255,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "trujillo-alto",
+   "urls": 61,
+   "bytes": 6560,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "utuado",
+   "urls": 61,
+   "bytes": 6133,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "vega-alta",
+   "urls": 61,
+   "bytes": 6316,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "vega-baja",
+   "urls": 61,
+   "bytes": 6316,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "vieques",
+   "urls": 61,
+   "bytes": 6194,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "villalba",
+   "urls": 61,
+   "bytes": 6255,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "yabucoa",
+   "urls": 61,
+   "bytes": 6194,
+   "todasPropias": true,
+   "ok": true
+  },
+  {
+   "slug": "yauco",
+   "urls": 61,
+   "bytes": 6072,
+   "todasPropias": true,
+   "ok": true
+  }
+ ]
+}

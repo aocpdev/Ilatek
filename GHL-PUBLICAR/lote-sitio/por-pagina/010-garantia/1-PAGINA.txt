@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Garantia
+Slug: garantia
+URL: https://ilatekpr.com/garantia
+Acción: REPUBLICAR
+Estado hoy: HTTP 200
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (209 KB, sha256 6f18daf718fe)
+Origen en el repo: garantia/ghl-garantia-embed.html
+Sección de clima: no
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

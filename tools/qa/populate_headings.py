@@ -27,6 +27,8 @@ EXACT = [
     "Goteras en Puerto Rico que",
     # H2 ilt-extra-title
     "todo tipo de techo en Puerto Rico.",
+    # H2 ilt-aeo-respuesta-title (sin punto final: lleva dos puntos)
+    "Sellado de techos en Puerto Rico:",
     "huracán en los techos de Puerto Rico.",
     "un techo de zinc en Puerto Rico.",
     # FAQ local explicito

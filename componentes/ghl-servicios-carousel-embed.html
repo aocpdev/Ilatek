@@ -1,3 +1,411 @@
+<!-- ILATEK:INTERNAL-LINKS:START -->
+<style>
+/* A single, unframed logo. Keep its 52px slot inside the existing 64px bar.
+   The uniform white bar integrates the original white-backed asset without redrawing it. */
+#ilatek-nav .iln-shell{background:#fff}
+#ilatek-nav .iln-brand{flex:0 0 52px;width:52px;height:52px;gap:0;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none}
+#ilatek-nav .iln-brand img{width:52px;height:52px;max-width:none;padding:0;border:0;border-radius:0;background:none;box-shadow:none;object-fit:contain}
+#ilatek-nav .iln-brand:focus-visible{outline:2px solid #009640;outline-offset:3px}
+/* Scroll-only glass button: same small footprint, with an edge on white surfaces. */
+#ilatek-nav.iln-compact>div.iln-shell{
+  width:64px;min-height:64px;height:64px;padding:0;gap:0;border-radius:20px;
+  border:1px solid rgba(17,22,75,.18);
+  background:linear-gradient(145deg,rgba(255,255,255,.88),rgba(244,247,252,.68));
+  -webkit-backdrop-filter:blur(14px) saturate(130%);backdrop-filter:blur(14px) saturate(130%);
+  box-shadow:0 4px 14px rgba(11,16,61,.10),inset 0 1px 0 rgba(255,255,255,.85);
+}
+#ilatek-nav.iln-compact>div.iln-shell:hover,#ilatek-nav.iln-compact>div.iln-shell:focus-within{
+  border-color:rgba(33,61,142,.68);box-shadow:0 5px 16px rgba(11,16,61,.13),inset 0 1px 0 rgba(255,255,255,.9);
+}
+#ilatek-nav.iln-compact .iln-shell .iln-brand{flex:1;width:100%;height:62px;justify-content:center;border-radius:19px;cursor:pointer}
+#ilatek-nav.iln-compact .iln-brand img{border-radius:13px}
+#ilatek-nav.iln-compact .iln-brand:focus-visible{outline:2px solid var(--iln-blue);outline-offset:3px}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
+  #ilatek-nav.iln-compact>div.iln-shell{background:rgba(255,255,255,.96)}
+}
+#ilatek-nav .iln-login{display:none}
+@media(min-width:1101px){
+  #ilatek-nav{--iln-item-gap:clamp(16px,1.6vw,24px)}
+  #ilatek-nav:not(.iln-compact) .iln-shell{gap:var(--iln-item-gap)}
+  #ilatek-nav .iln-shell .iln-links{position:static;left:auto;transform:none;margin:0 0 0 auto;gap:var(--iln-item-gap)}
+  #ilatek-nav .iln-shell .iln-links>a,#ilatek-nav .iln-links .iln-trigger{padding:10px 0;min-height:44px}
+  #ilatek-nav .iln-shell .iln-langwrap{margin:0;flex:none}
+  #ilatek-nav .iln-shell .iln-lang{min-height:44px;padding:10px 0;gap:8px;border:0;background:transparent;border-radius:8px;font-size:14px}
+  #ilatek-nav .iln-shell .iln-lang span{padding:0;border-radius:0;background:none;box-shadow:none;color:var(--iln-ink);opacity:.65}
+  #ilatek-nav .iln-shell .iln-lang span[aria-pressed="true"]{opacity:1;text-decoration:underline;text-decoration-color:var(--iln-green);text-underline-offset:6px;text-decoration-thickness:2px}
+  #ilatek-nav .iln-shell .iln-login{display:inline-flex;align-items:center;flex:none;min-height:44px;padding:10px 0;font-size:14px;font-weight:700;white-space:nowrap}
+  #ilatek-nav .iln-login:hover{color:var(--iln-blue)}
+  #ilatek-nav .iln-shell .iln-ctawrap,#ilatek-nav .iln-shell>.iln-cta{margin-left:0;flex:none}
+  #ilatek-nav.iln-compact .iln-links,#ilatek-nav.iln-compact .iln-shell .iln-login{display:none}
+}
+/* Both menu glyphs occupy the same grid cell. The close SVG lives inside a span;
+   positioning that SVG absolutely used to offset it outside the button center. */
+#ilatek-nav .iln-burger{flex:0 0 44px;min-width:44px;min-height:44px;padding:0;line-height:1;appearance:none}
+#ilatek-nav .iln-burger svg{position:static;display:block;width:22px;height:22px;grid-area:1 / 1;pointer-events:none}
+#ilatek-nav .iln-burger>.iln-ic-x{display:grid;place-items:center;grid-area:1 / 1;width:22px;height:22px;pointer-events:none;transition:opacity .22s ease,transform .26s ease}
+@media(max-width:1100px){
+  #ilatek-nav .iln-shell{gap:8px}
+  #ilatek-nav .iln-langwrap{margin-left:auto;align-items:center}
+  #ilatek-nav .iln-burger{margin-left:0}
+  #ilatek-nav:not(.iln-lang-on) .iln-burger{margin-left:auto}
+  /* Minimal visual pills, with a full 44px-high touch target. */
+  #ilatek-nav .iln-lang{min-height:44px;min-width:64px;justify-content:center;padding:0;gap:2px;border:0;background:transparent;font-size:12px}
+  #ilatek-nav .iln-lang span{padding:6px 8px;box-shadow:none}
+}
+@media(prefers-reduced-motion:reduce){#ilatek-nav .iln-burger>.iln-ic-x{transition:none}}
+/* Fixed navigation occupies no document flow. Reserve its real height once,
+   then leave 32 / 48 / 64px of breathing room above service-hero content. */
+body:has(#ilatek-nav) :is(.il-hero,.ilr-hero,.ilc2-hero,.ilsx-hero,.ilt-hero){
+  padding-top:calc(var(--ilatek-menu-bottom,78px) + 64px) !important;
+}
+/* The cinematic Home keeps its centered composition and a safe top inset. */
+body:has(#ilatek-nav) .mshero-inner{
+  padding-top:max(clamp(96px,11vw,160px),calc(var(--ilatek-menu-bottom,78px) + 64px)) !important;
+}
+@media(max-width:1100px){
+  body:has(#ilatek-nav) :is(.il-hero,.ilr-hero,.ilc2-hero,.ilsx-hero,.ilt-hero){padding-top:calc(var(--ilatek-menu-bottom,78px) + 48px) !important}
+  body:has(#ilatek-nav) .mshero-inner{padding-top:max(96px,calc(var(--ilatek-menu-bottom,78px) + 48px)) !important}
+}
+@media(max-width:560px){
+  body:has(#ilatek-nav) :is(.il-hero,.ilr-hero,.ilc2-hero,.ilsx-hero,.ilt-hero){padding-top:calc(var(--ilatek-menu-bottom,78px) + 32px) !important}
+  body:has(#ilatek-nav) .mshero-inner{padding-top:max(96px,calc(var(--ilatek-menu-bottom,78px) + 32px)) !important}
+}
+/* Inline vectors survive font loading, language changes and generic GHL SVG rules. */
+#ilatek-cobertura-dir .icd-nav{min-width:44px;min-height:44px;flex-shrink:0;line-height:1}
+#ilatek-cobertura-dir .icd-nav svg{display:block !important;width:22px !important;height:22px !important;max-width:none;fill:none !important;stroke:currentColor !important;pointer-events:none}
+#ilatek-cobertura-dir .icd-nav:focus-visible{outline:2px solid #00b94f;outline-offset:4px}
+#ilatek-cobertura-dir [hidden]{display:none !important}
+@media(prefers-reduced-motion:reduce){html:has(#ilatek-nav){scroll-behavior:auto !important}}
+
+/* ILATEK · Escala tipográfica fluida para titulares.
+   SOLO presentación: no cambia texto, contenido, descripciones, jerarquía ni
+   distribución. Se inyecta con el resto del bloque compartido (links/runtime).
+
+   Reglas:
+   1) Titular de marca (Home) = UNA SOLA LÍNEA en cualquier ancho. El tamaño se
+      deriva del ancho disponible, no de un valor fijo, así que encoge en el
+      teléfono en vez de partirse en dos líneas.
+   2) Titulares de oración (héroes de categoría/servicio y la página de reseñas)
+      = tamaño proporcional al ancho del dispositivo con piso legible de 24px.
+      Nunca producen más líneas que el diseño actual, solo menos.
+   3) Desde 1101px no se altera ningún tamaño: manda el diseño aprobado. Cada
+      curva termina exactamente en el valor que la página ya usa a 1100px, de
+      modo que no hay salto al cruzar el punto de quiebre.
+
+   Divisor 11.2 = medida real del titular más largo en una línea
+   ("Ilatek Property Solution", Outfit 800, letter-spacing -0.045em: 10.86em a
+   280px) más 3% de margen. Al cargar sin la fuente web el respaldo Arial mide
+   12.7em, así que durante esos milisegundos el titular corto puede partirse en
+   dos líneas, pero nunca desborda el ancho de pantalla. */
+
+/* 1 · Titular de marca: una línea garantizada de 280px a 1920px.
+   min( <diseño actual>, <ancho disponible / medida del texto> ) — nunca agranda. */
+.mshero h1{
+  font-size:min(clamp(40px,6.2vw,82px),calc((100vw - 40px)/11.2)) !important;
+}
+
+/* 2 · Titulares de oración: misma curva que ya usa cada familia, con el piso
+   bajado a 24px. Al conservar el coeficiente vw y el tope (el valor de la
+   página a 1100px) el resultado nunca es mayor que el diseño aprobado: solo
+   encoge en los anchos donde antes el piso fijo ganaba. La transición a
+   ≥1101px es continua porque cada tope es el valor exacto de 1100px. */
+@media (max-width:1100px){
+  .ilt-hero h1,.ilc2-hero h1{
+    font-size:clamp(24px,5vw,55px) !important;
+  }
+  /* Las páginas de categoría usan .ilr-hero con 5vw. La página de reseñas ya es
+     fluida por su cuenta (3.5vw sobre un piso de 32px, 8vw en el teléfono), así
+     que se excluye: forzarla a 5vw le añadía una línea entre 700px y 1100px. */
+  .ilr-hero h1:not(#ilatek-resenas-lp *){
+    font-size:clamp(24px,5vw,55px) !important;
+  }
+  .il-hero h1{
+    font-size:clamp(24px,5.6vw,61.6px) !important;
+  }
+  .ilsx-hero h1{
+    font-size:clamp(24px,5.4vw,59.4px) !important;
+  }
+  .il-reviews-head h1,#ilatek-reviews-title{
+    font-size:clamp(24px,4.6vw,50.6px) !important;
+  }
+}
+
+/* ILATEK · Héroe canónico (referencia: /inspeccion-de-techos).
+   Solo presentación: la tarjeta de imagen se muestra en 16:9, como la
+   referencia, y los tres datos del héroe quedan en una sola fila bajo el CTA.
+   No cambia marcado, copy, enlaces ni el resto del diseño. */
+
+:is(.ilt-hero,.ilr-hero,.ilc2-hero,.ilsx-hero) :is(.ilt-hero-card,.ilr-hero-card,.ilc2-hero-card,.ilsx-hero-card){
+  height:auto!important;
+}
+
+:is(.ilt-hero,.ilr-hero,.ilc2-hero,.ilsx-hero) :is(.ilt-hero-card,.ilr-hero-card,.ilc2-hero-card,.ilsx-hero-card) img{
+  width:100%!important;
+  height:auto!important;
+  aspect-ratio:16/9;
+  object-fit:cover;
+}
+
+:is(.ilt-hero-facts,.ilr-hero-facts,.ilc2-hero-facts){
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:14px 22px;
+  align-items:start;
+}
+
+@media (max-width:700px){
+  :is(.ilt-hero-facts,.ilr-hero-facts,.ilc2-hero-facts){
+    grid-template-columns:1fr!important;
+    gap:14px;
+  }
+}
+
+/* Héroe canónico reutilizable: mismas piezas y orden que la referencia
+   (kicker → H1 → párrafo → CTA + enlace → 3 datos → tarjeta 16:9). */
+.ilh-hero{padding:clamp(96px,8vw,118px) 0 clamp(52px,6vw,80px);background:linear-gradient(180deg,#f2f5fa,#fff 82%)}
+.ilh-shell{width:min(100% - 48px,1210px);margin:0 auto}
+.ilh-hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+.ilh-hero-copy{min-width:0}
+.ilh-kicker{display:inline-flex;align-items:center;gap:8px;font:700 12.5px/1 Manrope,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#1f3a6e}
+.ilh-kicker::before{content:"";width:8px;height:8px;border-radius:50%;background:#00b94f;flex:0 0 auto}
+.ilh-hero h1{margin:18px 0 0;font-family:Outfit,Manrope,Arial,sans-serif;font-size:clamp(38px,4.7vw,70px);line-height:1.02;letter-spacing:-.03em;color:#11164b}
+.ilh-hero h1 em{font-style:normal;color:#009640}
+.ilh-sub{margin:22px 0 0;max-width:570px;color:#5b6273;font-size:17.5px;line-height:1.7}
+.ilh-sub b{color:#11164b}
+.ilh-actions{display:flex;align-items:center;gap:26px;margin-top:34px;flex-wrap:wrap}
+.ilh-btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:10px;background:#00b94f;color:#fff!important;font:800 14.5px/1.25 Manrope,Arial,sans-serif;letter-spacing:.02em;text-decoration:none;box-shadow:0 14px 30px rgba(0,185,79,.24)}
+.ilh-btn:hover,.ilh-btn:focus-visible{background:#009640}
+.ilh-link{font-weight:800;color:#1f3a6e;border-bottom:2px solid #00b94f;text-decoration:none}
+.ilh-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px 22px;margin:38px 0 0;padding:26px 0 0;border-top:1px solid #e3e7f0}
+.ilh-facts b{display:block;font-family:Outfit,Manrope,Arial,sans-serif;font-size:26px;font-weight:800;letter-spacing:-.03em;color:#11164b}
+.ilh-facts b i{color:#00b94f;font-style:normal}
+.ilh-facts span{display:block;margin-top:4px;color:#6a7180;font-size:12.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.ilh-card{position:relative;margin:0;border-radius:24px;overflow:hidden;box-shadow:0 30px 70px rgba(17,22,75,.18)}
+.ilh-card img,.ilh-card video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:24px}
+.ilh-badge{position:absolute;left:18px;bottom:18px;display:inline-flex;align-items:center;gap:8px;padding:9px 15px;border-radius:14px;background:rgba(13,18,70,.62);border:1px solid rgba(255,255,255,.28);color:#fff;font:800 12.5px/1 Manrope,Arial,sans-serif;letter-spacing:.04em}
+.ilh-badge i{width:8px;height:8px;border-radius:50%;background:#00b94f;font-style:normal}
+
+@media (max-width:1100px){
+  .ilh-hero h1{font-size:clamp(26px,5vw,55px)!important}
+}
+@media (max-width:900px){
+  .ilh-hero-grid{grid-template-columns:1fr;gap:36px}
+}
+@media (max-width:700px){
+  .ilh-facts{grid-template-columns:1fr;gap:14px}
+  .ilh-hero{padding-top:clamp(88px,14vw,104px)}
+}
+
+/* Guard móvil: el drawer del nav no debe crear scroll horizontal en páginas con héroe canónico. */
+html:has(.ilh-hero), html:has(.ilt-hero), html:has(.ilr-hero), html:has(.ilc2-hero),
+body:has(.ilh-hero), body:has(.ilt-hero), body:has(.ilr-hero), body:has(.ilc2-hero){overflow-x:clip}
+
+</style>
+<script>
+/* ILATEK: one shared URL contract; inlined into standalone GHL embeds. */
+(function (w) {
+  'use strict';
+  if (w.ILATEK_LINKS) return;
+  var TOKEN = '{' + '{custom_values.website_url}' + '}';
+  var FALLBACK = 'https://ilatekpr.com';
+  function normalize(value) {
+    var raw = String(value || '').trim();
+    if (!raw || raw.startsWith('/') || /[{}\s<>"'\\]/.test(raw)) return '';
+    if (/^[a-z][a-z\d+.-]*:/i.test(raw) && !/^https?:\/\//i.test(raw)) return '';
+    try {
+      var u = new URL(/^https?:\/\//i.test(raw) ? raw : 'https://' + raw);
+      if (u.username || u.password || u.search || u.hash || !u.hostname.includes('.')) return '';
+      return 'https://' + u.host + u.pathname.replace(/\/+$/, '');
+    } catch (e) { return ''; }
+  }
+  function bridge() {
+    if (!w.document) return '';
+    var nodes = w.document.querySelectorAll('.dv-ghl-values, #dv-ghl-values');
+    var values = [];
+    for (var i = 0; i < nodes.length; i++) {
+      var parts = nodes[i].textContent.split('|||DV|||');
+      if (parts.length !== 6) continue;
+      var value = normalize(parts[3]);
+      if (value && values.indexOf(value) < 0) values.push(value);
+    }
+    return values.length === 1 ? values[0] : '';
+  }
+  function base(value) { return bridge() || normalize(value) || FALLBACK; }
+  function join(value, pathname) {
+    var root = base(value), suffix = String(pathname || '/');
+    if (!suffix.startsWith('/') || suffix.startsWith('//')) return root + '/';
+    // Support an existing base-path once without changing the service path.
+    var prefix = new URL(root).pathname.replace(/\/$/, '');
+    if (prefix && (suffix === prefix || suffix.startsWith(prefix + '/'))) return new URL(root).origin + suffix;
+    return root + suffix;
+  }
+  function replace(text, key, value) {
+    var out = String(text || '');
+    if (key !== TOKEN) return out.split(key).join(value);
+    var root = base(value);
+    return out.split('https://' + TOKEN).join(root).split('http://' + TOKEN).join(root).split(TOKEN).join(root);
+  }
+  // Language of the page decides the language of every shared menu/footer link:
+  // /en/... -> English twin, everything else -> Spanish. Two real slug changes
+  // exist today (home root and comunidades/communities).
+  var EN_SLUG = { comunidades: 'communities', 'politica-de-privacidad': 'politica', 'terminos-y-condiciones': 'terminos' };
+  var ES_SLUG = { communities: 'comunidades' };
+  function swapSlug(path, map) {
+    var parts = path.split('/'), i = parts.length - 1;
+    if (parts[i] && map[parts[i]]) parts[i] = map[parts[i]];
+    return parts.join('/') || '/';
+  }
+  function splitAnchor(value) {
+    var i = String(value || '').indexOf('#');
+    return i < 0 ? [String(value || ''), ''] : [value.slice(0, i) || '/', value.slice(i)];
+  }
+  function toEnglish(pathname) {
+    if (!pathname || pathname.charAt(0) !== '/') return pathname;
+    var parts = splitAnchor(pathname), path = parts[0].replace(/\/+$/, '') || '/';
+    if (/^\/en(?:\/|$)/.test(path)) return pathname;
+    path = swapSlug(path, EN_SLUG);
+    return (path === '/' ? '/en/home' : '/en' + path) + parts[1];
+  }
+  function toSpanish(pathname) {
+    if (!pathname || pathname.charAt(0) !== '/') return pathname;
+    var parts = splitAnchor(pathname), path = parts[0].replace(/\/+$/, '') || '/';
+    if (!/^\/en(?:\/|$)/.test(path)) return pathname;
+    path = path.replace(/^\/en(?=\/|$)/, '') || '/';
+    path = swapSlug(path, ES_SLUG);
+    if (path === '/home') path = '/';
+    return path + parts[1];
+  }
+  w.ILATEK_LINKS = { normalize: normalize, base: base, join: join, replace: replace, toEnglish: toEnglish, toSpanish: toSpanish };
+  if (!w.document) return;
+  var doc = w.document, queued = false;
+  function refresh() {
+    queued = false;
+    var isEn = /^\/en(?:\/|$)/.test(w.location.pathname);
+    var nodes = doc.querySelectorAll('a[data-ilatek-path]');
+    for (var i = 0; i < nodes.length; i++) {
+      var a = nodes[i], root = a.closest('[data-website-url]');
+      var value = root && root.getAttribute('data-website-url');
+      if (!normalize(value)) {
+        var declared = doc.querySelector('[data-website-url]');
+        value = declared && declared.getAttribute('data-website-url');
+      }
+      // GHL may resolve the href even when the surrounding data attribute is absent.
+      if (!normalize(value)) {
+        try { value = new URL(a.getAttribute('href')).origin; } catch (e) {}
+      }
+      var path = a.getAttribute('data-ilatek-path');
+      var url = join(value, isEn ? toEnglish(path) : toSpanish(path));
+      if (a.getAttribute('href') !== url) a.setAttribute('href', url);
+    }
+  }
+  function schedule() {
+    if (!queued) { queued = true; (w.requestAnimationFrame || w.setTimeout)(refresh); }
+  }
+  if (doc.readyState === 'loading') doc.addEventListener('DOMContentLoaded', refresh, { once: true });
+  else schedule();
+  // One observer shared across menu/footer/page, including late GHL bridge values.
+  if (w.MutationObserver) new w.MutationObserver(schedule).observe(doc.documentElement, {
+    childList: true, subtree: true, characterData: true,
+    attributes: true, attributeFilter: ['data-website-url', 'data-ilatek-path']
+  });
+  doc.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[data-ilatek-anchor]');
+    if (!a || e.button !== 0 || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey || a.target === '_blank') return;
+    var id = a.getAttribute('data-ilatek-anchor');
+    var target = id && doc.getElementById(id);
+    if (!target) return;
+    e.preventDefault();
+    target.scrollIntoView({ behavior: w.matchMedia && w.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+  });
+})(window);
+
+/* Delta System image/metadata binder. Templates survive existing page resolvers. */
+(function(w){
+  'use strict';
+  if(w.ILATEK_GEO)return;
+  var token='{'+'{custom_values.business__county_name}'+'}',doc=w.document;
+  function clean(v){v=String(v||'').replace(/\u00a0/g,' ').trim();return /\{\{|\}\}/.test(v)?'':v}
+  function county(){
+    var declared=doc.querySelectorAll('.dv-ghl-values,#dv-ghl-values'),nodes=declared.length?declared:doc.querySelectorAll('p'),values=[];
+    for(var i=0;i<nodes.length;i++){
+      var parts=nodes[i].textContent.split('|||DV|||');
+      if(parts.length!==6)continue;
+      nodes[i].style.display='none';nodes[i].setAttribute('aria-hidden','true');
+      var value=clean(parts[0]);if(value&&values.indexOf(value)<0)values.push(value);
+    }
+    if(values.length===1)return values[0];
+    // Conflicting bridges are not selected arbitrarily; use the known generic fallback.
+    if(values.length>1)return 'Puerto Rico';
+    var roots=doc.querySelectorAll('[data-location-label]');
+    for(var j=0;j<roots.length;j++){var v=clean(roots[j].getAttribute('data-location-label'));if(v)return v}
+    return 'Puerto Rico';
+  }
+  function enc(s){return encodeURIComponent(s).replace(/'/g,'%27')}
+  function esc(s){return String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+  function image(src,alt,title){
+    // No resolved locality is interpolated into innerHTML. Resolution uses setAttribute below.
+    return '<img src="'+esc(src)+'" alt="'+esc(alt)+'" title="'+esc(title)+'" data-ilatek-local-alt="'+enc(alt)+'" data-ilatek-local-title="'+enc(title)+'" loading="lazy" decoding="async">';
+  }
+  w.ILATEK_GEO={county:county,image:image};
+  var queued=false,titleTemplates=new WeakMap();
+  function refresh(){
+    queued=false;
+    var location=county(),lang=doc.documentElement.lang==='en'?'en':'es';
+    var els=doc.querySelectorAll('[data-ilatek-local-alt],[data-ilatek-local-title],[data-ilatek-local-content]');
+    for(var i=0;i<els.length;i++){
+      var el=els[i];
+      ['alt','title','content'].forEach(function(name){
+        var encoded=el.getAttribute('data-ilatek-local-'+name+'-'+lang)||el.getAttribute('data-ilatek-local-'+name);
+        if(!encoded)return;
+        var template;try{template=decodeURIComponent(encoded)}catch(e){return}
+        var value=template.split(token).join(location);
+        if(el.getAttribute(name)!==value)el.setAttribute(name,value);
+      });
+    }
+    var titles=doc.querySelectorAll('title');
+    for(var t=0;t<titles.length;t++){
+      var node=titles[t];if(node.closest('svg'))continue;
+      if(!titleTemplates.has(node)&&node.textContent.indexOf(token)>=0)titleTemplates.set(node,node.textContent);
+      if(titleTemplates.has(node)){var text=titleTemplates.get(node).split(token).join(location);if(node.textContent!==text)node.textContent=text}
+    }
+  }
+  function schedule(){if(!queued){queued=true;w.requestAnimationFrame(refresh)}}
+  if(doc.readyState==='loading')doc.addEventListener('DOMContentLoaded',refresh,{once:true});else schedule();
+  w.addEventListener('ilatek:lang',schedule);
+  if(w.MutationObserver)new w.MutationObserver(schedule).observe(doc.documentElement,{childList:true,subtree:true,characterData:true,
+    attributes:true,attributeFilter:['alt','title','content','lang','data-location-label']});
+})(window);
+
+/* Measure only the fixed bar, not its expanded drawer. No scroll-driven spacing. */
+(function(w,d){
+  if(w.ILATEK_LAYOUT)return;
+  w.ILATEK_LAYOUT=true;
+  var bar,frame,observer;
+  function measure(){
+    frame=0;
+    if(!bar||!bar.isConnected)return;
+    var bottom=Math.ceil(bar.getBoundingClientRect().bottom);
+    if(bottom>0&&bottom<300)d.documentElement.style.setProperty('--ilatek-menu-bottom',bottom+'px');
+  }
+  function queue(){if(!frame)frame=w.requestAnimationFrame(measure)}
+  function start(){
+    bar=d.querySelector('#ilatek-nav .iln-shell');
+    if(!bar)return;
+    if(observer)observer.disconnect();
+    measure();
+    if(w.ResizeObserver)new ResizeObserver(queue).observe(bar);
+    w.addEventListener('resize',queue,{passive:true});
+    if(d.fonts&&d.fonts.ready)d.fonts.ready.then(queue);
+  }
+  function boot(){
+    if(d.querySelector('#ilatek-nav .iln-shell'))start();
+    else{observer=new MutationObserver(start);observer.observe(d.documentElement,{childList:true,subtree:true})}
+  }
+  if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',boot,{once:true});else boot();
+})(window,document);
+
+</script>
+<!-- ILATEK:INTERNAL-LINKS:END -->
 <!-- ILATEK · resolver global del puente dv-ghl-values + valores de marca.
      Sin gate: la página pinta de inmediato y los values se aplican en cuanto
      están disponibles (no se oculta nada, no se encola ningún handler).
@@ -347,312 +755,6 @@
 <p class="dv-ghl-values" id="dv-ghl-values" hidden>{{custom_values.business__county_name}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}</p>
 
 
-<!-- ILATEK:INTERNAL-LINKS:START -->
-<style>
-/* A single, unframed logo. Keep its 52px slot inside the existing 64px bar.
-   The uniform white bar integrates the original white-backed asset without redrawing it. */
-#ilatek-nav .iln-shell{background:#fff}
-#ilatek-nav .iln-brand{flex:0 0 52px;width:52px;height:52px;gap:0;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none}
-#ilatek-nav .iln-brand img{width:52px;height:52px;max-width:none;padding:0;border:0;border-radius:0;background:none;box-shadow:none;object-fit:contain}
-#ilatek-nav .iln-brand:focus-visible{outline:2px solid #009640;outline-offset:3px}
-/* Scroll-only glass button: same small footprint, with an edge on white surfaces. */
-#ilatek-nav.iln-compact>div.iln-shell{
-  width:64px;min-height:64px;height:64px;padding:0;gap:0;border-radius:20px;
-  border:1px solid rgba(17,22,75,.18);
-  background:linear-gradient(145deg,rgba(255,255,255,.88),rgba(244,247,252,.68));
-  -webkit-backdrop-filter:blur(14px) saturate(130%);backdrop-filter:blur(14px) saturate(130%);
-  box-shadow:0 4px 14px rgba(11,16,61,.10),inset 0 1px 0 rgba(255,255,255,.85);
-}
-#ilatek-nav.iln-compact>div.iln-shell:hover,#ilatek-nav.iln-compact>div.iln-shell:focus-within{
-  border-color:rgba(33,61,142,.68);box-shadow:0 5px 16px rgba(11,16,61,.13),inset 0 1px 0 rgba(255,255,255,.9);
-}
-#ilatek-nav.iln-compact .iln-shell .iln-brand{flex:1;width:100%;height:62px;justify-content:center;border-radius:19px;cursor:pointer}
-#ilatek-nav.iln-compact .iln-brand img{border-radius:13px}
-#ilatek-nav.iln-compact .iln-brand:focus-visible{outline:2px solid var(--iln-blue);outline-offset:3px}
-@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
-  #ilatek-nav.iln-compact>div.iln-shell{background:rgba(255,255,255,.96)}
-}
-#ilatek-nav .iln-login{display:none}
-@media(min-width:1101px){
-  #ilatek-nav{--iln-item-gap:clamp(16px,1.6vw,24px)}
-  #ilatek-nav:not(.iln-compact) .iln-shell{gap:var(--iln-item-gap)}
-  #ilatek-nav .iln-shell .iln-links{position:static;left:auto;transform:none;margin:0 0 0 auto;gap:var(--iln-item-gap)}
-  #ilatek-nav .iln-shell .iln-links>a,#ilatek-nav .iln-links .iln-trigger{padding:10px 0;min-height:44px}
-  #ilatek-nav .iln-shell .iln-langwrap{margin:0;flex:none}
-  #ilatek-nav .iln-shell .iln-lang{min-height:44px;padding:10px 0;gap:8px;border:0;background:transparent;border-radius:8px;font-size:14px}
-  #ilatek-nav .iln-shell .iln-lang span{padding:0;border-radius:0;background:none;box-shadow:none;color:var(--iln-ink);opacity:.65}
-  #ilatek-nav .iln-shell .iln-lang span[aria-pressed="true"]{opacity:1;text-decoration:underline;text-decoration-color:var(--iln-green);text-underline-offset:6px;text-decoration-thickness:2px}
-  #ilatek-nav .iln-shell .iln-login{display:inline-flex;align-items:center;flex:none;min-height:44px;padding:10px 0;font-size:14px;font-weight:700;white-space:nowrap}
-  #ilatek-nav .iln-login:hover{color:var(--iln-blue)}
-  #ilatek-nav .iln-shell .iln-ctawrap,#ilatek-nav .iln-shell>.iln-cta{margin-left:0;flex:none}
-  #ilatek-nav.iln-compact .iln-links,#ilatek-nav.iln-compact .iln-shell .iln-login{display:none}
-}
-/* Both menu glyphs occupy the same grid cell. The close SVG lives inside a span;
-   positioning that SVG absolutely used to offset it outside the button center. */
-#ilatek-nav .iln-burger{flex:0 0 44px;min-width:44px;min-height:44px;padding:0;line-height:1;appearance:none}
-#ilatek-nav .iln-burger svg{position:static;display:block;width:22px;height:22px;grid-area:1 / 1;pointer-events:none}
-#ilatek-nav .iln-burger>.iln-ic-x{display:grid;place-items:center;grid-area:1 / 1;width:22px;height:22px;pointer-events:none;transition:opacity .22s ease,transform .26s ease}
-@media(max-width:1100px){
-  #ilatek-nav .iln-shell{gap:8px}
-  #ilatek-nav .iln-langwrap{margin-left:auto;align-items:center}
-  #ilatek-nav .iln-burger{margin-left:0}
-  #ilatek-nav:not(.iln-lang-on) .iln-burger{margin-left:auto}
-  /* Minimal visual pills, with a full 44px-high touch target. */
-  #ilatek-nav .iln-lang{min-height:44px;min-width:64px;justify-content:center;padding:0;gap:2px;border:0;background:transparent;font-size:12px}
-  #ilatek-nav .iln-lang span{padding:6px 8px;box-shadow:none}
-}
-@media(prefers-reduced-motion:reduce){#ilatek-nav .iln-burger>.iln-ic-x{transition:none}}
-/* Fixed navigation occupies no document flow. Reserve its real height once,
-   then leave 32 / 48 / 64px of breathing room above service-hero content. */
-body:has(#ilatek-nav) :is(.il-hero,.ilr-hero,.ilc2-hero,.ilsx-hero,.ilt-hero){
-  padding-top:calc(var(--ilatek-menu-bottom,78px) + 64px) !important;
-}
-/* The cinematic Home keeps its centered composition and a safe top inset. */
-body:has(#ilatek-nav) .mshero-inner{
-  padding-top:max(clamp(96px,11vw,160px),calc(var(--ilatek-menu-bottom,78px) + 64px)) !important;
-}
-@media(max-width:1100px){
-  body:has(#ilatek-nav) :is(.il-hero,.ilr-hero,.ilc2-hero,.ilsx-hero,.ilt-hero){padding-top:calc(var(--ilatek-menu-bottom,78px) + 48px) !important}
-  body:has(#ilatek-nav) .mshero-inner{padding-top:max(96px,calc(var(--ilatek-menu-bottom,78px) + 48px)) !important}
-}
-@media(max-width:560px){
-  body:has(#ilatek-nav) :is(.il-hero,.ilr-hero,.ilc2-hero,.ilsx-hero,.ilt-hero){padding-top:calc(var(--ilatek-menu-bottom,78px) + 32px) !important}
-  body:has(#ilatek-nav) .mshero-inner{padding-top:max(96px,calc(var(--ilatek-menu-bottom,78px) + 32px)) !important}
-}
-/* Inline vectors survive font loading, language changes and generic GHL SVG rules. */
-#ilatek-cobertura-dir .icd-nav{min-width:44px;min-height:44px;flex-shrink:0;line-height:1}
-#ilatek-cobertura-dir .icd-nav svg{display:block !important;width:22px !important;height:22px !important;max-width:none;fill:none !important;stroke:currentColor !important;pointer-events:none}
-#ilatek-cobertura-dir .icd-nav:focus-visible{outline:2px solid #00b94f;outline-offset:4px}
-#ilatek-cobertura-dir [hidden]{display:none !important}
-@media(prefers-reduced-motion:reduce){html:has(#ilatek-nav){scroll-behavior:auto !important}}
-
-/* ILATEK · Escala tipográfica fluida para titulares.
-   SOLO presentación: no cambia texto, contenido, descripciones, jerarquía ni
-   distribución. Se inyecta con el resto del bloque compartido (links/runtime).
-
-   Reglas:
-   1) Titular de marca (Home) = UNA SOLA LÍNEA en cualquier ancho. El tamaño se
-      deriva del ancho disponible, no de un valor fijo, así que encoge en el
-      teléfono en vez de partirse en dos líneas.
-   2) Titulares de oración (héroes de categoría/servicio y la landing de reseñas)
-      = tamaño proporcional al ancho del dispositivo con piso legible de 24px.
-      Nunca producen más líneas que el diseño actual, solo menos.
-   3) Desde 1101px no se altera ningún tamaño: manda el diseño aprobado. Cada
-      curva termina exactamente en el valor que la página ya usa a 1100px, de
-      modo que no hay salto al cruzar el punto de quiebre.
-
-   Divisor 11.2 = medida real del titular más largo en una línea
-   ("Ilatek Property Solution", Outfit 800, letter-spacing -0.045em: 10.86em a
-   280px) más 3% de margen. Al cargar sin la fuente web el respaldo Arial mide
-   12.7em, así que durante esos milisegundos el titular corto puede partirse en
-   dos líneas, pero nunca desborda el ancho de pantalla. */
-
-/* 1 · Titular de marca: una línea garantizada de 280px a 1920px.
-   min( <diseño actual>, <ancho disponible / medida del texto> ) — nunca agranda. */
-.mshero h1{
-  font-size:min(clamp(40px,6.2vw,82px),calc((100vw - 40px)/11.2)) !important;
-}
-
-/* 2 · Titulares de oración: misma curva que ya usa cada familia, con el piso
-   bajado a 24px. Al conservar el coeficiente vw y el tope (el valor de la
-   página a 1100px) el resultado nunca es mayor que el diseño aprobado: solo
-   encoge en los anchos donde antes el piso fijo ganaba. La transición a
-   ≥1101px es continua porque cada tope es el valor exacto de 1100px. */
-@media (max-width:1100px){
-  .ilt-hero h1,.ilc2-hero h1{
-    font-size:clamp(24px,5vw,55px) !important;
-  }
-  /* Las páginas de categoría usan .ilr-hero con 5vw. La landing de reseñas ya es
-     fluida por su cuenta (3.5vw sobre un piso de 32px, 8vw en el teléfono), así
-     que se excluye: forzarla a 5vw le añadía una línea entre 700px y 1100px. */
-  .ilr-hero h1:not(#ilatek-resenas-lp *){
-    font-size:clamp(24px,5vw,55px) !important;
-  }
-  .il-hero h1{
-    font-size:clamp(24px,5.6vw,61.6px) !important;
-  }
-  .ilsx-hero h1{
-    font-size:clamp(24px,5.4vw,59.4px) !important;
-  }
-  .il-reviews-head h1,#ilatek-reviews-title{
-    font-size:clamp(24px,4.6vw,50.6px) !important;
-  }
-}
-
-</style>
-<script>
-/* ILATEK: one shared URL contract; inlined into standalone GHL embeds. */
-(function (w) {
-  'use strict';
-  if (w.ILATEK_LINKS) return;
-  var TOKEN = '{' + '{custom_values.website_url}' + '}';
-  var FALLBACK = 'https://ilatekpr.com';
-  function normalize(value) {
-    var raw = String(value || '').trim();
-    if (!raw || raw.startsWith('/') || /[{}\s<>"'\\]/.test(raw)) return '';
-    if (/^[a-z][a-z\d+.-]*:/i.test(raw) && !/^https?:\/\//i.test(raw)) return '';
-    try {
-      var u = new URL(/^https?:\/\//i.test(raw) ? raw : 'https://' + raw);
-      if (u.username || u.password || u.search || u.hash || !u.hostname.includes('.')) return '';
-      return 'https://' + u.host + u.pathname.replace(/\/+$/, '');
-    } catch (e) { return ''; }
-  }
-  function bridge() {
-    if (!w.document) return '';
-    var nodes = w.document.querySelectorAll('.dv-ghl-values, #dv-ghl-values');
-    var values = [];
-    for (var i = 0; i < nodes.length; i++) {
-      var parts = nodes[i].textContent.split('|||DV|||');
-      if (parts.length<6) continue;
-      var value = normalize(parts[3]);
-      if (value && values.indexOf(value) < 0) values.push(value);
-    }
-    return values.length === 1 ? values[0] : '';
-  }
-  function base(value) { return bridge() || normalize(value) || FALLBACK; }
-  function join(value, pathname) {
-    var root = base(value), suffix = String(pathname || '/');
-    if (!suffix.startsWith('/') || suffix.startsWith('//')) return root + '/';
-    // Support an existing base-path once without changing the service path.
-    var prefix = new URL(root).pathname.replace(/\/$/, '');
-    if (prefix && (suffix === prefix || suffix.startsWith(prefix + '/'))) return new URL(root).origin + suffix;
-    return root + suffix;
-  }
-  function replace(text, key, value) {
-    var out = String(text || '');
-    if (key !== TOKEN) return out.split(key).join(value);
-    var root = base(value);
-    return out.split('https://' + TOKEN).join(root).split('http://' + TOKEN).join(root).split(TOKEN).join(root);
-  }
-  w.ILATEK_LINKS = { normalize: normalize, base: base, join: join, replace: replace };
-  if (!w.document) return;
-  var doc = w.document, queued = false;
-  function refresh() {
-    queued = false;
-    var nodes = doc.querySelectorAll('a[data-ilatek-path]');
-    for (var i = 0; i < nodes.length; i++) {
-      var a = nodes[i], root = a.closest('[data-website-url]');
-      var value = root && root.getAttribute('data-website-url');
-      if (!normalize(value)) {
-        var declared = doc.querySelector('[data-website-url]');
-        value = declared && declared.getAttribute('data-website-url');
-      }
-      // GHL may resolve the href even when the surrounding data attribute is absent.
-      if (!normalize(value)) {
-        try { value = new URL(a.getAttribute('href')).origin; } catch (e) {}
-      }
-      var url = join(value, a.getAttribute('data-ilatek-path'));
-      if (a.getAttribute('href') !== url) a.setAttribute('href', url);
-    }
-  }
-  function schedule() {
-    if (!queued) { queued = true; (w.requestAnimationFrame || w.setTimeout)(refresh); }
-  }
-  if (doc.readyState === 'loading') doc.addEventListener('DOMContentLoaded', refresh, { once: true });
-  else schedule();
-  // One observer shared across menu/footer/page, including late GHL bridge values.
-  if (w.MutationObserver) new w.MutationObserver(schedule).observe(doc.documentElement, {
-    childList: true, subtree: true, characterData: true,
-    attributes: true, attributeFilter: ['data-website-url', 'data-ilatek-path']
-  });
-  doc.addEventListener('click', function (e) {
-    var a = e.target.closest && e.target.closest('a[data-ilatek-anchor]');
-    if (!a || e.button !== 0 || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey || a.target === '_blank') return;
-    var id = a.getAttribute('data-ilatek-anchor');
-    var target = id && doc.getElementById(id);
-    if (!target) return;
-    e.preventDefault();
-    target.scrollIntoView({ behavior: w.matchMedia && w.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
-  });
-})(window);
-
-/* Delta System image/metadata binder. Templates survive existing page resolvers. */
-(function(w){
-  'use strict';
-  if(w.ILATEK_GEO)return;
-  var token='{'+'{custom_values.business__county_name}'+'}',doc=w.document;
-  function clean(v){v=String(v||'').replace(/\u00a0/g,' ').trim();return /\{\{|\}\}/.test(v)?'':v}
-  function county(){
-    var declared=doc.querySelectorAll('.dv-ghl-values,#dv-ghl-values'),nodes=declared.length?declared:doc.querySelectorAll('p'),values=[];
-    for(var i=0;i<nodes.length;i++){
-      var parts=nodes[i].textContent.split('|||DV|||');
-      if(parts.length<6)continue;
-      nodes[i].style.display='none';nodes[i].setAttribute('aria-hidden','true');
-      var value=clean(parts[0]);if(value&&values.indexOf(value)<0)values.push(value);
-    }
-    if(values.length===1)return values[0];
-    // Conflicting bridges are not selected arbitrarily; use the known generic fallback.
-    if(values.length>1)return 'Puerto Rico';
-    var roots=doc.querySelectorAll('[data-location-label]');
-    for(var j=0;j<roots.length;j++){var v=clean(roots[j].getAttribute('data-location-label'));if(v)return v}
-    return 'Puerto Rico';
-  }
-  function enc(s){return encodeURIComponent(s).replace(/'/g,'%27')}
-  function esc(s){return String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
-  function image(src,alt,title){
-    // No resolved locality is interpolated into innerHTML. Resolution uses setAttribute below.
-    return '<img src="'+esc(src)+'" alt="'+esc(alt)+'" title="'+esc(title)+'" data-ilatek-local-alt="'+enc(alt)+'" data-ilatek-local-title="'+enc(title)+'" loading="lazy" decoding="async">';
-  }
-  w.ILATEK_GEO={county:county,image:image};
-  var queued=false,titleTemplates=new WeakMap();
-  function refresh(){
-    queued=false;
-    var location=county(),lang=doc.documentElement.lang==='en'?'en':'es';
-    var els=doc.querySelectorAll('[data-ilatek-local-alt],[data-ilatek-local-title],[data-ilatek-local-content]');
-    for(var i=0;i<els.length;i++){
-      var el=els[i];
-      ['alt','title','content'].forEach(function(name){
-        var encoded=el.getAttribute('data-ilatek-local-'+name+'-'+lang)||el.getAttribute('data-ilatek-local-'+name);
-        if(!encoded)return;
-        var template;try{template=decodeURIComponent(encoded)}catch(e){return}
-        var value=template.split(token).join(location);
-        if(el.getAttribute(name)!==value)el.setAttribute(name,value);
-      });
-    }
-    var titles=doc.querySelectorAll('title');
-    for(var t=0;t<titles.length;t++){
-      var node=titles[t];if(node.closest('svg'))continue;
-      if(!titleTemplates.has(node)&&node.textContent.indexOf(token)>=0)titleTemplates.set(node,node.textContent);
-      if(titleTemplates.has(node)){var text=titleTemplates.get(node).split(token).join(location);if(node.textContent!==text)node.textContent=text}
-    }
-  }
-  function schedule(){if(!queued){queued=true;w.requestAnimationFrame(refresh)}}
-  if(doc.readyState==='loading')doc.addEventListener('DOMContentLoaded',refresh,{once:true});else schedule();
-  w.addEventListener('ilatek:lang',schedule);
-  if(w.MutationObserver)new w.MutationObserver(schedule).observe(doc.documentElement,{childList:true,subtree:true,characterData:true,
-    attributes:true,attributeFilter:['alt','title','content','lang','data-location-label']});
-})(window);
-
-/* Measure only the fixed bar, not its expanded drawer. No scroll-driven spacing. */
-(function(w,d){
-  if(w.ILATEK_LAYOUT)return;
-  w.ILATEK_LAYOUT=true;
-  var bar,frame,observer;
-  function measure(){
-    frame=0;
-    if(!bar||!bar.isConnected)return;
-    var bottom=Math.ceil(bar.getBoundingClientRect().bottom);
-    if(bottom>0&&bottom<300)d.documentElement.style.setProperty('--ilatek-menu-bottom',bottom+'px');
-  }
-  function queue(){if(!frame)frame=w.requestAnimationFrame(measure)}
-  function start(){
-    bar=d.querySelector('#ilatek-nav .iln-shell');
-    if(!bar)return;
-    if(observer)observer.disconnect();
-    measure();
-    if(w.ResizeObserver)new ResizeObserver(queue).observe(bar);
-    w.addEventListener('resize',queue,{passive:true});
-    if(d.fonts&&d.fonts.ready)d.fonts.ready.then(queue);
-  }
-  function boot(){
-    if(d.querySelector('#ilatek-nav .iln-shell'))start();
-    else{observer=new MutationObserver(start);observer.observe(d.documentElement,{childList:true,subtree:true})}
-  }
-  if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',boot,{once:true});else boot();
-})(window,document);
-
-</script>
-<!-- ILATEK:INTERNAL-LINKS:END -->
 <meta charset="utf-8">
 <!--
   ILATEK · GHL Custom HTML · Seccion "Servicios" · Showcase con banda de video
@@ -691,16 +793,17 @@ body:has(#ilatek-nav) .mshero-inner{
     .ils-top{position:relative;z-index:2;overflow:hidden;isolation:isolate;padding:var(--ms-pad) 0 var(--ils-half,230px);margin-inline:calc((100% - 100vw) / 2);padding-inline:calc((100vw - 100%) / 2);background:transparent}
     .ils-bgvideo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.02);z-index:0;pointer-events:none}
     /* Carrusel transparente sobre el video: la máscara desvanece los bordes hacia el azul de marca */
-    .ils-carousel{position:relative;z-index:2;margin-top:calc(-1 * var(--ils-half,230px));width:100%;overflow:hidden;margin-inline:calc((100% - 100vw) / 2);-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);background:transparent}    .ils-track{display:flex;gap:0;width:max-content;padding:8px 12px 0;will-change:transform;user-select:none;-webkit-user-select:none}
+    .ils-carousel{position:relative;z-index:2;margin-top:calc(-1 * var(--ils-half,230px));width:100%;overflow:hidden;margin-inline:calc((100% - 100vw) / 2);-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);background:transparent}    .ils-track{display:flex;gap:0;width:max-content;padding:14px 12px 0;will-change:transform;user-select:none;-webkit-user-select:none}
     .ils-track img{-webkit-user-drag:none;user-drag:none}
     .ils-carousel:hover .ils-track,.ils-carousel:focus-within .ils-track{cursor:grab}
-    .ils-card:focus-visible{outline:3px solid #fff;outline-offset:3px}
+    .ils-card:focus-visible .ils-card-box{outline:3px solid #fff;outline-offset:3px}
 
     .ils-carousel:hover .ils-track,.ils-carousel:focus-within .ils-track{animation-play-state:paused}@keyframes ils-marquee{to{transform:translateX(-50%)}}
     /* Scroll horizontal TRANSPARENTE: el carrusel se desliza sin barra visible */
     .ils-carousel{scrollbar-width:none;-ms-overflow-style:none}.ils-carousel::-webkit-scrollbar{display:none}.ils-carousel::-webkit-scrollbar-track{background:transparent}.ils-carousel::-webkit-scrollbar-thumb{background:transparent}
     /* Tarjetas glassmorphism */
-    .ils-card{display:flex;flex-direction:column;width:330px;border:1px solid rgba(255,255,255,.16);border-radius:22px;background:linear-gradient(155deg,#213d8e,#11164b 70%,#0d1240);box-shadow:0 20px 46px rgba(11,16,61,.32),inset 0 1px 0 rgba(255,255,255,.16);color:#fff;overflow:hidden;transition:transform .45s cubic-bezier(.4,0,.2,1),box-shadow .45s cubic-bezier(.4,0,.2,1),background .45s cubic-bezier(.4,0,.2,1)}.ils-card:hover{transform:translateY(-6px);background:linear-gradient(155deg,#2a4aa4,#151b58 70%,#0f1550);box-shadow:0 28px 58px rgba(11,16,61,.42),inset 0 1px 0 rgba(255,255,255,.22)}.ils-track .ils-card{margin-right:22px}.ils-media{position:relative;aspect-ratio:16/9;min-height:0;overflow:hidden;background:rgba(255,255,255,.06)}.ils-media img{display:block;width:100%;height:100%;object-fit:cover;transform:scale(1);transform-origin:center;backface-visibility:hidden;transition:transform .8s cubic-bezier(.4,0,.2,1),filter .8s cubic-bezier(.4,0,.2,1);will-change:transform}.ils-card:hover .ils-media img,.ils-card:focus-within .ils-media img{transform:scale(1.06);filter:brightness(1.04) saturate(1.08)}.ils-media:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,16,61,0) 58%,rgba(11,16,61,.45))}
+    .ils-card{display:flex;flex-direction:column;width:330px;color:#fff;overflow:visible}
+    .ils-card-box{position:relative;display:flex;flex-direction:column;flex:1;width:100%;border:1px solid rgba(255,255,255,.16);border-radius:22px;background:linear-gradient(155deg,#213d8e,#11164b 70%,#0d1240);box-shadow:0 20px 46px rgba(11,16,61,.32),inset 0 1px 0 rgba(255,255,255,.16);color:#fff;overflow:hidden;transform:translate3d(0,0,0) scale(1);backface-visibility:hidden;transition:transform .5s cubic-bezier(.22,.61,.25,1),box-shadow .5s cubic-bezier(.22,.61,.25,1)}@media(hover:hover) and (pointer:fine){.ils-card:hover .ils-card-box{transform:translate3d(0,-8px,0) scale(1.018);box-shadow:0 30px 62px rgba(11,16,61,.46),inset 0 1px 0 rgba(255,255,255,.24)}}.ils-card:focus-within .ils-card-box{transform:translate3d(0,-8px,0) scale(1.018);box-shadow:0 30px 62px rgba(11,16,61,.46),inset 0 1px 0 rgba(255,255,255,.24)}.ils-track .ils-card{margin-right:22px}.ils-media{position:relative;aspect-ratio:16/9;min-height:0;overflow:hidden;background:rgba(255,255,255,.06)}.ils-media img{display:block;width:100%;height:100%;object-fit:cover;transform:scale(1);transform-origin:center;backface-visibility:hidden;transition:transform .7s cubic-bezier(.22,.61,.25,1)}@media(hover:hover) and (pointer:fine){.ils-card:hover .ils-media img{transform:scale(1.045)}}.ils-card:focus-within .ils-media img{transform:scale(1.045)}.ils-media:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,16,61,0) 58%,rgba(11,16,61,.45))}
     .ils-media span{position:absolute;z-index:1;left:14px;top:12px;padding:7px 13px;border-radius:99px;background:rgba(11,16,61,.42);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.28);color:#fff;font-size:10.5px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;text-shadow:0 1px 6px rgba(11,16,61,.5)}
     .ils-body{display:flex;flex-direction:column;flex:1;padding:20px 22px 22px}.ils-body h5{margin:0;font-family:Outfit,Manrope,sans-serif;font-size:20px;font-weight:800;letter-spacing:-.03em;line-height:1.25}.ils-body p{flex:1;margin:9px 0 0;color:rgba(255,255,255,.78);font-size:13.5px;line-height:1.62}
     .ils-foot{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px 12px;margin-top:16px;padding-top:14px;border-top:1px solid rgba(255,255,255,.16)}
@@ -708,12 +811,11 @@ body:has(#ilatek-nav) .mshero-inner{
     .ils-price:before{content:'';width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 10px rgba(0,255,153,.9),0 0 22px rgba(0,185,79,.55)}
     .ils-more{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:40px;padding:9px 16px;border-radius:8px;background:var(--green);color:#fff!important;font:800 12.5px/1 Manrope,Arial,sans-serif;letter-spacing:.02em;box-shadow:0 10px 22px rgba(0,185,79,.35);transition:background .25s ease,transform .25s ease,box-shadow .25s ease}
     .ils-more:after{content:'→'}
-    .ils-card:hover .ils-more,.ils-card:focus-visible .ils-more{background:var(--green-dark);box-shadow:0 14px 28px rgba(0,185,79,.45)}
+    @media(hover:hover) and (pointer:fine){.ils-card:hover .ils-more{background:var(--green-dark);box-shadow:0 14px 28px rgba(0,185,79,.45)}}.ils-card:focus-visible .ils-more{background:var(--green-dark);box-shadow:0 14px 28px rgba(0,185,79,.45)}
     .ils-hint{position:relative;z-index:2;margin:0;width:100%;padding:15px 20px;background:#0b103d;text-align:center;color:rgba(255,255,255,.72);font-size:12.5px}
     /* Auto-slide infinito en TODOS los dispositivos: el marquee corre incluso con prefers-reduced-motion */
     @media(max-width:560px){.ils-head{width:min(100% - 40px,1400px);margin-bottom:34px}.ils-track{gap:16px}.ils-card{width:282px}.ils-media{min-height:0}.ils-hint{width:100%}}
-    @media (prefers-reduced-motion:reduce){.ils-bgvideo{display:none}}
-  </style>
+    @media (prefers-reduced-motion:reduce){.ils-bgvideo{display:none}}</style>
 
   <video class="ils-bgvideo" src="https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8f952bd6bb710ca0fd582.mp4" poster="https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/hero-poster-1280.webp" autoplay muted loop playsinline webkit-playsinline preload="auto" disablepictureinpicture tabindex="-1" aria-hidden="true"></video>
   <div class="ils-top">
@@ -748,6 +850,12 @@ body:has(#ilatek-nav) .mshero-inner{
       ilBg.addEventListener('ended',function(){try{ilBg.currentTime=0;}catch(e){} ilKick();});
       setInterval(ilKick,4000);
     }
+    /* Móvil: se suelta el clip de fondo (queda el poster). Ahorra datos y
+       memoria, que es lo que hace que el navegador recargue la página. */
+    if(window.matchMedia&&window.matchMedia('(max-width:700px)').matches){
+      var ilBgM=root.querySelector('.ils-bgvideo');
+      if(ilBgM){try{ilBgM.pause();ilBgM.removeAttribute('src');ilBgM.load()}catch(e){}}
+    }
     var website=(root.getAttribute('data-website-url')||'').replace(/\u00a0/g,' ').trim();
     if(/^\s*\{\{[^}]+\}\}\s*$/.test(website)||!website)website='https://ilatekpr.com';
     var ilBV=window.ILATEK_BRIDGE||{slot:function(){return ''},attr:function(v){return String(v==null?'':v)}};
@@ -771,22 +879,22 @@ body:has(#ilatek-nav) .mshero-inner{
     /* Los 10 servicios mas solicitados para companias de limpieza en Puerto Rico.
        altSeo: texto ALT dedicado por servicio, con la palabra clave Puerto Rico para SEO. */
     var SERVICES=[
-      {img:IMG_REGULAR,kicker:'Limpieza regular',title:'Tu hogar siempre fresco',desc:'El servicio más solicitado: limpieza recurrente semanal, quincenal o mensual a $0.07 por pie².',slug:'limpieza-estandar',price:'Desde $0.07/pie²',altSeo:'Servicio de limpieza regular en {{custom_values.business__county_name}} por Ilatek: limpieza recurrente semanal, quincenal o mensual del hogar a domicilio.',altEn:'Recurring weekly, biweekly or monthly home cleaning service in {{custom_values.business__county_name}} by Ilatek.'},
-      {img:IMG_PROFUNDA,kicker:'Limpieza profunda',title:'Renueva cada rincón',desc:'Limpieza a fondo área por área a $0.15 por pie²: ideal para una renovación completa del hogar.',slug:'limpieza-profunda',price:'Desde $0.15/pie²',altSeo:'Limpieza profunda de casa en {{custom_values.business__county_name}} por Ilatek: limpieza a fondo habitación por habitación y renovación completa del hogar.',altEn:'In-depth whole-home deep cleaning in {{custom_values.business__county_name}} by Ilatek, room by room.'},
+      {img:IMG_REGULAR,kicker:'Limpieza regular',title:'Tu hogar siempre fresco',desc:'El servicio más solicitado: limpieza recurrente semanal, quincenal o mensual, con precio desde $250 por servicio.',slug:'limpieza-estandar',price:'Desde $250',altSeo:'Servicio de limpieza regular en {{custom_values.business__county_name}} por Ilatek: limpieza recurrente semanal, quincenal o mensual del hogar a domicilio.',altEn:'Recurring weekly, biweekly or monthly home cleaning service in {{custom_values.business__county_name}} by Ilatek.'},
+      {img:IMG_PROFUNDA,kicker:'Limpieza profunda',title:'Renueva cada rincón',desc:'Limpieza a fondo área por área, desde $250 por servicio: ideal para una renovación completa del hogar.',slug:'limpieza-profunda',price:'Desde $250',altSeo:'Limpieza profunda de casa en {{custom_values.business__county_name}} por Ilatek: limpieza a fondo habitación por habitación y renovación completa del hogar.',altEn:'In-depth whole-home deep cleaning in {{custom_values.business__county_name}} by Ilatek, room by room.'},
       {img:IMG_MUDANZA,kicker:'Mudanza',title:'Mudanza sin estrés',desc:'Move-in / move-out: entrega o recibe tu espacio impecable, listo para el siguiente capítulo.',slug:'limpieza-de-mudanza',price:'Precio en minutos',altSeo:'Limpieza de mudanza move in move out en {{custom_values.business__county_name}} por Ilatek: hogar o apartamento impecable antes o después de mudarte.',altEn:'Move-in/move-out cleaning in {{custom_values.business__county_name}} by Ilatek: a spotless home before or after you move.'},
       {img:IMG_AIRBNB,kicker:'Airbnb & rentals',title:'Reseñas de 5 estrellas',desc:'Turnover profesional para rentals a corto plazo: limpieza rápida y detallada entre huéspedes.',slug:'airbnb-turnover',price:'Precio en minutos',altSeo:'Limpieza para Airbnb y co-host de rentals a corto plazo en {{custom_values.business__county_name}} por Ilatek: turnover profesional entre huéspedes con reseñas de 5 estrellas.',altEn:'Airbnb and short-term rental turnover cleaning in {{custom_values.business__county_name}} by Ilatek with 5-star reviews.'},
       {img:IMG_POSTCONSTRUCCION,kicker:'Post-construcción',title:'Del polvo al brillo',desc:'Eliminamos residuos de obra, polvo fino y escombros para estrenar tu espacio como nuevo.',slug:'post-construccion',price:'Precio en minutos',altSeo:'Limpieza post construccion en {{custom_values.business__county_name}} por Ilatek: eliminación de polvo de obra, residuos y escombros para estrenar tu espacio.',altEn:'Post-construction cleaning in {{custom_values.business__county_name}} by Ilatek: dust, debris and residue removal.'},
-      {img:IMG_VENTANAS,kicker:'Ventanas',title:'Más luz en tu hogar',desc:'Ventanas interiores ($10) y exteriores ($25): cristales impecables y una vista perfecta.',slug:'ventanas',price:'Desde $10',altSeo:'Limpieza de ventanas y cristales en {{custom_values.business__county_name}} por Ilatek: ventanas interiores y exteriores impecables con más luz para tu hogar.',altEn:'Interior and exterior window cleaning in {{custom_values.business__county_name}} by Ilatek for more light at home.'},
+      {img:IMG_VENTANAS,kicker:'Ventanas',title:'Más luz en tu hogar',desc:'Ventanas interiores y exteriores (desde $250): cristales impecables y una vista perfecta.',slug:'ventanas',price:'Desde $250',altSeo:'Limpieza de ventanas y cristales en {{custom_values.business__county_name}} por Ilatek: ventanas interiores y exteriores impecables con más luz para tu hogar.',altEn:'Interior and exterior window cleaning in {{custom_values.business__county_name}} by Ilatek for more light at home.'},
       {img:IMG_PRESION,kicker:'Lavado a presión',title:'Exteriores como nuevos',desc:'Fachadas, terrazas, verjas y aceras: el poder del agua a presión para eliminar años de suciedad.',slug:'lavado-a-presion',price:'Precio en minutos',altSeo:'Lavado a presión en {{custom_values.business__county_name}} por Ilatek: limpieza de fachadas, terrazas, verjas, aceras y exteriores con agua a alta presión.',altEn:'High-pressure washing of facades, terraces, fences and sidewalks in {{custom_values.business__county_name}} by Ilatek.'},
-      {img:IMG_ALFOMBRAS,kicker:'Alfombras',title:'Frescor bajo tus pies',desc:'Lavado de alfombras a $0.75 por pie²: elimina manchas, olores y alérgenos acumulados.',slug:'alfombras',price:'Desde $0.75/pie²',altSeo:'Lavado de alfombras y tapetes en {{custom_values.business__county_name}} por Ilatek: eliminación de manchas, olores y alérgenos a $0.75 por pie cuadrado.',altEn:'Carpet and rug washing in {{custom_values.business__county_name}} by Ilatek: stains, odors and allergens removed.'},
-      {img:IMG_ELECTRODOMESTICOS,kicker:'Electrodomésticos',title:'Cocina como nueva',desc:'Refrigerador ($40), horno ($30), lavaplatos ($10) y lavadora/secadora ($10), por dentro y por fuera.',slug:'electrodomesticos',price:'Desde $10',altSeo:'Limpieza de electrodomesticos en {{custom_values.business__county_name}} por Ilatek: refrigerador, horno, lavaplatos, lavadora y secadora limpios por dentro y por fuera.',altEn:'Appliance cleaning in {{custom_values.business__county_name}} by Ilatek: fridge, oven, dishwasher, washer and dryer inside and out.'},
-      {img:IMG_ORGANIZACION,kicker:'Organización',title:'Orden que permanece',desc:'Despensas y clósets ($50 c/u) y garaje ($0.50 por pie²): orden funcional que te devuelve tiempo.',slug:'organizacion',price:'Desde $50',altSeo:'Organización del hogar en {{custom_values.business__county_name}} por Ilatek: organización profesional de despensas, clósets y garaje en casa.',altEn:'Professional home organization of pantries, closets and garage in {{custom_values.business__county_name}} by Ilatek.'}
+      {img:IMG_ALFOMBRAS,kicker:'Alfombras',title:'Frescor bajo tus pies',desc:'Lavado de alfombras con precio por servicio: elimina manchas, olores y alérgenos acumulados.',slug:'alfombras',price:'Desde $250',altSeo:'Lavado de alfombras y tapetes en {{custom_values.business__county_name}} por Ilatek: eliminación de manchas, olores y alérgenos con precio por servicio.',altEn:'Carpet and rug washing in {{custom_values.business__county_name}} by Ilatek: stains, odors and allergens removed.'},
+      {img:IMG_ELECTRODOMESTICOS,kicker:'Electrodomésticos',title:'Cocina como nueva',desc:'Refrigerador, horno, lavaplatos y lavadora/secadora (desde $250), por dentro y por fuera.',slug:'electrodomesticos',price:'Desde $250',altSeo:'Limpieza de electrodomesticos en {{custom_values.business__county_name}} por Ilatek: refrigerador, horno, lavaplatos, lavadora y secadora limpios por dentro y por fuera.',altEn:'Appliance cleaning in {{custom_values.business__county_name}} by Ilatek: fridge, oven, dishwasher, washer and dryer inside and out.'},
+      {img:IMG_ORGANIZACION,kicker:'Organización',title:'Orden que permanece',desc:'Despensas, clósets y garaje (desde $250): orden funcional que te devuelve tiempo.',slug:'organizacion',price:'Desde $250',altSeo:'Organización del hogar en {{custom_values.business__county_name}} por Ilatek: organización profesional de despensas, clósets y garaje en casa.',altEn:'Professional home organization of pantries, closets and garage in {{custom_values.business__county_name}} by Ilatek.'}
     ];
     var EN_TITLES={'Tu hogar siempre fresco':'Your home always fresh','Renueva cada rincón':'Renew every corner','Mudanza sin estrés':'Stress-free moving','Reseñas de 5 estrellas':'5-star reviews','Del polvo al brillo':'From dust to shine','Más luz en tu hogar':'More light in your home','Exteriores como nuevos':'Exteriors like new','Frescor bajo tus pies':'Freshness under your feet','Cocina como nueva':'A kitchen like new','Orden que permanece':'Order that lasts'};
 
     var EN_KICKERS={'Limpieza regular':'Regular cleaning','Limpieza profunda':'Deep cleaning','Mudanza':'Moving','Airbnb & rentals':'Airbnb & rentals','Post-construcción':'Post-construction','Ventanas':'Windows','Lavado a presión':'Pressure washing','Alfombras':'Carpets','Electrodomésticos':'Appliances','Organización':'Organization'};
-    var EN_DESC={'Tu hogar siempre fresco':'The most requested service: weekly, biweekly or monthly recurring cleaning at $0.07 per sq ft.','Renueva cada rincón':'Deep, room-by-room cleaning at $0.15 per sq ft: ideal for a full home refresh.','Mudanza sin estrés':'Move-in / move-out: hand over or receive your space spotless, ready for the next chapter.','Reseñas de 5 estrellas':'Professional turnover for short-term rentals: fast, detailed cleaning between guests.','Del polvo al brillo':'We remove construction residue, fine dust and debris so your space feels brand new.','Más luz en tu hogar':'Interior windows ($10) and exterior ($25): crystal-clear glass and a perfect view.','Exteriores como nuevos':'Facades, terraces, fences and sidewalks: pressurized water removes years of dirt.','Frescor bajo tus pies':'Carpet washing at $0.75 per sq ft: removes stains, odors and built-up allergens.','Cocina como nueva':'Refrigerator ($40), oven ($30), dishwasher ($10) and washer/dryer ($10), inside and out.','Orden que permanece':'Pantries and closets ($50 each) and garage ($0.50 per sq ft): functional order that gives you time back.'};
-    var EN_PRICE={'Desde $0.07/pie²':'From $0.07/sq ft','Desde $0.15/pie²':'From $0.15/sq ft','Precio en minutos':'Price in minutes','Desde $10':'From $10','Desde $0.75/pie²':'From $0.75/sq ft','Desde $50':'From $50'};
+    var EN_DESC={'Tu hogar siempre fresco':'The most requested service: weekly, biweekly or monthly recurring cleaning with pricing from $250 per service.','Renueva cada rincón':'Deep, room-by-room cleaning from $250 per service: ideal for a full home refresh.','Mudanza sin estrés':'Move-in / move-out: hand over or receive your space spotless, ready for the next chapter.','Reseñas de 5 estrellas':'Professional turnover for short-term rentals: fast, detailed cleaning between guests.','Del polvo al brillo':'We remove construction residue, fine dust and debris so your space feels brand new.','Más luz en tu hogar':'Interior and exterior windows (from $250): crystal-clear glass and a perfect view.','Exteriores como nuevos':'Facades, terraces, fences and sidewalks: pressurized water removes years of dirt.','Frescor bajo tus pies':'Carpet washing priced per service: removes stains, odors and built-up allergens.','Cocina como nueva':'Refrigerator, oven, dishwasher and washer/dryer (from $250), inside and out.','Orden que permanece':'Pantries, closets and garage (from $250): functional order that gives you time back.'};
+    var EN_PRICE={'Desde $250':'From $250','Precio en minutos':'Price in minutes','Desde $250':'From $250','Desde $250':'From $250'};
 
     var track=document.getElementById('ils-track');
     var html='';
@@ -803,12 +911,15 @@ body:has(#ilatek-nav) .mshero-inner{
         var pp=isEn?(EN_PRICE[s.price]||s.price):s.price;
         var url=window.ILATEK_LINKS.join(website,'/'+s.slug);
         html+='<a class="ils-card" href="'+url+'" data-ilatek-path="/'+s.slug+'" aria-label="'+tt+' — '+kk+(isEn?' by Ilatek':' de Ilatek')+'">'
-          +'<div class="ils-media"><span>'+kk+'</span>'+window.ILATEK_GEO.image(s.img,alt,kk+(isEn?' — Ilatek in ':' — Ilatek en ')+'{{custom_values.business__county_name}}')+'</div>'
-          +'<div class="ils-body"><h5>'+tt+'</h5><p>'+dd+'</p><div class="ils-foot"><span class="ils-price">'+pp+'</span><span class="ils-more">'+(isEn?'View more':'Ver más')+'</span></div></div>'
+          +'<div class="ils-card-box"><div class="ils-media"><span>'+kk+'</span>'+window.ILATEK_GEO.image(s.img,alt,kk+(isEn?' — Ilatek in ':' — Ilatek en ')+'{{custom_values.business__county_name}}')+'</div>'
+          +'<div class="ils-body"><h5>'+tt+'</h5><p>'+dd+'</p><div class="ils-foot"><span class="ils-price">'+pp+'</span><span class="ils-more">'+(isEn?'View more':'Ver más')+'</span></div></div></div>'
           +'</a>';
       });
     }
     trackEl.innerHTML=html;
+    /* Eager: el marquee deja las tarjetas fuera del viewport por transform, y el
+       navegador difiere las lazy del carril (por eso en móvil salían en blanco). */
+    Array.prototype.forEach.call(trackEl.querySelectorAll('img'),function(im){im.loading='eager'});
     }
     buildCards();
 
@@ -842,15 +953,23 @@ body:has(#ilatek-nav) .mshero-inner{
     /* Drag con el dedo/ratón sin bloquear el scroll vertical: loop por JS que continúa desde donde el usuario suelta */
     (function(){
       var trackEl=root.querySelector('.ils-track');if(!trackEl||trackEl.dataset.dragBound)return;trackEl.dataset.dragBound='true';
-      var half=0,inView=true,offset=0,vel=0,raf=0,last=0;
-      var SPEED=42,DRAG_DAMP=.25,FRICTION=.93,MINV=.02;
+      var half=0,inView=true,offset=0,vel=0,raf=0,last=0,speed=0,hold=false;
+      var SPEED=42,DRAG_DAMP=.25,FRICTION=.93,MINV=.02,EASE=6.5;
       var px=function(e){return e.touches?e.touches[0].clientX:e.clientX};
       var py=function(e){return e.touches?e.touches[0].clientY:e.clientY};
       var setX=function(){trackEl.style.transform='translate3d('+offset+'px,0,0)'};
       var measure=function(){half=trackEl.getBoundingClientRect().width/2;if(!half)half=1};
       var normalize=function(){if(offset<=-half)offset+=half;if(offset>0)offset-=half;setX()};
       var tick=function(ts){
-        if(last){var dt=Math.min((ts-last)/1000,.1);offset-=SPEED*dt;if(vel){offset+=vel*dt;vel*=Math.pow(FRICTION,dt*60);if(Math.abs(vel)<MINV)vel=0}}
+        if(last){
+          var dt=Math.min((ts-last)/1000,.1);
+          /* Rampa exponencial: la cinta acelera y frena sola, nunca se clava de golpe. */
+          var target=hold?0:SPEED;
+          speed+=(target-speed)*(1-Math.exp(-EASE*dt));
+          if(target===0&&!vel&&speed<.08){speed=0;offset=Math.round(offset)}
+          offset-=speed*dt;
+          if(vel){offset+=vel*dt;vel*=Math.pow(FRICTION,dt*60);if(Math.abs(vel)<MINV)vel=0}
+        }
         last=ts;normalize();if(inView)raf=requestAnimationFrame(tick);
       };
       var pause=function(){if(raf){cancelAnimationFrame(raf);raf=0;last=0}};
@@ -859,9 +978,13 @@ body:has(#ilatek-nav) .mshero-inner{
       if(window.ResizeObserver){new ResizeObserver(measure).observe(trackEl)}
       if('IntersectionObserver' in window){new IntersectionObserver(function(enls){enls.forEach(function(els){inView=els.isIntersecting;inView?resume():pause()})},{threshold:.05}).observe(root)}else{resume()}
       var pending=false,dragging=false,startX=0,startY=0,moved=0;
-      root.addEventListener('pointerenter',function(e){if(e.pointerType==='mouse')pause()},{passive:true});
-      root.addEventListener('pointerleave',function(e){if(e.pointerType==='mouse'&&!pending&&!dragging)resume()},{passive:true});
-      trackEl.addEventListener('pointerdown',function(e){if(e.pointerType==='mouse')e.preventDefault();pending=true;dragging=false;moved=0;startX=px(e);startY=py(e);vel=0},{passive:false});
+      /* La pausa va atada al carril (no a toda la seccion) y baja la velocidad con rampa. */
+      var rail=root.querySelector('.ils-carousel')||root;
+      rail.addEventListener('pointerenter',function(e){if(e.pointerType!=='touch')hold=true},{passive:true});
+      rail.addEventListener('pointerleave',function(e){if(e.pointerType!=='touch')hold=false},{passive:true});
+      rail.addEventListener('focusin',function(){hold=true});
+      rail.addEventListener('focusout',function(){hold=false});
+      trackEl.addEventListener('pointerdown',function(e){if(e.pointerType==='mouse')e.preventDefault();pending=true;dragging=false;moved=0;startX=px(e);startY=py(e);vel=0;speed=0},{passive:false});
       window.addEventListener('pointermove',function(e){
         if(!pending)return;
         var dx=px(e)-startX,dy=py(e)-startY;

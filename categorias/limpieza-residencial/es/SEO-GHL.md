@@ -11,18 +11,18 @@ Limpieza Residencial en {{custom_values.business__county_name}} | Ilatek
 ## Meta Tag Description
 
 ```text
-Limpieza residencial de Ilatek en {{custom_values.business__county_name}}: limpieza regular ($0.07/pie²) y profunda ($0.15/pie²) para casas y apartamentos en los 78 municipios. Cotización instantánea y depósito de $50 que se descuenta.
+Limpieza residencial de Ilatek en {{custom_values.business__county_name}}: limpieza regular (desde $250) y profunda (desde $250) para casas y apartamentos en los 78 municipios. Cotización instantánea y depósito de $50 que se descuenta.
 ```
 
 ## Meta Tag Image
 
-[Imagen social — URL pública](https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/limpieza-residencial.jpg)
+[Imagen social — URL pública](https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/social/limpieza-residencial-1200.webp)
 
 ```text
-https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/limpieza-residencial.jpg
+https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/social/limpieza-residencial-1200.webp
 ```
 
-Copia local: [assets/meta-image.jpg](assets/meta-image.jpg). No usar una ruta local en GHL.
+Copia local: [assets/meta-image.webp](assets/meta-image.webp). No usar una ruta local en GHL.
 
 ## Canonical existente
 
@@ -45,7 +45,7 @@ Custom Value obligatorio: `{{custom_values.business__county_name}}`. Usar la eti
 ### Meta Tag Image Alt
 
 ```text
-Limpieza Residencial en {{custom_values.business__county_name}} | Ilatek
+Limpieza Residencial en {{custom_values.business__county_name}} — Ilatek
 ```
 
 El HEAD incluye `og:image:alt` y `twitter:image:alt`. Los atributos `alt` y `title` descriptivos de las imágenes usan la misma localidad, conservando lo que representa cada imagen. Las imágenes decorativas mantienen `alt=""` por accesibilidad. Las URLs de medios no son texto SEO y se conservan.

@@ -1,0 +1,28 @@
+label;comando;exit;alcance;detalle
+01-sync;node tools/sync-artifacts.mjs --check;0;Lote;106 artefactos / 0 problemas
+02-shell-1;node tools/verify-page-shell.mjs;0;Lote;109 delivery + 32 roof; verde
+02b-shell-2;node tools/verify-page-shell.mjs;0;Lote;109 delivery + 32 roof; verde (2.ª)
+03-apply-shell-1;node tools/apply-page-shell.mjs;0;Lote;0 updated; 109 delivery
+03b-apply-shell-2;node tools/apply-page-shell.mjs;0;Lote;0 updated; 109 delivery (2.ª)
+03c-apply-links-1;node tools/apply-internal-links.mjs;0;Lote;0 files; idempotente
+03d-apply-links-2;node tools/apply-internal-links.mjs;0;Lote;0 files; idempotente (2.ª)
+04-structure;node tools/verify-structure.mjs;0;Lote;estructura canónica
+05-links;node tools/verify-internal-links.mjs;0;Lote;17.277 anchors; 2.612 scripts; idempotence passed
+06-nav;node tools/verify-nav.mjs;0;Lote;fallos: 0
+07-location;node tools/verify-location.mjs;0;Lote;contrato de ubicación
+08-seo;node tools/verify-seo-integrity.mjs;0;Lote;canónicas, llms, anchors
+09-faq-words;node tools/verify-faq-words.mjs;0;Lote;23 preguntas money, 40–60 palabras
+10-en-parity;node tools/verify-en-parity.mjs;0;Lote;51 pares; 0 infracciones
+11-anchor;node tools/verify-anchor-ratio.mjs;0;Lote;2/46.409 exactos (0,00 %)
+12-schema-prices;node tools/verify-schema-prices.mjs;0;Lote;precios solo verificados
+13-sitemap;node tools/verify-sitemap.mjs;0;Lote;98 URLs
+14-faq-lote;node src/faq/faq-parity.mjs GHL-PUBLICAR/lote-sitio/por-pagina;0;Lote;106 páginas · 1.011 preguntas · 0 hallazgos
+15-samples;node tools/verify-samples.mjs;1;Fuera / destinos del lote;6 problemas: en/home, comunidades, techos (los crea el lote; no bloquea)
+16-ghl-publish;node tools/verify-ghl-publish.mjs;2;No ejecutable;Requiere URL publicada; exit 2 de uso
+17-en;node tools/verify-en.mjs;1;Fuera del lote;48 copias EN; 104 fallos preexistentes en servicios/categorías
+18-social;node tools/verify-social-cards.mjs;1;Fuera del lote;185 páginas; 80 fallos en 20 blog-*; 185/185 WebP existen
+19-blog-en;node blog/build/verify-blog-en.mjs;1;Fuera del lote;Pares ES/EN de /blog
+20-test-faq;node src/faq/faq-parity.mjs;1;Fuera del lote;4.492 páginas; 3.301 schema_sin_h3 + 2.571 items_sin_pregunta + 3 divergentes
+21-cannibalization;node tools/verify-cannibalization.mjs --strict;1;Fuera del lote;1 hallazgo en blog
+22-migration;node tools/verify-structure.mjs --migration;1;Fuera del lote;Guard histórico; falla por diseño
+23-responsive;node tools/verify-responsive.mjs;0;Lote;97 hero pages; idempotence passed

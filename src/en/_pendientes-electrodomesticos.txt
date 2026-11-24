@@ -1,0 +1,147 @@
+{{custom_values.business__county_name}}|||DV|||{{custom_values.business__email}}|||DV|||{{custom_values.business__phone}}|||DV|||{{custom_values.website_url}}|||DV|||{{custom_values.facebook_url}}|||DV|||{{custom_values.instagram_url}}|||DV|||{{custom_values.pixel_id}}
+Limpieza de Electrodomésticos en {{custom_values.business__county_name}} | Ilatek
+/og:title/ og:description ("… en Juncos, Puerto Rico"): el título sale de {{custom_values.business__county_name}}, así que es el mismo custom value, sin depender de que el builder expanda el Custom Code; 3. el subdominio del sitio (juncos.ilatekpr.com → Juncos); 4. los valores de marca del contrato (custom-values.json → brand). El portador que viaja en el embed se oculta siempre (nunca es contenido). Estado en
+Login
+Limpieza de electrodomésticos
+Limpieza de Electrodomésticos en
+{{custom_values.business__county_name}}
+que deja tu cocina como nueva.
+Ilatek deja tus enseres impecables por dentro y por fuera en {{custom_values.business__county_name}}: refrigerador ($40), horno ($30), lavaplatos ($10) y lavadora/secadora ($10) — desinfección y desodorización profesional. Precio real en minutos y reserva con $50 descontable.
+Solicita tu cotización
+Qué incluye el servicio ↓
+refrigerador
+Horno $30 · enseres $10
+municipios
+Cobertura en PR
+depósito
+Descontable al reservar
+Por qué Ilatek
+Cocina como nueva, enser por enser.
+Por dentro y por fuera
+La nevera por dentro sin olores cruzados, el horno sin grasa acumulada, la lavadora sin moho en el sello: limpiamos donde la suciedad de verdad vive, no solo la puerta.
+Precio por enser, publicado
+Refrigerador
+, horno
+, lavaplatos, lavadora y secadora
+cada uno: eliges los enseres que necesitas y sabes el precio antes de reservar.
+Desinfección profesional
+Productos aptos para superficies de contacto con alimentos y desinfección de sellos y juntas: tu familia usa los enseres el mismo día, seguros en {{custom_values.business__county_name}}.
+Qué incluye
+Por dentro y por fuera, enser por enser.
+La limpieza de electrodomésticos de Ilatek cubre refrigerador, horno, lavaplatos, lavadora y secadora por dentro y por fuera — desengrase, desinfección y desodorización, con el alcance definido en tu cotización.
+Refrigerador: interior, empaques y exterior ($40)
+Horno: interior, rejillas y vidrio ($30)
+Lavadora y secadora: tambor, sello y detergentes ($10 c/u)
+Lavaplatos: filtro, sellos y interior ($10)
+Desengrase de grasa quemada y residuos
+Desinfección y desodorización final
+Cotiza tus enseres
+Precios por enser · apto para alimentos
+Enseres
+Limpiamos todos tus enseres.
+Cocina
+Refrigerador y horno, los dos que más trabajo dan: desengrase profundo, desinfección de empaques y olores fuera — la cocina vuelve a oler limpio.
+Ropa blanca
+Lavadora y secadora por dentro: tambor, sello de goma, dispensers y residuos de detergente — la moho de la goma y la ropa que huele a humedad se acaban.
+Complementos
+Lavaplatos, microondas y otros enseres de cocina: limpieza interna y de sellos — elige los que necesites y los agregamos a tu visita.
+Frecuencia
+El ritmo que tus enseres necesitan.
+Cada 3–6 meses
+Refrigerador y horno
+La recomendación profesional: dos limpiezas al año mantienen tus enseres claras — en la costa, donde la brisa marina deja residuo salino, cada 3–4 meses funciona mejor.
+Mensual
+Lavadora y secadora
+El sello de goma y los detergentes acumulados piden atención mensual o bimensual — así la ropa nunca huele a humedad.
+Como add-on
+Con tu limpieza del hogar
+Combínalo con tu limpieza estándar, profunda o de mudanza: los enseres quedan listos en la misma visita — un solo agendamiento.
+Cotiza tus enseres hoy
+Cobertura local
+Limpieza impecable,
+Cobertura en Toda la Isla
+Explora los servicios de limpieza de
+Ilatek
+disponibles en los
+78 municipios de Puerto Rico
+y visita la página de tu pueblo. Atendemos hogares en
+y toda la isla.
+No encontramos ese pueblo. Verifica el nombre e intenta nuevamente.
+Página 1 de 1
+Preguntas frecuentes
+Todo lo que preguntas antes de contratar.
+¿Cuánto cuesta la limpieza de electrodomésticos en {{custom_values.business__county_name}}?
+Precios publicados por enser:
+refrigerador $40, horno $30, lavaplatos, lavadora y secadora $10 c/u
+. Elige los tuyos y recibe tu total en minutos en el cotizador — precio claro y por escrito, sin compromiso.
+¿Qué incluye una limpieza de electrodomésticos?
+Incluye limpieza
+por dentro y por fuera
+: desengrase de grasa quemada y residuos, desinfección de empaques y sellos, y desodorización final — del refrigerador a la lavadora. El alcance exacto queda definido en tu cotización.
+¿Es segura la limpieza para mascotas y niños?
+Usamos productos aptos para superficies de contacto con alimentos y enjuague sin residuos: tus enseres quedan listos para usarse el mismo día, seguros para toda la familia.
+¿Cada cuánto se debe limpiar la nevera?
+La recomendación profesional es
+cada 3 a 6 meses
+: derrames, olores cruzados y desperdicio escondido se acumulan rápido. Con la limpieza profesional, tu nevera huele a limpio y consumes con confianza.
+¿Cuánto tarda la limpieza de los enseres?
+Referencia profesional:
+2 a 4 horas
+para nevera y horno juntos, menos para los demás. Coordinamos la visita y tus enseres quedan listos para usarse el mismo día.
+¿Pueden limpiar con la comida dentro de la nevera?
+Recomendamos
+vaciarla antes
+de la visita (una cooler resuelve): así limpiamos cada bandeja y rincón sin riesgo. Si necesitas ayuda para vaciar y reorganizar, coordínalo en la cotización.
+¿Qué productos y equipos utilizan?
+Llegamos con
+productos y equipos profesionales de limpieza residencial
+, seguros para tu familia y tus mascotas. Si prefieres algo específico (eco-amigable, sin fragancia), coordínalo en la cotización.
+¿Por qué elegir Ilatek para tus enseres?
+Precios por enser publicados (desde $10), limpieza por dentro y por fuera, desinfección apta para alimentos, precio real en minutos, depósito de $50 descontable y cobertura en los 78 municipios. Cocina como nueva en {{custom_values.business__county_name}}.
+¿Nevera con olores? Déjanos la cocina.
+Solicita tu cotización ↗
+Devasks
+Navegación de Ilatek
+Ilatek, inicio
+Logo de Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Ilatek - Limpieza y Techos en {{custom_values.business__county_name}}
+Logo%20de%20Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Ilatek%20-%20Limpieza%20y%20Techos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Navegación principal
+Idioma / Language
+Español
+English
+Abrir o cerrar el menú
+Ilatek Limpieza de Electrodomésticos {{custom_values.business__county_name}}
+Equipo de Ilatek limpiando electrodomésticos — refrigerador, horno y lavadora impecables por dentro y por fuera en {{custom_values.business__county_name}}
+Limpieza de Electrodomésticos en {{custom_values.business__county_name}} · Ilatek
+Equipo%20de%20Ilatek%20limpiando%20electrodom%C3%A9sticos%20%E2%80%94%20refrigerador%2C%20horno%20y%20lavadora%20impecables%20por%20dentro%20y%20por%20fuera%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Limpieza%20de%20Electrodom%C3%A9sticos%20en%20%7B%7Bcustom_values.business__county_name%7D%7D%20%C2%B7%20Ilatek
+Limpieza de enseres de Ilatek — cocina impecable con electrodomésticos por dentro y por fuera en {{custom_values.business__county_name}}
+Limpieza%20de%20enseres%20de%20Ilatek%20%E2%80%94%20cocina%20impecable%20con%20electrodom%C3%A9sticos%20por%20dentro%20y%20por%20fuera%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Cobertura de limpieza de Ilatek en Puerto Rico
+Busca tu pueblo
+Buscar un municipio de Puerto Rico
+Limpiar búsqueda
+Municipios de Puerto Rico con servicio de Ilatek
+Pie de página de Ilatek
+Facebook
+Facebook — servicio en {{custom_values.business__county_name}}
+Facebook%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Instagram
+Instagram — servicio en {{custom_values.business__county_name}}
+Instagram%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Youtube
+Youtube — servicio en {{custom_values.business__county_name}}
+Youtube%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+TikTok
+TikTok — servicio en {{custom_values.business__county_name}}
+TikTok%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+X — servicio en {{custom_values.business__county_name}}
+X%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+LinkedIn
+LinkedIn — servicio en {{custom_values.business__county_name}}
+LinkedIn%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D
+Pinterest
+Pinterest — servicio en {{custom_values.business__county_name}}
+Pinterest%20%E2%80%94%20servicio%20en%20%7B%7Bcustom_values.business__county_name%7D%7D

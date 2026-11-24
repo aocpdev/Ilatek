@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Tragaluces (EN)
+Slug: en/tragaluces
+URL: https://ilatekpr.com/en/tragaluces
+Acción: CREAR PÁGINA
+Estado hoy: HTTP 404
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (240 KB, sha256 26238438b518)
+Origen en el repo: servicios/tragaluces/en/landing-pages/tragaluces.en.html
+Sección de clima: no
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

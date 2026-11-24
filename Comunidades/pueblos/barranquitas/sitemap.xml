@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- barranquitas.ilatekpr.com — landings de las comunidades de este municipio.
+     Generado por scripts/genera-pueblos.mjs; una URL por comunidad y servicio. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://barranquitas.ilatekpr.com/reparto-san-antonio/limpieza</loc></url>
+  <url><loc>https://barranquitas.ilatekpr.com/reparto-san-antonio/sellado-de-techo</loc></url>
+  <url><loc>https://barranquitas.ilatekpr.com/villa-universitaria/limpieza</loc></url>
+  <url><loc>https://barranquitas.ilatekpr.com/villa-universitaria/sellado-de-techo</loc></url>
+</urlset>

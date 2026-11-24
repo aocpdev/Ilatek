@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Techos De Asfalto
+Slug: techos-de-asfalto
+URL: https://ilatekpr.com/techos-de-asfalto
+Acción: REPUBLICAR
+Estado hoy: HTTP 200
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (242 KB, sha256 6c1d0c015220)
+Origen en el repo: servicios/techos-de-asfalto/es/landing-pages/ghl-techos-de-asfalto-landing.html
+Sección de clima: sí
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

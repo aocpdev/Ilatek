@@ -1,0 +1,13 @@
+PÁGINA EN GHL
+Nombre: Blog - Techo blanco reflectivo: ¿baja el aire acondicionado?
+Slug: blog/sellado-de-techo-reflectivo-y-consumo-de-energia
+URL final: https://ilatekpr.com/blog/sellado-de-techo-reflectivo-y-consumo-de-energia
+Carpeta: por-pagina/100-sellado-de-techo-reflectivo-y-consumo-de-energia
+
+Orden dentro de la página:
+  1) Crear/clonar la página con ese nombre y ese slug.
+  2) Elemento Custom HTML/JavaScript → Custom Code → Open Code Editor →
+     borrar todo y pegar el contenido de 2-CODIGO-CUSTOM-HTML.html.
+  3) SEO de la página: campos de 4-SEO-CAMPOS.txt.
+  4) Settings → Tracking Code → HEADER: contenido de 3-HEAD-SEO.html.
+  5) Publicar y comprobar la URL.

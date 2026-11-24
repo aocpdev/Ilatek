@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Sellado De Silicona
+Slug: sellado-de-silicona
+URL: https://ilatekpr.com/sellado-de-silicona
+Acción: REPUBLICAR
+Estado hoy: HTTP 200
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (243 KB, sha256 31a3aa0884f7)
+Origen en el repo: servicios/sellado-de-silicona/es/landing-pages/ghl-sellado-de-silicona-landing.html
+Sección de clima: sí
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

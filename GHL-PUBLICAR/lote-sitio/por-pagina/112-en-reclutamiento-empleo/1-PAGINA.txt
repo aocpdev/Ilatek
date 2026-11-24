@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Empleos Limpieza (EN)
+Slug: en/reclutamiento-empleo
+URL: https://ilatekpr.com/en/reclutamiento-empleo
+Acción: CREAR
+Estado hoy: HTTP 404
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (204 KB, sha256 f4fcefc5c779)
+Origen en el repo: reclutamiento-empleo/en/landing-pages/reclutamiento-empleo.en.html
+Sección de clima: no
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

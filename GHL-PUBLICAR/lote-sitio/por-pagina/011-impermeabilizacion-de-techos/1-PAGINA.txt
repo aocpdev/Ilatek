@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Impermeabilizacion De Techos
+Slug: impermeabilizacion-de-techos
+URL: https://ilatekpr.com/impermeabilizacion-de-techos
+Acción: REPUBLICAR
+Estado hoy: HTTP 200
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (247 KB, sha256 79f631c01564)
+Origen en el repo: categorias/impermeabilizacion-de-techos/es/landing-pages/ghl-impermeabilizacion-de-techos-landing.html
+Sección de clima: sí
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

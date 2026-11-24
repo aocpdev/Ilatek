@@ -4,10 +4,10 @@
   "status": "plantilla-local-delta-system",
   "metaTagTitle": "Servicios de Limpieza en {{custom_values.business__county_name}} | Ilatek",
   "metaTagDescription": "Servicios de limpieza residencial, comercial e industrial de Ilatek en {{custom_values.business__county_name}}: limpieza estándar y profunda, mudanzas, Airbnb, post-construcción, ventanas, lavado a presión, alfombras, electrodomésticos y organización. Precio transparente y cobertura en los 78 municipios.",
-  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acaa576195f9172ed3a852a.jpg",
+  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/3aa1905a-9abd-4781-8589-63fcb5f4910b.webp",
   "locationCustomValue": "{{custom_values.business__county_name}}",
-  "metaTagImageAlt": "Servicios de Limpieza en {{custom_values.business__county_name}} | Ilatek",
+  "metaTagImageAlt": "Todos los servicios de limpieza — Ilatek en {{custom_values.business__county_name}}",
   "canonical": "https://{{custom_values.website_url}}/servicios",
-  "socialImageFile": "assets/meta-image.jpg",
+  "socialImageFile": "assets/meta-image.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."
 }

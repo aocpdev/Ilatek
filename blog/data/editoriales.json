@@ -1,0 +1,425 @@
+{
+  "nota": "Los 20 posts con cuerpo editorial escrito a mano. El generador inserta estas secciones después de la respuesta corta y antes del bloque comparativo; el resto del post se arma con los datos verificados de sistemas.json.",
+  "editoriales": [
+    {
+      "slug": "silicona-100-vs-poliuretano",
+      "intro": "Si tu techo es una losa plana donde el agua se queda parada, la silicona es la respuesta y el poliuretano es el gasto equivocado. Si alguien sube al techo a dar mantenimiento al aire acondicionado cada seis meses, pasa lo contrario. La diferencia no está en cuál es mejor, sino en qué hace el techo durante los próximos diez años.",
+      "secciones": [
+        {
+          "h2": "La prueba del agua parada",
+          "p": [
+            "La silicona forma una membrana continua que no se ablanda con el agua estancada. Es la razón por la que los fabricantes la venden para techos planos y por la que su precio por paila es el más alto de la línea.",
+            "El poliuretano resiste mejor el roce y el peso, pero si el agua se queda encima por días, la capa de acabado se va degradando. En un techo con pendiente sana, eso no ocurre; en una losa con empozamiento, sí."
+          ]
+        },
+        {
+          "h2": "Lo que cuesta cada uno",
+          "p": [
+            "En Conspro, el SIL HS de silicona se publica a $220 la paila y el PRO FLEX elastomérico a $99. En Cintrón, el King of Silicone está a $269 los cinco galones y el Cintronator Top Coat a $325. Son precios de producto, no instalados.",
+            "Cuando se compara el precio instalado, la brecha se abre más: WindMar publica $3.50 a $6.50 por pie cuadrado en silicona y $2.50 a $5.00 en poliuretano. Esa diferencia compra años, no comodidad."
+          ]
+        }
+      ],
+      "veredicto": "Losa plana con agua que se empoza: silicona. Techo con equipos, tránsito o terrazas: poliuretano. Si el techo tiene las dos cosas, se resuelve por zonas y no con un solo producto en toda la superficie."
+    },
+    {
+      "slug": "silicona-100-vs-membrana-asfaltica",
+      "intro": "Esta es la decisión que separa una reparación de una obra. La silicona se aplica sobre la losa que ya tienes; la membrana asfáltica normalmente se pone en lugar de lo que había. Por eso compiten poco en precio y mucho en expectativa.",
+      "secciones": [
+        {
+          "h2": "Quién firma la garantía",
+          "p": [
+            "En silicona, la garantía suele venir del fabricante del producto y del instalador, con plazos de 4 a 10 años en el caso de Bull-Bond. En membrana asfáltica, Danosa publica configuraciones de 5, 10 y hasta 20 años, pero exige instalador certificado, registro dentro de 30 días e inspección anual.",
+            "Esa diferencia cambia a quién llamas cuando algo falla: al que aplicó, o a un fabricante que tiene un expediente con tu techo registrado."
+          ]
+        },
+        {
+          "h2": "El espesor se puede auditar",
+          "p": [
+            "Con silicona, la durabilidad depende de cuántas manos dio el aplicador y de qué tan bien preparó la superficie. Con membrana, el espesor del rollo está en la ficha y se puede medir después de instalado.",
+            "Si tu prioridad es poder verificar lo que pagaste, la membrana gana. Si tu prioridad es no remover nada y resolver en dos días, la silicona gana."
+          ]
+        }
+      ],
+      "veredicto": "Losa residencial de 800 a 1,500 pies cuadrados que aún está sana: silicona. Techo comercial o institucional, o losa que ya acumuló tres capas: membrana asfáltica con instalador certificado."
+    },
+    {
+      "slug": "poliuretano-vs-acrilico-elastomerico",
+      "intro": "El acrílico es el sistema que casi todo el mundo puede pagar y el que más rápido se degrada. El poliuretano cuesta más, huele más y tarda más en curar, pero es el único de los dos que aguanta que alguien camine encima con una escalera al hombro.",
+      "secciones": [
+        {
+          "h2": "Respirar o sellar",
+          "p": [
+            "El acrílico es permeable al vapor: deja salir la humedad de la losa. Eso lo hace ideal en concreto joven o en techos que han tenido filtraciones y necesitan secarse por dentro.",
+            "El poliuretano sella. Si aplicas poliuretano sobre una losa que todavía está húmeda, encierras el agua y el problema aparece seis meses después en otro sitio."
+          ]
+        },
+        {
+          "h2": "El precio real por año",
+          "p": [
+            "WindMar publica $1.80 a $3.50 por pie cuadrado en acrílico y $2.50 a $5.00 en poliuretano. Si el acrílico dura 7 a 10 años y el poliuretano 10 a 15, la diferencia por año de servicio se reduce bastante.",
+            "El cálculo que casi nadie hace es el costo de la segunda intervención: cuando el acrílico falla, hay que volver a limpiar, volver a preparar y volver a pagar mano de obra."
+          ]
+        }
+      ],
+      "veredicto": "Presupuesto ajustado, concreto sano y techo sin tránsito: acrílico, con expectativa realista de mantenimiento. Equipos, terrazas, áreas técnicas o techo que recibe visitas: poliuretano."
+    },
+    {
+      "slug": "membrana-asfaltica-vs-membrana-liquida",
+      "intro": "La asfáltica es una cubierta industrial que se instala con soplete o adhesivo. La líquida es una pintura espesa que se aplica en tres pasos con mopa. Parecen competir, pero rara vez se encuentran en el mismo techo: una domina las losas grandes, la otra los techos con veinte detalles.",
+      "secciones": [
+        {
+          "h2": "Cuando el techo tiene muchos rincones",
+          "p": [
+            "Cada penetración, cada zarpa, cada encuentro con pared es un punto donde una membrana en rollo necesita un detalle adicional. En un techo con quince de esos puntos, el tiempo de instalación de la asfáltica se dispara.",
+            "El sistema líquido cubre esos detalles con la misma brocha. Ahí gana, aunque su espesor final dependa de la mano del aplicador."
+          ]
+        },
+        {
+          "h2": "Cuando el techo es una losa limpia de 4,000 pies",
+          "p": [
+            "En una superficie grande y despejada, la membrana asfáltica es más rápida, más uniforme y más fácil de auditar. Su espesor se verifica y su garantía viene del fabricante.",
+            "La líquida, en cambio, exige respetar tiempos de curado entre capas y calcular la cobertura con precisión. En áreas grandes, el margen de error se multiplica."
+          ]
+        }
+      ],
+      "veredicto": "Techo con muchos detalles, losa residencial o presupuesto contenido: membrana líquida. Techo comercial o institucional, superficie despejada y garantía de fábrica: membrana asfáltica."
+    },
+    {
+      "slug": "conspro-bullbond-vs-cintron",
+      "intro": "Los dos son sistemas puertorriqueños de varias capas, los dos se venden por paila y los dos prometen años. La diferencia que importa no está en el producto: está en quién emite la garantía y qué hay que hacer para que siga vigente.",
+      "secciones": [
+        {
+          "h2": "Garantía renovable contra garantía por contrato",
+          "p": [
+            "Bull-Bond publica una garantía anti-filtración de 4, 5, 7 o 10 años según el sellador, con solicitud dentro de los 60 días de la compra y certificado renovable de por vida si se pide seis meses antes del vencimiento y se sigue el protocolo.",
+            "Cintrón, en su web, solo promete garantía extendida cuando la instalación la hace Cintron Enterprise, estipulada en el contrato de servicio. Los 20 años que circulan en redes no aparecen en ninguna página de su sitio."
+          ]
+        },
+        {
+          "h2": "El precio de entrada",
+          "p": [
+            "El SIL HS de Conspro está a $220 la paila y su DUROSEAL a $110. El King of Silicone de Cintrón está a $269 los cinco galones y el Cintronator Top Coat a $325.",
+            "Comparar esos números sin mirar cobertura es inútil: el King of Silicone declara 170 a 200 pies cuadrados por paila, y el resto de la línea no publica cobertura por área."
+          ]
+        }
+      ],
+      "veredicto": "Si necesitas un documento de garantía renovable y un protocolo auditables, Bull-Bond es más transparente. Si quieres un solo proveedor que venda el producto e instale, Cintrón ofrece ese paquete, pero consigue la garantía por escrito antes de firmar."
+    },
+    {
+      "slug": "cintron-vs-marin-membrana",
+      "intro": "Las dos marcas son puertorriqueñas, las dos venden a contratistas y las dos crecieron en redes sociales. La comparación honesta no se hace con videos: se hace con lo que cada una publica en papel.",
+      "secciones": [
+        {
+          "h2": "Lo que se puede verificar",
+          "p": [
+            "Cintrón mantiene una tienda en línea con precios y descripciones por producto, y una política de devolución que remite la garantía al contrato de servicio. Marín Membrana no tiene lista de precios ni fichas técnicas descargables en su dominio; sus coberturas y su garantía de 10 años se anuncian en publicaciones sociales.",
+            "Para un dueño de casa eso puede dar igual. Para un contratista que tiene que responder por una losa, la diferencia es grande."
+          ]
+        },
+        {
+          "h2": "La red de venta",
+          "p": [
+            "Marín tiene cuatro puntos de venta reportados: Bayamón, Quebradillas, Hormigueros y Vega Baja. Cintrón despacha a toda la isla desde su tienda y promete entrega en tres a siete días.",
+            "Si necesitas reposición rápida a mitad de trabajo, la red física de Marín puede ser una ventaja real. Si necesitas un solo protocolo y un solo responsable, Cintrón lo empaqueta mejor."
+          ]
+        }
+      ],
+      "veredicto": "Pide siempre la ficha técnica y la garantía por escrito a las dos. Si ninguna te la entrega antes de cobrar, eso ya es una respuesta."
+    },
+    {
+      "slug": "conspro-bullbond-vs-danosa",
+      "intro": "Es la comparación entre rehabilitar y reemplazar. Bull-Bond se aplica sobre la losa que tienes; Danosa normalmente implica una cubierta nueva. Por eso el precio inicial no es comparable y el resultado tampoco.",
+      "secciones": [
+        {
+          "h2": "Certificación contra protocolo",
+          "p": [
+            "Danosa publica configuraciones con certificaciones de viento y garantías escalonadas: 5 años con Glasdan AL-80-4 de una capa, alrededor de 10 con Esterdan R-36 más capa de acabado, y hasta 20 en configuraciones premium. Exige instalador certificado y registro.",
+            "Bull-Bond no compite en certificaciones de viento; compite en un protocolo de cinco pasos con garantía renovable de hasta 10 años y en un costo de entrada mucho menor."
+          ]
+        },
+        {
+          "h2": "Cuándo la losa ya no da para otra capa",
+          "p": [
+            "Cada capa añade peso y cada capa vieja añade una interfaz que puede fallar. Cuando una losa acumuló tres sistemas, la rehabilitación deja de ser una opción razonable y toca remover.",
+            "Ese es el punto donde Danosa se vuelve la decisión correcta, aunque cueste más: no estás comprando producto, estás comprando una cubierta nueva con expediente."
+          ]
+        }
+      ],
+      "veredicto": "Losa sana con una o dos capas previas y presupuesto contenido: Bull-Bond. Techo comercial, losa saturada de capas o necesidad de certificación de viento: Danosa."
+    },
+    {
+      "slug": "cuanto-cuesta-sellar-un-techo-en-puerto-rico",
+      "intro": "Casi todo lo que se publica sobre este precio en la isla viene de una empresa que también vende el servicio. Eso no lo invalida, pero conviene saber de dónde sale cada cifra. Aquí están las publicadas, con su fuente y su fecha, y las que circulan sin respaldo.",
+      "secciones": [
+        {
+          "h2": "Los rangos que sí están publicados",
+          "p": [
+            "Danosa publica de $3 a $10 por pie cuadrado instalado como promedio de la industria para membrana asfáltica. WindMar publica $1.80 a $3.50 en acrílico, $2.50 a $5.00 en poliuretano y $3.50 a $6.50 en silicona, con ejemplos de $4,200 a $7,800 para 1,200 pies cuadrados.",
+            "Conspro, Cintrón y Marín no publican precio instalado por pie cuadrado. Publican precio por paila o por galón. Cualquier cifra instalada que se les atribuya es una estimación, no un dato suyo."
+          ]
+        },
+        {
+          "h2": "De dónde salen los $1.75",
+          "p": [
+            "En grupos de contratistas y páginas de Facebook aparecen trabajos de $1.75, $2.75 y hasta $650 por 1,850 pies cuadrados. Esas cifras existen, pero casi nunca incluyen garantía escrita, corrección de grietas ni imprimador.",
+            "La comparación justa no es entre $1.75 y $6.50. Es entre lo que cubre cada uno. Un trabajo sin garantía que falla en un año cuesta más que el doble del precio inicial."
+          ]
+        }
+      ],
+      "veredicto": "Para presupuestar, usa $3 a $6.50 por pie cuadrado en losa residencial y $3 a $10 en membrana comercial. Después pide la cotización desglosada por área, sistema y garantía, y compara esas tres cosas, no el total."
+    },
+    {
+      "slug": "precio-por-pie-cuadrado-sellado-de-techo",
+      "intro": "No hay un precio por pie cuadrado del sellado de techo. Hay cuatro, y cada uno corresponde a un sistema distinto con una duración distinta. Comparar el más barato con el más caro sin mirar los años es la forma más común de perder dinero en un techo.",
+      "secciones": [
+        {
+          "h2": "La tabla publicada",
+          "p": [
+            "Acrílico: $1.80 a $3.50, con 7 a 10 años declarados. Poliuretano: $2.50 a $5.00, con 10 a 15. Silicona: $3.50 a $6.50, con 20 a 25. Membrana asfáltica: $3.00 a $10.00 instalada, con 16 a 21 años documentados y hasta 25 con mantenimiento.",
+            "Todo lo anterior son cifras publicadas por WindMar y Danosa, dos empresas que compiten entre sí y que no coinciden en cuánto dura la silicona. Ese desacuerdo es información útil."
+          ]
+        },
+        {
+          "h2": "El costo por año, no por pie",
+          "p": [
+            "A $1.80 con 7 años, el pie cuadrado cuesta unos 26 centavos al año. A $6.50 con 20 años, cuesta unos 33. La diferencia se reduce mucho cuando se mira así.",
+            "Y si el sistema barato falla a los cuatro años, el costo por año se duplica y hay que sumar la mano de obra de la segunda intervención."
+          ]
+        }
+      ],
+      "veredicto": "Pide el precio por pie cuadrado siempre acompañado de tres datos: sistema exacto, años esperados y garantía. Sin esos tres, el número no significa nada."
+    },
+    {
+      "slug": "puedo-sellar-mi-techo-sobre-el-sellado-viejo",
+      "intro": "Es la pregunta que más dinero ahorra y la que más techos arruina. La respuesta depende de una sola cosa: si la capa vieja está adherida o se está pelando. Y eso se comprueba en diez minutos.",
+      "secciones": [
+        {
+          "h2": "La prueba de la cuadrada",
+          "p": [
+            "Corta un cuadrado de unos treinta centímetros en una zona representativa, no en la orilla donde siempre hay más adherencia. Levanta una esquina con la navaja y mira qué hay debajo.",
+            "Si el sustrato está seco y la capa vieja se resiste, se puede sellar encima con el imprimador adecuado. Si sale humedad o la capa se despega con facilidad, hay que remover. Sellar encima solo esconde el problema."
+          ]
+        },
+        {
+          "h2": "Compatibilidad, no solo adherencia",
+          "p": [
+            "No todo se puede poner sobre todo. La silicona tiene buena adherencia sobre membrana asfáltica, poliuretano y metal según la ficha de Cintrón, pero un acrílico sobre asfalto caliente o un sellador de base distinta sin imprimador puede fallar.",
+            "El imprimador no es un extra: es lo que hace compatible lo que estás poniendo con lo que ya está. Saltarlo es la razón más común por la que una garantía se rechaza."
+          ]
+        }
+      ],
+      "veredicto": "Haz la prueba antes de cotizar, no después. Si el techo tiene más de dos capas previas o se pela en varias áreas, el ahorro de no remover se paga con una filtración en el primer año."
+    },
+    {
+      "slug": "sellado-de-techo-de-zinc",
+      "intro": "Un techo de zinc no filtra por el centro del panel: filtra por cada tornillo que perdió la arandela y por cada traslape que abrió la dilatación. Por eso el sellado de zinc no empieza con un galón de pintura, empieza con un destornillador.",
+      "secciones": [
+        {
+          "h2": "El orden que casi nadie respeta",
+          "p": [
+            "Primero se reponen los tornillos y las arandelas, y se revisa si los paneles volvieron a su sitio. Después se lava a presión, se deja secar y se sella cada traslape y cada tornillo con poliuretano y malla de poliéster. Solo entonces se aplica el recubrimiento general.",
+            "Si se pinta encima de un tornillo flojo, el agua sigue entrando por debajo del recubrimiento y el trabajo se ve bien hasta la primera lluvia fuerte."
+          ]
+        },
+        {
+          "h2": "Por qué el sellador rígido falla",
+          "p": [
+            "El zinc se calienta y se expande varios milímetros a lo largo del día. Un sellador rígido se agrieta en ese movimiento, y una vez agrietado no vuelve a sellar ni con otra mano encima.",
+            "Ahí es donde el poliuretano con malla gana: la malla absorbe el movimiento y el sellador flexible sigue agarrado al metal. Es la diferencia entre un año y varios."
+          ]
+        }
+      ],
+      "veredicto": "Si tu techo es de zinc, presupuesta la reposición de tornillos y arandelas como parte del trabajo, no como un extra. Y pide que el sellador de juntas sea flexible: el metal no perdona lo rígido."
+    },
+    {
+      "slug": "sellado-de-techo-plano-con-empozamiento",
+      "intro": "Si cuarenta y ocho horas después de llover todavía hay una lámina de agua en tu losa, tu problema no es el sellador: es la pendiente. Ningún sellador resuelve una losa que no drena, y mientras no se corrija, cada peso invertido en sellado rinde menos.",
+      "secciones": [
+        {
+          "h2": "Lo que dice el código",
+          "p": [
+            "Danosa documenta que el código de plomería incorporado al Reglamento de Edificación de Puerto Rico exige un cuarto de pulgada por pie como pendiente mínima. Esa cifra no es un gusto del fabricante: es la referencia que se usa para decidir si hay que rehacer la pendiente.",
+            "Corregirla implica relleno, mortero y curado, y encarece el trabajo. No hacerlo implica sellar una piscina pequeña que va a seguir castigando el recubrimiento."
+          ]
+        },
+        {
+          "h2": "Qué sistema aguanta el estancamiento",
+          "p": [
+            "La silicona es el sistema que mejor tolera el agua parada, porque forma una capa continua sin costuras. La membrana asfáltica también funciona, siempre que su solape y su pendiente permitan el drenaje hacia los desagües.",
+            "El acrílico es la peor opción ahí: pierde adhesión cuando la superficie permanece húmeda, y en una losa con empozamiento la superficie casi nunca seca del todo."
+          ]
+        }
+      ],
+      "veredicto": "Corrige la pendiente y limpia los desagües antes de elegir el sistema. Después, silicona si el estancamiento va a seguir siendo parcial, o membrana si el techo además necesita una cubierta nueva."
+    },
+    {
+      "slug": "que-sistema-de-sellado-dura-mas-anos",
+      "intro": "La pregunta correcta no es cuál dura más, sino cuál dura más en tu techo. En una losa residencial con agua empozada y en una nave industrial de cuatro mil pies cuadrados, la respuesta es distinta aunque el folleto del producto sea el mismo.",
+      "secciones": [
+        {
+          "h2": "Los años que cada uno documenta",
+          "p": [
+            "Membrana asfáltica: 16 a 21 años citando literatura técnica, y 25 o más con mantenimiento, según Danosa. TPO o PVC: especificación típica de 20 años. Silicona: 20 a 25 según WindMar, con la objeción de Danosa de que no existe un estudio independiente que lo respalde.",
+            "Poliuretano: 10 a 15. Acrílico: 7 a 10. Pintura de cubeta: 1 a 2. Esa es la escalera completa, y cada escalón tiene un precio distinto."
+          ]
+        },
+        {
+          "h2": "Lo que los años no dicen",
+          "p": [
+            "La duración declarada supone una instalación perfecta. En la práctica, un sistema de 20 años aplicado sobre una losa húmeda dura menos que un acrílico bien aplicado sobre concreto seco.",
+            "Por eso la preparación pesa más que la etiqueta. Si un contratista te ofrece el sistema más caro sin hablar de limpieza, secado e imprimador, está vendiendo años que no puede entregar."
+          ]
+        }
+      ],
+      "veredicto": "Techo comercial con garantía de fábrica: membrana asfáltica o TPO. Losa residencial con sol y agua parada: silicona. Presupuesto limitado y techo sano: acrílico con mantenimiento programado."
+    },
+    {
+      "slug": "garantia-de-sellado-de-techo",
+      "intro": "En Puerto Rico circulan promesas de garantía de 20 años que no existen en ningún documento. Y existen garantías de 10 años, renovables, con condiciones claras, que casi nadie pide. La diferencia entre una y otra es el papel.",
+      "secciones": [
+        {
+          "h2": "Las garantías que sí están publicadas",
+          "p": [
+            "Bull-Bond emite garantía anti-filtración de 4, 5, 7 o 10 años según el sellador. Se solicita dentro de los 60 días de la compra, con dirección, pies cuadrados, productos instalados y fotos, y es renovable de por vida si se pide seis meses antes del vencimiento y se cumplen las recomendaciones.",
+            "Danosa publica 5 años en una capa, alrededor de 10 en dos capas y hasta 20 en configuraciones premium, con instalador certificado, registro dentro de 30 días e inspección anual. Cintrón remite la garantía extendida al contrato de servicio cuando ellos instalan."
+          ]
+        },
+        {
+          "h2": "Lo que anula una garantía",
+          "p": [
+            "Saltarse el imprimador, aplicar sobre superficie húmeda, no registrar el trabajo a tiempo, no permitir la inspección anual o perforar el techo después para equipos sin seguir las instrucciones del fabricante. Bull-Bond lo dice expresamente para paneles solares y equipos.",
+            "Ninguna garantía cubre falta de mantenimiento. Y casi todas excluyen daño por huracán, que es lo que cubre el seguro, no el fabricante."
+          ]
+        }
+      ],
+      "veredicto": "Antes de firmar, pide el documento y revisa cinco cosas: área cubierta, sistema y productos, años, causales de anulación y responsable legal. Si no están las cinco, no es una garantía ejecutable."
+    },
+    {
+      "slug": "licencia-y-permisos-para-sellado-de-techo-en-puerto-rico",
+      "intro": "Este es el tema que ningún competidor toca y el que más te protege. Puerto Rico tiene una junta creada específicamente para licenciar a quien impermeabiliza y sella techos, y una ley de 2023 que documentó que esa junta no estaba operando. Saberlo cambia cómo contratas.",
+      "secciones": [
+        {
+          "h2": "El marco legal",
+          "p": [
+            "La Ley 281-2000 creó la Junta de Contratistas de Impermeabilización, Sellado y Reparación de Techos, adscrita al Departamento de Estado. Es el organismo que examina y licencia a los contratistas de esta especialidad.",
+            "La Ley 93-2023 reconoció que la Junta no estaba operando y que no había contratistas con licencia vigente, y abrió un periodo extraordinario para reconstituirla y otorgar licencias sin examen. Ese detalle importa: significa que durante años se contrató sin verificación real."
+          ]
+        },
+        {
+          "h2": "Permiso de obra, no de mantenimiento",
+          "p": [
+            "Un sellado de mantenimiento normalmente no requiere permiso. Una corrección de pendiente, un cambio de membrana o cualquier intervención que altere la estructura sí puede requerirlo ante la Oficina de Gerencia de Permisos.",
+            "En condominio se suma la autorización de la junta de directores. Pedirla no es burocracia: es lo que evita que el trabajo se detenga a mitad de camino."
+          ]
+        }
+      ],
+      "veredicto": "Pide número de licencia, verifícalo y guárdalo junto al certificado de seguros y la cotización. Si el trabajo incluye corrección de pendiente o membrana nueva, pregunta expresamente por el permiso."
+    },
+    {
+      "slug": "maravilla-vs-top-seal",
+      "intro": "Los dos son blancos, los dos se aplican con rodillo y los dos se venden como solución para techos. Pero uno está formulado para juntas y detalles, y el otro como acabado elastomérico de superficie. Usarlos al revés es un error de categoría, no de marca.",
+      "secciones": [
+        {
+          "h2": "Para qué está hecho cada uno",
+          "p": [
+            "La Maravilla de Cintrón se describe como sellador acrílico de un componente para juntas, sujetadores, penetraciones y detalles dentro de un sistema de recubrimiento. Se aplica con llana, rodillo o brocha y está pensado para cerrar antes de cubrir.",
+            "TOP SEAL de Conspro se vende como recubrimiento elastomérico de techo frío, es decir, para la superficie completa. Es la capa que da reflectividad y resistencia, no la que rellena una grieta."
+          ]
+        },
+        {
+          "h2": "El precio no es la comparación",
+          "p": [
+            "TOP SEAL se publica a $175 la paila y La Maravilla desde $99. Comparar esos dos números directamente no dice nada, porque no cubren la misma área ni cumplen la misma función dentro del sistema.",
+            "La comparación útil es por sistema completo: cuánto cuesta llevar ese techo de cero a terminado con cada protocolo. Ahí es donde se ve la diferencia real."
+          ]
+        }
+      ],
+      "veredicto": "No son alternativas: son pasos distintos. Si tu techo necesita cerrar juntas y detalles, eso va primero; el acabado elastomérico va después, y sin él ninguno de los dos hace su trabajo completo."
+    },
+    {
+      "slug": "sil-hs-vs-king-of-silicone",
+      "intro": "Es la comparación más concreta que se puede hacer en Puerto Rico: dos siliconas 100%, dos marcas locales, $220 contra $269. Y también es la más engañosa, porque el precio por paila no dice nada sin la cobertura declarada.",
+      "secciones": [
+        {
+          "h2": "La cobertura decide el precio real",
+          "p": [
+            "El King of Silicone declara 170 a 200 pies cuadrados por paila de 5 galones. El SIL HS de Conspro se publica a $220 la paila, pero su cobertura por área no aparece en la página de producto: hay que pedir la ficha técnica.",
+            "Si el SIL HS rinde 200 pies cuadrados, su costo de material por pie es menor que el del King of Silicone. Si rinde 150, es mayor. Sin la ficha, la comparación de precios es especulación."
+          ]
+        },
+        {
+          "h2": "Lo que sí se puede comparar hoy",
+          "p": [
+            "Ambas son siliconas de curado por humedad, de un componente, para techo plano, y ambas se venden a contratistas. Bull-Bond suma una garantía publicada de 4 a 10 años, renovable; Cintrón remite la suya al contrato cuando instala.",
+            "Ese es el dato duro disponible: no cuál es mejor producto, sino cuál tiene el respaldo documentado que puedes reclamar."
+          ]
+        }
+      ],
+      "veredicto": "Pide las dos fichas técnicas y calcula el costo por pie cuadrado cubierto, no por paila. Con ese número en la mano, la diferencia de $49 se vuelve irrelevante o decisiva, y sabrás cuál."
+    },
+    {
+      "slug": "sellado-de-techo-de-concreto",
+      "intro": "En una losa de concreto el sellador es lo último que se aplica y lo primero que se culpa. Casi todas las filtraciones que vuelven vienen de una grieta que nadie abrió, de un remate que nadie tocó o de una pendiente que nadie corrigió.",
+      "secciones": [
+        {
+          "h2": "Grietas: abrir antes de rellenar",
+          "p": [
+            "Una grieta capilar no se sella con una mano de producto: se abre en V o en U con amoladora, se limpia y se rellena con poliuretano o mortero de reparación. El protocolo de Bull-Bond lo describe así, con grietas de hasta 20 milésimas abiertas a un cuarto de pulgada.",
+            "Si solo se cubre la grieta, el movimiento de la losa vuelve a abrirla debajo del recubrimiento y la filtración aparece en el mismo sitio al año siguiente."
+          ]
+        },
+        {
+          "h2": "Porosidad y remates",
+          "p": [
+            "El concreto poroso absorbe la primera mano: el producto que pagaste se queda dentro y no cubre. Por eso se sella la superficie antes de aplicar el sistema, y por eso el rendimiento real es menor que el del envase.",
+            "Los remates y las zarpas son la segunda fuente de filtración. Ahí no aplica un recubrimiento plano: hace falta un refuerzo y, muchas veces, reconstruir el chaflán con mortero."
+          ]
+        }
+      ],
+      "veredicto": "Si tu losa tiene grietas abiertas o remates levantados, el trabajo empieza con reparación, no con sellador. Y si el agua se empoza, empieza con pendiente."
+    },
+    {
+      "slug": "cuando-sellar-el-techo-en-puerto-rico",
+      "intro": "El mismo sistema aplicado en enero dura años; aplicado con una onda tropical a 48 horas, falla. En una isla donde llueve casi todo el año, el calendario es parte de la especificación técnica.",
+      "secciones": [
+        {
+          "h2": "La ventana por región",
+          "p": [
+            "La zona norte y el área metropolitana tienen su mejor ventana entre diciembre y abril. La zona sur y suroeste tiene más margen en verano, porque llueve menos y seca más rápido. En la montaña central el problema es la nubosidad: hay menos horas de sol directo para curar.",
+            "La temporada de huracanes empieza el 1 de junio según NOAA, y eso impone una fecha límite práctica: lo que no se hizo en mayo se hace en emergencia en septiembre, con sobreprecio."
+          ]
+        },
+        {
+          "h2": "Cuánto tiempo seco necesitas",
+          "p": [
+            "Depende del sistema. El acrílico cura en horas. El poliuretano necesita de 12 a 24 horas antes de caminar encima. La silicona cura con la humedad del aire, pero la lluvia antes de tiempo arruina la capa.",
+            "Como regla de trabajo, ningún sistema de tres capas debería empezar sin una ventana de 48 horas secas. Si el pronóstico no la da, se pospone: es más barato que rehacer."
+          ]
+        }
+      ],
+      "veredicto": "Apunta a la ventana seca de tu región, reserva dos días de margen y no empieces un sistema completo con lluvia anunciada. El calendario cuesta menos que la segunda intervención."
+    },
+    {
+      "slug": "sellado-de-techo-vs-impermeabilizacion",
+      "intro": "En Puerto Rico las dos palabras se usan como sinónimos y no lo son. La diferencia decide si el trabajo cuesta cientos o miles, y también decide si la filtración vuelve por otro lado en seis meses.",
+      "secciones": [
+        {
+          "h2": "Punto contra superficie",
+          "p": [
+            "El sellado ataca puntos: una junta, una grieta, un remate, la base de un equipo de aire. Es una intervención localizada y suele resolverse en una visita.",
+            "La impermeabilización cubre toda la superficie con una capa continua. Implica preparar el techo completo, y por eso cuesta más y dura más."
+          ]
+        },
+        {
+          "h2": "Cómo se decide en la práctica",
+          "p": [
+            "Si el agua entra por un solo lugar identificable y el resto del techo está sano, es sellado. Si entra por varios puntos, si el techo tiene más de diez años sin mantenimiento o si hay empozamiento, es impermeabilización.",
+            "Hay un tercer caso que casi nadie menciona: cuando el agua entra por un punto pero el techo entero está al final de su vida útil. Ahí sellar el punto es tirar dinero, porque en dos años vas a impermeabilizar igual."
+          ]
+        }
+      ],
+      "veredicto": "Cuenta los puntos de entrada y mira la edad del techo. Un punto en un techo sano es sellado; varios puntos o un techo viejo es impermeabilización, y conviene hacerlo completo aunque duela el presupuesto."
+    }
+  ]
+}

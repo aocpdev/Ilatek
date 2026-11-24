@@ -3,7 +3,7 @@
 ## Enlaces internos — requisito del propietario
 
 - Todo enlace de navegación a una página de este sitio debe usar en el HTML fuente `https://{{custom_values.website_url}}/ruta`. Nunca dejar `{{custom_values.website_url}}/ruta`, una ruta relativa ni el dominio de producción escrito directamente en un CTA.
-- En GHL, `website_url` contiene el dominio sin protocolo ni barra final, por ejemplo `ilatekpr.com`. No cambiar los nombres de Custom Values.
+- En GHL, `website_url` contiene el dominio sin protocolo ni barra final. En cada subcuenta de municipio debe ser **idéntico** a `business__county_domain`, es decir `<slug>.ilatekpr.com`, para que los enlaces internos no salten al dominio principal; el Home de la cuenta principal conserva `ilatekpr.com`. No cambiar los nombres de Custom Values.
 - Conservar paths, parámetros y fragmentos. Los saltos a una sección mantienen su scroll mediante el runtime compartido. No convertir referencias SVG `href="#icono"` en enlaces web.
 - Los destinos en otros hosts (portal, subdominios municipales, CDNs, calendarios, reseñas, redes), `tel:` y `mailto:` se conservan. No inventar paths equivalentes para ellos. Sitemap/robots/llms públicos necesitan URLs reales, no tokens GHL.
 - `src/compartido/internal-links.js` es la fuente del runtime; `tools/internal-link-contract.mjs` aplica el contrato a los embeds. Mantenerlos autónomos para copiar a Custom Code sin recursos JavaScript locales adicionales.
@@ -25,9 +25,18 @@ Guía detallada: `documentacion/ENLACES-INTERNOS.md`. Mapa de archivos: `docs/es
 - En móvil/tablet, ES/EN va a la derecha, inmediatamente antes del botón de menú, con separación de 8 px y objetivos táctiles de 44 px. Hamburguesa y X comparten una celda centrada de 22 px; no posicionar absolutamente el SVG dentro del span de cierre.
 - En desktop, conservar el orden real de elementos y de teclado: navegación → ES/EN → Login → agenda. El idioma se presenta como opción del menú, sin cápsula, con el mismo espaciado que los enlaces; el Login de la barra se oculta en móvil, que conserva su enlace dentro del drawer.
 
+## Navegador del propietario — no cerrar ventanas
+
+- Al automatizar el Chrome con `--remote-debugging-port=9222`, **nunca cerrar la ventana ni la pestaña**: ni `page.close()`, ni `browser.close()`, ni matar el proceso de Chrome. El propietario tiene que poder ver la pantalla, iniciar sesión y seguir el progreso.
+- Reutilizar la pestaña existente del sitio (buscar en `context.pages` la que ya está en ese dominio); crear una pestaña nueva solo si no hay ninguna, y dejarla abierta al terminar.
+- Desconectar Playwright con `pw.stop()` al final: eso corta el enlace de depuración, no cierra Chrome. Nunca usar `--headless` sobre ese navegador.
+- Tras cada paso, informar en qué pestaña quedó el trabajo para que el propietario continúe desde ahí.
+- Si en una pestaña aparece el **recordatorio de pago** de GHL, pulsar **«Go to Dashboard»**: eso devuelve a la app y se sigue trabajando. No cerrar la pestaña ni recargar (la recarga lo vuelve a sacar). `alta-funnel-ghl.py` lo hace solo en cada navegación mediante `saltar_aviso_pago`.
+
 ## Localización SEO e imágenes — Delta System
 
-- El Custom Value confirmado por el propietario es exactamente `{{custom_values.business__county_name}}`, no `business__county_name`. Usarlo en Title, Description, metadatos sociales y textos descriptivos alt/title de las imágenes.
+- El Custom Value de localidad es `{{custom_values.county_name_and_state}}`. Usarlo en Title, Description, metadatos sociales y textos descriptivos alt/title de las imágenes.
+- Comprobado en el live el 2026-11-12: el editor de la Home trae 337 tokens y tanto `ilatekpr.com/home` como `juncos.ilatekpr.com/home` sirven **0 tokens crudos**, con «Juncos» apareciendo 507 veces y el `<title>` resuelto a «… en Juncos, Puerto Rico». `business__county_name` existe en la cuenta con el mismo valor («Puerto Rico») pero la página no lo usa ni una vez: no migrar a él sin repetir esa comprobación en el live.
 - Conservar el alt vacío de las imágenes decorativas. No añadir localidad a URLs de assets, no inventar oficinas ni afirmar que una foto documenta un trabajo realizado en un pueblo.
 - `tools/location-contract.mjs` aplica el contrato al formatear los entregables; `src/compartido/location-values.js` resuelve imágenes y metadatos para vista previa y llegada tardía del párrafo GHL. Las plantillas codificadas conservan la localidad al cambiar ES/EN.
 - Actualizar fuentes, sincronizar layout, ejecutar `node tools/apply-internal-links.mjs` y `node tools/package-pages.mjs`, luego pruebas. Los SEO-GHL.md se generan desde el HEAD real: no corregir únicamente el Markdown.

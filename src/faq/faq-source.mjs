@@ -4,7 +4,7 @@ export const FAQ_SOURCES = {
   "home": [
     {
       "q": "¿Cuánto cuesta una limpieza residencial en {{custom_values.business__county_name}}?",
-      "a": "En Ilatek el precio se calcula por pies cuadrados: la <b>limpieza estándar cuesta $0.07 por pie²</b> y la <b>limpieza profunda $0.15 por pie²</b>. Por ejemplo, una casa de 2,000 pies² cuesta $140 estándar o $300 profunda. Los extras (ventanas, refrigerador, alfombras) se suman con precio fijo. Con nuestro cotizador online ves el <b>precio real en minutos</b>, sin llamadas ni estimados al azar."
+      "a": "En Ilatek el precio se calcula por trabajo: la <b>limpieza estándar</b> y la <b>limpieza profunda</b> se cotizan desde $250 según el tamaño y la condición de tu espacio, con el precio por escrito antes del servicio. Los extras (ventanas, refrigerador, alfombras) se suman con precio fijo. Con nuestro cotizador online ves el <b>precio real en minutos</b>, sin llamadas ni estimados al azar."
     },
     {
       "q": "¿Qué incluye la limpieza estándar y la limpieza profunda?",
@@ -12,7 +12,7 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Qué servicios extras ofrece Ilatek?",
-      "a": "Además de la limpieza base: <b>ventanas interiores ($10) y exteriores ($25)</b>, <b>refrigerador ($40)</b>, <b>horno ($30)</b>, <b>lavaplatos ($10)</b>, <b>lavadora y secadora ($10 c/u)</b>, <b>limpieza de muebles ($15) y lavado profundo ($30 por pieza)</b>, <b>alfombras ($0.75 por pie²)</b>, <b>lechada y losas ($1.50 por pie²)</b>, y organización de <b>despensas y clósets ($50 c/u)</b> y <b>garaje ($0.50 por pie²)</b>."
+      "a": "Además de la limpieza base: <b>ventanas interiores ($10) y exteriores ($25)</b>, <b>refrigerador ($40)</b>, <b>horno ($30)</b>, <b>lavaplatos ($10)</b>, <b>lavadora y secadora ($10 c/u)</b>, <b>limpieza de muebles ($15) y lavado profundo ($30 por pieza)</b>, <b>alfombras (desde $250)</b>, <b>lechada y losas (desde $250)</b>, y organización de <b>despensas y clósets ($50 c/u)</b> y <b>garaje (desde $250)</b>."
     },
     {
       "q": "¿Atienden mi área en Puerto Rico?",
@@ -20,7 +20,7 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Cómo obtengo mi precio real al instante?",
-      "a": "Con nuestro <b><a href=\"https://{{custom_values.website_url}}/cotizacion\">cotizador online</a></b> en 4 pasos: ingresas los pies cuadrados, eliges el tipo de limpieza, agregas servicios y extras, y ves el <b>precio total y la duración estimada</b> al momento. Sin formularios infinitos ni esperas: el precio que ves es el precio del servicio."
+      "a": "Con nuestro <b><a href=\"https://{{custom_values.website_url}}/cotizacion\">cotizador online</a></b> en 4 pasos: indicas el tamaño del espacio, eliges el tipo de limpieza, agregas servicios y extras, y ves el <b>precio total y la duración estimada</b> al momento. Sin formularios infinitos ni esperas: el precio que ves es el precio del servicio."
     },
     {
       "q": "¿Qué horarios manejan?",
@@ -40,13 +40,13 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Por qué elegir Ilatek en vez de otra compañía de limpieza?",
-      "a": "Ilatek combina <b>precios transparentes por pie cuadrado</b> (sin sorpresas), <b>cotizador online con precio real inmediato</b>, cobertura en <b>los 78 municipios</b>, atención detallada enfocada en limpieza residencial y coordinación clara antes de cada servicio. Limpieza que se nota, atención que se siente."
+      "a": "Ilatek combina <b>precios transparentes por servicio</b> (sin sorpresas), <b>cotizador online con precio real inmediato</b>, cobertura en <b>los 78 municipios</b>, atención detallada enfocada en limpieza residencial y coordinación clara antes de cada servicio. Limpieza que se nota, atención que se siente."
     }
   ],
   "home-opt": [
     {
       "q": "¿Cuánto cuesta una limpieza residencial en {{custom_values.business__county_name}}?",
-      "a": "En Ilatek el precio se calcula por pies cuadrados: la <b>limpieza estándar cuesta $0.07 por pie²</b> y la <b>limpieza profunda $0.15 por pie²</b>. Por ejemplo, una casa de 2,000 pies² cuesta $140 estándar o $300 profunda. Los extras (ventanas, refrigerador, alfombras) se suman con precio fijo. Con nuestro cotizador online ves el <b>precio real en minutos</b>, sin llamadas ni estimados al azar."
+      "a": "En Ilatek el precio se calcula por trabajo: la <b>limpieza estándar</b> y la <b>limpieza profunda</b> se cotizan desde $250 según el tamaño y la condición de tu espacio, con el precio por escrito antes del servicio. Los extras (ventanas, refrigerador, alfombras) se suman con precio fijo. Con nuestro cotizador online ves el <b>precio real en minutos</b>, sin llamadas ni estimados al azar."
     },
     {
       "q": "¿Qué incluye la limpieza estándar y la limpieza profunda?",
@@ -54,7 +54,7 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Qué servicios extras ofrece Ilatek?",
-      "a": "Además de la limpieza base: <b>ventanas interiores ($10) y exteriores ($25)</b>, <b>refrigerador ($40)</b>, <b>horno ($30)</b>, <b>lavaplatos ($10)</b>, <b>lavadora y secadora ($10 c/u)</b>, <b>limpieza de muebles ($15) y lavado profundo ($30 por pieza)</b>, <b>alfombras ($0.75 por pie²)</b>, <b>lechada y losas ($1.50 por pie²)</b>, y organización de <b>despensas y clósets ($50 c/u)</b> y <b>garaje ($0.50 por pie²)</b>."
+      "a": "Además de la limpieza base: <b>ventanas interiores ($10) y exteriores ($25)</b>, <b>refrigerador ($40)</b>, <b>horno ($30)</b>, <b>lavaplatos ($10)</b>, <b>lavadora y secadora ($10 c/u)</b>, <b>limpieza de muebles ($15) y lavado profundo ($30 por pieza)</b>, <b>alfombras (desde $250)</b>, <b>lechada y losas (desde $250)</b>, y organización de <b>despensas y clósets ($50 c/u)</b> y <b>garaje (desde $250)</b>."
     },
     {
       "q": "¿Atienden mi área en Puerto Rico?",
@@ -62,7 +62,7 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Cómo obtengo mi precio real al instante?",
-      "a": "Con nuestro <b><a href=\"https://{{custom_values.website_url}}/cotizacion\">cotizador online</a></b> en 4 pasos: ingresas los pies cuadrados, eliges el tipo de limpieza, agregas servicios y extras, y ves el <b>precio total y la duración estimada</b> al momento. Sin formularios infinitos ni esperas: el precio que ves es el precio del servicio."
+      "a": "Con nuestro <b><a href=\"https://{{custom_values.website_url}}/cotizacion\">cotizador online</a></b> en 4 pasos: indicas el tamaño del espacio, eliges el tipo de limpieza, agregas servicios y extras, y ves el <b>precio total y la duración estimada</b> al momento. Sin formularios infinitos ni esperas: el precio que ves es el precio del servicio."
     },
     {
       "q": "¿Qué horarios manejan?",
@@ -82,13 +82,13 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Por qué elegir Ilatek en vez de otra compañía de limpieza?",
-      "a": "Ilatek combina <b>precios transparentes por pie cuadrado</b> (sin sorpresas), <b>cotizador online con precio real inmediato</b>, cobertura en <b>los 78 municipios</b>, atención detallada enfocada en limpieza residencial y coordinación clara antes de cada servicio. Limpieza que se nota, atención que se siente."
+      "a": "Ilatek combina <b>precios transparentes por servicio</b> (sin sorpresas), <b>cotizador online con precio real inmediato</b>, cobertura en <b>los 78 municipios</b>, atención detallada enfocada en limpieza residencial y coordinación clara antes de cada servicio. Limpieza que se nota, atención que se siente."
     }
   ],
   "faq-embed": [
     {
       "q": "¿Cuánto cuesta una limpieza residencial en {{custom_values.business__county_name}}?",
-      "a": "En Ilatek el precio se calcula por pies cuadrados: la <b>limpieza estándar cuesta $0.07 por pie²</b> y la <b>limpieza profunda $0.15 por pie²</b>. Por ejemplo, una casa de 2,000 pies² cuesta $140 estándar o $300 profunda. Los extras (ventanas, refrigerador, alfombras) se suman con precio fijo. Con nuestro cotizador online ves el <b>precio real en minutos</b>, sin llamadas ni estimados al azar."
+      "a": "En Ilatek el precio se calcula por trabajo: la <b>limpieza estándar</b> y la <b>limpieza profunda</b> se cotizan desde $250 según el tamaño y la condición de tu espacio, con el precio por escrito antes del servicio. Los extras (ventanas, refrigerador, alfombras) se suman con precio fijo. Con nuestro cotizador online ves el <b>precio real en minutos</b>, sin llamadas ni estimados al azar."
     },
     {
       "q": "¿Qué incluye la limpieza estándar y la limpieza profunda?",
@@ -96,7 +96,7 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Qué servicios extras ofrece Ilatek?",
-      "a": "Además de la limpieza base: <b>ventanas interiores ($10) y exteriores ($25)</b>, <b>refrigerador ($40)</b>, <b>horno ($30)</b>, <b>lavaplatos ($10)</b>, <b>lavadora y secadora ($10 c/u)</b>, <b>limpieza de muebles ($15) y lavado profundo ($30 por pieza)</b>, <b>alfombras ($0.75 por pie²)</b>, <b>lechada y losas ($1.50 por pie²)</b>, y organización de <b>despensas y clósets ($50 c/u)</b> y <b>garaje ($0.50 por pie²)</b>."
+      "a": "Además de la limpieza base: <b>ventanas interiores ($10) y exteriores ($25)</b>, <b>refrigerador ($40)</b>, <b>horno ($30)</b>, <b>lavaplatos ($10)</b>, <b>lavadora y secadora ($10 c/u)</b>, <b>limpieza de muebles ($15) y lavado profundo ($30 por pieza)</b>, <b>alfombras (desde $250)</b>, <b>lechada y losas (desde $250)</b>, y organización de <b>despensas y clósets ($50 c/u)</b> y <b>garaje (desde $250)</b>."
     },
     {
       "q": "¿Atienden mi área en Puerto Rico?",
@@ -104,7 +104,7 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Cómo obtengo mi precio real al instante?",
-      "a": "Con nuestro <b><a href=\"https://{{custom_values.website_url}}/cotizacion\">cotizador online</a></b> en 4 pasos: ingresas los pies cuadrados, eliges el tipo de limpieza, agregas servicios y extras, y ves el <b>precio total y la duración estimada</b> al momento. Sin formularios infinitos ni esperas: el precio que ves es el precio del servicio."
+      "a": "Con nuestro <b><a href=\"https://{{custom_values.website_url}}/cotizacion\">cotizador online</a></b> en 4 pasos: indicas el tamaño del espacio, eliges el tipo de limpieza, agregas servicios y extras, y ves el <b>precio total y la duración estimada</b> al momento. Sin formularios infinitos ni esperas: el precio que ves es el precio del servicio."
     },
     {
       "q": "¿Qué horarios manejan?",
@@ -124,13 +124,13 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Por qué elegir Ilatek en vez de otra compañía de limpieza?",
-      "a": "Ilatek combina <b>precios transparentes por pie cuadrado</b> (sin sorpresas), <b>cotizador online con precio real inmediato</b>, cobertura en <b>los 78 municipios</b>, atención detallada enfocada en limpieza residencial y coordinación clara antes de cada servicio. Limpieza que se nota, atención que se siente."
+      "a": "Ilatek combina <b>precios transparentes por servicio</b> (sin sorpresas), <b>cotizador online con precio real inmediato</b>, cobertura en <b>los 78 municipios</b>, atención detallada enfocada en limpieza residencial y coordinación clara antes de cada servicio. Limpieza que se nota, atención que se siente."
     }
   ],
   "servicios": [
     {
       "q": "¿Cuánto cuesta un servicio de limpieza en {{custom_values.business__county_name}}?",
-      "a": "En Ilatek el precio se calcula por pies cuadrados: la <b>limpieza estándar cuesta $0.07 por pie²</b> y la <b>limpieza profunda $0.15 por pie²</b>. Una casa de 2,000 pies² cuesta $140 estándar o $300 profunda. Los extras (ventanas, refrigerador, alfombras) se suman con precio fijo. Con nuestro <a href=\"https://ilatekpr.com/cotizacion\">cotizador online</a> ves el precio real en minutos."
+      "a": "En Ilatek el precio se calcula por trabajo: la <b>limpieza estándar</b> y la <b>limpieza profunda</b> se cotizan desde $250 según el tamaño y la condición de tu espacio, con el precio por escrito antes del servicio. Los extras (ventanas, refrigerador, alfombras) se suman con precio fijo. Con nuestro <a href=\"https://ilatekpr.com/cotizacion\">cotizador online</a> ves el precio real en minutos."
     },
     {
       "q": "¿Qué tipos de servicios de limpieza ofrece Ilatek?",
@@ -146,7 +146,7 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Cómo obtengo el precio de mi servicio al instante?",
-      "a": "Con nuestro <b><a href=\"https://ilatekpr.com/cotizacion\">cotizador online</a></b> en 4 pasos: ingresas los pies cuadrados, eliges el tipo de limpieza, agregas servicios y extras, y ves el <b>precio total y la duración estimada</b> al momento. Sin llamadas ni estimados al azar."
+      "a": "Con nuestro <b><a href=\"https://ilatekpr.com/cotizacion\">cotizador online</a></b> en 4 pasos: indicas el tamaño del espacio, eliges el tipo de limpieza, agregas servicios y extras, y ves el <b>precio total y la duración estimada</b> al momento. Sin llamadas ni estimados al azar."
     },
     {
       "q": "¿Puedo combinar varios servicios en una sola visita?",
@@ -166,7 +166,7 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Por qué elegir Ilatek para los servicios de limpieza de mi propiedad?",
-      "a": "Ilatek combina <b>precios transparentes por pie cuadrado</b> (sin sorpresas), <b>cotizador online con precio real inmediato</b>, cobertura en <b>los 78 municipios</b>, un solo equipo para todos los servicios y coordinación clara antes de cada visita. Limpieza que se nota, atención que se siente."
+      "a": "Ilatek combina <b>precios transparentes por servicio</b> (sin sorpresas), <b>cotizador online con precio real inmediato</b>, cobertura en <b>los 78 municipios</b>, un solo equipo para todos los servicios y coordinación clara antes de cada visita. Limpieza que se nota, atención que se siente."
     }
   ],
   "airbnb": [
@@ -206,7 +206,7 @@ export const FAQ_SOURCES = {
   "alfombras": [
     {
       "q": "¿Cuánto cuesta la limpieza de alfombras en {{custom_values.business__county_name}}?",
-      "a": "Ilatek cobra <b>$0.75 por pie²</b>: el precio depende solo del tamaño de tu alfombra o área de moqueta. Usa el cotizador y recibe tu número real en minutos — precio claro y por escrito, sin compromiso."
+      "a": "Ilatek cobra <b>desde $250</b>: el precio depende solo del tamaño de tu alfombra o área de moqueta. Usa el cotizador y recibe tu número real en minutos — precio claro y por escrito, sin compromiso."
     },
     {
       "q": "¿Qué incluye una limpieza de alfombras?",
@@ -234,7 +234,7 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Por qué elegir Ilatek para tus alfombras?",
-      "a": "Precio transparente por pie² ($0.75), proceso completo de 5 pasos con vapor, tratamiento enzimático de olores, secado acelerado de 6–12 horas, depósito de $50 descontable y cobertura en los 78 municipios. Frescor bajo tus pies en {{custom_values.business__county_name}}."
+      "a": "Precio transparente por trabajo (desde $250), proceso completo de 5 pasos con vapor, tratamiento enzimático de olores, secado acelerado de 6–12 horas, depósito de $50 descontable y cobertura en los 78 municipios. Frescor bajo tus pies en {{custom_values.business__county_name}}."
     }
   ],
   "electrodomesticos": [
@@ -342,7 +342,7 @@ export const FAQ_SOURCES = {
   "limpieza-estandar": [
     {
       "q": "¿Cuánto cuesta la limpieza estándar en {{custom_values.business__county_name}}?",
-      "a": "Ilatek cobra <b>$0.07 por pie²</b>: el precio depende solo del tamaño de tu hogar y la frecuencia que elijas. Usa el cotizador y recibe tu número real en minutos — precio claro y por escrito, sin compromiso."
+      "a": "Ilatek cobra <b>desde $250</b>: el precio depende solo del tamaño de tu hogar y la frecuencia que elijas. Usa el cotizador y recibe tu número real en minutos — precio claro y por escrito, sin compromiso."
     },
     {
       "q": "¿Qué incluye una limpieza estándar?",
@@ -370,7 +370,7 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Por qué elegir Ilatek para la limpieza de tu hogar?",
-      "a": "Precio claro por pie² ($0.07), cotizador con precio real en minutos, equipo puntual y confiable, depósito de $50 descontable y cobertura en los 78 municipios. Tu hogar siempre fresco en {{custom_values.business__county_name}}."
+      "a": "Precio claro por trabajo desde $250, cotizador con precio real en minutos, equipo puntual y confiable, depósito de $50 descontable y cobertura en los 78 municipios. Tu hogar siempre fresco en {{custom_values.business__county_name}}."
     }
   ],
   "limpieza-industrial": [
@@ -410,7 +410,7 @@ export const FAQ_SOURCES = {
   "limpieza-profunda": [
     {
       "q": "¿Cuánto cuesta la limpieza profunda en {{custom_values.business__county_name}}?",
-      "a": "Ilatek cobra <b>$0.15 por pie²</b> para la limpieza profunda: el precio depende del tamaño de tu hogar. Usa el cotizador y recibe tu número real en minutos — precio claro y por escrito, sin compromiso."
+      "a": "Ilatek cobra <b>desde $250</b> para la limpieza profunda: el precio depende del tamaño de tu hogar. Usa el cotizador y recibe tu número real en minutos — precio claro y por escrito, sin compromiso."
     },
     {
       "q": "¿Qué incluye una limpieza profunda?",
@@ -418,7 +418,7 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Cuál es la diferencia entre limpieza profunda y estándar?",
-      "a": "La estándar es el <b>mantenimiento regular</b>: superficies, baños, cocina y pisos. La profunda va más a fondo —interiores de enseres, juntas y acumulación— y se recomienda como primera visita; luego la estándar ($0.07/pie²) mantiene tu hogar al día."
+      "a": "La estándar es el <b>mantenimiento regular</b>: superficies, baños, cocina y pisos. La profunda va más a fondo —interiores de enseres, juntas y acumulación— y se recomienda como primera visita; luego la estándar (desde $250) mantiene tu hogar al día."
     },
     {
       "q": "¿Cada cuánto debo limpiar mi casa?",
@@ -438,13 +438,13 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Por qué elegir Ilatek para la limpieza de tu hogar?",
-      "a": "Precio claro por pie² ($0.15), cotizador con precio real en minutos, equipo puntual y confiable, depósito de $50 descontable y cobertura en los 78 municipios. Tu hogar siempre fresco en {{custom_values.business__county_name}}."
+      "a": "Precio claro por trabajo desde $250, cotizador con precio real en minutos, equipo puntual y confiable, depósito de $50 descontable y cobertura en los 78 municipios. Tu hogar siempre fresco en {{custom_values.business__county_name}}."
     }
   ],
   "limpieza-residencial": [
     {
       "q": "¿Cuánto se cobra por limpiar una casa en {{custom_values.business__county_name}}?",
-      "a": "Depende del tamaño y del tipo de limpieza. Ilatek cobra <b>$0.07 por pie cuadrado</b> para limpieza regular y <b>$0.15 por pie cuadrado</b> para limpieza profunda — sin sorpresas. Con el cotizador de ilatekpr.com ves tu precio real en minutos antes de reservar."
+      "a": "Depende del tamaño y del tipo de limpieza. Ilatek cobra <b>desde $250</b> para limpieza regular y <b>desde $250</b> para limpieza profunda — sin sorpresas. Con el cotizador de ilatekpr.com ves tu precio real en minutos antes de reservar."
     },
     {
       "q": "¿Qué incluye el servicio de limpieza residencial?",
@@ -468,17 +468,17 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Limpian apartamentos pequeños o solo casas?",
-      "a": "Ambos. El precio por pie cuadrado hace que un estudio y una casa grande reciban el mismo trato justo: pagas por el espacio real de tu hogar, no por tarifas fijas infladas."
+      "a": "Ambos. El precio por servicio hace que un estudio y una casa grande reciban el mismo trato justo: pagas por el espacio real de tu hogar, no por tarifas fijas infladas."
     },
     {
       "q": "¿Por qué elegir Ilatek para la limpieza de mi hogar?",
-      "a": "Precio transparente por pie cuadrado, cotización instantánea, cobertura en los 78 municipios y un equipo profesional que llega con todo. Miles de pies cuadrados limpios en {{custom_values.business__county_name}} nos respaldan."
+      "a": "Precio transparente por servicio, cotización instantánea, cobertura en los 78 municipios y un equipo profesional que llega con todo. Miles de pies cuadrados limpios en {{custom_values.business__county_name}} nos respaldan."
     }
   ],
   "organizacion": [
     {
       "q": "¿Cuánto cuesta la organización del hogar en {{custom_values.business__county_name}}?",
-      "a": "Precios publicados por espacio: <b>despensas y clósets $50 c/u · garaje $0.50 por pie²</b>. Elige los espacios y recibe tu total en minutos en el cotizador — precio claro y por escrito, sin compromiso."
+      "a": "Precios publicados por espacio: <b>despensas y clósets $50 c/u · garaje desde $250</b>. Elige los espacios y recibe tu total en minutos en el cotizador — precio claro y por escrito, sin compromiso."
     },
     {
       "q": "¿Qué incluye un servicio de organización?",
@@ -502,7 +502,7 @@ export const FAQ_SOURCES = {
     },
     {
       "q": "¿Organizan solo un espacio o toda la casa?",
-      "a": "Eliges los espacios: despensas y clósets a $50 c/u y garaje a $0.50 por pie². Empieza por el que más te estresa y suma los demás en la misma visita o en otra coordinada."
+      "a": "Eliges los espacios: despensas y clósets a $50 c/u y garaje desde $250. Empieza por el que más te estresa y suma los demás en la misma visita o en otra coordinada."
     },
     {
       "q": "¿Por qué elegir Ilatek para organizar tu hogar?",

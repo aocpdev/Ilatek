@@ -1,0 +1,505 @@
+{
+  "generado": "2026-11-08",
+  "fotos": {
+    "silicona-100-vs-poliuretano": {
+      "titulo": "Sellado con Silicona",
+      "archivo": "assets/optimized/blog/silicona-100-vs-poliuretano.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Sellado con Silicona - Ilatek.jpg"
+    },
+    "silicona-100-vs-acrilico-elastomerico": {
+      "titulo": "Recubrimiento Elastomérico",
+      "archivo": "assets/optimized/blog/silicona-100-vs-acrilico-elastomerico.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Recubrimiento Elastomérico -Ilatek.jpg"
+    },
+    "silicona-100-vs-membrana-asfaltica": {
+      "titulo": "Membrana Asfáltica",
+      "archivo": "assets/optimized/blog/silicona-100-vs-membrana-asfaltica.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Membrana Asfáltica - Ilatek.jpg"
+    },
+    "silicona-100-vs-membrana-liquida": {
+      "titulo": "Servicio de Sellado con Membrana Asfáltica",
+      "archivo": "assets/optimized/blog/silicona-100-vs-membrana-liquida.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Sellado con Membrana Asfáltica - Ilatek Property Solution - 1.jpg"
+    },
+    "silicona-100-vs-tpo-pvc": {
+      "titulo": "Servicio de Sellado con Membrana Asfáltica",
+      "archivo": "assets/optimized/blog/silicona-100-vs-tpo-pvc.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Sellado con Membrana Asfáltica - Ilatek Property Solution - 2.jpg"
+    },
+    "silicona-100-vs-sistema-multicapa": {
+      "titulo": "Servicio de Sellado con Silicona",
+      "archivo": "assets/optimized/blog/silicona-100-vs-sistema-multicapa.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Sellado con Silicona - Ilatek Property Solution - 1.jpg"
+    },
+    "poliuretano-vs-acrilico-elastomerico": {
+      "titulo": "Sellado Acrílico",
+      "archivo": "assets/optimized/blog/poliuretano-vs-acrilico-elastomerico.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Sellado Acrílico - Ilatek.jpg"
+    },
+    "poliuretano-vs-membrana-asfaltica": {
+      "titulo": "Sellado de Poliuretano",
+      "archivo": "assets/optimized/blog/poliuretano-vs-membrana-asfaltica.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Sellado de Poliuretano - Ilatek.jpg"
+    },
+    "poliuretano-vs-membrana-liquida": {
+      "titulo": "Servicio de Sellado de Poliuretano",
+      "archivo": "assets/optimized/blog/poliuretano-vs-membrana-liquida.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Sellado de Poliuretano - Ilatek Property Solution - 1.jpg"
+    },
+    "poliuretano-vs-tpo-pvc": {
+      "titulo": "Sellado Comercial",
+      "archivo": "assets/optimized/blog/poliuretano-vs-tpo-pvc.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Sellado Comercial - Ilatek.jpg"
+    },
+    "poliuretano-vs-sistema-multicapa": {
+      "titulo": "Servicio de Sellado de Poliuretano",
+      "archivo": "assets/optimized/blog/poliuretano-vs-sistema-multicapa.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Sellado de Poliuretano - Ilatek Property Solution - 2.jpg"
+    },
+    "acrilico-elastomerico-vs-membrana-asfaltica": {
+      "titulo": "Servicio de Recubrimiento Elastomérico",
+      "archivo": "assets/optimized/blog/acrilico-elastomerico-vs-membrana-asfaltica.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Recubrimiento Elastomérico - Ilatek Property Solution - 1.jpg"
+    },
+    "acrilico-elastomerico-vs-membrana-liquida": {
+      "titulo": "Servicio de Recubrimiento Elastomérico",
+      "archivo": "assets/optimized/blog/acrilico-elastomerico-vs-membrana-liquida.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Recubrimiento Elastomérico - Ilatek Property Solution - 2.jpg"
+    },
+    "acrilico-elastomerico-vs-tpo-pvc": {
+      "titulo": "Servicio de Sellado Acrílico",
+      "archivo": "assets/optimized/blog/acrilico-elastomerico-vs-tpo-pvc.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Sellado Acrílico - Ilatek Property Solution - 1.jpg"
+    },
+    "acrilico-elastomerico-vs-sistema-multicapa": {
+      "titulo": "Servicio de Sellado Acrílico",
+      "archivo": "assets/optimized/blog/acrilico-elastomerico-vs-sistema-multicapa.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Sellado Acrílico - Ilatek Property Solution - 2.jpg"
+    },
+    "membrana-asfaltica-vs-membrana-liquida": {
+      "titulo": "Sellado de Techos",
+      "archivo": "assets/optimized/blog/membrana-asfaltica-vs-membrana-liquida.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Sellado de Techos - Ilatek.jpg"
+    },
+    "membrana-asfaltica-vs-tpo-pvc": {
+      "titulo": "Servicio de Sellado Comercial",
+      "archivo": "assets/optimized/blog/membrana-asfaltica-vs-tpo-pvc.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Sellado Comercial - Ilatek Property Solution - 1.jpg"
+    },
+    "membrana-asfaltica-vs-sistema-multicapa": {
+      "titulo": "Servicio de Sellado de Techos",
+      "archivo": "assets/optimized/blog/membrana-asfaltica-vs-sistema-multicapa.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Sellado de Techos - Ilatek Property Solution - 1.jpg"
+    },
+    "membrana-liquida-vs-tpo-pvc": {
+      "titulo": "Techos Planos",
+      "archivo": "assets/optimized/blog/membrana-liquida-vs-tpo-pvc.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Techos Planos - Ilatek.jpg"
+    },
+    "membrana-liquida-vs-sistema-multicapa": {
+      "titulo": "Servicio de Sellado de Techos",
+      "archivo": "assets/optimized/blog/membrana-liquida-vs-sistema-multicapa.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Sellado de Techos - Ilatek Property Solution - 2.jpg"
+    },
+    "tpo-pvc-vs-sistema-multicapa": {
+      "titulo": "Airbnb & Turnover",
+      "archivo": "assets/optimized/blog/tpo-pvc-vs-sistema-multicapa.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Airbnb & Turnover - Ilatek.jpg"
+    },
+    "conspro-bullbond-vs-cintron": {
+      "titulo": "Alfombras",
+      "archivo": "assets/optimized/blog/conspro-bullbond-vs-cintron.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Alfombras - Ilatek.jpg"
+    },
+    "conspro-bullbond-vs-marin-membrana": {
+      "titulo": "Canaletas y Bajantes",
+      "archivo": "assets/optimized/blog/conspro-bullbond-vs-marin-membrana.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Canaletas y Bajantes - Ilatek.jpg"
+    },
+    "cintron-vs-marin-membrana": {
+      "titulo": "Electrodomésticos",
+      "archivo": "assets/optimized/blog/cintron-vs-marin-membrana.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Electrodomésticos - Ilatek.jpg"
+    },
+    "conspro-bullbond-vs-danosa": {
+      "titulo": "Empozamiento de Techos",
+      "archivo": "assets/optimized/blog/conspro-bullbond-vs-danosa.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Empozamiento de Techos - ilatek.jpg"
+    },
+    "cintron-vs-danosa": {
+      "titulo": "Ilatek Property Solution - 1",
+      "archivo": "assets/optimized/blog/cintron-vs-danosa.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Ilatek Property Solution - 1.jpg"
+    },
+    "marin-membrana-vs-danosa": {
+      "titulo": "Ilatek Property Solution idea",
+      "archivo": "assets/optimized/blog/marin-membrana-vs-danosa.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Ilatek Property Solution idea.jpg"
+    },
+    "conspro-bullbond-vs-windmar": {
+      "titulo": "Servicio de Sellado con Silicona",
+      "archivo": "assets/optimized/blog/conspro-bullbond-vs-windmar.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Sellado con Silicona - Ilatek Property Solution - 2.jpg"
+    },
+    "cintron-vs-windmar": {
+      "titulo": "Ilatek Property Solution",
+      "archivo": "assets/optimized/blog/cintron-vs-windmar.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Ilatek Property Solution.jpg"
+    },
+    "marin-membrana-vs-windmar": {
+      "titulo": "Impermeabilización",
+      "archivo": "assets/optimized/blog/marin-membrana-vs-windmar.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Impermeabilización - Ilatek.jpg"
+    },
+    "danosa-vs-windmar": {
+      "titulo": "Inspeccion de Techos",
+      "archivo": "assets/optimized/blog/danosa-vs-windmar.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Inspeccion de Techos - Ilatek.jpg"
+    },
+    "conspro-bullbond-vs-soprema": {
+      "titulo": "Servicio de Sellado Comercial",
+      "archivo": "assets/optimized/blog/conspro-bullbond-vs-soprema.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Sellado Comercial - Ilatek Property Solution - 2.jpg"
+    },
+    "danosa-vs-soprema": {
+      "titulo": "Limpieza Comercial",
+      "archivo": "assets/optimized/blog/danosa-vs-soprema.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Limpieza Comercial - Ilatek.jpg"
+    },
+    "danosa-vs-polyglass": {
+      "titulo": "Inspeccion y Mantenimiento",
+      "archivo": "assets/optimized/blog/danosa-vs-polyglass.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Inspeccion y Mantenimiento - Ilatek.jpg"
+    },
+    "soprema-vs-polyglass": {
+      "titulo": "Instalacion y reemplazo de techos",
+      "archivo": "assets/optimized/blog/soprema-vs-polyglass.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Instalacion y reemplazo de techos - ilatek.jpg"
+    },
+    "danosa-vs-sika": {
+      "titulo": "Instalación y Reemplazo",
+      "archivo": "assets/optimized/blog/danosa-vs-sika.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Instalación y Reemplazo - Ilatek.jpg"
+    },
+    "sika-vs-polyglass": {
+      "titulo": "Lavado a Presion de Techos",
+      "archivo": "assets/optimized/blog/sika-vs-polyglass.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Lavado a Presion de Techos - ilatek.jpg"
+    },
+    "cintron-vs-lanco": {
+      "titulo": "Lavado a Presión",
+      "archivo": "assets/optimized/blog/cintron-vs-lanco.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Lavado a Presión - Ilatek.jpg"
+    },
+    "marin-membrana-vs-lanco": {
+      "titulo": "Lavado a Presión de Techos",
+      "archivo": "assets/optimized/blog/marin-membrana-vs-lanco.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Lavado a Presión de Techos - Ilatek.jpg"
+    },
+    "conspro-bullbond-vs-lanco": {
+      "titulo": "Limpieza de Mudanza",
+      "archivo": "assets/optimized/blog/conspro-bullbond-vs-lanco.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Limpieza de Mudanza - Ilatek.jpg"
+    },
+    "windmar-vs-lanco": {
+      "titulo": "Limpieza de Techos y Canaletas",
+      "archivo": "assets/optimized/blog/windmar-vs-lanco.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Limpieza de Techos y Canaletas - Ilatek.jpg"
+    },
+    "sil-hs-vs-king-of-silicone": {
+      "titulo": "Limpieza Estándar",
+      "archivo": "assets/optimized/blog/sil-hs-vs-king-of-silicone.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Limpieza Estándar - Ilatek.jpg"
+    },
+    "maravilla-vs-top-seal": {
+      "titulo": "Limpieza Industrial",
+      "archivo": "assets/optimized/blog/maravilla-vs-top-seal.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Limpieza Industrial - ilatek.jpg"
+    },
+    "cintronator-vs-duroseal": {
+      "titulo": "Limpieza Profunda",
+      "archivo": "assets/optimized/blog/cintronator-vs-duroseal.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Limpieza Profunda - Ilatek.jpg"
+    },
+    "primer-bullbond-vs-primer-cintron": {
+      "titulo": "Limpieza Residencial",
+      "archivo": "assets/optimized/blog/primer-bullbond-vs-primer-cintron.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Limpieza Residencial - Ilatek.jpg"
+    },
+    "top-coat-marin-vs-top-coat-cintron": {
+      "titulo": "Mantenimiento Preventivo",
+      "archivo": "assets/optimized/blog/top-coat-marin-vs-top-coat-cintron.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Mantenimiento Preventivo - Ilatek.jpg"
+    },
+    "sellado-de-techo-de-zinc": {
+      "titulo": "Techos de Metal y Zinc en Puerto Rico",
+      "archivo": "assets/optimized/blog/sellado-de-techo-de-zinc.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Techos de Metal y Zinc en Puerto Rico - Ilatek Property Solutions.jpg"
+    },
+    "sellado-de-techo-de-zinc-vs-silicona": {
+      "titulo": "Sellado Industrial",
+      "archivo": "assets/optimized/blog/sellado-de-techo-de-zinc-vs-silicona.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Sellado Industrial - Ilatek.jpg"
+    },
+    "sellado-de-techo-de-concreto": {
+      "titulo": "Techos de Concreto",
+      "archivo": "assets/optimized/blog/sellado-de-techo-de-concreto.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Techos de Concreto - Ilatek.jpg"
+    },
+    "sellado-de-techo-de-concreto-vs-membrana-asfaltica": {
+      "titulo": "Mantenimiento para Techos de Concreto",
+      "archivo": "assets/optimized/blog/sellado-de-techo-de-concreto-vs-membrana-asfaltica.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Mantenimiento para Techos de Concreto - Ilatek Property Solution - 1.jpg"
+    },
+    "sellado-de-techo-de-madera": {
+      "titulo": "Servicio de Instalación y Reemplazo de Techos",
+      "archivo": "assets/optimized/blog/sellado-de-techo-de-madera.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Instalación y Reemplazo de Techos - Ilatek Property Solution - 1.jpg"
+    },
+    "sellado-de-techo-de-teja": {
+      "titulo": "Servicio de Instalación y Reemplazo de Techos",
+      "archivo": "assets/optimized/blog/sellado-de-techo-de-teja.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Instalación y Reemplazo de Techos - Ilatek Property Solution - 2.jpg"
+    },
+    "sellado-de-techo-de-asfalto": {
+      "titulo": "Sellado Residencial",
+      "archivo": "assets/optimized/blog/sellado-de-techo-de-asfalto.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Sellado Residencial - Ilatek.jpg"
+    },
+    "sellado-de-techo-plano": {
+      "titulo": "Mantenimiento de Techos Planos",
+      "archivo": "assets/optimized/blog/sellado-de-techo-plano.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Mantenimiento de Techos Planos - Ilatek Property Solution - 1.jpg"
+    },
+    "sellado-de-techo-plano-con-empozamiento": {
+      "titulo": "Mantenimiento para Techos de Concreto",
+      "archivo": "assets/optimized/blog/sellado-de-techo-plano-con-empozamiento.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Mantenimiento para Techos de Concreto - Ilatek Property Solution - 2.jpg"
+    },
+    "sellado-de-techo-con-equipos-de-aire": {
+      "titulo": "Mantenimiento de Techos Planos",
+      "archivo": "assets/optimized/blog/sellado-de-techo-con-equipos-de-aire.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Mantenimiento de Techos Planos - Ilatek Property Solution - 2.jpg"
+    },
+    "sellado-de-techo-con-paneles-solares": {
+      "titulo": "Servicio de Sellado Industrial",
+      "archivo": "assets/optimized/blog/sellado-de-techo-con-paneles-solares.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Sellado Industrial - Ilatek Property Solution - 1.jpg"
+    },
+    "sellado-de-techo-de-condominio": {
+      "titulo": "Servicio de Sellado Industrial",
+      "archivo": "assets/optimized/blog/sellado-de-techo-de-condominio.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Sellado Industrial - Ilatek Property Solution - 2.jpg"
+    },
+    "sellado-de-techo-comercial": {
+      "titulo": "Servicio de Sellado Residencial",
+      "archivo": "assets/optimized/blog/sellado-de-techo-comercial.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Sellado Residencial - Ilatek Property Solution - 1.jpg"
+    },
+    "sellado-de-techo-industrial": {
+      "titulo": "Servicio de Sellado Residencial",
+      "archivo": "assets/optimized/blog/sellado-de-techo-industrial.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Sellado Residencial - Ilatek Property Solution - 2.jpg"
+    },
+    "sellado-de-techo-residencial": {
+      "titulo": "Organización",
+      "archivo": "assets/optimized/blog/sellado-de-techo-residencial.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Organización - Ilatek.jpg"
+    },
+    "sellado-de-techo-de-aluminio": {
+      "titulo": "Post-Construcción",
+      "archivo": "assets/optimized/blog/sellado-de-techo-de-aluminio.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Post-Construcción - Ilatek.jpg"
+    },
+    "sellado-de-techo-de-shingle": {
+      "titulo": "Reparacion de Techos en Puerto Rico",
+      "archivo": "assets/optimized/blog/sellado-de-techo-de-shingle.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Reparacion de Techos en Puerto Rico - Ilatek Property Solutions.jpg"
+    },
+    "sellado-de-techo-en-zonas-costeras": {
+      "titulo": "Reparación de Filtraciones",
+      "archivo": "assets/optimized/blog/sellado-de-techo-en-zonas-costeras.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Reparación de Filtraciones - Ilatek.jpg"
+    },
+    "sellado-de-techo-de-hormigon-poroso": {
+      "titulo": "Reparación de Goteras",
+      "archivo": "assets/optimized/blog/sellado-de-techo-de-hormigon-poroso.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Reparación de Goteras - Ilatek.jpg"
+    },
+    "sellado-de-techos-escolares": {
+      "titulo": "Reparación de Grietas",
+      "archivo": "assets/optimized/blog/sellado-de-techos-escolares.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Reparación de Grietas - Ilatek.jpg"
+    },
+    "cuanto-cuesta-sellar-un-techo-en-puerto-rico": {
+      "titulo": "Reparación de Techos",
+      "archivo": "assets/optimized/blog/cuanto-cuesta-sellar-un-techo-en-puerto-rico.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Reparación de Techos - Ilatek.jpg"
+    },
+    "precio-por-pie-cuadrado-sellado-de-techo": {
+      "titulo": "Servicio de Limpieza",
+      "archivo": "assets/optimized/blog/precio-por-pie-cuadrado-sellado-de-techo.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Servicio de Limpieza - ilatek.jpg"
+    },
+    "sellado-de-techo-precio-mano-de-obra": {
+      "titulo": "Tragaluz y Skylights",
+      "archivo": "assets/optimized/blog/sellado-de-techo-precio-mano-de-obra.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Tragaluz y Skylights - Ilatek.jpg"
+    },
+    "cuanto-cuesta-sellar-un-techo-de-1200-pies": {
+      "titulo": "Ventanas",
+      "archivo": "assets/optimized/blog/cuanto-cuesta-sellar-un-techo-de-1200-pies.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Ventanas - Ilatek.jpg"
+    },
+    "por-que-varia-el-precio-del-sellado-de-techo": {
+      "titulo": "Servicio de Impermeabilizacion",
+      "archivo": "assets/optimized/blog/por-que-varia-el-precio-del-sellado-de-techo.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Impermeabilizacion - Ilatek Property Solution - 1.jpg"
+    },
+    "cuanto-dura-el-sellado-de-un-techo": {
+      "titulo": "Servicio de Impermeabilizacion",
+      "archivo": "assets/optimized/blog/cuanto-dura-el-sellado-de-un-techo.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Impermeabilizacion - Ilatek Property Solution - 2.jpg"
+    },
+    "que-sistema-de-sellado-dura-mas-anos": {
+      "titulo": "Servicio de Inspección de Techos",
+      "archivo": "assets/optimized/blog/que-sistema-de-sellado-dura-mas-anos.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Inspección de Techos - Ilatek Property Solution - 1.jpg"
+    },
+    "sellado-de-techo-vs-impermeabilizacion": {
+      "titulo": "Servicio de Inspección de Techos",
+      "archivo": "assets/optimized/blog/sellado-de-techo-vs-impermeabilizacion.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Inspección de Techos - Ilatek Property Solution - 2.jpg"
+    },
+    "puedo-sellar-mi-techo-sobre-el-sellado-viejo": {
+      "titulo": "Servicio de Inspección y Mantenimiento de Techos",
+      "archivo": "assets/optimized/blog/puedo-sellar-mi-techo-sobre-el-sellado-viejo.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Inspección y Mantenimiento de Techos - Ilatek Property Solution - 1.jpg"
+    },
+    "se-puede-sellar-un-techo-mojado": {
+      "titulo": "Servicio de Inspección y Mantenimiento de Techos",
+      "archivo": "assets/optimized/blog/se-puede-sellar-un-techo-mojado.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Inspección y Mantenimiento de Techos - Ilatek Property Solution - 2.jpg"
+    },
+    "cuando-sellar-el-techo-en-puerto-rico": {
+      "titulo": "Servicio de Instalacion de Tragaluz y Skylights",
+      "archivo": "assets/optimized/blog/cuando-sellar-el-techo-en-puerto-rico.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Instalacion de Tragaluz y Skylights - Ilatek Property Solution - 1.jpg"
+    },
+    "sellado-de-techo-antes-de-la-temporada-de-huracanes": {
+      "titulo": "Servicio de Instalacion de Tragaluz y Skylights",
+      "archivo": "assets/optimized/blog/sellado-de-techo-antes-de-la-temporada-de-huracanes.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Instalacion de Tragaluz y Skylights - Ilatek Property Solution - 2.jpg"
+    },
+    "garantia-de-sellado-de-techo": {
+      "titulo": "Servicio de Instalacion de Tragaluz y Skylights",
+      "archivo": "assets/optimized/blog/garantia-de-sellado-de-techo.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Instalacion de Tragaluz y Skylights - Ilatek Property Solution - 3.jpg"
+    },
+    "como-elegir-contratista-de-sellado-en-puerto-rico": {
+      "titulo": "Servicio de Instalacion de Tragaluz y Skylights",
+      "archivo": "assets/optimized/blog/como-elegir-contratista-de-sellado-en-puerto-rico.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Instalacion de Tragaluz y Skylights - Ilatek Property Solution - 4.jpg"
+    },
+    "licencia-y-permisos-para-sellado-de-techo-en-puerto-rico": {
+      "titulo": "Servicio de Lavado a Presión de Techos",
+      "archivo": "assets/optimized/blog/licencia-y-permisos-para-sellado-de-techo-en-puerto-rico.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Lavado a Presión de Techos - Ilatek Property Solution - 1.jpg"
+    },
+    "junta-de-impermeabilizacion-de-techos-de-puerto-rico": {
+      "titulo": "Servicio de Lavado a Presión de Techos",
+      "archivo": "assets/optimized/blog/junta-de-impermeabilizacion-de-techos-de-puerto-rico.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Lavado a Presión de Techos - Ilatek Property Solution - 2.jpg"
+    },
+    "sellado-de-techo-por-mi-cuenta-o-contratista": {
+      "titulo": "Servicio de Limpieza de Canaletas y Bajantes",
+      "archivo": "assets/optimized/blog/sellado-de-techo-por-mi-cuenta-o-contratista.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Limpieza de Canaletas y Bajantes - Ilatek Property Solution - 1.jpg"
+    },
+    "errores-comunes-al-sellar-un-techo": {
+      "titulo": "Servicio de Limpieza de Canaletas y Bajantes",
+      "archivo": "assets/optimized/blog/errores-comunes-al-sellar-un-techo.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Limpieza de Canaletas y Bajantes - Ilatek Property Solution - 2.jpg"
+    },
+    "cuantas-canas-de-sellador-necesito": {
+      "titulo": "Servicio de Limpieza de Techos y Canaletas",
+      "archivo": "assets/optimized/blog/cuantas-canas-de-sellador-necesito.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Limpieza de Techos y Canaletas - Ilatek Property Solution - 1.jpg"
+    },
+    "cuanto-tarda-el-sellado-de-un-techo": {
+      "titulo": "Servicio de Limpieza de Techos y Canaletas",
+      "archivo": "assets/optimized/blog/cuanto-tarda-el-sellado-de-un-techo.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Limpieza de Techos y Canaletas - Ilatek Property Solution - 2.jpg"
+    },
+    "se-puede-sellar-un-techo-con-filtracion-activa": {
+      "titulo": "Servicio de Reparación de Filtraciones",
+      "archivo": "assets/optimized/blog/se-puede-sellar-un-techo-con-filtracion-activa.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Reparación de Filtraciones - Ilatek Property Solution - 1.jpg"
+    },
+    "sellado-de-techo-y-seguro-del-hogar": {
+      "titulo": "Servicio de Mantenimiento de Techos por segmento",
+      "archivo": "assets/optimized/blog/sellado-de-techo-y-seguro-del-hogar.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Mantenimiento de Techos por segmento - Ilatek Property Solution - 1.jpg"
+    },
+    "sellado-de-techo-en-condominio-quien-paga": {
+      "titulo": "Servicio de Mantenimiento Preventivo de Techos",
+      "archivo": "assets/optimized/blog/sellado-de-techo-en-condominio-quien-paga.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Mantenimiento Preventivo de Techos - Ilatek Property Solution - 1.jpg"
+    },
+    "sellado-de-techo-despues-de-un-huracan": {
+      "titulo": "Servicio de Mantenimiento Preventivo de Techos",
+      "archivo": "assets/optimized/blog/sellado-de-techo-despues-de-un-huracan.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Mantenimiento Preventivo de Techos - Ilatek Property Solution - 2.jpg"
+    },
+    "sellado-de-techo-con-garantia-escrita": {
+      "titulo": "Servicio de Reparación de Filtraciones",
+      "archivo": "assets/optimized/blog/sellado-de-techo-con-garantia-escrita.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Reparación de Filtraciones - Ilatek Property Solution - 2.jpg"
+    },
+    "preguntas-para-hacerle-a-un-sellador-de-techos": {
+      "titulo": "Servicio de Reparación de Goteras",
+      "archivo": "assets/optimized/blog/preguntas-para-hacerle-a-un-sellador-de-techos.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Reparación de Goteras - Ilatek Property Solution - 1.jpg"
+    },
+    "sellado-de-techo-que-no-dure-un-ano": {
+      "titulo": "Servicio de Reparación de Goteras",
+      "archivo": "assets/optimized/blog/sellado-de-techo-que-no-dure-un-ano.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Reparación de Goteras - Ilatek Property Solution - 2.jpg"
+    },
+    "sellado-de-techo-olor-y-tiempo-de-curado": {
+      "titulo": "Servicio de Reparación de Grietas",
+      "archivo": "assets/optimized/blog/sellado-de-techo-olor-y-tiempo-de-curado.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Reparación de Grietas - Ilatek Property Solution - 1.jpg"
+    },
+    "sellado-de-techo-en-epoca-de-lluvia": {
+      "titulo": "Servicio de Reparación de Grietas",
+      "archivo": "assets/optimized/blog/sellado-de-techo-en-epoca-de-lluvia.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Reparación de Grietas - Ilatek Property Solution - 2.jpg"
+    },
+    "sellado-de-techo-reflectivo-y-consumo-de-energia": {
+      "titulo": "Servicio de Reparación de Grietas",
+      "archivo": "assets/optimized/blog/sellado-de-techo-reflectivo-y-consumo-de-energia.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Reparación de Grietas - Ilatek Property Solution - 3.jpg"
+    },
+    "sellado-de-techo-y-moho-en-el-techo": {
+      "titulo": "Servicio de Reparación de Techos",
+      "archivo": "assets/optimized/blog/sellado-de-techo-y-moho-en-el-techo.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Reparación de Techos - Ilatek Property Solution - 2.jpg"
+    },
+    "sellado-de-techo-de-terraza-transitable": {
+      "titulo": "Todos los Servicios de Mantenimiento de Techos en Puerto Rico",
+      "archivo": "assets/optimized/blog/sellado-de-techo-de-terraza-transitable.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Todos los Servicios de Mantenimiento de Techos en Puerto Rico - Ilatek.jpg"
+    },
+    "sellado-de-techo-para-airbnb-o-alquiler-corto": {
+      "titulo": "Sellado con Silicona",
+      "archivo": "assets/optimized/blog/sellado-de-techo-para-airbnb-o-alquiler-corto.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek Images - Updated\\Sellado con Silicona - Ilatek.jpg"
+    },
+    "mantenimiento-del-sellado-cada-cuantos-anos": {
+      "titulo": "Servicio de Sellado con Membrana Asfáltica",
+      "archivo": "assets/optimized/blog/mantenimiento-del-sellado-cada-cuantos-anos.webp",
+      "origen": "C:\\Users\\Omele\\Downloads\\Ilatek - Services Images\\Techos\\Servicio de Sellado con Membrana Asfáltica - Ilatek Property Solution - 1.jpg"
+    }
+  }
+}

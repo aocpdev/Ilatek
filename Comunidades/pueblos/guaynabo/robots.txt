@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://guaynabo.ilatekpr.com/sitemap.xml

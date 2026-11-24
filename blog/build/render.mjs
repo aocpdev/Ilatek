@@ -1,0 +1,321 @@
+// Componentes de render del blog. Sin datos: recibe todo ya resuelto.
+// El HTML que sale de aquí es un fragmento para Custom Code de GHL. El blog trae
+// su propio menú y su propio pie (distintos del sitio): al declarar #ilatek-nav e
+// #ilatek-footer, tools/page-shell.mjs no inyecta los compartidos. Los metadatos
+// viven en el panel SEO nativo.
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url'; const HERE = path.dirname(fileURLToPath(import.meta.url));
+// Estilos del menú y del pie propios del blog (no existen en el sitio).
+const SHELL_CSS = `
+/* ——— menú del blog ——— */
+#ilbj .ilbn{position:sticky;top:0;z-index:50;background:rgba(255,255,255.97);border-bottom:1px solid var(--line)}
+#ilbj .ilbn-in{width:min(100% - 24px,1140px);margin-inline:auto;display:flex;align-items:center;flex-wrap:nowrap;gap:clamp(6px,1.2vw,12px);min-height:64px;padding:8px 0;min-width:0} /* ILATEK:NAV-ONE-LINE */
+#ilbj .ilbn-brand{display:inline-flex;align-items:center;gap:9px;flex:0 0 auto;text-decoration:none;color:var(--ink);font:800 15px/1.1 Outfit,Manrope,Arial,sans-serif}
+#ilbj .ilbn-brand img{width:34px;height:34px;border-radius:9px;object-fit:cover}
+#ilbj .ilbn-brand small{display:block;margin-top:2px;font:700 10px/1.2 Manrope,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+#ilbj .ilbn-links{display:flex;flex-wrap:nowrap;gap:2px;margin-left:auto;min-width:0;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
+#ilbj .ilbn-links::-webkit-scrollbar{display:none}
+#ilbj .ilbn-links a{flex:0 0 auto;padding:clamp(6px,1.1vw,9px) clamp(7px,1.4vw,12px);border-radius:10px;font:700 clamp(11.5px,2.9vw,13.5px)/1 Manrope,Arial,sans-serif;color:var(--muted);text-decoration:none;white-space:nowrap}
+#ilbj .ilbn-links a:hover{background:var(--mist);color:var(--ink)}
+#ilbj .ilbn-links a[aria-current]{background:var(--blue-soft);color:var(--blue)}
+#ilbj .ilbn-cta{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;min-height:40px;padding:0 clamp(10px,2.4vw,15px);border-radius:10px;background:var(--green);color:#04240f;font:800 13.5px/1 Manrope,Arial,sans-serif;text-decoration:none}
+#ilbj .ilbn-cta:hover{background:var(--green-dark);color:#fff}
+@media (max-width:660px){ #ilbj .ilbn-brand span{display:none} #ilbj .ilbn-in{gap:8px} #ilbj .ilbn-cta{padding:0 12px}
+}
+/* ——— pie del blog ——— */
+#ilbj .ilbf{margin-top:56px;background:var(--deep);color:#c9d3ee}
+#ilbj .ilbf-in{width:min(100% - 36px,1140px);margin-inline:auto;display:grid;gap:26px;padding:40px 0 0;grid-template-columns:1fr}
+@media (min-width:780px){#ilbj .ilbf-in{grid-template-columns:1.6fr 1fr 1fr}}
+#ilbj .ilbf img{width:46px;height:46px;border-radius:12px;object-fit:cover}
+#ilbj .ilbf p{margin:10px 0 0;max-width:36ch;font:400 13.5px/1.65 Manrope,Arial,sans-serif;color:#a9b5d6}
+#ilbj .ilbf h2{margin:0 0 10px;font:800 11px/1 Manrope,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#fff}
+#ilbj .ilbf ul{list-style:none;margin:0;padding:0;display:grid;gap:7px}
+#ilbj .ilbf a{color:#c9d3ee;text-decoration:none;font:600 13.5px/1.5 Manrope,Arial,sans-serif}
+#ilbj .ilbf a:hover{color:#fff;text-decoration:underline}
+#ilbj .ilbf-web a{color:#7fe3a6;font-weight:800}
+#ilbj .ilbf-tel{margin-top:8px}
+#ilbj .ilbf-tel a{font:800 15px/1.4 Manrope,Arial,sans-serif;color:#fff}
+#ilbj .ilbf-bottom{width:min(100% - 36px,1140px);margin:26px auto 0;padding:16px 0 30px;border-top:1px solid rgba(255,255,255.12);display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;justify-content:space-between;font:600 12.5px/1.5 Manrope,Arial,sans-serif;color:#93a0c4}
+#ilbj .ilbf-bottom a{color:#c9d3ee}
+/* ——— ilustración del artículo ——— */
+#ilbj .ilb-fig{margin:24px 0 0;border-radius:16px;overflow:hidden;background:#0b103d;box-shadow:0 18px 40px rgba(11,16,61.28)}
+#ilbj .ilb-fig svg{display:block;width:100%;height:auto}
+#ilbj .ilb-fig figcaption{padding:10px 14px;background:#0b103d;color:#a9b5d6;font:600 12.5px/1.5 Manrope,Arial,sans-serif}
+/* ——— header compacto en móvil: envuelve enlaces y deja margen al CTA ——— */
+@media (max-width:700px){ #ilbj .ilbn-in{width:min(100% - 20px,1140px);flex-wrap:nowrap;gap:6px;padding:8px 0;min-height:56px} #ilbj .ilbn-brand span{display:none} #ilbj .ilbn-links{order:0;flex:1 1 auto;width:auto;min-width:0;margin:0 0 0 auto;padding-top:0;border-top:0;overflow-x:auto;overflow-y:hidden;flex-wrap:nowrap;gap:2px} #ilbj .ilbn-links a{flex:0 0 auto;display:inline-flex;align-items:center;min-height:36px;padding:7px 8px;white-space:nowrap;text-align:left} #ilbj .ilbn-cta{margin-left:0;padding:0 11px;min-height:36px} #ilbj .ilb-article h2,#ilbj .ilb-article h3{scroll-margin-top:120px}}
+@media (max-width:420px){ #ilbj .ilbn-links{gap:0} #ilbj .ilbn-links a{font-size:11.5px;padding:7px 5px} #ilbj .ilbn-brand img{width:30px;height:30px} #ilbj .ilbn-cta{padding:0 9px;font-size:11.5px}}
+`; export const CSS = fs.readFileSync(path.join(HERE, 'blog.css'), 'utf8') + SHELL_CSS;
+export const TOKEN = '{{custom_values.website_url}}';
+export const url = (p) => `https://${TOKEN}${p}`;
+export const SITE = 'https://ilatekpr.com';
+export const FECHA = '2026-11-04';
+export const LOGO = 'https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6aa1c05dd953a0128b5348c2.jpg';
+const DEFAULT_HERO_IMAGE = { src: 'https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8583d89da6e6f9bc73cb9.jpg', alt: 'Técnicos de Ilatek revisando con una tableta el techo de una casa antes de cotizar el sellado', width: 1200, height: 670
+};
+const ORG_ID = url('/home') + '#organization';
+const WEBSITE_ID = url('/home') + '#website';
+const BLOG_ID = url('/blog') + '#blog'; export const esc = (s = '') => String(s) .replace(/&(?!(?:amp|quot|lt|gt|#\d+);)/g, '&amp;') .replace(/</g, '&lt;') .replace(/>/g, '&gt;') .replace(/"/g, '&quot;'); export const link = (p, text, extra = '') => `<a href="${url(p)}"${extra}>${text}</a>`; export function crumbs(items) { const parts = []; items.forEach((it, i) => { if (i === items.length - 1) parts.push(`<span aria-current="page">${esc(it.label)}</span>`); else parts.push(`<a href="${url(it.path)}">${esc(it.label)}</a><span aria-hidden="true">›</span>`); }); return `<nav class="ilb-crumbs" aria-label="Ruta de navegación">${parts.join('')}</nav>`;
+} export function hero({ eyebrow, h1, dek, tags = [], crumbItems, imagen }) { return heroShell({ eyebrow, h1, dek, tags, crumbItems, imagen, cta: visitCard() });
+} function heroShell({ eyebrow, h1, dek, tags = [], crumbItems, imagen, cta, answer }) { const media = imagen ? (imagen.svg ? `<figure class="ilb-hero-fig ilb-hero-fig-svg">${imagen.svg}<figcaption>Corte del sistema, de la superficie a la losa.</figcaption></figure>` : `<figure class="ilb-hero-fig"><img src="${esc(imagen.src)}" alt="${esc(imagen.alt)}" width="${imagen.width}" height="${imagen.height}" loading="eager" fetchpriority="high" decoding="async"></figure>`) : ''; return `<header class="ilb-hero-lite ilb-hero-hub"> <div class="ilb-wrap"> <div class="ilb-hero-copy"> ${crumbs(crumbItems)} <p class="ilb-eyebrow">${esc(eyebrow)}</p> <h1>${esc(h1)}</h1> <p class="ilb-dek">${esc(dek)}</p> ${tags.length ? `<ul class="ilb-tags">${tags.map(t => `<li>${esc(t)}</li>`).join('')}</ul>` : ''} ${answer || ''} </div> ${(media || cta) ? `<div class="ilb-hero-side">${media}${cta || ''}</div>` : ''} </div>
+</header>`;
+} export function heroLite({ crumbItems, h1, dek, eyebrow = 'Blog Ilatek', imagen = DEFAULT_HERO_IMAGE, cta = visitCard(), answer }) { return heroShell({ eyebrow, h1, dek, crumbItems, imagen, cta, answer });
+} export const quick = (text, title) => `<div class="ilb-quick"><h2${title ? ' class="ilb-quick-q"' : ''}>${esc(title || 'Respuesta corta')}</h2><p>${text}</p></div>`; export const verdict = (text) => `<div class="ilb-verdict"><h3>En una línea</h3><p>${text}</p></div>`; export function toc(items) { return `<details class="ilb-toc"><summary>En esta página</summary> <ol>${items.map(i => `<li><a href="#${i.id}">${esc(i.label)}</a></li>`).join('')}</ol>
+</details>`;
+} export function table({ caption, headers = [], rows = [], thFirst = true }) { const head = headers.length ? `<thead><tr>${headers.map(h => `<th scope="col">${esc(h)}</th>`).join('')}</tr></thead>` : ''; const body = rows.map(r => `<tr>${r.map((c, i) => { const label = esc(headers[i] || ''); return (thFirst && i === 0) ? `<th scope="row" data-label="${label}">${c}</th>` : `<td data-label="${label}">${c}</td>`; }).join('')}</tr>`).join(''); return `<div class="ilb-scroll"><table class="ilb-table">
+${caption ? `<caption>${esc(caption)}</caption>` : ''}${head}<tbody>${body}</tbody></table></div>`;
+} export const section = (id, title, inner, cls = '', level = 2) => `<section${cls ? ` class="${cls}"` : ''} aria-labelledby="${id}">
+<h${level} id="${id}">${esc(title)}</h${level}>
+${inner}
+</section>`; export const h3 = (text) => `<h3>${esc(text)}</h3>`;
+export const paras = (list) => (list || []).map(p => `<p>${p}</p>`).join('');
+export const bullets = (list) => `<ul>${list.map(li => `<li>${li}</li>`).join('')}</ul>`; export function steps(list) { return `<ol class="ilb-steps">${list.map(s => `<li><strong>${esc(s.t)}</strong>${esc(s.d)}</li>`).join('')}</ol>`;
+} export function panel({ title, body, bullets: bl = [], cta }) { return `<div class="ilb-panel">
+<h2>${esc(title)}</h2>
+${(body || []).map(p => `<p>${p}</p>`).join('')}
+${bl.length ? `<ul>${bl.map(b => `<li>${b}</li>`).join('')}</ul>` : ''}
+${cta ? `<p style="margin-top:18px"><a href="${url(cta.path)}" style="display:inline-flex;align-items:center;min-height:48px;padding:12px 20px;border-radius:12px;background:#00b94f;color:#04240f;font-weight:800;text-decoration:none">${esc(cta.label)}</a></p>` : ''}
+</div>`;
+} export const note = (html) => `<div class="ilb-note">${html}</div>`; export function faq(items, level = 4) { if (!items.length) return ''; return `<div class="ilb-faq">${items.map(q => `<details>
+<summary><h${level} class="ilb-faq-q">${esc(q.pregunta)}</h${level}></summary>
+<p>${esc(q.respuesta)}</p>
+</details>`).join('')}</div>`;
+} export function ctaBlock({ title, text, path = '/cotizacion-techos', label = 'Cotiza tu sellado con Ilatek' }) { return `<div class="ilb-cta">
+<h2>${esc(title)}</h2>
+<p>${text}</p>
+<a class="ilb-btn" href="${url(path)}">${esc(label)}</a>
+</div>`;
+} export function legal({ marcas = [], extra = '' }) { const list = marcas.length ? `Ilatek Property Solution no es afiliado, distribuidor ni representante de ${marcas.map(m => `<strong>${esc(m)}</strong>`).join(', ')}. ` : ''; return `<div class="ilb-legal">
+<p>${list}Los nombres comerciales y marcas citadas pertenecen a sus respectivos dueños y se mencionan solo con fines informativos y comparativos. Los precios son los publicados por cada empresa en su tienda o página pública el <time datetime="${FECHA}">4 de noviembre de 2026</time>, más IVU cuando así se indica, y pueden cambiar sin aviso. Este contenido no constituye una oferta de venta de esos productos ni una recomendación de compra.</p>
+${extra ? `<p style="margin-top:8px">${extra}</p>` : ''}
+</div>`;
+} // Las fuentes internas se citaban con la URL como texto: un ancla no
+// descriptiva repetida en decenas de páginas. Se etiquetan por su página.
+const SOURCE_LABELS = ['%s: ficha y precios', 'Cómo trabajamos %s', '%s en Ilatek'];
+function sourceLabel(u) { const m = u.match(/^https?:\/\/(?:ilatekpr\.com|\{\{custom_values\.website_url\}\})\/(.+?)\/?$/); if (!m) return esc(u); const name = m[1].split('/').pop().replace(/-/g, ' '); const variant = SOURCE_LABELS[[...u].reduce((a, c) => a + c.charCodeAt(0), 0) % SOURCE_LABELS.length]; return esc(variant.replace('%s', name));
+} export function sources(list) { const items = [...new Set(list.filter(Boolean))]; if (!items.length) return ''; return `<div class="ilb-sources"><h2>Fuentes consultadas</h2>
+<ul>${items.map(u => `<li><a href="${esc(u)}" target="_blank" rel="noopener noreferrer nofollow">${sourceLabel(u)}</a></li>`).join('')}</ul>
+<p style="margin-top:8px;font-size:12.5px">Verificación de precios y fichas: <time datetime="${FECHA}">4 de noviembre de 2026</time>.</p>
+</div>`;
+} export function relatedCard(items = []) { if (!items.length) return ''; return `<div class="ilb-card"><h2>Sigue leyendo</h2><ul>
+${items.map(p => `<li><a href="${url('/blog/' + p.slug)}">${esc(p.h1)}</a><small>${esc(p.kicker || '')}</small></li>`).join('')}
+</ul></div>`;
+} // Variantes del enlace al money page. El anchor exacto "Sellado de techos en
+// Puerto Rico" repetido en las 118 páginas del blog sobre-optimiza el perfil;
+// cada artículo usa una variante descriptiva estable, elegida por su familia.
+const MONEY_ANCHORS = [ 'Cómo sellar tu techo en Puerto Rico', 'Guía de sellado de techos en Puerto Rico', 'Sellado e impermeabilización de techos', 'Precios y sistemas para sellar un techo', 'Servicio de sellado de techos de Ilatek',
+];
+function moneyAnchor(seed) { let h = 2166136261; for (let i = 0; i < seed.length; i++) { h ^= seed.charCodeAt(i); h = Math.imul(h, 16777619); } return MONEY_ANCHORS[Math.abs(h) % MONEY_ANCHORS.length];
+} const SOCIALS = [ ['Facebook', 'https://www.facebook.com/ilatek.pr/', 'facebook', 'M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z'], ['Instagram', 'https://www.instagram.com/ilatek.pr/', 'instagram', 'M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793 0 1.44.645 1.44 1.439z'], ['LinkedIn', 'https://www.linkedin.com/in/ilatekpr', 'linkedin', 'M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z'], ['Pinterest', 'https://www.pinterest.com/ilatekpr/', 'pinterest', 'M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z'], ['TikTok', 'https://www.tiktok.com/@ilatekpr', 'tiktok', 'M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z'], ['X', 'https://x.com/ilatekpr', 'x', 'M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z'], ['YouTube', 'https://www.youtube.com/@ilatekpr', 'youtube', 'M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z']
+];
+const socialList = () => SOCIALS.map(([name, href, cls, d]) => `<li><a class="ilb-soc-${cls}" href="${href}" target="_blank" rel="noopener" aria-label="${name} de Ilatek Property Solution"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="${d}"/></svg></a></li>`).join('\n '); const REVIEW_SCROLL = `<script>
+/* ILATEK:REVIEWS-ADAPTIVE — caja fija; el loop recorre toda la altura real del widget. */
+(function(){
+  [].slice.call(document.querySelectorAll('.ilb-reviews')).forEach(function(box){
+    var ifr = box.querySelector('iframe');
+    if (!ifr) return;
+    var dir = 1, paused = false, last = 0, resume = null, pos = box.scrollTop, hActual = 0;
+    function max(){ return box.scrollHeight - box.clientHeight; }
+    function speed(m){ return Math.min(0.15, Math.max(0.03, m / 60000)); }
+    function setH(h){
+      h = Math.round(parseFloat(h));
+      if (!(h > 0) || h === hActual) return;
+      hActual = h;
+      ifr.style.setProperty('height', h + 'px', 'important');
+      var tries = 0;
+      (function check(){
+        if (tries++ > 4) return;
+        if (Math.abs(ifr.getBoundingClientRect().height - h) > 2) {
+          ifr.style.setProperty('height', h + 'px', 'important');
+          setTimeout(check, 150);
+        }
+      })();
+      var m = max();
+      if (pos > m) { pos = m; box.scrollTop = m; }
+    }
+    window.addEventListener('message', function(e){
+      var d = e.data;
+      var name = Array.isArray(d) ? d[0] : (d && (d.event || d.type));
+      var pay = Array.isArray(d) ? d[1] : d;
+      if (name === 'lc.setHeight' && pay && pay.id === 'lc_reviews_widget') setH(pay.height);
+    });
+    var cs = window.getComputedStyle ? parseFloat(window.getComputedStyle(ifr).height) : 0;
+    setH(cs || ifr.getBoundingClientRect().height || 2180);
+    if (window.MutationObserver) {
+      new MutationObserver(function(){ var h = parseFloat(ifr.getAttribute('height')); if (h > 0) setH(h); })
+        .observe(ifr, { attributes: true, attributeFilter: ['height'] });
+    }
+    box.addEventListener('pointerenter', function(){ paused = true; });
+    box.addEventListener('pointerleave', function(){ paused = false; pos = box.scrollTop; });
+    box.addEventListener('touchstart', function(){ paused = true; clearTimeout(resume); resume = setTimeout(function(){ paused = false; pos = box.scrollTop; }, 2200); }, { passive: true });
+    function tick(now){
+      if (!paused && !document.hidden) {
+        var m = max();
+        if (m > 4) {
+          if (!last) last = now;
+          var dt = Math.min(64, now - last);
+          pos += dir * dt * speed(m);
+          if (pos >= m - 0.5) { pos = m; dir = -1; } else if (pos <= 0.5) { pos = 0; dir = 1; }
+          box.scrollTop = pos;
+        }
+      }
+      last = now; requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  });
+})();
+</script>`; export function visitCard() { return `<div class="ilb-card ilb-card-visit"> <h2>Revisión de tu techo</h2> <p class="ilb-card-lead">Un técnico sube al techo, revisa de dónde viene el agua y te dice qué necesita.</p> <a class="ilb-card-cta" href="${url('/cotizacion-techos')}">Pedir revisión</a> <p class="ilb-card-deposit">$50 de depósito descontable</p>
+</div>`;
+} function climaCard() { return `<div class="ilb-card ilb-card-clima" data-ilb-clima>
+  <h2>Clima para trabajar en el techo</h2>
+  <div class="ilbc-now"><span class="ilbc-ico" aria-hidden="true">⛅</span><b class="ilbc-temp">—</b><span class="ilbc-desc">Cargando…</span></div>
+  <ul class="ilbc-grid">
+    <li><small>Lluvia ahora</small><b class="ilbc-rain">—</b></li>
+    <li><small>Mejor ventana</small><b class="ilbc-win">—</b></li>
+    <li><small>Viento</small><b class="ilbc-wind">—</b></li>
+  </ul>
+  <p class="ilbc-note"><span class="ilbc-upd">Datos de Open-Meteo</span></p>
+  <a class="ilb-card-cta" href="${url('/cotizacion-techos')}">Agendar inspección</a>
+  <script>/* ILATEK:BLOG-CLIMA */ (function(){ if(window.__ilbClima) return; window.__ilbClima=1; var W=[['x','Despejado','☀️'],['x','Parcialmente nublado','⛅'],['x','Nublado','☁️'],['x','Neblina','🌫️'],['x','Llovizna','🌦️'],['x','Lluvia','🌧️'],['x','Tormenta','⛈️']]; function code(c){ if(c===0) return W[0]; if(c<=2) return W[1]; if(c===3) return W[2]; if(c<=48) return W[3]; if(c<=57) return W[4]; if(c<=82) return W[5]; return W[6]; } function cards(){ return [].slice.call(document.querySelectorAll('[data-ilb-clima]')); } function paint(d){ var cur=d.current,h=d.hourly,h0=new Date().getHours(); var rain=(h.precipitation_probability&&h.precipitation_probability[h0])||0; var temp=Math.round(cur.temperature_2m),wind=Math.round(cur.wind_speed_10m*0.621),w=code(cur.weather_code); var hi=-1,best=101; for(var i=8;i<=15;i++){ var m=Math.max(h.precipitation_probability[i]||0,h.precipitation_probability[i+1]||0,h.precipitation_probability[i+2]||0); if(m<best){best=m;hi=i;} } var win=(hi>=0&&best<60)?(hi+':00–'+(hi+3)+':00 · '+best+'%'):'sin ventana clara hoy'; cards().forEach(function(c){ var q=function(s){return c.querySelector(s)}; q('.ilbc-temp').textContent=temp+'°C'; q('.ilbc-desc').textContent=w[1]; q('.ilbc-ico').textContent=w[2]; q('.ilbc-rain').textContent=rain+'%'; q('.ilbc-win').textContent=win; q('.ilbc-wind').textContent=wind+' mph'; q('.ilbc-upd').textContent='Open-Meteo · '+new Date().toLocaleTimeString('es-PR',{hour:'numeric',minute:'2-digit'}); }); } if(!cards().length) return; fetch('https://api.open-meteo.com/v1/forecast?latitude=18.4655&longitude=-66.1057&current=temperature_2m,relative_humidity_2m,weather_code,wind_speed_10m&hourly=precipitation_probability&timezone=America%2FPuerto_Rico&forecast_days=1').then(function(r){return r.json()}).then(paint).catch(function(){}); })();</script>
+</div>`;
+}
+export function asideService({ visit = true } = {}) { return `${climaCard()}${visit ? visitCard() : ''}<div class="ilb-card ilb-card-social"> <h2>Visita nuestras redes sociales</h2> <ul class="ilb-social">${socialList()}</ul>
+</div>
+<div class="ilb-card ilb-card-reviews"> <h2>Reseñas de Google</h2> <div class="ilb-reviews"><iframe src="https://reputationhub.site/reputation/widgets/review_widget/8OxUENFVM60EKzqsTcoD" title="Reseñas de Google de Ilatek Property Solution" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div> <p class="ilb-reviews-note"><a href="https://ilatekpr.com/resenas">Ver todas las reseñas</a></p>
+</div>${REVIEW_SCROLL}`;
+} export function asideFaqCluster(cluster) { if (!cluster) return ''; return `<div class="ilb-card"><h2>Preguntas frecuentes</h2><ul>
+<li><a href="${url('/blog/' + cluster.slug)}">${esc(cluster.nombre)}</a><small>Respuestas cortas con precio, garantía y tipo de techo</small></li>
+</ul></div>`;
+} // ——— Schema ———
+// Un solo @id para la organización y el sitio: las páginas se enlazan por
+// referencia y no repiten el mismo nodo con datos divergentes.
+export function organizationSchema() { return { '@context': 'https://schema.org', '@type': 'Organization', '@id': ORG_ID, name: 'Ilatek Property Solution', alternateName: 'Ilatek Techos', url: url('/home'), logo: { '@type': 'ImageObject', url: LOGO }, areaServed: { '@type': 'State', name: 'Puerto Rico' }, sameAs: SOCIALS.map(([, href]) => href), contactPoint: [{ '@type': 'ContactPoint', telephone: '+1-787-561-7333', contactType: 'customer service', areaServed: 'PR', availableLanguage: ['es', 'en'] }] };
+} export function websiteSchema() { return { '@context': 'https://schema.org', '@type': 'WebSite', '@id': WEBSITE_ID, url: url('/home'), name: 'Ilatek Property Solution', inLanguage: 'es-PR', publisher: { '@id': ORG_ID } };
+} export function blogSchema({ posts = [], image } = {}) {
+  const img = imageObject(image);
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Blog',
+    '@id': BLOG_ID,
+    url: url('/blog'),
+    ...(img ? { image: img, primaryImageOfPage: { '@id': img['@id'] } } : {}),
+    breadcrumb: { '@id': url('/blog') + '#breadcrumb' },
+    name: 'Blog de Ilatek',
+    description: 'Comparativas de sistemas y marcas de sellado de techos, preguntas frecuentes y guias de servicio en Puerto Rico.',
+    inLanguage: 'es-PR',
+    isPartOf: { '@id': WEBSITE_ID },
+    publisher: { '@id': ORG_ID },
+    blogPost: posts.map((p) => ({
+      '@type': 'BlogPosting',
+      '@id': url('/blog/' + p.slug) + '#article',
+      headline: p.h1,
+      url: url('/blog/' + p.slug),
+      datePublished: FECHA,
+      dateModified: FECHA,
+    })),
+  };
+}
+export function itemListSchema({ path, name, items = [] }) { return { '@context': 'https://schema.org', '@type': 'ItemList', '@id': url(path) + '#itemlist', name, numberOfItems: items.length, itemListElement: items.map((it, i) => ({ '@type': 'ListItem', position: i + 1, name: it.name, url: url(it.path) })) };
+} // Imagen propia de la pagina: el ImageObject del schema apunta a la tarjeta
+// social 1200x630 de esa URL, no al logo de la organizacion.
+const imageObject = (image) =>
+  image
+    ? {
+        '@type': 'ImageObject',
+        '@id': image.url + '#primaryimage',
+        url: image.url,
+        contentUrl: image.url,
+        width: image.width,
+        height: image.height,
+        caption: image.alt,
+        name: image.alt,
+      }
+    : null;
+
+export function webPageSchema({ path, name, description, type = 'WebPage', image }) {
+  const img = imageObject(image);
+  return {
+    '@context': 'https://schema.org',
+    '@type': type,
+    '@id': url(path),
+    url: url(path),
+    name,
+    description,
+    inLanguage: 'es-PR',
+    ...(img ? { image: img, primaryImageOfPage: { '@id': img['@id'] } } : {}),
+    isPartOf: { '@id': WEBSITE_ID },
+    about: { '@id': ORG_ID },
+    breadcrumb: { '@id': url(path) + '#breadcrumb' },
+    datePublished: FECHA,
+    dateModified: FECHA,
+  };
+}
+
+export function articleSchema({ slug, h1, meta, about = [], mentions = [], words, section = '', keywords = [], image }) {
+  const img = imageObject(image);
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    '@id': url('/blog/' + slug) + '#article',
+    headline: h1,
+    description: meta,
+    url: url('/blog/' + slug),
+    inLanguage: 'es-PR',
+    datePublished: FECHA,
+    dateModified: FECHA,
+    wordCount: words,
+    articleSection: section,
+    keywords,
+    image: img || LOGO,
+    ...(img ? { thumbnailUrl: img.url } : {}),
+    mainEntityOfPage: { '@type': 'WebPage', '@id': url('/blog/' + slug) },
+    breadcrumb: { '@id': url('/blog/' + slug) + '#breadcrumb' },
+    isPartOf: { '@id': BLOG_ID },
+    author: { '@id': ORG_ID },
+    publisher: { '@id': ORG_ID },
+    about: about.map((n) => ({ '@type': 'Thing', name: n })),
+    mentions: mentions.map((n) => ({ '@type': 'Organization', name: n })),
+    isAccessibleForFree: true,
+  };
+}
+export function breadcrumbSchema(items, path) {
+  const list = items.map((it, i) => {
+    const el = { '@type': 'ListItem', position: i + 1, name: it.label };
+    if (it.path) el.item = url(it.path);
+    else if (path && i === items.length - 1) el.item = url(path);
+    return el;
+  });
+  const o = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: list };
+  if (path) o['@id'] = url(path) + '#breadcrumb';
+  return o;
+}
+export function faqSchema(items, path) { if (!items.length) return null; const o = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: items.map(q => ({ '@type': 'Question', name: q.pregunta, acceptedAnswer: { '@type': 'Answer', text: q.respuesta } })) }; if (path) o['@id'] = url(path) + '#faq'; return o;
+} // ——— menú y pie propios del blog ———
+const BLOG_LINKS = [ ['/blog', 'Blog'], ['/blog/comparativas', 'Comparativas'], ['/blog/preguntas-frecuentes', 'Preguntas frecuentes'], ['/blog/comunidades-y-servicios', 'Comunidades y servicios']
+]; function blogNav(pathname) { const on = p => (p === '/blog' ? pathname === '/blog' : pathname.startsWith(p)); return `<section id="ilatek-nav" class="ilbn" aria-label="Menú del blog"> <div class="ilbn-in"> <a class="ilbn-brand" href="${url('/blog')}" aria-label="Blog de Ilatek, inicio"><img src="${LOGO}" alt="Ilatek Property Solution" width="34" height="34" decoding="async"><span>Blog<small>Ilatek</small></span></a> <nav class="ilbn-links" aria-label="Secciones del blog"> ${BLOG_LINKS.map(([p, t]) => `<a href="${url(p)}"${on(p) ? ' aria-current="page"' : ''}>${t}</a>`).join('\n ')} </nav> <a class="ilbn-cta" href="${url('/cotizacion-techos')}">Cotizar</a> </div>
+</section>`;
+} function blogFooter() { return `<footer id="ilatek-footer" class="ilbf" aria-label="Pie del blog"> <div class="ilbf-in"> <div> <a href="${url('/')}" aria-label="Ilatek Property Solution, ilatekpr.com"><img src="${LOGO}" alt="Ilatek Property Solution" width="46" height="46" loading="lazy" decoding="async"></a> <p>Sellado e impermeabilización de techos en Puerto Rico. Comparamos sistemas y marcas con precios publicados y fuente. No somos afiliados de ninguna marca.</p> <p class="ilbf-web"><a href="https://ilatekpr.com">ilatekpr.com</a></p> <p class="ilbf-tel"><a href="tel:{{custom_values.business__phone}}">{{custom_values.business__phone}}</a></p> </div> <nav aria-label="Blog"> <h2>Blog</h2> <ul> ${BLOG_LINKS.map(([p, t]) => `<li><a href="${url(p)}">${t}</a></li>`).join('\n ')} </ul> </nav> <nav aria-label="Servicios"> <h2>Servicios</h2> <ul> <li><a href="${url('/sellado-de-techos')}">Sellado de techos</a></li> <li><a href="${url('/impermeabilizacion-de-techos')}">Impermeabilización</a></li> <li><a href="${url('/reparacion-de-goteras')}">Reparación de goteras</a></li> <li><a href="${url('/inspeccion-de-techos')}">Inspección de techos</a></li> <li><a href="${url('/cotizacion-techos')}">Cotización</a></li> </ul> </nav> </div> <div class="ilbf-bottom"> <span>© 2026 Ilatek Property Solution · Hecho con 🤍 por <a href="https://devasks.com" target="_blank" rel="noopener">Devasks</a></span> <span>Precios publicados por cada empresa, con fuente y fecha de verificación.</span> </div>
+</footer>`;
+} export function page({ pathname, heroHtml, articleHtml, asideHtml, schemas = [] }) { const blocks = [organizationSchema(), websiteSchema(), ...schemas] .filter(Boolean) .map(s => `<script type="application/ld+json">${JSON.stringify(s)}</script>`) .join('\n'); return `<!-- ILATEK · Blog · ${pathname} · generado por blog/build/build-blog.mjs Metadatos: configurar en el panel SEO nativo (ver blog/seo/seo-blog.csv). No pegar esta página con un header o footer global adicional. -->
+<div id="ilbj" class="ilb">
+<style>
+${CSS}
+</style>
+${blogNav(pathname)}
+<main id="ilb-main">
+${heroHtml}
+<div class="ilb-body">
+<div class="ilb-wrap ilb-grid">
+<article class="ilb-article">
+${articleHtml}
+</article>
+<aside class="ilb-aside" aria-label="Recursos del artículo">
+${asideHtml}
+</aside>
+</div>
+</div>
+</main>
+${blogFooter()}
+${blocks}
+</div>`;
+}

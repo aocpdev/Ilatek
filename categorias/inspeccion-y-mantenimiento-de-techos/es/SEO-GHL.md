@@ -11,18 +11,18 @@ Inspección y Mantenimiento de Techos en {{custom_values.business__county_name}}
 ## Meta Tag Description
 
 ```text
-Inspección de techos gratis y mantenimiento preventivo en {{custom_values.business__county_name}} desde $250 por labor. Cotización $0 y $50 descontable del total para agendar. 78 municipios.
+Inspección de techos por $50 descontables y mantenimiento preventivo en {{custom_values.business__county_name}} desde $250. Cotización gratis y $50 descontable del total para agendar. 78 municipios.
 ```
 
 ## Meta Tag Image
 
-[Imagen social — URL pública](https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac85838195f9172ed03ac13.jpg)
+[Imagen social — URL pública](https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/social/inspeccion-y-mantenimiento-de-techos-1200.webp)
 
 ```text
-https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac85838195f9172ed03ac13.jpg
+https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/social/inspeccion-y-mantenimiento-de-techos-1200.webp
 ```
 
-Copia local: [assets/meta-image.jpg](assets/meta-image.jpg). No usar una ruta local en GHL.
+Copia local: [assets/meta-image.webp](assets/meta-image.webp). No usar una ruta local en GHL.
 
 ## Canonical existente
 

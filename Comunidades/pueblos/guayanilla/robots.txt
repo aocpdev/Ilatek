@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://guayanilla.ilatekpr.com/sitemap.xml

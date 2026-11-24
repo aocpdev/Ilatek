@@ -3,11 +3,11 @@
   "language": "es",
   "status": "plantilla-local-delta-system",
   "metaTagTitle": "Reparación de Techos de Concreto (Losas) desde $250 en {{custom_values.business__county_name}} | Ilatek Techos",
-  "metaTagDescription": "Reparación de techos de concreto y losas en {{custom_values.business__county_name}} desde $250. Sellado de grietas y filtraciones, cotización gratis y garantía escrita.",
-  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac85834cc7a5a2b73475e12.jpg",
+  "metaTagDescription": "Reparación de techos de concreto y losas en {{custom_values.business__county_name}} desde $250. Sellado de grietas y filtraciones, cotización por $50 descontables del total y garantía escrita.",
+  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/438cf272-a201-4d02-9a94-47f7ba8b4c9b.webp",
   "locationCustomValue": "{{custom_values.business__county_name}}",
   "metaTagImageAlt": "Reparación de Techos de Concreto (Losas) desde $250 en {{custom_values.business__county_name}} | Ilatek Techos",
   "canonical": "https://{{custom_values.website_url}}/techos-de-concreto",
-  "socialImageFile": "assets/respaldo/6ac85834cc7a5a2b73475e12.webp",
+  "socialImageFile": "assets/meta-image.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."
 }

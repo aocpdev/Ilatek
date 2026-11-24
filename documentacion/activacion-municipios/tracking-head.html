@@ -1,0 +1,549 @@
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BTVFHT1X8G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BTVFHT1X8G');
+</script>
+
+
+
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ymxpo370xz");
+</script>
+
+
+
+
+
+
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2092249571384387');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2092249571384387&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PQMR2TDB');</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ============================================================
+  ILATEK · PERFORMANCE HEAD CODE (site-wide) · v3
+  Pegar en: GHL → Settings → Tracking Code → HEADER
+  (aplica una sola vez a TODO el sitio: home + landings + servicios)
+
+  QUE ARREGLA (medido contra la pagina viva, PSI mobile 59 · LCP 11.7s):
+   1. Fuentes: 5 cadenas @import de Google Fonts (render-blocking) -> 1 solo
+      <link> canonico. (Los preconnect de fonts + images ya los emite GHL:
+      aqui NO se duplican, para no disparar el warning de "more than 4 preconnect".)
+   2. Video del hero duplicado: el builder de GHL inyecta su propio
+      <video class="bgVideo"> con el MISMO mp4 (23MB bajado 2 veces).
+      Se elimina con MutationObserver DURANTE el parseo, antes de la descarga.
+   3. Imagenes under-the-fold eager -> loading=lazy posicional (mide el fold
+      real de cada dispositivo con innerHeight, funciona igual en movil/desktop).
+   4. Fallback de imagenes: si el CDN de webp (jsDelivr) falla, cada imagen cae
+      automaticamente al asset original del CDN de GHL.
+   5. Preload del poster del hero en el home (es el elemento LCP).
+============================================================= -->
+
+<!-- 1. Fuentes: UN solo request canónico reemplaza las 5 cadenas @import.
+     Manrope 400..800 + Outfit 500..800 cubren todos los pesos del sitio.
+     Se deja render-blocking (sin el truco media="print"): el font-display:swap ya
+     viene en la URL y así se evita el salto de tipografía que sube el CLS. -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&family=Outfit:wght@500..800&display=swap">
+
+<!-- 2. Único origen nuevo que el sitio no tenía: el CDN de assets optimizados
+     (12 imágenes webp + el video del hero de 1.17MB). Los preconnect de fonts
+     y del proxy de imágenes ya los emite GHL: no se duplican. -->
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="dns-prefetch" href="https://assets.cdn.filesafe.space">
+
+<script>
+/* ILATEK perf v3 */
+(function () {
+  'use strict';
+
+  var CDN = 'https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/';
+
+  /* --- 0. Fallback de imágenes: nombre de archivo -> asset crudo del CDN de GHL.
+     Sólo se usa si el CDN de webp no responde (la página nunca queda sin imagen). */
+  var RAW = {
+    'svc-regular-800.webp': '6ab171ac825a8484f2dc1a14.jpg',
+    'svc-profunda-800.webp': '6ab171ac30b0f957ccc64f69.jpg',
+    'svc-mudanza-800.webp': '6ab171aac3c92dff4d1c4928.jpg',
+    'svc-airbnb-800.webp': '6ab171a930b0f957ccc64f11.jpg',
+    'svc-postconstruccion-800.webp': '6ab171a7de8ed1c29fac079f.jpg',
+    'svc-ventanas-800.webp': '6ab171a75de46047f1177c09.jpg',
+    'svc-presion-800.webp': '6ab1756e966c1acf6d443f69.jpeg',
+    'svc-alfombras-800.webp': '6ab171a75594d681a92aa4d7.jpg',
+    'svc-electrodomesticos-800.webp': '6ab171a7de8ed1c29fac07a0.jpg',
+    'svc-organizacion-800.webp': '6ab171a730b0f957ccc64ee1.jpg',
+    'conocenos-900.webp': '6ab0a4884091fa65e6a1ce3d.jpg',
+    'ilatek-logo-256.webp': '6aa1c05dd953a0128b5348c2.jpg',
+    'limpieza-residencial-800.webp': '6ab0c2d4ff484614db70610b.png',
+    'limpieza-comercial-800.webp': '6ab0c2d44091fa65e6a436d3.png',
+    'limpieza-industrial-800.webp': '6ab0c2d4ff484614db70610c.png',
+    'limpieza-profunda-1000.webp': '6aac6cd7254a2c54081fa165.png',
+    'luis-cardec-512.webp': '6ab0a9feff484614db6e6ce7.png',
+    'aida-cintron-512.webp': '6ab0aa1430b0f957ccb1b27d.png'
+  };
+  window.IL_RAW = RAW;
+  document.addEventListener('error', function (e) {
+    var el = e.target;
+    try {
+      if (!el || el.tagName !== 'IMG' || el.getAttribute('data-ilfb')) return;
+      var name = String(el.currentSrc || el.getAttribute('src') || '').split('?')[0].split('/').pop();
+      var raw = RAW[name];
+      if (!raw) return;
+      el.setAttribute('data-ilfb', '1');
+      el.src = CDN + raw;
+    } catch (err) {}
+  }, true);
+
+  /* --- 1. Preload del poster del hero (elemento LCP) sólo en el home. --- */
+  try {
+    var path = location.pathname;
+    if (path === '/' || path === '' || path === '/index.html') {
+      var pl = document.createElement('link');
+      pl.rel = 'preload'; pl.as = 'image'; pl.fetchPriority = 'high';
+      pl.href = 'https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/hero-poster-1280.webp';
+      (document.head || document.documentElement).appendChild(pl);
+    }
+  } catch (e) {}
+
+  /* --- 2. Dedup de <video> duplicados EN VIVO (el builder de GHL mete su
+     propio <video class="bgVideo"> con el mismo mp4). Se elimina durante el
+     parseo, no en DOMContentLoaded (cuando ya se descargó dos veces). --- */
+  var seen = {};
+  function srcOf(v) {
+    var src = v.getAttribute('src') || '';
+    if (!src) { var s = v.querySelector('source'); src = s ? (s.getAttribute('src') || '') : ''; }
+    return src.split('?')[0];
+  }
+  function killDup(v) {
+    var src = srcOf(v);
+    if (!src || src.indexOf('.mp4') < 0) return;
+    if (!seen[src]) { seen[src] = v; return; }
+    /* El parser inserta cada elemento por separado, asi que el MISMO video se
+       escanea mas de una vez (una como parte de su seccion y otra el mismo).
+       Sin este guard se auto-eliminaba el video del hero. */
+    if (seen[src] === v) return;
+    var keep = seen[src], cur = v;
+    var curIsHero = (cur.className || '').indexOf('il-hero-video') > -1;
+    var keepIsHero = (keep.className || '').indexOf('il-hero-video') > -1;
+    if (curIsHero && !keepIsHero) {
+      if (keep.parentNode) keep.parentNode.removeChild(keep);
+      seen[src] = cur;
+    } else {
+      if (cur.parentNode) cur.parentNode.removeChild(cur);
+    }
+  }
+  function scan(node) {
+    if (!node || node.nodeType !== 1) return;
+    if (node.tagName === 'VIDEO') { killDup(node); return; }
+    if (node.querySelectorAll) {
+      var vs = node.querySelectorAll('video');
+      for (var i = 0; i < vs.length; i++) killDup(vs[i]);
+    }
+  }
+  try {
+    scan(document);
+    var mo = new MutationObserver(function (muts) {
+      for (var i = 0; i < muts.length; i++) {
+        var added = muts[i].addedNodes;
+        for (var j = 0; j < added.length; j++) scan(added[j]);
+      }
+    });
+    mo.observe(document.documentElement, { childList: true, subtree: true });
+    var stopMo = function () { mo.disconnect(); scan(document); };
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', stopMo, { once: true });
+    else stopMo();
+  } catch (e) {}
+
+  /* --- 3. Lazy below-fold media que GHL emite eager. Posicional: usa el
+     innerHeight real de cada dispositivo (móvil, tablet, 4K). --- */
+  function ilLazy() {
+    try {
+      var fold = window.innerHeight * 1.5;
+      var els = document.querySelectorAll('img, iframe');
+      for (var i = 0; i < els.length; i++) {
+        var el = els[i];
+        if (el.hasAttribute('loading')) continue;
+        if (el.getAttribute('fetchpriority') === 'high') continue;
+        if (el.getBoundingClientRect().top > fold) {
+          el.setAttribute('loading', 'lazy');
+          el.setAttribute('decoding', 'async');
+        }
+      }
+    } catch (e) {}
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', ilLazy, { once: true });
+  else ilLazy();
+})();
+</script>
+
+
+<!-- Performance head (GoHighLevel) -->
+<link rel="dns-prefetch" href="https://www.googletagmanager.com">
+<link rel="dns-prefetch" href="https://connect.facebook.net">
+<link rel="dns-prefetch" href="https://i.ytimg.com">
+
+<style>
+  img, iframe, video { max-width: 100%; height: auto; }
+  iframe[src*="youtube"], iframe[src*="youtu.be"] { aspect-ratio: 16 / 9; width: 100%; height: auto; border: 0; }
+  .yt-facade { position: relative; display: block; aspect-ratio: 16 / 9; width: 100%; background: #000; cursor: pointer; overflow: hidden; }
+  .yt-facade img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .yt-facade .yt-play { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 68px; height: 48px; border-radius: 12px; background: rgba(0,0,0,.75); color: #fff; font: 22px/48px sans-serif; text-align: center; }
+  .yt-facade iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+</style>
+
+<script>
+(function () {
+  function init() {
+    // Imágenes: la primera (posible LCP) con prioridad alta y sin lazy; el resto diferidas
+    document.querySelectorAll('img').forEach(function (img, i) {
+      if (!img.hasAttribute('decoding')) img.decoding = 'async';
+      if (i === 0) { img.fetchPriority = 'high'; img.loading = 'eager'; }
+      else if (!img.hasAttribute('loading')) img.loading = 'lazy';
+    });
+
+    // Iframes no críticos: diferidos
+    document.querySelectorAll('iframe').forEach(function (f) {
+      if (!f.hasAttribute('loading')) f.loading = 'lazy';
+    });
+
+    // YouTube: miniatura ligera; el reproductor carga solo al hacer clic
+    document.querySelectorAll('iframe[src*="youtube.com/embed/"], iframe[src*="youtube-nocookie.com/embed/"]').forEach(function (f) {
+      var m = f.src.match(/embed\/([\w-]{11})/);
+      if (!m) return;
+      var id = m[1];
+      var box = document.createElement('div');
+      box.className = 'yt-facade';
+      box.setAttribute('role', 'button');
+      box.setAttribute('tabindex', '0');
+      box.setAttribute('aria-label', 'Reproducir video');
+      var img = document.createElement('img');
+      img.src = 'https://i.ytimg.com/vi/' + id + '/hqdefault.jpg';
+      img.alt = '';
+      img.loading = 'lazy';
+      img.decoding = 'async';
+      var play = document.createElement('span');
+      play.className = 'yt-play';
+      play.textContent = '▶';
+      box.appendChild(img);
+      box.appendChild(play);
+      function load() {
+        var ifr = document.createElement('iframe');
+        ifr.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1';
+        ifr.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+        ifr.allowFullscreen = true;
+        box.innerHTML = '';
+        box.appendChild(ifr);
+        box.onclick = null;
+      }
+      box.onclick = load;
+      box.onkeydown = function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); load(); } };
+      f.replaceWith(box);
+    });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
+})();
+</script>
+
+
+
+<!-- Performance head (GoHighLevel) · desktop + mobile -->
+<link rel="dns-prefetch" href="https://i.ytimg.com">
+<link rel="dns-prefetch" href="https://www.youtube-nocookie.com">
+<style>
+  img, video, iframe, embed, object { max-width: 100%; height: auto; }
+  iframe[src*="youtube"], iframe[src*="youtu.be"] { aspect-ratio: 16 / 9; width: 100%; border: 0; }
+  .yt-facade { position: relative; display: block; aspect-ratio: 16 / 9; width: 100%; background: #000; cursor: pointer; overflow: hidden; -webkit-tap-highlight-color: transparent; }
+  .yt-facade img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .yt-facade .yt-play { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); min-width: 68px; height: 48px; padding: 0 14px; border-radius: 12px; background: rgba(0,0,0,.75); color: #fff; font: 22px/48px sans-serif; text-align: center; }
+  .yt-facade:focus-visible { outline: 3px solid #fff; outline-offset: -3px; }
+  .yt-facade iframe { position: absolute; inset: 0; width: 100%; height: 100%; }
+</style>
+<script>
+(function () {
+  var YT_SELECTOR = 'iframe[src*="youtube.com/embed/"], iframe[src*="youtube-nocookie.com/embed/"]';
+
+  if (!document.querySelector('meta[name="viewport"]')) {
+    var v = document.createElement('meta');
+    v.name = 'viewport';
+    v.content = 'width=device-width, initial-scale=1';
+    document.head.appendChild(v);
+  }
+
+  function facade(f) {
+    var m = f.src.match(/embed\/([\w-]{11})/);
+    if (!m || f.closest('.yt-facade')) return;
+    var id = m[1];
+    var box = document.createElement('div');
+    box.className = 'yt-facade';
+    box.setAttribute('role', 'button');
+    box.setAttribute('tabindex', '0');
+    box.setAttribute('aria-label', 'Reproducir video');
+    var img = document.createElement('img');
+    img.src = 'https://i.ytimg.com/vi/' + id + '/hqdefault.jpg';
+    img.alt = '';
+    img.loading = 'lazy';
+    img.decoding = 'async';
+    var play = document.createElement('span');
+    play.className = 'yt-play';
+    play.textContent = '▶';
+    box.appendChild(img);
+    box.appendChild(play);
+    function load() {
+      var ifr = document.createElement('iframe');
+      ifr.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1';
+      ifr.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      ifr.allowFullscreen = true;
+      box.innerHTML = '';
+      box.appendChild(ifr);
+      box.onclick = null;
+      box.onkeydown = null;
+    }
+    box.onclick = load;
+    box.onkeydown = function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); load(); }
+    };
+    f.replaceWith(box);
+  }
+
+  function swapYouTube(root) {
+    if (root.matches && root.matches(YT_SELECTOR)) facade(root);
+    root.querySelectorAll(YT_SELECTOR).forEach(facade);
+  }
+
+  // Intercepta el iframe al insertarse, antes de que el navegador empiece a cargarlo
+  new MutationObserver(function (records) {
+    records.forEach(function (r) {
+      r.addedNodes.forEach(function (n) {
+        if (n.nodeType === 1) swapYouTube(n);
+      });
+    });
+  }).observe(document.documentElement, { childList: true, subtree: true });
+
+  function setup() {
+    document.querySelectorAll('img').forEach(function (img, i) {
+      if (!img.hasAttribute('decoding')) img.decoding = 'async';
+      if (i === 0) { img.fetchPriority = 'high'; img.loading = 'eager'; }
+      else if (!img.hasAttribute('loading')) img.loading = 'lazy';
+    });
+
+    document.querySelectorAll('iframe').forEach(function (f) {
+      if (!f.hasAttribute('loading')) f.loading = 'lazy';
+    });
+
+    swapYouTube(document);
+  }
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', setup);
+  else setup();
+})();
+</script>
+
+<!-- ILATEK:ANTISPAM:START -->
+<!-- Guard de spam/bots para los formularios personalizados (clima y cotizador).
+     Se ANEXA al final del head tracking; no modifica ni reordena nada existente.
+     Alcance estricto: #ilatek-clima form y el botón del cotizador (#ilag-enviar).
+     Los formularios nativos de GHL, el chat y el calendario no se tocan.
+     Para activar reCAPTCHA v3: crear la clave pública en
+     https://www.google.com/recaptcha/admin y pegar la site key en siteKey:''.
+     Sin site key el guard funciona igual (trampa + interacción); no carga nada externo. -->
+<script>
+(function(){
+  if(window.ILATEK_GUARD&&window.ILATEK_GUARD.ready)return;
+  var G=window.ILATEK_GUARD={ready:true,siteKey:'',action:'ilatek_lead',token:'',blocked:0};
+  var HP='website_url_confirm',HUMAN=false,T0=Date.now(),SEEN=new WeakSet();
+  try{
+    function mark(){HUMAN=true}
+    ['pointerdown','keydown','touchstart','input','change','focusin'].forEach(function(t){
+      document.addEventListener(t,mark,{capture:true,passive:true});
+    });
+
+    function guarded(f){
+      try{
+        if(!f||f.nodeType!==1)return false;
+        if(typeof f.hasAttribute==='function'&&f.hasAttribute('data-il-guard'))return true;
+        if(f.matches&&f.matches('#ilatek-clima form, #ilatek-clima form *'))return true;
+        if(f.closest&&f.closest('#ilatek-clima'))return true;
+        return false;
+      }catch(e){return false}
+    }
+
+    function bodyTrap(){return document.getElementById('ilatek-guard-hp')}
+
+    function arm(){
+      try{
+        Array.prototype.forEach.call(document.querySelectorAll('#ilatek-clima form, form[data-il-guard]'),function(f){
+          if(f.querySelector('input[name="'+HP+'"]'))return;
+          var w=document.createElement('div');
+          w.setAttribute('aria-hidden','true');
+          w.style.cssText='position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden';
+          var i=document.createElement('input');
+          i.type='text';i.name=HP;i.tabIndex=-1;i.setAttribute('autocomplete','off');
+          i.setAttribute('aria-hidden','true');i.setAttribute('data-il-trap','1');
+          w.appendChild(i);f.appendChild(w);
+        });
+        if(!bodyTrap()&&document.getElementById('ilag-enviar')&&document.body){
+          var w2=document.createElement('div');
+          w2.id='ilatek-guard-hp-wrap';w2.setAttribute('aria-hidden','true');
+          w2.style.cssText='position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden';
+          var i2=document.createElement('input');
+          i2.type='text';i2.id='ilatek-guard-hp';i2.name=HP;i2.tabIndex=-1;
+          i2.setAttribute('autocomplete','off');i2.setAttribute('aria-hidden','true');
+          w2.appendChild(i2);document.body.appendChild(w2);
+        }
+      }catch(e){}
+    }
+
+    function filled(el){
+      try{return !!(el&&String(el.value||'').replace(/\s+/g,'')!=='')}catch(e){return false}
+    }
+
+    function reason(f){
+      try{
+        var hp=(f&&f.querySelector('input[name="'+HP+'"]'))||bodyTrap();
+        if(filled(hp))return 'trap';
+        if(!HUMAN&&Date.now()-T0<5000)return 'fast';
+        if(f&&SEEN.has(f))return 'dup';
+        return '';
+      }catch(e){return ''}
+    }
+
+    function fake(ev,btn){
+      try{ev.preventDefault()}catch(e){}
+      try{if(ev.stopImmediatePropagation)ev.stopImmediatePropagation()}catch(e){}
+      G.blocked++;
+      try{
+        if(btn&&!btn.disabled){
+          var t=btn.textContent;
+          btn.disabled=true;
+          setTimeout(function(){btn.disabled=false;try{btn.textContent=t}catch(e){}},1400);
+        }
+      }catch(e){}
+    }
+
+    document.addEventListener('submit',function(ev){
+      try{
+        var f=ev.target;
+        if(!f||!guarded(f))return;
+        arm();
+        var r=reason(f);
+        if(!r)return;
+        if(r==='dup'){try{ev.preventDefault()}catch(e){};try{ev.stopImmediatePropagation()}catch(e){};return}
+        fake(ev,f.querySelector('button[type="submit"],button'));
+      }catch(e){}
+    },true);
+
+    document.addEventListener('click',function(ev){
+      try{
+        var t=ev.target;
+        var b=(t&&t.closest)?t.closest('#ilag-enviar'):null;
+        if(!b)return;
+        arm();
+        if(!reason(null))return;
+        fake(ev,b);
+      }catch(e){}
+    },true);
+
+    if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',arm)}else{arm()}
+    setTimeout(arm,600);setTimeout(arm,2000);setTimeout(arm,5000);
+    /* El contenido de las páginas de GHL se hidrata después del DOMContentLoaded:
+       observamos el árbol para inyectar la trampa en cuanto aparezca el formulario. */
+    try{
+      if(window.MutationObserver){
+        var pendiente=false;
+        new MutationObserver(function(){
+          if(pendiente)return;pendiente=true;
+          setTimeout(function(){pendiente=false;arm()},250);
+        }).observe(document.documentElement,{childList:true,subtree:true});
+      }
+    }catch(e){}
+    ['pointerdown','keydown','touchstart'].forEach(function(t){
+      document.addEventListener(t,arm,{capture:true,passive:true});
+    });
+
+    if(G.siteKey){
+      var s=document.createElement('script');
+      s.src='https://www.google.com/recaptcha/api.js?render='+encodeURIComponent(G.siteKey);
+      s.async=true;s.defer=true;document.head.appendChild(s);
+      var started=false;
+      function token(){
+        try{
+          if(!window.grecaptcha||!grecaptcha.execute)return;
+          grecaptcha.ready(function(){
+            grecaptcha.execute(G.siteKey,{action:G.action})
+              .then(function(t){G.token=t}).catch(function(){});
+          });
+        }catch(e){}
+      }
+      document.addEventListener('pointerdown',function(){
+        if(started)return;started=true;token();setInterval(token,60000);
+      },{once:true,capture:true,passive:true});
+      var of=window.fetch;
+      if(typeof of==='function'){
+        window.fetch=function(){
+          var a=Array.prototype.slice.call(arguments);
+          try{
+            var u=typeof a[0]==='string'?a[0]:((a[0]&&a[0].url)||'');
+            var o=a[1];
+            if(G.token&&/leadconnectorhq\.com\/hooks\//.test(u)&&o&&typeof o.body==='string'){
+              var d=JSON.parse(o.body);
+              if(d&&typeof d==='object'&&!Array.isArray(d)&&!d.recaptcha_token){
+                d.recaptcha_token=G.token;
+                a[1]=Object.assign({},o,{body:JSON.stringify(d)});
+              }
+            }
+          }catch(e){}
+          return of.apply(this,a);
+        };
+      }
+    }
+  }catch(e){}
+})();
+</script>
+<!-- ILATEK:ANTISPAM:END -->

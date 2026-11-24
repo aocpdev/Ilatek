@@ -5,7 +5,7 @@ del pueblo entra al sitio por **tres canales que GHL SÍ resuelve**, nunca por
 el HTML pegado:
 
 1. **SEO nativo del panel** (title / meta description con
-   `{{custom_values.business__county_name}}` en el campo SEO de la página):
+   `{{custom_values.county_name_and_state}}` en el campo SEO de la página):
    GHL lo sustituye server-side al servir la página — verificado en vivo en
    juncos.ilatekpr.com 2026-10-27 (`<title>...en Juncos, Puerto Rico</title>`).
 2. **Los `data-*` del propio HTML** (`data-location-label="Juncos, Puerto Rico"`,
@@ -36,7 +36,7 @@ Settings del location → **Custom Values** → crear con estos nombres EXACTOS
 
 | Nombre exacto | Valor ejemplo (Juncos) | Qué alimenta |
 |---|---|---|
-| `business__county_name` | `Juncos` | Textos visible, title/meta SEO, alt/aria |
+| `county_name_and_state` | `Juncos` | Textos visible, title/meta SEO, alt/aria |
 | `business__phone` | `+1 787 320 9447` | Teléfonos y enlaces tel: |
 | `business__email` | `ilatek.pr@gmail.com` | Correos y enlaces mailto: |
 | `website_url` | `juncos.ilatekpr.com` (sin `https://`) | Todos los hrefs internos |
@@ -47,10 +47,14 @@ Settings del location → **Custom Values** → crear con estos nombres EXACTOS
 ⚠️ **`website_url` sin esquema**: el HTML construye `https://` + valor;
 con `https://` adentro salen CTAs con doble esquema.
 
-Unificado 2026-10-27: el set ya NO usa `county_name_and_state` — todo el
-árbol canónico consume `business__county_name` (swap de ~15k ocurrencias en
-239 archivos). Si el campo SEO del panel tenía el token viejo, cambiarlo por
-el nuevo. Copias históricas (`.tmp-*`, `archivo/`) conservaron el token
+**Corregido 2026-11-12 con evidencia del live:** el set usa
+`county_name_and_state`, que es el token que GHL sí expande. El editor de la
+Home trae 337 tokens y el HTML servido entrega **0 crudos**; en
+`juncos.ilatekpr.com/home` «Juncos» aparece 507 veces y el `<title>` sale
+«… en Juncos, Puerto Rico». `business__county_name` existe en la cuenta
+(valor «Puerto Rico») pero no aparece ni una vez en la página: no migrar a él
+sin repetir esa verificación. La nota del 2026-10-27 decía lo contrario y
+quedó obsoleta. Copias históricas (`.tmp-*`, `archivo/`) conservaron el token
 viejo a propósito.
 
 ⚠️ Riesgos típicos: values creados como **Custom Fields** no aplican; nombre
@@ -68,7 +72,7 @@ jurisdicción). El JSON-LD todavía lleva el literal: es la siguiente pasada.
    ahí no está, del subdominio (`juncos.ilatekpr.com` → Juncos).
    Los titulares de las secciones (tarjetas `ilcg-`/`ilcm-`, mega-menú, FAQ)
    ya **no** llevan el pueblo escrito: traen
-   `{{custom_values.business__county_name}}` y lo resuelve el mismo puente que
+   `{{custom_values.county_name_and_state}}` y lo resuelve el mismo puente que
    el H1. Si ves «… en Puerto Rico» en una sección, ese bloque es un pegado
    viejo de GHL: reemplazalo por el archivo del repo y republicá.
 2. **Paragraph nativo** (opcional, recomendado) ANTES del Custom Code:
@@ -115,7 +119,7 @@ pintar, el bridge restaura y vuelve a resolver.
 ## 4. Nuevo pueblo (location nuevo)
 
 1. Importar el snapshot → los 6 values llegan con los valores del master.
-2. Cambiar los values (sobre todo `business__county_name` y `website_url`
+2. Cambiar los values (sobre todo `county_name_and_state` y `website_url`
    con el subdominio del pueblo nuevo).
 3. Conectar `pueblo.ilatekpr.com` (Domain Settings).
 4. **Publish**. Cambiar un value NO redibuja una página publicada: cada
@@ -153,7 +157,7 @@ estado anterior, donde las landings verdes traían el pueblo literalizado).
 
 | Script | Qué hace |
 |---|---|
-| `scripts/audit_tokens_global.py` | Audita que solo existan los 14 `custom_values` exactos del owner (access_token, business__county_domain, business__county_name, business__email, business__phone, business_id, county_name_and_state, facebook_url, instagram_url, pixel_id, precio_total, website_favicon, website_url) en archivos publicables. 0 no-canon = PASS. |
+| `scripts/audit_tokens_global.py` | Audita que solo existan los 14 `custom_values` exactos del owner (access_token, business__county_domain, county_name_and_state, business__email, business__phone, business_id, county_name_and_state, facebook_url, instagram_url, pixel_id, precio_total, website_favicon, website_url) en archivos publicables. 0 no-canon = PASS. |
 | `node scripts/run_runtime_qa.mjs` | QA local del runtime (Playwright en `scripts/.qaenv`): copia tokenizada + variantes bridge/resolver; exige 0 tokens crudos visibles, secciones pobladas con el value, href resuelto y 0 errores JS → `shots/qa-result4.json`. GREEN antes de tocar GHL. |
 | `python scripts/fix_resolver_bridge.py [–check]` | (idempotente; 47 canónicos). Inserta helper `ILATEK_BRIDGE` al inicio del fragmento y parchea TODOS los resolvers (iltro A, secciones B1/B2/B3, nav C, footer D) para que resuelvan tokens crudos de data-* contra los slots del puente (literal gana; 'Puerto Rico' solo sin puente; alias propio por statement → 0 errores). `node scripts/qa_tokenized_headings.mjs` = contrato producción bridge-only: 3 casos detallados con variantes de puente (sellado-de-techos ok/ausente/malformado, techos-de-zinc ok/ausente, techos ok/ausente — techos y zinc prueban el h2 POSITIVO; el h2 estático de sellado reporta SKIP) + **barrido de los 47 canónicos publicables** en ok-bridge: cada titular tokenizado (h1/h2/h3) resuelve TestCounty y 0 tokens crudos visibles. |
 | `python scripts/ghl_paste_map.py [dominio]` | Mapea 60/60 URLs del sitemap del pueblo a su archivo canónico (`Ilatek/servicios|categorias/<slug>/es/landing-pages/...`); marca NATIVA-GHL (páginas del builder) y clones con sufijo. |
@@ -172,7 +176,7 @@ estado anterior, donde las landings verdes traían el pueblo literalizado).
 ### Titulares tokenizados (H1/H2/FAQ) — Oct 2026
 
 `scripts/populate_headings.py` (idempotente) convierte "Puerto Rico" →
-`{{custom_values.business__county_name}}` en los titulares locales de los
+`{{custom_values.county_name_and_state}}` en los titulares locales de los
 canónicos. **H1 hero: barrido completo** ("todas las landings, sin
 excepciones"): todo `Puerto Rico` dentro del `<h1>` pasa a token, conservándolo
 en el mismo elemento interno donde el marcado lo partía (`en <em>Puerto

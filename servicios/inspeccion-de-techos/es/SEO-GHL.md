@@ -1,28 +1,28 @@
-# SEO — Inspección de Techos Gratis en {{custom_values.business__county_name}} | Ilatek Techos
+# SEO — Inspección de Techos en {{custom_values.business__county_name}} | Ilatek Techos
 
 Plantilla local Delta System para {{custom_values.business__county_name}}. Título, descripción y textos de imágenes sincronizados con los entregables.
 
 ## Meta Tag Title
 
 ```text
-Inspección de Techos Gratis en {{custom_values.business__county_name}} | Ilatek Techos
+Inspección de Techos en {{custom_values.business__county_name}} | Ilatek Techos
 ```
 
 ## Meta Tag Description
 
 ```text
-Inspección de techos gratis en {{custom_values.business__county_name}}. Diagnóstico completo con informe fotográfico, sin compromiso. Detectamos filtraciones y daños a tiempo. 78 municipios.
+Inspección de techos por $50 descontables en {{custom_values.business__county_name}}. Diagnóstico completo con informe fotográfico, sin compromiso. Detectamos filtraciones y daños a tiempo. 78 municipios.
 ```
 
 ## Meta Tag Image
 
-[Imagen social — URL pública](https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046ec0edabbe5a4a76342.jpg)
+[Imagen social — URL pública](https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/social/inspeccion-de-techos-1200.webp)
 
 ```text
-https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046ec0edabbe5a4a76342.jpg
+https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/social/inspeccion-de-techos-1200.webp
 ```
 
-Copia local: [assets/respaldo/6ac046ec0edabbe5a4a76342.webp](assets/respaldo/6ac046ec0edabbe5a4a76342.webp). No usar una ruta local en GHL.
+Copia local: [assets/meta-image.webp](assets/meta-image.webp). No usar una ruta local en GHL.
 
 ## Canonical existente
 
@@ -45,7 +45,7 @@ Custom Value obligatorio: `{{custom_values.business__county_name}}`. Usar la eti
 ### Meta Tag Image Alt
 
 ```text
-Inspección de Techos Gratis en {{custom_values.business__county_name}} | Ilatek Techos
+Inspección de Techos en {{custom_values.business__county_name}} | Ilatek Techos
 ```
 
 El HEAD incluye `og:image:alt` y `twitter:image:alt`. Los atributos `alt` y `title` descriptivos de las imágenes usan la misma localidad, conservando lo que representa cada imagen. Las imágenes decorativas mantienen `alt=""` por accesibilidad. Las URLs de medios no son texto SEO y se conservan.
@@ -55,9 +55,3 @@ Antes de publicar cada snapshot, comprobar el HTML servido por GHL: Title, Descr
 ## Dominio y enlaces internos
 
 Configurar `website_url` como dominio sin protocolo ni barra final, por ejemplo `ilatekpr.com`. Los enlaces y canonical usan `https://{{custom_values.website_url}}/ruta`. Validar que GHL entregue estos valores resueltos en el HEAD público; no confiar en JavaScript para los metadatos sociales.
-
-## Aviso sobre la imagen social original
-
-La URL original del CDN no está disponible. La copia local es la variante WebP del mismo ID, no el JPG original.
-
-Alternativa existente en el repositorio: [imagen WebP](https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046ec0edabbe5a4a76342.webp). Antes de instalar el SEO, comprobar esta URL pública y usarla como Social Image si continúa disponible. El embed y el HEAD de referencia no se modificaron automáticamente.

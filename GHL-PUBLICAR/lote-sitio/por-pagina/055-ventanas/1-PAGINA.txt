@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Ventanas
+Slug: ventanas
+URL: https://ilatekpr.com/ventanas
+Acción: REPUBLICAR
+Estado hoy: HTTP 200
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (237 KB, sha256 25bc4d268ca6)
+Origen en el repo: servicios/ventanas/es/landing-pages/ghl-ventanas-landing.html
+Sección de clima: sí
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

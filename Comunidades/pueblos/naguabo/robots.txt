@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://naguabo.ilatekpr.com/sitemap.xml

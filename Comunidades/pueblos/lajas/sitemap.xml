@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- lajas.ilatekpr.com — landings de las comunidades de este municipio.
+     Generado por scripts/genera-pueblos.mjs; una URL por comunidad y servicio. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://lajas.ilatekpr.com/colinas-de-la-parguera/limpieza</loc></url>
+  <url><loc>https://lajas.ilatekpr.com/colinas-de-la-parguera/sellado-de-techo</loc></url>
+  <url><loc>https://lajas.ilatekpr.com/el-valle-de-lajas/limpieza</loc></url>
+  <url><loc>https://lajas.ilatekpr.com/el-valle-de-lajas/sellado-de-techo</loc></url>
+  <url><loc>https://lajas.ilatekpr.com/estancias-del-parra/limpieza</loc></url>
+  <url><loc>https://lajas.ilatekpr.com/estancias-del-parra/sellado-de-techo</loc></url>
+  <url><loc>https://lajas.ilatekpr.com/extension-el-valle/limpieza</loc></url>
+  <url><loc>https://lajas.ilatekpr.com/extension-el-valle/sellado-de-techo</loc></url>
+  <url><loc>https://lajas.ilatekpr.com/las-americas/limpieza</loc></url>
+  <url><loc>https://lajas.ilatekpr.com/las-americas/sellado-de-techo</loc></url>
+</urlset>

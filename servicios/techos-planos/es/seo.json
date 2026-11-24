@@ -3,11 +3,11 @@
   "language": "es",
   "status": "plantilla-local-delta-system",
   "metaTagTitle": "Impermeabilización de Techos Planos (EPDM, TPO) en {{custom_values.business__county_name}} | Ilatek Techos",
-  "metaTagDescription": "Impermeabilización de techos planos en {{custom_values.business__county_name}} desde $250. Membranas EPDM, TPO y asfálticas selladas, cotización $0 agendada con $50 reembolsables y garantía escrita.",
-  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac72670c478ac55353c265b.jpg",
+  "metaTagDescription": "Impermeabilización de techos planos en {{custom_values.business__county_name}} desde $250. Membranas EPDM, TPO y asfálticas selladas, cotización por $50 descontables del total y garantía escrita.",
+  "metaTagImage": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/e587a638-96c9-41f2-9000-1339e4f30a53.webp",
   "locationCustomValue": "{{custom_values.business__county_name}}",
   "metaTagImageAlt": "Impermeabilización de Techos Planos (EPDM, TPO) en {{custom_values.business__county_name}} | Ilatek Techos",
   "canonical": "https://{{custom_values.website_url}}/techos-planos",
-  "socialImageFile": "assets/respaldo/6ac72670c478ac55353c265b.webp",
+  "socialImageFile": "assets/meta-image.webp",
   "publication": "No modificada en GHL; verificar el HEAD publicado."
 }

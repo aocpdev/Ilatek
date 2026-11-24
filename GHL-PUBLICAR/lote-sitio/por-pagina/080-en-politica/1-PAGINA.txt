@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Politica (EN)
+Slug: en/politica
+URL: https://ilatekpr.com/en/politica
+Acción: CREAR PÁGINA
+Estado hoy: HTTP 200 (verificado 2026-11-21)
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (221 KB, sha256 93d3d3453e5e)
+Origen en el repo: politica-de-privacidad/en/landing-pages/ghl-politica-embed.en.html
+Sección de clima: no
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

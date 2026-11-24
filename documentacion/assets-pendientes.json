@@ -1,11 +1,5 @@
 [
   {
-    "page": "canaletas-y-bajantes",
-    "url": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac8583a195f9172ed03ac5f.jpg",
-    "backupFile": "servicios/canaletas-y-bajantes/es/assets/respaldo/6ac8583a195f9172ed03ac5f.webp",
-    "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac8583a195f9172ed03ac5f.webp"
-  },
-  {
     "page": "empozamiento-de-techos",
     "url": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046fb3b8e61adf5632061.jpg",
     "backupFile": "servicios/empozamiento-de-techos/es/assets/respaldo/6ac046fb3b8e61adf5632061.webp",
@@ -54,16 +48,10 @@
     "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046ee849322987426388b.webp"
   },
   {
-    "page": "lavado-a-presion-techos",
-    "url": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac72674c478ac55353c2708.jpg",
-    "backupFile": "servicios/lavado-a-presion-techos/es/assets/respaldo/6ac72674c478ac55353c2708.webp",
-    "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac72674c478ac55353c2708.webp"
-  },
-  {
     "page": "limpieza-de-techos-y-canaletas",
-    "url": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046ee150d6ea53dbd5044.jpg",
-    "backupFile": "servicios/limpieza-de-techos-y-canaletas/es/assets/respaldo/6ac046ee150d6ea53dbd5044.webp",
-    "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046ee150d6ea53dbd5044.webp"
+    "url": "https://raw.githubusercontent.com/aocpdev/Ilatek/main/assets/services-images/techos/Servicio%20de%20Limpieza%20de%20Techos%20y%20Canaletas%20-%20Ilatek%20Property%20Solution%20-%201.jpg",
+    "backupFile": "servicios/limpieza-de-techos-y-canaletas/es/assets/respaldo/https://raw.githubusercontent.com/aocpdev/Ilatek/main/assets/services-images/techos/Servicio%20de%20Limpieza%20de%20Techos%20y%20Canaletas%20-%20Ilatek%20Property%20Solution%20-%201.jpg",
+    "backupPublicUrl": "https://raw.githubusercontent.com/aocpdev/Ilatek/main/assets/services-images/techos/Servicio%20de%20Limpieza%20de%20Techos%20y%20Canaletas%20-%20Ilatek%20Property%20Solution%20-%201.jpg"
   },
   {
     "page": "mantenimiento-de-techos",
@@ -84,18 +72,6 @@
     "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f82c503e697d5ff24e.webp"
   },
   {
-    "page": "recubrimiento-elastomerico",
-    "url": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f302569bee7cbccbf4.jpg",
-    "backupFile": "servicios/recubrimiento-elastomerico/es/assets/respaldo/6ac046f302569bee7cbccbf4.webp",
-    "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f302569bee7cbccbf4.webp"
-  },
-  {
-    "page": "recubrimiento-elastomerico",
-    "url": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f32c503e697d5ff1fa.jpg",
-    "backupFile": "servicios/recubrimiento-elastomerico/es/assets/respaldo/6ac046f32c503e697d5ff1fa.webp",
-    "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f32c503e697d5ff1fa.webp"
-  },
-  {
     "page": "reparacion-de-filtraciones",
     "url": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046fc8493229874263a03.jpg",
     "backupFile": "servicios/reparacion-de-filtraciones/es/assets/respaldo/6ac046fc8493229874263a03.webp",
@@ -106,12 +82,6 @@
     "url": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046fb84932298742639df.jpg",
     "backupFile": "servicios/reparacion-de-filtraciones/es/assets/respaldo/6ac046fb84932298742639df.webp",
     "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046fb84932298742639df.webp"
-  },
-  {
-    "page": "reparacion-de-goteras",
-    "url": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac72673195f9172ede3883e.jpg",
-    "backupFile": "servicios/reparacion-de-goteras/es/assets/respaldo/6ac72673195f9172ede3883e.webp",
-    "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac72673195f9172ede3883e.webp"
   },
   {
     "page": "reparacion-de-techos",
@@ -133,15 +103,9 @@
   },
   {
     "page": "reparacion-post-huracan",
-    "url": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f57bca8cd20c4021df.jpg",
-    "backupFile": "servicios/reparacion-post-huracan/es/assets/respaldo/6ac046f57bca8cd20c4021df.webp",
-    "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f57bca8cd20c4021df.webp"
-  },
-  {
-    "page": "sellado-acrilico",
-    "url": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac72671d5f4a8af439f5cce.jpg",
-    "backupFile": "servicios/sellado-acrilico/es/assets/respaldo/6ac72671d5f4a8af439f5cce.webp",
-    "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac72671d5f4a8af439f5cce.webp"
+    "url": "https://raw.githubusercontent.com/aocpdev/Ilatek/main/assets/services-images/techos/Todos%20los%20Servicios%20de%20Mantenimiento%20de%20Techos%20en%20Puerto%20Rico%20-%20Ilatek.jpg",
+    "backupFile": "servicios/reparacion-post-huracan/es/assets/respaldo/6ac046ecf30b488137bfa41c.webp",
+    "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046ecf30b488137bfa41c.webp"
   },
   {
     "page": "sellado-de-poliuretano",
@@ -180,24 +144,6 @@
     "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046ee849322987426388b.webp"
   },
   {
-    "page": "sellado-de-techos",
-    "url": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f8849322987426396f.jpg",
-    "backupFile": "categorias/sellado-de-techos/es/assets/respaldo/6ac046f8849322987426396f.webp",
-    "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f8849322987426396f.webp"
-  },
-  {
-    "page": "sellado-de-techos-residencial",
-    "url": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f07bca8cd20c4021a3.jpg",
-    "backupFile": "servicios/sellado-de-techos-residencial/es/assets/respaldo/6ac046f07bca8cd20c4021a3.webp",
-    "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f07bca8cd20c4021a3.webp"
-  },
-  {
-    "page": "sellado-de-techos-residencial",
-    "url": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac0427e0edabbe5a4a724d7.jpg",
-    "backupFile": "servicios/sellado-de-techos-residencial/es/assets/respaldo/6ac0427e0edabbe5a4a724d7.webp",
-    "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac0427e0edabbe5a4a724d7.webp"
-  },
-  {
     "page": "techos-de-asfalto",
     "url": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f82c503e697d5ff24e.jpg",
     "backupFile": "servicios/techos-de-asfalto/es/assets/respaldo/6ac046f82c503e697d5ff24e.webp",
@@ -205,33 +151,9 @@
   },
   {
     "page": "techos-de-asfalto",
-    "url": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046f57bca8cd20c4021df.jpg",
-    "backupFile": "servicios/techos-de-asfalto/es/assets/respaldo/6ac046f57bca8cd20c4021df.webp",
-    "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046f57bca8cd20c4021df.webp"
-  },
-  {
-    "page": "techos-de-concreto",
-    "url": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac85834cc7a5a2b73475e12.jpg",
-    "backupFile": "servicios/techos-de-concreto/es/assets/respaldo/6ac85834cc7a5a2b73475e12.webp",
-    "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac85834cc7a5a2b73475e12.webp"
-  },
-  {
-    "page": "techos-de-madera",
-    "url": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acbe702bbad531ac893ece2.png",
-    "backupFile": "servicios/techos-de-madera/es/assets/respaldo/6acbe702bbad531ac893ece2.webp",
-    "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6acbe702bbad531ac893ece2.webp"
-  },
-  {
-    "page": "techos-de-teja",
-    "url": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acbef68c478ac5535ac18f0.png",
-    "backupFile": "servicios/techos-de-teja/es/assets/respaldo/6acbef68c478ac5535ac18f0.webp",
-    "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6acbef68c478ac5535ac18f0.webp"
-  },
-  {
-    "page": "techos-de-zinc",
-    "url": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acbf1fabd6bb710ca50a783.png",
-    "backupFile": "servicios/techos-de-zinc/es/assets/respaldo/6acbf1fabd6bb710ca50a783.webp",
-    "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6acbf1fabd6bb710ca50a783.webp"
+    "url": "https://raw.githubusercontent.com/aocpdev/Ilatek/main/assets/services-images/techos/Todos%20los%20Servicios%20de%20Mantenimiento%20de%20Techos%20en%20Puerto%20Rico%20-%20Ilatek.jpg",
+    "backupFile": "servicios/techos-de-asfalto/es/assets/respaldo/6ac046ecf30b488137bfa41c.webp",
+    "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046ecf30b488137bfa41c.webp"
   },
   {
     "page": "techos",
@@ -241,26 +163,8 @@
   },
   {
     "page": "techos",
-    "url": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046fef30b488137bfa568.jpg",
-    "backupFile": "categorias/techos/es/assets/respaldo/6ac046fef30b488137bfa568.webp",
-    "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046fef30b488137bfa568.webp"
-  },
-  {
-    "page": "techos-planos",
-    "url": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac72670c478ac55353c265b.jpg",
-    "backupFile": "servicios/techos-planos/es/assets/respaldo/6ac72670c478ac55353c265b.webp",
-    "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac72670c478ac55353c265b.webp"
-  },
-  {
-    "page": "techos-por-segmento",
-    "url": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6acbf7e5bd6bb710ca513950.png",
-    "backupFile": "categorias/techos-por-segmento/es/assets/respaldo/6acbf7e5bd6bb710ca513950.webp",
-    "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6acbf7e5bd6bb710ca513950.webp"
-  },
-  {
-    "page": "tragaluces",
-    "url": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac72673d5f4a8af439f5d0e.jpg",
-    "backupFile": "servicios/tragaluces/es/assets/respaldo/6ac72673d5f4a8af439f5d0e.webp",
-    "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac72673d5f4a8af439f5d0e.webp"
+    "url": "https://assets.cdn.filesafe.space/8OxUENFVM60EKzqsTcoD/media/6ac046ecf30b488137bfa41c.jpg",
+    "backupFile": "categorias/techos/es/assets/respaldo/6ac046ecf30b488137bfa41c.webp",
+    "backupPublicUrl": "https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/techos/6ac046ecf30b488137bfa41c.webp"
   }
 ]

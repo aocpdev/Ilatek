@@ -1,0 +1,477 @@
+{
+ "fecha": "2026-10-30",
+ "regla": "website_url === business__county_domain === <slug>.ilatekpr.com; county_name_and_state === business__county_name === \"<Municipio>, Puerto Rico\"",
+ "total": 78,
+ "correctos": 78,
+ "problemas": [],
+ "municipios": [
+  {
+   "municipio": "Adjuntas",
+   "slug": "adjuntas",
+   "website_url": "adjuntas.ilatekpr.com",
+   "county": "Adjuntas, Puerto Rico"
+  },
+  {
+   "municipio": "Aguada",
+   "slug": "aguada",
+   "website_url": "aguada.ilatekpr.com",
+   "county": "Aguada, Puerto Rico"
+  },
+  {
+   "municipio": "Aguadilla",
+   "slug": "aguadilla",
+   "website_url": "aguadilla.ilatekpr.com",
+   "county": "Aguadilla, Puerto Rico"
+  },
+  {
+   "municipio": "Aguas Buenas",
+   "slug": "aguas-buenas",
+   "website_url": "aguas-buenas.ilatekpr.com",
+   "county": "Aguas Buenas, Puerto Rico"
+  },
+  {
+   "municipio": "Aibonito",
+   "slug": "aibonito",
+   "website_url": "aibonito.ilatekpr.com",
+   "county": "Aibonito, Puerto Rico"
+  },
+  {
+   "municipio": "Añasco",
+   "slug": "anasco",
+   "website_url": "anasco.ilatekpr.com",
+   "county": "Añasco, Puerto Rico"
+  },
+  {
+   "municipio": "Arecibo",
+   "slug": "arecibo",
+   "website_url": "arecibo.ilatekpr.com",
+   "county": "Arecibo, Puerto Rico"
+  },
+  {
+   "municipio": "Arroyo",
+   "slug": "arroyo",
+   "website_url": "arroyo.ilatekpr.com",
+   "county": "Arroyo, Puerto Rico"
+  },
+  {
+   "municipio": "Barceloneta",
+   "slug": "barceloneta",
+   "website_url": "barceloneta.ilatekpr.com",
+   "county": "Barceloneta, Puerto Rico"
+  },
+  {
+   "municipio": "Barranquitas",
+   "slug": "barranquitas",
+   "website_url": "barranquitas.ilatekpr.com",
+   "county": "Barranquitas, Puerto Rico"
+  },
+  {
+   "municipio": "Bayamón",
+   "slug": "bayamon",
+   "website_url": "bayamon.ilatekpr.com",
+   "county": "Bayamón, Puerto Rico"
+  },
+  {
+   "municipio": "Cabo Rojo",
+   "slug": "cabo-rojo",
+   "website_url": "cabo-rojo.ilatekpr.com",
+   "county": "Cabo Rojo, Puerto Rico"
+  },
+  {
+   "municipio": "Caguas",
+   "slug": "caguas",
+   "website_url": "caguas.ilatekpr.com",
+   "county": "Caguas, Puerto Rico"
+  },
+  {
+   "municipio": "Camuy",
+   "slug": "camuy",
+   "website_url": "camuy.ilatekpr.com",
+   "county": "Camuy, Puerto Rico"
+  },
+  {
+   "municipio": "Canóvanas",
+   "slug": "canovanas",
+   "website_url": "canovanas.ilatekpr.com",
+   "county": "Canóvanas, Puerto Rico"
+  },
+  {
+   "municipio": "Carolina",
+   "slug": "carolina",
+   "website_url": "carolina.ilatekpr.com",
+   "county": "Carolina, Puerto Rico"
+  },
+  {
+   "municipio": "Cataño",
+   "slug": "catano",
+   "website_url": "catano.ilatekpr.com",
+   "county": "Cataño, Puerto Rico"
+  },
+  {
+   "municipio": "Cayey",
+   "slug": "cayey",
+   "website_url": "cayey.ilatekpr.com",
+   "county": "Cayey, Puerto Rico"
+  },
+  {
+   "municipio": "Ceiba",
+   "slug": "ceiba",
+   "website_url": "ceiba.ilatekpr.com",
+   "county": "Ceiba, Puerto Rico"
+  },
+  {
+   "municipio": "Ciales",
+   "slug": "ciales",
+   "website_url": "ciales.ilatekpr.com",
+   "county": "Ciales, Puerto Rico"
+  },
+  {
+   "municipio": "Cidra",
+   "slug": "cidra",
+   "website_url": "cidra.ilatekpr.com",
+   "county": "Cidra, Puerto Rico"
+  },
+  {
+   "municipio": "Coamo",
+   "slug": "coamo",
+   "website_url": "coamo.ilatekpr.com",
+   "county": "Coamo, Puerto Rico"
+  },
+  {
+   "municipio": "Comerío",
+   "slug": "comerio",
+   "website_url": "comerio.ilatekpr.com",
+   "county": "Comerío, Puerto Rico"
+  },
+  {
+   "municipio": "Corozal",
+   "slug": "corozal",
+   "website_url": "corozal.ilatekpr.com",
+   "county": "Corozal, Puerto Rico"
+  },
+  {
+   "municipio": "Culebra",
+   "slug": "culebra",
+   "website_url": "culebra.ilatekpr.com",
+   "county": "Culebra, Puerto Rico"
+  },
+  {
+   "municipio": "Dorado",
+   "slug": "dorado",
+   "website_url": "dorado.ilatekpr.com",
+   "county": "Dorado, Puerto Rico"
+  },
+  {
+   "municipio": "Fajardo",
+   "slug": "fajardo",
+   "website_url": "fajardo.ilatekpr.com",
+   "county": "Fajardo, Puerto Rico"
+  },
+  {
+   "municipio": "Florida",
+   "slug": "florida",
+   "website_url": "florida.ilatekpr.com",
+   "county": "Florida, Puerto Rico"
+  },
+  {
+   "municipio": "Guánica",
+   "slug": "guanica",
+   "website_url": "guanica.ilatekpr.com",
+   "county": "Guánica, Puerto Rico"
+  },
+  {
+   "municipio": "Guayama",
+   "slug": "guayama",
+   "website_url": "guayama.ilatekpr.com",
+   "county": "Guayama, Puerto Rico"
+  },
+  {
+   "municipio": "Guayanilla",
+   "slug": "guayanilla",
+   "website_url": "guayanilla.ilatekpr.com",
+   "county": "Guayanilla, Puerto Rico"
+  },
+  {
+   "municipio": "Guaynabo",
+   "slug": "guaynabo",
+   "website_url": "guaynabo.ilatekpr.com",
+   "county": "Guaynabo, Puerto Rico"
+  },
+  {
+   "municipio": "Gurabo",
+   "slug": "gurabo",
+   "website_url": "gurabo.ilatekpr.com",
+   "county": "Gurabo, Puerto Rico"
+  },
+  {
+   "municipio": "Hatillo",
+   "slug": "hatillo",
+   "website_url": "hatillo.ilatekpr.com",
+   "county": "Hatillo, Puerto Rico"
+  },
+  {
+   "municipio": "Hormigueros",
+   "slug": "hormigueros",
+   "website_url": "hormigueros.ilatekpr.com",
+   "county": "Hormigueros, Puerto Rico"
+  },
+  {
+   "municipio": "Humacao",
+   "slug": "humacao",
+   "website_url": "humacao.ilatekpr.com",
+   "county": "Humacao, Puerto Rico"
+  },
+  {
+   "municipio": "Isabela",
+   "slug": "isabela",
+   "website_url": "isabela.ilatekpr.com",
+   "county": "Isabela, Puerto Rico"
+  },
+  {
+   "municipio": "Jayuya",
+   "slug": "jayuya",
+   "website_url": "jayuya.ilatekpr.com",
+   "county": "Jayuya, Puerto Rico"
+  },
+  {
+   "municipio": "Juana Díaz",
+   "slug": "juana-diaz",
+   "website_url": "juana-diaz.ilatekpr.com",
+   "county": "Juana Díaz, Puerto Rico"
+  },
+  {
+   "municipio": "Juncos",
+   "slug": "juncos",
+   "website_url": "juncos.ilatekpr.com",
+   "county": "Juncos, Puerto Rico"
+  },
+  {
+   "municipio": "Lajas",
+   "slug": "lajas",
+   "website_url": "lajas.ilatekpr.com",
+   "county": "Lajas, Puerto Rico"
+  },
+  {
+   "municipio": "Lares",
+   "slug": "lares",
+   "website_url": "lares.ilatekpr.com",
+   "county": "Lares, Puerto Rico"
+  },
+  {
+   "municipio": "Las Marías",
+   "slug": "las-marias",
+   "website_url": "las-marias.ilatekpr.com",
+   "county": "Las Marías, Puerto Rico"
+  },
+  {
+   "municipio": "Las Piedras",
+   "slug": "las-piedras",
+   "website_url": "las-piedras.ilatekpr.com",
+   "county": "Las Piedras, Puerto Rico"
+  },
+  {
+   "municipio": "Loíza",
+   "slug": "loiza",
+   "website_url": "loiza.ilatekpr.com",
+   "county": "Loíza, Puerto Rico"
+  },
+  {
+   "municipio": "Luquillo",
+   "slug": "luquillo",
+   "website_url": "luquillo.ilatekpr.com",
+   "county": "Luquillo, Puerto Rico"
+  },
+  {
+   "municipio": "Manatí",
+   "slug": "manati",
+   "website_url": "manati.ilatekpr.com",
+   "county": "Manatí, Puerto Rico"
+  },
+  {
+   "municipio": "Maricao",
+   "slug": "maricao",
+   "website_url": "maricao.ilatekpr.com",
+   "county": "Maricao, Puerto Rico"
+  },
+  {
+   "municipio": "Maunabo",
+   "slug": "maunabo",
+   "website_url": "maunabo.ilatekpr.com",
+   "county": "Maunabo, Puerto Rico"
+  },
+  {
+   "municipio": "Mayagüez",
+   "slug": "mayaguez",
+   "website_url": "mayaguez.ilatekpr.com",
+   "county": "Mayagüez, Puerto Rico"
+  },
+  {
+   "municipio": "Moca",
+   "slug": "moca",
+   "website_url": "moca.ilatekpr.com",
+   "county": "Moca, Puerto Rico"
+  },
+  {
+   "municipio": "Morovis",
+   "slug": "morovis",
+   "website_url": "morovis.ilatekpr.com",
+   "county": "Morovis, Puerto Rico"
+  },
+  {
+   "municipio": "Naguabo",
+   "slug": "naguabo",
+   "website_url": "naguabo.ilatekpr.com",
+   "county": "Naguabo, Puerto Rico"
+  },
+  {
+   "municipio": "Naranjito",
+   "slug": "naranjito",
+   "website_url": "naranjito.ilatekpr.com",
+   "county": "Naranjito, Puerto Rico"
+  },
+  {
+   "municipio": "Orocovis",
+   "slug": "orocovis",
+   "website_url": "orocovis.ilatekpr.com",
+   "county": "Orocovis, Puerto Rico"
+  },
+  {
+   "municipio": "Patillas",
+   "slug": "patillas",
+   "website_url": "patillas.ilatekpr.com",
+   "county": "Patillas, Puerto Rico"
+  },
+  {
+   "municipio": "Peñuelas",
+   "slug": "penuelas",
+   "website_url": "penuelas.ilatekpr.com",
+   "county": "Peñuelas, Puerto Rico"
+  },
+  {
+   "municipio": "Ponce",
+   "slug": "ponce",
+   "website_url": "ponce.ilatekpr.com",
+   "county": "Ponce, Puerto Rico"
+  },
+  {
+   "municipio": "Quebradillas",
+   "slug": "quebradillas",
+   "website_url": "quebradillas.ilatekpr.com",
+   "county": "Quebradillas, Puerto Rico"
+  },
+  {
+   "municipio": "Rincón",
+   "slug": "rincon",
+   "website_url": "rincon.ilatekpr.com",
+   "county": "Rincón, Puerto Rico"
+  },
+  {
+   "municipio": "Río Grande",
+   "slug": "rio-grande",
+   "website_url": "rio-grande.ilatekpr.com",
+   "county": "Río Grande, Puerto Rico"
+  },
+  {
+   "municipio": "Sabana Grande",
+   "slug": "sabana-grande",
+   "website_url": "sabana-grande.ilatekpr.com",
+   "county": "Sabana Grande, Puerto Rico"
+  },
+  {
+   "municipio": "Salinas",
+   "slug": "salinas",
+   "website_url": "salinas.ilatekpr.com",
+   "county": "Salinas, Puerto Rico"
+  },
+  {
+   "municipio": "San Germán",
+   "slug": "san-german",
+   "website_url": "san-german.ilatekpr.com",
+   "county": "San Germán, Puerto Rico"
+  },
+  {
+   "municipio": "San Juan",
+   "slug": "san-juan",
+   "website_url": "san-juan.ilatekpr.com",
+   "county": "San Juan, Puerto Rico"
+  },
+  {
+   "municipio": "San Lorenzo",
+   "slug": "san-lorenzo",
+   "website_url": "san-lorenzo.ilatekpr.com",
+   "county": "San Lorenzo, Puerto Rico"
+  },
+  {
+   "municipio": "San Sebastián",
+   "slug": "san-sebastian",
+   "website_url": "san-sebastian.ilatekpr.com",
+   "county": "San Sebastián, Puerto Rico"
+  },
+  {
+   "municipio": "Santa Isabel",
+   "slug": "santa-isabel",
+   "website_url": "santa-isabel.ilatekpr.com",
+   "county": "Santa Isabel, Puerto Rico"
+  },
+  {
+   "municipio": "Toa Alta",
+   "slug": "toa-alta",
+   "website_url": "toa-alta.ilatekpr.com",
+   "county": "Toa Alta, Puerto Rico"
+  },
+  {
+   "municipio": "Toa Baja",
+   "slug": "toa-baja",
+   "website_url": "toa-baja.ilatekpr.com",
+   "county": "Toa Baja, Puerto Rico"
+  },
+  {
+   "municipio": "Trujillo Alto",
+   "slug": "trujillo-alto",
+   "website_url": "trujillo-alto.ilatekpr.com",
+   "county": "Trujillo Alto, Puerto Rico"
+  },
+  {
+   "municipio": "Utuado",
+   "slug": "utuado",
+   "website_url": "utuado.ilatekpr.com",
+   "county": "Utuado, Puerto Rico"
+  },
+  {
+   "municipio": "Vega Alta",
+   "slug": "vega-alta",
+   "website_url": "vega-alta.ilatekpr.com",
+   "county": "Vega Alta, Puerto Rico"
+  },
+  {
+   "municipio": "Vega Baja",
+   "slug": "vega-baja",
+   "website_url": "vega-baja.ilatekpr.com",
+   "county": "Vega Baja, Puerto Rico"
+  },
+  {
+   "municipio": "Vieques",
+   "slug": "vieques",
+   "website_url": "vieques.ilatekpr.com",
+   "county": "Vieques, Puerto Rico"
+  },
+  {
+   "municipio": "Villalba",
+   "slug": "villalba",
+   "website_url": "villalba.ilatekpr.com",
+   "county": "Villalba, Puerto Rico"
+  },
+  {
+   "municipio": "Yabucoa",
+   "slug": "yabucoa",
+   "website_url": "yabucoa.ilatekpr.com",
+   "county": "Yabucoa, Puerto Rico"
+  },
+  {
+   "municipio": "Yauco",
+   "slug": "yauco",
+   "website_url": "yauco.ilatekpr.com",
+   "county": "Yauco, Puerto Rico"
+  }
+ ]
+}

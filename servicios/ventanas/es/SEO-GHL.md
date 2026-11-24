@@ -11,18 +11,18 @@ Limpieza de Ventanas en {{custom_values.business__county_name}} | Ilatek
 ## Meta Tag Description
 
 ```text
-Limpieza de ventanas en {{custom_values.business__county_name}}: interiores $10 y exteriores $25 por ventana, marcos y cristales sin marcas. Cotizador online y cobertura en los 78 municipios.
+Limpieza de ventanas en {{custom_values.business__county_name}}: interiores y exteriores desde $250 por servicio, marcos y cristales sin marcas. Cotizador online y cobertura en los 78 municipios.
 ```
 
 ## Meta Tag Image
 
-[Imagen social — URL pública](https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/ventanas.jpg)
+[Imagen social — URL pública](https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/social/ventanas-1200.webp)
 
 ```text
-https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/optimized/social/ventanas.jpg
+https://cdn.jsdelivr.net/gh/aocpdev/Ilatek@main/assets/social/ventanas-1200.webp
 ```
 
-Copia local: [assets/meta-image.jpg](assets/meta-image.jpg). No usar una ruta local en GHL.
+Copia local: [assets/meta-image.webp](assets/meta-image.webp). No usar una ruta local en GHL.
 
 ## Canonical existente
 
@@ -45,7 +45,7 @@ Custom Value obligatorio: `{{custom_values.business__county_name}}`. Usar la eti
 ### Meta Tag Image Alt
 
 ```text
-Limpieza de Ventanas en {{custom_values.business__county_name}} | Ilatek
+Limpieza de Ventanas en {{custom_values.business__county_name}} impecables por dentro y por — Ilatek
 ```
 
 El HEAD incluye `og:image:alt` y `twitter:image:alt`. Los atributos `alt` y `title` descriptivos de las imágenes usan la misma localidad, conservando lo que representa cada imagen. Las imágenes decorativas mantienen `alt=""` por accesibilidad. Las URLs de medios no son texto SEO y se conservan.

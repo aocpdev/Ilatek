@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Reparacion Post Huracan
+Slug: reparacion-post-huracan
+URL: https://ilatekpr.com/reparacion-post-huracan
+Acción: REPUBLICAR
+Estado hoy: HTTP 200
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (244 KB, sha256 173e0563ad17)
+Origen en el repo: servicios/reparacion-post-huracan/es/landing-pages/ghl-reparacion-post-huracan-landing.html
+Sección de clima: sí
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

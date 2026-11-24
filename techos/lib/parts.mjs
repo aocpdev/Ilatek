@@ -78,14 +78,22 @@ export function reviewsParts(rootId, cfg) {
   const sectionMatch = src.match(/<section id="ilatek-reviews"[\s\S]*?<\/section>/);
   if (!sectionMatch) throw new Error('No se encontró el markup de reviews');
   let markup = sectionMatch[0];
-  markup = swap(markup, '<h2 id="ilatek-reviews-title" class="il-display">La experiencia de nuestros clientes.</h2>', `<h2 id="ilatek-reviews-title" class="il-display">${cfg.title}</h2>`, 'título de reviews');
-  markup = swap(markup, '<p>Conoce las reseñas compartidas por personas que confiaron en Ilatek para el cuidado de sus hogares.</p>', `<p>${cfg.subtitle}</p>`, 'subtítulo de reviews');
+  // El bloque fuente ganó atributos data-es/data-en en el h2 y el párrafo.
+  // Se reemplaza el contenido completo (no el string exacto) para que el build
+  // siga funcionando si cambian esos atributos, sin publicar copy de limpieza.
+  const titleRE = /<h2 id="ilatek-reviews-title"[^>]*>[\s\S]*?<\/h2>/;
+  if (!titleRE.test(markup)) throw new Error('No se encontró el H2 de reviews');
+  markup = markup.replace(titleRE, `<h2 id="ilatek-reviews-title" class="il-display">${cfg.title}</h2>`);
+  const subtitleRE = /(<header class="il-reviews-head[\s\S]*?<p)[^>]*>[\s\S]*?<\/p>/;
+  if (!subtitleRE.test(markup)) throw new Error('No se encontró el subtítulo de reviews');
+  markup = markup.replace(subtitleRE, `$1>${cfg.subtitle}</p>`);
   markup = swap(markup, 'title="Reseñas de Google de clientes de Ilatek"', `title="${cfg.googleTitle}"`, 'título del iframe de Google');
   markup = swap(markup, 'title="Reseñas de Limpieza de Ilatek"', `title="${cfg.selfieTitle}"`, 'título del iframe Selfie');
   // El tab del widget de limpieza se llama "Limpieza" (copy prohibido en el
   // sitio de techos sin contexto): el auditor lo rechaza. Se reetiqueta a
   // "Servicios", que es lo que muestra ese tab de reseñas.
-  markup = swap(markup, '>Limpieza</button>', '>Servicios</button>', 'tab Limpieza de reviews');
+  markup = markup.split('Reseñas de Limpieza').join('Reseñas de Servicios');
+  markup = markup.split('>Limpieza<').join('>Servicios<');
 
   const tabsMatch = src.match(/<!-- Tabs de reviews[\s\S]*?<\/script>/);
   if (!tabsMatch) throw new Error('No se encontró el script de tabs de reviews');

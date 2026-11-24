@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Impermeabilizacion De Techos (EN)
+Slug: en/impermeabilizacion-de-techos
+URL: https://ilatekpr.com/en/impermeabilizacion-de-techos
+Acción: CREAR PÁGINA
+Estado hoy: HTTP 404
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (245 KB, sha256 fcd853f0cac5)
+Origen en el repo: categorias/impermeabilizacion-de-techos/en/landing-pages/impermeabilizacion-de-techos.en.html
+Sección de clima: no
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

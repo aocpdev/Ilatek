@@ -12,7 +12,7 @@ export const segmentos = [
     h1after: '.',
     metaTitle: 'Sellado de Techos Residencial, Comercial e Industrial | Ilatek Techos',
     metaDescription:
-      'Sellado y reparación de techos residencial, comercial e industrial en Puerto Rico desde $250. Sistemas por segmento, cotización $0 agendada con $50 reembolsables y garantía escrita.',
+      'Sellado y reparación de techos residencial, comercial e industrial en Puerto Rico desde $250. Sistemas por segmento, cotización por $50 descontables del total y garantía escrita.',
     hero: pic('industrial', {
       alt: 'Sellado de techos residencial, comercial e industrial de Ilatek Techos en Puerto Rico',
       title: 'Techos por segmento · Ilatek Techos',
@@ -24,11 +24,11 @@ export const segmentos = [
       caption: 'Sistema según el uso del techo',
     }),
     heroSub:
-      'No es lo mismo el techo de una casa que el de un edificio comercial: el tránsito, el tamaño y el horario cambian el sistema. Ilatek sella los tres segmentos en {{custom_values.business__county_name}} <b>desde $250</b>, con cotización $0 y garantía escrita.',
+      'No es lo mismo el techo de una casa que el de un edificio comercial: el tránsito, el tamaño y el horario cambian el sistema. Ilatek sella los tres segmentos en {{custom_values.business__county_name}}, con cotización por $50 descontables del total y garantía escrita.',
     facts: [
       { b: '$250', s: 'por sellado', label: 'Precio de entrada' },
       { b: '3', s: 'segmentos', label: 'Cubiertos' },
-      { b: '$0', s: 'cotización', label: 'Gratis, se agenda con $50 reembolsables' },
+      { b: '$50', s: 'visita', label: 'Descontables del total' },
     ],
     benefits: [
       { icon: 'home', h: 'Residencial sin complicarte', p: 'Coordinamos la visita, protegemos tu espacio y trabajamos sin interrumpir la rutina de tu familia.' },
@@ -58,17 +58,17 @@ export const segmentos = [
         { slug: 'sellado-de-techos-comercial', name: 'Sellado Comercial', desc: 'Edificios, tiendas y oficinas: sellado planificado para operar sin cerrar el negocio.' },
         { slug: 'sellado-de-techos-industrial', name: 'Sellado Industrial', desc: 'Naves y plantas: sistemas de alta resistencia para techos de gran superficie.' },
       ],
-      cta: { slug: 'cotizacion', label: 'Solicita tu cotización gratis' },
+      cta: { slug: 'cotizacion', label: 'Solicita tu cotización por $50 descontables del total' },
     },
     faq: [
-      { q: '¿Cuánto cuesta sellar un techo residencial, comercial o industrial?', a: 'El sellado de techos de Ilatek <b>comienza desde $250</b> en todos los segmentos. El precio varía según el sistema, el área y el tipo de superficie. Para proyectos grandes cotizamos por pie² con descuento de escala. La cotización es $0 y se agenda con $50 reembolsables.' },
+      { q: '¿Cuánto cuesta sellar un techo residencial, comercial o industrial?', a: 'El sellado de techos de Ilatek <b>comienza desde $250</b> en todos los segmentos. El precio varía según el sistema, el área y el tipo de superficie. Para proyectos grandes cotizamos por servicio con descuento de escala. La visita o inspección cuesta $50 y se descuenta del total del servicio.' },
       { q: '¿Qué diferencia hay entre sellado residencial, comercial e industrial?', a: 'Cambia el <b>sistema y la logística</b>: el residencial prioriza el trato y el cuidado del espacio; el comercial, la continuidad del negocio; el industrial, la escala y la resistencia de los materiales.' },
       { q: '¿Trabajan en edificios comerciales sin cerrar el negocio?', a: '<b>Sí.</b> Planificamos por fases y horarios para que tu negocio siga operando mientras sellamos el techo, minimizando interrupciones.' },
       { q: '¿Sellan techos industriales de gran superficie?', a: 'Sí: manejamos <b>naves, plantas y galpones</b> de gran tamaño con membranas y sistemas de alta resistencia, y documentamos el trabajo para tu expediente.' },
       { q: '¿Usan el mismo producto para todos los segmentos?', a: '<b>No.</b> El producto depende de la superficie, el tránsito y la exposición. Un techo residencial suele llevar silicona; uno comercial con equipos, membrana o poliuretano.' },
       { q: '¿Ofrecen factura para negocios?', a: '<b>Sí.</b> Emitimos factura e informamos el alcance del trabajo por escrito, útil para gastos operativos y para reclamos si aplica.' },
       { q: '¿El sellado comercial e industrial tiene garantía?', a: '<b>Sí.</b> Entregamos garantía de mano de obra por escrito en todos los segmentos, con materiales certificados.' },
-      { q: '¿Por qué elegir Ilatek Techos?', a: 'Adaptamos sistema y logística a tu tipo de propiedad, <b>desde $2.50 por pie²</b>, con inspección gratis, garantía escrita y cobertura en los 78 municipios de Puerto Rico.' },
+      { q: '¿Por qué elegir Ilatek Techos?', a: 'Adaptamos sistema y logística a tu tipo de propiedad, <b>desde $250</b>, con agenda con $50 descontables del total, garantía escrita y cobertura en los 78 municipios de Puerto Rico.' },
     ],
   }),
 
@@ -81,20 +81,20 @@ export const segmentos = [
     h1after: ' para tu hogar.',
     metaTitle: 'Sellado de Techos Residencial en Puerto Rico | Ilatek Techos',
     metaDescription:
-      'Sellado de techos residencial en Puerto Rico desde $2.50 por pie². Protege tu hogar de filtraciones con inspección gratis y garantía escrita. 78 municipios.',
+      'Sellado de techos residencial en Puerto Rico desde $250. Protege tu hogar de filtraciones con agenda con $50 descontables del total y garantía escrita. 78 municipios.',
     hero: pic('residencial', { alt: 'Sellado de techo residencial en Puerto Rico — {{custom_values.business__county_name}}', title: 'Sellado de techos residencial · Ilatek Techos', badge: 'Para tu hogar' }),
     incl: pic('postconstruccion', { alt: 'Sellado de techo de residencia por Ilatek Techos en Puerto Rico — protección de hogar', title: 'Sellado residencial · Ilatek Techos', caption: 'Tu casa protegida · Trato cuidado' }),
     heroSub:
-      'Tu casa merece un techo que no gotee. Ilatek sella techos residenciales en {{custom_values.business__county_name}} <b>desde $2.50 por pie²</b>: protegemos tu hogar de las filtraciones sin complicarte, con inspección gratis y garantía escrita.',
+      'Tu casa merece un techo que no gotee. Ilatek sella techos residenciales en {{custom_values.business__county_name}}: protegemos tu hogar de las filtraciones sin complicarte, con agenda con $50 descontables del total y garantía escrita.',
     facts: [
-      { b: '$2.50', s: 'por pie²', label: 'Precio base' },
+      { b: '$250', s: 'por servicio', label: 'Precio base' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
-      { b: '$0', s: 'inspección', label: 'Evaluación gratis' },
+      { b: '$50', s: 'visita', label: 'Descontables del total' },
     ],
     benefits: [
       { icon: 'home', h: 'Trato cuidado', p: 'Protegemos tu espacio, trabajamos ordenados y dejamos la casa limpia: el servicio pensado para hogares.' },
       { icon: 'shield', h: 'Protege tu inversión', p: 'El techo es la primera defensa de tu casa: sellarlo a tiempo evita daños caros en el interior.' },
-      { icon: 'tag', h: 'Precio por pie²', p: 'Pagas por lo que mide tu techo, con cotización clara y por escrito, sin sorpresas.' },
+      { icon: 'tag', h: 'Precio por servicio', p: 'Pagas por lo que mide tu techo, con cotización clara y por escrito, sin sorpresas.' },
     ],
     incluye: {
       title: 'Qué incluye el sellado de tu casa.',
@@ -120,14 +120,14 @@ export const segmentos = [
       ],
     },
     faq: [
-      { q: '¿Cuánto cuesta sellar un techo residencial?', a: 'El sellado de techos residencial de Ilatek <b>comienza desde $2.50 por pie²</b>. Un techo típico de 1,200 pies² se cotiza en minutos. El precio final depende del sistema y la condición del techo.' },
+      { q: '¿Cuánto cuesta sellar un techo residencial?', a: 'El sellado de techos residencial de Ilatek <b>comienza desde $250</b>. Un techo típico de 1,200 pies² se cotiza en minutos. El precio final depende del sistema y la condición del techo.' },
       { q: '¿Cada cuánto se sella el techo de una casa?', a: 'En Puerto Rico recomendamos revisar el techo <b>una vez al año</b> y sellar cada 5 a 10 años, según el sistema. La silicona 100% dura de 20 a 25 años; el acrílico, de 7 a 10.' },
       { q: '¿Tengo que estar en la casa durante el trabajo?', a: 'No es obligatorio, pero <b>te recomendamos estar para la inspección y para recibir el trabajo</b>. Coordinamos la visita según tu disponibilidad.' },
       { q: '¿Protegen las plantas y muebles del patio?', a: 'Sí: <b>cubrimos y protegemos</b> lo que esté en el área de trabajo y dejamos el patio como estaba.' },
       { q: '¿Qué sistema de sellado conviene para mi casa?', a: 'Depende del techo: para <b>losas de concreto</b> suele ir silicona o membrana; para <b>techos planos</b>, silicona o membrana; para techos de zinc, tratamiento anticorrosivo. Lo definimos en la inspección.' },
       { q: '¿Cuánto tarda el sellado de una casa?', a: 'Un techo residencial típico se sella en <b>1 a 3 días</b>, según el área y el sistema. Te damos el estimado en la cotización.' },
       { q: '¿El sellado residencial tiene garantía?', a: '<b>Sí.</b> Entregamos garantía de mano de obra por escrito; si el sellado falla en el periodo cubierto, regresamos.' },
-      { q: '¿Por qué elegir Ilatek Techos?', a: 'Protegemos tu casa con el sistema correcto, trato cuidado y <b>precio por pie² desde $2.50</b>, inspección gratis y garantía escrita en los 78 municipios de Puerto Rico.' },
+      { q: '¿Por qué elegir Ilatek Techos?', a: 'Protegemos tu casa con el sistema correcto, trato cuidado y <b>precio desde $250</b>, agenda con $50 descontables del total y garantía escrita en los 78 municipios de Puerto Rico.' },
     ],
   }),
 
@@ -140,13 +140,13 @@ export const segmentos = [
     h1after: ' sin cerrar tu negocio.',
     metaTitle: 'Sellado de Techos Comercial en Puerto Rico | Ilatek Techos',
     metaDescription:
-      'Sellado de techos comercial en Puerto Rico desde $2.50 por pie². Trabajo planificado para operar sin cerrar. Inspección gratis y garantía escrita. 78 municipios.',
+      'Sellado de techos comercial en Puerto Rico desde $250. Trabajo planificado para operar sin cerrar. Agenda con $50 descontables del total y garantía escrita. 78 municipios.',
     hero: pic('comercial', { alt: 'Sellado de techo comercial en Puerto Rico — {{custom_values.business__county_name}}', title: 'Sellado de techos comercial · Ilatek Techos', badge: 'Sin cerrar tu negocio' }),
     incl: pic('industrial', { alt: 'Sellado de techo comercial por Ilatek Techos en Puerto Rico — edificios y oficinas', title: 'Sellado comercial · Ilatek Techos', caption: 'Por fases · Horarios flexibles' }),
     heroSub:
-      'Una filtración en tu negocio cuesta ventas y clientes. Ilatek sella techos comerciales en {{custom_values.business__county_name}} <b>desde $2.50 por pie²</b>, planificando el trabajo para que no tengas que cerrar, con inspección gratis y garantía escrita.',
+      'Una filtración en tu negocio cuesta ventas y clientes. Ilatek sella techos comerciales en {{custom_values.business__county_name}}, planificando el trabajo para que no tengas que cerrar, con agenda con $50 descontables del total y garantía escrita.',
     facts: [
-      { b: '$2.50', s: 'por pie²', label: 'Precio base' },
+      { b: '$250', s: 'por servicio', label: 'Precio base' },
       { b: '3', s: 'turnos', label: 'Horarios flexibles' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
     ],
@@ -179,14 +179,14 @@ export const segmentos = [
       ],
     },
     faq: [
-      { q: '¿Cuánto cuesta sellar un techo comercial?', a: 'El sellado de techos comercial de Ilatek <b>comienza desde $2.50 por pie²</b>, con descuentos por escala en superficies grandes. El precio depende del área, el sistema y el acceso. Cotizamos por proyecto.' },
+      { q: '¿Cuánto cuesta sellar un techo comercial?', a: 'El sellado de techos comercial de Ilatek <b>comienza desde $250</b>, con descuentos por escala en superficies grandes. El precio depende del área, el sistema y el acceso. Cotizamos por proyecto.' },
       { q: '¿Tengo que cerrar mi negocio para el trabajo?', a: '<b>No es necesario.</b> Planificamos por fases y en horarios que no afecten tu operación; en la mayoría de los casos el negocio sigue abierto durante el sellado.' },
       { q: '¿Trabajan de noche o en fin de semana?', a: '<b>Podemos coordinar horarios fuera de tu hora pico</b>, incluyendo noches o fines de semana si el negocio lo requiere. Se define al cotizar.' },
       { q: '¿Qué sistema usan en techos comerciales?', a: 'Normalmente <b>membranas (TPO, EPDM o asfáltica) y poliuretano</b>, porque resisten el tránsito y los equipos sobre la azotea. Elegimos según el uso del techo.' },
       { q: '¿Protegen los equipos de la azotea?', a: '<b>Sí.</b> Cubrimos y protegemos aires acondicionados, ductos y cableado antes de aplicar el sellador, y los dejamos limpios al terminar.' },
       { q: '¿Dan factura y documentación?', a: '<b>Sí.</b> Emitimos factura e informamos el alcance por escrito; también documentamos con fotos el antes y el después cuando se solicita.' },
       { q: '¿El sellado comercial tiene garantía?', a: '<b>Sí.</b> Entregamos garantía de mano de obra por escrito, con membranas y materiales certificados.' },
-      { q: '¿Por qué elegir Ilatek Techos?', a: 'Sellamos tu techo comercial sin detener tu operación, <b>desde $2.50 por pie²</b>, con inspección gratis, garantía escrita y cobertura en los 78 municipios de Puerto Rico.' },
+      { q: '¿Por qué elegir Ilatek Techos?', a: 'Sellamos tu techo comercial sin detener tu operación, <b>desde $250</b>, con agenda con $50 descontables del total, garantía escrita y cobertura en los 78 municipios de Puerto Rico.' },
     ],
   }),
 
@@ -199,19 +199,19 @@ export const segmentos = [
     h1after: ' para grandes superficies.',
     metaTitle: 'Sellado de Techos Industrial en Puerto Rico | Ilatek Techos',
     metaDescription:
-      'Sellado de techos industrial en Puerto Rico. Sistemas de alta resistencia para naves y plantas. Cotización por pie² con inspección gratis y garantía escrita.',
+      'Sellado de techos industrial en Puerto Rico. Sistemas de alta resistencia para naves y plantas. Cotización por servicio con agenda con $50 descontables del total y garantía escrita.',
     hero: pic('industrial', { alt: 'Sellado de techo industrial en Puerto Rico — naves y plantas en {{custom_values.business__county_name}}', title: 'Sellado de techos industrial · Ilatek Techos', badge: 'Alta resistencia' }),
     incl: pic('comercial', { alt: 'Sellado de techo industrial por Ilatek Techos en Puerto Rico — gran superficie', title: 'Sellado industrial · Ilatek Techos', caption: 'Grandes superficies · Materiales de alta resistencia' }),
     heroSub:
-      'Las naves y plantas exigen techos que resistan calor, tránsito y grandes superficies. Ilatek sella techos industriales en {{custom_values.business__county_name}} con sistemas de alta resistencia <b>desde $2.50 por pie²</b>, con cotización por escala e inspección gratis con garantía escrita.',
+      'Las naves y plantas exigen techos que resistan calor, tránsito y grandes superficies. Ilatek sella techos industriales en {{custom_values.business__county_name}} con sistemas de alta resistencia, con cotización por escala e agenda con $50 descontables del total con garantía escrita.',
     facts: [
       { b: 'Alta', s: 'resistencia', label: 'Sistemas industriales' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
-      { b: '$0', s: 'inspección', label: 'Evaluación gratis' },
+      { b: '$50', s: 'visita', label: 'Descontables del total' },
     ],
     benefits: [
       { icon: 'shield', h: 'Materiales de alta resistencia', p: 'Usamos membranas y sistemas capaces de soportar el tránsito, el calor y los equipos propios de una operación industrial.' },
-      { icon: 'tag', h: 'Escala y eficiencia', p: 'Manejamos grandes superficies con planificación por fases y precios por pie² con descuento por volumen.' },
+      { icon: 'tag', h: 'Escala y eficiencia', p: 'Manejamos grandes superficies con planificación por fases y precios por servicio con descuento por volumen.' },
       { icon: 'clock', h: 'Coordinación operativa', p: 'Trabajamos con tu equipo de mantenimiento para no interrumpir la producción ni la seguridad de la planta.' },
     ],
     incluye: {
@@ -238,14 +238,14 @@ export const segmentos = [
       ],
     },
     faq: [
-      { q: '¿Cuánto cuesta sellar un techo industrial?', a: 'El sellado industrial de Ilatek se cotiza <b>por pie² con tarifa de escala</b>, partiendo de $2.50 por pie². Para grandes superficies el precio por pie² baja. Cotizamos el proyecto con visita técnica.' },
+      { q: '¿Cuánto cuesta sellar un techo industrial?', a: 'El sellado industrial de Ilatek se cotiza <b>por servicio con tarifa de escala</b>, partiendo de desde $250. Para grandes superficies el precio por servicio baja. Cotizamos el proyecto con visita técnica.' },
       { q: '¿Qué sistemas usan en techos industriales?', a: 'Principalmente <b>membranas TPO, EPDM y asfálticas modificadas de gran espesor</b>, elegidas por resistencia al tránsito, al calor y al punzonamiento propio de la operación.' },
       { q: '¿Trabajan sin interrumpir la producción?', a: '<b>Sí.</b> Coordinamos por fases con tu equipo de mantenimiento y respetamos los protocolos de seguridad de la planta para no detener la operación.' },
       { q: '¿Manejan techos de gran tamaño?', a: 'Sí: <b>naves, plantas, galpones y almacenes</b> de gran superficie, con planificación de recursos y cronograma por etapas.' },
       { q: '¿Documentan el trabajo para auditorías?', a: '<b>Sí.</b> Podemos documentar el alcance y el antes/después con fotos, útil para expedientes de mantenimiento y reclamos de seguro.' },
       { q: '¿Cuánto tiempo toma un proyecto industrial?', a: 'Depende del área: un proyecto industrial puede tomar <b>varias semanas</b>. Entregamos un cronograma por fases en la propuesta.' },
       { q: '¿El sellado industrial tiene garantía?', a: '<b>Sí.</b> Entregamos garantía de mano de obra por escrito con membranas certificadas y proceso documentado.' },
-      { q: '¿Por qué elegir Ilatek Techos?', a: 'Sistemas de alta resistencia, manejo de gran escala y coordinación operativa, con inspección gratis, garantía escrita y cobertura en los 78 municipios de Puerto Rico.' },
+      { q: '¿Por qué elegir Ilatek Techos?', a: 'Sistemas de alta resistencia, manejo de gran escala y coordinación operativa, con agenda con $50 descontables del total, garantía escrita y cobertura en los 78 municipios de Puerto Rico.' },
     ],
   }),
 ];

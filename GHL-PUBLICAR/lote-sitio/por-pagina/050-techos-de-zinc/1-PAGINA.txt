@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Techos De Zinc
+Slug: techos-de-zinc
+URL: https://ilatekpr.com/techos-de-zinc
+Acción: REPUBLICAR
+Estado hoy: HTTP 200
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (242 KB, sha256 fb0222a0851e)
+Origen en el repo: servicios/techos-de-zinc/es/landing-pages/ghl-techos-de-zinc-landing.html
+Sección de clima: sí
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

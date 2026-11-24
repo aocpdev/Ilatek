@@ -6,7 +6,7 @@
    1) Titular de marca (Home) = UNA SOLA LÍNEA en cualquier ancho. El tamaño se
       deriva del ancho disponible, no de un valor fijo, así que encoge en el
       teléfono en vez de partirse en dos líneas.
-   2) Titulares de oración (héroes de categoría/servicio y la landing de reseñas)
+   2) Titulares de oración (héroes de categoría/servicio y la página de reseñas)
       = tamaño proporcional al ancho del dispositivo con piso legible de 24px.
       Nunca producen más líneas que el diseño actual, solo menos.
    3) Desde 1101px no se altera ningún tamaño: manda el diseño aprobado. Cada
@@ -34,7 +34,7 @@
   .ilt-hero h1,.ilc2-hero h1{
     font-size:clamp(24px,5vw,55px) !important;
   }
-  /* Las páginas de categoría usan .ilr-hero con 5vw. La landing de reseñas ya es
+  /* Las páginas de categoría usan .ilr-hero con 5vw. La página de reseñas ya es
      fluida por su cuenta (3.5vw sobre un piso de 32px, 8vw en el teléfono), así
      que se excluye: forzarla a 5vw le añadía una línea entre 700px y 1100px. */
   .ilr-hero h1:not(#ilatek-resenas-lp *){

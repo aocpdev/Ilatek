@@ -1,0 +1,5011 @@
+[
+ {
+  "slug": "alturas-de-adjuntas",
+  "municipality": "Adjuntas",
+  "name": "Alturas de Adjuntas",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Alturas de Adjuntas\" Adjuntas"
+ },
+ {
+  "slug": "jardines-de-adjuntas",
+  "municipality": "Adjuntas",
+  "name": "Jardines de Adjuntas",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Jardines de Adjuntas\" Adjuntas"
+ },
+ {
+  "slug": "la-granja",
+  "municipality": "Adjuntas",
+  "name": "La Granja",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"La Granja\" Adjuntas"
+ },
+ {
+  "slug": "los-maestros",
+  "municipality": "Adjuntas",
+  "name": "Los Maestros",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Los Maestros\" Adjuntas"
+ },
+ {
+  "slug": "villa-valle-verde",
+  "municipality": "Adjuntas",
+  "name": "Villa Valle Verde",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Villa Valle Verde\" Adjuntas"
+ },
+ {
+  "slug": "table-rock",
+  "municipality": "Aguada",
+  "name": "Table Rock",
+  "priority": "HIGH",
+  "estado": "sin-foto-de-la-comunidad",
+  "consulta": "\"Table Rock\" Aguada"
+ },
+ {
+  "slug": "colinas-del-lago",
+  "municipality": "Aguada",
+  "name": "Colinas del Lago",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Colinas del Lago\" Aguada"
+ },
+ {
+  "slug": "reparto-gonzalez",
+  "municipality": "Aguada",
+  "name": "Reparto González",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Reparto González\" Aguada"
+ },
+ {
+  "slug": "ramey",
+  "municipality": "Aguadilla",
+  "name": "Ramey",
+  "priority": "MEDIUM",
+  "estado": "con-foto",
+  "consulta": "\"Ramey\" Aguadilla",
+  "foto": {
+   "titulo": "File:Borinquen Field-Ramey Air Force Base Museum.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Borinquen_Field-Ramey_Air_Force_Base_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 4032,
+   "alto": 3024,
+   "licencia": "CC BY-SA 3.0",
+   "autor": "Fuzheado (talk)",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Borinquen_Field-Ramey_Air_Force_Base_Museum.jpg",
+   "mencionaMunicipio": false
+  },
+  "alternativas": 2
+ },
+ {
+  "slug": "villa-linda",
+  "municipality": "Aguadilla",
+  "name": "Villa Linda",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Villa Linda\" Aguadilla"
+ },
+ {
+  "slug": "vista-verde",
+  "municipality": "Aguadilla",
+  "name": "Vista Verde",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Vista Verde\" Aguadilla"
+ },
+ {
+  "slug": "hacienda-buena",
+  "municipality": "Aguas Buenas",
+  "name": "Hacienda Buena",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Hacienda Buena\" Aguas Buenas"
+ },
+ {
+  "slug": "brisas-de-palma-sola",
+  "municipality": "Aguas Buenas",
+  "name": "Brisas de Palma Sola",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Brisas de Palma Sola\" Aguas Buenas"
+ },
+ {
+  "slug": "estancias-de-la-sierra",
+  "municipality": "Aguas Buenas",
+  "name": "Estancias de la Sierra",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Estancias de la Sierra\" Aguas Buenas"
+ },
+ {
+  "slug": "hacienda-portal-al-campo",
+  "municipality": "Aguas Buenas",
+  "name": "Hacienda Portal al Campo",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Hacienda Portal al Campo\" Aguas Buenas"
+ },
+ {
+  "slug": "caguitas",
+  "municipality": "Aguas Buenas",
+  "name": "Cagüitas",
+  "priority": "MEDIUM",
+  "estado": "sin-foto-de-la-comunidad",
+  "consulta": "\"Cagüitas\" Aguas Buenas"
+ },
+ {
+  "slug": "jagueyes",
+  "municipality": "Aguas Buenas",
+  "name": "Jagüeyes",
+  "priority": "MEDIUM",
+  "estado": "con-foto",
+  "consulta": "\"Jagüeyes\" Aguas Buenas",
+  "foto": {
+   "titulo": "File:Aguas Buenas - Clubhouse, Hotel Jagueyes.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Aguas_Buenas_-_Clubhouse%2C_Hotel_Jagueyes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 3908,
+   "alto": 2518,
+   "licencia": "Public domain",
+   "autor": "Tichnor Brothers, Inc.",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Aguas_Buenas_-_Clubhouse,_Hotel_Jagueyes.jpg",
+   "mencionaMunicipio": true
+  },
+  "alternativas": 5
+ },
+ {
+  "slug": "la-rampla",
+  "municipality": "Aguas Buenas",
+  "name": "La Rampla",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"La Rampla\" Aguas Buenas"
+ },
+ {
+  "slug": "las-corujas",
+  "municipality": "Aguas Buenas",
+  "name": "Las Corujas",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Las Corujas\" Aguas Buenas"
+ },
+ {
+  "slug": "san-antonio-aguas-buenas",
+  "municipality": "Aguas Buenas",
+  "name": "San Antonio",
+  "priority": "MEDIUM",
+  "estado": "con-foto",
+  "consulta": "\"San Antonio\" Aguas Buenas",
+  "foto": {
+   "titulo": "File:Aguas Buenas (21308487426).jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Aguas_Buenas_%2821308487426%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 4272,
+   "alto": 2848,
+   "licencia": "CC BY 2.0",
+   "autor": "EL GUILLE!",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Aguas_Buenas_(21308487426).jpg",
+   "mencionaMunicipio": true
+  },
+  "alternativas": 1
+ },
+ {
+  "slug": "vistas-de-jagueyes",
+  "municipality": "Aguas Buenas",
+  "name": "Vistas de Jagüeyes",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Vistas de Jagüeyes\" Aguas Buenas"
+ },
+ {
+  "slug": "casa-aibonito-elderly",
+  "municipality": "Aibonito",
+  "name": "Casa Aibonito Elderly",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Casa Aibonito Elderly\" Aibonito"
+ },
+ {
+  "slug": "panoramas-de-aibonito",
+  "municipality": "Aibonito",
+  "name": "Panoramas de Aibonito",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Panoramas de Aibonito\" Aibonito"
+ },
+ {
+  "slug": "urb-jatibonito",
+  "municipality": "Aibonito",
+  "name": "Urb. Jatibonito",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Urb. Jatibonito\" Aibonito"
+ },
+ {
+  "slug": "alturas-del-atlantico",
+  "municipality": "Arecibo",
+  "name": "Alturas del Atlántico",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Alturas del Atlántico\" Arecibo"
+ },
+ {
+  "slug": "campo-real",
+  "municipality": "Arecibo",
+  "name": "Campo Real",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Campo Real\" Arecibo"
+ },
+ {
+  "slug": "colinas-de-palmarito",
+  "municipality": "Arecibo",
+  "name": "Colinas de Palmarito",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Colinas de Palmarito\" Arecibo"
+ },
+ {
+  "slug": "condominios-del-atlantico",
+  "municipality": "Arecibo",
+  "name": "Condominios del Atlántico",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Condominios del Atlántico\" Arecibo"
+ },
+ {
+  "slug": "costa-de-oro",
+  "municipality": "Arecibo",
+  "name": "Costa de Oro",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Costa de Oro\" Arecibo"
+ },
+ {
+  "slug": "costas-del-mar",
+  "municipality": "Arecibo",
+  "name": "Costas del Mar",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Costas del Mar\" Arecibo"
+ },
+ {
+  "slug": "estancias-balseiro",
+  "municipality": "Arecibo",
+  "name": "Estancias Balseiro",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Estancias Balseiro\" Arecibo"
+ },
+ {
+  "slug": "estancias-del-norte",
+  "municipality": "Arecibo",
+  "name": "Estancias del Norte",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Estancias del Norte\" Arecibo"
+ },
+ {
+  "slug": "las-brisas-arecibo",
+  "municipality": "Arecibo",
+  "name": "Las Brisas",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Las Brisas\" Arecibo"
+ },
+ {
+  "slug": "tanama",
+  "municipality": "Arecibo",
+  "name": "Tanamá",
+  "priority": "MEDIUM",
+  "estado": "con-foto",
+  "consulta": "\"Tanamá\" Arecibo",
+  "foto": {
+   "titulo": "File:Arecibo, Puerto Rico Casco urbano Logia Mas nica Tanam (1507220690).jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Arecibo%2C_Puerto_Rico_Casco_urbano_Logia_Mas_nica_Tanam_%281507220690%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 1944,
+   "alto": 2592,
+   "licencia": "CC BY 2.0",
+   "autor": "Oquendo from Freeport, NY",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Arecibo,_Puerto_Rico_Casco_urbano_Logia_Mas_nica_Tanam_(1507220690).jpg",
+   "mencionaMunicipio": true
+  },
+  "alternativas": 1
+ },
+ {
+  "slug": "vista-azul",
+  "municipality": "Arecibo",
+  "name": "Vista Azul",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Vista Azul\" Arecibo"
+ },
+ {
+  "slug": "vistas-del-atlantico",
+  "municipality": "Arecibo",
+  "name": "Vistas del Atlántico",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Vistas del Atlántico\" Arecibo"
+ },
+ {
+  "slug": "extension-valles-de-arroyo",
+  "municipality": "Arroyo",
+  "name": "Extensión Valles de Arroyo",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Extensión Valles de Arroyo\" Arroyo"
+ },
+ {
+  "slug": "isidro-cora",
+  "municipality": "Arroyo",
+  "name": "Isidro Cora",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Isidro Cora\" Arroyo"
+ },
+ {
+  "slug": "jardines-de-lafayette",
+  "municipality": "Arroyo",
+  "name": "Jardines de Lafayette",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Jardines de Lafayette\" Arroyo"
+ },
+ {
+  "slug": "san-antonio",
+  "municipality": "Arroyo",
+  "name": "San Antonio",
+  "priority": "MEDIUM",
+  "estado": "con-foto",
+  "consulta": "\"San Antonio\" Arroyo",
+  "foto": {
+   "titulo": "File:Santa María del Arroyo Ermita.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Santa_Mar%C3%ADa_del_Arroyo_Ermita.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 4288,
+   "alto": 2848,
+   "licencia": "CC BY-SA 3.0",
+   "autor": "Xemenendura",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Santa_Mar%C3%ADa_del_Arroyo_Ermita.jpg",
+   "mencionaMunicipio": true
+  },
+  "alternativas": 3
+ },
+ {
+  "slug": "valles-de-arroyo",
+  "municipality": "Arroyo",
+  "name": "Valles de Arroyo",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Valles de Arroyo\" Arroyo"
+ },
+ {
+  "slug": "paseo-del-valle",
+  "municipality": "Añasco",
+  "name": "Paseo del Valle",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Paseo del Valle\" Añasco"
+ },
+ {
+  "slug": "brisas-de-anasco",
+  "municipality": "Añasco",
+  "name": "Brisas de Añasco",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Brisas de Añasco\" Añasco"
+ },
+ {
+  "slug": "the-francis-villages",
+  "municipality": "Añasco",
+  "name": "The Francis Villages",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"The Francis Villages\" Añasco"
+ },
+ {
+  "slug": "brisas-de-llanadas",
+  "municipality": "Barceloneta",
+  "name": "Brisas de Llanadas",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Brisas de Llanadas\" Barceloneta"
+ },
+ {
+  "slug": "casa-esmeralda",
+  "municipality": "Barceloneta",
+  "name": "Casa Esmeralda",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Casa Esmeralda\" Barceloneta"
+ },
+ {
+  "slug": "isla-de-roque-estate",
+  "municipality": "Barceloneta",
+  "name": "Isla de Roque Estate",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Isla de Roque Estate\" Barceloneta"
+ },
+ {
+  "slug": "la-marina-barceloneta",
+  "municipality": "Barceloneta",
+  "name": "La Marina Barceloneta",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"La Marina Barceloneta\" Barceloneta"
+ },
+ {
+  "slug": "las-praderas-barceloneta",
+  "municipality": "Barceloneta",
+  "name": "Las Praderas",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Las Praderas\" Barceloneta"
+ },
+ {
+  "slug": "villa-georgetti",
+  "municipality": "Barceloneta",
+  "name": "Villa Georgetti",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Villa Georgetti\" Barceloneta"
+ },
+ {
+  "slug": "reparto-san-antonio",
+  "municipality": "Barranquitas",
+  "name": "Reparto San Antonio",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Reparto San Antonio\" Barranquitas"
+ },
+ {
+  "slug": "villa-universitaria",
+  "municipality": "Barranquitas",
+  "name": "Villa Universitaria",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Villa Universitaria\" Barranquitas"
+ },
+ {
+  "slug": "residences-at-rio",
+  "municipality": "Bayamón",
+  "name": "Residences at Rio",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Residences at Rio\" Bayamón"
+ },
+ {
+  "slug": "riviera",
+  "municipality": "Bayamón",
+  "name": "Riviera",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Riviera\" Bayamón"
+ },
+ {
+  "slug": "riviera-parkview",
+  "municipality": "Bayamón",
+  "name": "Riviera Parkview",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Riviera Parkview\" Bayamón"
+ },
+ {
+  "slug": "estancias-de-cerro-gordo",
+  "municipality": "Bayamón",
+  "name": "Estancias de Cerro Gordo",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Estancias de Cerro Gordo\" Bayamón"
+ },
+ {
+  "slug": "estancias-de-rio-hondo",
+  "municipality": "Bayamón",
+  "name": "Estancias de Río Hondo",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Estancias de Río Hondo\" Bayamón"
+ },
+ {
+  "slug": "mirabella-village-and-club",
+  "municipality": "Bayamón",
+  "name": "Mirabella Village and Club",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Mirabella Village and Club\" Bayamón"
+ },
+ {
+  "slug": "quintas-del-rio",
+  "municipality": "Bayamón",
+  "name": "Quintas del Río",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Quintas del Río\" Bayamón"
+ },
+ {
+  "slug": "bayamon-gardens",
+  "municipality": "Bayamón",
+  "name": "Bayamón Gardens",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Bayamón Gardens\" Bayamón"
+ },
+ {
+  "slug": "el-cortijo",
+  "municipality": "Bayamón",
+  "name": "El Cortijo",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"El Cortijo\" Bayamón"
+ },
+ {
+  "slug": "extension-villa-rica",
+  "municipality": "Bayamón",
+  "name": "Extensión Villa Rica",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Extensión Villa Rica\" Bayamón"
+ },
+ {
+  "slug": "flamingo-hills",
+  "municipality": "Bayamón",
+  "name": "Flamingo Hills",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Flamingo Hills\" Bayamón"
+ },
+ {
+  "slug": "jardines-de-caparra",
+  "municipality": "Bayamón",
+  "name": "Jardines de Caparra",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Jardines de Caparra\" Bayamón"
+ },
+ {
+  "slug": "las-americas",
+  "municipality": "Bayamón",
+  "name": "Las Américas",
+  "priority": "MEDIUM",
+  "estado": "sin-foto-de-la-comunidad",
+  "consulta": "\"Las Américas\" Bayamón"
+ },
+ {
+  "slug": "las-torres-norte",
+  "municipality": "Bayamón",
+  "name": "Las Torres Norte",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Las Torres Norte\" Bayamón"
+ },
+ {
+  "slug": "las-torres-sur",
+  "municipality": "Bayamón",
+  "name": "Las Torres Sur",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Las Torres Sur\" Bayamón"
+ },
+ {
+  "slug": "lomas-verdes",
+  "municipality": "Bayamón",
+  "name": "Lomas Verdes",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Lomas Verdes\" Bayamón"
+ },
+ {
+  "slug": "los-dominicos",
+  "municipality": "Bayamón",
+  "name": "Los Dominicos",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Los Dominicos\" Bayamón"
+ },
+ {
+  "slug": "magnolia-gardens",
+  "municipality": "Bayamón",
+  "name": "Magnolia Gardens",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Magnolia Gardens\" Bayamón"
+ },
+ {
+  "slug": "monteclaro",
+  "municipality": "Bayamón",
+  "name": "Monteclaro",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Monteclaro\" Bayamón"
+ },
+ {
+  "slug": "river-park",
+  "municipality": "Bayamón",
+  "name": "River Park",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"River Park\" Bayamón"
+ },
+ {
+  "slug": "royal-gardens",
+  "municipality": "Bayamón",
+  "name": "Royal Gardens",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Royal Gardens\" Bayamón"
+ },
+ {
+  "slug": "santa-juanita",
+  "municipality": "Bayamón",
+  "name": "Santa Juanita",
+  "priority": "MEDIUM",
+  "estado": "sin-foto-de-la-comunidad",
+  "consulta": "\"Santa Juanita\" Bayamón"
+ },
+ {
+  "slug": "santa-rosa",
+  "municipality": "Bayamón",
+  "name": "Santa Rosa",
+  "priority": "MEDIUM",
+  "estado": "con-foto",
+  "consulta": "\"Santa Rosa\" Bayamón",
+  "foto": {
+   "titulo": "File:1940 Census Enumeration District Descriptions - Puerto Rico - Bayamon County - ED 1-1, ED 1-2, ED 1-3 - NARA - 5879197.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/1940_Census_Enumeration_District_Descriptions_-_Puerto_Rico_-_Bayamon_County_-_ED_1-1%2C_ED_1-2%2C_ED_1-3_-_NARA_-_5879197.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 4312,
+   "alto": 2472,
+   "licencia": "Public domain",
+   "autor": "Unknown authorUnknown author or not provided",
+   "pagina": "https://commons.wikimedia.org/wiki/File:1940_Census_Enumeration_District_Descriptions_-_Puerto_Rico_-_Bayamon_County_-_ED_1-1,_ED_1-2,_ED_1-3_-_NARA_-_5879197.jpg",
+   "mencionaMunicipio": true
+  },
+  "alternativas": 1
+ },
+ {
+  "slug": "sierra-taina",
+  "municipality": "Bayamón",
+  "name": "Sierra Taína",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Sierra Taína\" Bayamón"
+ },
+ {
+  "slug": "villa-espana",
+  "municipality": "Bayamón",
+  "name": "Villa España",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Villa España\" Bayamón"
+ },
+ {
+  "slug": "golf-y-playa",
+  "municipality": "Cabo Rojo",
+  "name": "Golf y Playa",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Golf y Playa\" Cabo Rojo"
+ },
+ {
+  "slug": "combate-del-mar",
+  "municipality": "Cabo Rojo",
+  "name": "Combate del Mar",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Combate del Mar\" Cabo Rojo"
+ },
+ {
+  "slug": "paraiso-de-boqueron",
+  "municipality": "Cabo Rojo",
+  "name": "Paraíso de Boquerón",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Paraíso de Boquerón\" Cabo Rojo"
+ },
+ {
+  "slug": "villa-taina",
+  "municipality": "Cabo Rojo",
+  "name": "Villa Taína",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Villa Taína\" Cabo Rojo"
+ },
+ {
+  "slug": "santa-rita-de-casia",
+  "municipality": "Cabo Rojo",
+  "name": "Santa Rita de Casia",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Santa Rita de Casia\" Cabo Rojo"
+ },
+ {
+  "slug": "veredas-del-mar",
+  "municipality": "Cabo Rojo",
+  "name": "Veredas del Mar",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Veredas del Mar\" Cabo Rojo"
+ },
+ {
+  "slug": "bairoa-park",
+  "municipality": "Caguas",
+  "name": "Bairoa Park",
+  "priority": "MEDIUM",
+  "estado": "con-foto",
+  "consulta": "\"Bairoa Park\" Caguas",
+  "foto": {
+   "titulo": "File:Bairoa Park.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Bairoa_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 5472,
+   "alto": 3648,
+   "licencia": "CC0",
+   "autor": "BrickLightning",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Bairoa_Park.jpg",
+   "mencionaMunicipio": false
+  },
+  "alternativas": 1
+ },
+ {
+  "slug": "bonneville-townhouses",
+  "municipality": "Caguas",
+  "name": "Bonneville Townhouses",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Bonneville Townhouses\" Caguas"
+ },
+ {
+  "slug": "caguas-real-mansiones-del-golf",
+  "municipality": "Caguas",
+  "name": "Caguas Real - Mansiones del Golf",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Caguas Real - Mansiones del Golf\" Caguas"
+ },
+ {
+  "slug": "caguas-real-villas-del-golf",
+  "municipality": "Caguas",
+  "name": "Caguas Real - Villas del Golf",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Caguas Real - Villas del Golf\" Caguas"
+ },
+ {
+  "slug": "ciudad-jardin-la-cima",
+  "municipality": "Caguas",
+  "name": "Ciudad Jardín - La Cima",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Ciudad Jardín - La Cima\" Caguas"
+ },
+ {
+  "slug": "el-retiro",
+  "municipality": "Caguas",
+  "name": "El Retiro",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"El Retiro\" Caguas"
+ },
+ {
+  "slug": "el-verde",
+  "municipality": "Caguas",
+  "name": "El Verde",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"El Verde\" Caguas"
+ },
+ {
+  "slug": "golden-gate-i",
+  "municipality": "Caguas",
+  "name": "Golden Gate I",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Golden Gate I\" Caguas"
+ },
+ {
+  "slug": "hacienda-san-jose",
+  "municipality": "Caguas",
+  "name": "Hacienda San José",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Hacienda San José\" Caguas"
+ },
+ {
+  "slug": "los-flamboyanes-caguas",
+  "municipality": "Caguas",
+  "name": "Los Flamboyanes",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Los Flamboyanes\" Caguas"
+ },
+ {
+  "slug": "los-prados-el-valle",
+  "municipality": "Caguas",
+  "name": "Los Prados - El Valle",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Los Prados - El Valle\" Caguas"
+ },
+ {
+  "slug": "los-prados-la-reserva",
+  "municipality": "Caguas",
+  "name": "Los Prados - La Reserva",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Los Prados - La Reserva\" Caguas"
+ },
+ {
+  "slug": "residencial-castellon",
+  "municipality": "Caguas",
+  "name": "Residencial Castellón",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Residencial Castellón\" Caguas"
+ },
+ {
+  "slug": "villa-del-rey-1ra",
+  "municipality": "Caguas",
+  "name": "Villa del Rey 1ra Sección",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Villa del Rey 1ra Sección\" Caguas"
+ },
+ {
+  "slug": "villa-del-rey-4ta",
+  "municipality": "Caguas",
+  "name": "Villa del Rey 4ta Sección",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Villa del Rey 4ta Sección\" Caguas"
+ },
+ {
+  "slug": "haciendas-de-camuy",
+  "municipality": "Camuy",
+  "name": "Haciendas de Camuy",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Haciendas de Camuy\" Camuy"
+ },
+ {
+  "slug": "alturas-de-camuy",
+  "municipality": "Camuy",
+  "name": "Alturas de Camuy",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Alturas de Camuy\" Camuy"
+ },
+ {
+  "slug": "brisas-de-camuy",
+  "municipality": "Camuy",
+  "name": "Brisas de Camuy",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Brisas de Camuy\" Camuy"
+ },
+ {
+  "slug": "las-veredas-camuy",
+  "municipality": "Camuy",
+  "name": "Las Veredas",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Las Veredas\" Camuy"
+ },
+ {
+  "slug": "vistas-de-camuy",
+  "municipality": "Camuy",
+  "name": "Vistas de Camuy",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Vistas de Camuy\" Camuy"
+ },
+ {
+  "slug": "forest-plantation",
+  "municipality": "Canóvanas",
+  "name": "Forest Plantation",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Forest Plantation\" Canóvanas"
+ },
+ {
+  "slug": "ciudad-jardin",
+  "municipality": "Canóvanas",
+  "name": "Ciudad Jardín",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Ciudad Jardín\" Canóvanas"
+ },
+ {
+  "slug": "condesa-del-mar",
+  "municipality": "Carolina",
+  "name": "Condesa del Mar",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Condesa del Mar\" Carolina"
+ },
+ {
+  "slug": "esmeralda",
+  "municipality": "Carolina",
+  "name": "Esmeralda",
+  "priority": "LUXURY",
+  "estado": "sin-foto-de-la-comunidad",
+  "consulta": "\"Esmeralda\" Carolina"
+ },
+ {
+  "slug": "isla-verde",
+  "municipality": "Carolina",
+  "name": "Isla Verde",
+  "priority": "LUXURY",
+  "estado": "con-foto",
+  "consulta": "\"Isla Verde\" Carolina",
+  "foto": {
+   "titulo": "File:Teodoro Moscoso Bridge (PR-17) connecting San Juan and Isla Verde, Carolina, Puerto Rico.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Teodoro_Moscoso_Bridge_%28PR-17%29_connecting_San_Juan_and_Isla_Verde%2C_Carolina%2C_Puerto_Rico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 4884,
+   "alto": 3256,
+   "licencia": "CC BY 2.0",
+   "autor": "Thank You (21 Millions+) views",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Teodoro_Moscoso_Bridge_(PR-17)_connecting_San_Juan_and_Isla_Verde,_Carolina,_Puerto_Rico.jpg",
+   "mencionaMunicipio": true
+  },
+  "alternativas": 7
+ },
+ {
+  "slug": "marbella-del-caribe-este",
+  "municipality": "Carolina",
+  "name": "Marbella del Caribe Este",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Marbella del Caribe Este\" Carolina"
+ },
+ {
+  "slug": "sevilla",
+  "municipality": "Carolina",
+  "name": "Sevilla",
+  "priority": "LUXURY",
+  "estado": "con-foto",
+  "consulta": "\"Sevilla\" Carolina",
+  "foto": {
+   "titulo": "File:Premios Goya 2019 - Carolina Bang.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Premios_Goya_2019_-_Carolina_Bang.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 2438,
+   "alto": 3657,
+   "licencia": "CC BY-SA 4.0",
+   "autor": "Pedro J Pacheco",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Premios_Goya_2019_-_Carolina_Bang.jpg",
+   "mencionaMunicipio": true
+  },
+  "alternativas": 2
+ },
+ {
+  "slug": "villamar",
+  "municipality": "Carolina",
+  "name": "Villamar",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Villamar\" Carolina"
+ },
+ {
+  "slug": "vistamar",
+  "municipality": "Carolina",
+  "name": "Vistamar",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Vistamar\" Carolina"
+ },
+ {
+  "slug": "vistamar-marina",
+  "municipality": "Carolina",
+  "name": "Vistamar Marina",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Vistamar Marina\" Carolina"
+ },
+ {
+  "slug": "waldorf-tower",
+  "municipality": "Carolina",
+  "name": "Waldorf Tower",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Waldorf Tower\" Carolina"
+ },
+ {
+  "slug": "coral-beach-towers",
+  "municipality": "Carolina",
+  "name": "Coral Beach Towers",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Coral Beach Towers\" Carolina"
+ },
+ {
+  "slug": "country-club",
+  "municipality": "Carolina",
+  "name": "Country Club",
+  "priority": "HIGH",
+  "estado": "con-foto",
+  "consulta": "\"Country Club\" Carolina",
+  "foto": {
+   "titulo": "File:Greenville - Country Club.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Greenville_-_Country_Club.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 1887,
+   "alto": 1212,
+   "licencia": "Public domain",
+   "autor": "Asheville Post Card Co.",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Greenville_-_Country_Club.jpg",
+   "mencionaMunicipio": true
+  },
+  "alternativas": 3
+ },
+ {
+  "slug": "esj-tower",
+  "municipality": "Carolina",
+  "name": "ESJ Tower",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"ESJ Tower\" Carolina"
+ },
+ {
+  "slug": "estancias-de-san-fernando",
+  "municipality": "Carolina",
+  "name": "Estancias de San Fernando",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Estancias de San Fernando\" Carolina"
+ },
+ {
+  "slug": "jardines-de-country-club",
+  "municipality": "Carolina",
+  "name": "Jardines de Country Club",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Jardines de Country Club\" Carolina"
+ },
+ {
+  "slug": "racquet-club",
+  "municipality": "Carolina",
+  "name": "Racquet Club",
+  "priority": "HIGH",
+  "estado": "sin-foto-de-la-comunidad",
+  "consulta": "\"Racquet Club\" Carolina"
+ },
+ {
+  "slug": "sabana-gardens",
+  "municipality": "Carolina",
+  "name": "Sabana Gardens",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Sabana Gardens\" Carolina"
+ },
+ {
+  "slug": "valle-arriba-heights",
+  "municipality": "Carolina",
+  "name": "Valle Arriba Heights",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Valle Arriba Heights\" Carolina"
+ },
+ {
+  "slug": "valle-escondido",
+  "municipality": "Carolina",
+  "name": "Valle Escondido",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Valle Escondido\" Carolina"
+ },
+ {
+  "slug": "jose-severo-quinones",
+  "municipality": "Carolina",
+  "name": "José Severo Quiñones",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"José Severo Quiñones\" Carolina"
+ },
+ {
+  "slug": "la-posada",
+  "municipality": "Carolina",
+  "name": "La Posada",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"La Posada\" Carolina"
+ },
+ {
+  "slug": "laguna-gardens-2",
+  "municipality": "Carolina",
+  "name": "Laguna Gardens 2",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Laguna Gardens 2\" Carolina"
+ },
+ {
+  "slug": "paseo-del-rey",
+  "municipality": "Carolina",
+  "name": "Paseo del Rey",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Paseo del Rey\" Carolina"
+ },
+ {
+  "slug": "rolling-hills",
+  "municipality": "Carolina",
+  "name": "Rolling Hills",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Rolling Hills\" Carolina"
+ },
+ {
+  "slug": "villa-carolina",
+  "municipality": "Carolina",
+  "name": "Villa Carolina",
+  "priority": "MEDIUM",
+  "estado": "con-foto",
+  "consulta": "\"Villa Carolina\" Carolina",
+  "foto": {
+   "titulo": "File:Villa Carolina, dirección calle Tomás María Ariño, N.º 132, de Manzanera.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Villa_Carolina%2C_direcci%C3%B3n_calle_Tom%C3%A1s_Mar%C3%ADa_Ari%C3%B1o%2C_N.%C2%BA_132%2C_de_Manzanera.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 5184,
+   "alto": 3888,
+   "licencia": "CC BY 4.0",
+   "autor": "Juan Emilio Prades Bel",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Villa_Carolina,_direcci%C3%B3n_calle_Tom%C3%A1s_Mar%C3%ADa_Ari%C3%B1o,_N.%C2%BA_132,_de_Manzanera.jpg",
+   "mencionaMunicipio": true
+  },
+  "alternativas": 5
+ },
+ {
+  "slug": "villa-fontana",
+  "municipality": "Carolina",
+  "name": "Villa Fontana",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Villa Fontana\" Carolina"
+ },
+ {
+  "slug": "bay-view",
+  "municipality": "Cataño",
+  "name": "Bay View",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Bay View\" Cataño"
+ },
+ {
+  "slug": "dos-rios",
+  "municipality": "Cataño",
+  "name": "Dos Ríos",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Dos Ríos\" Cataño"
+ },
+ {
+  "slug": "enramada",
+  "municipality": "Cataño",
+  "name": "Enramada",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Enramada\" Cataño"
+ },
+ {
+  "slug": "jardines-de-catano",
+  "municipality": "Cataño",
+  "name": "Jardines de Cataño",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Jardines de Cataño\" Cataño"
+ },
+ {
+  "slug": "las-vegas",
+  "municipality": "Cataño",
+  "name": "Las Vegas",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Las Vegas\" Cataño"
+ },
+ {
+  "slug": "mansion-del-norte",
+  "municipality": "Cataño",
+  "name": "Mansión del Norte",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Mansión del Norte\" Cataño"
+ },
+ {
+  "slug": "mansion-del-rio",
+  "municipality": "Cataño",
+  "name": "Mansión del Río",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Mansión del Río\" Cataño"
+ },
+ {
+  "slug": "mansion-del-sur",
+  "municipality": "Cataño",
+  "name": "Mansión del Sur",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Mansión del Sur\" Cataño"
+ },
+ {
+  "slug": "marina-bahia",
+  "municipality": "Cataño",
+  "name": "Marina Bahía",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Marina Bahía\" Cataño"
+ },
+ {
+  "slug": "pradera",
+  "municipality": "Cataño",
+  "name": "Pradera",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Pradera\" Cataño"
+ },
+ {
+  "slug": "valparaiso",
+  "municipality": "Cataño",
+  "name": "Valparaíso",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Valparaíso\" Cataño"
+ },
+ {
+  "slug": "villa-aurora",
+  "municipality": "Cataño",
+  "name": "Villa Aurora",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Villa Aurora\" Cataño"
+ },
+ {
+  "slug": "mansiones-monte-verde",
+  "municipality": "Cayey",
+  "name": "Mansiones Monte Verde",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Mansiones Monte Verde\" Cayey"
+ },
+ {
+  "slug": "alturas-de-montellanos",
+  "municipality": "Cayey",
+  "name": "Alturas de Montellanos",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Alturas de Montellanos\" Cayey"
+ },
+ {
+  "slug": "brisas-de-cayey",
+  "municipality": "Cayey",
+  "name": "Brisas de Cayey",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Brisas de Cayey\" Cayey"
+ },
+ {
+  "slug": "jardines-de-cayey",
+  "municipality": "Cayey",
+  "name": "Jardines de Cayey",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Jardines de Cayey\" Cayey"
+ },
+ {
+  "slug": "jardines-de-montellano",
+  "municipality": "Cayey",
+  "name": "Jardines de Montellano",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Jardines de Montellano\" Cayey"
+ },
+ {
+  "slug": "luis-munoz-morales",
+  "municipality": "Cayey",
+  "name": "Luis Muñoz Morales",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Luis Muñoz Morales\" Cayey"
+ },
+ {
+  "slug": "villas-de-beatriz-johnny-toledo",
+  "municipality": "Cayey",
+  "name": "Villas de Beatriz (Johnny Toledo)",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Villas de Beatriz (Johnny Toledo)\" Cayey"
+ },
+ {
+  "slug": "the-village-at-the-hill",
+  "municipality": "Ceiba",
+  "name": "The Village at the Hill",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"The Village at the Hill\" Ceiba"
+ },
+ {
+  "slug": "castillos-del-mar",
+  "municipality": "Ceiba",
+  "name": "Castillos del Mar",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Castillos del Mar\" Ceiba"
+ },
+ {
+  "slug": "paseo-de-la-costa",
+  "municipality": "Ceiba",
+  "name": "Paseo de la Costa",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Paseo de la Costa\" Ceiba"
+ },
+ {
+  "slug": "brisas-de-ceiba",
+  "municipality": "Ceiba",
+  "name": "Brisas de Ceiba",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Brisas de Ceiba\" Ceiba"
+ },
+ {
+  "slug": "costa-brava",
+  "municipality": "Ceiba",
+  "name": "Costa Brava",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Costa Brava\" Ceiba"
+ },
+ {
+  "slug": "costa-esmeralda",
+  "municipality": "Ceiba",
+  "name": "Costa Esmeralda",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Costa Esmeralda\" Ceiba"
+ },
+ {
+  "slug": "jardines-de-ceiba-i",
+  "municipality": "Ceiba",
+  "name": "Jardines de Ceiba I",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Jardines de Ceiba I\" Ceiba"
+ },
+ {
+  "slug": "jardines-de-ceiba-ii",
+  "municipality": "Ceiba",
+  "name": "Jardines de Ceiba II",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Jardines de Ceiba II\" Ceiba"
+ },
+ {
+  "slug": "alturas-de-ciales",
+  "municipality": "Ciales",
+  "name": "Alturas de Ciales",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Alturas de Ciales\" Ciales"
+ },
+ {
+  "slug": "dos-rios",
+  "municipality": "Ciales",
+  "name": "Dos Ríos",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Dos Ríos\" Ciales"
+ },
+ {
+  "slug": "fernando-sierra-berdecia",
+  "municipality": "Ciales",
+  "name": "Fernando Sierra Berdecía",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Fernando Sierra Berdecía\" Ciales"
+ },
+ {
+  "slug": "los-llanos",
+  "municipality": "Ciales",
+  "name": "Los Llanos",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Los Llanos\" Ciales"
+ },
+ {
+  "slug": "jardines-de-villa-del-carmen",
+  "municipality": "Cidra",
+  "name": "Jardines de Villa del Carmen",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Jardines de Villa del Carmen\" Cidra"
+ },
+ {
+  "slug": "treasure-valley",
+  "municipality": "Cidra",
+  "name": "Treasure Valley",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Treasure Valley\" Cidra"
+ },
+ {
+  "slug": "bosque-real",
+  "municipality": "Cidra",
+  "name": "Bosque Real",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Bosque Real\" Cidra"
+ },
+ {
+  "slug": "estancias-del-bosque",
+  "municipality": "Cidra",
+  "name": "Estancias del Bosque",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Estancias del Bosque\" Cidra"
+ },
+ {
+  "slug": "hacienda-la-paloma",
+  "municipality": "Cidra",
+  "name": "Hacienda La Paloma",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Hacienda La Paloma\" Cidra"
+ },
+ {
+  "slug": "jardines-de-cidra",
+  "municipality": "Cidra",
+  "name": "Jardines de Cidra",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Jardines de Cidra\" Cidra"
+ },
+ {
+  "slug": "jardines-de-rabanal",
+  "municipality": "Cidra",
+  "name": "Jardines de Rabanal",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Jardines de Rabanal\" Cidra"
+ },
+ {
+  "slug": "sabanaera",
+  "municipality": "Cidra",
+  "name": "Sabanaera",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Sabanaera\" Cidra"
+ },
+ {
+  "slug": "villas-del-bosque",
+  "municipality": "Cidra",
+  "name": "Villas del Bosque",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Villas del Bosque\" Cidra"
+ },
+ {
+  "slug": "coamo-housing",
+  "municipality": "Coamo",
+  "name": "Coamo Housing",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Coamo Housing\" Coamo"
+ },
+ {
+  "slug": "jardines-del-eden",
+  "municipality": "Coamo",
+  "name": "Jardines del Edén",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Jardines del Edén\" Coamo"
+ },
+ {
+  "slug": "las-fuentes-de-coamo",
+  "municipality": "Coamo",
+  "name": "Las Fuentes de Coamo",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Las Fuentes de Coamo\" Coamo"
+ },
+ {
+  "slug": "las-palmas",
+  "municipality": "Coamo",
+  "name": "Las Palmas",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Las Palmas\" Coamo"
+ },
+ {
+  "slug": "reparto-del-carmen",
+  "municipality": "Coamo",
+  "name": "Reparto del Carmen",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Reparto del Carmen\" Coamo"
+ },
+ {
+  "slug": "urbanizacion-el-eden",
+  "municipality": "Coamo",
+  "name": "Urbanización El Edén",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Urbanización El Edén\" Coamo"
+ },
+ {
+  "slug": "villa-madrid",
+  "municipality": "Coamo",
+  "name": "Villa Madrid",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Villa Madrid\" Coamo"
+ },
+ {
+  "slug": "condominios-brisas-de-la-sierra",
+  "municipality": "Comerío",
+  "name": "Condominios Brisas de la Sierra",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Condominios Brisas de la Sierra\" Comerío"
+ },
+ {
+  "slug": "condominios-monte-flor",
+  "municipality": "Comerío",
+  "name": "Condominios Monte Flor",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Condominios Monte Flor\" Comerío"
+ },
+ {
+  "slug": "residencial-manuel-martorell-perez",
+  "municipality": "Comerío",
+  "name": "Residencial Manuel Martorell Pérez",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Residencial Manuel Martorell Pérez\" Comerío"
+ },
+ {
+  "slug": "urbanizacion-hacienda-campo-bello",
+  "municipality": "Comerío",
+  "name": "Urbanización Hacienda Campo Bello",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Urbanización Hacienda Campo Bello\" Comerío"
+ },
+ {
+  "slug": "urbanizacion-la-hacienda",
+  "municipality": "Comerío",
+  "name": "Urbanización La Hacienda",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Urbanización La Hacienda\" Comerío"
+ },
+ {
+  "slug": "urbanizacion-rio-plata",
+  "municipality": "Comerío",
+  "name": "Urbanización Río Plata",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Urbanización Río Plata\" Comerío"
+ },
+ {
+  "slug": "urbanizacion-sabana-del-palmar",
+  "municipality": "Comerío",
+  "name": "Urbanización Sabana del Palmar",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Urbanización Sabana del Palmar\" Comerío"
+ },
+ {
+  "slug": "urbanizacion-san-andres",
+  "municipality": "Comerío",
+  "name": "Urbanización San Andrés",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Urbanización San Andrés\" Comerío"
+ },
+ {
+  "slug": "urbanizacion-vista-verde",
+  "municipality": "Comerío",
+  "name": "Urbanización Vista Verde",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Urbanización Vista Verde\" Comerío"
+ },
+ {
+  "slug": "alturas-del-cibuco",
+  "municipality": "Corozal",
+  "name": "Alturas del Cibuco",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Alturas del Cibuco\" Corozal"
+ },
+ {
+  "slug": "enrique-landron",
+  "municipality": "Corozal",
+  "name": "Enrique Landrón",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Enrique Landrón\" Corozal"
+ },
+ {
+  "slug": "costa-bonita-beach-resort",
+  "municipality": "Culebra",
+  "name": "Costa Bonita Beach Resort",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Costa Bonita Beach Resort\" Culebra"
+ },
+ {
+  "slug": "posada-del-coronel",
+  "municipality": "Culebra",
+  "name": "Posada del Coronel",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Posada del Coronel\" Culebra"
+ },
+ {
+  "slug": "dorado-beach-east",
+  "municipality": "Dorado",
+  "name": "Dorado Beach East",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Dorado Beach East\" Dorado"
+ },
+ {
+  "slug": "east-beach",
+  "municipality": "Dorado",
+  "name": "East Beach",
+  "priority": "LUXURY",
+  "estado": "con-foto",
+  "consulta": "\"East Beach\" Dorado",
+  "foto": {
+   "titulo": "File:Lossie-east-beach-esplanade.JPG",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Lossie-east-beach-esplanade.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 3296,
+   "alto": 2472,
+   "licencia": "CC BY-SA 3.0",
+   "autor": "Scott Barclay",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Lossie-east-beach-esplanade.JPG",
+   "mencionaMunicipio": false
+  },
+  "alternativas": 5
+ },
+ {
+  "slug": "la-cala",
+  "municipality": "Dorado",
+  "name": "La Cala",
+  "priority": "LUXURY",
+  "estado": "con-foto",
+  "consulta": "\"La Cala\" Dorado",
+  "foto": {
+   "titulo": "File:Mallorca - Cala dor Cala Gran.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Mallorca_-_Cala_dor_Cala_Gran.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 6720,
+   "alto": 2470,
+   "licencia": "CC BY-SA 4.0",
+   "autor": "S. Plaine",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Mallorca_-_Cala_dor_Cala_Gran.jpg",
+   "mencionaMunicipio": false
+  },
+  "alternativas": 6
+ },
+ {
+  "slug": "livingston-estates",
+  "municipality": "Dorado",
+  "name": "Livingston Estates",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Livingston Estates\" Dorado"
+ },
+ {
+  "slug": "plantation-village",
+  "municipality": "Dorado",
+  "name": "Plantation Village",
+  "priority": "LUXURY",
+  "estado": "con-foto",
+  "consulta": "\"Plantation Village\" Dorado",
+  "foto": {
+   "titulo": "File:Asphodel 2.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Asphodel_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 2926,
+   "alto": 1946,
+   "licencia": "CC BY-SA 4.0",
+   "autor": "Z28scrambler",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Asphodel_2.jpg",
+   "mencionaMunicipio": false
+  },
+  "alternativas": 2
+ },
+ {
+  "slug": "the-enclave",
+  "municipality": "Dorado",
+  "name": "The Enclave",
+  "priority": "LUXURY",
+  "estado": "con-foto",
+  "consulta": "\"The Enclave\" Dorado",
+  "foto": {
+   "titulo": "File:Scenes From Southern Afghanistan DVIDS328130.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Scenes_From_Southern_Afghanistan_DVIDS328130.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 4029,
+   "alto": 2676,
+   "licencia": "Public domain",
+   "autor": "Staff Sgt. Ian M. Terry",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Scenes_From_Southern_Afghanistan_DVIDS328130.jpg",
+   "mencionaMunicipio": false
+  },
+  "alternativas": 3
+ },
+ {
+  "slug": "the-isles",
+  "municipality": "Dorado",
+  "name": "The Isles",
+  "priority": "LUXURY",
+  "estado": "con-foto",
+  "consulta": "\"The Isles\" Dorado",
+  "foto": {
+   "titulo": "File:Guiding Star July 2026 02.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Guiding_Star_July_2026_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 5288,
+   "alto": 3966,
+   "licencia": "CC BY-SA 4.0",
+   "autor": "ArildV",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Guiding_Star_July_2026_02.jpg",
+   "mencionaMunicipio": false
+  },
+  "alternativas": 8
+ },
+ {
+  "slug": "the-legacy",
+  "municipality": "Dorado",
+  "name": "The Legacy",
+  "priority": "LUXURY",
+  "estado": "con-foto",
+  "consulta": "\"The Legacy\" Dorado",
+  "foto": {
+   "titulo": "File:Biblioteca Regional Gabriela Mistral.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Biblioteca_Regional_Gabriela_Mistral.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 5670,
+   "alto": 3152,
+   "licencia": "CC BY-SA 4.0",
+   "autor": "Rjcastillo",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Biblioteca_Regional_Gabriela_Mistral.jpg",
+   "mencionaMunicipio": false
+  },
+  "alternativas": 4
+ },
+ {
+  "slug": "west-beach",
+  "municipality": "Dorado",
+  "name": "West Beach",
+  "priority": "LUXURY",
+  "estado": "con-foto",
+  "consulta": "\"West Beach\" Dorado",
+  "foto": {
+   "titulo": "File:Norderney, Weststrand, Hotel -- 2018 -- 1050.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Norderney%2C_Weststrand%2C_Hotel_--_2018_--_1050.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 6720,
+   "alto": 4480,
+   "licencia": "CC BY-SA 4.0",
+   "autor": "Dietmar Rabich",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Norderney,_Weststrand,_Hotel_--_2018_--_1050.jpg",
+   "mencionaMunicipio": false
+  },
+  "alternativas": 6
+ },
+ {
+  "slug": "west-point",
+  "municipality": "Dorado",
+  "name": "West Point",
+  "priority": "LUXURY",
+  "estado": "con-foto",
+  "consulta": "\"West Point\" Dorado",
+  "foto": {
+   "titulo": "File:Ulysses S. Grant from West Point to Appomattox.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Ulysses_S._Grant_from_West_Point_to_Appomattox.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 5626,
+   "alto": 7412,
+   "licencia": "Public domain",
+   "autor": "Thure de Thulstrup / Adam Cuerden",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Ulysses_S._Grant_from_West_Point_to_Appomattox.jpg",
+   "mencionaMunicipio": false
+  },
+  "alternativas": 4
+ },
+ {
+  "slug": "dorado-del-mar",
+  "municipality": "Dorado",
+  "name": "Dorado del Mar",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Dorado del Mar\" Dorado"
+ },
+ {
+  "slug": "sabanera-dorado",
+  "municipality": "Dorado",
+  "name": "Sabanera Dorado",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Sabanera Dorado\" Dorado"
+ },
+ {
+  "slug": "villas-de-golf-este",
+  "municipality": "Dorado",
+  "name": "Villas de Golf Este",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Villas de Golf Este\" Dorado"
+ },
+ {
+  "slug": "costa-dorada",
+  "municipality": "Dorado",
+  "name": "Costa Dorada",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Costa Dorada\" Dorado"
+ },
+ {
+  "slug": "ocean-villas",
+  "municipality": "Dorado",
+  "name": "Ocean Villas",
+  "priority": "MEDIUM",
+  "estado": "con-foto",
+  "consulta": "\"Ocean Villas\" Dorado",
+  "foto": {
+   "titulo": "File:The Westin Nanea Ocean Villas, Ka'anapali.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/The_Westin_Nanea_Ocean_Villas%2C_Ka%27anapali.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 8010,
+   "alto": 3896,
+   "licencia": "CC BY-SA 4.0",
+   "autor": "Peaceray",
+   "pagina": "https://commons.wikimedia.org/wiki/File:The_Westin_Nanea_Ocean_Villas,_Ka%27anapali.jpg",
+   "mencionaMunicipio": false
+  },
+  "alternativas": 2
+ },
+ {
+  "slug": "pena-mar-ocean-club",
+  "municipality": "Fajardo",
+  "name": "Peña Mar Ocean Club",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Peña Mar Ocean Club\" Fajardo"
+ },
+ {
+  "slug": "puertas-del-sol",
+  "municipality": "Fajardo",
+  "name": "Puertas del Sol",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Puertas del Sol\" Fajardo"
+ },
+ {
+  "slug": "the-ocean-club-at-seven-seas",
+  "municipality": "Fajardo",
+  "name": "The Ocean Club at Seven Seas",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"The Ocean Club at Seven Seas\" Fajardo"
+ },
+ {
+  "slug": "dos-marinas-ii",
+  "municipality": "Fajardo",
+  "name": "Dos Marinas II",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Dos Marinas II\" Fajardo"
+ },
+ {
+  "slug": "monte-brisas",
+  "municipality": "Fajardo",
+  "name": "Monte Brisas",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Monte Brisas\" Fajardo"
+ },
+ {
+  "slug": "santa-isidra",
+  "municipality": "Fajardo",
+  "name": "Santa Isidra",
+  "priority": "MEDIUM",
+  "estado": "con-foto",
+  "consulta": "\"Santa Isidra\" Fajardo",
+  "foto": {
+   "titulo": "File:1940 Census Enumeration District Descriptions - Puerto Rico - Fajardo County - ED 66-15 - NARA - 5879268.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/1940_Census_Enumeration_District_Descriptions_-_Puerto_Rico_-_Fajardo_County_-_ED_66-15_-_NARA_-_5879268.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 4408,
+   "alto": 2456,
+   "licencia": "Public domain",
+   "autor": "Unknown authorUnknown author or not provided",
+   "pagina": "https://commons.wikimedia.org/wiki/File:1940_Census_Enumeration_District_Descriptions_-_Puerto_Rico_-_Fajardo_County_-_ED_66-15_-_NARA_-_5879268.jpg",
+   "mencionaMunicipio": true
+  },
+  "alternativas": 1
+ },
+ {
+  "slug": "valle-puerto-real",
+  "municipality": "Fajardo",
+  "name": "Valle Puerto Real",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Valle Puerto Real\" Fajardo"
+ },
+ {
+  "slug": "villa-marina",
+  "municipality": "Fajardo",
+  "name": "Villa Marina",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Villa Marina\" Fajardo"
+ },
+ {
+  "slug": "hacienda-de-florida",
+  "municipality": "Florida",
+  "name": "Hacienda de Florida",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Hacienda de Florida\" Florida"
+ },
+ {
+  "slug": "altos-de-florida",
+  "municipality": "Florida",
+  "name": "Altos de Florida",
+  "priority": "MEDIUM",
+  "estado": "con-foto",
+  "consulta": "\"Altos de Florida\" Florida",
+  "foto": {
+   "titulo": "File:Miami Sunset (45863661094).jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Miami_Sunset_%2845863661094%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 5972,
+   "alto": 3359,
+   "licencia": "CC0",
+   "autor": "Joe deSousa",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Miami_Sunset_(45863661094).jpg",
+   "mencionaMunicipio": true
+  },
+  "alternativas": 4
+ },
+ {
+  "slug": "alturas-de-florida",
+  "municipality": "Florida",
+  "name": "Alturas de Florida",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Alturas de Florida\" Florida"
+ },
+ {
+  "slug": "jardines-de-florida",
+  "municipality": "Florida",
+  "name": "Jardines de Florida",
+  "priority": "MEDIUM",
+  "estado": "sin-foto-de-la-comunidad",
+  "consulta": "\"Jardines de Florida\" Florida"
+ },
+ {
+  "slug": "caribe-mar",
+  "municipality": "Guayama",
+  "name": "Caribe Mar",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Caribe Mar\" Guayama"
+ },
+ {
+  "slug": "carioca",
+  "municipality": "Guayama",
+  "name": "Carioca",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Carioca\" Guayama"
+ },
+ {
+  "slug": "fernando-calimano",
+  "municipality": "Guayama",
+  "name": "Fernando Calimano",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Fernando Calimano\" Guayama"
+ },
+ {
+  "slug": "jardines-de-guamani",
+  "municipality": "Guayama",
+  "name": "Jardines de Guamaní",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Jardines de Guamaní\" Guayama"
+ },
+ {
+  "slug": "luis-pales-matos",
+  "municipality": "Guayama",
+  "name": "Luis Palés Matos",
+  "priority": "MEDIUM",
+  "estado": "con-foto",
+  "consulta": "\"Luis Palés Matos\" Guayama",
+  "foto": {
+   "titulo": "File:Plaza Colón de Guayama.JPG",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Plaza_Col%C3%B3n_de_Guayama.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 2448,
+   "alto": 3264,
+   "licencia": "CC BY-SA 3.0",
+   "autor": "CarlitosRivera787",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Plaza_Col%C3%B3n_de_Guayama.JPG",
+   "mencionaMunicipio": true
+  },
+  "alternativas": 2
+ },
+ {
+  "slug": "rex-manor",
+  "municipality": "Guayama",
+  "name": "Rex Manor",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Rex Manor\" Guayama"
+ },
+ {
+  "slug": "valles-de-guayama",
+  "municipality": "Guayama",
+  "name": "Valles de Guayama",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Valles de Guayama\" Guayama"
+ },
+ {
+  "slug": "bahia",
+  "municipality": "Guayanilla",
+  "name": "Bahía",
+  "priority": "MEDIUM",
+  "estado": "con-foto",
+  "consulta": "\"Bahía\" Guayanilla",
+  "foto": {
+   "titulo": "File:Estuario de la Bahía de Guayanilla.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Estuario_de_la_Bah%C3%ADa_de_Guayanilla.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 4000,
+   "alto": 3000,
+   "licencia": "CC BY-SA 3.0",
+   "autor": "Ecoaldeaatabey",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Estuario_de_la_Bah%C3%ADa_de_Guayanilla.jpg",
+   "mencionaMunicipio": true
+  },
+  "alternativas": 1
+ },
+ {
+  "slug": "padre-nazario",
+  "municipality": "Guayanilla",
+  "name": "Padre Nazario",
+  "priority": "MEDIUM",
+  "estado": "con-foto",
+  "consulta": "\"Padre Nazario\" Guayanilla",
+  "foto": {
+   "titulo": "File:Escuela Padre Nazario 3 - Guayanilla Puerto Rico.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Escuela_Padre_Nazario_3_-_Guayanilla_Puerto_Rico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 4000,
+   "alto": 2245,
+   "licencia": "CC BY-SA 4.0",
+   "autor": "Ian Poellet",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Escuela_Padre_Nazario_3_-_Guayanilla_Puerto_Rico.jpg",
+   "mencionaMunicipio": true
+  },
+  "alternativas": 3
+ },
+ {
+  "slug": "santa-elena",
+  "municipality": "Guayanilla",
+  "name": "Santa Elena",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Santa Elena\" Guayanilla"
+ },
+ {
+  "slug": "urbanizacion-la-concepcion",
+  "municipality": "Guayanilla",
+  "name": "Urbanización La Concepción",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Urbanización La Concepción\" Guayanilla"
+ },
+ {
+  "slug": "urbanizacion-stella",
+  "municipality": "Guayanilla",
+  "name": "Urbanización Stella",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Urbanización Stella\" Guayanilla"
+ },
+ {
+  "slug": "estancias-de-torrimar",
+  "municipality": "Guaynabo",
+  "name": "Estancias de Torrimar",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Estancias de Torrimar\" Guaynabo"
+ },
+ {
+  "slug": "garden-hills-north",
+  "municipality": "Guaynabo",
+  "name": "Garden Hills North",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Garden Hills North\" Guaynabo"
+ },
+ {
+  "slug": "la-cima",
+  "municipality": "Guaynabo",
+  "name": "La Cima",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"La Cima\" Guaynabo"
+ },
+ {
+  "slug": "la-lomita",
+  "municipality": "Guaynabo",
+  "name": "La Lomita",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"La Lomita\" Guaynabo"
+ },
+ {
+  "slug": "las-casonas",
+  "municipality": "Guaynabo",
+  "name": "Las Casonas",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Las Casonas\" Guaynabo"
+ },
+ {
+  "slug": "san-patricio",
+  "municipality": "Guaynabo",
+  "name": "San Patricio",
+  "priority": "LUXURY",
+  "estado": "con-foto",
+  "consulta": "\"San Patricio\" Guaynabo",
+  "foto": {
+   "titulo": "File:AMASanPatricio.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/AMASanPatricio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 9712,
+   "alto": 1776,
+   "licencia": "CC BY-SA 4.0",
+   "autor": "ALDO I VALEDON",
+   "pagina": "https://commons.wikimedia.org/wiki/File:AMASanPatricio.jpg",
+   "mencionaMunicipio": true
+  },
+  "alternativas": 1
+ },
+ {
+  "slug": "sereno",
+  "municipality": "Guaynabo",
+  "name": "Sereno",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Sereno\" Guaynabo"
+ },
+ {
+  "slug": "sun-valley",
+  "municipality": "Guaynabo",
+  "name": "Sun Valley",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Sun Valley\" Guaynabo"
+ },
+ {
+  "slug": "tintillo-hill-estates",
+  "municipality": "Guaynabo",
+  "name": "Tintillo Hill Estates",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Tintillo Hill Estates\" Guaynabo"
+ },
+ {
+  "slug": "villa-caparra",
+  "municipality": "Guaynabo",
+  "name": "Villa Caparra",
+  "priority": "LUXURY",
+  "estado": "con-foto",
+  "consulta": "\"Villa Caparra\" Guaynabo",
+  "foto": {
+   "titulo": "File:Parroquia San Jose, Urbanización Villa Caparra, Guaynabo, Puerto Rico.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Parroquia_San_Jose%2C_Urbanizaci%C3%B3n_Villa_Caparra%2C_Guaynabo%2C_Puerto_Rico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 1600,
+   "alto": 1200,
+   "licencia": "CC BY-SA 2.0",
+   "autor": "Frederic Gleach",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Parroquia_San_Jose,_Urbanizaci%C3%B3n_Villa_Caparra,_Guaynabo,_Puerto_Rico.jpg",
+   "mencionaMunicipio": true
+  },
+  "alternativas": 1
+ },
+ {
+  "slug": "colinas-de-parkville",
+  "municipality": "Guaynabo",
+  "name": "Colinas de Parkville",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Colinas de Parkville\" Guaynabo"
+ },
+ {
+  "slug": "green-valley",
+  "municipality": "Guaynabo",
+  "name": "Green Valley",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Green Valley\" Guaynabo"
+ },
+ {
+  "slug": "la-villa-de-torrimar",
+  "municipality": "Guaynabo",
+  "name": "La Villa de Torrimar",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"La Villa de Torrimar\" Guaynabo"
+ },
+ {
+  "slug": "mansiones-reales",
+  "municipality": "Guaynabo",
+  "name": "Mansiones Reales",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Mansiones Reales\" Guaynabo"
+ },
+ {
+  "slug": "monteazul",
+  "municipality": "Guaynabo",
+  "name": "Monteazul",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Monteazul\" Guaynabo"
+ },
+ {
+  "slug": "palma-real",
+  "municipality": "Guaynabo",
+  "name": "Palma Real",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Palma Real\" Guaynabo"
+ },
+ {
+  "slug": "plaza-del-prado",
+  "municipality": "Guaynabo",
+  "name": "Plaza del Prado",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Plaza del Prado\" Guaynabo"
+ },
+ {
+  "slug": "serrania",
+  "municipality": "Guaynabo",
+  "name": "Serranía",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Serranía\" Guaynabo"
+ },
+ {
+  "slug": "alamanda-oeste",
+  "municipality": "Guaynabo",
+  "name": "Alamanda Oeste",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Alamanda Oeste\" Guaynabo"
+ },
+ {
+  "slug": "atrium-park",
+  "municipality": "Guaynabo",
+  "name": "Atrium Park",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Atrium Park\" Guaynabo"
+ },
+ {
+  "slug": "belmont",
+  "municipality": "Guaynabo",
+  "name": "Belmont",
+  "priority": "MEDIUM",
+  "estado": "sin-foto-de-la-comunidad",
+  "consulta": "\"Belmont\" Guaynabo"
+ },
+ {
+  "slug": "bucare",
+  "municipality": "Guaynabo",
+  "name": "Bucaré",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Bucaré\" Guaynabo"
+ },
+ {
+  "slug": "parkville",
+  "municipality": "Guaynabo",
+  "name": "Parkville",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Parkville\" Guaynabo"
+ },
+ {
+  "slug": "prado-alto",
+  "municipality": "Guaynabo",
+  "name": "Prado Alto",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Prado Alto\" Guaynabo"
+ },
+ {
+  "slug": "tintillo-gardens",
+  "municipality": "Guaynabo",
+  "name": "Tintillo Gardens",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Tintillo Gardens\" Guaynabo"
+ },
+ {
+  "slug": "river-view",
+  "municipality": "Gurabo",
+  "name": "River View",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"River View\" Gurabo"
+ },
+ {
+  "slug": "ciudad-jardin-gurabo",
+  "municipality": "Gurabo",
+  "name": "Ciudad Jardín",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Ciudad Jardín\" Gurabo"
+ },
+ {
+  "slug": "gran-vista-i",
+  "municipality": "Gurabo",
+  "name": "Gran Vista I",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Gran Vista I\" Gurabo"
+ },
+ {
+  "slug": "los-flamboyanes-gurabo",
+  "municipality": "Gurabo",
+  "name": "Los Flamboyanes de Gurabo",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Los Flamboyanes de Gurabo\" Gurabo"
+ },
+ {
+  "slug": "sabanera-del-rio",
+  "municipality": "Gurabo",
+  "name": "Sabanera del Río",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Sabanera del Río\" Gurabo"
+ },
+ {
+  "slug": "senderos-de-gurabo",
+  "municipality": "Gurabo",
+  "name": "Senderos de Gurabo",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Senderos de Gurabo\" Gurabo"
+ },
+ {
+  "slug": "ventanas-de-gurabo",
+  "municipality": "Gurabo",
+  "name": "Ventanas de Gurabo",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Ventanas de Gurabo\" Gurabo"
+ },
+ {
+  "slug": "vistalago",
+  "municipality": "Gurabo",
+  "name": "Vistalago",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Vistalago\" Gurabo"
+ },
+ {
+  "slug": "jardines-de-guanica",
+  "municipality": "Guánica",
+  "name": "Jardines de Guánica",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Jardines de Guánica\" Guánica"
+ },
+ {
+  "slug": "luis-munoz-rivera",
+  "municipality": "Guánica",
+  "name": "Luis Muñoz Rivera",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Luis Muñoz Rivera\" Guánica"
+ },
+ {
+  "slug": "valle-tania",
+  "municipality": "Guánica",
+  "name": "Valle Tania",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Valle Tania\" Guánica"
+ },
+ {
+  "slug": "corales-de-hatillo",
+  "municipality": "Hatillo",
+  "name": "Corales de Hatillo",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Corales de Hatillo\" Hatillo"
+ },
+ {
+  "slug": "hatillo-del-mar",
+  "municipality": "Hatillo",
+  "name": "Hatillo del Mar",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Hatillo del Mar\" Hatillo"
+ },
+ {
+  "slug": "colinas-del-oeste",
+  "municipality": "Hormigueros",
+  "name": "Colinas del Oeste",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Colinas del Oeste\" Hormigueros"
+ },
+ {
+  "slug": "gabriel-soler-catala",
+  "municipality": "Hormigueros",
+  "name": "Gabriel Soler Cátala",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Gabriel Soler Cátala\" Hormigueros"
+ },
+ {
+  "slug": "valle-hermoso",
+  "municipality": "Hormigueros",
+  "name": "Valle Hermoso",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Valle Hermoso\" Hormigueros"
+ },
+ {
+  "slug": "isla-san-marcos",
+  "municipality": "Humacao",
+  "name": "Isla San Marcos",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Isla San Marcos\" Humacao"
+ },
+ {
+  "slug": "isla-san-miguel",
+  "municipality": "Humacao",
+  "name": "Isla San Miguel",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Isla San Miguel\" Humacao"
+ },
+ {
+  "slug": "palmas-del-mar",
+  "municipality": "Humacao",
+  "name": "Palmas del Mar",
+  "priority": "LUXURY",
+  "estado": "con-foto",
+  "consulta": "\"Palmas del Mar\" Humacao",
+  "foto": {
+   "titulo": "File:Palmas del Mar beach - Humacao Puerto Rico.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Palmas_del_Mar_beach_-_Humacao_Puerto_Rico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 5184,
+   "alto": 3456,
+   "licencia": "CC BY-SA 4.0",
+   "autor": "Bjoertvedt",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Palmas_del_Mar_beach_-_Humacao_Puerto_Rico.jpg",
+   "mencionaMunicipio": true
+  },
+  "alternativas": 5
+ },
+ {
+  "slug": "beach-village",
+  "municipality": "Humacao",
+  "name": "Beach Village",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Beach Village\" Humacao"
+ },
+ {
+  "slug": "crescent-beach",
+  "municipality": "Humacao",
+  "name": "Crescent Beach",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Crescent Beach\" Humacao"
+ },
+ {
+  "slug": "crescent-cove",
+  "municipality": "Humacao",
+  "name": "Crescent Cove",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Crescent Cove\" Humacao"
+ },
+ {
+  "slug": "fairway-courts",
+  "municipality": "Humacao",
+  "name": "Fairway Courts",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Fairway Courts\" Humacao"
+ },
+ {
+  "slug": "marbella-club",
+  "municipality": "Humacao",
+  "name": "Marbella Club",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Marbella Club\" Humacao"
+ },
+ {
+  "slug": "palmarina",
+  "municipality": "Humacao",
+  "name": "Palmarina",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Palmarina\" Humacao"
+ },
+ {
+  "slug": "plaza-del-mar",
+  "municipality": "Humacao",
+  "name": "Plaza del Mar",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Plaza del Mar\" Humacao"
+ },
+ {
+  "slug": "solarea",
+  "municipality": "Humacao",
+  "name": "Solarea",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Solarea\" Humacao"
+ },
+ {
+  "slug": "palacios-del-este",
+  "municipality": "Humacao",
+  "name": "Palacios del Este",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Palacios del Este\" Humacao"
+ },
+ {
+  "slug": "palacios-del-sol",
+  "municipality": "Humacao",
+  "name": "Palacios del Sol",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Palacios del Sol\" Humacao"
+ },
+ {
+  "slug": "praderas-de-isabela",
+  "municipality": "Isabela",
+  "name": "Praderas de Isabela",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Praderas de Isabela\" Isabela"
+ },
+ {
+  "slug": "llanos-de-isabela",
+  "municipality": "Isabela",
+  "name": "Llanos de Isabela",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Llanos de Isabela\" Isabela"
+ },
+ {
+  "slug": "medina-isabela",
+  "municipality": "Isabela",
+  "name": "Medina",
+  "priority": "MEDIUM",
+  "estado": "sin-foto-de-la-comunidad",
+  "consulta": "\"Medina\" Isabela"
+ },
+ {
+  "slug": "mirador-del-cielo",
+  "municipality": "Isabela",
+  "name": "Mirador del Cielo",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Mirador del Cielo\" Isabela"
+ },
+ {
+  "slug": "vistas-de-isabela",
+  "municipality": "Isabela",
+  "name": "Vistas de Isabela",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Vistas de Isabela\" Isabela"
+ },
+ {
+  "slug": "residencial-mattei-i",
+  "municipality": "Jayuya",
+  "name": "Residencial Mattei I",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Residencial Mattei I\" Jayuya"
+ },
+ {
+  "slug": "residencial-mattei-iii",
+  "municipality": "Jayuya",
+  "name": "Residencial Mattei III",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Residencial Mattei III\" Jayuya"
+ },
+ {
+  "slug": "urbanizacion-vega-linda",
+  "municipality": "Jayuya",
+  "name": "Urbanización Vega Linda",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Urbanización Vega Linda\" Jayuya"
+ },
+ {
+  "slug": "collores",
+  "municipality": "Juana Díaz",
+  "name": "Collores",
+  "priority": "MEDIUM",
+  "estado": "con-foto",
+  "consulta": "\"Collores\" Juana Díaz",
+  "foto": {
+   "titulo": "File:1940 Census Enumeration District Descriptions - Puerto Rico - Juana Diaz County - ED 47-7, ED 47-8, ED 47-9, ED 47-10 - NARA - 5879311.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/31/1940_Census_Enumeration_District_Descriptions_-_Puerto_Rico_-_Juana_Diaz_County_-_ED_47-7%2C_ED_47-8%2C_ED_47-9%2C_ED_47-10_-_NARA_-_5879311.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 4472,
+   "alto": 2456,
+   "licencia": "Public domain",
+   "autor": "Unknown authorUnknown author or not provided",
+   "pagina": "https://commons.wikimedia.org/wiki/File:1940_Census_Enumeration_District_Descriptions_-_Puerto_Rico_-_Juana_Diaz_County_-_ED_47-7,_ED_47-8,_ED_47-9,_ED_47-10_-_NARA_-_5879311.jpg",
+   "mencionaMunicipio": true
+  },
+  "alternativas": 3
+ },
+ {
+  "slug": "comunidad-cristina",
+  "municipality": "Juana Díaz",
+  "name": "Comunidad Cristina",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Comunidad Cristina\" Juana Díaz"
+ },
+ {
+  "slug": "leonardo-santiago",
+  "municipality": "Juana Díaz",
+  "name": "Leonardo Santiago",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Leonardo Santiago\" Juana Díaz"
+ },
+ {
+  "slug": "mansiones-de-camino-real",
+  "municipality": "Juana Díaz",
+  "name": "Mansiones de Camino Real",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Mansiones de Camino Real\" Juana Díaz"
+ },
+ {
+  "slug": "quintas-de-altamira",
+  "municipality": "Juana Díaz",
+  "name": "Quintas de Altamira",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Quintas de Altamira\" Juana Díaz"
+ },
+ {
+  "slug": "el-encanto",
+  "municipality": "Juncos",
+  "name": "El Encanto",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"El Encanto\" Juncos"
+ },
+ {
+  "slug": "estancias-de-juncos",
+  "municipality": "Juncos",
+  "name": "Estancias de Juncos",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Estancias de Juncos\" Juncos"
+ },
+ {
+  "slug": "mansiones-de-juncos",
+  "municipality": "Juncos",
+  "name": "Mansiones de Juncos",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Mansiones de Juncos\" Juncos"
+ },
+ {
+  "slug": "alturas-de-lirios",
+  "municipality": "Juncos",
+  "name": "Alturas de Lirios",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Alturas de Lirios\" Juncos"
+ },
+ {
+  "slug": "reparto-valenciano",
+  "municipality": "Juncos",
+  "name": "Reparto Valenciano",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Reparto Valenciano\" Juncos"
+ },
+ {
+  "slug": "valencia-ii",
+  "municipality": "Juncos",
+  "name": "Valencia II",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Valencia II\" Juncos"
+ },
+ {
+  "slug": "villa-graciela",
+  "municipality": "Juncos",
+  "name": "Villa Graciela",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Villa Graciela\" Juncos"
+ },
+ {
+  "slug": "virginia-valley",
+  "municipality": "Juncos",
+  "name": "Virginia Valley",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Virginia Valley\" Juncos"
+ },
+ {
+  "slug": "colinas-de-la-parguera",
+  "municipality": "Lajas",
+  "name": "Colinas de la Parguera",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Colinas de la Parguera\" Lajas"
+ },
+ {
+  "slug": "el-valle-de-lajas",
+  "municipality": "Lajas",
+  "name": "El Valle de Lajas",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"El Valle de Lajas\" Lajas"
+ },
+ {
+  "slug": "estancias-del-parra",
+  "municipality": "Lajas",
+  "name": "Estancias del Parra",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Estancias del Parra\" Lajas"
+ },
+ {
+  "slug": "extension-el-valle",
+  "municipality": "Lajas",
+  "name": "Extensión El Valle",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Extensión El Valle\" Lajas"
+ },
+ {
+  "slug": "las-americas",
+  "municipality": "Lajas",
+  "name": "Las Américas",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Las Américas\" Lajas"
+ },
+ {
+  "slug": "altamira",
+  "municipality": "Lares",
+  "name": "Altamira",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Altamira\" Lares"
+ },
+ {
+  "slug": "buenos-aires",
+  "municipality": "Lares",
+  "name": "Buenos Aires",
+  "priority": "MEDIUM",
+  "estado": "con-foto",
+  "consulta": "\"Buenos Aires\" Lares",
+  "foto": {
+   "titulo": "File:Barrio Buenos Aires, Lares, Puerto Rico.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Barrio_Buenos_Aires%2C_Lares%2C_Puerto_Rico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 2048,
+   "alto": 1152,
+   "licencia": "CC BY-SA 4.0",
+   "autor": "Yarfpr",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Barrio_Buenos_Aires,_Lares,_Puerto_Rico.jpg",
+   "mencionaMunicipio": true
+  },
+  "alternativas": 2
+ },
+ {
+  "slug": "colinas-del-expreso",
+  "municipality": "Lares",
+  "name": "Colinas del Expreso",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Colinas del Expreso\" Lares"
+ },
+ {
+  "slug": "montebello",
+  "municipality": "Lares",
+  "name": "Montebello",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Montebello\" Lares"
+ },
+ {
+  "slug": "palmas-del-sol",
+  "municipality": "Lares",
+  "name": "Palmas del Sol",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Palmas del Sol\" Lares"
+ },
+ {
+  "slug": "villa-seral",
+  "municipality": "Lares",
+  "name": "Villa Seral",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Villa Seral\" Lares"
+ },
+ {
+  "slug": "buena-vista",
+  "municipality": "Las Marías",
+  "name": "Buena Vista",
+  "priority": "MEDIUM",
+  "estado": "sin-foto-de-la-comunidad",
+  "consulta": "\"Buena Vista\" Las Marías"
+ },
+ {
+  "slug": "jardines-de-las-marias",
+  "municipality": "Las Marías",
+  "name": "Jardines de Las Marías",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Jardines de Las Marías\" Las Marías"
+ },
+ {
+  "slug": "palma-royale",
+  "municipality": "Las Piedras",
+  "name": "Palma Royale",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Palma Royale\" Las Piedras"
+ },
+ {
+  "slug": "campo-real",
+  "municipality": "Las Piedras",
+  "name": "Campo Real",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Campo Real\" Las Piedras"
+ },
+ {
+  "slug": "ocean-point",
+  "municipality": "Loíza",
+  "name": "Ocean Point",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Ocean Point\" Loíza"
+ },
+ {
+  "slug": "villa-del-mar-beach-resort",
+  "municipality": "Loíza",
+  "name": "Villa del Mar Beach Resort",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Villa del Mar Beach Resort\" Loíza"
+ },
+ {
+  "slug": "brisas-de-loiza",
+  "municipality": "Loíza",
+  "name": "Brisas de Loíza",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Brisas de Loíza\" Loíza"
+ },
+ {
+  "slug": "el-portal",
+  "municipality": "Loíza",
+  "name": "El Portal",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"El Portal\" Loíza"
+ },
+ {
+  "slug": "estancias-del-rio",
+  "municipality": "Loíza",
+  "name": "Estancias del Río",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Estancias del Río\" Loíza"
+ },
+ {
+  "slug": "jardines-de-loiza",
+  "municipality": "Loíza",
+  "name": "Jardines de Loíza",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Jardines de Loíza\" Loíza"
+ },
+ {
+  "slug": "palmarena",
+  "municipality": "Loíza",
+  "name": "Palmarena",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Palmarena\" Loíza"
+ },
+ {
+  "slug": "san-patricio-loiza",
+  "municipality": "Loíza",
+  "name": "San Patricio",
+  "priority": "MEDIUM",
+  "estado": "sin-foto-de-la-comunidad",
+  "consulta": "\"San Patricio\" Loíza"
+ },
+ {
+  "slug": "santillana-del-mar",
+  "municipality": "Loíza",
+  "name": "Santillana del Mar",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Santillana del Mar\" Loíza"
+ },
+ {
+  "slug": "yuquiyu",
+  "municipality": "Loíza",
+  "name": "Yuquiyú",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Yuquiyú\" Loíza"
+ },
+ {
+  "slug": "colinas-de-luquillo",
+  "municipality": "Luquillo",
+  "name": "Colinas de Luquillo",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Colinas de Luquillo\" Luquillo"
+ },
+ {
+  "slug": "hacienda-margarita",
+  "municipality": "Luquillo",
+  "name": "Hacienda Margarita",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Hacienda Margarita\" Luquillo"
+ },
+ {
+  "slug": "las-aves",
+  "municipality": "Luquillo",
+  "name": "Las Aves",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Las Aves\" Luquillo"
+ },
+ {
+  "slug": "paisajes-del-lago",
+  "municipality": "Luquillo",
+  "name": "Paisajes del Lago",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Paisajes del Lago\" Luquillo"
+ },
+ {
+  "slug": "paisajes-del-rio",
+  "municipality": "Luquillo",
+  "name": "Paisajes del Río",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Paisajes del Río\" Luquillo"
+ },
+ {
+  "slug": "costa-azul",
+  "municipality": "Luquillo",
+  "name": "Costa Azul",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Costa Azul\" Luquillo"
+ },
+ {
+  "slug": "playa-azul-i",
+  "municipality": "Luquillo",
+  "name": "Playa Azul I",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Playa Azul I\" Luquillo"
+ },
+ {
+  "slug": "playa-azul-iii",
+  "municipality": "Luquillo",
+  "name": "Playa Azul III",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Playa Azul III\" Luquillo"
+ },
+ {
+  "slug": "river-edge-hills",
+  "municipality": "Luquillo",
+  "name": "River Edge Hills",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"River Edge Hills\" Luquillo"
+ },
+ {
+  "slug": "brisas-del-mar",
+  "municipality": "Luquillo",
+  "name": "Brisas del Mar",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Brisas del Mar\" Luquillo"
+ },
+ {
+  "slug": "luquillo-mar",
+  "municipality": "Luquillo",
+  "name": "Luquillo Mar",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Luquillo Mar\" Luquillo"
+ },
+ {
+  "slug": "sandy-hills",
+  "municipality": "Luquillo",
+  "name": "Sandy Hills",
+  "priority": "MEDIUM",
+  "estado": "con-foto",
+  "consulta": "\"Sandy Hills\" Luquillo",
+  "foto": {
+   "titulo": "File:Corredor Playa San Miguel.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Corredor_Playa_San_Miguel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 3648,
+   "alto": 2736,
+   "licencia": "CC BY-SA 3.0",
+   "autor": "Luis Villanueva-Cubero",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Corredor_Playa_San_Miguel.jpg",
+   "mencionaMunicipio": false
+  },
+  "alternativas": 1
+ },
+ {
+  "slug": "lomas-de-manatuabon",
+  "municipality": "Manatí",
+  "name": "Lomas de Manatuabon",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Lomas de Manatuabon\" Manatí"
+ },
+ {
+  "slug": "hacienda-monserrate",
+  "municipality": "Manatí",
+  "name": "Hacienda Monserrate",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Hacienda Monserrate\" Manatí"
+ },
+ {
+  "slug": "santa-teresa-manati",
+  "municipality": "Manatí",
+  "name": "Santa Teresa",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Santa Teresa\" Manatí"
+ },
+ {
+  "slug": "alturas-de-luchetti",
+  "municipality": "Manatí",
+  "name": "Alturas de Luchetti",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Alturas de Luchetti\" Manatí"
+ },
+ {
+  "slug": "brisas-de-campo-alegre",
+  "municipality": "Manatí",
+  "name": "Brisas de Campo Alegre",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Brisas de Campo Alegre\" Manatí"
+ },
+ {
+  "slug": "estancias-de-borinquen",
+  "municipality": "Manatí",
+  "name": "Estancias de Borinquen",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Estancias de Borinquen\" Manatí"
+ },
+ {
+  "slug": "los-rosales",
+  "municipality": "Manatí",
+  "name": "Los Rosales",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Los Rosales\" Manatí"
+ },
+ {
+  "slug": "valles-de-manati",
+  "municipality": "Manatí",
+  "name": "Valles de Manatí",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Valles de Manatí\" Manatí"
+ },
+ {
+  "slug": "villa-evangelina-iv",
+  "municipality": "Manatí",
+  "name": "Villa Evangelina IV",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Villa Evangelina IV\" Manatí"
+ },
+ {
+  "slug": "vivameri-apartments",
+  "municipality": "Manatí",
+  "name": "Vivameri Apartments",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Vivameri Apartments\" Manatí"
+ },
+ {
+  "slug": "colinas-de-maricao",
+  "municipality": "Maricao",
+  "name": "Colinas de Maricao",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Colinas de Maricao\" Maricao"
+ },
+ {
+  "slug": "juan-ferrer",
+  "municipality": "Maricao",
+  "name": "Juan Ferrer",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Juan Ferrer\" Maricao"
+ },
+ {
+  "slug": "villas-del-faro",
+  "municipality": "Maunabo",
+  "name": "Villas del Faro",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Villas del Faro\" Maunabo"
+ },
+ {
+  "slug": "carmen-h-vda-de-martorell",
+  "municipality": "Maunabo",
+  "name": "Carmen H. Vda. de Martorell",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Carmen H. Vda. de Martorell\" Maunabo"
+ },
+ {
+  "slug": "comunidad-mariani",
+  "municipality": "Maunabo",
+  "name": "Comunidad Mariani",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Comunidad Mariani\" Maunabo"
+ },
+ {
+  "slug": "jardines-del-almendro",
+  "municipality": "Maunabo",
+  "name": "Jardines del Almendro",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Jardines del Almendro\" Maunabo"
+ },
+ {
+  "slug": "villa-navarro",
+  "municipality": "Maunabo",
+  "name": "Villa Navarro",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Villa Navarro\" Maunabo"
+ },
+ {
+  "slug": "villas-de-maunabo",
+  "municipality": "Maunabo",
+  "name": "Villas de Maunabo",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Villas de Maunabo\" Maunabo"
+ },
+ {
+  "slug": "columbus-landing",
+  "municipality": "Mayagüez",
+  "name": "Columbus Landing",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Columbus Landing\" Mayagüez"
+ },
+ {
+  "slug": "cuesta-de-las-piedras",
+  "municipality": "Mayagüez",
+  "name": "Cuesta de las Piedras",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Cuesta de las Piedras\" Mayagüez"
+ },
+ {
+  "slug": "el-carmen",
+  "municipality": "Mayagüez",
+  "name": "El Carmen",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"El Carmen\" Mayagüez"
+ },
+ {
+  "slug": "flamboyan-gardens",
+  "municipality": "Mayagüez",
+  "name": "Flamboyán Gardens",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Flamboyán Gardens\" Mayagüez"
+ },
+ {
+  "slug": "franklin-delano-roosevelt-i-ii",
+  "municipality": "Mayagüez",
+  "name": "Franklin Delano Roosevelt I-II",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Franklin Delano Roosevelt I-II\" Mayagüez"
+ },
+ {
+  "slug": "jardines-de-concordia",
+  "municipality": "Mayagüez",
+  "name": "Jardines de Concordia",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Jardines de Concordia\" Mayagüez"
+ },
+ {
+  "slug": "manuel-hernandez-rosa-candelaria",
+  "municipality": "Mayagüez",
+  "name": "Manuel Hernández Rosa (Candelaria)",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Manuel Hernández Rosa (Candelaria)\" Mayagüez"
+ },
+ {
+  "slug": "mar-y-sol",
+  "municipality": "Mayagüez",
+  "name": "Mar y Sol",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Mar y Sol\" Mayagüez"
+ },
+ {
+  "slug": "mayaguez-gardens",
+  "municipality": "Mayagüez",
+  "name": "Mayagüez Gardens",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Mayagüez Gardens\" Mayagüez"
+ },
+ {
+  "slug": "mayaguez-housing-i",
+  "municipality": "Mayagüez",
+  "name": "Mayagüez Housing I",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Mayagüez Housing I\" Mayagüez"
+ },
+ {
+  "slug": "mayaguez-housing-ii-la-arboleda",
+  "municipality": "Mayagüez",
+  "name": "Mayagüez Housing II (La Arboleda)",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Mayagüez Housing II (La Arboleda)\" Mayagüez"
+ },
+ {
+  "slug": "monte-isleno",
+  "municipality": "Mayagüez",
+  "name": "Monte Isleño",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Monte Isleño\" Mayagüez"
+ },
+ {
+  "slug": "parque-sultana-i",
+  "municipality": "Mayagüez",
+  "name": "Parque Sultana I",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Parque Sultana I\" Mayagüez"
+ },
+ {
+  "slug": "rafael-hernandez-kennedy",
+  "municipality": "Mayagüez",
+  "name": "Rafael Hernández (Kennedy)",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Rafael Hernández (Kennedy)\" Mayagüez"
+ },
+ {
+  "slug": "ramirez-de-arellano",
+  "municipality": "Mayagüez",
+  "name": "Ramírez de Arellano",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Ramírez de Arellano\" Mayagüez"
+ },
+ {
+  "slug": "centro-residencial-edad-dorada",
+  "municipality": "Moca",
+  "name": "Centro Residencial Edad Dorada",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Centro Residencial Edad Dorada\" Moca"
+ },
+ {
+  "slug": "la-monserrate",
+  "municipality": "Moca",
+  "name": "La Monserrate",
+  "priority": "MEDIUM",
+  "estado": "sin-foto-de-la-comunidad",
+  "consulta": "\"La Monserrate\" Moca"
+ },
+ {
+  "slug": "lomas-verdes",
+  "municipality": "Moca",
+  "name": "Lomas Verdes",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Lomas Verdes\" Moca"
+ },
+ {
+  "slug": "brisas-del-norte",
+  "municipality": "Morovis",
+  "name": "Brisas del Norte",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Brisas del Norte\" Morovis"
+ },
+ {
+  "slug": "morovis-elderly",
+  "municipality": "Morovis",
+  "name": "Morovis Elderly",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Morovis Elderly\" Morovis"
+ },
+ {
+  "slug": "residencial-tomas-sorolla",
+  "municipality": "Morovis",
+  "name": "Residencial Tomás Sorolla",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Residencial Tomás Sorolla\" Morovis"
+ },
+ {
+  "slug": "mansiones-de-playa-hucares",
+  "municipality": "Naguabo",
+  "name": "Mansiones de Playa Húcares",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Mansiones de Playa Húcares\" Naguabo"
+ },
+ {
+  "slug": "promise-land",
+  "municipality": "Naguabo",
+  "name": "Promise Land",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Promise Land\" Naguabo"
+ },
+ {
+  "slug": "brisas-del-valle",
+  "municipality": "Naguabo",
+  "name": "Brisas del Valle",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Brisas del Valle\" Naguabo"
+ },
+ {
+  "slug": "vista-verde",
+  "municipality": "Naguabo",
+  "name": "Vista Verde",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Vista Verde\" Naguabo"
+ },
+ {
+  "slug": "achiote",
+  "municipality": "Naranjito",
+  "name": "Achiote",
+  "priority": "MEDIUM",
+  "estado": "con-foto",
+  "consulta": "\"Achiote\" Naranjito",
+  "foto": {
+   "titulo": "File:1940 Census Enumeration District Descriptions - Puerto Rico - Naranjito County - ED 6-1, ED 6-2, ED 6-3, ED 6-4, ED 6-5 - NARA - 5879377.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/1940_Census_Enumeration_District_Descriptions_-_Puerto_Rico_-_Naranjito_County_-_ED_6-1%2C_ED_6-2%2C_ED_6-3%2C_ED_6-4%2C_ED_6-5_-_NARA_-_5879377.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 4408,
+   "alto": 2456,
+   "licencia": "Public domain",
+   "autor": "Unknown authorUnknown author or not provided",
+   "pagina": "https://commons.wikimedia.org/wiki/File:1940_Census_Enumeration_District_Descriptions_-_Puerto_Rico_-_Naranjito_County_-_ED_6-1,_ED_6-2,_ED_6-3,_ED_6-4,_ED_6-5_-_NARA_-_5879377.jpg",
+   "mencionaMunicipio": true
+  },
+  "alternativas": 3
+ },
+ {
+  "slug": "barrio-pueblo-de-naranjito",
+  "municipality": "Naranjito",
+  "name": "Barrio-pueblo de Naranjito",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Barrio-pueblo de Naranjito\" Naranjito"
+ },
+ {
+  "slug": "candelario-torres",
+  "municipality": "Naranjito",
+  "name": "Candelario Torres",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Candelario Torres\" Naranjito"
+ },
+ {
+  "slug": "jardines-de-naranjito",
+  "municipality": "Naranjito",
+  "name": "Jardines de Naranjito",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Jardines de Naranjito\" Naranjito"
+ },
+ {
+  "slug": "lomas",
+  "municipality": "Naranjito",
+  "name": "Lomas",
+  "priority": "MEDIUM",
+  "estado": "con-foto",
+  "consulta": "\"Lomas\" Naranjito",
+  "foto": {
+   "titulo": "File:Barrio Lomas, Naranjito, Puerto Rico.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Barrio_Lomas%2C_Naranjito%2C_Puerto_Rico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 1919,
+   "alto": 1080,
+   "licencia": "CC BY-SA 4.0",
+   "autor": "Yarfpr",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Barrio_Lomas,_Naranjito,_Puerto_Rico.jpg",
+   "mencionaMunicipio": true
+  },
+  "alternativas": 1
+ },
+ {
+  "slug": "alturas-de-orocovis",
+  "municipality": "Orocovis",
+  "name": "Alturas de Orocovis",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Alturas de Orocovis\" Orocovis"
+ },
+ {
+  "slug": "jose-v-fortis",
+  "municipality": "Orocovis",
+  "name": "José V. Fortis",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"José V. Fortis\" Orocovis"
+ },
+ {
+  "slug": "villas-de-orocovis",
+  "municipality": "Orocovis",
+  "name": "Villas de Orocovis",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Villas de Orocovis\" Orocovis"
+ },
+ {
+  "slug": "solymar",
+  "municipality": "Patillas",
+  "name": "Solymar",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Solymar\" Patillas"
+ },
+ {
+  "slug": "villa-real",
+  "municipality": "Patillas",
+  "name": "Villa Real",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Villa Real\" Patillas"
+ },
+ {
+  "slug": "villas-del-caribe",
+  "municipality": "Patillas",
+  "name": "Villas del Caribe",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Villas del Caribe\" Patillas"
+ },
+ {
+  "slug": "alturas-de-penuelas",
+  "municipality": "Peñuelas",
+  "name": "Alturas de Peñuelas",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Alturas de Peñuelas\" Peñuelas"
+ },
+ {
+  "slug": "comunidad-caracoles",
+  "municipality": "Peñuelas",
+  "name": "Comunidad Caracoles",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Comunidad Caracoles\" Peñuelas"
+ },
+ {
+  "slug": "los-flamboyanes",
+  "municipality": "Peñuelas",
+  "name": "Los Flamboyanes",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Los Flamboyanes\" Peñuelas"
+ },
+ {
+  "slug": "costa-caribe-golf-villas",
+  "municipality": "Ponce",
+  "name": "Costa Caribe Golf Villas",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Costa Caribe Golf Villas\" Ponce"
+ },
+ {
+  "slug": "estancias-del-golf-club",
+  "municipality": "Ponce",
+  "name": "Estancias del Golf Club",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Estancias del Golf Club\" Ponce"
+ },
+ {
+  "slug": "brisas-de-laurel",
+  "municipality": "Ponce",
+  "name": "Brisas de Laurel",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Brisas de Laurel\" Ponce"
+ },
+ {
+  "slug": "el-monte",
+  "municipality": "Ponce",
+  "name": "El Monte",
+  "priority": "MEDIUM",
+  "estado": "con-foto",
+  "consulta": "\"El Monte\" Ponce",
+  "foto": {
+   "titulo": "File:Hotel Ponce Intercontinental sobre el monte El Vigia en Barrio Portugues Urbano, Ponce, PR.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Hotel_Ponce_Intercontinental_sobre_el_monte_El_Vigia_en_Barrio_Portugues_Urbano%2C_Ponce%2C_PR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 3648,
+   "alto": 2736,
+   "licencia": "CC BY-SA 2.0",
+   "autor": "Roca Ruiz",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Hotel_Ponce_Intercontinental_sobre_el_monte_El_Vigia_en_Barrio_Portugues_Urbano,_Ponce,_PR.jpg",
+   "mencionaMunicipio": true
+  },
+  "alternativas": 1
+ },
+ {
+  "slug": "ernesto-ramos-antonini",
+  "municipality": "Ponce",
+  "name": "Ernesto Ramos Antonini",
+  "priority": "MEDIUM",
+  "estado": "sin-foto-de-la-comunidad",
+  "consulta": "\"Ernesto Ramos Antonini\" Ponce"
+ },
+ {
+  "slug": "estancias-del-monte",
+  "municipality": "Ponce",
+  "name": "Estancias del Monte",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Estancias del Monte\" Ponce"
+ },
+ {
+  "slug": "jardines-de-fagot",
+  "municipality": "Ponce",
+  "name": "Jardines de Fagot",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Jardines de Fagot\" Ponce"
+ },
+ {
+  "slug": "jardines-del-caribe",
+  "municipality": "Ponce",
+  "name": "Jardines del Caribe",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Jardines del Caribe\" Ponce"
+ },
+ {
+  "slug": "perla-del-sur",
+  "municipality": "Ponce",
+  "name": "Perla del Sur",
+  "priority": "MEDIUM",
+  "estado": "sin-foto-de-la-comunidad",
+  "consulta": "\"Perla del Sur\" Ponce"
+ },
+ {
+  "slug": "la-ceiba-quebradillas",
+  "municipality": "Quebradillas",
+  "name": "La Ceiba",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"La Ceiba\" Quebradillas"
+ },
+ {
+  "slug": "santa-marina",
+  "municipality": "Quebradillas",
+  "name": "Santa Marina",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Santa Marina\" Quebradillas"
+ },
+ {
+  "slug": "sombras-de-la-ceiba",
+  "municipality": "Quebradillas",
+  "name": "Sombras de la Ceiba",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Sombras de la Ceiba\" Quebradillas"
+ },
+ {
+  "slug": "punta-del-mar-beach-village",
+  "municipality": "Rincón",
+  "name": "Punta del Mar Beach Village",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Punta del Mar Beach Village\" Rincón"
+ },
+ {
+  "slug": "costa-corcega",
+  "municipality": "Rincón",
+  "name": "Costa Córcega",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Costa Córcega\" Rincón"
+ },
+ {
+  "slug": "victoria-del-mar",
+  "municipality": "Rincón",
+  "name": "Victoria del Mar",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Victoria del Mar\" Rincón"
+ },
+ {
+  "slug": "santa-rosa-elderly",
+  "municipality": "Rincón",
+  "name": "Santa Rosa Elderly",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Santa Rosa Elderly\" Rincón"
+ },
+ {
+  "slug": "amane-estates",
+  "municipality": "Río Grande",
+  "name": "AMANÉ Estates",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"AMANÉ Estates\" Río Grande"
+ },
+ {
+  "slug": "bahia-beach",
+  "municipality": "Río Grande",
+  "name": "Bahía Beach",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Bahía Beach\" Río Grande"
+ },
+ {
+  "slug": "marea-residences",
+  "municipality": "Río Grande",
+  "name": "MAREA Residences",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"MAREA Residences\" Río Grande"
+ },
+ {
+  "slug": "rio-mar",
+  "municipality": "Río Grande",
+  "name": "Río Mar",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Río Mar\" Río Grande"
+ },
+ {
+  "slug": "country-club-residences-at-grand-reserve",
+  "municipality": "Río Grande",
+  "name": "Country Club Residences at Grand Reserve",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Country Club Residences at Grand Reserve\" Río Grande"
+ },
+ {
+  "slug": "colinas-de-villa-rosa",
+  "municipality": "Sabana Grande",
+  "name": "Colinas de Villa Rosa",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Colinas de Villa Rosa\" Sabana Grande"
+ },
+ {
+  "slug": "el-hucar",
+  "municipality": "Sabana Grande",
+  "name": "El Hucar",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"El Hucar\" Sabana Grande"
+ },
+ {
+  "slug": "jose-castillo-mercado",
+  "municipality": "Sabana Grande",
+  "name": "José Castillo Mercado",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"José Castillo Mercado\" Sabana Grande"
+ },
+ {
+  "slug": "mansiones-de-sabana-grande",
+  "municipality": "Sabana Grande",
+  "name": "Mansiones de Sabana Grande",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Mansiones de Sabana Grande\" Sabana Grande"
+ },
+ {
+  "slug": "rancho-la-julia",
+  "municipality": "Salinas",
+  "name": "Rancho La Julia",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Rancho La Julia\" Salinas"
+ },
+ {
+  "slug": "bella-vista",
+  "municipality": "Salinas",
+  "name": "Bella Vista",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Bella Vista\" Salinas"
+ },
+ {
+  "slug": "brisas-del-mar",
+  "municipality": "Salinas",
+  "name": "Brisas del Mar",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Brisas del Mar\" Salinas"
+ },
+ {
+  "slug": "el-coco",
+  "municipality": "Salinas",
+  "name": "El Coco",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"El Coco\" Salinas"
+ },
+ {
+  "slug": "la-arboleda",
+  "municipality": "Salinas",
+  "name": "La Arboleda",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"La Arboleda\" Salinas"
+ },
+ {
+  "slug": "las-margaritas-ii",
+  "municipality": "Salinas",
+  "name": "Las Margaritas II",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Las Margaritas II\" Salinas"
+ },
+ {
+  "slug": "marbella",
+  "municipality": "Salinas",
+  "name": "Marbella",
+  "priority": "MEDIUM",
+  "estado": "con-foto",
+  "consulta": "\"Marbella\" Salinas",
+  "foto": {
+   "titulo": "File:Spain Andalusia Marbella BW 2015-10-28 12-17-12.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Spain_Andalusia_Marbella_BW_2015-10-28_12-17-12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 3534,
+   "alto": 3675,
+   "licencia": "CC BY-SA 3.0",
+   "autor": "Berthold Werner",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Spain_Andalusia_Marbella_BW_2015-10-28_12-17-12.jpg",
+   "mencionaMunicipio": true
+  },
+  "alternativas": 1
+ },
+ {
+  "slug": "parque-gabriela",
+  "municipality": "Salinas",
+  "name": "Parque Gabriela",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Parque Gabriela\" Salinas"
+ },
+ {
+  "slug": "paseo-costa-del-sur",
+  "municipality": "Salinas",
+  "name": "Paseo Costa del Sur",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Paseo Costa del Sur\" Salinas"
+ },
+ {
+  "slug": "brisas-de-maresua",
+  "municipality": "San Germán",
+  "name": "Brisas de Maresúa",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Brisas de Maresúa\" San Germán"
+ },
+ {
+  "slug": "colinas-del-rio",
+  "municipality": "San Germán",
+  "name": "Colinas del Río",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Colinas del Río\" San Germán"
+ },
+ {
+  "slug": "el-recreo",
+  "municipality": "San Germán",
+  "name": "El Recreo",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"El Recreo\" San Germán"
+ },
+ {
+  "slug": "manuel-f-rossy",
+  "municipality": "San Germán",
+  "name": "Manuel F. Rossy",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Manuel F. Rossy\" San Germán"
+ },
+ {
+  "slug": "paseos-del-valle",
+  "municipality": "San Germán",
+  "name": "Paseos del Valle",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Paseos del Valle\" San Germán"
+ },
+ {
+  "slug": "condado",
+  "municipality": "San Juan",
+  "name": "Condado",
+  "priority": "LUXURY",
+  "estado": "sin-foto-de-la-comunidad",
+  "consulta": "\"Condado\" San Juan"
+ },
+ {
+  "slug": "montehiedra",
+  "municipality": "San Juan",
+  "name": "Montehiedra",
+  "priority": "LUXURY",
+  "estado": "con-foto",
+  "consulta": "\"Montehiedra\" San Juan",
+  "foto": {
+   "titulo": "File:Peaje de Montehiedra, San Juan, Puerto Rico (4).jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Peaje_de_Montehiedra%2C_San_Juan%2C_Puerto_Rico_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 4032,
+   "alto": 1816,
+   "licencia": "CC BY-SA 4.0",
+   "autor": "Yarfpr",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Peaje_de_Montehiedra,_San_Juan,_Puerto_Rico_(4).jpg",
+   "mencionaMunicipio": true
+  },
+  "alternativas": 4
+ },
+ {
+  "slug": "ocean-park",
+  "municipality": "San Juan",
+  "name": "Ocean Park",
+  "priority": "LUXURY",
+  "estado": "con-foto",
+  "consulta": "\"Ocean Park\" San Juan",
+  "foto": {
+   "titulo": "File:Parque Dr. José Celso Barbosa in Ocean Park, Santurce, San Juan, Puerto Rico.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Parque_Dr._Jos%C3%A9_Celso_Barbosa_in_Ocean_Park%2C_Santurce%2C_San_Juan%2C_Puerto_Rico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 4500,
+   "alto": 3000,
+   "licencia": "CC BY 2.0",
+   "autor": "Breezy Baldwin",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Parque_Dr._Jos%C3%A9_Celso_Barbosa_in_Ocean_Park,_Santurce,_San_Juan,_Puerto_Rico.jpg",
+   "mencionaMunicipio": true
+  },
+  "alternativas": 2
+ },
+ {
+  "slug": "senderos-de-montehiedra",
+  "municipality": "San Juan",
+  "name": "Senderos de Montehiedra",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Senderos de Montehiedra\" San Juan"
+ },
+ {
+  "slug": "miramar",
+  "municipality": "San Juan",
+  "name": "Miramar",
+  "priority": "HIGH",
+  "estado": "con-foto",
+  "consulta": "\"Miramar\" San Juan",
+  "foto": {
+   "titulo": "File:Miramar, Santurce, San Juan, Puerto Rico.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Miramar%2C_Santurce%2C_San_Juan%2C_Puerto_Rico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 4500,
+   "alto": 3000,
+   "licencia": "CC BY 2.0",
+   "autor": "Breezy Baldwin",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Miramar,_Santurce,_San_Juan,_Puerto_Rico.jpg",
+   "mencionaMunicipio": true
+  },
+  "alternativas": 4
+ },
+ {
+  "slug": "santurce",
+  "municipality": "San Juan",
+  "name": "Santurce",
+  "priority": "HIGH",
+  "estado": "sin-foto-de-la-comunidad",
+  "consulta": "\"Santurce\" San Juan"
+ },
+ {
+  "slug": "alto-monte",
+  "municipality": "San Juan",
+  "name": "Alto Monte",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Alto Monte\" San Juan"
+ },
+ {
+  "slug": "arcos-de-cupey",
+  "municipality": "San Juan",
+  "name": "Arcos de Cupey",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Arcos de Cupey\" San Juan"
+ },
+ {
+  "slug": "borinquen-gardens",
+  "municipality": "San Juan",
+  "name": "Borinquen Gardens",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Borinquen Gardens\" San Juan"
+ },
+ {
+  "slug": "caimito",
+  "municipality": "San Juan",
+  "name": "Caimito",
+  "priority": "MEDIUM",
+  "estado": "con-foto",
+  "consulta": "\"Caimito\" San Juan",
+  "foto": {
+   "titulo": "File:Caimito, San Juan, Puerto Rico - panoramio (1).jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Caimito%2C_San_Juan%2C_Puerto_Rico_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 4928,
+   "alto": 3264,
+   "licencia": "CC BY 3.0",
+   "autor": "Edgar Torres",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Caimito,_San_Juan,_Puerto_Rico_-_panoramio_(1).jpg",
+   "mencionaMunicipio": true
+  },
+  "alternativas": 2
+ },
+ {
+  "slug": "churchill-park",
+  "municipality": "San Juan",
+  "name": "Churchill Park",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Churchill Park\" San Juan"
+ },
+ {
+  "slug": "colinas-de-cupey",
+  "municipality": "San Juan",
+  "name": "Colinas de Cupey",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Colinas de Cupey\" San Juan"
+ },
+ {
+  "slug": "cupey",
+  "municipality": "San Juan",
+  "name": "Cupey",
+  "priority": "MEDIUM",
+  "estado": "con-foto",
+  "consulta": "\"Cupey\" San Juan",
+  "foto": {
+   "titulo": "File:Señorial Memorial Park, Cupey, San Juan, Puerto Rico.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Se%C3%B1orial_Memorial_Park%2C_Cupey%2C_San_Juan%2C_Puerto_Rico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 1600,
+   "alto": 900,
+   "licencia": "CC BY-SA 4.0",
+   "autor": "The Eloquent Peasant",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Se%C3%B1orial_Memorial_Park,_Cupey,_San_Juan,_Puerto_Rico.jpg",
+   "mencionaMunicipio": true
+  },
+  "alternativas": 2
+ },
+ {
+  "slug": "hacienda-las-ceibas",
+  "municipality": "San Juan",
+  "name": "Hacienda Las Ceibas",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Hacienda Las Ceibas\" San Juan"
+ },
+ {
+  "slug": "hato-rey-central",
+  "municipality": "San Juan",
+  "name": "Hato Rey Central",
+  "priority": "MEDIUM",
+  "estado": "con-foto",
+  "consulta": "\"Hato Rey Central\" San Juan",
+  "foto": {
+   "titulo": "File:Floral Park (sub-barrio).png",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Floral_Park_%28sub-barrio%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 4140,
+   "alto": 3852,
+   "licencia": "CC BY-SA 3.0",
+   "autor": "Moebiusuibeom-en",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Floral_Park_(sub-barrio).png",
+   "mencionaMunicipio": true
+  },
+  "alternativas": 3
+ },
+ {
+  "slug": "hato-rey-norte",
+  "municipality": "San Juan",
+  "name": "Hato Rey Norte",
+  "priority": "MEDIUM",
+  "estado": "con-foto",
+  "consulta": "\"Hato Rey Norte\" San Juan",
+  "foto": {
+   "titulo": "File:Skyline of Hato Rey Norte, San Juan, Puerto Rico.JPG",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Skyline_of_Hato_Rey_Norte%2C_San_Juan%2C_Puerto_Rico.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 2304,
+   "alto": 1536,
+   "licencia": "CC BY-SA 3.0",
+   "autor": "Thief12",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Skyline_of_Hato_Rey_Norte,_San_Juan,_Puerto_Rico.JPG",
+   "mencionaMunicipio": true
+  },
+  "alternativas": 3
+ },
+ {
+  "slug": "hato-rey-sur",
+  "municipality": "San Juan",
+  "name": "Hato Rey Sur",
+  "priority": "MEDIUM",
+  "estado": "con-foto",
+  "consulta": "\"Hato Rey Sur\" San Juan",
+  "foto": {
+   "titulo": "File:La 37 (sub-barrio).png",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/La_37_%28sub-barrio%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 4140,
+   "alto": 3852,
+   "licencia": "CC BY-SA 3.0",
+   "autor": "Moebiusuibeom-en",
+   "pagina": "https://commons.wikimedia.org/wiki/File:La_37_(sub-barrio).png",
+   "mencionaMunicipio": true
+  },
+  "alternativas": 5
+ },
+ {
+  "slug": "hillside",
+  "municipality": "San Juan",
+  "name": "Hillside",
+  "priority": "MEDIUM",
+  "estado": "con-foto",
+  "consulta": "\"Hillside\" San Juan",
+  "foto": {
+   "titulo": "File:San Juan Valley.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/San_Juan_Valley.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 4288,
+   "alto": 2848,
+   "licencia": "CC0",
+   "autor": "Wilfredor",
+   "pagina": "https://commons.wikimedia.org/wiki/File:San_Juan_Valley.jpg",
+   "mencionaMunicipio": true
+  },
+  "alternativas": 4
+ },
+ {
+  "slug": "los-jardines-de-montehiedra",
+  "municipality": "San Juan",
+  "name": "Los Jardines de Montehiedra",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Los Jardines de Montehiedra\" San Juan"
+ },
+ {
+  "slug": "monte-verde-real",
+  "municipality": "San Juan",
+  "name": "Monte Verde Real",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Monte Verde Real\" San Juan"
+ },
+ {
+  "slug": "puerto-nuevo",
+  "municipality": "San Juan",
+  "name": "Puerto Nuevo",
+  "priority": "MEDIUM",
+  "estado": "con-foto",
+  "consulta": "\"Puerto Nuevo\" San Juan",
+  "foto": {
+   "titulo": "File:Panadería La Ceiba en Puerto Nuevo, San Juan, Puerto Rico.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Panader%C3%ADa_La_Ceiba_en_Puerto_Nuevo%2C_San_Juan%2C_Puerto_Rico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 4032,
+   "alto": 3024,
+   "licencia": "CC BY 2.0",
+   "autor": "Steam Pipe Trunk Distribution Venue",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Panader%C3%ADa_La_Ceiba_en_Puerto_Nuevo,_San_Juan,_Puerto_Rico.jpg",
+   "mencionaMunicipio": true
+  },
+  "alternativas": 5
+ },
+ {
+  "slug": "rio-piedras-pueblo",
+  "municipality": "San Juan",
+  "name": "Río Piedras Pueblo",
+  "priority": "MEDIUM",
+  "estado": "con-foto",
+  "consulta": "\"Río Piedras Pueblo\" San Juan",
+  "foto": {
+   "titulo": "File:Plaza de la Convalecencia, Río Piedras, San Juan.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Plaza_de_la_Convalecencia%2C_R%C3%ADo_Piedras%2C_San_Juan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 5275,
+   "alto": 2967,
+   "licencia": "CC BY-SA 4.0",
+   "autor": "Moebiusuibeom-en",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Plaza_de_la_Convalecencia,_R%C3%ADo_Piedras,_San_Juan.jpg",
+   "mencionaMunicipio": true
+  },
+  "alternativas": 7
+ },
+ {
+  "slug": "san-juan-antiguo",
+  "municipality": "San Juan",
+  "name": "San Juan Antiguo",
+  "priority": "MEDIUM",
+  "estado": "sin-foto-de-la-comunidad",
+  "consulta": "\"San Juan Antiguo\" San Juan"
+ },
+ {
+  "slug": "university-gardens",
+  "municipality": "San Juan",
+  "name": "University Gardens",
+  "priority": "MEDIUM",
+  "estado": "con-foto",
+  "consulta": "\"University Gardens\" San Juan",
+  "foto": {
+   "titulo": "File:Hyde Park (sub-barrio).png",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Hyde_Park_%28sub-barrio%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 4140,
+   "alto": 3852,
+   "licencia": "CC BY-SA 3.0",
+   "autor": "Moebiusuibeom-en",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Hyde_Park_(sub-barrio).png",
+   "mencionaMunicipio": true
+  },
+  "alternativas": 2
+ },
+ {
+  "slug": "villas-del-senorial",
+  "municipality": "San Juan",
+  "name": "Villas del Señorial",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Villas del Señorial\" San Juan"
+ },
+ {
+  "slug": "bosque-llano",
+  "municipality": "San Lorenzo",
+  "name": "Bosque Llano",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Bosque Llano\" San Lorenzo"
+ },
+ {
+  "slug": "ciudad-masso",
+  "municipality": "San Lorenzo",
+  "name": "Ciudad Masso",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Ciudad Masso\" San Lorenzo"
+ },
+ {
+  "slug": "jardines-de-san-lorenzo",
+  "municipality": "San Lorenzo",
+  "name": "Jardines de San Lorenzo",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Jardines de San Lorenzo\" San Lorenzo"
+ },
+ {
+  "slug": "portal-del-sol",
+  "municipality": "San Lorenzo",
+  "name": "Portal del Sol",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Portal del Sol\" San Lorenzo"
+ },
+ {
+  "slug": "savannah-real",
+  "municipality": "San Lorenzo",
+  "name": "Savannah Real",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Savannah Real\" San Lorenzo"
+ },
+ {
+  "slug": "andres-mendez-liceaga",
+  "municipality": "San Sebastián",
+  "name": "Andrés Méndez Liceaga",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Andrés Méndez Liceaga\" San Sebastián"
+ },
+ {
+  "slug": "hacienda-san-andres",
+  "municipality": "San Sebastián",
+  "name": "Hacienda San Andrés",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Hacienda San Andrés\" San Sebastián"
+ },
+ {
+  "slug": "san-sebastian-court",
+  "municipality": "San Sebastián",
+  "name": "San Sebastián Court",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"San Sebastián Court\" San Sebastián"
+ },
+ {
+  "slug": "villa-rita",
+  "municipality": "San Sebastián",
+  "name": "Villa Rita",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Villa Rita\" San Sebastián"
+ },
+ {
+  "slug": "hacienda-isabel",
+  "municipality": "Santa Isabel",
+  "name": "Hacienda Isabel",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Hacienda Isabel\" Santa Isabel"
+ },
+ {
+  "slug": "brisas-del-prado",
+  "municipality": "Santa Isabel",
+  "name": "Brisas del Prado",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Brisas del Prado\" Santa Isabel"
+ },
+ {
+  "slug": "playita-cortada",
+  "municipality": "Santa Isabel",
+  "name": "Playita Cortada",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Playita Cortada\" Santa Isabel"
+ },
+ {
+  "slug": "portal-de-la-reina",
+  "municipality": "Santa Isabel",
+  "name": "Portal de la Reina",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Portal de la Reina\" Santa Isabel"
+ },
+ {
+  "slug": "prados-del-sonador",
+  "municipality": "Santa Isabel",
+  "name": "Prados del Soñador",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Prados del Soñador\" Santa Isabel"
+ },
+ {
+  "slug": "san-miguel",
+  "municipality": "Santa Isabel",
+  "name": "San Miguel",
+  "priority": "MEDIUM",
+  "estado": "con-foto",
+  "consulta": "\"San Miguel\" Santa Isabel",
+  "foto": {
+   "titulo": "File:Antigua portada del Convento de San Miguel y Santa Isabel (Trujillo).jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Antigua_portada_del_Convento_de_San_Miguel_y_Santa_Isabel_%28Trujillo%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 2656,
+   "alto": 3541,
+   "licencia": "CC BY-SA 4.0",
+   "autor": "José Luis Filpo Cabana",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Antigua_portada_del_Convento_de_San_Miguel_y_Santa_Isabel_(Trujillo).jpg",
+   "mencionaMunicipio": true
+  },
+  "alternativas": 5
+ },
+ {
+  "slug": "villa-mar",
+  "municipality": "Santa Isabel",
+  "name": "Villa Mar",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Villa Mar\" Santa Isabel"
+ },
+ {
+  "slug": "villa-serena",
+  "municipality": "Santa Isabel",
+  "name": "Villa Serena",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Villa Serena\" Santa Isabel"
+ },
+ {
+  "slug": "ciudad-jardin-iii",
+  "municipality": "Toa Alta",
+  "name": "Ciudad Jardín III",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Ciudad Jardín III\" Toa Alta"
+ },
+ {
+  "slug": "mansiones-de-ciudad-jardin",
+  "municipality": "Toa Alta",
+  "name": "Mansiones de Ciudad Jardín",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Mansiones de Ciudad Jardín\" Toa Alta"
+ },
+ {
+  "slug": "brisas-de-montecasino",
+  "municipality": "Toa Alta",
+  "name": "Brisas de Montecasino",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Brisas de Montecasino\" Toa Alta"
+ },
+ {
+  "slug": "plaza-de-la-fuente",
+  "municipality": "Toa Alta",
+  "name": "Plaza de la Fuente",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Plaza de la Fuente\" Toa Alta"
+ },
+ {
+  "slug": "summit-toa-alta",
+  "municipality": "Toa Alta",
+  "name": "Summit Toa Alta",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Summit Toa Alta\" Toa Alta"
+ },
+ {
+  "slug": "haciendas-del-caribe",
+  "municipality": "Toa Alta",
+  "name": "Haciendas del Caribe",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Haciendas del Caribe\" Toa Alta"
+ },
+ {
+  "slug": "mansiones-de-montecasino-ii",
+  "municipality": "Toa Alta",
+  "name": "Mansiones de Montecasino II",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Mansiones de Montecasino II\" Toa Alta"
+ },
+ {
+  "slug": "monte-verde",
+  "municipality": "Toa Alta",
+  "name": "Monte Verde",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Monte Verde\" Toa Alta"
+ },
+ {
+  "slug": "palacios-de-versalles",
+  "municipality": "Toa Alta",
+  "name": "Palacios de Versalles",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Palacios de Versalles\" Toa Alta"
+ },
+ {
+  "slug": "vistas-de-montecasino",
+  "municipality": "Toa Alta",
+  "name": "Vistas de Montecasino",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Vistas de Montecasino\" Toa Alta"
+ },
+ {
+  "slug": "levittown",
+  "municipality": "Toa Baja",
+  "name": "Levittown",
+  "priority": "HIGH",
+  "estado": "sin-foto-de-la-comunidad",
+  "consulta": "\"Levittown\" Toa Baja"
+ },
+ {
+  "slug": "camino-del-mar",
+  "municipality": "Toa Baja",
+  "name": "Camino del Mar",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Camino del Mar\" Toa Baja"
+ },
+ {
+  "slug": "candelaria-arenas",
+  "municipality": "Toa Baja",
+  "name": "Candelaria Arenas",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Candelaria Arenas\" Toa Baja"
+ },
+ {
+  "slug": "el-atlantico",
+  "municipality": "Toa Baja",
+  "name": "El Atlántico",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"El Atlántico\" Toa Baja"
+ },
+ {
+  "slug": "lago-vista",
+  "municipality": "Toa Baja",
+  "name": "Lago Vista I y II",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Lago Vista I y II\" Toa Baja"
+ },
+ {
+  "slug": "lagoplaya",
+  "municipality": "Toa Baja",
+  "name": "Lagoplaya",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Lagoplaya\" Toa Baja"
+ },
+ {
+  "slug": "lagos-del-norte",
+  "municipality": "Toa Baja",
+  "name": "Lagos del Norte",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Lagos del Norte\" Toa Baja"
+ },
+ {
+  "slug": "levittown-lakes",
+  "municipality": "Toa Baja",
+  "name": "Levittown Lakes",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Levittown Lakes\" Toa Baja"
+ },
+ {
+  "slug": "mansiones-del-lago",
+  "municipality": "Toa Baja",
+  "name": "Mansiones del Lago",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Mansiones del Lago\" Toa Baja"
+ },
+ {
+  "slug": "mansion-del-sol",
+  "municipality": "Toa Baja",
+  "name": "Mansión del Sol",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Mansión del Sol\" Toa Baja"
+ },
+ {
+  "slug": "parque-de-las-gaviotas",
+  "municipality": "Toa Baja",
+  "name": "Parque de las Gaviotas",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Parque de las Gaviotas\" Toa Baja"
+ },
+ {
+  "slug": "punta-salinas-park",
+  "municipality": "Toa Baja",
+  "name": "Punta Salinas Park",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Punta Salinas Park\" Toa Baja"
+ },
+ {
+  "slug": "corrientes-encantada",
+  "municipality": "Trujillo Alto",
+  "name": "Corrientes, Encantada",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Corrientes, Encantada\" Trujillo Alto"
+ },
+ {
+  "slug": "encantada",
+  "municipality": "Trujillo Alto",
+  "name": "Encantada",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Encantada\" Trujillo Alto"
+ },
+ {
+  "slug": "ciudad-universitaria",
+  "municipality": "Trujillo Alto",
+  "name": "Ciudad Universitaria",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Ciudad Universitaria\" Trujillo Alto"
+ },
+ {
+  "slug": "el-conquistador",
+  "municipality": "Trujillo Alto",
+  "name": "El Conquistador",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"El Conquistador\" Trujillo Alto"
+ },
+ {
+  "slug": "parque-del-monte",
+  "municipality": "Trujillo Alto",
+  "name": "Parque del Monte",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Parque del Monte\" Trujillo Alto"
+ },
+ {
+  "slug": "residencial-interamericana",
+  "municipality": "Trujillo Alto",
+  "name": "Residencial Interamericana",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Residencial Interamericana\" Trujillo Alto"
+ },
+ {
+  "slug": "lomas-de-vista-verde",
+  "municipality": "Utuado",
+  "name": "Lomas de Vista Verde",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Lomas de Vista Verde\" Utuado"
+ },
+ {
+  "slug": "jesus-maria-lago",
+  "municipality": "Utuado",
+  "name": "Jesús María Lago",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Jesús María Lago\" Utuado"
+ },
+ {
+  "slug": "urbanizacion-cabrera",
+  "municipality": "Utuado",
+  "name": "Urbanización Cabrera",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Urbanización Cabrera\" Utuado"
+ },
+ {
+  "slug": "comunidad-rural-el-guano",
+  "municipality": "Utuado",
+  "name": "Comunidad Rural El Guano",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Comunidad Rural El Guano\" Utuado"
+ },
+ {
+  "slug": "jardines-de-bubao",
+  "municipality": "Utuado",
+  "name": "Jardines de Bubao",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Jardines de Bubao\" Utuado"
+ },
+ {
+  "slug": "perez-matos",
+  "municipality": "Utuado",
+  "name": "Pérez Matos",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Pérez Matos\" Utuado"
+ },
+ {
+  "slug": "alturas-de-cerro-gordo",
+  "municipality": "Vega Alta",
+  "name": "Alturas de Cerro Gordo III y IV",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Alturas de Cerro Gordo III y IV\" Vega Alta"
+ },
+ {
+  "slug": "grand-palm-i",
+  "municipality": "Vega Alta",
+  "name": "Grand Palm I",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Grand Palm I\" Vega Alta"
+ },
+ {
+  "slug": "grand-palm-ii",
+  "municipality": "Vega Alta",
+  "name": "Grand Palm II",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Grand Palm II\" Vega Alta"
+ },
+ {
+  "slug": "treasure-point",
+  "municipality": "Vega Alta",
+  "name": "Treasure Point",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Treasure Point\" Vega Alta"
+ },
+ {
+  "slug": "vega-dorada",
+  "municipality": "Vega Alta",
+  "name": "Vega Dorada",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Vega Dorada\" Vega Alta"
+ },
+ {
+  "slug": "la-ponderosa",
+  "municipality": "Vega Alta",
+  "name": "Comunidad La Ponderosa",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Comunidad La Ponderosa\" Vega Alta"
+ },
+ {
+  "slug": "villa-linares",
+  "municipality": "Vega Alta",
+  "name": "Villa Linares",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Villa Linares\" Vega Alta"
+ },
+ {
+  "slug": "villas-de-la-playa",
+  "municipality": "Vega Baja",
+  "name": "Villas de la Playa",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Villas de la Playa\" Vega Baja"
+ },
+ {
+  "slug": "atlantic-view-court",
+  "municipality": "Vega Baja",
+  "name": "Atlantic View Court",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Atlantic View Court\" Vega Baja"
+ },
+ {
+  "slug": "vega-serena",
+  "municipality": "Vega Baja",
+  "name": "Vega Serena",
+  "priority": "HIGH",
+  "estado": "sin-resultados",
+  "consulta": "\"Vega Serena\" Vega Baja"
+ },
+ {
+  "slug": "almirante-sur-miranda",
+  "municipality": "Vega Baja",
+  "name": "Almirante Sur (Miranda)",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Almirante Sur (Miranda)\" Vega Baja"
+ },
+ {
+  "slug": "brisas-tortuguero",
+  "municipality": "Vega Baja",
+  "name": "Brisas Tortuguero",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Brisas Tortuguero\" Vega Baja"
+ },
+ {
+  "slug": "ciudad-real-vega-baja",
+  "municipality": "Vega Baja",
+  "name": "Ciudad Real",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Ciudad Real\" Vega Baja"
+ },
+ {
+  "slug": "estancias-de-tortuguero",
+  "municipality": "Vega Baja",
+  "name": "Estancias de Tortuguero",
+  "priority": "MEDIUM",
+  "estado": "con-foto",
+  "consulta": "\"Estancias de Tortuguero\" Vega Baja",
+  "foto": {
+   "titulo": "File:Bienvenidos a Quintas de Tortuguero, Estancias de Tortuguero, Vega Baja Lakes- sectores en Vega Baja, Puerto Rico.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Bienvenidos_a_Quintas_de_Tortuguero%2C_Estancias_de_Tortuguero%2C_Vega_Baja_Lakes-_sectores_en_Vega_Baja%2C_Puerto_Rico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 3386,
+   "alto": 2540,
+   "licencia": "CC BY-SA 4.0",
+   "autor": "The Eloquent Peasant",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Bienvenidos_a_Quintas_de_Tortuguero,_Estancias_de_Tortuguero,_Vega_Baja_Lakes-_sectores_en_Vega_Baja,_Puerto_Rico.jpg",
+   "mencionaMunicipio": true
+  },
+  "alternativas": 1
+ },
+ {
+  "slug": "jardines-de-vega-baja",
+  "municipality": "Vega Baja",
+  "name": "Jardines de Vega Baja",
+  "priority": "MEDIUM",
+  "estado": "con-foto",
+  "consulta": "\"Jardines de Vega Baja\" Vega Baja",
+  "foto": {
+   "titulo": "File:Plegadis falcinellus in Parque Jardines de Vega Baja, Puerto Rico.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Plegadis_falcinellus_in_Parque_Jardines_de_Vega_Baja%2C_Puerto_Rico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 4166,
+   "alto": 2767,
+   "licencia": "CC BY 4.0",
+   "autor": "Ligocsicnarf89",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Plegadis_falcinellus_in_Parque_Jardines_de_Vega_Baja,_Puerto_Rico.jpg",
+   "mencionaMunicipio": true
+  },
+  "alternativas": 4
+ },
+ {
+  "slug": "san-demetrio",
+  "municipality": "Vega Baja",
+  "name": "San Demetrio",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"San Demetrio\" Vega Baja"
+ },
+ {
+  "slug": "velomas",
+  "municipality": "Vega Baja",
+  "name": "Velomas",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Velomas\" Vega Baja"
+ },
+ {
+  "slug": "bravos-de-boston",
+  "municipality": "Vieques",
+  "name": "Bravos de Boston",
+  "priority": "LUXURY",
+  "estado": "sin-resultados",
+  "consulta": "\"Bravos de Boston\" Vieques"
+ },
+ {
+  "slug": "cesar-coca-gonzalez",
+  "municipality": "Vieques",
+  "name": "César “Coca” González",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"César “Coca” González\" Vieques"
+ },
+ {
+  "slug": "jardines-de-vieques",
+  "municipality": "Vieques",
+  "name": "Jardines de Vieques",
+  "priority": "MEDIUM",
+  "estado": "con-foto",
+  "consulta": "\"Jardines de Vieques\" Vieques",
+  "foto": {
+   "titulo": "File:PR-200, Jardines de Vieques.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/PR-200%2C_Jardines_de_Vieques.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "ancho": 2006,
+   "alto": 1334,
+   "licencia": "CC BY 2.0",
+   "autor": "Mark Donoher",
+   "pagina": "https://commons.wikimedia.org/wiki/File:PR-200,_Jardines_de_Vieques.jpg",
+   "mencionaMunicipio": true
+  },
+  "alternativas": 1
+ },
+ {
+  "slug": "villa-borinquen",
+  "municipality": "Vieques",
+  "name": "Villa Borinquén",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Villa Borinquén\" Vieques"
+ },
+ {
+  "slug": "alturas-de-villalba",
+  "municipality": "Villalba",
+  "name": "Alturas de Villalba",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Alturas de Villalba\" Villalba"
+ },
+ {
+  "slug": "alturas-del-alba",
+  "municipality": "Villalba",
+  "name": "Alturas del Alba",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Alturas del Alba\" Villalba"
+ },
+ {
+  "slug": "borinquen",
+  "municipality": "Villalba",
+  "name": "Borinquen",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Borinquen\" Villalba"
+ },
+ {
+  "slug": "estancias-de-mayoral",
+  "municipality": "Villalba",
+  "name": "Estancias de Mayoral",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Estancias de Mayoral\" Villalba"
+ },
+ {
+  "slug": "las-alondras",
+  "municipality": "Villalba",
+  "name": "Las Alondras",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Las Alondras\" Villalba"
+ },
+ {
+  "slug": "residencial-efrain-suarez",
+  "municipality": "Villalba",
+  "name": "Residencial Efraín Suárez",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Residencial Efraín Suárez\" Villalba"
+ },
+ {
+  "slug": "residencial-enudio-negron",
+  "municipality": "Villalba",
+  "name": "Residencial Enudio Negrón",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Residencial Enudio Negrón\" Villalba"
+ },
+ {
+  "slug": "residencial-maximo-miranda-jimenez",
+  "municipality": "Villalba",
+  "name": "Residencial Máximo Miranda Jiménez",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Residencial Máximo Miranda Jiménez\" Villalba"
+ },
+ {
+  "slug": "vista-alegre",
+  "municipality": "Villalba",
+  "name": "Vista Alegre",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Vista Alegre\" Villalba"
+ },
+ {
+  "slug": "extension-villas-de-buenaventura",
+  "municipality": "Yabucoa",
+  "name": "Extensión Villas de Buenaventura",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Extensión Villas de Buenaventura\" Yabucoa"
+ },
+ {
+  "slug": "urbanizacion-jaime-c-rodriguez",
+  "municipality": "Yabucoa",
+  "name": "Urbanización Jaime C. Rodríguez",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Urbanización Jaime C. Rodríguez\" Yabucoa"
+ },
+ {
+  "slug": "urbanizacion-mendez",
+  "municipality": "Yabucoa",
+  "name": "Urbanización Méndez",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Urbanización Méndez\" Yabucoa"
+ },
+ {
+  "slug": "urbanizacion-santa-elena",
+  "municipality": "Yabucoa",
+  "name": "Urbanización Santa Elena",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Urbanización Santa Elena\" Yabucoa"
+ },
+ {
+  "slug": "urbanizacion-santa-maria",
+  "municipality": "Yabucoa",
+  "name": "Urbanización Santa María",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Urbanización Santa María\" Yabucoa"
+ },
+ {
+  "slug": "valles-de-yabucoa",
+  "municipality": "Yabucoa",
+  "name": "Valles de Yabucoa",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Valles de Yabucoa\" Yabucoa"
+ },
+ {
+  "slug": "villa-hilda",
+  "municipality": "Yabucoa",
+  "name": "Villa Hilda",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Villa Hilda\" Yabucoa"
+ },
+ {
+  "slug": "villas-de-buenaventura",
+  "municipality": "Yabucoa",
+  "name": "Villas de Buenaventura",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Villas de Buenaventura\" Yabucoa"
+ },
+ {
+  "slug": "alturas-del-cafetal",
+  "municipality": "Yauco",
+  "name": "Alturas del Cafetal",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Alturas del Cafetal\" Yauco"
+ },
+ {
+  "slug": "extension-santa-catalina",
+  "municipality": "Yauco",
+  "name": "Extensión Santa Catalina",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Extensión Santa Catalina\" Yauco"
+ },
+ {
+  "slug": "la-quinta",
+  "municipality": "Yauco",
+  "name": "La Quinta",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"La Quinta\" Yauco"
+ },
+ {
+  "slug": "santa-catalina",
+  "municipality": "Yauco",
+  "name": "Santa Catalina",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Santa Catalina\" Yauco"
+ },
+ {
+  "slug": "villas-del-cafetal",
+  "municipality": "Yauco",
+  "name": "Villas del Cafetal",
+  "priority": "MEDIUM",
+  "estado": "sin-resultados",
+  "consulta": "\"Villas del Cafetal\" Yauco"
+ }
+]

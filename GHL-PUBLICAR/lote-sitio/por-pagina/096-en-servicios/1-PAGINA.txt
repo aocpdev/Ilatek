@@ -1,0 +1,11 @@
+Nombre en GHL: Sitio - Servicios (EN)
+Slug: en/servicios
+URL: https://ilatekpr.com/en/servicios
+Acción: CREAR PÁGINA
+Estado hoy: HTTP 404
+Archivo a pegar: 2-CODIGO-CUSTOM-HTML.html (293 KB, sha256 9ba4ba040564)
+Origen en el repo: categorias/servicios/en/landing-pages/servicios.en.html
+Sección de clima: sí
+
+Dónde va: elemento Custom HTML/JavaScript → Custom Code → Open Code Editor.
+Se pega el archivo entero, tal cual. No añadir header ni footer global: ya vienen dentro.

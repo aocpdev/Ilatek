@@ -12,11 +12,11 @@ export const mantenimiento = [
     h1after: '.',
     metaTitle: 'Inspección y Mantenimiento de Techos | Ilatek Techos',
     metaDescription:
-      'Inspección de techos gratis y mantenimiento preventivo en Puerto Rico desde $250 por labor. Cotización $0 y $50 descontable del total para agendar. 78 municipios.',
+      'Inspección de techos por $50 descontables y mantenimiento preventivo en Puerto Rico desde $250. Cotización gratis y $50 descontable del total para agendar. 78 municipios.',
     hero: pic('presion', {
       alt: 'Inspección y mantenimiento de techos de Ilatek Techos en Puerto Rico — {{custom_values.business__county_name}}',
       title: 'Inspección y mantenimiento de techos · Ilatek Techos',
-      badge: 'Inspección gratis',
+      badge: 'Agenda con $50 descontables del total',
     }),
     incl: pic('postconstruccion', {
       alt: 'Mantenimiento preventivo de techos por Ilatek Techos en Puerto Rico — limpieza y revisión',
@@ -24,10 +24,10 @@ export const mantenimiento = [
       caption: 'Inspección · Limpieza del techo · Prevención',
     }),
     heroSub:
-      'El mejor momento para tu techo es antes de que falle. Ilatek inspecciona tu techo <b>gratis</b> y da mantenimiento preventivo en {{custom_values.business__county_name}} <b>desde $250 por labor</b>, con limpieza, canaletas, lavado y garantía escrita.',
+      'El mejor momento para tu techo es antes de que falle. Ilatek inspecciona tu techo por <b>$50</b> descontables del total y da mantenimiento preventivo en {{custom_values.business__county_name}} <b>desde $250</b>, con limpieza, canaletas, lavado y garantía escrita.',
     facts: [
-      { b: '$250', s: 'por labor', label: 'Mantenimiento' },
-      { b: '$0', s: 'cotización', label: 'Inspección gratis' },
+      { b: 'desde $250', s: '', label: 'Mantenimiento' },
+      { b: '$50', s: 'visita', label: 'Descontables del total' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
     ],
     benefits: [
@@ -36,47 +36,47 @@ export const mantenimiento = [
       { icon: 'drop', h: 'Todo el techo cuidado', p: 'Limpieza, canaletas, desagües, lavado y sellado preventivo: un solo responsable para el cuidado de tu techo.' },
     ],
     benTitle: 'Cuida tu techo antes de que te cueste caro.',
-    // Cierre propio de esta landing: la cotización es $0 y el depósito de $50 se
+    // Cierre propio de esta landing: la cotización es gratis y el depósito de $50 se
     // descuenta del total al agendar (mismo dato que su meta description).
     ctaText:
-      'Solicita tu cotización gratis de inspección y mantenimiento de techos en {{custom_values.business__county_name}} y recibe precio claro y por escrito — cotización $0 y $50 descontable del total para agendar, con cobertura en los 78 municipios de Puerto Rico.',
+      'Solicita tu cotización por $50 descontables del total de inspección y mantenimiento de techos en {{custom_values.business__county_name}} y recibe precio claro y por escrito — cotización gratis y $50 descontable del total para agendar, con cobertura en los 78 municipios de Puerto Rico.',
     incluye: {
       title: 'Qué incluye el cuidado de tu techo.',
       answer:
         '<b>La inspección es gratuita y el mantenimiento es a la medida.</b> Ilatek revisa el techo, limpia, despeja desagües y canaletas, lava a presión y aplica el sellado preventivo que tu techo necesita.',
       checks: [
-        'Inspección completa del techo sin costo',
+        'Agenda con $50 descontables del total',
         'Limpieza de escombros y hojas del techo',
         'Limpieza de canaletas y bajantes',
         'Lavado a presión de la superficie',
         'Sellado preventivo de fallas menores',
         'Informe con fotos y garantía escrita',
       ],
-      cta: 'Solicita tu inspección gratis',
+      cta: 'Agenda tu visita o inspección',
     },
     extra: {
       eyebrow: 'Servicios',
       title: 'Todo lo que necesita tu techo.',
       kids: [
-        { slug: 'inspeccion-de-techos', name: 'Inspección de Techos', desc: 'Evaluación completa y gratis de tu techo, con informe fotográfico y recomendaciones.' },
-        { slug: 'mantenimiento-de-techos', name: 'Mantenimiento Preventivo', desc: 'Plan de visitas periódicas desde $250 por labor para mantener tu techo protegido.' },
+        { slug: 'inspeccion-de-techos', name: 'Inspección de Techos', desc: 'Evaluación completa de tu techo, con informe fotográfico y recomendaciones.' },
+        { slug: 'mantenimiento-de-techos', name: 'Mantenimiento Preventivo', desc: 'Plan de visitas periódicas desde $250 para mantener tu techo protegido.' },
         { slug: 'limpieza-de-techos-y-canaletas', name: 'Limpieza de Techos y Canaletas', desc: 'Removemos hojas, arena y escombros que obstruyen el drenaje de tu techo.' },
         { slug: 'canaletas-y-bajantes', name: 'Canaletas y Bajantes', desc: 'Limpieza, reparación e instalación de canaletas y bajantes para que el agua corra.' },
         { slug: 'lavado-a-presion-techos', name: 'Lavado a Presión de Techos', desc: 'Limpieza profunda a presión que prepara y alarga la vida del techo.' },
         { slug: 'tragaluces', name: 'Tragaluces / Skylights', desc: 'Sellado e instalación de tragaluces sin filtraciones ni humedad.' },
         { slug: 'instalacion-y-reemplazo-de-techos', name: 'Instalación y Reemplazo', desc: 'Techos nuevos y reemplazo completo cuando reparar ya no es suficiente.' },
       ],
-      cta: { slug: 'cotizacion', label: 'Solicita tu cotización gratis' },
+      cta: { slug: 'cotizacion', label: 'Solicita tu cotización por $50 descontables del total' },
     },
     faq: [
-      { q: '¿Cuánto cuesta inspeccionar y dar mantenimiento a un techo?', a: 'La <b>inspección de techos de Ilatek es gratis</b>. El mantenimiento preventivo comienza <b>desde $250 por labor</b> y varía según el tamaño del techo y el trabajo necesario. Cotiza para tu plan.' },
+      { q: '¿Cuánto cuesta inspeccionar y dar mantenimiento a un techo?', a: 'La <b>visita o inspección de Ilatek cuesta $50, descontables del total</b>. El mantenimiento preventivo comienza <b>desde $250</b> y varía según el tamaño del techo y el trabajo necesario. Cotiza para tu plan.' },
       { q: '¿Cuántas veces al año debo darle mantenimiento al techo?', a: 'Recomendamos <b>al menos una inspección anual</b> y limpieza de canaletas dos veces al año. Techos en zonas costeras o con árboles cerca pueden necesitar más frecuencia.' },
       { q: '¿Por qué dar mantenimiento si mi techo está bien?', a: 'Porque <b>prevenir cuesta mucho menos que reparar</b>. El mantenimiento detecta fallas tempranas, cuando aún son baratas, y evita goteras y daños estructurales.' },
       { q: '¿El plan de mantenimiento incluye reparaciones?', a: 'El plan incluye <b>inspección, limpieza, desagües y sellado preventivo</b>. Las reparaciones mayores se cotizan por separado, pero como cliente del plan tienes prioridad y visitas programadas.' },
       { q: '¿Qué revisan en la inspección de techos?', a: 'Revisamos <b>grietas, selladores vencidos, empozamientos, desagües, canaletas, uniones y remates</b>. Te entregamos un informe con fotos y las recomendaciones por prioridad.' },
-      { q: '¿La inspección tiene algún costo o compromiso?', a: '<b>No.</b> La inspección es gratis y sin compromiso: te explicamos el estado de tu techo y las opciones, y decides con calma.' },
+      { q: '¿La inspección tiene algún costo o compromiso?', a: '<b>No.</b> La visita o inspección cuesta $50, descontables del total, y sin compromiso: te explicamos el estado de tu techo y las opciones, y decides con calma.' },
       { q: '¿Ofrecen mantenimiento a negocios y comercios?', a: 'Sí: planes de mantenimiento para <b>techos comerciales e industriales</b>, con visitas programadas y documentación para tu expediente.' },
-      { q: '¿Por qué elegir Ilatek Techos?', a: 'Inspección gratis, mantenimiento <b>desde $250 por labor</b>, limpieza, canaletas y lavado en un solo proveedor, con garantía escrita y cobertura en los 78 municipios de Puerto Rico.' },
+      { q: '¿Por qué elegir Ilatek Techos?', a: 'Agenda con $50 descontables del total, mantenimiento <b>desde $250</b>, limpieza, canaletas y lavado en un solo proveedor, con garantía escrita y cobertura en los 78 municipios de Puerto Rico.' },
     ],
   }),
 
@@ -84,25 +84,25 @@ export const mantenimiento = [
     slug: 'inspeccion-de-techos',
     eyebrow: 'Inspección de techos',
     noun: 'inspección de techos',
-    h1before: 'Inspección de Techos Gratis en',
+    h1before: 'Inspección de Techos en',
     h1em: 'Puerto Rico',
     h1after: ': diagnóstico con fotos.',
-    metaTitle: 'Inspección de Techos Gratis en Puerto Rico | Ilatek Techos',
+    metaTitle: 'Inspección de Techos en Puerto Rico | Ilatek Techos',
     metaDescription:
-      'Inspección de techos gratis en Puerto Rico. Diagnóstico completo con informe fotográfico, sin compromiso. Detectamos filtraciones y daños a tiempo. 78 municipios.',
-    hero: pic('presion', { alt: 'Inspección de techos gratis en Puerto Rico — diagnóstico en {{custom_values.business__county_name}}', title: 'Inspección de techos gratis · Ilatek Techos', badge: '100% gratis' }),
+      'Inspección de techos por $50 descontables en Puerto Rico. Diagnóstico completo con informe fotográfico, sin compromiso. Detectamos filtraciones y daños a tiempo. 78 municipios.',
+    hero: pic('presion', { alt: 'Inspección de techos por $50 descontables en Puerto Rico — diagnóstico en {{custom_values.business__county_name}}', title: 'Inspección de techos por $50 descontables · Ilatek Techos', badge: 'Visita por $50' }),
     incl: pic('postconstruccion', { alt: 'Inspección profesional de techo por Ilatek Techos en Puerto Rico — informe fotográfico', title: 'Inspección de techos · Ilatek Techos', caption: 'Informe con fotos · Sin compromiso' }),
     heroSub:
-      'No sabrás el estado de tu techo hasta que alguien lo revise. Ilatek inspecciona tu techo <b>gratis</b> en {{custom_values.business__county_name}}: subimos, documentamos el estado con fotos y te damos recomendaciones por prioridad, sin compromiso.',
+      'No sabrás el estado de tu techo hasta que alguien lo revise. Ilatek inspecciona tu techo por <b>$50</b> descontables del total en {{custom_values.business__county_name}}: subimos, documentamos el estado con fotos y te damos recomendaciones por prioridad, sin compromiso.',
     facts: [
-      { b: '$0', s: 'costo', label: 'Inspección gratis' },
+      { b: '$50', s: 'visita', label: 'Descontables del total' },
       { b: 'Sin', s: 'compromiso', label: 'Decides con calma' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
     ],
     benefits: [
       { icon: 'clock', h: 'Detecta a tiempo', p: 'Una inspección encuentra filtraciones y fallas cuando aún son baratas de arreglar, antes de que dañen el interior.' },
       { icon: 'shield', h: 'Informe honesto', p: 'Te decimos el estado real del techo y las prioridades, sin venderte trabajo que no necesitas.' },
-      { icon: 'tag', h: 'Sin costo ni compromiso', p: 'La inspección es totalmente gratis: te sirve incluso si decides no contratar el servicio.' },
+      { icon: 'tag', h: 'Sin costo ni compromiso', p: 'La visita o inspección cuesta $50, descontables del total,: te sirve incluso si decides no contratar el servicio.' },
     ],
     incluye: {
       title: 'Qué revisamos en tu techo.',
@@ -116,7 +116,7 @@ export const mantenimiento = [
         'Detección de óxido en zinc y varillas',
         'Informe fotográfico con recomendaciones',
       ],
-      cta: 'Programa tu inspección gratis',
+      cta: 'Agenda tu visita o inspección',
     },
     extra: {
       eyebrow: 'Señales que revisamos',
@@ -128,14 +128,14 @@ export const mantenimiento = [
       ],
     },
     faq: [
-      { q: '¿La inspección de techo es realmente gratis?', a: '<b>Sí, totalmente gratis.</b> Subimos al techo, hacemos el diagnóstico y te entregamos las recomendaciones sin costo ni compromiso de contratar. Te sirve para tomar decisiones con información real.' },
+      { q: '¿Cuánto cuesta la inspección del techo?', a: '<b>La visita o inspección cuesta $50 y se descuenta del total.</b> Subimos al techo, hacemos el diagnóstico y te entregamos las recomendaciones con el monto descontable del total. Te sirve para tomar decisiones con información real.' },
       { q: '¿Qué me entregan después de la inspección?', a: 'Te damos un <b>informe del estado del techo con fotos</b> y recomendaciones ordenadas por prioridad — qué es urgente, qué es preventivo y qué puede esperar.' },
       { q: '¿Cada cuánto debo inspeccionar mi techo?', a: 'Recomendamos una inspección <b>al menos una vez al año</b>, y siempre después de una tormenta o huracán para detectar daños ocultos.' },
       { q: '¿La inspección encuentra todas las filtraciones?', a: 'La inspección visual detecta la mayoría de las fallas; en casos de humedad atrapada podemos requerir una <b>prueba de agua</b> para confirmar el punto exacto de entrada.' },
       { q: '¿Tengo que estar presente durante la inspección?', a: 'Es recomendable para que veas en persona los hallazgos, pero <b>no es obligatorio</b>: podemos documentar con fotos y explicarte por teléfono o en persona después.' },
       { q: '¿Inspeccionan techos comerciales e industriales?', a: '<b>Sí.</b> Inspeccionamos techos residenciales, comerciales e industriales, con la profundidad y documentación que requiera cada tipo de propiedad.' },
       { q: '¿La inspección incluye la reparación?', a: 'No: la inspección es solo el diagnóstico. <b>Si detectamos algo, te cotizamos la reparación por separado</b> y tú decides si la haces con nosotros.' },
-      { q: '¿Por qué elegir Ilatek Techos?', a: 'Inspección <b>gratis</b>, diagnósticos honestos con fotos, sin presión de venta, y cobertura en los 78 municipios de Puerto Rico con el respaldo de Ilatek.' },
+      { q: '¿Por qué elegir Ilatek Techos?', a: 'Inspección por <b>$50</b> descontables, diagnósticos honestos con fotos, sin presión de venta, y cobertura en los 78 municipios de Puerto Rico con el respaldo de Ilatek.' },
     ],
   }),
 
@@ -145,23 +145,23 @@ export const mantenimiento = [
     noun: 'mantenimiento de techos',
     h1before: 'Mantenimiento Preventivo de Techos en',
     h1em: 'Puerto Rico',
-    h1after: ' desde $250 por labor.',
+    h1after: ' desde $250.',
     metaTitle: 'Mantenimiento Preventivo de Techos | Ilatek Techos',
     metaDescription:
-      'Mantenimiento preventivo de techos en Puerto Rico desde $250 por labor. Visitas programadas de inspección, limpieza y sellado preventivo. Garantía escrita. 78 municipios.',
-    hero: pic('postconstruccion', { alt: 'Mantenimiento preventivo de techos en Puerto Rico — {{custom_values.business__county_name}}', title: 'Mantenimiento de techos · Ilatek Techos', badge: 'Desde $250 por labor' }),
+      'Mantenimiento preventivo de techos en Puerto Rico desde $250. Visitas programadas de inspección, limpieza y sellado preventivo. Garantía escrita. 78 municipios.',
+    hero: pic('postconstruccion', { alt: 'Mantenimiento preventivo de techos en Puerto Rico — {{custom_values.business__county_name}}', title: 'Mantenimiento de techos · Ilatek Techos', badge: 'Desde $250' }),
     incl: pic('presion', { alt: 'Plan de mantenimiento de techo por Ilatek Techos en Puerto Rico — visitas programadas', title: 'Mantenimiento preventivo · Ilatek Techos', caption: 'Visitas programadas · Techo al día' }),
     heroSub:
-      'Un plan de mantenimiento mantiene tu techo sano y detecta problemas antes de que sean caros. Ilatek ofrece mantenimiento preventivo en {{custom_values.business__county_name}} <b>desde $250 por labor</b>, con visitas programadas e informe fotográfico.',
+      'Un plan de mantenimiento mantiene tu techo sano y detecta problemas antes de que sean caros. Ilatek ofrece mantenimiento preventivo en {{custom_values.business__county_name}} <b>desde $250</b>, con visitas programadas e informe fotográfico.',
     facts: [
-      { b: '$250', s: 'por labor', label: 'Plan preventivo' },
+      { b: 'desde $250', s: '', label: 'Plan preventivo' },
       { b: '2', s: 'visitas/año', label: 'Programadas' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
     ],
     benefits: [
       { icon: 'clock', h: 'Cero sorpresas', p: 'Con visitas programadas detectamos fallas antes de que se conviertan en goteras y gastos grandes.' },
       { icon: 'shield', h: 'Prioridad de servicio', p: 'Como cliente del plan tienes atención prioritaria cuando el techo presenta cualquier problema.' },
-      { icon: 'tag', h: 'Precio por labor', p: 'Pagas por el trabajo que tu techo necesita, desde $250 por labor, con visitas programadas y sin sorpresas.' },
+      { icon: 'tag', h: 'Precio por labor', p: 'Pagas por el trabajo que tu techo necesita, desde $250, con visitas programadas y sin sorpresas.' },
     ],
     incluye: {
       title: 'Qué incluye el plan de mantenimiento.',
@@ -187,14 +187,14 @@ export const mantenimiento = [
       ],
     },
     faq: [
-      { q: '¿Cuánto cuesta el mantenimiento de un techo?', a: 'El mantenimiento preventivo de Ilatek <b>comienza desde $250 por labor</b>. El precio depende del tamaño del techo y del alcance de la visita. Te cotizamos a tu medida.' },
+      { q: '¿Cuánto cuesta el mantenimiento de un techo?', a: 'El mantenimiento preventivo de Ilatek <b>comienza desde $250</b>. El precio depende del tamaño del techo y del alcance de la visita. Te cotizamos a tu medida.' },
       { q: '¿Qué incluye el plan de mantenimiento?', a: 'Incluye <b>inspecciones programadas, limpieza de superficie y desagües, limpieza de canaletas y sellado preventivo de fallas menores</b>, con un informe fotográfico después de cada visita.' },
       { q: '¿Vale la pena el mantenimiento preventivo?', a: '<b>Sí.</b> Prevenir cuesta mucho menos que reparar: el mantenimiento detecta fallas cuando son baratas y evita goteras, daños estructurales y reparaciones de miles de dólares.' },
       { q: '¿Cuántas visitas al año incluye?', a: 'Depende del plan: normalmente <b>una a tres visitas al año</b>. En zonas con muchos árboles o en la costa, recomendamos más frecuencia.' },
       { q: '¿El plan cubre reparaciones mayores?', a: 'El plan cubre <b>prevención y fallas menores</b>. Las reparaciones mayores se cotizan aparte, pero los clientes del plan tienen prioridad de agenda y precio preferente.' },
       { q: '¿Hay contrato de permanencia?', a: 'Te explicamos las condiciones <b>con transparencia antes de firmar</b>. El objetivo es que el plan te convenga; no buscamos atarte con letra pequeña.' },
       { q: '¿Ofrecen planes para negocios?', a: 'Sí: <b>planes comerciales e industriales</b> con visitas programadas y documentación, para mantener el techo de tu operación en buen estado.' },
-      { q: '¿Por qué elegir Ilatek Techos?', a: 'Mantenimiento preventivo <b>desde $250 por labor</b>, visitas programadas, informe fotográfico, prioridad de servicio y cobertura en los 78 municipios de Puerto Rico.' },
+      { q: '¿Por qué elegir Ilatek Techos?', a: 'Mantenimiento preventivo <b>desde $250</b>, visitas programadas, informe fotográfico, prioridad de servicio y cobertura en los 78 municipios de Puerto Rico.' },
     ],
   }),
 
@@ -204,18 +204,18 @@ export const mantenimiento = [
     noun: 'limpieza de techos y canaletas',
     h1before: 'Limpieza de Techos y Canaletas en',
     h1em: 'Puerto Rico',
-    h1after: ' desde $150.',
+    h1after: ' desde $250.',
     metaTitle: 'Limpieza de Techos y Canaletas | Ilatek Techos',
     metaDescription:
-      'Limpieza de techos y canaletas en Puerto Rico desde $150. Removemos hojas, arena y escombros que obstruyen el drenaje. Inspección gratis y garantía escrita.',
-    hero: pic('presion', { alt: 'Limpieza de techos y canaletas en Puerto Rico — {{custom_values.business__county_name}}', title: 'Limpieza de techos y canaletas · Ilatek Techos', badge: 'Desde $150' }),
+      'Limpieza de techos y canaletas en Puerto Rico desde $250. Removemos hojas, arena y escombros que obstruyen el drenaje. Agenda con $50 descontables del total y garantía escrita.',
+    hero: pic('presion', { alt: 'Limpieza de techos y canaletas en Puerto Rico — {{custom_values.business__county_name}}', title: 'Limpieza de techos y canaletas · Ilatek Techos', badge: 'Desde $250' }),
     incl: pic('postconstruccion', { alt: 'Limpieza de techos y canaletas por Ilatek Techos en Puerto Rico — drenaje despejado', title: 'Limpieza de techos y canaletas · Ilatek Techos', caption: 'Hojas fuera · Agua corriendo' }),
     heroSub:
-      'Hojas, arena y escombros tapan tu techo y obstruyen el drenaje, causando empozamientos y filtraciones. Ilatek limpia techos y canaletas en {{custom_values.business__county_name}} <b>desde $150</b>, con inspección gratis y garantía escrita.',
+      'Hojas, arena y escombros tapan tu techo y obstruyen el drenaje, causando empozamientos y filtraciones. Ilatek limpia techos y canaletas en {{custom_values.business__county_name}}, con agenda con $50 descontables del total y garantía escrita.',
     facts: [
-      { b: '$150', s: 'por servicio', label: 'Limpieza completa' },
+      { b: '$250', s: 'por servicio', label: 'Limpieza completa' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
-      { b: '$0', s: 'inspección', label: 'Evaluación gratis' },
+      { b: '$50', s: 'visita', label: 'Descontables del total' },
     ],
     benefits: [
       { icon: 'drop', h: 'Drenaje despejado', p: 'Al remover la obstrucción, el agua corre y deja de empozarse sobre tu techo, cortando la causa de filtraciones.' },
@@ -246,14 +246,14 @@ export const mantenimiento = [
       ],
     },
     faq: [
-      { q: '¿Cuánto cuesta limpiar un techo y las canaletas?', a: 'La limpieza de techos y canaletas de Ilatek <b>comienza desde $150</b>. El precio depende del tamaño del techo y del grado de acumulación. Cotiza para tu número exacto.' },
+      { q: '¿Cuánto cuesta limpiar un techo y las canaletas?', a: 'La limpieza de techos y canaletas de Ilatek <b>comienza desde $250</b>. El precio depende del tamaño del techo y del grado de acumulación. Cotiza para tu número exacto.' },
       { q: '¿Cada cuánto debo limpiar el techo y las canaletas?', a: 'Recomendamos limpiar el techo <b>al menos dos veces al año</b>, y siempre tras la temporada de lluvias o una tormenta. Con árboles cerca, puede requerir más frecuencia.' },
       { q: '¿Por qué es importante limpiar las canaletas?', a: 'Porque las canaletas tapadas <b>rebosan y mandan el agua al techo o a la pared</b>, causando empozamientos, filtraciones y daño a la fachada.' },
       { q: '¿La limpieza del techo incluye retirar los escombros?', a: 'Sí: <b>removemos toda la suciedad y los residuos</b> del techo y los retiramos, dejando el área limpia. No dejamos los desechos en tu patio.' },
       { q: '¿La limpieza puede dañar el techo?', a: 'No: usamos <b>herramientas y métodos adecuados a cada superficie</b>. En tejas o materiales delicados trabajamos con especial cuidado.' },
       { q: '¿Ofrecen solo limpieza de canaletas?', a: 'Sí, también ofrecemos <b>limpieza específica de canaletas y bajantes</b> como servicio aparte, si es lo único que tu techo necesita.' },
       { q: '¿Cuánto tarda la limpieza del techo?', a: 'Un techo residencial típico se limpia en <b>unas pocas horas</b>; los techos grandes o muy obstruidos pueden requerir el día completo.' },
-      { q: '¿Por qué elegir Ilatek Techos?', a: 'Limpiamos a fondo, despejamos el drenaje y revisamos el techo, <b>desde $150</b>, con inspección gratis y cobertura en los 78 municipios de Puerto Rico.' },
+      { q: '¿Por qué elegir Ilatek Techos?', a: 'Limpiamos a fondo, despejamos el drenaje y revisamos el techo, <b>desde $250</b>, con agenda con $50 descontables del total y cobertura en los 78 municipios de Puerto Rico.' },
     ],
   }),
 
@@ -263,18 +263,18 @@ export const mantenimiento = [
     noun: 'canaletas y bajantes',
     h1before: 'Canales, Canaletas y Bajantes para Techos en',
     h1em: 'Puerto Rico',
-    h1after: ' desde $200.',
+    h1after: ' desde $250.',
     metaTitle: 'Canaletas y Bajantes para Techos | Ilatek Techos',
     metaDescription:
-      'Limpieza, reparación e instalación de canaletas y bajantes en Puerto Rico desde $200. Drenaje que funciona para proteger tu techo. Inspección gratis.',
+      'Limpieza, reparación e instalación de canaletas y bajantes en Puerto Rico desde $250. Drenaje que funciona para proteger tu techo. Agenda con $50 descontables del total.',
     hero: pic('postconstruccion', { alt: 'Instalación de canaletas y bajantes en Puerto Rico — {{custom_values.business__county_name}}', title: 'Canaletas y bajantes · Ilatek Techos', badge: 'Drenaje que funciona' }),
     incl: pic('presion', { alt: 'Limpieza e instalación de canaletas y bajantes por Ilatek Techos en Puerto Rico', title: 'Canaletas y bajantes · Ilatek Techos', caption: 'Limpieza de canaletas · Reparación · Instalación' }),
     heroSub:
-      'Las canaletas dirigen el agua lejos del techo y de las paredes. Ilatek las limpia, repara o instala en {{custom_values.business__county_name}} <b>desde $200</b>, para que tu drenaje funcione y no cause filtraciones, con garantía escrita.',
+      'Las canaletas dirigen el agua lejos del techo y de las paredes. Ilatek las limpia, repara o instala en {{custom_values.business__county_name}} <b>desde $250</b>, para que tu drenaje funcione y no cause filtraciones, con garantía escrita.',
     facts: [
-      { b: '$200', s: 'por trabajo', label: 'Drenaje incluido' },
+      { b: '$250', s: 'por trabajo', label: 'Drenaje incluido' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
-      { b: '$0', s: 'inspección', label: 'Evaluación gratis' },
+      { b: '$50', s: 'visita', label: 'Descontables del total' },
     ],
     benefits: [
       { icon: 'drop', h: 'El agua va donde debe', p: 'Con canaletas y bajantes en buen estado, el agua sale lejos de tu techo y de tus paredes, sin filtrarse.' },
@@ -305,14 +305,14 @@ export const mantenimiento = [
       ],
     },
     faq: [
-      { q: '¿Cuánto cuesta instalar o reparar canaletas y bajantes?', a: 'El trabajo de canaletas y bajantes de Ilatek <b>comienza desde $200</b>. El precio depende de si es limpieza, reparación o instalación nueva, y de los pies lineales. Cotiza para tu número exacto.' },
+      { q: '¿Cuánto cuesta instalar o reparar canaletas y bajantes?', a: 'El trabajo de canaletas y bajantes de Ilatek <b>comienza desde $250</b>. El precio depende de si es limpieza, reparación o instalación nueva, y de los pies lineales. Cotiza para tu número exacto.' },
       { q: '¿Por qué se tapan las canaletas?', a: 'Por <b>hojas, arena, ramas y escombros</b> que se acumulan con el viento y la lluvia. Con el tiempo forman una obstrucción que impide el paso del agua.' },
       { q: '¿Qué pasa si no limpio las canaletas?', a: 'El agua rebosa y cae sobre el techo o las paredes, causando <b>empozamientos, filtraciones, manchas en la fachada y humedad</b>. Por eso conviene limpiarlas al menos dos veces al año.' },
       { q: '¿Instalan canaletas nuevas?', a: '<b>Sí.</b> Si tu vivienda no tiene canaletas o están muy dañadas, instalamos el sistema de canaletas y bajantes adecuado para dirigir el agua lejos del techo.' },
       { q: '¿De qué material son las canaletas?', a: 'Trabajamos con <b>aluminio, metal y PVC</b>, entre otros materiales comunes en Puerto Rico. Seleccionamos el más adecuado según tu techo y presupuesto.' },
       { q: '¿Reparan canaletas desprendidas?', a: '<b>Sí.</b> Reajustamos las fijaciones, sellamos las uniones y reponemos piezas dañadas para que la canaleta vuelva a cumplir su función.' },
       { q: '¿Cuánto tarda el trabajo?', a: 'La limpieza y reparación de canaletas de una casa se completan normalmente en <b>unas horas o un día</b>. Una instalación nueva puede tomar más, según los pies lineales.' },
-      { q: '¿Por qué elegir Ilatek Techos?', a: 'Limpiamos, reparamos o instalamos canaletas y bajantes para que tu drenaje funcione, <b>desde $200</b>, con inspección gratis y cobertura en los 78 municipios de Puerto Rico.' },
+      { q: '¿Por qué elegir Ilatek Techos?', a: 'Limpiamos, reparamos o instalamos canaletas y bajantes para que tu drenaje funcione, <b>desde $250</b>, con agenda con $50 descontables del total y cobertura en los 78 municipios de Puerto Rico.' },
     ],
   }),
 
@@ -325,15 +325,15 @@ export const mantenimiento = [
     h1after: ' desde $250.',
     metaTitle: 'Lavado a Presión de Techos | Ilatek Techos',
     metaDescription:
-      'Lavado a presión de techos en Puerto Rico desde $250. Limpieza profunda que prepara y alarga la vida del techo. Cotización $0 agendada con $50 reembolsables y garantía escrita.',
+      'Lavado a presión de techos en Puerto Rico desde $250. Limpieza profunda que prepara y alarga la vida del techo. Agenda con $50 descontables del total y garantía escrita.',
     hero: pic('presion', { alt: 'Lavado a presión de techos en Puerto Rico — {{custom_values.business__county_name}}', title: 'Lavado a presión de techos · Ilatek Techos', badge: 'Limpieza profunda' }),
     incl: pic('postconstruccion', { alt: 'Lavado a presión de techo por Ilatek Techos en Puerto Rico — limpieza profunda', title: 'Lavado a presión · Ilatek Techos', caption: 'Superficie limpia · Lista para sellar' }),
     heroSub:
-      'La suciedad y el moho pegado se comen el sellado de tu techo y aceleran su deterioro. Ilatek lava a presión en {{custom_values.business__county_name}} <b>desde $250</b>: deja la superficie limpia y lista, con cotización $0 y garantía escrita.',
+      'La suciedad y el moho pegado se comen el sellado de tu techo y aceleran su deterioro. Ilatek lava a presión en {{custom_values.business__county_name}}: deja la superficie limpia y lista, con cotización por $50 descontables del total y garantía escrita.',
     facts: [
       { b: '$250', s: 'por lavado', label: 'Precio de entrada' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
-      { b: '$0', s: 'cotización', label: 'Gratis, se agenda con $50 reembolsables' },
+      { b: '$50', s: 'visita', label: 'Descontables del total' },
     ],
     benefits: [
       { icon: 'drop', h: 'Limpieza profunda del techo', p: 'Removemos suciedad, hongos y residuos pegados que el barrido no quita, devolviendo el color a la superficie.' },
@@ -364,14 +364,14 @@ export const mantenimiento = [
       ],
     },
     faq: [
-      { q: '¿Cuánto cuesta lavar un techo a presión?', a: 'El lavado a presión de techos de Ilatek <b>comienza desde $250</b>. El precio depende del área y del grado de suciedad. La cotización es $0 y se agenda con $50 reembolsables.' },
+      { q: '¿Cuánto cuesta lavar un techo a presión?', a: 'El lavado a presión de techos de Ilatek <b>comienza desde $250</b>. El precio depende del área y del grado de suciedad. La visita o inspección cuesta $50 y se descuenta del total del servicio.' },
       { q: '¿El lavado a presión puede dañar mi techo?', a: 'No si se hace con <b>presión y boquilla adecuadas a cada superficie</b>. Ajustamos la presión según el material para limpiar sin dañar el techo.' },
       { q: '¿Cada cuánto se debe lavar un techo?', a: 'Normalmente <b>una vez al año</b>, o dos si hay mucho moho, árboles cerca o brisa salina. Se puede integrar al plan de mantenimiento.' },
       { q: '¿El lavado a presión sella las filtraciones?', a: 'No por sí solo: el lavado <b>limpia y prepara</b>. Si hay filtraciones, el lavado se combina con reparación y sellado.' },
       { q: '¿Lavan techos de cualquier material?', a: 'Sí: <b>concreto, zinc, asfalto y membranas</b>, ajustando la presión y el método a cada superficie para no dañarla.' },
       { q: '¿El lavado incluye limpiar los desagües?', a: 'Después de lavar, <b>verificamos y despejamos los desagües</b> para que la suciedad removida no obstruya el drenaje del techo.' },
       { q: '¿Cuánto tarda el lavado?', a: 'Un techo residencial típico se lava en <b>unas horas</b>; los techos grandes pueden tomar el día completo, según el área y la suciedad.' },
-      { q: '¿Por qué elegir Ilatek Techos?', a: 'Lavamos con presión correcta para cada superficie, <b>desde $250</b>, con cotización $0 y cobertura en los 78 municipios de Puerto Rico.' },
+      { q: '¿Por qué elegir Ilatek Techos?', a: 'Lavamos con presión correcta para cada superficie, <b>desde $250</b>, con cotización gratis y cobertura en los 78 municipios de Puerto Rico.' },
     ],
   }),
 
@@ -384,15 +384,15 @@ export const mantenimiento = [
     h1after: ': sellado e instalación.',
     metaTitle: 'Tragaluces y Skylights para Techos | Ilatek Techos',
     metaDescription:
-      'Sellado e instalación de tragaluces y skylights en Puerto Rico desde $250. Ilumina tu espacio sin filtraciones ni humedad. Cotización $0 agendada con $50 reembolsables y garantía escrita.',
+      'Sellado e instalación de tragaluces y skylights en Puerto Rico desde $250. Ilumina tu espacio sin filtraciones ni humedad. Agenda con $50 descontables del total y garantía escrita.',
     hero: pic('residencial', { alt: 'Tragaluz y skylight en techo de Puerto Rico — {{custom_values.business__county_name}}', title: 'Tragaluces y skylights · Ilatek Techos', badge: 'Luz sin filtraciones' }),
     incl: pic('postconstruccion', { alt: 'Instalación y sellado de tragaluz por Ilatek Techos en Puerto Rico — skylight sin humedad', title: 'Tragaluces · Ilatek Techos', caption: 'Sellado perimetral · Sin humedad' }),
     heroSub:
-      'Los tragaluces dan luz natural, pero son un punto clásico de filtraciones si no están bien sellados. Ilatek instala y sella tragaluces en {{custom_values.business__county_name}} <b>desde $250</b>, con cotización $0 y garantía escrita.',
+      'Los tragaluces dan luz natural, pero son un punto clásico de filtraciones si no están bien sellados. Ilatek instala y sella tragaluces en {{custom_values.business__county_name}}, con cotización por $50 descontables del total y garantía escrita.',
     facts: [
       { b: '$250', s: 'por trabajo', label: 'Sellado incluido' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
-      { b: '$0', s: 'cotización', label: 'Gratis, se agenda con $50 reembolsables' },
+      { b: '$50', s: 'visita', label: 'Descontables del total' },
     ],
     benefits: [
       { icon: 'drop', h: 'Sellado perimetral', p: 'La filtración de un tragaluz casi siempre viene del sello perimetral: lo reforzamos para cerrar el paso del agua.' },
@@ -423,14 +423,14 @@ export const mantenimiento = [
       ],
     },
     faq: [
-      { q: '¿Cuánto cuesta instalar o sellar un tragaluz?', a: 'El trabajo de tragaluces de Ilatek <b>comienza desde $250</b>, dependiendo de si es sellado de uno existente o instalación nueva. El precio varía según el tamaño y el tipo de techo. La cotización es $0 y se agenda con $50 reembolsables.' },
+      { q: '¿Cuánto cuesta instalar o sellar un tragaluz?', a: 'El trabajo de tragaluces de Ilatek <b>comienza desde $250</b>, dependiendo de si es sellado de uno existente o instalación nueva. El precio varía según el tamaño y el tipo de techo. La visita o inspección cuesta $50 y se descuenta del total del servicio.' },
       { q: '¿Por qué filtra agua un tragaluz?', a: 'Casi siempre por el <b>sellado perimetral vencido o un flashing mal integrado</b>. El agua se cuela por el borde, no por el vidrio, y aparece como mancha o goteo en el techo interior.' },
       { q: '¿Se puede reparar un tragaluz que filtra?', a: '<b>Sí.</b> En la mayoría de los casos reforzamos el sellado perimetral y corregimos el remate; si el tragaluz está mal instalado, se corrige el encuentro con el techo.' },
       { q: '¿Instalan tragaluces nuevos?', a: '<b>Sí.</b> Instalamos tragaluces con el sistema impermeable correcto desde el inicio, para que entreguen luz natural sin filtraciones.' },
       { q: '¿El tragaluz afecta el sellado general del techo?', a: 'Es un punto crítico: <b>cualquier penetración en el techo es un lugar propenso a filtrar</b>, por eso su sellado debe ser especialmente cuidadoso.' },
       { q: '¿Cuánto tarda el trabajo?', a: 'El sellado de un tragaluz existente suele tomar <b>un día</b>; una instalación nueva depende del tamaño y del tipo de techo, generalmente uno a dos días.' },
       { q: '¿El trabajo del tragaluz tiene garantía?', a: '<b>Sí.</b> Entregamos garantía de mano de obra por escrito sobre el sellado o la instalación realizada.' },
-      { q: '¿Por qué elegir Ilatek Techos?', a: 'Sellamos e instalamos tragaluces sin filtraciones, <b>desde $250</b>, con cotización $0, garantía escrita y cobertura en los 78 municipios de Puerto Rico.' },
+      { q: '¿Por qué elegir Ilatek Techos?', a: 'Sellamos e instalamos tragaluces sin filtraciones, <b>desde $250</b>, con cotización gratis, garantía escrita y cobertura en los 78 municipios de Puerto Rico.' },
     ],
   }),
 
@@ -440,18 +440,18 @@ export const mantenimiento = [
     noun: 'instalación y reemplazo de techos',
     h1before: 'Instalación y Reemplazo de Techos en',
     h1em: 'Puerto Rico',
-    h1after: ' desde $6.00 por pie².',
+    h1after: ' desde $250.',
     metaTitle: 'Instalación y Reemplazo de Techos | Ilatek Techos',
     metaDescription:
-      'Instalación y reemplazo de techos en Puerto Rico desde $6.00 por pie². Techos nuevos de zinc, concreto y membrana con garantía escrita. Inspección gratis.',
-    hero: pic('postconstruccion', { alt: 'Instalación y reemplazo de techos en Puerto Rico — {{custom_values.business__county_name}}', title: 'Instalación y reemplazo de techos · Ilatek Techos', badge: 'Desde $6.00/pie²' }),
+      'Instalación y reemplazo de techos en Puerto Rico desde $250. Techos nuevos de zinc, concreto y membrana con garantía escrita. Agenda con $50 descontables del total.',
+    hero: pic('postconstruccion', { alt: 'Instalación y reemplazo de techos en Puerto Rico — {{custom_values.business__county_name}}', title: 'Instalación y reemplazo de techos · Ilatek Techos', badge: 'Desde $250' }),
     incl: pic('comercial', { alt: 'Reemplazo e instalación de techo por Ilatek Techos en Puerto Rico — techo nuevo', title: 'Instalación de techos · Ilatek Techos', caption: 'Techos nuevos · Garantía de instalación' }),
     heroSub:
-      'Cuando reparar ya no es suficiente, instalar un techo nuevo es la solución definitiva. Ilatek reemplaza e instala techos en {{custom_values.business__county_name}} <b>desde $6.00 por pie²</b>, con inspección gratis y garantía escrita.',
+      'Cuando reparar ya no es suficiente, instalar un techo nuevo es la solución definitiva. Ilatek reemplaza e instala techos en {{custom_values.business__county_name}}, con agenda con $50 descontables del total y garantía escrita.',
     facts: [
-      { b: '$6.00', s: 'por pie²', label: 'Instalación' },
+      { b: '$250', s: 'por servicio', label: 'Instalación' },
       { b: '78', s: 'municipios', label: 'Cobertura en PR' },
-      { b: '$0', s: 'inspección', label: 'Evaluación gratis' },
+      { b: '$50', s: 'visita', label: 'Descontables del total' },
     ],
     benefits: [
       { icon: 'shield', h: 'Solución definitiva', p: 'Un techo nuevo resuelve de raíz las filtraciones recurrentes y te da tranquilidad por muchos años.' },
@@ -482,14 +482,14 @@ export const mantenimiento = [
       ],
     },
     faq: [
-      { q: '¿Cuánto cuesta instalar o reemplazar un techo?', a: 'La instalación y reemplazo de techos de Ilatek <b>comienza desde $6.00 por pie²</b> instalado. El precio depende del material, el área y si hay que reparar la estructura. Cotizamos tu proyecto con visita técnica.' },
+      { q: '¿Cuánto cuesta instalar o reemplazar un techo?', a: 'La instalación y reemplazo de techos de Ilatek <b>comienza desde $250</b> instalado. El precio depende del material, el área y si hay que reparar la estructura. Cotizamos tu proyecto con visita técnica.' },
       { q: '¿Cuándo conviene reemplazar el techo en vez de repararlo?', a: 'Cuando hay <b>filtraciones recurrentes, deterioro generalizado o daño estructural</b>. Si ya reparaste varias veces sin éxito, un techo nuevo es más rentable a largo plazo.' },
       { q: '¿Qué materiales de techo instalan?', a: 'Instalamos <b>techos de zinc y metal, membranas para techos planos, sistemas de concreto y asfalto</b>, según el diseño de tu propiedad y tus necesidades.' },
       { q: '¿Cuánto tarda instalar un techo?', a: 'Un techo residencial puede tomar <b>de varios días a un par de semanas</b>, según el tamaño y el material. Proyectos comerciales o industriales requieren más tiempo; te damos un cronograma.' },
       { q: '¿Retiran el techo viejo?', a: 'Sí: <b>removemos el techo existente</b>, preparamos la base y retiramos los escombros, dejando el área lista para la instalación nueva.' },
       { q: '¿La instalación incluye garantía?', a: '<b>Sí.</b> Entregamos garantía de mano de obra por escrito sobre la instalación, con materiales certificados y proceso correcto.' },
       { q: '¿Trabajan techos comerciales e industriales?', a: '<b>Sí.</b> Instalamos y reemplazamos techos residenciales, comerciales e industriales, con planificación por fases para no interrumpir tu operación.' },
-      { q: '¿Por qué elegir Ilatek Techos?', a: 'Instalamos correctamente, con garantía escrita y materiales certificados, <b>desde $6.00 por pie²</b>, con inspección gratis y cobertura en los 78 municipios de Puerto Rico.' },
+      { q: '¿Por qué elegir Ilatek Techos?', a: 'Instalamos correctamente, con garantía escrita y materiales certificados, <b>desde $250</b>, con agenda con $50 descontables del total y cobertura en los 78 municipios de Puerto Rico.' },
     ],
   }),
 ];
