@@ -2879,7 +2879,7 @@ ILATEK: CUSTOM VALUES PROTEGIDOS — FIN -->
       var has=Array.prototype.some.call(sel.options,function(o){return o.value===LABEL;});
       if(has)sel.value=LABEL;else sel.selectedIndex=-1;
     }
-    var CACHE='ilatek-clima:v2:';
+    var CACHE='ilatek-clima:v3:';
     var TTL=30*60*1000; // caché por municipio: 30 min sin volver a pedir nada
     var REFRESH=10*60*1000; // con la página abierta, refresco cada 10 min
     var UNIT='F';
@@ -3041,7 +3041,7 @@ ILATEK: CUSTOM VALUES PROTEGIDOS — FIN -->
         +'&current=temperature_2m,relative_humidity_2m,apparent_temperature,dew_point_2m,precipitation,weather_code,cloud_cover,wind_speed_10m,wind_gusts_10m,wind_direction_10m,uv_index,is_day'
         +'&hourly=temperature_2m,precipitation_probability,precipitation,weather_code,wind_speed_10m,wind_gusts_10m,uv_index'
         +'&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,precipitation_sum,precipitation_hours,uv_index_max,wind_gusts_10m_max,sunrise,sunset'
-        +'&timezone=America%2FPuerto_Rico&temperature_unit=fahrenheit&wind_speed_unit=mph&forecast_days=7&forecast_hours=24';
+        +'&timezone=America%2FPuerto_Rico&temperature_unit=fahrenheit&wind_speed_unit=mph&forecast_days=7&forecast_hours=168';
       var ctl=new AbortController();
       var to=setTimeout(function(){ctl.abort();},8000);
       try{
@@ -3294,7 +3294,9 @@ ILATEK: CUSTOM VALUES PROTEGIDOS — FIN -->
     }
 
     function bestWindow(){
-      var hr=DATA.hourly||{}, times=hr.time||[], pops=hr.precipitation_probability||[];
+      /* Día 0: se siguen mirando las mismas 24 h de siempre; la petición ahora trae
+         168 h para poder ventanear también los días 1..5. */
+      var hr=DATA.hourly||{}, times=(hr.time||[]).slice(0,24), pops=(hr.precipitation_probability||[]).slice(0,24);
       if(!times.length)return null;
       var best=null;
       for(var i=0;i<times.length-2;i++){
@@ -3309,17 +3311,54 @@ ILATEK: CUSTOM VALUES PROTEGIDOS — FIN -->
       return {label:fmtH(best.h)+'–'+fmtH(end),pop:Math.round(best.avg)};
     }
 
+    /* Ventana de un día futuro: mismas horas (7–16) y mismo umbral (55%) que el día 0,
+       pero sólo con las horas de la fecha de ese día, de la única petición horaria. */
+    function dayWindow(day){
+      var date=((DATA.daily&&DATA.daily.time)||[])[day];
+      if(!date)return null;
+      var hr=DATA.hourly||{}, times=hr.time||[], pops=hr.precipitation_probability||[];
+      var best=null;
+      for(var i=0;i<times.length-2;i++){
+        if(times[i].slice(0,10)!==date||times[i+2].slice(0,10)!==date)continue;
+        var h=new Date(times[i]).getHours();
+        if(h<7||h>16)continue;
+        var avg=((pops[i]||0)+(pops[i+1]||0)+(pops[i+2]||0))/3;
+        if(!best||avg<best.avg)best={avg:avg,h:h};
+      }
+      if(!best)return null;
+      var end=(best.h+3)%24;
+      var fmtH=function(n){return new Intl.DateTimeFormat(lang()==='en'?'en-US':'es-PR',{hour:'numeric'}).format(new Date(2020,0,1,n));};
+      return {label:fmtH(best.h)+'–'+fmtH(end),pop:Math.round(best.avg)};
+    }
+    function noWindowForDay(){
+      /* La cadena que ya existe, sin el «hoy»/«today»: delante va el nombre del día. */
+      return String(t('noWindow')).replace(/^Hoy\s+/,'').replace(/\s+today\b/,'');
+    }
+
     function renderWindow(){
-      var w=bestWindow();
       var el=root.querySelector('.ilcl-window');
       var txt=root.querySelector('.ilcl-win-txt');
-      var pop=(DATA.daily&&DATA.daily.precipitation_probability_max&&DATA.daily.precipitation_probability_max[0])||0;
-      if(!w||w.pop>=55){
+      if(!el||!txt)return;
+      if(DAY===0){
+        var w=bestWindow();
+        var pop=(DATA.daily&&DATA.daily.precipitation_probability_max&&DATA.daily.precipitation_probability_max[0])||0;
+        if(!w||w.pop>=55){
+          el.classList.add('is-wet');
+          txt.innerHTML='<b>'+t('best')+':</b> '+t('noWindow');
+        }else{
+          el.classList.remove('is-wet');
+          txt.innerHTML='<b>'+t('best')+':</b> '+w.label+' · '+w.pop+'% '+t('pop');
+        }
+        return;
+      }
+      var dn=dayName(((DATA.daily&&DATA.daily.time)||[])[DAY],{weekday:'long'})||'';
+      var wd=dayWindow(DAY);
+      if(!wd||wd.pop>=55){
         el.classList.add('is-wet');
-        txt.innerHTML='<b>'+t('best')+':</b> '+t('noWindow');
+        txt.innerHTML='<b>'+dn+':</b> '+noWindowForDay();
       }else{
         el.classList.remove('is-wet');
-        txt.innerHTML='<b>'+t('best')+':</b> '+w.label+' · '+w.pop+'% '+t('pop');
+        txt.innerHTML='<b>'+dn+':</b> '+wd.label+' · '+wd.pop+'% '+t('pop');
       }
     }
 
