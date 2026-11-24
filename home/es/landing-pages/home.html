@@ -404,7 +404,8 @@ ILATEK: CUSTOM VALUES PROTEGIDOS — FIN -->
   · No trae nav ni footer: pega junto al menú universal (ghl-nav-embed.html)
     y al footer (ghl-footer-embed.html). Si reemplaza /home en GHL, conserva
     el head SEO existente (ghl-head-seo.html).
-  · PENDIENTE (pases siguientes): toggle ES/EN y JSON-LD @graph (WebSite,
+  · Menú nuevo sin selector ES/EN (la página se sirve en español).
+  · PENDIENTE (pases siguientes): JSON-LD @graph (WebSite,
     LocalBusiness, OfferCatalog, FAQPage, BreadcrumbList).
   · Regla de links: todo enlace interno usa https://custom_values.website_url/slug.
     Excepciones intencionales: calendarios msgsndr, links de pueblo
@@ -2996,6 +2997,7 @@ ILATEK: CUSTOM VALUES PROTEGIDOS — FIN -->
     var tip=root.querySelector('.ilcl-tip');
     var daysEl=root.querySelector('.ilcl-days');
     var detailEl=root.querySelector('.ilcl-detail');
+    if(detailEl)detailEl.addEventListener('animationend',function(e){if(e.target===detailEl&&e.animationName==='ilclSwap')detailEl.classList.remove('is-swap');});
     var chartWrap=root.querySelector('.ilcl-chart');
 
     function cleanCounty(v){
@@ -3220,14 +3222,13 @@ ILATEK: CUSTOM VALUES PROTEGIDOS — FIN -->
       for(var k=0;k<btns.length;k++)btns[k].setAttribute('aria-selected',k===DAY?'true':'false');
     }
     function swapDetail(){
-      if(!detailEl||!detailEl.animate)return;
+      if(!detailEl)return;
       try{if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;}catch(e){}
-      try{
-        detailEl.animate(
-          [{opacity:.2,transform:'translateY(4px)'},{opacity:1,transform:'none'}],
-          {duration:220,easing:'cubic-bezier(.22,.61,.36,1)'}
-        );
-      }catch(e){}
+      /* Reinicia el keyframe ilclSwap: quita la clase, fuerza reflow y la vuelve a poner.
+         El listener de animationend (junto a detailEl) la retira al terminar. */
+      detailEl.classList.remove('is-swap');
+      void detailEl.offsetWidth;
+      detailEl.classList.add('is-swap');
     }
     function setDay(i){
       var dates=(DATA&&DATA.daily&&DATA.daily.time)||[];
@@ -3366,27 +3367,32 @@ ILATEK: CUSTOM VALUES PROTEGIDOS — FIN -->
       if(note&&note.parentNode)note.parentNode.removeChild(note);
     }
 
+    /* Aviso compacto + Reintentar, sin ocultar el cuerpo: los días siguen pulsables. */
+    function showNote(){
+      if(root.querySelector('.ilcl-note'))return;
+      var body=root.querySelector('.ilcl-body');
+      var n=document.createElement('div');
+      n.className='ilcl-note';
+      n.innerHTML='<span></span><button type="button" class="ilcl-retry"></button>';
+      n.firstChild.textContent=t('bad');
+      var rb=n.querySelector('.ilcl-retry');
+      rb.textContent=t('retry');
+      rb.addEventListener('click',function(){
+        if(n.parentNode)n.parentNode.removeChild(n);
+        root.setAttribute('data-ilcl-state','loading');
+        run(true);
+      });
+      if(body&&body.parentNode)body.parentNode.insertBefore(n,body);
+      else root.insertBefore(n,root.firstChild);
+    }
+
     function fail(){
       var ins=root.querySelector('.ilcl-insight');
       if(ins){ins.innerHTML='<b>'+LABEL+':</b> '+t('bad');ins.hidden=false;}
       root.setAttribute('data-ilcl-state','fallback');
       var body=root.querySelector('.ilcl-body');
       if(body){body.classList.remove('ilcl-loading');body.style.display='';}
-      if(!root.querySelector('.ilcl-note')){
-        var n=document.createElement('div');
-        n.className='ilcl-note';
-        n.innerHTML='<span></span><button type="button" class="ilcl-retry"></button>';
-        n.firstChild.textContent=t('bad');
-        var rb=n.querySelector('.ilcl-retry');
-        rb.textContent=t('retry');
-        rb.addEventListener('click',function(){
-          if(n.parentNode)n.parentNode.removeChild(n);
-          root.setAttribute('data-ilcl-state','loading');
-          run(true);
-        });
-        if(body&&body.parentNode)body.parentNode.insertBefore(n,body);
-        else root.insertBefore(n,root.firstChild);
-      }
+      showNote();
     }
 
     function cacheGetStale(k){
@@ -3409,7 +3415,7 @@ ILATEK: CUSTOM VALUES PROTEGIDOS — FIN -->
       }catch(e){
         var st=null;
         try{st=cacheGetStale(LABEL);}catch(_e){}
-        if(st&&st.data)render({name:st.name||LABEL},st.data);
+        if(st&&st.data){render({name:st.name||LABEL},st.data);showNote();}
         else if(!cached)fail();
       }
       finally{refreshing=false;}
